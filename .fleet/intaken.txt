@@ -1,3 +1,4 @@
+research/airbnb-wishlist-notes.md
 research/app-changelog.md
 research/ba-notes.md
 research/contingency.md
@@ -31,6 +32,8 @@ src/data/me-user-notes.json
 src/data/seed.json
 marker:H
 marker:I
+marker:J
 marker:K
 marker:L
 marker:M
+marker:N
