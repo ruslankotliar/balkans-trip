@@ -1,0 +1,191 @@
+[
+  {
+    "id": "hr-zadar-old-town",
+    "name": "Zadar Old Town (Sea Organ + Sun Salutation)",
+    "country": "HR",
+    "category": "town",
+    "lat": 44.1178,
+    "lng": 15.2191,
+    "description": "Trip starting point. Old town peninsula with the Sea Organ and Greeting to the Sun at sunset — Hitchcock called it the best sunset in the world.",
+    "bestTime": "sunset",
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-plitvice",
+    "name": "Plitvice Lakes National Park",
+    "country": "HR",
+    "category": "nature",
+    "lat": 44.8654,
+    "lng": 15.582,
+    "description": "16 terraced turquoise lakes with waterfalls. ~1.5h north of Zadar — only realistic as a day one/two detour before heading south.",
+    "cost": "~€40 entry in summer (cheaper after 16:00)",
+    "timeNeeded": "full day",
+    "bestTime": "enter at 07:00 or after 16:00 to dodge tour buses",
+    "status": "candidate"
+  },
+  {
+    "id": "hr-krka",
+    "name": "Krka National Park (Skradinski Buk)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 43.8025,
+    "lng": 15.9648,
+    "description": "Waterfall cascades between Zadar and Split. Swimming below the falls is no longer allowed, but the boardwalk loop is short and spectacular.",
+    "timeNeeded": "half day",
+    "status": "candidate"
+  },
+  {
+    "id": "hr-paklenica",
+    "name": "Paklenica National Park",
+    "country": "HR",
+    "category": "hike",
+    "lat": 44.3014,
+    "lng": 15.4843,
+    "description": "Velebit canyon park ~45min from Zadar: serious hiking and one of Europe's best-known climbing spots. Velika Paklenica gorge walk to the mountain hut is the classic.",
+    "timeNeeded": "half to full day",
+    "status": "candidate"
+  },
+  {
+    "id": "hr-telascica",
+    "name": "Telašćica Nature Park (Dugi Otok)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 43.8907,
+    "lng": 15.1635,
+    "description": "Cliffs, salt lake and bays on Dugi Otok island, reachable by ferry from Zadar. Candidate for the 'island day' if we take the car ferry.",
+    "status": "candidate"
+  },
+  {
+    "id": "hr-split",
+    "name": "Split (Diocletian's Palace)",
+    "country": "HR",
+    "category": "town",
+    "lat": 43.5081,
+    "lng": 16.4402,
+    "description": "Roman palace turned living old town. Also the main ferry hub for Hvar/Brač/Vis and good nightlife.",
+    "tags": ["nightlife", "ferry-hub"],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-omis",
+    "name": "Omiš (Cetina canyon)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 43.4447,
+    "lng": 16.6891,
+    "description": "Pirate town where the Cetina river canyon meets the sea: ziplining over the canyon, rafting, canyoning, free-climbing, fortress viewpoints. Adventure-sports hub of the coast.",
+    "tags": ["zipline", "rafting", "canyoning"],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-biokovo-skywalk",
+    "name": "Biokovo Skywalk (Makarska)",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 43.336,
+    "lng": 17.054,
+    "description": "Glass platform at ~1228m above the Makarska riviera; mountain road drive up Biokovo. Sea-and-islands panorama.",
+    "status": "candidate"
+  },
+  {
+    "id": "hr-hvar",
+    "name": "Hvar Town",
+    "country": "HR",
+    "category": "town",
+    "lat": 43.1729,
+    "lng": 16.4411,
+    "description": "Island town known for beaches, the Spanish fortress and the party scene (Hula Hula, Carpe Diem). Car ferry from Split (Stari Grad) or Drvenik (Sućuraj).",
+    "tags": ["nightlife", "island"],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-dubrovnik",
+    "name": "Dubrovnik Old Town",
+    "country": "HR",
+    "category": "town",
+    "lat": 42.6414,
+    "lng": 18.11,
+    "description": "Trip end point — car drop-off and bus/flight back to Vienna on Jun 28. Walls walk, Srđ cable car/viewpoint, Buža cliff bar.",
+    "bestTime": "early morning or evening — brutal cruise-ship crowds midday",
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-mostar",
+    "name": "Mostar (Stari Most)",
+    "country": "BA",
+    "category": "town",
+    "lat": 43.3372,
+    "lng": 17.815,
+    "description": "Ottoman old town around the rebuilt 16th-century bridge; locals dive 24m into the Neretva. Main Bosnia base candidate.",
+    "bestTime": "stay overnight — day-trip crowds leave by 18:00",
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-blagaj",
+    "name": "Blagaj Tekija",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.2565,
+    "lng": 17.9031,
+    "description": "Dervish monastery at the cliff spring of the Buna river, 20min from Mostar. Spring is one of the strongest karst springs in Europe.",
+    "timeNeeded": "1–2h",
+    "status": "candidate"
+  },
+  {
+    "id": "ba-kravica",
+    "name": "Kravica Waterfalls",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.1583,
+    "lng": 17.6083,
+    "description": "25m horseshoe waterfall arc on the Trebižat river — you can swim right below the falls. ~40min from Mostar, on the route to/from Croatia.",
+    "cost": "~€10 entry",
+    "timeNeeded": "2–3h",
+    "tags": ["swimming"],
+    "status": "candidate"
+  },
+  {
+    "id": "ba-pocitelj",
+    "name": "Počitelj",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.1339,
+    "lng": 17.7261,
+    "description": "Ottoman hillside fortress village on the Neretva, basically on the Mostar–coast road. Quick climb to the tower for the view.",
+    "timeNeeded": "1h",
+    "status": "candidate"
+  },
+  {
+    "id": "ba-trebinje",
+    "name": "Trebinje",
+    "country": "BA",
+    "category": "town",
+    "lat": 42.7087,
+    "lng": 18.3219,
+    "description": "Relaxed Herzegovinian wine town 30min inland from Dubrovnik — locals' favorite cheap base near Dubrovnik. Candidate for the last nights (much cheaper than Dubrovnik).",
+    "tags": ["wine", "budget-base"],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-dubrovnik-airport",
+    "name": "Dubrovnik Airport (Čilipi) — friend pickup Jun 18 evening",
+    "country": "HR",
+    "category": "other",
+    "lat": 42.5614,
+    "lng": 18.2682,
+    "description": "HARD ANCHOR: pick up the 4th person here on Jun 18 in the evening. 20km south of Dubrovnik (Konavle). Days 1–3 must end here; the rest of the trip loops from Dubrovnik.",
+    "tags": ["logistics", "fixed-date"],
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-sutjeska",
+    "name": "Sutjeska National Park (Tjentište)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.3414,
+    "lng": 18.69,
+    "description": "Bosnia's oldest national park, on our exit route east towards the Šćepan Polje border: Maglić (BiH's highest peak), Perućica primeval forest, dramatic Tjentište valley with the brutalist WWII monument. Fits the 'deeper into the Bosnian mountains' wish on a transit day.",
+    "tags": ["mountains", "on-route"],
+    "status": "candidate"
+  }
+]

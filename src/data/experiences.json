@@ -1,0 +1,756 @@
+[
+  {
+    "id": "hr-cetina-rafting",
+    "name": "Cetina River Rafting (Omiš)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 43.4517,
+    "lng": 16.716,
+    "description": "~3h raft down the Cetina with grade-2 rapids (a few grade-3), green pools, an underwater cave stop and an optional ~6m cliff jump. The tame/fun option — not serious whitewater.",
+    "communityNotes": "Loved for price-performance: 'great value for money and so much fun,' 'well worth the money.' Honest framing: family-grade (min age 7), 'easy to moderate rapids,' lots of float-and-swim — the gentle cousin of Bosnia's Neretva and Montenegro's Tara. Tours usually end with a riverbank BBQ. Pick Cetina for scenery + the cliff jump; save the real whitewater appetite for Tara/Neretva.",
+    "sources": [
+      "https://www.getyourguide.com/omis-l2096/rafting-on-cetina-river-from-omis-t35592/",
+      "https://www.tripadvisor.com/Attraction_Review-g644074-d3316933-Reviews-Croatia_Rafting-Omis_Split_Dalmatia_County_Dalmatia.html"
+    ],
+    "cost": "~€35–50 pp (commonly ~€40)",
+    "timeNeeded": "half day",
+    "tags": [
+      "rafting",
+      "omis",
+      "family-grade",
+      "operators: Rafting Pirate, Active Holidays"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-cetina-cliff-jump-luka",
+    "name": "Cetina Cliff Jumping — Izletište Luka (Omiš)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 43.45,
+    "lng": 16.706,
+    "description": "Named free cliff-jumping + swimming spot up the Cetina canyon — jumps up to ~6m into deep green river water. Reachable by car (no tour needed); most rafting trips stop here for the jump.",
+    "communityNotes": "Traveler directions: 'cross the river bridge in Omiš, turn left, drive ~5–6km along the river keeping left, pass Radmanove Mlinice, then ~500m on the right park at Izletište Luka' (signed). You can drive up and jump for free. Coordinates approximate — anchor on the Radmanove Mlinice restaurant ~6km up the canyon.",
+    "sources": [
+      "https://www.tripadvisor.com/AttractionProductReview-g644074-d15746699-Half_Day_Rafting_Experience_on_Cetina_River_with_Cliff_Jumping_and_more-Omis_Split.html",
+      "https://www.checkyeti.com/en/d/957/6802"
+    ],
+    "cost": "Free (independent)",
+    "timeNeeded": "1–2h",
+    "tags": [
+      "cliff-jumping",
+      "swimming",
+      "free",
+      "omis",
+      "coords-approx"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-biokovo-paragliding",
+    "name": "Biokovo Tandem Paragliding (Makarska)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 43.2945,
+    "lng": 17.0185,
+    "description": "Tandem paragliding launching off the Biokovo massif above the Makarska Riviera, flying out over the coast and islands. The standout aerial thrill on this corridor (meeting point in Makarska; launch high on the mountain).",
+    "communityNotes": "Reviewers: 'indescribable,' 'the most extraordinary experience,' 'breathtaking landscape views'; instructor praised as 'professional.' Caveat from a critical review: poor time management (late pickups, group not at launch until 13:30) and an undisclosed ~€7 Biokovo park fee — book the morning slot and confirm what's included. Pin is Makarska town (operator meet); launch is on Biokovo.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g294454-d12122831-Reviews-Sky_Riders_Paragliding_Croatia-Zagreb_Central_Croatia.html"
+    ],
+    "cost": "~€130 pp (often incl. video/photos)",
+    "timeNeeded": "half day (lots of waiting/transfer; flight short)",
+    "bestTime": "morning slot; weather-dependent",
+    "tags": [
+      "adrenaline",
+      "paragliding",
+      "makarska",
+      "biokovo"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-bellevue-beach-jumps",
+    "name": "Bellevue (Miramare) Beach Cliff Jumping (Dubrovnik)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.6462,
+    "lng": 18.0922,
+    "description": "Sheltered pebble cove ~20min walk from the Old Town (long staircase down), popular with locals — the best range of cliff jumps near Dubrovnik, from 5m ledges up to ~20m, plus calm swimming.",
+    "communityNotes": "Local favourite for swimming and cliff jumping: 'spots on the left-hand side of the bay with 5m jumps, a 10m jump, and an option for a jump close to 20m.' Higher and less touristy than the Old Town wall jumps. Access via a long staircase from near Hotel Bellevue.",
+    "sources": [
+      "https://www.dubrovnik-travel.net/bellevue-beach/",
+      "https://www.tripadvisor.com/Attraction_Review-g295371-d14932733-Reviews-Bellevue_beach-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html"
+    ],
+    "cost": "Free",
+    "timeNeeded": "half day",
+    "tags": [
+      "cliff-jumping",
+      "swimming",
+      "beach",
+      "dubrovnik",
+      "local-favourite"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-dubrovnik-sea-kayak",
+    "name": "Dubrovnik Sea Kayaking — Walls & Lokrum",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.6385,
+    "lng": 18.107,
+    "description": "Paddle from Pile Bay below the city walls out to Lokrum island and Betina sea cave with a swim/snorkel stop; the sunset version adds wine while the walls glow. The best water activity in Dubrovnik per reviewers.",
+    "communityNotes": "'Definitely worth it' and 'a must on your visit to Dubrovnik' across TripAdvisor/Viator. Realistic note: ~8km of paddling — 'you may be sore the next day' and 'not the comfiest if you have back problems,' though there are rest stops. The sunset tour with wine is the most-recommended version.",
+    "sources": [
+      "https://www.tripadvisor.com/AttractionProductReview-g295371-d12560650-Dubrovnik_and_Lokrum_island_sea_kayak_tour-Dubrovnik_Dubrovnik_Neretva_County_Dalm.html",
+      "https://www.tripadvisor.com/AttractionProductReview-g295371-d13446931-Sunset_Sea_Kayaking_and_Wine_Dubrovnik-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html"
+    ],
+    "cost": "~€35–50 pp (sunset+wine a bit more)",
+    "timeNeeded": "half day (~3–3.5h)",
+    "bestTime": "sunset tour",
+    "tags": [
+      "sea-kayak",
+      "snorkel",
+      "dubrovnik",
+      "operators: X-Adventure, Adventure Dalmatia"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-zadar-kayak",
+    "name": "Zadar / Dugi Otok Sea Kayaking",
+    "country": "HR",
+    "category": "activity",
+    "lat": 44.1197,
+    "lng": 15.231,
+    "description": "Sea-kayak trips from the Zadar area — half-day around local coves/sea caves or a full day to Dugi Otok's white-sand bays and cliffs. A good day-1/2 option before heading south.",
+    "communityNotes": "One repeat Croatia kayaker called the Zadar trips 'definitely the best' they'd done — easy kayaks, 'beautiful sea caves.' Honest caveat from another: felt 'very high' priced and disliked a 'super tiny boat' crowded with 11 passengers — check group size before booking.",
+    "sources": [
+      "https://www.kayaktours-croatia.com/",
+      "https://www.tripadvisor.com/Attractions-g295374-Activities-c61-t191-Zadar_Zadar_County_Dalmatia.html"
+    ],
+    "cost": "~€40–60 pp full-day to Dugi Otok; SUP rental ~€15–25/4h",
+    "timeNeeded": "half to full day",
+    "tags": [
+      "sea-kayak",
+      "sup",
+      "zadar",
+      "dugi-otok"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-culture-club-revelin",
+    "name": "Culture Club Revelin (Dubrovnik)",
+    "country": "HR",
+    "category": "nightlife",
+    "lat": 42.642,
+    "lng": 18.1115,
+    "description": "Dubrovnik's flagship club inside the 16th-century Revelin fortress — stone arches, big sound system, name DJs. The setting is the draw; the value is the catch.",
+    "communityNotes": "Leans tourist-trap on price. Recent reviewers: '30 euros to enter,' '78 euros total for five gin and tonics,' 'horrible minimum of 24€ for a drink,' 'gimmick over club.' Positives are real too — 'incredible' historic venue, world-class DJs, free entry before midnight. Verdict: go for the fortress spectacle, not for value.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g295371-d2233625-Reviews-Culture_Club_Revelin-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html"
+    ],
+    "cost": "Entry €15–30; drinks €15+; free before midnight",
+    "timeNeeded": "one night",
+    "tags": [
+      "nightlife",
+      "dubrovnik",
+      "fortress",
+      "pricey"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-banje-beach-club",
+    "name": "Banje Beach Club (Dubrovnik)",
+    "country": "HR",
+    "category": "nightlife",
+    "lat": 42.6418,
+    "lng": 18.1175,
+    "description": "Day-to-night beach club just east of Ploče Gate with the postcard view of the walls and Lokrum — free pebble beach by day, club at night. Best as a sundowner spot.",
+    "communityNotes": "Praise for 'spectacular views' and the free beach, but reviewers call the food 'overpriced' and inconsistent ('burnt octopus,' 'overcooked tuna'). Advice: come for lunch + cocktails or the night party, skip the dinner.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g295371-d7383675-Reviews-Banje_Beach_Night_Club-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html"
+    ],
+    "cost": "Beach free; food/drinks expensive",
+    "timeNeeded": "few hours / one night",
+    "bestTime": "sundowner",
+    "tags": [
+      "nightlife",
+      "beach-club",
+      "dubrovnik"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-zavizan-dark-sky",
+    "name": "Zavižan & Velebit Dark Sky (North Velebit NP)",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 44.8186,
+    "lng": 14.9776,
+    "description": "Croatia's highest mountain lodge (1,594m) in North Velebit NP — repeatedly named one of the darkest, clearest night skies in the country. Walkable peaks for sunrise and the Velebit Botanical Garden 15min away.",
+    "communityNotes": "Croatia stargazing roundups single out 'parts of Lika on Velebit' as where the sky is 'as dark or even darker' than anywhere accessible; Paklenica/Velebit cited for 'minimal light pollution' and Milky Way visibility. TIMING: new moon is Jun 15, 2026 — the darkest skies of the whole trip fall on nights 1–2 (Jun 16–18). Do the serious stargazing early; the Montenegro half (~Jun 24–28) has a near-full moon.",
+    "sources": [
+      "https://www.expatincroatia.com/stars-croatia/",
+      "https://np-sjeverni-velebit.hr/www/hr/park/velebitski-botanicki-vrt"
+    ],
+    "cost": "NP entry ~€10 pp; lodge bunks ~€15–20 pp",
+    "timeNeeded": "overnight",
+    "bestTime": "nights of Jun 16–19 (new-moon dark); pre-dawn for sunrise peaks",
+    "tags": [
+      "stargazing",
+      "dark-sky",
+      "sunrise",
+      "velebit",
+      "meditation"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-neretva-rafting-konjic",
+    "name": "Neretva River Rafting (Konjic)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.6544,
+    "lng": 17.9608,
+    "description": "Whitewater rafting through the emerald Neretva canyon (class II–III with calm stretches) — beginner-friendly but with real adrenaline, swimming stops, a waterfall and a bridge jump. Konjic sits ~1h from both Mostar and Sarajevo, so it slots straight onto the Bosnia leg.",
+    "communityNotes": "Best-reviewed operator is Raft Kor (skipper Sanel Korić). 'The adventure itself was unforgettable: body rafting, boat rafting, going under a waterfall, and even jumping from a bridge' (2026); guide 'knew every hole and trick you can have on this river.' 'Starts off as a calm, beautiful ride... then the rapids further down make it a really fun experience.' Pick a reputable skipper — one bargain operator drew a safety complaint ('3 of us fell into the water... stuck under the boat').",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1931691-d4300971-Reviews-Neretva_Rafting_Raft_Kor-Konjic_Herzegovina_Neretva_Canton_Federation_of_Bosnia_.html",
+      "https://www.travelkonjic.com/rafting-neretva.html",
+      "https://www.raftbosnia.com/en"
+    ],
+    "cost": "~€31 pp standard (20km, 6–8h), +€11 lunch; short 7km ~€21 pp; Eco Vision from €45 pp w/ BBQ",
+    "timeNeeded": "full day (half-day option)",
+    "bestTime": "June water levels fine for commercial trips",
+    "tags": [
+      "rafting",
+      "adrenaline",
+      "konjic",
+      "bridge-jump",
+      "operators: Raft Kor, Travel Konjic, Eco Vision"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-bobsled-track",
+    "name": "1984 Olympic Bobsled & Luge Track (Trebević)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.84111,
+    "lng": 18.44222,
+    "description": "The abandoned, graffiti-covered 1,300m concrete bobsleigh/luge track from the 1984 Winter Olympics, snaking down forested Mt Trebević — bullet-scarred from the war, reclaimed by moss and street art. Top 'weird/unique' target; you can legally walk it (and people bike it).",
+    "communityNotes": "Reach it via the Trebević cable car from Bistrik (9–10 min). 'The tracks are cleared... so they can be used by bicyclists'; 'many sections are lined with bullet holes and other war wounds.' Solid concrete, safe to walk. CAVEATS from the same trip report: 'There are still many unexploded mines littering the hillside' — stay ON the track/paths, and there are 'stories of people being mugged since the area is so remote,' so go as a group. Walking down to town ~45 min, steep in places.",
+    "sources": [
+      "https://www.therockysafari.com/2022/04/29/sarajevo-abandoned-tracks/",
+      "https://en.wikipedia.org/wiki/Sarajevo_Olympic_Bobsleigh_and_Luge_Track"
+    ],
+    "cost": "Cable car ~15 BAM (~€7.5) one-way / 20 BAM return; track free",
+    "timeNeeded": "2–3h (cable car + walking the track)",
+    "tags": [
+      "abandoned",
+      "unique",
+      "war-history",
+      "cable-car",
+      "sarajevo",
+      "go-as-group"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-ark-bunker-konjic",
+    "name": "ARK D-0 — Tito's Cold War Nuclear Bunker (Konjic)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.6515,
+    "lng": 17.9575,
+    "description": "Tito's secret atomic-war command bunker, built 1953–79 inside a mountain, declassified post-war and now a contemporary-art museum. A huge, eerily preserved Cold War complex — guided tours only (still a military compound). ~7km from Konjic; pairs with the Neretva rafting day.",
+    "communityNotes": "Polarizing. Praise: 'mind-blowing experience,' impressive in size and preservation. Gripes: the modern art divides people — 'felt massively out of place and ruined authenticity'; 'much of interest has been stripped... replaced by art of questionable merit.' Logistics: big groups, strict timing ('shooed away from the gate by a man with a gun' for being 5 min late), no public transport — drive or taxi. Worth it for the Cold War history; manage expectations on the art. Exact entrance GPS is unpublished (military zone) — tour departs from Konjic town.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1931691-d4241697-Reviews-ARK_D_0_Tito_s_Nuclear_Bunker-Konjic_Herzegovina_Neretva_Canton_Federation_of_Bo.html",
+      "https://www.atlasobscura.com/places/ark-d-0-tito-s-nuclear-bunker"
+    ],
+    "cost": "~€20 pp (book via visitkonjic.com); taxi ~12–15 BAM return from Konjic",
+    "timeNeeded": "1–1.5h inside; pre-book a slot",
+    "tags": [
+      "unique",
+      "cold-war",
+      "museum",
+      "konjic",
+      "guided-only",
+      "coords-approx"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-lukomir",
+    "name": "Lukomir — Bosnia's Highest & Most Remote Village (Bjelašnica)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.633,
+    "lng": 18.183,
+    "description": "At 1,495m, Bosnia's highest and most isolated village — semi-nomadic shepherds, ~50 stone houses with cherry-wood shingle roofs, perched on the rim of the 800m Rakitnica canyon. A living time capsule inhabited only May–Oct; also a superb sunrise / stargazing / 'meditation on a mountain' spot.",
+    "communityNotes": "June is ideal — '21 of the 50 homes are inhabited during the summer'; shepherds bring flocks up, women knit wool socks. First-hand: 'children playing football, sheep wandering alleys'; lunch is homemade burek/pita and coffee 'boiled three times over an open fire.' 'This isn't one of those museum villages where heritage is polished for display.' Access in June: rough but snow-free dirt road (~1.5–2h from Sarajevo, 'not for the faint of heart'); better as a hike from Umoljani. Renowned for sunrise/sunset views over the canyon.",
+    "sources": [
+      "https://www.muchbetteradventures.com/magazine/lukomir-bosnia-highest-village/",
+      "https://sarajevo.travel/en/text/lukomir-the-last-bosnian-village/422",
+      "https://en.wikipedia.org/wiki/Lukomir"
+    ],
+    "cost": "Free; bring cash for socks/lunch (meal ~€10–15 pp)",
+    "timeNeeded": "half day w/ drive; full day if hiking from Umoljani",
+    "bestTime": "sunrise or stay for stars; open ~late Apr–Oct only",
+    "tags": [
+      "unique",
+      "village",
+      "sunrise",
+      "stargazing",
+      "meditation",
+      "bjelasnica"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-umoljani-rakitnica-hike",
+    "name": "Umoljani → Lukomir Hike (Rakitnica Canyon rim)",
+    "country": "BA",
+    "category": "hike",
+    "lat": 43.6702,
+    "lng": 18.2282,
+    "description": "The classic Bjelašnica day hike — from the highland village of Umoljani along the rim of the dramatic Rakitnica canyon to Lukomir and back, through the Studeni Potok ('Cold Creek') valley with cascades. ~15km, medium difficulty, big-sky alpine meadows.",
+    "communityNotes": "'The hike from Umoljani to Lukomir is a highlight among outdoor enthusiasts... almost a must'; return via 'the edge of the amazing Rakitnica canyon... one of the most beautiful valleys in whole of Bosnia, Cold Creek valley.' Real timing: 'the entire journey from Umoljani and back took about 6–7 hours including stops and lunch.' No public transport — drive to the trailhead. Studeni Potok waterfalls run best spring/early summer, so June is good.",
+    "sources": [
+      "https://meetbosnia.com/sarajevo-hiking-trails-hiking-bosnia-part-1/",
+      "https://www.wikiloc.com/hiking-trails/bjelasnica-umoljani-studeni-potok-lukomir-24066292"
+    ],
+    "cost": "Free",
+    "timeNeeded": "6–7h (full day)",
+    "tags": [
+      "hike",
+      "canyon-rim",
+      "bjelasnica",
+      "waterfalls"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-skakavac-waterfall",
+    "name": "Skakavac Waterfall",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.94861,
+    "lng": 18.44889,
+    "description": "A 98m free-falling waterfall (one of the tallest in the Balkans) in a nature preserve ~12km north of Sarajevo above Nahorevo — a forested half-day hike with a viewing platform up top and the plunge pool below.",
+    "communityNotes": "Hikers' tip: do the loop anti-clockwise — 'first to the viewing platform, then down to the Skakavac waterfall to save yourself a super steep climb.' Trailhead reachable by car from Nahorevo; quieter alternative to the Bjelašnica hikes and close to the city. Flow strongest in spring/early summer.",
+    "sources": [
+      "https://kathi-daniela.com/en/destinations/bosnia-and-herzegovina/the-7-most-beautiful-day-hikes-around-sarajevo/",
+      "https://en.wikipedia.org/wiki/Skakavac_(Sarajevo)"
+    ],
+    "cost": "Free",
+    "timeNeeded": "3–4h",
+    "tags": [
+      "waterfall",
+      "hike",
+      "sarajevo"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-vrelo-bosne",
+    "name": "Vrelo Bosne (Source of the Bosna River)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.8189,
+    "lng": 18.2694,
+    "description": "Lush spring-fed park at the foot of Igman where the Bosna river bubbles up into clear pools and islands — reached via the 3.5km tree-lined Velika Aleja avenue from Ilidža (walk, cycle, or horse-and-carriage). An easy, pretty half-day decompress near Sarajevo.",
+    "communityNotes": "'Widely praised as a beautiful and peaceful nature park'; the Velika Aleja walk is flat/paved, ~35–45 min each way. Caveat travelers raise: entry + parking fees feel a bit steep for foreigners, but 'most agree the natural beauty and tranquility make it worthwhile.' Not a swimming spot (protected spring) — it's a stroll/picnic park.",
+    "sources": [
+      "https://sarajevodaytrips.com/vrelo-bosne/",
+      "https://zppks.ba/en/zasticena_podrucja/vrelo-bosne-en/"
+    ],
+    "cost": "~6 BAM (~€3) entry for foreigners + ~5 BAM parking",
+    "timeNeeded": "2–3h",
+    "tags": [
+      "nature",
+      "park",
+      "relaxed",
+      "sarajevo"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-buna-blagaj-swim",
+    "name": "Buna River Swimming @ Blagaj",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.2574,
+    "lng": 17.8947,
+    "description": "The Buna gushes ice-cold and vivid blue straight out of a cliff cave beside the Blagaj Tekija dervish house (Europe's largest karst spring), 12km from Mostar. Besides the iconic monastery view you can swim in the river on hot days — the 'get in the water' angle on the existing Blagaj sight.",
+    "communityNotes": "Travelers note 'you can spend time swimming in the river at this location'; the water is striking blue and very cold (spring-fed) even in summer — short dips, not lounging. Best paired with a riverside ćevapi/coffee stop. June crowds build mid-morning around the Tekija, so swim is calmer early or late.",
+    "sources": [
+      "https://culturetrekking.com/blagaj-tekke-buna-river",
+      "https://www.terra-balka.com/en/blog/non-classe/10-breathtaking-natural-swimming-spots-in-bosnia-herzegovina"
+    ],
+    "cost": "Free to swim (small fee to enter the Tekija building)",
+    "timeNeeded": "1–2h",
+    "bestTime": "early or late to dodge Tekija crowds",
+    "tags": [
+      "river-swimming",
+      "spring",
+      "blagaj",
+      "mostar"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-boracko-lake",
+    "name": "Boračko Lake (swim + lakeside camp)",
+    "country": "BA",
+    "category": "campsite",
+    "lat": 43.5519,
+    "lng": 18.0314,
+    "description": "Emerald glacial lake at the foot of Prenj, ~16km up a hairpin road from Konjic — warm-enough swimming, kayaks/pedalos, a beach bar and a well-run eco-camp. Ideal warm-water swim + overnight to bookend the Neretva rafting day.",
+    "communityNotes": "Eko Selo Boračko Jezero ~4.1/5 from campers — tranquil, clean, friendly. park4night: 'helpful and friendly staff... nice beach area and great swimming'; 'Fantastic eco-camp on crystal-clear Boračko Lake... shady pitches, spotless facilities and solid Wi-Fi,' restaurant with ćevapi and trout, 'colorful beach bar with hammocks.' One report: 2 nights for camper + 2 adults + 2 kids + dog + power = 100 KM total, cash only.",
+    "sources": [
+      "https://park4night.com/en/place/25976",
+      "https://www.camping.info/en/campsite/eko-selo-boracko-jezero"
+    ],
+    "cost": "~€10–13 pp tent area; ~100 KM (~€50) loaded pitch w/ power (cash KM/EUR)",
+    "facilities": "clean showers/toilets, electricity, restaurant, beach bar, kayak/pedalo rental, Wi-Fi, shade",
+    "timeNeeded": "overnight (or swim stop 2–3h)",
+    "tags": [
+      "campsite",
+      "lake-swim",
+      "konjic",
+      "showers"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-paragliding-mostar",
+    "name": "Tandem Paragliding over Mostar (Planinica)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.3438,
+    "lng": 17.8078,
+    "description": "Tandem paragliding off Planinica (~790m) with views over the Neretva valley and Mostar, run by an experienced local pilot. No experience needed; ~30-min drive from town to launch (meeting point in Mostar).",
+    "communityNotes": "Reviewers: ~45 min of flying that 'felt much shorter due to the exhilaration,' 'add it to your bucket list, you'll never regret it,' pilots 'very professional and very friendly.' There's also a Sarajevo option flying off Bjelašnica/Trebević at ~140 BAM. Weather-dependent — book flexible; June is generally flyable.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g295388-d7125498-Reviews-Tandem_Paragliding_Mostar-Mostar_Herzegovina_Neretva_Canton_Federation_of_Bosnia_.html",
+      "https://www.hit-booker.com/listings/tandem-paragliding"
+    ],
+    "cost": "Mostar: on enquiry (incl. transfer/photos); Sarajevo option ~140 BAM (~€70)",
+    "timeNeeded": "2–3h incl. transfer (flight 15–45 min)",
+    "tags": [
+      "adrenaline",
+      "paragliding",
+      "mostar",
+      "coords-approx"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-silver-smoke",
+    "name": "Silver & Smoke (Sarajevo electronic club)",
+    "country": "BA",
+    "category": "nightlife",
+    "lat": 43.8576,
+    "lng": 18.425,
+    "description": "Sarajevo's main electronic-music club, central (Zelenih beretki 12, just off the pedestrian core) — the go-to for DJs/house/techno. Sits in the dense central bar zone, easy to combine with a Baščaršija crawl.",
+    "communityNotes": "Described as 'the central place for all of the Electronic music fans' in Sarajevo, regionally award-nominated. Pair with Pink Houdini for jazz/blues, Kino Bosna (Mondays only, live sevdah + cheap drinks), and craft-beer spots (Gastro Pub Vučko, Boardroom). Drinks cheap by EU standards (Sarajevsko ~3.5–6 BAM). Sarajevo wins decisively over Mostar for a real night out.",
+    "sources": [
+      "https://funkytours.com/sarajevo-nightlife-experience-the-best-of-sarajevo-bars-and-pubs/"
+    ],
+    "cost": "Drinks cheap (Sarajevsko ~3.5–6 BAM); cover varies by event",
+    "timeNeeded": "one night",
+    "tags": [
+      "nightlife",
+      "electronic",
+      "sarajevo",
+      "coords-approx"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-terme-ilidza",
+    "name": "Terme Ilidža Thermal Spa (Sarajevo)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.823,
+    "lng": 18.307,
+    "description": "The realistic thermal-spring option on this route — sulfur-oligomineral springs used since Roman times, now a modern indoor 'Thermal Riviera' (water cave, lazy river, whirlpools) plus outdoor pools. 3km from the Vrelo Bosne springs. NOTE: there is no wild/natural hot spring on this corridor — this is the only legit soak, and it's a built spa.",
+    "communityNotes": "Reviewers: 'the hot water is amazing,' 'largest thermal resort in this part of Europe,' good for a relaxed half-day; some say 'a little expensive for local prices.' More waterpark-modern than rustic — manage expectations. Pair with a stroll at Vrelo Bosne. Only worthwhile if you overnight near Sarajevo.",
+    "sources": [
+      "https://terme-ilidza.ba/en/home-english/",
+      "https://www.tripadvisor.com/Attraction_Review-g294450-d2279767-Reviews-Terme_Ilidza-Sarajevo.html"
+    ],
+    "cost": "Day ticket ~€10–20 pp (varies by season/zone)",
+    "timeNeeded": "half day",
+    "tags": [
+      "hot-spring",
+      "thermal-spa",
+      "relax",
+      "sarajevo"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-nevidio-canyon",
+    "name": "Nevidio Canyon Canyoning",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.9939,
+    "lng": 19.1303,
+    "description": "Montenegro's most famous canyoning trip — a wild, narrow gorge carved by the Komarnica into Durmitor, with jumps, slides, swims and rappels in ice-cold water. THE Balkans canyoning bucket-list item, but technical and unforgiving. Meeting near Pošćenje village / Šavnik.",
+    "communityNotes": "'One of the highlights of our trip' and 'There is no better activity to do in Montenegro.' Water is 'ice cold' — guides hand out double wetsuits; the exit 'hike up at the end is strenuous.' Guides praised by name (certified mountain-rescue/alpinists). CRITICAL SAFETY: going alone is 'strongly discouraged and dangerous' — people have died here; sections cannot be exited without ropes/training. Only book a licensed operator. JUNE: usually opens ~late June once snowmelt drops — mid-June (Jun 16–22) often closed/substituted with the easier Grabovica canyon; late June (Jun 23–28) is a transition window. Confirm opening with the operator a few days ahead; schedule it on the later Montenegro leg.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g12969350-d4994338-Reviews-Canyon_Nevidio-Savnik_Savnik_Municipality.html",
+      "https://nevidio-canyoning.com/en/cayoning_program/",
+      "https://www.outdoortara.com/activities/canyoning-nevidio"
+    ],
+    "cost": "~€120–130 all-in (gear, guides, transfer, lunch); short variants from ~€65",
+    "timeNeeded": "half day (4–6h incl. return hike)",
+    "bestTime": "Late June onward ONLY — confirm opening; Grabovica is the high-water fallback",
+    "tags": [
+      "adrenaline",
+      "canyoning",
+      "durmitor",
+      "licensed-only",
+      "june-borderline",
+      "safety"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-durmitor-prutas",
+    "name": "Prutaš Peak Hike (Durmitor)",
+    "country": "ME",
+    "category": "hike",
+    "lat": 43.1265,
+    "lng": 19.0014,
+    "description": "Often called Durmitor's best effort-to-reward hike — distinctive layered-rock peak (2,393m) with sweeping park views, far less crowded than Bobotov Kuk.",
+    "communityNotes": "Described as having 'the best ratio of effort versus feeling of beauty' — ~4km, ~686m ascent, 'moderately difficult.' A strong alternative for a big-view summit without Bobotov Kuk's exposure.",
+    "sources": [
+      "https://www.moonhoneytravel.com/prutas-peak-hike-durmitor-national-park/",
+      "https://peakvisor.com/peak/prutas.html"
+    ],
+    "cost": "Free (NP ~€3–5 pp)",
+    "timeNeeded": "half–full day",
+    "bestTime": "morning",
+    "tags": [
+      "hike",
+      "summit",
+      "viewpoint",
+      "durmitor",
+      "less-crowded"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-durmitor-ice-cave",
+    "name": "Durmitor Ice Cave (Ledena Pećina)",
+    "country": "ME",
+    "category": "hike",
+    "lat": 43.118,
+    "lng": 19.071,
+    "description": "A wild ice cave (~2,160m, beneath Obla Glava) with year-round ice formations, reached by a moderate-to-tough mountain hike from Black Lake or Žabljak. The destination of one of the park's best half-day-plus walks.",
+    "communityNotes": "~5.3km one-way from Black Lake (~7.9km from Žabljak), 3–4h each way; 'moderate to challenging.' It's a natural cave — no infrastructure, just 'a rope along the wall to help hikers descend safely.' Bring layers and a headlamp. Coordinates approximate (below Obla Glava summit).",
+    "sources": [
+      "https://www.alltrails.com/trail/montenegro/zabljak/durmitor-ice-cave-ledena-pecina",
+      "https://backpackersintheworld.com/ice-cave-ledena-pecina/"
+    ],
+    "cost": "Free (NP ~€3–5 pp; ~€2 parking)",
+    "timeNeeded": "full day",
+    "bestTime": "summer; start early, weather-dependent on the ridge",
+    "tags": [
+      "hike",
+      "ice-cave",
+      "unique",
+      "durmitor",
+      "headlamp",
+      "coords-approx"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kotor-via-ferrata",
+    "name": "Via Ferrata Kotor (Vrata na Tabačini)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.4269,
+    "lng": 18.7753,
+    "description": "Montenegro's first via ferrata, on the cliffs right above Kotor old town — a B/C-graded cabled route (~200m long, ~150m ascent) with big Bay of Kotor views, ~250m from the North Gate.",
+    "communityNotes": "Mixed reviews. Praised for guides ('Mića was a great and supportive guide') and as a good first via ferrata with 'amazing views from the top.' But several flag price/attitude: 'the very impolite owner asked for 30€ pp excluding gear and this ferrata is not worth it, it is rather short.' A cool short adrenaline hit with a guide — manage cost expectations and book gear-included.",
+    "sources": [
+      "https://ferrataguide.com/en/ferrata/Ferrata_Kotor",
+      "https://www.tripadvisor.com/AttractionProductReview-g295381-d15847123-Via_Ferrata_Kotor_Rock_Climbing_Activity-Kotor_Kotor_Municipality.html"
+    ],
+    "cost": "~€30–60 pp depending on operator/gear",
+    "timeNeeded": "~2h",
+    "bestTime": "early morning (heat/sun on the rock)",
+    "tags": [
+      "adrenaline",
+      "via-ferrata",
+      "kotor",
+      "climbing"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kraljicina-plaza-canj",
+    "name": "Kraljičina Plaža (Queen's Beach, near Čanj)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.1665,
+    "lng": 18.9905,
+    "description": "A hidden pink-pebble cove in Pećin bay just NW of Čanj, surrounded by cliffs and reachable ONLY from the sea — turquoise, clear, far fewer crowds. A great swim/snorkel/relax stop on the deep-south or Skadar-to-coast day.",
+    "communityNotes": "'Hidden from view in a bay surrounded by hills and inaccessible rocks... access possible only from the sea.' Water taxis run from Čanj 'every 15 minutes,' round-trip 'as little as €3–4 pp.' Has a café, changing rooms, WC. 'Perfect transparent turquoise water,' more peaceful than mainland beaches though getting busier. (Don't confuse with the same-named beach at Miločer near Sveti Stefan.) Pin anchored just NW of verified Čanj beach.",
+    "sources": [
+      "https://www.montenegrofortravellers.com/en/place/kraljicina-plaza-royal-beach-bar",
+      "https://www.lonelyplanet.com/articles/best-beaches-montenegro"
+    ],
+    "cost": "~€3–4 water-taxi round trip from Čanj",
+    "timeNeeded": "half day",
+    "bestTime": "deep-south extension only; go earlier for fewer crowds",
+    "tags": [
+      "beach",
+      "snorkel",
+      "boat-access",
+      "secret-cove",
+      "coords-approx"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-sveti-nikola-island",
+    "name": "Sveti Nikola Island (\"Hawaii\") Cliff Jumping (Budva)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.2653,
+    "lng": 18.8533,
+    "description": "Budva's offshore island, nicknamed 'Hawaii,' with rocky coves, tunnels and natural ledges of varying heights for cliff-jumping into clear turquoise water. Cheap shuttle boats from Budva make it an easy adrenaline-plus-swim afternoon.",
+    "communityNotes": "'Natural rock formations of various heights perfect for safe and exciting jumps into the crystal-clear turquoise waters'; paddle/boat to 'hidden coves and explore the island's rocky tunnels.' Shuttle boats from Budva Marina/Slovenska/Bečići every ~30 min, ~€5–7 round trip. Gets busy in peak summer — go earlier in the day.",
+    "sources": [
+      "https://adriaticways.com/sveti-nikola-island-budva/",
+      "https://en.wikipedia.org/wiki/Sveti_Nikola_Island_(Budva)"
+    ],
+    "cost": "~€5–7 round-trip shuttle boat",
+    "timeNeeded": "half day",
+    "bestTime": "morning (crowds build midday in June)",
+    "tags": [
+      "cliff-jumping",
+      "swimming",
+      "island",
+      "budva"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-budva-paragliding",
+    "name": "Tandem Paragliding from Brajići (Budva)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.3019,
+    "lng": 18.8914,
+    "description": "Tandem paragliding launching from Brajići (~760m) with a long glide over Budva, Bečići and the coast toward Sveti Stefan. One of Montenegro's signature easy-thrill activities, transfer included.",
+    "communityNotes": "Operators (Budva Paragliding, Go2Fly) run standard ~€75 and longer ~€125 flights; ~1.5h total with 15–20 min airtime. Reviews: pilots 'very professional, attentive and caring,' 'magnificent panoramic view of Budva during descent,' 'seamless booking, pick and drop.' Consistently rated easy and worth it for non-experts.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g304074-d12035486-Reviews-Budva_Paragliding_Montenegro-Budva_Budva_Municipality.html",
+      "https://paragliding.me/about/locations/budva"
+    ],
+    "cost": "~€75 standard / ~€125 long; +€15 GoPro",
+    "timeNeeded": "~1.5h (15–20 min flight)",
+    "bestTime": "morning/late-afternoon thermals; wind-dependent",
+    "tags": [
+      "adrenaline",
+      "paragliding",
+      "budva",
+      "brajici"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-budva-top-hill",
+    "name": "Top Hill Club (Budva)",
+    "country": "ME",
+    "category": "nightlife",
+    "lat": 42.2887,
+    "lng": 18.851,
+    "description": "Budva's mega open-air hillside club (~5,000 cap) overlooking Bečići, the Adriatic and Sveti Stefan — Montenegro's most famous party venue, EDM/house/techno + big-name DJ nights. Shuttle from the promenade or taxi up.",
+    "communityNotes": "Dramatic setting ('one of the most dramatically positioned nightclubs in Europe'), once crowned 'Best Nightclub in the World' (2012). Honest current read: still the headline venue but 'maybe not as packed as it once was,' with 'buyer beware' pricing (cover + drinks). Verify the night's lineup before committing — it's event-driven. (Couldn't load live Reddit threads here — sanity-check current r/montenegro takes before the trip.) Budva is the call for a big night out; Kotor is the relaxed old-town bar evening.",
+    "sources": [
+      "https://www.montenegro-spirit.com/guides/budva-nightlife/",
+      "https://www.tophill.me/"
+    ],
+    "cost": "Cover varies (~€15+); drinks pricey",
+    "timeNeeded": "one night",
+    "bestTime": "opens late (after ~midnight); best on a headline-DJ night",
+    "tags": [
+      "nightlife",
+      "club",
+      "party",
+      "budva",
+      "lineup-dependent"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-orjen-subra",
+    "name": "Orjen — Subra Plateau (Full-Moon Sunrise & Dark Sky)",
+    "country": "ME",
+    "category": "hike",
+    "lat": 42.5667,
+    "lng": 18.5667,
+    "description": "The closest true dark-sky / wild mountain to Kotor & Herceg Novi — a karst plateau (~1,679m) above Boka Bay, a favourite for full-moon sunrise hikes. Fits the near-full-moon timing at the very end of the trip.",
+    "communityNotes": "'Closest true dark-sky location to Kotor and Herceg Novi,' ~45–60 min drive from Boka + ~45 min hike from the Za Vratlom mountain hut. Total Montenegro ran a 'Night of Full Moon: A Sunrise at Top of Mountain Peak Subra' trip report — exactly the moonlit-mountain experience the group wants. Near-full moon ~Jun 27–28 makes a night-ascent + sunrise genuinely magical. (Exact summit coord approximate — confirm trailhead at Za Vratlom hut.)",
+    "sources": [
+      "https://hikebalkans.com/blog_articles/stargazing-balkans.html",
+      "https://www.total-montenegro-news.com/travel/2998-subra-orjen-tour"
+    ],
+    "cost": "Free",
+    "timeNeeded": "half day (night-ascent + sunrise)",
+    "bestTime": "near-full moon ~Jun 27–28 for a moonlit sunrise hike",
+    "tags": [
+      "hike",
+      "sunrise",
+      "full-moon",
+      "dark-sky",
+      "meditation",
+      "orjen",
+      "coords-approx"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  }
+]

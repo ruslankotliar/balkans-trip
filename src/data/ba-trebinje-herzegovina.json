@@ -1,0 +1,126 @@
+[
+  {
+    "id": "ba-trebinje-old-town",
+    "name": "Trebinje Old Town (Kastel) & Plane Tree Square",
+    "country": "BA",
+    "category": "town",
+    "lat": 42.7109247,
+    "lng": 18.3470653,
+    "description": "Walled Ottoman old town (Kastel) on the Trebišnjica river, opening onto a square shaded by 100-year-old plane trees full of cheap cafes and konobas. The standout cheap base in the region: only ~30-40 min inland from Dubrovnik but a fraction of the price, with a real wine-town vibe and genuine local life rather than cruise crowds.",
+    "communityNotes": "Travelers say it is 'the easiest cross-border day trip out of Dubrovnik, just thirty kilometres on a quiet inland road' and 'not very touristy, so for a quick visit it might give a taste of something different.' One Rick Steves poster was blunter: 'There's not much to the town, really. I wouldn't call the town center particularly charming' — but agreed the Arslanagić bridge and the hilltop monastery are the real draws. Reddit/travel consensus: 'Accommodation, restaurants and local services in Trebinje are 30-50% more affordable than Dubrovnik.' The Plane Tree (Freedom) Square hosts a Saturday-morning farmers' market with 'smoked meat, honey, cheese and Hercegovina wine from village producers,' and the old town 'can get pretty hectic once the sun drops' — bars/pubs/clubs aplenty. Cheap eats: Ćevapdžinica Kastel Kod Mure in the old town.",
+    "sources": [
+      "https://community.ricksteves.com/travel-forum/bosnia/trebinje-anyone",
+      "https://www.numbeo.com/cost-of-living/compare_cities.jsp?country1=Bosnia+And+Herzegovina&city1=Trebinje&country2=Croatia&city2=Dubrovnik",
+      "https://www.inyourpocket.com/trebinje/nightlife",
+      "https://gotrebinje.com/en/destinations/zelena-pijaca/"
+    ],
+    "cost": "Apartments for 4 commonly €30-70/night (cheap hotels avg ~€45-50); food/drinks well below Dubrovnik. Numbeo: Dubrovnik rent ~272% higher than Trebinje.",
+    "timeNeeded": "Half day to see town; 1-2 nights as a base",
+    "bestTime": "Evening for the square/nightlife; Saturday AM for the green market. June books up early — reserve apartments well ahead.",
+    "tags": ["base", "cheap", "wine-town", "old-town", "nightlife", "market", "near-dubrovnik"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-arslanagic-bridge",
+    "name": "Arslanagić (Perovića) Bridge",
+    "country": "BA",
+    "category": "sight",
+    "lat": 42.7146531,
+    "lng": 18.354008,
+    "description": "Striking 16th-century Ottoman stone bridge with two large and two small arches, dismantled and relocated upstream to Trebinje in the 1960s-70s when a dam flooded its original site. A short walk/10-min drive from the old town; the photogenic highlight of Trebinje.",
+    "communityNotes": "Repeatedly cited as the main reason to stop: 'The highlight (one reason I visited the town at all) is the magnificent old Arslanagić Bridge, a stone bridge a short walk from the center of town' (Rick Steves forum). Best paired with the riverside walk along the Trebišnjica.",
+    "sources": [
+      "https://community.ricksteves.com/travel-forum/bosnia/trebinje-anyone"
+    ],
+    "cost": "Free",
+    "timeNeeded": "20-30 min",
+    "bestTime": "Late afternoon light; quiet most of the day",
+    "tags": ["bridge", "ottoman", "photo-spot", "river", "free"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-gracanica-viewpoint",
+    "name": "Hercegovačka Gračanica (Monastery Viewpoint)",
+    "country": "BA",
+    "category": "viewpoint",
+    "lat": 42.7107369,
+    "lng": 18.3600128,
+    "description": "Serbian Orthodox church on Crkvina hill above Trebinje, a 1990s replica of the medieval Gračanica in Kosovo, holding the tomb of poet Jovan Dučić. The terrace gives the best panorama over the old town, the Trebišnjica valley and surrounding mountains.",
+    "communityNotes": "Consistently named the second highlight after the bridge: 'The other highlight is the Serbian Orthodox monastery up on a hill overlooking the town (with a great view down)' (Rick Steves forum). Travel reports call the view over the town 'breathtaking.' Short drive up; dress modestly to enter the church.",
+    "sources": [
+      "https://community.ricksteves.com/travel-forum/bosnia/trebinje-anyone",
+      "https://www.tripadvisor.com/Attraction_Review-g303196-d3485580-Reviews-Tvrdos_Monastery-Trebinje_Republika_Srpska.html"
+    ],
+    "cost": "Free (donations)",
+    "timeNeeded": "30-45 min",
+    "bestTime": "Golden hour for the panorama and photos",
+    "tags": ["viewpoint", "monastery", "panorama", "free", "sunset"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-vukoje-winery",
+    "name": "Vukoje Winery (Podrumi Vukoje 1982)",
+    "country": "BA",
+    "category": "food",
+    "lat": 42.7158941,
+    "lng": 18.3434894,
+    "description": "Trebinje's flagship winery (Hrupjela 28, on the edge of town) with a multi-storey building topped by a terrace bar and restaurant overlooking the city. Tours + tastings of the native Žilavka (white) and Vranac (red), plus Chardonnay; awarded among the best wineries in SE Europe.",
+    "communityNotes": "TripAdvisor reviewers (4.6/5): 'this is a do not miss experience if you're ever in Trebinje. The wine was really good, the food was delicious, and the service was 5 stars.' On wines: 'We definitely liked the Chardonnay as well as the Vranac' and 'the Zilavka came out for me as a top score.' Tip from a reviewer: 'make sure you ask about the per-glass tasting, if not, they will bring a full bottle each time.' The terrace is the selling point: 'lunch and wine tasting on the terrace with a view of Trebinje is the most beautiful thing.'",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g303196-d2334434-Reviews-Vukoje_Cellars-Trebinje_Republika_Srpska.html"
+    ],
+    "cost": "Tasting + meal varies; ask for per-glass tastings to keep it cheap",
+    "timeNeeded": "1.5-2.5h (tour + tasting, longer with lunch/dinner)",
+    "bestTime": "Sunset on the rooftop terrace; book ahead in summer",
+    "facilities": "Terrace bar + restaurant (6th/7th floor), guided tours, shop",
+    "tags": ["wine", "zilavka", "vranac", "terrace", "view", "tasting", "dinner"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-tvrdos-monastery",
+    "name": "Tvrdoš Monastery (Wine-making Monks)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 42.7184351,
+    "lng": 18.2923489,
+    "description": "15th-century Serbian Orthodox monastery ~6 km west of Trebinje on the Trebišnjica, set among vineyards, where monks make award-winning Vranac and Žilavka in a cellar partly dating to the 1400s (their Grand Reserve Vranac won Decanter gold in 2018). Grounds + shop are free to wander; the setting is the draw.",
+    "communityNotes": "TripAdvisor: 'Real wine tasting!' and a frequent highlight of Trebinje-area trips. Important booking caveat repeated by visitors: 'You are better off taking an organized tour to the winery or else you need to contact them directly weeks in advance to arrange a tasting. You can walk around the grounds and shop in the store but you will not be able to taste the wine without arrangements made in advance.' Buy bottles in the monastery shop even without a tasting.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowUserReviews-g303196-d2334448-r315995434-Cellars_of_the_Tvrdos_Monastery-Trebinje_Republika_Srpska.html",
+      "https://en.wikipedia.org/wiki/Tvrdo%C5%A1_Monastery",
+      "https://www.tripadvisor.com/Attraction_Review-g303196-d3485580-Reviews-Tvrdos_Monastery-Trebinje_Republika_Srpska.html"
+    ],
+    "cost": "Free to visit grounds/shop; tasting must be pre-arranged (or via tour)",
+    "timeNeeded": "45 min-1h (grounds + shop)",
+    "bestTime": "Daytime; arrange tasting weeks ahead if you want one",
+    "facilities": "Monastery shop (wine, honey, rakija, olive oil), grounds",
+    "tags": ["monastery", "wine", "monks", "vineyards", "free", "shop"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-vjetrenica-cave",
+    "name": "Vjetrenica Cave (Zavala, near Ravno)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 42.8458637,
+    "lng": 17.9837844,
+    "description": "The largest and most biodiverse cave in BiH (UNESCO Tentative List), at Zavala near Ravno in the Popovo Polje karst — named 'wind cave' for the strong draught at its mouth. Guided ~45-60 min walk ~600m in past chambers, columns, pools and lakes; home to the blind cave salamander (olm). ~1.5h drive from Dubrovnik / ~1h from Trebinje.",
+    "communityNotes": "Mixed but mostly positive. Fans: 'spectacular halls,' 'you just must visit the location since what you can see cannot be described,' and 'easy and fascinating day trip from Dubrovnik.' Differs from typical caves: 'slightly different from other caves as it does not have many stalactites' but has unique pools/lakes. Watch-outs from reviewers: it can feel underwhelming if you've seen big show-caves ('not exciting compared to others'), and service is hit-or-miss — one slammed 'lousy service' and a guide on 'auto-mode,' another praised guide Maria for a 'very lovely experience.' Practical: tours leave hourly on the hour, mandatory guide, ~12C inside year-round, paths are slippery (wear grippy shoes), you may or may not spot the olm. Entry is cheap.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g8770460-d7275939-Reviews-Vjetrenica_Cave-Zavala_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Herze.html",
+      "https://www.worldheritagesite.org/list/vjetrenica-cave/"
+    ],
+    "cost": "Cheap entry (~10 KM / a few euro per person); cash KM safest",
+    "timeNeeded": "45-60 min tour; ~1h drive each way from Trebinje",
+    "bestTime": "Bring a layer — constant ~12C; tours hourly on the hour, check last-entry time",
+    "facilities": "Guided tours only, parking, nearby restaurant for the wait between hourly slots",
+    "tags": ["cave", "unesco-tentative", "olm", "guided", "detour", "karst", "hidden-gem"],
+    "rating": 3,
+    "status": "candidate"
+  }
+]

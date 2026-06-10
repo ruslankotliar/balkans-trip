@@ -1,0 +1,656 @@
+[
+  {
+    "id": "me-mratinje-dam",
+    "name": "Mratinje Dam (Piva dam)",
+    "country": "ME",
+    "category": "sight",
+    "lat": 43.27222,
+    "lng": 18.84167,
+    "description": "The 220m-high arch dam that created turquoise Piva Lake in 1975, between Plužine and the Šćepan Polje border. The single most-cited pull-over on the Piva canyon drive — you can view it from the top and from below.",
+    "communityNotes": "Repeatedly named as the highlight stop of the canyon road. TripAdvisor: 'worth visiting from top and below', and 'the tunnels, all 36 from Pluzine to dam wall and then another 16 to Bosnia border are also amazing.' The road around the lake is carved into the cliff with dozens of short tunnels; the dam is the natural place to stop, stretch and photograph the emerald reservoir.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1728094-d6487521-Reviews-Piva_Canyon-Pluzine_Pluzine_Municipality.html",
+      "https://en.wikipedia.org/wiki/Mratinje_Dam"
+    ],
+    "cost": "free",
+    "timeNeeded": "~20-30 min stop",
+    "bestTime": "on the drive Šćepan Polje → Plužine → Žabljak",
+    "tags": ["viewpoint", "scenic-drive", "piva-canyon", "dam", "photo"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camp-grab",
+    "name": "Etno Selo Grab (Šćepan Polje rafting camp)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 43.35066,
+    "lng": 18.92336,
+    "description": "Ethno-village + rafting camp on a private Tara River beach right at the Šćepan Polje border — the natural overnight + rafting base for the day you cross from Bosnia. Wooden chalets and pitches, restaurant/bar hanging over the river. ~9km in from the border road (6km asphalt + 2km gravel).",
+    "communityNotes": "Rated ~8.7/10 (4.6★). 'The camp is set in a stunning location' (Caroline C., Jul 2024); 'The absolute isolation and tranquility of the valley' (Matjaž J., Jul 2023); reviewers rave about 'colossal food portions' and 'down to earth, friendly' staff. Runs the classic Brštanovica → Šćepan Polje rafting trip (~13-18km). Note: access to the riverside is down a long flight of stairs — fine for this group, not for limited mobility.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g7208253-d3674187-Reviews-Camp_Grab-Scepan_Polje_Pluzine_Municipality.html",
+      "https://tara-grab.com/",
+      "https://www.booking.com/hotel/me/etno-selo-grab.html"
+    ],
+    "cost": "rooms/chalets ~€45-151/night; Tara rafting ~€70 half-day, ~€150 full-day w/ lunch",
+    "facilities": "hot showers, restaurant/bar, free WiFi, free parking, fire pit, private Tara river beach",
+    "timeNeeded": "1 night (rafting base)",
+    "bestTime": "the night you cross at Šćepan Polje / do Tara rafting",
+    "tags": ["campsite", "rafting", "scepan-polje", "tara-river", "border", "food"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-debeli-brijeg-border",
+    "name": "Debeli Brijeg / Karasovići border (ME↔HR)",
+    "country": "ME",
+    "category": "other",
+    "lat": 42.487389,
+    "lng": 18.437583,
+    "description": "Main Montenegro↔Croatia coastal crossing on the Kotor/Herceg Novi → Dubrovnik route. The trip's biggest queue risk on the Jun 27/28 return — plan the day around it.",
+    "communityNotes": "Summer waits 1-4h, up to 4-5h on peak days (Fri/Sun worst); worst window 10:00-14:00 with Dubrovnik day-trippers. Real reports: 'usual waiting time... 1.5 to 2 hours during peak days.' Cross before 08:00 or after 21:00. Back-door alternative: Vitaljina/Kobila (Konfin) crossing via Molunat — cars only, much quieter, ~1h max even on peak weekends. Check live: kamere.mup.gov.me, nakordoni.eu, borderalarm.com. Note EES biometric checks (live since 10 Apr 2026) add time for non-EU travelers at HR external borders.",
+    "sources": [
+      "https://borderalarm.com/bottlenecks/karasovici-debeli-brijeg/",
+      "https://www.montenegropulse.com/montenegro-croatia-border.html",
+      "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k13812655-How_long_does_it_take_to_cross_border_in_summer-Montenegro.html"
+    ],
+    "bestTime": "cross before 08:00 or after 21:00; or use Vitaljina/Kobila to skip the queue",
+    "tags": ["border", "logistics", "queue-risk", "return-day"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-bobotov-kuk",
+    "name": "Bobotov Kuk (2523m) — Montenegro's highest hike",
+    "country": "ME",
+    "category": "hike",
+    "lat": 43.12778,
+    "lng": 19.03333,
+    "description": "Durmitor's iconic 2523m summit, doable as a long day hike for fit hikers with a thrilling final scramble on exposed rock secured by fixed steel cables. The fit-hiker standard is to start high at Sedlo pass; the Black Lake start is a much bigger 24km / ~10h day.",
+    "communityNotes": "Three options people use: (1) SEDLO PASS out-and-back ~10km, 4-5h, easiest/most popular (drive or ~€15 shared taxi to the trailhead); (2) SEDLO → ŽABLJAK traverse ~17km ~7h, often called the best (needs a car shuttle); (3) BLACK LAKE return ~24km ~10h, hardest. Summit is '500m of scrambling on exposed rock... a little sketchy at times' (The Sandy Feet), secured by fixed cables. LATE-JUNE SNOW IS THE REAL ISSUE: 'In early June about 60% of the trail was still covered in snow', lingering into July on the higher Žabljak-side route. For late June: prefer the Sedlo start, ASK THE NP WARDEN about conditions, and be ready to turn back if snowfields block the upper scramble.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bobotov_Kuk",
+      "https://thesandyfeet.com/our-guide-to-climbing-bobotov-kuk/",
+      "https://www.moonhoneytravel.com/bobotov-kuk-hike/"
+    ],
+    "cost": "€3-5 pp Durmitor NP fee (collected by warden at Sedlo); ~€15 shared taxi to Sedlo",
+    "timeNeeded": "4-5h from Sedlo / ~7h Sedlo→Žabljak / ~10h from Black Lake",
+    "bestTime": "late June can still hold snow — verify locally; start early",
+    "tags": ["hiking", "summit", "scrambling", "cables", "exposed", "snow-risk", "alt-to-meded"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-durmitor-curevac",
+    "name": "Ćurevac viewpoint (Tara Canyon)",
+    "country": "ME",
+    "category": "viewpoint",
+    "lat": 43.2009,
+    "lng": 19.0837,
+    "description": "Cliff-edge viewpoint (~1626m) over the deepest part of the Tara Canyon (Europe's deepest gorge, ~1300m). Easy half-day add-on: ~20min drive from Žabljak to trailhead parking (43.1939, 19.0896), then a 30-45min easy walk to the rim.",
+    "communityNotes": "Low-effort, high-reward and even 'suitable for children.' Road Tripster: 'Arriving at the viewpoint you have a superb view over the surrounding landscape with the Tara River passing by in the canyon below' — bring binoculars, the river is far below. ~2.1km out-and-back, ~170m gain. Drive 7.6km from Žabljak following signs toward Tepca / 'vidikovac', staying on the bigger road at unmarked splits. The perfect bad-weather / rest-day option when a big peak is off.",
+    "sources": [
+      "https://roadtripster.net/montenegro/curevac-tara-river-canyon",
+      "https://www.outdooractive.com/en/route/hiking-trail/montenegro/curevac-stunning-viewpoint-on-tara-canyon/801734735/"
+    ],
+    "cost": "€3-5 pp NP entry",
+    "timeNeeded": "~2h incl. drive (40-60min walk)",
+    "bestTime": "morning light / clear weather for the canyon",
+    "tags": ["viewpoint", "tara-canyon", "easy", "rest-day"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-durmitor-sedlo-pass",
+    "name": "Sedlo Pass scenic drive (P14 Durmitor Ring)",
+    "country": "ME",
+    "category": "viewpoint",
+    "lat": 43.0985,
+    "lng": 19.0503,
+    "description": "At ~1907m, the highest paved pass in Montenegro and the centerpiece of the P14 'Durmitor Ring' between Plužine and Žabljak — rolling alpine meadows under jagged peaks and glacial 'mountain-eye' lakes. Also the standard high trailhead for Bobotov Kuk. Our route arrives on this very road, so it's essentially on-route for free. Pass coordinate is approximate (the pass is a stretch, not a point).",
+    "communityNotes": "Widely praised as the most scenic part of the Durmitor Ring ('the best road trip I've ever done'). REAL ROAD WARNINGS: 'totally paved but full of potholes... very narrow, requires at least one car to pull over to pass... unlit tunnels (extremely dusty)... very steep with some dangerous drop-offs without protections.' Fine in a normal rental in summer, just drive slowly. Open and a highlight in late June (closed roughly mid-Nov onward).",
+    "sources": [
+      "https://learningtobreatheabroad.com/durmitor-national-park-the-best-road-trip/",
+      "https://www.dangerousroads.org/eastern-europe/montenegro/3591-prevoj-sedlo.html",
+      "https://www.montenegropulse.com/durmitor-ring.html"
+    ],
+    "timeNeeded": "P14 Plužine↔Žabljak ~50km; allow 1.5-2h+ with stops",
+    "bestTime": "summer; clear day for the meadow/peak views",
+    "tags": ["scenic-drive", "pass", "p14", "durmitor-ring", "on-route", "bobotov-kuk-trailhead"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-tara-rafting-brstanovica",
+    "name": "Tara Canyon rafting — Brštanovica section",
+    "country": "ME",
+    "category": "activity",
+    "lat": 43.1503,
+    "lng": 19.2952,
+    "description": "Whitewater rafting in Europe's deepest canyon. The exciting, popular run is the ~18km Brštanovica → Šćepan Polje section with 21 of the Tara's ~50 rapids; most operators put in near the Đurđevića Tara bridge. Coordinate = the bridge (meeting points cluster here and at Šćepan Polje).",
+    "communityNotes": "Most operators run the Brštanovica section, 'technically the most demanding... 21 of 50 cascades and the nicest waterfall.' PRICES people report: half-day ~€70 pp (~2h on water), full-day ~€150 pp incl. lunch. LATE-JUNE WATER: May-June = high, fast, COLD water (~10-12°C), 'recommended for experienced rafters' — the most adrenaline-y time (high flow can compress the run to ~30-45min vs 3-4h in August). Wetsuits compulsory. A TripAdvisor regular flags 'Durmitor Adventure' for a half-day starting near the bridge/zipline so you can pair activities; other reputable names: Rafting Montenegro, Tara Tour, Montenegro Adventure. Book a specific company, not a random booth.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k14843114-Half_day_rafting_Tara_Canyon-Montenegro.html",
+      "https://www.zabljak.com/rafting-in-tara-zabljak-durmitor",
+      "https://www.raftingmontenegro.com/about-tara-river-rafting"
+    ],
+    "cost": "half-day ~€70 pp; full-day ~€150 pp incl. lunch",
+    "timeNeeded": "half day (most common) or full day",
+    "bestTime": "late June = high/fast water, coldest, most thrilling; wetsuit required",
+    "tags": ["rafting", "whitewater", "tara-canyon", "adrenaline", "group-wish"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-tara-bridge-zipline",
+    "name": "Đurđevića Tara Bridge zipline",
+    "country": "ME",
+    "category": "activity",
+    "lat": 43.1504,
+    "lng": 19.2952,
+    "description": "Zipline across the Tara Canyon at the historic 1937-40 Đurđevića Tara bridge (365m long, 172m above the river). The flagship 'Extreme Zipline Tara' is ~1km+ across the gorge at up to 120km/h; a shorter twin-line option lets two fly side by side. ~30min NE of Žabljak, right by the rafting put-in.",
+    "communityNotes": "Prices reported: ~€20-25 for the long extreme line (some list up to €40), ~€10-30 for shorter ones; +€10 for pro photos. TripAdvisor: 'It goes super fast over the trees and the Tara, the view is beautiful. I highly recommend.' Common gripe: 'beautiful but it ended far too quickly to justify the price,' and quality varies by booth — pick the long line. Great quick combo with rafting at the same spot.",
+    "sources": [
+      "https://www.montenegropulse.com/durdevica-tara-bridge.html",
+      "https://www.tripadvisor.com/Attraction_Review-g1096284-d15203319-Reviews-Extreme_Zipline_Tara-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+      "https://en.wikipedia.org/wiki/%C4%90ur%C4%91evi%C4%87a_Tara_Bridge"
+    ],
+    "cost": "~€20-25 long extreme line (up to €40 listed); ~€10-30 shorter lines; +€10 photos",
+    "timeNeeded": "~30-60min incl. wait; the ride itself is short",
+    "bestTime": "open ~mid-Apr to early Oct, 10:00-19:00; pair with Tara rafting",
+    "tags": ["zipline", "adrenaline", "tara-bridge", "viewpoint"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camp-mlinski-potok",
+    "name": "Auto Camp Mlinski Potok (Žabljak)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 43.15475,
+    "lng": 19.09964,
+    "description": "Top-rated tent campsite at 1472m on the Žabljak→Black Lake road, ~0.6km / ~15min walk from Black Lake — i.e. walkable to the Veliki Međed and Bobotov Kuk trailheads. Transparent à-la-carte pricing, communal kitchen, campfire area. Best all-round Žabljak base.",
+    "communityNotes": "TripAdvisor 4.7/5, ACSI 9.0/10 — consistently one of the top camps near Žabljak. 'Plenty of toilets and hot showers in a new block'; free WiFi, washing machine, bar/breakfast. Owner praised as 'always helpful.' 'Perhaps the most beautiful part of Europe... Durmitor Žabljak and the Tara Canyon are very special' (Jun 2024). Minor gripe about the shower block (dark at night / no toilet paper).",
+    "sources": [
+      "https://autocampmlinskipotok.com/en/price-list/",
+      "https://www.tripadvisor.com/Hotel_Review-g1096284-d5123170-Reviews-Auto_Camp_Mlinski_Potok-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+      "https://www.campercontact.com/en/montenegro/opstina-zabljak/pitomine/24531/auto-camp-mlinski-potok"
+    ],
+    "cost": "à la carte (adult €5, big tent €4, car €3, electricity €2.50, tax €1.20pp) → ~€31-37/night for 4 + tent + car",
+    "facilities": "hot showers (new block), flush toilets, communal kitchen, washing machine, free WiFi, bar/breakfast, campfire; near Black Lake",
+    "timeNeeded": "base for 2 nights",
+    "bestTime": "walkable to Black Lake trailhead",
+    "tags": ["campsite", "zabljak", "black-lake", "highly-rated", "hot-showers"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camp-razvrsje",
+    "name": "Camp Apartments Razvršje (Žabljak)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 43.1444,
+    "lng": 19.1218,
+    "description": "Big family-run camp + apartments in forest ~2km from Žabljak center and ~2km from Black Lake, with its own restaurant and shop. Doubles as a bargain apartment option — the pick if the group wants a roof instead of tents for a night.",
+    "communityNotes": "TripAdvisor 4.2/5. Owner Mišo is the star: 'an amazingly welcoming and helpful host... set us off on a driving tour he mapped out for us.' Tent camping ~€5pp; apartments are a steal — 'a great two-bedroom apartment with kitchenette for 20 Euros a night,' 'best we've stayed in Montenegro and really good value.' On-site restaurant + grocery, free WiFi, marked trails to Black Lake/peaks; books rafting/zipline/canyoning.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g1096284-d6159872-Reviews-Camp_Apartments_Razvrsje-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+      "https://razvrsje.com/en",
+      "https://www.pitchup.com/campsites/montenegro/northern/zabljak/razvrsje/autocamp-razvrsje/"
+    ],
+    "cost": "tent ~€5pp (~€20 + car for 4); 2-bed apartment ~€20-25/night — strong cheap-villa-style win",
+    "facilities": "showers/toilets, on-site restaurant + grocery, free WiFi, partial shade, marked hiking routes; books adventure activities",
+    "timeNeeded": "base for 1-2 nights",
+    "bestTime": "good budget apartment fallback if not camping",
+    "tags": ["campsite", "accommodation", "apartment", "budget", "zabljak", "restaurant"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-virpazar-kayak",
+    "name": "Virpazar kayak rental (Skadar Lake)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.23949,
+    "lng": 19.08405,
+    "description": "Virpazar is the main launch hub for self-guided kayaking on Skadar Lake — rental shacks by the bridge/canal, paddle out through lily-pad channels onto the open lake. The best half-day lake activity for an active group. The drive-up Pavlova Strana viewpoint pairs with it; a motorboat tour is the relaxed alternative.",
+    "communityNotes": "Consistent rates: single kayak ~€5/hr or ~€20/day, double ~€10/hr or ~€30/day; separate ~€5/person National Park fee at the Virpazar booth. Flat, beginner-friendly water — no experience needed ('calm waters... top-quality kayaks and a comprehensive briefing'). Best in the cooler morning before the boats. For a guided paddle, the most-praised outfit is British-run Undiscovered Montenegro / Villa Miela (Lonely Planet 'Top Choice') — but their flagship is a multi-day tour, so confirm a single-day excursion. Verdict (see me-notes): kayak = best for this group; boat tour only if you'd rather sightsee Grmožur/Kom than paddle.",
+    "sources": [
+      "https://www.montenegropulse.com/lake-skadar-kayaking.html",
+      "https://www.tripadvisor.com/AttractionProductReview-g1232143-d25382560-Kayak_Rental_Adventure_through_Lake_Skadar_from_Virpazar-Virpazar_Bar_Municipalit.html",
+      "https://undiscoveredmontenegro.com/villa-miela/"
+    ],
+    "cost": "single ~€5/hr or €20/day, double ~€10/hr or €30/day + ~€5/person NP fee",
+    "timeNeeded": "2-4h (half day)",
+    "bestTime": "morning (calm water, cooler, fewer boats)",
+    "tags": ["kayak", "skadar", "virpazar", "self-guided", "active", "group-wish"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-pavlova-strana",
+    "name": "Pavlova Strana viewpoint (Skadar Lake)",
+    "country": "ME",
+    "category": "viewpoint",
+    "lat": 42.36298,
+    "lng": 19.06056,
+    "description": "The iconic horseshoe bend where the Rijeka Crnojevića meets Skadar Lake — the most photographed view in the national park. Drive-up viewpoint with a pullout and small restaurant; the half-day Skadar option that needs the least time, just above Rijeka Crnojevića village.",
+    "communityNotes": "Widely called the best short-visit Skadar experience: 'absolutely breathtaking and easily one of the most stunning viewpoints we saw in Montenegro', 'a FIVE STAR panorama... just like in all the brochures', and several say the view 'is superior to taking a boat trip.' Caveat: the most direct approach road is genuinely scary — 'the switchbacks here were truly scary... curves that required three-point turns'; the longer route via the yellow sign past Meterizi is wider. Best light early morning or late afternoon for reflections. Free, 24/7.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g19056348-d19055699-Reviews-Pavlova_Strana_Viewpoint-Sindon_Cetinje.html",
+      "https://www.earthtrekkers.com/photographing-lake-skadar-pavlova-strana/"
+    ],
+    "cost": "free",
+    "timeNeeded": "30-60 min",
+    "bestTime": "golden hour for best light/reflections; drive the wider approach road",
+    "tags": ["viewpoint", "photo", "horseshoe-bend", "skadar", "rijeka-crnojevica"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-skadar-winery-kopitovic",
+    "name": "Vinarija Kopitović (winery near Skadar Lake)",
+    "country": "ME",
+    "category": "food",
+    "lat": 42.24988,
+    "lng": 19.00966,
+    "description": "Small family winery in the Crmnica hills ~10min from Skadar Lake / 15-20min from the coast, making indigenous Vranac and Krstač. Warm, no-frills cellar visit with a big homemade food platter — the most recommended family-winery experience near the lake.",
+    "communityNotes": "Reviewed as 'best wine tasting around Lake Skadar': 'the family is really lovely and warm', 'a real family vibe... tradition spanning 300 years', tastings come with 'a plate full of wonderful homemade food — all kinds of cheese, sausages, bruschetta, olives.' Visitors 'stayed more than 3 hours.' No fixed price (arrange directly). Other names travelers mention: Cermeniza (in Virpazar) and Mašanović. Coordinates verified to Gornji Brčeli.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowUserReviews-g1232143-d12548045-r516799454-Vinarija_Kopitovic-Virpazar_Bar_Municipality.html",
+      "https://www.winetourism.com/wine-appellation/crmnica/"
+    ],
+    "timeNeeded": "1.5-3h",
+    "bestTime": "easy add-on between Skadar and the coast",
+    "tags": ["winery", "wine-tasting", "crmnica", "vranac", "family", "food"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-lovcen-njegos-mausoleum",
+    "name": "Njegoš Mausoleum (Lovćen NP)",
+    "country": "ME",
+    "category": "sight",
+    "lat": 42.39999,
+    "lng": 18.8375,
+    "description": "Monumental hilltop mausoleum of poet-ruler Petar II Petrović-Njegoš on Jezerski vrh (~1660m), the second peak of Mt Lovćen. 461 steps up a marble tunnel lead to one of Montenegro's great 360° panoramas — sea, Skadar, Durmitor, and on a clear day Albania/Italy. Pairs with the Kotor serpentine drive.",
+    "communityNotes": "Consistently rated for the view: '461 steps... worth the view if you can climb and have the time', 'showing nearly all of Montenegro.' Tips travelers repeat: the marble tunnel is 'very cold inside, which helps you not sweat', and 'come down via the hiking trail above the tunnel rather than retracing the steps' for better views. Summit parking is free but tiny and fills fast.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g304076-d552685-Reviews-Njegos_Mausoleum-Cetinje.html",
+      "https://monteguide.com/lovcen-njegos-mausoleum/"
+    ],
+    "cost": "~€3pp NP entry + ~€3pp mausoleum",
+    "timeNeeded": "~1h (climb ~15 min)",
+    "bestTime": "clear morning before haze/heat for the panorama",
+    "tags": ["mausoleum", "lovcen", "viewpoint", "461-steps", "panorama"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kotor-serpentine-viewpoint",
+    "name": "Kotor Serpentine viewpoint (Kotor–Lovćen road)",
+    "country": "ME",
+    "category": "viewpoint",
+    "lat": 42.40417,
+    "lng": 18.78303,
+    "description": "The famous pullout high on the old Austro-Hungarian Kotor–Njeguši serpentine (25 numbered hairpins), with the postcard top-down view of Kotor's fjord-like bay and the snaking switchbacks below. A drive-and-stop highlight on the way up to Lovćen/Njeguši.",
+    "communityNotes": "Strong consensus it's worth it but the road takes nerves: 'incredible views of the old town, Kotor bay and beyond', 'just do it, the views are worth it.' Best panorama from the upper switchbacks (after ~no.20). The catch is traffic: 'the street is very narrow and sometimes vans and even coaches are coming your way — it is a game of millimetres.' IMPORTANT: in summer (~May 25–Oct 15) the Njeguši→Kotor DOWNHILL direction is restricted 08:00–15:00, so plan to drive UP from Kotor (or only come down in the evening). Go before 9am or after 4pm; small car advised.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g295381-d10696013-Reviews-Viewing_Point_at_the_Road_Kotor_Lovcen-Kotor_Kotor_Municipality.html",
+      "https://adriaticways.com/kotor-serpentine-road/"
+    ],
+    "cost": "free",
+    "timeNeeded": "drive ~30-40 min Kotor→top + photo stops",
+    "bestTime": "drive UP from Kotor before 9am or after 4pm (summer downhill 08:00-15:00 restricted)",
+    "tags": ["serpentine", "viewpoint", "kotor-bay", "driving-road", "hairpins", "photo"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kotor-fortress-paid",
+    "name": "San Giovanni Fortress — official (paid) climb",
+    "country": "ME",
+    "category": "hike",
+    "lat": 42.42479,
+    "lng": 18.77012,
+    "description": "The ~1350-step climb up Kotor's city walls to the Castle of San Giovanni (~260m up) for the iconic Bay of Kotor panorama. Official entrance is inside the old town near the North Gate; tickets are checked at a turnstile.",
+    "communityNotes": "Price has crept up: multiple 2025 reviewers report €15/person in high season (was €8 a couple of years ago). 'While it is pricey to enter (15 euro per person) the climb was worth it.' Tickets are checked on the way DOWN at a turnstile, so you can't go up the free Ladder trail and exit through the official gate. June 2025 visitor: 'They check tickets on the way down though so you have to return back through the Ladder of Kotor trek.' VERDICT: either climb before ~8am when the booth is unmanned (= free, also free off-season), or just pay the €15.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g19196637-d14843631-Reviews-Kotor_Fortress-Spiljari_Kotor_Municipality.html",
+      "https://www.moonhoneytravel.com/kotor-fortress/"
+    ],
+    "cost": "€15/person high season (was €8); free before ~8am when booth unstaffed, and off-season",
+    "timeNeeded": "1.5-2.5h round trip",
+    "bestTime": "before 8am (free + cool) or late afternoon; midday is brutally hot and crowded",
+    "tags": ["hiking", "viewpoint", "must-do", "paid", "free-loophole"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kotor-fortress-free-ladder",
+    "name": "Ladder of Kotor — free trail behind the fortress",
+    "country": "ME",
+    "category": "hike",
+    "lat": 42.42917,
+    "lng": 18.7703,
+    "description": "The free serpentine mule track ('Kotorske serpentine' / Ladder of Kotor) that starts OUTSIDE the walls on Tabačina road, north of the Škurda river (~10min from the North Gate). It zig-zags up past the 1518 Church of Our Lady of Remedy to Špiljari village behind the upper fortress, with big bay views.",
+    "communityNotes": "CRITICAL 2024 UPDATE — the old free loophole is largely closed. The 'window/hole' in the fortress wall that used to let Ladder hikers slip into the paid ramparts is now PERMANENTLY SEALED, and a turnstile was added: 'the hole in the wall (window in reality) is permanently closed.' The TRAIL stays free and open and gives huge bay views from Špiljari, BUT it no longer gets you inside San Giovanni for free. So: do the Ladder as a free scenic hike, but if you want the fortress itself, climb the official route before 8am (free) or pay. Steep, exposed, hot — go early with water.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g295381-i9638-k14503029-Ladder_open-Kotor_Kotor_Municipality.html",
+      "https://autismadventuresabroad.com/ladder-of-kotor-hike-to-the-fortress-for-free-everything-you-need-to-know/"
+    ],
+    "cost": "free (scenic trail only — no longer enters the paid fortress)",
+    "timeNeeded": "~45 min up to the Špiljari viewpoint",
+    "bestTime": "early morning, before heat",
+    "tags": ["hiking", "free", "viewpoint", "alternative"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-perast",
+    "name": "Perast",
+    "country": "ME",
+    "category": "town",
+    "lat": 42.48627,
+    "lng": 18.69886,
+    "description": "Tiny baroque waterfront town on the Bay of Kotor, ~15min from Kotor, car-free seafront and the two famous islets just offshore. Photogenic and calm — a good half-day add-on to Kotor.",
+    "communityNotes": "Parking is the notorious pain point: a paid lot (~€8/day) on the main road above town, or free roadside spots along the ridge if you arrive early — 'it's hard to park nearby, but it's worth a try.' Some attendants find you a space and hook you up with a boat operator. Goes from quiet to busy with the midday Kotor/cruise day-trip crowd — early morning or after ~16:00 is much nicer.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g304087-d548922-Reviews-Our_Lady_of_the_Rocks-Perast_Kotor_Municipality.html"
+    ],
+    "cost": "parking ~€8/day paid lot, or free roadside if you find a spot",
+    "timeNeeded": "2-3h incl. boat",
+    "bestTime": "early morning or after 16:00 to dodge day-trippers",
+    "tags": ["scenic-town", "boat", "photogenic", "bay-of-kotor"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-gospa-od-skrpjela",
+    "name": "Our Lady of the Rocks (Gospa od Škrpjela)",
+    "country": "ME",
+    "category": "sight",
+    "lat": 42.48687,
+    "lng": 18.68859,
+    "description": "Man-made islet off Perast, built up over centuries by sinking ships and dropping rocks, topped by a blue-domed church and small museum. Reached by a 5-minute taxi-boat hop from Perast's waterfront.",
+    "communityNotes": "Boat is cheap and frequent — buy directly from the pier operators, not a pre-booked tour: 'water taxi return trip is 5 EUR and entrance to the island additional 2 EUR' (some quote €10, haggle). Most spend 20-30 min on the island, which is plenty; short 10-15 min waits for the next boat. The neighbouring island of St George is a private monastery — photograph only, no landing.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g304087-i23019-k14481265-Do_I_need_to_prebook_boat_ride_for_the_Lady_of_the_Rocks-Perast_Kotor_Municipality.html",
+      "https://www.tripadvisor.com/Attraction_Review-g304087-d548922-Reviews-Our_Lady_of_the_Rocks-Perast_Kotor_Municipality.html"
+    ],
+    "cost": "boat ~€5 return + €2 island/church entry (book at the pier)",
+    "timeNeeded": "~45min-1h total",
+    "tags": ["boat", "church", "photogenic", "bay-of-kotor"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-budva-oldtown-bars",
+    "name": "Budva Old Town bars (Casper, El Mundo, Mañana)",
+    "country": "ME",
+    "category": "nightlife",
+    "lat": 42.27845,
+    "lng": 18.8366,
+    "description": "The walkable bar cluster inside/around Budva's walled old town — the consistently-good nightlife on the coast, and the warm-up before (or instead of) the big Top Hill club above town. Open-air lounges against the old walls.",
+    "communityNotes": "Old Town is where the reliably good bars are. Casper is the perennial favorite: 'one of Budva's most popular outdoor bars... always busy.' El Mundo is an open-air lounge built nightly against the city walls with lights on the stone — 'one of the best Budva bars to hit as a final stop before the nightclubs.' Mañana is a lively Mexican-themed cocktail spot. NOTE on Top Hill (the marquee hilltop club): it historically opens for the season ~July, so in late June 2026 it may not be in full swing — verify before counting on it (see me-notes). Broader Reddit sentiment on Budva itself is split — many call it 'overrated/tacky', but it's fun for nightlife 'if you know what to expect.'",
+    "sources": [
+      "https://twopacksandapup.com/budva-nightlife-breakdown-all-the-top-spots-to-party/",
+      "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k7138933-Budva_Bars_Nightlife-Montenegro.html"
+    ],
+    "timeNeeded": "evening",
+    "bestTime": "late June nightlife is ramping up but pre-July-peak",
+    "tags": ["nightlife", "bars", "old-town", "walkable"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-jaz-beach-budva",
+    "name": "Jaz Beach (camping + beach)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.28219,
+    "lng": 18.80237,
+    "description": "Long open beach ~3km west of Budva, roomier than the in-town beaches, with camping behind it and a history as a festival site (Sea Dance was here 2014-17, now gone). Mix of concession and free sand.",
+    "communityNotes": "Less crammed than Mogren/Slovenska. 'The eastern end (toward Budva) is the quietest section, with fewer concessions and more free-sand space' — 'if you move toward the left of the coast you'll most likely find a quiet spot.' Free access; loungers ~€8-12 each. Good base if you want beach + camping near Budva nightlife. (Note: Sea Dance Festival left Montenegro in 2023 — don't plan around it.)",
+    "sources": [
+      "https://www.montenegro-spirit.com/guides/jaz-beach-guide/",
+      "https://www.tripadvisor.com/Attractions-g304074-Activities-c61-t52-Budva_Budva_Municipality.html"
+    ],
+    "cost": "free entry; loungers ~€8-12 each",
+    "bestTime": "eastern/Budva end is quietest",
+    "tags": ["beach", "camping", "spacious", "swimming"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-lucice-beach",
+    "name": "Lučice Beach (Petrovac)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.20028,
+    "lng": 18.95109,
+    "description": "Small pine-backed pebble cove ~10min walk from Petrovac, Blue-Flag water, sheltered bay — one of the prettier swimming beaches on the southern Riviera.",
+    "communityNotes": "Beautiful and clean BUT small and gets rammed: 'the beach itself & setting is really beautiful, but as many others have said it's incredibly crowded (even at 10am there is essentially no space to put your things).' Public, no entry fee; lounger+umbrella sets ~€15-30 (considered pricey). Verdict: go early or you won't fit. Reachable on foot from Petrovac old town.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g804484-d12701005-Reviews-Lucice_Beach-Petrovac_Budva_Municipality.html",
+      "https://adriaticways.com/lucice-beach-petrovac/"
+    ],
+    "cost": "free entry; lounger set ~€15-30",
+    "bestTime": "arrive before ~9-10am for a spot",
+    "tags": ["beach", "cove", "swimming", "crowded", "petrovac"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-ploce-beach",
+    "name": "Ploče Beach (party / pools / cliff jumps)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.26992,
+    "lng": 18.78486,
+    "description": "A party beach club on a rocky peninsula ~9-10km west of Budva: several saltwater pools cut into the cliffs, DJ/bar, hourly foam parties, and cliff/ladder jumps straight into the sea. A day-drinking, jump-in-the-water vibe rather than a sand beach — the best coast fit for this group.",
+    "communityNotes": "Known for four outdoor saltwater pools (incl. an adult 'party pool'), 'rock-jump style entries into the water', metal ladders down the cliffs, and 'every hour, foam is released into one of the large pools.' Loud music near the DJ booth; rents catamarans/jet skis, parasailing, diving. Pebbly, so sea shoes help. Sunbed ~€15; reachable by car or a ~€8 boat from Budva.",
+    "sources": [
+      "https://adriaticways.com/ploce-beach-budva/",
+      "https://www.lonelyplanet.com/montenegro/coastal-montenegro/budva/attractions/ploce-beach/a/poi-sig/1506335/360154"
+    ],
+    "cost": "sunbed ~€15; boat from Budva ~€8",
+    "timeNeeded": "half to full day",
+    "tags": ["beach", "party", "pools", "cliff-jumping", "foam-party", "group-fit"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-zanjic-beach",
+    "name": "Žanjic Beach (Luštica) + cliff jumping",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.40056,
+    "lng": 18.58454,
+    "description": "White-pebble beach in an olive-grove bay on the outer Luštica peninsula, near the mouth of the Bay of Kotor. Clear water great for snorkeling, cliff-jumping spots nearby, and the main pier/hub for Blue Cave and Mamula boat trips.",
+    "communityNotes": "'Known for its clear waters and pebble beach... excellent for snorkeling.' Doubles as the boat hub — 'most reputable dive centers offer boat pickups directly from the main pier' for the Blue Cave / Mamula. Cliff jumping reported near Kamp Begović: 'head down to the cliffs to the water, ideal for jumping off.' Quieter and more scenic than the Budva beaches; reached by a winding Luštica road or by boat from Herceg Novi.",
+    "sources": [
+      "https://adriaticways.com/zanjice-beach-herceg-novi/",
+      "https://www.montenegropulse.com/lustica-peninsula.html"
+    ],
+    "timeNeeded": "half day (more if combining with Blue Cave)",
+    "tags": ["beach", "snorkeling", "cliff-jumping", "boat-hub", "lustica"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-lustica-blue-cave",
+    "name": "Blue Cave (Plava Špilja), Luštica",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.37401,
+    "lng": 18.59599,
+    "description": "Sea cave on the SW coast of Luštica with a domed roof and pale seabed that lights the water electric blue. Reachable only by boat/kayak — and you can swim inside. Usually combined with Mamula island, Žanjic and the WWII submarine tunnel.",
+    "communityNotes": "You can swim inside — 'the boat ride and the swim inside the cave are generally safe and very exciting.' No entrance fee for the cave, you only pay the boat. Pricing: short direct cave trips ~€15-25/person; half-day combo tours (Blue Cave + Mamula + Žanjic + submarine tunnel) ~€30-60/person, ~3-5h. Boats leave from Herceg Novi, Žanjic and Luštica Bay. BEST LIGHT 10:00-13:00 when the blue glows strongest — go mid-morning (also beats the cruise rush). Bring a mask.",
+    "sources": [
+      "https://adriaticways.com/blue-cave-kotor/",
+      "https://pajoboats.com/en/ture/zanjice-plava-spilja-ostrvo-mamula/"
+    ],
+    "cost": "boat only: ~€15-25 direct, ~€30-60 combo tour (no cave fee)",
+    "timeNeeded": "3-5h combo tour",
+    "bestTime": "10:00-13:00 for the strongest blue effect",
+    "tags": ["activity", "boat", "swimming", "sea-cave", "lustica"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-stari-bar",
+    "name": "Stari Bar (Old Bar) — abandoned fortress town",
+    "country": "ME",
+    "category": "sight",
+    "lat": 42.0872,
+    "lng": 19.1264,
+    "description": "Sprawling ruined medieval/Ottoman town on a hill ~3km inland from modern Bar, largely abandoned after the 1878 siege and a 1979 earthquake — ~200 stone ruins, a hammam, aqueduct and churches across a huge fortified site with mountain-and-sea views. The single best reason to push into the deep south for a ruins-loving group.",
+    "communityNotes": "TripAdvisor 4.5/5 over 600+: 'Fairytale place. Entrance was €5pp, worth a visit!', 'romantic ruins', views 'fantastic'. Repeated tips: wear ankle-supporting shoes (uneven/steep), hat + water in summer, go early to dodge cruise crowds. Less hyped than Kotor, so often quiet. Pairs with the ~2,240-year-old Stara Maslina olive tree 1km away (€1, 15-min stop).",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g608961-d6401127-Reviews-Old_Fortress_Stari_Bar-Bar_Bar_Municipality.html",
+      "https://en.wikipedia.org/wiki/Stari_Bar"
+    ],
+    "cost": "~€4-5pp entry; parking ~€2",
+    "timeNeeded": "1.5-3h",
+    "bestTime": "early morning to beat heat + cruise crowds",
+    "tags": ["ruins", "history", "deep-south"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-ulcinj-old-town",
+    "name": "Ulcinj Old Town (Stari Grad) + Mala Plaža",
+    "country": "ME",
+    "category": "town",
+    "lat": 41.9242,
+    "lng": 19.2086,
+    "description": "Montenegro's most Albanian, most 'oriental'-feeling town (~60-70% Albanian). A well-preserved medieval citadel on a sea bluff, pirate/legend history, far less hyped than Kotor or Budva. Mala Plaža sits right below, fronted by the pedestrian 'Korzo' of cafés and pizzerias.",
+    "communityNotes": "Travelers say it's 'rough around the edges' vs Kotor/Budva but 'sufficiently different' to be worth it — praised for sunsets and atmosphere from the fortress walls. Forum experts warn it gets 'very busy in summer and very full on the little beach', and streets climb steeply from the sea — the OLD TOWN, not the tiny beach, is the draw. June is the start of high season.",
+    "sources": [
+      "https://www.visit-montenegro.com/destinations/ulcinj/attractions/old-town/",
+      "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k15477387-Where_to_spend_10_days_in_Montenegro-Montenegro.html",
+      "https://en.wikipedia.org/wiki/Ulcinj"
+    ],
+    "timeNeeded": "2-3h (half day with beach/lunch)",
+    "bestTime": "late afternoon into sunset; quieter than Kotor",
+    "tags": ["old-town", "albanian", "deep-south", "sunset"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-velika-plaza",
+    "name": "Velika Plaža (Long Beach), Ulcinj",
+    "country": "ME",
+    "category": "beach",
+    "lat": 41.8817,
+    "lng": 19.3013,
+    "description": "Montenegro's biggest beach — ~12-13km of flat sand running from Ulcinj to the Bojana river mouth, ~60m wide. Wide-open and far less cramped than Ulcinj's Mala Plaža; the country's top kitesurf/windsurf coast with a string of beach bars and kite centers. Shallow, gently sloping — good for swimming and learning watersports.",
+    "communityNotes": "Kitesurfers love the space: 'lots of space to launch your kite', 'one of the most beautiful and extensive kite spots in Europe.' Thermal NW side-onshore wind ~15-25 kn most summer afternoons (mornings can be light/offshore), stable May-Sept — but in June thermals can run lighter than mid-summer, so build in buffer time if a kite session is the goal. Caveat people repeat: the 'beach bars aren't budget-friendly.'",
+    "sources": [
+      "https://www.spots4kite.com/spots/velika-plaza-ulcinj/",
+      "https://kitejungle.com/kite-places/montenegro/ada-bojana"
+    ],
+    "bestTime": "afternoons for thermal wind; swim mornings",
+    "tags": ["beach", "kitesurf", "windsurf", "deep-south"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-ada-bojana",
+    "name": "Ada Bojana — river island, kitesurf + stilt fish restaurants",
+    "country": "ME",
+    "category": "nature",
+    "lat": 41.8625,
+    "lng": 19.3611,
+    "description": "Triangular river island in the Bojana delta on the Albanian border, with a ~3km sandy beach (officially nudist/clothing-optional, plus regular sections). The flat-water kite spot at the river mouth is the marquee draw, alongside rustic wooden stilt fish restaurants over the water — sunset seafood dinners are the signature experience.",
+    "communityNotes": "Consistently worth the ~15min hop from Ulcinj. Fish restaurants are the highlight: Restaurant Ada Bojana praised for fish soup, sunset deck and 'reasonable prices'; Ćirkova Čarda for genuinely wild-caught fish; Misko the oldest (since 1991). Two repeated caveats: it's a NUDIST island (comfort-level thing — one traveler bluntly warned others off for that reason), and it gets crowded in peak summer. Best for kitesurfers + a sunset seafood dinner.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ada_Bojana",
+      "https://www.tripadvisor.com/Restaurant_Review-g2284129-d2232746-Reviews-Misko-Ada_Bojana_Ulcinj_Municipality.html"
+    ],
+    "timeNeeded": "half day (beach + sunset dinner)",
+    "bestTime": "sunset for the stilt-restaurant dinner",
+    "tags": ["island", "kitesurf", "nudist", "seafood", "deep-south", "border"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kiteloop-ada-bojana",
+    "name": "Kiteloop Kiteboarding Center (Ada Bojana)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 41.865,
+    "lng": 19.355,
+    "description": "The most-recommended kite school on the coast and Montenegro's only IKO-accredited center, at the Ada Bojana / river-mouth end of Velika Plaža. Lessons, coaching, rental, storage, plus a beach bar/restaurant. Flat, deep water at the river mouth — good for learning. Open ~June-September. Coordinate is representative (kite spots spread along the river-mouth end).",
+    "communityNotes": "TripAdvisor 4.8/5: 'Amazing place with really kind people and professional staff', 'Learnt so much and it truly is a stunning spot to kitesurf', beach-bar vibe with good veggie/vegan food. Two honest negatives: one couple's 9h course got only ~1.5h of instruction on a low-wind day; an independent rider was 'told to leave' for not booking. Net: great school, but wind is thermal — build in buffer time and don't expect free-ride access without paying.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g652061-d6737427-Reviews-Kiteloop_Kiteboarding_Center-Ulcinj_Ulcinj_Municipality.html",
+      "https://kiteloop.net/"
+    ],
+    "bestTime": "June-Sept; afternoons for thermal wind",
+    "tags": ["kitesurf", "school", "deep-south", "iko", "coord-approx"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camp-full-monte",
+    "name": "Camp Full Monte (Sutorina, near Herceg Novi)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 42.4497,
+    "lng": 18.5187,
+    "description": "Tiny (20-pitch) eco / clothing-optional hill campsite in the Sutorina valley, ~25-30 min from Dubrovnik airport just over the Croatian border — a handy first or last night of the Montenegro loop. Off-grid: solar power, composting toilets, solar showers, organic garden, communal home-cooked dinners. Tents only. Coordinate approximate (map sources paywalled) — verify before navigating.",
+    "communityNotes": "TripAdvisor 4.9/5 over 100+, Travelers' Choice: 'Great owners, super helpful', 'meals & hospitality were top notch', 'most beautiful and peaceful setting', facilities 'spotless.' Run by hosts Steve & Denise; very social communal-dinner atmosphere. Clothing-optional but 'no pressure.' It's 3km uphill off the main road with a 20-tent cap, so BOOK AHEAD.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g17492787-d1812152-Reviews-Camp_Full_Monte-Sutorina_Herceg_Novi_Municipality.html",
+      "https://www.full-monte.com/"
+    ],
+    "cost": "own tent pitch from ~€12pp; rental tents €15-20pp incl. breakfast",
+    "facilities": "solar showers, composting toilets, equipped kitchen, spring water, WiFi/4G, organic-garden dinners, hammocks; tents only",
+    "bestTime": "first or last night of the loop (near Dubrovnik airport); book ahead",
+    "tags": ["camping", "eco", "near-dubrovnik-airport", "naturist", "book-ahead", "coord-approx"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camp-maslina-buljarica",
+    "name": "Auto Camp Maslina (Buljarica, near Petrovac)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 42.1944,
+    "lng": 18.9628,
+    "description": "Shaded coast campsite in an old olive grove (300+ year-old trees) at Buljarica bay, ~2km from Petrovac and ~200m from the long, wild Buljarica beach. One of the better-rated coast camps; clean hot showers, free WiFi, open all year. The budget coast base for a beach night.",
+    "communityNotes": "Rated ~4.1/5; campers praise the friendliness, value, cleanliness and olive-grove shade, plus the quiet beach nearby — a genuinely budget coast option vs apartments. (Note: the cheaper, more rustic 'Camp Buljarica' beachfront field is right next door — ~€18-22/night for 4 — if you want rock-bottom on the sand.)",
+    "sources": [
+      "https://campingmaslina.com/price-list/",
+      "https://www.tripadvisor.com/Hotel_Review-g2207929-d3545339-Reviews-Auto_Camp_Maslina-Buljarica_Budva_Municipality.html"
+    ],
+    "cost": "high season ~€6 adult + €4 small tent + €4 car (+€3 electric, +€1 tax) → ~€30-35/night for 4 + car + tent(s)",
+    "facilities": "hot showers, toilets, electricity, free WiFi, washing machine, lots of shade, ~200m to beach",
+    "bestTime": "beach night near Petrovac/Sveti Stefan",
+    "tags": ["campsite", "coast", "budget", "beach", "shade", "petrovac"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-petrovac",
+    "name": "Petrovac (relaxed, cheaper coast base)",
+    "country": "ME",
+    "category": "town",
+    "lat": 42.20684,
+    "lng": 18.94282,
+    "description": "Low-key resort town ~17km southeast of Budva with a small Venetian fortress (Kastio) on the seafront, a palm promenade, and two coves (its own beach + Lučice) within walking distance. A mellower, noticeably cheaper alternative base to Budva — central for Sveti Stefan, Skadar, Buljarica camping and the deep south.",
+    "communityNotes": "Frequently recommended on forums as a calmer, more authentic and more affordable coast base than Budva, while still close to good beaches (Lučice, Buljarica, Drobni Pijesak). Reddit threads steering people away from Budva's tackiness often name Petrovac, Kotor and Perast as the nicer alternatives. The little Kastio fort is a free, photogenic sunset spot. Apartment reality: 4-person places here commonly ~€50-80/night in peak June vs ~€80-120 in central Budva/Kotor.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k14774581-Too_crowded_beaches_Becici_Petrovac_or_Herceg_Novi-Montenegro.html",
+      "https://www.booking.com/apartments/city/me/petrovac-na-moru.html"
+    ],
+    "cost": "4-person apartments commonly ~€50-80/night in peak June (cheaper than Budva/Kotor)",
+    "timeNeeded": "half day / overnight base",
+    "tags": ["town", "budget-base", "relaxed", "beaches-nearby", "apartments"],
+    "rating": 4,
+    "status": "candidate"
+  }
+]

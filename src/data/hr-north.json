@@ -1,0 +1,523 @@
+[
+  {
+    "id": "hr-velika-paklenica-gorge",
+    "name": "Velika Paklenica gorge hike (to Lugarnica / mountain hut)",
+    "country": "HR",
+    "category": "hike",
+    "lat": 44.29408,
+    "lng": 15.45754,
+    "description": "The classic Paklenica day-hike: a mostly-shaded canyon walk under 350-400m cliffs from the upper car park, past the Anica Luka plateau to the Lugarnica forest hut (cash-only cafe) and on to Planinarski dom Paklenica (mountain hut, ~6km/2-2.5h one way). Only ~54min from Zadar, so an easy half- or full-day from a Zadar/Starigrad base.",
+    "communityNotes": "TripAdvisor hikers: 'It then becomes a nicely shaded path that takes you to the foresters house - a small lodge and cafe.' Crowding/parking is the real catch in June: one June 2026 visitor 'parked on the road more than 1 km from the parking lot.' Many turn back at Lugarnica; AllTrails clocks the full hut round trip at ~3h40.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1466943-d14204896-Reviews-Paklenica_National_Park-Starigrad_Paklenica_Zadar_County_Dalmatia.html",
+      "https://www.np-paklenica.hr/en/hiking/hiking-trails-en",
+      "https://www.alltrails.com/trail/croatia/zadar/velika-paklenica-planinarski-dom-paklenica"
+    ],
+    "cost": "Park entry ~€10/adult in summer (parking included)",
+    "timeNeeded": "half day to Lugarnica, full day to the hut and back",
+    "bestTime": "start before 9am for a parking spot and to beat heat/crowds",
+    "tags": ["velebit", "canyon", "near-zadar"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-anica-kuk",
+    "name": "Anića kuk (summit scramble + climbing wall)",
+    "country": "HR",
+    "category": "hike",
+    "lat": 44.29003,
+    "lng": 15.45505,
+    "description": "The 350m limestone monolith that is Paklenica's icon and one of Europe's top sport-climbing crags. Non-climbers can reach the top via a steep, exposed scramble with a short via-ferrata section for huge canyon-and-sea views; serious routes for those with gear.",
+    "communityNotes": "Hikers report 'around 4h to hike from the park entrance, the trail itself pretty pleasant except last 40 mins that you need to climb on rocks' - a genuine scramble, not a stroll, with exposure on the ferrata bits. Climbers warn the rock is sandbagged: 'add roughly one level to the grading.'",
+    "sources": [
+      "https://www.summitpost.org/ani-a-kuk-stup/852616",
+      "https://majatravels.com/paklenica-21-5-hours-to-summit-anica-kuk/",
+      "https://www.theviaferrataguidesite.com/via-ferrata-paklenica-one-of-the-best-via-ferratas-in-europe/"
+    ],
+    "timeNeeded": "~6-7h round trip from the entrance to the summit",
+    "bestTime": "morning start; April-Oct",
+    "tags": ["velebit", "climbing", "via-ferrata", "exposed"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-modric-cave",
+    "name": "Modrič Cave (adventure caving)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 44.25684,
+    "lng": 15.53733,
+    "description": "A real speleo-adventure near Rovanjska/Starigrad (~40min from Zadar): overalls, helmet and headlamp, no stairs/lights/paths - guided only. A hands-on alternative to a tourist show-cave, perfect for an adventurous group wanting a half-day off the beaten track.",
+    "communityNotes": "TripAdvisor: 'an authentic caving experience... beautiful with lots of different points of interest, requiring a certain level of flexibility and fitness.' Repeatedly praised over the nearby polished show-caves for being the real, muddy thing.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1190825-d1549389-Reviews-Modric_Cave-Rovanjska_Zadar_County_Dalmatia.html",
+      "https://modric-cave.com/"
+    ],
+    "cost": "guided tour, book ahead (~€25-35pp typical)",
+    "timeNeeded": "half day (tour ~1.5-2h underground + gear)",
+    "bestTime": "year-round (cool inside - bring a layer); book in advance",
+    "tags": ["caving", "adventure", "guided"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-zrmanja-kayaking",
+    "name": "Zrmanja canyon kayaking (Obrovac base)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 44.20098,
+    "lng": 15.6821,
+    "description": "The standout active day of the region: a ~14km guided paddle through the emerald Zrmanja canyon (typically Kaštel Žegarski to Muškovci), past tufa waterfalls - including the 11m Veliki buk you portage on foot - with runnable 1-5m drops and swimming/jumping stops. Outfitters base around Obrovac.",
+    "communityNotes": "Conditions are ideal in June as water drops: 'Paddling isn't hard or dangerous during the summer; the water is clear and refreshing - perfect adventure for beginners.' Honest caveat - low summer water means 'more like paddling with lots of effort rather than traditional rafting,' so it's scenery + jumps, not big whitewater. 'The second part... is faster and more intense, where participants jump over several waterfalls of 1m, 2m, 3m, and 5m.'",
+    "sources": [
+      "https://raftrek.com/tour/kayaking-zrmanja-river/",
+      "https://touringcroatia.com/kayaking-zrmanja-hidden-gem-adventure/",
+      "https://www.getyourguide.com/kastel-zegarski-l4757/from-obrovac-half-day-rafting-lub-kayaking-on-zrmanja-river-t151136/"
+    ],
+    "cost": "~€55-65pp incl. guide, gear, insurance, park fee",
+    "timeNeeded": "half/full day (~4-6h on the water + breaks)",
+    "bestTime": "June onward (low, clear water); confirm meeting point with the outfitter",
+    "tags": ["kayaking", "canyon", "cliff-jumping", "zrmanja"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-tulove-grede",
+    "name": "Tulove grede (Winnetou rocks)",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 44.26351,
+    "lng": 15.6556,
+    "description": "Dramatic breccia rock towers (1120m) on southern Velebit, rising above the south portal of the Sv. Rok tunnel - the famous 1960s 'Winnetou' Western filming location. Reached via the historic Majstorska cesta from Obrovac; otherworldly, empty landscape.",
+    "communityNotes": "From the parking it's '45 to 60 minutes' to the top for a 'magnificent view over the peaks of Tulove grede.' The access road has unpaved sections: 'a 4x4 is recommended... although you can drive it in a regular car, just drive slowly.' Travelers love the movie nostalgia and the solitude; pairs with the Zrmanja viewpoint and inland Knin route.",
+    "sources": [
+      "https://www.summitpost.org/tulove-grede/153393",
+      "https://thousandtravelmiles.nl/en/croatia/tulove-grede-croatia",
+      "https://www.lifeandventures.com/tulove-grede-velebit-mountain/"
+    ],
+    "timeNeeded": "~2-3h incl. hike (plus the rough drive)",
+    "bestTime": "clear day for views; avoid the dirt road after heavy rain",
+    "tags": ["velebit", "winnetou", "offbeat", "inland-route"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-zrmanja-viewpoint",
+    "name": "Zrmanja canyon viewpoint (Pariževačka glavica)",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 44.22369,
+    "lng": 15.61534,
+    "description": "A cliff-edge lookout (~151m) over the Zrmanja's emerald hairpin meanders - one of the best roadside views in the region. ~45min from Zadar and ~50min from Tulove grede, so it slots straight into the inland route to Split.",
+    "communityNotes": "'The view is truly breathtaking'; called 'one of the hidden gems of our trip through Croatia' and 'a top spot for a lunch break.' Access: the last '5 to 10 minutes you drive on dirt road with loose stones' then a short walk - 'this place really is accessible to everyone.' You can also spot ruins of the Pržunac fortress on the opposite cliff.",
+    "sources": [
+      "https://thousandtravelmiles.nl/en/croatia/zrmanja-canyon-croatia",
+      "https://www.komoot.com/highlight/749082",
+      "https://avanturistic.com/adventure/70287/viewpoint-of-zrmanja-canyon-parizevacka-glavica"
+    ],
+    "cost": "free",
+    "timeNeeded": "30-60 min",
+    "tags": ["viewpoint", "zrmanja", "photo-stop", "inland-route"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-knin-fortress",
+    "name": "Knin Fortress (Kninska tvrđava)",
+    "country": "HR",
+    "category": "sight",
+    "lat": 44.03466,
+    "lng": 16.19331,
+    "description": "One of the largest fortresses in Croatia/Europe - a sprawling hilltop labyrinth over the town with views to Dinara (Croatia's highest mountain) and the Krka source. The natural anchor stop if you take the inland Zadar-Split route.",
+    "communityNotes": "Strongly praised by the few who go: 'this fort is like none other... an interconnected labyrinth... delightfully green and park-like (without feeling touristy).' Repeated advice: 'You simply must make time for Knin Fortress if you have a car and are driving up the coast.' On-site restaurant; all battlements walkable.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1026899-d2355879-Reviews-Knin_Fortress-Knin_Sibenik_Knin_County_Dalmatia.html",
+      "https://en.wikipedia.org/wiki/Knin_Fortress",
+      "https://www.rjontour.com/knin-croatia/"
+    ],
+    "cost": "~€8-10pp",
+    "timeNeeded": "1-2h",
+    "tags": ["fortress", "inland-route", "underrated"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-pet-bunara",
+    "name": "Pet Bunara (Zadar old-town konoba)",
+    "country": "HR",
+    "category": "food",
+    "lat": 44.11303,
+    "lng": 15.22919,
+    "description": "Long-running old-town konoba on Trg Petra Zoranića doing traditional Dalmatian dishes well - pašticada (braised beef), peka/lamb under the bell, black risotto - with an organic, seasonal slant. The most consistently recommended 'real food, not a tourist trap' sit-down in Zadar.",
+    "communityNotes": "TripAdvisor reviewers single out the signature dish ('Divine pasticada'; 'try pašticada with homemade gnocchi') and praise soul/quality over flash. In the old town so mid-range, not cheap (~€15-30/person mains).",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g295374-d2313284-Reviews-Pet_Bunara-Zadar_Zadar_County_Dalmatia.html"
+    ],
+    "cost": "mid-range, ~€15-30/person",
+    "timeNeeded": "~1.5-2h dinner",
+    "tags": ["dalmatian", "traditional", "old-town"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-bruschetta-zadar",
+    "name": "Restaurant Bruschetta (Zadar waterfront)",
+    "country": "HR",
+    "category": "food",
+    "lat": 44.11381,
+    "lng": 15.22498,
+    "description": "Mediterranean/seafood restaurant on the old-town sea wall with a terrace that catches the sunset over the channel - fresh fish, calamari, seafood pasta. A rarer combo of value and location on the riva.",
+    "communityNotes": "Travelers call out freshness and the view: 'Our first meal in Zadar and we loved the freshness, taste and choice'; 'Calamari was fantastic and fresh'; 'stunning sea view.' Reserve a terrace table for sunset.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g295374-d2207142-Reviews-Restaurant_Bruschetta-Zadar_Zadar_County_Dalmatia.html"
+    ],
+    "cost": "mid-range, ~€15-30/person",
+    "timeNeeded": "~1.5-2h",
+    "bestTime": "book a terrace table for sunset",
+    "tags": ["seafood", "sunset", "waterfront"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-garden-lounge-zadar",
+    "name": "The Garden Lounge (Zadar city walls)",
+    "country": "HR",
+    "category": "nightlife",
+    "lat": 44.11809,
+    "lng": 15.22362,
+    "description": "The original 'The Garden' - a chilled Ibiza-style lounge atop Zadar's old city walls with day-beds, cocktails, sea views and DJs by night. Founded by UB40's Nick Colgan & James Brown (the same crew behind the Garden festivals). A relaxed sundowner-into-night spot, not a sweaty club.",
+    "communityNotes": "Zadar forum: 'Garden lounge is an excellent place to have your drink in a horizontal position on a bed and have a great view of town listening to nice music.' Caveat: service can be slow when busy. Great for a group sunset session.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g295374-i10777-k9728016-Nightlife_in_Zadar-Zadar_Zadar_County_Dalmatia.html"
+    ],
+    "cost": "cocktails ~€8-12",
+    "bestTime": "sunset onward",
+    "tags": ["lounge", "sunset", "cocktails", "city-walls"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-ledana-zadar",
+    "name": "Ledana Lounge Bar (Queen Jelena park)",
+    "country": "HR",
+    "category": "nightlife",
+    "lat": 44.11253,
+    "lng": 15.22958,
+    "description": "Open-air lounge/club set among trees in Queen Jelena Madijevka park just off the old-town core - resident & guest DJs, concerts, themed parties and a romantic lit-up garden setting. A step more 'club' than the Garden's chill.",
+    "communityNotes": "Zadar forum pick for 'wee hours, drinks, music and nicely lighted romantic setting in nature.' Repeatedly listed among the top central going-out spots; good for a group wanting music + atmosphere without leaving the centre.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g295374-i10777-k9728016-Nightlife_in_Zadar-Zadar_Zadar_County_Dalmatia.html"
+    ],
+    "bestTime": "late evening",
+    "tags": ["club", "djs", "park", "central"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-nin-old-town",
+    "name": "Nin Old Town",
+    "country": "HR",
+    "category": "town",
+    "lat": 44.24335,
+    "lng": 15.18413,
+    "description": "A tiny 2,000-year-old town on a small sand-ringed island linked by two old stone bridges - the medieval Croatian royal seat. Walkable in under an hour: the world's smallest cathedral (Holy Cross), the Gold & Silver of Nin treasury, plus easy access to the beaches, salt pans and healing mud nearby. A compact, atmospheric half-day base for the whole Nin cluster.",
+    "communityNotes": "Visitors describe it as 'a very calm nice place' with a 'nice location' that works best combined with the beach + salt + mud rather than as a standalone sight.",
+    "sources": [
+      "https://m.nin.hr/en/blog-item/1/nin-is-the-croatian-bethlehem",
+      "https://croadventure.com/en/guide/nin-magical-city-of-kings"
+    ],
+    "timeNeeded": "1-2h (more with beach)",
+    "tags": ["historic", "island-town", "near-zadar"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-st-nicholas-nin",
+    "name": "Church of St. Nicholas (Prahulje, Nin)",
+    "country": "HR",
+    "category": "sight",
+    "lat": 44.231,
+    "lng": 15.1781,
+    "description": "A stark little pre-Romanesque church (late 11th-early 12th c.) standing alone on an earthen mound in an open field - per Wikipedia 'the only surviving example of early Romanesque architecture in all of Dalmatia,' and by tradition the coronation church of Croatian kings. Iconic silhouette and a superb open-field sunset spot.",
+    "communityNotes": "Interior is usually closed, so it's an exterior/photo/sunset stop - 'just here on this place that the visitor can experience an unforgettable sunset.' Short wooden path from a small parking lot; quick.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Church_of_St._Nicholas,_Nin",
+      "https://www.spottinghistory.com/view/10086/st-nicholas-church/"
+    ],
+    "timeNeeded": "20-30 min",
+    "bestTime": "sunset",
+    "tags": ["historic", "sunset", "photo-stop", "near-zadar"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-kraljicina-plaza-nin",
+    "name": "Queen's Beach (Kraljičina plaža) + Nin mud",
+    "country": "HR",
+    "category": "beach",
+    "lat": 44.25138,
+    "lng": 15.17524,
+    "description": "Croatia's longest sandy beach (~3km) with warm, very shallow turquoise water you can wade out hundreds of metres, framed by views across to the Velebit mountains - a rarity on this rocky coast. Beside it, the lagoon holds the famous black peloid mud: smear it on, dry ~30 min, rinse in the sea (free).",
+    "communityNotes": "Rated among Croatia's best sandy beaches (top-ranked by Germany's ADAC). On the mud: 'You gotta try out the mud at the beach' and 'Mud helped me very much' - a free, photogenic novelty. Caveats: very shallow (poor for real swimming) and it gets busy + windy in season; go earlier in the day in mid-June.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g303820-d3228738-Reviews-Ninska_Laguna_Beach-Nin_Zadar_County_Dalmatia.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g303820-d3460941-r521681464-Nin_s_Lagoon-Nin_Zadar_County_Dalmatia.html"
+    ],
+    "cost": "free (parking ~€4-5)",
+    "timeNeeded": "half day",
+    "bestTime": "morning to beat wind/crowds",
+    "tags": ["sandy", "shallow", "mud-bath", "velebit-view"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-sabunike-privlaka",
+    "name": "Sabunike Beach (Privlaka)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 44.25783,
+    "lng": 15.16058,
+    "description": "Long shallow sandy beach NW of Nin in the Privlaka-Sabunike area, with gradually deepening warm water and reliable bura wind - Croatia's #2 wind-/kite-/windsurf spot after Bol. Best pick in the cluster for an active group: sandy lounging plus genuine watersports.",
+    "communityNotes": "'In some places you can walk over 100 meters into the sea and still be standing'; sea floor 'becomes sandy and clean' past a thin gravel edge; 'excellent for windsurfing and kitesurfing.' Busy/windy in season - the wind is the point if you want to sail. (Note: one nearby section is naturist/FKK.)",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g5237895-d7929814-Reviews-Sabunike_Beach-Privlaka_Zadar_County_Dalmatia.html",
+      "https://www.privlaka-tz.hr/en/beaches"
+    ],
+    "cost": "free",
+    "timeNeeded": "half day",
+    "bestTime": "afternoon for wind/watersports",
+    "tags": ["sandy", "kitesurf", "windsurf", "near-zadar"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-punta-bajlo-zadar",
+    "name": "Punta Bajlo beach (Zadar)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 44.09493,
+    "lng": 15.24882,
+    "description": "A laid-back, pine-shaded rocky/pebble + concrete beach on a wooded peninsula just south of Zadar centre - clear water, a small café (pizza, grilled food), showers/toilets, and far fewer tourists than the main city beach. A quieter local-favourite for a relaxed day or sunset swim.",
+    "communityNotes": "Travelers note 'not a lot of people around, especially during sunset,' and that it's popular 'not only for tourists but also for locals from both Arbanasi and Zadar.' Pine shade is a real plus in June heat.",
+    "sources": [
+      "https://www.zadar4fun.com/punta-bajlo-beach-zadar",
+      "https://wanderlog.com/place/details/406579/punta-bajlo-beach"
+    ],
+    "cost": "free",
+    "timeNeeded": "half day",
+    "bestTime": "late afternoon/sunset",
+    "tags": ["pebble", "shade", "local-favourite", "sunset", "zadar-city"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-roski-slap",
+    "name": "Roški slap (Krka NP - waterfalls + legal swim)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 43.90375,
+    "lng": 15.97507,
+    "description": "Krka's quieter second waterfall - a wide 650m spread of cascades (the 'Necklaces'), old watermills and the nearby Oziđana pećina cave. Far calmer than Skradinski buk and, crucially, one of the only THREE spots in Krka where swimming is legal (Jun 1-Sep 30).",
+    "communityNotes": "Praised as 'a peaceful place to retreat after what was turning into an overcrowded afternoon at Skradinski buk,' with a buoyed swimming area ~100-200m downstream of the falls. But divisive - one reviewer: 'The Roski Slap is a nice area but not spectacular at all.' Water shoes recommended (cold, sharp rocks). The 8.5km Stinice-Roški-Oziđana pećina trail is well-liked.",
+    "sources": [
+      "https://npkrka.hr/en_us/informacije/f-a-q/",
+      "https://nomanbefore.com/swimming-waterfalls-krka-national-park/"
+    ],
+    "cost": "covered by the Krka NP ticket (~€40 summer; ~€30 after 16:00)",
+    "timeNeeded": "1.5-2h",
+    "bestTime": "after the Skradinski buk crowds; summer parking at Laškovica/Bogatić (Roški lot closed Jun-Sep)",
+    "tags": ["krka", "waterfall", "swimming", "quiet"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-skradin",
+    "name": "Skradin (Krka gateway town)",
+    "country": "HR",
+    "category": "town",
+    "lat": 43.81785,
+    "lng": 15.92332,
+    "description": "The riverside gateway town to Krka's main entrance: pretty marina, stone old town, good restaurants. The €40 park ticket includes the free 25-min NP boat upstream to Skradinski buk, or you can walk the scenic 3.4km riverside path. People overnight here to hit the park at opening.",
+    "communityNotes": "Consistently called an 'overlooked gem' and used as a base to be first into the park: 'take an early bus to Skradin and head straight to Skradinski buk' to get the falls near-empty. A relaxed marina town (Bill Gates' yacht docks here) - better for a meal/sleep than for sights of its own.",
+    "sources": [
+      "https://jetsettingfools.com/skradin-worth-a-look-around/",
+      "https://www.minimalistjourneys.com/krka-sustainable-travel-guide/"
+    ],
+    "cost": "Skradin park ferry included in the Krka ticket; town free",
+    "timeNeeded": "overnight or a meal stop",
+    "tags": ["krka", "base-town", "marina"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-sibenik-old-town",
+    "name": "Šibenik Old Town",
+    "country": "HR",
+    "category": "town",
+    "lat": 43.735,
+    "lng": 15.8895,
+    "description": "An underrated medieval white-stone old town between Zadar and Split - a labyrinth of stepped alleys, four fortresses and the UNESCO St James cathedral. The first city on the Adriatic founded by Croats; quieter and more authentic than Split, and an ideal lunch/fortress-sunset stop on the way south.",
+    "communityNotes": "Repeatedly the pleasant surprise of Dalmatia: 'Šibenik has just recently started to be discovered by tourists and has been a pleasant surprise for many,' with an 'atmospheric authentic old town of white stone' that's 'quieter and less touristy than Split.' Honest caveat: very hilly, lots of stairs, and limited open-sea views vs Zadar.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g294453-i1554-k14404658-Zadar_or_Sibenik-Croatia.html",
+      "https://www.lonelyplanet.com/articles/why-visit-sibenik-croatia"
+    ],
+    "timeNeeded": "half day",
+    "bestTime": "early summer = far fewer crowds than Split",
+    "tags": ["historic", "underrated", "stone-town"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-sv-jakov-cathedral",
+    "name": "Cathedral of St James (Šibenik, UNESCO)",
+    "country": "HR",
+    "category": "sight",
+    "lat": 43.73564,
+    "lng": 15.88913,
+    "description": "UNESCO World Heritage cathedral (1431-1536) built entirely of stone with no binding materials, famous for the exterior frieze of 71 unique carved heads of ordinary 15th-c. Šibenik citizens.",
+    "communityNotes": "The frieze is the star - '71 extremely lifelike heads,' none facing each other, expressions 'from calm to frowning to proud, annoyed, and fearful.' A must-see even for the non-religious, but realistic on scope: 'isn't very big and can be seen in 15-30 minutes.' Exterior + frieze are free to view from the square.",
+    "sources": [
+      "https://whc.unesco.org/en/list/963/",
+      "https://www.tripadvisor.com/Attraction_Review-g295375-d319597-Reviews-Saint_Jacques_Cathedral-Sibenik_Sibenik_Knin_County_Dalmatia.html"
+    ],
+    "cost": "~€5-7 interior; exterior free",
+    "timeNeeded": "20-30 min",
+    "tags": ["unesco", "stone", "architecture"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-barone-fortress",
+    "name": "Barone Fortress (Šibenik - sunset bar + views)",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 43.73729,
+    "lng": 15.89637,
+    "description": "1646 hilltop fort on Vidakuša hill above the old town, restored with an augmented-reality history tour and a sunset bar with summer jazz/movie nights. ~20-min uphill walk from the cathedral; the local pick for the best sunset view in Šibenik.",
+    "communityNotes": "'The views from St Michael's fortress... do not compare to those from Barone Fortress, especially at sunset.' The AR goggles are 'innovative and engaging' but occasionally 'glitchy.' Good value via the 3-fortress combo ticket (~€11.50, valid 7 days). Come for sunset drinks.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g295375-d11801900-Reviews-Barone_Fortress-Sibenik_Sibenik_Knin_County_Dalmatia.html",
+      "https://www.inyourpocket.com/sibenik/barone-fortress_145325v"
+    ],
+    "cost": "~€6 alone, or 3-fortress combo ~€11.50",
+    "timeNeeded": "45 min-1h",
+    "bestTime": "sunset",
+    "tags": ["fortress", "sunset", "bar", "views"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-kamenjak-vransko",
+    "name": "Kamenjak viewpoint (Vransko jezero)",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 43.8942,
+    "lng": 15.6105,
+    "description": "Clifftop viewpoint (~283m) over Lake Vrana with a panoramic telescope and a traditional-style info centre / tasting room (wine, cheese, olive oil), looking out over the lake, olive groves and the Zadar-Šibenik-Kornati archipelagos. A quick, high-reward stop right off the Zadar-Šibenik road.",
+    "communityNotes": "Genuinely raved about - 'the jaw dropping view of the Vrana lake and Kornati archipelago impressed [me] most'; local press calls it 'the most beautiful viewpoint in the world.' Practical tip: visit before noon - afternoon sun is behind the Kornati and washes out photos.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowUserReviews-g1190821-d6028504-r777703767-Vrana_Lake_Nature_Park-Pakostane_Zadar_County_Dalmatia.html",
+      "https://www.zadar.hr/en/experience/explore/guide-to-nature-park-vransko-lake"
+    ],
+    "cost": "free / small park fee",
+    "timeNeeded": "30-60 min",
+    "bestTime": "morning (before noon)",
+    "tags": ["viewpoint", "kornati-view", "on-route", "tasting"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-sakarun-beach",
+    "name": "Sakarun (Saharun) Beach, Dugi Otok",
+    "country": "HR",
+    "category": "beach",
+    "lat": 44.09317,
+    "lng": 14.86617,
+    "description": "Dugi Otok's famous 300-800m white-sand crescent over a shallow turquoise bay backed by Aleppo pines - the 'Croatian Caribbean,' shallow enough to wade out ~250m. BACKUP ONLY for this leg: reaching it needs the Zadar->Brbinj car ferry (see notes), which doesn't fit the tight Jun 16-18 window - keep it for a future trip or the post-pickup island block.",
+    "communityNotes": "Beauty is consistent, but crowding/litter/price come up a lot. Good: 'Came in the morning before 10:30am. There might have been 8 people in the water and another 6 on the beach.' Bad: 'incredibly overcrowded, dirty (think hideous festival portaloos and cigarette butts everywhere).' Costs: 'They will charge you 15 euros for parking and 6 euros for beer'; food pricey. A mid-May visitor warned the beach 'doesn't get cleaned until June.'",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1190826-d4587489-Reviews-Sakarun_Beach-Dugi_Island_Zadar_County_Dalmatia.html"
+    ],
+    "cost": "parking ~€15/day in season (free low season)",
+    "timeNeeded": "2-3h (+ ferry day)",
+    "bestTime": "arrive before 10:30 to beat crowds and anchored boats",
+    "tags": ["sandy", "island", "ferry-required", "backup"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camping-pinus",
+    "name": "Camping Pinus (Starigrad-Paklenica)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 44.3225,
+    "lng": 15.392,
+    "description": "Small, shaded campsite ~5 min from Starigrad at the foot of Paklenica NP, pitches under pines right on the sea with small private beaches. Best for tents (steep access for big campers). Mountain hikes + sea swim from one base. NOTE: park4night has flagged it 'temporarily closed' - verify it's open for June 2026.",
+    "communityNotes": "park4night 4.52/5 (21 reviews): 'All the facilities, shade from pines and a private beach,' 'clean restrooms and hot water,' 'attractive rates and shaded spots.'",
+    "sources": [
+      "https://park4night.com/en/place/18207"
+    ],
+    "cost": "~€45-50 for 4 + tent + car (est. from €10/van + €10/pp + €5 power)",
+    "facilities": "hot showers, clean toilets, electricity, free WiFi, laundry, pine shade, private beach",
+    "tags": ["paklenica", "seaside", "shade", "tents"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camp-np-paklenica",
+    "name": "Camp 'Nacionalni park' Paklenica",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 44.2881,
+    "lng": 15.4458,
+    "description": "Simple seaside camp directly on the water with a public beach at the end, pick-your-own-spot, walkable toward the Paklenica NP entrance - an ideal base for a morning Velika/Mala Paklenica hike + afternoon swim, ~45min from Zadar.",
+    "communityNotes": "park4night 4.12/5 (34 reviews): 'Super fine campsite directly on the sea; very clean sanitary facilities!' 'Small uncomplicated campsite right on the water. Everyone picks their own spot.' Caveat: crowded in peak season; some report extra charges for 1-2 night stays.",
+    "sources": [
+      "https://park4night.com/en/place/360796"
+    ],
+    "cost": "~€50+ for 4 + tent + car (€40 base for 2 + vehicle; +€0.50/24h power; services free after 3 nights)",
+    "facilities": "hot showers, electricity, drinking water, WiFi, direct sea/beach access",
+    "tags": ["paklenica", "seaside", "hiking-base"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camping-simuni",
+    "name": "Camping Village Šimuni (Pag island)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 44.46528,
+    "lng": 14.96738,
+    "description": "Large 3-star camp on Pag (reached by bridge, ~1h from Zadar) directly on the sea with a ~4km stretch of sandy/pebble beaches; ~900 pitches, mobile homes, restaurants, shop. Big and lively rather than secluded - good amenities and clean facilities.",
+    "communityNotes": "park4night: ~€24/night for a seafront pitch incl. electricity + water in pre-season. Consistently praised as clean, well-organized, with good sanitary blocks and lovely beaches.",
+    "sources": [
+      "https://park4night.com/en/place/19574",
+      "https://www.tripadvisor.com/Hotel_Review-g2030955-d2315399-Reviews-Camping_Village_Simuni-Kolan_Island_of_Pag_Zadar_County_Dalmatia.html"
+    ],
+    "cost": "~€40-55 for 4 + tent + car in mid-June (pre-season seafront pitch ~€24)",
+    "facilities": "hot showers, 6 sanitary blocks (family bathrooms), electricity, water, laundry, WiFi, sandy/pebble beaches, shop/restaurants",
+    "tags": ["pag", "seaside", "amenities", "sandy"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camp-skradin",
+    "name": "Camp Skradin (Krka base)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 43.8348,
+    "lng": 15.9092,
+    "description": "Small camp on an olive-oil/wine farm at Skradin, ~10 min by bike to the Krka NP Skradin boat entrance. Shaded, family-run, with homemade oil & wine for sale - a cheap, pleasant base for hitting Krka at opening.",
+    "communityNotes": "park4night: 'Very kind people and nicely shaded places' with 'all the comfort of a camping.' Clean new facilities and good price repeatedly noted.",
+    "sources": [
+      "https://park4night.com/en/place/10789",
+      "https://www.tripadvisor.com/Hotel_Review-g666519-d7185528-Reviews-Camp_Skradin-Skradin_Sibenik_Knin_County_Dalmatia.html"
+    ],
+    "cost": "~€35-40 for 4 + tent + car (van + 2 incl. water & power ~€25)",
+    "facilities": "hot showers, clean toilets, electricity, drinking water, WiFi, vine shade; laundry €5",
+    "tags": ["krka", "farm", "shade", "budget"],
+    "rating": 4,
+    "status": "candidate"
+  }
+]

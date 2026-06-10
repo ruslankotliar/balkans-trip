@@ -1,0 +1,499 @@
+[
+  {
+    "id": "hr-cetina-zipline",
+    "name": "Cetina Canyon Zipline (Omiš)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 43.4455,
+    "lng": 16.6926,
+    "description": "8-line zipline over the Cetina canyon near Omiš — 2,100m total, longest line 700m at 150m above the canyon floor. The crowd-pleaser of the coast's adventure hub; office in the old town, course ~3km upstream.",
+    "communityNotes": "Consistently praised on TripAdvisor: “The views are phenomenal... good value for money especially since you do several zip lines” (Apr 2026); “nothing compares to the adrenaline rush, the views” (May 2026). Operated by Zip-line Croatia; most ‘from Split’ tours resell this same course.",
+    "sources": [
+      "https://zipline-croatia.com/en/",
+      "https://www.tripadvisor.com/AttractionProductReview-g644074-d16749656-Zipline_Croatia_Cetina_Canyon_Zipline_Adventure_from_Omis-Omis_Split_Dalmatia_Coun.html"
+    ],
+    "cost": "€80 pp (private €120); book ≥1 day ahead in June",
+    "timeNeeded": "2.5–3h",
+    "tags": ["zipline", "omis", "cetina", "adventure"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-cetina-canyoning",
+    "name": "Cetina Canyoning (Zadvarje / Gubavica)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 43.4324,
+    "lng": 16.891,
+    "description": "Canyoning in the Cetina gorge near Zadvarje — the most adventurous Cetina activity. The Extreme tour has cliff jumps up to ~12m and rope rappels (one near the 60m Gubavica waterfall); every jump/rappel has a walk-around.",
+    "communityNotes": "“A mix of fun and adventure – swimming in clear water, jumping off rocks, sliding down waterfalls” (Sep 2025). Guides singled out by name — Vladimir (Dal Mare) and Malduk's Croatian Mountain Rescue–credentialed team. Basic tour is beginner/family-friendly; Extreme is 18+.",
+    "sources": [
+      "https://www.tripadvisor.com/AttractionProductReview-g644074-d17063840-Extreme_Canyoning_on_Cetina_river_from_Omis-Omis_Split_Dalmatia_County_Dalmatia.html",
+      "https://canyoning-cetina.com/basic-canyoning/"
+    ],
+    "cost": "Basic €50 pp / Extreme €70 pp (2024–25)",
+    "timeNeeded": "Basic 2–2.5h / Extreme ~3h",
+    "bestTime": "June has good water; Extreme is 18+",
+    "tags": ["canyoning", "cliff-jumping", "cetina", "adventure"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-radmanove-mlinice",
+    "name": "Radmanove Mlinice (Cetina canyon / rafting finish)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 43.4384,
+    "lng": 16.7511,
+    "description": "18th-century watermill restaurant deep in the Cetina canyon ~6km upstream of Omiš, and the classic finish point for Cetina rafting. Shaded riverside konoba — a good lunch + swim stop.",
+    "communityNotes": "Cetina rafting (mostly Class I–II with a couple of III drops, ~9–12km, 3–4h) is the tame-but-scenic option vs canyoning: “a beautiful tranquil place with awesome scenery... turtles and a lot of bird life.” Rafting ~€45 pp incl. minibus transfer (Rafting Cetina, 2024–25); optional ~5m cave-roof jump.",
+    "sources": [
+      "https://mlinice.com/en/",
+      "https://www.tripadvisor.com/Attraction_Review-g644074-d4451072-Reviews-Cetina_River-Omis_Split_Dalmatia_County_Dalmatia.html",
+      "https://rafting-cetina.com/en/price"
+    ],
+    "cost": "Rafting ~€45 pp; restaurant à la carte",
+    "timeNeeded": "rafting 3–4h",
+    "tags": ["rafting", "cetina", "food", "omis"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-starigrad-fortica",
+    "name": "Starigrad (Fortica) Fortress, Omiš",
+    "country": "HR",
+    "category": "hike",
+    "lat": 43.4447,
+    "lng": 16.7,
+    "description": "15th-c. fortress on a 262m cliff above Omiš — the higher of the town's two forts, with a vertigo-inducing panorama over the town, sea and Cetina canyon mouth. The in-town Mirabela tower is the quick 5-min alternative.",
+    "communityNotes": "“Quite challenging... at the top the views are fabulous and vertigo-inducing... about 45 minutes to reach the top” (bbqboy trip report). Two routes up — shaded river side (also a via ferrata start) or sunnier sea side. Note: a Google pin labelled ‘Starigrad Trailhead’ actually leads to Mirabela.",
+    "sources": [
+      "https://bbqboy.net/a-visit-to-omis-croatias-adventure-capital/",
+      "https://www.alltrails.com/trail/croatia/split-dalmatia/omis-starigrad-fortica"
+    ],
+    "cost": "€3.50 pp (cash)",
+    "timeNeeded": "~45min up",
+    "bestTime": "early morning or late afternoon — no shade",
+    "tags": ["omis", "fortress", "viewpoint", "hike"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camp-lisicina",
+    "name": "Auto Camp Lisičina (Omiš)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 43.4468,
+    "lng": 16.6909,
+    "description": "Small family-run campsite right by Omiš old town and the Cetina river — walkable to everything, tucked behind rocks so it's calm. Entrance is a narrow gap between boulders (fine for tents/cars).",
+    "communityNotes": "park4night: “Lovely small site. Entrance looks scary but it's easier than it looks... €32 per night”; “Sehr netter und sauberer Campingplatz... sehr freundliche Betreiber.” Cash only.",
+    "sources": ["https://park4night.com/en/place/56665"],
+    "cost": "~€30–40/night for 4 + tent + car (cash only)",
+    "facilities": "Warm showers, clean sanitary block, electricity, WiFi, drinking water, laundry",
+    "tags": ["omis", "camping", "river"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-kasjuni",
+    "name": "Kašjuni Beach (Marjan, Split)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.5064,
+    "lng": 16.4005,
+    "description": "Long pebble cove under Marjan hill — the clearest water in Split and the locals' pick over crowded Bačvice. Pine shade behind, a beach bar on site, great at sunset.",
+    "communityNotes": "“Consistently ranked among the best swimming spots in the city... clear turquoise water and far fewer tourists than Bačvice.” Caveats: gets busy/Instagrammy, steep walk down, parking fills early, little shade after morning.",
+    "sources": [
+      "https://splitholiday.com/best-beaches-split/kasjuni-beach-split/",
+      "https://www.turnoftheworld.com/best-beaches-in-split-croatia/"
+    ],
+    "bestTime": "morning for shade/parking; sunset for the light",
+    "tags": ["split", "beach", "swimming"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-marjan-vidilica",
+    "name": "Marjan – Vidilica viewpoint (Split)",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 43.5083,
+    "lng": 16.4175,
+    "description": "First viewpoint on Marjan hill, ~15min up the stairs from the Varoš/old-town side, with a café at the top. Big payoff for little effort — city, harbour and Adriatic; best at sunset. The full Marjan summit (Telegrin) is a longer forest walk.",
+    "communityNotes": "“Vidilica viewpoint delivers excellent views... quick city views without needing to hike far.” The easy, high-value Split add-on once you've wandered Diocletian's Palace.",
+    "sources": ["https://diocletiansdream.com/one-day-in-split-itinerary-from-diocletians-palace/"],
+    "timeNeeded": "30–60min",
+    "bestTime": "sunset",
+    "tags": ["split", "viewpoint", "marjan"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-split-nightlife",
+    "name": "Split nightlife (Old Town bars + Vanilla)",
+    "country": "HR",
+    "category": "nightlife",
+    "lat": 43.5095,
+    "lng": 16.4394,
+    "description": "Split's nightlife core: old-town bars (Charlie's, Fabrique) warming up to clubs — Central in the centre, Vanilla by Poljud stadium. A fun mainland night out and the realistic party window on the Zadar→Dubrovnik leg, though a notch below Hvar for clubbing.",
+    "communityNotes": "Recurring advice: do an old-town bar crawl (Charlie's → Vanilla, often with free club entry via pub crawls) rather than the Bačvice mega-clubs, where reviewers flag pricey cover (€30–50) and aggressive bouncers. Charlie's is the most-loved spot (4.8/5, cheap drinks, young international crowd).",
+    "sources": [
+      "https://www.frankaboutcroatia.com/split-bars-nightlife/",
+      "https://www.tripadvisor.com/Attractions-g295370-Activities-c20-t99-Split_Split_Dalmatia_County_Dalmatia.html"
+    ],
+    "bestTime": "bars to ~1am, then clubs (verify venue names closer to 2026 — scene churns)",
+    "tags": ["split", "nightlife"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-trogir",
+    "name": "Trogir Old Town",
+    "country": "HR",
+    "category": "town",
+    "lat": 43.5165,
+    "lng": 16.2497,
+    "description": "Compact UNESCO medieval old town on a little island 30min west of Split — Romanesque-Gothic lanes, St Lawrence cathedral (climb the bell tower), Kamerlengo fortress. A pretty 1.5–2h leg-stretch + lunch stop, not a base.",
+    "communityNotes": "“A very charming pretty town but very small... worth seeing if you have time.” Kamerlengo fortress (~€5) splits opinion: “the view from the top is absolutely stunning” vs “not worth the entrance fee... dilapidated... no information inside” — pay only for the rooftop panorama. Evenings are quiet.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g294453-i1554-k10235724-Time_to_spend_in_Trogir_Split_Dubrovnik-Croatia.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g303838-d550552-r294409988-Fortress_Kamerlengo-Trogir_Split_Dalmatia_County_Dalmatia.html"
+    ],
+    "timeNeeded": "1.5–2h",
+    "tags": ["trogir", "old-town", "unesco"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-nugal",
+    "name": "Nugal Beach (hidden cove, Makarska)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.2789,
+    "lng": 17.035,
+    "description": "Pine-fringed pebble cove ~20–30min walk (unsigned) south of Makarska along the coastal path, or by boat — the riviera's prettiest ‘secret’. Historically nudist, now mixed; no facilities, bring water.",
+    "communityNotes": "“It takes about 30 minutes from the harbor. However, it is not signposted” (Aug 2025); “Great beach... good space for everyone” (Jun 2025); “go there early because there will be more people as the day goes on.” Crystal-clear water, good snorkelling.",
+    "sources": ["https://www.tripadvisor.com/Attraction_Review-g303814-d14989555-Reviews-Nugal_Beach-Makarska_Split_Dalmatia_County_Dalmatia.html"],
+    "bestTime": "go early",
+    "timeNeeded": "half day incl. walk",
+    "tags": ["makarska", "beach", "hidden", "snorkelling"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-biokovo-tollroad",
+    "name": "Biokovo NP scenic toll road (booking + drive)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 43.2579,
+    "lng": 17.0807,
+    "description": "The Biokovo Nature Park toll road — 23km of asphalt switchbacks from the Podgora gate up to the Skywalk and Sveti Jure (1762m), Croatia's highest road. Single-lane two-way with frequent lay-bys; doable in a rental for a calm driver. (Skywalk + Sveti Jure are pinned separately.)",
+    "communityNotes": "“You need not be worried at all... I don't remember ever having to reverse” (Croatia forum expert); “We arrived around 7:30am and basically drove to the top without any trouble. Coming down... you often have to pull over” (bbqboy). Avoid in fog.",
+    "sources": [
+      "https://pp-biokovo.hr/en/plan-your-visit/pricelist",
+      "https://www.tripadvisor.com/ShowTopic-g294453-i1554-k11311698-Driving_to_Biokovo_mountains-Croatia.html",
+      "https://bbqboy.net/driving-spectacular-mt-biokovo-croatia/"
+    ],
+    "cost": "€15/adult Jun–Sep (~€60 for 4); under-7 free",
+    "timeNeeded": "~30min to Skywalk, ~1h to Sveti Jure; 3–4h round trip",
+    "bestTime": "BOOK a timed slot online — capped at 20 cars/hour; take an early-morning slot. Open 06:00–20:00 (last entry 19:00)",
+    "tags": ["biokovo", "scenic-drive", "viewpoint"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-makarska-nightlife",
+    "name": "Makarska (Deep cave club + Osejava cliffs)",
+    "country": "HR",
+    "category": "nightlife",
+    "lat": 43.2969,
+    "lng": 17.0178,
+    "description": "Makarska is the riviera's night-out + cliff-jumping base: ‘Deep’ nightclub carved into a sea cave on the Osejava peninsula (daily ~21:00–05:00), waterfront bars on the Riva (Pub Pivac, Buba Beach Bar), and a cliffy cape with clear-water cliff jumps.",
+    "communityNotes": "The Osejava cape is “an entire cliffy coast full of cliff jumps and mind-blowingly clear water” (check depth before jumping). The cave club makes Makarska the obvious nightlife stop on the Zadar→Dubrovnik leg if you camp on the riviera.",
+    "sources": [
+      "https://www.adventuresnsunsets.com/things-to-do-in-makarska-croatia/",
+      "https://evendo.com/locations/croatia/makarska-riviera/landmark/deep-makarska"
+    ],
+    "tags": ["makarska", "nightlife", "cliff-jumping"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-peljesac-bridge",
+    "name": "Pelješac Bridge (Dubrovnik approach)",
+    "country": "HR",
+    "category": "sight",
+    "lat": 42.9328,
+    "lng": 17.5369,
+    "description": "The 2.4km Pelješac Bridge (opened 2022) bypasses the Neum/Bosnia corridor entirely, keeping the Split↔Dubrovnik drive 100% in Croatia/Schengen — no border stop, no toll. The recommended, reliable late-afternoon approach before the airport pickup.",
+    "communityNotes": "“Smooth, well signposted, and surprisingly quick... turned out to be a highlight of the trip.” Neum is only ~12min shorter, and only if there's no queue — summer border waits run up to ~2h each way. Bridge renovation doesn't start until Oct 2026, so it's fully open in June 2026.",
+    "sources": [
+      "https://total-croatia-news.com/news/travel/split-to-dubrovnik/",
+      "https://www.europamaut.com/en/blog/renovation-of-the-peljesac-bridge-to-dubrovnik"
+    ],
+    "tags": ["logistics", "route", "peljesac"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-mljet-np",
+    "name": "Mljet National Park (the salt lakes)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 42.7829,
+    "lng": 17.3511,
+    "description": "Two connected saltwater lakes (Veliko & Malo Jezero) ringed by pine, with a Benedictine monastery on St Mary islet (free electric boat from Pristanište), the Montokuc viewpoint and a flat cycling/walking loop. Swim, kayak, bike.",
+    "communityNotes": "Car ferry lands at Sobra ~30min from the NP, so an overnight beats a rushed day trip: “doing both ends of the island in one day is very tight... have a night on Mljet (I'd choose Polače).” Entry is steep — €25/adult in June (~€100 for 4); buy after 16:00 for −25%. Boat to St Mary is included.",
+    "sources": [
+      "https://np-mljet.hr/price-list/?lang=en",
+      "https://www.tripadvisor.com/ShowTopic-g1501915-i16255-k13119349-A_day_or_overnight_Car_or_no_car-Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html"
+    ],
+    "cost": "€25/adult June (after 16:00 −25%); Prapratno↔Sobra ferry car+4 ~€50",
+    "timeNeeded": "full day or overnight",
+    "bestTime": "overnight recommended when you bring the car",
+    "tags": ["island", "mljet", "national-park", "kayak"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-odysseus-cave",
+    "name": "Odysseus Cave (Mljet, cliff-jump swim)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.7294,
+    "lng": 17.5439,
+    "description": "Collapsed sea cave with an emerald pool open to the Adriatic near Babino Polje (eastern Mljet, ~10min from Sobra ferry) — free, with cliff-jump ledges and a swim-through. Steep 20–30min marked trail down from the Tommy supermarket.",
+    "communityNotes": "“Multiple cliff jumping points... from 2–3m to 5m+ and 10m+.” “Find the spot with a rope anchored onto the rocks” for the exit. Go in the morning — “around 12:00 there's more people.” Perfect to do the afternoon you land, before driving to the NP side. (Coord derived from DMS, medium confidence.)",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1501915-d10680152-Reviews-Odysseus_Cave-Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.lifeandventures.com/mljet-national-park-adventure/"
+    ],
+    "bestTime": "morning; bring water shoes",
+    "tags": ["mljet", "cliff-jumping", "swimming", "cave"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camp-marina-mljet",
+    "name": "Autokamp Marina (Ropa, Mljet)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.7532,
+    "lng": 17.4604,
+    "description": "Small, quiet, tent-friendly campsite at Ropa in central Mljet — the closest camp to the NP side. ~10 olive-shaded terraced pitches; rocky beach a 10–15min steep walk down.",
+    "communityNotes": "park4night: “Very quiet auto camp and friendly staff. Basic but okay facilities”; “camping under olive trees, very friendly and accommodating.” Hot showers, shared kitchen, electricity (Schuko adapter).",
+    "sources": ["https://park4night.com/en/place/53353"],
+    "cost": "~€28/night for 2 + van (+€6 electricity); budget ~€35–45 for 4 + tent",
+    "facilities": "Hot showers, shared kitchen + fridge, electricity, olive shade; max vehicle ~6.5m",
+    "tags": ["mljet", "camping"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-korcula-town",
+    "name": "Korčula Old Town",
+    "country": "HR",
+    "category": "town",
+    "lat": 42.9438,
+    "lng": 16.9135,
+    "description": "‘Mini-Dubrovnik’ — a tiny fortified Venetian old town on a peninsula with a herringbone street plan, Marco Polo legend, the Moreška sword dance and a climbable tower. A 2h wander + meal; the island's real draw is its beaches and Lumbarda wine.",
+    "communityNotes": "“If you value history, natural beauty, local food, and a genuine island atmosphere, Korčula is absolutely worth visiting.” The Marco Polo link is legend, not fact — treat the ‘house’ as a photo stop. Moreška sword dance: Thu 21:00 in June if you want to catch it.",
+    "sources": [
+      "https://www.adventurouskate.com/visit-korcula-croatia-travel-guide/",
+      "https://excursionmania.com/article/is-korcula-worth-visiting-blg-7261"
+    ],
+    "timeNeeded": "half day",
+    "tags": ["island", "korcula", "old-town"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-pupnatska-luka",
+    "name": "Pupnatska Luka beach (Korčula)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.9284,
+    "lng": 17.0033,
+    "description": "Korčula's signature beach — a deep horseshoe bay of pale pebbles ringed by pines, water turning turquoise within ~10m. ~25–30min down a winding road from Korčula town.",
+    "communityNotes": "“The breathtaking scenery and tranquil atmosphere make it absolutely worth the visit despite the parking fee.” “The drive down is scenic but narrow... blind corners.” Car park ~€10 cash, sunbeds ~€25; pebble — bring water shoes; only really crowded in August.",
+    "sources": ["https://www.tripadvisor.com/Attraction_Review-g1007309-d7720745-Reviews-Pupnatska_Luca_Beach-Korcula_Town_Korcula_Island_Dubrovnik_Neretva_County_Dalmat.html"],
+    "bestTime": "before midday for parking",
+    "tags": ["island", "korcula", "beach"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-ston-walls",
+    "name": "Walls of Ston (Pelješac)",
+    "country": "HR",
+    "category": "hike",
+    "lat": 42.8384,
+    "lng": 17.6963,
+    "description": "The ‘European Wall of China’ — 5.5km of 14th-c. defensive walls climbing the hills between Ston and Mali Ston, the longest in Europe after China's. A real climb with steps and little shade; right at the foot of the Pelješac drive from Dubrovnik.",
+    "communityNotes": "“A small fee of €10 per person... very far from the exorbitant prices in Dubrovnik (€35).” “Hiking the entire walls... at a leisurely pace took about three hours.” Walk it in the cooler morning/evening — midday is brutal.",
+    "sources": [
+      "https://mindfulmermaid.com/wall-of-europe/",
+      "https://www.alltrails.com/trail/croatia/dubrovnik-neretva/zidine-stona"
+    ],
+    "cost": "~€10 pp",
+    "timeNeeded": "1.5–3h full circuit",
+    "bestTime": "morning/evening — no shade",
+    "tags": ["peljesac", "ston", "walls", "hike"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-mali-ston-oysters",
+    "name": "Mali Ston oysters",
+    "country": "HR",
+    "category": "food",
+    "lat": 42.8464,
+    "lng": 17.704,
+    "description": "Mali Ston bay is Europe's most famous oyster ground (PDO Ostrea edulis). Eat them shucked-to-order on the waterfront at Bota Šare or Kapetanova kuća, or cheaper at roadside farm stalls — minutes off the Pelješac road.",
+    "communityNotes": "“The oysters are really fished out of the sea in front of you, opened and laid out for you.” ~€2–2.50/oyster at restaurants (cheaper at stalls), ~€25 pp for a few fresh ones + wine. Bota Šare is “more laid back... fresh and tasty at half the price” of Kapetanova kuća.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g608714-d17778320-Reviews-Mali_Ston_Oysters-Mali_Ston_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.tommyeats.com/tommyeats/2017/06/eating-in-croatia-oysters-at-kapetanova-kuca-in-mali-ston.html"
+    ],
+    "cost": "~€2–2.5 per oyster",
+    "tags": ["peljesac", "food", "oysters"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-zuljana",
+    "name": "Žuljana beach (Pelješac)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.8903,
+    "lng": 17.4552,
+    "description": "One of Pelješac's best beaches — a large pebble bay with very clear water, good for snorkelling/diving, on the peninsula's south coast. A small campsite sits at the bay; few facilities beyond the village.",
+    "communityNotes": "Repeatedly named among Pelješac's most beautiful beaches by Croatian travel sources; family-shallow and quiet outside peak. Pairs well with a Dingač winery stop on the drive in.",
+    "sources": ["https://www.frankaboutcroatia.com/peljesac-peninsula-beaches/"],
+    "tags": ["peljesac", "beach", "snorkelling", "camping"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-matusko-winery",
+    "name": "Matuško winery (Potomje, Dingač)",
+    "country": "HR",
+    "category": "food",
+    "lat": 42.9399,
+    "lng": 17.3387,
+    "description": "Big, popular Plavac Mali producer in Potomje at the heart of the Dingač zone — the most walk-in-friendly of Pelješac's famous wineries, with a classic cellar tour + tasting. Drive the scenic Dingač vineyard road/tunnel above Trstenik.",
+    "communityNotes": "“You cannot fail in any [Pelješac winery], just try to visit a small family winery to get this ‘special touch.’” Matuško is the easy walk-in; Grgić (Trstenik, of Napa fame) for the view; Saints Hills / Korta Katarina are nicer but book ahead. Designate a driver.",
+    "sources": ["https://community.ricksteves.com/travel-forum/croatia/peljesac-peninsula-winery-tour"],
+    "tags": ["peljesac", "wine", "food"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-srd",
+    "name": "Mt Srđ + Fort Imperial (Dubrovnik)",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 42.6483,
+    "lng": 18.1108,
+    "description": "The 412m hill behind Dubrovnik with the best panorama in the city (old-town rooftops, Lokrum, the Elaphiti on the horizon) and Fort Imperial's Homeland War Museum. Cable car, or a free steep shadeless serpentine hike.",
+    "communityNotes": "“The views from the trail were some of the best of our visit.” Cable car €27 return (book online to skip cruise-day queues); hike ~45–60min, free — do it late afternoon, not midday. Museum ~€5. Be up ~45min before sunset for the light.",
+    "sources": [
+      "https://www.venturists.net/dubrovnik-cable-car-hike-mount-srd-croatia/",
+      "https://www.tomhentystravel.co.uk/balkans/is-dubrovnik-cable-car-worth-it"
+    ],
+    "cost": "Cable car €27 return; hike free; museum ~€5",
+    "bestTime": "sunset; hike late afternoon",
+    "tags": ["dubrovnik", "viewpoint", "hike"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-buza-bar",
+    "name": "Buža Bar (Dubrovnik cliff bar)",
+    "country": "HR",
+    "category": "nightlife",
+    "lat": 42.6403,
+    "lng": 18.1108,
+    "description": "Hole-in-the-wall cliff bar outside Dubrovnik's south wall, facing Lokrum — the city's sunset-drinks institution, with cliff-jumping ledges into the Adriatic below. Cash only, no ice. Buža II is the better one for jumping/views.",
+    "communityNotes": "“Walk through a hole in the city walls to find it... on the edge of a cliff staring directly at the Adriatic... one of the best views of Lokrum.” Cliff jumps realistically ~3–10m (higher figures unverified — check water/rocks first). Get there 2–3h before sunset in peak season for a spot.",
+    "sources": [
+      "https://hellojetlag.com/buza-bar-dubrovnik/",
+      "https://karlatypes.com/cliff-jumping-in-dubrovnik-most-popular-spots/"
+    ],
+    "bestTime": "before sunset; cash only",
+    "tags": ["dubrovnik", "nightlife", "cliff-jumping", "sunset"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-sveti-jakov-beach",
+    "name": "Sveti Jakov beach (Dubrovnik)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.6347,
+    "lng": 18.1271,
+    "description": "Local-favourite pebble beach SE of the old town — the same walls-and-Lokrum view as Banje but far quieter, because ~150 stairs down filter the crowds. Sunset-facing, laid-back tiki bar, cheaper loungers.",
+    "communityNotes": "“A local favorite that isn't as well-known as Banje, but offers the same splendid views... more secluded, probably due to the over 150 stairs.” The effort is the filter — worth it for a calmer swim near town vs the crowded Banje beach club.",
+    "sources": ["https://shippedaway.com/dubrovnik-beaches/"],
+    "bestTime": "afternoon/sunset",
+    "tags": ["dubrovnik", "beach", "swimming"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-lokrum",
+    "name": "Lokrum island (Dubrovnik)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 42.6258,
+    "lng": 18.1208,
+    "description": "Forested nature-reserve island 10min by boat from the old-town harbour: roaming peacocks, a warm saltwater ‘Dead Sea’ lake with cliff-jumping, a Benedictine monastery + botanical garden, Fort Royal viewpoint and a Game of Thrones throne. The best cliff jumping near Dubrovnik.",
+    "communityNotes": "“Lokrum is a great place to go cliff diving, with cliffs starting at a couple meters and going up to 10 meters.” Round-trip boat €30 incl. reserve entry, every ~30min. NOTE: protected reserve — no camping/overnight, everyone off on the last evening boat.",
+    "sources": [
+      "https://www.absolute-croatia.com/dubrovnik/parks-beaches/lokrum-island",
+      "https://karlatypes.com/cliff-jumping-in-dubrovnik-most-popular-spots/"
+    ],
+    "cost": "€30 round-trip boat (incl. entry)",
+    "timeNeeded": "half day",
+    "tags": ["dubrovnik", "island", "cliff-jumping", "zero-driving"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-lopud-sunj",
+    "name": "Šunj beach, Lopud (Elaphiti)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.6786,
+    "lng": 17.9519,
+    "description": "Šunj beach on car-free Lopud — the only proper sandy beach in the Dubrovnik area: a wide south-facing crescent of shallow warm water, ~20min forest walk from the village. Jadrolinija ferry from Gruž (~1h); no driving needed.",
+    "communityNotes": "“If you are looking for a nice sand beach, I would say Šunj beach on Lopud.” Timing matters: “at ten it's nearly empty... by one the ferry has deposited two hundred people” — take an early ferry, leave before the 1pm crowd. June/Sept are best.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g295371-i1555-k1380298-Day_trip_to_Kolocep_Lopud_or_Sipan-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://malamara-dubrovnik.com/blog/elaphiti-islands-guide/"
+    ],
+    "bestTime": "early ferry, off by ~1pm",
+    "timeNeeded": "full day",
+    "tags": ["dubrovnik", "island", "beach", "elaphiti", "zero-driving"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-kolocep-blue-cave",
+    "name": "Koločep & Blue Cave (Elaphiti)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 42.6889,
+    "lng": 18.0086,
+    "description": "Koločep, the closest Elaphiti island to Dubrovnik, and its Blue Cave (Modra špilja) — a sea cave that glows electric blue, reachable only by swimming/kayak/boat. Quiet beaches and a couple of bars; the highlight of most boat/kayak day-tours.",
+    "communityNotes": "“The Blue Cave can only be accessed by swimming... sunlight reflecting through creates a magical blue glow.” For an adventurous group the strongest combo is a kayak/boat tour pairing Koločep's Blue Cave with Lopud's Šunj beach in one day.",
+    "sources": [
+      "https://www.getyourguide.com/dubrovnik-l513/dubrovnik-blue-cave-sunj-beach-boat-tour-with-drinks-t425953/",
+      "https://www.tripadvisor.com/ShowTopic-g295371-i1555-k1380298-Day_trip_to_Kolocep_Lopud_or_Sipan-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html"
+    ],
+    "timeNeeded": "full day (tour)",
+    "tags": ["dubrovnik", "island", "elaphiti", "cave", "swimming", "zero-driving"],
+    "rating": 4,
+    "status": "candidate"
+  }
+]

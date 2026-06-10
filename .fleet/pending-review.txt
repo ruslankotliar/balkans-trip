@@ -1,0 +1,4 @@
+A:hr-north.json (validated, deep review pending)
+B:hr-south.json (validated, deep review pending)
+D:me-* 4 files + durmitor-tara-notes (validated, deep review pending)
+E:logistics-notes + logistics-places (validated, deep review pending)
