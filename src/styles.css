@@ -847,6 +847,88 @@ body {
   }
 }
 
+/* ---- Route builder: solver label, anchors, ferry ---- */
+.rb-method {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+.rb-method.exact {
+  background: #e8f8ef;
+  color: #1a7f4b;
+  border: 1px solid #bfe8d0;
+}
+.rb-method.heur {
+  background: #fdf6e8;
+  color: #9a6b13;
+  border: 1px solid #efdcb0;
+}
+.rb-anchors {
+  border: 1px solid #e6d9b8;
+  border-radius: 8px;
+  background: #fdfaf1;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+.rb-anchors h4 {
+  margin: 0 0 4px;
+  font-size: 12px;
+}
+.rb-anchors ol {
+  margin: 0;
+  padding-left: 18px;
+}
+.rb-anchors li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 0;
+}
+.rb-anchor-hint {
+  margin: 4px 0 0;
+  color: #998a5f;
+  font-size: 11px;
+}
+.rb-pin {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+  opacity: 0.35;
+  padding: 0 2px;
+}
+.rb-pin.on {
+  opacity: 1;
+}
+.rb-ferry {
+  margin-left: 8px;
+  white-space: nowrap;
+}
+.rb-ferry input {
+  width: 44px;
+  margin: 0 3px;
+  padding: 1px 4px;
+  font-size: 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.rb-ferry-note {
+  color: #0077be;
+  font-weight: 600;
+}
+.rb-segments {
+  list-style: none;
+  margin: 0 0 6px;
+  padding: 4px 8px;
+  background: #f3f0e8;
+  border-radius: 6px;
+  font-size: 11px;
+  color: #555;
+}
+
 .itin-sleep-btn {
   border: 1px solid #d9c2ec;
   background: #f6eefb;
@@ -858,4 +940,273 @@ body {
 }
 .itin-sleep-btn:hover {
   background: #ecd9fb;
+}
+
+/* ---- Mode pill (Planning ⇄ Trip) ---- */
+.head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.mode-pill {
+  border: 1.5px solid #2c3e50;
+  border-radius: 16px;
+  background: #fff;
+  color: #2c3e50;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.mode-pill.trip {
+  background: #2c3e50;
+  color: #fff;
+}
+
+/* ---- Today view (trip mode) ---- */
+.today {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.today-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.today-arrow {
+  width: 48px;
+  height: 44px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.today-arrow:disabled {
+  opacity: 0.3;
+}
+.today-strip-label {
+  flex: 1;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+.today-badge {
+  display: inline-block;
+  margin-left: 6px;
+  background: #27ae60;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 9px;
+  text-transform: uppercase;
+}
+.today-jump {
+  display: block;
+  font-size: 10px;
+  color: #999;
+}
+.today-next {
+  background: #eef6ff;
+  border: 1px solid #cfe3fa;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.today-next strong {
+  cursor: pointer;
+}
+.today-next-label {
+  color: #2471c8;
+  font-weight: 700;
+}
+.today-next-eta {
+  color: #555;
+  font-size: 13px;
+}
+.today-nav-link {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2471c8;
+  text-decoration: none;
+}
+.today-stops {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.today-leg {
+  font-size: 12px;
+  color: #888;
+  margin: 2px 0 2px 50px;
+}
+.today-stop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+}
+.today-stops li.done .today-stop-name {
+  text-decoration: line-through;
+  color: #9aa5ad;
+}
+.today-stops li.next .today-stop {
+  background: #eef6ff;
+  border-radius: 8px;
+}
+.today-check {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #bbb;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.today-check.on {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: #fff;
+}
+.today-stop-name {
+  flex: 1;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  min-width: 0;
+}
+.today-skip {
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid #e0b4ae;
+  color: #c0392b;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.today-actions {
+  display: flex;
+  gap: 8px;
+}
+.today-big-btn {
+  flex: 1;
+  min-height: 52px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1.5px solid #2c3e50;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+.today-big-btn.on {
+  background: #2c3e50;
+  color: #fff;
+}
+.today-anchor-note {
+  margin: -4px 0 0;
+  font-size: 11px;
+  color: #999;
+  text-align: center;
+}
+.today-cards .corridor-card {
+  padding: 10px;
+}
+.today-empty {
+  font-size: 13px;
+  color: #888;
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+/* ---- Locate FAB + undo toast ---- */
+.locate-fab {
+  position: absolute;
+  right: 14px;
+  bottom: 28px;
+  z-index: 1100;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.undo-toast {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 24px;
+  z-index: 2000;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  max-width: 92vw;
+}
+.undo-toast button {
+  border: none;
+  background: #27ae60;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ---- Trip mode: bigger touch targets everywhere ---- */
+body.trip-mode .sidebar-fab {
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+}
+body.trip-mode .detail-panel .field-label select,
+body.trip-mode .detail-panel .note-area {
+  min-height: 40px;
+  font-size: 15px;
+}
+body.trip-mode .nearby-toggle {
+  min-height: 44px;
+  font-size: 15px;
+}
+body.trip-mode .detail-close {
+  width: 38px;
+  height: 38px;
+  font-size: 16px;
+}
+@media (max-width: 760px) {
+  /* Bottom-sheet detail: keep the pin + route visible above it */
+  body.trip-mode .detail-panel {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 45vh;
+    border-radius: 14px 14px 0 0;
+  }
 }

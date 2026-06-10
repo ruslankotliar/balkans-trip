@@ -1,0 +1,235 @@
+import { CATEGORY_COLORS } from '../constants';
+import type { CachedRoute, PlaceWithOverride } from '../store';
+import { TRIP_DAYS, dayDateLabel, formatDuration } from '../trip';
+
+export interface ProximityMatch {
+  place: PlaceWithOverride;
+  /** straight-line km from the anchor (GPS fix or today's last stop) */
+  dist: number;
+}
+
+interface Props {
+  /** Day being viewed (defaults to the real current trip day). */
+  day: number;
+  /** The real current trip day. */
+  realDay: number;
+  onDay: (d: number) => void;
+  /** Today's stops in visiting order. */
+  stops: PlaceWithOverride[];
+  route: CachedRoute | undefined;
+  /** Manual ferry hours for a leg between two place ids. */
+  ferryFor: (idA: string, idB: string) => number;
+  done: Record<string, boolean>;
+  onToggleDone: (id: string) => void;
+  onSkip: (p: PlaceWithOverride) => void;
+  onSelect: (p: PlaceWithOverride) => void;
+  /** km from GPS fix to a point, or null when no fix yet. */
+  kmFromGps: (lat: number, lng: number) => number | null;
+  sleepOpen: boolean;
+  onToggleSleep: () => void;
+  sleepMatches: ProximityMatch[];
+  nearOpen: boolean;
+  onToggleNear: () => void;
+  nearMatches: ProximityMatch[];
+  /** What proximity is measured from: "you" (GPS) or the last stop's name. */
+  anchorLabel: string | null;
+}
+
+function gmaps(p: PlaceWithOverride) {
+  return `https://www.google.com/maps?q=${p.lat},${p.lng}`;
+}
+
+function MatchCards({
+  matches,
+  empty,
+  onSelect,
+  showSleepInfo,
+}: {
+  matches: ProximityMatch[];
+  empty: string;
+  onSelect: (p: PlaceWithOverride) => void;
+  showSleepInfo: boolean;
+}) {
+  if (matches.length === 0) return <p className="today-empty">{empty}</p>;
+  return (
+    <div className="today-cards">
+      {matches.map(({ place: p, dist }) => (
+        <div key={p.id} className="corridor-card" onClick={() => onSelect(p)}>
+          <div className="corridor-card-top">
+            <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
+            <span className="place-name">{p.name}</span>
+            {p.rating ? <span>{'★'.repeat(p.rating)}</span> : null}
+            <span className="corridor-dist">{dist.toFixed(1)} km</span>
+          </div>
+          {showSleepInfo && p.cost && <div className="corridor-cost">💶 {p.cost}</div>}
+          {showSleepInfo && p.facilities && <div className="corridor-fac">🚿 {p.facilities}</div>}
+          <a
+            className="today-nav-link"
+            href={gmaps(p)}
+            target="_blank"
+            rel="noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
+            Navigate ↗
+          </a>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default function Today({
+  day,
+  realDay,
+  onDay,
+  stops,
+  route,
+  ferryFor,
+  done,
+  onToggleDone,
+  onSkip,
+  onSelect,
+  kmFromGps,
+  sleepOpen,
+  onToggleSleep,
+  sleepMatches,
+  nearOpen,
+  onToggleNear,
+  nearMatches,
+  anchorLabel,
+}: Props) {
+  const isToday = day === realDay;
+  const nextIdx = isToday ? stops.findIndex((p) => !done[p.id]) : -1;
+  const next = nextIdx >= 0 ? stops[nextIdx] : null;
+  const nextLegSec =
+    next && nextIdx > 0 ? route?.legs?.[nextIdx - 1]?.duration : undefined;
+  const nextFerryH =
+    next && nextIdx > 0 ? ferryFor(stops[nextIdx - 1].id, next.id) : 0;
+  const nextGpsKm = next ? kmFromGps(next.lat, next.lng) : null;
+
+  return (
+    <div className="today">
+      <div className="today-strip">
+        <button className="today-arrow" disabled={day <= 1} onClick={() => onDay(day - 1)}>
+          ◀
+        </button>
+        <div className="today-strip-label" onClick={() => onDay(realDay)}>
+          <strong>Day {day}</strong> · {dayDateLabel(day)}
+          {isToday ? <span className="today-badge">today</span> : (
+            <span className="today-jump">tap for today</span>
+          )}
+        </div>
+        <button
+          className="today-arrow"
+          disabled={day >= TRIP_DAYS}
+          onClick={() => onDay(day + 1)}
+        >
+          ▶
+        </button>
+      </div>
+
+      {isToday && stops.length > 0 && (
+        <div className="today-next">
+          {next ? (
+            <>
+              <span className="today-next-label">Next →</span>{' '}
+              <strong onClick={() => onSelect(next)}>{next.name}</strong>
+              {nextLegSec != null && (
+                <span className="today-next-eta">
+                  {' '}
+                  · {formatDuration(nextLegSec + nextFerryH * 3600)} drive
+                  {nextFerryH > 0 ? ' ⛴' : ''}
+                </span>
+              )}
+              {nextGpsKm != null && (
+                <span className="today-next-eta"> · ~{Math.round(nextGpsKm)} km from you</span>
+              )}
+              <a
+                className="today-nav-link"
+                href={gmaps(next)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Navigate ↗
+              </a>
+            </>
+          ) : (
+            <span>All stops done 🎉</span>
+          )}
+        </div>
+      )}
+
+      {stops.length === 0 ? (
+        <p className="today-empty">
+          No stops planned for {isToday ? 'today' : 'this day'} — switch to Planning mode to
+          assign some, or just use the map.
+        </p>
+      ) : (
+        <ol className="today-stops">
+          {stops.map((p, i) => {
+            const isNext = isToday && i === nextIdx;
+            const isDone = !!done[p.id];
+            const legSec = i > 0 ? route?.legs?.[i - 1]?.duration : undefined;
+            const ferryH = i > 0 ? ferryFor(stops[i - 1].id, p.id) : 0;
+            return (
+              <li key={p.id} className={isDone ? 'done' : isNext ? 'next' : ''}>
+                {i > 0 && (legSec != null || ferryH > 0) && (
+                  <div className="today-leg">
+                    ↓ {formatDuration((legSec ?? 0) + ferryH * 3600)}
+                    {ferryH > 0 ? ' (incl ⛴)' : ''}
+                  </div>
+                )}
+                <div className="today-stop">
+                  <button
+                    className={`today-check ${isDone ? 'on' : ''}`}
+                    onClick={() => onToggleDone(p.id)}
+                    title={isDone ? 'Mark not done' : 'Mark done'}
+                  >
+                    {isDone ? '✓' : i + 1}
+                  </button>
+                  <span className="today-stop-name" onClick={() => onSelect(p)}>
+                    <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
+                    {p.name}
+                  </span>
+                  <button className="today-skip" onClick={() => onSkip(p)}>
+                    skip
+                  </button>
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      )}
+
+      <div className="today-actions">
+        <button className={`today-big-btn ${sleepOpen ? 'on' : ''}`} onClick={onToggleSleep}>
+          🛏 Sleep tonight
+        </button>
+        <button className={`today-big-btn ${nearOpen ? 'on' : ''}`} onClick={onToggleNear}>
+          📍 Near me
+        </button>
+      </div>
+      {(sleepOpen || nearOpen) && anchorLabel && (
+        <p className="today-anchor-note">
+          distances from {anchorLabel === 'you' ? 'your GPS position' : anchorLabel}
+        </p>
+      )}
+      {sleepOpen && (
+        <MatchCards
+          matches={sleepMatches}
+          empty="No campsites or stays within 25 km. Try the map."
+          onSelect={onSelect}
+          showSleepInfo
+        />
+      )}
+      {nearOpen && (
+        <MatchCards
+          matches={nearMatches}
+          empty="Nothing shortlist-worthy within 30 km."
+          onSelect={onSelect}
+          showSleepInfo={false}
+        />
+      )}
+    </div>
+  );
+}

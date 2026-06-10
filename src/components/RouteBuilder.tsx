@@ -12,16 +12,23 @@ interface Props {
   endId: string | null;
   onStart: (id: string | null) => void;
   onEnd: (id: string | null) => void;
+  /** User-pinned ordered anchors (visited in this order between start and end). */
+  anchorIds: string[];
+  onToggleAnchor: (id: string) => void;
+  onMoveAnchor: (id: string, dir: 'up' | 'down') => void;
   onBuild: () => void;
   building: boolean;
   error: string | null;
   trip: TripResult | null;
   /** Input places aligned to trip.order indices. */
   tripPlaces: PlaceWithOverride[];
+  /** Manual ferry hours for the leg between two places (0 = none). */
+  getLegFerry: (idA: string, idB: string) => number;
+  onSetLegFerry: (idA: string, idB: string, hours: number) => void;
   maxHours: number;
   onMaxHours: (h: number) => void;
   onApplyToDays: () => void;
-  daysNeeded: number | null;
+  split: { days: number; overDays: { day: number; sec: number }[] } | null;
   onFocus: (p: PlaceWithOverride) => void;
   onFindSleep: () => void;
 }
@@ -36,25 +43,56 @@ export default function RouteBuilder({
   endId,
   onStart,
   onEnd,
+  anchorIds,
+  onToggleAnchor,
+  onMoveAnchor,
   onBuild,
   building,
   error,
   trip,
   tripPlaces,
+  getLegFerry,
+  onSetLegFerry,
   maxHours,
   onMaxHours,
   onApplyToDays,
-  daysNeeded,
+  split,
   onFocus,
   onFindSleep,
 }: Props) {
   const chosen = candidates.filter((p) => selectedIds.has(p.id));
-  const ordered = trip ? trip.order.map((i) => tripPlaces[i]).filter(Boolean) : [];
+  const byId = new Map(candidates.map((p) => [p.id, p]));
+  const anchors = anchorIds.map((id) => byId.get(id)).filter(Boolean) as PlaceWithOverride[];
+  const ordered = trip
+    ? (trip.order.map((i) => tripPlaces[i]).filter(Boolean) as PlaceWithOverride[])
+    : [];
+
+  // Totals incl. manual ferry hours.
+  const ferryTotalSec = ordered
+    .slice(0, -1)
+    .reduce((s, p, i) => s + getLegFerry(p.id, ordered[i + 1].id) * 3600, 0);
+
+  // Per-segment totals (when anchors split the route).
+  const segStarts = trip?.segStarts ?? [0];
+  const segments =
+    trip && segStarts.length > 1
+      ? segStarts.map((startPos, s) => {
+          const endPos = segStarts[s + 1] ?? ordered.length - 1;
+          let sec = 0;
+          for (let i = startPos; i < endPos; i++) {
+            sec += (trip.legs[i]?.duration ?? 0) + getLegFerry(ordered[i].id, ordered[i + 1].id) * 3600;
+          }
+          return { from: ordered[startPos], to: ordered[endPos], sec };
+        })
+      : [];
+
+  const methodLabel = trip ? trip.method ?? 'OSRM /trip heuristic (rebuild for exact solve)' : '';
 
   return (
     <div className="route-builder">
       <p className="rb-intro">
-        Tick stops, pick a start &amp; end, then let OSRM solve the optimal driving order.
+        Tick stops, pick a start &amp; end, then solve the optimal driving order locally
+        (exact for ≤13 stops). 📌 a stop to pin it as an ordered anchor.
       </p>
 
       <div className="rb-shortcuts">
@@ -91,11 +129,39 @@ export default function RouteBuilder({
         </div>
       )}
 
-      <button
-        className="rb-build"
-        onClick={onBuild}
-        disabled={selectedIds.size < 2 || building}
-      >
+      {anchors.length > 0 && (
+        <div className="rb-anchors">
+          <h4>📌 Anchors — visited in this order</h4>
+          <ol>
+            {anchors.map((p, i) => (
+              <li key={p.id}>
+                <span className="place-name">{p.name}</span>
+                <span className="itin-actions">
+                  <button disabled={i === 0} onClick={() => onMoveAnchor(p.id, 'up')} title="Earlier">
+                    ↑
+                  </button>
+                  <button
+                    disabled={i === anchors.length - 1}
+                    onClick={() => onMoveAnchor(p.id, 'down')}
+                    title="Later"
+                  >
+                    ↓
+                  </button>
+                  <button onClick={() => onToggleAnchor(p.id)} title="Unpin">
+                    ✕
+                  </button>
+                </span>
+              </li>
+            ))}
+          </ol>
+          <p className="rb-anchor-hint">
+            Free stops are routed into the best segment between anchors; each segment is
+            optimized on its own.
+          </p>
+        </div>
+      )}
+
+      <button className="rb-build" onClick={onBuild} disabled={selectedIds.size < 2 || building}>
         {building
           ? 'Solving…'
           : `Build optimal route (${selectedIds.size} stop${selectedIds.size === 1 ? '' : 's'})`}
@@ -105,28 +171,67 @@ export default function RouteBuilder({
       {trip && ordered.length > 0 && (
         <div className="rb-result">
           <div className="rb-summary">
-            Optimal order · <strong>{formatDuration(trip.duration)}</strong> /{' '}
-            {formatDistance(trip.distance)} total
+            <span className={`rb-method ${trip.exact ? 'exact' : 'heur'}`}>
+              {trip.exact ? '✓ ' : '~ '}
+              {methodLabel}
+            </span>
+            <br />
+            <strong>{formatDuration(trip.duration + ferryTotalSec)}</strong>
+            {ferryTotalSec > 0 && (
+              <span className="rb-ferry-note">
+                {' '}
+                (incl. ⛴ {formatDuration(ferryTotalSec)})
+              </span>
+            )}{' '}
+            / {formatDistance(trip.distance)} total
           </div>
+
+          {segments.length > 1 && (
+            <ul className="rb-segments">
+              {segments.map((s, i) => (
+                <li key={i}>
+                  {s.from?.name} → {s.to?.name} · {formatDuration(s.sec)}
+                </li>
+              ))}
+            </ul>
+          )}
+
           <ol className="rb-stops">
-            {ordered.map((p, i) => (
-              <li key={p.id}>
-                <div className="rb-stop" onClick={() => onFocus(p)}>
-                  <span className="rb-num">{i + 1}</span>
-                  <span
-                    className="dot"
-                    style={{ background: CATEGORY_COLORS[p.category] }}
-                  />
-                  <span className="place-name">{p.name}</span>
-                </div>
-                {i < ordered.length - 1 && trip.legs[i] && (
-                  <div className="rb-leg">
-                    ↓ {formatDuration(trip.legs[i].duration)} ·{' '}
-                    {formatDistance(trip.legs[i].distance)}
+            {ordered.map((p, i) => {
+              const next = ordered[i + 1];
+              const ferry = next ? getLegFerry(p.id, next.id) : 0;
+              const isAnchor = segStarts.includes(i) || i === ordered.length - 1;
+              return (
+                <li key={p.id}>
+                  <div className="rb-stop" onClick={() => onFocus(p)}>
+                    <span className="rb-num">{i + 1}</span>
+                    <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
+                    <span className="place-name">{p.name}</span>
+                    {isAnchor && segStarts.length > 1 && <span title="Anchor">📌</span>}
                   </div>
-                )}
-              </li>
-            ))}
+                  {next && trip.legs[i] && (
+                    <div className="rb-leg">
+                      ↓ {formatDuration(trip.legs[i].duration + ferry * 3600)} ·{' '}
+                      {formatDistance(trip.legs[i].distance)}
+                      {ferry > 0 && <span className="rb-ferry-note"> · incl ⛴ {ferry}h</span>}
+                      <label className="rb-ferry" onClick={(e) => e.stopPropagation()}>
+                        ⛴
+                        <input
+                          type="number"
+                          min={0}
+                          max={12}
+                          step={0.5}
+                          value={ferry || ''}
+                          placeholder="0"
+                          onChange={(e) => onSetLegFerry(p.id, next.id, Number(e.target.value))}
+                        />
+                        h
+                      </label>
+                    </div>
+                  )}
+                </li>
+              );
+            })}
           </ol>
 
           <div className="rb-apply">
@@ -147,13 +252,19 @@ export default function RouteBuilder({
             <button className="rb-corridor-btn" onClick={onFindSleep}>
               🛏 Find sleep along this route
             </button>
-            {daysNeeded != null && (
-              <p className={`rb-days-note ${daysNeeded > 13 ? 'warn' : ''}`}>
-                {daysNeeded > 13
-                  ? `⚠ Needs ${daysNeeded} days — more than the 13-day trip. Raise the limit or drop stops.`
-                  : `Splits into ${daysNeeded} day${daysNeeded === 1 ? '' : 's'}.`}
+            {split && (
+              <p className={`rb-days-note ${split.days > 13 ? 'warn' : ''}`}>
+                {split.days > 13
+                  ? `⚠ Needs ${split.days} days — more than the 13-day trip. Raise the limit or drop stops.`
+                  : `Splits into ${split.days} day${split.days === 1 ? '' : 's'}.`}
               </p>
             )}
+            {split?.overDays.map((d) => (
+              <p key={d.day} className="rb-days-note warn">
+                ⚠ Day {d.day} has {formatDuration(d.sec)} driving — over the {maxHours}h/day
+                limit (a single leg exceeds it).
+              </p>
+            ))}
           </div>
         </div>
       )}
@@ -168,6 +279,18 @@ export default function RouteBuilder({
             />
             <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
             <span className="place-name">{p.name}</span>
+            {selectedIds.has(p.id) && (
+              <button
+                className={`rb-pin ${anchorIds.includes(p.id) ? 'on' : ''}`}
+                title={anchorIds.includes(p.id) ? 'Unpin anchor' : 'Pin as ordered anchor'}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onToggleAnchor(p.id);
+                }}
+              >
+                📌
+              </button>
+            )}
             <span className={`badge badge-${p.status}`}>{p.status}</span>
           </label>
         ))}

@@ -35,6 +35,28 @@ export function dayColor(day: number): string {
   return DAY_PALETTE[(day - 1) % DAY_PALETTE.length];
 }
 
+/** Days since trip start, 1-based; can be <1 (before) or >13 (after). */
+function rawTripDay(now: Date): number {
+  const startMid = new Date(
+    TRIP_START.getFullYear(),
+    TRIP_START.getMonth(),
+    TRIP_START.getDate(),
+  );
+  const nowMid = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  return Math.round((nowMid.getTime() - startMid.getTime()) / 86400000) + 1;
+}
+
+/** Real date → trip day, clamped to 1–13 (before the trip → 1, after → 13). */
+export function currentTripDay(now = new Date()): number {
+  return Math.min(TRIP_DAYS, Math.max(1, rawTripDay(now)));
+}
+
+/** True while the real date is within the Jun 16–28 trip window. */
+export function isDuringTrip(now = new Date()): boolean {
+  const d = rawTripDay(now);
+  return d >= 1 && d <= TRIP_DAYS;
+}
+
 /** Great-circle distance in km between two lat/lng points. */
 export function haversineKm(
   aLat: number,

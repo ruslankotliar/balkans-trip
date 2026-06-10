@@ -17,6 +17,7 @@ research/route-skeleton.md
 research/route-sketch-notes.md
 research/trip-ops.md
 research/ux-review.md
+research/verdicts-digest.md
 src/data/accommodation-wishlist.json
 src/data/ba-places.json
 src/data/contingency-places.json

@@ -1,0 +1,461 @@
+[
+  {
+    "id": "hr-imotski-modro-jezero",
+    "name": "Modro jezero (Blue Lake), Imotski",
+    "country": "HR",
+    "category": "nature",
+    "lat": 43.4510,
+    "lng": 17.2106,
+    "description": "Swim inside a giant karst sinkhole: a 90m-deep seasonal lake at the bottom of a 200m crater right at Imotski town, reached by a 10-15 min switchback path. DETOUR MATH: best slotted as a day-3 inland variant Makarska -> Imotski -> Vrgorac -> Dubrovnik (= +1:00 vs the 2:52 coastal run; Makarska->lake 0:52, lake->Dubrovnik ~3:00); from Dubrovnik on day 6 it costs +1:56. VERDICT: worth it if passing (inland day-3 variant), with a June water-level caveat.",
+    "communityNotes": "Tripadvisor reviewers: 'fantastic examples of karst lakes... an essential visit in this part of Croatia'; spring visitors swim, late-autumn visitors found it 'almost dry — not worth it'. Croatian sources (Visit Imota, imotski.in): water level swings tens of metres through the year and the swim season historically starts around LATE JUNE — for a Jun 16-28 trip expect a long climb down and possibly low water; locals say summer usually has 'dovoljno vode za kupanje' (enough water to swim). You can view both lakes from the rim for free without descending.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1027143-d3334830-Reviews-Blue_Lake-Imotski_Split_Dalmatia_County_Dalmatia.html",
+      "https://english.visitimota.com/the-lakes-of-imotski/",
+      "https://imotski.in/ljeto-u-modrom-jezeru/",
+      "https://hr.wikipedia.org/wiki/Modro_jezero"
+    ],
+    "cost": "€5.50 entry to descend (rim views free)",
+    "timeNeeded": "1.5-2h incl. descent + swim",
+    "bestTime": "morning before heat; check water level locally — swim season often starts late June",
+    "tags": ["off-route", "swim", "karst", "sinkhole", "worth-if-passing", "june-borderline"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-imotski-crveno-jezero",
+    "name": "Crveno jezero (Red Lake), Imotski",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 43.4549,
+    "lng": 17.1985,
+    "description": "One of the deepest sinkhole lakes in Europe (~530m total depth) ringed by sheer red cliffs — view-only from the rim, no legal descent. Sits 1.5km from the Blue Lake, so it's a free 10-15 min add-on to the same Imotski stop. DETOUR MATH: zero extra once you're at Modro jezero. VERDICT: worth it if passing — a 2-minute walk from the road for a jaw-drop view.",
+    "communityNotes": "Consistently described together with the Blue Lake as 'prirodni biseri' (natural pearls) in Croatian travel press; Tripadvisor visitors recommend doing both lakes as one stop. Unlike the Blue Lake it never dries and the colour/cliff contrast is reliable year-round. No infrastructure at the rim — just a roadside viewpoint, watch the edge.",
+    "sources": [
+      "https://putnikofer.hr/mjesta/crveno-i-modro-jezero-imotski/",
+      "https://www.tripadvisor.com/Attraction_Review-g1027143-d3334830-Reviews-Blue_Lake-Imotski_Split_Dalmatia_County_Dalmatia.html"
+    ],
+    "cost": "free",
+    "timeNeeded": "15 min",
+    "bestTime": "same stop as Blue Lake",
+    "tags": ["off-route", "viewpoint", "karst", "sinkhole", "worth-if-passing", "quick-stop"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-izvor-cetine",
+    "name": "Izvor Cetine — 'Eye of the Earth' spring",
+    "country": "HR",
+    "category": "nature",
+    "lat": 43.9769,
+    "lng": 16.4299,
+    "description": "The surreal turquoise-to-black karst spring of the Cetina river (divers passed 120m without finding the bottom), the drone-photo star of inland Dalmatia, next to a lonely 9th-century church. DETOUR MATH: Krka -> Eye 1:22 + Eye -> Split 1:38 = 3:00 vs 1:12 direct = +1:48; it sits ~30 min from Knin fortress, so it nearly comes free on the already-considered inland Zadar->Knin->Split variant (+1:28). VERDICT: worth it if passing — pick it only if the day-2 inland variant wins.",
+    "communityNotes": "Bloggers who went: 'even more striking in person, and you'll likely have it to yourself'. Swimming is officially BANNED (it's a drinking-water source — local activism got it enforced) and the water is 4-8°C anyway; people still report quick dips but don't plan the stop around swimming. The viral 'whale in the spring' photos are fakes. Combine with Vrlika or Knin; pure photo/picnic stop otherwise.",
+    "sources": [
+      "https://www.weseektravel.com/cetina-river-spring-croatia/",
+      "https://www.helenabradbury.com/blog-1/visiting-cetina-river-spring-croatia",
+      "https://www.goworldtravel.com/the-eye-of-the-earth-croatias-cetina-river-springs/"
+    ],
+    "cost": "free",
+    "timeNeeded": "30-45 min",
+    "bestTime": "midday sun for the deepest blue",
+    "tags": ["off-route", "spring", "photo", "karst", "worth-if-passing", "inland-route"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-rastoke",
+    "name": "Rastoke watermill village (Slunj)",
+    "country": "HR",
+    "category": "town",
+    "lat": 45.1205,
+    "lng": 15.5845,
+    "description": "Historic hamlet where the Slunjčica splits into dozens of small waterfalls flowing under and between 300-year-old watermill houses — 'mini Plitvice with people living in it'. DETOUR MATH: it is 41km / ~40min NORTH of Plitvice, i.e. even further the wrong way (Zadar -> Rastoke 2:39 one-way); only conceivable as +1:20-1:30 on top of a day already sacrificed to Plitvice. VERDICT: skip — too far for what it is on this route; only reconsider if the Plitvice variant wins AND you crave a calm lunch stop.",
+    "communityNotes": "Rick Steves forum and Tripadvisor agree on both points: 'a worthwhile side trip... well worth a visit' BUT 'in no way an alternative to Plitvice' and 'you really only need an hour or two'. Its real virtue per visitors: 'a thousand times more relaxing because there aren't many visitors'. Verdict from the community math: a great break on a Zagreb->Plitvice drive — which is not our drive.",
+    "sources": [
+      "https://community.ricksteves.com/travel-forum/croatia/rastoke-slunj-a-plitvice-alternative",
+      "https://www.tripadvisor.com/Attraction_Review-g1190778-d3162455-Reviews-Rastoke-Slunj_Karlovac_County_Central_Croatia.html"
+    ],
+    "cost": "free to wander; small fee for the museum part",
+    "timeNeeded": "1-2h",
+    "bestTime": "lunch stop if (and only if) doing Plitvice",
+    "tags": ["off-route", "waterfalls", "village", "skip-too-far", "plitvice-pairing"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-zavratnica",
+    "name": "Zavratnica bay + WWII wreck snorkel",
+    "country": "HR",
+    "category": "beach",
+    "lat": 44.6958,
+    "lng": 14.9100,
+    "description": "A 900m fjord-like inlet under the Velebit cliffs near Jablanac, with a snorkelable German Siebel-ferry wreck from 1944 lying 2-3m deep in clear water. No bars, no sunbeds — protected landscape inside Velebit Nature Park. DETOUR MATH: Zadar -> Jablanac ~2:13 by winding D8 (OSRM; ~1:45 realistic), Paklenica/Starigrad -> Jablanac 1:39 — bolting it onto a Paklenica day costs roughly +3h driving total. VERDICT: worth it only if the group commits a full Velebit day (pair with Zavižan/Premužić, both already in data); not worth it as a standalone detour.",
+    "communityNotes": "Croatian hidden-gem lists call it 'the most beautiful bay in Croatia'; divers/snorkelers: 'the outline is visible from the path; with a mask you'll spot fish weaving through the remains'. Access is a 15-20 min walk down from Jablanac (steep back up in heat). 'While other destinations are filled with beach bars, Zavratnica has remained unspoiled.' Small entry fee in season as part of the protected area.",
+    "sources": [
+      "https://croatiahiddengems.com/beaches-and-islands/most-beautiful-bay-of-croatia-zavratnica",
+      "https://www.foxsadventures.com/discovering-a-hidden-shipwreck-at-zavratnica-bay-croatia/",
+      "https://www.nativecroatia.com/native-croatia-travel-ideas/zavratnica-bay-croatia-travel-guide"
+    ],
+    "cost": "~€2-3 entry in season",
+    "timeNeeded": "2h on site + the drive",
+    "bestTime": "morning, before day-trip boats from Rab arrive",
+    "tags": ["off-route", "swim", "snorkel", "wreck", "velebit", "hidden-gem", "worth-if-passing"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-vis-bisevo-blue-cave",
+    "name": "Vis island + Biševo Blue Cave (honest verdict: skip)",
+    "country": "HR",
+    "category": "sight",
+    "lat": 43.0594,
+    "lng": 16.1861,
+    "description": "Croatia's most remote inhabited island — Stiniva cove, military tunnels, Komiža — plus the famous Blue Cave on Biševo. DETOUR MATH: car ferry Split-Vis is ~2h20 EACH WAY and the island deserves 2-3 days; post-pickup it means backtracking ~3h to Split first. The Blue Cave itself is a 5-minute visit with an 11:00-13:00 light window and high-season queues. VERDICT: skip — structurally impossible in this 12-night loop without killing two days; the group already has Odysseus Cave (Mljet) and Lokrum as cave/island fixes.",
+    "communityNotes": "Travelers love Vis itself ('spend at least three days') but are lukewarm on the cave logistics: 'it can feel like a tourist trap — the blue effect only works ~11:00-13:00, it gets very crowded, the visit lasts about five minutes, and admission is extra on top of the boat tour'. Consensus for short Dalmatia trips: 'skip the Blue Cave and focus on other attractions'. Keep Vis for a future sailing/slow trip.",
+    "sources": [
+      "https://www.hvaraway.com/journals/croatia-blue-cave-tour",
+      "https://www.adventurouskate.com/vis-croatia-travel-vis-island/"
+    ],
+    "cost": "car ferry ~€50+ each way; Blue Cave entry €18-24 high season",
+    "timeNeeded": "2-3 days realistically",
+    "bestTime": "a different trip",
+    "tags": ["off-route", "island", "sea-cave", "ferry-required", "skip-too-far"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-bacina-jezera",
+    "name": "Baćina lakes (Baćinska jezera)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 43.0674,
+    "lng": 17.4272,
+    "description": "Seven interconnected spring-fed freshwater lakes hiding right behind Ploče harbour — warm, clear, swimmable, kayak/SUP rentable, and almost empty even in season. DETOUR MATH: they sit ~4 min off the Makarska->Dubrovnik road (Makarska->lakes 1:12 + lakes->Dubrovnik 1:49 = 3:01 vs 2:52 direct = +0:09). VERDICT: worth it if passing — the cheapest genuine swim-stop detour of the whole trip, perfect leg-stretch on the day-3 deadline run.",
+    "communityNotes": "Croatian and eco-travel sources: 'no mass tourism, just pure nature... true peace even in high season'; freshwater contrast to the salty Adriatic, springs keep it 'clean, cool and beautifully clear'. 300+ bird species in the wider Neretva wetland. Kayak tours run from the shore (Croatian Attractions and local operators). Locals' swim spot more than a sight — manage expectations: pretty, calm, zero drama.",
+    "sources": [
+      "https://explore-croatia.net/lovely-bacina-lakes-near-adriatic-sea/",
+      "https://www.bacinskajezera.com/",
+      "https://ecobnb.com/blog/2021/08/bacina-lakes-croatia/"
+    ],
+    "cost": "free; kayak/SUP rental extra",
+    "timeNeeded": "45 min - 2h",
+    "bestTime": "afternoon swim break on the drive south",
+    "tags": ["off-route", "swim", "lake-swim", "kayak", "quick-stop", "worth-if-passing", "low-crowds"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-una-strbacki-buk",
+    "name": "Štrbački buk, Una NP (skip — wrong trip)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 44.6559,
+    "lng": 16.0101,
+    "description": "A 25m-high, 40m-wide travertine mega-cascade on the Una — many call it the most beautiful waterfall in the Balkans, with Una rafting on top. DETOUR MATH: it is in the far NW corner of Bosnia: Zadar -> falls ~2:53 one-way (OSRM, optimistic — official access is via the Orašac/Ćelije entrance on the BA side, realistically 3:15+ incl. border). Even chained with Plitvice the day becomes ~7:40 of driving. VERDICT: skip — genius place, wrong trip; it belongs to a Zagreb/Plitvice-Bihać itinerary.",
+    "communityNotes": "Trip reports: 'the view becomes more and more beautiful as you go downstream — smaller cascades combine with the main fall'. Bosnian press (istrazibih.com) reports record visits and notes part of the access road from Orašac is freshly asphalted; entry 12 KM (~€6) adults. The detour math, not the place, is what kills it — every source that actually went raves about it.",
+    "sources": [
+      "https://npuna.com/en/strbacki-buk/",
+      "https://www.istrazibih.com/2025/07/strbacki-buk.html",
+      "https://hive.blog/hive-155530/@sammy00/strbacki-buk-waterfall-and-una"
+    ],
+    "cost": "12 KM (~€6) entry",
+    "timeNeeded": "full day from Zadar incl. driving",
+    "bestTime": "n/a on this route",
+    "tags": ["off-route", "waterfall", "national-park", "skip-too-far", "rafting"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-jajce-pliva-waterfall",
+    "name": "Jajce — Pliva waterfall under the old town",
+    "country": "BA",
+    "category": "sight",
+    "lat": 44.3377,
+    "lng": 17.2705,
+    "description": "A 20m waterfall crashing in the literal centre of a walled medieval royal town — the Pliva drops into the Vrbas right under Jajce fortress. Unique image, almost no foreign tourists. DETOUR MATH: Mostar -> Jajce 3:03 + Jajce -> Sarajevo 2:33 = 5:36 vs Mostar -> Sarajevo via Konjic 2:12 = +3:24, and it bypasses Konjic/Boračko/Neretva rafting. VERDICT: skip — too far for this loop; flag for a future central-Bosnia trip (with Travnik + Pliva lakes).",
+    "communityNotes": "'One of the most magical places in Europe, despite remaining completely unheard of' (travel blogs); 'the Pliva Falls have been wholly overlooked despite their magnificent city backdrop'. The town also has catacombs, AVNOJ museum and the fortress. Everyone who detours is delighted — but they're all coming from the Banja Luka/Sarajevo axis, not from Herzegovina.",
+    "sources": [
+      "https://www.travelsewhere.net/visit-jajce-bosnia-herzegovina/",
+      "https://wander-lush.org/things-to-do-in-jajce-waterfall/",
+      "https://sandaltanman.com/guide-to-jajce-bosnia-and-herzegovina/"
+    ],
+    "cost": "few KM for the waterfall viewing platform",
+    "timeNeeded": "2-3h + heavy driving",
+    "bestTime": "n/a on this route",
+    "tags": ["off-route", "waterfall", "old-town", "fortress", "skip-too-far"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-pliva-mlincici",
+    "name": "Pliva lakes + Mlinčići watermills",
+    "country": "BA",
+    "category": "nature",
+    "lat": 44.3473,
+    "lng": 17.2265,
+    "description": "Twenty tiny 400-year-old oak watermills ('gnome houses') strung across the rapids between the two Pliva lakes, 5 km from Jajce — plus some of the clearest freshwater swimming in Bosnia. DETOUR MATH: same as Jajce (+3:24 vs the Konjic corridor) — they stand or fall together. VERDICT: skip on this route; if the route ever flips through central Bosnia this pair becomes a top-tier half day.",
+    "communityNotes": "Wander-Lush and others: 'one of the best hidden swimming spots in BiH — crystal clear, blue fresh water surrounded by forests'; the watermill complex is free to enter and connected by wooden walkways. A protected national monument; locals picnic and swim at the bigger lake (Veliko Plivsko jezero).",
+    "sources": [
+      "https://wander-lush.org/pliva-lakes-jajce/",
+      "https://meetbosnia.com/what-to-see-in-jajce-8-greatest-attractions/"
+    ],
+    "cost": "free",
+    "timeNeeded": "1-2h (+ swim)",
+    "bestTime": "n/a on this route",
+    "tags": ["off-route", "watermill", "lake-swim", "photo", "skip-too-far"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-prokosko-jezero",
+    "name": "Prokoško jezero (Vranica highland lake)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.9575,
+    "lng": 17.7546,
+    "description": "Glacial lake at 1,635m ringed by shepherd katun huts on Vranica mountain above Fojnica — postcard Bosnia, famous among locals, almost unknown to foreigners. DETOUR MATH: Sarajevo -> lake 1:46 by OSRM but the last ~15km are rough macadam (Tripadvisor: locals recommend SUV/4WD or a taxi-jeep from Fojnica), so realistically 2:15+ each way = +4.5-5h round trip from the corridor. VERDICT: skip — Lukomir (already on the route) delivers the same highland-katun wow for a fraction of the cost in a rental car.",
+    "communityNotes": "Tripadvisor forum on the access road: 'the road from the Gornji Vakuf side is about as challenging as the road from Fojnica... find a taxi driver with an SUV or 4WD'. Bosnian weekend crowds can be heavy in summer; huts sell food. Beautiful, but the community's own advice (4x4) is exactly what a rental contract forbids.",
+    "sources": [
+      "https://www.tripadvisor.in/ShowTopic-g294449-i6233-k12759973-Road_to_Prokosko_jezero-Bosnia_and_Herzegovina.html",
+      "https://furaj.ba/najljepsa-mjesta-za-kupanje-u-bosni-i-hercegovini/"
+    ],
+    "cost": "small road toll sometimes collected",
+    "timeNeeded": "half day+ from Sarajevo",
+    "bestTime": "n/a on this route",
+    "tags": ["off-route", "katun", "lake-view", "rough-access", "4x4-access", "skip-too-far"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-hutovo-blato",
+    "name": "Hutovo Blato wetland boat safari",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.0654,
+    "lng": 17.7545,
+    "description": "A sub-Mediterranean wetland 'sea of birds' in the Neretva delta — silent flat-boat photo-safaris glide through reed channels from Karaotok visitor centre. DETOUR MATH: Dubrovnik -> Karaotok 2:06, then Karaotok -> Kravica ~0:40 — inserting it into day 6 (Dubrovnik -> Kravica -> Mostar) costs roughly +30-40 min of driving plus the 45-min boat. VERDICT: worth it if passing — cheap detour, BUT June is not peak bird season, so treat it as a chill boat ride, not a wildlife guarantee.",
+    "communityNotes": "'The most underrated nature site in Herzegovina — almost no foreign tourists know it exists'; 'one of the most relaxing things you can do, quietly gliding through the water'. Honest counterweight from a Tripadvisor visitor: 'saw hardly any animals apart from a couple of small water snakes and the occasional bird' — sightings are luck + season (spring/autumn migrations are the real show). Standard boat trip ~€10/person (45 min), longer ~€15.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g952687-d2303592-Reviews-Nature_Park_Hutovo_Blato-Capljina_Herzegovina_Neretva_Canton_Federation_of_Bosnia.html",
+      "https://exploremostar.com/hutovo-blato/",
+      "https://bosnianvoyager.com/hutovo-blato/"
+    ],
+    "cost": "~€10/person for 45-min boat",
+    "timeNeeded": "1.5h on site",
+    "bestTime": "morning or golden hour; manage June wildlife expectations",
+    "tags": ["off-route", "boat", "nature", "neretva", "worth-if-passing", "low-crowds"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-radimlja-stecci",
+    "name": "Radimlja stećci necropolis (UNESCO), Stolac",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.0921,
+    "lng": 17.9238,
+    "description": "The finest field of stećci — enigmatic carved medieval tombstones, UNESCO-listed — 133 monoliths with dancing figures and crescent moons, right on the M6 roadside 3km west of Stolac. DETOUR MATH: if the post-pickup night lands near Trebinje (already an open skeleton question), the Trebinje -> Stolac -> Mostar road passes the gate at +0:00; from the standard Kravica routing it costs ~+50 min. VERDICT: worth it if passing — and a strong argument FOR the Trebinje->Stolac inland road (Dubrovnik -> Radimlja 2:16 + Radimlja -> Mostar 1:01 = 3:17 vs 3:11 via Kravica turn-off: time-neutral).",
+    "communityNotes": "'A physical connection to a world that disappeared when the Ottoman conquest reshaped the Balkans'; 'just on the half way on the inland road from Dubrovnik to Mostar and really worth a visit'. Free/open 24h with basic signage per recent visitors. Stolac itself (Bregava river, Ottoman core, Daorson megalithic walls 30 min up the hill) makes a good coffee stop.",
+    "sources": [
+      "https://bosnianvoyager.com/radimlja-necropolis/",
+      "https://sailingstonetravel.com/visiting-stolac-daorson-radimjla-necropolis/",
+      "https://www.tripadvisor.com/ShowUserReviews-g303195-d556597-r515970272-Radimlja-Stolac_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Herzegovina.html"
+    ],
+    "cost": "free (open site)",
+    "timeNeeded": "20-30 min",
+    "bestTime": "golden hour for the carvings' relief",
+    "tags": ["off-route", "unesco", "history", "quick-stop", "worth-if-passing", "zone-trebinje"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-trnovacko-jezero",
+    "name": "Trnovačko jezero — the heart-shaped lake",
+    "country": "ME",
+    "category": "hike",
+    "lat": 43.2519,
+    "lng": 18.7250,
+    "description": "Emerald heart-shaped glacial lake at 1,517m under Maglić — technically in Montenegro but hiked from the Sutjeska side (Prijevor saddle), ~5km / ~2h each way on a well-worn path; climb a bit for the heart shot. DETOUR MATH: Tjentište -> Prijevor is ~18km of rough gravel, ~1:00-1:15 each way in a normal car driven slowly (high clearance helps; some hire a 4x4 transfer at Tjentište), then the hike. Adds roughly a half day to the day-8 Sutjeska transit. VERDICT: worth rerouting for — start Mostar/Konjic early and it converts a transfer day into the trip's signature mountain day.",
+    "communityNotes": "'Considered by many the most beautiful mountain lake in Montenegro'; AllTrails/forums confirm 'the walk is well signed and well worn — basically every other group goes without a guide'. Road reality from trip reports: 'asphalt gives way to gravel then dirt... some stretches as bad as a road can get while still drivable by a regular car... about an hour of stony track', though recent accounts call it 'surprisingly well passable'. Prijevor itself has a Perućica-rainforest viewpoint, parking and a drinking-water well. A ranger collects a small fee at the lake (€1-3 reported); wild camping at the shore is popular.",
+    "sources": [
+      "https://www.alltrails.com/trail/bosnia-herzegovina/foca/via-dinarica-suha-to-trnovacko-lake",
+      "https://lukaesenko.com/hiking-in-sutjeska-national-park-trnovacko-lake/",
+      "https://www.thebestviewpoints.com/2025/02/05/peak-41-bosnia-and-herzegovina-maglic/",
+      "https://www.tripadvisor.com/ShowTopic-g3336967-i31053-k9700660-o10-Independant_Hiking_in_Sutjeska-Sutjeska_National_Park_Republika_Srpska.html"
+    ],
+    "cost": "small lake fee (€1-3 reported) + NP Sutjeska entry",
+    "timeNeeded": "half day (1h rough drive + ~4h hike round trip)",
+    "bestTime": "morning start from Tjentište; bring passport (border zone, no checkpoint)",
+    "tags": ["off-route", "hike", "lake-view", "sutjeska", "worth-rerouting", "rough-access", "high-reward"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-biogradska-gora",
+    "name": "Biogradska Gora NP — primeval forest lake",
+    "country": "ME",
+    "category": "nature",
+    "lat": 42.8971,
+    "lng": 19.6027,
+    "description": "One of Europe's last primeval forests: 500-year-old beech/fir giants around glassy Biogradsko jezero, with an easy 1h lake loop (partly boardwalk). DETOUR MATH: the key is the EASTERN SWING — Žabljak -> Tara bridge 0:32 -> Tara canyon road -> Mojkovac -> lake (~1:30-1:45 real; OSRM 2:42) -> Morača canyon -> Podgorica 0:56 ≈ 4:30-5h total vs the 3:16 skeleton via Šavnik/Ostrog = net +2.5-3.5h once Ostrog becomes a +2:08 spur from Podgorica. What it buys: the full Tara canyon drive (deepest canyon in Europe), this forest, and the Platije/Morača gorge. VERDICT: worth rerouting for — as part of the eastern swing, not as an out-and-back.",
+    "communityNotes": "'One of Europe's few remaining untouched beech-fir woods... mossy carpets and fallen giants'; the lake loop 'perfect for a relaxed hour'. Caveat from reviewers: 'the lakefront boardwalk gets bus-busy in high season' — go early/late; the deeper trails (Bendovac) are empty. Entry €4-5/person; rowboat rental on the lake. Katun villages above serve cheese/kačamak.",
+    "sources": [
+      "https://www.montenegropulse.com/biogradska-gora.html",
+      "https://www.takeyourbackpack.com/backpacking-in-montenegro/visit-biogradska-gora/",
+      "https://www.tripadvisor.com/Attraction_Review-g3677915-d666873-Reviews-Biogradska_Gora-Kolasin_Municipality.html"
+    ],
+    "cost": "€4-5/person entry",
+    "timeNeeded": "1.5-2h (lake loop + lunch)",
+    "bestTime": "before 10am or after 4pm to dodge tour buses",
+    "tags": ["off-route", "national-park", "lake-view", "forest", "worth-rerouting", "eastern-swing"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-mrtvica-canyon",
+    "name": "Mrtvica canyon hike (Gate of Wishes)",
+    "country": "ME",
+    "category": "hike",
+    "lat": 42.7243,
+    "lng": 19.3729,
+    "description": "Wild slot-canyon hike up the ice-blue Mrtvica from Međuriječje in the Morača valley — carved cliff path, the rock 'Gate of Wishes' (Kapija želja), swimming holes. ~9km, moderate, 4-5h. DETOUR MATH: the trailhead is ON the eastern-swing road (Kolašin -> Podgorica), so driving cost ≈ 0 if the swing happens — the real cost is the hike time; standalone from Podgorica it's 0:56 each way. VERDICT: worth rerouting for IF the eastern swing wins and the group wants a hike that day; otherwise skip (it competes with Durmitor legs).",
+    "communityNotes": "AllTrails (136 reviews): 'not an easy one, however it's worth the effort'; 'the last 200m a little dangerous, auxiliary ropes in operation'. IMPORTANT recent ground truth: 'the bridges were destroyed by a flood in 2020; in June 2025 they were still not rebuilt' — river crossings can be sketchy in high water, and 'red arrows seem to just disappear at some point... the start of the trail is not that clear'. Download a GPX; do not attempt after heavy rain.",
+    "sources": [
+      "https://www.alltrails.com/trail/montenegro/kolasin/mrtvica-canyon",
+      "https://thesandyfeet.com/guide-hiking-mrtvica-canyon/",
+      "https://www.outdooractive.com/en/route/hiking-trail/montenegro/mrtvica-canyon/41168923/"
+    ],
+    "cost": "free",
+    "timeNeeded": "4-5h hike",
+    "bestTime": "dry weather only; June water still high — check conditions",
+    "tags": ["off-route", "hike", "canyon", "swim", "gpx-needed", "worth-rerouting", "eastern-swing"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-cijevna-niagara",
+    "name": "Cijevna falls — 'Niagara of Montenegro'",
+    "country": "ME",
+    "category": "nature",
+    "lat": 42.3841,
+    "lng": 19.2794,
+    "description": "A wide travertine cascade where the Cijevna drops over a karst shelf 10 min from Podgorica, with a popular swimming pool below and the Niagara restaurant beside it. DETOUR MATH: Podgorica -> falls 0:13 + falls -> Virpazar 0:38 vs 0:33 direct = +18 min on the day-10/11 transfer. VERDICT: worth it if passing — near-free; in mid-June expect reduced (not yet dry) flow, locals will be swimming.",
+    "communityNotes": "Lonely Planet and local sources are honest: 'at their dramatic best after spring thaws... by August they're often completely dried up; in early summer plenty of locals take a dip in the somewhat depleted depths'. Reviewers consistently praise the surreal blue of the water and the cheap riverside restaurant. Mid-June = decent odds of both water and swimming.",
+    "sources": [
+      "https://www.lonelyplanet.com/montenegro/podgorica/attractions/niagara-falls/a/poi-sig/1543410/360160",
+      "https://www.tripadvisor.com/Attraction_Review-g304088-d8660917-Reviews-Waterfall_Niagara-Podgorica_Podgorica_Municipality.html",
+      "https://adria.fun/en/montenegro-also-has-its-own-niagara-falls-all-this-thanks-to-the-cijevna-river/"
+    ],
+    "cost": "free; restaurant optional",
+    "timeNeeded": "30-45 min",
+    "bestTime": "mid-June still OK; the earlier in summer the better",
+    "tags": ["off-route", "waterfall", "swim", "quick-stop", "worth-if-passing", "june-borderline"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-grlo-sokolovo",
+    "name": "Grlo Sokolovo viewpoint (Kučka krajina)",
+    "country": "ME",
+    "category": "viewpoint",
+    "lat": 42.4828,
+    "lng": 19.5470,
+    "description": "'Falcon's Throat' — an old Yugoslav border-patrol path ends at a 1,386m rim with a vertigo view straight down the Cijevna canyon into Albania and across to the Prokletije wall. ~45 min easy walk each way from the Korita panoramic road. DETOUR MATH: Podgorica -> trailhead 0:57 each way + ~1.5-2h walking = a ~3.5-4h half-day spur. VERDICT: worth it if a Podgorica-area half day frees up (e.g. paired with Niagara falls + Žabljak Crnojevića); the single best view-per-effort ratio near the capital.",
+    "communityNotes": "Montenegro-based bloggers: 'one of the most beautiful viewpoints in Montenegro', 'an absolute highlight' on the official 'Circuit around Korita' panoramic route; the region is 'rather unknown among tourists although it offers many hidden surprises'. Trail is the former patrol path — easy but unfenced at the rim. Local tip: combine with lamb/cheese at a Korita katun restaurant.",
+    "sources": [
+      "https://montenegro-for.me/2014/05/kucka-korita-the-patrol-path-to-grlo-sokolovo/",
+      "https://balkanadventure.me/panoramic-route-4-the-circuit-around-korita/",
+      "https://airial.travel/attractions/montenegro/korita/grlo-sokolovo-viewpoint-UbWYxxCe"
+    ],
+    "cost": "free",
+    "timeNeeded": "half day from Podgorica",
+    "bestTime": "clear day; morning light into the canyon",
+    "tags": ["off-route", "viewpoint", "canyon", "hidden-gem", "worth-if-passing", "drop-off-exposure"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-dalovica-gorge",
+    "name": "Đalovića gorge + cave (skip — not ready yet)",
+    "country": "ME",
+    "category": "nature",
+    "lat": 43.0725,
+    "lng": 19.9118,
+    "description": "Montenegro's wildest gorge (Bistrica river, near Bijelo Polje) hiding Đalovića pećina — at ~17.5km the country's longest cave, 'it begins where most caves end' per its explorers. A €23M project (gondola from Podvrh monastery + show-cave fit-out) is under construction. DETOUR MATH: Mojkovac -> cave area 1:37 (49km, partly unpaved) each way, and the cave is guided-expedition-only until the project opens. VERDICT: skip — too deep northeast for this loop and the headline attraction isn't open; revisit in a future year when the gondola runs.",
+    "communityNotes": "Montenegrin press (RTCG, Aktuelno): the cable car will span ~750m over the 220m-deep gorge to the cave entrance; speleologists call it 'the most promising and beautiful cave in Montenegro' with an 18m stalagmite and a football-field-sized hall. Currently visits = cave-trekking tours with the Akovo club from Bijelo Polje + a 45km partly-unpaved drive. One for the watchlist, not this trip.",
+    "sources": [
+      "https://www.showcaves.com/english/me/caves/Djalovica.html",
+      "https://www.aktuelno.me/crna-gora/sjever-crne-gore-turisticki-hit-regiona3-dalovica-pecina-vise-od-23-miliona-eura-za-dragulj-prirode-i-spektakularni-dozivljaj/",
+      "https://sharemontenegro.me/gradi-se-zicara-do-najvece-i-najduze-pecine-u-crnoj-gori/"
+    ],
+    "cost": "guided cave tours only (price varies)",
+    "timeNeeded": "full day from the corridor",
+    "bestTime": "a future trip, post-opening",
+    "tags": ["off-route", "cave", "canyon", "skip-too-far", "verify"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-prokletije-grebaje",
+    "name": "Prokletije NP — Grebaje valley (Volušnica/Talijanka)",
+    "country": "ME",
+    "category": "hike",
+    "lat": 42.5165,
+    "lng": 19.7841,
+    "description": "The 'Accursed Mountains': Grebaje valley near Gusinje sits under the Karanfili spires with ~1,000m walls straight from the valley floor — hikers rank Volušnica->Talijanka ('the most famous 360° panorama in the Balkans') above anything in Durmitor for drama. DETOUR MATH: Podgorica -> Grebaje 2:05 one-way; honestly needs an overnight in Gusinje/Grebaje + a hike day = +1.5-2 days. VERDICT: worth rerouting for ONLY if the group trades away the deep-south coast day (Bar/Ulcinj/Ada Bojana) and a Budva night — the best pure-mountain card this region holds, at the highest price on the table.",
+    "communityNotes": "Adriatic/hiking sites: 'the most aggressive landscape in the Prokletije range... a raw intensity found nowhere else in the Balkans'; Montenegrin local press lists Dolina Grebaje among underrated places 'na rame s najljepšim dolinama Julijskih Alpa' (shoulder to shoulder with the finest Julian Alps valleys). Tripadvisor forum consensus: 'the nature is really different from Durmitor... a remote wilderness that still feels secret with achievable trails'. Volušnica is the one hike if you only do one (~4-5h round).",
+    "sources": [
+      "https://adriaticways.com/grebaje-valley-prokletije/",
+      "https://thesandyfeet.com/talijanka-grebaje-valley-montenegro/",
+      "https://sharemontenegro.me/koja-mjesta-u-crnoj-gori-su-nepravedno-potcijenjena-iii-dio/",
+      "https://www.tripadvisor.com.sg/ShowTopic-g635648-i11070-k13888424-Is_Prokletije_worth_an_additional_stop-Montenegro.html"
+    ],
+    "cost": "NP entry ~€3; guesthouses in Grebaje ~€30-50",
+    "timeNeeded": "1.5-2 days",
+    "bestTime": "stable-weather window; check forecasts — storms build fast",
+    "tags": ["off-route", "hike", "mountains", "high-reward", "worth-rerouting", "overnight", "remote"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-zabljak-crnojevica",
+    "name": "Žabljak Crnojevića fortress (Skadar wetland)",
+    "country": "ME",
+    "category": "sight",
+    "lat": 42.3170,
+    "lng": 19.1565,
+    "description": "Abandoned medieval capital of Zeta (1466-1478) — a lone walled fortress rising from the Morača wetlands at the edge of Lake Skadar, reached via a one-way bridge and a 500m stone path. Free, empty, drone-bait. DETOUR MATH: Podgorica -> fortress 0:37 + fortress -> Virpazar 0:40 vs 0:33 direct = ~+45 min on the Skadar transfer. VERDICT: worth it if passing — pairs perfectly with Cijevna falls into a 'lost Montenegro' morning before Virpazar kayaking.",
+    "communityNotes": "Tripadvisor/local guides: 'the view from the fort over the whole area and Lake Skadar is extraordinary'; praised for 'calm, historical charm' and zero crowds vs Kotor-grade sights. Access detail from montenegropulse: turn off the Podgorica-Virpazar road toward Vukovci, cross the railway and one-way bridge, free parking at the foot; sturdy shoes, no facilities. History: Crnojević capital before Ottoman rule, 400 years Turkish, returned 1878.",
+    "sources": [
+      "https://www.montenegropulse.com/lake-skadar.html",
+      "https://www.tripadvisor.com/Attraction_Review-g1096284-d20820921-Reviews-Fortress_Zabljak_Crnojevica-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+      "https://en.wikipedia.org/wiki/%C5%BDabljak_Crnojevi%C4%87a"
+    ],
+    "cost": "free",
+    "timeNeeded": "45-60 min",
+    "bestTime": "morning light over the wetland",
+    "tags": ["off-route", "fortress", "ruins", "skadar", "hidden-gem", "worth-if-passing", "photo"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-lipa-cave",
+    "name": "Lipa Cave show cave (near Cetinje)",
+    "country": "ME",
+    "category": "sight",
+    "lat": 42.3740,
+    "lng": 18.9535,
+    "description": "Montenegro's only developed show cave — 2.5km of halls and passages, hourly guided 1h tours with a small cave-train ride, 5km from Cetinje on the old Cetinje-Podgorica road. DETOUR MATH: Virpazar -> Lipa 0:59 + Lipa -> Budva 0:47 = 1:46 vs the 1:05 skeleton leg (Virpazar -> Sveti Stefan -> Budva) = +40 min driving + ~1.5h visit; nearly free if a Lovćen/Cetinje variant (already in data) gets picked. VERDICT: worth it if passing — best rainy-day/heat-escape card in the Budva area; 10°C inside.",
+    "communityNotes": "4.8/5 across 300+ Tripadvisor reviews; 'amazing, so worth it', 'the best part of our Montenegro trip' vs one grumble about an unfriendly guide. Practical notes from reviewers: arrive ~30 min before the tour, bring a layer (10°C), tours hourly in summer. Good group fit: zero fitness needed, works in any weather.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g19199109-d7262982-Reviews-Lipa_cave-Lipa_Cetinje.html",
+      "https://lifeontheroam.com/lipa-cave-montenegro/"
+    ],
+    "cost": "~€11-14/adult standard tour (verify current price)",
+    "timeNeeded": "1.5h incl. wait",
+    "bestTime": "hottest part of the day or rain plan",
+    "tags": ["off-route", "cave", "guided", "rest-day", "worth-if-passing", "lovcen-road"],
+    "rating": 4,
+    "status": "candidate"
+  }
+]

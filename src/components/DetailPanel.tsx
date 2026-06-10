@@ -5,6 +5,8 @@ import { DAYS, dayColor, dayDateLabel } from '../trip';
 
 interface Props {
   place: PlaceWithOverride | null;
+  /** On-the-road mode: hide research vocabulary (statuses), bigger targets. */
+  tripMode?: boolean;
   onClose: () => void;
   onStatus: (id: string, status: Status) => void;
   onAssignDay: (id: string, day: number | null) => void;
@@ -19,6 +21,7 @@ interface Props {
 
 export default function DetailPanel({
   place,
+  tripMode = false,
   onClose,
   onStatus,
   onAssignDay,
@@ -46,17 +49,19 @@ export default function DetailPanel({
         {p.rating ? ` · ${'★'.repeat(p.rating)}` : ''}
       </p>
 
-      <div className="status-buttons">
-        {STATUSES.map((s) => (
-          <button
-            key={s}
-            className={p.status === s ? `on badge-${s}` : ''}
-            onClick={() => onStatus(p.id, s)}
-          >
-            {s}
-          </button>
-        ))}
-      </div>
+      {!tripMode && (
+        <div className="status-buttons">
+          {STATUSES.map((s) => (
+            <button
+              key={s}
+              className={p.status === s ? `on badge-${s}` : ''}
+              onClick={() => onStatus(p.id, s)}
+            >
+              {s}
+            </button>
+          ))}
+        </div>
+      )}
 
       <label className="field-label">
         Trip day

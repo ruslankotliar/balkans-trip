@@ -13,6 +13,8 @@ interface Props {
   places: PlaceWithOverride[];
   routes: DayRoutes;
   routesLoading: boolean;
+  /** Manual ferry seconds per day (only days that have any). */
+  ferrySecByDay: Record<number, number>;
   selectedId: string | null;
   onSelect: (p: PlaceWithOverride) => void;
   onMove: (id: string, dir: 'up' | 'down') => void;
@@ -27,6 +29,7 @@ export default function Itinerary({
   places,
   routes,
   routesLoading,
+  ferrySecByDay,
   selectedId,
   onSelect,
   onMove,
@@ -38,7 +41,9 @@ export default function Itinerary({
     .filter((p) => !p.day && p.status === 'shortlist')
     .sort((a, b) => a.name.localeCompare(b.name));
 
-  const totalSec = Object.values(routes).reduce((s, r) => s + r.duration, 0);
+  const ferryTotal = Object.values(ferrySecByDay).reduce((s, v) => s + v, 0);
+  const totalSec =
+    Object.values(routes).reduce((s, r) => s + r.duration, 0) + ferryTotal;
   const totalM = Object.values(routes).reduce((s, r) => s + r.distance, 0);
 
   return (
@@ -61,7 +66,8 @@ export default function Itinerary({
               <span className="itin-day-date">{dayDateLabel(day)}</span>
               {route && (
                 <span className="itin-day-route">
-                  {formatDuration(route.duration)} · {formatDistance(route.distance)}
+                  {formatDuration(route.duration + (ferrySecByDay[day] ?? 0))}
+                  {ferrySecByDay[day] ? ' ⛴' : ''} · {formatDistance(route.distance)}
                 </span>
               )}
               {route && (

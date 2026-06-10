@@ -131,3 +131,58 @@ export function loadFerryHours(): FerryHours {
 export function saveFerryHours(f: FerryHours) {
   localStorage.setItem(FERRY_KEY, JSON.stringify(f));
 }
+
+// ---- Trip-mode state (mode, done stops, last GPS fix) ----
+
+export type Mode = 'planning' | 'trip';
+
+const MODE_KEY = 'balkans-trip-mode';
+
+export function loadSavedMode(): Mode | null {
+  const v = localStorage.getItem(MODE_KEY);
+  return v === 'planning' || v === 'trip' ? v : null;
+}
+
+export function saveMode(m: Mode) {
+  localStorage.setItem(MODE_KEY, m);
+}
+
+const DONE_KEY = 'balkans-trip-done';
+
+/** Stop ids ticked off in the Today view. */
+export function loadDone(): Record<string, boolean> {
+  try {
+    return JSON.parse(localStorage.getItem(DONE_KEY) ?? '{}');
+  } catch {
+    return {};
+  }
+}
+
+export function saveDone(d: Record<string, boolean>) {
+  localStorage.setItem(DONE_KEY, JSON.stringify(d));
+}
+
+export interface GpsFix {
+  lat: number;
+  lng: number;
+  /** accuracy in meters */
+  acc?: number;
+  /** epoch ms of the fix */
+  ts: number;
+}
+
+const FIX_KEY = 'balkans-trip-last-fix';
+
+/** Last GPS fix, so a cold start with no signal still shows an approximate dot. */
+export function loadLastFix(): GpsFix | null {
+  try {
+    const f = JSON.parse(localStorage.getItem(FIX_KEY) ?? 'null');
+    return f && typeof f.lat === 'number' ? f : null;
+  } catch {
+    return null;
+  }
+}
+
+export function saveLastFix(f: GpsFix) {
+  localStorage.setItem(FIX_KEY, JSON.stringify(f));
+}

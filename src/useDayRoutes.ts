@@ -36,7 +36,9 @@ export function useDayRoutes(dayPoints: Record<number, LatLng[]>): {
         if (pts.length < 2) continue;
         const day = Number(dayStr);
         const key = routeKey(pts);
-        if (cache[key]) next[day] = cache[key];
+        // Entries cached before per-leg data existed are refetched once to
+        // upgrade them (the Today view needs leg durations).
+        if (cache[key]?.legs) next[day] = cache[key];
         else toFetch.push({ day, key, pts });
       }
 
