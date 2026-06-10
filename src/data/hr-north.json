@@ -18,7 +18,7 @@
     "bestTime": "start before 9am for a parking spot and to beat heat/crowds",
     "tags": ["velebit", "canyon", "near-zadar"],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-anica-kuk",
@@ -38,7 +38,7 @@
     "bestTime": "morning start; April-Oct",
     "tags": ["velebit", "climbing", "via-ferrata", "exposed"],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-modric-cave",
@@ -79,7 +79,7 @@
     "bestTime": "June onward (low, clear water); confirm meeting point with the outfitter",
     "tags": ["kayaking", "canyon", "cliff-jumping", "zrmanja"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-tulove-grede",
@@ -99,7 +99,7 @@
     "bestTime": "clear day for views; avoid the dirt road after heavy rain",
     "tags": ["velebit", "winnetou", "offbeat", "inland-route"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-zrmanja-viewpoint",
@@ -139,7 +139,7 @@
     "timeNeeded": "1-2h",
     "tags": ["fortress", "inland-route", "underrated"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-pet-bunara",
@@ -480,7 +480,7 @@
     "facilities": "hot showers, electricity, drinking water, WiFi, direct sea/beach access",
     "tags": ["paklenica", "seaside", "hiking-base"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-camping-simuni",

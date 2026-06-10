@@ -12,6 +12,7 @@ research/integration-checklist.md
 research/logistics-notes.md
 research/me-notes.md
 research/me-route-user-notes.md
+research/off-route-notes.md
 research/offline-deploy.md
 research/route-skeleton.md
 research/route-sketch-notes.md
@@ -30,6 +31,7 @@ src/data/hr-user-saved.json
 src/data/logistics-places.json
 src/data/me-places.json
 src/data/me-user-notes.json
+src/data/off-route-gems.json
 src/data/seed.json
 marker:H
 marker:I
@@ -38,3 +40,4 @@ marker:K
 marker:L
 marker:M
 marker:N
+marker:O

@@ -36,7 +36,7 @@
     "bestTime": "June has good water; Extreme is 18+",
     "tags": ["canyoning", "cliff-jumping", "cetina", "adventure"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-radmanove-mlinice",
@@ -92,7 +92,7 @@
     "facilities": "Warm showers, clean sanitary block, electricity, WiFi, drinking water, laundry",
     "tags": ["omis", "camping", "river"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-kasjuni",
@@ -199,7 +199,7 @@
     "bestTime": "BOOK a timed slot online — capped at 20 cars/hour; take an early-morning slot. Open 06:00–20:00 (last entry 19:00)",
     "tags": ["biokovo", "scenic-drive", "viewpoint"],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-makarska-nightlife",
@@ -233,7 +233,7 @@
     ],
     "tags": ["logistics", "route", "peljesac"],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-mljet-np",
@@ -253,7 +253,7 @@
     "bestTime": "overnight recommended when you bring the car",
     "tags": ["island", "mljet", "national-park", "kayak"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-odysseus-cave",
@@ -271,7 +271,7 @@
     "bestTime": "morning; bring water shoes",
     "tags": ["mljet", "cliff-jumping", "swimming", "cave"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-camp-marina-mljet",
@@ -287,7 +287,7 @@
     "facilities": "Hot showers, shared kitchen + fridge, electricity, olive shade; max vehicle ~6.5m",
     "tags": ["mljet", "camping"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-korcula-town",
@@ -340,7 +340,7 @@
     "bestTime": "morning/evening — no shade",
     "tags": ["peljesac", "ston", "walls", "hike"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-mali-ston-oysters",
@@ -358,7 +358,7 @@
     "cost": "~€2–2.5 per oyster",
     "tags": ["peljesac", "food", "oysters"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-zuljana",
@@ -423,7 +423,7 @@
     "bestTime": "before sunset; cash only",
     "tags": ["dubrovnik", "nightlife", "cliff-jumping", "sunset"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-sveti-jakov-beach",

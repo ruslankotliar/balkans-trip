@@ -473,7 +473,7 @@
       "zone-mostar"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-air-14073324",
@@ -573,7 +573,7 @@
       "zone-sarajevo"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-air-1236363170544579717",
@@ -613,7 +613,7 @@
       "zone-trebinje"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-air-982496716754521531",
@@ -673,7 +673,7 @@
       "zone-zabljak"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-air-14609884",
@@ -713,7 +713,7 @@
       "zone-skadar"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-air-28070907",
@@ -793,7 +793,7 @@
       "zone-budva"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-air-20121614",

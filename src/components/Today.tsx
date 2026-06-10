@@ -113,11 +113,16 @@ export default function Today({
         <button className="today-arrow" disabled={day <= 1} onClick={() => onDay(day - 1)}>
           ◀
         </button>
-        <div className="today-strip-label" onClick={() => onDay(realDay)}>
+        <div
+          className="today-strip-label"
+          onClick={() => realDay >= 1 && onDay(realDay)}
+        >
           <strong>Day {day}</strong> · {dayDateLabel(day)}
-          {isToday ? <span className="today-badge">today</span> : (
+          {isToday ? (
+            <span className="today-badge">today</span>
+          ) : realDay >= 1 ? (
             <span className="today-jump">tap for today</span>
-          )}
+          ) : null}
         </div>
         <button
           className="today-arrow"

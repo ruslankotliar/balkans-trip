@@ -64,7 +64,7 @@
     "lng": 16.4402,
     "description": "Roman palace turned living old town. Also the main ferry hub for Hvar/Brač/Vis and good nightlife.",
     "tags": ["nightlife", "ferry-hub"],
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-omis",
@@ -129,7 +129,7 @@
     "lng": 17.9031,
     "description": "Dervish monastery at the cliff spring of the Buna river, 20min from Mostar. Spring is one of the strongest karst springs in Europe.",
     "timeNeeded": "1–2h",
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-kravica",
@@ -142,7 +142,7 @@
     "cost": "~€10 entry",
     "timeNeeded": "2–3h",
     "tags": ["swimming"],
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-pocitelj",
@@ -153,7 +153,7 @@
     "lng": 17.7261,
     "description": "Ottoman hillside fortress village on the Neretva, basically on the Mostar–coast road. Quick climb to the tower for the view.",
     "timeNeeded": "1h",
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-trebinje",

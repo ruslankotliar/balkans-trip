@@ -120,7 +120,7 @@
       "operators: X-Adventure, Adventure Dalmatia"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-zadar-kayak",
@@ -216,7 +216,7 @@
       "meditation"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-neretva-rafting-konjic",
@@ -243,7 +243,7 @@
       "operators: Raft Kor, Travel Konjic, Eco Vision"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-bobsled-track",
@@ -269,7 +269,7 @@
       "go-as-group"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-ark-bunker-konjic",
@@ -323,7 +323,7 @@
       "bjelasnica"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-umoljani-rakitnica-hike",
@@ -543,7 +543,7 @@
       "safety"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-durmitor-prutas",

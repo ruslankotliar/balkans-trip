@@ -845,6 +845,10 @@ body {
     right: 12px;
     max-height: 60vh;
   }
+  /* keep the title clear of the ☰ fab */
+  .sidebar .head-row {
+    padding-left: 44px;
+  }
 }
 
 /* ---- Route builder: solver label, anchors, ferry ---- */

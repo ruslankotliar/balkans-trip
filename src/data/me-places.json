@@ -23,7 +23,7 @@
       "photo"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-camp-grab",
@@ -50,30 +50,6 @@
       "tara-river",
       "border",
       "food"
-    ],
-    "rating": 5,
-    "status": "candidate"
-  },
-  {
-    "id": "me-debeli-brijeg-border",
-    "name": "Debeli Brijeg / Karasovići border (ME↔HR)",
-    "country": "ME",
-    "category": "other",
-    "lat": 42.487389,
-    "lng": 18.437583,
-    "description": "Main Montenegro↔Croatia coastal crossing on the Kotor/Herceg Novi → Dubrovnik route. The trip's biggest queue risk on the Jun 27/28 return — plan the day around it.",
-    "communityNotes": "Summer waits 1-4h, up to 4-5h on peak days (Fri/Sun worst); worst window 10:00-14:00 with Dubrovnik day-trippers. Real reports: 'usual waiting time... 1.5 to 2 hours during peak days.' Cross before 08:00 or after 21:00. Back-door alternative: Vitaljina/Kobila (Konfin) crossing via Molunat — cars only, much quieter, ~1h max even on peak weekends. Check live: kamere.mup.gov.me, nakordoni.eu, borderalarm.com. Note EES biometric checks (live since 10 Apr 2026) add time for non-EU travelers at HR external borders.",
-    "sources": [
-      "https://borderalarm.com/bottlenecks/karasovici-debeli-brijeg/",
-      "https://www.montenegropulse.com/montenegro-croatia-border.html",
-      "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k13812655-How_long_does_it_take_to_cross_border_in_summer-Montenegro.html"
-    ],
-    "bestTime": "cross before 08:00 or after 21:00; or use Vitaljina/Kobila to skip the queue",
-    "tags": [
-      "border",
-      "logistics",
-      "queue-risk",
-      "return-day"
     ],
     "rating": 5,
     "status": "candidate"
@@ -184,7 +160,7 @@
       "group-wish"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-tara-bridge-zipline",
@@ -210,7 +186,7 @@
       "viewpoint"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-camp-mlinski-potok",
@@ -238,7 +214,7 @@
       "hot-showers"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-camp-razvrsje",
@@ -295,7 +271,7 @@
       "group-wish"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-pavlova-strana",
@@ -321,7 +297,7 @@
       "rijeka-crnojevica"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-skadar-winery-kopitovic",
@@ -373,7 +349,7 @@
       "panorama"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-kotor-serpentine-viewpoint",
@@ -426,7 +402,7 @@
       "free-loophole"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-kotor-fortress-free-ladder",
@@ -475,7 +451,7 @@
       "bay-of-kotor"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-gospa-od-skrpjela",
@@ -523,7 +499,7 @@
       "walkable"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-jaz-beach-budva",
@@ -598,7 +574,7 @@
       "group-fit"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-zanjic-beach",
@@ -648,7 +624,7 @@
       "lustica"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-stari-bar",
@@ -672,7 +648,7 @@
       "deep-south"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-ulcinj-old-town",

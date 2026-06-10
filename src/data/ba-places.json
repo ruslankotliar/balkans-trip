@@ -197,7 +197,7 @@
     "bestTime": "Early evening for the buzz; mornings calmer in June",
     "tags": ["old-town", "ottoman", "city", "base", "nightlife", "walkable"],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-tunnel-of-hope",
@@ -217,7 +217,7 @@
     "bestTime": "Open ~09:00-18:00; go early to beat tour groups",
     "tags": ["war-history", "museum", "siege", "near-airport"],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-zeljo-cevapi",
@@ -257,7 +257,7 @@
     "bestTime": "Anytime; great light late afternoon",
     "tags": ["brutalist", "spomenik", "wwii", "quick-stop", "transit-friendly", "on-route"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-tjentiste-mladost",
@@ -298,7 +298,7 @@
     "bestTime": "Evening for the square; Saturday AM for the market. June books up early.",
     "tags": ["base", "cheap", "wine-town", "old-town", "near-dubrovnik", "market"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-vukoje-winery",

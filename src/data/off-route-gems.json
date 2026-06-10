@@ -288,7 +288,7 @@
     "bestTime": "morning start from Tjentište; bring passport (border zone, no checkpoint)",
     "tags": ["off-route", "hike", "lake-view", "sutjeska", "worth-rerouting", "rough-access", "high-reward"],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-biogradska-gora",
@@ -309,7 +309,7 @@
     "bestTime": "before 10am or after 4pm to dodge tour buses",
     "tags": ["off-route", "national-park", "lake-view", "forest", "worth-rerouting", "eastern-swing"],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-mrtvica-canyon",

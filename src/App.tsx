@@ -181,9 +181,12 @@ export default function App() {
 
   // ---- Planning mode vs Trip mode ----
   // Trip mode is the on-the-road UI: today-centric, no research machinery.
-  const [mode, setModeState] = useState<Mode>(
-    () => loadSavedMode() ?? (isDuringTrip() ? 'trip' : 'planning'),
-  );
+  // ?mode=trip|planning overrides (handy for sharing/testing).
+  const [mode, setModeState] = useState<Mode>(() => {
+    const urlMode = new URLSearchParams(location.search).get('mode');
+    if (urlMode === 'trip' || urlMode === 'planning') return urlMode;
+    return loadSavedMode() ?? (isDuringTrip() ? 'trip' : 'planning');
+  });
   const [sidebarOpen, setSidebarOpen] = useState(mode === 'trip');
   const [tripDay, setTripDay] = useState(currentTripDay());
   const [doneIds, setDoneIds] = useState<Record<string, boolean>>(loadDone);
@@ -890,7 +893,7 @@ export default function App() {
         {mode === 'trip' ? (
           <Today
             day={tripDay}
-            realDay={currentTripDay()}
+            realDay={isDuringTrip() ? currentTripDay() : -1}
             onDay={setTripDay}
             stops={todayStops}
             route={routes[tripDay]}
