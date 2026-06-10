@@ -3,6 +3,8 @@ research/ba-notes.md
 research/contingency.md
 research/drive-times.md
 research/experiences-notes.md
+research/food-notes.md
+research/hikes-notes.md
 research/hr-north-notes.md
 research/hr-south-notes.md
 research/integration-checklist.md
@@ -14,9 +16,12 @@ research/route-skeleton.md
 research/route-sketch-notes.md
 research/trip-ops.md
 research/ux-review.md
+src/data/accommodation-wishlist.json
 src/data/ba-places.json
 src/data/contingency-places.json
 src/data/experiences.json
+src/data/food.json
+src/data/hikes.json
 src/data/hr-north.json
 src/data/hr-south.json
 src/data/hr-user-saved.json
@@ -28,3 +33,4 @@ marker:H
 marker:I
 marker:K
 marker:L
+marker:M

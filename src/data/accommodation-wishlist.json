@@ -1,0 +1,818 @@
+[
+  {
+    "id": "me-air-14313188",
+    "name": "Family house Rvasi",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.37149,
+    "lng": 19.10261,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Stone house above Rvaši on the NW shore of Skadar Lake near Rijeka Crnojevića/Cetinje. ON-ROUTE for the Skadar/Cetinje leg. Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★4.96 from 24 reviews. Sleeps 5.",
+    "sources": [
+      "https://www.airbnb.com/rooms/14313188"
+    ],
+    "cost": "~€82/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-air-13219159",
+    "name": "Ivan's holiday home",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.22299,
+    "lng": 19.11257,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). House in Godinje, a Skadar-Lake wine village on the south shore. ON-ROUTE for the Skadar leg; well-reviewed. Sleeps 6.",
+    "communityNotes": "Airbnb guest rating ★4.78 from 83 reviews. Sleeps 6.",
+    "sources": [
+      "https://www.airbnb.com/rooms/13219159"
+    ],
+    "cost": "~€80/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 3,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-air-625139070441679511",
+    "name": "Holiday Home Darja",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.2009,
+    "lng": 19.0484,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). 2-bed cottage near Bar / SW of Skadar Lake. On-route for the Skadar-to-coast or deep-south leg. Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★4.93 from 56 reviews. Sleeps 5.",
+    "sources": [
+      "https://www.airbnb.com/rooms/625139070441679511"
+    ],
+    "cost": "~€68/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-air-1194377822001153349",
+    "name": "Mountain Lodge (Duži, Šavnik)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.9826,
+    "lng": 19.0335,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Cabin near Šavnik, ~35 km south of Žabljak on the Durmitor→Ostrog road. Could serve a post-Durmitor night; remote. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
+    "communityNotes": "Airbnb guest rating ★5.0 from 17 reviews. Sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1194377822001153349"
+    ],
+    "cost": "price not retrieved — didn't surface in June searches (likely already booked or has a min-night that excludes short stays); check listing",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-air-49077678",
+    "name": "Mountain view chalet (Bijelo Polje)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.98825,
+    "lng": 19.71484,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Popular chalet near Bijelo Polje, NE Montenegro. FAR OFF our loop (~70 km east of Žabljak toward Serbia). Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★4.92 from 187 reviews. Sleeps 5.",
+    "sources": [
+      "https://www.airbnb.com/rooms/49077678"
+    ],
+    "cost": "price not retrieved — didn't surface in June searches (likely already booked or has a min-night that excludes short stays); check listing",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1294839146223116793",
+    "name": "Zen House Sarajevo (Hot Tub)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.78309,
+    "lng": 18.20178,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). House with hot tub at Hadžići on the W edge of Sarajevo. Candidate for a Sarajevo-area night; exactly sleeps 4. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
+    "communityNotes": "Airbnb guest rating ★4.95 from 62 reviews. Sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1294839146223116793"
+    ],
+    "cost": "price not retrieved — didn't surface in June searches (likely already booked or has a min-night that excludes short stays); check listing",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1167547936354611317",
+    "name": "4seasons Pale Jahorina Cottage",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.8245,
+    "lng": 18.5475,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Cottage near Pale/Jahorina, ~15 km E of Sarajevo. On-route only if overnighting near Sarajevo; ski-area location. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
+    "communityNotes": "Airbnb guest rating ★4.88 from 89 reviews. Sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1167547936354611317"
+    ],
+    "cost": "~€76/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1033869502806589797",
+    "name": "Panoramic Mountain Chalet (Pale)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.72637,
+    "lng": 18.6649,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Chalet with fireplace/BBQ near Pale. Detour off the Mostar→Sutjeska line; serves a Sarajevo/Jahorina night. Sleeps 6.",
+    "communityNotes": "Airbnb guest rating ★4.94 from 17 reviews. Sleeps 6.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1033869502806589797"
+    ],
+    "cost": "~€93/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-791411829333036306",
+    "name": "Vikendica IVA (Jahorinski Potok)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.7852,
+    "lng": 18.6057,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Highly-rated cabin near Jahorina. Off the direct line; a Sarajevo/Jahorina-night option, sleeps 6. Sleeps 6.",
+    "communityNotes": "Airbnb guest rating ★4.98 from 40 reviews. Sleeps 6.",
+    "sources": [
+      "https://www.airbnb.com/rooms/791411829333036306"
+    ],
+    "cost": "~€64/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1539679493194102806",
+    "name": "HaDaNa Good Oasis (Tihovići)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.9197,
+    "lng": 18.3755,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Cabin ~30 km N of Sarajevo. Off-route unless doing a Sarajevo loop. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
+    "communityNotes": "Airbnb guest rating ★4.95 from 22 reviews. Sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1539679493194102806"
+    ],
+    "cost": "price not retrieved — didn't surface in June searches (likely already booked or has a min-night that excludes short stays); check listing",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-623912791608300458",
+    "name": "Mountain apartments Nisicka Oaza",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 44.07207,
+    "lng": 18.54135,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Apartments on the Nišićka plateau N of Sarajevo. Off our loop. Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★5.0 from 37 reviews. Sleeps 5.",
+    "sources": [
+      "https://www.airbnb.com/rooms/623912791608300458"
+    ],
+    "cost": "~€73/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-643252285251222758",
+    "name": "Kostela Stone House (Poplat)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.031,
+    "lng": 18.0184,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Proven stone house in the Stolac/Berkovići hinterland SE of Mostar (157 reviews!). ON the Mostar→Trebinje corridor. Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★4.94 from 157 reviews. Sleeps 5.",
+    "sources": [
+      "https://www.airbnb.com/rooms/643252285251222758"
+    ],
+    "cost": "price not retrieved — didn't surface in June searches (likely already booked or has a min-night that excludes short stays); check listing",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-26289644",
+    "name": "Mountain Camp Burrows (Izgori)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.259,
+    "lng": 18.6532,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Bungalows near Gacko, SE Bosnia. Roughly ON the Sutjeska→Montenegro / Trebinje corridor; well-reviewed. Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★4.86 from 98 reviews. Sleeps 5.",
+    "sources": [
+      "https://www.airbnb.com/rooms/26289644"
+    ],
+    "cost": "price not retrieved — didn't surface in June searches (likely already booked or has a min-night that excludes short stays); check listing",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1440352206705357999",
+    "name": "Diva Cottage (Varvara/Rama)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.82569,
+    "lng": 17.49085,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Cottage by Rama Lake, ~40 km NW of Konjic. Marginal detour off the Mostar→Konjic line. Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★5.0 from 10 reviews. Sleeps 5.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1440352206705357999"
+    ],
+    "cost": "~€107/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1055692570458046534",
+    "name": "Sokograd Loft Apartment (Šipovo)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 44.2817,
+    "lng": 17.0827,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Šipovo, NW Bosnia (~140 km NW of Mostar). FAR OFF our SE loop. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
+    "communityNotes": "Airbnb guest rating ★5.0 from 14 reviews. Sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1055692570458046534"
+    ],
+    "cost": "~€89/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-903316557303665264",
+    "name": "Sokograd Attic Apartment (Šipovo)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 44.28039,
+    "lng": 17.08313,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Šipovo, NW Bosnia. FAR OFF-ROUTE. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
+    "communityNotes": "Airbnb guest rating ★4.94 from 49 reviews. Sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/903316557303665264"
+    ],
+    "cost": "~€80/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1194869300122871016",
+    "name": "River Cabin \"Ana\" (Šipovo)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 44.3031,
+    "lng": 17.1243,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Big river cabin (sleeps 10) at Šipovo, NW Bosnia. FAR OFF-ROUTE; only relevant if the trip went NW. Sleeps 10.",
+    "communityNotes": "Airbnb guest rating ★4.91 from 34 reviews. Sleeps 10.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1194869300122871016"
+    ],
+    "cost": "~€101/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-28297858",
+    "name": "Apartment Stanic (Šipovo)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 44.2609,
+    "lng": 17.0398,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Šipovo, NW Bosnia. FAR OFF-ROUTE. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
+    "communityNotes": "Airbnb guest rating ★4.7 from 114 reviews. Sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/28297858"
+    ],
+    "cost": "~€58/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 3,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-43843555",
+    "name": "Apartment Stanic II (Šipovo)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 44.2609,
+    "lng": 17.0398,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Šipovo, NW Bosnia. FAR OFF-ROUTE; lowest rating of the set (4.53). Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
+    "communityNotes": "Airbnb guest rating ★4.53 from 45 reviews. Sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/43843555"
+    ],
+    "cost": "~€62/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 2,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1279909870154785931",
+    "name": "Šehić Weekend House (Borovnica)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 44.3613,
+    "lng": 18.1784,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Big house (sleeps 10) near Visoko, central Bosnia. Off our loop; only 1 review. Sleeps 10.",
+    "communityNotes": "Airbnb guest rating ★5.0 from 1 reviews. Sleeps 10.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1279909870154785931"
+    ],
+    "cost": "~€73/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1377504503811908987",
+    "name": "Container House Kod Čupe (Kupres)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 44.0326,
+    "lng": 17.227,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Container house on the Kupres plateau. Off the Mostar-coast-Sutjeska loop (more a Split→central-Bosnia stop). Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
+    "communityNotes": "Airbnb guest rating ★5.0 from 7 reviews. Sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1377504503811908987"
+    ],
+    "cost": "price not retrieved — didn't surface in June searches (likely already booked or has a min-night that excludes short stays); check listing",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1685540403895069749",
+    "name": "Petrovf place (Urija)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 44.1162,
+    "lng": 17.3927,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Farm stay near Donji Vakuf, central Bosnia. Off-route and brand-new (0 reviews) — unproven. Sleeps 6.",
+    "communityNotes": "Airbnb: brand-new listing, no reviews yet (unproven). Sleeps 6.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1685540403895069749"
+    ],
+    "cost": "~€41/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 2,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-1038480265358959903",
+    "name": "Kamp Kestenovac (Orašac/Bihać)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 44.64019,
+    "lng": 16.04324,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Near Una NP / Bihać, far NW Bosnia (~250 km off-route). OFF the loop entirely. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
+    "communityNotes": "Airbnb guest rating ★4.9 from 21 reviews. Sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1038480265358959903"
+    ],
+    "cost": "price not retrieved — didn't surface in June searches (likely already booked or has a min-night that excludes short stays); check listing",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-air-1143857451883062133",
+    "name": "Apartment Ružica 6 (Zastražišće, Hvar)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 43.1517,
+    "lng": 16.8851,
+    "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Actually on HVAR ISLAND, Croatia — not Bosnia. Off our likely route (big northern islands probably don't fit). Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★4.82 from 11 reviews. Sleeps 5.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1143857451883062133"
+    ],
+    "cost": "price not retrieved — didn't surface in June searches (likely already booked or has a min-night that excludes short stays); check listing",
+    "tags": [
+      "airbnb-wishlist"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-air-14231459",
+    "name": "Apartment City Center Mostar",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.34378,
+    "lng": 17.8031,
+    "description": "Found alternative for the Mostar overnight zone (better-value option vs the wishlist). Value champion in central Mostar — ★4.94 from 271 reviews. Walkable to Old Bridge.",
+    "communityNotes": "Airbnb guest rating ★4.94 from 271 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/14231459"
+    ],
+    "cost": "~€53/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-mostar"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-air-14073324",
+    "name": "The Old Almond",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.34687,
+    "lng": 17.81631,
+    "description": "Found alternative for the Mostar overnight zone (better-value option vs the wishlist). Budget pick right by the Old Town, under €50/night.",
+    "communityNotes": "Airbnb guest rating ★4.81 from 81 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/14073324"
+    ],
+    "cost": "~€48/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-mostar"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-air-763716359425862444",
+    "name": "Apartment Neretva",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.3457,
+    "lng": 17.8087,
+    "description": "Found alternative for the Mostar overnight zone (better-value option vs the wishlist). Higher-end central option, excellent reviews.",
+    "communityNotes": "Airbnb guest rating ★4.95 from 101 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/763716359425862444"
+    ],
+    "cost": "~€76/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-mostar"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-air-28594794",
+    "name": "Apartments S&S 1",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.6536,
+    "lng": 17.959,
+    "description": "Found alternative for the Konjic overnight zone (better-value option vs the wishlist). Solid central Konjic apartment for the rafting/Neretva night.",
+    "communityNotes": "Airbnb guest rating ★4.9 from 30 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/28594794"
+    ],
+    "cost": "~€66/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-konjic"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-air-3004419",
+    "name": "Guest House Konjic",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.6523,
+    "lng": 17.9655,
+    "description": "Found alternative for the Konjic overnight zone (better-value option vs the wishlist). Long-running, well-reviewed guest house in central Konjic.",
+    "communityNotes": "Airbnb guest rating ★4.86 from 87 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/3004419"
+    ],
+    "cost": "~€76/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-konjic"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-air-1542024184506963047",
+    "name": "The Pearl Downtown Sarajevo",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.8571,
+    "lng": 18.4076,
+    "description": "Found alternative for the Sarajevo overnight zone (better-value option vs the wishlist). Value champion in downtown Sarajevo, under €50.",
+    "communityNotes": "Airbnb guest rating ★4.95 from 55 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1542024184506963047"
+    ],
+    "cost": "~€48/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-sarajevo"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-air-1236363170544579717",
+    "name": "Baščaršija Center Apartment",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.8566,
+    "lng": 18.4294,
+    "description": "Found alternative for the Sarajevo overnight zone (better-value option vs the wishlist). In the old bazaar quarter, well-reviewed.",
+    "communityNotes": "Airbnb guest rating ★4.88 from 83 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1236363170544579717"
+    ],
+    "cost": "~€62/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-sarajevo"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-air-1165836464333612445",
+    "name": "Gaga City Center",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 42.709,
+    "lng": 18.3398,
+    "description": "Found alternative for the Trebinje overnight zone (better-value option vs the wishlist). Outstanding value (€35, ★5.0/48) in central Trebinje — ideal cheap base near Dubrovnik airport.",
+    "communityNotes": "Airbnb guest rating ★5.0 from 48 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1165836464333612445"
+    ],
+    "cost": "~€35/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-trebinje"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-air-982496716754521531",
+    "name": "FoRest & Relax",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 42.7166,
+    "lng": 18.3433,
+    "description": "Found alternative for the Trebinje overnight zone (better-value option vs the wishlist). Top-rated Trebinje apartment, great for the pickup or final night.",
+    "communityNotes": "Airbnb guest rating ★4.97 from 37 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/982496716754521531"
+    ],
+    "cost": "~€53/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-trebinje"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-air-48168450",
+    "name": "SANSSOUCI Apartment",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 42.7069,
+    "lng": 18.3405,
+    "description": "Found alternative for the Trebinje overnight zone (better-value option vs the wishlist). Central, perfect 5.0 rating; a comfortable Trebinje base.",
+    "communityNotes": "Airbnb guest rating ★5.0 from 28 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/48168450"
+    ],
+    "cost": "~€56/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-trebinje"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-air-42302959",
+    "name": "Black Pine 2 Zabljak",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 43.1643,
+    "lng": 19.1297,
+    "description": "Found alternative for the Zabljak overnight zone (better-value option vs the wishlist). Cheapest well-rated Žabljak base for Durmitor.",
+    "communityNotes": "Airbnb guest rating ★4.84 from 25 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/42302959"
+    ],
+    "cost": "~€65/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-zabljak"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-air-14609884",
+    "name": "Bungalow Krstajić 2",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 43.1612,
+    "lng": 19.1254,
+    "description": "Found alternative for the Zabljak overnight zone (better-value option vs the wishlist). Wooden bungalow, lots of reviews; classic Durmitor lodging.",
+    "communityNotes": "Airbnb guest rating ★4.76 from 120 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/14609884"
+    ],
+    "cost": "~€70/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-zabljak"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-air-37010857",
+    "name": "Feel the village (Virpazar)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.2332,
+    "lng": 19.0904,
+    "description": "Found alternative for the Skadar overnight zone (better-value option vs the wishlist). Value champion by Virpazar/Skadar Lake, under €50.",
+    "communityNotes": "Airbnb guest rating ★4.9 from 68 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/37010857"
+    ],
+    "cost": "~€48/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-skadar"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-air-28070907",
+    "name": "Villa Semeder",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.2353,
+    "lng": 19.0937,
+    "description": "Found alternative for the Skadar overnight zone (better-value option vs the wishlist). Very well-reviewed Skadar Lake villa near Virpazar.",
+    "communityNotes": "Airbnb guest rating ★4.91 from 142 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/28070907"
+    ],
+    "cost": "~€70/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-skadar"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-air-35227076",
+    "name": "Victoria's place",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.4071,
+    "lng": 18.7662,
+    "description": "Found alternative for the Kotor overnight zone (better-value option vs the wishlist). Cheapest well-rated option in pricey Kotor old-town area.",
+    "communityNotes": "Airbnb guest rating ★4.86 from 93 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/35227076"
+    ],
+    "cost": "~€70/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-kotor"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-air-36716088",
+    "name": "Apartments Albomi",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.4028,
+    "lng": 18.7639,
+    "description": "Found alternative for the Kotor overnight zone (better-value option vs the wishlist). Top-rated Kotor apartment; Kotor runs expensive (€70+ floor).",
+    "communityNotes": "Airbnb guest rating ★4.96 from 96 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/36716088"
+    ],
+    "cost": "~€88/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-kotor"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-air-26737670",
+    "name": "Masha 1",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.2905,
+    "lng": 18.8374,
+    "description": "Found alternative for the Budva overnight zone (better-value option vs the wishlist). Value+quality champion in Budva (€64, ★4.97/140).",
+    "communityNotes": "Airbnb guest rating ★4.97 from 140 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/26737670"
+    ],
+    "cost": "~€64/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-budva"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-air-20121614",
+    "name": "Sea Side, A&B Apartments",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.2887,
+    "lng": 18.8179,
+    "description": "Found alternative for the Budva overnight zone (better-value option vs the wishlist). Well-reviewed Budva apartment near the beach.",
+    "communityNotes": "Airbnb guest rating ★4.94 from 63 reviews.",
+    "sources": [
+      "https://www.airbnb.com/rooms/20121614"
+    ],
+    "cost": "~€70/night for 4 (June sample; dates are route estimates)",
+    "tags": [
+      "airbnb-alternative",
+      "zone-budva"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  }
+]
