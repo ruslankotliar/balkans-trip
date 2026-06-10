@@ -187,7 +187,7 @@
     "lat": 43.859,
     "lng": 18.43,
     "description": "Bosnia's capital and the trip's one real city stop. Bascarsija is the 15th-c. Ottoman bazaar — Sebilj fountain, coppersmiths' alley, Gazi Husrev-beg Mosque, and the 'Meeting of Cultures' line where the bazaar abruptly becomes an Austro-Hungarian boulevard. Compact, cheap, walkable, with genuine nightlife.",
-    "communityNotes": "Travelers call Bascarsija 'one of the best places in the city to locate yourself' for old-town atmosphere — a working bazaar of coppersmiths and cafes. The east-west cultural divide and dense cevapi/cafe scene are the repeated highlights. Best ceapi at Zelo or Petica; nightlife around Ferhadija (Silver & Smoke, Sloga, Pink Houdini jazz, craft-beer bars) is a decisive step up from Mostar for a night out.",
+    "communityNotes": "Travelers call Bascarsija 'one of the best places in the city to locate yourself' for old-town atmosphere — a working bazaar of coppersmiths and cafes. The east-west cultural divide and dense cevapi/cafe scene are the repeated highlights. Best cevapi at Zeljo or Petica; nightlife around Ferhadija (Silver & Smoke, Sloga, Pink Houdini jazz, craft-beer bars) is a decisive step up from Mostar for a night out.",
     "sources": [
       "https://en.wikipedia.org/wiki/Ba%C5%A1%C4%8Dar%C5%A1ija",
       "https://www.thebrokebackpacker.com/where-to-stay-in-sarajevo-bosnia-herzegovina/"
@@ -257,89 +257,6 @@
     "bestTime": "Anytime; great light late afternoon",
     "tags": ["brutalist", "spomenik", "wwii", "quick-stop", "transit-friendly", "on-route"],
     "rating": 4,
-    "status": "candidate"
-  },
-  {
-    "id": "ba-prijevor",
-    "name": "Prijevor Saddle & Viewpoint (Sutjeska)",
-    "country": "BA",
-    "category": "viewpoint",
-    "lat": 43.287475,
-    "lng": 18.720446,
-    "description": "The grassy saddle (1668m) you drive to at the foot of Maglic — the classic Maglic photo spot and trailhead for both the Maglic summit and the Trnovacko Lake hike. Wide parking, wild camping allowed, full Dinaric panorama.",
-    "communityNotes": "'From the lot Maglic towers above you and a whole chain of Dinaric peaks spreads in front of you.' ROAD: ~20km of macadam/gravel from Tjentiste, ~1-1.5h. Opinions split: 'we would strongly recommend not undertaking this without a 4x4' vs 'there were Yaris/Micra-type cars at the parking — they just took it a lot slower'. Consensus: dry = doable in a normal car driven very slowly (tire-damage risk); wet = 4x4. 'Lots of flat space' for wild camping.",
-    "sources": [
-      "https://www.outdooractive.com/en/poi/western-balkans/prijevor/16793044/",
-      "https://www.tripadvisor.com/ShowTopic-g294449-i6233-k12942649-Trip_report_a_day_and_a_half_in_Sutjeska_National_Park-Bosnia_and_Herzegovina.html"
-    ],
-    "cost": "Park entry ~5-10 KM/person; ~5 KM/day car fee",
-    "timeNeeded": "1-1.5h drive each way from Tjentiste; viewpoint 30-60 min",
-    "bestTime": "Dry weather for the road; morning light on Maglic",
-    "facilities": "Gravel parking, wild camping permitted, spring water reported; very basic",
-    "tags": ["viewpoint", "trailhead", "wild-camping", "photo-spot", "4x4-when-wet", "on-route"],
-    "rating": 4,
-    "status": "candidate"
-  },
-  {
-    "id": "ba-trnovacko-jezero",
-    "name": "Trnovacko Lake (heart-shaped, from Prijevor)",
-    "country": "ME",
-    "category": "nature",
-    "lat": 43.25167,
-    "lng": 18.72667,
-    "description": "Stunning heart-shaped glacial lake (1517m) ringed by the Volujak/Maglic peaks — often the highlight of the whole region and great for a cold swim. Physically just over the border in Montenegro but almost always hiked FROM Prijevor on the Bosnian side (bring passports).",
-    "communityNotes": "'A beautiful lake in the shape of a heart with clear blue-green color, great for swimming.' From Prijevor the direct route is the famous easy one: 'about 1h 15min and not a strenuous hike' (others say ~2h with some climbing). 'You cannot reach Trnovacko by car — the closest is Prijevor, leave the car and hike ~2 hours.' Wild camping at the shore allowed; a ranger is sometimes present. The hard combo loop via the Maglic summit is ~6.5-7h.",
-    "sources": [
-      "https://lukaesenko.com/hiking-in-sutjeska-national-park-trnovacko-lake/",
-      "https://en.wikipedia.org/wiki/Trnova%C4%8Dko_Lake"
-    ],
-    "cost": "Free hike (Sutjeska park entry on the BiH side); wild camping free",
-    "timeNeeded": "~1.25-2h each way from Prijevor (half day); full day if combined with Maglic",
-    "bestTime": "June-Sept; midday for swimming; carry passport (border)",
-    "facilities": "Wild camping at the lakeshore, occasional ranger; no services — carry water/food",
-    "tags": ["glacial-lake", "heart-shaped", "swim", "highlight", "from-prijevor", "border-me"],
-    "rating": 5,
-    "status": "candidate"
-  },
-  {
-    "id": "ba-maglic",
-    "name": "Maglic Summit (2386m) — highest peak in BiH",
-    "country": "BA",
-    "category": "hike",
-    "lat": 43.28111,
-    "lng": 18.73694,
-    "description": "Bosnia's highest peak, climbed from Prijevor straight up the steep NW face — a short but brutal scramble (~2km / 718m gain) with a chained, highly exposed rock section near the top, rewarded by a full Dinaric panorama. Not a transit-day option.",
-    "communityNotes": "'Extremely challenging... only for experienced hikers with solid mountain fitness and no fear of heights'; the trail is 'steep and slippery with little pebbles rolling under your feet, aided by iron cables... mostly exposed to brutal sun'. One blogger recommends ASCENDING the Alpine (face) route and DESCENDING via the gentler Trnovacko-lake route. No guide legally required, but it is real exposure on loose rock — dry weather only, the wet chained section is dangerous.",
-    "sources": [
-      "https://www.summitpost.org/magli-from-prijevor/984877",
-      "https://www.budgetbucketlist.com/sutjeska.html"
-    ],
-    "cost": "Park entry ~5-10 KM/person; no guide fee required",
-    "timeNeeded": "Half day from Prijevor (4-6h round trip)",
-    "bestTime": "Start early for shade; dry weather only",
-    "tags": ["summit", "scramble", "chains", "exposed", "hard", "highest-peak"],
-    "rating": 4,
-    "status": "candidate"
-  },
-  {
-    "id": "ba-perucica",
-    "name": "Perucica Primeval Forest & Dragos Sedlo viewpoint",
-    "country": "BA",
-    "category": "nature",
-    "lat": 43.31842,
-    "lng": 18.68882,
-    "description": "One of Europe's last old-growth forests — a strict reserve of giant beech and spruce beneath Maglic, with the 75m Skakavac waterfall at its heart. Entry is RESTRICTED (ranger-guided only); the free transit-friendly taste is the Dragos sedlo viewpoint over the forest and falls.",
-    "communityNotes": "Access is guide-only: 'permitted only with a certified guide from the national park, and only 16 people per day. Trails are unmarked, you can easily get lost, there is no phone reception.' The guide is a flat per-GROUP fee (splits well across 4). FREE alternative for a transit stop: the Dragos sedlo viewpoint — 'a hundred-meter trail leads to a viewpoint where a deep wooded valley opens up, with the Skakavac waterfall roaring in the heart of it'.",
-    "sources": [
-      "https://peakvisor.com/park/primeval-forest-perucica.html",
-      "https://www.budgetbucketlist.com/sutjeska.html"
-    ],
-    "cost": "Guided forest walk: per-group ranger fee + park entry; Dragos sedlo viewpoint free with entry",
-    "timeNeeded": "Viewpoint stop ~30-45 min (transit-friendly); full guided forest+waterfall hike ~2.5-3h",
-    "bestTime": "Book the guide ahead (limited daily quota); viewpoint anytime in daylight",
-    "facilities": "None inside the reserve; no phone signal; gravel access road",
-    "tags": ["primeval-forest", "guide-required", "waterfall", "viewpoint", "dragos-sedlo", "on-route"],
-    "rating": 5,
     "status": "candidate"
   },
   {

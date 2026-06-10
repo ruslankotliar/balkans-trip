@@ -1,4 +1,5 @@
 research/app-changelog.md
+research/ba-notes.md
 research/drive-times.md
 research/experiences-notes.md
 research/hr-north-notes.md
@@ -12,6 +13,7 @@ research/route-skeleton.md
 research/route-sketch-notes.md
 research/trip-ops.md
 research/ux-review.md
+src/data/ba-hikes.json
 src/data/ba-places.json
 src/data/experiences.json
 src/data/hr-north.json
