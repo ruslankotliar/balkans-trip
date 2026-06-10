@@ -155,9 +155,15 @@ export function splitIntoDays(
   orderedIds: string[],
   legSeconds: number[],
   maxHoursPerDay: number,
-): { assign: Record<string, { day: number; dayOrder: number }>; days: number } {
+): {
+  assign: Record<string, { day: number; dayOrder: number }>;
+  days: number;
+  /** Driving seconds per day, index 0 = day 1 (incl. the morning relocation leg). */
+  dayTotals: number[];
+} {
   const maxSec = maxHoursPerDay * 3600;
   const assign: Record<string, { day: number; dayOrder: number }> = {};
+  const dayTotals: number[] = [0];
   let day = 1;
   let orderInDay = 0;
   let accum = 0;
@@ -168,12 +174,14 @@ export function splitIntoDays(
         day++;
         orderInDay = 0;
         accum = leg; // morning relocation drive belongs to the new day
+        dayTotals.push(leg);
       } else {
         accum += leg;
+        dayTotals[day - 1] += leg;
       }
     }
     assign[id] = { day, dayOrder: orderInDay };
     orderInDay++;
   });
-  return { assign, days: day };
+  return { assign, days: day, dayTotals };
 }

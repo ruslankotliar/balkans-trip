@@ -19,6 +19,8 @@ export function tripKey(points: LatLng[]): string {
 /**
  * Fetch a driving route through the given points (in order) from the public
  * OSRM demo server. Returns null on any failure (network, no route, etc.).
+ * Includes per-leg durations and the snapped waypoint locations so legs can
+ * be attributed and sliced out of the geometry (e.g. to dash ferry legs).
  */
 export async function fetchRoute(points: LatLng[]): Promise<CachedRoute | null> {
   if (points.length < 2) return null;
@@ -35,6 +37,45 @@ export async function fetchRoute(points: LatLng[]): Promise<CachedRoute | null> 
       distance: route.distance,
       duration: route.duration,
       coordinates: route.geometry.coordinates as [number, number][],
+      legs: (route.legs ?? []).map((l: { duration: number; distance: number }) => ({
+        duration: l.duration,
+        distance: l.distance,
+      })),
+      snapped: (data.waypoints ?? []).map(
+        (w: { location: [number, number] }) => w.location,
+      ),
+    };
+  } catch {
+    return null;
+  }
+}
+
+/** Duration (s) + distance (m) matrices between all point pairs, from OSRM /table. */
+export interface TableResult {
+  durations: number[][];
+  distances: number[][];
+}
+
+/**
+ * Fetch the full driving duration+distance matrix for the given points from
+ * OSRM /table (one cheap call). Unroutable pairs come back as Infinity.
+ * Returns null on failure.
+ */
+export async function fetchTable(points: LatLng[]): Promise<TableResult | null> {
+  if (points.length < 2) return null;
+  const coords = points.map(([lat, lng]) => `${lng},${lat}`).join(';');
+  const url =
+    `https://router.project-osrm.org/table/v1/driving/${coords}` +
+    `?annotations=duration,distance`;
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    if (data?.code !== 'Ok' || !data?.durations) return null;
+    const clean = (m: (number | null)[][]) =>
+      m.map((row) => row.map((v) => (v == null ? Infinity : v)));
+    return {
+      durations: clean(data.durations),
+      distances: clean(data.distances ?? []),
     };
   } catch {
     return null;

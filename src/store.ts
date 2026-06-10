@@ -55,6 +55,10 @@ export interface CachedRoute {
   duration: number;
   /** GeoJSON LineString coordinates: [lng, lat][] */
   coordinates: [number, number][];
+  /** Per-leg stats in visiting order (absent on entries cached before this field). */
+  legs?: { distance: number; duration: number }[];
+  /** Snapped waypoint locations [lng, lat][] aligned to the input points. */
+  snapped?: [number, number][];
 }
 
 const OSRM_KEY = 'balkans-trip-osrm-cache';
@@ -71,12 +75,21 @@ export function saveRouteCache(c: Record<string, CachedRoute>) {
   localStorage.setItem(OSRM_KEY, JSON.stringify(c));
 }
 
-/** Result of an OSRM Trip (TSP) solve. */
+/** Result of a route-order solve (local matrix solver, formerly OSRM /trip). */
 export interface TripResult extends CachedRoute {
   /** Original input indices in optimal visiting order. */
   order: number[];
   /** Per-leg distance/duration in visiting order (length = order.length - 1). */
   legs: { distance: number; duration: number }[];
+  /** True when the ordering is a provable optimum (Held-Karp). Absent on old /trip entries. */
+  exact?: boolean;
+  /** Human label for how the order was computed, e.g. "exact optimum (Held-Karp)". */
+  method?: string;
+  /**
+   * With anchored segments: positions in `order` (0-based) where each segment
+   * starts. Always begins with 0. Absent / [0] when there were no anchors.
+   */
+  segStarts?: number[];
 }
 
 const TRIP_KEY = 'balkans-trip-osrm-trip-cache';
@@ -91,4 +104,30 @@ export function loadTripCache(): Record<string, TripResult> {
 
 export function saveTripCache(c: Record<string, TripResult>) {
   localStorage.setItem(TRIP_KEY, JSON.stringify(c));
+}
+
+// ---- Manual ferry hours per leg (keyed by unordered place-id pair) ----
+// OSRM road durations don't include ferry waits/schedules (Mljet, Korčula…).
+// The user can tag a leg with "+X h ferry"; it persists across rebuilds because
+// the key is the pair of place ids, not the route.
+
+export type FerryHours = Record<string, number>;
+
+const FERRY_KEY = 'balkans-trip-ferry-hours';
+
+/** Stable key for the leg between two places, direction-independent. */
+export function ferryPairKey(idA: string, idB: string): string {
+  return idA < idB ? `${idA}|${idB}` : `${idB}|${idA}`;
+}
+
+export function loadFerryHours(): FerryHours {
+  try {
+    return JSON.parse(localStorage.getItem(FERRY_KEY) ?? '{}');
+  } catch {
+    return {};
+  }
+}
+
+export function saveFerryHours(f: FerryHours) {
+  localStorage.setItem(FERRY_KEY, JSON.stringify(f));
 }
