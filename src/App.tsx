@@ -227,6 +227,7 @@ export default function App() {
     if (!nearbyActive || !selected) return ids;
     for (const p of places) {
       if (p.id === selected.id) continue;
+      if (p.status === 'rejected') continue;
       if (!SLEEP_CATEGORIES.includes(p.category)) continue;
       if (haversineKm(selected.lat, selected.lng, p.lat, p.lng) <= nearbyRadius) {
         ids.add(p.id);
@@ -242,6 +243,7 @@ export default function App() {
     const stopIds = new Set(corridor.stops.map((s) => s.id));
     const out: CorridorMatch[] = [];
     for (const p of places) {
+      if (p.status === 'rejected') continue;
       if (!SLEEP_CATEGORIES.includes(p.category)) continue;
       if (stopIds.has(p.id)) continue; // skip the route's own stops
       const dist = pointToPolylineKm(p.lat, p.lng, corridor.coords);
@@ -261,6 +263,21 @@ export default function App() {
     () => new Set(corridor?.stops.map((s) => s.id) ?? []),
     [corridor],
   );
+
+  // Nearby/corridor matches must show on the map even if filters would hide
+  // them — the whole point of the finders is to surface places to sleep.
+  const markersToShow = useMemo(() => {
+    const forced = new Set<string>([
+      ...nearbyMatchIds,
+      ...corridorMatchIds,
+      ...corridorStopIds,
+    ]);
+    if (forced.size === 0) return visible;
+    const inVisible = new Set(visible.map((p) => p.id));
+    const extra = places.filter((p) => forced.has(p.id) && !inVisible.has(p.id));
+    return [...visible, ...extra];
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [visible, nearbyMatchIds, corridorMatchIds, corridorStopIds]);
 
   function findSleepAlongDay(day: number) {
     const route = routes[day];
@@ -666,7 +683,7 @@ export default function App() {
           />
         )}
 
-        {visible.map((p) => {
+        {markersToShow.map((p) => {
           const rbSel = view === 'route' && rbSelected.has(p.id);
           let dim = false;
           let matchHi = false;

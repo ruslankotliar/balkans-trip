@@ -1,0 +1,113 @@
+[
+  {
+    "id": "hr-prapratno-ferry",
+    "name": "Prapratno ferry port (→ Mljet)",
+    "country": "HR",
+    "category": "other",
+    "lat": 42.8116,
+    "lng": 17.6787,
+    "description": "Car-ferry harbour in a sandy cove ~3 km west of Ston on Pelješac. Jadrolinija line 832 to Sobra (Mljet), ~45 min crossing. Our main island gateway.",
+    "communityNotes": "First-come, first-served for cars — no reservation possible; a date ticket does NOT guarantee a deck slot. Travelers report needing to be in the vehicle queue 60–120 min before departure in peak summer, more on weekends. June (29 May–2 Jul block) = 5 sailings/day. The cove itself has 'one of the most beautiful sandy beaches in the Adriatic'.",
+    "sources": [
+      "https://www.dubrovnik-online.net/prapratno-mljet-ferry",
+      "https://www.croatiaferries.com/prapratno-ferry-port.htm",
+      "https://www.croatiaferries.com/topic/advance-booking-for-prapratno-sobra-ferry/"
+    ],
+    "cost": "4 adults + car ≈ €49.90 each way (adult €6.10, car €25.50, 2026 high season)",
+    "timeNeeded": "~45 min crossing + 60–120 min queue buffer",
+    "bestTime": "Take an early sailing on busy weekends to avoid full-ferry queues",
+    "tags": ["ferry", "logistics", "mljet"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-sobra-ferry",
+    "name": "Sobra ferry port (Mljet)",
+    "country": "HR",
+    "category": "other",
+    "lat": 42.73691,
+    "lng": 17.59871,
+    "description": "Mljet's main car-ferry port (north coast), the Mljet end of the Prapratno line. ~half-hour drive from the Mljet NP lakes / Montokuc viewpoint at the west end.",
+    "communityNotes": "Same first-come-first-served rule as Prapratno. Rough weather can delay Sobra departures ~60 min. June departures to Prapratno: 06:00, 09:00, 12:00, 16:00, 19:30.",
+    "sources": [
+      "https://www.dubrovnik-online.net/prapratno-mljet-ferry"
+    ],
+    "timeNeeded": "~45 min crossing",
+    "tags": ["ferry", "logistics", "mljet"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-ploce-ferry",
+    "name": "Ploče ferry port (→ Trpanj)",
+    "country": "HR",
+    "category": "other",
+    "lat": 43.05667,
+    "lng": 17.43167,
+    "description": "Mainland port for the Jadrolinija line 633 car ferry to Trpanj on Pelješac, ~60 min. An old alternative to the Neum corridor — now largely superseded by the toll-free Pelješac Bridge.",
+    "communityNotes": "Since the Pelješac Bridge opened (2022) this line's traffic dropped ~95%, so no more boarding chaos — but in June only 3 sailings/day (10:30, 14:15, 19:30), so it's schedule-rigid. For reaching Dubrovnik the bridge is faster and crosses no border; use the ferry only if Trpanj/Pelješac is the actual destination.",
+    "sources": [
+      "https://www.dubrovnik-online.net/ploce-trpanj-ferry",
+      "https://www.visit-croatia.co.uk/croatia-destinations/southern-dalmatia/peljesac-bridge/"
+    ],
+    "cost": "4 adults + car ≈ €36 each way (adult €4.50, car €18.00, 2026 low season)",
+    "timeNeeded": "~60 min crossing",
+    "tags": ["ferry", "logistics", "peljesac"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-trpanj-ferry",
+    "name": "Trpanj ferry port (Pelješac)",
+    "country": "HR",
+    "category": "other",
+    "lat": 43.0,
+    "lng": 17.275,
+    "description": "Pelješac-side port of the Ploče–Trpanj car ferry (line 633). Small harbour town on the peninsula's north coast.",
+    "communityNotes": "June departures to Ploče: 06:45, 12:00, 17:15 (3/day). First-come for vehicles, but rarely busy post-bridge.",
+    "sources": [
+      "https://www.dubrovnik-online.net/ploce-trpanj-ferry"
+    ],
+    "timeNeeded": "~60 min crossing",
+    "tags": ["ferry", "logistics", "peljesac"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-orebic-ferry",
+    "name": "Orebić ferry port (→ Korčula)",
+    "country": "HR",
+    "category": "other",
+    "lat": 42.967,
+    "lng": 17.167,
+    "description": "Pelješac port for the Jadrolinija line 634 car ferry to Dominče (Korčula), ~15–20 min. Frequent short shuttle (~05:30–22:30, dozens/day in summer).",
+    "communityNotes": "Cheap and frequent enough that car queues are rarely a real problem, though still first-come. Buy the car ticket online for peak days to avoid being bumped when full. Note: the separate Orebić–Korčula-town boat (line 614, G&V Line Iadera) is foot-passengers only.",
+    "sources": [
+      "https://www.jadrolinija.hr/en/travel/orebic_-_domince_korcula"
+    ],
+    "cost": "4 adults + car ≈ €14–15 each way (adult €2.50, car €4.40, 2026 high season)",
+    "timeNeeded": "~15–20 min crossing",
+    "tags": ["ferry", "logistics", "korcula"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-debeli-brijeg-border",
+    "name": "Debeli Brijeg / Karasovići border (ME↔HR)",
+    "country": "ME",
+    "category": "other",
+    "lat": 42.487389,
+    "lng": 18.437583,
+    "description": "Main Montenegro↔Croatia coastal crossing on the Kotor/Herceg Novi → Dubrovnik route. The trip's biggest queue risk on the Jun 27/28 return.",
+    "communityNotes": "Summer waits 1–4 h, up to 4–5 h on peak days (Fri/Sun worst); worst window 10:00–14:00 with Dubrovnik day-trippers. Cross before 08:00 or after 21:00. Back-door alternative: Vitaljina/Kobila (Konfin) via Molunat — cars only, ~1 h max even on peak weekends. Check live: kamere.mup.gov.me, nakordoni.eu, borderalarm.com. Note EES (live since 10 Apr 2026) adds biometric checks for non-EU travelers.",
+    "sources": [
+      "https://borderalarm.com/bottlenecks/karasovici-debeli-brijeg/",
+      "https://globonautas.org/en/travel-tips/border-between-croatia-montenegro/",
+      "https://easybalkantransfers.com/blog/border-crossings-balkans/"
+    ],
+    "bestTime": "Cross before 08:00 or after 21:00; or use Vitaljina/Kobila to skip the queue",
+    "tags": ["border", "logistics"],
+    "rating": 5,
+    "status": "candidate"
+  }
+]
