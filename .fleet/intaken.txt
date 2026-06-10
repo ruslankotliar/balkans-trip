@@ -16,6 +16,7 @@ research/off-route-notes.md
 research/offline-deploy.md
 research/route-skeleton.md
 research/route-sketch-notes.md
+research/shortlist-rationale.md
 research/trip-ops.md
 research/ux-review.md
 research/verdicts-digest.md

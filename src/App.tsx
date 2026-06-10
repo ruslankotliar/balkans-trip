@@ -24,6 +24,7 @@ import {
 } from './constants';
 import { fetchRoute, fetchTable, fetchTrip, routeKey, type LatLng } from './osrm';
 import { solveOrder, type SolveResult } from './solver';
+import { buildGpx, buildKml, downloadText } from './exports';
 import {
   ferryPairKey,
   loadDone,
@@ -31,6 +32,7 @@ import {
   loadLastFix,
   loadOverrides,
   loadPlaces,
+  loadRouteCache,
   loadSavedMode,
   loadTripCache,
   saveDone,
@@ -38,6 +40,7 @@ import {
   saveLastFix,
   saveMode,
   saveOverrides,
+  saveRouteCache,
   saveTripCache,
   type FerryHours,
   type GpsFix,
@@ -866,6 +869,37 @@ export default function App() {
     URL.revokeObjectURL(url);
   }
 
+  // ---- Offline prep: build every day route once on wifi so it replays from
+  // the localStorage cache in dead zones (tiles cache as you pan, via the SW).
+  const [prepping, setPrepping] = useState(false);
+
+  async function prepOffline() {
+    setPrepping(true);
+    const cache = loadRouteCache();
+    let built = 0;
+    let failed = 0;
+    for (const pts of Object.values(dayPoints)) {
+      if (pts.length < 2) continue;
+      const key = routeKey(pts);
+      if (cache[key]?.legs) continue; // already offline-ready
+      const r = await fetchRoute(pts); // sequential — kind to the demo server
+      if (r) {
+        cache[key] = r;
+        saveRouteCache(cache);
+        built++;
+      } else {
+        failed++;
+      }
+    }
+    setPrepping(false);
+    alert(
+      `Offline-ready: ${Object.keys(cache).length} cached routes (${built} new` +
+        `${failed ? `, ${failed} failed — retry later` : ''}).\n\n` +
+        `Now pan/zoom your route areas on the map while on wifi to cache those tiles, ` +
+        `then add the app to your home screen.`,
+    );
+  }
+
   const showTripLayer = view === 'route' && !!rbTrip;
 
   return (
@@ -1127,6 +1161,47 @@ export default function App() {
             Export JSON
           </button>
         </div>
+
+        <details className="export-menu">
+          <summary>Offline &amp; phone export…</summary>
+          <div className="sidebar-actions col">
+            <button className="export" onClick={prepOffline} disabled={prepping}>
+              {prepping ? 'Building routes…' : '⬇ Prep offline (build all day routes)'}
+            </button>
+            <button
+              className="export"
+              onClick={() =>
+                downloadText(
+                  buildKml(places, routes, 'day'),
+                  'balkans-trip.kml',
+                  'application/vnd.google-earth.kml+xml',
+                )
+              }
+            >
+              KML → Organic Maps (by day)
+            </button>
+            <button
+              className="export"
+              onClick={() =>
+                downloadText(
+                  buildKml(places, routes, 'country'),
+                  'balkans-mymaps.kml',
+                  'application/vnd.google-earth.kml+xml',
+                )
+              }
+            >
+              KML → Google My Maps (by country)
+            </button>
+            <button
+              className="export"
+              onClick={() =>
+                downloadText(buildGpx(places, routes), 'balkans-trip.gpx', 'application/gpx+xml')
+              }
+            >
+              GPX (waypoints + day tracks)
+            </button>
+          </div>
+        </details>
         </>
         )}
       </aside>

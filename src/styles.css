@@ -946,6 +946,24 @@ body {
   background: #ecd9fb;
 }
 
+/* ---- Offline & export menu ---- */
+.export-menu {
+  flex-shrink: 0;
+}
+.export-menu summary {
+  font-size: 12px;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+}
+.sidebar-actions.col {
+  flex-direction: column;
+  margin-top: 6px;
+}
+.sidebar-actions.col .export {
+  text-align: left;
+}
+
 /* ---- Mode pill (Planning ⇄ Trip) ---- */
 .head-row {
   display: flex;
