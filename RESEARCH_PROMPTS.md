@@ -322,6 +322,30 @@ FINAL ACT when everything above is written: mkdir -p .fleet/done && echo done > 
 
 ---
 
+## Session N — Airbnb wishlist enrichment (user's hand-picked listings → map pins)
+
+```
+Read CLAUDE.md first and follow the data conventions. You are enriching the user's own Airbnb wishlists into map pins. These listing IDs were extracted from the user's saved wishlists ("Bosnia" and "Montenegro"):
+
+BOSNIA (19): 643252285251222758, 1033869502806589797, 903316557303665264, 1539679493194102806, 1194869300122871016, 1279909870154785931, 1167547936354611317, 1143857451883062133, 623912791608300458, 791411829333036306, 43843555, 1055692570458046534, 28297858, 1440352206705357999, 1685540403895069749, 1377504503811908987, 1038480265358959903, 26289644, 1294839146223116793
+(observed names include: Cottage in Poplat "Kostela Stone House", Villa in Pale "Panoramic Mountain Chalet", Home/Cabin in Šipovo ×2, Cabin in Tihovići "HaDaNa", Home in Borovnica "Šehić Weekend House"…)
+
+MONTENEGRO (5): 14313188, 1194377822001153349, 13219159, 625139070441679511, 49077678
+(observed: Home in Rvaši "Family house Rvasi", Cabin in Duži "Mountain Lodge", Home in Godinje "Ivan's holiday home", Cottage in Opština Bar "Holiday Home Darja", Hut in Bijelo Polje "Mountain view chalet")
+
+For EACH listing, fetch https://www.airbnb.com/rooms/<id> with curl (use a desktop browser User-Agent; pages are public — the embedded JSON in <script id="data-deferred-state-0"> or DOM contains coordinates, title, capacity, rating). Extract: exact name, lat/lng, capacity (flag if <4 people!), rating + review count, and nightly price — query price with dates via the URL params (?check_in=2026-06-21&check_out=2026-06-23&adults=4 for Bosnia ids; ?check_in=2026-06-24&check_out=2026-06-26&adults=4 for Montenegro ids). If a fetch is blocked, retry once with delay; if still blocked, record what you got and move on — partial data beats none. Be polite: ~2s between requests.
+
+Write src/data/accommodation-wishlist.json: Place array, category "accommodation", status "shortlist" (user hand-picked these), tags ["airbnb-wishlist"], sources [listing URL], cost = the fetched June nightly price for 4, description = capacity/rating + one-liner. Country prefix ba-/me- by actual location.
+
+THEN the analysis layer in research/airbnb-wishlist-notes.md: for each listing, distance to our route corridor (research/route-skeleton.md — e.g. Šipovo and Bijelo Polje look FAR off-route: say how far and what detour costs), which overnight zone/night it could serve, value verdict vs the ~€50/night benchmark, and a ranked recommendation per zone. Flag listings that can't host 4.
+
+Validate JSON with python3 -m json.tool, then npm run build.
+
+FINAL ACT: mkdir -p .fleet/done && echo done > .fleet/done/N
+```
+
+---
+
 ## After sessions finish (for the master session)
 
 Tell the master session which files landed; it will review `src/data/*.json` + `research/*.md`, dedupe, sanity-check coordinates on the map, and then move to phase 2: itinerary/route building and Airbnb shortlisting per overnight stop.
