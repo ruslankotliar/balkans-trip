@@ -353,6 +353,36 @@ FINAL ACT: mkdir -p .fleet/done && echo done > .fleet/done/N
 
 ---
 
+## Session O — Off-route explorer (escape the sketch's gravity)
+
+```
+Read CLAUDE.md first and follow the data conventions and research rules exactly.
+
+You are the OFF-ROUTE EXPLORER. Every other session researched along the user's sketched corridor (Zadar→Split→Dubrovnik→Mostar→Sarajevo→Durmitor→ME coast) — YOUR job is what they structurally missed: amazing places in Croatia/Bosnia/Montenegro OUTSIDE that corridor. The user explicitly said: don't be limited by my sketch; maybe there are cooler places; think outside the box; expand scope — they'll pick the final road based on the best places, not vice versa.
+
+Evaluate at least these (and hunt for more, especially via local-language searches): CROATIA — Imotski's Red & Blue Lakes (swim in a sinkhole!), Cetina river spring "the Eye", Rastoke watermill village, Zavratnica bay (Velebit coast), Vis island + Blue/Green Caves (honest verdict given our timeline). BOSNIA — Una NP & Štrbački Buk falls (far northwest — crazy or genius? do the math), Jajce waterfall town + Pliva watermills, Vrelo Bosne, Umoljani & the Bjelašnica highland villages, Prokoško jezero, Tara Bosnia-side viewpoints. MONTENEGRO — Biogradska Gora NP (one of Europe's last primeval forests, on the Kolašin side), Mrtvica canyon hike, Cijevna falls ("Niagara of Montenegro"), Korita/Kučka krajina viewpoint road, Đalovića gorge, Prokletije NP / Grebaje valley (the "Accursed Mountains" — far east, but people call them the best mountains in the Balkans).
+
+For EACH: honest detour math vs the skeleton (anchors in research/drive-times.md; state added hours), and a one-line verdict: "worth rerouting for" / "worth it if passing" / "skip — too far for what it is". Community-sourced evidence (Reddit, forums, local-language blogs), real quotes, verified coordinates. 15–25 entries, status "candidate", tags include "off-route".
+
+Write:
+1. src/data/off-route-gems.json (ids by country prefix; check existing ids in src/data/*.json)
+2. research/off-route-notes.md — everything ranked by wow-per-detour-hour, plus a top-5 list of findings strong enough to actually CHANGE the route shape, argued.
+
+Validate JSON with python3 -m json.tool, then npm run build.
+
+FINAL ACT: mkdir -p .fleet/done && echo done > .fleet/done/O
+```
+
+---
+
+### Session G follow-up 4 — implement the UX + offline specs (paste into the G chat after follow-up 3)
+
+```
+Two sibling sessions audited the app and wrote implementation-ready specs: research/ux-review.md (simplicity — the app gets operated on phones, in a car, by tired people) and research/offline-deploy.md (hosting so all 4 phones can use it + offline survival in no-roaming Bosnia/Montenegro). Implement them in priority order: ux-review's top items first, then offline-deploy's minimal-effort path. Same hard rules as before: never touch src/data/, keep npm run build green, schema changes additive only. Append what you did to research/app-changelog.md. FINAL ACT: echo done > .fleet/done/G2
+```
+
+---
+
 ## After sessions finish (for the master session)
 
 Tell the master session which files landed; it will review `src/data/*.json` + `research/*.md`, dedupe, sanity-check coordinates on the map, and then move to phase 2: itinerary/route building and Airbnb shortlisting per overnight stop.

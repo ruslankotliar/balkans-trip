@@ -19,6 +19,8 @@ Trip-planning app + research workspace for a 13-day road trip. **This is a throw
 
 ## Route shape (user's sketch — a loop, no road driven twice, scope deliberately broad)
 
+**The sketch is a hypothesis, NOT a constraint.** The user explicitly wants places researched beyond the drawn corridor ("think outside the box, expand the scope") — the final road will be chosen based on where the best places are, not vice versa. Off-corridor gems are wanted, with honest detour costs attached, tag "off-route".
+
 The user drew a route sketch (described in `research/route-sketch-notes.md`); drive-time estimates and variant math live in `research/drive-times.md`. Fixed direction:
 
 1. **Jun 16–18:** Zadar (± Velebit mountains loop) → Split/Omiš/Makarska → Dubrovnik by Jun 18 evening (airport pickup). Big northern islands (Hvar/Brač/Vis) likely don't fit.

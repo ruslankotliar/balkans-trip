@@ -1,0 +1,467 @@
+[
+  {
+    "id": "ba-mostar-urban-grill",
+    "name": "Urban Grill (Mostar old town)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.338518,
+    "lng": 17.815054,
+    "description": "Budget grill in the old bazaar (~150m north of the bridge) doing cevapi, mixed grill (mjesano meso) and wood-fired burek on a terrace over the Radobolja. The local-leaning alternative to the two famous tourist names.",
+    "communityNotes": "Repeatedly flagged on TripAdvisor as 'a recommendation from locals' with 'flavorful, nicely priced cevapi'; the mixed-meat grill is called 'a dish favoured by locals' and the burek 'wood-fired with a blackened top'. Consistent 'great food + great view + reasonable rates' theme.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g295388-d4468445-Reviews-Urban_Grill-Mostar.html",
+      "https://restaurantguru.com/Urban-Grill-Mostar"
+    ],
+    "cost": "Cheap — cevapi plate ~8-12 KM (€4-6)",
+    "timeNeeded": "45-60 min",
+    "bestTime": "Lunch; terrace fills at midday in June",
+    "tags": ["cevapi", "burek", "grill", "budget", "local-pick"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-mostar-tima-irma",
+    "name": "Cevabdzinica Tima-Irma (Mostar)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.337137,
+    "lng": 17.81399,
+    "description": "The most-hyped cevapi/grill house in Mostar, a 30-year family business on Onescukova in the old town. Huge portions; famous and therefore touristy.",
+    "communityNotes": "Verdict is MIXED, not a slam-dunk. Many love it ('amazing cevapi with ajvar and kajmak') but recurring complaints about long waits, theatrical slow service, and one reviewer said the cevapi were 'just okay compared to Sarajevo'. Worth it but go early and expect a queue — not a hidden local secret.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g295388-d4422166-Reviews-Cevabdzinica_Tima_Irma-Mostar.html",
+      "https://wanderlog.com/list/geoCategory/1571797/best-spots-for-cevapi-in-mostar"
+    ],
+    "cost": "Large mixed plate ~15-20 KM (€8-10)",
+    "timeNeeded": "1h+ (waits common)",
+    "bestTime": "Before 12:00 or after 14:00 to dodge the queue",
+    "tags": ["cevapi", "famous", "touristy", "family-run"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-mostar-hindin-han",
+    "name": "Restoran Hindin Han (Mostar)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.336775,
+    "lng": 17.813709,
+    "description": "Traditional Bosnian restaurant on a terrace over the Radobolja by the Crooked Bridge — the best sit-down dinner spot of the bazaar restaurants (veal in sauce, fresh fish, cheese/meat boards).",
+    "communityNotes": "Top-10 of Mostar restaurants on TripAdvisor: 'cosy and relaxed atmosphere, amazing sound of the river underneath'; 'dreaming about those cheeses, meats and breads for the rest of my life'. A few note seating crunch / inconsistent service at peak. The 'proper meal' counterpoint to grab-and-go cevapi.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g295388-d895834-Reviews-Restoran_Hindin_Han-Mostar.html",
+      "https://restaurantguru.com/Hindin-Han-Mostar"
+    ],
+    "cost": "Mains ~12-25 KM (€6-13)",
+    "timeNeeded": "1-1.5h",
+    "bestTime": "Dinner / golden hour on the river terrace",
+    "tags": ["bosnian", "river-terrace", "dinner", "sit-down"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-mostar-jumpers-viewpoint",
+    "name": "Stari Most jumpers viewpoint (west-bank terrace)",
+    "country": "BA",
+    "category": "viewpoint",
+    "lat": 43.33726,
+    "lng": 17.8146,
+    "description": "The west-bank Halebija tower holds a small cafe, the Mostar Diving Club and two riverside observation decks below it — where travelers say you get front-row views of the bridge jumpers without being on the bridge.",
+    "communityNotes": "Trip reports converge: 'a little cafe occupies the tower at the west bank — best place to see the divers fly'; 'the two observation decks below the bridge are the best spot for photographing the jumps — find your way down through the cafes at the western end'. Jumpers only go once enough tips are collected, so expect a wait.",
+    "sources": [
+      "https://www.earthtrekkers.com/photographing-stari-most-best-views-mostar/",
+      "https://www.wibkestravels.net/en/bosnia-herzegovina-old-bridge-mostar"
+    ],
+    "cost": "Free (drink if you sit at the cafe)",
+    "timeNeeded": "20-40 min (jumps are sporadic)",
+    "bestTime": "Late morning to afternoon in summer = most jump activity",
+    "tags": ["bridge-jumpers", "photography", "stari-most"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-mostar-black-dog-pub",
+    "name": "Black Dog Pub (Mostar)",
+    "country": "BA",
+    "category": "nightlife",
+    "lat": 43.336644,
+    "lng": 17.81308,
+    "description": "Craft-beer pub on the Radobolja by the Crooked Bridge — the go-to traveler/backpacker drinking spot in the old town, 7+ rotating beers including local craft, frequent live music.",
+    "communityNotes": "Well-liked: 'spent hours making friends with locals', 'huge beer selection, 3-7 KM', 'live music, cool atmosphere, affordable'. Caveats: no printed menu/prices and occasional sharp service. Net: the best old-town pub for the river setting + beer range.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g295388-d4728479-Reviews-Black_Dog_Pub-Mostar.html"
+    ],
+    "cost": "Beers ~3-7 KM (€1.50-3.50)",
+    "timeNeeded": "Evening",
+    "bestTime": "After dark; live-music nights",
+    "tags": ["craft-beer", "pub", "live-music", "backpacker"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-mostar-ali-baba",
+    "name": "Ali Baba cave bar / club (Mostar)",
+    "country": "BA",
+    "category": "nightlife",
+    "lat": 43.337644,
+    "lng": 17.815573,
+    "description": "A bar/club literally inside a natural cave in the rock by the old bazaar, entered through a tunnel; the downstairs 'Cave' is the late-night club. The most distinctive nightlife venue in Mostar.",
+    "communityNotes": "The unique-setting pick: 'went with hostel friends to The Cave (the club part downstairs) — great fun, good music and atmosphere'. Novelty of drinking inside a cave is the draw; gets busy/sweaty late.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g295388-d17674215-Reviews-Ali_Baba-Mostar.html",
+      "https://beinbosnia.com/bosnia-nightlife-guide/"
+    ],
+    "cost": "Drinks moderate; low/no cover",
+    "timeNeeded": "Late evening",
+    "bestTime": "After ~22:00",
+    "tags": ["cave-bar", "club", "unique", "late-night"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-blagaj-vrelo",
+    "name": "Restoran Vrelo (Blagaj, on the Buna)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.256426,
+    "lng": 17.903008,
+    "description": "Riverside restaurant in Blagaj with the best terrace view of the Tekija dervish house and Buna spring — trout/fresh fish and Bosnian dishes, or just a Bosnian coffee over the emerald water. 20 min from Mostar.",
+    "communityNotes": "'Restoran Vrelo had the best view of the Dervish House from their terrace — Bosnian coffee or a traditional lunch, the perfect lazy afternoon.' General Blagaj advice repeated everywhere: come before ~10:30 or after ~16:00 — by noon in June it is crowded with tour groups.",
+    "sources": [
+      "https://www.lifeandventures.com/vrelo-bune-buna-spring-and-blagaj-tekija/",
+      "https://thirdeyetraveller.com/how-to-visit-blagaj-tekija-bosnia/"
+    ],
+    "cost": "Trout/mains ~15-25 KM (€8-13)",
+    "timeNeeded": "1-1.5h (combine with the Tekija, ~2-3h in Blagaj)",
+    "bestTime": "Before 10:30 or after 16:00 to beat the tour buses",
+    "tags": ["blagaj", "buna-spring", "tekija-view", "trout"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-kocusa-falls",
+    "name": "Kocusa Waterfall (Trebizat)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.249342,
+    "lng": 17.45222,
+    "description": "Wide (50m+) low travertine cascade on the Trebizat near Ljubuski with an old working watermill beside it — the quiet, FREE, swimmable alternative to crowded Kravica, ~20 km away.",
+    "communityNotes": "The crowd contrast is the headline: travelers report 'the same day in late May, ~200 people at Kravica vs just 5 at Kocusa'. Free, rustic, pebbled pool from ankle-deep to 2-3m for swimming, and the watermill makes the standout photo. Most bus tours skip it — self-drive only.",
+    "sources": [
+      "https://www.lifeandventures.com/kocusa-waterfall-herzegovina/",
+      "https://adria.fun/en/kocusa-and-ceveljusa-two-exceptional-waterfalls-on-the-trebizat-river/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1-1.5h incl. a swim",
+    "bestTime": "May-June fullest flow; weekday mornings empty",
+    "tags": ["waterfall", "swimming", "trebizat", "hidden-gem", "watermill", "free"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-kravica-autocamp-ante",
+    "name": "Auto Camp Ante (Kravica)",
+    "country": "BA",
+    "category": "campsite",
+    "lat": 43.160359,
+    "lng": 17.614123,
+    "description": "Small family-run campsite ~700m from Kravica falls — the practical base for hitting the waterfall at dawn before the crowds and the ticket window. Modern sanitary block, BBQ area.",
+    "communityNotes": "Strong park4night/Campercontact reviews: 'lovely clean and remote, new and immaculate toilets and showers, hot water and great WiFi'; 'very welcoming hosts, German and English speaking'; 'planned a couple of nights, stayed six'. The known trick: arrive at the falls outside the 07:00-19:00 ticket window and it is free + empty.",
+    "sources": [
+      "https://park4night.com/en/place/509010",
+      "https://www.campercontact.com/en/bosnia-and-herzegovina/federation-of-bosnia-and-herzegovina/studenci/163045/auto-camp-kravica"
+    ],
+    "cost": "~€15-20/night car + tent + 2 (confirm 4-person rate on arrival); separate Kravica entry €10/adult if entering 07:00-19:00",
+    "timeNeeded": "Overnight",
+    "bestTime": "June; book ahead — it is small",
+    "facilities": "Modern hot showers + toilets, electricity, BBQ area, WiFi, reception shop, shaded/riverside",
+    "tags": ["campsite", "kravica", "showers", "family-run", "near-waterfall"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-sarajevo",
+    "name": "Sarajevo (Bascarsija old town)",
+    "country": "BA",
+    "category": "town",
+    "lat": 43.859,
+    "lng": 18.43,
+    "description": "Bosnia's capital and the trip's one real city stop. Bascarsija is the 15th-c. Ottoman bazaar — Sebilj fountain, coppersmiths' alley, Gazi Husrev-beg Mosque, and the 'Meeting of Cultures' line where the bazaar abruptly becomes an Austro-Hungarian boulevard. Compact, cheap, walkable, with genuine nightlife.",
+    "communityNotes": "Travelers call Bascarsija 'one of the best places in the city to locate yourself' for old-town atmosphere — a working bazaar of coppersmiths and cafes. The east-west cultural divide and dense cevapi/cafe scene are the repeated highlights. Best ceapi at Zelo or Petica; nightlife around Ferhadija (Silver & Smoke, Sloga, Pink Houdini jazz, craft-beer bars) is a decisive step up from Mostar for a night out.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ba%C5%A1%C4%8Dar%C5%A1ija",
+      "https://www.thebrokebackpacker.com/where-to-stay-in-sarajevo-bosnia-herzegovina/"
+    ],
+    "cost": "Apartments for 4 ~€50/night achievable (one of the cheaper capitals); hostels cheaper",
+    "timeNeeded": "Half day on foot covers the core; overnight recommended",
+    "bestTime": "Early evening for the buzz; mornings calmer in June",
+    "tags": ["old-town", "ottoman", "city", "base", "nightlife", "walkable"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-tunnel-of-hope",
+    "name": "Tunnel of Hope (Sarajevo War Tunnel Museum)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.81972,
+    "lng": 18.33722,
+    "description": "The 800m tunnel hand-dug under the airport runway that was Sarajevo's only lifeline during the 1992-96 siege. The museum (the house whose cellar was the southern mouth) preserves ~20-25m of tunnel to walk, plus photos, artifacts and a short film. Out by the airport (SW), not the old town.",
+    "communityNotes": "Consistently top-rated: 'our favourite site in Sarajevo'; 'really worth visiting... gives you the inside and practical information on how Sarajevo and its citizens lived during the war'; 'almost an obligatory activity even for mainstream tourists'. Slot it on arrival or departure since you drive through that side anyway.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sarajevo_Tunnel",
+      "https://www.tripadvisor.com/Attraction_Review-g294450-d668457-Reviews-Sarajevo_War_Tunnel-Sarajevo.html"
+    ],
+    "cost": "~15-20 KM adult (€8-10.50), cash",
+    "timeNeeded": "45-60 min on your own; half-day with a guided war tour",
+    "bestTime": "Open ~09:00-18:00; go early to beat tour groups",
+    "tags": ["war-history", "museum", "siege", "near-airport"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-zeljo-cevapi",
+    "name": "Cevabdzinica Zeljo (Sarajevo)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.8589,
+    "lng": 18.4297,
+    "description": "Sarajevo cevapi institution since 1968 (two facing branches on Kundurdziluk in Bascarsija) — the name most often dropped as the locals' favourite. Cevapi in somun bread with raw onion and kajmak, cash only.",
+    "communityNotes": "Local guides list the three locals name as 'Zeljo, Mrkva and Petica Ferhatovic', with Zeljo singled out as 'a locals favourite'. Reviewers: 'probably best cevapi in Old Town', fast service, central. The eternal Zeljo-vs-Petica debate is 'Beatles vs Rolling Stones, only with more onions' — both are the real deal.",
+    "sources": [
+      "https://soulhaus.ba/blog/best-cevapi-sarajevo",
+      "https://www.tripadvisor.com/Restaurant_Review-g294450-d817512-Reviews-Cevabdzinica_Zeljo-Sarajevo.html"
+    ],
+    "cost": "~5-8 KM (€3-4) a portion",
+    "timeNeeded": "30-45 min",
+    "bestTime": "Lunch; busy and turns over fast",
+    "tags": ["cevapi", "local-favourite", "cheap", "bascarsija", "cash-only"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-tjentiste-monument",
+    "name": "Battle of Sutjeska Monument (Tjentiste)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.34611,
+    "lng": 18.68683,
+    "description": "Massive brutalist WWII memorial — two 19m concrete wings on a hillside marking the 1943 Battle of Sutjeska. The valley's centerpiece, a 2-minute detour off the M20, and the easiest possible stop on a transit day toward the Scepan Polje border.",
+    "communityNotes": "Named one of GQ's '9 Brutalist Wonders'; visitors describe the scale and quiet as 'an otherworldly experience'. Reached by semicircular stairs (200+ steps), some 'badly maintained' in places. Right by the road as you leave Tjentiste south. Safety note (Spomenik DB): the monument and roads are fine but landmines remain in parts of the wider park — stay on marked paths.",
+    "sources": [
+      "https://www.spomenikdatabase.org/tjentiste",
+      "https://www.tripadvisor.com/Attraction_Review-g8366244-d8364969-Reviews-Tjentiste_War_Memorial-Tjentiste.html"
+    ],
+    "cost": "Monument free; small fee for the Spomen-Dom museum",
+    "timeNeeded": "20-45 min — ideal transit stop",
+    "bestTime": "Anytime; great light late afternoon",
+    "tags": ["brutalist", "spomenik", "wwii", "quick-stop", "transit-friendly", "on-route"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-prijevor",
+    "name": "Prijevor Saddle & Viewpoint (Sutjeska)",
+    "country": "BA",
+    "category": "viewpoint",
+    "lat": 43.287475,
+    "lng": 18.720446,
+    "description": "The grassy saddle (1668m) you drive to at the foot of Maglic — the classic Maglic photo spot and trailhead for both the Maglic summit and the Trnovacko Lake hike. Wide parking, wild camping allowed, full Dinaric panorama.",
+    "communityNotes": "'From the lot Maglic towers above you and a whole chain of Dinaric peaks spreads in front of you.' ROAD: ~20km of macadam/gravel from Tjentiste, ~1-1.5h. Opinions split: 'we would strongly recommend not undertaking this without a 4x4' vs 'there were Yaris/Micra-type cars at the parking — they just took it a lot slower'. Consensus: dry = doable in a normal car driven very slowly (tire-damage risk); wet = 4x4. 'Lots of flat space' for wild camping.",
+    "sources": [
+      "https://www.outdooractive.com/en/poi/western-balkans/prijevor/16793044/",
+      "https://www.tripadvisor.com/ShowTopic-g294449-i6233-k12942649-Trip_report_a_day_and_a_half_in_Sutjeska_National_Park-Bosnia_and_Herzegovina.html"
+    ],
+    "cost": "Park entry ~5-10 KM/person; ~5 KM/day car fee",
+    "timeNeeded": "1-1.5h drive each way from Tjentiste; viewpoint 30-60 min",
+    "bestTime": "Dry weather for the road; morning light on Maglic",
+    "facilities": "Gravel parking, wild camping permitted, spring water reported; very basic",
+    "tags": ["viewpoint", "trailhead", "wild-camping", "photo-spot", "4x4-when-wet", "on-route"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-trnovacko-jezero",
+    "name": "Trnovacko Lake (heart-shaped, from Prijevor)",
+    "country": "ME",
+    "category": "nature",
+    "lat": 43.25167,
+    "lng": 18.72667,
+    "description": "Stunning heart-shaped glacial lake (1517m) ringed by the Volujak/Maglic peaks — often the highlight of the whole region and great for a cold swim. Physically just over the border in Montenegro but almost always hiked FROM Prijevor on the Bosnian side (bring passports).",
+    "communityNotes": "'A beautiful lake in the shape of a heart with clear blue-green color, great for swimming.' From Prijevor the direct route is the famous easy one: 'about 1h 15min and not a strenuous hike' (others say ~2h with some climbing). 'You cannot reach Trnovacko by car — the closest is Prijevor, leave the car and hike ~2 hours.' Wild camping at the shore allowed; a ranger is sometimes present. The hard combo loop via the Maglic summit is ~6.5-7h.",
+    "sources": [
+      "https://lukaesenko.com/hiking-in-sutjeska-national-park-trnovacko-lake/",
+      "https://en.wikipedia.org/wiki/Trnova%C4%8Dko_Lake"
+    ],
+    "cost": "Free hike (Sutjeska park entry on the BiH side); wild camping free",
+    "timeNeeded": "~1.25-2h each way from Prijevor (half day); full day if combined with Maglic",
+    "bestTime": "June-Sept; midday for swimming; carry passport (border)",
+    "facilities": "Wild camping at the lakeshore, occasional ranger; no services — carry water/food",
+    "tags": ["glacial-lake", "heart-shaped", "swim", "highlight", "from-prijevor", "border-me"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-maglic",
+    "name": "Maglic Summit (2386m) — highest peak in BiH",
+    "country": "BA",
+    "category": "hike",
+    "lat": 43.28111,
+    "lng": 18.73694,
+    "description": "Bosnia's highest peak, climbed from Prijevor straight up the steep NW face — a short but brutal scramble (~2km / 718m gain) with a chained, highly exposed rock section near the top, rewarded by a full Dinaric panorama. Not a transit-day option.",
+    "communityNotes": "'Extremely challenging... only for experienced hikers with solid mountain fitness and no fear of heights'; the trail is 'steep and slippery with little pebbles rolling under your feet, aided by iron cables... mostly exposed to brutal sun'. One blogger recommends ASCENDING the Alpine (face) route and DESCENDING via the gentler Trnovacko-lake route. No guide legally required, but it is real exposure on loose rock — dry weather only, the wet chained section is dangerous.",
+    "sources": [
+      "https://www.summitpost.org/magli-from-prijevor/984877",
+      "https://www.budgetbucketlist.com/sutjeska.html"
+    ],
+    "cost": "Park entry ~5-10 KM/person; no guide fee required",
+    "timeNeeded": "Half day from Prijevor (4-6h round trip)",
+    "bestTime": "Start early for shade; dry weather only",
+    "tags": ["summit", "scramble", "chains", "exposed", "hard", "highest-peak"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-perucica",
+    "name": "Perucica Primeval Forest & Dragos Sedlo viewpoint",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.31842,
+    "lng": 18.68882,
+    "description": "One of Europe's last old-growth forests — a strict reserve of giant beech and spruce beneath Maglic, with the 75m Skakavac waterfall at its heart. Entry is RESTRICTED (ranger-guided only); the free transit-friendly taste is the Dragos sedlo viewpoint over the forest and falls.",
+    "communityNotes": "Access is guide-only: 'permitted only with a certified guide from the national park, and only 16 people per day. Trails are unmarked, you can easily get lost, there is no phone reception.' The guide is a flat per-GROUP fee (splits well across 4). FREE alternative for a transit stop: the Dragos sedlo viewpoint — 'a hundred-meter trail leads to a viewpoint where a deep wooded valley opens up, with the Skakavac waterfall roaring in the heart of it'.",
+    "sources": [
+      "https://peakvisor.com/park/primeval-forest-perucica.html",
+      "https://www.budgetbucketlist.com/sutjeska.html"
+    ],
+    "cost": "Guided forest walk: per-group ranger fee + park entry; Dragos sedlo viewpoint free with entry",
+    "timeNeeded": "Viewpoint stop ~30-45 min (transit-friendly); full guided forest+waterfall hike ~2.5-3h",
+    "bestTime": "Book the guide ahead (limited daily quota); viewpoint anytime in daylight",
+    "facilities": "None inside the reserve; no phone signal; gravel access road",
+    "tags": ["primeval-forest", "guide-required", "waterfall", "viewpoint", "dragos-sedlo", "on-route"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-tjentiste-mladost",
+    "name": "Hotel Mladost & Kamp Sutjeska (Tjentiste)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.34944,
+    "lng": 18.69556,
+    "description": "The practical place to sleep at the heart of Sutjeska: a basic communist-era hotel plus an adjacent riverside campsite, right by the monument and the only real cluster of services (2 restaurants, 1 small shop) in the park.",
+    "communityNotes": "Hotel Mladost is the de-facto base: 'probably the best place to base yourself for Sutjeska... basic by American standards but will more than suffice', 'staff super helpful, rooms comfortable with good bathrooms', big outdoor pool. Kamp Sutjeska sits next to it 'by the river with several barbecue areas' (~8.3 recent rating) but an older review trashed the sanitary block — check current state. Buy ALL food before arriving: 'learn from our mistakes and bring supplies'.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g3336967-d3224759-Reviews-Hotel_Mladost-Sutjeska_National_Park.html",
+      "https://www.camping.info/en/campsite/camp-sutjeska-tjentiste/reviews"
+    ],
+    "cost": "Hotel Mladost: budget 2-star (cheap); Kamp Sutjeska: small per-tent fee; wild camping at Prijevor/Trnovacko free",
+    "timeNeeded": "Overnight base",
+    "bestTime": "Book the hotel ahead in June; stock up on food first",
+    "facilities": "Hotel: rooms, restaurant, large pool. Camp: riverside pitches, BBQ, toilets/showers (quality variable)",
+    "tags": ["base", "hotel", "campsite", "tjentiste", "budget", "on-route"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-trebinje-old-town",
+    "name": "Trebinje Old Town (Kastel) & Plane Tree Square",
+    "country": "BA",
+    "category": "town",
+    "lat": 42.7109247,
+    "lng": 18.3470653,
+    "description": "Walled Ottoman old town (Kastel) on the Trebisnjica, opening onto a square shaded by 100-year-old plane trees full of cheap cafes and konobas. The standout cheap base near Dubrovnik: ~30-40 min inland but a fraction of the price, with a real wine-town vibe.",
+    "communityNotes": "'The easiest cross-border day trip out of Dubrovnik, just thirty kilometres on a quiet inland road'; 'accommodation, restaurants and services are 30-50% more affordable than Dubrovnik'. One Rick Steves poster was blunt: 'there's not much to the town' — its value is base + wine + bridge + monastery viewpoint + cheap nights + the Saturday green market, not blockbuster sights. The square 'gets pretty hectic once the sun drops' (bars/pubs aplenty).",
+    "sources": [
+      "https://community.ricksteves.com/travel-forum/bosnia/trebinje-anyone",
+      "https://gotrebinje.com/en/destinations/zelena-pijaca/"
+    ],
+    "cost": "Apartments for 4 ~€30-70/night (cheap hotels avg ~€45-50); Numbeo: Dubrovnik rent ~272% higher",
+    "timeNeeded": "Half day to see; 1-2 nights as a base",
+    "bestTime": "Evening for the square; Saturday AM for the market. June books up early.",
+    "tags": ["base", "cheap", "wine-town", "old-town", "near-dubrovnik", "market"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-vukoje-winery",
+    "name": "Vukoje Winery (Podrumi Vukoje 1982, Trebinje)",
+    "country": "BA",
+    "category": "food",
+    "lat": 42.7158941,
+    "lng": 18.3434894,
+    "description": "Trebinje's flagship winery on the edge of town, a multi-storey building topped by a terrace bar/restaurant overlooking the city. Tours + tastings of the native Zilavka (white) and Vranac (red); among the best-rated wineries in SE Europe.",
+    "communityNotes": "TripAdvisor 4.6/5: 'a do-not-miss experience if you're ever in Trebinje. The wine was really good, the food delicious, service 5 stars.' Tip from a reviewer: 'ask about the per-glass tasting, otherwise they bring a full bottle each time.' The rooftop terrace is the selling point: 'lunch and wine tasting on the terrace with a view of Trebinje is the most beautiful thing.'",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g303196-d2334434-Reviews-Vukoje_Cellars-Trebinje.html"
+    ],
+    "cost": "Tasting + meal varies; ask for per-glass tastings to keep it cheap",
+    "timeNeeded": "1.5-2.5h (longer with lunch/dinner)",
+    "bestTime": "Sunset on the rooftop terrace; book ahead in summer",
+    "facilities": "Terrace bar + restaurant, guided tours, shop",
+    "tags": ["wine", "zilavka", "vranac", "terrace", "view", "tasting"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-tvrdos-monastery",
+    "name": "Tvrdos Monastery (wine-making monks)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 42.7184351,
+    "lng": 18.2923489,
+    "description": "15th-century Serbian Orthodox monastery ~6 km west of Trebinje among vineyards, where monks make award-winning Vranac and Zilavka in a cellar partly dating to the 1400s (their Grand Reserve Vranac won Decanter gold in 2018). Grounds + shop free to wander; the setting is the draw.",
+    "communityNotes": "'Real wine tasting!' and a frequent highlight of Trebinje-area trips. Important booking caveat repeated by visitors: 'you need an organized tour or to contact them directly weeks in advance to arrange a tasting. You can walk the grounds and shop in the store but will not be able to taste the wine without arrangements.' Buy bottles in the shop even without a tasting.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g303196-d3485580-Reviews-Tvrdos_Monastery-Trebinje.html",
+      "https://en.wikipedia.org/wiki/Tvrdo%C5%A1_Monastery"
+    ],
+    "cost": "Free to visit grounds/shop; tasting must be pre-arranged (or via tour)",
+    "timeNeeded": "45 min-1h",
+    "bestTime": "Daytime; arrange any tasting weeks ahead",
+    "facilities": "Monastery shop (wine, honey, rakija, olive oil), grounds",
+    "tags": ["monastery", "wine", "monks", "vineyards", "free", "hidden-gem"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-gracanica-viewpoint",
+    "name": "Hercegovacka Gracanica (Trebinje monastery viewpoint)",
+    "country": "BA",
+    "category": "viewpoint",
+    "lat": 42.7107369,
+    "lng": 18.3600128,
+    "description": "Serbian Orthodox church on Crkvina hill above Trebinje (a 1990s replica of the medieval Gracanica in Kosovo), holding the tomb of poet Jovan Ducic. The terrace gives the best panorama over the old town, the Trebisnjica valley and the mountains.",
+    "communityNotes": "Consistently named the second Trebinje highlight after the Arslanagic bridge: 'the other highlight is the Serbian Orthodox monastery up on a hill overlooking the town, with a great view down'. Travel reports call the view 'breathtaking'. Short drive up; dress modestly to enter the church.",
+    "sources": [
+      "https://community.ricksteves.com/travel-forum/bosnia/trebinje-anyone"
+    ],
+    "cost": "Free (donations)",
+    "timeNeeded": "30-45 min",
+    "bestTime": "Golden hour for the panorama",
+    "tags": ["viewpoint", "monastery", "panorama", "free", "sunset"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-vjetrenica-cave",
+    "name": "Vjetrenica Cave (Zavala, near Ravno)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 42.8458637,
+    "lng": 17.9837844,
+    "description": "The largest and most biodiverse cave in BiH (UNESCO Tentative List), at Zavala near Ravno in the Popovo Polje karst — named 'wind cave' for the strong draught at its mouth. A guided ~45-60 min walk ~600m in past chambers, columns and underground lakes; home to the blind cave salamander (olm). ~1h from Trebinje.",
+    "communityNotes": "Mixed but mostly positive. Fans: 'spectacular halls', 'what you can see cannot be described', 'easy and fascinating day trip from Dubrovnik'. Differs from show-caves: 'not many stalactites' but unique pools/lakes. Watch-outs: can feel underwhelming if you've seen big caves, and service is hit-or-miss (one praised guide Maria, another slammed a guide on 'auto-mode'). Tours hourly on the hour, mandatory guide, ~12C inside, slippery paths.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g8770460-d7275939-Reviews-Vjetrenica_Cave-Zavala.html",
+      "https://www.worldheritagesite.org/list/vjetrenica-cave/"
+    ],
+    "cost": "Cheap entry (~10 KM / a few euro pp); cash KM safest",
+    "timeNeeded": "45-60 min tour; ~1h drive each way from Trebinje",
+    "bestTime": "Bring a layer (constant ~12C); check last-entry time",
+    "facilities": "Guided tours only, parking, nearby restaurant for the wait between slots",
+    "tags": ["cave", "unesco-tentative", "olm", "guided", "karst", "hidden-gem"],
+    "rating": 3,
+    "status": "candidate"
+  }
+]

@@ -15,7 +15,13 @@
     "cost": "free",
     "timeNeeded": "~20-30 min stop",
     "bestTime": "on the drive Šćepan Polje → Plužine → Žabljak",
-    "tags": ["viewpoint", "scenic-drive", "piva-canyon", "dam", "photo"],
+    "tags": [
+      "viewpoint",
+      "scenic-drive",
+      "piva-canyon",
+      "dam",
+      "photo"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -37,7 +43,14 @@
     "facilities": "hot showers, restaurant/bar, free WiFi, free parking, fire pit, private Tara river beach",
     "timeNeeded": "1 night (rafting base)",
     "bestTime": "the night you cross at Šćepan Polje / do Tara rafting",
-    "tags": ["campsite", "rafting", "scepan-polje", "tara-river", "border", "food"],
+    "tags": [
+      "campsite",
+      "rafting",
+      "scepan-polje",
+      "tara-river",
+      "border",
+      "food"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -56,7 +69,12 @@
       "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k13812655-How_long_does_it_take_to_cross_border_in_summer-Montenegro.html"
     ],
     "bestTime": "cross before 08:00 or after 21:00; or use Vitaljina/Kobila to skip the queue",
-    "tags": ["border", "logistics", "queue-risk", "return-day"],
+    "tags": [
+      "border",
+      "logistics",
+      "queue-risk",
+      "return-day"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -77,7 +95,15 @@
     "cost": "€3-5 pp Durmitor NP fee (collected by warden at Sedlo); ~€15 shared taxi to Sedlo",
     "timeNeeded": "4-5h from Sedlo / ~7h Sedlo→Žabljak / ~10h from Black Lake",
     "bestTime": "late June can still hold snow — verify locally; start early",
-    "tags": ["hiking", "summit", "scrambling", "cables", "exposed", "snow-risk", "alt-to-meded"],
+    "tags": [
+      "hiking",
+      "summit",
+      "scrambling",
+      "cables",
+      "exposed",
+      "snow-risk",
+      "alt-to-meded"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -97,7 +123,12 @@
     "cost": "€3-5 pp NP entry",
     "timeNeeded": "~2h incl. drive (40-60min walk)",
     "bestTime": "morning light / clear weather for the canyon",
-    "tags": ["viewpoint", "tara-canyon", "easy", "rest-day"],
+    "tags": [
+      "viewpoint",
+      "tara-canyon",
+      "easy",
+      "rest-day"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -117,7 +148,14 @@
     ],
     "timeNeeded": "P14 Plužine↔Žabljak ~50km; allow 1.5-2h+ with stops",
     "bestTime": "summer; clear day for the meadow/peak views",
-    "tags": ["scenic-drive", "pass", "p14", "durmitor-ring", "on-route", "bobotov-kuk-trailhead"],
+    "tags": [
+      "scenic-drive",
+      "pass",
+      "p14",
+      "durmitor-ring",
+      "on-route",
+      "bobotov-kuk-trailhead"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -138,7 +176,13 @@
     "cost": "half-day ~€70 pp; full-day ~€150 pp incl. lunch",
     "timeNeeded": "half day (most common) or full day",
     "bestTime": "late June = high/fast water, coldest, most thrilling; wetsuit required",
-    "tags": ["rafting", "whitewater", "tara-canyon", "adrenaline", "group-wish"],
+    "tags": [
+      "rafting",
+      "whitewater",
+      "tara-canyon",
+      "adrenaline",
+      "group-wish"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -159,7 +203,12 @@
     "cost": "~€20-25 long extreme line (up to €40 listed); ~€10-30 shorter lines; +€10 photos",
     "timeNeeded": "~30-60min incl. wait; the ride itself is short",
     "bestTime": "open ~mid-Apr to early Oct, 10:00-19:00; pair with Tara rafting",
-    "tags": ["zipline", "adrenaline", "tara-bridge", "viewpoint"],
+    "tags": [
+      "zipline",
+      "adrenaline",
+      "tara-bridge",
+      "viewpoint"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -181,7 +230,13 @@
     "facilities": "hot showers (new block), flush toilets, communal kitchen, washing machine, free WiFi, bar/breakfast, campfire; near Black Lake",
     "timeNeeded": "base for 2 nights",
     "bestTime": "walkable to Black Lake trailhead",
-    "tags": ["campsite", "zabljak", "black-lake", "highly-rated", "hot-showers"],
+    "tags": [
+      "campsite",
+      "zabljak",
+      "black-lake",
+      "highly-rated",
+      "hot-showers"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -203,7 +258,14 @@
     "facilities": "showers/toilets, on-site restaurant + grocery, free WiFi, partial shade, marked hiking routes; books adventure activities",
     "timeNeeded": "base for 1-2 nights",
     "bestTime": "good budget apartment fallback if not camping",
-    "tags": ["campsite", "accommodation", "apartment", "budget", "zabljak", "restaurant"],
+    "tags": [
+      "campsite",
+      "accommodation",
+      "apartment",
+      "budget",
+      "zabljak",
+      "restaurant"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -224,7 +286,14 @@
     "cost": "single ~€5/hr or €20/day, double ~€10/hr or €30/day + ~€5/person NP fee",
     "timeNeeded": "2-4h (half day)",
     "bestTime": "morning (calm water, cooler, fewer boats)",
-    "tags": ["kayak", "skadar", "virpazar", "self-guided", "active", "group-wish"],
+    "tags": [
+      "kayak",
+      "skadar",
+      "virpazar",
+      "self-guided",
+      "active",
+      "group-wish"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -244,7 +313,13 @@
     "cost": "free",
     "timeNeeded": "30-60 min",
     "bestTime": "golden hour for best light/reflections; drive the wider approach road",
-    "tags": ["viewpoint", "photo", "horseshoe-bend", "skadar", "rijeka-crnojevica"],
+    "tags": [
+      "viewpoint",
+      "photo",
+      "horseshoe-bend",
+      "skadar",
+      "rijeka-crnojevica"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -263,7 +338,14 @@
     ],
     "timeNeeded": "1.5-3h",
     "bestTime": "easy add-on between Skadar and the coast",
-    "tags": ["winery", "wine-tasting", "crmnica", "vranac", "family", "food"],
+    "tags": [
+      "winery",
+      "wine-tasting",
+      "crmnica",
+      "vranac",
+      "family",
+      "food"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -283,7 +365,13 @@
     "cost": "~€3pp NP entry + ~€3pp mausoleum",
     "timeNeeded": "~1h (climb ~15 min)",
     "bestTime": "clear morning before haze/heat for the panorama",
-    "tags": ["mausoleum", "lovcen", "viewpoint", "461-steps", "panorama"],
+    "tags": [
+      "mausoleum",
+      "lovcen",
+      "viewpoint",
+      "461-steps",
+      "panorama"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -303,7 +391,14 @@
     "cost": "free",
     "timeNeeded": "drive ~30-40 min Kotor→top + photo stops",
     "bestTime": "drive UP from Kotor before 9am or after 4pm (summer downhill 08:00-15:00 restricted)",
-    "tags": ["serpentine", "viewpoint", "kotor-bay", "driving-road", "hairpins", "photo"],
+    "tags": [
+      "serpentine",
+      "viewpoint",
+      "kotor-bay",
+      "driving-road",
+      "hairpins",
+      "photo"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -323,7 +418,13 @@
     "cost": "€15/person high season (was €8); free before ~8am when booth unstaffed, and off-season",
     "timeNeeded": "1.5-2.5h round trip",
     "bestTime": "before 8am (free + cool) or late afternoon; midday is brutally hot and crowded",
-    "tags": ["hiking", "viewpoint", "must-do", "paid", "free-loophole"],
+    "tags": [
+      "hiking",
+      "viewpoint",
+      "must-do",
+      "paid",
+      "free-loophole"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -343,7 +444,12 @@
     "cost": "free (scenic trail only — no longer enters the paid fortress)",
     "timeNeeded": "~45 min up to the Špiljari viewpoint",
     "bestTime": "early morning, before heat",
-    "tags": ["hiking", "free", "viewpoint", "alternative"],
+    "tags": [
+      "hiking",
+      "free",
+      "viewpoint",
+      "alternative"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -362,7 +468,12 @@
     "cost": "parking ~€8/day paid lot, or free roadside if you find a spot",
     "timeNeeded": "2-3h incl. boat",
     "bestTime": "early morning or after 16:00 to dodge day-trippers",
-    "tags": ["scenic-town", "boat", "photogenic", "bay-of-kotor"],
+    "tags": [
+      "scenic-town",
+      "boat",
+      "photogenic",
+      "bay-of-kotor"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -381,7 +492,12 @@
     ],
     "cost": "boat ~€5 return + €2 island/church entry (book at the pier)",
     "timeNeeded": "~45min-1h total",
-    "tags": ["boat", "church", "photogenic", "bay-of-kotor"],
+    "tags": [
+      "boat",
+      "church",
+      "photogenic",
+      "bay-of-kotor"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -400,7 +516,12 @@
     ],
     "timeNeeded": "evening",
     "bestTime": "late June nightlife is ramping up but pre-July-peak",
-    "tags": ["nightlife", "bars", "old-town", "walkable"],
+    "tags": [
+      "nightlife",
+      "bars",
+      "old-town",
+      "walkable"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -419,7 +540,12 @@
     ],
     "cost": "free entry; loungers ~€8-12 each",
     "bestTime": "eastern/Budva end is quietest",
-    "tags": ["beach", "camping", "spacious", "swimming"],
+    "tags": [
+      "beach",
+      "camping",
+      "spacious",
+      "swimming"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -438,7 +564,13 @@
     ],
     "cost": "free entry; lounger set ~€15-30",
     "bestTime": "arrive before ~9-10am for a spot",
-    "tags": ["beach", "cove", "swimming", "crowded", "petrovac"],
+    "tags": [
+      "beach",
+      "cove",
+      "swimming",
+      "crowded",
+      "petrovac"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -457,7 +589,14 @@
     ],
     "cost": "sunbed ~€15; boat from Budva ~€8",
     "timeNeeded": "half to full day",
-    "tags": ["beach", "party", "pools", "cliff-jumping", "foam-party", "group-fit"],
+    "tags": [
+      "beach",
+      "party",
+      "pools",
+      "cliff-jumping",
+      "foam-party",
+      "group-fit"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -475,7 +614,13 @@
       "https://www.montenegropulse.com/lustica-peninsula.html"
     ],
     "timeNeeded": "half day (more if combining with Blue Cave)",
-    "tags": ["beach", "snorkeling", "cliff-jumping", "boat-hub", "lustica"],
+    "tags": [
+      "beach",
+      "snorkeling",
+      "cliff-jumping",
+      "boat-hub",
+      "lustica"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -495,7 +640,13 @@
     "cost": "boat only: ~€15-25 direct, ~€30-60 combo tour (no cave fee)",
     "timeNeeded": "3-5h combo tour",
     "bestTime": "10:00-13:00 for the strongest blue effect",
-    "tags": ["activity", "boat", "swimming", "sea-cave", "lustica"],
+    "tags": [
+      "activity",
+      "boat",
+      "swimming",
+      "sea-cave",
+      "lustica"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -515,7 +666,11 @@
     "cost": "~€4-5pp entry; parking ~€2",
     "timeNeeded": "1.5-3h",
     "bestTime": "early morning to beat heat + cruise crowds",
-    "tags": ["ruins", "history", "deep-south"],
+    "tags": [
+      "ruins",
+      "history",
+      "deep-south"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -535,7 +690,12 @@
     ],
     "timeNeeded": "2-3h (half day with beach/lunch)",
     "bestTime": "late afternoon into sunset; quieter than Kotor",
-    "tags": ["old-town", "albanian", "deep-south", "sunset"],
+    "tags": [
+      "old-town",
+      "albanian",
+      "deep-south",
+      "sunset"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -553,7 +713,12 @@
       "https://kitejungle.com/kite-places/montenegro/ada-bojana"
     ],
     "bestTime": "afternoons for thermal wind; swim mornings",
-    "tags": ["beach", "kitesurf", "windsurf", "deep-south"],
+    "tags": [
+      "beach",
+      "kitesurf",
+      "windsurf",
+      "deep-south"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -572,7 +737,14 @@
     ],
     "timeNeeded": "half day (beach + sunset dinner)",
     "bestTime": "sunset for the stilt-restaurant dinner",
-    "tags": ["island", "kitesurf", "nudist", "seafood", "deep-south", "border"],
+    "tags": [
+      "island",
+      "kitesurf",
+      "nudist",
+      "seafood",
+      "deep-south",
+      "border"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -590,7 +762,13 @@
       "https://kiteloop.net/"
     ],
     "bestTime": "June-Sept; afternoons for thermal wind",
-    "tags": ["kitesurf", "school", "deep-south", "iko", "coord-approx"],
+    "tags": [
+      "kitesurf",
+      "school",
+      "deep-south",
+      "iko",
+      "coord-approx"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -610,7 +788,14 @@
     "cost": "own tent pitch from ~€12pp; rental tents €15-20pp incl. breakfast",
     "facilities": "solar showers, composting toilets, equipped kitchen, spring water, WiFi/4G, organic-garden dinners, hammocks; tents only",
     "bestTime": "first or last night of the loop (near Dubrovnik airport); book ahead",
-    "tags": ["camping", "eco", "near-dubrovnik-airport", "naturist", "book-ahead", "coord-approx"],
+    "tags": [
+      "camping",
+      "eco",
+      "near-dubrovnik-airport",
+      "naturist",
+      "book-ahead",
+      "coord-approx"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -630,7 +815,14 @@
     "cost": "high season ~€6 adult + €4 small tent + €4 car (+€3 electric, +€1 tax) → ~€30-35/night for 4 + car + tent(s)",
     "facilities": "hot showers, toilets, electricity, free WiFi, washing machine, lots of shade, ~200m to beach",
     "bestTime": "beach night near Petrovac/Sveti Stefan",
-    "tags": ["campsite", "coast", "budget", "beach", "shade", "petrovac"],
+    "tags": [
+      "campsite",
+      "coast",
+      "budget",
+      "beach",
+      "shade",
+      "petrovac"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -649,8 +841,109 @@
     ],
     "cost": "4-person apartments commonly ~€50-80/night in peak June (cheaper than Budva/Kotor)",
     "timeNeeded": "half day / overnight base",
-    "tags": ["town", "budget-base", "relaxed", "beaches-nearby", "apartments"],
+    "tags": [
+      "town",
+      "budget-base",
+      "relaxed",
+      "beaches-nearby",
+      "apartments"
+    ],
     "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-lovcen-stirovnik-hike",
+    "name": "Štirovnik (1749m) — Lovćen's true summit hike from Ivanova Korita",
+    "country": "ME",
+    "category": "hike",
+    "lat": 42.39917,
+    "lng": 18.81843,
+    "description": "The actual highest peak of Mt Lovćen (1749m, 92m higher than the Njegoš Mausoleum), reached on a waymarked trail from the Ivanova Korita picnic area (~1390m). Pine forest and scrub give way to open karst and a trig point with views arguably broader than the mausoleum's — bay, Adriatic, Skadar, and the Bosnian mountains — and almost no crowds. (Summit coords are Štirovnik peak; trailhead is Ivanova Korita ~42.3803, 18.8320.) The EASY-MODERATE Lovćen hiking option for the group.",
+    "communityNotes": "Repeatedly described as a gentle-to-moderate half-day with a big payoff and few people: ~6–10 km return, ~360–400m gain, 3–4h, 'moderate,' through pine forest then open karst to a cairn/trig point. Travelers note the views are 'arguably broader than from the mausoleum, without the crowds.' Note: there's a comms tower/military area on the very top — the panorama is from just below/around it. Pairs naturally with driving up to the mausoleum the same day. June: snow-free at this altitude, but it's exposed karst with little shade once above the treeline — go in the morning and carry water (no reliable spring on the ridge).",
+    "sources": [
+      "https://www.montenegro-spirit.com/guides/lovcen-hiking/",
+      "https://www.komoot.com/smarttour/37043884",
+      "https://www.wikiloc.com/hiking-trails/jezerski-vrh-stirovnik-lovcen-48522879"
+    ],
+    "cost": "Lovćen NP entry ~€3–5/person (gate); no extra hiking fee",
+    "timeNeeded": "3–4h return (half day with the drive-up)",
+    "bestTime": "clear morning — exposed karst, little shade; haze builds in afternoon heat",
+    "tags": [
+      "hiking",
+      "lovcen",
+      "summit",
+      "easy-moderate",
+      "viewpoint",
+      "low-crowds"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-komovi-vasojevicki-kom",
+    "name": "Kom Vasojevićki (2461m) — Komovi summit from Eko Katun Štavna",
+    "country": "ME",
+    "category": "hike",
+    "lat": 42.71229,
+    "lng": 19.6829,
+    "description": "The most popular Komovi summit (2461m), climbed from the Eko Katun Štavna plateau (~1700m) in far-eastern Montenegro — the group's backup wish. A wildflower meadow start steepens up scree to a rocky summit ridge with one short exposed scrambling move. (Pin = the Štavna katun/parking TRAILHEAD, OSM-verified; the summit itself is ~42.6922, 19.6683, ~2km south. NOTE: the existing 'me-komovi' pin at 42.6622,19.6433 is ~6km off the trailhead — this entry has the correct access point.)",
+    "communityNotes": "Triangulated stats: ~8.5km RT, ~765m gain, 4.5–5h (outdooractive); a fit group should plan ~5h with breaks. Officially 'moderate' but with a sting: a short exposed section near the top where 'most will need their hands,' alongside 'a ravine that falls away sharply' — the EXPOSURE-AVERSE member should know about this one move (it's brief, but it's real, and there are steep grassy slopes that 'do not tolerate any misstep when wet'). Water: 'four icy springs' near the trailhead at Štavna (refill before you climb; none high up). June: meadows full of wildflowers and 'trails are peaceful,' but 'parts of the trail can still be covered with snow or mud near the higher peaks' in spring — a May 2019 hiker found 'still some snow here and there' near 2400m, so expect possible lingering patches early/mid June after a snowy winter. 'Plenty of water, katuns and local people are super friendly.'",
+    "sources": [
+      "https://www.outdooractive.com/en/route/mountain-hike/montenegro/kom-vasojevicki-2461m-/15602250/",
+      "https://thesandyfeet.com/kucki-kom-komovi-montenegro/",
+      "https://www.tripadvisor.com/Attraction_Review-g660251-d7281505-Reviews-Komovi_Mountain_Range-Kolasin_Kolasin_Municipality.html",
+      "https://www.alltrails.com/trail/montenegro/andrijevica/vasojevicki-kom-trail"
+    ],
+    "cost": "Free hike; Komovi park gate ~€2/person reported; Štavna katun huts ~€40/house (5 beds) or ~€8/person reported (confirm — one source says permanently closed, see notes)",
+    "timeNeeded": "~5h hike + ~2h drive each way from the coast/Kolašin",
+    "bestTime": "morning start; mid-to-late June safest for snow-free upper slopes",
+    "facilities": "Štavna katun (chalets w/ hot-water showers reported) + free parking + ~4 spring water points at the trailhead; status uncertain (one 2024 source says the original Eko Katun Štavna is closed, alternatives: Kobil Do, Eko Katun Martinovica 1750)",
+    "tags": [
+      "hiking",
+      "komovi",
+      "summit",
+      "2461m",
+      "scramble",
+      "exposure",
+      "katun",
+      "backup-wish",
+      "remote",
+      "coords-corrected"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-rumija-summit",
+    "name": "Rumija (1593m) — sea + Skadar double-view summit above Bar",
+    "country": "ME",
+    "category": "hike",
+    "lat": 42.10319,
+    "lng": 19.1886,
+    "description": "Montenegro's southernmost big summit (1593m) on the ridge that separates the Adriatic from Skadar Lake — on a clear day you see both at once, plus the St Vladimir cross/chapel on top. Climbed from Stari Bar (~170m). A serious, long deep-south day, not a casual outing. (Pin = summit, OSM-verified; trailhead at Stari Bar ~42.094, 19.134.)",
+    "communityNotes": "Honest reality check: this is BIG. The full Stari Bar → summit → Stari Bar round trip is ~13.9km with ~1540m gain over ~8h (wibkestravels GPX); Komoot logs the loop variant at 22.7km / 9h+ / ~1440m and rates it 'expert.' Not technically hard ('isn't particularly technically demanding, but it's long and has a lot of elevation gain') but it's a full, hot, low-shade slog through Mediterranean scrub then alpine terrain. The trail 'is less well-marked than national-park trails' — carry a GPX. WATER: bring 3L; a cold spring/fountain exists partway but don't rely on it in June heat. JUNE = the catch: starting at sea level near Bar means brutal lower-slope heat — start at dawn or skip in a heatwave. Praised as 'a beautiful hike with an obvious trail' by GPS-equipped hikers. Best as a deep-south add-on only if already basing near Bar/Ulcinj.",
+    "sources": [
+      "https://www.wibkestravels.net/en/montenegro-summit-hike-rumija-gps",
+      "https://www.komoot.com/smarttour/20489902",
+      "https://waytomonte.com/en/t-78-hike-to-the-top-of-mount-rumija-1593-m",
+      "https://www.wikiloc.com/hiking-trails/stari-bar-vrh-rumija-stari-bar-11004729"
+    ],
+    "cost": "Free",
+    "timeNeeded": "~8h round trip (full day) + deep-south positioning",
+    "bestTime": "dawn start — sea-level heat makes a late start dangerous in June; clear day for the double sea+lake view",
+    "facilities": "No facilities on the mountain; one cold spring/fountain partway (unreliable in summer); park at Stari Bar",
+    "tags": [
+      "hiking",
+      "rumija",
+      "summit",
+      "deep-south",
+      "skadar",
+      "adriatic",
+      "long-day",
+      "heat",
+      "gpx-needed"
+    ],
+    "rating": 3,
     "status": "candidate"
   }
 ]
