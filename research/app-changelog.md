@@ -229,3 +229,85 @@ Itinerary,DetailPanel}.tsx`, `src/styles.css`, `vite.config.ts`,
   trip ephemera (`balkans-trip-done`).
 - Trip-mode "Sleep tonight"/"Near me" use straight-line km (haversine), not
   road distance — fine for a 25–30 km radius shortlist.
+
+## 2026-06-10 — Session G3: booking & source link UX
+
+Places now lead with their MOST USEFUL link instead of anonymous `[1][2]`
+footnotes + a dominant Google Maps link. Works in both planning and trip
+modes; `npm run build` green; verified with headless Chrome (CDP-driven
+clicks against `vite preview`: detail panel, popup, trip-mode sheet,
+Sleep-tonight cards, presets).
+
+### 10. Domain-labeled source links (`src/links.ts`)
+
+- Every URL in `sources` is classified by hostname:
+  - `airbnb.*` → **"Open on Airbnb"**, `booking.com` → "Open on Booking.com"
+    (kind `booking`);
+  - park4night / campercontact / camping.info / pitchup → **"Campsite
+    reviews"** (kind `campsite`);
+  - outdooractive / alltrails / komoot / wikiloc / summitpost → **"Trail
+    guide / GPX"**;
+  - reddit / tripadvisor / *forum* → **"Traveler reports"**;
+  - anything else → the site's hostname (e.g. `np-paklenica.hr`).
+- Links are deduped, sorted booking → campsite → trail → reports → other,
+  and repeated labels are numbered ("Traveler reports 2").
+- **Primary booking button:** the first booking-type link (Airbnb/campsite)
+  renders as a big colored "🔖 Open on Airbnb ↗" / "⛺ Campsite reviews ↗"
+  button at the **top** of the detail panel (and of the trip-mode bottom
+  sheet — `title="Book / View listing"`). Airbnb red / campsite blue.
+- Remaining links render as colored **label chips** in the panel footer.
+- **Google Maps demoted** everywhere to a small grey "Navigate ↗ (Google
+  Maps)" link — still one tap in the car, never the main affordance.
+
+### Booking one tap away in lists/finders
+
+- **Corridor finder** ("sleep along this route") and trip-mode **Sleep
+  tonight / Near me** cards: each card now has a `card-links` row —
+  "Open on Airbnb ↗"/"Campsite reviews ↗" + small "Navigate ↗"
+  (`stopPropagation`, so the card tap still opens the detail panel).
+- **Place list rows** (planning sidebar): places with a booking-type source
+  get a small round ↗ badge (red = Airbnb/Booking, blue = campsite portal)
+  that opens the listing directly — booking is one tap from any list.
+- **Map popup** (planning): compact link chips (first 3, booking first) +
+  small Navigate link above the status buttons.
+
+### Filtering convenience: one-tap presets
+
+Audit: shortlist-only was 1 tap (toggle backup off), but campsites-only
+meant un-tapping ~10 category chips → failed the ≤2-taps rule. Added a
+`preset-row` of one-tap quick filters above the country chips (planning,
+Places + Route builder views):
+
+- **🛏 Sleep spots** — campsite+accommodation categories, all non-rejected
+  statuses (you want to see every option when picking where to sleep);
+- **⭐ Shortlist** — status shortlist only, all categories;
+- **🥾 Do & see** — hike/activity/beach/nature/viewpoint/sight, non-rejected
+  ("activities near me" = this + the map is already where you are);
+- **↺ All** — back to the default view (all categories, shortlist+backup).
+
+Presets also clear the tag filter; the matching preset highlights when
+active. Flows now: campsites+stays 1 tap; pure campsites 2 taps (preset +
+toggle accommodation off); shortlist-only 1 tap; activities 1 tap. Trip
+mode already had one-tap finders (🛏 Sleep tonight / 📍 Near me) — its
+cards just gained the booking links.
+
+### Files (this session)
+
+Added: `src/links.ts` (classifier + `deriveLinks`/`bookingFor`/`navUrl`).
+Extended: `src/components/{DetailPanel,CorridorPanel,Today}.tsx`,
+`src/App.tsx` (presets, popup links, list badges, `bookingById` memo),
+`src/styles.css` (`.book-btn`, `.link-chip`, `.nav-link`, `.card-links`,
+`.book-mini`, `.popup-links`, `.chip.preset`; trip-mode sizes bumped).
+`src/data/` and the `Place` schema untouched.
+
+### Notes
+
+- The primary booking link is excluded from the footer chip list (no
+  duplication); multi-source places keep all other chips.
+- `bookingById` is memoized over the base places — `sources` never change
+  at runtime, so list rows pay nothing.
+- Verified live: "Open on Airbnb" primary button (planning panel + trip
+  sheet), "Campsite reviews" (campercontact/pitchup), "Trail guide / GPX"
+  (alltrails), "Traveler reports" (tripadvisor), hostname fallback, popup
+  chips, Sleep-tonight card links near Žabljak, preset row (57 sleep spots
+  in one tap, active-state highlight).

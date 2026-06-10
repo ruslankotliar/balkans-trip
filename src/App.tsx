@@ -209,6 +209,17 @@ export default function App() {
     return m;
   }, [places]);
 
+  // Booking-type link per place (sources never change at runtime — overrides
+  // don't touch them), so the list rows can offer "book" one tap away.
+  const bookingById = useMemo(() => {
+    const m = new Map<string, SourceLink>();
+    for (const p of basePlaces) {
+      const b = bookingFor(p.sources);
+      if (b) m.set(p.id, b);
+    }
+    return m;
+  }, [basePlaces]);
+
   const [countryFilter, setCountryFilter] = useState<Set<Country>>(new Set(COUNTRIES));
   const [categoryFilter, setCategoryFilter] = useState<Set<Category>>(new Set(CATEGORIES));
   // Planning default: the plan you care about (shortlist+backup) — the candidate
@@ -218,6 +229,19 @@ export default function App() {
   );
   const [tagFilter, setTagFilter] = useState<Set<string>>(new Set());
   const [search, setSearch] = useState('');
+
+  // One-tap filter presets (filtering-convenience: common flows in 1–2 taps).
+  const setEq = <T,>(set: Set<T>, arr: readonly T[]) =>
+    set.size === arr.length && arr.every((x) => set.has(x));
+  function applyPreset(pr: FilterPreset) {
+    setCategoryFilter(new Set(pr.categories ?? CATEGORIES));
+    setStatusFilter(new Set(pr.statuses ?? NON_REJECTED));
+    setTagFilter(new Set());
+  }
+  const presetActive = (pr: FilterPreset) =>
+    setEq(categoryFilter, pr.categories ?? CATEGORIES) &&
+    setEq(statusFilter, pr.statuses ?? NON_REJECTED) &&
+    tagFilter.size === 0;
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [view, setView] = useState<View>('places');
   const [fitNonce, setFitNonce] = useState(0);
@@ -1023,6 +1047,19 @@ export default function App() {
 
         {!corridor && view !== 'itinerary' && (
           <>
+            <div className="filter-group preset-row">
+              {FILTER_PRESETS.map((pr) => (
+                <button
+                  key={pr.id}
+                  className={`chip preset ${presetActive(pr) ? 'on' : ''}`}
+                  title={pr.title}
+                  onClick={() => applyPreset(pr)}
+                >
+                  {pr.label}
+                </button>
+              ))}
+            </div>
+
             <div className="filter-group">
               {COUNTRIES.map((c) => (
                 <button
@@ -1108,23 +1145,38 @@ export default function App() {
                   (a, b) =>
                     (b.rating ?? 0) - (a.rating ?? 0) || a.name.localeCompare(b.name),
                 )
-                .map((p) => (
-                  <li
-                    key={p.id}
-                    className={selectedId === p.id ? 'selected' : ''}
-                    onClick={() => selectPlace(p)}
-                  >
-                    <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
-                    <span className="place-name">{p.name}</span>
-                    {p.day && (
-                      <span className="day-tag" style={{ background: dayColor(p.day) }}>
-                        D{p.day}
-                      </span>
-                    )}
-                    {p.note && <span className="note-tag" title={p.note}>📝</span>}
-                    <span className={`badge badge-${p.status}`}>{p.status}</span>
-                  </li>
-                ))}
+                .map((p) => {
+                  const booking = bookingById.get(p.id);
+                  return (
+                    <li
+                      key={p.id}
+                      className={selectedId === p.id ? 'selected' : ''}
+                      onClick={() => selectPlace(p)}
+                    >
+                      <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
+                      <span className="place-name">{p.name}</span>
+                      {booking && (
+                        <a
+                          className={`book-mini kind-${booking.kind}`}
+                          href={booking.url}
+                          title={booking.label}
+                          target="_blank"
+                          rel="noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          ↗
+                        </a>
+                      )}
+                      {p.day && (
+                        <span className="day-tag" style={{ background: dayColor(p.day) }}>
+                          D{p.day}
+                        </span>
+                      )}
+                      {p.note && <span className="note-tag" title={p.note}>📝</span>}
+                      <span className={`badge badge-${p.status}`}>{p.status}</span>
+                    </li>
+                  );
+                })}
             </ul>
 
             {rejected.length > 0 && (
@@ -1369,6 +1421,29 @@ export default function App() {
                       {p.category} · {COUNTRY_NAMES[p.country]}
                       {p.day ? ` · Day ${p.day}` : ''}
                     </p>
+                    <div className="popup-links">
+                      {deriveLinks(p.sources)
+                        .slice(0, 3)
+                        .map((l) => (
+                          <a
+                            key={l.url}
+                            className={`link-chip kind-${l.kind}${l.booking ? ' primary' : ''}`}
+                            href={l.url}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {l.label} ↗
+                          </a>
+                        ))}
+                      <a
+                        className="nav-link"
+                        href={navUrl(p.lat, p.lng)}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Navigate ↗
+                      </a>
+                    </div>
                     <div className="status-buttons">
                       {STATUSES.map((s) => (
                         <button

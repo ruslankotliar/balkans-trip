@@ -1232,3 +1232,170 @@ body.trip-mode .detail-close {
     border-radius: 14px 14px 0 0;
   }
 }
+
+/* ---- Booking & source link UX (Session G3) ---- */
+
+/* Primary "Book / View listing" button at the top of the detail panel/sheet */
+.book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #ff5a5f; /* airbnb */
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.book-btn:hover {
+  filter: brightness(0.95);
+}
+.book-btn.kind-campsite {
+  background: #2980b9;
+}
+body.trip-mode .book-btn {
+  min-height: 46px;
+  font-size: 15px;
+}
+
+/* Domain-labeled link chips ("Trail guide / GPX", "Traveler reports", host…) */
+.link-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.link-chip {
+  display: inline-block;
+  padding: 4px 9px;
+  border: 1px solid #c9d6e4;
+  border-radius: 12px;
+  background: #f4f8fc;
+  color: #2c5d8f;
+  font-size: 12px;
+  text-decoration: none;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.link-chip:hover {
+  background: #e8f1fa;
+}
+.link-chip.kind-booking,
+.link-chip.primary.kind-booking {
+  border-color: #ffb3b5;
+  background: #fff1f1;
+  color: #c0392b;
+  font-weight: 600;
+}
+.link-chip.kind-campsite {
+  border-color: #aacde8;
+  background: #ecf5fc;
+  color: #1f6da8;
+  font-weight: 600;
+}
+.link-chip.kind-trail {
+  border-color: #b3d9bd;
+  background: #eef9f1;
+  color: #1e7d3c;
+}
+body.trip-mode .link-chip {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+/* Google Maps demoted: small secondary "Navigate" link */
+.nav-link {
+  font-size: 12px;
+  color: #888;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-link:hover {
+  color: #555;
+  text-decoration: underline;
+}
+.nav-link-sub {
+  color: #aaa;
+  font-size: 11px;
+}
+
+/* Booking + navigate row on corridor / sleep-tonight cards */
+.card-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 5px;
+}
+.card-book {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #c0392b; /* airbnb-ish booking red */
+}
+.card-book.kind-campsite {
+  color: #1f6da8;
+}
+.card-book:hover {
+  text-decoration: underline;
+}
+body.trip-mode .card-book,
+body.trip-mode .card-links .today-nav-link {
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+/* One-tap booking link on place-list rows */
+.book-mini {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fde9ea;
+  color: #c0392b;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.book-mini.kind-campsite {
+  background: #e3eef7;
+  color: #1f6da8;
+}
+.book-mini:hover {
+  filter: brightness(0.93);
+}
+
+/* Compact link row in the map popup */
+.popup-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin: 6px 0 0;
+}
+.popup-links .link-chip {
+  padding: 2px 7px;
+  font-size: 11px;
+}
+
+/* Quick-filter presets: common flows in one tap */
+.preset-row {
+  margin-bottom: 2px;
+}
+.chip.preset {
+  border-style: dashed;
+  color: #555;
+  opacity: 1;
+}
+.chip.preset.on {
+  border-style: solid;
+  border-color: #2c3e50;
+  background: #2c3e50;
+  color: #fff;
+}

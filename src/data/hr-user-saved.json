@@ -7,7 +7,10 @@
     "lat": 43.37,
     "lng": 16.9228,
     "description": "Pine-backed pebble beach in Brela on the Makarska Riviera, regularly ranked among Europe's best beaches. User-saved from Google Maps.",
-    "tags": ["user-saved", "makarska-riviera"],
+    "tags": [
+      "user-saved",
+      "makarska-riviera"
+    ],
     "status": "shortlist"
   },
   {
@@ -18,7 +21,11 @@
     "lat": 43.3423,
     "lng": 17.0539,
     "description": "Highest peak of Biokovo, second-highest in Croatia — drivable via the Biokovo NP toll road, or hikeable. Panorama over the Makarska Riviera and islands; the Skywalk is on the same road. User-saved from Google Maps.",
-    "tags": ["user-saved", "makarska-riviera", "biokovo"],
+    "tags": [
+      "user-saved",
+      "makarska-riviera",
+      "biokovo"
+    ],
     "status": "shortlist"
   },
   {
@@ -29,7 +36,12 @@
     "lat": 43.3807,
     "lng": 16.9752,
     "description": "Point on the western Biokovo massif above Brela. User-saved from Google Maps — exact nature (peak/viewpoint/trailhead) to verify.",
-    "tags": ["user-saved", "makarska-riviera", "biokovo", "verify"],
+    "tags": [
+      "user-saved",
+      "makarska-riviera",
+      "biokovo",
+      "verify"
+    ],
     "status": "candidate"
   },
   {
@@ -40,8 +52,12 @@
     "lat": 43.3235,
     "lng": 16.9858,
     "description": "Campsite at Krvavica between Baška Voda and Makarska, close to the sea. User-saved from Google Maps — check prices/reviews on park4night.",
-    "tags": ["user-saved", "makarska-riviera", "verify"],
-    "status": "shortlist"
+    "tags": [
+      "user-saved",
+      "makarska-riviera",
+      "verify"
+    ],
+    "status": "candidate"
   },
   {
     "id": "hr-montokuc-mljet",
@@ -51,7 +67,11 @@
     "lat": 42.7728,
     "lng": 17.3832,
     "description": "Highest viewpoint in Mljet National Park, overlooking the salt lakes and open sea. Implies a Mljet island day — car ferry from Prapratno (Pelješac) to Sobra fits the Dubrovnik end of the route. User-saved from Google Maps.",
-    "tags": ["user-saved", "island", "mljet"],
+    "tags": [
+      "user-saved",
+      "island",
+      "mljet"
+    ],
     "status": "shortlist"
   },
   {
@@ -62,7 +82,10 @@
     "lat": 44.878,
     "lng": 15.6085,
     "description": "One of the big waterfalls on Plitvice's upper lakes. User-saved from Google Maps — reinforces Plitvice as a wanted stop despite the detour north.",
-    "tags": ["user-saved", "plitvice"],
+    "tags": [
+      "user-saved",
+      "plitvice"
+    ],
     "status": "shortlist"
   }
 ]

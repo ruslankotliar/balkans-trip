@@ -16,7 +16,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-air-13219159",
@@ -35,7 +35,7 @@
       "airbnb-wishlist"
     ],
     "rating": 3,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-air-625139070441679511",
@@ -54,7 +54,7 @@
       "airbnb-wishlist"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-air-1194377822001153349",
@@ -73,7 +73,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-air-49077678",
@@ -92,7 +92,7 @@
       "airbnb-wishlist"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1294839146223116793",
@@ -111,7 +111,7 @@
       "airbnb-wishlist"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1167547936354611317",
@@ -130,7 +130,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1033869502806589797",
@@ -149,7 +149,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-791411829333036306",
@@ -168,7 +168,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1539679493194102806",
@@ -187,7 +187,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-623912791608300458",
@@ -206,7 +206,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-643252285251222758",
@@ -225,7 +225,7 @@
       "airbnb-wishlist"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-26289644",
@@ -244,7 +244,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1440352206705357999",
@@ -263,7 +263,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1055692570458046534",
@@ -282,7 +282,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-903316557303665264",
@@ -301,7 +301,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1194869300122871016",
@@ -320,7 +320,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-28297858",
@@ -339,7 +339,7 @@
       "airbnb-wishlist"
     ],
     "rating": 3,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-43843555",
@@ -358,7 +358,7 @@
       "airbnb-wishlist"
     ],
     "rating": 2,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1279909870154785931",
@@ -377,7 +377,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1377504503811908987",
@@ -396,7 +396,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1685540403895069749",
@@ -415,7 +415,7 @@
       "airbnb-wishlist"
     ],
     "rating": 2,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1038480265358959903",
@@ -434,7 +434,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "hr-air-1143857451883062133",
@@ -453,7 +453,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-14231459",
@@ -473,7 +473,7 @@
       "zone-mostar"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-14073324",
@@ -573,7 +573,7 @@
       "zone-sarajevo"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-1236363170544579717",
@@ -613,7 +613,7 @@
       "zone-trebinje"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "ba-air-982496716754521531",
@@ -673,7 +673,7 @@
       "zone-zabljak"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-air-14609884",
@@ -713,7 +713,7 @@
       "zone-skadar"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-air-28070907",
@@ -793,7 +793,7 @@
       "zone-budva"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-air-20121614",

@@ -16,7 +16,11 @@
     "cost": "Park entry ~€10/adult in summer (parking included)",
     "timeNeeded": "half day to Lugarnica, full day to the hut and back",
     "bestTime": "start before 9am for a parking spot and to beat heat/crowds",
-    "tags": ["velebit", "canyon", "near-zadar"],
+    "tags": [
+      "velebit",
+      "canyon",
+      "near-zadar"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -36,7 +40,12 @@
     ],
     "timeNeeded": "~6-7h round trip from the entrance to the summit",
     "bestTime": "morning start; April-Oct",
-    "tags": ["velebit", "climbing", "via-ferrata", "exposed"],
+    "tags": [
+      "velebit",
+      "climbing",
+      "via-ferrata",
+      "exposed"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -56,7 +65,11 @@
     "cost": "guided tour, book ahead (~€25-35pp typical)",
     "timeNeeded": "half day (tour ~1.5-2h underground + gear)",
     "bestTime": "year-round (cool inside - bring a layer); book in advance",
-    "tags": ["caving", "adventure", "guided"],
+    "tags": [
+      "caving",
+      "adventure",
+      "guided"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -77,7 +90,12 @@
     "cost": "~€55-65pp incl. guide, gear, insurance, park fee",
     "timeNeeded": "half/full day (~4-6h on the water + breaks)",
     "bestTime": "June onward (low, clear water); confirm meeting point with the outfitter",
-    "tags": ["kayaking", "canyon", "cliff-jumping", "zrmanja"],
+    "tags": [
+      "kayaking",
+      "canyon",
+      "cliff-jumping",
+      "zrmanja"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -97,7 +115,12 @@
     ],
     "timeNeeded": "~2-3h incl. hike (plus the rough drive)",
     "bestTime": "clear day for views; avoid the dirt road after heavy rain",
-    "tags": ["velebit", "winnetou", "offbeat", "inland-route"],
+    "tags": [
+      "velebit",
+      "winnetou",
+      "offbeat",
+      "inland-route"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -117,7 +140,12 @@
     ],
     "cost": "free",
     "timeNeeded": "30-60 min",
-    "tags": ["viewpoint", "zrmanja", "photo-stop", "inland-route"],
+    "tags": [
+      "viewpoint",
+      "zrmanja",
+      "photo-stop",
+      "inland-route"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -137,7 +165,11 @@
     ],
     "cost": "~€8-10pp",
     "timeNeeded": "1-2h",
-    "tags": ["fortress", "inland-route", "underrated"],
+    "tags": [
+      "fortress",
+      "inland-route",
+      "underrated"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -155,7 +187,11 @@
     ],
     "cost": "mid-range, ~€15-30/person",
     "timeNeeded": "~1.5-2h dinner",
-    "tags": ["dalmatian", "traditional", "old-town"],
+    "tags": [
+      "dalmatian",
+      "traditional",
+      "old-town"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -174,7 +210,11 @@
     "cost": "mid-range, ~€15-30/person",
     "timeNeeded": "~1.5-2h",
     "bestTime": "book a terrace table for sunset",
-    "tags": ["seafood", "sunset", "waterfront"],
+    "tags": [
+      "seafood",
+      "sunset",
+      "waterfront"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -192,7 +232,12 @@
     ],
     "cost": "cocktails ~€8-12",
     "bestTime": "sunset onward",
-    "tags": ["lounge", "sunset", "cocktails", "city-walls"],
+    "tags": [
+      "lounge",
+      "sunset",
+      "cocktails",
+      "city-walls"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -209,7 +254,12 @@
       "https://www.tripadvisor.com/ShowTopic-g295374-i10777-k9728016-Nightlife_in_Zadar-Zadar_Zadar_County_Dalmatia.html"
     ],
     "bestTime": "late evening",
-    "tags": ["club", "djs", "park", "central"],
+    "tags": [
+      "club",
+      "djs",
+      "park",
+      "central"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -227,7 +277,11 @@
       "https://croadventure.com/en/guide/nin-magical-city-of-kings"
     ],
     "timeNeeded": "1-2h (more with beach)",
-    "tags": ["historic", "island-town", "near-zadar"],
+    "tags": [
+      "historic",
+      "island-town",
+      "near-zadar"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -246,7 +300,12 @@
     ],
     "timeNeeded": "20-30 min",
     "bestTime": "sunset",
-    "tags": ["historic", "sunset", "photo-stop", "near-zadar"],
+    "tags": [
+      "historic",
+      "sunset",
+      "photo-stop",
+      "near-zadar"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -266,7 +325,12 @@
     "cost": "free (parking ~€4-5)",
     "timeNeeded": "half day",
     "bestTime": "morning to beat wind/crowds",
-    "tags": ["sandy", "shallow", "mud-bath", "velebit-view"],
+    "tags": [
+      "sandy",
+      "shallow",
+      "mud-bath",
+      "velebit-view"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -286,7 +350,12 @@
     "cost": "free",
     "timeNeeded": "half day",
     "bestTime": "afternoon for wind/watersports",
-    "tags": ["sandy", "kitesurf", "windsurf", "near-zadar"],
+    "tags": [
+      "sandy",
+      "kitesurf",
+      "windsurf",
+      "near-zadar"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -306,7 +375,13 @@
     "cost": "free",
     "timeNeeded": "half day",
     "bestTime": "late afternoon/sunset",
-    "tags": ["pebble", "shade", "local-favourite", "sunset", "zadar-city"],
+    "tags": [
+      "pebble",
+      "shade",
+      "local-favourite",
+      "sunset",
+      "zadar-city"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -326,7 +401,12 @@
     "cost": "covered by the Krka NP ticket (~€40 summer; ~€30 after 16:00)",
     "timeNeeded": "1.5-2h",
     "bestTime": "after the Skradinski buk crowds; summer parking at Laškovica/Bogatić (Roški lot closed Jun-Sep)",
-    "tags": ["krka", "waterfall", "swimming", "quiet"],
+    "tags": [
+      "krka",
+      "waterfall",
+      "swimming",
+      "quiet"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -345,7 +425,11 @@
     ],
     "cost": "Skradin park ferry included in the Krka ticket; town free",
     "timeNeeded": "overnight or a meal stop",
-    "tags": ["krka", "base-town", "marina"],
+    "tags": [
+      "krka",
+      "base-town",
+      "marina"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -364,7 +448,11 @@
     ],
     "timeNeeded": "half day",
     "bestTime": "early summer = far fewer crowds than Split",
-    "tags": ["historic", "underrated", "stone-town"],
+    "tags": [
+      "historic",
+      "underrated",
+      "stone-town"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -383,7 +471,11 @@
     ],
     "cost": "~€5-7 interior; exterior free",
     "timeNeeded": "20-30 min",
-    "tags": ["unesco", "stone", "architecture"],
+    "tags": [
+      "unesco",
+      "stone",
+      "architecture"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -403,7 +495,12 @@
     "cost": "~€6 alone, or 3-fortress combo ~€11.50",
     "timeNeeded": "45 min-1h",
     "bestTime": "sunset",
-    "tags": ["fortress", "sunset", "bar", "views"],
+    "tags": [
+      "fortress",
+      "sunset",
+      "bar",
+      "views"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -423,7 +520,12 @@
     "cost": "free / small park fee",
     "timeNeeded": "30-60 min",
     "bestTime": "morning (before noon)",
-    "tags": ["viewpoint", "kornati-view", "on-route", "tasting"],
+    "tags": [
+      "viewpoint",
+      "kornati-view",
+      "on-route",
+      "tasting"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -442,7 +544,12 @@
     "cost": "parking ~€15/day in season (free low season)",
     "timeNeeded": "2-3h (+ ferry day)",
     "bestTime": "arrive before 10:30 to beat crowds and anchored boats",
-    "tags": ["sandy", "island", "ferry-required", "backup"],
+    "tags": [
+      "sandy",
+      "island",
+      "ferry-required",
+      "backup"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -460,7 +567,12 @@
     ],
     "cost": "~€45-50 for 4 + tent + car (est. from €10/van + €10/pp + €5 power)",
     "facilities": "hot showers, clean toilets, electricity, free WiFi, laundry, pine shade, private beach",
-    "tags": ["paklenica", "seaside", "shade", "tents"],
+    "tags": [
+      "paklenica",
+      "seaside",
+      "shade",
+      "tents"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -478,9 +590,13 @@
     ],
     "cost": "~€50+ for 4 + tent + car (€40 base for 2 + vehicle; +€0.50/24h power; services free after 3 nights)",
     "facilities": "hot showers, electricity, drinking water, WiFi, direct sea/beach access",
-    "tags": ["paklenica", "seaside", "hiking-base"],
+    "tags": [
+      "paklenica",
+      "seaside",
+      "hiking-base"
+    ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "hr-camping-simuni",
@@ -497,7 +613,12 @@
     ],
     "cost": "~€40-55 for 4 + tent + car in mid-June (pre-season seafront pitch ~€24)",
     "facilities": "hot showers, 6 sanitary blocks (family bathrooms), electricity, water, laundry, WiFi, sandy/pebble beaches, shop/restaurants",
-    "tags": ["pag", "seaside", "amenities", "sandy"],
+    "tags": [
+      "pag",
+      "seaside",
+      "amenities",
+      "sandy"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -516,7 +637,12 @@
     ],
     "cost": "~€35-40 for 4 + tent + car (van + 2 incl. water & power ~€25)",
     "facilities": "hot showers, clean toilets, electricity, drinking water, WiFi, vine shade; laundry €5",
-    "tags": ["krka", "farm", "shade", "budget"],
+    "tags": [
+      "krka",
+      "farm",
+      "shade",
+      "budget"
+    ],
     "rating": 4,
     "status": "candidate"
   }
