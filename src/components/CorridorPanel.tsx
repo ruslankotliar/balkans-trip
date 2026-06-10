@@ -1,4 +1,5 @@
 import { CATEGORY_COLORS } from '../constants';
+import { bookingFor, navUrl } from '../links';
 import type { PlaceWithOverride } from '../store';
 
 export interface CorridorMatch {
@@ -77,25 +78,50 @@ export default function CorridorPanel({
           return (
             <div key={leg} className="corridor-leg">
               <h4>{legLabel(stops, leg)}</h4>
-              {items.map(({ place: p, dist }) => (
-                <div
-                  key={p.id}
-                  className={`corridor-card ${selectedId === p.id ? 'selected' : ''}`}
-                  onClick={() => onSelect(p)}
-                >
-                  <div className="corridor-card-top">
-                    <span
-                      className="dot"
-                      style={{ background: CATEGORY_COLORS[p.category] }}
-                    />
-                    <span className="place-name">{p.name}</span>
-                    {p.rating ? <span>{'★'.repeat(p.rating)}</span> : null}
-                    <span className="corridor-dist">{dist.toFixed(1)} km off</span>
+              {items.map(({ place: p, dist }) => {
+                const booking = bookingFor(p.sources);
+                return (
+                  <div
+                    key={p.id}
+                    className={`corridor-card ${selectedId === p.id ? 'selected' : ''}`}
+                    onClick={() => onSelect(p)}
+                  >
+                    <div className="corridor-card-top">
+                      <span
+                        className="dot"
+                        style={{ background: CATEGORY_COLORS[p.category] }}
+                      />
+                      <span className="place-name">{p.name}</span>
+                      {p.rating ? <span>{'★'.repeat(p.rating)}</span> : null}
+                      <span className="corridor-dist">{dist.toFixed(1)} km off</span>
+                    </div>
+                    {p.cost && <div className="corridor-cost">💶 {p.cost}</div>}
+                    {p.facilities && <div className="corridor-fac">🚿 {p.facilities}</div>}
+                    <div className="card-links">
+                      {booking && (
+                        <a
+                          className={`card-book kind-${booking.kind}`}
+                          href={booking.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          {booking.label} ↗
+                        </a>
+                      )}
+                      <a
+                        className="nav-link"
+                        href={navUrl(p.lat, p.lng)}
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Navigate ↗
+                      </a>
+                    </div>
                   </div>
-                  {p.cost && <div className="corridor-cost">💶 {p.cost}</div>}
-                  {p.facilities && <div className="corridor-fac">🚿 {p.facilities}</div>}
-                </div>
-              ))}
+                );
+              })}
             </div>
           );
         })

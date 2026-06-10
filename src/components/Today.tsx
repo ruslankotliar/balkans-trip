@@ -1,4 +1,5 @@
 import { CATEGORY_COLORS } from '../constants';
+import { bookingFor, navUrl } from '../links';
 import type { CachedRoute, PlaceWithOverride } from '../store';
 import { TRIP_DAYS, dayDateLabel, formatDuration } from '../trip';
 
@@ -35,9 +36,7 @@ interface Props {
   anchorLabel: string | null;
 }
 
-function gmaps(p: PlaceWithOverride) {
-  return `https://www.google.com/maps?q=${p.lat},${p.lng}`;
-}
+const gmaps = (p: PlaceWithOverride) => navUrl(p.lat, p.lng);
 
 function MatchCards({
   matches,
@@ -53,27 +52,43 @@ function MatchCards({
   if (matches.length === 0) return <p className="today-empty">{empty}</p>;
   return (
     <div className="today-cards">
-      {matches.map(({ place: p, dist }) => (
-        <div key={p.id} className="corridor-card" onClick={() => onSelect(p)}>
-          <div className="corridor-card-top">
-            <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
-            <span className="place-name">{p.name}</span>
-            {p.rating ? <span>{'★'.repeat(p.rating)}</span> : null}
-            <span className="corridor-dist">{dist.toFixed(1)} km</span>
+      {matches.map(({ place: p, dist }) => {
+        const booking = bookingFor(p.sources);
+        return (
+          <div key={p.id} className="corridor-card" onClick={() => onSelect(p)}>
+            <div className="corridor-card-top">
+              <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
+              <span className="place-name">{p.name}</span>
+              {p.rating ? <span>{'★'.repeat(p.rating)}</span> : null}
+              <span className="corridor-dist">{dist.toFixed(1)} km</span>
+            </div>
+            {showSleepInfo && p.cost && <div className="corridor-cost">💶 {p.cost}</div>}
+            {showSleepInfo && p.facilities && <div className="corridor-fac">🚿 {p.facilities}</div>}
+            <div className="card-links">
+              {booking && (
+                <a
+                  className={`card-book kind-${booking.kind}`}
+                  href={booking.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {booking.label} ↗
+                </a>
+              )}
+              <a
+                className="today-nav-link"
+                href={gmaps(p)}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Navigate ↗
+              </a>
+            </div>
           </div>
-          {showSleepInfo && p.cost && <div className="corridor-cost">💶 {p.cost}</div>}
-          {showSleepInfo && p.facilities && <div className="corridor-fac">🚿 {p.facilities}</div>}
-          <a
-            className="today-nav-link"
-            href={gmaps(p)}
-            target="_blank"
-            rel="noreferrer"
-            onClick={(e) => e.stopPropagation()}
-          >
-            Navigate ↗
-          </a>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

@@ -142,3 +142,24 @@ These hikes already have map pins from other sessions; here's the serious hiker'
 4. **`hr-velika-paklenica-gorge`** fee "~€10" — 2026 high-season adult reported **€8**; treat as €8–10.
 5. **`me-kotor-fortress-free-ladder`** trailhead more precisely **42.42721, 18.77336** (currently ~42.42917, 18.7703).
 6. **Cross-session ID collision:** `me-debeli-brijeg-border` exists in BOTH `logistics-places.json` and `me-places.json` (first-loaded wins) — dedupe whichever is stale.
+
+---
+
+## Coordinate fixes applied (2026-06-10)
+
+Lat/lng-only corrections applied to `src/data/*.json` per the flags above; each coordinate re-verified against OSM/Nominatim before editing. No other fields touched.
+
+| id | file | old (lat, lng) | new (lat, lng) | source / verification |
+|---|---|---|---|---|
+| `me-durmitor-curevac` | `src/data/me-places.json` | 43.2009, 19.0837 | 43.20146, 19.09306 | Data-issue #1 above; Nominatim/OSM node 1730591485 "Ćurevac" peak at 43.2014603, 19.0930599 — exact match |
+| `me-kotor-fortress-free-ladder` | `src/data/me-places.json` | 42.42917, 18.7703 | 42.42721, 18.77336 | Data-issue #5 above (verified trailhead preferred); Nominatim reverse = Tabačina, Dobrota; OSM footway 927149300 + Škurda bridge 927149301 start exactly there and join the serpentine mule track (way 207437135, sac_scale=hiking). Old point was ~290m NW on a residential street |
+
+Flagged items checked but intentionally NOT changed (not lat/lng corrections, or already correct):
+- `me-komovi` (me-user-notes.json, 42.6622, 19.6433) — flag #2 recommends reject/merge (a status decision, not a coordinate fix); the verified Štavna trailhead 42.71229, 19.6829 already exists as `me-komovi-vasojevicki-kom` in hikes.json, so moving the old pin would just duplicate it. Left as-is.
+- `me-durmitor-sedlo-pass` (43.0985, 19.0503) — matches the confirmed 43.09852, 19.05054 within rounding (~20m); no change.
+- `hr-tulove-grede` (44.26351, 15.6556) — matches the certain rocks coordinate exactly; no change.
+- `ba-skakavac-waterfall` (43.94861, 18.44889) — matches the noted 43.9486, 18.4489; no change.
+- Flags #3 (`me-lovcen-njegos-mausoleum` cost) and #4 (`hr-velika-paklenica-gorge` fee) are price fields, out of scope for coordinate-only edits.
+- Ids `ba-maglic`, `ba-prijevor`, `ba-perucica`, `ba-trnovacko-jezero` referenced in this doc do not exist in `src/data/*.json` (Trnovačko exists as `me-trnovacko-jezero`, for which no correction was given) — nothing to correct.
+
+Validation: `python3 -m json.tool src/data/me-places.json` clean; `npm run build` green.

@@ -22,6 +22,7 @@ import {
   STATUSES,
   toggle,
 } from './constants';
+import { bookingFor, deriveLinks, navUrl, type SourceLink } from './links';
 import { fetchRoute, fetchTable, fetchTrip, routeKey, type LatLng } from './osrm';
 import { solveOrder, type SolveResult } from './solver';
 import { buildGpx, buildKml, downloadText } from './exports';
@@ -71,6 +72,45 @@ const SIGHT_CATEGORIES: Category[] = ['sight', 'viewpoint', 'beach', 'hike', 'ac
 
 const SLEEP_TONIGHT_KM = 25;
 const NEAR_ME_KM = 30;
+
+// One-tap quick filters: the common planning flows must be 1–2 taps.
+// (Trip mode has its own one-tap finders: 🛏 Sleep tonight / 📍 Near me.)
+const NON_REJECTED: Status[] = ['candidate', 'shortlist', 'backup'];
+interface FilterPreset {
+  id: string;
+  label: string;
+  title: string;
+  categories?: Category[];
+  statuses?: Status[];
+}
+const FILTER_PRESETS: FilterPreset[] = [
+  {
+    id: 'sleep',
+    label: '🛏 Sleep spots',
+    title: 'Campsites + stays, every non-rejected option',
+    categories: SLEEP_CATEGORIES,
+    statuses: NON_REJECTED,
+  },
+  {
+    id: 'shortlist',
+    label: '⭐ Shortlist',
+    title: 'Only shortlisted places, all categories',
+    statuses: ['shortlist'],
+  },
+  {
+    id: 'dosee',
+    label: '🥾 Do & see',
+    title: 'Hikes, activities, beaches, nature, viewpoints, sights',
+    categories: SIGHT_CATEGORIES,
+  },
+  {
+    id: 'reset',
+    label: '↺ All',
+    title: 'Back to the default view (all categories, shortlist + backup)',
+    categories: CATEGORIES,
+    statuses: ['shortlist', 'backup'],
+  },
+];
 
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);

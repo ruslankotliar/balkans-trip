@@ -1,4 +1,5 @@
 import { CATEGORY_COLORS, COUNTRY_NAMES, STATUSES } from '../constants';
+import { bookingLink, deriveLinks, navUrl } from '../links';
 import type { PlaceWithOverride } from '../store';
 import type { Status } from '../types';
 import { DAYS, dayColor, dayDateLabel } from '../trip';
@@ -34,6 +35,10 @@ export default function DetailPanel({
 }: Props) {
   if (!place) return null;
   const p = place;
+  const links = deriveLinks(p.sources);
+  const booking = bookingLink(links);
+  // The primary button lives at the top; don't repeat it in the chip list.
+  const chipLinks = links.filter((l) => l !== booking);
 
   return (
     <div className="detail-panel">
@@ -48,6 +53,18 @@ export default function DetailPanel({
         {p.timeNeeded ? ` · ${p.timeNeeded}` : ''}
         {p.rating ? ` · ${'★'.repeat(p.rating)}` : ''}
       </p>
+
+      {booking && (
+        <a
+          className={`book-btn kind-${booking.kind}`}
+          href={booking.url}
+          target="_blank"
+          rel="noreferrer"
+          title="Book / View listing"
+        >
+          {booking.kind === 'campsite' ? '⛺' : '🔖'} {booking.label} ↗
+        </a>
+      )}
 
       {!tripMode && (
         <div className="status-buttons">
@@ -137,22 +154,23 @@ export default function DetailPanel({
       </div>
 
       <div className="detail-links">
-        {p.sources && p.sources.length > 0 && (
-          <span className="sources">
-            Sources:{' '}
-            {p.sources.map((s, i) => (
-              <a key={s} href={s} target="_blank" rel="noreferrer">
-                [{i + 1}]
+        {chipLinks.length > 0 && (
+          <div className="link-chips">
+            {chipLinks.map((l) => (
+              <a
+                key={l.url}
+                className={`link-chip kind-${l.kind}`}
+                href={l.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {l.label} ↗
               </a>
             ))}
-          </span>
+          </div>
         )}
-        <a
-          href={`https://www.google.com/maps?q=${p.lat},${p.lng}`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Open in Google Maps ↗
+        <a className="nav-link" href={navUrl(p.lat, p.lng)} target="_blank" rel="noreferrer">
+          Navigate ↗ <span className="nav-link-sub">(Google Maps)</span>
         </a>
       </div>
     </div>
