@@ -751,124 +751,133 @@ export default function App() {
     setRbBuilding(true);
     setRbError(null);
 
-    const key = `trip2:${routeKey(points)}|a:${anchorSeq.length}`;
-    const cache = loadTripCache();
-    let result: TripResult | null = cache[key] ?? null;
+    // Everything below must never leave the UI stuck on "Solving…": any
+    // unexpected throw (storage, parsing, …) is caught and surfaced, and the
+    // built route always renders from memory even if persisting it fails.
+    try {
+      const key = `trip2:${routeKey(points)}|a:${anchorSeq.length}`;
+      const cache = loadTripCache();
+      let result: TripResult | null = cache[key] ?? null;
 
-    if (!result) {
-      // 1. Duration matrix (one cheap call).
-      const table = await fetchTable(points);
-      if (!table) {
-        setRbBuilding(false);
-        setRbError('OSRM /table failed (server busy?). Try again in a moment.');
-        return;
-      }
-      const dur = table.durations;
-
-      // 2. Assign each free stop to the anchor segment with the smallest detour.
-      const A = anchorSeq.length; // input indices 0..A-1 are anchors, in order
-      const segFree: number[][] = Array.from({ length: A - 1 }, () => []);
-      for (let f = A; f < points.length; f++) {
-        let bestSeg = 0;
-        let bestDetour = Infinity;
-        for (let s = 0; s < A - 1; s++) {
-          const detour = dur[s][f] + dur[f][s + 1] - dur[s][s + 1];
-          if (detour < bestDetour) {
-            bestDetour = detour;
-            bestSeg = s;
-          }
+      if (!result) {
+        // 1. Duration matrix (one cheap call).
+        const table = await fetchTable(points);
+        if (!table) {
+          setRbError('OSRM /table failed (server busy?). Try again in a moment.');
+          return;
         }
-        segFree[bestSeg].push(f);
-      }
+        const dur = table.durations;
 
-      // 3. Solve each segment locally (exact when small enough).
-      const order: number[] = [0];
-      const segStarts: number[] = [0];
-      let allExact = true;
-      let unroutable = false;
-      for (let s = 0; s < A - 1; s++) {
-        const nodes = [s, ...segFree[s], s + 1]; // input indices in this segment
-        const sub = nodes.map((i) => nodes.map((j) => dur[i][j]));
-        const solved: SolveResult = solveOrder(sub, 0, nodes.length - 1);
-        if (!Number.isFinite(solved.cost)) unroutable = true;
-        if (!solved.exact) allExact = false;
-        for (let k = 1; k < solved.order.length; k++) order.push(nodes[solved.order[k]]);
-        if (s < A - 2) segStarts.push(order.length - 1);
-      }
-      if (unroutable) {
-        setRbBuilding(false);
-        setRbError('No road path between some of the chosen stops (check islands without ferries).');
-        return;
-      }
-
-      const method =
-        anchorSeq.length > 2
-          ? allExact
-            ? `anchored ${A - 1} segments · exact per segment`
-            : `anchored ${A - 1} segments · heuristic in large segments`
-          : allExact
-            ? 'exact optimum (Held-Karp)'
-            : 'heuristic (NN + 2-opt/or-opt)';
-
-      // 4. Geometry via /route, only for drawing. Fall back to straight lines.
-      const orderedPts = order.map((i) => points[i]);
-      const road = await fetchRoute(orderedPts);
-      const matrixLegs = order.slice(0, -1).map((from, k) => ({
-        duration: dur[from][order[k + 1]],
-        distance: table.distances[from]?.[order[k + 1]] ?? 0,
-      }));
-      result = road
-        ? {
-            distance: road.distance,
-            duration: road.duration,
-            coordinates: road.coordinates,
-            snapped: road.snapped,
-            legs: road.legs && road.legs.length === order.length - 1 ? road.legs : matrixLegs,
-            order,
-            exact: allExact,
-            method,
-            segStarts,
+        // 2. Assign each free stop to the anchor segment with the smallest detour.
+        const A = anchorSeq.length; // input indices 0..A-1 are anchors, in order
+        const segFree: number[][] = Array.from({ length: A - 1 }, () => []);
+        for (let f = A; f < points.length; f++) {
+          let bestSeg = 0;
+          let bestDetour = Infinity;
+          for (let s = 0; s < A - 1; s++) {
+            const detour = dur[s][f] + dur[f][s + 1] - dur[s][s + 1];
+            if (detour < bestDetour) {
+              bestDetour = detour;
+              bestSeg = s;
+            }
           }
-        : {
-            distance: matrixLegs.reduce((s, l) => s + l.distance, 0),
-            duration: matrixLegs.reduce((s, l) => s + l.duration, 0),
-            coordinates: orderedPts.map(([lat, lng]) => [lng, lat] as [number, number]),
-            snapped: orderedPts.map(([lat, lng]) => [lng, lat] as [number, number]),
-            legs: matrixLegs,
-            order,
-            exact: allExact,
-            method: `${method} · straight-line preview (route fetch failed)`,
-            segStarts,
-          };
-      cache[key] = result;
-      saveTripCache(cache);
+          segFree[bestSeg].push(f);
+        }
 
-      // Dev-only sanity check: how does OSRM /trip's heuristic compare?
-      if (import.meta.env.DEV && anchorSeq.length === 2) {
-        const ours = result.duration;
-        fetchTrip(points).then((t) => {
-          if (!t) return;
-          const diff = t.duration - ours;
-          if (Math.abs(diff) < 30) {
-            console.log(`[route] /trip matches local solver (${Math.round(ours / 60)}min)`);
-          } else if (diff > 0) {
-            console.log(
-              `[route] local solver BEAT /trip by ${Math.round(diff / 60)}min ` +
-                `(${Math.round(ours / 60)} vs ${Math.round(t.duration / 60)}min)`,
-            );
-          } else {
-            console.warn(
-              `[route] /trip was ${Math.round(-diff / 60)}min BETTER than local solver — investigate`,
-              { ours, trip: t.duration },
-            );
-          }
-        });
+        // 3. Solve each segment locally (exact when small enough).
+        const order: number[] = [0];
+        const segStarts: number[] = [0];
+        let allExact = true;
+        let unroutable = false;
+        for (let s = 0; s < A - 1; s++) {
+          const nodes = [s, ...segFree[s], s + 1]; // input indices in this segment
+          const sub = nodes.map((i) => nodes.map((j) => dur[i][j]));
+          const solved: SolveResult = solveOrder(sub, 0, nodes.length - 1);
+          if (!Number.isFinite(solved.cost)) unroutable = true;
+          if (!solved.exact) allExact = false;
+          for (let k = 1; k < solved.order.length; k++) order.push(nodes[solved.order[k]]);
+          if (s < A - 2) segStarts.push(order.length - 1);
+        }
+        if (unroutable) {
+          setRbError('No road path between some of the chosen stops (check islands without ferries).');
+          return;
+        }
+
+        const method =
+          anchorSeq.length > 2
+            ? allExact
+              ? `anchored ${A - 1} segments · exact per segment`
+              : `anchored ${A - 1} segments · heuristic in large segments`
+            : allExact
+              ? 'exact optimum (Held-Karp)'
+              : 'heuristic (NN + 2-opt/or-opt)';
+
+        // 4. Geometry via /route, only for drawing. Fall back to straight lines.
+        const orderedPts = order.map((i) => points[i]);
+        const road = await fetchRoute(orderedPts);
+        const matrixLegs = order.slice(0, -1).map((from, k) => ({
+          duration: dur[from][order[k + 1]],
+          distance: table.distances[from]?.[order[k + 1]] ?? 0,
+        }));
+        result = road
+          ? {
+              distance: road.distance,
+              duration: road.duration,
+              coordinates: road.coordinates,
+              snapped: road.snapped,
+              legs: road.legs && road.legs.length === order.length - 1 ? road.legs : matrixLegs,
+              order,
+              exact: allExact,
+              method,
+              segStarts,
+            }
+          : {
+              distance: matrixLegs.reduce((s, l) => s + l.distance, 0),
+              duration: matrixLegs.reduce((s, l) => s + l.duration, 0),
+              coordinates: orderedPts.map(([lat, lng]) => [lng, lat] as [number, number]),
+              snapped: orderedPts.map(([lat, lng]) => [lng, lat] as [number, number]),
+              legs: matrixLegs,
+              order,
+              exact: allExact,
+              method: `${method} · straight-line preview (route fetch failed)`,
+              segStarts,
+            };
+        cache[key] = result;
+        // Quota-safe: slims geometry, evicts old entries, and on a full storage
+        // skips persisting entirely — the in-memory `result` still renders.
+        saveTripCache(cache);
+
+        // Dev-only sanity check: how does OSRM /trip's heuristic compare?
+        if (import.meta.env.DEV && anchorSeq.length === 2) {
+          const ours = result.duration;
+          fetchTrip(points).then((t) => {
+            if (!t) return;
+            const diff = t.duration - ours;
+            if (Math.abs(diff) < 30) {
+              console.log(`[route] /trip matches local solver (${Math.round(ours / 60)}min)`);
+            } else if (diff > 0) {
+              console.log(
+                `[route] local solver BEAT /trip by ${Math.round(diff / 60)}min ` +
+                  `(${Math.round(ours / 60)} vs ${Math.round(t.duration / 60)}min)`,
+              );
+            } else {
+              console.warn(
+                `[route] /trip was ${Math.round(-diff / 60)}min BETTER than local solver — investigate`,
+                { ours, trip: t.duration },
+              );
+            }
+          });
+        }
       }
+
+      setRbTrip(result);
+      setRbInputIds(inputPlaces.map((p) => p.id));
+    } catch (e) {
+      console.warn('[route] build failed', e);
+      setRbError('Route build failed unexpectedly — see the console for details.');
+    } finally {
+      setRbBuilding(false);
     }
-
-    setRbTrip(result);
-    setRbInputIds(inputPlaces.map((p) => p.id));
-    setRbBuilding(false);
   }
 
   const rbInputPlaces = useMemo(
@@ -940,28 +949,50 @@ export default function App() {
   async function prepOffline() {
     setPrepping(true);
     const cache = loadRouteCache();
-    let built = 0;
-    let failed = 0;
-    for (const pts of Object.values(dayPoints)) {
+    const already: number[] = [];
+    const built: number[] = []; // fetched AND persisted to the cache
+    const memOnly: number[] = []; // fetched but NOT persisted (storage full)
+    const failed: number[] = []; // fetch failed
+    for (const [dayStr, pts] of Object.entries(dayPoints)) {
       if (pts.length < 2) continue;
+      const day = Number(dayStr);
       const key = routeKey(pts);
-      if (cache[key]?.legs) continue; // already offline-ready
-      const r = await fetchRoute(pts); // sequential — kind to the demo server
-      if (r) {
-        cache[key] = r;
-        saveRouteCache(cache);
-        built++;
-      } else {
-        failed++;
+      if (cache[key]?.legs) {
+        already.push(day);
+        continue; // already offline-ready
       }
+      const r = await fetchRoute(pts); // sequential — kind to the demo server
+      if (!r) {
+        failed.push(day);
+        continue;
+      }
+      cache[key] = r;
+      // Persist, then verify this day's entry actually survived the write
+      // (quota or LRU trimming can drop it) — report honestly either way.
+      const persisted = saveRouteCache(cache) && Boolean(loadRouteCache()[key]);
+      (persisted ? built : memOnly).push(day);
     }
     setPrepping(false);
-    alert(
-      `Offline-ready: ${Object.keys(cache).length} cached routes (${built} new` +
-        `${failed ? `, ${failed} failed — retry later` : ''}).\n\n` +
-        `Now pan/zoom your route areas on the map while on wifi to cache those tiles, ` +
-        `then add the app to your home screen.`,
+    const lines = [
+      `Offline prep finished — ${already.length + built.length} day route(s) saved` +
+        (built.length ? ` (${built.length} newly built)` : '') +
+        '.',
+    ];
+    if (memOnly.length) {
+      lines.push(
+        `⚠ Day ${memOnly.join(', ')}: built but NOT saved — storage is full. ` +
+          `These still work this session and via the offline copy of OSRM responses.`,
+      );
+    }
+    if (failed.length) {
+      lines.push(`⚠ Day ${failed.join(', ')}: route fetch failed — retry later.`);
+    }
+    lines.push(
+      '',
+      'Now pan/zoom your route areas on the map while on wifi to cache those tiles, ' +
+        'then add the app to your home screen.',
     );
+    alert(lines.join('\n'));
   }
 
   const showTripLayer = view === 'route' && !!rbTrip;

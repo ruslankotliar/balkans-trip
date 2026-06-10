@@ -1,0 +1,332 @@
+[
+  {
+    "id": "hr-pasjaca-beach",
+    "name": "Pasjača Beach (Konavle cliffs)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.5134,
+    "lng": 18.3213,
+    "description": "Tiny pebble beach at the foot of sheer Konavle cliffs, reached by a stone stairway carved into the rock face — Forbes' 'most beautiful hidden beach in Europe' (2024), yet still uncrowded because of the climb. 15km from Dubrovnik airport, i.e. essentially ON the Jun 18 pickup / Jun 27 final-night zone where the map currently has zero pins.",
+    "communityNotes": "World's 50 Best Beaches: 'one of those beaches you have to work a little to get to, but you will be rewarded with the most fantastic prize at the end.' Visitors consistently report turquoise water, dramatic tunnel-and-stairs descent, and NO facilities — bring water and sturdy shoes. Parking is a small lot in Popovići village, then ~10–15 min down (and a sweaty climb back up). Can shrink after winter storms — it is partly man-made from tunnel spoil, which locals find part of the charm.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pasja%C4%8Da_Beach",
+      "https://www.lostindubrovnik.com/pasjaca-beach-konavles-best-kept-secret/",
+      "https://total-croatia-news.com/news/travel/forbes-pasjaca/",
+      "https://justdubrovnik.com/secret-konavle-pasjaca-beach/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1.5-3h",
+    "bestTime": "Morning or late afternoon; June weekday should still be quiet",
+    "tags": ["gap-find", "hidden-gem", "swimming", "cliffs", "konavle", "near-airport", "free"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-sokol-grad",
+    "name": "Sokol Grad fortress (Konavle)",
+    "country": "HR",
+    "category": "sight",
+    "lat": 42.5423,
+    "lng": 18.4091,
+    "description": "Medieval 'falcon fortress' fused onto a 25m crag above the Konavle valley, restored with weaponry exhibits and a big bird's-eye view towards the mountains and sea. 30 min from Dubrovnik — a natural pairing with Pasjača/Cavtat on the airport-pickup day or the final Konavle night.",
+    "communityNotes": "TripAdvisor visitors: 'amazing location in the middle of mountains', 'the fortress is small, but an hour easily passes if you take your time' — several say they almost skipped it and were glad they didn't. Common gripe: €10 entry feels steep for the size (€5 students). Steep, uneven rock-cut steps to the top.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g4472750-d4459079-Reviews-Sokol_Grad-Dunave_Krajnje_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.lonelyplanet.com/croatia/konavle/attractions/sokol-grad/a/poi-sig/1599100/1339776"
+    ],
+    "cost": "€10 (€5 students)",
+    "timeNeeded": "1h",
+    "tags": ["gap-find", "fortress", "viewpoint", "konavle", "near-airport"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-konavoski-dvori",
+    "name": "Konavoski dvori (Ljuta river mills restaurant)",
+    "country": "HR",
+    "category": "food",
+    "lat": 42.5380,
+    "lng": 18.3785,
+    "description": "Restaurant built into centuries-old watermills on the rushing, ice-cold Ljuta spring river in upper Konavle — grilled trout, peka lamb and pršut with your feet practically over the water. Completes a Konavle half-day (Pasjača + Sokol Grad + this) in the trip's emptiest map zone.",
+    "communityNotes": "TripAdvisor 4.4/5 over ~550 reviews. 'Trouts were fantastic, I don't remember having better ones for a long, long time'; the mill-and-river terrace is what everyone remembers ('a midsummer afternoon dream'). HONEST CAVEAT: several reviewers call it 'nice setting, average food, very touristy' — go for the setting + trout, not a gourmet pilgrimage. The Ljuta spring just upstream is a beautiful 5-min walk.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g2365175-d1563739-Reviews-Konavoski_Dvori_Eco_Green_Restaurant-Ljuta_Konavle_Dubrovnik_Neretva_County_Dalm.html"
+    ],
+    "cost": "~€20-35 pp",
+    "timeNeeded": "1.5h",
+    "bestTime": "Lunch on the Jun 18 pre-pickup afternoon or Jun 27 final evening",
+    "tags": ["gap-find", "food", "trout", "river", "konavle", "watermill"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-kupari-bay",
+    "name": "Kupari Bay — the 'abandoned hotels' are GONE (heads-up)",
+    "country": "HR",
+    "category": "other",
+    "lat": 42.6236,
+    "lng": 18.1892,
+    "description": "ANTI-TRAP PIN: Kupari, 10 min from Dubrovnik, was THE famous legal-ish urbex site of the region (war-ruined Yugoslav military resort hotels). TikTok/blogs still push it, but demolition for a luxury resort began in 2025 — urbexers reported it sealed off and partially flattened. Don't burn an hour going; the pebble beach itself is still public and pleasant if passing.",
+    "communityNotes": "My Wanderlust update (Jul 2025): 'it is no longer possible to explore the Bay of Abandoned Hotels... the area is going through major reconstructions and old hotels are being demolished.' Other visitors confirm demolition well underway by Oct 2025 (Goričina/Pelegrin being torn down). Until 2024 it was the area's best urbex — that window has closed.",
+    "sources": [
+      "https://www.mywanderlust.pl/kupari-croatia-abandoned-hotels/",
+      "https://www.kathmanduandbeyond.com/bay-of-abandoned-hotels-kupari-croatia/"
+    ],
+    "cost": "Free (beach)",
+    "timeNeeded": "0 — skip, or 30min beach stop",
+    "tags": ["gap-find", "urbex", "verdict-skip", "heads-up", "beach"],
+    "rating": 2,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-cavtat",
+    "name": "Cavtat (quiet harbour town next to the airport)",
+    "country": "HR",
+    "category": "town",
+    "lat": 42.5814,
+    "lng": 18.2177,
+    "description": "Pretty horseshoe harbour town 10 min from Dubrovnik airport — palm waterfront, two wooded peninsulas with a swimmable promenade loop, and the hilltop Račić Mausoleum view at sunset. The obvious cheap, calm anchor for the Jun 18 pickup evening and/or the Jun 27 last night, in a zone the map currently leaves blank.",
+    "communityNotes": "Forum consensus (TripAdvisor/Rick Steves): 'Cavtat was quieter and much less touristy than Dubrovnik, even though it's not that far away'; cheaper food and rooms; boat taxis and bus #10 (~€4) run to Dubrovnik old town so you can leave the car parked. Verdict pattern: sightseeing base = Dubrovnik, relaxing base = Cavtat. Swimming off the Sustjepan peninsula rocks is genuinely nice.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g295371-i1555-k14409022-Dubrovnik_or_Cavtat-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://community.ricksteves.com/travel-forum/croatia/preferred-staying-in-cavtat-over-dubrovnik",
+      "https://karlatypes.com/cavtat-why-stay-there-and-what-to-see/"
+    ],
+    "timeNeeded": "evening / overnight",
+    "bestTime": "Jun 18 pickup evening or Jun 27 final night",
+    "tags": ["gap-find", "base", "near-airport", "swimming", "sunset", "budget"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-divna-beach",
+    "name": "Divna beach (Pelješac north coast)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.0171,
+    "lng": 17.2005,
+    "description": "Locals' pick for Pelješac's most beautiful beach — a sand/fine-pebble cove with an islet you can swim to, ~10km of narrow lane west of Trpanj. Fills the blank Pelješac-north zone and is a perfect first/last swim if the Ploče→Trpanj ferry variant wins; tiny Autokamp Divna sits right behind the beach.",
+    "communityNotes": "Croatian travel press and visitors agree it 'justifies the name' (divna = wonderful): 'the sea is unbelievably clear... easily the highlight of a trip'; shallow entry, summer beach bar, free-ish parking chaos in peak season but June is fine. The single-lane access road with passing places is the price of admission. Swim to the islet for the photo.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g15088565-d14782953-Reviews-Plaza_Divna-Donja_Vrucica_Peljesac_Peninsula_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://putnikofer.hr/preporuke/plaza-divna-na-peljescu/",
+      "https://blog.adriatic.hr/12-najljepsih-plaza-poluotoka-peljesca/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "2-3h",
+    "bestTime": "Pairs with the Trpanj ferry variant (day 3 or the Pelješac/Mljet leg)",
+    "tags": ["gap-find", "hidden-gem", "swimming", "peljesac", "camping-nearby", "free"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-vrulja-cove",
+    "name": "Vrulja cove (Dubci) — biggest submarine spring on the Adriatic",
+    "country": "HR",
+    "category": "nature",
+    "lat": 43.3998,
+    "lng": 16.8818,
+    "description": "Wild roadless cove at the Dubci pass between Omiš and Makarska rivieras where an enormous karst spring (fed by Biokovo/Cetina groundwater) boils up from the seabed — ice-cold freshwater lenses in open turquoise sea, zero development. The group drives the D8 right above it between Omiš and Brela on days 2–3.",
+    "communityNotes": "Croatian sources call it a 'must-visit jewel of the Makarska riviera' and the largest vrulja (submarine spring) on the Adriatic — the main vent is ~60m across. Reality check from visitors: easiest by boat/kayak from Brela or Pisak ('by foot... a little harder since the beach is surrounded by high cliffs'); many just stop at the Dubci roadside viewpoint for the look down into the bay. The spring makes the water noticeably colder — locals treat that as the feature.",
+    "sources": [
+      "https://www.elegant.hr/clanci/uvala-vruja-must-visit-dragulj-makarske-rivijere/",
+      "https://brela.hr/en/95/vruja",
+      "https://adventuredalmatia.com/locations/brela-town-and-cove-vrulja/"
+    ],
+    "cost": "Free (boat/kayak rental extra)",
+    "timeNeeded": "15min viewpoint stop, or half day by kayak",
+    "bestTime": "Day 2-3 driving the D8; calm sea for the kayak option",
+    "tags": ["gap-find", "hidden-gem", "swimming", "spring", "kayak", "viewpoint", "free"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-zuta-tabija",
+    "name": "Žuta tabija (Yellow Fortress) — Sarajevo's sunset ritual",
+    "country": "BA",
+    "category": "viewpoint",
+    "lat": 43.8615,
+    "lng": 18.4377,
+    "description": "Ottoman bastion on the Vratnik hill, a free 15-20 min walk up from Baščaršija, where half of Sarajevo gathers every evening with drinks and snacks to watch the sun drop over the minarets and the valley. THE local sunset spot — oddly absent from all 300 existing pins despite a likely Sarajevo overnight.",
+    "communityNotes": "Free, open 24/7, café kiosk in season. 'Many visitors bring small picnics and drinks to enjoy while watching the sunset — a popular local pastime'; during Ramadan the cannon (Ramazanski top) fires from here at sunset. Locals' tip: come 30-40 min before sundown for a wall seat. Pairs with a wander through the old Vratnik gate quarter and the Kovači war cemetery below (itself a moving sight).",
+    "sources": [
+      "https://lll.ba/yellow-fortress-zuta-tabija/",
+      "https://tourismattractions.net/bosnia_and_herzegovina/yellow-fortress-sunset-views"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1h",
+    "bestTime": "Sunset (~20:45 in late June)",
+    "tags": ["gap-find", "sunset", "viewpoint", "free", "local-favourite", "sarajevo"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-daorson",
+    "name": "Daorson megalithic walls (Ošanići, above Stolac)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.1054,
+    "lng": 17.9296,
+    "description": "2,300-year-old Hellenistic-Illyrian acropolis with cyclopean walls 4-7m high built from megalithic blocks fitted without mortar — 'the Stonehenge of BiH', unstaffed, free, and usually completely empty. 20 min uphill drive from Stolac; the natural second stop after the already-pinned Radimlja stećci if the Trebinje→Stolac→Mostar road wins day 6.",
+    "communityNotes": "Visitors: 'to this day you are not able to fit a needle between the giant stones'; 'completely unstaffed and you can wander around as you like', with 'breathtaking views of rural Stolac'. Sailingstone trip report rates Stolac + Radimlja + Daorson as a genuinely underrated half-day. Tips: summer vegetation hides snakes — boots and watch your step; last km of road is narrow; sunset light is the magic hour.",
+    "sources": [
+      "https://sailingstonetravel.com/visiting-stolac-daorson-radimjla-necropolis/",
+      "https://sanjindumisic.com/ancient-megalithic-site-of-daorson-in-bosnia-herzegovina/",
+      "https://en.wikipedia.org/wiki/Daorson"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1-1.5h incl. drive up from Stolac",
+    "bestTime": "Late afternoon; pairs with Radimlja on the M6 routing",
+    "tags": ["gap-find", "ruins", "illyrian", "free", "off-route", "hidden-gem"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-diva-grabovica",
+    "name": "Diva Grabovica valley (Čvrsnica's hidden 1,800m-wall canyon)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.6036,
+    "lng": 17.6763,
+    "description": "Hamlet-dotted valley buried between 1,800m rock walls on the SE side of Čvrsnica — Herzegovina's most dramatic 'Yosemite corridor', entered via a 5km gravel track off the M-17 Mostar→Jablanica road the group already drives on day 7. Walk 30 min for the views or 2h up to the Žlijeb viewpoint; the full Hajdučka vrata loop starts here too.",
+    "communityNotes": "AllTrails (40 reviews) and Via Dinarica describe the Žlijeb route: ~8km, ~730m up, 4-4.5h, 'through closed beech forests with a fairly sharp climb', springs en route. Turnoff: cross the Neretva at HE Grabovica dam, then ~5km macadam to the info board (250m asl) — fine driven slowly in a normal car. Even non-hikers rave about just standing in the valley floor surrounded by the walls. Quiet: a handful of people on a summer weekday.",
+    "sources": [
+      "https://www.alltrails.com/trail/bosnia-herzegovina/herzegovina-neretva/diva-grabovica-zlijeb-cvrsnica",
+      "https://trail.viadinarica.com/en/point/valley/diva-grabovica/25302020/",
+      "https://visit-blidinje.com/en/diva-grabovica-canyon/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1h valley stroll to half-day Žlijeb hike",
+    "bestTime": "Day 7 Mostar→Konjic transit; morning shade is kinder",
+    "tags": ["gap-find", "hike", "canyon", "off-route", "free", "hidden-gem"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-arslanagica-most",
+    "name": "Arslanagića most + Bregovi river beach (Trebinje)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 42.7147,
+    "lng": 18.3540,
+    "description": "Trebinje's signature sight after the old town: a double-arched 1574 Ottoman bridge (moved stone-by-stone when the reservoir rose in the 1960s) over the glassy green Trebišnjica. 5 min away, the free city 'Bregovi' river-pool lido — natural shade, summer bar — is where locals cool off. The map already pins Trebinje 3 times but missed both.",
+    "communityNotes": "Existing Gračanica pin's own notes call the bridge the town's other highlight. Travelers: best at dusk when it's lit and mirrored in the river; walkable 20-25 min along the riverbank from the plane-tree square. Bregovi: 'Trebinje has filtered a little of the river off to make a public bathing area with café which is free for all to use' — a genuinely local scene, perfect after the hot drive from the airport pickup.",
+    "sources": [
+      "https://gotrebinje.com/en/destinations/perovica-arslanagica-most/",
+      "https://gotrebinje.com/en/destinations/bazen-bregovi/",
+      "https://beyondtheseborders.com/travel-to-peaceful-trebinje/",
+      "https://en.wikipedia.org/wiki/Arslanagi%C4%87_Bridge"
+    ],
+    "cost": "Free",
+    "timeNeeded": "45min (bridge) + optional swim",
+    "bestTime": "Dusk for the bridge; afternoon heat for Bregovi",
+    "tags": ["gap-find", "bridge", "ottoman", "river-swim", "free", "trebinje"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-trebizat-canoe",
+    "name": "Trebižat canoe safari (Božjak, Studenci → Struge)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.1535,
+    "lng": 17.6377,
+    "description": "Guided 11km canoe float down the spring-fed, tufa-terraced Trebižat river — starts at the Božjak river-bathing spot near Studenci just upstream of the already-pinned Kravica falls, ends ~3h later near Čapljina, usually with a cooked meal on a river beach. The relaxed counterpart to the Neretva/Tara whitewater days, in the exact Kravica–Počitelj corridor the group already drives.",
+    "communityNotes": "TripAdvisor reviewers: 'aqua clear waters, spectacular scenery and the most genuine hospitality'; 'relaxing with several gentle rapids to keep it interesting'; beginners and kids manage fine, guides help over the small cascade weirs; 'each safari ends with a lovely cooked dinner on the river beach — an absolute bargain.' Book a day ahead in June; Božjak itself is a free river beach if you only want a swim.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g952687-d2334426-Reviews-Canoe_Safari-Capljina_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Herzego.html",
+      "https://www.adventure-trebizat.com/index.php?lang=en&t=C1&p=1",
+      "https://ero-travel.com/tour/canoeing-trebizat-river/"
+    ],
+    "cost": "~€25-40 pp incl. meal (confirm with operator)",
+    "timeNeeded": "3-4h",
+    "bestTime": "Day 6 combo with Kravica (falls early, paddle midday)",
+    "tags": ["gap-find", "canoe", "river", "swimming", "activity", "herzegovina"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-fort-gorazda",
+    "name": "Fort Goražda — abandoned Austro-Hungarian fortress (above Kotor)",
+    "country": "ME",
+    "category": "sight",
+    "lat": 42.3959,
+    "lng": 18.7644,
+    "description": "Big 1886 Austro-Hungarian fort left to the bats: dark corridors, stairways and the world's last 100-ton Gruson rotating gun turret on the roof, plus a Boka Bay + open-sea double panorama from the ramparts. Free, unfenced, 10 min off the Kotor→Njeguši serpentine road the group already plans to drive — the legal-ish urbex fix now that Kupari is demolished.",
+    "communityNotes": "Trip reports: 'with a good torch you can enter and explore the rooms, stairways and corridors (at your own risk)' — floors are solid but unlit, and there are open shafts; don't go alone, mind the ditch edge. Turn off at the brown 'Goražda' signpost ~4km from the Trojica junction. Blogger consensus: emptier and more atmospheric than anything inside Kotor's walls, and the sunset over the bay from the roof is superb.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fort_Gorazda",
+      "https://mytravelscrapbook.com/the-secret-abandoned-fort-of-kotor-fort-gorazda/",
+      "https://www.abandonedspaces.com/conflict/fort-gorazda.html"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1-1.5h",
+    "bestTime": "On the Kotor↔Lovćen/Njeguši serpentine day; bring headlamps",
+    "tags": ["gap-find", "urbex", "fortress", "viewpoint", "free", "sunset"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-krupac-lake",
+    "name": "Krupac lake (Nikšić's 'sea')",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.8001,
+    "lng": 18.8818,
+    "description": "Reservoir 5km west of Nikšić where the whole town swims in summer — water up to ~28°C (far warmer than the June Adriatic or any mountain lake), sandy organized beach, beach bar, volleyball, diving platforms. Sits almost exactly on the Žabljak→Ostrog leg: the zero-detour swim-and-lunch reset between Durmitor and the monastery.",
+    "communityNotes": "Local portal Mladi Nikšića: 'idealno mjesto za vrele ljetnje dane' — clean spring-fed water, organized beaches 'opremljene mobilijarom', locals come 'every other day with the kids'. Known nationally as the venue of Lake Fest (rock festival, August — sadly after the trip). Foreign visitors are rare, prices Nikšić-cheap; pairs naturally with a Nikšićko brewery stop in town.",
+    "sources": [
+      "https://mladiniksica.me/krupac-idealno-mjesto-za-vrele-ljetnje-dane/",
+      "https://mladiniksica.me/krupacko-jezero-oaza-mira-koja-plijeni-svojom-ljepotom/",
+      "https://www.visit-montenegro.com/destinations/niksic/attractions/lake-krupac/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1-2h",
+    "bestTime": "Midday heat on the Žabljak→Ostrog→Skadar day (day 10)",
+    "tags": ["gap-find", "swimming", "lake", "local-favourite", "free", "zero-detour"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-vrazje-jezero",
+    "name": "Vražje jezero (Devil's Lake) — swim with a Durmitor backdrop",
+    "country": "ME",
+    "category": "nature",
+    "lat": 43.0840,
+    "lng": 19.1456,
+    "description": "Glacial lake on the open Jezera plateau ~10km SE of Žabljak (old Šavnik/Nikšić road) with the full Durmitor massif mirrored in it — and unlike Black Lake, swimming is normal here and the water actually gets pleasant (17-20°C+). Devil legends included. A 15-min detour that gives the group their 'swim under the mountains' moment without crowds.",
+    "communityNotes": "Park guides note it's 'where you will often see people swimming... larger and more popular for swimming in summer' among Durmitor's 18 lakes; TripAdvisor reviewers call it an 'escape from reality' with almost nobody around outside weekends. Caveats from locals: cold springs feed it — sudden cold patches and a silty, shallow entry; the lake's legend says the devil drags across-swimmers under, which locals enjoy telling you as you wade in.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1096284-d7266110-Reviews-Vrazje_Lake-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+      "https://www.durmitornp.com/vrazije-jezero/",
+      "https://zabljak.travel/en/devils-lake/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1h",
+    "bestTime": "Warm afternoon after a Durmitor hike; calm evenings for the reflection photo",
+    "tags": ["gap-find", "lake", "swimming", "durmitor", "free", "local-favourite"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-nedajno-susica",
+    "name": "Nedajno viewpoint + Sušičko jezero (Sušica canyon)",
+    "country": "ME",
+    "category": "viewpoint",
+    "lat": 43.1984,
+    "lng": 18.9846,
+    "description": "The Piva-plateau hole in the map: the 800m-deep Sušica canyon — Tara's 'lesser-known sister' — between Trsa and Žabljak. The road-end village of Nedajno has a stand-on-the-crag viewpoint straight down the canyon, and a rough 6.5km track drops to Sušičko jezero, Durmitor's only periodic lake (full of snowmelt in June, gone by August). On the western Durmitor Ring the group may already drive Plužine→Trsa→Žabljak.",
+    "communityNotes": "The Sandy Feet trip report: the canyon rim and lake are the highlight of the western ring — 'an impressive viewpoint overlooking the northern reaches of Sušica Canyon' at Nedajno. Dangerousroads.org on the lake track: hairpins, steep drop-offs, single-vehicle width — locals do it in normal cars, but if the rental feels marginal, park and walk down. June timing is the trick: that's exactly when the lake exists.",
+    "sources": [
+      "https://thesandyfeet.com/susica-canyon-susicko-skrcko-jezero-durmitor/",
+      "https://www.dangerousroads.org/eastern-europe/montenegro/6236-su%C5%A1i%C4%8Dko-jezero.html",
+      "https://lifeontheroam.com/durmitor-ring-montenegro/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "30min viewpoint; +1.5-2h with the lake descent",
+    "bestTime": "On the Plužine→Trsa→Žabljak drive (day 8); June = lake is full",
+    "tags": ["gap-find", "canyon", "viewpoint", "viewpoint-road", "lake", "free", "piva-plateau"],
+    "rating": 4,
+    "status": "candidate"
+  }
+]
