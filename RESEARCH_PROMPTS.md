@@ -335,9 +335,16 @@ MONTENEGRO (5): 14313188, 1194377822001153349, 13219159, 625139070441679511, 490
 
 For EACH listing, fetch https://www.airbnb.com/rooms/<id> with curl (use a desktop browser User-Agent; pages are public — the embedded JSON in <script id="data-deferred-state-0"> or DOM contains coordinates, title, capacity, rating). Extract: exact name, lat/lng, capacity (flag if <4 people!), rating + review count, and nightly price — query price with dates via the URL params (?check_in=2026-06-21&check_out=2026-06-23&adults=4 for Bosnia ids; ?check_in=2026-06-24&check_out=2026-06-26&adults=4 for Montenegro ids). If a fetch is blocked, retry once with delay; if still blocked, record what you got and move on — partial data beats none. Be polite: ~2s between requests.
 
-Write src/data/accommodation-wishlist.json: Place array, category "accommodation", status "shortlist" (user hand-picked these), tags ["airbnb-wishlist"], sources [listing URL], cost = the fetched June nightly price for 4, description = capacity/rating + one-liner. Country prefix ba-/me- by actual location.
+IMPORTANT FRAMING from the user: the wishlist is NOT a final list — it's a taste sample from casual browsing ("those I more or less liked"). Any dates baked into the wishlist are random; the sample dates above are route-skeleton estimates, fine for price sampling but final dates depend on the itinerary. Your job is the BEST solution, not validating the wishlist: some wishlist items may be poor value or off-route (say so), and you should find better alternatives.
 
-THEN the analysis layer in research/airbnb-wishlist-notes.md: for each listing, distance to our route corridor (research/route-skeleton.md — e.g. Šipovo and Bijelo Polje look FAR off-route: say how far and what detour costs), which overnight zone/night it could serve, value verdict vs the ~€50/night benchmark, and a ranked recommendation per zone. Flag listings that can't host 4.
+Write src/data/accommodation-wishlist.json: Place array, category "accommodation", status "shortlist" for wishlist items (user-picked taste signal — they can demote in the UI), tags ["airbnb-wishlist"], sources [listing URL], cost = the sampled June nightly price for 4 (note in description that dates are estimates), description = capacity/rating + one-liner. Country prefix ba-/me- by actual location.
+
+THEN go beyond the wishlist: for each overnight zone in research/route-skeleton.md (Mostar, Konjic/Sarajevo, Trebinje/Konavle, Žabljak, Skadar, Budva/Kotor — plus Croatian zones if time permits), search Airbnb the same way (map-bounded search URLs, parse embedded results) for 2–3 BETTER-VALUE alternatives: 4 people, ~€50/night benchmark (stretch to ~€80 if clearly worth it), well-rated. Add them to the same JSON with tags ["airbnb-alternative"], status "candidate".
+
+THEN the decision layer in research/airbnb-wishlist-notes.md:
+- Per listing: distance to our route corridor (e.g. Šipovo and Bijelo Polje look FAR off-route — say how far and what the detour costs), which overnight zone/night it could serve, value verdict, capacity check (flag <4!).
+- Ranked recommendation per zone: wishlist item vs your found alternatives.
+- BOOK-NOW vs WAIT split (key deliverable): for each top pick, check the cancellation policy — listings with free cancellation well past mid-June are SAFE to book immediately even with uncertain dates (book refundable, adjust later); flag rare-gem listings (unique + few alternatives in zone + filling calendar) where booking now is smart, vs commodity zones (many similar options) where waiting costs nothing.
 
 Validate JSON with python3 -m json.tool, then npm run build.
 
