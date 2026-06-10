@@ -383,6 +383,19 @@ Two sibling sessions audited the app and wrote implementation-ready specs: resea
 
 ---
 
+### Session G follow-up 5 — booking & source link UX (queued by the master session after follow-ups 3+4)
+
+```
+LINK UX (user priority): places must expose their MOST USEFUL links prominently, not just Google Maps. Implement in the detail panel (and compactly in the popup):
+1. Derive labeled link buttons from each URL's domain in `sources`: airbnb.com → "Open on Airbnb"; park4night/campercontact/camping.info → "Campsite reviews"; outdooractive/alltrails/komoot/wikiloc/summitpost → "Trail guide / GPX"; reddit/tripadvisor/forum → "Traveler reports"; anything else → site hostname. First booking-type link (Airbnb/campsite) renders as a PRIMARY button at the top of the panel ("Book / View listing").
+2. Google Maps becomes a small secondary "Navigate" link (still useful in the car), never the main affordance.
+3. In the sleep-spot corridor finder and accommodation lists, the booking link must be one tap away.
+4. FILTERING CONVENIENCE check (user priority): filters must be fast to operate — verify after ux-review implementation that common flows (campsites-only, shortlist-only, activities near me) are 1–2 taps; add quick-filter presets if not.
+No data file edits; build green; append to research/app-changelog.md. FINAL ACT: echo done > .fleet/done/G3
+```
+
+---
+
 ## After sessions finish (for the master session)
 
 Tell the master session which files landed; it will review `src/data/*.json` + `research/*.md`, dedupe, sanity-check coordinates on the map, and then move to phase 2: itinerary/route building and Airbnb shortlisting per overnight stop.
