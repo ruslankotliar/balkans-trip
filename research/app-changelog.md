@@ -311,3 +311,57 @@ Extended: `src/components/{DetailPanel,CorridorPanel,Today}.tsx`,
   (alltrails), "Traveler reports" (tripadvisor), hostname fallback, popup
   chips, Sleep-tonight card links near Žabljak, preset row (57 sleep spots
   in one tap, active-state highlight).
+
+## 2026-06-10 — Quota bugfix: localStorage QuotaExceededError in the route builder
+
+**Bug (user-reported):** building a route died with an uncaught
+`QuotaExceededError: Setting the value of 'balkans-trip-osrm-trip-cache'
+exceeded the quota.` The route/trip caches stored **full OSRM geometries**
+(thousands of `[lng,lat]` points, hundreds of KB per route) in localStorage
+(~5 MB, shared with overrides + all other keys). `saveTripCache()` threw
+inside `buildRoute()`'s async chain with no handler → the promise rejected
+unhandled, `setRbTrip` never ran, and the UI stayed stuck on "Solving…" even
+though OSRM had answered fine.
+
+**Fix (`src/store.ts`, `src/App.tsx`):**
+
+- **`safeSetItem()`** — single quota-safe wrapper now used by *every*
+  localStorage write (overrides, route/trip caches, ferry hours, mode, done,
+  GPS fix). On `QuotaExceededError` it evicts the oldest half of each route/
+  trip cache (object key order = insertion order = LRU) and retries once; if
+  the write still fails it `console.warn`s and skips persisting — caching
+  failure can never break functionality again. Returns `boolean` so callers
+  can report honestly.
+- **Slim caches.** Geometry no longer goes to localStorage at full
+  resolution — the service worker (workbox `NetworkFirst` on
+  `router.project-osrm.org`) already keeps raw OSRM responses for offline.
+  `persistCache()` writes a slimmed snapshot: Douglas–Peucker-simplified
+  polyline (50 m tolerance, coords rounded to 5 decimals ≈ 1 m), per-entry
+  cap 30 K chars (tolerance auto-coarsens until it fits), per-cache caps of
+  **100 entries / ~1 MB**, oldest-first eviction. The in-memory cache keeps
+  the full-resolution geometry for the current session; `simplifyLine()` is
+  exported from `src/store.ts`. Legacy fat caches self-heal: the next save
+  re-persists them slimmed (verified: 60 entries / 4.5 MB → 640 KB).
+- **`buildRoute()`** wrapped in try/catch/finally: any unexpected throw
+  surfaces as an `rbError` instead of a stuck "Solving…", and the built route
+  always renders from memory even when nothing can be persisted.
+- **Prep offline** now reports per-day honestly: saved / built-but-NOT-saved
+  (storage full — still served by the SW's OSRM cache this session) / fetch
+  failed, instead of counting a fetch as "offline-ready" when the write was
+  lost.
+
+**Verified** end-to-end with headless Chrome + CDP (`vite preview` + a node
+`ws` driver; OSRM stubbed deterministically with a 22 k-point geometry):
+
+- *Repro on the old build:* storage pre-filled to ~5.1 M chars → Build route
+  → uncaught `QuotaExceededError`, 0 stops rendered, button stuck "Solving…".
+- *Fixed build, same prefill:* 3 stops render, no uncaught errors, slimmed
+  trip entry (399 chars) even persists in the leftover space.
+- *Legacy fat cache (60 × ~75 KB entries):* route renders, cache re-persisted
+  at 640 K chars / 61 entries, new key present.
+- *Zero free space:* route still renders; one `console.warn` ("quota exceeded
+  — … kept in memory"), nothing uncaught.
+- *Prep offline under near-full storage:* completes, alert reports
+  "1 day route(s) saved (1 newly built)" and the entry verifiably persisted.
+
+`npm run build` green. `src/data/` untouched.
