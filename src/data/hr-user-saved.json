@@ -6,7 +6,12 @@
     "category": "beach",
     "lat": 43.37,
     "lng": 16.9228,
-    "description": "Pine-backed pebble beach in Brela on the Makarska Riviera, regularly ranked among Europe's best beaches. User-saved from Google Maps.",
+    "description": "Pine-backed pebble beach in Brela on the Makarska Riviera, regularly ranked among Europe's best beaches. User-saved from Google Maps. June catch: parking ~€11/day closest zone (reports up to €25 and 'aggressive attendants') and a midday crush — slot it as the Jun 18 morning swim (also clears out after ~15:30); sunbed ~€7.",
+    "cost": "Beach free; parking ~€11/day (reports up to €25); sunbed ~€7",
+    "bestTime": "morning (Jun 18 swim) or after ~15:30 — midday is the crush",
+    "sources": [
+      "https://www.tripadvisor.com/ShowUserReviews-g480253-d3137988-r619350088-Punta_Rata_Beach-Brela_Split_Dalmatia_County_Dalmatia.html"
+    ],
     "tags": [
       "user-saved",
       "makarska-riviera"
@@ -81,11 +86,11 @@
     "category": "nature",
     "lat": 44.878,
     "lng": 15.6085,
-    "description": "One of the big waterfalls on Plitvice's upper lakes. User-saved from Google Maps — reinforces Plitvice as a wanted stop despite the detour north.",
+    "description": "One of the big waterfalls on Plitvice's upper lakes. User-saved from Google Maps — but the route verdict (verdicts-digest §1a) is a unanimous NO on Plitvice: +4:21 driving, ~€40 pp, timed boardwalks, no swimming, June crowds. Kept as candidate so the map doesn't imply a commitment nobody made.",
     "tags": [
       "user-saved",
       "plitvice"
     ],
-    "status": "shortlist"
+    "status": "candidate"
   }
 ]

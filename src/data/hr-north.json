@@ -13,7 +13,7 @@
       "https://www.np-paklenica.hr/en/hiking/hiking-trails-en",
       "https://www.alltrails.com/trail/croatia/zadar/velika-paklenica-planinarski-dom-paklenica"
     ],
-    "cost": "Park entry ~€10/adult in summer (parking included)",
+    "cost": "Park entry €10/adult Jun-Sep (official 2026 list; −5% via parkovihrvatske.hr webshop; parking included)",
     "timeNeeded": "half day to Lugarnica, full day to the hut and back",
     "bestTime": "start before 9am for a parking spot and to beat heat/crowds",
     "tags": [
@@ -107,7 +107,7 @@
     "lat": 44.26351,
     "lng": 15.6556,
     "description": "Dramatic breccia rock towers (1120m) on southern Velebit, rising above the south portal of the Sv. Rok tunnel - the famous 1960s 'Winnetou' Western filming location. Reached via the historic Majstorska cesta from Obrovac; otherworldly, empty landscape.",
-    "communityNotes": "From the parking it's '45 to 60 minutes' to the top for a 'magnificent view over the peaks of Tulove grede.' The access road has unpaved sections: 'a 4x4 is recommended... although you can drive it in a regular car, just drive slowly.' Travelers love the movie nostalgia and the solitude; pairs with the Zrmanja viewpoint and inland Knin route.",
+    "communityNotes": "From the parking it's '45 to 60 minutes' to the top for a 'magnificent view over the peaks of Tulove grede.' The access road has unpaved sections: 'a 4x4 is recommended... although you can drive it in a regular car, just drive slowly.' SAFETY (explicit): the trail and summit area were de-mined, but marked minefields remain in the wider area — ZERO off-trail wandering (red signs; mine map at hcr.hr). Travelers love the movie nostalgia and the solitude; pairs with the Zrmanja viewpoint and inland Knin route.",
     "sources": [
       "https://www.summitpost.org/tulove-grede/153393",
       "https://thousandtravelmiles.nl/en/croatia/tulove-grede-croatia",
@@ -122,7 +122,7 @@
       "inland-route"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "hr-zrmanja-viewpoint",
@@ -163,7 +163,7 @@
       "https://en.wikipedia.org/wiki/Knin_Fortress",
       "https://www.rjontour.com/knin-croatia/"
     ],
-    "cost": "~€8-10pp",
+    "cost": "~€3-4 pp (cheaper than earlier reports), hours 09:00-18:00",
     "timeNeeded": "1-2h",
     "tags": [
       "fortress",
@@ -171,7 +171,7 @@
       "underrated"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "hr-pet-bunara",

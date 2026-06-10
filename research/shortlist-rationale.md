@@ -119,3 +119,45 @@
 13. **Radimlja stećci** (`ba-radimlja-stecci`) — UNESCO, +0:00 on the Trebinje→Stolac→Mostar routing — auto-include if that road wins (off-route-notes case 5).
 14. **Prokletije / Grebaje valley** (`me-prokletije-grebaje`) — rating 5, "worth rerouting for — at the highest price" (+1.5–2 days); off-route-notes explicitly says present to the group, don't decide unilaterally.
 15. **Umoljani → Lukomir hike** (`ba-umoljani-rakitnica-hike`) — rating 5; Lukomir itself is promoted, this is the 6–7h on-foot way in if the road dispute resolves badly.
+
+---
+
+# v2 — after red team (2026-06-10)
+
+Applied the verdicts from `research/redteam-notes.md` (4 DEMOTE · 23 FLAG · 43 CONFIRMED) plus gap-find promotions from `research/gap-hunt-notes.md`. **Final shortlist: 61 places** = the red team's ranked core 44 + 11 logistics anchors + 6 promotions (Grabovica canyoning + 5 verified gap finds).
+
+## Demoted — red team's 4 (status + description updated)
+
+- **Nevidio Canyon** (`me-nevidio-canyon`) → `backup` — operators themselves run the easier Grabovica substitute in May–June (Nevidio water too dangerous; ideal only from July); late June is a coin-flip. Treat as a lucky-weather bonus call 2–3 days out.
+- **Veliki Prštavac / Plitvice** (`hr-veliki-prstavac`) → `candidate` — contradicted the trip's own unanimous NO on Plitvice (verdicts-digest §1a: +4:21 driving, ~€40 pp, June crush).
+- **Biogradska Gora** (`me-biogradska-gora`) → `backup` — +2.5–3.5h driving for a bus-busy 1h lake loop the group already gets free at Black Lake; auto-promote only if the eastern swing is voted in.
+- **Buža Bar** (`hr-buza-bar`) → `backup` — concession/legal limbo, May 2026 review reports tables/chairs removed; terrace + jump ledges still free. RE-CHECK ON ARRIVAL; re-promote instantly if pouring drinks.
+
+## Demoted — the 11 bench (shortlist → `backup`, promote on condition)
+
+- **Knin Fortress** — inland-route-conditional (and entry is actually only ~€3–4).
+- **Tulove grede** — inland-route-conditional; mines warning made explicit (zero off-trail).
+- **Walls of Ston** — oysters already cover the stop; promote if a Ston half-day materializes.
+- **Blagaj Tekija** — classic but bus-crushed midday; promote if the Mostar day runs long (now costed: 10 KM/€5).
+- **Počitelj** — free 30-min stop only if passing at golden hour.
+- **Sveti Stefan** — islet closed until Aman's Jul 1 2026 reopening (3 days after we fly out); beaches currently free, no facilities — reframed as photo + free swim stop.
+- **Ploče Beach** — party fit confirmed but documented bar overcharging; pay per round in cash.
+- **Durmitor Black Lake** (standalone pin) — the summit days start there anyway; built-in "we're tired" fallback.
+- **Gricko Grill Zadar** — open but redundant with three better-placed ćevapi institutions.
+- **Konoba Feral Brela** — excellent but €30–60 pp and 3-day phone-only booking friction.
+- **Barba Dubrovnik** — good cheap seafood, but Dubrovnik time is thin; grab it if the kayak day allows.
+
+## Promoted
+
+- **Grabovica Canyon Canyoning** (`me-grabovica-canyon`, NEW pin in `experiences.json`) → `shortlist` — the canyon operators actually run in May–June; honest replacement for Nevidio's slot (≈€100 pp, beginner-friendly, ~20 min from Žabljak; coordinates from OSM Grabovica stream, Šavnik).
+- **Pasjača Beach** (`hr-pasjaca-beach`) → `shortlist` — verified open/free 2026, steep cliff stairs intact; fills the Konavle zero-pin gap on the two airport-anchored days.
+- **Žuta tabija** (`ba-zuta-tabija`) → `shortlist` — verified free, open daily (~09–23), the Sarajevo sunset ritual the data was missing.
+- **Vražje jezero** (`me-vrazje-jezero`) → `shortlist` — verified car-accessible, summer swimming normal (cold-spring caution already in the pin); the Durmitor swim moment.
+- **Trebižat canoe safari** (`ba-trebizat-canoe`) → `shortlist` — verified active for 2026 (TripAdvisor 2026 product listings; Božjak→Struge ~€35–45 pp with lunch); the gentle-water day in the Kravica corridor.
+- **Daorson** (`ba-daorson`) → `shortlist` — verified accessible year-round, access road recently improved, unstaffed/free; completes the Trebinje→Stolac→Mostar routing argument.
+
+## Flag corrections applied (23 pins, fields only)
+
+Prices/hours: Trebević cable car 20/30 KM tourist fare; Tunnel of Hope 20 KM flat cash-KM-only, 08:30–17:30; Njegoš €11 pp total; Kotor fortress €15 with the pre-8am loophole downgraded to "bonus, not a plan"; Paklenica €10 Jun–Sep; North Velebit €7 + macadam/no-meals note; Knin ~€3–4; Mljet 2026 PDF precision; Mašanović €20 pp with platter + booking contacts; Blagaj 10 KM; Kravica 20 KM flat + dawn rule; Perast boat €5–10 + €3. June-quality: Blue Cave earliest ~09:00 departure (NOT the 10:00–13:00 light window — 20+ boats); Sveti Stefan reframed; Trnovačko + Lukomir gravel-vs-rental-contract hardening; Šćepan Polje Foča–Hum roadworks +30–60 min; Tulove grede mines explicit; Ploče billing warning; Punta Rata parking €11–25 + morning slot; Feral 3-day booking; Budva bars jazz-paced pre-July; Odysseus approach ~1h sharp karst, swim-in only.
+
+**Bookkeeping: 70 v1 shortlist − 4 demoted − 11 bench + 1 Grabovica + 5 gap finds = 61.** All files validate (`python3 -m json.tool`); `npm run build` green.

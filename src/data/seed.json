@@ -127,9 +127,14 @@
     "category": "sight",
     "lat": 43.2565,
     "lng": 17.9031,
-    "description": "Dervish monastery at the cliff spring of the Buna river, 20min from Mostar. Spring is one of the strongest karst springs in Europe.",
+    "description": "Dervish monastery at the cliff spring of the Buna river, 20min from Mostar. Spring is one of the strongest karst springs in Europe. Knees/shoulders covered to enter the tekija (wraps provided free). Park at the lower lots — the final street is a midday tour-bus trap.",
+    "cost": "10 KM / €5 cash to enter the tekija",
     "timeNeeded": "1–2h",
-    "status": "shortlist"
+    "sources": [
+      "https://exploremostar.com/blagaj-tekke/",
+      "https://www.thetripverdict.com/blagaj-tekija"
+    ],
+    "status": "backup"
   },
   {
     "id": "ba-kravica",
@@ -139,9 +144,13 @@
     "lat": 43.1583,
     "lng": 17.6083,
     "description": "25m horseshoe waterfall arc on the Trebižat river — you can swim right below the falls. ~40min from Mostar, on the route to/from Croatia.",
-    "cost": "~€10 entry",
+    "cost": "20 KM adult flat (~€10), year-round",
     "timeNeeded": "2–3h",
+    "bestTime": "arrive ~07:00–08:00 to beat the crowds; June pool swimmable (~18–20°C)",
     "tags": ["swimming"],
+    "sources": [
+      "https://kravica.ba/en/for-visitors/"
+    ],
     "status": "shortlist"
   },
   {
@@ -151,9 +160,9 @@
     "category": "sight",
     "lat": 43.1339,
     "lng": 17.7261,
-    "description": "Ottoman hillside fortress village on the Neretva, basically on the Mostar–coast road. Quick climb to the tower for the view.",
+    "description": "Ottoman hillside fortress village on the Neretva, basically on the Mostar–coast road. Quick climb to the tower for the view. Free 30-min stop if passing at golden hour.",
     "timeNeeded": "1h",
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "ba-trebinje",

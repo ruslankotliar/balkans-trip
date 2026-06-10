@@ -6,7 +6,12 @@
     "category": "other",
     "lat": 43.3492,
     "lng": 18.8403,
-    "description": "Border crossing from Bosnia into Montenegro. From here, drive the spectacular Piva river canyon road along Piva Lake through Plužine, continuing to Žabljak. One of the most scenic drives in Montenegro.",
+    "description": "Border crossing from Bosnia into Montenegro. From here, drive the spectacular Piva river canyon road along Piva Lake through Plužine, continuing to Žabljak. One of the most scenic drives in Montenegro. ROADWORKS 2026: active works on the BA side (Brod na Drini/Foča → Hum) with slow traffic and temporary ~10-min stoppages, and the 24-tunnel Plužine section is earmarked for reconstruction (the new joint Šćepan Polje–Hum border post is still paperwork — no relief by June). Budget an extra 30–60 min on top of the 2.5–3h; daylight-only rule unchanged.",
+    "sources": [
+      "https://www.glassrpske.com/lat/novosti/drustvo/oprez-radovi-na-putevima/634896",
+      "https://bankar.me/scepan-polje-pluzine-na-20-kilometara-cak-24-tunela/",
+      "https://rtnk.me/drustvo/mup-priprema-projektnu-dokumentaciju-za-izgradnju-granicnog-prelaza-scepan-polje-hum/"
+    ],
     "tags": ["user-note", "scenic-drive", "border-crossing"],
     "status": "shortlist"
   },
@@ -39,13 +44,13 @@
     "category": "hike",
     "lat": 43.1466,
     "lng": 19.0894,
-    "description": "Hiking in Durmitor National Park around Black Lake and nearby peaks. Planned route: Crno jezero → Veliki Međed (Sjeverni) mountain tour.",
+    "description": "Hiking in Durmitor National Park around Black Lake and nearby peaks. Planned route: Crno jezero → Veliki Međed (Sjeverni) mountain tour. As a standalone pin it's redundant — the shortlisted summit days start here anyway; kept as the built-in 'we're tired' fallback (easy lake loop, €5 NP + €2 parking).",
     "sources": [
       "https://www.outdooractive.com/en/route/mountain-hike/opstina-zabljak/mountain-tour-from-crno-jezero-black-lake-to-veliki-meded-sjeverni/343480610/"
     ],
     "timeNeeded": "full day",
     "tags": ["user-note", "hiking"],
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "me-ostrog-monastery",
@@ -76,9 +81,14 @@
     "category": "beach",
     "lat": 42.2562,
     "lng": 18.8911,
-    "description": "Iconic fortified islet with pink-pebble beaches. Alternative to Skadar Lake activities if we prefer the sea that day.",
+    "description": "Iconic fortified islet with pink-pebble beaches. STATUS for our dates: Aman Sveti Stefan reopens Jul 1, 2026 — three days AFTER we fly out — so the islet itself stays off-limits. The beaches around it are currently FREE (the €120-sunbed era is over; Queen's Beach becomes Aman-exclusive only after reopening), but there are no facilities (no showers/toilets). Reframed: a free swim + the classic roadside photo stop, not an 'iconic beach alternative'.",
+    "cost": "Beaches free until Jul 1 2026 reopening; no facilities",
+    "sources": [
+      "https://www.euronews.com/travel/2026/05/06/amans-sveti-stefan-resort-in-montenegro-to-reopen-five-years-after-beach-access-row",
+      "https://www.rferl.org/a/free-beach-sveti-stefan-montenegro/33467608.html"
+    ],
     "tags": ["user-note"],
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "me-budva",

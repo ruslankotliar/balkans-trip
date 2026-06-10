@@ -200,12 +200,12 @@
     "lat": 44.8186,
     "lng": 14.9776,
     "description": "Croatia's highest mountain lodge (1,594m) in North Velebit NP — repeatedly named one of the darkest, clearest night skies in the country. Walkable peaks for sunrise and the Velebit Botanical Garden 15min away.",
-    "communityNotes": "Croatia stargazing roundups single out 'parts of Lika on Velebit' as where the sky is 'as dark or even darker' than anywhere accessible; Paklenica/Velebit cited for 'minimal light pollution' and Milky Way visibility. TIMING: new moon is Jun 15, 2026 — the darkest skies of the whole trip fall on nights 1–2 (Jun 16–18). Do the serious stargazing early; the Montenegro half (~Jun 24–28) has a near-full moon.",
+    "communityNotes": "Croatia stargazing roundups single out 'parts of Lika on Velebit' as where the sky is 'as dark or even darker' than anywhere accessible; Paklenica/Velebit cited for 'minimal light pollution' and Milky Way visibility. TIMING: new moon is Jun 15, 2026 — the darkest skies of the whole trip fall on nights 1–2 (Jun 16–18). Do the serious stargazing early; the Montenegro half (~Jun 24–28) has a near-full moon. ACCESS/SUPPLIES: the last 7 km to Zavižan is rough macadam — slow but fine driven carefully in a rental; the hut sells drinks but no full meals, so carry dinner/breakfast for the dark-sky night.",
     "sources": [
       "https://www.expatincroatia.com/stars-croatia/",
       "https://np-sjeverni-velebit.hr/www/hr/park/velebitski-botanicki-vrt"
     ],
-    "cost": "NP entry ~€10 pp; lodge bunks ~€15–20 pp",
+    "cost": "NP entry €7/day adult (official price list); lodge bunks ~€15–20 pp",
     "timeNeeded": "overnight",
     "bestTime": "nights of Jun 16–19 (new-moon dark); pre-dawn for sunrise peaks",
     "tags": [
@@ -253,12 +253,12 @@
     "lat": 43.84111,
     "lng": 18.44222,
     "description": "The abandoned, graffiti-covered 1,300m concrete bobsleigh/luge track from the 1984 Winter Olympics, snaking down forested Mt Trebević — bullet-scarred from the war, reclaimed by moss and street art. Top 'weird/unique' target; you can legally walk it (and people bike it).",
-    "communityNotes": "Reach it via the Trebević cable car from Bistrik (9–10 min). 'The tracks are cleared... so they can be used by bicyclists'; 'many sections are lined with bullet holes and other war wounds.' Solid concrete, safe to walk. CAVEATS from the same trip report: 'There are still many unexploded mines littering the hillside' — stay ON the track/paths, and there are 'stories of people being mugged since the area is so remote,' so go as a group. Walking down to town ~45 min, steep in places.",
+    "communityNotes": "Reach it via the Trebević cable car from Bistrik (9–10 min). 'The tracks are cleared... so they can be used by bicyclists'; 'many sections are lined with bullet holes and other war wounds.' Solid concrete, safe to walk. CAVEATS from the same trip report: 'There are still many unexploded mines littering the hillside' — stay ON the track/paths, and there are 'stories of people being mugged since the area is so remote,' so go as a group. Walking down to town ~45 min, steep in places. Cable car: Mondays often open late (~12:00) and maintenance closures happen — check zicara.ba the day before.",
     "sources": [
       "https://www.therockysafari.com/2022/04/29/sarajevo-abandoned-tracks/",
       "https://en.wikipedia.org/wiki/Sarajevo_Olympic_Bobsleigh_and_Luge_Track"
     ],
-    "cost": "Cable car ~15 BAM (~€7.5) one-way / 20 BAM return; track free",
+    "cost": "Cable car tourist fare 20 KM one-way / 30 KM return (~€10/€15.30, since Dec 2023; the 4/6 KM locals' tariff doesn't apply); track free",
     "timeNeeded": "2–3h (cable car + walking the track)",
     "tags": [
       "abandoned",
@@ -305,7 +305,7 @@
     "lat": 43.633,
     "lng": 18.183,
     "description": "At 1,495m, Bosnia's highest and most isolated village — semi-nomadic shepherds, ~50 stone houses with cherry-wood shingle roofs, perched on the rim of the 800m Rakitnica canyon. A living time capsule inhabited only May–Oct; also a superb sunrise / stargazing / 'meditation on a mountain' spot.",
-    "communityNotes": "June is ideal — '21 of the 50 homes are inhabited during the summer'; shepherds bring flocks up, women knit wool socks. First-hand: 'children playing football, sheep wandering alleys'; lunch is homemade burek/pita and coffee 'boiled three times over an open fire.' 'This isn't one of those museum villages where heritage is polished for display.' Access in June: rough but snow-free dirt road (~1.5–2h from Sarajevo, 'not for the faint of heart'); better as a hike from Umoljani. Renowned for sunrise/sunset views over the canyon.",
+    "communityNotes": "June is ideal — '21 of the 50 homes are inhabited during the summer'; shepherds bring flocks up, women knit wool socks. First-hand: 'children playing football, sheep wandering alleys'; lunch is homemade burek/pita and coffee 'boiled three times over an open fire.' 'This isn't one of those museum villages where heritage is polished for display.' Access in June (road dispute resolved): dry-weather-only in a 2WD — final ~11 km is gravel, mud = treacherous, and multiple sources still say 4x4 recommended; rental gravel-exclusion clauses likely apply. The defensible plan: hike in from Umoljani (asphalt all the way there) or book the jeep tour; drive it yourselves only on a bone-dry day with the rental contract checked. Renowned for sunrise/sunset views over the canyon.",
     "sources": [
       "https://www.muchbetteradventures.com/magazine/lukomir-bosnia-highest-village/",
       "https://sarajevo.travel/en/text/lukomir-the-last-bosnian-village/422",
@@ -524,7 +524,7 @@
     "category": "activity",
     "lat": 42.9939,
     "lng": 19.1303,
-    "description": "Montenegro's most famous canyoning trip — a wild, narrow gorge carved by the Komarnica into Durmitor, with jumps, slides, swims and rappels in ice-cold water. THE Balkans canyoning bucket-list item, but technical and unforgiving. Meeting near Pošćenje village / Šavnik.",
+    "description": "Montenegro's most famous canyoning trip — a wild, narrow gorge carved by the Komarnica into Durmitor, with jumps, slides, swims and rappels in ice-cold water. THE Balkans canyoning bucket-list item, but technical and unforgiving. PROBLEM for our dates: operators state that from May to June the water level in Nevidio is too dangerous and they run the easier Grabovica canyon as the substitute — conditions only become ideal from July. Late June is a coin-flip transition week: treat Nevidio as a lucky-weather bonus call made 2–3 days out, with Grabovica as the honest pre-season plan. Meeting near Pošćenje village / Šavnik.",
     "communityNotes": "'One of the highlights of our trip' and 'There is no better activity to do in Montenegro.' Water is 'ice cold' — guides hand out double wetsuits; the exit 'hike up at the end is strenuous.' Guides praised by name (certified mountain-rescue/alpinists). CRITICAL SAFETY: going alone is 'strongly discouraged and dangerous' — people have died here; sections cannot be exited without ropes/training. Only book a licensed operator. JUNE: usually opens ~late June once snowmelt drops — mid-June (Jun 16–22) often closed/substituted with the easier Grabovica canyon; late June (Jun 23–28) is a transition window. Confirm opening with the operator a few days ahead; schedule it on the later Montenegro leg.",
     "sources": [
       "https://www.tripadvisor.com/Attraction_Review-g12969350-d4994338-Reviews-Canyon_Nevidio-Savnik_Savnik_Municipality.html",
@@ -543,6 +543,35 @@
       "safety"
     ],
     "rating": 5,
+    "status": "backup"
+  },
+  {
+    "id": "me-grabovica-canyon",
+    "name": "Grabovica Canyon Canyoning (pre-season Nevidio substitute)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 43.0091,
+    "lng": 19.0725,
+    "description": "The canyon Montenegro's canyoning operators actually run in May–June, when Nevidio's water level is too dangerous — a ~1km wide, sunlit gorge near Nevidio off the Šavnik–Žabljak road (~20 min from Žabljak), with crystal-clear natural basins and rope descents up to 8m. Beginner-friendly and called 'equally beautiful' by the same operators; the honest pre-season canyoning plan for our Jun 23–24 Durmitor window.",
+    "communityNotes": "Operators are explicit: 'From May to June, the water level in Nevidio canyon makes it too dangerous for canyoning' — Grabovica is the substitute, and 'from July… the conditions in Nevidio become ideal.' Grabovica's own season is high-water-dependent (roughly mid-April to mid/late June — 'water mainly dries up during the summer'), so late June is a transition week for BOTH canyons: call the operator 2–3 days out and take whichever is running. Gathering point cited as Eco Village Jatak; ~4h, wide and sunny unlike Nevidio's slot.",
+    "sources": [
+      "https://nevidio-canyoning.com/en/home-english/",
+      "https://canyonnevidio.com/grabovica.php",
+      "https://canyoning.ba/activities/canyoning-nevidio/",
+      "https://raftingmontenegro.com/canyoning-grabovica"
+    ],
+    "cost": "~€100 pp (gear + guides)",
+    "timeNeeded": "half day (~4h)",
+    "bestTime": "May–late June high water; confirm with operator 2–3 days ahead",
+    "tags": [
+      "canyoning",
+      "durmitor",
+      "beginner-friendly",
+      "june-fit",
+      "licensed-only",
+      "redteam-promoted"
+    ],
+    "rating": 4,
     "status": "shortlist"
   },
   {

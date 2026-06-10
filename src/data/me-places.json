@@ -336,9 +336,10 @@
     "communityNotes": "Consistently rated for the view: '461 steps... worth the view if you can climb and have the time', 'showing nearly all of Montenegro.' Tips travelers repeat: the marble tunnel is 'very cold inside, which helps you not sweat', and 'come down via the hiking trail above the tunnel rather than retracing the steps' for better views. Summit parking is free but tiny and fills fast.",
     "sources": [
       "https://www.tripadvisor.com/Attraction_Review-g304076-d552685-Reviews-Njegos_Mausoleum-Cetinje.html",
-      "https://monteguide.com/lovcen-njegos-mausoleum/"
+      "https://monteguide.com/lovcen-njegos-mausoleum/",
+      "https://montenegrodigitalnomad.com/montenegro-blog/njegos-mausoleum-montenegro/"
     ],
-    "cost": "~€3pp NP entry + ~€3pp mausoleum",
+    "cost": "€11 pp total (€3 NP entry + €8 mausoleum, 2025/26 reports) — €44 for 4, still worth it",
     "timeNeeded": "~1h (climb ~15 min)",
     "bestTime": "clear morning before haze/heat for the panorama",
     "tags": [
@@ -386,14 +387,14 @@
     "lat": 42.42479,
     "lng": 18.77012,
     "description": "The ~1350-step climb up Kotor's city walls to the Castle of San Giovanni (~260m up) for the iconic Bay of Kotor panorama. Official entrance is inside the old town near the North Gate; tickets are checked at a turnstile.",
-    "communityNotes": "Price has crept up: multiple 2025 reviewers report €15/person in high season (was €8 a couple of years ago). 'While it is pricey to enter (15 euro per person) the climb was worth it.' Tickets are checked on the way DOWN at a turnstile, so you can't go up the free Ladder trail and exit through the official gate. June 2025 visitor: 'They check tickets on the way down though so you have to return back through the Ladder of Kotor trek.' VERDICT: either climb before ~8am when the booth is unmanned (= free, also free off-season), or just pay the €15.",
+    "communityNotes": "Price has crept up: multiple 2025 reviewers report €15/person in high season (was €8 a couple of years ago). 'While it is pricey to enter (15 euro per person) the climb was worth it.' Tickets are checked on the way DOWN at a turnstile, so you can't go up the free Ladder trail and exit through the official gate. June 2025 visitor: 'They check tickets on the way down though so you have to return back through the Ladder of Kotor trek.' VERDICT (red-team corrected): €15 high season confirmed, but the 'free before 8am' loophole is unreliable for 2026 — official admission starts ~07:00 and booth staffing varies; gates may be open pre-07:00 but treat free entry as a bonus, not a plan. Budget €60 for 4 or start ~06:00.",
     "sources": [
       "https://www.tripadvisor.com/Attraction_Review-g19196637-d14843631-Reviews-Kotor_Fortress-Spiljari_Kotor_Municipality.html",
       "https://www.moonhoneytravel.com/kotor-fortress/"
     ],
-    "cost": "€15/person high season (was €8); free before ~8am when booth unstaffed, and off-season",
+    "cost": "€15/person high season confirmed (€60 for 4); pre-07:00 free entry is a bonus, not a plan",
     "timeNeeded": "1.5-2.5h round trip",
-    "bestTime": "before 8am (free + cool) or late afternoon; midday is brutally hot and crowded",
+    "bestTime": "start ~06:00 (cool, maybe free) or late afternoon; midday is brutally hot and crowded",
     "tags": [
       "hiking",
       "viewpoint",
@@ -441,8 +442,8 @@
     "sources": [
       "https://www.tripadvisor.com/Attraction_Review-g304087-d548922-Reviews-Our_Lady_of_the_Rocks-Perast_Kotor_Municipality.html"
     ],
-    "cost": "parking ~€8/day paid lot, or free roadside if you find a spot",
-    "timeNeeded": "2-3h incl. boat",
+    "cost": "Our Lady of the Rocks boat €5-10 pp return + €3 church/museum; parking ~€8/day paid lot, or free roadside if you find a spot",
+    "timeNeeded": "2-3h incl. boat (island open to ~18:00 in June)",
     "bestTime": "early morning or after 16:00 to dodge day-trippers",
     "tags": [
       "scenic-town",
@@ -485,7 +486,7 @@
     "lat": 42.27845,
     "lng": 18.8366,
     "description": "The walkable bar cluster inside/around Budva's walled old town — the consistently-good nightlife on the coast, and the warm-up before (or instead of) the big Top Hill club above town. Open-air lounges against the old walls.",
-    "communityNotes": "Old Town is where the reliably good bars are. Casper is the perennial favorite: 'one of Budva's most popular outdoor bars... always busy.' El Mundo is an open-air lounge built nightly against the city walls with lights on the stone — 'one of the best Budva bars to hit as a final stop before the nightclubs.' Mañana is a lively Mexican-themed cocktail spot. NOTE on Top Hill (the marquee hilltop club): it historically opens for the season ~July, so in late June 2026 it may not be in full swing — verify before counting on it (see me-notes). Broader Reddit sentiment on Budva itself is split — many call it 'overrated/tacky', but it's fun for nightlife 'if you know what to expect.'",
+    "communityNotes": "Old Town is where the reliably good bars are. Casper is the perennial favorite (daily 10:00-02:00, live jazz): 'one of Budva's most popular outdoor bars... always busy' — but its DJ program starts in July, so late June is the mellower live-music version. El Mundo is an open-air lounge built nightly against the city walls with lights on the stone — 'one of the best Budva bars to hit as a final stop before the nightclubs.' Mañana is a lively Mexican-themed cocktail spot. NOTE on Top Hill (the marquee hilltop club): it historically opens for the season ~July, so in late June 2026 it may not be in full swing — verify before counting on it (see me-notes). Set expectations: great bar night, not peak-clubbing. Broader Reddit sentiment on Budva itself is split — many call it 'overrated/tacky', but it's fun for nightlife 'if you know what to expect.'",
     "sources": [
       "https://twopacksandapup.com/budva-nightlife-breakdown-all-the-top-spots-to-party/",
       "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k7138933-Budva_Bars_Nightlife-Montenegro.html"
@@ -558,12 +559,13 @@
     "lat": 42.26992,
     "lng": 18.78486,
     "description": "A party beach club on a rocky peninsula ~9-10km west of Budva: several saltwater pools cut into the cliffs, DJ/bar, hourly foam parties, and cliff/ladder jumps straight into the sea. A day-drinking, jump-in-the-water vibe rather than a sand beach — the best coast fit for this group.",
-    "communityNotes": "Known for four outdoor saltwater pools (incl. an adult 'party pool'), 'rock-jump style entries into the water', metal ladders down the cliffs, and 'every hour, foam is released into one of the large pools.' Loud music near the DJ booth; rents catamarans/jet skis, parasailing, diving. Pebbly, so sea shoes help. Sunbed ~€15; reachable by car or a ~€8 boat from Budva.",
+    "communityNotes": "Known for four outdoor saltwater pools (incl. an adult 'party pool'), 'rock-jump style entries into the water', metal ladders down the cliffs, and 'every hour, foam is released into one of the large pools.' Loud music near the DJ booth; rents catamarans/jet skis, parasailing, diving. Pebbly, so sea shoes help. Sunbed ~€15; reachable by car or a ~€8 boat from Budva. WARNING (red team): recent reviews include a documented triple-overcharging incident at the pool bar plus 'pool is dirty' complaints; €1.20 for 0.5L water. Rule: pay per round in cash, check every bill.",
     "sources": [
       "https://adriaticways.com/ploce-beach-budva/",
-      "https://www.lonelyplanet.com/montenegro/coastal-montenegro/budva/attractions/ploce-beach/a/poi-sig/1506335/360154"
+      "https://www.lonelyplanet.com/montenegro/coastal-montenegro/budva/attractions/ploce-beach/a/poi-sig/1506335/360154",
+      "https://www.tripadvisor.com/ShowUserReviews-g19218517-d7074383-r850764278-Plaza_Ploce-Krimovica_Budva_Municipality.html"
     ],
-    "cost": "sunbed ~€15; boat from Budva ~€8",
+    "cost": "sunbed ~€15; boat from Budva ~€8; pay bar per round in cash, check every bill",
     "timeNeeded": "half to full day",
     "tags": [
       "beach",
@@ -574,7 +576,7 @@
       "group-fit"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "me-zanjic-beach",
@@ -607,15 +609,16 @@
     "category": "activity",
     "lat": 42.37401,
     "lng": 18.59599,
-    "description": "Sea cave on the SW coast of Luštica with a domed roof and pale seabed that lights the water electric blue. Reachable only by boat/kayak — and you can swim inside. Usually combined with Mamula island, Žanjic and the WWII submarine tunnel.",
-    "communityNotes": "You can swim inside — 'the boat ride and the swim inside the cave are generally safe and very exciting.' No entrance fee for the cave, you only pay the boat. Pricing: short direct cave trips ~€15-25/person; half-day combo tours (Blue Cave + Mamula + Žanjic + submarine tunnel) ~€30-60/person, ~3-5h. Boats leave from Herceg Novi, Žanjic and Luštica Bay. BEST LIGHT 10:00-13:00 when the blue glows strongest — go mid-morning (also beats the cruise rush). Bring a mask.",
+    "description": "Sea cave on the SW coast of Luštica with a domed roof and pale seabed that lights the water electric blue. Reachable only by boat/kayak. Reality check: swimming INSIDE is often not permitted or practical — at peak midday 20+ boats jockey inside the cave and operators keep swimmers out; the swim happens just outside. Usually combined with Mamula island, Žanjic and the WWII submarine tunnel.",
+    "communityNotes": "No entrance fee for the cave, you only pay the boat. Pricing: short direct cave trips ~€15-25/person; half-day combo tours (Blue Cave + Mamula + Žanjic + submarine tunnel) ~€30-60/person, ~3-5h. Boats leave from Herceg Novi, Žanjic and Luštica Bay. TIMING (red-team corrected): the best-light window (10:00-13:00) collides with the boat rush — book the earliest ~09:00 departure from Herceg Novi/Žanjic and accept slightly less glow, or go private. Bring a mask.",
     "sources": [
       "https://adriaticways.com/blue-cave-kotor/",
-      "https://pajoboats.com/en/ture/zanjice-plava-spilja-ostrvo-mamula/"
+      "https://pajoboats.com/en/ture/zanjice-plava-spilja-ostrvo-mamula/",
+      "https://www.montenegropulse.com/blue-cave-montenegro.html"
     ],
     "cost": "boat only: ~€15-25 direct, ~€30-60 combo tour (no cave fee)",
     "timeNeeded": "3-5h combo tour",
-    "bestTime": "10:00-13:00 for the strongest blue effect",
+    "bestTime": "earliest ~09:00 departure — midday 'best light' = 20+ boats inside the cave",
     "tags": [
       "activity",
       "boat",

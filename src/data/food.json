@@ -16,7 +16,7 @@
     "bestTime": "Lunch or early dinner; it's residential so quieter than old-town spots",
     "tags": ["cevapi", "grill", "cheap-eats", "local-favourite", "zadar"],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "hr-donat-gelato-zadar",
@@ -153,12 +153,12 @@
       "https://www.tripadvisor.com/Restaurant_Review-g480253-d1100633-Reviews-Konoba_Feral-Brela_Split_Dalmatia_County_Dalmatia.html",
       "https://makarskagastro.com/index.php"
     ],
-    "cost": "€30-60/person at table; peka pre-ordered (book ~24h ahead)",
+    "cost": "€30-60/person at table; peka pre-ordered",
     "timeNeeded": "2h (sit-down)",
-    "bestTime": "Book 24h ahead for peka; sunset for the beachfront table",
+    "bestTime": "June reality: reserve ~3 days ahead (phone only), walk-ins wait ~30 min; peka still pre-order; sunset for the beachfront table",
     "tags": ["konoba", "peka", "pre-order", "seafood", "brela", "makarska-riviera"],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "hr-barba-dubrovnik",
@@ -178,7 +178,7 @@
     "bestTime": "Off-peak lunch; few seats",
     "tags": ["street-food", "seafood", "cheap-eats", "octopus", "dubrovnik"],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "hr-tabasco-pizza-dubrovnik",
@@ -636,9 +636,9 @@
       "https://www.tripadvisor.com/Attraction_Review-g1232143-d6819135-Reviews-Wine_tasting_Winery_Masanovic-Virpazar_Bar_Municipality.html",
       "https://wineofmontenegro.com/wineries/winery-masanovic/"
     ],
-    "cost": "Tasting €10/person (4-5 wines + rakija); food platters extra, affordable",
+    "cost": "Tasting €10/person (4-5 wines + rakija); €20 pp with the food platter",
     "timeNeeded": "1.5-2h",
-    "bestTime": "Book ≥1 day ahead; bring cash. Pairs with a Virpazar fish lunch + kayak",
+    "bestTime": "Book ≥1 day ahead by phone/email (vinarijamasanovic@yahoo.com, +382 68 509 541); bring cash. Pairs with a Virpazar fish lunch + kayak",
     "facilities": "Tasting room, local food platters; cash only; book ahead",
     "tags": ["winery", "vranac", "crmnica", "virpazar", "wine-tasting", "cash-only", "book-ahead"],
     "rating": 5,

@@ -305,12 +305,13 @@
     "lat": 42.7829,
     "lng": 17.3511,
     "description": "Two connected saltwater lakes (Veliko & Malo Jezero) ringed by pine, with a Benedictine monastery on St Mary islet (free electric boat from Pristanište), the Montokuc viewpoint and a flat cycling/walking loop. Swim, kayak, bike.",
-    "communityNotes": "Car ferry lands at Sobra ~30min from the NP, so an overnight beats a rushed day trip: “doing both ends of the island in one day is very tight... have a night on Mljet (I'd choose Polače).” Entry is steep — €25/adult in June (~€100 for 4); buy after 16:00 for −25%. Boat to St Mary is included.",
+    "communityNotes": "Car ferry lands at Sobra ~30min from the NP, so an overnight beats a rushed day trip: “doing both ends of the island in one day is very tight... have a night on Mljet (I'd choose Polače).” Entry is steep — €25/adult in June (~€100 for 4), confirmed by the official 2026 price list (PDF adopted Oct 30 2025). Precisely: the −25% after 16:00 applies to adult/child/student tickets bought AT the park; the St Mary boat, parking and electric train are included in the ticket.",
     "sources": [
       "https://np-mljet.hr/price-list/?lang=en",
+      "https://np-mljet.hr/wp-content/uploads/2025/11/ENG-Cjenik-ulaznica-za-posjetitelje-za-2026.g.pdf",
       "https://www.tripadvisor.com/ShowTopic-g1501915-i16255-k13119349-A_day_or_overnight_Car_or_no_car-Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html"
     ],
-    "cost": "€25/adult June (after 16:00 −25%); Prapratno↔Sobra ferry car+4 ~€50",
+    "cost": "€25/adult June (−25% after 16:00, bought at the park; boat/parking/train included); Prapratno↔Sobra ferry car+4 ~€50",
     "timeNeeded": "full day or overnight",
     "bestTime": "overnight recommended when you bring the car",
     "tags": [
@@ -329,7 +330,7 @@
     "category": "activity",
     "lat": 42.7294,
     "lng": 17.5439,
-    "description": "Collapsed sea cave with an emerald pool open to the Adriatic near Babino Polje (eastern Mljet, ~10min from Sobra ferry) — free, with cliff-jump ledges and a swim-through. Steep 20–30min marked trail down from the Tommy supermarket.",
+    "description": "Collapsed sea cave with an emerald pool open to the Adriatic near Babino Polje (eastern Mljet, ~10min from Sobra ferry) — free, with cliff-jump ledges and a swim-through. The approach is tougher than blogs suggest: sharp, jagged karst with steep, wobbly final sections — up to ~1h down with breaks, not a uniform 20–30 min — and the cave interior is swim-in only. Water shoes mandatory.",
     "communityNotes": "“Multiple cliff jumping points... from 2–3m to 5m+ and 10m+.” “Find the spot with a rope anchored onto the rocks” for the exit. Go in the morning — “around 12:00 there's more people.” Perfect to do the afternoon you land, before driving to the NP side. (Coord derived from DMS, medium confidence.)",
     "sources": [
       "https://www.tripadvisor.com/Attraction_Review-g1501915-d10680152-Reviews-Odysseus_Cave-Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html",
@@ -432,7 +433,7 @@
       "hike"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "hr-mali-ston-oysters",
@@ -527,13 +528,15 @@
     "category": "nightlife",
     "lat": 42.6403,
     "lng": 18.1108,
-    "description": "Hole-in-the-wall cliff bar outside Dubrovnik's south wall, facing Lokrum — the city's sunset-drinks institution, with cliff-jumping ledges into the Adriatic below. Cash only, no ice. Buža II is the better one for jumping/views.",
-    "communityNotes": "“Walk through a hole in the city walls to find it... on the edge of a cliff staring directly at the Adriatic... one of the best views of Lokrum.” Cliff jumps realistically ~3–10m (higher figures unverified — check water/rocks first). Get there 2–3h before sunset in peak season for a spot.",
+    "description": "Hole-in-the-wall cliff bar outside Dubrovnik's south wall, facing Lokrum — the city's sunset-drinks institution, with cliff-jumping ledges into the Adriatic below. STATUS UNCERTAIN for June 2026: the bar is in concession/legal limbo (Tourist Board: 'unable to provide a specific opening date'), and a May 2026 TripAdvisor review reports tables and chairs removed. The terrace and jump ledges stay physically accessible and free — fine as a sunset walk-by. RE-CHECK ON ARRIVAL; re-promote instantly if it's confirmed pouring drinks.",
+    "communityNotes": "“Walk through a hole in the city walls to find it... on the edge of a cliff staring directly at the Adriatic... one of the best views of Lokrum.” Cliff jumps realistically ~3–10m (higher figures unverified — check water/rocks first). Get there 2–3h before sunset in peak season for a spot — IF it's operating; Dubrovnik's concession litigation wave makes a normal season anything but guaranteed.",
     "sources": [
       "https://hellojetlag.com/buza-bar-dubrovnik/",
-      "https://karlatypes.com/cliff-jumping-in-dubrovnik-most-popular-spots/"
+      "https://karlatypes.com/cliff-jumping-in-dubrovnik-most-popular-spots/",
+      "https://www.tripadvisor.com/Restaurant_Review-g295371-d18894103-Reviews-Buza_Bar-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.novilist.hr/novosti/hrvatska/jedna-od-najposjecenijih-plaza-u-dubrovniku-trecu-sezonu-bez-koncesionara/"
     ],
-    "bestTime": "before sunset; cash only",
+    "bestTime": "before sunset; cash only; check operating status on arrival",
     "tags": [
       "dubrovnik",
       "nightlife",
@@ -541,7 +544,7 @@
       "sunset"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "hr-sveti-jakov-beach",

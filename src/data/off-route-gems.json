@@ -276,12 +276,13 @@
     "lat": 43.2519,
     "lng": 18.7250,
     "description": "Emerald heart-shaped glacial lake at 1,517m under Maglić — technically in Montenegro but hiked from the Sutjeska side (Prijevor saddle), ~5km / ~2h each way on a well-worn path; climb a bit for the heart shot. DETOUR MATH: Tjentište -> Prijevor is ~18km of rough gravel, ~1:00-1:15 each way in a normal car driven slowly (high clearance helps; some hire a 4x4 transfer at Tjentište), then the hike. Adds roughly a half day to the day-8 Sutjeska transit. VERDICT: worth rerouting for — start Mostar/Konjic early and it converts a transfer day into the trip's signature mountain day.",
-    "communityNotes": "'Considered by many the most beautiful mountain lake in Montenegro'; AllTrails/forums confirm 'the walk is well signed and well worn — basically every other group goes without a guide'. Road reality from trip reports: 'asphalt gives way to gravel then dirt... some stretches as bad as a road can get while still drivable by a regular car... about an hour of stony track', though recent accounts call it 'surprisingly well passable'. Prijevor itself has a Perućica-rainforest viewpoint, parking and a drinking-water well. A ranger collects a small fee at the lake (€1-3 reported); wild camping at the shore is popular.",
+    "communityNotes": "'Considered by many the most beautiful mountain lake in Montenegro'; AllTrails/forums confirm 'the walk is well signed and well worn — basically every other group goes without a guide'. Road reality (red-team hardened): TripAdvisor consensus is 'the road is in bad shape… high clearance recommended; you could barely manage with a normal car' — and 18km of gravel may breach the rental's prohibited-surfaces clause (check the contract, or take the 4x4 transfer from Tjentište). Prijevor itself has a Perućica-rainforest viewpoint, parking and a drinking-water well. A ranger collects a small Piva NP fee at the lake (€1-3 reported); carry passports (border zone); wild camping at the shore is popular.",
     "sources": [
       "https://www.alltrails.com/trail/bosnia-herzegovina/foca/via-dinarica-suha-to-trnovacko-lake",
       "https://lukaesenko.com/hiking-in-sutjeska-national-park-trnovacko-lake/",
       "https://www.thebestviewpoints.com/2025/02/05/peak-41-bosnia-and-herzegovina-maglic/",
-      "https://www.tripadvisor.com/ShowTopic-g3336967-i31053-k9700660-o10-Independant_Hiking_in_Sutjeska-Sutjeska_National_Park_Republika_Srpska.html"
+      "https://www.tripadvisor.com/ShowTopic-g3336967-i31053-k9700660-o10-Independant_Hiking_in_Sutjeska-Sutjeska_National_Park_Republika_Srpska.html",
+      "https://www.tripadvisor.in/ShowTopic-g294449-i6233-k14420003-Prijevor_parking_and_road-Bosnia_and_Herzegovina.html"
     ],
     "cost": "small lake fee (€1-3 reported) + NP Sutjeska entry",
     "timeNeeded": "half day (1h rough drive + ~4h hike round trip)",
@@ -309,7 +310,7 @@
     "bestTime": "before 10am or after 4pm to dodge tour buses",
     "tags": ["off-route", "national-park", "lake-view", "forest", "worth-rerouting", "eastern-swing"],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "me-mrtvica-canyon",
