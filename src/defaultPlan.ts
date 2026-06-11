@@ -64,6 +64,8 @@ export const DEFAULT_PLAN: Overrides = {
   'ba-zuta-tabija':          { day: 7, dayOrder: 6 },
   'ba-sarajevo-petica-ferhatovic': { day: 7, dayOrder: 7 },
   'ba-air-1542024184506963047': { day: 7, dayOrder: 8 },
+  'ba-lukomir':              { day: 7, dayOrder: 9 },
+  'ba-gem-konjic-lakeview-studio': { day: 7, dayOrder: 10 },
 
   // ── Day 8: Jun 23 (Tue) — Sarajevo → Tara rafting → Žabljak ─────────────
   'ba-tjentiste-monument':   { day: 8, dayOrder: 1 },
