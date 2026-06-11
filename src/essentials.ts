@@ -235,6 +235,26 @@ export const QUICK_TIPS: TipSection[] = [
       'Bar/club traps in Budva, Split, Mostar: get pricing in writing before entering, card-only, watch your drink, leave together.',
     ],
   },
+  {
+    title: 'Phone & SIM (activate before departure)',
+    tips: [
+      'Drei users: activate "Go" Balkan pack (€5/1 GB/15 days) — default rate is €15/MB, catastrophic.',
+      'A1 users: activate "A1 Roaming Datenwoche" (~€4.90/2 GB/7 days) via the A1 app.',
+      'Magenta users: activate "Travel & Surf Balkan" pass — check price at magenta.at.',
+      'Best value as hotspot SIM: BiH → BH Telecom Ultra Tourist 1 (€10/15 GB/10 days); ME → m:tel Turist 15 (€15/500 GB/15 days). Buy at any Telecom or m:tel shop.',
+      'Download offline maps BEFORE leaving (Google Maps + OsmAnd for BiH & ME). No roaming on Durmitor trails or Piva canyon.',
+    ],
+  },
+  {
+    title: 'Cash & ATMs',
+    tips: [
+      'Bosnia uses KM (BAM) — €1 = 1.955 KM (fixed peg). Montenegro uses EUR. Croatia uses EUR.',
+      'BiH best ATMs: Raiffeisen Bank and MF Bank — no fee. Avoid UniCredit (high fee). Withdraw in EUR at some Sarajevo ATMs if you prefer.',
+      'ME best ATMs: Ziraat Bank — no fee. Always choose "local currency" — never "home currency" (DCC rip-off).',
+      'Studenac Trebinje is CASH ONLY. Many rural campsites, konobas, and small operators are cash-only too. Keep €100–150 in small bills at all times.',
+      'Tara rafting operators may require advance bank transfer — confirm when booking.',
+    ],
+  },
 ];
 
 /**
