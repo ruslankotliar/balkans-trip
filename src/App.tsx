@@ -612,6 +612,15 @@ export default function App() {
   const todayStops = useMemo(() => dayStops[tripDay] ?? [], [dayStops, tripDay]);
   const todayIds = useMemo(() => new Set(todayStops.map((p) => p.id)), [todayStops]);
 
+  const totalPlanned = useMemo(
+    () => Object.values(dayStops).reduce((sum, ps) => sum + ps.length, 0),
+    [dayStops],
+  );
+  const totalDone = useMemo(
+    () => Object.values(dayStops).flat().filter((p) => doneIds[p.id]).length,
+    [dayStops, doneIds],
+  );
+
   /** Anchor point for proximity finders: GPS fix, else today's last stop. */
   const tripAnchor = useMemo(() => {
     if (mode !== 'trip') return null;
@@ -1444,6 +1453,8 @@ export default function App() {
             anchorLabel={tripAnchor?.label ?? null}
             onAddPlace={openAddPlace}
             onEssentials={() => setEssentialsOpen(true)}
+            totalPlanned={totalPlanned}
+            totalDone={totalDone}
           />
         ) : (
         <>
@@ -1970,6 +1981,8 @@ export default function App() {
         onAssignDay={assignDay}
         onNote={setNote}
         onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}
+        isDone={selected ? !!doneIds[selected.id] : false}
+        onToggleDone={(id) => toggleDone(id)}
         nearbyActive={nearbyActive}
         nearbyRadius={nearbyRadius}
         nearbyCount={nearbyMatchIds.size}

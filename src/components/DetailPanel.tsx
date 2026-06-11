@@ -16,6 +16,10 @@ interface Props {
   onNote: (id: string, note: string) => void;
   /** Present only for user-added places: opens the edit form. */
   onEdit?: () => void;
+  /** Trip-mode: whether this place is marked visited. */
+  isDone?: boolean;
+  /** Trip-mode: toggle the visited state. */
+  onToggleDone?: (id: string) => void;
   // Nearby finder
   nearbyActive: boolean;
   nearbyRadius: number;
@@ -40,6 +44,8 @@ export default function DetailPanel({
   onAssignDay,
   onNote,
   onEdit,
+  isDone = false,
+  onToggleDone,
   nearbyActive,
   nearbyRadius,
   nearbyCount,
@@ -90,6 +96,14 @@ export default function DetailPanel({
           >
             {booking.kind === 'campsite' ? '⛺' : '🔖'} {booking.label} ↗
           </a>
+        )}
+        {tripMode && onToggleDone && (
+          <button
+            className={`detail-visited-btn ${isDone ? 'on' : ''}`}
+            onClick={() => onToggleDone(p.id)}
+          >
+            {isDone ? '✓ Visited' : 'Mark visited'}
+          </button>
         )}
       </div>
 

@@ -38,6 +38,10 @@ interface Props {
   onAddPlace: () => void;
   /** Open the offline Essentials panel (feature B5). */
   onEssentials: () => void;
+  /** Total stops assigned across all trip days (for the progress strip). */
+  totalPlanned: number;
+  /** How many of those stops are marked done. */
+  totalDone: number;
 }
 
 const gmaps = (p: PlaceWithOverride) => navUrl(p.lat, p.lng);
@@ -118,6 +122,8 @@ export default function Today({
   anchorLabel,
   onAddPlace,
   onEssentials,
+  totalPlanned,
+  totalDone,
 }: Props) {
   const isToday = day === realDay;
   const nextIdx = isToday ? stops.findIndex((p) => !done[p.id]) : -1;
@@ -153,6 +159,12 @@ export default function Today({
           ▶
         </button>
       </div>
+
+      {totalPlanned > 0 && (
+        <div className="today-progress">
+          Day {day}/{TRIP_DAYS} · {totalDone}/{totalPlanned} stops done
+        </div>
+      )}
 
       {DAY_HINTS[day] && (
         <div className="today-hint">
