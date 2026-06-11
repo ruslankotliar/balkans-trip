@@ -1,7 +1,7 @@
 import { CATEGORY_COLORS } from '../constants';
 import { bookingFor, navUrl } from '../links';
 import type { CachedRoute, PlaceWithOverride } from '../store';
-import { DAY_HINTS, DAY_OPS, TRIP_DAYS, dayDateLabel, formatDuration } from '../trip';
+import { DAY_HINTS, DAY_OPS, TRIP_DAYS, daysToTripStart, dayDateLabel, formatDuration } from '../trip';
 
 export interface ProximityMatch {
   place: PlaceWithOverride;
@@ -149,6 +149,8 @@ export default function Today({
   onDayNote,
 }: Props) {
   const isToday = day === realDay;
+  const preTrip = realDay === -1;
+  const daysLeft = preTrip ? daysToTripStart() : 0;
   const nextIdx = isToday ? stops.findIndex((p) => !done[p.id]) : -1;
   const next = nextIdx >= 0 ? stops[nextIdx] : null;
   const nextLegSec =
@@ -172,6 +174,8 @@ export default function Today({
             <span className="today-badge">today</span>
           ) : realDay >= 1 ? (
             <span className="today-jump">tap for today</span>
+          ) : daysLeft > 0 ? (
+            <span className="today-countdown">{daysLeft}d to go</span>
           ) : null}
         </div>
         <button

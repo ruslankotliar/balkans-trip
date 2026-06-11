@@ -1257,6 +1257,16 @@ body.trip-mode .detail-nav-btn {
   font-size: 10px;
   color: #999;
 }
+.today-countdown {
+  display: inline-block;
+  margin-left: 6px;
+  background: #e67e22;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 9px;
+}
 .today-progress {
   text-align: center;
   font-size: 12px;

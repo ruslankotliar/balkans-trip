@@ -57,6 +57,11 @@ export function isDuringTrip(now = new Date()): boolean {
   return d >= 1 && d <= TRIP_DAYS;
 }
 
+/** Whole calendar days until trip start (0 = departure day, negative = after). */
+export function daysToTripStart(now = new Date()): number {
+  return -rawTripDay(now) + 1;
+}
+
 /** Great-circle distance in km between two lat/lng points. */
 export function haversineKm(
   aLat: number,
