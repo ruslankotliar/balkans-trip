@@ -182,7 +182,7 @@ export const QUICK_TIPS: TipSection[] = [
       'BOOK Biokovo Skywalk Jun 18 morning slot — shop.pp-biokovo.hr. 20-car/hour cap, sells out. 4 × €15 = €60.',
       'BOOK Camp Lisičina Omiš (Jun 17) — kamp-lisicina@inet.hr. Croatian peak season, fills fast.',
       'BOOK Camping Kate Mlini (Jun 18–19) — info@campingkate.com. ~€51/night for 4 + tent, 10 min from DBV airport.',
-      'BOOK Autokamp Lovor Mljet (Jun 20) — +385 98 702 200. Only campsite on the island on the right side; fills in June.',
+      'BOOK Autokamp Marina (Ropa, Mljet, Jun 20) — +385 20 745 071 or mob +385 98 915 56 76. Only ~10 pitches, fills on June Saturdays. NP side of the island.',
       'Book Cetina Extreme Canyoning Jun 17 (1–2 days ahead) — canyoning-cetina.com (~€70pp) or maldukadventures.com.',
       'CHECK Kotor cruise schedule for Jun 27 at cruisetimetables.com — verify the "1 ship / 170 pax" figure is still accurate; if more ships added, plan fortress climb before 08:00.',
       'MLJET ferry (Jun 20 Saturday): queue Prapratno 90+ min before your chosen sailing. Car spaces first-come; missing the ferry = 3h wait or foot-passenger only.',
