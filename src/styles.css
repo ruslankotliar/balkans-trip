@@ -1243,6 +1243,11 @@ body.trip-mode .detail-nav-btn {
   font-size: 16px;
   flex-shrink: 0;
 }
+.hint-tel {
+  color: #2471c8;
+  text-decoration: underline;
+  white-space: nowrap;
+}
 .today-next {
   background: #eef6ff;
   border: 1px solid #cfe3fa;

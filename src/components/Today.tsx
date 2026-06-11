@@ -49,6 +49,24 @@ interface Props {
 
 const gmaps = (p: PlaceWithOverride) => navUrl(p.lat, p.lng);
 
+/** Render hint text with phone numbers (+XX ...) as tappable tel: links. */
+function HintText({ text }: { text: string }) {
+  const parts = text.split(/(\+\d[\d\s]{6,14}\d)/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        /^\+\d[\d\s]{6,14}\d$/.test(part) ? (
+          <a key={i} className="hint-tel" href={`tel:${part.replace(/\s/g, '')}`}>
+            {part}
+          </a>
+        ) : (
+          part
+        ),
+      )}
+    </>
+  );
+}
+
 function MatchCards({
   matches,
   empty,
@@ -174,7 +192,7 @@ export default function Today({
       {DAY_HINTS[day] && (
         <div className="today-hint">
           <span className="today-hint-icon">{DAY_HINTS[day].icon}</span>
-          {DAY_HINTS[day].text}
+          <HintText text={DAY_HINTS[day].text} />
         </div>
       )}
 
