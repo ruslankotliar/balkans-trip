@@ -1756,17 +1756,41 @@ export default function App() {
         )}
 
         {!corridor && view === 'itinerary' && (
-          <Itinerary
-            places={places}
-            routes={routes}
-            routesLoading={routesLoading}
-            ferrySecByDay={dayFerrySec}
-            selectedId={selectedId}
-            onSelect={selectPlace}
-            onMove={moveInDay}
-            onAssignDay={assignDay}
-            onFindSleep={findSleepAlongDay}
-          />
+          <>
+            <Itinerary
+              places={places}
+              routes={routes}
+              routesLoading={routesLoading}
+              ferrySecByDay={dayFerrySec}
+              selectedId={selectedId}
+              onSelect={selectPlace}
+              onMove={moveInDay}
+              onAssignDay={assignDay}
+              onFindSleep={findSleepAlongDay}
+            />
+            <div className="itin-export-row">
+              <button
+                className="itin-export-btn"
+                title="Download KML — open in Organic Maps or Google My Maps for offline navigation"
+                onClick={() => {
+                  const assigned = places.filter((p) => p.day);
+                  downloadText(buildKml(assigned, routes, 'day'), 'balkans-trip.kml', 'application/vnd.google-earth.kml+xml');
+                }}
+              >
+                ⬇ KML (Organic Maps)
+              </button>
+              <button
+                className="itin-export-btn"
+                title="Download GPX — for GPS devices and hiking apps"
+                onClick={() => {
+                  const assigned = places.filter((p) => p.day);
+                  downloadText(buildGpx(assigned, routes), 'balkans-trip.gpx', 'application/gpx+xml');
+                }}
+              >
+                ⬇ GPX (hiking apps)
+              </button>
+            </div>
+          </>
         )}
 
         {!corridor && view === 'route' && (

@@ -550,6 +550,25 @@ body.trip-mode .detail-nav-btn {
   border-radius: 6px;
   margin-bottom: 8px;
 }
+.itin-export-row {
+  display: flex;
+  gap: 8px;
+  padding: 10px 4px 4px;
+}
+.itin-export-btn {
+  flex: 1;
+  font-size: 12px;
+  padding: 7px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f8f9fa;
+  cursor: pointer;
+  color: #333;
+}
+.itin-export-btn:hover {
+  background: #eef2ff;
+  border-color: #7c9af5;
+}
 .loading-dot {
   color: #999;
   font-style: italic;
