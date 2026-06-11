@@ -2,6 +2,7 @@ import { CATEGORY_COLORS } from '../constants';
 import type { PlaceWithOverride } from '../store';
 import type { DayRoutes } from '../useDayRoutes';
 import {
+  DAY_HINTS,
   DAYS,
   dayColor,
   dayDateLabel,
@@ -80,6 +81,11 @@ export default function Itinerary({
                 </button>
               )}
             </div>
+            {DAY_HINTS[day] && (
+              <div className="itin-day-hint">
+                {DAY_HINTS[day].icon} {DAY_HINTS[day].text}
+              </div>
+            )}
             {stops.length === 0 ? (
               <p className="itin-empty">no stops</p>
             ) : (
