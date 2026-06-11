@@ -37,13 +37,15 @@ Source: OSRM public routing API (car profile). **Caveats:** no border-queue time
 | Kravica → Mostar | 0:52 | 45 |
 | Dubrovnik Airport → Trebinje | 0:58 | 39 |
 | Trebinje → Mostar | 2:17 | 113 |
+| Mostar → Jablanica | 0:45 | 40 |
+| Jablanica → Konjic | 0:35 | 25 |
 | Mostar → Konjic | 1:21 | 69 |
 | Konjic → Sarajevo | 0:51 | 57 |
 | Sarajevo → Tjentište (Sutjeska) | 2:03 | 113 |
 | Konjic → Tjentište direct (mountain road) | 2:41 | 160 |
 | Tjentište → Žabljak ⚠ | 3:11 | 153 |
 
-⚠ OSRM routed Tjentište→Žabljak in 153 km — it apparently did NOT use the short Šćepan Polje → Piva canyon road (~110 km), probably because the border road is rough/poorly mapped. The group explicitly wants the Piva canyon route — Session D must verify the current state of the Šćepan Polje crossing and realistic time (~2.5–3h either way).
+⚠ OSRM routed Tjentište→Žabljak in 153 km — OSRM missed the intended route. The group's planned road is: Šćepan Polje (BiH/ME border, Tara rafting) → Piva canyon tunnels (56 unlit, lights on) → Plužine → Mratinje dam → Piva Lake swim → Žabljak. This is ~110 km. Estimated driving time Šćepan Polje → Žabljak = **~2.5–3h** (mountain road, Piva canyon is slow). From Sarajevo: Sarajevo → Tjentište 2:03, Tjentište → Šćepan Polje ~1h = **~3h Sarajevo → Šćepan Polje** (plus ~1h before rafting start = leave Sarajevo 07:00, arrive 10:00 for rafting). This route is confirmed.
 
 ### Montenegro
 
