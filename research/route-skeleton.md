@@ -7,7 +7,7 @@ Loop logic: Zadar → Dubrovnik fast-ish (airport pickup Jun 18 evening), then a
 | Day | Date | Plan | Night |
 |-----|------|------|-------|
 | 1 | Tue Jun 16 | Car pickup Zadar Airport 10:00. Zadar old town + Sea Organ sunset. Paklenica gorge walk if energy. **New moon window: Jun 16-18 is the trip's best dark sky — Cape Planka or Pelješac ridge if the route allows.** | Camp NP Paklenica |
-| 2 | Wed Jun 17 | Pick ONE: Krka NP half-day (€40pp, online booking only) **OR** Omiš zipline + canyoning (~€80pp). Not both — they're 90 min apart and each is a half-day. Split (Diocletian's Palace) quick walk if routing through. | Auto Camp Lisičina, Omiš |
+| 2 | Wed Jun 17 | **Omiš: extreme canyoning (~€70pp) OR zipline (~€80pp)** — pick one, book ahead. Krka rejected (€40pp boardwalk, no swimming since 2021, bad value). Optional: 30min Split walk if leaving Starigrad by 07:30. Cetina swimming hole (free) for the afternoon after activity. | Auto Camp Lisičina, Omiš |
 | 3 | Thu Jun 18 | Makarska: Punta Rata swim + Biokovo/Sveti Jure (Skywalk, car slot must be pre-booked). Drive Pelješac Bridge route (NOT Neum). Ston walls + Mali Ston oysters en route. **Leave Makarska by 14:30–15:00 at latest** for ~19:00 airport pickup. | Trebinje, Bosnia (Gaga City Center €35) |
 | 4 | Fri Jun 19 | Dubrovnik walls (07:30 sharp — crowds from 10:00). Lokrum or Elaphiti islands by boat. Evening back to base. | Trebinje or Camping Kate Mlini |
 | 5 | Sat Jun 20 | Mljet: ferry Prapratno→Sobra (queue 60+ min early; June €~100 for car+4rt). NP lakes + Montokuc + Odysseus Cave. Take the 16:00 ferry back, enter NP after 16:00 for -25% entry (saves €25 for group). | Mljet overnight (Autokamp Lovor ~€72) OR return to Pelješac |
