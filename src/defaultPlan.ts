@@ -47,10 +47,12 @@ export const DEFAULT_PLAN: Overrides = {
   'hr-camp-marina-mljet':    { day: 5, dayOrder: 5 },
 
   // ── Day 6: Jun 21 (Sun) — Kravica → Mostar ──────────────────────────────
-  'ba-kravica':              { day: 6, dayOrder: 1 },
-  'ba-mostar':               { day: 6, dayOrder: 2 },
-  'ba-tima-irma':            { day: 6, dayOrder: 3 },
-  'ba-gem-mostar-nanas-house': { day: 6, dayOrder: 4 },
+  'ba-trebizat-canoe':       { day: 6, dayOrder: 1 },
+  'ba-kravica':              { day: 6, dayOrder: 2 },
+  'ba-mostar':               { day: 6, dayOrder: 3 },
+  'ba-tima-irma':            { day: 6, dayOrder: 4 },
+  'ba-gem-mostar-nanas-house': { day: 6, dayOrder: 5 },
+  'ba-villa-cold-river-treehouse-bunica': { day: 6, dayOrder: 6 },
 
   // ── Day 7: Jun 22 (Mon) — Mostar → Sarajevo ─────────────────────────────
   'ba-jablanica-kayak-neretva': { day: 7, dayOrder: 1 },
@@ -70,12 +72,15 @@ export const DEFAULT_PLAN: Overrides = {
   'me-pluzine':              { day: 8, dayOrder: 5 },
   'me-piva-lake-swim':       { day: 8, dayOrder: 6 },
   'me-camp-mlinski-potok':   { day: 8, dayOrder: 7 },
+  'me-camp-grab':            { day: 8, dayOrder: 8 },
 
   // ── Day 9: Jun 24 (Wed) — Durmitor hike ─────────────────────────────────
-  'me-prutas-hike':          { day: 9, dayOrder: 1 },
-  'me-vrazje-jezero':        { day: 9, dayOrder: 2 },
-  'me-zabljak':              { day: 9, dayOrder: 3 },
-  'me-oro-zabljak':          { day: 9, dayOrder: 4 },
+  'me-veliki-medjed':        { day: 9, dayOrder: 1 },
+  'me-prutas-hike':          { day: 9, dayOrder: 2 },
+  'me-vrazje-jezero':        { day: 9, dayOrder: 3 },
+  'me-zabljak':              { day: 9, dayOrder: 4 },
+  'me-oro-zabljak':          { day: 9, dayOrder: 5 },
+  'me-gem-zabljak-mountain-spark': { day: 9, dayOrder: 6 },
 
   // ── Day 10: Jun 25 (Thu) — Tara Bridge → Ostrog → Skadar Lake ───────────
   'me-tara-bridge-zipline':  { day: 10, dayOrder: 1 },
@@ -85,6 +90,7 @@ export const DEFAULT_PLAN: Overrides = {
   'me-virpazar-kayak':       { day: 10, dayOrder: 5 },
   'me-vinarija-masanovic':   { day: 10, dayOrder: 6 },
   'me-villa-jablan-winery-rvasi': { day: 10, dayOrder: 7 },
+  'me-camp-radoman':         { day: 10, dayOrder: 8 },
 
   // ── Day 11: Jun 26 (Fri) — Stari Bar → Sveti Stefan → Budva ────────────
   'me-stari-bar':            { day: 11, dayOrder: 1 },
@@ -92,15 +98,17 @@ export const DEFAULT_PLAN: Overrides = {
   'me-budva-oldtown-bars':   { day: 11, dayOrder: 3 },
   'me-sparta-club-budva':    { day: 11, dayOrder: 4 },
   'me-gem-budva-got-it':     { day: 11, dayOrder: 5 },
+  'me-camp-maslina-buljarica': { day: 11, dayOrder: 6 },
 
   // ── Day 12: Jun 27 (Sat) — Kotor → Perast → Trebinje ───────────────────
   'me-kotor':                { day: 12, dayOrder: 1 },
   'me-kotor-fortress-paid':  { day: 12, dayOrder: 2 },
-  'me-tanjga-kotor':         { day: 12, dayOrder: 3 },
-  'me-perast':               { day: 12, dayOrder: 4 },
-  'me-vitaljina-border':     { day: 12, dayOrder: 5 },
-  'ba-trebinje-old-town':    { day: 12, dayOrder: 6 },
-  'ba-air-1165836464333612445': { day: 12, dayOrder: 7 },
+  'me-lovcen-njegos-mausoleum': { day: 12, dayOrder: 3 },
+  'me-tanjga-kotor':         { day: 12, dayOrder: 4 },
+  'me-perast':               { day: 12, dayOrder: 5 },
+  'me-vitaljina-border':     { day: 12, dayOrder: 6 },
+  'ba-trebinje-old-town':    { day: 12, dayOrder: 7 },
+  'ba-air-1165836464333612445': { day: 12, dayOrder: 8 },
 
   // ── Day 13: Jun 28 (Sun) — Dubrovnik → car drop ─────────────────────────
   'hr-pasjaca-beach':        { day: 13, dayOrder: 1 },
