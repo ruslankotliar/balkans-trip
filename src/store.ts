@@ -1,4 +1,5 @@
 import LZString from 'lz-string';
+import { DEFAULT_PLAN } from './defaultPlan';
 import type { Place, Status } from './types';
 
 const modules = import.meta.glob('./data/*.json', { eager: true }) as Record<
@@ -111,9 +112,14 @@ const KEY = 'balkans-trip-overrides';
 
 export function loadOverrides(): Overrides {
   try {
-    return JSON.parse(localStorage.getItem(KEY) ?? '{}');
+    const raw = localStorage.getItem(KEY);
+    // On first visit (empty localStorage) seed from the baked default plan so
+    // all 4 group members see the pre-populated Itinerary without importing a URL.
+    if (raw === null) return { ...DEFAULT_PLAN };
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === 'object' ? parsed : { ...DEFAULT_PLAN };
   } catch {
-    return {};
+    return { ...DEFAULT_PLAN };
   }
 }
 
