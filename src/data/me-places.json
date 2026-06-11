@@ -917,5 +917,27 @@
     ],
     "rating": 4,
     "status": "candidate"
+  },
+  {
+    "id": "me-kotor-bay-kayak",
+    "name": "Bay of Kotor self-guided kayak (Go Go Gaga)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.4246,
+    "lng": 18.7712,
+    "description": "Paddle the Bay of Kotor to Perast and Our Lady of the Rocks under your own power — €25/day double kayak from Go Go Gaga near Kotor. Dawn start = mirror-flat bay, no crowds. Alternative to paying a boatman for the same route.",
+    "communityNotes": "Dawn start (06:00-07:00) on a summer morning gives a completely different experience vs midday tourist boats. The bay is calm and mirror-flat before 08:00. Takes 1.5-2h to reach Perast by kayak. Operator: Go Go Gaga, booked via WhatsApp or their website. Good fitness required.",
+    "cost": "~€25/day double kayak",
+    "timeNeeded": "3-4h (Kotor→Perast RT)",
+    "bestTime": "dawn, before the boats start at 09:00",
+    "tags": [
+      "kayak",
+      "kotor",
+      "bay",
+      "self-guided",
+      "perast"
+    ],
+    "rating": 4,
+    "status": "candidate"
   }
 ]

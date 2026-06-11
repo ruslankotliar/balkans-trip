@@ -795,12 +795,14 @@ export default function App() {
         ? tripMatchIds
         : [...nearbyMatchIds, ...corridorMatchIds, ...corridorStopIds],
     );
+    // Always show the selected place even if rejected or filtered out.
+    if (selectedId) forced.add(selectedId);
     if (forced.size === 0) return base;
     const inBase = new Set(base.map((p) => p.id));
     const extra = places.filter((p) => forced.has(p.id) && !inBase.has(p.id));
     return [...base, ...extra];
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mode, tripBase, visible, tripMatchIds, nearbyMatchIds, corridorMatchIds, corridorStopIds]);
+  }, [mode, tripBase, visible, tripMatchIds, nearbyMatchIds, corridorMatchIds, corridorStopIds, selectedId]);
 
   function findSleepAlongDay(day: number) {
     const route = routes[day];
@@ -1634,13 +1636,13 @@ export default function App() {
                 <summary>Rejected ({rejected.length})</summary>
                 <ul className="place-list rejected-list">
                   {rejected.map((p) => (
-                    <li key={p.id}>
+                    <li key={p.id} className={selectedId === p.id ? 'selected' : ''} onClick={() => selectPlace(p)} style={{ cursor: 'pointer' }}>
                       <span
                         className="dot"
                         style={{ background: CATEGORY_COLORS[p.category] }}
                       />
                       <span className="place-name">{p.name}</span>
-                      <button className="restore" onClick={() => setStatus(p.id, 'candidate')}>
+                      <button className="restore" onClick={(e) => { e.stopPropagation(); setStatus(p.id, 'candidate'); }}>
                         ↩ restore
                       </button>
                     </li>
@@ -1833,10 +1835,12 @@ export default function App() {
 
         {markersToShow.map((p) => {
           const isTrip = mode === 'trip';
+          const isSel = p.id === selectedId;
           const rbSel = !isTrip && view === 'route' && rbSelected.has(p.id);
           let dim = false;
           let matchHi = false;
           let radius = p.status === 'shortlist' ? 10 : 7;
+          if (isSel) radius = 15;
           if (isTrip) {
             matchHi = tripMatchIds.has(p.id);
             if (matchHi) {
@@ -1865,8 +1869,8 @@ export default function App() {
               center={[p.lat, p.lng]}
               radius={radius}
               pathOptions={{
-                color: rbSel || matchHi ? '#111' : '#ffffff',
-                weight: rbSel ? 3.5 : matchHi ? 2.5 : p.status === 'shortlist' ? 3 : 1.5,
+                color: isSel ? '#FF3B30' : rbSel || matchHi ? '#111' : '#ffffff',
+                weight: isSel ? 4 : rbSel ? 3.5 : matchHi ? 2.5 : p.status === 'shortlist' ? 3 : 1.5,
                 fillColor: CATEGORY_COLORS[p.category],
                 fillOpacity: dim
                   ? 0.15

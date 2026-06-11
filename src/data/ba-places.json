@@ -15,7 +15,13 @@
     "cost": "Cheap — cevapi plate ~8-12 KM (€4-6)",
     "timeNeeded": "45-60 min",
     "bestTime": "Lunch; terrace fills at midday in June",
-    "tags": ["cevapi", "burek", "grill", "budget", "local-pick"],
+    "tags": [
+      "cevapi",
+      "burek",
+      "grill",
+      "budget",
+      "local-pick"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -35,7 +41,12 @@
     "cost": "Large mixed plate ~15-20 KM (€8-10)",
     "timeNeeded": "1h+ (waits common)",
     "bestTime": "Before 12:00 or after 14:00 to dodge the queue",
-    "tags": ["cevapi", "famous", "touristy", "family-run"],
+    "tags": [
+      "cevapi",
+      "famous",
+      "touristy",
+      "family-run"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -55,7 +66,12 @@
     "cost": "Mains ~12-25 KM (€6-13)",
     "timeNeeded": "1-1.5h",
     "bestTime": "Dinner / golden hour on the river terrace",
-    "tags": ["bosnian", "river-terrace", "dinner", "sit-down"],
+    "tags": [
+      "bosnian",
+      "river-terrace",
+      "dinner",
+      "sit-down"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -75,7 +91,11 @@
     "cost": "Free (drink if you sit at the cafe)",
     "timeNeeded": "20-40 min (jumps are sporadic)",
     "bestTime": "Late morning to afternoon in summer = most jump activity",
-    "tags": ["bridge-jumpers", "photography", "stari-most"],
+    "tags": [
+      "bridge-jumpers",
+      "photography",
+      "stari-most"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -94,7 +114,12 @@
     "cost": "Beers ~3-7 KM (€1.50-3.50)",
     "timeNeeded": "Evening",
     "bestTime": "After dark; live-music nights",
-    "tags": ["craft-beer", "pub", "live-music", "backpacker"],
+    "tags": [
+      "craft-beer",
+      "pub",
+      "live-music",
+      "backpacker"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -114,7 +139,12 @@
     "cost": "Drinks moderate; low/no cover",
     "timeNeeded": "Late evening",
     "bestTime": "After ~22:00",
-    "tags": ["cave-bar", "club", "unique", "late-night"],
+    "tags": [
+      "cave-bar",
+      "club",
+      "unique",
+      "late-night"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -134,7 +164,12 @@
     "cost": "Trout/mains ~15-25 KM (€8-13)",
     "timeNeeded": "1-1.5h (combine with the Tekija, ~2-3h in Blagaj)",
     "bestTime": "Before 10:30 or after 16:00 to beat the tour buses",
-    "tags": ["blagaj", "buna-spring", "tekija-view", "trout"],
+    "tags": [
+      "blagaj",
+      "buna-spring",
+      "tekija-view",
+      "trout"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -154,7 +189,14 @@
     "cost": "Free",
     "timeNeeded": "1-1.5h incl. a swim",
     "bestTime": "May-June fullest flow; weekday mornings empty",
-    "tags": ["waterfall", "swimming", "trebizat", "hidden-gem", "watermill", "free"],
+    "tags": [
+      "waterfall",
+      "swimming",
+      "trebizat",
+      "hidden-gem",
+      "watermill",
+      "free"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -175,7 +217,13 @@
     "timeNeeded": "Overnight",
     "bestTime": "June; book ahead — it is small",
     "facilities": "Modern hot showers + toilets, electricity, BBQ area, WiFi, reception shop, shaded/riverside",
-    "tags": ["campsite", "kravica", "showers", "family-run", "near-waterfall"],
+    "tags": [
+      "campsite",
+      "kravica",
+      "showers",
+      "family-run",
+      "near-waterfall"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -195,7 +243,14 @@
     "cost": "Apartments for 4 ~€50/night achievable (one of the cheaper capitals); hostels cheaper",
     "timeNeeded": "Half day on foot covers the core; overnight recommended",
     "bestTime": "Early evening for the buzz; mornings calmer in June",
-    "tags": ["old-town", "ottoman", "city", "base", "nightlife", "walkable"],
+    "tags": [
+      "old-town",
+      "ottoman",
+      "city",
+      "base",
+      "nightlife",
+      "walkable"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -215,7 +270,12 @@
     "cost": "20 KM adult flat (~€10) — cash KM only, no cards, no euros (plan a Sarajevo ATM stop first)",
     "timeNeeded": "45-60 min on your own; half-day with a guided war tour",
     "bestTime": "Apr-Oct 08:30-17:30, last entry 17:00; go early to beat tour groups",
-    "tags": ["war-history", "museum", "siege", "near-airport"],
+    "tags": [
+      "war-history",
+      "museum",
+      "siege",
+      "near-airport"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -235,7 +295,13 @@
     "cost": "~5-8 KM (€3-4) a portion",
     "timeNeeded": "30-45 min",
     "bestTime": "Lunch; busy and turns over fast",
-    "tags": ["cevapi", "local-favourite", "cheap", "bascarsija", "cash-only"],
+    "tags": [
+      "cevapi",
+      "local-favourite",
+      "cheap",
+      "bascarsija",
+      "cash-only"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -255,7 +321,14 @@
     "cost": "Monument free; small fee for the Spomen-Dom museum",
     "timeNeeded": "20-45 min — ideal transit stop",
     "bestTime": "Anytime; great light late afternoon",
-    "tags": ["brutalist", "spomenik", "wwii", "quick-stop", "transit-friendly", "on-route"],
+    "tags": [
+      "brutalist",
+      "spomenik",
+      "wwii",
+      "quick-stop",
+      "transit-friendly",
+      "on-route"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -276,7 +349,14 @@
     "timeNeeded": "Overnight base",
     "bestTime": "Book the hotel ahead in June; stock up on food first",
     "facilities": "Hotel: rooms, restaurant, large pool. Camp: riverside pitches, BBQ, toilets/showers (quality variable)",
-    "tags": ["base", "hotel", "campsite", "tjentiste", "budget", "on-route"],
+    "tags": [
+      "base",
+      "hotel",
+      "campsite",
+      "tjentiste",
+      "budget",
+      "on-route"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -296,7 +376,14 @@
     "cost": "Apartments for 4 ~€30-70/night (cheap hotels avg ~€45-50); Numbeo: Dubrovnik rent ~272% higher",
     "timeNeeded": "Half day to see; 1-2 nights as a base",
     "bestTime": "Evening for the square; Saturday AM for the market. June books up early.",
-    "tags": ["base", "cheap", "wine-town", "old-town", "near-dubrovnik", "market"],
+    "tags": [
+      "base",
+      "cheap",
+      "wine-town",
+      "old-town",
+      "near-dubrovnik",
+      "market"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -316,7 +403,14 @@
     "timeNeeded": "1.5-2.5h (longer with lunch/dinner)",
     "bestTime": "Sunset on the rooftop terrace; book ahead in summer",
     "facilities": "Terrace bar + restaurant, guided tours, shop",
-    "tags": ["wine", "zilavka", "vranac", "terrace", "view", "tasting"],
+    "tags": [
+      "wine",
+      "zilavka",
+      "vranac",
+      "terrace",
+      "view",
+      "tasting"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -337,7 +431,14 @@
     "timeNeeded": "45 min-1h",
     "bestTime": "Daytime; arrange any tasting weeks ahead",
     "facilities": "Monastery shop (wine, honey, rakija, olive oil), grounds",
-    "tags": ["monastery", "wine", "monks", "vineyards", "free", "hidden-gem"],
+    "tags": [
+      "monastery",
+      "wine",
+      "monks",
+      "vineyards",
+      "free",
+      "hidden-gem"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -356,7 +457,13 @@
     "cost": "Free (donations)",
     "timeNeeded": "30-45 min",
     "bestTime": "Golden hour for the panorama",
-    "tags": ["viewpoint", "monastery", "panorama", "free", "sunset"],
+    "tags": [
+      "viewpoint",
+      "monastery",
+      "panorama",
+      "free",
+      "sunset"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -377,8 +484,36 @@
     "timeNeeded": "45-60 min tour; ~1h drive each way from Trebinje",
     "bestTime": "Bring a layer (constant ~12C); check last-entry time",
     "facilities": "Guided tours only, parking, nearby restaurant for the wait between slots",
-    "tags": ["cave", "unesco-tentative", "olm", "guided", "karst", "hidden-gem"],
+    "tags": [
+      "cave",
+      "unesco-tentative",
+      "olm",
+      "guided",
+      "karst",
+      "hidden-gem"
+    ],
     "rating": 3,
     "status": "candidate"
+  },
+  {
+    "id": "ba-jablanica-kayak-neretva",
+    "name": "Jablanica Kayak Safari (Neretva canyon)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.6609,
+    "lng": 17.7655,
+    "description": "Self-guided kayak rental on the emerald Neretva canyon below Jablanica dam. 5-star reviews, €25pp, zero operator dependency — rent and paddle. On the confirmed route between Mostar and Konjic. Perfect 2-3h stop.",
+    "communityNotes": "Discovered by overlanders 'accidentally while stopping for fuel' — consistently the surprise hit of the Bosnia leg. Brilliant turquoise water in a dramatic canyon. Rental shop near the dam. Available without pre-booking in June.",
+    "cost": "~€25pp kayak rental",
+    "timeNeeded": "2-3h",
+    "bestTime": "morning, before afternoon wind",
+    "tags": [
+      "kayak",
+      "neretva",
+      "on-route",
+      "self-guided"
+    ],
+    "rating": 5,
+    "status": "shortlist"
   }
 ]
