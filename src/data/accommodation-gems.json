@@ -167,7 +167,7 @@
     "lat": 42.73985,
     "lng": 17.5975,
     "description": "Dedicated Airbnb gem hunt. Mljet island (Jun 20) — a THIN, pricey market (only ~8 listings surfaced island-wide). This Superhost apartment near Sobra, where the car ferry lands, is the cheapest well-rated option for the on-island overnight. ★4.9, Superhost. NOTE: listed sleeping capacity is tight (2+2) — verify it genuinely sleeps 4 before booking.",
-    "communityNotes": "Airbnb ★4.9, Superhost. Mljet has very few entire-home listings and they fill early; this was the cheapest decent one for June. Confirm 4-person capacity (titled 'for 2+2').",
+    "communityNotes": "Airbnb ★4.9, Superhost. Mljet has very few entire-home listings and they fill early; this was the cheapest decent one for June. Confirm 4-person capacity (titled 'for 2+2'). | Island preference: camp on Mljet (hr-camp-marina-mljet, ~€35-45) — cheaper and cooler. Apartments rejected on principle for island nights.",
     "sources": [
       "https://www.airbnb.com/rooms/43040648"
     ],
@@ -177,7 +177,7 @@
       "zone-mljet"
     ],
     "rating": 3,
-    "status": "shortlist"
+    "status": "rejected"
   },
   {
     "id": "hr-gem-mljet-rotim-seaview",
@@ -187,7 +187,7 @@
     "lat": 42.7381,
     "lng": 17.5023,
     "description": "Dedicated Airbnb gem hunt. Mljet island (Jun 20): a ★4.95 Guest-favorite sea-view apartment near Sutmiholjska bay on the south coast, sleeps 4 (verified personCapacity 4). The highest-rated entire-home that surfaced on Mljet — book early, the island market is thin.",
-    "communityNotes": "Airbnb ★4.95, Guest favorite, personCapacity 4. Sea view; among the best-rated of the handful of Mljet entire-homes available in June.",
+    "communityNotes": "Airbnb ★4.95, Guest favorite, personCapacity 4. Sea view; among the best-rated of the handful of Mljet entire-homes available in June. | Island preference: camp on Mljet (hr-camp-marina-mljet, ~€35-45) — cheaper and cooler. €140 apartment rejected on principle for island nights.",
     "sources": [
       "https://www.airbnb.com/rooms/12895796"
     ],
@@ -197,7 +197,7 @@
       "zone-mljet"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-gem-trebinje-apartment-nn",

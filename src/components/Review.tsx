@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { CircleMarker, MapContainer, TileLayer } from 'react-leaflet';
 import { CATEGORY_COLORS } from '../constants';
 import type { PlaceWithOverride } from '../store';
 import type { Country, Status } from '../types';
@@ -17,11 +18,10 @@ interface Props {
   places: PlaceWithOverride[];
   onStatus: (id: string, status: Status) => void;
   onExit: () => void;
-  /** Show a place on the main map and exit review. */
   onShowOnMap: (p: PlaceWithOverride) => void;
 }
 
-export default function Review({ places, onStatus, onExit, onShowOnMap }: Props) {
+export default function Review({ places, onStatus, onExit }: Props) {
   const [countryFilter, setCountryFilter] = useState<CountryFilter>('all');
   const [statusQueue, setStatusQueue] = useState<StatusQueue>('candidates');
   const [categoryGroup, setCategoryGroup] = useState<CategoryGroup>('accommodation');
@@ -37,14 +37,12 @@ export default function Review({ places, onStatus, onExit, onShowOnMap }: Props)
     nature: (c) => c === 'nature' || c === 'sight' || c === 'viewpoint' || c === 'town',
   };
 
-  // Build queue based on filters
   const queue = places.filter((p) => {
     if (p.status === 'rejected') return false;
     if (countryFilter !== 'all' && p.country !== countryFilter) return false;
     if (!CAT_GROUP[categoryGroup](p.category)) return false;
     if (statusQueue === 'candidates') return p.status === 'candidate';
     if (statusQueue === 'backup') return p.status === 'backup';
-    // 'all' = candidates + backup (non-shortlisted, non-rejected)
     return p.status === 'candidate' || p.status === 'backup';
   });
 
@@ -53,8 +51,6 @@ export default function Review({ places, onStatus, onExit, onShowOnMap }: Props)
   const place = queue[clampedIndex] ?? null;
 
   function advance() {
-    // If we just acted on the last item, stay at the same index (which will
-    // now point to the next place, or show "done" if the queue is exhausted).
     setIndex((i) => Math.min(i, total - 2 < 0 ? 0 : total - 2));
   }
 
@@ -80,7 +76,6 @@ export default function Review({ places, onStatus, onExit, onShowOnMap }: Props)
   }
 
   function handleFilterChange() {
-    // Reset index when filters change to avoid out-of-bounds
     setIndex(0);
   }
 
@@ -93,149 +88,129 @@ export default function Review({ places, onStatus, onExit, onShowOnMap }: Props)
 
   return (
     <div className="review-overlay">
-      {/* Header + filters */}
-      <div className="review-header">
-        <button className="review-exit" onClick={onExit}>
-          ✕ Exit review
-        </button>
-        <div className="review-filters">
-          <select
-            value={categoryGroup}
-            onChange={(e) => {
-              setCategoryGroup(e.target.value as CategoryGroup);
-              handleFilterChange();
-            }}
-          >
-            <option value="accommodation">🛏 Accommodation only</option>
-            <option value="campsite">⛺ Campsites only</option>
-            <option value="sleep">🛌 Sleep (both)</option>
-            <option value="activity">🏄 Activity / Hike / Beach</option>
-            <option value="eat">🍽 Food / Nightlife</option>
-            <option value="nature">🏛 Sights / Nature / Towns</option>
-            <option value="all">All categories</option>
-          </select>
-          <select
-            value={countryFilter}
-            onChange={(e) => {
-              setCountryFilter(e.target.value as CountryFilter);
-              handleFilterChange();
-            }}
-          >
-            <option value="all">All countries</option>
-            <option value="HR">🇭🇷 Croatia</option>
-            <option value="BA">🇧🇦 Bosnia</option>
-            <option value="ME">🇲🇪 Montenegro</option>
-          </select>
-          <select
-            value={statusQueue}
-            onChange={(e) => {
-              setStatusQueue(e.target.value as StatusQueue);
-              handleFilterChange();
-            }}
-          >
-            <option value="candidates">Candidates</option>
-            <option value="backup">Backup</option>
-            <option value="all">All non-rejected</option>
-          </select>
+      {/* LEFT PANEL: filters + card */}
+      <div className="review-left">
+        <div className="review-header">
+          <button className="review-exit" onClick={onExit}>
+            ✕ Exit
+          </button>
+          <div className="review-filters">
+            <select
+              value={categoryGroup}
+              onChange={(e) => { setCategoryGroup(e.target.value as CategoryGroup); handleFilterChange(); }}
+            >
+              <option value="accommodation">🛏 Accommodation</option>
+              <option value="campsite">⛺ Campsites</option>
+              <option value="sleep">🛌 Sleep (both)</option>
+              <option value="activity">🏄 Activities</option>
+              <option value="eat">🍽 Food / Nightlife</option>
+              <option value="nature">🏛 Sights / Towns</option>
+              <option value="all">All</option>
+            </select>
+            <select
+              value={countryFilter}
+              onChange={(e) => { setCountryFilter(e.target.value as CountryFilter); handleFilterChange(); }}
+            >
+              <option value="all">All countries</option>
+              <option value="HR">🇭🇷 Croatia</option>
+              <option value="BA">🇧🇦 Bosnia</option>
+              <option value="ME">🇲🇪 Montenegro</option>
+            </select>
+            <select
+              value={statusQueue}
+              onChange={(e) => { setStatusQueue(e.target.value as StatusQueue); handleFilterChange(); }}
+            >
+              <option value="candidates">Candidates</option>
+              <option value="backup">Backup</option>
+              <option value="all">All non-rejected</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="review-body">
+          {total === 0 ? (
+            <div className="review-done">
+              <p>All {queueLabel} reviewed{countryFilter !== 'all' ? ` for ${countryFilter}` : ''}!</p>
+              <button className="review-exit-btn" onClick={onExit}>Back to map</button>
+            </div>
+          ) : (
+            <>
+              <div className="review-progress">
+                {clampedIndex > 0 && (
+                  <button className="review-back" onClick={handleBack}>← Back</button>
+                )}
+                <span className="review-counter">{clampedIndex + 1} / {total} {queueLabel}</span>
+              </div>
+
+              {place && (
+                <div className="review-card">
+                  <div className="review-card-title">
+                    <span className="review-flag">{COUNTRY_FLAG[place.country]}</span>
+                    <h2>{place.name}</h2>
+                    <span className="review-cat-badge" style={{ background: CATEGORY_COLORS[place.category] }}>
+                      {place.category}
+                    </span>
+                  </div>
+
+                  {place.sources && place.sources[0] && (
+                    <div className="review-links">
+                      <a className="review-listing-link" href={place.sources[0]} target="_blank" rel="noopener noreferrer">
+                        Open listing ↗
+                      </a>
+                    </div>
+                  )}
+
+                  {place.rating && (
+                    <p className="review-rating">{'★'.repeat(place.rating)}{'☆'.repeat(5 - place.rating)}</p>
+                  )}
+
+                  {(place.cost || place.timeNeeded) && (
+                    <p className="review-meta">
+                      {place.cost && <span>💶 {place.cost}</span>}
+                      {place.cost && place.timeNeeded && ' · '}
+                      {place.timeNeeded && <span>⏱ {place.timeNeeded}</span>}
+                    </p>
+                  )}
+
+                  <p className="review-desc">{place.description}</p>
+
+                  {place.communityNotes && (
+                    <blockquote className="review-community">"{place.communityNotes}"</blockquote>
+                  )}
+
+                  <div className="review-actions">
+                    <button className="review-btn review-shortlist" onClick={handleShortlist}>✓ Shortlist</button>
+                    <button className="review-btn review-skip" onClick={handleSkip}>Skip</button>
+                    <button className="review-btn review-reject" onClick={handleReject}>✗ Reject</button>
+                  </div>
+                </div>
+              )}
+            </>
+          )}
         </div>
       </div>
 
-      {/* Card area */}
-      <div className="review-body">
-        {total === 0 ? (
-          <div className="review-done">
-            <p>All {queueLabel} reviewed{countryFilter !== 'all' ? ` for ${countryFilter}` : ''}!</p>
-            <button className="review-exit-btn" onClick={onExit}>
-              Back to map
-            </button>
-          </div>
-        ) : (
-          <>
-            <div className="review-progress">
-              {clampedIndex > 0 && (
-                <button className="review-back" onClick={handleBack}>
-                  ← Back
-                </button>
-              )}
-              <span className="review-counter">
-                {clampedIndex + 1} / {total} {queueLabel}
-              </span>
-            </div>
-
-            {place && (
-              <div className="review-card">
-                <div className="review-card-title">
-                  <span className="review-flag">{COUNTRY_FLAG[place.country]}</span>
-                  <h2>{place.name}</h2>
-                  <span
-                    className="review-cat-badge"
-                    style={{ background: CATEGORY_COLORS[place.category] }}
-                  >
-                    {place.category}
-                  </span>
-                </div>
-
-                <div className="review-links">
-                  {place.sources && place.sources[0] && (
-                    <a
-                      className="review-listing-link"
-                      href={place.sources[0]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Open listing ↗
-                    </a>
-                  )}
-                  <a
-                    className="review-listing-link review-map-link"
-                    href={`https://www.openstreetmap.org/?mlat=${place.lat}&mlon=${place.lng}#map=12/${place.lat}/${place.lng}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    🗺 Map
-                  </a>
-                  <button
-                    className="review-listing-link review-show-map-btn"
-                    onClick={() => onShowOnMap(place)}
-                  >
-                    Pin on app map ↗
-                  </button>
-                </div>
-
-                {place.rating && (
-                  <p className="review-rating">{'★'.repeat(place.rating)}{'☆'.repeat(5 - place.rating)}</p>
-                )}
-
-                {(place.cost || place.timeNeeded) && (
-                  <p className="review-meta">
-                    {place.cost && <span>💶 {place.cost}</span>}
-                    {place.cost && place.timeNeeded && ' · '}
-                    {place.timeNeeded && <span>⏱ {place.timeNeeded}</span>}
-                  </p>
-                )}
-
-                <p className="review-desc">{place.description}</p>
-
-                {place.communityNotes && (
-                  <blockquote className="review-community">"{place.communityNotes}"</blockquote>
-                )}
-
-                <div className="review-actions">
-                  <button className="review-btn review-shortlist" onClick={handleShortlist}>
-                    ✓ Shortlist
-                  </button>
-                  <button className="review-btn review-skip" onClick={handleSkip}>
-                    Skip
-                  </button>
-                  <button className="review-btn review-reject" onClick={handleReject}>
-                    ✗ Reject
-                  </button>
-                </div>
-              </div>
-            )}
-          </>
-        )}
-      </div>
+      {/* RIGHT PANEL: full map */}
+      {place ? (
+        <MapContainer
+          key={place.id}
+          className="review-map-full"
+          center={[place.lat, place.lng]}
+          zoom={10}
+          scrollWheelZoom
+          zoomControl
+          attributionControl={false}
+        >
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          <CircleMarker
+            center={[place.lat, place.lng]}
+            radius={12}
+            pathOptions={{ color: '#fff', weight: 3, fillColor: CATEGORY_COLORS[place.category], fillOpacity: 1 }}
+          />
+        </MapContainer>
+      ) : (
+        <div className="review-map-full review-map-empty" />
+      )}
     </div>
   );
 }

@@ -201,7 +201,7 @@
     "lat": 42.94366,
     "lng": 17.10974,
     "description": "A newly renovated village house in green, picturesque Žrnovo just above Korčula town (3.5 km from the centre, a few miles from the sea) — quiet, characterful, with lots of thoughtful detail and 3 private bathrooms. A relaxed island-village base for the Pelješac/Korčula leg, away from the harbour bustle. Sleeps 6 (2 bedrooms). ★4.93 from 28 reviews.",
-    "communityNotes": "Listing (verified): 'Beautiful village house, placed on quiet and green area. 3.5 km from town center. House is newly renovated, with the taste and many details making this property comfortable and cozy... Žrnovo is picturesque village, just a few miles from the sea.' ★4.93/28, 2BR / 3 baths, sleeps 6 — comfortable for 4 adults.",
+    "communityNotes": "Listing (verified): 'Beautiful village house, placed on quiet and green area. 3.5 km from town center. House is newly renovated, with the taste and many details making this property comfortable and cozy... Žrnovo is picturesque village, just a few miles from the sea.' ★4.93/28, 2BR / 3 baths, sleeps 6 — comfortable for 4 adults. | Island preference: camp on Korčula rather than pay €111 for a village house. Rejected per Croatian island camping policy.",
     "sources": [
       "https://www.airbnb.com/rooms/44587545"
     ],
@@ -210,7 +210,7 @@
       "villa-tier"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-villa-mlinica-brijesta-peljesac",

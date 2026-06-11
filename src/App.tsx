@@ -1748,56 +1748,6 @@ export default function App() {
           />
         )}
 
-        <div className="sidebar-actions col plan-actions">
-          <ShareButton makeLink={makeShareLink} />
-          <button className="export" onClick={() => setEssentialsOpen(true)}>
-            🆘 Essentials (offline)
-          </button>
-        </div>
-
-        <details className="export-menu">
-          <summary>Offline &amp; phone export…</summary>
-          <div className="sidebar-actions col">
-            <button className="export" onClick={() => setFitNonce((n) => n + 1)}>
-              ⤢ Fit map to filtered places
-            </button>
-            <button className="export" onClick={prepOffline} disabled={prepping}>
-              {prepping ? 'Building routes…' : '⬇ Prep offline (build all day routes)'}
-            </button>
-            <button
-              className="export"
-              onClick={() =>
-                downloadText(
-                  buildKml(places, routes, 'day'),
-                  'balkans-trip.kml',
-                  'application/vnd.google-earth.kml+xml',
-                )
-              }
-            >
-              KML → Organic Maps (by day)
-            </button>
-            <button
-              className="export"
-              onClick={() =>
-                downloadText(
-                  buildKml(places, routes, 'country'),
-                  'balkans-mymaps.kml',
-                  'application/vnd.google-earth.kml+xml',
-                )
-              }
-            >
-              KML → Google My Maps (by country)
-            </button>
-            <button
-              className="export"
-              onClick={() =>
-                downloadText(buildGpx(places, routes), 'balkans-trip.gpx', 'application/gpx+xml')
-              }
-            >
-              GPX (waypoints + day tracks)
-            </button>
-          </div>
-        </details>
         </>
         )}
       </aside>
