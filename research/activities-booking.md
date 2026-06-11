@@ -10,7 +10,7 @@ _Research date: 2026-06-11. Trip starts Jun 16. Book anything marked URGENT NOW 
 |---|---|---|---|---|
 | **Krka NP** | ~~SKIP~~ | ~~n/a~~ | ~~€40/pp = €160~~ | **REJECTED — no swimming since 2021; €40pp boardwalk only. Day 2 = Omiš canyoning instead.** |
 | **Biokovo Skywalk** (Makarska, Day 3 Jun 18) | YES — online only | 1–3 days min, books fast | €15/pp = €60 total | Book at shop.pp-biokovo.hr |
-| **Cetina rafting** (Omiš) | Recommended | 1–2 days | ~€40/pp = ~€160 | Email/call day before |
+| **Cetina canyoning** (Extreme, Omiš, Day 2) | **YES — BOOK NOW** | 1–2 days | €70/pp = **€280** | [canyoning-cetina.com](https://canyoning-cetina.com) or maldukadventures.com |
 | **Cetina zipline** (Omiš) | Recommended | 1–2 days (groups: several days) | €80/group of up to 12 | Book at red-adventures.com |
 | **Mljet NP** | No — walk-up OK | n/a | €25/pp (or €19 after 16:00) = €100/€75 | Buy online or at gate |
 | **Kravica Waterfalls** | No | n/a | 20 KM (~€10)/pp = ~€40 + parking | Cash on arrival |
@@ -71,28 +71,29 @@ _Research date: 2026-06-11. Trip starts Jun 16. Book anything marked URGENT NOW 
 
 ---
 
-### 3. Cetina Canyon — Rafting (Omiš)
-**Day 2 (Jun 17) or Day 3 (Jun 18 morning)**
+### 3. Cetina Canyon — Extreme Canyoning (PRIMARY) or Rafting (Omiš)
+**Day 2 (Jun 17)**
 
-**Booking:** Recommended 1–2 days ahead, not strictly required but June fills up fast. Several operators run near-identical trips.
+**The group's planned activity: Extreme Canyoning (~€70/pp).** Rafting (~€38/pp) and Zipline (~€80/group) are the alternatives — all on the same canyon.
 
-**Operators:**
-- **Rafting Cetina / CanyoningCetina** — direct booking, €38/pp: https://canyoning-cetina.com
-- **Malduk Adventures** — well-reviewed, ~€40/pp: https://maldukadventures.com
-- **Split Rafting** (also Omiš-based): https://split-rafting.eu
+**CANYONING — Primary pick:**
+- Cliff jumps up to ~12m, rope rappels near the 60m Gubavica waterfall (walk-arounds exist for every jump). Requires being 18+. ~3h.
+- **Operator:** Dal Mare / CanyoningCetina — direct booking €70/pp Extreme: https://canyoning-cetina.com
+- **Operator:** Malduk Adventures (well-reviewed, Mountain Rescue-credentialed guides): https://maldukadventures.com
+- 4 adults canyoning (Extreme) = **~€280 total**
 
-**Price:** €38–60/pp depending on platform. Direct booking ~€38–40. Via GetYourGuide/Viator ~€55–60.
-- 4 adults direct = **~€150–160**.
+**Booking:** 1–2 days ahead minimum; June fills fast. Book today if possible. Operators often respond via WhatsApp faster than email.
 
-**Time needed:** 2.5–3 hours on the water (10 km canyon route). Add 1 hour for logistics/travel. Half-day activity.
+**RAFTING — Alternative if canyoning not available:**
+- Classic river rafting, 10 km canyon route, 2.5–3h on water. No age/fitness limit.
+- **Operators:** Malduk Adventures (~€40/pp), Split Rafting (split-rafting.eu), Rafting Cetina (canyoning-cetina.com, €38/pp)
+- 4 adults rafting = **~€150–160 direct**
 
-**Includes:** Raft, paddle, helmet, lifejacket, guide, parking, activity insurance. Some operators include cliff jumping and cave exploring en route.
-
-**Best timing:** Morning start to avoid afternoon heat. The canyon has natural shade from the limestone walls.
+**Best timing:** Morning start. The canyon has natural shade from limestone walls.
 
 **Watch out for:**
-- Multiple operators on the same river — quality is similar, price varies mainly by booking channel. Book direct to save €15–20/pp.
-- Jun 18 morning is tight: the Dubrovnik airport pickup is that **evening**. If doing rafting on day 3, start early and keep the drive Omiš→Dubrovnik (2h without stops) in mind.
+- Canyoning Extreme is physically demanding — proper shoes and willingness for cold water needed.
+- Day 2 (Jun 17) is the plan. If pushed to Jun 18 morning, remember the airport pickup is that evening — must leave Omiš by ~13:00 at latest.
 
 ---
 
