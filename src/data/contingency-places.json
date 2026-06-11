@@ -78,6 +78,19 @@
     "status": "candidate"
   },
   {
+    "id": "ba-er-sarajevo",
+    "name": "ER — KCUS Klinički centar Sarajevo",
+    "country": "BA",
+    "category": "other",
+    "lat": 43.86771,
+    "lng": 18.41006,
+    "description": "Klinički centar Universiteta Sarajevo — Bosnia's main tertiary hospital, 24h ER. The real hospital for the Jun 22 Sarajevo overnight.",
+    "communityNotes": "Bolnička 25, Sarajevo. +387 33 297 000. 24h pharmacies across the city. Emergency: 124 or 112.",
+    "sources": ["https://www.openstreetmap.org/way/162155143", "https://kcus.ba/"],
+    "tags": ["hospital", "emergency", "contingency"],
+    "status": "candidate"
+  },
+  {
     "id": "me-er-zabljak",
     "name": "Clinic — Žabljak health station",
     "country": "ME",

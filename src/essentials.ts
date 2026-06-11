@@ -295,7 +295,7 @@ export const HOSPITAL_ZONES: HospitalZone[] = [
     hospital: 'KCUS Klinički centar Sarajevo — main BA tertiary, 24h ER',
     where: 'Bolnička 25, Sarajevo · +387 33 297 000',
     pharmacy: '24h pharmacies across the city',
-    pinId: 'ba-er-mostar',
+    pinId: 'ba-er-sarajevo',
     tel: '+38733297000',
   },
   {
