@@ -23,6 +23,24 @@ interface Props {
   onShowPin?: (pinId: string) => void;
 }
 
+/** Render inline phone numbers (+XX ...) as tappable tel: links. */
+function TelText({ text }: { text: string }) {
+  const parts = text.split(/(\+\d[\d\s]{6,14}\d)/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        /^\+\d[\d\s]{6,14}\d$/.test(part) ? (
+          <a key={i} className="hint-tel" href={`tel:${part.replace(/\s/g, '')}`}>
+            {part}
+          </a>
+        ) : (
+          part
+        ),
+      )}
+    </>
+  );
+}
+
 /** A diallable contact row: tel: link when a number is present. */
 function Contact({ line }: { line: ContactLine }) {
   return (
@@ -121,7 +139,7 @@ export default function Essentials({ onClose, onShowPin }: Props) {
             <h4>{sec.title}</h4>
             <ul>
               {sec.tips.map((t, i) => (
-                <li key={i}>{t}</li>
+                <li key={i}><TelText text={t} /></li>
               ))}
             </ul>
             {sec.links && (

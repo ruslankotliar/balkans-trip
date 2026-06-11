@@ -178,7 +178,7 @@ export const QUICK_TIPS: TipSection[] = [
     tips: [
       'CALL Sicily By Car (+385 23 646 547) — confirm BiH + ME cross-border permission + written letter. Ref: D013947246.',
       'BOOK Tara rafting Jun 23 — office@raftingtara.com or +381 64 420 1956 (Drina-Tara, €60pp) OR info@tarasportrafting.com / +387 66 606 306 (TaraSport, €50pp). 4 adults, Jun 23, Brštanovica→Šćepan Polje.',
-      'CALL Sutjeska NP for Perućica guided forest slot Jun 23 — +387 58 233-130 or office@sutjeskanp.com. 16 people/day quota; 4-person min. If unavailable, do monument + Dragoš Sedlo viewpoint instead (~2h). No walk-ins.',
+      'CALL Sutjeska NP for Perućica guided forest slot Jun 23 — +387 58 233130 or office@sutjeskanp.com. 16 people/day quota; 4-person min. If unavailable, do monument + Dragoš Sedlo viewpoint instead (~2h). No walk-ins.',
       'BOOK Biokovo Skywalk Jun 18 morning slot — shop.pp-biokovo.hr. 20-car/hour cap, sells out. 4 × €15 = €60.',
       'BOOK Camp Lisičina Omiš (Jun 17) — kamp-lisicina@inet.hr. Croatian peak season, fills fast.',
       'BOOK Camping Kate Mlini (Jun 18–19) — info@campingkate.com. ~€51/night for 4 + tent, 10 min from DBV airport.',
