@@ -54,14 +54,23 @@
     "name": "Camping Krvavica",
     "country": "HR",
     "category": "campsite",
-    "lat": 43.3235,
-    "lng": 16.9858,
-    "description": "Campsite at Krvavica between Baška Voda and Makarska, close to the sea. User-saved from Google Maps — check prices/reviews on park4night.",
+    "lat": 43.32347,
+    "lng": 16.98574,
+    "description": "Terraced pine-and-olive campsite at Krvavica between Baška Voda and Makarska — 200m walk to a pebble beach with clear water. Small (30 pitches), shaded, quiet. Hot showers, wifi, washing machine, electricity hookups, BBQ area. Cash only; nearest ATM in Promajna.",
+    "communityNotes": "'Small campsite 100 meters from the sea. Beautiful camping pitches.' 'Super nice little campsite very close to a beautiful beach — clean, quiet, shaded.' (TripAdvisor). park4night 4.37/5 from 230+ reviews (July 2025): clean showers praised consistently. Hot note: cash only, and book ahead in July–Aug.",
+    "sources": [
+      "https://park4night.com/en/place/10004",
+      "https://www.autocamp-krvavica.com/",
+      "https://www.tripadvisor.com/Hotel_Review-g1943764-d21002761-Reviews-Camping_Krvavica-Krvavica_Split_Dalmatia_County_Dalmatia.html"
+    ],
+    "cost": "~€55–65 for 4 + tent + car (June; per-person pricing: ~€12 adult + ~€8 tent + ~€4.50 car; electricity +€3–5)",
+    "facilities": "hot showers, toilets, electricity, wifi, washing machine, BBQ — no restaurant on site",
     "tags": [
       "user-saved",
       "makarska-riviera",
-      "verify"
+      "beach-adjacent"
     ],
+    "rating": 4,
     "status": "candidate"
   },
   {

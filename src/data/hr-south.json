@@ -726,5 +726,49 @@
     ],
     "rating": 4,
     "status": "candidate"
+  },
+  {
+    "id": "hr-camp-lovor-mljet",
+    "name": "Autokamp Lovor (Kozarica, Mljet)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.7738,
+    "lng": 17.4658,
+    "description": "Terraced campsite on the northern coast of Mljet at Kozarica village, 15km from the Sobra ferry port. The most atmospheric camp on the island — olive and pine shade, small boat ramp, 24h reception. Hot showers, electricity, laundry, fridge rental. Note: the approach road is narrow — reviewers flag it as tight for large vans. This is the '~€72' camp referenced in the route skeleton.",
+    "communityNotes": "park4night 4.31/5, 26 reviews (July 2025): 'helpful owner Ana,' clean facilities. Complained: loud frogs, hard road for big vehicles. High season Jun 16–Sep 15. Book ahead — it fills. | Separate from Autokamp Marina (Ropa, cheaper, smaller) — do not confuse.",
+    "sources": [
+      "https://park4night.com/en/place/137639",
+      "https://www.autocamp-mljet.com/?lang=eng"
+    ],
+    "cost": "~€67–77 for 4 + tent + car (June high season; adult €10 + pitch ~€12; electricity +€7)",
+    "facilities": "hot showers, toilets, electricity, laundry, fridge rental, boat ramp, 24h reception",
+    "tags": [
+      "mljet",
+      "island"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camp-mungos-mljet",
+    "name": "Autokamp Mungos (Babino Polje, Mljet)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.739,
+    "lng": 17.5355,
+    "description": "Largest campsite on Mljet (200–250 capacity) at Babino Polje near Odysseus Cave and Sutmiholjska beach — restaurant, bar, mini-market, pool, rent-a-bike/scooter, WiFi, exchange office. The most resort-style option on the island. Season May 20–Sep 20.",
+    "communityNotes": "camping.info 3.8/5: basic but clean, friendly staff, convenient for the beach and cave. Best option if you want amenities over character. Larger groups find it easier to get a pitch here than at Marina or Lovor.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g8111016-d15333857-Reviews-Mungos_Babino_Polje_Campsite-Babino_Polje_Mljet_Island_Dubrovnik_Neretva_County_Dalm.html",
+      "https://www.camping.info/en/campsite/camping-mungos"
+    ],
+    "cost": "~€38–50 for 4 + tent + car (June; exact per-person pricing — call ahead)",
+    "facilities": "restaurant, bar, mini-market, pool, rent-a-bike, wifi, exchange office",
+    "tags": [
+      "mljet",
+      "island"
+    ],
+    "rating": 3,
+    "status": "candidate"
   }
 ]

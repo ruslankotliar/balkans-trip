@@ -48,7 +48,7 @@
       "family-run"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-mostar-hindin-han",
@@ -412,7 +412,7 @@
       "tasting"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-tvrdos-monastery",
@@ -515,5 +515,29 @@
     ],
     "rating": 5,
     "status": "shortlist"
+  },
+  {
+    "id": "ba-dragos-sedlo-skakavac",
+    "name": "Dragoš Sedlo viewpoint — Skakavac waterfall (Sutjeska NP)",
+    "country": "BA",
+    "category": "viewpoint",
+    "lat": 43.3453,
+    "lng": 18.6654,
+    "description": "Viewpoint at 1306m on the Dragoš Sedlo plateau inside Sutjeska NP — ~100m walk from a parking area — with a panorama of the 70m Skakavac waterfall and the Perućica primeval forest below. Reached by a ~10km macadam road off the M18 from Tjentište. Viable as a 1.5–2h transit stop on the Sarajevo → Šćepan Polje drive. No guide needed for the viewpoint; guide required only to enter Perućica forest.",
+    "communityNotes": "A way to 'see Sutjeska without a full day' — the viewpoint gives you the waterfall panorama in ~15min walk. Road is manageable in a normal car (dusty, some rough spots). The full Skakavac hike (2–3h RT, guide mandatory, ~€20–30/group) is beautiful but kills a half-day. | Tjentište monument (WWII Battle of Sutjeska) is on the M18 directly — a free 20-min stop even without the detour.",
+    "sources": [
+      "https://www.virtuelnaperucica.com/tour-destination/dragos-sedloo/",
+      "https://www.udahniavanturu.com/en/blog/skakavac-waterfall-guide",
+      "https://www.highlandertim.com/en/blog/national-park-sutjeska"
+    ],
+    "cost": "Park entry: 5 BAM pp + 5 BAM/car (~€2.50pp + ~€2.50/car)",
+    "timeNeeded": "1.5–2h detour from M18",
+    "tags": [
+      "sutjeska",
+      "transit-stop",
+      "day8"
+    ],
+    "rating": 4,
+    "status": "candidate"
   }
 ]

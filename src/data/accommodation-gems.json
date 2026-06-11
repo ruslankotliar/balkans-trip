@@ -557,7 +557,7 @@
       "zone-skadar"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-gem-skadar-boljevic",
@@ -658,5 +658,26 @@
     ],
     "rating": 4,
     "status": "rejected"
+  },
+  {
+    "id": "me-apartments-pajovic",
+    "name": "Old House Pajovic (Donja Seoca, near Virpazar)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.255,
+    "lng": 19.055,
+    "description": "Remote hillside farmhouse apartment ~8km from Virpazar (30min on a narrow winding road) — hosts run an on-site winery, organize lake boat tours, and serve homemade fish and wine. Panoramic Skadar Lake and mountain views from the terrace. Praised by multiple travel writers as having 'hundreds of excellent reviews.' Capacity: check before booking (appears to be 2-3 rooms).",
+    "communityNotes": "'Far from the tourist crowds and heavy traffic. Great starting point for exploring Skadar Lake.' 'Local home-grown food, winery and friendly hosts.' 'Spacious, very clean rooms in a historic family home.' | Note: access road is rough and 'not accessible with a trailer.' Very remote — need working phone signal. Coordinates are approximate (Donja Seoca area) — verify on OSM before navigating.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g1232143-d17567511-Reviews-Apartments_Old_house_Pajovic-Virpazar_Bar_Municipality.html"
+    ],
+    "cost": "~€60–90/night for 4 (estimate from aggregator; confirm direct)",
+    "tags": [
+      "airbnb-gem",
+      "zone-skadar",
+      "wow"
+    ],
+    "rating": 4,
+    "status": "candidate"
   }
 ]

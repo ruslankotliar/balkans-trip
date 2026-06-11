@@ -377,7 +377,7 @@
       "photo"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-kotor-fortress-paid",
@@ -938,6 +938,95 @@
       "perast"
     ],
     "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camp-modra-rijeka",
+    "name": "Rafting Camp Modra Rijeka (Blue River, Šćepan Polje)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 43.3612,
+    "lng": 18.7932,
+    "description": "Wooden cabin camp 300m from the Podgorica–Sarajevo road at Šćepan Polje, right on the Tara river — bookable independently. Won 'best rafting camp in region' at the International Tourism Fair 2022. Accommodation in cabin-style rooms (quad/triple/twin), plus restaurant, bar, WiFi, bike hire, full adventure menu. Alternative to Camp Grab next door.",
+    "communityNotes": "Booking.com 9.1/20+ reviews: 'perfect value for money, delicious food, stunning mountain views.' TripAdvisor: 'rustic and quaint,' great food, staff praised. Easier to book independently than Grab's package deals. | Best used as an overnight before morning Tara rafting — operators are 300m away.",
+    "sources": [
+      "https://www.booking.com/hotel/me/modra-rijeka.html",
+      "https://monteriver.com/en/rafting-camp-modra-rijeka/"
+    ],
+    "cost": "~€30 pp (~€120 for 4) — includes room; meals extra",
+    "facilities": "cabin rooms, restaurant, bar, wifi, bike hire, guided activities",
+    "tags": [
+      "scepan-polje",
+      "tara",
+      "rafting"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camp-radoman",
+    "name": "Auto Camp Radoman (Virpazar, Skadar Lake)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 42.2539,
+    "lng": 19.0795,
+    "description": "Family-run campsite ~3km from Virpazar on the edge of Skadar Lake National Park — the route skeleton's '~€15-20' option and the most-loved budget camp on the lake. Large trees, communal kitchen, tent units with kitchenettes also rentable. Full facilities: showers, electricity, wifi, laundry. Open year-round. Cash only. Owned by the Radoman family.",
+    "communityNotes": "park4night 4.91/5 (11 reviews): 'Nice place with friendly hosts and some large trees for shade.' 'Lovely family run business — we were made very welcome with free glass of wine.' 'Two turtles living under the rocks.' 9.2/10 on Booking. | This is the campsite referenced in the route skeleton (Day 10 option).",
+    "sources": [
+      "https://park4night.com/en/place/469331",
+      "https://www.campercontact.com/en/montenegro/bar-municipality/virpazar/101994/autocamp-radoman"
+    ],
+    "cost": "~€15–20 for 4 + tent + car (own tent); pre-pitched tent units also available ~€24",
+    "facilities": "hot showers, toilets, electricity, wifi, laundry, communal kitchen, parking",
+    "tags": [
+      "skadar",
+      "virpazar"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-camp-virpazar",
+    "name": "Camp Virpazar (Boljevići, Skadar Lake)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 42.2351,
+    "lng": 19.0922,
+    "description": "Simple but 'lovingly maintained' family-run camp ~1.2km from Virpazar center at Boljevići — the most visible camp near the main kayak/boat tour launch point. ~20 pitches, shaded, quiet. German-speaking owners organize boat tours and kayaking. Season Apr 27–Oct 31.",
+    "communityNotes": "Google 4.2/5 (113 reviews): 'Simple yet lovingly maintained family-run operation.' 'Clean facilities.' Homemade wine welcome. One reviewer noted 'no hot water' — may be inconsistent, verify on arrival. Access road: narrow single lane, sharp right after old stone bridge. Similar price to Camp Radoman.",
+    "sources": [
+      "https://campvirpazarandmore.com/",
+      "https://www.eurocampings.co.uk/montenegro/virpazar/camp-virpazar-125902/"
+    ],
+    "cost": "~€20–25 for 4 + tent + car (June)",
+    "facilities": "toilets, showers (verify hot water), electricity, wifi, bbq, washing machine",
+    "tags": [
+      "skadar",
+      "virpazar"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camp-rijeka-crnojevica",
+    "name": "Auto Camp Rijeka Crnojevića (northern Skadar shore)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 42.3557,
+    "lng": 19.0288,
+    "description": "Lakeside campsite on the northern shore of Skadar Lake at the Rijeka Crnojevića river mouth — near the Pavlova strana serpentine viewpoint and the 15th-century historic fortress. Different zone from the Virpazar cluster (more secluded, further north). Restaurant on-site, kayaking, fishing, boat tours. Season Apr 15–Nov 30.",
+    "communityNotes": "Detailed camplinq listing: electricity free, hot water free, wifi free, restaurant on-site. ~6000m² with tree shade. Price includes utilities. Note: less community reviews than Radoman/Virpazar — fewer independent confirms. Close to Pavlova strana viewpoint (already shortlisted).",
+    "sources": [
+      "https://camplinq.com/camps/auto-camp-rijeka-crnojevica/"
+    ],
+    "cost": "~€25–35 for 4 + tent + car (includes electricity + hot water)",
+    "facilities": "hot showers, toilets, electricity (free), wifi (free), restaurant, boat tours, kayak",
+    "tags": [
+      "skadar",
+      "rijeka-crnojevica",
+      "north-shore"
+    ],
+    "rating": 3,
     "status": "candidate"
   }
 ]

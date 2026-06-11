@@ -249,5 +249,26 @@
     ],
     "rating": 4,
     "status": "rejected"
+  },
+  {
+    "id": "me-villa-lekovic-godinje",
+    "name": "Rustic House Leković (Godinje village, Skadar Lake)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.2503,
+    "lng": 19.047,
+    "description": "150-year-old stone farmhouse in the hilltop village of Godinje (~4km from Virpazar) — entire house for 4, with a terrace overlooking Skadar Lake and adjacent vineyards, organic garden and honey hives, and a full kitchen. The WOW-tier Skadar option that's actually IN a traditional village (Godinje is a classic stone-village on the hillside, very few tourists).",
+    "communityNotes": "★4.7/5 from 43 reviews: 'One of the best preserved rural environments.' 'Spacious, very clean rooms in a historic family home. Local home-grown food, winery.' 'Brilliant location and possibly best value in Montenegro.' | Capacity: 4 guests, 2 bedrooms — fits exactly. Access road to Godinje is narrow but passable. NOTE: coords approximate (Godinje village center) — cross-check before navigation.",
+    "sources": [
+      "https://hichee.com/listings/5676695"
+    ],
+    "cost": "~€80–100/night for 4 (whole house; June estimate)",
+    "tags": [
+      "villa-tier",
+      "skadar",
+      "godinje"
+    ],
+    "rating": 4,
+    "status": "candidate"
   }
 ]

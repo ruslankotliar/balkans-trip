@@ -2571,7 +2571,22 @@ body.trip-mode .ess-tel {
   background: #1a252f;
 }
 
-/* Phone: full-width card, bigger tap targets */
+/* Narrow screens: collapse split layout to card-only */
+@media (max-width: 900px) {
+  .review-overlay {
+    flex-direction: column;
+  }
+  .review-left {
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+  }
+  .review-map-full {
+    display: none;
+  }
+}
+
+/* Phone: bigger tap targets */
 @media (max-width: 760px) {
   .review-card {
     padding: 16px 14px 12px;
