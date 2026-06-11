@@ -42,6 +42,9 @@ interface Props {
   totalPlanned: number;
   /** How many of those stops are marked done. */
   totalDone: number;
+  /** Free-text memo for this day (empty string = none). */
+  dayNote: string;
+  onDayNote: (text: string) => void;
 }
 
 const gmaps = (p: PlaceWithOverride) => navUrl(p.lat, p.lng);
@@ -124,6 +127,8 @@ export default function Today({
   onEssentials,
   totalPlanned,
   totalDone,
+  dayNote,
+  onDayNote,
 }: Props) {
   const isToday = day === realDay;
   const nextIdx = isToday ? stops.findIndex((p) => !done[p.id]) : -1;
@@ -245,6 +250,16 @@ export default function Today({
           })}
         </ol>
       )}
+
+      <div className="today-note-row">
+        <textarea
+          className="today-note-area"
+          placeholder="Day notes — things to remember, calls to make, cash needed…"
+          value={dayNote}
+          onChange={(e) => onDayNote(e.target.value)}
+          rows={dayNote ? Math.min(6, dayNote.split('\n').length + 1) : 2}
+        />
+      </div>
 
       <div className="today-actions">
         <button className={`today-big-btn ${sleepOpen ? 'on' : ''}`} onClick={onToggleSleep}>

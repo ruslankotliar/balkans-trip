@@ -1319,6 +1319,27 @@ body.trip-mode .detail-nav-btn {
   cursor: pointer;
   flex-shrink: 0;
 }
+.today-note-row {
+  padding: 4px 0;
+}
+.today-note-area {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dde;
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #444;
+  resize: none;
+  background: #fafbff;
+  font-family: inherit;
+}
+.today-note-area:focus {
+  outline: none;
+  border-color: #a0aec0;
+  background: #fff;
+}
 .today-actions {
   display: flex;
   gap: 8px;

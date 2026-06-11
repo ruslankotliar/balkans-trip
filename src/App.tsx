@@ -51,6 +51,7 @@ import {
   decodePlan,
   encodePlan,
   ferryPairKey,
+  loadDayNotes,
   loadDone,
   loadFerryHours,
   loadLastFix,
@@ -60,6 +61,7 @@ import {
   loadSavedMode,
   loadTripCache,
   loadUserPlaces,
+  saveDayNotes,
   saveDone,
   saveFerryHours,
   saveLastFix,
@@ -432,6 +434,7 @@ export default function App() {
   const reopenSidebarOnClose = useRef(false);
   const [tripDay, setTripDay] = useState(currentTripDay());
   const [doneIds, setDoneIds] = useState<Record<string, boolean>>(loadDone);
+  const [dayNotes, setDayNotes] = useState<Record<number, string>>(loadDayNotes);
   const [sleepOpen, setSleepOpen] = useState(false);
   const [nearOpen, setNearOpen] = useState(false);
   const [undoToast, setUndoToast] = useState<{ label: string; undo: () => void } | null>(null);
@@ -683,6 +686,15 @@ export default function App() {
       const next = { ...prev, [id]: !prev[id] };
       if (!next[id]) delete next[id];
       saveDone(next);
+      return next;
+    });
+  }
+
+  function setDayNote(day: number, text: string) {
+    setDayNotes((prev) => {
+      const next = { ...prev, [day]: text };
+      if (!text) delete next[day];
+      saveDayNotes(next);
       return next;
     });
   }
@@ -1455,6 +1467,8 @@ export default function App() {
             onEssentials={() => setEssentialsOpen(true)}
             totalPlanned={totalPlanned}
             totalDone={totalDone}
+            dayNote={dayNotes[tripDay] ?? ''}
+            onDayNote={(text) => setDayNote(tripDay, text)}
           />
         ) : (
         <>

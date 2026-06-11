@@ -444,3 +444,18 @@ export function loadLastFix(): GpsFix | null {
 export function saveLastFix(f: GpsFix) {
   safeSetItem(FIX_KEY, JSON.stringify(f));
 }
+
+const DAY_NOTES_KEY = 'balkans-trip-day-notes';
+
+/** Per-day free-text memo (keyed by day number as string). */
+export function loadDayNotes(): Record<number, string> {
+  try {
+    return JSON.parse(localStorage.getItem(DAY_NOTES_KEY) ?? '{}');
+  } catch {
+    return {};
+  }
+}
+
+export function saveDayNotes(notes: Record<number, string>) {
+  safeSetItem(DAY_NOTES_KEY, JSON.stringify(notes));
+}
