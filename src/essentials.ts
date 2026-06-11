@@ -177,7 +177,7 @@ export const QUICK_TIPS: TipSection[] = [
       'Carry passports (EU ID cards NOT accepted for BA/ME), licence, original vehicle registration, rental agreement w/ cross-border auth, green card.',
       'Make sure HR + BA + ME are written on the contract — crossing into a non-listed country voids your insurance.',
       'Guards mostly just check passports — but make sure you get entry/exit stamps.',
-      'Debeli Brijeg / Karasovići (ME→HR) can queue 1–4 h on Jun 27/28 — check the live border webcams when you have signal.',
+      'ME→HR on Jun 27: use VITALJINA/Karasovići (15 km south of Kotor toward Herceg Novi) — 15–45 min. Do NOT use Debeli Brijeg (1–4 h EES biometric queues). If Vitaljina is closed, fall back to Debeli Brijeg before 08:00 or after 21:00.',
     ],
   },
   {
