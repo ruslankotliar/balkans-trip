@@ -175,7 +175,7 @@ export const DAY_HINTS: Record<number, DayHint> = {
   9:  { icon: '⛰️', text: 'Durmitor: leave camp by 06:30–07:00. Storm risk builds 12:00–15:00 — be off the ridge by noon. Žabljak nights 6–10°C.' },
   10: { icon: '🛐', text: 'Ostrog: cover knees+shoulders (no exceptions). Skadar: mosquitoes vicious at dusk — repellent essential.' },
   11: { icon: '🏖️', text: 'Sveti Stefan islet view free from the road. Budva Friday = busiest night on the coast — book ahead if you need parking.' },
-  12: { icon: '🚢', text: 'Kotor: 1 ship / 170 pax forecast — verify at cruisetimetables.com before leaving Budva. Fortress 07:30 regardless. Use VITALJINA crossing (not Debeli Brijeg) — 15–45 min.' },
+  12: { icon: '🚢', text: 'Kotor: CONFIRMED 1 ship (Star Clipper, ~170 pax) — a tiny sailing clipper vs 4 ships on Jun 25. Start the fortress at 07:30, the cruise passengers won\'t arrive until ~09:30. Use VITALJINA crossing (not Debeli Brijeg) — 15–45 min.' },
   13: { icon: '✈️', text: 'Car drop at Dubrovnik Airport (Sicily By Car) by 20:00. Ref: D013947246. Full usable day.' },
 };
 
