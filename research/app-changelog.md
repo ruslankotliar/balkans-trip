@@ -365,3 +365,83 @@ though OSRM had answered fine.
   "1 day route(s) saved (1 newly built)" and the entry verifiably persisted.
 
 `npm run build` green. `src/data/` untouched.
+
+## Simplification + deploy pass (2026-06-11)
+
+Goal: make the app SIMPLER, mobile-first (phone, one-handed, on the road),
+decluttered, and deployed free to GitHub Pages. `src/data/*.json` untouched;
+`npm run build` green after every change; verified in headless Chrome (CDP) at
+both 1440×900 (desktop) and 390×844 (phone) against the production build served
+under the deploy base path (`vite preview`).
+
+### Bug fix — double-open (PRIORITY 1)
+- **Root cause:** a CircleMarker carried both a `click → selectPlace` handler
+  (opens the right-side detail panel) AND a Leaflet `<Popup>`, which Leaflet
+  auto-opens on the same click. One pin tap surfaced TWO panels with duplicate
+  status buttons.
+- **Fix:** removed the `<Popup>` from the marker entirely (and the `Popup`
+  import). A pin click now opens ONLY the detail panel, in **both** planning and
+  trip modes. Nothing useful was lost — the popup's links/Navigate/status all
+  already live in the detail panel.
+- **Verified:** clicking a pin yields `.leaflet-popup` count **0** and the
+  detail panel open — on desktop planning, phone trip (numbered pin), and phone
+  planning. (CDP assertions `*_after_click_popups: 0`, `*_after_click_detail: true`.)
+
+### Removed (PRIORITY 2 — declutter)
+- **Export JSON** — deleted the button and the `exportJson()` function. (User:
+  no use for a JSON dump on a phone trip.)
+- **Leaflet map popup** — deleted along with its orphaned CSS (`.popup*`,
+  `.popup-details`, `.popup-links`) and the now-unused `deriveLinks`/`navUrl`
+  imports in `App.tsx`. (The detail panel is the single place surface.)
+- **Netlify `deploy` script** in `package.json` — replaced by the GitHub Pages
+  Action (below), so the dead `netlify deploy` script was removed.
+
+### Simplified (progressive disclosure)
+- **Planning filters collapsed behind one toggle.** The always-visible row is
+  now just **search + the 4 one-tap presets** (🛏 Sleep spots / ⭐ Shortlist /
+  🥾 Do & see / ↺ All). The full filter wall (country chips, status chips,
+  category chips, tag list) moved inside a single `<details className="filters-disclosure">`
+  ("More filters · N active", where N counts the active advanced facets). Most
+  trips never need to open it; the power is one tap away when they do.
+- **Fit map** demoted from a top-level button into the "Offline & phone export…"
+  details (it's a planning/dev convenience, not a per-tap action).
+- Powerful tools kept and still discoverable: route builder, itinerary, sleep
+  finder (nearby + corridor), offline prep, KML/GPX export, booking links.
+
+### Mobile fixes (PRIORITY 3)
+- **Detail panel is now a bottom sheet on phones in BOTH modes** (was a side
+  overlay covering the map/pin in planning; only trip mode had the sheet). At
+  ≤760px it anchors to the viewport bottom (`bottom:0`, rounded top corners,
+  grab-handle affordance), so the tapped pin and the route stay visible above
+  it. Trip mode keeps a shorter 45vh sheet to show more of today's route.
+- **Bigger one-handed touch targets at ≤760px** (both modes): search input
+  padded + 16px font (kills iOS focus-zoom), chips/list rows/view-tabs/mode-pill
+  enlarged, the place-list booking badge bumped to 28px.
+- Trip mode is already the natural phone default — it auto-selects when the real
+  date is inside the trip window (Jun 16–28), opens on the Today view with the
+  sidebar open, big Sleep tonight / Near me buttons, and the locate FAB.
+- **Verified on phone (390×844):** Today view renders, sidebar toggles
+  open/closed, locate FAB + Sleep-tonight present, and the detail panel computes
+  to `bottom:0` (true bottom sheet) in trip AND planning.
+
+### Deploy config (PRIORITY 4 — GitHub Pages, free)
+- **`vite.config.ts`:** `base: '/balkans-trip/'`. VitePWA given `scope`/`base`
+  `/balkans-trip/`, manifest `id: '/balkans-trip/'`, `scope: '/balkans-trip/'`,
+  `start_url: '.'` (resolves to the subpath), and workbox
+  `navigateFallback: '/balkans-trip/index.html'`. OSM tile + OSRM URLs are
+  absolute `https://`, so they're unaffected by the base.
+- **Verified the production build resolves entirely under the subpath:**
+  `dist/index.html` assets → `/balkans-trip/assets/…`; manifest `scope`/`id`
+  `/balkans-trip/`; `registerSW.js` registers `/balkans-trip/sw.js` with scope
+  `/balkans-trip/`; precache + navigateFallback under the subpath. `vite preview`
+  serves at `http://localhost:4173/balkans-trip/` and the whole CDP suite passes
+  there (no console errors).
+- **`.github/workflows/deploy.yml`:** on push to `main` (and manual dispatch),
+  Node 20 + `npm ci` + `npm run build`, then `actions/configure-pages@v5`,
+  `actions/upload-pages-artifact@v3` (path `dist`), `actions/deploy-pages@v4`.
+  Permissions `pages: write` + `id-token: write`, `contents: read`; `concurrency`
+  group `pages`. No hardcoded CNAME. **Not pushed** — the master session creates
+  the repo and pushes; once Pages is enabled (Settings → Pages → Source: GitHub
+  Actions), every push deploys to `https://ruslankotliar.github.io/balkans-trip/`.
+
+`src/data/` and the `Place` schema untouched. `npm run build` green.

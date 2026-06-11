@@ -180,33 +180,6 @@ body {
   flex: 1;
 }
 
-.popup h3 {
-  margin: 0 0 4px;
-  font-size: 15px;
-}
-
-.popup p {
-  margin: 4px 0;
-  font-size: 13px;
-}
-
-.popup .meta {
-  color: #666;
-  font-size: 12px;
-}
-
-.popup .community {
-  font-style: italic;
-  color: #444;
-  background: #f6f6f6;
-  padding: 6px 8px;
-  border-radius: 6px;
-}
-
-.popup .sources a {
-  margin-right: 6px;
-}
-
 .status-buttons {
   display: flex;
   gap: 4px;
@@ -253,6 +226,25 @@ body {
   font-size: 10px;
   opacity: 0.7;
   font-weight: 600;
+}
+
+/* Progressive disclosure: collapse the full filter wall behind one toggle */
+.filters-disclosure {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.filters-disclosure > summary {
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+  padding: 4px 0;
+}
+.filters-disclosure[open] > summary {
+  margin-bottom: 2px;
+  font-weight: 600;
+  color: #2c3e50;
 }
 
 .tag-filter summary {
@@ -430,18 +422,6 @@ body {
 }
 .nearby-count {
   color: #555;
-}
-
-.popup-details {
-  margin-top: 8px;
-  width: 100%;
-  padding: 4px;
-  border: 1px solid #2c3e50;
-  border-radius: 6px;
-  background: #2c3e50;
-  color: #fff;
-  cursor: pointer;
-  font-size: 12px;
 }
 
 /* ---- Itinerary ---- */
@@ -839,15 +819,58 @@ body {
   .sidebar.open {
     transform: translateX(0);
   }
+  /* Detail panel = bottom sheet on phones (BOTH modes) so the pin you tapped
+     and the map stay visible above it, instead of an overlay covering them. */
   .detail-panel {
     width: auto;
-    left: 12px;
-    right: 12px;
-    max-height: 60vh;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 55vh;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.22);
+    padding-bottom: 24px;
+  }
+  /* Grab-handle affordance at the top of the sheet */
+  .detail-panel::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background: #d0d0d0;
+    margin: -4px auto 8px;
   }
   /* keep the title clear of the ☰ fab */
   .sidebar .head-row {
     padding-left: 44px;
+  }
+  /* Bigger one-handed targets on phones (both modes) */
+  .search {
+    padding: 11px 12px;
+    font-size: 16px; /* ≥16px stops iOS Safari zoom-on-focus */
+  }
+  .chip {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+  .place-list li {
+    padding: 12px 6px;
+    font-size: 14px;
+  }
+  .view-tabs button {
+    padding: 10px 4px;
+    font-size: 13px;
+  }
+  .book-mini {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+  .mode-pill {
+    padding: 8px 14px;
+    font-size: 14px;
   }
 }
 
@@ -1222,14 +1245,9 @@ body.trip-mode .detail-close {
   font-size: 16px;
 }
 @media (max-width: 760px) {
-  /* Bottom-sheet detail: keep the pin + route visible above it */
+  /* Trip mode: a shorter sheet keeps more of today's route on the map. */
   body.trip-mode .detail-panel {
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
     max-height: 45vh;
-    border-radius: 14px 14px 0 0;
   }
 }
 
@@ -1369,19 +1387,6 @@ body.trip-mode .card-links .today-nav-link {
 }
 .book-mini:hover {
   filter: brightness(0.93);
-}
-
-/* Compact link row in the map popup */
-.popup-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  margin: 6px 0 0;
-}
-.popup-links .link-chip {
-  padding: 2px 7px;
-  font-size: 11px;
 }
 
 /* Quick-filter presets: common flows in one tap */

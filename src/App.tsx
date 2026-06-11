@@ -5,7 +5,6 @@ import {
   MapContainer,
   Marker,
   Polyline,
-  Popup,
   TileLayer,
   useMap,
 } from 'react-leaflet';
@@ -22,7 +21,7 @@ import {
   STATUSES,
   toggle,
 } from './constants';
-import { bookingFor, deriveLinks, navUrl, type SourceLink } from './links';
+import { bookingFor, type SourceLink } from './links';
 import { fetchRoute, fetchTable, fetchTrip, routeKey, type LatLng } from './osrm';
 import { solveOrder, type SolveResult } from './solver';
 import { buildGpx, buildKml, downloadText } from './exports';
@@ -242,6 +241,13 @@ export default function App() {
     setEq(categoryFilter, pr.categories ?? CATEGORIES) &&
     setEq(statusFilter, pr.statuses ?? NON_REJECTED) &&
     tagFilter.size === 0;
+
+  // How many advanced filters are narrowing the view (for the disclosure label).
+  const advancedFilterCount =
+    (countryFilter.size < COUNTRIES.length ? 1 : 0) +
+    (categoryFilter.size < CATEGORIES.length ? 1 : 0) +
+    (statusFilter.size < STATUSES.length ? 1 : 0) +
+    (tagFilter.size > 0 ? 1 : 0);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [view, setView] = useState<View>('places');
   const [fitNonce, setFitNonce] = useState(0);
@@ -932,16 +938,6 @@ export default function App() {
     setSelectedId(p.id);
   }
 
-  function exportJson() {
-    const blob = new Blob([JSON.stringify(places, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'places-export.json';
-    a.click();
-    URL.revokeObjectURL(url);
-  }
-
   // ---- Offline prep: build every day route once on wifi so it replays from
   // the localStorage cache in dead zones (tiles cache as you pan, via the SW).
   const [prepping, setPrepping] = useState(false);
@@ -1078,6 +1074,7 @@ export default function App() {
 
         {!corridor && view !== 'itinerary' && (
           <>
+            {/* Always-visible: one-tap presets cover the common flows. */}
             <div className="filter-group preset-row">
               {FILTER_PRESETS.map((pr) => (
                 <button
@@ -1091,67 +1088,73 @@ export default function App() {
               ))}
             </div>
 
-            <div className="filter-group">
-              {COUNTRIES.map((c) => (
-                <button
-                  key={c}
-                  className={`chip ${countryFilter.has(c) ? 'on' : ''}`}
-                  onClick={() => setCountryFilter(toggle(countryFilter, c))}
-                >
-                  {COUNTRY_NAMES[c]}
-                </button>
-              ))}
-            </div>
+            {/* Progressive disclosure: the full filter wall lives behind a
+                single toggle so it doesn't overwhelm. */}
+            <details className="filters-disclosure">
+              <summary>More filters{advancedFilterCount > 0 ? ` · ${advancedFilterCount} active` : ''}</summary>
 
-            <div className="filter-group">
-              {STATUSES.map((s) => (
-                <button
-                  key={s}
-                  className={`chip ${statusFilter.has(s) ? 'on' : ''}`}
-                  onClick={() => setStatusFilter(toggle(statusFilter, s))}
-                >
-                  {s} <span className="chip-count">{statusCounts[s]}</span>
-                </button>
-              ))}
-            </div>
+              <div className="filter-group">
+                {COUNTRIES.map((c) => (
+                  <button
+                    key={c}
+                    className={`chip ${countryFilter.has(c) ? 'on' : ''}`}
+                    onClick={() => setCountryFilter(toggle(countryFilter, c))}
+                  >
+                    {COUNTRY_NAMES[c]}
+                  </button>
+                ))}
+              </div>
 
-            <div className="filter-group">
-              {CATEGORIES.map((c) => (
-                <button
-                  key={c}
-                  className={`chip ${categoryFilter.has(c) ? 'on' : ''}`}
-                  style={{ borderColor: CATEGORY_COLORS[c] }}
-                  onClick={() => setCategoryFilter(toggle(categoryFilter, c))}
-                >
-                  <span className="dot" style={{ background: CATEGORY_COLORS[c] }} />
-                  {c}
-                </button>
-              ))}
-            </div>
+              <div className="filter-group">
+                {STATUSES.map((s) => (
+                  <button
+                    key={s}
+                    className={`chip ${statusFilter.has(s) ? 'on' : ''}`}
+                    onClick={() => setStatusFilter(toggle(statusFilter, s))}
+                  >
+                    {s} <span className="chip-count">{statusCounts[s]}</span>
+                  </button>
+                ))}
+              </div>
 
-            {allTags.length > 0 && (
-              <details className="tag-filter">
-                <summary>
-                  Tags{tagFilter.size > 0 ? ` (${tagFilter.size})` : ''}
-                </summary>
-                <div className="filter-group">
-                  {allTags.map((t) => (
-                    <button
-                      key={t}
-                      className={`chip ${tagFilter.has(t) ? 'on' : ''}`}
-                      onClick={() => setTagFilter(toggle(tagFilter, t))}
-                    >
-                      #{t}
-                    </button>
-                  ))}
-                  {tagFilter.size > 0 && (
-                    <button className="chip clear-tags" onClick={() => setTagFilter(new Set())}>
-                      clear
-                    </button>
-                  )}
-                </div>
-              </details>
-            )}
+              <div className="filter-group">
+                {CATEGORIES.map((c) => (
+                  <button
+                    key={c}
+                    className={`chip ${categoryFilter.has(c) ? 'on' : ''}`}
+                    style={{ borderColor: CATEGORY_COLORS[c] }}
+                    onClick={() => setCategoryFilter(toggle(categoryFilter, c))}
+                  >
+                    <span className="dot" style={{ background: CATEGORY_COLORS[c] }} />
+                    {c}
+                  </button>
+                ))}
+              </div>
+
+              {allTags.length > 0 && (
+                <details className="tag-filter">
+                  <summary>
+                    Tags{tagFilter.size > 0 ? ` (${tagFilter.size})` : ''}
+                  </summary>
+                  <div className="filter-group">
+                    {allTags.map((t) => (
+                      <button
+                        key={t}
+                        className={`chip ${tagFilter.has(t) ? 'on' : ''}`}
+                        onClick={() => setTagFilter(toggle(tagFilter, t))}
+                      >
+                        #{t}
+                      </button>
+                    ))}
+                    {tagFilter.size > 0 && (
+                      <button className="chip clear-tags" onClick={() => setTagFilter(new Set())}>
+                        clear
+                      </button>
+                    )}
+                  </div>
+                </details>
+              )}
+            </details>
           </>
         )}
 
@@ -1276,18 +1279,12 @@ export default function App() {
           />
         )}
 
-        <div className="sidebar-actions">
-          <button className="export" onClick={() => setFitNonce((n) => n + 1)}>
-            Fit map
-          </button>
-          <button className="export" onClick={exportJson}>
-            Export JSON
-          </button>
-        </div>
-
         <details className="export-menu">
           <summary>Offline &amp; phone export…</summary>
           <div className="sidebar-actions col">
+            <button className="export" onClick={() => setFitNonce((n) => n + 1)}>
+              ⤢ Fit map to filtered places
+            </button>
             <button className="export" onClick={prepOffline} disabled={prepping}>
               {prepping ? 'Building routes…' : '⬇ Prep offline (build all day routes)'}
             </button>
@@ -1423,6 +1420,7 @@ export default function App() {
             if (matchHi) radius = 11;
           }
           const softTrip = isTrip && !matchHi && !todayIds.has(p.id) && !dim;
+          // No Leaflet popup: one pin click opens ONE surface — the detail panel.
           return (
             <CircleMarker
               key={p.id}
@@ -1442,57 +1440,7 @@ export default function App() {
                 opacity: dim ? 0.2 : softTrip ? 0.6 : 1,
               }}
               eventHandlers={{ click: () => selectPlace(p) }}
-            >
-              {/* Trip mode: a tap opens the detail sheet directly — no popup two-step */}
-              {!isTrip && (
-                <Popup maxWidth={260}>
-                  <div className="popup">
-                    <h3>{p.name}</h3>
-                    <p className="meta">
-                      {p.category} · {COUNTRY_NAMES[p.country]}
-                      {p.day ? ` · Day ${p.day}` : ''}
-                    </p>
-                    <div className="popup-links">
-                      {deriveLinks(p.sources)
-                        .slice(0, 3)
-                        .map((l) => (
-                          <a
-                            key={l.url}
-                            className={`link-chip kind-${l.kind}${l.booking ? ' primary' : ''}`}
-                            href={l.url}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            {l.label} ↗
-                          </a>
-                        ))}
-                      <a
-                        className="nav-link"
-                        href={navUrl(p.lat, p.lng)}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Navigate ↗
-                      </a>
-                    </div>
-                    <div className="status-buttons">
-                      {STATUSES.map((s) => (
-                        <button
-                          key={s}
-                          className={p.status === s ? `on badge-${s}` : ''}
-                          onClick={() => setStatus(p.id, s)}
-                        >
-                          {s}
-                        </button>
-                      ))}
-                    </div>
-                    <button className="popup-details" onClick={() => selectPlace(p)}>
-                      Details →
-                    </button>
-                  </div>
-                </Popup>
-              )}
-            </CircleMarker>
+            />
           );
         })}
 

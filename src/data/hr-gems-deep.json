@@ -1,0 +1,253 @@
+[
+  {
+    "id": "hr-berberov-buk",
+    "name": "Berberov buk (Zrmanja swimming waterfall)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 44.1974,
+    "lng": 15.7678,
+    "description": "A 200m-long string of tufa cascades on the lower Zrmanja near Muškovci with deep, clear pools you can actually swim in — a free, uncrowded alternative to the banned-swimming Krka basins. A self-guided ~1km riverside path (≈30 min) reaches the falls and pools; no entry fee, no opening hours.",
+    "communityNotes": "Croatian guides call it 'one of the most beautiful waterfalls in Croatia... the water is very clean and clear, and suitable for swimming' but warn 'Zrmanja is always colder than the sea, so warm up well before jumping in'. 3 seasonal restaurants/bars sit at the picnic area (weekends only in shoulder season, daily in summer). Telegram/Super1 frames the whole Zrmanja as 'a swimming paradise too few people have discovered yet'.",
+    "sources": [
+      "https://www.croatian-guide.com/attractions/berberov-buk",
+      "https://www.alltrails.com/trail/croatia/zadar/slapovi-zrmanje-berberov-buk",
+      "https://www.telegram.hr/super1/life/zrmanja-kupaliste-bijeg-od-ljetnih-guzvi/",
+      "https://www.renting.hr/blog/what-to-visit-muskovci"
+    ],
+    "cost": "free",
+    "timeNeeded": "1-2h",
+    "bestTime": "midday so the water is warmest; weekends in June for the open bars",
+    "tags": ["deep-dive", "off-route", "river-swimming", "free", "inland-variant"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-velika-gubavica",
+    "name": "Velika Gubavica waterfall + canyon viewpoints (Zadvarje)",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 43.4366,
+    "lng": 16.8923,
+    "description": "Dalmatia's tallest waterfall (≈48m), where the Cetina plunges into a hidden gorge ~1km from Zadvarje village. Two marked rim viewpoints (Križ and 'Viewpoint 48' by Fortress Duare) reach the edge in minutes for a dramatic, mostly-empty overlook on the inland Cetina route. The base swim-pond exists but the descent is steep/wild and best done only with the canyoning outfits — go for the free viewpoint, not the unguided scramble.",
+    "communityNotes": "Croatian travel writers: 'the largest waterfall in Dalmatia... hidden in a deep gorge, tourists still haven't discovered it' (Putni Kofer). It's special because 'just meters from the two mighty falls the Cetina calms into a nice swimming pond' — but the same articles stress 'descent into the canyon is significantly more demanding, not for a typical walk; not recommended without experience, gear and a local guide.' The rim viewpoints are reachable 'practically in minutes' from the village.",
+    "sources": [
+      "https://putnikofer.hr/mjesta/kanjon-i-slap-velika-gubavica-cetina-zadvarje/",
+      "https://croatiatravelreviews.com/slap-gubavica-vidikovac-u-zadvarju/",
+      "https://zadvarje.hr/zadvarje/prirodne-znamenitosti/"
+    ],
+    "cost": "free",
+    "timeNeeded": "30-60 min (rim viewpoints)",
+    "bestTime": "more impressive after rain; full-flow drops in high summer",
+    "tags": ["deep-dive", "viewpoint", "free", "cetina"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-mosor-girometta",
+    "name": "Mosor — Girometta lodge & Veliki Kabal (the 'other' Split mountain)",
+    "country": "HR",
+    "category": "hike",
+    "lat": 43.5174,
+    "lng": 16.6093,
+    "description": "Mosor is the ridge between Split and Omiš that almost no foreign tourist climbs — locals' answer to overrun Biokovo. From the trailhead village Gornje Sitno (drivable, ~21km from Split) it's a ~45-min walk up to the 1929 Umberto Girometta mountain hut (868m, food/drinks, big shaded terrace), then on to the summit Veliki Kabal (1339m, wooden cross) with a 360° panorama over Split, the islands, the Cetina canyon and Biokovo. A perfect 'meditation on a mountain' day with no crowds and no toll road.",
+    "communityNotes": "Croatian hiking sources: from the lodge 'a beautiful view toward the sea and islands, Split, Solin, Trogir, Kaštela, Omiš, Biokovo and Omiška Dinara'; the open terrace seats 100+ under tall firs 'pleasant shade especially in summer'. A Dalmatian lodge keeper told regional press 'the mountains are the new popular destination for Dalmatians.' AllTrails has 48 reviews on the Gornje Sitno → lodge route.",
+    "sources": [
+      "https://www.hpd-mosor.hr/index.php?option=com_content&view=article&id=48",
+      "https://www.alltrails.com/trail/croatia/split-dalmatia/sitno-gornje-planinarski-dom-umberto-girometta",
+      "https://gorja.net/putopisi/152/mosor-sitno-gornje-planinarski-dom-umberto-girometta/",
+      "https://www.dalmacijanews.hr/clanak/y7yq-spiro-gruica-domar-planinarskog-doma-na-mosoru-planine-su-nova-popularna-destinacija-dalmatinaca/"
+    ],
+    "cost": "free (lodge sells food/drinks)",
+    "timeNeeded": "lodge only ~2-3h round; summit Veliki Kabal full day",
+    "bestTime": "early morning or late afternoon in June heat; carry water",
+    "tags": ["deep-dive", "hike", "viewpoint", "free", "local-favourite"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-duboka-draga-vrsi",
+    "name": "Duboka Draga cove (Vrsi, near Zadar)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 44.2688,
+    "lng": 15.2461,
+    "description": "A narrow, cliff-walled pebble cove tucked into the Vrsi coast ~20km north of Zadar — secluded enough to feel wild yet only a 1km gravel (makadam) track from the village centre. Crystal-clear water, no facilities, room for only a handful of people. One of three quiet Vrsi coves (with Velika Rasovača and Matejina) that locals use to dodge the summer crowds; perfect first-evening swim near Zadar.",
+    "communityNotes": "Croatian travel press: 'Duboka draga is a cove driven deep into the rocks; a 1km gravel road leads to it, and though completely secluded it's actually right near the centre of Vrsi... the beach is mostly pebble, the sea exceptionally clean, ideal for swimming, diving and exploring the seabed.' Journal.hr lists the trio as the picks 'if you love solitude and untouched nature near Zadar — only a few people fit on each.'",
+    "sources": [
+      "https://www.telegram.hr/super1/life/plaza-duboka-draga-vrsi-zadar-kako-doci/",
+      "https://www.journal.hr/lifestyle/putovanja/vrsi-plaze-duboka-draga-velika-rasovaca-matejina-uvala/",
+      "https://www.turistickeprice.hr/pronasli-smo-idilicne-uvale-nadomak-zadra-skrivene-plaze-koje-jamce-osamu/"
+    ],
+    "cost": "free",
+    "timeNeeded": "half day / swim stop",
+    "bestTime": "late afternoon; the gravel access keeps numbers low even in June",
+    "tags": ["deep-dive", "beach", "hidden-cove", "free", "zadar"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-blace-mljet",
+    "name": "Blace (Limuni) — the Caribbean lagoon, Mljet east tip",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.6908,
+    "lng": 17.7399,
+    "description": "A nearly 1km sandy lagoon on Mljet's far-eastern tip, just around the corner from Saplunara and OUTSIDE the national park (so no ticket). A ~20-min walk from Saplunara reaches it; the sea enters through an 8m-wide neck, so the shallow water warms early and stays bath-like even when the open sea is cold. Sandy bottom — a rarity in Croatia — fringed by centenarian pines, frequently deserted because sailors skip the shallows.",
+    "communityNotes": "Mljet guides: 'hidden in a sheltered bay, very secluded and often deserted... the entrance from the sea is only 8m wide so the water gets very warm — you can swim here even when the sea outside is still cold.' Tripadvisor review titles it 'Hidden, barely visited beach. A must...'. Described repeatedly as 'looks like a lagoon', 'looks like the Caribbean'. Pairs naturally with the Saplunara/Stermasi cluster already in the plan.",
+    "sources": [
+      "https://www.mljettravel.com/blaca/",
+      "https://www.tripadvisor.com/Attraction_Review-g1501916-d33249509-Reviews-Plaza_Blace-Saplunara_Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.korculainfo.com/beaches-mljet/"
+    ],
+    "cost": "free (outside Mljet NP ticket zone)",
+    "timeNeeded": "half day",
+    "bestTime": "warm shallows make it good even on a cooler/windy day; go via Saplunara",
+    "tags": ["deep-dive", "beach", "sandy", "lagoon", "mljet", "free"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-kobas-bay",
+    "name": "Kobaš bay (secluded cove + fish konobas near Ston)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.8025,
+    "lng": 17.7428,
+    "description": "A tiny, hard-to-reach sandy cove on the Ston channel, only 7km from Ston but down a narrow road carved through the hills only a few years ago. Clear calm water, a small yacht marina, cypresses and the ruins of an 18th-century summer residence with a chapel — and three excellent fish konobas on the waterfront. A swim-plus-long-lunch stop right on the Pelješac/Dubrovnik approach corridor that almost no car tourist finds.",
+    "communityNotes": "Sailing and food sources: 'Kobaš is a hidden gem favoured by boat owners and food enthusiasts... a secluded coastal gem nestled between green hills and calm waters, perfectly clear sea.' Reachable by car since the Broce–Kobaš road was built; otherwise a boater's bay. The cove keeps its quiet precisely because the access road is so awkward.",
+    "sources": [
+      "https://montenegro-for.me/2023/08/kobas-peljesac-past-and-present/",
+      "https://www.medgulets.com/sailing-guides/croatia/trogir/kobas-bay",
+      "https://www.frankaboutcroatia.com/peljesac-peninsula-beaches/"
+    ],
+    "cost": "free (beach); konobas mid-range",
+    "timeNeeded": "half day (swim + lunch)",
+    "bestTime": "lunchtime to combine swim + konoba; road is narrow, drive slowly",
+    "tags": ["deep-dive", "beach", "hidden-cove", "peljesac", "food"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-gastro-mare-kobas",
+    "name": "Gastro Mare (Kobaš fish konoba)",
+    "country": "HR",
+    "category": "food",
+    "lat": 42.8045,
+    "lng": 17.7428,
+    "description": "The standout of Kobaš bay's three waterfront fish taverns: chef Tony cooks Mediterranean seafood with a twist in an open kitchen in front of guests, using homegrown vegetables and locally sourced fish/shellfish. The kind of no-frills, off-the-grid konoba you reach by a hairpin road (or arrive by boat) and remember the whole trip.",
+    "communityNotes": "Repeatedly named the best of the three Kobaš konobas: 'Gastro Mare is arguably the best dining spot, featuring Mediterranean dishes with a unique twist... homegrown vegetables and locally sourced seafood,' with 'Tony preparing his exquisite fish and seafood in the open kitchen in front of guests.' The other two — Luka's Tavern and Ribarska Kuća (Fisherman's House) — are also well regarded.",
+    "sources": [
+      "https://www.gastromarekobas.com/",
+      "https://montenegro-for.me/2023/08/kobas-peljesac-past-and-present/"
+    ],
+    "cost": "mid-range seafood (~€20-35pp)",
+    "timeNeeded": "1.5-2h lunch",
+    "bestTime": "lunch; pair with a Kobaš bay swim",
+    "tags": ["deep-dive", "food", "konoba", "seafood", "peljesac"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-nakovana",
+    "name": "Nakovana ghost village + Spila Illyrian cave sanctuary",
+    "country": "HR",
+    "category": "sight",
+    "lat": 43.0037,
+    "lng": 17.0836,
+    "description": "An abandoned stone hamlet (depopulated in the 1990s) high on Pelješac's western tip, above which sits 'Spila' — a cave that hid an undisturbed Iron-Age Illyrian fertility sanctuary, sealed behind a rockfall for ~2000 years until archaeologists broke through in 1999 (one of Dalmatia's most important finds). An easy ~2h there-and-back walk from the Mala Gospa chapel through old stone doors; also the easiest trailhead onward to Sveti Ilija, Pelješac's summit.",
+    "communityNotes": "Trip writers: 'a short hike to the ancient Neolithic cave and the abandoned village of Nakovana — less than two hours and not too much strength, almost like a walk... the path begins at a small well-maintained chapel (Mala Gospa).' Archaeology: the sanctuary was 'left intact since abandonment two thousand years ago,' floor scattered with 'thousands of fragments of fine ceramic cups, jugs, plates and amphoras' traded/pirated from Greek colonies. A 2024 dig even turned up a rare Greek theatre mask.",
+    "sources": [
+      "https://www.end7ess.eu/nakovana-a-hike-through-history/",
+      "https://www.petersommer.com/blog/croatia-travel/nakovana-dalmatia",
+      "https://www.croatiaweek.com/greek-theatre-mask-found-peljesac-cave-croatia/"
+    ],
+    "cost": "free",
+    "timeNeeded": "~2h walk (more if continuing to Sveti Ilija)",
+    "bestTime": "morning, cooler; bring a torch for the cave",
+    "tags": ["deep-dive", "abandoned-village", "cave", "peljesac", "free", "history"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-zitna-zavalatica",
+    "name": "Žitna cove (Zavalatica, south Korčula)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.9158,
+    "lng": 16.9403,
+    "description": "A deep, narrow cove on Korčula's quiet south coast just outside the small harbour village of Zavalatica — pebble beach, clear water and far fewer people than the famous sandy beaches (Vela Pržina/Pupnatska). Croatian beach roundups call it 'one of the most romantic beaches on the island'. A relaxed swim stop if the island block lands on Korčula rather than Mljet.",
+    "communityNotes": "Croatian press: 'Žitna is a deep cove hiding the beach of the same name, one of the most romantic beaches on the island, near the centre of Zavalatica.' The south coast between Lumbarda and Zavalatica also hides the quiet coves Rasohatica, Bratinja Luka and Bačva for further escape from crowds.",
+    "sources": [
+      "https://www.telegram.hr/super1/life/nabolje-korcula-plaze-najljepse-uvale/",
+      "https://zena.net.hr/lifestyle/putujem/ovo-su-najljepse-plaze-na-otoku-korculi-60374cd4-5899-11ef-8ab8-225a3ed1b99c",
+      "https://www.ikorculainfo.com/bays-coves/"
+    ],
+    "cost": "free",
+    "timeNeeded": "half day / swim stop",
+    "bestTime": "south-coast coves get afternoon sun; quieter than the sandy beaches",
+    "tags": ["deep-dive", "beach", "hidden-cove", "korcula", "free"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-cikola-canyon",
+    "name": "Čikola canyon (Drniš inland — climb/canyon/cave)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 43.8547,
+    "lng": 16.1581,
+    "description": "A wild karst canyon on the seasonal Čikola river in the Šibenik–Knin hinterland, just before it joins the Krka near Roški slap — an almost tourist-free inland-belt alternative to the ticketed national parks. It carries a marked walking path with lookouts, ~50 sport-climbing routes on the steep cliffs, a ~10km canyoning line, and the cave Topla peć ('Warm oven'). For an adventurous group this is a serious-fun negative-space find between Šibenik and Split.",
+    "communityNotes": "Regional descriptions: 'the Čikola canyon features an arranged walking path, lookouts, 50 climbing routes for free climbing on the steep karst cliffs, and a 10km canyoning route; among several caves the best-known is Topla peć.' Drniš itself was an EDEN 'European Destination of Excellence' nominee for low-key tourism. Komoot lists waterfall walks around Drniš for the gentler version.",
+    "sources": [
+      "https://www.europeanbestdestinations.com/destinations/eden/drnis/",
+      "https://www.komoot.com/guide/3517081/waterfall-hikes-around-grad-drnis"
+    ],
+    "cost": "free (guided canyoning/climbing extra)",
+    "timeNeeded": "half to full day depending on activity",
+    "bestTime": "spring/early summer for water; viewpoints fine any time",
+    "tags": ["deep-dive", "off-route", "canyon", "climbing", "inland-belt", "free"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-konoba-campanelo",
+    "name": "Konoba Campanelo (Mirlović Zagora — hinterland peka + fine dining)",
+    "country": "HR",
+    "category": "food",
+    "lat": 43.7586,
+    "lng": 16.1021,
+    "description": "A genuinely off-the-map konoba deep in the Dalmatinska Zagora between Šibenik and Drniš, in a tiny village. Chef-owner Mate Sučić turned his grandfather's stone stable into a quietly serious kitchen — traditional peka and skewers alongside modern tasting menus (4 or 8 courses), local ingredients, vineyard-and-haybale views. Three Gault&Millau toques and a 4.5 Tripadvisor rating despite being miles from anywhere.",
+    "communityNotes": "'A hidden culinary gem nestled in the heart of Dalmatinska Zagora, tucked away from prying eyes and bustling crowds' (review titled 'Hidden culinary gem'). Tripadvisor 4.5/5 across ~37 reviews; earned three Gault&Millau toques. Signature 'Janjeći Ravioli' (lamb ravioli, beetroot, lamb jus). The pitch: a destination meal that justifies the inland detour, not a roadside stop.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g23784673-d23777677-Reviews-Konoba_Campanelo-Mirlovic_Zagora_Sibenik_Knin_County_Dalmatia.html",
+      "https://hr.gaultmillau.com/en/restaurants/campanelo",
+      "https://www.luxurylivingcroatia.com/posts/konoba-campanelo"
+    ],
+    "cost": "tasting menus ~€40-70pp (book ahead)",
+    "timeNeeded": "2-3h",
+    "bestTime": "reserve; the village is remote (use Google Maps for the exact turn)",
+    "tags": ["deep-dive", "food", "konoba", "zagora", "off-route"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-konoba-ivankovski",
+    "name": "Konoba Ivankovski (Konavle — family farm konoba, no website)",
+    "country": "HR",
+    "category": "food",
+    "lat": 42.5303,
+    "lng": 18.3666,
+    "description": "A no-frills family konoba in the Konavle hinterland near Gruda/Drvenik, ~7 min from Cavtat: thick stone walls, solid wooden doors, vegetables straight from the garden, home wine and rakija. Lamb peka is the move but must be ordered 24h ahead (cooked overnight under the bell). They'll even fetch you and drive you back for a small fee — the antithesis of a tourist restaurant.",
+    "communityNotes": "'Behind the thick stone walls and solid wooden doors the past is preserved through dishes and homemade products... food prepared the old-fashioned way to keep the fresh taste of home-grown vegetables.' Reviews: 'vegetables all fresh from their garden and cooked fresh by the family', 'home-cooked food, local wine and home-made brandy were fantastic.' Lamb peka needs a day's notice. Address: Drvenik 9, Gruda.",
+    "sources": [
+      "https://visit.cavtat-konavle.com/en/rural-tourism/show/6/konoba-ivankovi",
+      "https://www.tripadvisor.com/Restaurant_Review-g2266740-d17473817-Reviews-Konoba_Ivankovi-Konavle_Dubrovnik_Neretva_County_Dalmatia.html"
+    ],
+    "cost": "home-cooking prices; peka pre-order 24h",
+    "timeNeeded": "2h dinner",
+    "bestTime": "book a day ahead for the lamb peka; great final-night Konavle dinner",
+    "tags": ["deep-dive", "food", "konoba", "konavle", "no-website", "local-favourite"],
+    "rating": 4,
+    "status": "candidate"
+  }
+]
