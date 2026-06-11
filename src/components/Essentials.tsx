@@ -126,7 +126,7 @@ export default function Essentials({ onClose, onShowPin }: Props) {
             </h4>
             <ol>
               {b.steps.map((s, i) => (
-                <li key={i}>{s}</li>
+                <li key={i}><TelText text={s} /></li>
               ))}
             </ol>
           </div>
