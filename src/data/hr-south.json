@@ -770,5 +770,86 @@
     ],
     "rating": 3,
     "status": "candidate"
+  },
+  {
+    "id": "hr-camping-kate-mlini",
+    "name": "Camping Kate (Mlini, near Dubrovnik)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.6247,
+    "lng": 18.208,
+    "description": "Small family-run campsite on the north edge of Mlini village, 10km south of Dubrovnik. 40 pitches on two terraces among old cypresses; pebble beach below via 160+ steps. Best base for Dubrovnik day trips — Bus #10 stop is 200m away, last bus back 23:50 weekdays / 01:30 weekends.",
+    "communityNotes": "park4night 4.42/5 (552 reviews): 'Perfectly located for Dubrovnik visits'; 'very clean toilets and showers'; 'fills up by early afternoon in peak season — arrive before 2pm'. TripAdvisor 4.1/5 (71 reviews): 'best one and cheapest one on Croatian seaside'; 'manager is awesome, speaks English/Italian/Croatian'. Negatives: rocky ground ('better for camper vans than tents'); road noise on upper pitches from 6am; 160+ steep steps to beach is tiring on the way back. Taxi boat to Dubrovnik old town costs ~€15pp each way, takes 45 min — 'the best way' per staff but pricier than the bus (€2.50/person). ACSI card discount available. Campsite opens Apr 1, closes Oct 28.",
+    "sources": [
+      "https://park4night.com/en/place/22199",
+      "https://www.tripadvisor.com/Hotel_Review-g658382-d4594231-Reviews-Camping_Kate-Mlini_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://campingkate.com/price/",
+      "https://www.eurocampings.co.uk/croatia/dubrovnik-neretva/mlini/autokamp-kate-111766/",
+      "https://www.pincamp.com/campings/camping-kate"
+    ],
+    "cost": "~€53/night for 4 adults + small tent + car + electricity (Jun, Cat B: €8.30/adult + €5 tent + €4 car + €4 elec + €1.70/pp tourist tax). Without electricity: ~€49.",
+    "facilities": "Hot showers (6), toilets (10), electricity hookups, free WiFi, laundry machines + dryer (€4/€4), private fridge boxes, grey water disposal, chemical disposal. Pebble beach via 160 steps. Bus #10 stop 200m (to Dubrovnik €2.50, last bus 23:50/01:30).",
+    "bestTime": "Arrive before 2pm in peak June — fills up fast. Jun 18 evening arrival after airport pickup is fine (10 min from airport).",
+    "tags": [
+      "dubrovnik",
+      "mlini",
+      "camping",
+      "dubrovnik-base",
+      "tent"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-camp-pod-maslinom-orasac",
+    "name": "Camp Pod Maslinom (Orašac, west of Dubrovnik)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.6984,
+    "lng": 18.0052,
+    "description": "Terraced campsite under ancient olive trees in Orašac village, 11–12km west of Dubrovnik on the D8. 50 pitches on different levels; 350m downhill walk to a crystal-clear pebble beach. Bus stop at the entrance for €2.50 service to Dubrovnik.",
+    "communityNotes": "park4night 4.53/5 (590 reviews) — one of the highest-rated camps in the Dubrovnik area. 'Very kind people. Easy access to Dubrovnik by public bus for €2.50.' 'Clean facilities, beautiful sea views from lower pitches.' 'Perfect base for Dubrovnik — bus stop literally at entrance.' Steep walk to beach (350m downhill) but 'totally worth it for crystal-clear water'. Lower pitches have sea views; quieter than Camping Kate. Open Apr 1 – Nov 10.",
+    "sources": [
+      "https://park4night.com/en/place/18107",
+      "https://www.tripadvisor.com/Hotel_Review-g1943776-d3545334-Reviews-Camping_Pod_Maslinom-Orasac_Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.eurocampings.co.uk/croatia/dubrovnik-neretva/orasac/camp-pod-maslinom-117470/"
+    ],
+    "cost": "~€30–36/night for 2 adults + van (no elec, shoulder season); peak season ~€40–46 with electricity. 4-person tent estimate ~€44–52 in June.",
+    "facilities": "Hot showers, clean toilets, WiFi (some reports unreliable), electricity hookups, laundry + dryer, drinking water, waste disposal, beach 350m downhill. Bus stop at entrance.",
+    "tags": [
+      "dubrovnik",
+      "orasac",
+      "camping",
+      "dubrovnik-base",
+      "west",
+      "olive-grove"
+    ],
+    "rating": 5,
+    "status": "backup"
+  },
+  {
+    "id": "hr-camp-matkovica-srebreno",
+    "name": "Auto Camp Matkovica (Srebreno)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.6244,
+    "lng": 18.1931,
+    "description": "Small campsite (~20 pitches) in Srebreno, ~9–10km south of Dubrovnik and 3 min walk from a pebble beach. Budget option with shops, restaurants and a shopping centre nearby. Good bus and water-taxi access to Dubrovnik.",
+    "communityNotes": "park4night 3.95/5 (249 reviews). 'Very helpful owner arranged ferry tickets.' Facilities described as basic but clean and functional; road noise noted. Pricing ~€18–30/night for 2 people + van (no electricity); smaller and more cramped layout than Camping Kate or Pod Maslinom. Strict 11am checkout. Water taxi to Dubrovnik €15pp return. Best for groups wanting proximity to Srebreno beach over a scenic natural setting.",
+    "sources": [
+      "https://park4night.com/en/place/30188",
+      "https://www.dubrovnik-riviera.hr/en/camps/item/72-auto-camp-matkovica"
+    ],
+    "cost": "~€25–35/night for 4 + tent + car in June (estimate; call to confirm)",
+    "facilities": "Showers, toilets, electricity, WiFi, laundry, drinking water, waste disposal. Pebble beach 3 min walk. Bus and water taxi to Dubrovnik.",
+    "tags": [
+      "dubrovnik",
+      "srebreno",
+      "camping",
+      "dubrovnik-base",
+      "budget"
+    ],
+    "rating": 3,
+    "status": "candidate"
   }
 ]

@@ -5,13 +5,18 @@
     "country": "BA",
     "category": "campsite",
     "lat": 42.7094,
-    "lng": 18.4860,
+    "lng": 18.486,
     "description": "Scout eco-camp 12km from Trebinje on the Sušica river, run as a proper campsite May–September. River swimming in a small dam pool, 20 pitches under trees, basic bar on site. Solar-heated showers — hot only during daylight hours, so factor that in.",
     "communityNotes": "'Beautifully located campsite, clean facilities and friendly owners.' (park4night) Frequently hosts youth/scout groups — can be noisy daytime but quiet after 20:00. Cold water at night is the consistent gripe. 'Nice spots under trees, access to the river although not a good spot for swimming.' Rating: 4.03/5 (73 reviews). Warning: scout camps book the whole site sometimes in summer — call ahead.",
-    "sources": ["https://park4night.com/en/place/82464"],
+    "sources": [
+      "https://park4night.com/en/place/82464"
+    ],
     "cost": "~€10–15 for 4 people + tent + car",
     "facilities": "Showers (solar, daytime only), toilets (squat), drinking water, WiFi, electricity, washing machine (€3), small bar, river swimming",
-    "tags": ["zone-1-trebinje", "camping"],
+    "tags": [
+      "zone-1-trebinje",
+      "camping"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -24,10 +29,17 @@
     "lng": 18.3423,
     "description": "Free wild-camp area on the Trebišnjica riverbank in Trebinje city, short walk to the old town. Public toilets at the adjacent Bingo supermarket; showers at the nearby public swimming pool. Police-tolerated — confirmed free camping by multiple park4night reviewers.",
     "communityNotes": "'Free camping allowed by the police, everyone very friendly.' (park4night) 'Very well located for the town along the river, short walk to the historic center.' Rating: 4.09/5 (53 reviews). Downsides: one reviewer reported a van break-in attempt at 3am; wild dogs present (vocal but friendly); some litter; road noise. Best spot is near the bridge with tree shade.",
-    "sources": ["https://park4night.com/en/place/60579"],
+    "sources": [
+      "https://park4night.com/en/place/60579"
+    ],
     "cost": "Free",
     "facilities": "Toilets at Bingo supermarket nearby, showers at public pool, no facilities on-site",
-    "tags": ["zone-1-trebinje", "camping", "free", "wild-camp"],
+    "tags": [
+      "zone-1-trebinje",
+      "camping",
+      "free",
+      "wild-camp"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -40,10 +52,18 @@
     "lng": 18.3763,
     "description": "Stone ethno-hut restaurant on the Trebinje–Nikšić road serving slow-cooked lamb and veal under the sač (traditional iron bell covered with embers). Ranked #2 of 38 restaurants in Trebinje. 7km from the centre — worth the detour for the most authentic Herzegovina lamb experience near the Croatian border.",
     "communityNotes": "'Phenomenal food. We ate lamb under the basket. Great service.' 'Slowly baked veal and lamb is finger-licking good; their traditional veal chorba (rich veal soup) could be served as a main course.' 'Prices 50% cheaper than Dubrovnik.' 'Best steaks we had in the Balkans.' All reviews praise generous portions and traditional preparation. Rating: 4.5/5 (108 TripAdvisor reviews).",
-    "sources": ["https://www.tripadvisor.com/Restaurant_Review-g303196-d7084616-Reviews-Stara_Hercegovina-Trebinje_Republika_Srpska.html"],
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g303196-d7084616-Reviews-Stara_Hercegovina-Trebinje_Republika_Srpska.html"
+    ],
     "cost": "~€10–15/person including drinks",
     "timeNeeded": "1.5–2h",
-    "tags": ["zone-1-trebinje", "lamb", "sac", "local", "zone-5-trebinje"],
+    "tags": [
+      "zone-1-trebinje",
+      "lamb",
+      "sac",
+      "local",
+      "zone-5-trebinje"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -56,11 +76,19 @@
     "lng": 18.3434,
     "description": "Trebinje's best winery restaurant on a hill above the city, with panoramic valley views and wines from their own vineyard. Modern Mediterranean food paired with estate Vranac and Zilavka — the local grape varieties. Ideal for a memorable dinner or wine-focused lunch.",
     "communityNotes": "'Their curated wine selection elevated every course.' 'I ordered beefsteak in aceto balsamico sauce, matched with Vranac reserve — the best steak I have ever had.' 'Fresh produce, attractively presented. Excellent, unusual local wines.' 'The food is amazing and the wine from their own vineyard was excellent, several bottles purchased.' Rating: 4.2/5 (42 reviews). Closed Mondays. Expensive by local standards (~€108 for 5 diners with wine) but still cheap vs Croatia.",
-    "sources": ["https://www.tripadvisor.com/Restaurant_Review-g303196-d6894495-Reviews-Vinska_Galerija_Vukoje-Trebinje_Republika_Srpska.html"],
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g303196-d6894495-Reviews-Vinska_Galerija_Vukoje-Trebinje_Republika_Srpska.html"
+    ],
     "cost": "~€20–25/person with wine",
     "timeNeeded": "2h",
     "bestTime": "Dinner for sunset over the valley; closed Mondays",
-    "tags": ["zone-1-trebinje", "wine", "vranac", "zilavka", "zone-5-trebinje"],
+    "tags": [
+      "zone-1-trebinje",
+      "wine",
+      "vranac",
+      "zilavka",
+      "zone-5-trebinje"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -73,11 +101,18 @@
     "lng": 18.3435,
     "description": "The casual lunch sibling of Vinska Galerija at the same Vukoje vineyard estate on the hill above Trebinje — rooftop terrace with 360° views of the Trebišnjica valley. Good for a wine-and-cheese lunch before driving on. Open Tue–Sun from noon.",
     "communityNotes": "'The rooftop is absolutely amazing, with some great seats where you can sip on their wines and stare down at the valley below.' 'The food is next level compared to other restaurants in Bosnia-Herzegovina.' 'Biftek je bio savršeno spremljen i dobro uparen sa odležalim Vrancem.' Mixed: a few recent reviews note portion sizes are smaller than expected. Lunch hours noon–midnight Tue–Sun.",
-    "sources": ["https://www.tripadvisor.com/Restaurant_Review-g303196-d4895975-Reviews-Restoran_Vukoje-Trebinje_Republika_Srpska.html"],
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g303196-d4895975-Reviews-Restoran_Vukoje-Trebinje_Republika_Srpska.html"
+    ],
     "cost": "~€15–20/person with wine",
     "timeNeeded": "1h",
     "bestTime": "Lunch for best light on the valley",
-    "tags": ["zone-1-trebinje", "wine", "lunch", "zone-5-trebinje"],
+    "tags": [
+      "zone-1-trebinje",
+      "wine",
+      "lunch",
+      "zone-5-trebinje"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -90,11 +125,18 @@
     "lng": 17.3448,
     "description": "Family-run waterside konoba in Pomena where the owners also cook — the freshest fish on Mljet, caught that day. Specialises in brudet (fish stew), black risotto, grilled sea bass, and fresh pasta. Free mooring for boats. The single most consistently praised restaurant on the island.",
     "communityNotes": "'A rare place where the owners of the tavern are also the chefs themselves.' 'By FAR the best we had in Croatia — all dishes were so good and the staff was sooo attentive.' 'The food was absolutely wonderful and the waterside setting really made an incredible dining experience.' 'Fantastic food, outstanding location and atmosphere.' TripAdvisor top-rated on Mljet. CASH ONLY. Reservations strongly recommended — books up in June.",
-    "sources": ["https://www.tripadvisor.com/Restaurant_Review-g1899197-d4758138-Reviews-Konoba_Ribar-Pomena_Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html"],
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g1899197-d4758138-Reviews-Konoba_Ribar-Pomena_Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html"
+    ],
     "cost": "~€20–30/person",
     "timeNeeded": "1.5–2h",
     "bestTime": "Sunset seating — book ahead; cash only",
-    "tags": ["zone-2-mljet", "seafood", "konoba", "cash-only"],
+    "tags": [
+      "zone-2-mljet",
+      "seafood",
+      "konoba",
+      "cash-only"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -103,15 +145,23 @@
     "name": "Blace Beach (Mljet — secluded sandy cove, 20min from Saplunara)",
     "country": "HR",
     "category": "beach",
-    "lat": 42.7080,
-    "lng": 17.4700,
+    "lat": 42.708,
+    "lng": 17.47,
     "description": "The largest sandy beach on Mljet, accessible only via a narrow dirt track from Saplunara village — 20-minute walk through pine forest and vineyards. Fine white sand in a quiet protected bay with dense pine shade. No facilities whatsoever (bring everything). Water is very shallow — more wading than swimming, but stunning setting.",
     "communityNotes": "Consistently described as 'arguably the most beautiful beach on the island' and 'worth every minute of the walk.' June brings pleasant temps and noticeably fewer crowds than July–August. 'Deserted island charm — felt like we had it to ourselves.' No lifeguard, no bar, no toilets — go self-sufficient. The shallow water is family-perfect but not for strong swimmers wanting depth.",
-    "sources": ["https://1001beach.com/en/europe/croatia/mljet/blace", "https://croatiaspots.com/mljet-beaches/"],
+    "sources": [
+      "https://1001beach.com/en/europe/croatia/mljet/blace",
+      "https://croatiaspots.com/mljet-beaches/"
+    ],
     "cost": "Free (no NP ticket needed — outside the park boundary)",
     "timeNeeded": "2–3h including walk",
     "bestTime": "Morning before any day-trippers arrive",
-    "tags": ["zone-2-mljet", "hidden", "sandy", "off-np"],
+    "tags": [
+      "zone-2-mljet",
+      "hidden",
+      "sandy",
+      "off-np"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -124,11 +174,20 @@
     "lng": 17.5439,
     "description": "Dramatic sea cave carved into Mljet's south coast, reachable via 20-minute hike from Babino Polje village — no NP ticket needed since it's outside the park. Swim into the cave from the sea or scramble down the cliffside path. Turquoise water inside, great cliff-jump potential from the rocks above.",
     "communityNotes": "One of Mljet's most memorable spots yet most day-trippers skip it for the lakes. 'The cave itself is stunning — swam in from outside and felt completely alone inside.' Best reached by parking at Tommy's Supermarket in Babino Polje then following marked trail. Entrance is ~4–5m wide by sea. The steep slope approach has loose rocks — wear shoes with grip. Crowds: minimal even in peak season because it requires effort.",
-    "sources": ["https://tayloronatrip.com/odysseus-cave-mljet-island-croatia", "https://trek.zone/en/croatia/places/614256/odysseus-cave-mljet"],
+    "sources": [
+      "https://tayloronatrip.com/odysseus-cave-mljet-island-croatia",
+      "https://trek.zone/en/croatia/places/614256/odysseus-cave-mljet"
+    ],
     "cost": "Free (no NP ticket needed)",
     "timeNeeded": "2h including hike",
     "bestTime": "Morning — best light in the cave is 09:00–11:00",
-    "tags": ["zone-2-mljet", "cave", "swim", "cliff-jump", "off-np"],
+    "tags": [
+      "zone-2-mljet",
+      "cave",
+      "swim",
+      "cliff-jump",
+      "off-np"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -141,11 +200,20 @@
     "lng": 17.7385,
     "description": "Local swimming spot on the emerald Drežanka river in the 29km Drežnica canyon between mountains Čvrsnica and Čabulja. The 'Stupina' pool at Draga was historically used for training dives before the Stari Most competition. Crystal-clear karst water, cold even in June. Small restaurant on site.",
     "communityNotes": "'Cold but crystal clear water, and there is a small restaurant at the place — ~30 min drive from Mostar.' (TripAdvisor forum locals). Favourite bathing place for Mostar locals, largely unknown to tourists. The canyon itself is spectacular karst scenery. Three waterfalls 10–12m near the spring upstream. Arrive before noon — afternoon sun angle drops off in the canyon. Not signposted from major roads; use GPS coordinates.",
-    "sources": ["https://www.tripadvisor.com/ShowTopic-g295388-i17568-k14459137-Swimming_spots_in_and_around_Mostar_aside_from_kravice-Mostar_Herzegovina_Neretva_Canton_.html", "https://en.wikipedia.org/wiki/Dre%C5%BEanka_(river)"],
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g295388-i17568-k14459137-Swimming_spots_in_and_around_Mostar_aside_from_kravice-Mostar_Herzegovina_Neretva_Canton_.html",
+      "https://en.wikipedia.org/wiki/Dre%C5%BEanka_(river)"
+    ],
     "cost": "Free (small restaurant optional)",
     "timeNeeded": "2–3h",
     "bestTime": "Before noon for sun in the canyon",
-    "tags": ["zone-3-mostar", "swim", "local", "hidden", "kravica-alternative"],
+    "tags": [
+      "zone-3-mostar",
+      "swim",
+      "local",
+      "hidden",
+      "kravica-alternative"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -158,11 +226,19 @@
     "lng": 17.8402,
     "description": "Local swimming spot on the Buna river 12km south of Mostar centre, near the village of Blagaj and its famous karst spring. The Buna is crystal-clear, icy-cold karst water. Kupalište Brzatak is where Mostar locals go — easy roadside access, no entry fee, and it pairs naturally with a stop at Blagaj Tekke.",
     "communityNotes": "Recommended by local TripAdvisor destination experts for Mostar. 'Kupalište Brzatak is on the Buna river just south of Mostar.' Coordinates roughly 43.2474, 17.8402. Often done as a combo with Blagaj spring (Vrelo Bune) which is 500m away — the spring is the largest karst spring in Europe, 43 m³/sec. Note: ba-blagaj-trout-terraces is already in the food file; this is the swimming spot, which is different.",
-    "sources": ["https://tripjive.com/explore-idyllic-swimming-spots-near-mostar/", "https://www.tripadvisor.com/ShowTopic-g295388-i17568-k14459137-Swimming_spots_in_and_around_Mostar_aside_from_kravice-Mostar_Herzegovina_Neretva_Canton_.html"],
+    "sources": [
+      "https://tripjive.com/explore-idyllic-swimming-spots-near-mostar/",
+      "https://www.tripadvisor.com/ShowTopic-g295388-i17568-k14459137-Swimming_spots_in_and_around_Mostar_aside_from_kravice-Mostar_Herzegovina_Neretva_Canton_.html"
+    ],
     "cost": "Free",
     "timeNeeded": "1–2h",
     "bestTime": "Early afternoon for warmest air but water stays cold",
-    "tags": ["zone-3-mostar", "swim", "local", "buna"],
+    "tags": [
+      "zone-3-mostar",
+      "swim",
+      "local",
+      "buna"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -171,15 +247,23 @@
     "name": "Old Crew Gastro Pub (Mostar — riverside bar off the tourist strip)",
     "country": "BA",
     "category": "food",
-    "lat": 43.3380,
+    "lat": 43.338,
     "lng": 17.8151,
     "description": "Craft beer pub hanging over the Radobolja creek just upstream from the Crooked Bridge (Kriva Ćuprija) — locals and expats mix here, far less touristy than the Stari Most strip. Riverside terraces, boat-themed interior, local beers on tap, affordable prices. Good alternative evening option before or instead of Stari Most.",
     "communityNotes": "'Hanging over the Radobolja creek that flows into the Neretva, Old Crew is just upstream from the small Crooked Bridge. While the interior exudes the feel of a cozy bar, the outdoor riverside terraces are a relaxing retreat.' 'Bartenders speak perfect English, selection of local beers.' 'Beautifully decorated in the style of a boat — excellent food and drinks at surprisingly low prices, even for Bosnia.' Near Kriva Ćuprija (Crooked Bridge), not on the main Stari Most tourist circuit.",
-    "sources": ["https://www.tripadvisor.com/Restaurant_Review-g295388-d23977254-Reviews-Old_Crew_Gastro_Pub-Mostar_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_H.html"],
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g295388-d23977254-Reviews-Old_Crew_Gastro_Pub-Mostar_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_H.html"
+    ],
     "cost": "~€5–10/person for drinks and food",
     "timeNeeded": "1–2h",
     "bestTime": "Evening — terrace especially good at dusk",
-    "tags": ["zone-3-mostar", "bar", "craft-beer", "local", "riverside"],
+    "tags": [
+      "zone-3-mostar",
+      "bar",
+      "craft-beer",
+      "local",
+      "riverside"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -192,11 +276,18 @@
     "lng": 17.8069,
     "description": "The leading craft beer spot in Bosnia, at Gojka Vukovica 4 near the Old Town. Smoke-free (rare in BiH), large outdoor garden, staff who walk you through the tap selection and let you taste before you commit. Food menu expanding. Good for a first evening drink before dinner elsewhere.",
     "communityNotes": "'One of the few smoke-free establishments in Bosnia and Herzegovina — the staff really know their beer and will talk you through options and allow you to taste them.' Wide range of regional brews, excellent service. 'A craft beer mecca in Mostar.' Locals and travelling foodies use this as a pre-dinner stop; it gets busy on summer evenings. Address: Gojka Vukovica 4, Mostar.",
-    "sources": ["https://kathi-daniela.com/en/destinations/bosnia-and-herzegovina/best-restaurants-mostar/"],
+    "sources": [
+      "https://kathi-daniela.com/en/destinations/bosnia-and-herzegovina/best-restaurants-mostar/"
+    ],
     "cost": "~€4–6 per craft beer",
     "timeNeeded": "1–2h",
     "bestTime": "Early evening — fills up after 20:00",
-    "tags": ["zone-3-mostar", "bar", "craft-beer", "smoke-free"],
+    "tags": [
+      "zone-3-mostar",
+      "bar",
+      "craft-beer",
+      "smoke-free"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -205,15 +296,23 @@
     "name": "AutoCamp Green Park (Žitomislići, 18km from Mostar)",
     "country": "BA",
     "category": "campsite",
-    "lat": 43.2300,
-    "lng": 17.7500,
+    "lat": 43.23,
+    "lng": 17.75,
     "description": "Bosnia's highest-rated campsite (#1 in BiH, Europe top 110 for 6 years running) on the shaded Neretva riverbank at Žitomislići village, 18km and ~20 minutes from Mostar Old Bridge. 30 tent pitches under tall trees, river swimming, on-site restaurant, kayak rentals. An excellent Mostar base if you want comfort and nature together.",
     "communityNotes": "'Great place with lots of shade located on the refreshing Neretva.' (June 2024) 'Clean toilets, very good and cheap restaurant inside the camp.' 'All staff were helpful and attentive.' 'Place is run by a very polite couple — excellent natural air-conditioner.' 4.9/5 (18 TripAdvisor reviews). Facilities confirmed: hot showers, soap+TP always stocked, electricity, WiFi, BBQs, on-site restaurant. Not the cheapest but far best quality near Mostar.",
-    "sources": ["https://www.tripadvisor.com/Hotel_Review-g18851473-d18850841-Reviews-Auto_camp_Green_Park-Zitomislici_Herzegovina_Neretva_Canton_Federation_of_Bosnia_an.html", "https://greenpark.ba/"],
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g18851473-d18850841-Reviews-Auto_camp_Green_Park-Zitomislici_Herzegovina_Neretva_Canton_Federation_of_Bosnia_an.html",
+      "https://greenpark.ba/"
+    ],
     "cost": "~€25–35/night for 4 + tent + car (est.)",
     "facilities": "Hot showers, toilets with TP/soap, electricity, WiFi, on-site restaurant, kayak rental, river swimming, washing machines, shade",
     "timeNeeded": "Base camp",
-    "tags": ["zone-3-mostar", "camping", "neretva", "best-in-class"],
+    "tags": [
+      "zone-3-mostar",
+      "camping",
+      "neretva",
+      "best-in-class"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -223,14 +322,21 @@
     "country": "ME",
     "category": "beach",
     "lat": 42.2745,
-    "lng": 18.8340,
+    "lng": 18.834,
     "description": "Two sandy bays (Mogren I and II) connected by a cliff tunnel, a 15-minute walk south of Budva Old Town along the coastal path. Mogren I has sun loungers, bar and a lively atmosphere; Mogren II is quieter with cliff shade in the afternoon. Consistently rated the most beautiful accessible beach in Budva.",
     "communityNotes": "Budva locals' preference for an afternoon beach — close to the old town, more scenic than Slovenska Plaža, less packed than the main town beach. 'Towering cliffs provide welcome shade in the late afternoon.' Best visited after 16:00 when morning crowds thin. Mogren II (past the tunnel) is significantly quieter. Not suitable for large groups arriving by car — park in old town and walk 15 min along the promenade.",
-    "sources": ["https://www.naturallybychloe.com/blog/budva-beaches-guide", "https://montenegro.org/mogren-beach/"],
+    "sources": [
+      "https://www.naturallybychloe.com/blog/budva-beaches-guide",
+      "https://montenegro.org/mogren-beach/"
+    ],
     "cost": "Free (sun loungers for hire)",
     "timeNeeded": "2–3h afternoon",
     "bestTime": "16:00–18:00 — cliff shade, fewer crowds",
-    "tags": ["zone-4-budva", "beach", "afternoon"],
+    "tags": [
+      "zone-4-budva",
+      "beach",
+      "afternoon"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -243,10 +349,17 @@
     "lng": 18.8009,
     "description": "Small family campsite 20 metres from Jaz Beach (the concert/festival beach, 3km from Budva old town). Grass pitches, hot showers, electricity, WiFi, and direct beach access. Jaz itself is huge and scenic — far less crowded than Budva's own beaches, and famous for its turquoise water and festival stage backdrop.",
     "communityNotes": "'Super nette Betreiberin, gepflegte Sanitäranlagen, direkt am Strand.' (park4night) 'Great spot, clean and perfect location. Great food at the pizzeria.' Rating: 4.16/5 (95 reviews park4night). Pricing: €35–45 for a van with 3 people; tent rate likely €20–30 for 4. Note: no toilet paper or soap provided by facility — bring your own. Jaz Beach hosts concerts (check calendar — could be very loud or very fun depending on timing).",
-    "sources": ["https://park4night.com/en/place/151004"],
+    "sources": [
+      "https://park4night.com/en/place/151004"
+    ],
     "cost": "~€25–35/night for 4 + tent + car (est.)",
     "facilities": "Hot showers, toilets, electricity, WiFi, drinking water, direct beach access (20m)",
-    "tags": ["zone-4-budva", "camping", "beach-camp", "jaz"],
+    "tags": [
+      "zone-4-budva",
+      "camping",
+      "beach-camp",
+      "jaz"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -259,11 +372,18 @@
     "lng": 18.9707,
     "description": "Family-run seafront camping on the Buljarica peninsula — 2.4km beach, the longest on the Budva Riviera. Direct rocky-coast sea access (water shoes recommended for sea urchins), sunsets rated exceptional by reviewers. About 15km south of Budva. Quieter and more budget-friendly than Budva-area sites.",
     "communityNotes": "'Direkt on the sea with umbrellas. Very quiet.' 'Magical sunset spot.' 'Traumhaft schöner Ort' (Dream-like beautiful place). Rating: 4.27/5 (90 reviews). Pricing: ~€20/night. Facilities: toilets, showers, electricity, fresh water, WiFi, washing machine (€5). Access: narrow winding road — northern approach best. 6.5km to nearest shops in Petrovac. Minimal shade on pitches. Rock/pebble entry with sea urchins — water shoes a must.",
-    "sources": ["https://park4night.com/en/place/139018"],
+    "sources": [
+      "https://park4night.com/en/place/139018"
+    ],
     "cost": "~€20/night (incl. electricity, water, showers)",
     "facilities": "Showers, toilets, electricity, fresh water, WiFi, washing machine — rocky sea access with sea urchins",
     "bestTime": "Sunset facing west",
-    "tags": ["zone-4-budva", "camping", "seafront", "buljarica"],
+    "tags": [
+      "zone-4-budva",
+      "camping",
+      "seafront",
+      "buljarica"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -272,15 +392,23 @@
     "name": "Casper Bar (Budva Old Town — jazz and craft beer garden)",
     "country": "ME",
     "category": "nightlife",
-    "lat": 42.2770,
+    "lat": 42.277,
     "lng": 18.8408,
     "description": "Small hidden garden bar inside Budva's Old Town with jazz music, craft beer, and a magical atmosphere under lemon trees. The anti-Sparta: relaxed, local crowd, no dress code, no queue. Perfect pre-club warm-up or standalone evening if the group isn't in club mode.",
     "communityNotes": "'Beautiful old garden, lemon trees with lemons growing to the size of 3 tennis balls. Casper has amazing magic and spirit.' 'Great range of craft beers and a lovely glass of Prosecco for €3.50.' 'During high season (June–October) this is the best club in the world.' Owner is always present. Intimate and electric atmosphere — 'free flowing jazz, best chill-out place in Budva.' Open from June.",
-    "sources": ["https://www.tripadvisor.com/ShowUserReviews-g304074-d3515037-r380182469-Casper_Bar-Budva_Budva_Municipality.html"],
+    "sources": [
+      "https://www.tripadvisor.com/ShowUserReviews-g304074-d3515037-r380182469-Casper_Bar-Budva_Budva_Municipality.html"
+    ],
     "cost": "~€4–6/drink",
     "timeNeeded": "1–2h",
     "bestTime": "22:00–midnight — pre-club or standalone",
-    "tags": ["zone-4-budva", "bar", "jazz", "craft-beer", "old-town"],
+    "tags": [
+      "zone-4-budva",
+      "bar",
+      "jazz",
+      "craft-beer",
+      "old-town"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -293,28 +421,44 @@
     "lng": 18.8422,
     "description": "Budva's most exclusive club with ancient Greek/Spartan theme, capacity 600+, hosting international DJs in peak season. Open from mid-June and confirmed running until 5am. Smart dress code enforced. Located in the heart of Budva. Confirmed open in late June — unlike Top Hill which starts mid-July.",
     "communityNotes": "'Most exclusive nightclub in Budva, where the rich kids and celebrities come.' 'Kitted out with an ancient Greek/Spartan theme and some of the world's greatest DJs as regular performers.' Sparta and Trocadero 'will be open and run until sunrise in June.' (2024 local report). Dress code: smart — pack decent clothes. Entry €10–20 estimated. Reservations recommended. Contact: +382 69 914 914.",
-    "sources": ["https://www.myguidemontenegro.com/nightlife/club-sparta", "https://www.itimaker.com/blog/budva-nightlife-for-beginners"],
+    "sources": [
+      "https://www.myguidemontenegro.com/nightlife/club-sparta",
+      "https://www.itimaker.com/blog/budva-nightlife-for-beginners"
+    ],
     "cost": "~€10–20 entry",
     "timeNeeded": "Late night",
     "bestTime": "After midnight — peaks 01:00–04:00",
-    "tags": ["zone-4-budva", "club", "nightlife", "open-june"],
+    "tags": [
+      "zone-4-budva",
+      "club",
+      "nightlife",
+      "open-june"
+    ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-sveti-stefan-viewpoint",
     "name": "Sveti Stefan mainland viewpoint (free, 6km south of Budva)",
     "country": "ME",
     "category": "viewpoint",
-    "lat": 42.2520,
-    "lng": 18.8940,
+    "lat": 42.252,
+    "lng": 18.894,
     "description": "Free public bluff above Sveti Stefan island — widely considered the single best photograph in Montenegro. The pink-roofed 15th-century island village against the Adriatic is unmistakable. 6km south of Budva; reachable by local bus 21 (€1.50, 15min) or 90-minute coastal walk. Combine with an afternoon at Sveti Stefan beach (public section free).",
     "communityNotes": "'The single best photograph in Montenegro.' Viewpoint is public and free — the island hotel (Aman) is private and inaccessible without booking. Local bus line 21 runs every 30 minutes from Budva bus station. Good afternoon stop combining beach, viewpoint, and return to Budva for nightlife. June: less busy than July–August, easier parking. Beach below split into public (free, northern side) and hotel (paid access).",
-    "sources": ["https://www.moonhoneytravel.com/sveti-stefan-montenegro/", "https://tourismattractions.net/montenegro/budva"],
+    "sources": [
+      "https://www.moonhoneytravel.com/sveti-stefan-montenegro/",
+      "https://tourismattractions.net/montenegro/budva"
+    ],
     "cost": "Free (viewpoint); beach free on public side",
     "timeNeeded": "30min viewpoint + optional 2h beach",
     "bestTime": "Golden hour (18:00–19:00) for best photography",
-    "tags": ["zone-4-budva", "viewpoint", "photography", "iconic"],
+    "tags": [
+      "zone-4-budva",
+      "viewpoint",
+      "photography",
+      "iconic"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -323,15 +467,23 @@
     "name": "Kotor Serpentine — Bend 10 panorama (Bay of Kotor from above)",
     "country": "ME",
     "category": "viewpoint",
-    "lat": 42.4450,
-    "lng": 18.7720,
+    "lat": 42.445,
+    "lng": 18.772,
     "description": "The first major viewpoint on the Kotor–Lovćen serpentine road (25 hairpin bends), reached ~10 minutes from Kotor Old Town. At the 10th bend the Bay of Kotor reveals its full scale from above — one of the top-rated experiences in all of Kotor (#1 of 87 on TripAdvisor, 4.8/5). A 20-minute stop is perfectly realistic when driving out of Kotor northward.",
     "communityNotes": "'Incredible views of the old town, Kotor Bay, and beyond.' 'The vista is good from the beginning and gets better from bend number 13.' Ample wide-bend parking; no entry fee. 'Worth a stop' consensus from hundreds of reviews. Ranked #1 of 87 things to do in Kotor (TripAdvisor). Drive up early in the morning — narrow road gets backed up after 10:00 with tourist buses. The Austro-Hungarian border post ruins (~halfway) are a secondary stop for history buffs.",
-    "sources": ["https://www.tripadvisor.com/Attraction_Review-g295381-d10696013-Reviews-Viewing_Point_at_the_Road_Kotor_Lovcen-Kotor_Kotor_Municipality.html", "https://adriaticways.com/kotor-serpentine-road/"],
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g295381-d10696013-Reviews-Viewing_Point_at_the_Road_Kotor_Lovcen-Kotor_Kotor_Municipality.html",
+      "https://adriaticways.com/kotor-serpentine-road/"
+    ],
     "cost": "Free",
     "timeNeeded": "20–30 min",
     "bestTime": "Before 09:00 to avoid tourist bus congestion on the narrow road",
-    "tags": ["zone-5-kotor-vitaljina", "viewpoint", "kotor-bay", "morning"],
+    "tags": [
+      "zone-5-kotor-vitaljina",
+      "viewpoint",
+      "kotor-bay",
+      "morning"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -344,11 +496,19 @@
     "lng": 18.6973,
     "description": "Baroque waterfront village at the narrowest point of the Bay of Kotor, with boat trips (€5/person, 10-minute ride) to the island church of Our Lady of the Rocks (Gospa od Škrpjela). The village itself is equally photogenic from the quay. A 45-minute stop covers both the quay walk and the boat ride comfortably.",
     "communityNotes": "'Boats leave every 15 minutes from the waterfront — boat trip under 10 minutes each way, €5/person.' Island visit needs 20–30 minutes; guided tour covers the legend of the artificially constructed island. Divided opinions on the island itself — 'beautiful church with impressive ceiling frescoes' vs 'nice but 10 minutes is enough.' Consensus: the village waterfront view is worth stopping for regardless; the boat is optional but cheap. June is one of the recommended months — quieter than July–August.",
-    "sources": ["https://www.montenegropulse.com/our-lady-of-the-rocks.html", "https://www.placesofjuma.com/perast-montenegro/"],
+    "sources": [
+      "https://www.montenegropulse.com/our-lady-of-the-rocks.html",
+      "https://www.placesofjuma.com/perast-montenegro/"
+    ],
     "cost": "€5/person boat + €3 museum entry (optional)",
     "timeNeeded": "45min–1h",
     "bestTime": "Early morning before tour buses; avoid midday in peak season",
-    "tags": ["zone-5-kotor-vitaljina", "kotor-bay", "boat", "historic"],
+    "tags": [
+      "zone-5-kotor-vitaljina",
+      "kotor-bay",
+      "boat",
+      "historic"
+    ],
     "rating": 4,
     "status": "candidate"
   }
