@@ -91,6 +91,7 @@ export const DEFAULT_PLAN: Overrides = {
   'me-vinarija-masanovic':   { day: 10, dayOrder: 6 },
   'me-villa-jablan-winery-rvasi': { day: 10, dayOrder: 7 },
   'me-camp-radoman':         { day: 10, dayOrder: 8 },
+  'me-gem-skadar-orahovo-koliba': { day: 10, dayOrder: 9 },
 
   // ── Day 11: Jun 26 (Fri) — Stari Bar → Sveti Stefan → Budva ────────────
   'me-stari-bar':            { day: 11, dayOrder: 1 },
@@ -109,6 +110,7 @@ export const DEFAULT_PLAN: Overrides = {
   'me-vitaljina-border':     { day: 12, dayOrder: 6 },
   'ba-trebinje-old-town':    { day: 12, dayOrder: 7 },
   'ba-air-1165836464333612445': { day: 12, dayOrder: 8 },
+  'ba-villa-village-house-cvaljina': { day: 12, dayOrder: 9 },
 
   // ── Day 13: Jun 28 (Sun) — Dubrovnik → car drop ─────────────────────────
   'hr-pasjaca-beach':        { day: 13, dayOrder: 1 },
