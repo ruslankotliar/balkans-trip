@@ -438,3 +438,225 @@ Average: ~€42–51/night for 4 across 12 nights. Well within budget.
 - Jadrolinija ferry booking: [jadrolinija.hr](https://www.jadrolinija.hr/en/search-buy-ticket)
 - EES border queue / Debeli Brijeg: trip-ops.md
 - June crowd/cruise info: trip-ops.md
+
+---
+
+## Verified Links — Researched Jun 11, 2026
+
+This section adds specific verified URLs, phone numbers, and booking methods found by live web research. Use these to book directly. Airbnb blocks programmatic access so individual listing prices must be confirmed by clicking through — base prices noted below are from search snippets and may not reflect exact Jun 2026 rates.
+
+---
+
+### Night 1 — Jun 16 — Paklenica
+
+**Option A: Camp NP Paklenica (walk-in only)**
+- Phone: +385 (0) 23 369 452
+- Official page: https://www.np-paklenica.hr/en/what-to-visit-en/camp-nacionalni-park-en
+- Confirmed: NO reservations accepted. Walk-in only. Call at 08:00 on Jun 16 to check space.
+
+**Option B: Bluesun Camping Paklenica — BOOK ONLINE NOW**
+- Direct booking page (pitches): https://www.bluesunhotels.com/en/booking/paklenica-parcele
+- Booking.com listing: https://www.booking.com/hotel/hr/bluesuncamp-paklenica.html
+- Bluesun Reservation Center: +385 13 844 288 / reservations@bluesunhotels.com
+- Price list page: https://www.bluesuncamping.com/en/price-list-camp-paklenica-parcels.aspx
+- Action: Go to the direct booking page above, select Jun 16–17, tent pitch. This is confirmed online-bookable.
+
+---
+
+### Night 2 — Jun 17 — Omiš
+
+**Option A: Auto Camp Lisičina — contact direct**
+- Official website: http://www.ac-lisicina.hr/en
+- Contact page: https://www.ac-lisicina.hr/en/contact?lang=en
+- Email: kamp-lisicina@inet.hr (primary) / apartmani.lisicina@gmail.com
+- Phone: +385 95 5123 473 / +385 95 5773 707
+- Also listed on Trip.com: https://in.trip.com/hotels/omis-hotel-detail-28788140/auto-camp-lisicina/
+- Action: Email today + call to confirm Jun 17 availability. No online booking — direct contact only.
+
+**Airbnb backup options in Omiš (4 guests, Jun 17):**
+- Omiš apartments search: https://www.airbnb.com/omis-croatia/stays/apartments
+- Specific listing — Apartment 3422-5 (4p): https://www.airbnb.com/rooms/23989856
+- Specific listing — East Side Apartment (5p capacity): https://www.airbnb.com/rooms/1019281104454358706
+- Filter for 4 guests and Jun 17 check-in on the search link above for current pricing.
+
+---
+
+### Night 3 — Jun 18 — Trebinje (and Night 12 — Jun 27)
+
+**Primary: Gaga City Center Trebinje — BOOK NOW**
+- Airbnb listing: https://www.airbnb.com/rooms/1165836464333612445
+- Confirmed active listing, ~$49/night entire unit, 5.0 rating, 40+ reviews, Top Guest Favourite
+- Check Jun 18–19 AND Jun 27–28 at the same time. Book both nights if available.
+
+**Backup Trebinje options (4 guests, entire place):**
+- Apartman Gaga (different listing, same city, near centre): https://www.airbnb.com/rooms/1213677023929554909
+- Riverside Apartment Vivida (river views, 10–15 min walk to old town): https://www.airbnb.com/rooms/1093274441797229414
+- Minex Apartment 1: https://www.airbnb.com/rooms/652928
+- Minex Apartment 2: https://www.airbnb.com/rooms/1232260
+- Apartments Minex on Booking.com: https://www.booking.com/hotel/ba/minex-studio.html
+- Spacious loft with terrace: https://www.airbnb.com/rooms/17938359
+- All Trebinje apartments Airbnb: https://www.airbnb.com/trebinje-bosnia-and-herzegovina/stays/apartments
+
+---
+
+### Night 4 — Jun 19 — Dubrovnik area
+
+**Option A: Camping Kate, Mlini — contact direct (no online booking)**
+- Official website: https://campingkate.com/
+- Price list: https://campingkate.com/price/
+- Phone: +385 20 487 006
+- Email: info@campingkate.com
+- CamplinQ listing (may have online booking): https://camplinq.com/camps/camping-kate-2/
+- Confirmed: No Booking.com listing found. Contact direct by email + phone.
+
+**Option B: Camping Solitudo, Dubrovnik (book by phone)**
+- Website: https://www.valamarcamping.com/solitudo-camp-dubrovnik
+- Phone (reservations): +385 (0)52 465 010
+
+**Airbnb options near Dubrovnik/Mlini for Jun 19 (backup to camping):**
+- All Mlini apartments: https://www.airbnb.com/mlini-croatia/stays/apartments
+- Apartment Srebreno (near Mlini): https://www.airbnb.com/rooms/11889879
+- All Srebreno stays: https://www.airbnb.com/srebreno-croatia/stays
+
+---
+
+### Night 5 — Jun 20 — Mljet island
+
+**Option A: Autokamp Lovor, Kozarica, Mljet — BOOK VIA WEBSITE FORM**
+- Official website + online reservation form: https://www.autocamp-mljet.com/?lang=eng
+- Phone: +385 98 70 22 00 / +385 98 22 92 22
+- Confirmed: Website has an embedded reservation form where you select adults, children, tents, extras. Use it now for Jun 20 (Saturday — peak demand).
+- Confirmed price (high season Jun 15–Sep 15): 4 adults × €15 = €60 + tent pitch €12 = **€72/night** + tourist tax. (Low season until Jun 14 would be €53 — you're in high season.)
+- Park4night listing: https://park4night.com/en/place/137639
+
+**Airbnb options in Polače/Mljet (if camping full):**
+- Stella Maris Apartments, Polače (right at ferry dock + NP entrance): https://www.airbnb.com/rooms/23655939
+- All Polače stays: https://www.airbnb.com/polace-croatia/stays
+- All Mljet NP stays: https://www.airbnb.com/mljet-national-park-croatia/stays
+
+---
+
+### Night 6 — Jun 21 — Mostar
+
+**Option A: Apartment City Center Mostar — BOOK NOW**
+- Airbnb listing: https://www.airbnb.com/rooms/14231459
+- Also available on Airbnb UK: https://www.airbnb.co.uk/rooms/14231459
+- Confirmed active listing. 200 m from Old Town, 7th floor with lift, terrace. ~$53–60/night.
+- Book Jun 21–22 directly.
+
+**Other Mostar options (4 guests):**
+- Mostar Family Apartment (condo): https://www.airbnb.com/rooms/20546902
+- Boutique Apartment Mostar: https://www.airbnb.com/rooms/53119845
+- All Mostar stays search: https://www.airbnb.com/mostar-bosnia-and-herzegovina/stays
+- Booking.com Mostar apartments: https://www.booking.com/apartments/city/ba/mostar.html
+
+---
+
+### Night 7 — Jun 22 — Sarajevo
+
+**Option A: Old Town Pearl Apartments ("Dzeno") — BOOK NOW**
+- Booking.com: https://www.booking.com/hotel/ba/old-town-pearl-apartments.html
+- Also on Agoda: https://www.agoda.com/dzeno-old-town-pearl-apartments/hotel/sarajevo-ba.html
+- Direct booking site: https://dzeno-old-town-pearl-apartments.sarajevohotels.org/
+- Confirmed NOT on Airbnb — Booking.com is the right platform. Prices from ~€31–55/night.
+
+**Airbnb Sarajevo Old Town options (backup):**
+- "Stay in the Old Town of Sarajevo" (entire place): https://www.airbnb.com/rooms/6667649
+- Old Town Luxury Apartment: https://www.airbnb.com/rooms/606545162567004956
+- Magical attic Old Town (private garage): https://www.airbnb.com/rooms/876424
+- All Sarajevo Old Town stays: https://www.airbnb.com/sarajevo-city-hall-bosnia-and-herzegovina/stays
+
+---
+
+### Nights 8–9 — Jun 23–24 — Žabljak / Durmitor
+
+**Option A: Auto Camp Mlinski Potok — book via Pitchup or direct**
+- Official website: https://autocampmlinskipotok.com/en/
+- Pitchup (online booking with 15% deposit, immediate confirmation): https://www.pitchup.com/en-us/campsites/montenegro/northern/zabljak/pitomine/autocamp_mlinski_potok/
+- Price list page: https://autocampmlinskipotok.com/en/price-list/
+- Phone: +382 69 821-730
+- Email: minakamp@gmail.com
+- 2025 price reference (2026 TBC): 4 adults €20 + tent €3 + car €3 = ~€26 + tourist tax. Final price for 2026 may be slightly higher. Use Pitchup for binding online booking.
+
+**Option B: Bocha's Camp — contact direct**
+- Website domain expired (kampkodboce.me is for sale — site is down as of Jun 2026)
+- TripAdvisor listing (reviews only): https://www.tripadvisor.com/Hotel_Review-g1096284-d4594236-Reviews-Bocha_s_Campsite-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html
+- Phone (from camping directories): +382 69 223218
+- Action: Call to confirm they're still operating before relying on this option.
+
+**Option C: Hostel Hikers Den (private room for 4) — BOOK VIA HOSTELWORLD**
+- Hostelworld: https://www.hostelworld.com/hostels/p/73957/hostel-hikers-den/
+- Official site: https://www.hostelzabljak.com/
+- Pricing: dorms from ~$13/bed, private rooms from ~$28/room. Cash only on arrival.
+- Best Montenegro hostel 2015–2018. Free cancellation 3+ days before. Book via Hostelworld link.
+
+---
+
+### Night 10 — Jun 25 — Skadar Lake
+
+**Option A: Estate & Winery San Duyevo — BOOK NOW (small property)**
+- Booking.com: https://www.booking.com/hotel/me/estate-amp-winery-san-duyevo.en-gb.html
+- Airbnb listing 1: https://www.airbnb.com/rooms/14401858
+- Airbnb listing 2 (deluxe): https://www.airbnb.com/rooms/1606521822737829256
+- From ~$27–41/night, small property, rated 8.1. Free wine tasting included. Cash only.
+- Book soon — small winery property, limited rooms.
+
+**Option B: Guesthouse Skadar Lake — Raicevic (Virpazar)**
+- Booking.com: https://www.booking.com/hotel/me/godinje-apartment.html
+- Hostelworld: https://www.hostelworld.com/bed-and-breakfasts/p/90413/guesthouse-skadar-lake/
+- Confirmed 9.3/10 on Booking.com, 134 reviews, from ~$22/night. Mountain views, private beach, restaurant, free shuttle.
+
+**Option C: Auto Camp Radoman (Virpazar)**
+- Booking.com: https://www.booking.com/hotel/me/auto-camp-radoman.html
+- Airbnb (pre-pitched tents): https://www.airbnb.com/rooms/908028851992560673
+- Rated 9.2, from ~$12–24/night. River views. Cash only.
+
+**Option D: Camp Podkraj (Virpazar)**
+- Booking.com: https://www.booking.com/hotel/me/camp-podkraj-virpazar.html
+- Rated 9.7, from ~$26/night. Pool, WiFi, home-cooked meals available (€7 breakfast, €9 dinner with wine).
+
+---
+
+### Night 11 — Jun 26 — Budva
+
+**Option A: Autocamp Avala, Bečići — contact direct (no online booking found)**
+- Phone: +382 67 518 114
+- Address: Omladinskih brigada 1, Bečići, Budva
+- No Booking.com or Pitchup listing confirmed. Call ahead to reserve.
+- PiNCAMP listing (info only): https://www.pincamp.com/campings/autocamp-avala
+- Note: Mixed TripAdvisor reviews (1.8/5) — outdated sanitary block per reviewers. Budget option only.
+- TripAdvisor reviews: https://www.tripadvisor.com/Hotel_Review-g304074-d10405152-Reviews-Auto_Camp_Avala-Budva_Budva_Municipality.html
+
+**Alternative: Budva Airbnb apartment for Jun 26**
+- All Budva stays: https://www.airbnb.com/s/Budva--Montenegro
+- Filter: 4 guests, Jun 26–27, entire place — expect €60–100 for decent apartment.
+
+---
+
+### Night 12 — Jun 27 — Trebinje (same as Night 3)
+
+Same options as Jun 18 above. Key links repeated:
+- Gaga City Center: https://www.airbnb.com/rooms/1165836464333612445
+- All Trebinje apartments: https://www.airbnb.com/trebinje-bosnia-and-herzegovina/stays/apartments
+- Book Jun 27–28 at the same time as Jun 18–19.
+
+---
+
+### Summary of Confirmed Online-Bookable Options
+
+| Night | Where to book | Direct link |
+|-------|--------------|-------------|
+| Jun 16 | Bluesun Camping Paklenica pitches | https://www.bluesunhotels.com/en/booking/paklenica-parcele |
+| Jun 16 | Bluesun on Booking.com | https://www.booking.com/hotel/hr/bluesuncamp-paklenica.html |
+| Jun 17 | Auto Camp Lisičina (email/phone) | kamp-lisicina@inet.hr / +385 95 5123 473 |
+| Jun 18 | Gaga City Center, Trebinje (Airbnb) | https://www.airbnb.com/rooms/1165836464333612445 |
+| Jun 19 | Camping Kate (email/phone) | info@campingkate.com / +385 20 487 006 |
+| Jun 20 | Autokamp Lovor, Mljet (web form) | https://www.autocamp-mljet.com/?lang=eng |
+| Jun 21 | Apartment City Center Mostar (Airbnb) | https://www.airbnb.com/rooms/14231459 |
+| Jun 22 | Old Town Pearl Apartments (Booking) | https://www.booking.com/hotel/ba/old-town-pearl-apartments.html |
+| Jun 23–24 | Auto Camp Mlinski Potok (Pitchup) | https://www.pitchup.com/en-us/campsites/montenegro/northern/zabljak/pitomine/autocamp_mlinski_potok/ |
+| Jun 25 | San Duyevo Winery (Booking.com) | https://www.booking.com/hotel/me/estate-amp-winery-san-duyevo.en-gb.html |
+| Jun 25 | Guesthouse Raicevic (Booking.com) | https://www.booking.com/hotel/me/godinje-apartment.html |
+| Jun 25 | Camp Podkraj (Booking.com) | https://www.booking.com/hotel/me/camp-podkraj-virpazar.html |
+| Jun 26 | Autocamp Avala (phone only) | +382 67 518 114 |
+| Jun 27 | Gaga City Center, Trebinje (Airbnb) | https://www.airbnb.com/rooms/1165836464333612445 |

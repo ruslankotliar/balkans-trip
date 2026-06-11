@@ -656,7 +656,13 @@
     "cost": "~€25-30pp",
     "timeNeeded": "1.5h",
     "bestTime": "call ahead; lunch or early dinner",
-    "tags": ["seafood", "konoba", "on-route", "peljesac", "local"],
+    "tags": [
+      "seafood",
+      "konoba",
+      "on-route",
+      "peljesac",
+      "local"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -674,7 +680,12 @@
     ],
     "timeNeeded": "evening into night (2-3h)",
     "bestTime": "Jun 16-18 new moon window; arrive 21:00, core peaks 23:00-01:00",
-    "tags": ["stargazing", "milky-way", "new-moon", "lighthouse"],
+    "tags": [
+      "stargazing",
+      "milky-way",
+      "new-moon",
+      "lighthouse"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -687,7 +698,32 @@
     "lng": 17.138,
     "description": "1km of unspoiled pebble beach with freshwater springs, between Drašnice and Igrane on the Makarska Riviera. Access via old unpaved track (passable in the Sportage). Very few tourists know this route. Free, no loungers, no facilities.",
     "communityNotes": "Genuinely hidden — the access track is unmarked. Head to Drašnice village, follow signs toward the sea past the campsite, track continues on gravel ~500m. Freshwater springs make the water unusually cold (refreshing in summer heat). The beach itself is wide enough to spread out even in July.",
-    "tags": ["beach", "hidden", "freshwater", "pebble"],
+    "tags": [
+      "beach",
+      "hidden",
+      "freshwater",
+      "pebble"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-gubavica-waterfall",
+    "name": "Gubavica Waterfall (Cetina canyon)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 43.4324,
+    "lng": 16.8836,
+    "description": "53m waterfall dropping into the Cetina canyon, 5min walk from roadside parking on the Makarska inland corridor. Free, no facilities — a 30min stop that punches well above its time cost.",
+    "communityNotes": "Viewpoint is free and immediately accessible. The pool at the base is for canyoners with gear — don't try to descend without a guide. But the falls themselves are stunning from the viewpoint. On the Makarska→Omiš inland road near Zadvarje. Easy add-on to the Cetina/Omiš day.",
+    "cost": "Free",
+    "timeNeeded": "30 min",
+    "tags": [
+      "waterfall",
+      "cetina",
+      "viewpoint",
+      "free"
+    ],
     "rating": 4,
     "status": "candidate"
   }

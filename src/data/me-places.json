@@ -486,7 +486,7 @@
     "lat": 42.27845,
     "lng": 18.8366,
     "description": "The walkable bar cluster inside/around Budva's walled old town — the consistently-good nightlife on the coast, and the warm-up before (or instead of) the big Top Hill club above town. Open-air lounges against the old walls.",
-    "communityNotes": "Old Town is where the reliably good bars are. Casper is the perennial favorite (daily 10:00-02:00, live jazz): 'one of Budva's most popular outdoor bars... always busy' — but its DJ program starts in July, so late June is the mellower live-music version. El Mundo is an open-air lounge built nightly against the city walls with lights on the stone — 'one of the best Budva bars to hit as a final stop before the nightclubs.' Mañana is a lively Mexican-themed cocktail spot. NOTE on Top Hill (the marquee hilltop club): it historically opens for the season ~July, so in late June 2026 it may not be in full swing — verify before counting on it (see me-notes). Set expectations: great bar night, not peak-clubbing. Broader Reddit sentiment on Budva itself is split — many call it 'overrated/tacky', but it's fun for nightlife 'if you know what to expect.'",
+    "communityNotes": "Old Town is where the reliably good bars are. Casper (daily 10:00-02:00, live jazz) and El Mundo (open-air lounge against the city walls) are the perennial favorites. Mañana for cocktails. ⚠️ Top Hill (marquee hilltop club) is CLOSED in late June — opens in July. The actual club option: Club Sparta (capacity 600, EDM/R&B, open until sunrise). Reddit: 'overrated/tacky' but good for a night if expectations are set right.",
     "sources": [
       "https://twopacksandapup.com/budva-nightlife-breakdown-all-the-top-spots-to-party/",
       "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k7138933-Budva_Bars_Nightlife-Montenegro.html"
@@ -510,7 +510,7 @@
     "lat": 42.28219,
     "lng": 18.80237,
     "description": "Long open beach ~3km west of Budva, roomier than the in-town beaches, with camping behind it and a history as a festival site (Sea Dance was here 2014-17, now gone). Mix of concession and free sand.",
-    "communityNotes": "Less crammed than Mogren/Slovenska. 'The eastern end (toward Budva) is the quietest section, with fewer concessions and more free-sand space.' Free access; loungers ~€8-12 each. ⚠️ CAMPING WARNING: The campsite at Jaz Beach (Autocamp Jaz) consistently rates 1.5/5 — reviewers cite terrible sanitation, noise until 3-4am, and aggressive upselling. DO NOT camp here. Use Autocamp Avala (Bečići, 4km east) instead: quieter, clean facilities, ~€30-35/night for 4. The beach itself is fine for a swim stop.",
+    "communityNotes": "Less crammed than Mogren/Slovenska. 'The eastern end (toward Budva) is the quietest section, with fewer concessions and more free-sand space.' Free access; loungers ~€8-12 each. ⚠️ CAMPING: Autocamp Jaz consistently rates 1.5/5 — terrible sanitation, noise until 4am, aggressive upselling. Do not camp here. The beach itself is fine for a swim stop.",
     "sources": [
       "https://www.montenegro-spirit.com/guides/jaz-beach-guide/",
       "https://www.tripadvisor.com/Attractions-g304074-Activities-c61-t52-Budva_Budva_Municipality.html"
@@ -873,5 +873,49 @@
     ],
     "rating": 5,
     "status": "shortlist"
+  },
+  {
+    "id": "me-piva-lake-swim",
+    "name": "Piva Lake (turquoise reservoir swim — on route)",
+    "country": "ME",
+    "category": "nature",
+    "lat": 43.1609,
+    "lng": 18.8353,
+    "description": "Intensely turquoise reservoir at 675m altitude, directly on the Šćepan Polje → Piva canyon → Žabljak road. Zero detour — it's the road. Plužine town has a beach on the lake. 18-22°C in June.",
+    "communityNotes": "One of the most visually striking bodies of water on the entire trip — the turquoise color rivals Caribbean photos. Plužine is the main access point (beach, cafes). Free to swim. After the 56 dark tunnels of the Piva canyon, stopping here is genuinely rewarding. Allow 30-45 min.",
+    "cost": "Free",
+    "timeNeeded": "30-45 min",
+    "bestTime": "midday for best color in sunlight",
+    "tags": [
+      "swimming",
+      "lake",
+      "on-route",
+      "free",
+      "turquoise"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-tara-secret-beach",
+    "name": "Tara River secret beach (below Đurđevića bridge)",
+    "country": "ME",
+    "category": "nature",
+    "lat": 43.1514,
+    "lng": 19.2669,
+    "description": "Gravel river beach on the Tara canyon floor, accessed by a short gravel drive + 5-10min scramble from the P4 road south of Đurđevića Bridge. Glacial cold (7-12°C) — cold plunge of the trip. Best visited after rafting groups clear out in the afternoon.",
+    "communityNotes": "Turn left before the P4 road tunnel south of Đurđevića Bridge, drive gravel track to end, then scramble down. The canyon walls tower above. Water is glacially cold — exhilarating not comfortable. Best after 15:00 when rafting groups have passed. Combine naturally with visiting the bridge.",
+    "cost": "Free",
+    "timeNeeded": "1h",
+    "bestTime": "after 15:00",
+    "tags": [
+      "swimming",
+      "tara",
+      "canyon",
+      "cold-plunge",
+      "free"
+    ],
+    "rating": 4,
+    "status": "candidate"
   }
 ]

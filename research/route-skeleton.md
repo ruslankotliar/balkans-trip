@@ -1,30 +1,39 @@
-# Draft day-by-day skeleton (working draft, v1 — 2026-06-10)
+# Draft day-by-day skeleton (v2 — 2026-06-11, revised after critical review)
 
-Loop logic per the user: Zadar → Dubrovnik fast-ish (airport pickup Jun 18 evening), then a Dubrovnik-anchored loop: Mljet → Bosnia inland → inland border to Montenegro → Durmitor → Montenegrin coast → Dubrovnik. No road twice.
+Loop logic: Zadar → Dubrovnik fast-ish (airport pickup Jun 18 evening), then a Dubrovnik-anchored loop: Mljet → Bosnia inland → Montenegro → coast → Dubrovnik. No road twice.
 
-Research sessions: treat this as scaffolding, not gospel. Flag anything that doesn't survive contact with real-world logistics (ferry times, drive times, border queues).
+**Key changes from v1:** Sarajevo → kept as full overnight but Sutjeska NP reduced to transit-only (monument stop) to make Day 8 work; Tara rafting moved to Day 8 (entry day at Šćepan Polje — operators are right there, no backtracking); Day 2 de-packed (Krka OR zipline, not both); Garden of Dreams is Jun 13-19, group misses it; Kotor wall climb shortlisted for 07:30 entry.
 
-| Day | Date | Plan (draft) | Night |
-|-----|------|--------------|-------|
-| 1 | Tue Jun 16 | Flight FR4807, **car pickup Zadar Airport 10:00** (Sicily By Car). Zadar old town + sunset Sea Organ. Option: Paklenica/Velebit if energy allows. | Zadar area (camp?) |
-| 2 | Wed Jun 17 | Krka NP morning → Split (Diocletian's Palace) → Omiš (canyon look, maybe zipline). | Omiš / Makarska Riviera (camp?) |
-| 3 | Thu Jun 18 | Makarska Riviera: Punta Rata swim, Biokovo/Sveti Jure if time → drive to Dubrovnik (Neum corridor or Ploče–Trpanj ferry) → **evening: airport pickup**. | Dubrovnik area / Trebinje? |
-| 4 | Fri Jun 19 | Dubrovnik old town (early, beat crowds) + Lokrum or chill day. | Dubrovnik area |
-| 5 | Sat Jun 20 | Mljet: car ferry Prapratno→Sobra, NP lakes + Montokuc viewpoint. | Mljet (camp?) or back on Pelješac |
-| 6 | Sun Jun 21 | → Bosnia: Kravica falls (swim) → Počitelj → Mostar evening (crowds gone). | Mostar |
-| 7 | Mon Jun 22 | Mostar morning + Blagaj → north: Konjic / Neretva rafting OR mountains. | Konjic / Boračko jezero area? |
-| 8 | Tue Jun 23 | East through Bosnian mountains → Sutjeska NP (Maglić views, Tjentište) → cross Šćepan Polje → Piva canyon → Plužine. | Žabljak |
-| 9 | Wed Jun 24 | Durmitor: Black Lake → Veliki Međed hike (group wish). | Žabljak (camp?) |
-| 10 | Thu Jun 25 | Tara canyon rafting/zipline (Đurđevića bridge) → south via Ostrog Monastery. | Skadar Lake area / Podgorica side |
-| 11 | Fri Jun 26 | Skadar Lake kayak or winery → Sveti Stefan beach → Budva (night out?). | Budva / Jaz (camp?) |
-| 12 | Sat Jun 27 | Kotor: fortress climb early + old town, Perast → cross Debeli Brijeg (queue timing!) → Dubrovnik area. | near Dubrovnik / Trebinje |
-| 13 | Sun Jun 28 | Full day usable; **drop car Dubrovnik Airport by 20:00** (Sicily By Car), then fly to Vienna. | — |
+| Day | Date | Plan | Night |
+|-----|------|------|-------|
+| 1 | Tue Jun 16 | Car pickup Zadar Airport 10:00. Zadar old town + Sea Organ sunset. Paklenica gorge walk if energy. **New moon window: Jun 16-18 is the trip's best dark sky — Cape Planka or Pelješac ridge if the route allows.** | Camp NP Paklenica |
+| 2 | Wed Jun 17 | Pick ONE: Krka NP half-day (€40pp, online booking only) **OR** Omiš zipline + canyoning (~€80pp). Not both — they're 90 min apart and each is a half-day. Split (Diocletian's Palace) quick walk if routing through. | Auto Camp Lisičina, Omiš |
+| 3 | Thu Jun 18 | Makarska: Punta Rata swim + Biokovo/Sveti Jure (Skywalk, car slot must be pre-booked). Drive Pelješac Bridge route (NOT Neum). Ston walls + Mali Ston oysters en route. **Leave Makarska by 14:30–15:00 at latest** for ~19:00 airport pickup. | Trebinje, Bosnia (Gaga City Center €35) |
+| 4 | Fri Jun 19 | Dubrovnik walls (07:30 sharp — crowds from 10:00). Lokrum or Elaphiti islands by boat. Evening back to base. | Trebinje or Camping Kate Mlini |
+| 5 | Sat Jun 20 | Mljet: ferry Prapratno→Sobra (queue 60+ min early; June €~100 for car+4rt). NP lakes + Montokuc + Odysseus Cave. Take the 16:00 ferry back, enter NP after 16:00 for -25% entry (saves €25 for group). | Mljet overnight (Autokamp Lovor ~€72) OR return to Pelješac |
+| 6 | Sun Jun 21 | Back to mainland → Kravica falls swim (arrive 07:00, leave before 10:30). Počitelj quick stop. Mostar: evening walk the Stari Most when crowds are gone. Night at The Black Dog / OKC Abrašević bars. | Mostar apartment (~€53) |
+| 7 | Mon Jun 22 | Mostar morning + Blagaj Tekija → Konjic. Boračko jezero swim (18-20°C, warmest freshwater BA). Sarajevo by evening — ćevapi at Željo, Baščaršija walk, **Trebević cable car + 1984 bobsled track** (genuinely unique), **Monday Latin night at Underground Club/Cinemas Sloga**. | Sarajevo apartment (~€48, The Pearl Downtown) |
+| 8 | Tue Jun 23 | **TARA RAFTING MORNING** (operators at Šćepan Polje — book ahead, ~€60pp, 3-4h on water). Cross ME border mid-day. Piva canyon tunnels (56 unlit tunnels, slow, lights on). **Piva Lake swim** (turquoise, free, on the road at Plužine). Žabljak. | Žabljak (Auto Camp Mlinski Potok ~€32) |
+| 9 | Wed Jun 24 | Durmitor: **Prutaš hike** (9km, 5-6h, everyone can do it, best views in the park) — start 07:00. OR Veliki Međed for experienced scramblers (UIAA-I). Black Lake circuit. | Žabljak (2nd night) |
+| 10 | Thu Jun 25 | Đurđevića Tara bridge (stop, view). Tara secret beach cold plunge (below bridge, afternoon). Ostrog Monastery (free, 1.5-2h, cover knees). South → Skadar Lake. | Skadar Lake: Guesthouse Godinje or Camp Radoman |
+| 11 | Fri Jun 26 | Skadar Lake kayak/boat tour (Kingfisher, ~€15-22pp). Stari Bar + 2240-year-old olive tree (1-1.5h dip). Sveti Stefan beach. Budva: Club Sparta if night out (Top Hill closed in late June). | Budva area |
+| 12 | Sat Jun 27 | Kotor: fortress **07:30 sharp** (cruise ships dock 09:00, walls unbearable by 10:00). Perast + Our Lady of the Rocks. Use **Vitaljina crossing** (not Debeli Brijeg — 15-45min vs 1-4h). Back to Trebinje or near DBV airport. | Trebinje (same apartment) |
+| 13 | Sun Jun 28 | Full usable day. Drop car **Dubrovnik Airport by 20:00** (Sicily By Car, ref D013947246). Fly to Vienna. | — |
 
-## Known open questions
+## Resolved open questions (v2)
 
-- Plitvice: 1.5h north of Zadar = wrong direction. Worth it on day 1 vs Paklenica vs skip? (Session A verdict.)
-- Day 3 Dubrovnik approach: Neum corridor vs Ploče–Trpanj ferry + Pelješac bridge — which is faster/nicer late afternoon? (Session E.)
-- Mljet overnight (camp on island?) vs day trip — ferry schedule dependent. (Sessions B/E.)
-- Days 6–8 Bosnia order could flip (Mostar first vs Kravica first) depending on where we sleep after Mljet.
-- Friend-pickup day buffer: airport is 20km SOUTH of Dubrovnik (Čilipi) — sleeping that night towards Trebinje? Konavle? (cheap, on no-repeat loop logic).
-- Is 1 Durmitor day enough? Rafting + hike might want a 3rd Žabljak day — what would we drop?
+- **Plitvice**: NO — wrong direction, +4h driving, no swimming. Paklenica or Zrmanja instead.
+- **Neum corridor**: NO for Day 3 — BiH border + summer waits kill the timing. Pelješac Bridge.
+- **Mljet**: Overnight preferred (NP -25% after 16:00, worth the extra €72). But check ferry schedule at booking — must be on Jadrolinija. No car reservation possible (first-come, 60+ min queue early).
+- **Sarajevo**: Full overnight (Day 7). Monday night scene is confirmed (Latin nights at Underground Club/Cinemas Sloga). Leave 07:00 Day 8 → Foča → Šćepan Polje → Tara rafting 10:00 (2h drive, works). Sarajevo is genuinely unlike any city on the trip; the cost is near-zero since it's on the paved road anyway.
+- **Tara rafting**: Day 8 (entering Montenegro), not Day 10. Operators at Šćepan Polje.
+- **Garden of Dreams festival**: Jun 13-19 — **before the trip starts**. Not a factor.
+- **Vitaljina vs Debeli Brijeg**: Use Vitaljina for Jun 27 return — consistently faster.
+- **Durmitor hike**: Prutaš recommended for the whole group; Veliki Međed only for experienced scramblers.
+
+## Still open
+
+- Krka vs Omiš on Day 2 — the group decides. Krka = calm + turquoise waterfalls; Omiš = adrenaline (zipline/canyoning). Can't seriously do both.
+- Mljet: what if the Jun 20 ferry is full? Have a plan B (extra Pelješac day + Korčula).
+- Perućica primeval forest in Sutjeska: guided-only, €38pp, quota 16pp/day — probably too late to book. Skip unless they call today (+387 58 233-130).
+- ⚠️ Sicily By Car cross-border permission for BiH + Montenegro: **CALL TODAY** (+385 23 646 547). Trip depends on this.
