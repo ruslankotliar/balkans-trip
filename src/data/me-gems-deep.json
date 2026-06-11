@@ -1,0 +1,337 @@
+[
+  {
+    "id": "me-poscenska-jezera",
+    "name": "Pošćenska jezera (Pošćensko jezero) — warm, empty Durmitor swim lakes",
+    "country": "ME",
+    "category": "nature",
+    "lat": 43.091,
+    "lng": 19.1095,
+    "description": "A cluster of glacial lakes on the Jezerska Površ plateau ~7.5km south of Žabljak, right on the macadam Žabljak→Trsa road towards Sedlo. Far shallower (max 3.6m) than Crno/Vražje jezero, so the water actually warms up — a genuine summer SWIM lake, ringed by pasture and forest, with almost none of Black Lake's crowds. A negative-space find: every other Durmitor lake the group has is either cold-and-famous or a hard hike; this is the easy, quiet swim.",
+    "communityNotes": "Local/Žabljak tourism and Photo Montenegro consistently file these as 'gorske oči' that geologists, travel writers and hikers come for; durmitor.rs notes the big lake is '210x150x3.5m, summer is perfect for swimming and fishing, in winter it freezes.' No English Reddit chatter = exactly why it's still empty. Drive-by access (the macadam to Trsa is fine for a normal car in dry June) means you can stop for 30 min on the way to/from the Sedlo Pass without a dedicated hike.",
+    "sources": [
+      "https://www.durmitor.rs/poscensko-jezero/",
+      "https://www.photomontenegro.me/en/poscenska-jezera/",
+      "https://tozabljak.com/en/poscensko-lake/",
+      "https://en.wikipedia.org/wiki/Lake_Po%C5%A1%C4%87enje"
+    ],
+    "cost": "Free",
+    "timeNeeded": "30-60 min stop (swim)",
+    "bestTime": "Midday June for warmest water; pairs with the Sedlo Pass drive",
+    "tags": ["deep-dive", "hidden-gem", "lake", "swimming", "durmitor", "piva-plateau", "quick-stop", "free"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-zabojsko-jezero",
+    "name": "Zabojsko jezero — the forest 'mountain eye' of Sinjajevina",
+    "country": "ME",
+    "category": "nature",
+    "lat": 43.0113,
+    "lng": 19.3782,
+    "description": "Montenegro's third-deepest lake (19m), a near-perfect dark oval ringed by dense spruce-and-beech forest on the NE edge of the Sinjajevina massif. Sinjajevina is the biggest mountain in the country yet almost untouristed — while Durmitor is a 'tourist mecca, Sinjajevina remained aside, unknown.' A drivable macadam reaches a lakeside meadow with benches, tables and a spring; ideal wild-camp or picnic + cold swim, with deer and few people.",
+    "communityNotes": "Total Montenegro News dubs it 'the mountain eye of Sinjajevina'; Montenegro Adventure runs hikes here precisely because it's off-radar. Tourism sources: 'the lake is ideal for camping; on the meadow near the lake, wooden benches and tables are set, with a cafe nearby... a drinking water source.' Sits between Žabljak and Mojkovac — a natural detour if the route swings east toward Biogradska/Komovi. Forest setting means shade + total quiet rather than alpine drama.",
+    "sources": [
+      "https://www.total-montenegro-news.com/travel/1507-meet-zabojsko-lake-the-mountain-eye-of-sinjajevina",
+      "https://www.summitpost.org/zabojsko-jezero-1486-m/146419",
+      "https://www.montenegroadventure.travel/tour/hiking-sinjajevina-zabojsko-lake-veliki-pecarac/"
+    ],
+    "cost": "Free (wild camp); small cafe on site",
+    "timeNeeded": "1-3h, or overnight camp",
+    "bestTime": "June-Sept; weekday for solitude",
+    "tags": ["deep-dive", "hidden-gem", "lake", "sinjajevina", "wild-camping", "swimming", "forest", "off-route"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-pesica-jezero-vranjak",
+    "name": "Pešića jezero + Eko Katun Vranjak (Bjelasica)",
+    "country": "ME",
+    "category": "hike",
+    "lat": 42.8552,
+    "lng": 19.6888,
+    "description": "Bjelasica's second-largest glacial lake at ~1,830m under Crna Glava/Zekova Glava — a green mirror in the high pastures, reached on foot from Eko Katun Vranjak (1,800m), a real working shepherd settlement turned rustic homestay. You can drive a normal car to the Kolašin 1600 ski centre and on to Vranjak, sleep/eat in the katuns, then hike to the lake. The deep-backcountry alternative to the crowded Biogradsko jezero lake loop the group already has.",
+    "communityNotes": "TripAdvisor Montenegro forum (a local mountaineer): a regular car safely reaches the ski centre and Eko Katun Vranjak; the final macadam to Zekova Glava 'could be easily impassable in spring because of snow/ice' but is fine once snow-free — 'almost entirely snow free by late May.' Crucial timing: 'Eko katun Vranjak does not open until the beginning of summer' → mid/late June is the first window. Jonty (2024 trek report) stayed two nights at the tourist-developed katun huts ('toilet and shower block') in near-total 'solitude,' meeting only farmers. At Vranjak you can 'try homemade food, ride horses... milk cows' — authentic katun life.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k13893633-Pesica_lake-Montenegro.html",
+      "https://jontynz.com/2024/02/01/bjelasica-mountains-kolasin-to-katun-vranjak/",
+      "https://www.wikiloc.com/hiking-trails/bjelasica-katun-vranjak-troglava-2072-zekova-glava-2122-crna-glava-2139-pesica-jezero-54263365",
+      "https://jovanikolic.me/pesica-lake-where-nature-thrives/"
+    ],
+    "cost": "Free hike; katun homestay/meals extra (rustic)",
+    "timeNeeded": "Half/full day hike from Vranjak; overnight katun option",
+    "bestTime": "Katun opens early summer — late June onward; clear morning",
+    "tags": ["deep-dive", "hidden-gem", "hike", "lake", "bjelasica", "katun", "homestay", "off-route"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-bukumirsko-jezero",
+    "name": "Bukumirsko jezero — dragon-legend lake of Kučka krajina",
+    "country": "ME",
+    "category": "nature",
+    "lat": 42.6048,
+    "lng": 19.5566,
+    "description": "A glacial lake at 1,440m cupped by the Kučka krajina peaks east of Podgorica — '~45km, steep narrow winding road' but asphalt nearly to the lake (then a 15-min walk). Snow-streaked summits, grazing horses and eagles overhead, ~20°C air when Podgorica bakes at 35°C; warm enough to swim by midsummer and ringed by camp-able meadows. Carries a proper dragon legend and an endemic newt (žmigavac). A different region entirely from the group's Grebaje/Grlo Sokolovo cluster.",
+    "communityNotes": "First-person blog (Living in Montenegro): 'The stunning panorama of the Lake with the peaks of the Kučka Krajina dominating over it is truly one of the most beautiful mountain landscapes of Montenegro'; they found only 'a group of young people' there. Drive: turn left ~20km past Ubli toward Bukumirsko jezero; asphalt ends, park, 15-min walk. Discover-Montenegro: water 'clear and transparent, visibility up to 4m,' an 'ad-hoc camping place,' swimming popular in summer. Legend: villagers heated stones in fire and threw them in to drive out a lake dragon.",
+    "sources": [
+      "https://montenegro-for.me/2013/07/bukumirsko-lake-the-heart-of-the-kucka-krajina-mountains/",
+      "https://www.discover-montenegro.com/bukumirsko-jezero/",
+      "https://podgorica.travel/en/bukumirsko-jezero-copy/"
+    ],
+    "cost": "Free (wild camp possible)",
+    "timeNeeded": "Half day incl. drive from Podgorica (~1h15 each way)",
+    "bestTime": "Midsummer for swim; weekday for solitude",
+    "tags": ["deep-dive", "hidden-gem", "lake", "kucka-krajina", "swimming", "wild-camping", "off-route", "legend"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-rikavacko-jezero",
+    "name": "Rikavačko jezero — biggest Kučka krajina lake, on the Albanian rim",
+    "country": "ME",
+    "category": "nature",
+    "lat": 42.5705,
+    "lng": 19.6044,
+    "description": "The largest glacial lake of the Kučka krajina (525x230m, ~14m deep) at 1,313m, sitting in raw highland a few hundred metres from the Albanian border between the Širokar plateau and Mt Vila. Far wilder and emptier than Bukumirsko — a backcountry add-on for the group's deep-east day, with brisk swimming and katun-dotted meadows. Home to the endemic Montenegrin newt.",
+    "communityNotes": "Discover-Montenegro: 'the largest lake of Kučka krajina... close to Rikavac Katun and just a few hundred metres from the Albanian border'; described as a base for climbs to Pasjak. Lustica Bay/local features call it a 'mythical mountain escape.' Swimming 'brisk but refreshing in the peak of summer.' Genuinely remote — the road in is rough highland macadam; best as a paired wild day with Bukumirsko or Grlo Sokolovo. Border zone: carry passports, don't stray across.",
+    "sources": [
+      "https://www.discover-montenegro.com/kucka-krajina/",
+      "https://montenegro-for.me/2019/10/an-off-road-tour-through-the-kucka-krajina-mountains/",
+      "https://lusticabay.com/toponym/bukumirsko-lake/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "Half/full day with the rough drive",
+    "bestTime": "Peak summer (snow lingers late); clear weather only",
+    "tags": ["deep-dive", "hidden-gem", "lake", "kucka-krajina", "remote", "border-zone", "swimming", "off-route"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-karuc-skadar",
+    "name": "Karuč + Karučko Oko — the secret stone village & spring-eye of Skadar",
+    "country": "ME",
+    "category": "nature",
+    "lat": 42.3585,
+    "lng": 19.1069,
+    "description": "A near-abandoned stone fishing hamlet on a quiet arm of Lake Skadar, reached by a hairy single-track road (or 20-min boat taxi from Rijeka Crnojevića). Its prize is Karučko Oko — a deep (~20m) sublacustrine spring 'eye' that stays cool and crystal-clear all summer, a perfect swim/SUP launch into lily-pad 'Amazon' channels — plus a viewpoint over the rooftops and meanders, and the ruined winter house of Petar I Petrović Njegoš. A true mimo-turista alternative to crowded Virpazar.",
+    "communityNotes": "Adriatic Ways: 'If Rijeka Crnojevića is the historic capital, Karuč is the lake's best-kept secret, a crumbling stone village where time has stood still for centuries'; 'total absence of parking hustlers,' 'a landscape of profound silence.' Official Montenegro.travel: 'peace, authenticity and untouched nature,' homemade smoked fish, locals offer boat tours through the channels. Karučko Oko = 'the village's natural swimming hole, framed by lily pads and ancient stone walls... deep and cool.' Access: 'single-track road with sharp bends and steep drops' off the Podgorica–Cetinje road; cash only, no ATMs.",
+    "sources": [
+      "https://adriaticways.com/karuc-montenegro-skadar-lake/",
+      "https://www.montenegro.travel/karuc-a-hidden-gem-on-lake-skadar",
+      "https://veronikasadventure.com/from-virpazar-visit-karuc-the-hidden-pearl-of-lake-skadar/"
+    ],
+    "cost": "Free (boat taxi from Rijeka Crnojevića extra)",
+    "timeNeeded": "2-4h (swim + viewpoint + paddle)",
+    "bestTime": "Morning for mirror water; avoid midday-only crowds (none early)",
+    "tags": ["deep-dive", "hidden-gem", "skadar", "swimming", "spring", "kayak", "viewpoint", "village", "mimo-turista"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-murici-beach-skadar",
+    "name": "Murići beach — Skadar's biggest, oak-shaded, bath-warm beach",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.164,
+    "lng": 19.211,
+    "description": "The largest beach on the Montenegrin side of Lake Skadar (600m), backed by ancient oak and chestnut forest under the Rumija massif, reached by a stunning single-lane serpentine south from Virpazar. Freshwater hits a 'bath-like' ~30°C in summer — a warm-water swim when the early-June Adriatic is still cold — and you can hire a local boatman to the 14th-c. Beška island monastery. Donkeys and goats laze on the pebbles; rarely crowded.",
+    "communityNotes": "Adriatic Ways (local guide): 'a world where time slows down — an untouched beach where you might find the occasional donkey or goat lying peacefully on the pebbles beside you'; '~30°C bath-like' water, 'rarely crowded,' parking €2-3, no entry fee, boat to Beška ~€20. HONEST CAVEATS: the serpentine is 'narrow, winding, largely single-lane, not for beginner drivers'; and off-season the currents wash Albanian plastic ashore — June is the cusp, so it can be clean or have some litter. Best early before the few day-trippers arrive.",
+    "sources": [
+      "https://adriaticways.com/murici-beach-lake-skadar/",
+      "https://www.tripadvisor.com/Attraction_Review-g19238561-d24119926-Reviews-Murici_Beach-Donji_Murici_Bar_Municipality.html",
+      "https://www.visit-montenegro.com/destinations/bar/attractions/murici/"
+    ],
+    "cost": "Free entry; parking €2-3; Beška boat ~€20",
+    "timeNeeded": "Half day (swim + Beška boat)",
+    "bestTime": "Mid-June onward for warm water; arrive early; check litter locally",
+    "tags": ["deep-dive", "hidden-gem", "skadar", "beach", "swimming", "warm-water", "serpentine", "monastery", "off-route"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-komarnica-canyon-packraft",
+    "name": "Komarnica canyon (Dragišnica i Komarnica NP) — wild packraft/hike, Šavnik",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.9785,
+    "lng": 19.065,
+    "description": "The open river canyon downstream of the famous Nevidio slot — a Nature Park since 2023, untouched, with green pools, class II-III rapids and trout, run by packraft (or hiked along) from Brezna village to a Piva-lake takeout. Unlike Nevidio's wetsuit gauntlet, this is a beginner-friendly wilderness float you can do without canyoning skills. Threatened by a planned 150m dam, so it's a 'go now' gem squarely on the Plužine→Šavnik corridor.",
+    "communityNotes": "Balkan Expeditions (Aug 2024 report): put-in at Brezna, carry kit down to the river; 'we are completely alone in the canyon, it is a great privilege to be in a place like this!'; class II-III, 'not very fast... ideal for beginners,' water ~10°C, motorboat retrieval at Piva lake, ~3-4h. Only operator: local guide Gigo Bulajić. 'Even when the heat rages in the cities, it's ~20° lower in the canyon.' Park Šavnik markets canyoning/hiking/cycling here; the canyon is 'completely untouched by human influence,' settlements (Brezna, Duži) sit high above. Distinct from our existing Nevidio entry.",
+    "sources": [
+      "https://balkanexpeditions.com/2024/08/12/packrafting-the-wild-komarnica-river/",
+      "https://www.parksavnik.com/en/blog/komarnica-%E2%80%93-the-hidden-canyon-of-the-north/",
+      "https://www.summitpost.org/komarnica-canyon/379148"
+    ],
+    "cost": "Guided packraft tour (operator-priced); free to hike sections",
+    "timeNeeded": "3-4h packraft; can be a full day",
+    "bestTime": "Summer water levels; cold water — bring layers",
+    "tags": ["deep-dive", "hidden-gem", "canyon", "packraft", "river", "savnik", "swimming", "go-now", "off-route"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-vodopad-crnjak",
+    "name": "Vodopad Crnjak — hidden 20m waterfall above Šavnik",
+    "country": "ME",
+    "category": "nature",
+    "lat": 42.902,
+    "lng": 19.1527,
+    "description": "A 20m waterfall at the source of the Bijela river near Šavnik, with the visible ruins of an 800-year-old watermill at its foot — a true skriveni biser in the Nikšić–Šavnik dead zone of the group's map. Water never exceeds 7-8°C; locals still come to brave a swim. A short scenic stop if routing inland between Nikšić/Plužine and Žabljak.",
+    "communityNotes": "Mondo.me local feature calls it 'a hidden gem of Šavnik': 20m drop, water '7-8°C,' an '800-year-old mill once powered by the rushing water,' and 'locals report people do come to swim.' Very little tourist info exists — part of the appeal. No formal trail signage found; treat the final approach as a short rough walk and ask in Šavnik for the Bijela-source turnoff. Pairs naturally with the Komarnica/Nevidio area.",
+    "sources": [
+      "https://mondo.me/Info/Drustvo/a1260467/Vodopad-Crnjak-skriveni-biser-Savnika.html"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1-2h incl. detour",
+    "bestTime": "Late spring/early summer for strongest flow",
+    "tags": ["deep-dive", "hidden-gem", "waterfall", "savnik", "swimming", "off-the-beaten-track", "off-route"],
+    "rating": 2,
+    "status": "candidate"
+  },
+  {
+    "id": "me-slansko-jezero",
+    "name": "Slansko jezero — island-studded quiet lake by Nikšić",
+    "country": "ME",
+    "category": "nature",
+    "lat": 42.7616,
+    "lng": 18.8439,
+    "description": "A large (9km²) reservoir west of Nikšić with a deeply indented, island-and-peninsula shoreline and clean clear water — far emptier than the group's existing Krupac lake stop, with a lakeside viewpoint and easy walks. A low-key swim/paddle/sunset break on the Nikšić belt if the route passes through (e.g. Ostrog ↔ Plužine).",
+    "communityNotes": "Local features call it 'a hidden gem... serene beauty'; 'the coastline is rugged, with a lot of islands and peninsulas, and the waters are incredibly clean and clear.' Komoot lists quiet shoreline walks; an evendo 'Slano jezero vidikovac' viewpoint gives the panorama. It's a working hydro reservoir (created 1950) so water level can drop late summer, but June is reliable. Use as a calm alternative/companion to Krupac rather than a headline stop.",
+    "sources": [
+      "https://www.visit-montenegro.com/destinations/niksic/attractions/lake-slano/",
+      "https://www.komoot.com/guide/181482/hiking-around-slano-ezero-slano-lake",
+      "https://montenegro-for.me/2018/11/7-places-not-to-miss-in-niksic/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1-2h (swim/walk/sunset)",
+    "bestTime": "June (higher water); evening for the viewpoint",
+    "tags": ["deep-dive", "lake", "niksic", "swimming", "viewpoint", "quiet", "off-route"],
+    "rating": 2,
+    "status": "candidate"
+  },
+  {
+    "id": "me-gornjepoljski-vir",
+    "name": "Gornjepoljski vir — the Balkans' biggest estavelle (TIMING CAVEAT)",
+    "country": "ME",
+    "category": "nature",
+    "lat": 42.8461,
+    "lng": 18.9182,
+    "description": "The largest estavelle in the Balkans (declared a natural monument 2014) ~12km from Nikšić — a giant karst pool that acts as a powerful spring in the wet half-year and reverses into a swallow-hole that sucks the river underground in summer. A genuinely weird geological curiosity almost no tourists visit. HONEST FLAG: it's a SPRING only Oct–May; by mid-late June it's transitioning to a dry sink, so the group would likely see the bare ponor/whirlpool basin, not gushing water — include only if karst geology fascinates them.",
+    "communityNotes": "ShowCaves/Mondo: 'an estavelle... a spring between October and May and a swallow hole during the summer'; the spectacular 'pucanje vira' (bursting) outburst is an AUTUMN event. Share Montenegro: 'biggest estavelle on the Balkans... still remains a secret for tourists.' So the wow-factor is seasonal and mostly NOT in June. Reachable easily by car. Worth a 20-min curiosity stop only if already near Nikšić; manage expectations on water.",
+    "sources": [
+      "https://www.showcaves.com/english/me/springs/Gornjepolje.html",
+      "https://mondo.me/Info/Drustvo/a1057758/gornjepoljski-vir-u-niksicu-najveca-estavela-na-balkanu.html",
+      "https://sharemontenegro.me/ten-reasons-to-visit-niksic/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "20-30 min curiosity stop",
+    "bestTime": "Oct-May for active spring; June = likely dry sink",
+    "tags": ["deep-dive", "geology", "karst", "niksic", "curiosity", "june-borderline", "off-route"],
+    "rating": 2,
+    "status": "candidate"
+  },
+  {
+    "id": "me-klinci-village",
+    "name": "Klinci — abandoned olive-grove ghost hamlet on Luštica",
+    "country": "ME",
+    "category": "sight",
+    "lat": 42.4215,
+    "lng": 18.5673,
+    "description": "A centuries-old stone village in the olive groves of the inner Luštica peninsula, almost fully abandoned and only now slowly reviving as rural tourism — narrow lanes, ruined and half-restored houses, laurel woods and silence a few km from Rose. A short atmospheric wander 'away from the beach for a few hours,' and the natural land-base for walking down to the boat-only Dobreč cove.",
+    "communityNotes": "Luštica guides: 'a hidden gem, recently completely abandoned, where rural tourism is slowly but surely developing,' surrounded by 'olive trees, pomegranate trees and woods of laurel.' Lustica Bay feature: 'very high' seclusion, 'little traffic,' 'ideal for travellers who want to step away from the beach.' Best paired with Arza/Mirište and Dobreč for a half-day inland-Luštica loop the group's coast plan currently skips entirely. Narrow local roads — drive slowly.",
+    "sources": [
+      "https://www.total-montenegro-news.com/travel/528-meet-the-hidden-face-of-the-lustica-peninsula",
+      "https://lusticabay.com/blog/top-secret-spots-in-lustica-peninsula/",
+      "https://adriaticways.com/lustica-peninsula-guide/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "45-90 min wander",
+    "bestTime": "Late afternoon light; cooler for walking",
+    "tags": ["deep-dive", "hidden-gem", "abandoned", "ghost-village", "lustica", "walk", "olive-groves"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-arza-fortress-miriste",
+    "name": "Arza fortress + Mirište cove (Austro-Hungarian, Luštica tip)",
+    "country": "ME",
+    "category": "sight",
+    "lat": 42.3899,
+    "lng": 18.5658,
+    "description": "A late-19th-c. Austro-Hungarian coastal fort on Cape Mirišta at the open-sea tip of Luštica, part of the 'Primorska tvrđava Boka' system with Mamula and Prevlaka. Reached by a 500m walk from the sheltered Mirište pebble cove (or by boat/kayak), with clear snorkel water below and a tiny church on an offshore islet. The fort building itself is private/closed, but you can walk right around it for the views and the abandoned-military atmosphere.",
+    "communityNotes": "Multiple sources: built 1850s, 'one of Montenegro's most striking coastal fortifications,' on Cape Mirišta at ~42°23'24\"N 18°33'57\"E. 'Reached by walking mountain paths, or by driving to Mirište beach and walking 500m.' HONEST FLAG: 'nowadays the fortress is private property and closed to visitors — however you are free to walk around it.' So treat it as an exterior/viewpoint + swim, not an interior tour. Mirište is a calm family cove; Arza adds the wild, historic edge. Snorkelling 'clear blue waters' all around.",
+    "sources": [
+      "https://adria.fun/en/the-lustica-peninsula-hides-a-historical-pearl-the-arza-fortress/",
+      "https://adriaticways.com/arza-beach/",
+      "https://www.total-montenegro-news.com/travel/1288-amazing-austro-hungarian-forts-of-montenegro"
+    ],
+    "cost": "Free (exterior only); parking at Mirište",
+    "timeNeeded": "1-2h (walk + swim/snorkel)",
+    "bestTime": "Morning before Žanjic boats arrive nearby",
+    "tags": ["deep-dive", "hidden-gem", "fortress", "abandoned", "austro-hungarian", "lustica", "swimming", "snorkel"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-dobrec-beach-lustica",
+    "name": "Dobreč — boat/walk-only pine-and-cliff cove (Luštica)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.4124,
+    "lng": 18.5591,
+    "description": "A narrow pebble cove enclosed by pine forest and limestone cliffs with a small sea cave, on the outer Luštica coast — no road right to it, so it's reached by water taxi/boat or a walk down from Klinci, keeping it genuinely secluded. Calm, clear water that's excellent for swimming, snorkelling and SUP, with a beach bar in season.",
+    "communityNotes": "Lustica Bay: 'keeps a strong sense of seclusion that is increasingly rare,' 'one of the best Luštica beaches for swimming, paddleboarding'; 'calm, clear water.' Reached 'by boat or water taxi only' (or the inland walk from Klinci). Because access is deliberately awkward it stays quiet even in season — the antidote to packed Žanjic. Pair with Klinci (park there, walk down) for a half-day. Bring water/food; limited facilities.",
+    "sources": [
+      "https://lusticabay.com/blog/top-secret-spots-in-lustica-peninsula/",
+      "https://www.myguidemontenegro.com/lists/hidden-spots-of-lustica-peninsula",
+      "https://europa.tips/en/montenegro-lustica-peninsula-hidden-beaches"
+    ],
+    "cost": "Free beach; water taxi extra",
+    "timeNeeded": "Half day",
+    "bestTime": "Morning; calm sea",
+    "tags": ["deep-dive", "hidden-gem", "beach", "lustica", "boat-access", "swimming", "snorkel", "secluded"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-submarine-tunnels-rose",
+    "name": "Yugoslav submarine tunnels (Rose / Luštica) — swim inside",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.4277,
+    "lng": 18.59,
+    "description": "Three Cold-War-era submarine pens carved into the Luštica headland near Rose by the Yugoslav Navy, their mouths camouflaged with fake rock to hide from satellites. Each is ~100m long over 10m-deep water and is a dead-end you can SWIM right into — an eerie, dripping, torch-lit cavern with side walking galleries and abandoned naval relics nearby. Reachable by boat/kayak (Herceg Novi or Žanjic) or, with effort, on foot from Rose.",
+    "communityNotes": "ShowCaves: tunnels at ~42.4277,18.5900; 'smaller ships can enter... it is possible to swim inside'; walking pathways run along the sides; 'also possible to visit from land starting at Rose, though the entrances are not easy to find'; 'bring a torch.' Strel Swimming runs guided swims through them; speedboat operators bill it 'Montenegro's longest kept secret.' Adventurous note: people 'dive off the top of the cave into the sea.' Best as a kayak/boat add-on from the Žanjic–Rose corner; combine with Blue Cave/Mamula. Watch boat traffic at the entrances.",
+    "sources": [
+      "https://www.showcaves.com/english/me/subterranea/Submarine.html",
+      "https://www.strel-swimming.com/swimming-yugoslavian-submarine-tunnels/",
+      "https://www.kotorspeedboattours.com/submarine-tunnel/"
+    ],
+    "cost": "Free if self-paddled; boat tours operator-priced",
+    "timeNeeded": "1-2h add-on",
+    "bestTime": "Calm sea; midday light helps inside",
+    "tags": ["deep-dive", "hidden-gem", "abandoned", "military", "kayak", "swimming", "boka", "lustica", "unusual"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-ljutica-river",
+    "name": "Ljutica — world's shortest & most powerful river (Tara, Đurđevića)",
+    "country": "ME",
+    "category": "nature",
+    "lat": 43.155,
+    "lng": 19.282,
+    "description": "A 130m-long left tributary that bursts white out of the canyon rock 35m above its confluence with the Tara, ~1.5km downstream of the Đurđevića Tara bridge (pin approximate — confluence on the Tara's left bank below the bridge) — claimed as Europe's shortest and most powerful river ('Tara's pearl breast'). A tiny, fierce, ice-cold cascade most people only glimpse from a raft. HONEST FLAG: it's awkward to reach on foot and most easily seen on the lower rafting section the group already plans — a bonus, not a standalone detour.",
+    "communityNotes": "Photo/Discover Montenegro: 'the shortest and most powerful river in the Old World,' length 130m, snowmelt flow can exceed 100 m³/s, water 12-16°C, nicknamed 'Tara's breast pearl.' Rafters report the run 'begins with the waterfalls of Ljutica' before passing under the bridge. Land access is steep/unmarked, so realistically it's a rafting-trip highlight rather than a self-drive stop — flagged for honesty given the group already has Tara rafting.",
+    "sources": [
+      "https://www.photomontenegro.me/en/ljutica/",
+      "https://www.discover-montenegro.com/ljutica-river/"
+    ],
+    "cost": "Free (usually seen via rafting)",
+    "timeNeeded": "Bonus stop on a raft trip",
+    "bestTime": "Snowmelt/early summer for max power",
+    "tags": ["deep-dive", "curiosity", "river", "waterfall", "tara", "rafting-bonus", "off-route"],
+    "rating": 2,
+    "status": "candidate"
+  }
+]

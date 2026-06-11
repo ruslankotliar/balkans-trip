@@ -1,0 +1,273 @@
+[
+  {
+    "id": "ba-glavaticevo-neretva",
+    "name": "Glavatičevo — upper-Neretva swim village & Ottoman bridge",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.504061,
+    "lng": 18.104130,
+    "description": "Tiny mountain hamlet ~30 km SE of Konjic where the Neretva runs its purest emerald before the rafting canyon, ringed by Prenj/Visočica/Bjelašnica. Pebble beaches, an old stone Ottoman bridge (Stara Ćuprija Glavatičevo) over the river, and the put-in for the Neretva rafting run. The negative-space anchor of the whole upper valley — almost no foreign tourists, real shepherd-country.",
+    "communityNotes": "Bosnian sources call it 'the perfect place to start your rafting adventure, in the heart of a natural environment'; the stretch downstream is 'greenish Neretva' with 'pebble beaches on the Neretva river banks'. The drive in from Boračko Lake/Konjic is repeatedly described as a scenic mountain road through stećci (medieval tomb) fields. Villa Neretva here is the eco-rural base: homemade food (cheese, kajmak, trout, veal-under-the-bell), fly-fishing and 'fish-rafting'; reviews praise hosts and setting but warn 'do not look only at the printed pricelist — confirm the bill' and 'food is homemade but there is no menu'.",
+    "sources": [
+      "https://www.neretva.org/en/glavaticevo",
+      "https://en.wikipedia.org/wiki/Stara_%C4%86uprija_Glavati%C4%8Devo",
+      "https://www.villa-neretva.com/en/index.php",
+      "https://welcometokonjic.ba/en/boracko-lake/"
+    ],
+    "cost": "Free to swim; Villa Neretva rooms/bungalows mid-budget (confirm bill on arrival)",
+    "timeNeeded": "1-2h for a swim + bridge; or a base for rafting/fishing",
+    "bestTime": "Mid-June: high snowmelt = full emerald river but COLD water (8-12°C)",
+    "tags": ["deep-dive", "neretva", "emerald-swim", "ottoman-bridge", "rafting-putin", "off-route", "hidden-gem"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-crni-vir-dzajici",
+    "name": "Crni Vir waterfall (Džajići, Konjic)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.611329,
+    "lng": 18.013198,
+    "description": "Barely-known 8m twin waterfall a short forest walk from the Džajići Buk rafting take-out, only a few km up the Neretva valley from Konjic. Two streams drop into an emerald pool up to 3m deep — locals swim here on hot days and the brave climb the side path to jump from the top. Pairs perfectly with the Konjic rafting day (it's where the raft trip ends).",
+    "communityNotes": "Bosnian travel media flag it hard as a secret: 'a true natural pearl in the surroundings of Konjic that few know about', 'well-hidden from casual glances', burble 'sometimes deafening'. Welcome-to-Konjic: park at the second rafting centre (Džajića Buk), then a ~10-15 min unmarked walk; 'the path is not marked, but locals are very willing to explain the directions if you ask'. Water stays cold even in summer; 'the bravest use it for jumping'.",
+    "sources": [
+      "https://welcometokonjic.ba/en/crni-vir-waterfall/",
+      "https://visitbih.ba/skriveni-biser-konjica-bajkoviti-vodopad-crni-vir/",
+      "https://snagalokalnog.ba/en/where-is-the-hidden-pearl-of-konjica-for-adventurers/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1-1.5h incl. the walk and a swim",
+    "bestTime": "Hot afternoons for a swim; pin is Džajići village — falls are a short walk up the side stream",
+    "tags": ["deep-dive", "waterfall", "swimming", "cliff-jump", "konjic", "neretva", "hidden-gem", "free"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-mostarska-bijela-canyon",
+    "name": "Mostarska Bijela — hidden cave-canyon waterfall",
+    "country": "BA",
+    "category": "hike",
+    "lat": 43.535039,
+    "lng": 17.799597,
+    "description": "A genuinely hidden karst slot-canyon on the Prenj side of the Neretva, ~20 km north of Mostar off the M17 near Salakovac Lake. A ~2.5-3h riverbed hike (crossing the stream repeatedly) ends in an 80m-long cave only ~1m wide and 20m tall, where a 10m waterfall drops through a hole in the roof into an emerald pool lit by midday sun. The kind of place even most Mostarians haven't been.",
+    "communityNotes": "Stacked 'skriveni dragulj' coverage in Bosnian media; an English guide (Funky Tours) confirms ground truth: trailhead 'twenty km north of Mostar by M-17, left side of Salakovac Lake', start point locally called Pećina (Cave), ~15 km round trip, ~300m gain, 'well marked — if you follow the river you cannot get lost'. Doable unguided by fit adults. Water 6-8°C, 'best in May-June when there's enough water'. Warnings: bring above-ankle boots + spare shoes for river crossings, and watch for vipers.",
+    "sources": [
+      "https://funkytours.com/mostarska-bijela-hiking-mostar/",
+      "https://ultra.ba/mostarska-bijela-mostar-vodopad-pecina/",
+      "https://www.womeninadria.ba/kanjon-mostarske-bijele-je-skriveni-dragulj-koji-morate-vidjeti/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "Half day (5-6h round trip incl. canyon)",
+    "bestTime": "May-June for full waterfall flow; go on a dry day (river crossings)",
+    "tags": ["deep-dive", "canyon", "waterfall", "cave", "hike", "emerald-pool", "off-route", "hidden-gem"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-dreznica-canyon",
+    "name": "Drežnica / Drežanka canyon — local swim canyon",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.519623,
+    "lng": 17.738513,
+    "description": "A clean turquoise river canyon between Čvrsnica and Čabulja, on a paved side road off the M17 roughly halfway Mostar↔Jablanica. Named bathing pools and small cascades — locals jump at 'Stupina', a spot once used to train for the Stari Most dives — plus the Veliki Movran, a 500m+ seasonal waterfall that only appears after heavy rain. Under-the-radar, a fraction of Kravica's crowds.",
+    "communityNotes": "Bosnian/Croatian press call it 'a hidden river that takes your breath away' and 'a place you'll be sorry you didn't discover sooner'. visitbih: springs/pools include 'Balin vir, Mujića vir, Stupina, Mali and Veliki zelenak, Crna stupina'; 'Stupina in Dragi' is the favourite, where 'jumping competitions were held as preparation for jumps from Stari Most'; 'Crna stupina in Striževo' for seclusion. Access: paved road, Donja Drežnica ~5 min and Gornja Drežnica ~20 min from the Branilaca Drežnice bridge; 'slow but steady discovery, not mass tourism', basic camping + grilled-fish garden restaurant.",
+    "sources": [
+      "https://visitbih.ba/en/dreznica-heaven-on-earth-located-between-cabulja-and-cvrsnica/",
+      "https://bljesak.info/magazin/flash/skrivena-rijeka-koja-oduzima-dah-dobrodosli-u-kanjon-drezanke/525605",
+      "https://en.wikipedia.org/wiki/Dre%C5%BEanka_(river)"
+    ],
+    "cost": "Free (informal; small charge possible at organized Donja Drežnica beach)",
+    "timeNeeded": "Half day with a swim",
+    "bestTime": "Summer for swimming; Veliki Movran waterfall only after heavy rain (not reliable in June)",
+    "tags": ["deep-dive", "canyon", "swimming", "cliff-jump", "river-beach", "off-route", "hidden-gem"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-konjic-stara-cuprija",
+    "name": "Konjic Old Bridge (Stara Ćuprija) & old town",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.651127,
+    "lng": 17.962917,
+    "description": "Konjic's 1682 six-arch Ottoman stone bridge over a turquoise Neretva — one of the oldest and finest in the country (a National Monument), blown up by the retreating Wehrmacht in 1945 and rebuilt from the surviving piers. The compact old-town riverside is a pleasant, free, no-crowds stop on the Mostar↔Sarajevo corridor that almost everyone drives straight past.",
+    "communityNotes": "Trip guides call Konjic 'a hidden gem nestled between Sarajevo and Mostar' and single out 'the old part of town with a 17th-century 6-arch Old Bridge over the turquoise Neretva'. Built 1682-83 by Ali-aga Hasečić; 'all five piers survived' the 1945 demolition, permitting faithful reconstruction. Combine with the Neretva rafting / ARK bunker stop already in the plan — it's a 15-minute leg-stretch in the same town.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stara_%C4%86uprija",
+      "https://oneday-itinerary.com/europe/bih/konjic/",
+      "https://bosniaandgulf.com/sarajevo-to-mostar-road-trip-guide/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "30-45 min",
+    "bestTime": "Golden hour on the river; quiet most of the day",
+    "tags": ["deep-dive", "ottoman-bridge", "old-town", "konjic", "on-route", "quick-stop", "free"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-jablanica-neretva-museum",
+    "name": "Battle of Neretva Museum & sunken bridge (Jablanica)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.653723,
+    "lng": 17.760688,
+    "description": "The dramatic twisted-girder wreck of the 1943 railway bridge lying in the Neretva gorge, beside the museum Tito opened in 1978. Site of the WWII 'Battle for the Wounded' AND the film set: director Bulajić literally blew up the real bridge for the 1969 Oscar-nominated epic 'Battle of Neretva' (Yul Brynner, Orson Welles). A 30-minute on-route stop right where the M17 hits Jablanica — pair with the town's famous spit-roast lamb.",
+    "communityNotes": "Consensus: 'if you're driving between Mostar and Sarajevo it's worth a few minutes to stop'; '30 minutes is enough'; the broken bridge in the river is 'hauntingly photogenic'. The film backstory is the hook — 10,000 extras, real tanks, the bridge demolished for the climax (the footage was ruined by smoke and reshot in Prague). Jablanica itself is THE Balkan address for slow-roasted lamb (jagnjetina) at roadside spits — a natural lunch stop on the corridor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bridge_on_the_Neretva",
+      "https://www.lifeandventures.com/battle-of-neretva-museum-jablanica/",
+      "https://www.tripadvisor.com/Attraction_Review-g1632097-d5123472-Reviews-Museum_Battle_for_the_Wounded_on_Neretva_River-Jablanica_Herzegovina_Neretva_Can.html"
+    ],
+    "cost": "Small museum entry (a few KM); the bridge view is free from the road",
+    "timeNeeded": "30 min (bridge + museum)",
+    "bestTime": "Daytime; combine with a lamb lunch in Jablanica",
+    "tags": ["deep-dive", "wwii", "history", "bridge", "film-location", "jablanica", "on-route", "quick-stop"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-stolac-bregava",
+    "name": "Stolac old town — emerald Bregava, watermills & Vidoška fort",
+    "country": "BA",
+    "category": "town",
+    "lat": 43.083059,
+    "lng": 17.958003,
+    "description": "One of Bosnia's oldest continuously inhabited towns, on the clear-green Bregava river in Herzegovina's stone-and-fig south. Ottoman bridges, old watermills still over the water, and the huge Vidoška fortress (13 towers, 5th-c. origins) a 15-min climb above town with sweeping views. The Bregava is calm and clean enough for paddling/wild swimming. Ties together the already-pinned Daorson and Radimlja stećci that sit right here.",
+    "communityNotes": "Backpacker guides push back on its reputation: 'most assume it's just a sad war-scarred detour — that's outdated'; 'a quiet, slightly haunted town where history and landscape do the heavy lifting', best as a '1-2 night stop'. The Bregava is 'the emerald lifeblood of Stolac', a sinking river with 'pure turquoise waters', historically up to ~22 mills; 'clean, calm waters ideal for paddling or wild swimming in warmer months'. Vidoška fort: 'massive, a 15-minute walk uphill from the centre'.",
+    "sources": [
+      "https://www.takeyourbackpack.com/backpacking-in-bosnia-and-herzegovina/visit-stolac/",
+      "https://visitbih.ba/en/the-site-has-been-inhabited-for-16000-years-stolac-a-city-that-exudes-mediterranean-charm/",
+      "https://www.tripadvisor.com/Attraction_Review-g303195-d19493263-Reviews-Bregava_River-Stolac_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Herzego.html"
+    ],
+    "cost": "Free to wander; budget apartments cheap",
+    "timeNeeded": "Half day (town + fort + river); 1 night to slow down",
+    "bestTime": "Late afternoon for the fort light; summer for a Bregava swim",
+    "tags": ["deep-dive", "old-town", "emerald-river", "watermills", "fortress", "ottoman-bridge", "swimming", "off-route", "hidden-gem"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-donje-bare-zelengora",
+    "name": "Donje Bare lake & Borić viewpoint (Zelengora, Sutjeska NP)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.318140,
+    "lng": 18.630402,
+    "description": "A glacial 'mountain eye' at ~1490m on NE Zelengora — the swimmable, accessible one of Sutjeska's lakes, reached by a ~20 km mountain road straight from Tjentište (no long hike needed) with a rentable wooden cabin on the shore. A short 400m walk up leads to the Borić viewpoint over the whole Sutjeska canyon, Maglić, Volujak and the Perućica primeval forest. A calmer, swim-friendly alternative to the harder Orlovačko/Štirinsko lakes already pinned.",
+    "communityNotes": "Local park/blogs: lake ~200x140m, ~4m deep, 'a popular spot for swimming and picnicking in summer'; 'a small mountain house on the shore can be rented'. Borić: 'an easy 400m walk to the edge of the Sutjeska canyon' (locals say ~30 min from the lake) for 'a beautiful view of the entire canyon, Vučevo, Maglić, Perućica, Prijevor and the ruins of Vratar/Vratac/Kosman'. Final approach is rough — some operators run guests up by off-road vehicle, so check the road/your car before driving the last section.",
+    "sources": [
+      "https://www.livetheworld.com/activities/bosnia-and-herzegovina/donje-bare-lake-mt-zelengora",
+      "https://zelengora.ba/jezera-zelengore-i-maglic/",
+      "https://campsutjeska.com/donje-bare-boric-gornje-bare/"
+    ],
+    "cost": "Free; shore cabin rentable (cheap, contact the park/camp)",
+    "timeNeeded": "Half day from Tjentište (drive up + swim + Borić viewpoint)",
+    "bestTime": "Summer for a (bracing) swim; clear morning for the canyon panorama",
+    "tags": ["deep-dive", "mountain-lake", "swimming", "viewpoint", "zelengora", "sutjeska", "off-route", "hidden-gem"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-gradac-foca-viewpoint",
+    "name": "Gradac / Gradačka stijena viewpoint (above Foča)",
+    "country": "BA",
+    "category": "viewpoint",
+    "lat": 43.511500,
+    "lng": 18.769000,
+    "description": "An old fortress crag at 889m on the left bank of the Drina directly above Foča, reached by a short ~45-min hike from the bridge by the municipal building. The reward is a ~10 km panorama down the Drina valley, the Ćehotina confluence, and the peaks of Maglić, Zelengora, Treskavica and Ljubišnja. A free leg-stretch in the last town before the rough Šćepan Polje border road.",
+    "communityNotes": "Tourist Organisation of Foča: 'a viewpoint where a fortress used to be, with a military-observing function, on the left side of the Drina above the town', 889m; 'the shortest route begins on the left bank near the bridge by the Municipal building, ~45 minutes to climb'. View takes in 'the Drina valley about ten km long, the Ćehotina 4-5 km upstream, and the peaks of Maglić, Zelengora, Treskavica, Ljubišnja'. Foča is where you fuel up before the narrow Šćepan Polje road — a natural pause point.",
+    "sources": [
+      "https://focaravajuce.org/en/tours/excursion-to-the-viewpoint-of-the-gradacka-stijena/",
+      "https://visitsrpska.org/en/vidikovci-i-katuni/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "~2h round trip on foot",
+    "bestTime": "Morning before the border push; clear day for the long valley view",
+    "tags": ["deep-dive", "viewpoint", "hike", "foca", "drina", "fortress", "on-route", "free"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-studeni-potok-umoljani",
+    "name": "Studeni Potok waterfall & stone-dragon (Umoljani)",
+    "country": "BA",
+    "category": "hike",
+    "lat": 43.658967,
+    "lng": 18.219808,
+    "description": "An easy, gorgeous short walk from Umoljani village down a meandering stream to a cascade plunging toward the Rakitnica canyon (up to 21 cascades / ~350m of drop at high water). Local legend says a dragon fleeing Rakitnica carved the stream's bends and was turned to stone on the ridge above — you can find the 'dragon' rock on the path toward Lukomir. A gentle, family-grade Bjelašnica gem — distinct from the long Umoljani→Lukomir loop already pinned.",
+    "communityNotes": "Klix / Sarajevo Times: 'the legendary Studeni Potok, pearl of Bjelašnica'; access is 'asphalt road then a short pleasant walk from Umoljani to Grad'. The dragon legend (umolili = 'they prayed', hence Umoljani) is the local colour: 'to see the stone dragon, go from the waterfall toward Lukomir and look at the rocks above the path'. Caveat: 'most beautiful in spring when snow melts — it can dry up in summer', so late-June flow may be reduced; still a scenic easy walk and a great sunrise/'meditation on a mountain' spot. Pin is on the Studeni Potok stream below Umoljani.",
+    "sources": [
+      "https://www.klix.ba/lifestyle/putovanja/proljetna-razglednica-legendarni-studeni-potok-je-biser-bjelasnice/160423025",
+      "https://sarajevotimes.com/the-legend-of-the-beautiful-studeni-potok-on-bjelasnica/",
+      "https://mbv.ba/en/selo/umoljani-en/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1.5-2.5h easy walk from Umoljani",
+    "bestTime": "Spring/early summer for full flow; can thin out by late June",
+    "tags": ["deep-dive", "waterfall", "easy-walk", "umoljani", "bjelasnica", "legend", "sunrise", "off-route"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-umoljani-watermills",
+    "name": "Umoljani watermills (Sedrenik) & katun",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.670206,
+    "lng": 18.227862,
+    "description": "A cluster of seven small restored wooden watermills strung along the Sedrenik spring on the slopes of Umoljani — centuries-old stone-and-timber mills that still evoke pre-industrial highland life, plus the preserved Gradina katun (summer shepherd settlement) above the village. The photogenic, low-effort counterpart to the famous Lukomir houses, and a natural pairing with the Studeni Potok walk.",
+    "communityNotes": "Most-Beautiful-Villages BiH: 'the path goes along Orlovac hill and passes seven small watermills, used for centuries to make flour, today restored as a tourist attraction'; 'on the slopes there are seven old mills at the Sedrenik spring'. The Gradina katun above the village 'with traditional architectural objects is preserved' — shepherds once gathered to graze flocks here in summer. The wider village also holds stećci (medieval tombs), a medieval church, and one of Bosnia's oldest mosques. Reachable by asphalt road; combine with Lukomir/Studeni Potok on a Bjelašnica day.",
+    "sources": [
+      "https://mbv.ba/en/selo/umoljani-en/",
+      "https://www.komoot.com/highlight/2856082",
+      "https://bhputovanja.ba/en/my-trip/rural-avantourism-umoljani-village-bjelasnica/3439"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1-2h (mills + village stroll)",
+    "bestTime": "Daytime; pairs with Studeni Potok and Lukomir",
+    "tags": ["deep-dive", "watermills", "katun", "village", "umoljani", "bjelasnica", "off-route", "hidden-gem"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-zitomislici-monastery",
+    "name": "Žitomislići Monastery (Neretva valley)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.207975,
+    "lng": 17.792727,
+    "description": "A serene 16th-century Serbian Orthodox monastery set among vineyards right on the M17 between Mostar and Počitelj — fortified walls, a frescoed church and quiet courtyards. Destroyed in the 1990s war and faithfully rebuilt; a calm, free, near-empty contrast to the Blagaj tour-bus crush, and a zero-detour stop on the Mostar↔Kravica/coast axis.",
+    "communityNotes": "Guides pair it with Blagaj: 'the picturesque monasteries of Blagaj Tekija and Žitomislići are among the highlights in the mountainous landscapes around Mostar', 'both worth visiting, commonly included together in Herzegovina day trips'. The draw is the peaceful vineyard setting and the rebuilt-after-war story rather than blockbuster art; modest dress to enter the church. Sits directly on the main road so it costs essentially no detour.",
+    "sources": [
+      "https://www.backpackadventures.org/mostar-to-blagaj/",
+      "https://en.wikipedia.org/wiki/%C5%BDitomisli%C4%87i_Monastery"
+    ],
+    "cost": "Free (donations)",
+    "timeNeeded": "30-40 min",
+    "bestTime": "Daytime; quiet most hours",
+    "tags": ["deep-dive", "monastery", "orthodox", "neretva", "on-route", "quiet", "free"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-lastva-jazina-trebinje",
+    "name": "Lastva lake & Jazina falls (Trebinje local swim)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 42.700843,
+    "lng": 18.475309,
+    "description": "The Trebinje locals' summer swim spots, ~12-15 km east of town and nearly invisible to tourists: Lastva, a secluded lake with natural and built bathing pools, and the nearby Jazina falls on the Sušica (a Trebišnjica tributary) with emerald, crystal-clear water and small cascades. A cool-off worth knowing if you base in Trebinje, far from any crowd.",
+    "communityNotes": "Local tourism writing: 'two real hidden gems that only locals know — Lastva and Jazina'. Lastva: 'on the shore of Lastva Lake, 12 km from Trebinje, this secluded resort hides wonderful natural and man-made pools, a preferred summer getaway for locals'. Jazina: 'on the Sušica river... magnificent falls, the premier choice for water enthusiasts, with emerald and crystal-clear waters in an untouched setting'. Both off the tourist map — confirm the access track locally.",
+    "sources": [
+      "https://www.livetheworld.com/post/trebinje-for-water-enthusiasts-rivers-lakes-waterfalls-h016",
+      "https://visit-trebinje.com/resoarts-and-trebisnjica/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "Half day with a swim",
+    "bestTime": "Hot summer days; weekday mornings quietest",
+    "tags": ["deep-dive", "swimming", "lake", "waterfall", "trebinje", "local-secret", "off-route", "hidden-gem"],
+    "rating": 3,
+    "status": "candidate"
+  }
+]
