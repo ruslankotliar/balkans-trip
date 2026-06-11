@@ -388,17 +388,20 @@ Car drop at Dubrovnik Airport (Čilipi) by **20:00**. Full day available. Option
 
 ### TODAY (Jun 11):
 0. **🚨 CRITICAL — Rental car cross-border permission (Sicily By Car):** The entire route crosses into BiH and Montenegro. Sicily By Car must issue a written border-crossing permit. Call their Zadar Airport desk TODAY: **+385 23 646 547**. Ask specifically for written authorization to enter Bosnia & Herzegovina and Montenegro. Without this permit the border guards may turn you away. This is non-negotiable and must be resolved before Jun 16.
-1. **Book Bluesun Camping Paklenica** via Booking.com if you want certainty for Night 1 — OR plan to walk in to Camp NP Paklenica and call at 08:00 on Jun 16
-2. **Email Auto Camp Lisičina** (kamp-lisicina@inet.hr) for Night 2 — attach: dates Jun 17, 4 adults, 1 large tent, 1 car, request confirmation
-3. **Book Gaga City Center Trebinje** on Airbnb for Jun 18 (Night 3) and Jun 27 (Night 12)
-4. **Email Camping Kate** (info@campingkate.com) for Night 4 — same format as Lisičina
-5. **Call or email Autokamp Lovor** (+385 98 702 200) for Mljet Night 5
+1. **🚨 Book Tara Canyon Rafting (Jun 23, Day 8):** Peak June fills 1–2 weeks ahead — you're already at the minimum. Email or WhatsApp today: Rafting Centar Drina-Tara office@raftingtara.com / +381 64 420 1956 (€60/pp incl. meals, ~€240 total) OR TaraSport info@tarasportrafting.com / +387 66 606 306 (€50/pp). Ask for Jun 23, 4 adults, 1-day trip.
+2. **Book Biokovo Skywalk (Jun 18, Day 3):** Online-only booking required, 20-car cap per hour. Book Jun 18 first slot at [shop.pp-biokovo.hr](https://shop.pp-biokovo.hr). €15/pp = €60 for 4.
+3. **Book Bluesun Camping Paklenica** via Booking.com if you want certainty for Night 1 — OR plan to walk in to Camp NP Paklenica and call at 08:00 on Jun 16
+4. **Email Auto Camp Lisičina** (kamp-lisicina@inet.hr) for Night 2 — attach: dates Jun 17, 4 adults, 1 large tent, 1 car, request confirmation
+5. **Book Gaga City Center Trebinje** on Airbnb for Jun 18 (Night 3) and Jun 27 (Night 12)
+6. **Email Camping Kate** (info@campingkate.com) for Night 4 — same format as Lisičina
+7. **Call or email Autokamp Lovor** (+385 98 702 200) for Mljet Night 5
 
 ### THIS WEEK (by Jun 14):
-6. **Book Apartment City Center Mostar** (Airbnb rooms/14231459) for Jun 21
-7. **Book Old Town Pearl Apartments Sarajevo** or choose Konjic alternative for Jun 22
-8. **Book/confirm Skadar Lake** — either San Duyevo winery (Booking.com) or Guesthouse Raicevic or Camp Radoman for Jun 25
-9. **Zabljak camps** — email Mlinski Potok (minakamp@gmail.com) for Jun 23–24 if you want certainty; walk-in also fine
+8. **Book Cetina Extreme Canyoning (Jun 17, Day 2):** 1–2 days ahead. [canyoning-cetina.com](https://canyoning-cetina.com) (€70/pp) or Malduk Adventures. 4 adults = ~€280.
+9. **Book Apartment City Center Mostar** (Airbnb rooms/14231459) for Jun 21
+10. **Book Old Town Pearl Apartments Sarajevo** or choose Konjic alternative for Jun 22
+11. **Book/confirm Skadar Lake** — either San Duyevo winery (Booking.com) or Guesthouse Raicevic or Camp Radoman for Jun 25
+12. **Žabljak camps** — email Mlinski Potok (minakamp@gmail.com) for Jun 23–24 if you want certainty; walk-in also fine
 
 ### LOGISTICS TO CONFIRM:
 - **Mljet ferry (Jun 20):** No advance car booking needed — arrive Prapratno 60+ minutes before departure. Buy tickets at port or jadrolinija.hr. Cost ~€50 (car + 4 adults).
