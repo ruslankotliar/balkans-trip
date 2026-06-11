@@ -14,6 +14,7 @@ import CorridorPanel, { type CorridorMatch } from './components/CorridorPanel';
 import DetailPanel from './components/DetailPanel';
 import Essentials from './components/Essentials';
 import Itinerary from './components/Itinerary';
+import Review from './components/Review';
 import RouteBuilder from './components/RouteBuilder';
 import { ImportPrompt, ShareButton } from './components/SharePlan';
 import Today, { type ProximityMatch } from './components/Today';
@@ -87,7 +88,7 @@ import {
 import type { Category, Country, Place, Status } from './types';
 import { useDayRoutes } from './useDayRoutes';
 
-type View = 'places' | 'itinerary' | 'route';
+type View = 'places' | 'itinerary' | 'route' | 'review';
 
 // Categories that count as a place to sleep, for the nearby finder.
 const SLEEP_CATEGORIES: Category[] = ['campsite', 'accommodation'];
@@ -1462,6 +1463,16 @@ export default function App() {
               {v === 'places' ? 'Places' : v === 'itinerary' ? 'Itinerary' : 'Route builder'}
             </button>
           ))}
+          <button
+            className={view === 'review' ? 'on review-tab-btn' : 'review-tab-btn'}
+            onClick={() => {
+              setView('review');
+              setCorridor(null);
+            }}
+            title="Card-by-card triage: shortlist, skip, or reject"
+          >
+            📋 Review
+          </button>
         </div>
 
         <input
@@ -2017,6 +2028,14 @@ export default function App() {
           current={whoOpen === 'edit' ? person : null}
           onSave={saveName}
           onCancel={whoOpen === 'edit' ? () => setWhoOpen(null) : undefined}
+        />
+      )}
+
+      {view === 'review' && (
+        <Review
+          places={places}
+          onStatus={setStatus}
+          onExit={() => setView('places')}
         />
       )}
     </div>

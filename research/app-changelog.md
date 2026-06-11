@@ -604,6 +604,53 @@ pin, and hit-tested the sheet.
 `src/data/*.json` untouched; `npm run build` + `tsc --noEmit` green; GitHub Pages
 base path (`/balkans-trip/`) unchanged.
 
+## Review mode (2026-06-11)
+
+Card-by-card triage for quickly triaging 415 places before the trip. `src/data/*.json`
+untouched; `npm run build` green.
+
+### 11. Review mode — full-screen card-by-card triage
+
+**Why:** 415 places in the list is hard to audit quickly. The Review mode surfaces
+one place at a time and lets 4 people batch-decide in minutes.
+
+**Entry point:** a "📋 Review" button added to the view-tabs row (planning sidebar,
+orange accent to distinguish it from the three main tabs). Clicking it opens a
+full-screen overlay (`z-index: 2500`).
+
+**Filter row (top of overlay):**
+- Country: All / 🇭🇷 Croatia / 🇧🇦 Bosnia / 🇲🇪 Montenegro
+- Status queue: Candidates / Backup / All non-rejected
+Changing either filter resets the card index to 0.
+
+**Card layout (centered panel, max 560px, full-width on phone):**
+- Country flag emoji + place name + category badge (colored dot)
+- Star rating (★★★☆☆)
+- Cost + timeNeeded if present
+- Description
+- communityNotes as a styled blockquote
+- 3 big action buttons: ✓ Shortlist (green) / Skip (grey) / ✗ Reject (red)
+
+**Navigation:**
+- "← Back" button appears after the first card to revisit the previous one
+- Progress counter "N / M candidates"
+- Shortlist and Reject use `setStatus` (existing function) — status changes persist
+  to localStorage immediately via the existing overrides layer
+- Skip just advances the index without changing status
+- When the queue is exhausted, a "done" message is shown
+
+**Implementation:**
+- New `src/components/Review.tsx` (self-contained, no new state outside the component)
+- `'review'` added to the `View` type in `App.tsx`
+- Review overlay rendered as a sibling of the sidebar + map (not inside either) so
+  it can cover the full viewport
+- `onExit` returns to the `'places'` view
+- CSS: `.review-overlay`, `.review-card`, `.review-actions`, `.review-btn` etc.
+  appended to `src/styles.css`; phone breakpoint enlarges tap targets (min-height 58px)
+
+**Files changed:** `src/App.tsx` (import, View type, tab button, overlay render),
+`src/components/Review.tsx` (new), `src/styles.css` (new section appended).
+
 ## Mobile UX improvements (2026-06-11)
 
 Three targeted fixes for the phone-on-the-road scenario. `src/data/*.json` untouched;
