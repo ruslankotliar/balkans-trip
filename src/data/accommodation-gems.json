@@ -7,7 +7,7 @@
     "lat": 44.2771,
     "lng": 15.4783,
     "description": "Dedicated Airbnb gem hunt. Best value in the pricey Zadar/Paklenica zone (Jun 16): a whole 4-guest apartment in Seline at the foot of Velebit, walking distance to the sea and 10 min from the Paklenica trailheads. Entire home/apt, ★5.0, sleeps 4. Far better value than Zadar-city apartments (€80-170/night) or Starigrad seafront. Anchors the Plan-M Velebit morning.",
-    "communityNotes": "Airbnb ★5.0 (Guest favorite signal in search). Entire home, sleeps 4, ~17 reviews. June nightly for 4 was the cheapest well-rated option in the whole Zadar→Paklenica box.",
+    "communityNotes": "Airbnb ★5.0 (Guest favorite signal in search). Entire home, sleeps 4, ~17 reviews. June nightly for 4 was the cheapest well-rated option in the whole Zadar→Paklenica box. | Croatia camping preference: two solid campsites cover Paklenica (hr-camp-np-paklenica, hr-camping-pinus at €45-50). Apartment at €105 is poor value for this zone.",
     "sources": [
       "https://www.airbnb.com/rooms/962921369682690337"
     ],
@@ -17,7 +17,7 @@
       "zone-zadar"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-gem-omis-a2808b-beach",
@@ -27,7 +27,7 @@
     "lat": 43.45127,
     "lng": 16.62519,
     "description": "Dedicated Airbnb gem hunt. Cheapest ★5.0 in the Omiš/Cetina-canyon zone (Jun 17): a whole apartment a short walk from the beach at Jesenice, just east of Omiš town — ideal canyoning/rafting base. Entire home/apt, ★5.0, sleeps 4. On the Dalmatian coast in June this is genuinely rare value (most well-rated Omiš places run €150-280).",
-    "communityNotes": "Airbnb ★5.0, entire home, sleeps 4. One of very few coast listings near the €50-80 benchmark for 4 in mid-June.",
+    "communityNotes": "Airbnb ★5.0, entire home, sleeps 4. One of very few coast listings near the €50-80 benchmark for 4 in mid-June. | Croatia camping preference: Auto Camp Lisicina (hr-camp-lisicina) is €30-40 at the Cetina river mouth. Generic beach apartment at €68 not worth it.",
     "sources": [
       "https://www.airbnb.com/rooms/19510886"
     ],
@@ -37,7 +37,7 @@
       "zone-omis"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-gem-omis-esthi-seaview",
@@ -47,7 +47,7 @@
     "lat": 43.44211,
     "lng": 16.67426,
     "description": "Dedicated Airbnb gem hunt. Omiš zone (Jun 17): modern sea-view apartment above the town, ★4.96 Guest favorite, sleeps 4. Walkable to the old town and the Cetina river mouth where the canyoning/zipline operators launch. Strong value for the coast in June.",
-    "communityNotes": "Airbnb ★4.96, Guest favorite, entire home, sleeps 4. Sea view; one of the better-value well-rated Omiš options.",
+    "communityNotes": "Airbnb ★4.96, Guest favorite, entire home, sleeps 4. Sea view; one of the better-value well-rated Omiš options. | Croatia camping preference: generic sea-view apartment, €77. Camp Lisicina covers this night at half the price with better outdoor feel.",
     "sources": [
       "https://www.airbnb.com/rooms/12510210"
     ],
@@ -57,7 +57,7 @@
       "zone-omis"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-gem-omis-zizula-terrace",
@@ -67,7 +67,7 @@
     "lat": 43.4396,
     "lng": 16.67621,
     "description": "Dedicated Airbnb gem hunt. Omiš zone (Jun 17): a perfect-rated two-bedroom with a real terrace, ★5.0 Top guest favorite, sleeps 4. A touch above benchmark but a step up in space/quality for the canyoning night; its sibling Žižula II (★5.0, Superhost) is an identical fallback nearby.",
-    "communityNotes": "Airbnb ★5.0, Top guest favorite. Two bedrooms + terrace, sleeps 4. Twin listing Žižula II (id 41710780) is the same product if this one is booked.",
+    "communityNotes": "Airbnb ★5.0, Top guest favorite. Two bedrooms + terrace, sleeps 4. Twin listing Žižula II (id 41710780) is the same product if this one is booked. | Croatia camping preference: generic terrace apartment, €109. No compelling reason to pay 3x the camp price here.",
     "sources": [
       "https://www.airbnb.com/rooms/41495638"
     ],
@@ -77,7 +77,7 @@
       "zone-omis"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-gem-makarska-soldan3",
@@ -87,7 +87,7 @@
     "lat": 43.29408,
     "lng": 17.02258,
     "description": "Dedicated Airbnb gem hunt. Makarska Riviera zone (Jun 17 alternative): the cheapest well-rated entire apartment in central Makarska, ★4.96 Guest favorite, sleeps 4. Riviera base under the Biokovo massif for the Sveti Jure / Punta Rata side of the day. Good value for a notoriously pricey June coast.",
-    "communityNotes": "Airbnb ★4.96, Guest favorite, sleeps 4. Cheapest well-rated Makarska option that surfaced for June (most run €110-280).",
+    "communityNotes": "Airbnb ★4.96, Guest favorite, sleeps 4. Cheapest well-rated Makarska option that surfaced for June (most run €110-280). | Croatia camping preference: Camping Krvavica (hr-camping-krvavica) is a beach campsite in the Makarska zone. Generic apartment at €87 adds nothing.",
     "sources": [
       "https://www.airbnb.com/rooms/870211257222528057"
     ],
@@ -97,7 +97,7 @@
       "zone-makarska"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-gem-makarska-dorotea1",
@@ -107,7 +107,7 @@
     "lat": 43.30329,
     "lng": 17.02118,
     "description": "Dedicated Airbnb gem hunt. Makarska Riviera (Jun 17 alternative): a near-flawless ★4.99 Top-guest-favorite two-bedroom, sleeps 6 (so comfortable for 4). Central Makarska, walk to the promenade and beaches. The standout-rated Makarska gem if you'll pay a bit more than Soldan.",
-    "communityNotes": "Airbnb ★4.99, Top guest favorite, personCapacity 6. One of the highest-rated apartments anywhere on the Riviera.",
+    "communityNotes": "Airbnb ★4.99, Top guest favorite, personCapacity 6. One of the highest-rated apartments anywhere on the Riviera. | Croatia camping preference: generic Makarska apartment, €111 — over budget for a zone where great beach camping exists.",
     "sources": [
       "https://www.airbnb.com/rooms/17975295"
     ],
@@ -117,7 +117,7 @@
       "zone-makarska"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-gem-peljesac-mlinica-watermill",
@@ -127,7 +127,7 @@
     "lat": 42.9043,
     "lng": 17.5355,
     "description": "Dedicated Airbnb gem hunt. UNIQUE PROPERTY: a restored stone 'mlinica' (watermill) cottage with a jacuzzi at Brijesta on the quiet NW tip of Pelješac, near the Mljet ferry approach. ★4.91 Superhost, sleeps 5. A genuine character stay for the Mljet/Pelješac night — not a generic apartment.",
-    "communityNotes": "Airbnb ★4.91, Superhost, 'Cottages' category, personCapacity 5, ~65 reviews. Old watermill + jacuzzi; secluded bay village.",
+    "communityNotes": "Airbnb ★4.91, Superhost, 'Cottages' category, personCapacity 5, ~65 reviews. Old watermill + jacuzzi; secluded bay village. | Duplicate: same property as hr-villa-mlinica-brijesta-peljesac (Mlinica stone watermill, Brijesta, identical coordinates). Keeping the villa-file entry.",
     "sources": [
       "https://www.airbnb.com/rooms/623797838989405404"
     ],
@@ -137,7 +137,7 @@
       "zone-peljesac"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-gem-peljesac-roberto",
@@ -147,7 +147,7 @@
     "lat": 43.0636,
     "lng": 17.4228,
     "description": "Dedicated Airbnb gem hunt. Pelješac value pick (Jun 20): a whole ★5.0 apartment near the Ston end of the peninsula — handy for the Ston walls + Mali Ston oysters + Dingač wine stops before/after Mljet. Entire home/apt, sleeps 4. Cheapest perfect-rated option on the peninsula for June.",
-    "communityNotes": "Airbnb ★5.0, Guest favorite, entire home, sleeps 4. Best value on Pelješac that surfaced for the sample dates.",
+    "communityNotes": "Airbnb ★5.0, Guest favorite, entire home, sleeps 4. Best value on Pelješac that surfaced for the sample dates. | Generic Ston-base apartment, €98. Route passes through Ston only briefly (oysters + walls). If an overnight here is needed, use the Mlinica watermill (hr-villa-mlinica-brijesta-peljesac) which is actually special.",
     "sources": [
       "https://www.airbnb.com/rooms/18920149"
     ],
@@ -157,7 +157,7 @@
       "zone-peljesac"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-gem-mljet-sunrise",
@@ -177,7 +177,7 @@
       "zone-mljet"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-gem-mljet-rotim-seaview",
@@ -277,7 +277,7 @@
       "zone-mostar"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-gem-mostar-citycenter3-terrace",
@@ -337,7 +337,7 @@
       "zone-konjic"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-gem-konjic-apartment-konjic",
@@ -437,7 +437,7 @@
       "zone-zabljak"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-gem-zabljak-maslacak",
@@ -517,7 +517,7 @@
       "zone-skadar"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-gem-skadar-cloud9",
@@ -597,7 +597,7 @@
       "zone-budva"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-gem-budva-house-rooms-family",

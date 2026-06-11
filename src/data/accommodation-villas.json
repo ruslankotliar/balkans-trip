@@ -18,7 +18,7 @@
       "villa-tier"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-villa-above-the-lake-bobija",
@@ -76,7 +76,7 @@
       "villa-tier"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-villa-kostela-stone-house-poplat",
@@ -114,7 +114,7 @@
       "villa-tier"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-villa-suvodo-biogradska-gora",
@@ -181,7 +181,7 @@
     "lat": 43.4341,
     "lng": 17.1159,
     "description": "A rustic-yet-modern countryside cottage at Krivodol in the Biokovo/Imotski hinterland, ~15 km from the Adriatic — a serene 'forget your worries' retreat with cozy living spaces and an outdoor area, good as a Makarska-Riviera back-country night away from the coastal crowds. Sleeps 4 but only 2 beds (1 bedroom) — FLAG: verify bedding for 4 adults. ★4.94 from 17 reviews.",
-    "communityNotes": "Listing (verified): 'Escape to your idyllic holiday home nestled in the tranquil countryside, just 15 kilometers from the Adriatic coast. This rustic yet modern retreat offers a seamless blend of charm and comfort... unwind in the inviting bedrooms.' ★4.94/17. CAPACITY: listed for 4 but 1BR / 2 beds — confirm sleeping for 4 adults. Runner-up next door: 'paradise in forest close to the sea' (id 1054929404657769777, ★5.0/12, ~€117, also 2 beds).",
+    "communityNotes": "Listing (verified): 'Escape to your idyllic holiday home nestled in the tranquil countryside, just 15 kilometers from the Adriatic coast. This rustic yet modern retreat offers a seamless blend of charm and comfort... unwind in the inviting bedrooms.' ★4.94/17. CAPACITY: listed for 4 but 1BR / 2 beds — confirm sleeping for 4 adults. Runner-up next door: 'paradise in forest close to the sea' (id 1054929404657769777, ★5.0/12, ~€117, also 2 beds). | Croatia camping preference: character inland cottage but €112/night for a zone (Makarska/Biokovo) where beach camping at €35-40 is available. Save the WOW budget for Bosnia/Montenegro where it goes much further.",
     "sources": [
       "https://www.airbnb.com/rooms/904236370017425274",
       "https://www.airbnb.com/rooms/1054929404657769777"
@@ -191,7 +191,7 @@
       "villa-tier"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-villa-mare-jabuka-zrnovo",
@@ -239,7 +239,7 @@
     "lat": 44.1113,
     "lng": 14.934,
     "description": "A character island house at the edge of Dragove on Dugi Otok — built in 1930 by 'grandpa Mate' on his return from New York and lovingly kept original with modern retro comfort, in harmony with its surroundings and near Sakarun/Veli Žal beaches. The standout Zadar-zone stay IF the trip takes the Dugi Otok ferry (Day 1 island option). Sleeps 5 (2 beds in the parse; verify). ★4.92 from 25 reviews. NOTE: ~€170/night — above budget and ferry-dependent (off the mainland route).",
-    "communityNotes": "Listing (verified): 'Back in 1930, after leaving Dragove to work in New York, grandpa Mate built a beautiful house... Almost 90 years later we're following the very same path... retaining the originality of the house and combining it with modern retro comfort. Grandpa Mate House is based on Dugi Otok at the edge of the village Dragove.' Near Karuba/Veli Žal/Sakarun beaches. ★4.92/25. PRICE ~€170/night (over budget); needs the Dugi Otok ferry.",
+    "communityNotes": "Listing (verified): 'Back in 1930, after leaving Dragove to work in New York, grandpa Mate built a beautiful house... Almost 90 years later we're following the very same path... retaining the originality of the house and combining it with modern retro comfort. Grandpa Mate House is based on Dugi Otok at the edge of the village Dragove.' Near Karuba/Veli Žal/Sakarun beaches. ★4.92/25. PRICE ~€170/night (over budget); needs the Dugi Otok ferry. | Over budget (€170) and requires a Zadar ferry that eats Day 1 travel time. The character is real but the logistics kill it.",
     "sources": [
       "https://www.airbnb.com/rooms/21262711"
     ],
@@ -248,6 +248,6 @@
       "villa-tier"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   }
 ]

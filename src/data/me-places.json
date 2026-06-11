@@ -52,7 +52,7 @@
       "food"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-bobotov-kuk",
@@ -214,7 +214,7 @@
       "hot-showers"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-camp-razvrsje",
@@ -803,7 +803,7 @@
       "petrovac"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-petrovac",

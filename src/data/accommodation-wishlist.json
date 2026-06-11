@@ -444,7 +444,7 @@
     "lat": 43.1517,
     "lng": 16.8851,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Actually on HVAR ISLAND, Croatia — not Bosnia. Off our likely route (big northern islands probably don't fit). Sleeps 5.",
-    "communityNotes": "Airbnb guest rating ★4.82 from 11 reviews. Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★4.82 from 11 reviews. Sleeps 5. | Off-route: Hvar island is not on this trip (decided no big northern islands due to timing).",
     "sources": [
       "https://www.airbnb.com/rooms/1143857451883062133"
     ],
@@ -453,7 +453,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-14231459",
@@ -573,7 +573,7 @@
       "zone-sarajevo"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-air-1236363170544579717",
@@ -613,7 +613,7 @@
       "zone-trebinje"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-air-982496716754521531",

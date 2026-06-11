@@ -11,7 +11,7 @@ const COUNTRY_FLAG: Record<Country, string> = {
 
 type CountryFilter = Country | 'all';
 type StatusQueue = 'candidates' | 'backup' | 'all';
-type CategoryGroup = 'all' | 'sleep' | 'activity' | 'eat' | 'nature';
+type CategoryGroup = 'all' | 'sleep' | 'accommodation' | 'campsite' | 'activity' | 'eat' | 'nature';
 
 interface Props {
   places: PlaceWithOverride[];
@@ -22,12 +22,14 @@ interface Props {
 export default function Review({ places, onStatus, onExit }: Props) {
   const [countryFilter, setCountryFilter] = useState<CountryFilter>('all');
   const [statusQueue, setStatusQueue] = useState<StatusQueue>('candidates');
-  const [categoryGroup, setCategoryGroup] = useState<CategoryGroup>('sleep');
+  const [categoryGroup, setCategoryGroup] = useState<CategoryGroup>('accommodation');
   const [index, setIndex] = useState(0);
 
   const CAT_GROUP: Record<CategoryGroup, (c: string) => boolean> = {
     all: () => true,
     sleep: (c) => c === 'accommodation' || c === 'campsite',
+    accommodation: (c) => c === 'accommodation',
+    campsite: (c) => c === 'campsite',
     activity: (c) => c === 'activity' || c === 'hike' || c === 'beach',
     eat: (c) => c === 'food' || c === 'nightlife',
     nature: (c) => c === 'nature' || c === 'sight' || c === 'viewpoint' || c === 'town',
@@ -102,7 +104,9 @@ export default function Review({ places, onStatus, onExit }: Props) {
               handleFilterChange();
             }}
           >
-            <option value="sleep">🛏 Sleep</option>
+            <option value="accommodation">🛏 Accommodation only</option>
+            <option value="campsite">⛺ Campsites only</option>
+            <option value="sleep">🛌 Sleep (both)</option>
             <option value="activity">🏄 Activity / Hike / Beach</option>
             <option value="eat">🍽 Food / Nightlife</option>
             <option value="nature">🏛 Sights / Nature / Towns</option>
