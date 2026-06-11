@@ -18,7 +18,7 @@
 | 🟢 FLEXIBLE | Jun 23 | Žabljak, Durmitor | Auto Camp Mlinski Potok | ~€32/night | minakamp@gmail.com / walk-in |
 | 🟢 FLEXIBLE | Jun 24 | Žabljak, Durmitor | Auto Camp Mlinski Potok (2nd night) | ~€32/night | Walk-in likely fine |
 | 🟢 FLEXIBLE | Jun 25 | Skadar Lake | Auto Camp Radoman (Virpazar) | ~€24–30/night | [Booking.com](https://www.booking.com/hotel/me/auto-camp-radoman.html) |
-| 🟢 FLEXIBLE | Jun 26 | Budva coast | Autocamp Avala (Bečići) | ~€30–35/night | Walk-in or call ahead |
+| 🟢 FLEXIBLE | Jun 26 | Budva/Jaz Beach | **Camp Kunjic** (Jaz Beach, 4.16/5, 95 reviews) | ~€30–40/night | Walk-in or call: +382 69 055 555 |
 | 🟡 BOOK TODAY | Jun 27 | Trebinje or near DBV | Gaga City Center Airbnb (again) | ~€49/night | [Airbnb listing](https://www.airbnb.com/rooms/1165836464333612445) |
 
 **Color key:** 🔴 Croatia peak season coast = book today, may already be filling. 🟠 Bosnia cities in summer = some availability but confirm this week. 🟢 Montenegro inland = generally easier to walk in. 🟡 Trebinje = low-risk but book to avoid searching tired at midnight.
@@ -88,6 +88,13 @@
 - **Important caveat:** Reviews mention management can be unresponsive to booking requests. Call as well as email. Cash only on arrival.
 - **Price:** Estimate **€35–55 for 4** in June (summer 2026 price list exists on their site)
 - **Website:** [autocamp-krvavica.com](https://www.autocamp-krvavica.com/)
+
+**Option C (WOW TIER — call to verify): Oak House Zadvarje**
+- **What it is:** Whole rural property in Zadvarje village (Biokovo inland, ~20 min from Makarska, ~25 min from Omiš). 3 bedrooms, mountain views, garden, BBQ. 98% guest rating (14 reviews). Stone village house — the best character option found in this corridor.
+- **Price:** Unknown — call directly before assuming it's available or affordable.
+- **Action:** **Call today** — +385 98 980 9505 or +385 97 764 0883. Ask: available Jun 17 (1 night), 4 adults, price. If available and ≤€130, book immediately.
+- **Alternative:** Old House Lapis (also Zadvarje) — 120-year-old stone house with pool, ~€130–160. Airbnb: [rooms/858721671716864744](https://www.airbnb.com/rooms/858721671716864744). Check Jun 17, 4 guests; verify 1-night minimum and max occupancy for 4.
+- **Zadvarje context:** A village 15km inland from Makarska — quieter and 4–5°C cooler. Great if you've had a hot canyoning day on Cetina.
 
 **Notes:**
 - Makarska Riviera is a major Croatian resort area. Do not arrive and hope to find a pitch on a random walk-in in peak season — these are small camps.
