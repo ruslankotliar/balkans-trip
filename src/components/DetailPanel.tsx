@@ -1,3 +1,5 @@
+import CollabBlock from './CollabBlock';
+import type { CommentRow, Tally, VoteValue } from '../collab';
 import { CATEGORY_COLORS, COUNTRY_NAMES, STATUSES } from '../constants';
 import { bookingLink, deriveLinks, navUrl } from '../links';
 import type { PlaceWithOverride } from '../store';
@@ -20,6 +22,14 @@ interface Props {
   nearbyCount: number;
   onToggleNearby: () => void;
   onNearbyRadius: (km: number) => void;
+  // Collaboration (votes + comments)
+  person: string | null;
+  myVote: VoteValue | 0;
+  tally: Tally | undefined;
+  comments: CommentRow[];
+  onNeedName: () => void;
+  onVote: (vote: VoteValue) => void;
+  onComment: (body: string) => void;
 }
 
 export default function DetailPanel({
@@ -35,6 +45,13 @@ export default function DetailPanel({
   nearbyCount,
   onToggleNearby,
   onNearbyRadius,
+  person,
+  myVote,
+  tally,
+  comments,
+  onNeedName,
+  onVote,
+  onComment,
 }: Props) {
   if (!place) return null;
   const p = place;
@@ -75,6 +92,17 @@ export default function DetailPanel({
           {booking.kind === 'campsite' ? '⛺' : '🔖'} {booking.label} ↗
         </a>
       )}
+
+      <CollabBlock
+        placeId={p.id}
+        person={person}
+        myVote={myVote}
+        tally={tally}
+        comments={comments}
+        onNeedName={onNeedName}
+        onVote={onVote}
+        onComment={onComment}
+      />
 
       {!tripMode && (
         <div className="status-buttons">

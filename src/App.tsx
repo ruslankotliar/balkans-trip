@@ -17,6 +17,23 @@ import Itinerary from './components/Itinerary';
 import RouteBuilder from './components/RouteBuilder';
 import { ImportPrompt, ShareButton } from './components/SharePlan';
 import Today, { type ProximityMatch } from './components/Today';
+import WhoAreYou from './components/WhoAreYou';
+import {
+  addCommentLocal,
+  buildTallies,
+  castVoteLocal,
+  loadCommentsCache,
+  loadPerson,
+  loadRemotePlacesCache,
+  loadVotesCache,
+  myVote as myVoteFor,
+  pushUserPlace,
+  savePerson,
+  syncCollab,
+  type CommentRow,
+  type VoteRow,
+  type VoteValue,
+} from './collab';
 import {
   CATEGORIES,
   CATEGORY_COLORS,
@@ -84,12 +101,18 @@ const NEAR_ME_KM = 30;
 // One-tap quick filters: the common planning flows must be 1–2 taps.
 // (Trip mode has its own one-tap finders: 🛏 Sleep tonight / 📍 Near me.)
 const NON_REJECTED: Status[] = ['candidate', 'shortlist', 'backup'];
+// Vote-derived filters turn the group's 👍/👎 into decisions:
+//  - 'favorites' = clear group wins (net ≥ +2, or all-positive with ≥2 votes)
+//  - 'split'     = has BOTH up and down votes → needs discussion
+type VoteFilter = 'all' | 'favorites' | 'split';
 interface FilterPreset {
   id: string;
   label: string;
   title: string;
   categories?: Category[];
   statuses?: Status[];
+  /** A vote-derived filter applied on top of category/status. */
+  vote?: VoteFilter;
 }
 const FILTER_PRESETS: FilterPreset[] = [
   {
@@ -112,6 +135,22 @@ const FILTER_PRESETS: FilterPreset[] = [
     categories: SIGHT_CATEGORIES,
   },
   {
+    id: 'favorites',
+    label: '⭐ Group favorites',
+    title: 'Clear group wins: net 👍 ≥ +2 (or all-positive with 2+ votes), any status',
+    categories: CATEGORIES,
+    statuses: NON_REJECTED,
+    vote: 'favorites',
+  },
+  {
+    id: 'split',
+    label: '⚖️ Split',
+    title: 'Both 👍 and 👎 — needs a group discussion',
+    categories: CATEGORIES,
+    statuses: NON_REJECTED,
+    vote: 'split',
+  },
+  {
     id: 'reset',
     label: '↺ All',
     title: 'Back to the default view (all categories, shortlist + backup)',
@@ -119,6 +158,16 @@ const FILTER_PRESETS: FilterPreset[] = [
     statuses: ['shortlist', 'backup'],
   },
 ];
+
+/** A place qualifies as a group favorite: net ≥ +2, or all-positive with ≥2 votes. */
+function isFavorite(t: { up: number; down: number; net: number } | undefined): boolean {
+  if (!t) return false;
+  return t.net >= 2 || (t.down === 0 && t.up >= 2);
+}
+/** A split: both an up and a down vote → contested. */
+function isSplit(t: { up: number; down: number } | undefined): boolean {
+  return !!t && t.up > 0 && t.down > 0;
+}
 
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
@@ -221,13 +270,94 @@ function numberIcon(n: number, color: string) {
   });
 }
 
+/** A small 👍/👎 tally badge anchored to the top-right of a pin. */
+function voteBadgeIcon(up: number, down: number) {
+  const parts: string[] = [];
+  if (up > 0) parts.push(`<span class="vb-up">👍${up}</span>`);
+  if (down > 0) parts.push(`<span class="vb-down">👎${down}</span>`);
+  return L.divIcon({
+    className: 'vote-badge',
+    html: `<div class="vote-badge-inner">${parts.join('')}</div>`,
+    iconSize: [1, 1],
+    iconAnchor: [-8, 18],
+  });
+}
+
 export default function App() {
   // User-added places (feature A) merge AFTER the bundle so the existing
   // "first id wins" de-dupe protects against a user id colliding with a baked
   // one. Everything downstream (map, filters, route builder, finders, exports)
   // treats them as ordinary places.
   const [userPlaces, setUserPlaces] = useState<Place[]>(loadUserPlaces);
-  const basePlaces = useMemo<Place[]>(() => [...loadPlaces(), ...userPlaces], [userPlaces]);
+  // ---- Collaboration layer (votes / comments / friend-added-place sync) ----
+  // Remote user places (added on other phones) merge in too; everything reads
+  // from localStorage caches first, so the app is fully usable offline.
+  const [person, setPerson] = useState<string | null>(loadPerson);
+  const [remotePlaces, setRemotePlaces] = useState<Place[]>(loadRemotePlacesCache);
+  const [votes, setVotes] = useState<VoteRow[]>(loadVotesCache);
+  const [comments, setComments] = useState<CommentRow[]>(loadCommentsCache);
+  // whoOpen drives the "Who are you?" prompt (first use + later edits). reason
+  // 'firstUse' has no Cancel (we want a name to vote with).
+  const [whoOpen, setWhoOpen] = useState<'firstUse' | 'edit' | null>(null);
+  // Merge baked → local user places → remote user places (first id wins, so a
+  // local edit of a place I added shadows the remote copy until it syncs).
+  const basePlaces = useMemo<Place[]>(() => {
+    const localIds = new Set(userPlaces.map((p) => p.id));
+    const remoteOnly = remotePlaces.filter((p) => !localIds.has(p.id));
+    return [...loadPlaces(), ...userPlaces, ...remoteOnly];
+  }, [userPlaces, remotePlaces]);
+
+  // Vote tallies + comments keyed by place id, recomputed when the caches change.
+  const tallies = useMemo(() => buildTallies(votes), [votes]);
+
+  /** Pull the latest collab state from Supabase (best-effort; degrades to cache). */
+  const runSync = useRef(async () => {});
+  runSync.current = async () => {
+    const res = await syncCollab();
+    setVotes(res.votes);
+    setComments(res.comments);
+    setRemotePlaces(res.remotePlaces);
+  };
+
+  // Sync on load and whenever the window regains focus (cheap, best-effort).
+  useEffect(() => {
+    void runSync.current();
+    const onFocus = () => void runSync.current();
+    window.addEventListener('focus', onFocus);
+    return () => window.removeEventListener('focus', onFocus);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // First-use identity prompt (only if no name yet).
+  useEffect(() => {
+    if (!person) setWhoOpen('firstUse');
+  }, [person]);
+
+  function saveName(name: string) {
+    savePerson(name);
+    setPerson(name);
+    setWhoOpen(null);
+  }
+
+  function castVote(placeId: string, vote: VoteValue) {
+    if (!person) {
+      setWhoOpen('firstUse');
+      return;
+    }
+    const { cache } = castVoteLocal(votes, placeId, person, vote);
+    setVotes(cache); // optimistic
+    void runSync.current(); // push + refresh in the background
+  }
+
+  function addComment(placeId: string, body: string) {
+    if (!person) {
+      setWhoOpen('firstUse');
+      return;
+    }
+    const { cache } = addCommentLocal(comments, placeId, person, body);
+    setComments(cache); // optimistic
+    void runSync.current();
+  }
   const [overrides, setOverrides] = useState<Overrides>(loadOverrides);
   const places = useMemo<PlaceWithOverride[]>(
     () => basePlaces.map((p) => ({ ...p, ...overrides[p.id] })),
@@ -258,6 +388,7 @@ export default function App() {
     new Set<Status>(['shortlist', 'backup']),
   );
   const [tagFilter, setTagFilter] = useState<Set<string>>(new Set());
+  const [voteFilter, setVoteFilter] = useState<VoteFilter>('all');
   const [search, setSearch] = useState('');
 
   // One-tap filter presets (filtering-convenience: common flows in 1–2 taps).
@@ -267,11 +398,13 @@ export default function App() {
     setCategoryFilter(new Set(pr.categories ?? CATEGORIES));
     setStatusFilter(new Set(pr.statuses ?? NON_REJECTED));
     setTagFilter(new Set());
+    setVoteFilter(pr.vote ?? 'all');
   }
   const presetActive = (pr: FilterPreset) =>
     setEq(categoryFilter, pr.categories ?? CATEGORIES) &&
     setEq(statusFilter, pr.statuses ?? NON_REJECTED) &&
-    tagFilter.size === 0;
+    tagFilter.size === 0 &&
+    voteFilter === (pr.vote ?? 'all');
 
   // How many advanced filters are narrowing the view (for the disclosure label).
   const advancedFilterCount =
@@ -399,12 +532,19 @@ export default function App() {
   const matchesTags = (p: PlaceWithOverride) =>
     tagFilter.size === 0 || (p.tags ?? []).some((t) => tagFilter.has(t));
 
+  const matchesVote = (p: PlaceWithOverride) => {
+    if (voteFilter === 'all') return true;
+    const t = tallies.get(p.id);
+    return voteFilter === 'favorites' ? isFavorite(t) : isSplit(t);
+  };
+
   const visible = places.filter(
     (p) =>
       countryFilter.has(p.country) &&
       categoryFilter.has(p.category) &&
       statusFilter.has(p.status) &&
       matchesTags(p) &&
+      matchesVote(p) &&
       matchesText(p),
   );
 
@@ -735,24 +875,22 @@ export default function App() {
     if (editingId) {
       // Edit: update the immutable identity in userPlaces; status/day/note flow
       // through the overrides layer (one code path with baked places).
-      applyUserPlaces((u) =>
-        u.map((p) =>
-          p.id === editingId
-            ? {
-                ...p,
-                name: draft.name,
-                category: draft.category,
-                lat: draft.lat!,
-                lng: draft.lng!,
-                country: guessCountry(draft.lat!, draft.lng!),
-              }
-            : p,
-        ),
-      );
+      const updated: Place = {
+        ...(userPlaces.find((p) => p.id === editingId) as Place),
+        name: draft.name,
+        category: draft.category,
+        lat: draft.lat!,
+        lng: draft.lng!,
+        country: guessCountry(draft.lat!, draft.lng!),
+      };
+      applyUserPlaces((u) => u.map((p) => (p.id === editingId ? updated : p)));
       applyOverrides((o) => ({
         ...o,
         [editingId]: { ...o[editingId], day: draft.day ?? undefined, note: draft.note || undefined },
       }));
+      // Propagate the edit to the other phones too.
+      pushUserPlace(updated, person);
+      void runSync.current();
       closeAddPlace();
       setSelectedId(editingId);
       return;
@@ -778,6 +916,9 @@ export default function App() {
         [id]: { ...o[id], day: draft.day ?? undefined, note: draft.note || undefined },
       }));
     }
+    // Sync to user_places so all 4 phones see this pin (best-effort + queued).
+    pushUserPlace(place, person);
+    void runSync.current();
     closeAddPlace();
     setSelectedId(id); // open the detail panel on the new pin
   }
@@ -1254,6 +1395,13 @@ export default function App() {
         <div className="head-row">
           <h1>Balkans Trip</h1>
           <button
+            className="who-pill"
+            onClick={() => setWhoOpen(person ? 'edit' : 'firstUse')}
+            title="Your name (used on votes & comments) — tap to change"
+          >
+            {person ? `🙂 ${person}` : '🙂 Set name'}
+          </button>
+          <button
             className={`mode-pill ${mode}`}
             onClick={() => setMode(mode === 'trip' ? 'planning' : 'trip')}
             title="Switch between planning (research) and trip (on the road) mode"
@@ -1359,7 +1507,10 @@ export default function App() {
                   <button
                     key={s}
                     className={`chip ${statusFilter.has(s) ? 'on' : ''}`}
-                    onClick={() => setStatusFilter(toggle(statusFilter, s))}
+                    onClick={() => {
+                      setStatusFilter(toggle(statusFilter, s));
+                      setVoteFilter('all');
+                    }}
                   >
                     {s} <span className="chip-count">{statusCounts[s]}</span>
                   </button>
@@ -1372,7 +1523,10 @@ export default function App() {
                     key={c}
                     className={`chip ${categoryFilter.has(c) ? 'on' : ''}`}
                     style={{ borderColor: CATEGORY_COLORS[c] }}
-                    onClick={() => setCategoryFilter(toggle(categoryFilter, c))}
+                    onClick={() => {
+                      setCategoryFilter(toggle(categoryFilter, c));
+                      setVoteFilter('all');
+                    }}
                   >
                     <span className="dot" style={{ background: CATEGORY_COLORS[c] }} />
                     {c}
@@ -1433,6 +1587,7 @@ export default function App() {
                 )
                 .map((p) => {
                   const booking = bookingById.get(p.id);
+                  const t = tallies.get(p.id);
                   return (
                     <li
                       key={p.id}
@@ -1441,6 +1596,12 @@ export default function App() {
                     >
                       <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
                       <span className="place-name">{p.name}</span>
+                      {t && (t.up > 0 || t.down > 0) && (
+                        <span className="row-tally" title={`👍 ${t.up} · 👎 ${t.down}`}>
+                          {t.up > 0 && <span className="row-tally-up">👍{t.up}</span>}
+                          {t.down > 0 && <span className="row-tally-down">👎{t.down}</span>}
+                        </span>
+                      )}
                       {booking && (
                         <a
                           className={`book-mini kind-${booking.kind}`}
@@ -1718,6 +1879,21 @@ export default function App() {
           );
         })}
 
+        {/* Vote tally badges on pins that have votes (both modes) */}
+        {markersToShow.map((p) => {
+          const t = tallies.get(p.id);
+          if (!t || (t.up === 0 && t.down === 0)) return null;
+          return (
+            <Marker
+              key={`vb-${p.id}`}
+              position={[p.lat, p.lng]}
+              icon={voteBadgeIcon(t.up, t.down)}
+              interactive={false}
+              keyboard={false}
+            />
+          );
+        })}
+
         {/* Trip mode: big numbered pins for today's stops */}
         {mode === 'trip' &&
           todayStops.map((p, i) => (
@@ -1791,6 +1967,13 @@ export default function App() {
         nearbyCount={nearbyMatchIds.size}
         onToggleNearby={() => setNearbyActive((a) => !a)}
         onNearbyRadius={setNearbyRadius}
+        person={person}
+        myVote={selected ? myVoteFor(votes, selected.id, person) : 0}
+        tally={selected ? tallies.get(selected.id) : undefined}
+        comments={comments}
+        onNeedName={() => setWhoOpen('firstUse')}
+        onVote={(v) => selected && castVote(selected.id, v)}
+        onComment={(body) => selected && addComment(selected.id, body)}
       />
 
       {addPlaceOpen && (
@@ -1819,6 +2002,14 @@ export default function App() {
           onMerge={() => applyImportedPlan(importPlan, 'merge')}
           onReplace={() => applyImportedPlan(importPlan, 'replace')}
           onCancel={() => setImportPlan(null)}
+        />
+      )}
+
+      {whoOpen && (
+        <WhoAreYou
+          current={whoOpen === 'edit' ? person : null}
+          onSave={saveName}
+          onCancel={whoOpen === 'edit' ? () => setWhoOpen(null) : undefined}
         />
       )}
     </div>

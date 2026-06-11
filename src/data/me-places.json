@@ -510,7 +510,7 @@
     "lat": 42.28219,
     "lng": 18.80237,
     "description": "Long open beach ~3km west of Budva, roomier than the in-town beaches, with camping behind it and a history as a festival site (Sea Dance was here 2014-17, now gone). Mix of concession and free sand.",
-    "communityNotes": "Less crammed than Mogren/Slovenska. 'The eastern end (toward Budva) is the quietest section, with fewer concessions and more free-sand space' — 'if you move toward the left of the coast you'll most likely find a quiet spot.' Free access; loungers ~€8-12 each. Good base if you want beach + camping near Budva nightlife. (Note: Sea Dance Festival left Montenegro in 2023 — don't plan around it.)",
+    "communityNotes": "Less crammed than Mogren/Slovenska. 'The eastern end (toward Budva) is the quietest section, with fewer concessions and more free-sand space.' Free access; loungers ~€8-12 each. ⚠️ CAMPING WARNING: The campsite at Jaz Beach (Autocamp Jaz) consistently rates 1.5/5 — reviewers cite terrible sanitation, noise until 3-4am, and aggressive upselling. DO NOT camp here. Use Autocamp Avala (Bečići, 4km east) instead: quieter, clean facilities, ~€30-35/night for 4. The beach itself is fine for a swim stop.",
     "sources": [
       "https://www.montenegro-spirit.com/guides/jaz-beach-guide/",
       "https://www.tripadvisor.com/Attractions-g304074-Activities-c61-t52-Budva_Budva_Municipality.html"
@@ -524,7 +524,7 @@
       "swimming"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "backup"
   },
   {
     "id": "me-lucice-beach",
@@ -829,5 +829,49 @@
     ],
     "rating": 4,
     "status": "candidate"
+  },
+  {
+    "id": "me-vitaljina-border",
+    "name": "Vitaljina Border Crossing (ME→HR, fast alternative)",
+    "country": "ME",
+    "category": "other",
+    "lat": 42.514,
+    "lng": 18.499,
+    "description": "Smaller ME→Croatia crossing 15km south of the busy Debeli Brijeg — typically 15-45 min wait vs 1-4h at Debeli Brijeg in June. Use this for the Jun 27 return to Dubrovnik area. D8 coastal road from Herceg Novi, crosses near Sutorina Bay.",
+    "communityNotes": "24/7, open year-round. Confirmed faster in June-July according to 2025-2026 reports. Cross before 8am or after 9pm either way. EES biometric check is now active (April 2026) at Croatian side — adds ~1-2 min per car, no special action needed. Live border cameras available at granicni-prelazi.eu.",
+    "sources": [
+      "https://granicni-prelazi.eu"
+    ],
+    "tags": [
+      "logistics",
+      "border",
+      "croatia"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-prutas-hike",
+    "name": "Prutaš (2393m) — Best accessible Durmitor summit",
+    "country": "ME",
+    "category": "hike",
+    "lat": 43.108,
+    "lng": 18.995,
+    "description": "Durmitor's best effort-to-reward ratio hike: 9km, 5-6h, no technical exposure. From Black Lake trailhead. Wild horses and goats on the open plateau, arguably the best panoramic view in the park with near-total solitude — far fewer people than Bobotov Kuk. Recommended over Veliki Međed for most groups.",
+    "communityNotes": "Called 'arguably the best view in the entire park' with 'a feeling of complete isolation' (The Sandy Feet). The only challenge is LENGTH (long 4-hour grind), not terrain — no scrambling. One slightly unstable rubble section near the summit but nothing requiring hands. June: plateau melts early, no snow issues. Carry 2L water pp (no reliable sources on route). COMPARE WITH VELIKI MEĐED (same start, Black Lake): that route has UIAA-I scrambling and fixed cables — much harder. Prutaš is the everyone-can-do-it choice; do Veliki Međed only if the group is experienced with exposed scrambling.",
+    "sources": [
+      "https://www.thesandyfeet.com/prutas-mountain-hike-durmitor/"
+    ],
+    "cost": "€5/pp NP entry + €2-3 parking",
+    "timeNeeded": "5-6h RT",
+    "bestTime": "start by 07:00; avoid if weather closing in (no shelter on plateau)",
+    "tags": [
+      "hike",
+      "summit",
+      "durmitor",
+      "no-scramble"
+    ],
+    "rating": 5,
+    "status": "shortlist"
   }
 ]

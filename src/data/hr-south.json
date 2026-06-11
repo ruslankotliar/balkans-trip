@@ -640,5 +640,55 @@
     ],
     "rating": 4,
     "status": "candidate"
+  },
+  {
+    "id": "hr-konoba-feral-brijesta",
+    "name": "Konoba Feral — Brijesta, Pelješac (on-route seafood)",
+    "country": "HR",
+    "category": "food",
+    "lat": 42.945,
+    "lng": 17.288,
+    "description": "Father-in-law fishes daily, wife cooks. On the D415 south-coast Pelješac road between Ston and Orebić/Korčula ferry — fits perfectly on the Jun 18 drive or the Mljet/Pelješac day. Homemade pasta, grilled catch, local wine. ~€25-30pp. 4.7/5 across 600+ reviews.",
+    "communityNotes": "Small family restaurant — call ahead (they have limited seating). Genuine konoba feel with no tourist-trap pricing. Sits on the less-traveled south coast road of Pelješac which most people skip in favor of the main road — reward for taking the scenic route. Pair with a Potomje village wine stop 15km before Orebić.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g2345971-d4413091-Reviews-Konoba_Feral-Brijesta_Dubrovnik_Neretva_County_Dalmatia.html"
+    ],
+    "cost": "~€25-30pp",
+    "timeNeeded": "1.5h",
+    "bestTime": "call ahead; lunch or early dinner",
+    "tags": ["seafood", "konoba", "on-route", "peljesac", "local"],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-cape-planka-stargazing",
+    "name": "Cape Planka (Rt Planka) — New Moon Milky Way Jun 16-18",
+    "country": "HR",
+    "category": "viewpoint",
+    "lat": 43.49,
+    "lng": 15.963,
+    "description": "Headland ~30-40 min from Split, 15-20 min walk to the lighthouse. Open Adriatic to the south with no island light pollution, light pollution behind you. Confirmed astrophotography spot. The new moon falls Jun 15 — the first 3 nights of the trip (Jun 16-18) are the darkest sky window of the entire journey.",
+    "communityNotes": "Cape Planka is the clearest Adriatic-facing dark sky on the route. Access: drive to the cape parking, 15-20 min trail to the lighthouse area. No curfew or access restrictions. Best window: Jun 16-18 (new moon Jun 15 = nearly no moonlight). After Jun 20, waxing crescent starts washing out the Milky Way core. The Milky Way core rises in the south and east — face away from the coast lights behind you.",
+    "sources": [
+      "https://darksitefinder.com/maps/world.html"
+    ],
+    "timeNeeded": "evening into night (2-3h)",
+    "bestTime": "Jun 16-18 new moon window; arrive 21:00, core peaks 23:00-01:00",
+    "tags": ["stargazing", "milky-way", "new-moon", "lighthouse"],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-virgin-beach-djevicanska",
+    "name": "Virgin Beach (Djevičanska plaža) — Drašnice/Igrane",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.185,
+    "lng": 17.138,
+    "description": "1km of unspoiled pebble beach with freshwater springs, between Drašnice and Igrane on the Makarska Riviera. Access via old unpaved track (passable in the Sportage). Very few tourists know this route. Free, no loungers, no facilities.",
+    "communityNotes": "Genuinely hidden — the access track is unmarked. Head to Drašnice village, follow signs toward the sea past the campsite, track continues on gravel ~500m. Freshwater springs make the water unusually cold (refreshing in summer heat). The beach itself is wide enough to spread out even in July.",
+    "tags": ["beach", "hidden", "freshwater", "pebble"],
+    "rating": 4,
+    "status": "candidate"
   }
 ]
