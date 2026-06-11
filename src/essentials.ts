@@ -174,6 +174,20 @@ export interface TipSection {
 
 export const QUICK_TIPS: TipSection[] = [
   {
+    title: '⚡ Book before Jun 16 (urgent)',
+    tips: [
+      'CALL Sicily By Car (+385 23 646 547) — confirm BiH + ME cross-border permission + written letter. Ref: D013947246.',
+      'BOOK Tara rafting Jun 23 — email office@raftingtara.com or info@tarasportrafting.com: 4 adults, Jun 23, 10:00 start, Brštanovica→Šćepan Polje. ~€60pp. URGENT.',
+      'BOOK Biokovo Skywalk Jun 18 morning slot — shop.pp-biokovo.hr. 20-car/hour cap, sells out. 4 × €15 = €60.',
+      'Book Cetina Extreme Canyoning Jun 17 (1–2 days ahead) — canyoning-cetina.com (~€70pp) or maldukadventures.com.',
+    ],
+    links: [
+      { label: 'Biokovo Skywalk booking', url: 'https://shop.pp-biokovo.hr' },
+      { label: 'Rafting Centar Drina-Tara', url: 'https://raftingtara.com' },
+      { label: 'Cetina canyoning', url: 'https://canyoning-cetina.com' },
+    ],
+  },
+  {
     title: 'Borders (HR→BA, BA→ME, ME→HR)',
     tips: [
       'Carry passports (EU ID cards NOT accepted for BA/ME), licence, original vehicle registration, rental agreement w/ cross-border auth, green card.',
