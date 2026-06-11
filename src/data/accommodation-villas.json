@@ -292,5 +292,28 @@
     ],
     "rating": 5,
     "status": "candidate"
+  },
+  {
+    "id": "me-guesthouse-skadar-raicevic",
+    "name": "Guesthouse Skadar Lake — Raicevic (Godinje village)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.2507,
+    "lng": 19.0980,
+    "description": "Guesthouse in Godinje village (~3–4 km from Virpazar) on the Skadar Lake shore. ★9.3/10 on Booking.com. Mountain views, private beach area, restaurant with home-cooked fish dinners (€10pp fish + wine). Sleeps 4 in 2 rooms. WOW-tier option: local family, real lake setting, the opposite of a generic apartment.",
+    "communityNotes": "Booking.com ★9.3/10. Verdicts-digest §7 rates this the best Skadar WOW option over San Duyevo (which degraded after the host stopped providing home-cooked meals in 2024). Fish dinner on the terrace + kayak at dawn + Pavlova Strana sunset = the Skadar experience done right. Free shuttle from Virpazar. | NOTE: coords approximate (Godinje village area); cross-check before navigation. Advance booking essential — small property.",
+    "sources": [
+      "https://www.booking.com/hotel/me/godinje-apartment.html"
+    ],
+    "cost": "~€50–80/night for 4 (June, estimate; verify on Booking.com)",
+    "tags": [
+      "villa-tier",
+      "skadar",
+      "night-10",
+      "home-cooked",
+      "lake-view"
+    ],
+    "rating": 5,
+    "status": "candidate"
   }
 ]
