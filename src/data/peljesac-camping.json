@@ -1,0 +1,315 @@
+[
+  {
+    "id": "hr-camp-lupis-loviste",
+    "name": "Camp Lupis — Lovište",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 43.02683,
+    "lng": 17.03138,
+    "description": "Family-run campsite since 1978 at the far western tip of Pelješac, 50 pitches in Lovište bay. Sanitary facilities renovated 2024, solar-heated water, biological treatment plant. Pebble beach 10 m away across a small road. SUP and kayak rental on site, 8 restaurants in walking distance.",
+    "communityNotes": "4.8/5 across 66 reviews — one of the highest-rated campsites in Croatia. 'I have never seen the sea so clear' (Sept 2024). 'Spotlessly clean sanitary facilities, cleaned multiple times daily.' Staff consistently described as 'very friendly' and German-speaking. Sea urchins present — bring water shoes. Pitches shaded by olive trees. Village goes quiet off-season but lively enough in June–July. One reviewer noted pitches 'next to each other' at peak occupancy.",
+    "cost": "~€58/night in June (4 adults + large tent + car: base €35 + 2 extra adults €16 + tent €7). Jumps to ~€76 in July–Aug. Tourist tax ~€1.70/adult/night extra.",
+    "facilities": "Renovated 2024 sanitary block, hot showers, laundry (€8/wash), SUP/kayak rental, free WiFi, boat mooring, playground, electricity hookup, heated/disabled-accessible bathrooms",
+    "tags": [
+      "sea-view",
+      "pebble-beach",
+      "family-run",
+      "eco",
+      "remote",
+      "june-ok"
+    ],
+    "rating": 5,
+    "bestTime": "June is great — less crowded than July/Aug, same facilities. Book ahead for peak weeks.",
+    "sources": [
+      "https://park4night.com/en/place/101004",
+      "https://www.camping.info/en/campsite/camp-lupis",
+      "https://www.peljesac-lupis.com/en/price-list/",
+      "https://www.eurocampings.co.uk/croatia/dubrovnik-neretva/loviste/kamp-lupis-120841/",
+      "https://avtokampi.si/campsites/camping-lupis"
+    ],
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-autocamp-denka-loviste",
+    "name": "Autocamp Đenka — Lovište",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 43.02472,
+    "lng": 17.03493,
+    "description": "Small terraced campsite (~35 pitches) in Lovište bay, 500 m from Camp Lupis. Pitches under palm and olive trees, most with sea views across the bay. Pebble beach directly across a local road with a pier for jumps. Very praised for location and friendliness.",
+    "communityNotes": "4.7/5 (10 reviews). 'Beautiful terraced site with lots of trees, great little bay with a nice village (good restaurants).' 'Only a few steps and you're served fresh fish.' One reviewer was in 'absolute high season and unfortunately there were loud parties almost every night' — better early in June. Narrow road access — fine for tents and vans, harder for large motorhomes.",
+    "cost": "€35–41/night (2 adults + car, caravan/tent + electricity). For 4 adults roughly €50–58/night depending on pitch.",
+    "facilities": "Hot showers, electricity, WiFi, waste disposal, drinking water, bakery nearby; basic but clean sanitary block",
+    "tags": [
+      "sea-view",
+      "pebble-beach",
+      "family-run",
+      "terraced",
+      "loviste-bay"
+    ],
+    "rating": 4,
+    "bestTime": "Early June better for quiet nights — party noise noted during peak July/August.",
+    "sources": [
+      "https://park4night.com/en/place/70365",
+      "https://www.camping.info/en/campsite/autokamp-denka",
+      "https://www.denka.info/?lang=en"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camp-prapratno",
+    "name": "Autocamp Prapratno — near Ston",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.8193,
+    "lng": 17.6728,
+    "description": "Large campsite (250 pitches) at the entrance to Pelješac, 3 km from Ston on a sandy bay. One of the very few sandy beaches in Dalmatia — flat and good for swimming. Ferry to Mljet National Park (Sobra) departs from Prapratno bay. Strategic position: first campsite after the Pelješac bridge from Dubrovnik direction.",
+    "communityNotes": "4.0/5 (66 reviews). Beach quotes: 'one of the rare sandy beaches around this part of Croatia', '100% sand beach, crystal clear water, perfect for children.' Facilities mixed: 'showers better than any other camping' (positive) vs. 'showers not clean and defect, risk of injury' (negative, likely older reviews). Pricing complaints: June 2025 visitor charged €38 extra for electricity ('a joke'); strict checkout (9-min late = full extra day charged). Beach gets very crowded in summer afternoons. WiFi 'really pricey'. Sanitary infrastructure aging. Rated #1 specialty lodging in Ston overall.",
+    "cost": "~€41–47/night in June (4 adults + tent + car, based on per-item rates: ~€5.90/person + €5.50 tent + €6.90 car). July higher. Electricity charged separately and reportedly aggressively billed.",
+    "facilities": "3 sanitary blocks (aging but operational), supermarket, restaurant, tennis/volleyball/basketball, boat ramp, WiFi (paid), electricity hookups, 250 pitches",
+    "tags": [
+      "sandy-beach",
+      "mljet-ferry",
+      "large",
+      "ston-area",
+      "strategic-position"
+    ],
+    "rating": 3,
+    "bestTime": "Arrive early afternoon to secure a pitch in peak season. Avoid peak checkout rush. Sandy beach is genuinely rare and worth it for a night if passing through.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g608720-d2238999-Reviews-Autocamp_Prapratno-Ston_Peljesac_Peninsula_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.camping-prapratno.com/",
+      "https://alanrogers.com/campsite/camping-prapratno-dalmatia",
+      "https://avtokampi.si/campsites/camping-prapratno"
+    ],
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-nevio-camping-orebic",
+    "name": "Nevio Camping — Orebić",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.9814,
+    "lng": 17.1987,
+    "description": "Award-winning 7-hectare campsite on the cliffs above Orebić, #1 ranked campsite in Orebić. Terraced pitches with sea views toward Korčula, private pebble beach with crystal-clear water. Pool, restaurant, beach bar, tennis. 200 total spots including camping pitches and mobile homes.",
+    "communityNotes": "4.4/5 (153 reviews on TripAdvisor). 'A small recreation paradise right on the cliffs with magnificent sea view.' 'Crystal clear turquoise water.' Praised for cleanliness, staff friendliness, free electricity/water/sewage at each plot. Steep terrain — stairs to beach 'taxing'; not great for mobility issues but fine for young groups. 'Extremely well designed terracing — most pitches large and level enough for large tents. Washrooms impeccable.'",
+    "cost": "Prices not published directly — contact for tent+car rate. Comparable campsites in Orebić run €50–65 for 4 adults + tent + car in June.",
+    "facilities": "Private pebble beach, pool, restaurant, beach bar, free electricity/water/sewage hookup, WiFi, tennis court, adventure golf, washhouse (3 buildings), bakery",
+    "tags": [
+      "cliff",
+      "sea-view",
+      "pool",
+      "pebble-beach",
+      "orebic",
+      "award-winning",
+      "korcula-view"
+    ],
+    "rating": 5,
+    "bestTime": "Korčula ferry (Orebić–Korčula Town, 15 min) departs 800 m from camp. Good base for day trip to Korčula.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g635772-d1379048-Reviews-Nevio_Camping-Orebic_Peljesac_Peninsula_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.nevio-camping.com/en/home/",
+      "https://adriacamps.com/en/campsites/dubrovnik-region/peninsula-peljesac/"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-dalmata-camping-orebic",
+    "name": "Dalmata Camping — Orebić (Trstenica)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.9786,
+    "lng": 17.1915,
+    "description": "Small newly renovated campsite (18 pitches) right by Trstenica beach in Orebić — one of the finest pebble beaches on Pelješac. 20 m from the beach, electricity and water at every pitch. Described as the cheapest camp in Orebić area. Good base for the Korčula ferry.",
+    "communityNotes": "Recently renovated with 'perfect bathrooms.' Small scale (18 pitches) means quieter than big sites. 'The cheapest in the area.' No extensive review history yet given new renovation. Located on famous Trstenica beach strip — kayaking and windsurfing activities nearby.",
+    "cost": "~€55/night in peak season (4 adults: €32 + large tent €14 + car €9). June rates likely slightly lower. Budget option vs. Nevio.",
+    "facilities": "Hot showers, electricity and water at all pitches, WiFi, washing machine, 18 pitches, pool access",
+    "tags": [
+      "budget",
+      "pebble-beach",
+      "orebic",
+      "trstenica",
+      "small",
+      "korcula-ferry-nearby"
+    ],
+    "rating": 3,
+    "sources": [
+      "https://dalmata-camping.com/",
+      "https://avtokampi.si/campsites/camping-orebic"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camp-perna-kuciste",
+    "name": "Camp Perna — Kućište (near Orebić)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.9815,
+    "lng": 17.156,
+    "description": "Large beach campsite 3 km west of Orebić at Kućište, famous for windsurfing and kitesurfing. Pebble beach with natural pine shade. Taxi boat to Korčula runs multiple times daily from the campsite. 4-star facilities, glamping tents and regular pitches.",
+    "communityNotes": "4.2/5 (794 reviews on Booking). 'Excellent position with a beach where there is a lot of natural shade, perfect for windsurfing and kite surfing fans' (July 2023). Some negative reviews (2020) about cleanliness — 'shower has mold, plumbing is bad' — but those appear to pre-date recent upgrades. 'Small, nice campsite with daily wind and therefore always lots of windsurfers' (Austrian reviewer). 'Beach not safe for children due to high-speed surfers.' Car-dependent for town access.",
+    "cost": "Pitch prices not publicly listed — estimate €45–65/night for 4 adults + tent + car based on regional comparables.",
+    "facilities": "Bar, restaurant, shop, bakery, surf centre, equipment rental, WiFi, washing machines, private bathrooms, heated sanitary facilities, direct boat to Korčula",
+    "tags": [
+      "windsurfing",
+      "pebble-beach",
+      "pine-shade",
+      "kuciste",
+      "korcula-boat",
+      "kitesurfing"
+    ],
+    "rating": 3,
+    "bestTime": "Good if you want watersports. Taxi boat to Korčula is a bonus — avoids Orebić ferry queue.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g2034454-d4834106-Reviews-Camp_Perna-Kuciste_Peljesac_Peninsula_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://adriacamps.com/en/campsite/camping-perna/",
+      "https://avtokampi.si/campsites/camping-perna"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camp-divna-trpanj",
+    "name": "Camp Divna — near Trpanj (northern coast)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 43.0164,
+    "lng": 17.2013,
+    "description": "Tiny (15 pitches) remote campsite 7 km west of Trpanj on the quieter northern coast of Pelješac, accessible via a narrow dead-end road. Direct pebble beach access under centuries-old olive trees, small beach bar, absolute peace. Open June 1–September 30.",
+    "communityNotes": "'Idyllic, quiet, and very friendly owner.' 'Crystal clear water, perfect for bathing.' 'Great pebbled beach in the shade of Mediterranean fauna.' Negatives: access road narrow/steep (difficult for large motorhomes), water pressure issues, sanitary facilities aging but clean, cicadas noisy, very isolated — nearest shop 10 km. One reviewer paid €40.80 for 2 in July (described as high). Busy in peak July; better early June or September. '3.3/5 from 2 reviews' on Avtokampi but park4night gives 4+ — small sample.",
+    "cost": "~€37–45/night in June (4 adults: €6.50×4=€26 + small tent €5 + car €3.50 = ~€34.50, July higher). park4night shows €36/night total.",
+    "facilities": "Showers, electricity, shared refrigerators, grill, beach bar (11am–7pm), daily bakery/produce delivery, basic but clean sanitary block",
+    "tags": [
+      "remote",
+      "olive-grove",
+      "pebble-beach",
+      "quiet",
+      "northern-peljesac",
+      "small",
+      "trpanj"
+    ],
+    "rating": 4,
+    "bestTime": "Early June for quiet experience — dead-end road means very few day visitors. Avoid mid-July peak.",
+    "sources": [
+      "https://park4night.com/en/place/273742",
+      "https://avtokampi.si/campsites/camping-divna",
+      "https://www.tripadvisor.com/Attraction_Review-g15088565-d14782953-Reviews-Plaza_Divna-Donja_Vrucica_Peljesac_Peninsula_Dubrovnik_Neretva_County_Dalmatia.html"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-autocamp-luka-duba",
+    "name": "Autocamp Luka — Duba Pelješka",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 43.01806,
+    "lng": 17.16808,
+    "description": "Small family campsite (20 pitches) in an olive grove in the fishing village of Duba, northern Pelješac. 200 m walk to a beautiful pebble beach. Pitches all under olive trees (very shady), hiking trails to Sveti Ilija peak (961 m) start from the village. One of the most peaceful options on the peninsula.",
+    "communityNotes": "4.5/5 on camping.info. '4.6/5 (2 reviews) — tent campers and couples rated 5/5.' 'Very friendly owners managing a small family camp in a wonderful location.' 'Excellent for peaceful holidays.' Pitches described as ideal for tents and small vehicles — limited space for large motorhomes. Bakery cart arrives at 8am. Nearest town Trpanj is 9–12 km away, Orebić 20 km. Described as 'unique atmosphere for nature lovers at the foot of Sveti Ilija.'",
+    "cost": "~€31–40/night in June (4 adults ~€20 + tent €5–6 + car €3–4.50 + electricity €5). July slightly higher.",
+    "facilities": "3 showers, 3 toilets (clean), electricity, WiFi, shared BBQ, washing machine, kayak/bike rental, boat ramp, bakery cart mornings",
+    "tags": [
+      "olive-grove",
+      "quiet",
+      "pebble-beach-nearby",
+      "hiking",
+      "sveti-ilija",
+      "northern-peljesac",
+      "tent-friendly"
+    ],
+    "rating": 4,
+    "bestTime": "Northern Pelješac coast — less visited than Orebić side. Good if coming from Trpanj ferry (Ploče–Trpanj route).",
+    "sources": [
+      "https://www.camping.info/en/campsite/autokamp-luka",
+      "https://avtokampi.si/campsites/camping-luka",
+      "https://park4night.com/en/place/21044"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camp-antony-boy-viganj",
+    "name": "Camping Antony Boy — Viganj",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.97872,
+    "lng": 17.10803,
+    "description": "Croatia's most iconic windsurfing and kitesurfing campsite, founded early 1970s. 185 pitches on 6 hectares in Viganj, 7 km west of Orebić. Terraced with Mediterranean trees, direct sandy beach access, constant Maestral wind. Attracts a young sporty crowd.",
+    "communityNotes": "3.9/5 overall. 'Sport-oriented camp, excellent for surfing and kiteboarding, right by beach, peaceful.' One reviewer called sanitary facilities 'a catastrophe' while another praised cleanliness. Mixed reviews on electricity pricing ('absolutely excessive'). 'Noise from nearby bars until 4am' (peak summer). 'Very friendly welcome, large pitches on terraces.' Best for groups who want the wind-sports scene; not ideal if you want quiet nights.",
+    "cost": "~€53–62/night in June (4 adults: €6.90×4=€27.60 + small tent €5.70 + car €6.90 + electricity €8.90 = ~€49; large tent slightly more). July/Aug: ~€65+.",
+    "facilities": "4 sanitary buildings including family bathrooms, baby-changing, restaurant/bar on beach, shop 500 m, playground, WiFi, bike rental, windsurfing/kiteboarding school",
+    "tags": [
+      "windsurfing",
+      "kitesurfing",
+      "sandy-beach",
+      "viganj",
+      "sporty",
+      "young-crowd",
+      "iconic"
+    ],
+    "rating": 3,
+    "bestTime": "Vibrant evening scene — great if you want to meet other travellers. Not for quiet nights in peak summer.",
+    "sources": [
+      "https://www.camping.info/en/campsite/camping-antony-boy",
+      "https://antony-boy.com/",
+      "https://avtokampi.si/campsites/camping-antony-boy"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-port9-camping-korcula",
+    "name": "Aminess Planet Camping Port9 — Korčula",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.95089,
+    "lng": 17.14278,
+    "description": "The main campsite on Korčula island, 3 km from Korčula old town (walkable along seafront). First campsite after the Orebić–Korčula ferry. 230 pitches with electricity and water hookups, three beach types (sandy/pebble/rocky), two pools, Blue Flag beach. Large resort feel.",
+    "communityNotes": "4.3/5 visitor rating. 'Excellent location, very helpful staff.' 'Nicely arranged' beach. However multiple complaints about price gouging: '€5 ice cream, €7 water, €20 breakfast, €35 buffet dinner.' 'Never managed to find a sunbed by the infinity pool' during peak stay. €8/day sun lounger fees. Described as 'Croatian Butlins' by one critic. Drink prices 'everything overpriced.' Pools popular and crowded in July/August.",
+    "cost": "Tent pitch prices not published — estimated €50–70/night for 4 adults + tent + car based on resort pricing. Book well ahead for July/August.",
+    "facilities": "2 sanitary buildings, restaurant, bars, supermarket, minimarket, diving/sailing/surf schools, 3 pools, WiFi, playground, animation programs, dog wash, Blue Flag beach",
+    "tags": [
+      "korcula-island",
+      "orebic-ferry",
+      "resort",
+      "pool",
+      "blue-flag-beach",
+      "sandy-beach"
+    ],
+    "rating": 3,
+    "bestTime": "Close to Korčula old town (2.5 km walk). Best option if arriving by Orebić ferry and wanting to stay on the island. Use own food/drink to manage costs.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g1007309-d15467081-Reviews-Port_9_Camping-Korcula_Town_Korcula_Island_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://adriacamps.com/en/campsite/campsite-port-9/",
+      "https://avtokampi.si/campsites/camping-port-9",
+      "https://www.aminess.com/en/port9-campsite-by-aminess"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "hr-camp-mindel-vela-luka",
+    "name": "Camp Mindel — Vela Luka, Korčula",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.963,
+    "lng": 16.702,
+    "description": "Peaceful family campsite 5 km west of Vela Luka on Korčula's western end, set in olive and almond trees above 'gentle bays and natural beaches.' 10,000 sqm, small scale. Very far from the Orebić ferry but accessible via the Ploče–Vela Luka or Split–Vela Luka ferry. Open June 1–September 30.",
+    "communityNotes": "'Spacious, with lots of room for campervans or tents.' 'Friendly, welcoming family management.' 'Clean facilities of a high standard.' 'There is something in the air, the trees and the atmosphere here that makes guests coming back.' Strong repeat-visitor loyalty. NOTE: 42 km from Korčula town and 45+ km from Orebić ferry — very remote western Korčula, only practical if doing a full Korčula day/overnight.",
+    "cost": "~€57/night in July (4 adults €34 + large tent €9 + car €4 + electricity €4 + tourist tax €6). June: ~€53 (10% discount on accommodation components).",
+    "facilities": "Showers, toilets, electricity (€4/night), WiFi, washing machine, olive and almond tree shade, natural pebble beaches, shared terrace with sunset views",
+    "tags": [
+      "korcula-island",
+      "vela-luka",
+      "quiet",
+      "olive-grove",
+      "natural-beach",
+      "remote",
+      "repeat-visitors"
+    ],
+    "rating": 4,
+    "bestTime": "Only practical if doing a full Korčula day from Vela Luka ferry. Beautiful setting but 45+ km from the Orebić ferry — plan accordingly.",
+    "sources": [
+      "https://www.mindel.hr/",
+      "https://www.mindel.hr/pricelist-camp-korcula.html",
+      "https://twogetlost.com/camping-korcula"
+    ],
+    "status": "candidate"
+  }
+]
