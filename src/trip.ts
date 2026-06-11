@@ -174,6 +174,27 @@ export const DAY_HINTS: Record<number, DayHint> = {
   13: { icon: '✈️', text: 'Car drop at Dubrovnik Airport (Sicily By Car) by 20:00. Ref: D013947246. Full usable day.' },
 };
 
+/**
+ * Static weather + daylight digest per trip day.
+ * Source: trip-ops.md §1 (weather zones) and §2 (sun times / CEST).
+ * Sunrise/sunset ± 2 min across Jun 16–28; storm notes only where actionable.
+ */
+export const DAY_OPS: Record<number, string> = {
+  1:  '27–30°C · 🌅 05:13 → 20:47 · sea 22°C',
+  2:  '27–30°C · 🌅 05:16 → 20:43 · sea 22°C · Cetina river cold',
+  3:  '27–30°C → DBV: 🌅 05:08 → 20:30 · Biokovo breeze at altitude',
+  4:  '27–30°C · 🌅 05:08 → 20:30 · sea 23°C',
+  5:  '27–30°C · 🌅 05:08 → 20:30 · sea 23°C',
+  6:  '30–35°C (Mostar bakes) · 🌅 05:05 → 20:27 · solstice! 15.5h day',
+  7:  '25–28°C (Sarajevo, milder) · 🌅 05:05 → 20:27 · afternoon storms possible',
+  8:  '14–22°C Durmitor (5–10°C night) · 🌅 05:02 → 20:23',
+  9:  '14–22°C Durmitor · ⚡ storms 12:00–15:00 · 🌅 05:02 → 20:23',
+  10: '28–35°C Skadar basin (hottest zone) · 🌅 05:04 → 20:22',
+  11: '27–30°C · 🌅 05:04 → 20:22 · sea 23–24°C',
+  12: '27–30°C · 🌅 05:04 → 20:22 · Kotor bay shaded ~19:30',
+  13: '27–30°C · 🌅 05:08 → 20:30 · sea 23°C',
+};
+
 /** Format seconds as "3h 25m" / "45m". */
 export function formatDuration(seconds: number): string {
   const mins = Math.round(seconds / 60);
