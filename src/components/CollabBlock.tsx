@@ -2,6 +2,9 @@
  * Per-place collaboration block for the detail panel: vote buttons + everyone's
  * tally + who voted, and a comment thread (newest first). Reads from the in-
  * memory caches App holds (which mirror localStorage), so it works offline.
+ *
+ * Mobile UX: vote buttons are always visible (above the fold); comments are
+ * collapsed behind a toggle so the sheet stays compact.
  */
 import { useState } from 'react';
 import type { CommentRow, Tally, VoteValue } from '../collab';
@@ -43,6 +46,7 @@ export default function CollabBlock({
   onComment,
 }: Props) {
   const [draft, setDraft] = useState('');
+  const [commentsOpen, setCommentsOpen] = useState(false);
 
   const placeComments = comments
     .filter((c) => c.place_id === placeId)
@@ -102,32 +106,48 @@ export default function CollabBlock({
         </div>
       )}
 
+      {/* Comments: collapsed by default to keep the sheet compact on phones.
+          Tapping the toggle reveals the thread + input. */}
       <div className="collab-comments">
-        <div className="collab-comment-input">
-          <textarea
-            className="note-area"
-            placeholder={person ? 'Add a comment…' : 'Set your name to comment…'}
-            value={draft}
-            onChange={(e) => setDraft(e.target.value)}
-            onFocus={() => {
-              if (!person) onNeedName();
-            }}
-          />
-          <button className="collab-comment-send" disabled={!draft.trim()} onClick={submitComment}>
-            Post
-          </button>
-        </div>
+        <button
+          className={`collab-comments-toggle ${commentsOpen ? 'open' : ''}`}
+          onClick={() => setCommentsOpen((o) => !o)}
+        >
+          💬 {placeComments.length > 0
+            ? `${placeComments.length} comment${placeComments.length === 1 ? '' : 's'}`
+            : 'Add a comment'}
+          <span className="collab-comments-chevron">{commentsOpen ? '▲' : '▼'}</span>
+        </button>
 
-        {placeComments.length > 0 && (
-          <ul className="collab-comment-list">
-            {placeComments.map((c) => (
-              <li key={c.id} className={c.id.startsWith('local-') ? 'pending' : ''}>
-                <span className="collab-comment-author">{c.person}</span>
-                <span className="collab-comment-time">{timeAgo(c.created_at)}</span>
-                <div className="collab-comment-body">{c.body}</div>
-              </li>
-            ))}
-          </ul>
+        {commentsOpen && (
+          <>
+            <div className="collab-comment-input">
+              <textarea
+                className="note-area"
+                placeholder={person ? 'Add a comment…' : 'Set your name to comment…'}
+                value={draft}
+                onChange={(e) => setDraft(e.target.value)}
+                onFocus={() => {
+                  if (!person) onNeedName();
+                }}
+              />
+              <button className="collab-comment-send" disabled={!draft.trim()} onClick={submitComment}>
+                Post
+              </button>
+            </div>
+
+            {placeComments.length > 0 && (
+              <ul className="collab-comment-list">
+                {placeComments.map((c) => (
+                  <li key={c.id} className={c.id.startsWith('local-') ? 'pending' : ''}>
+                    <span className="collab-comment-author">{c.person}</span>
+                    <span className="collab-comment-time">{timeAgo(c.created_at)}</span>
+                    <div className="collab-comment-body">{c.body}</div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </>
         )}
       </div>
     </div>

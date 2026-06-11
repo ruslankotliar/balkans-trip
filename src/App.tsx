@@ -1588,6 +1588,9 @@ export default function App() {
                 .map((p) => {
                   const booking = bookingById.get(p.id);
                   const t = tallies.get(p.id);
+                  // When the status filter is narrowed to a single status, the badge
+                  // is redundant — every row has the same status, so suppress it.
+                  const showBadge = statusFilter.size !== 1;
                   return (
                     <li
                       key={p.id}
@@ -1620,7 +1623,7 @@ export default function App() {
                         </span>
                       )}
                       {p.note && <span className="note-tag" title={p.note}>📝</span>}
-                      <span className={`badge badge-${p.status}`}>{p.status}</span>
+                      {showBadge && <span className={`badge badge-${p.status}`}>{p.status}</span>}
                     </li>
                   );
                 })}

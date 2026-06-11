@@ -75,24 +75,40 @@ export default function DetailPanel({
         {p.userAdded ? ' · ✎ added by you' : ''}
       </p>
 
-      {onEdit && (
-        <button className="detail-edit" onClick={onEdit}>
-          ✎ Edit / move / delete
-        </button>
-      )}
-
-      {booking && (
-        <a
-          className={`book-btn kind-${booking.kind}`}
-          href={booking.url}
-          target="_blank"
-          rel="noreferrer"
-          title="Book / View listing"
-        >
-          {booking.kind === 'campsite' ? '⛺' : '🔖'} {booking.label} ↗
+      {/* ---- Above-the-fold actions: navigate + book (always reachable without scrolling) ---- */}
+      <div className="detail-top-actions">
+        <a className="detail-nav-btn" href={navUrl(p.lat, p.lng)} target="_blank" rel="noreferrer">
+          🗺 Navigate
         </a>
+        {booking && (
+          <a
+            className={`book-btn kind-${booking.kind} detail-book-inline`}
+            href={booking.url}
+            target="_blank"
+            rel="noreferrer"
+            title="Book / View listing"
+          >
+            {booking.kind === 'campsite' ? '⛺' : '🔖'} {booking.label} ↗
+          </a>
+        )}
+      </div>
+
+      {/* ---- Description: what it is + why it matters (most useful content on-road) ---- */}
+      <p className="detail-desc">{p.description}</p>
+      {p.communityNotes && <p className="community">"{p.communityNotes}"</p>}
+      {p.bestTime && <p className="meta">Best time: {p.bestTime}</p>}
+      {p.facilities && <p className="meta">Facilities: {p.facilities}</p>}
+      {p.tags && p.tags.length > 0 && (
+        <p className="tag-row">
+          {p.tags.map((t) => (
+            <span key={t} className="tag">
+              #{t}
+            </span>
+          ))}
+        </p>
       )}
 
+      {/* ---- Group votes (always visible); comments collapsed to save space ---- */}
       <CollabBlock
         placeId={p.id}
         person={person}
@@ -103,6 +119,13 @@ export default function DetailPanel({
         onVote={onVote}
         onComment={onComment}
       />
+
+      {/* ---- Planning / editing controls (below the fold is fine — not on-road actions) ---- */}
+      {onEdit && (
+        <button className="detail-edit" onClick={onEdit}>
+          ✎ Edit / move / delete
+        </button>
+      )}
 
       {!tripMode && (
         <div className="status-buttons">
@@ -119,7 +142,16 @@ export default function DetailPanel({
       )}
 
       <label className="field-label">
-        Trip day
+        {p.day ? (
+          <span>
+            Trip day{' '}
+            <span className="day-pill" style={{ background: dayColor(p.day) }}>
+              Day {p.day}
+            </span>
+          </span>
+        ) : (
+          'Trip day'
+        )}
         <select
           value={p.day ?? ''}
           onChange={(e) =>
@@ -134,25 +166,6 @@ export default function DetailPanel({
           ))}
         </select>
       </label>
-      {p.day && (
-        <span className="day-pill" style={{ background: dayColor(p.day) }}>
-          Day {p.day}
-        </span>
-      )}
-
-      <p className="detail-desc">{p.description}</p>
-      {p.communityNotes && <p className="community">“{p.communityNotes}”</p>}
-      {p.bestTime && <p className="meta">Best time: {p.bestTime}</p>}
-      {p.facilities && <p className="meta">Facilities: {p.facilities}</p>}
-      {p.tags && p.tags.length > 0 && (
-        <p className="tag-row">
-          {p.tags.map((t) => (
-            <span key={t} className="tag">
-              #{t}
-            </span>
-          ))}
-        </p>
-      )}
 
       <label className="field-label">
         My note

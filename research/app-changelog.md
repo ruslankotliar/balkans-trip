@@ -603,3 +603,65 @@ pin, and hit-tested the sheet.
 
 `src/data/*.json` untouched; `npm run build` + `tsc --noEmit` green; GitHub Pages
 base path (`/balkans-trip/`) unchanged.
+
+## Mobile UX improvements (2026-06-11)
+
+Three targeted fixes for the phone-on-the-road scenario. `src/data/*.json` untouched;
+`npm run build` green.
+
+### 1. Detail panel: description + Navigate first, votes visible, comments collapsible
+
+**Problem:** On a 45vh bottom sheet (trip mode) or 55vh sheet (planning) the most
+useful content — description, community notes, Navigate button — was buried below
+the comment input textarea. Opening the panel on a hike required scrolling past a
+60px textarea before seeing what the place actually is.
+
+**Changes (`src/components/DetailPanel.tsx`, `src/styles.css`):**
+- Moved description + communityNotes + bestTime/facilities/tags to the **top**, right
+  after the title and meta line — the first thing you read when you open a place.
+- Added a **"🗺 Navigate" button** as a persistent row immediately below the meta, paired
+  with the booking button when present. Both sit side-by-side in `.detail-top-actions`.
+  One tap to maps, always visible above the fold — critical when you're in a car.
+- The old standalone booking button and the duplicate Navigate link in the footer are
+  now replaced by this inline row (the footer still has a secondary nav link for
+  discoverability).
+- Day assignment label now shows the colored Day-N pill inline when a day is set,
+  eliminating the redundant separate pill that appeared below the dropdown.
+
+**Mobile sheet content above the fold (45vh ≈ 300px on a 667px phone):**
+  title (30px) + meta (20px) + top-actions row (44px) + description (≈60px) = ~154px,
+  leaving room for communityNotes before the votes come into view on first scroll.
+  On the old layout: title + meta + booking button + vote buttons + voter names +
+  comment textarea = ~260px before description ever appeared.
+
+### 2. CollabBlock: vote buttons always visible, comment thread collapsed
+
+**Problem:** The comment textarea (60px) + "Post" button was always open, pushing
+the vote buttons and voter names higher but also consuming precious sheet height even
+when there are no comments. Users had to scroll past a large empty textarea to reach
+other controls.
+
+**Changes (`src/components/CollabBlock.tsx`, `src/styles.css`):**
+- Added `commentsOpen` state (default `false`). The comment thread + textarea is now
+  hidden behind a **"💬 N comments ▼ / 💬 Add a comment ▼"** toggle button.
+- Vote buttons (👍/👎) and voter names remain always visible — the collaborative
+  decision-making signal is front-and-center.
+- When opened, the comment thread appears immediately below the toggle with a subtle
+  border treatment that makes the relationship clear (`.collab-comments-toggle.open`
+  removes bottom border-radius and color connects to the thread below).
+- The toggle text is informative: shows "N comments" when there are existing ones, or
+  "Add a comment" when empty — so you know what's there without opening it.
+
+### 3. Place list: suppress redundant status badge when single-status filter is active
+
+**Problem:** When using the "⭐ Shortlist" or "🛏 Sleep spots" preset (which set
+`statusFilter` to a single value), every row showed the same colored badge — e.g.
+62 green "shortlist" badges on 62 rows. This is visual noise that crowds the row and
+makes the day-tag, vote tally, and booking badge harder to read.
+
+**Change (`src/App.tsx`):**
+- Computed `showBadge = statusFilter.size !== 1`. When the filter is narrowed to
+  exactly one status (as both the ⭐ Shortlist preset and the manual single-status
+  toggle do), the badge is hidden — the filter header communicates the status
+  already. When multiple statuses are visible (the default shortlist+backup view,
+  or the ↺ All view), the badge remains so you can distinguish them at a glance.
