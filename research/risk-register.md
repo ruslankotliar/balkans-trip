@@ -227,7 +227,7 @@ This is not a paranoia list. It is a menu of things trips like this actually hit
 
 **What could go wrong:** The EU Entry/Exit System (EES) biometric registration has been operational since April 2026. At Debeli Brijeg (Montenegro→Croatia, Day 12) and other Croatian border crossings, first-time EES registration involves fingerprints and facial scan. This adds 2–4 minutes per person on first entry and 30 seconds on subsequent crossings. In summer, the queue effect is significant.
 
-**What's known from the booking-guide.md:** "Cross Debeli Brijeg border BEFORE 08:00 or AFTER 21:00. EES biometric checks since Apr 2026 → peak queues 2–5 hours during 10:00–14:00."
+**Plan:** Use Vitaljina/Karasovići crossing (NOT Debeli Brijeg) — consistently 15–45 min vs 1–4 h at Debeli Brijeg in peak season. Cross before 08:00 or after 21:00 at Vitaljina to avoid the EES peak window.
 
 **Affected crossings on this trip:**
 
