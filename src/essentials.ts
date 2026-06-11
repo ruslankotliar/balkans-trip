@@ -186,6 +186,7 @@ export const QUICK_TIPS: TipSection[] = [
       'Book Cetina Extreme Canyoning Jun 17 (1–2 days ahead) — canyoning-cetina.com (~€70pp) or maldukadventures.com.',
       'CHECK Kotor cruise schedule for Jun 27 at cruisetimetables.com — verify the "1 ship / 170 pax" figure is still accurate; if more ships added, plan fortress climb before 08:00.',
       'MLJET ferry (Jun 20 Saturday): queue Prapratno 90+ min before your chosen sailing. Car spaces first-come; missing the ferry = 3h wait or foot-passenger only.',
+      'CALL Konoba Feral Brijesta on Jun 16–17 for Jun 18 lunch (+385 98 924 6025) — family-run on south Pelješac, limited seating, phone-only reservation.',
     ],
     links: [
       { label: 'Biokovo Skywalk booking', url: 'https://shop.pp-biokovo.hr' },
