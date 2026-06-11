@@ -328,5 +328,119 @@
     "tags": ["gap-find", "canyon", "viewpoint", "viewpoint-road", "lake", "free", "piva-plateau"],
     "rating": 4,
     "status": "candidate"
+  },
+  {
+    "id": "hr-via-ferrata-fortica-omis",
+    "name": "Via Ferrata Fortica — Omiš",
+    "country": "HR",
+    "category": "activity",
+    "lat": 43.4462,
+    "lng": 16.6939,
+    "description": "Grade B via ferrata up the limestone ridge above Omiš and the Cetina gorge. Self-guided possible with rented gear (harness + helmet at the base). 1.2 km route, 270 m vertical, ~1h25min total. Views of the canyon, town, and Adriatic from the summit fortress.",
+    "communityNotes": "Multiple TripAdvisor reviews: 'tour was amazing, a highlight of my time in Croatia'; 'views are phenomenal'. Markings refreshed 2023, steel cables throughout. No vertical overhangs — very doable for beginners. Gets hot: start before 08:00 or after 17:00 in June.",
+    "sources": [
+      "https://www.ferratago.com/fortica-omis/",
+      "https://www.theviaferrataguidesite.com/via-ferrata-omis-one-of-the-best-via-ferratas-in-croatia/"
+    ],
+    "cost": "Gear rental at base (cheaper than guided tour ~€50pp)",
+    "timeNeeded": "1.5–2h",
+    "tags": ["via-ferrata", "omis", "climbing", "cetina", "adventure"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-via-ferrata-piva",
+    "name": "Via Ferrata Piva — Piva Canyon",
+    "country": "ME",
+    "category": "activity",
+    "lat": 43.1200,
+    "lng": 18.7900,
+    "description": "Grade B/C via ferrata in the Piva canyon, 20 min south of Plužine on the Žabljak road. Traverse the canyon walls 2 m above the turquoise Piva River, then climb 80 m vertical. 2024-installed anchors to EN 16869 standard. Guided only (€65–150 depending on group size). 2–3h.",
+    "communityNotes": "New route (2024 installation). 'Standing 100 meters above the Piva River with turquoise water below'; combinable with Tara rafting for a full adventure day. Professional photo package included. Zero detour from the Žabljak → Šćepan Polje road — this is literally on your confirmed route.",
+    "sources": [
+      "https://viaferratapiva.me/en/blog/via-ferrata-piva-guide/",
+      "https://explore-serbia.rs/en/via-ferrata-piva/"
+    ],
+    "cost": "€65 pp (groups 3–8); €70 pp couples; €150 solo",
+    "timeNeeded": "2–3h",
+    "tags": ["via-ferrata", "piva", "canyon", "guided", "adventure"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kotor-bay-kayak-rental",
+    "name": "Bay of Kotor Self-Guided Kayak Rental",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.4246,
+    "lng": 18.7712,
+    "description": "Rent sea kayaks from Go Go Gaga (Kotor waterfront) for self-guided paddling in the Bay of Kotor. €5/h single, €25/day double. Design your own route: Perast + Our Lady of the Rocks is a classic 16 km round trip. At dawn the bay is mirror-flat and deserted.",
+    "communityNotes": "Multiple reviewers: 'discover the magic of rowing while exploring Boka Kotorska Bay and determine your route yourself'; 'you can rent a kayak and start from Kotor' — true self-guided, no guide needed. If tired, a boat can tow you back. Blue Cave and submarine tunnels reachable by full-day paddle.",
+    "sources": [
+      "https://www.gogogagatours.com/en/rentals/",
+      "https://www.tripadvisor.com/Attraction_Review-g2558165-d19686857-Reviews-Kayak_Tours_Kotor-Kotor_Municipality.html"
+    ],
+    "cost": "€5/h single, €25/day double",
+    "timeNeeded": "2h (quick loop) to full day",
+    "tags": ["kayak", "self-guided", "kotor", "bay", "perast", "dawn"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-hrcavka-canyoning",
+    "name": "Hrčavka Canyon Canyoning — Sutjeska NP",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.3800,
+    "lng": 18.6900,
+    "description": "Beginner canyoning in a narrow slot canyon within Sutjeska National Park, 20 min from Tjentište. Turquoise pools, natural slides, jumps to 7 m (optional). Water ~10°C. Groups capped at 8 (canyon is physically that narrow). June = peak waterfall volume from snowmelt. Guided only, ~2–3h.",
+    "communityNotes": "Operator notes: 'Late May and early June bring the strongest waterfalls from snowmelt — best time of year.' 'The canyon's narrowest sections physically don't allow more than 8 people.' Multiple adventure travelers describe it as the most exciting thing at Sutjeska beyond the Maglić hike. Very manageable for beginners.",
+    "sources": [
+      "https://www.outdoortara.com/blog/canyoning-hrcavka-ultimate-guide",
+      "https://visitsutjeskanationalpark.com/hrcavka-canyoning-guide/"
+    ],
+    "cost": "~€40–50 pp (operators: Outdoor Tara, Adventure Bosnia, Camp Sutjeska)",
+    "timeNeeded": "2–3h (+ 20 min transfer from Tjentište)",
+    "tags": ["canyoning", "sutjeska", "swimming", "jumping", "canyon", "guided"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-viganj-windsurf-beach",
+    "name": "Viganj Windsurfing Beach — Pelješac",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.9598,
+    "lng": 17.0820,
+    "description": "Top Adriatic windsurfing/kitesurfing spot in the Pelješac strait opposite Korčula. Reliable Maestral wind 12–25 knots from 14:00–sunset, June–August. LIBERAN Surf & Camp and Water Donkey offer lessons and rentals. For non-surfers: laid-back beach bars, clear water, iconic Korčula view.",
+    "communityNotes": "Consistently described as the 'surfer vibe' antidote to Dubrovnik crowds. Overlanders stop here for an afternoon refresh. SUP also available. Hidden pebble coves between Viganj and Kučište accessible by foot from the main beach.",
+    "sources": [
+      "https://www.welovetokite.com/destinations/peljesac/",
+      "https://liberansurf.eu/"
+    ],
+    "cost": "Beach: free. Lessons from ~€50; gear rental ~€25–40/h",
+    "timeNeeded": "2h (stopover) to full day",
+    "tags": ["windsurfing", "kitesurfing", "peljesac", "korcula", "beach", "camping"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-loviste-village",
+    "name": "Lovište — End of Pelješac Peninsula",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.9986,
+    "lng": 17.1785,
+    "description": "Remote village at the tip of Pelješac (~250 residents), beyond the tourist trail. Turquoise water, minimal infrastructure. Bila Punta bay (20-min walk, pebble beach, snorkeling) and Trstenica beach (2.5 km) are essentially private in the morning. The cliffside road north along the deserted coast is spectacular.",
+    "communityNotes": "Described by overlanders as the 'perfect place to escape the crowds' on Pelješac. 'Side of Pelješac facing Korčula full of lesser-known beaches — cruise until you find a spot under pine trees by the water.' Wild camping on cliff pull-offs above the north coast reported by multiple vanlifers. Minimal tourist development intentional.",
+    "sources": [
+      "https://kathi-daniela.com/en/destinations/croatia/croatia-insider-tip-peljesac/",
+      "https://epepa.eu/zuljana-croatia-a-hidden-gem-with-beautiful-beaches/"
+    ],
+    "cost": "Free (village, beaches)",
+    "timeNeeded": "2h stopover or overnight base",
+    "tags": ["peljesac", "beach", "hidden", "swimming", "wild-camping", "off-route"],
+    "rating": 3,
+    "status": "candidate"
   }
 ]
