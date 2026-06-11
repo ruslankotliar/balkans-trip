@@ -1,7 +1,7 @@
 import { CATEGORY_COLORS } from '../constants';
 import { bookingFor, navUrl } from '../links';
 import type { CachedRoute, PlaceWithOverride } from '../store';
-import { TRIP_DAYS, dayDateLabel, formatDuration } from '../trip';
+import { DAY_HINTS, TRIP_DAYS, dayDateLabel, formatDuration } from '../trip';
 
 export interface ProximityMatch {
   place: PlaceWithOverride;
@@ -153,6 +153,13 @@ export default function Today({
           ▶
         </button>
       </div>
+
+      {DAY_HINTS[day] && (
+        <div className="today-hint">
+          <span className="today-hint-icon">{DAY_HINTS[day].icon}</span>
+          {DAY_HINTS[day].text}
+        </div>
+      )}
 
       {isToday && stops.length > 0 && (
         <div className="today-next">

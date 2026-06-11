@@ -152,6 +152,28 @@ export function nearestLegIndex(
   return idx;
 }
 
+/** One-line daily ops hint shown at the top of the Today view. */
+export interface DayHint {
+  icon: string;
+  text: string;
+}
+
+export const DAY_HINTS: Record<number, DayHint> = {
+  1:  { icon: '🌑', text: 'New moon tonight — best dark sky of the trip (Jun 16–18). Paklenica NP: call camp at 08:00 (+385 23 369 452) if walking in.' },
+  2:  { icon: '🪂', text: 'Canyoning start early (09:00 latest). Leave Omiš by 13:00 if doing Biokovo/airport tomorrow.' },
+  3:  { icon: '🏔️', text: 'Leave Makarska by 14:30–15:00 sharp for ~19:00 airport pickup. Biokovo: booked? 20-car cap/hour.' },
+  4:  { icon: '🧱', text: 'Dubrovnik walls: arrive 07:30 — crowds pack in from 10:00. Use Ploče Gate side.' },
+  5:  { icon: '⛴', text: 'Mljet ferry (Prapratno → Sobra): queue 60+ min before departure. Enter NP after 16:00 for 25% discount (€18.75pp vs €25pp).' },
+  6:  { icon: '💧', text: 'Kravica: arrive before 09:00 — packed with tour buses by 11:00. Mostar Stari Most glows amber at sunset.' },
+  7:  { icon: '🎶', text: 'Blagaj + Boračko swim en route to Sarajevo. Tonight: Cinemas Sloga Latin Night (free, 19:00–05:00, ~1,000 people).' },
+  8:  { icon: '🚗', text: 'Depart Sarajevo 07:00. Piva canyon: lights on, honk before blind tunnels — 56 unlit one-lane tunnels. Drive in daylight only.' },
+  9:  { icon: '⛰️', text: 'Durmitor: leave camp by 06:30–07:00. Storm risk builds 12:00–15:00 — be off the ridge by noon. Žabljak nights 6–10°C.' },
+  10: { icon: '🛐', text: 'Ostrog: cover knees+shoulders (no exceptions). Skadar: mosquitoes vicious at dusk — repellent essential.' },
+  11: { icon: '🏖️', text: 'Sveti Stefan islet view free from the road. Budva Friday = busiest night on the coast — book ahead if you need parking.' },
+  12: { icon: '🚢', text: 'Lucky cruise day: only 1 ship (170 pax) in Kotor. Fortress 07:30. Use VITALJINA crossing (not Debeli Brijeg) — 15–45 min.' },
+  13: { icon: '✈️', text: 'Car drop at Dubrovnik Airport (Sicily By Car) by 20:00. Ref: D013947246. Full usable day.' },
+};
+
 /** Format seconds as "3h 25m" / "45m". */
 export function formatDuration(seconds: number): string {
   const mins = Math.round(seconds / 60);
