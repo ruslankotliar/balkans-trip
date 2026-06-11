@@ -10,7 +10,7 @@ All clock times are **CEST (UTC+2)**, which applies in HR, BA and ME alike. Long
 
 1. **Sightsee at the edges, swim/siesta in the middle.** Coast + Herzegovina midday is 30–35 °C. The honeypots (Dubrovnik walls, Kotor, Mostar bridge, Plitvice/Krka) are *before 9:00* or *after 17:00*; midday is for water, shade and driving.
 2. **Mountain hikes start at dawn.** Durmitor/Biokovo afternoon thunderstorms build **12:00–15:00**. On the ridge there's no shelter. Bobotov Kuk / Veliki Međed: roll out of camp by **06:00–07:00**, be off the high ground before noon. Long days (light by ~05:10) make this easy.
-3. **Cross Debeli Brijeg (ME→HR, Jun 27) before 08:00 or after 21:00.** New EES biometric checks since Apr 2026 → peak-day queues of 2–5 h. Avoid 10:00–14:00.
+3. **Use Vitaljina/Karasovići crossing (ME→HR, Jun 27) — NOT Debeli Brijeg.** Vitaljina is 15 km south of Kotor toward Herceg Novi: 15–45 min vs 1–4 h with EES biometric queues at Debeli Brijeg. Debeli Brijeg peak-day queues of 2–5 h are now the norm (EES since Apr 2026).
 4. **The whole trip is already school-holiday peak** (Croatian holidays start Jun 15). Treat every day as high season — but late June is the *front edge* of the crush, not the July/Aug maximum.
 5. **Lucky break: Kotor on Jun 27 has almost no cruise traffic** (1 small ship, 170 pax) vs 4 ships / 7,500+ pax on Jun 21 & 25. Climb the fortress early anyway for heat, but crowds will be a non-issue that day.
 6. **Pack one genuinely warm sleeping bag setup for Durmitor.** Žabljak nights are 6–10 °C at 1,450 m even in late June. Beach-rated bags = a cold, bad night.
