@@ -60,16 +60,18 @@ export const DEFAULT_PLAN: Overrides = {
   'ba-daorson':              { day: 6, dayOrder: 7 },
 
   // ── Day 7: Jun 22 (Mon) — Mostar → Sarajevo ─────────────────────────────
+  'ba-blagaj':               { day: 7, dayOrder: 0 },
   'ba-jablanica-kayak-neretva': { day: 7, dayOrder: 1 },
   'ba-neretva-rafting-konjic': { day: 7, dayOrder: 2 },
-  'ba-sarajevo':             { day: 7, dayOrder: 3 },
-  'ba-tunnel-of-hope':       { day: 7, dayOrder: 4 },
-  'ba-bobsled-track':        { day: 7, dayOrder: 5 },
-  'ba-zuta-tabija':          { day: 7, dayOrder: 6 },
-  'ba-sarajevo-petica-ferhatovic': { day: 7, dayOrder: 7 },
-  'ba-air-1542024184506963047': { day: 7, dayOrder: 8 },
-  'ba-lukomir':              { day: 7, dayOrder: 9 },
-  'ba-gem-konjic-lakeview-studio': { day: 7, dayOrder: 10 },
+  'ba-boracko-lake':         { day: 7, dayOrder: 3 },
+  'ba-sarajevo':             { day: 7, dayOrder: 4 },
+  'ba-tunnel-of-hope':       { day: 7, dayOrder: 5 },
+  'ba-bobsled-track':        { day: 7, dayOrder: 6 },
+  'ba-zuta-tabija':          { day: 7, dayOrder: 7 },
+  'ba-sarajevo-petica-ferhatovic': { day: 7, dayOrder: 8 },
+  'ba-air-1542024184506963047': { day: 7, dayOrder: 9 },
+  'ba-lukomir':              { day: 7, dayOrder: 10 },
+  'ba-gem-konjic-lakeview-studio': { day: 7, dayOrder: 11 },
 
   // ── Day 8: Jun 23 (Tue) — Sarajevo → Tara rafting → Žabljak ─────────────
   'ba-tjentiste-monument':   { day: 8, dayOrder: 1 },
@@ -105,11 +107,12 @@ export const DEFAULT_PLAN: Overrides = {
 
   // ── Day 11: Jun 26 (Fri) — Stari Bar → Sveti Stefan → Budva ────────────
   'me-stari-bar':            { day: 11, dayOrder: 1 },
-  'me-budva':                { day: 11, dayOrder: 2 },
-  'me-budva-oldtown-bars':   { day: 11, dayOrder: 3 },
-  'me-sparta-club-budva':    { day: 11, dayOrder: 4 },
-  'me-gem-budva-got-it':     { day: 11, dayOrder: 5 },
-  'me-camp-maslina-buljarica': { day: 11, dayOrder: 6 },
+  'me-sveti-stefan':         { day: 11, dayOrder: 2 },
+  'me-budva':                { day: 11, dayOrder: 3 },
+  'me-budva-oldtown-bars':   { day: 11, dayOrder: 4 },
+  'me-sparta-club-budva':    { day: 11, dayOrder: 5 },
+  'me-gem-budva-got-it':     { day: 11, dayOrder: 6 },
+  'me-camp-maslina-buljarica': { day: 11, dayOrder: 7 },
 
   // ── Day 12: Jun 27 (Sat) — Kotor → Perast → Trebinje ───────────────────
   'me-kotor':                { day: 12, dayOrder: 1 },
