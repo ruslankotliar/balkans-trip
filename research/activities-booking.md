@@ -8,8 +8,8 @@ _Research date: 2026-06-11. Trip starts Jun 16. Book anything marked URGENT NOW 
 
 | Activity | Book ahead? | Lead time | Price (4 pax) | Action |
 |---|---|---|---|---|
-| **Krka NP** (Zadar→Split day) | YES — online only | 7–14 days; June can sell out | €40/pp = €160 total | **BOOK NOW** at shop.np-krka.hr |
-| **Biokovo Skywalk** (Makarska) | YES — online only | 1–3 days min, books fast | €15/pp = €60 total | Book at shop.pp-biokovo.hr |
+| **Krka NP** | ~~SKIP~~ | ~~n/a~~ | ~~€40/pp = €160~~ | **REJECTED — no swimming since 2021; €40pp boardwalk only. Day 2 = Omiš canyoning instead.** |
+| **Biokovo Skywalk** (Makarska, Day 3 Jun 18) | YES — online only | 1–3 days min, books fast | €15/pp = €60 total | Book at shop.pp-biokovo.hr |
 | **Cetina rafting** (Omiš) | Recommended | 1–2 days | ~€40/pp = ~€160 | Email/call day before |
 | **Cetina zipline** (Omiš) | Recommended | 1–2 days (groups: several days) | €80/group of up to 12 | Book at red-adventures.com |
 | **Mljet NP** | No — walk-up OK | n/a | €25/pp (or €19 after 16:00) = €100/€75 | Buy online or at gate |
@@ -51,7 +51,7 @@ _Research date: 2026-06-11. Trip starts Jun 16. Book anything marked URGENT NOW 
 ---
 
 ### 2. Biokovo Skywalk & Nature Park
-**Day 2 (Jun 17) — Makarska**
+**Day 3 (Jun 18) — Makarska (before driving to Dubrovnik for airport pickup)**
 
 **Booking:** REQUIRED online at [shop.pp-biokovo.hr](https://shop.pp-biokovo.hr). Only 20 cars allowed per hour on the mountain road. You choose a specific 1-hour entry window and must arrive 5–10 minutes before it. Shows sell out even in shoulder season — book at minimum 1–2 days ahead; 3+ days safer in June.
 
