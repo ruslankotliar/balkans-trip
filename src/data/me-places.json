@@ -1028,5 +1028,86 @@
     ],
     "rating": 3,
     "status": "candidate"
+  },
+  {
+    "id": "me-camp-safari-beach",
+    "name": "Safari Beach Camping, Velika Plaža",
+    "country": "ME",
+    "category": "camping",
+    "lat": 41.905,
+    "lng": 19.2708,
+    "description": "Campsite on the beach in a pine forest on Velika Plaža, ~4km from Ada Bojana and 5km from Ulcinj old town. Sandy pitches under pines, direct beach access, restaurant and bar on-site. Open all year.",
+    "communityNotes": "Balkan-turizam trip report (Serbian): '~€25/day for 4 including tax, vehicle, tent/caravan, electricity and sanitary access. New showers, hot water, very clean.' camping.info May 2025 review: 'Location excellent — directly on beach or in the pine forest. Sanitary facilities cleaned around the clock.' Dec 2025 reviewer: 'Good site with good pitches and facilities, open all year, bar on site.' One Aug 2025 reviewer noted WiFi didn't work and had a voltage issue on hook-up. Beach sections along Velika Plaža are literally named after the campsites here — you camp where you swim. Kitesurf rental centers nearby.",
+    "sources": [
+      "https://www.balkan-turizam.net/crna-gora-kampovanje-na-velikoj-plazi-safari-beach/1959",
+      "https://www.camping.info/en/campsite/camping-safari-beach",
+      "https://camprest.com/en/campsites/montenegro/ulcinj-municipality/safari-beach-camping"
+    ],
+    "cost": "~€25–33 for 4 + tent + car (incl. electricity + tax; low season ~€25, peak July-Aug ~€33)",
+    "facilities": "hot showers (new, cleaned around the clock), toilets, electricity hook-up, restaurant, beach bar, WiFi (unreliable), direct sandy beach access",
+    "bestTime": "June = start of high season, quieter and cheaper than July-Aug",
+    "tags": [
+      "camping",
+      "beach",
+      "velika-plaza",
+      "deep-south",
+      "kitesurf"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camp-ada-bojana-fkk",
+    "name": "FKK Nudist Auto Camp, Ada Bojana island",
+    "country": "ME",
+    "category": "camping",
+    "lat": 41.8647,
+    "lng": 19.3416,
+    "description": "Official campsite on Ada Bojana island (river-delta island 6km south of Ulcinj). 54,000 m² naturist camp with 3km sandy beach. Access via bridge/road; €5 island entry fee is deducted from your camping cost. Open 1 May – 15 Oct.",
+    "communityNotes": "Official site (visitadabojana.com) price list: tent €5, car €4, per-person tax €1.20 — so 4 adults + tent + car = ~€25–26 in June (low-season rate; peak Jul 6–Aug 24 adds ~€2). Park4night (30 reviews, 3.1/5): 'new sanitary facilities with hot water now available' (May 2026 renovation confirmed); older reviews called facilities 'extremely old and partly desolate.' camping.info notes: mass communal showers (no individual cabins), sand everywhere, cleanliness inconsistent. Non-nudist: multiple reviewers confirm non-naturist beach sections exist and clothed visitors are accommodated — it's FKK-oriented but 'not mandatory.' Stilt-house fish restaurants (Misko, Ćirkova Čarda, Kod Ranka) on the island are excellent; the kitesurfing centres are actually at Velika Plaža (over the bridge), not the island itself. Mosquitoes in the evening. Water not drinkable on-site — bring your own.",
+    "sources": [
+      "https://visitadabojana.com/room/camp/",
+      "https://park4night.com/lieu/89412//ulcinj-velika-pla%C5%BEa-bb/montenegro//Camping",
+      "https://www.camping.info/en/campsite/ada-bojana/reviews",
+      "https://www.eurocampings.co.uk/montenegro/ulcinj/fkk-ada-bojana-125666/"
+    ],
+    "cost": "~€24–26 for 4 + tent + car (tent €5, car €4, tourist tax €4.80 for 4) — June low-season rate; island entry €5 deducted from camp fee",
+    "facilities": "communal showers (recently renovated 2025-2026, hot water now confirmed), toilets (4 bathrooms/16 toilets for ~220 guests), electricity hook-up (56 pitches), supermarket, restaurant, tennis courts — NO potable water on-site",
+    "bestTime": "June pre-peak is quieter; naturist atmosphere; arrive before mosquito hour",
+    "tags": [
+      "camping",
+      "beach",
+      "nudist",
+      "island",
+      "ada-bojana",
+      "deep-south",
+      "border"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camp-greenfield-velika-plaza",
+    "name": "Greenfield Campsite, Velika Plaža",
+    "country": "ME",
+    "category": "camping",
+    "lat": 41.905,
+    "lng": 19.266,
+    "description": "New campsite (opened 2025) on road R-17 near Donji Štoj, 550m from Velika Plaža beach via shaded walking trail. Modern facilities, spacious illuminated pitches for tents and campervans, within walking distance of cafés and shops.",
+    "communityNotes": "Greenfield's own site (2025 launch): 'clean showers and toilets, fresh water, wastewater disposal, electricity, BBQ, WiFi, children's play area.' Pricing 4 adults + own tent + car: tent €3 + car €4 + 4 adults × €5 = €27/night (plus ~€4 tourist tax optional). WhatsApp booking available (+382 68 725965). Not directly on the beach (550m walk) but far better maintained than MCM. This is the newest and most modern option in the area, with no bad reviews yet — but limited independent traveler data exists as of 2026.",
+    "sources": [
+      "https://greenfieldcampsite.github.io/greenfield.campsite/"
+    ],
+    "cost": "~€27–31 for 4 + tent + car (tent €3, car €4, 4 × €5 per adult; tourist tax extra ~€4)",
+    "facilities": "clean showers and toilets (new 2025), fresh water, electricity (€5/day), wastewater disposal, BBQ, WiFi, children's play area — 550m walk to beach",
+    "bestTime": "June good — new site, likely less crowded than established camps",
+    "tags": [
+      "camping",
+      "velika-plaza",
+      "deep-south",
+      "new-2025"
+    ],
+    "rating": 4,
+    "status": "candidate"
   }
 ]

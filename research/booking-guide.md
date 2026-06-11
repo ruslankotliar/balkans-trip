@@ -58,7 +58,7 @@
 
 ### Night 2 — Jun 17 (Wed): Omiš or Makarska Riviera
 
-**Context:** Day plan is Krka NP morning → Split → Omiš. Sleep at Omiš or down toward Makarska Riviera (positioned for Jun 18 drive to Dubrovnik).
+**Context:** Day plan is Omiš Extreme Canyoning OR Cetina Zipline (book 1–2 days ahead). Cetina swimming hole (Radmanove Mlinice) for the afternoon. Sleep at Omiš or down toward Makarska Riviera, positioned for Jun 18 drive to Dubrovnik. Note: Krka NP is NOT on this route (€40pp boardwalk, no swimming since 2021).
 
 **URGENCY: HIGH.** Makarska Riviera is peak Croatia in late June. Campsites here are small and family-run.
 

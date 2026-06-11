@@ -369,9 +369,10 @@ The big headliner The Prodigy is at Grbavica Stadium but **in August** (Aug 13) 
 
 ## Priority booking checklist (do this NOW — 5 days to departure)
 
-- [ ] **Krka NP tickets** — book for Jun 16 or 17 at shop.np-krka.hr. Choose morning slot to leave afternoon free for Split. **4 × €40 = €160.**
-- [ ] **Tara canyon rafting** — email Rafting Centar Drina-Tara (office@raftingtara.com) or TaraSport (info@tarasportrafting.com) TODAY for your Montenegro date (~Jun 22–24 based on skeleton). **4 × €60 = €240.**
-- [ ] **Biokovo Skywalk** — book Jun 17 morning slot at shop.pp-biokovo.hr. **4 × €15 = €60.**
+- [ ] ~~**Krka NP tickets**~~ — **SKIP. Krka is not on this route** (€40pp boardwalk, no swimming since 2021, bad value — replaced by Omiš canyoning).
+- [ ] **Tara canyon rafting** — email Rafting Centar Drina-Tara (office@raftingtara.com) or TaraSport (info@tarasportrafting.com) TODAY for **Jun 23** (Day 8). **4 × €60–70 = €240–280.**
+- [ ] **Biokovo Skywalk** — book **Jun 18 morning** slot at shop.pp-biokovo.hr (Day 3, on the way to Dubrovnik). **4 × €15 = €60.**
+- [ ] **Cetina Extreme Canyoning OR Zipline** — book 1–2 days before Jun 17 (Day 2). Canyoning: Dal Mare / Malduk (~€70pp), Zipline: zip-line-croatia.com (~€80pp). Pick one, not both.
 - [ ] **Sicily By Car cross-border confirmation** — call +385 23 646 547 and get written confirmation BiH + Montenegro are covered and any fees. Do this before Jun 16 pickup.
 - [ ] **Cetina rafting/zipline** — book 1–2 days before you arrive (Day 2 evening or Day 3 morning). Less urgent but don't forget.
 - [ ] **Sutjeska Perućica guide** — call +387 58 233-130 if you want the guided primeval forest walk. 1 week lead time minimum.
