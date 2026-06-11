@@ -380,6 +380,7 @@ Car drop at Dubrovnik Airport (Čilipi) by **20:00**. Full day available. Option
 ## Key Pre-Departure Actions
 
 ### TODAY (Jun 11):
+0. **🚨 CRITICAL — Rental car cross-border permission (Sicily By Car):** The entire route crosses into BiH and Montenegro. Sicily By Car must issue a written border-crossing permit. Call their Zadar Airport desk TODAY: **+385 23 646 547**. Ask specifically for written authorization to enter Bosnia & Herzegovina and Montenegro. Without this permit the border guards may turn you away. This is non-negotiable and must be resolved before Jun 16.
 1. **Book Bluesun Camping Paklenica** via Booking.com if you want certainty for Night 1 — OR plan to walk in to Camp NP Paklenica and call at 08:00 on Jun 16
 2. **Email Auto Camp Lisičina** (kamp-lisicina@inet.hr) for Night 2 — attach: dates Jun 17, 4 adults, 1 large tent, 1 car, request confirmation
 3. **Book Gaga City Center Trebinje** on Airbnb for Jun 18 (Night 3) and Jun 27 (Night 12)
@@ -396,7 +397,7 @@ Car drop at Dubrovnik Airport (Čilipi) by **20:00**. Full day available. Option
 - **Mljet ferry (Jun 20):** No advance car booking needed — arrive Prapratno 60+ minutes before departure. Buy tickets at port or jadrolinija.hr. Cost ~€50 (car + 4 adults).
 - **NP Paklenica (Jun 16):** Call camp at 08:00 on arrival day: +385 (0) 23 369 452. No reservations accepted.
 - **Bosnia/Montenegro currency:** Carry €50–100 equivalent in Bosnian KM (exchange at ATM in Mostar or Sarajevo). Montenegro uses EUR.
-- **Debeli Brijeg border (Jun 27):** Cross before 08:00 OR after 21:00 — avoid 10:00–14:00 (EES queue can be 2–5h).
+- **ME→HR border (Jun 27):** Use **Vitaljina/Karasovići** crossing (15km south of Kotor toward Herceg Novi) — 15–45min. Do NOT use Debeli Brijeg (1–4h EES biometric queues in peak season). Vitaljina is small, local, much faster.
 
 ---
 
