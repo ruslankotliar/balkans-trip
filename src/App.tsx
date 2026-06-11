@@ -1767,6 +1767,7 @@ export default function App() {
               onMove={moveInDay}
               onAssignDay={assignDay}
               onFindSleep={findSleepAlongDay}
+              dayNotes={dayNotes}
             />
             <div className="itin-export-row">
               <button

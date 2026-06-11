@@ -21,6 +21,8 @@ interface Props {
   onMove: (id: string, dir: 'up' | 'down') => void;
   onAssignDay: (id: string, day: number | null) => void;
   onFindSleep: (day: number) => void;
+  /** Free-text per-day notes (from Today view textarea). */
+  dayNotes?: Record<number, string>;
 }
 
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
@@ -36,6 +38,7 @@ export default function Itinerary({
   onMove,
   onAssignDay,
   onFindSleep,
+  dayNotes,
 }: Props) {
   const assigned = places.filter((p) => p.day);
   const backlog = places
@@ -84,6 +87,11 @@ export default function Itinerary({
             {DAY_HINTS[day] && (
               <div className="itin-day-hint">
                 {DAY_HINTS[day].icon} {DAY_HINTS[day].text}
+              </div>
+            )}
+            {dayNotes?.[day] && (
+              <div className="itin-day-note">
+                📝 {dayNotes[day]}
               </div>
             )}
             {stops.length === 0 ? (
