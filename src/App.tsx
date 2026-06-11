@@ -95,8 +95,11 @@ type View = 'places' | 'itinerary' | 'route' | 'review';
 // Categories that count as a place to sleep, for the nearby finder.
 const SLEEP_CATEGORIES: Category[] = ['campsite', 'accommodation'];
 
-// Sightseeing categories for the trip-mode "Near me" finder.
+// Sightseeing categories for the "Do & see" filter preset.
 const SIGHT_CATEGORIES: Category[] = ['sight', 'viewpoint', 'beach', 'hike', 'activity', 'nature'];
+
+// Near me includes food/nightlife too — useful when near a town.
+const NEAR_ME_CATEGORIES: Category[] = [...SIGHT_CATEGORIES, 'food', 'nightlife', 'town'];
 
 const SLEEP_TONIGHT_KM = 25;
 const NEAR_ME_KM = 30;
@@ -650,7 +653,7 @@ export default function App() {
     return places
       .filter(
         (p) =>
-          SIGHT_CATEGORIES.includes(p.category) &&
+          NEAR_ME_CATEGORIES.includes(p.category) &&
           p.status !== 'rejected' &&
           !todayIds.has(p.id),
       )
