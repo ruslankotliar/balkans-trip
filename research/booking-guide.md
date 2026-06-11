@@ -400,7 +400,10 @@ Car drop at Dubrovnik Airport (Čilipi) by **20:00**. Full day available. Option
 8. **Book Cetina Extreme Canyoning (Jun 17, Day 2):** 1–2 days ahead. [canyoning-cetina.com](https://canyoning-cetina.com) (€70/pp) or Malduk Adventures. 4 adults = ~€280.
 9. **Book Apartment City Center Mostar** (Airbnb rooms/14231459) for Jun 21
 10. **Book Old Town Pearl Apartments Sarajevo** or choose Konjic alternative for Jun 22
-11. **Book/confirm Skadar Lake** — either San Duyevo winery (Booking.com) or Guesthouse Raicevic or Camp Radoman for Jun 25
+11. **Book/confirm Skadar Lake (Jun 25)** — pick one tier:
+    - **WOW tier:** Jablan Winery House (Rvaši) ~€96 — [Airbnb rooms/1091457](https://www.airbnb.com/rooms/1091457)
+    - **Mid tier:** Orahovo cottages (Virpazar) ~€48 — [Airbnb rooms/32586701](https://www.airbnb.com/rooms/32586701)
+    - **Camping:** Camp Radoman (Virpazar) ~€15–20 — [Booking.com](https://www.booking.com/hotel/me/auto-camp-radoman.html) or walk-in
 12. **Žabljak camps** — email Mlinski Potok (minakamp@gmail.com) for Jun 23–24 if you want certainty; walk-in also fine
 
 ### LOGISTICS TO CONFIRM:
@@ -425,7 +428,7 @@ Car drop at Dubrovnik Airport (Čilipi) by **20:00**. Full day available. Option
 | Jun 23 | Camp Mlinski Potok, Žabljak | ~€32 |
 | Jun 24 | Camp Mlinski Potok, Žabljak | ~€32 |
 | Jun 25 | Skadar winery/camp | ~€30–60 |
-| Jun 26 | Autocamp Avala, Budva | ~€30–35 |
+| Jun 26 | Camp Kunjic, Jaz Beach | ~€25–35 |
 | Jun 27 | Gaga City Center, Trebinje | ~€49 |
 | **Total** | | **~€509–607** |
 
