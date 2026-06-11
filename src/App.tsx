@@ -123,6 +123,13 @@ const FILTER_PRESETS: FilterPreset[] = [
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
 
+// Phone-width breakpoint — must match the ≤760px media query in styles.css
+// (the width at which the sidebar becomes a full-screen drawer and the detail
+// panel becomes a bottom sheet).
+const NARROW_PX = 760;
+const isNarrow = () =>
+  typeof window !== 'undefined' && window.matchMedia(`(max-width: ${NARROW_PX}px)`).matches;
+
 /** Convert OSRM [lng, lat][] geometry to Leaflet [lat, lng][]. */
 function toLatLngs(coords: [number, number][]): [number, number][] {
   return coords.map(([lng, lat]) => [lat, lng]);
@@ -285,6 +292,10 @@ export default function App() {
     return loadSavedMode() ?? (isDuringTrip() ? 'trip' : 'planning');
   });
   const [sidebarOpen, setSidebarOpen] = useState(mode === 'trip');
+  // On phones the open sidebar fills the screen and would cover the detail
+  // bottom-sheet, so selecting a place auto-collapses it; we remember whether
+  // it was open so closing the sheet restores the list.
+  const reopenSidebarOnClose = useRef(false);
   const [tripDay, setTripDay] = useState(currentTripDay());
   const [doneIds, setDoneIds] = useState<Record<string, boolean>>(loadDone);
   const [sleepOpen, setSleepOpen] = useState(false);
@@ -1139,6 +1150,22 @@ export default function App() {
 
   function selectPlace(p: Place | PlaceWithOverride) {
     setSelectedId(p.id);
+    // On a phone the open sidebar (list / Today view) covers the detail
+    // bottom-sheet, so collapse it and let the sheet own the screen. Remember
+    // that it was open so the ✕ returns to the list. Desktop keeps both.
+    if (isNarrow() && sidebarOpen) {
+      reopenSidebarOnClose.current = true;
+      setSidebarOpen(false);
+    }
+  }
+
+  /** Close the detail sheet; on a phone, restore the list it was opened from. */
+  function closeDetail() {
+    setSelectedId(null);
+    if (reopenSidebarOnClose.current) {
+      reopenSidebarOnClose.current = false;
+      if (isNarrow()) setSidebarOpen(true);
+    }
   }
 
   /** Focus the map (and detail panel) on a place by id — used by Essentials
@@ -1212,7 +1239,12 @@ export default function App() {
     <div className="app">
       <button
         className="sidebar-fab"
-        onClick={() => setSidebarOpen((s) => !s)}
+        onClick={() => {
+          // Manually toggling the sidebar cancels the auto-restore the detail
+          // sheet would otherwise do on close (no surprise double-toggle).
+          reopenSidebarOnClose.current = false;
+          setSidebarOpen((s) => !s);
+        }}
         title="Toggle panel"
       >
         {sidebarOpen ? '✕' : '☰'}
@@ -1749,7 +1781,7 @@ export default function App() {
       <DetailPanel
         place={selected}
         tripMode={mode === 'trip'}
-        onClose={() => setSelectedId(null)}
+        onClose={closeDetail}
         onStatus={setStatus}
         onAssignDay={assignDay}
         onNote={setNote}

@@ -820,7 +820,11 @@ body {
     transform: translateX(0);
   }
   /* Detail panel = bottom sheet on phones (BOTH modes) so the pin you tapped
-     and the map stay visible above it, instead of an overlay covering them. */
+     and the map stay visible above it, instead of an overlay covering them.
+     z-index MUST sit above the open sidebar (1050) and its ☰ fab (1100) — the
+     sidebar fills the screen on a phone, and selecting a place auto-collapses
+     it, but the raised z-index guarantees the sheet (and its ✕) is never
+     trapped behind the list. */
   .detail-panel {
     width: auto;
     top: auto;
@@ -831,6 +835,7 @@ body {
     border-radius: 16px 16px 0 0;
     box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.22);
     padding-bottom: 24px;
+    z-index: 1150;
   }
   /* Grab-handle affordance at the top of the sheet */
   .detail-panel::before {

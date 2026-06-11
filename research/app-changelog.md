@@ -545,3 +545,61 @@ working: prod `index.html` assets resolve under `/balkans-trip/`, manifest
 `src/data/` and the baked schema untouched (only the optional `userAdded`/
 `source` fields were ADDED to the `Place` type). `npm run build` green; PWA emits
 `sw.js` + `manifest.webmanifest` with 9 precache entries under `/balkans-trip/`.
+
+## Mobile detail-sheet fix (2026-06-11)
+
+**Bug (user-reported, the trip's primary device is a phone):** on a phone, in
+PLANNING mode, tapping a place in the list opened the detail bottom-sheet
+*behind/under* the full-screen list sidebar — only a thin sliver with the ✕ on
+the right edge was visible, and the sheet was unusable.
+
+**What was covering what (root cause — pure z-index stacking):** at ≤760px the
+sidebar becomes a full-height drawer with `z-index: 1050`, and it is *open*
+whenever you can tap a list row (always open in trip mode; open to show the
+list in planning). The detail panel's mobile bottom-sheet rule had **no**
+`z-index`, so it inherited the base `.detail-panel { z-index: 1000 }` — **below
+1050**. So the open sidebar painted on top of the sheet. (AddPlace `1200` and
+Essentials `1300` were already above 1050, so those were fine; the route
+builder / corridor / sleep finders live *inside* the sidebar, never behind it.)
+
+**Fix (two complementary changes, `src/App.tsx` + `src/styles.css`):**
+
+1. **Auto-collapse the list on select (the focused-surface interaction).**
+   `selectPlace()` now, on a phone (`window.matchMedia('(max-width:760px)')`),
+   slides the sidebar closed so the detail sheet clearly *owns* the screen, and
+   remembers it was open (`reopenSidebarOnClose` ref). The new `closeDetail()`
+   (wired to the sheet's ✕) reopens the list, so ✕ returns you exactly where you
+   were — in BOTH planning and trip modes. Manually toggling the ☰ fab cancels
+   the pending auto-restore (no surprise double-toggle). Desktop is untouched
+   (the media query gates everything; the side panel still shows alongside).
+2. **Belt-and-braces z-index.** The mobile `.detail-panel` rule now sets
+   `z-index: 1150` (above the sidebar 1050 *and* the ☰/locate FABs 1100), so even
+   if the sidebar is open the sheet and its ✕ are never trapped behind the list.
+
+**Headless-Chrome verification (CDP, 390×844, `vite preview` under
+`/balkans-trip/`):** drove planning + trip with a `ws` CDP driver
+(`Emulation.setDeviceMetricsOverride` mobile 390×844), tapped a list item / map
+pin, and hit-tested the sheet.
+
+- *Before (the inherited rule):* mobile `.detail-panel` computes `z-index:1000`
+  vs `.sidebar` `1050` while open → the sheet is painted under the list (the
+  reported sliver).
+- *After — planning:* tap list row → detail sheet `z-index:1150`,
+  `bottom:0px`, `display:block`, `visibility:visible`, full-width
+  (rect 0→390 × 380→844); sidebar auto-collapsed
+  (`open:false`, `transform:translateX(-343px)`); `elementFromPoint` at the ✕
+  center returns the `detail-close` button and the sheet body
+  (`closeIsTop:true`, `bodyIsDetail:true`) — **visible and on top, not
+  covered**. ✕ → detail gone, **sidebar reopened (list restored)**.
+- *After — trip:* identical — sheet `z-index:1150`, `bottom:0`, sidebar
+  collapsed off-screen, ✕ topmost, close returns to the Today view.
+- *Other surfaces:* Essentials (`z:1300`) and AddPlace (`z:1200`) both compute
+  `bottom:0` and are the topmost element at their center (above sidebar 1050) —
+  no covering bug.
+- **Zero JS console errors and zero network failures on a clean load** (the lone
+  transient `404` seen mid-session was a `/favicon.ico` probe, not an app
+  asset). The double-open fix is intact (markers still have no Leaflet popup —
+  one tap = detail panel only).
+
+`src/data/*.json` untouched; `npm run build` + `tsc --noEmit` green; GitHub Pages
+base path (`/balkans-trip/`) unchanged.
