@@ -297,7 +297,7 @@ The festival runs **Jun 13–19, 2026** — so the outdoor/club nights fall just
 
 The big headliner The Prodigy is at Grbavica Stadium but **in August** (Aug 13) — not relevant.
 
-**Conclusion for this trip:** The main festival nights (Jun 13–14) are BEFORE the trip starts. By the time you hit Sarajevo (~Jun 20–21), the festival will be mostly over. Some late-week art/theatre events may still be running Jun 16–19 — check the full programme at [gardenofdreams.ba](https://gardenofdreams.ba/en/) and [ra.co/promoters/121359](https://ra.co/promoters/121359) for any Jun 19–21 events. Ticket prices for individual nights at previous editions were typically €10–30.
+**Conclusion for this trip:** The main festival nights (Jun 13–14) are BEFORE the trip starts. By the time you hit Sarajevo (Jun 22, Day 7), the festival will be over. Some late-week art/theatre events may still be running Jun 16–19 — check the full programme at [gardenofdreams.ba](https://gardenofdreams.ba/en/) and [ra.co/promoters/121359](https://ra.co/promoters/121359) for any Jun 19–21 events. Ticket prices for individual nights at previous editions were typically €10–30.
 
 **Your actions:** Check the website closer to the trip for any evening events Jun 19–21 that survive into your stay.
 
@@ -375,7 +375,6 @@ The big headliner The Prodigy is at Grbavica Stadium but **in August** (Aug 13) 
 - [ ] **Biokovo Skywalk** — book **Jun 18 morning** slot at shop.pp-biokovo.hr (Day 3, on the way to Dubrovnik). **4 × €15 = €60.**
 - [ ] **Cetina Extreme Canyoning OR Zipline** — book 1–2 days before Jun 17 (Day 2). Canyoning: Dal Mare / Malduk (~€70pp), Zipline: zip-line-croatia.com (~€80pp). Pick one, not both.
 - [ ] **Sicily By Car cross-border confirmation** — call +385 23 646 547 and get written confirmation BiH + Montenegro are covered and any fees. Do this before Jun 16 pickup.
-- [ ] **Cetina rafting/zipline** — book 1–2 days before you arrive (Day 2 evening or Day 3 morning). Less urgent but don't forget.
 - [ ] **Sutjeska Perućica guide** — call +387 58 233-130 if you want the guided primeval forest walk. 1 week lead time minimum.
 
 ---
