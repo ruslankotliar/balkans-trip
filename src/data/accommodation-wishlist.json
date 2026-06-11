@@ -83,7 +83,7 @@
     "lat": 42.98825,
     "lng": 19.71484,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Popular chalet near Bijelo Polje, NE Montenegro. FAR OFF our loop (~70 km east of Žabljak toward Serbia). Sleeps 5.",
-    "communityNotes": "Airbnb guest rating ★4.92 from 187 reviews. Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★4.92 from 187 reviews. Sleeps 5. | Off-route: Bijelo Polje is in NE Montenegro near Serbia border. Our loop from Žabljak goes south to Ostrog/Virpazar — Bijelo Polje is the opposite direction.",
     "sources": [
       "https://www.airbnb.com/rooms/49077678"
     ],
@@ -92,7 +92,7 @@
       "airbnb-wishlist"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-1294839146223116793",
@@ -197,7 +197,7 @@
     "lat": 44.07207,
     "lng": 18.54135,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Apartments on the Nišićka plateau N of Sarajevo. Off our loop. Sleeps 5.",
-    "communityNotes": "Airbnb guest rating ★5.0 from 37 reviews. Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★5.0 from 37 reviews. Sleeps 5. | Off-route: Nišićka plateau is 30km north of Sarajevo; we approach from the south (Mostar) and leave east (Foča) — backtracking north adds ≥2h.",
     "sources": [
       "https://www.airbnb.com/rooms/623912791608300458"
     ],
@@ -206,7 +206,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-643252285251222758",
@@ -216,7 +216,7 @@
     "lat": 43.031,
     "lng": 18.0184,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Proven stone house in the Stolac/Berkovići hinterland SE of Mostar (157 reviews!). ON the Mostar→Trebinje corridor. Sleeps 5.",
-    "communityNotes": "Airbnb guest rating ★4.94 from 157 reviews. Sleeps 5.",
+    "communityNotes": "Airbnb guest rating ★4.94 from 157 reviews. Sleeps 5. | Duplicate: same property as ba-villa-kostela-stone-house-poplat (Kostela Stone House, Poplat). Keep the villa-file entry.",
     "sources": [
       "https://www.airbnb.com/rooms/643252285251222758"
     ],
@@ -225,7 +225,7 @@
       "airbnb-wishlist"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-26289644",
@@ -273,7 +273,7 @@
     "lat": 44.2817,
     "lng": 17.0827,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Šipovo, NW Bosnia (~140 km NW of Mostar). FAR OFF our SE loop. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
-    "communityNotes": "Airbnb guest rating ★5.0 from 14 reviews. Sleeps 4.",
+    "communityNotes": "Airbnb guest rating ★5.0 from 14 reviews. Sleeps 4. | Off-route: Šipovo is 100km NW of Mostar in the opposite direction from our Sarajevo→Foča→Montenegro loop.",
     "sources": [
       "https://www.airbnb.com/rooms/1055692570458046534"
     ],
@@ -282,7 +282,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-903316557303665264",
@@ -292,7 +292,7 @@
     "lat": 44.28039,
     "lng": 17.08313,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Šipovo, NW Bosnia. FAR OFF-ROUTE. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
-    "communityNotes": "Airbnb guest rating ★4.94 from 49 reviews. Sleeps 4.",
+    "communityNotes": "Airbnb guest rating ★4.94 from 49 reviews. Sleeps 4. | Off-route: Šipovo is 100km NW of Mostar in the opposite direction from our Sarajevo→Foča→Montenegro loop.",
     "sources": [
       "https://www.airbnb.com/rooms/903316557303665264"
     ],
@@ -301,7 +301,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-1194869300122871016",
@@ -311,7 +311,7 @@
     "lat": 44.3031,
     "lng": 17.1243,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Big river cabin (sleeps 10) at Šipovo, NW Bosnia. FAR OFF-ROUTE; only relevant if the trip went NW. Sleeps 10.",
-    "communityNotes": "Airbnb guest rating ★4.91 from 34 reviews. Sleeps 10.",
+    "communityNotes": "Airbnb guest rating ★4.91 from 34 reviews. Sleeps 10. | Off-route: Šipovo is 100km NW of Mostar in the opposite direction from our Sarajevo→Foča→Montenegro loop.",
     "sources": [
       "https://www.airbnb.com/rooms/1194869300122871016"
     ],
@@ -320,7 +320,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-28297858",
@@ -330,7 +330,7 @@
     "lat": 44.2609,
     "lng": 17.0398,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Šipovo, NW Bosnia. FAR OFF-ROUTE. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
-    "communityNotes": "Airbnb guest rating ★4.7 from 114 reviews. Sleeps 4.",
+    "communityNotes": "Airbnb guest rating ★4.7 from 114 reviews. Sleeps 4. | Off-route: Šipovo is 100km NW of Mostar in the opposite direction from our Sarajevo→Foča→Montenegro loop.",
     "sources": [
       "https://www.airbnb.com/rooms/28297858"
     ],
@@ -339,7 +339,7 @@
       "airbnb-wishlist"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-43843555",
@@ -349,7 +349,7 @@
     "lat": 44.2609,
     "lng": 17.0398,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Šipovo, NW Bosnia. FAR OFF-ROUTE; lowest rating of the set (4.53). Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
-    "communityNotes": "Airbnb guest rating ★4.53 from 45 reviews. Sleeps 4.",
+    "communityNotes": "Airbnb guest rating ★4.53 from 45 reviews. Sleeps 4. | Off-route: Šipovo is 100km NW of Mostar in the opposite direction from our Sarajevo→Foča→Montenegro loop.",
     "sources": [
       "https://www.airbnb.com/rooms/43843555"
     ],
@@ -358,7 +358,7 @@
       "airbnb-wishlist"
     ],
     "rating": 2,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-1279909870154785931",
@@ -368,7 +368,7 @@
     "lat": 44.3613,
     "lng": 18.1784,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Big house (sleeps 10) near Visoko, central Bosnia. Off our loop; only 1 review. Sleeps 10.",
-    "communityNotes": "Airbnb guest rating ★5.0 from 1 reviews. Sleeps 10.",
+    "communityNotes": "Airbnb guest rating ★5.0 from 1 reviews. Sleeps 10. | Off-route: Near Visoko, north of Sarajevo. We approach Sarajevo from the south (Mostar) and leave east toward Foča — north Sarajevo suburbs add dead-end driving.",
     "sources": [
       "https://www.airbnb.com/rooms/1279909870154785931"
     ],
@@ -377,7 +377,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-1377504503811908987",
@@ -387,7 +387,7 @@
     "lat": 44.0326,
     "lng": 17.227,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Container house on the Kupres plateau. Off the Mostar-coast-Sutjeska loop (more a Split→central-Bosnia stop). Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
-    "communityNotes": "Airbnb guest rating ★5.0 from 7 reviews. Sleeps 4.",
+    "communityNotes": "Airbnb guest rating ★5.0 from 7 reviews. Sleeps 4. | Off-route: Kupres plateau is 74km NW of our Mostar/Jablanica corridor; we take the Neretva valley route, not the Kupres plateau.",
     "sources": [
       "https://www.airbnb.com/rooms/1377504503811908987"
     ],
@@ -396,7 +396,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-1685540403895069749",
@@ -406,7 +406,7 @@
     "lat": 44.1162,
     "lng": 17.3927,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Farm stay near Donji Vakuf, central Bosnia. Off-route and brand-new (0 reviews) — unproven. Sleeps 6.",
-    "communityNotes": "Airbnb: brand-new listing, no reviews yet (unproven). Sleeps 6.",
+    "communityNotes": "Airbnb: brand-new listing, no reviews yet (unproven). Sleeps 6. | Off-route: Donji Vakuf / Urija area is 70km NW of our route, central Bosnia direction we never travel.",
     "sources": [
       "https://www.airbnb.com/rooms/1685540403895069749"
     ],
@@ -415,7 +415,7 @@
       "airbnb-wishlist"
     ],
     "rating": 2,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-air-1038480265358959903",
@@ -425,7 +425,7 @@
     "lat": 44.64019,
     "lng": 16.04324,
     "description": "From the user's Airbnb wishlist (taste signal, not a final pick). Near Una NP / Bihać, far NW Bosnia (~250 km off-route). OFF the loop entirely. Sleeps 4. CAPACITY: sleeps exactly 4 (no spare bed).",
-    "communityNotes": "Airbnb guest rating ★4.9 from 21 reviews. Sleeps 4.",
+    "communityNotes": "Airbnb guest rating ★4.9 from 21 reviews. Sleeps 4. | Off-route: Bihać / Una NP is in far NW Bosnia, 130km off our route. Amazing area but a separate trip.",
     "sources": [
       "https://www.airbnb.com/rooms/1038480265358959903"
     ],
@@ -434,7 +434,7 @@
       "airbnb-wishlist"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-air-1143857451883062133",

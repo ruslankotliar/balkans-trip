@@ -393,7 +393,7 @@
     "lat": 43.90375,
     "lng": 15.97507,
     "description": "Krka's quieter second waterfall - a wide 650m spread of cascades (the 'Necklaces'), old watermills and the nearby Oziđana pećina cave. Far calmer than Skradinski buk and, crucially, one of the only THREE spots in Krka where swimming is legal (Jun 1-Sep 30).",
-    "communityNotes": "Praised as 'a peaceful place to retreat after what was turning into an overcrowded afternoon at Skradinski buk,' with a buoyed swimming area ~100-200m downstream of the falls. But divisive - one reviewer: 'The Roski Slap is a nice area but not spectacular at all.' Water shoes recommended (cold, sharp rocks). The 8.5km Stinice-Roški-Oziđana pećina trail is well-liked.",
+    "communityNotes": "Praised as 'a peaceful place to retreat after what was turning into an overcrowded afternoon at Skradinski buk,' with a buoyed swimming area ~100-200m downstream of the falls. But divisive - one reviewer: 'The Roski Slap is a nice area but not spectacular at all.' Water shoes recommended (cold, sharp rocks). The 8.5km Stinice-Roški-Oziđana pećina trail is well-liked. | Off-route: Roski slap is Krka NP which we rejected. 57km off route.",
     "sources": [
       "https://npkrka.hr/en_us/informacije/f-a-q/",
       "https://nomanbefore.com/swimming-waterfalls-krka-national-park/"
@@ -408,7 +408,7 @@
       "quiet"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-skradin",
@@ -418,7 +418,7 @@
     "lat": 43.81785,
     "lng": 15.92332,
     "description": "The riverside gateway town to Krka's main entrance: pretty marina, stone old town, good restaurants. The €40 park ticket includes the free 25-min NP boat upstream to Skradinski buk, or you can walk the scenic 3.4km riverside path. People overnight here to hit the park at opening.",
-    "communityNotes": "Consistently called an 'overlooked gem' and used as a base to be first into the park: 'take an early bus to Skradin and head straight to Skradinski buk' to get the falls near-empty. A relaxed marina town (Bill Gates' yacht docks here) - better for a meal/sleep than for sights of its own.",
+    "communityNotes": "Consistently called an 'overlooked gem' and used as a base to be first into the park: 'take an early bus to Skradin and head straight to Skradinski buk' to get the falls near-empty. A relaxed marina town (Bill Gates' yacht docks here) - better for a meal/sleep than for sights of its own. | Off-route: Skradin is the Krka gateway town. We chose Omis over Krka.",
     "sources": [
       "https://jetsettingfools.com/skradin-worth-a-look-around/",
       "https://www.minimalistjourneys.com/krka-sustainable-travel-guide/"
@@ -431,7 +431,7 @@
       "marina"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-sibenik-old-town",
@@ -441,7 +441,7 @@
     "lat": 43.735,
     "lng": 15.8895,
     "description": "An underrated medieval white-stone old town between Zadar and Split - a labyrinth of stepped alleys, four fortresses and the UNESCO St James cathedral. The first city on the Adriatic founded by Croats; quieter and more authentic than Split, and an ideal lunch/fortress-sunset stop on the way south.",
-    "communityNotes": "Repeatedly the pleasant surprise of Dalmatia: 'Šibenik has just recently started to be discovered by tourists and has been a pleasant surprise for many,' with an 'atmospheric authentic old town of white stone' that's 'quieter and less touristy than Split.' Honest caveat: very hilly, lots of stairs, and limited open-sea views vs Zadar.",
+    "communityNotes": "Repeatedly the pleasant surprise of Dalmatia: 'Šibenik has just recently started to be discovered by tourists and has been a pleasant surprise for many,' with an 'atmospheric authentic old town of white stone' that's 'quieter and less touristy than Split.' Honest caveat: very hilly, lots of stairs, and limited open-sea views vs Zadar. | Off-route: Sibenik is 51km off our Zadar-Paklenica-Omis line. Day 2 is pinned on Omis activities.",
     "sources": [
       "https://www.tripadvisor.com/ShowTopic-g294453-i1554-k14404658-Zadar_or_Sibenik-Croatia.html",
       "https://www.lonelyplanet.com/articles/why-visit-sibenik-croatia"
@@ -454,7 +454,7 @@
       "stone-town"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-sv-jakov-cathedral",
@@ -464,7 +464,7 @@
     "lat": 43.73564,
     "lng": 15.88913,
     "description": "UNESCO World Heritage cathedral (1431-1536) built entirely of stone with no binding materials, famous for the exterior frieze of 71 unique carved heads of ordinary 15th-c. Šibenik citizens.",
-    "communityNotes": "The frieze is the star - '71 extremely lifelike heads,' none facing each other, expressions 'from calm to frowning to proud, annoyed, and fearful.' A must-see even for the non-religious, but realistic on scope: 'isn't very big and can be seen in 15-30 minutes.' Exterior + frieze are free to view from the square.",
+    "communityNotes": "The frieze is the star - '71 extremely lifelike heads,' none facing each other, expressions 'from calm to frowning to proud, annoyed, and fearful.' A must-see even for the non-religious, but realistic on scope: 'isn't very big and can be seen in 15-30 minutes.' Exterior + frieze are free to view from the square. | Off-route: Sibenik cathedral cluster. Same reason as hr-sibenik-old-town.",
     "sources": [
       "https://whc.unesco.org/en/list/963/",
       "https://www.tripadvisor.com/Attraction_Review-g295375-d319597-Reviews-Saint_Jacques_Cathedral-Sibenik_Sibenik_Knin_County_Dalmatia.html"
@@ -477,7 +477,7 @@
       "architecture"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-barone-fortress",
@@ -487,7 +487,7 @@
     "lat": 43.73729,
     "lng": 15.89637,
     "description": "1646 hilltop fort on Vidakuša hill above the old town, restored with an augmented-reality history tour and a sunset bar with summer jazz/movie nights. ~20-min uphill walk from the cathedral; the local pick for the best sunset view in Šibenik.",
-    "communityNotes": "'The views from St Michael's fortress... do not compare to those from Barone Fortress, especially at sunset.' The AR goggles are 'innovative and engaging' but occasionally 'glitchy.' Good value via the 3-fortress combo ticket (~€11.50, valid 7 days). Come for sunset drinks.",
+    "communityNotes": "'The views from St Michael's fortress... do not compare to those from Barone Fortress, especially at sunset.' The AR goggles are 'innovative and engaging' but occasionally 'glitchy.' Good value via the 3-fortress combo ticket (~€11.50, valid 7 days). Come for sunset drinks. | Off-route: Sibenik. Same as above.",
     "sources": [
       "https://www.tripadvisor.com/Attraction_Review-g295375-d11801900-Reviews-Barone_Fortress-Sibenik_Sibenik_Knin_County_Dalmatia.html",
       "https://www.inyourpocket.com/sibenik/barone-fortress_145325v"
@@ -502,7 +502,7 @@
       "views"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-kamenjak-vransko",
@@ -606,7 +606,7 @@
     "lat": 44.46528,
     "lng": 14.96738,
     "description": "Large 3-star camp on Pag (reached by bridge, ~1h from Zadar) directly on the sea with a ~4km stretch of sandy/pebble beaches; ~900 pitches, mobile homes, restaurants, shop. Big and lively rather than secluded - good amenities and clean facilities.",
-    "communityNotes": "park4night: ~€24/night for a seafront pitch incl. electricity + water in pre-season. Consistently praised as clean, well-organized, with good sanitary blocks and lovely beaches.",
+    "communityNotes": "park4night: ~€24/night for a seafront pitch incl. electricity + water in pre-season. Consistently praised as clean, well-organized, with good sanitary blocks and lovely beaches. | Off-route: Pag island requires ferry from Zadar. Not part of the planned itinerary; we drive south from Zadar, not ferry to Pag.",
     "sources": [
       "https://park4night.com/en/place/19574",
       "https://www.tripadvisor.com/Hotel_Review-g2030955-d2315399-Reviews-Camping_Village_Simuni-Kolan_Island_of_Pag_Zadar_County_Dalmatia.html"
@@ -620,7 +620,7 @@
       "sandy"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-camp-skradin",
@@ -630,7 +630,7 @@
     "lat": 43.8348,
     "lng": 15.9092,
     "description": "Small camp on an olive-oil/wine farm at Skradin, ~10 min by bike to the Krka NP Skradin boat entrance. Shaded, family-run, with homemade oil & wine for sale - a cheap, pleasant base for hitting Krka at opening.",
-    "communityNotes": "park4night: 'Very kind people and nicely shaded places' with 'all the comfort of a camping.' Clean new facilities and good price repeatedly noted.",
+    "communityNotes": "park4night: 'Very kind people and nicely shaded places' with 'all the comfort of a camping.' Clean new facilities and good price repeatedly noted. | Off-route: Skradin is the base for Krka NP, which we explicitly rejected (€40pp boardwalk, no swimming). No longer a useful pin.",
     "sources": [
       "https://park4night.com/en/place/10789",
       "https://www.tripadvisor.com/Hotel_Review-g666519-d7185528-Reviews-Camp_Skradin-Skradin_Sibenik_Knin_County_Dalmatia.html"
@@ -644,6 +644,6 @@
       "budget"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   }
 ]

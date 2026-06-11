@@ -17,7 +17,15 @@
     "cost": "Paklenica NP €8/adult day ticket (Jun–Sep)",
     "timeNeeded": "9–11h full day (or 2 days with a night at the dom)",
     "bestTime": "Start at the gate by 7am; gorge is cool/shaded so heat is manageable. Carry your own water above the dom.",
-    "tags": ["hike", "summit", "velebit", "paklenica", "high-effort", "no-exposure", "full-day"],
+    "tags": [
+      "hike",
+      "summit",
+      "velebit",
+      "paklenica",
+      "high-effort",
+      "no-exposure",
+      "full-day"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -29,7 +37,7 @@
     "lat": 44.81505,
     "lng": 14.97593,
     "description": "Croatia's most-loved engineered drystone trail, threading the wild karst towers of the Rožanski and Hajdučki kukovi at a near-flat grade — a masterpiece of trail-building that even non-mountaineers can walk. Pin = Dom Zavižan trailhead; Zavižan→Alan is 16km point-to-point, but day-hikers do Zavižan→Rossi's shelter (44.7659, 14.9873) and back. CAVEAT: far north of Velebit, off our main corridor.",
-    "communityNotes": "Uniquely friendly to the exposure-averse member: 'as there are virtually no steep ascents, the route is suitable for visitors unaccustomed to mountaineering' — walled and engineered along cliff edges, never a scramble. Near-universal acclaim: 'we are experienced hikers but this hike was maybe the best ever!' (AllTrails, 4.9★). The real challenges are LENGTH and total sun exposure: 'a long, exposed limestone traverse that will fry your brain if you underestimate sun, distance, or water.' NO drinkable water on the trail — fill at Zavižan hut, Rossi's shelter (rainwater, treat), Alan hut. Coldest/windiest spot in Croatia — pack a windproof even in summer. LOGISTICS: Zavižan is ~2h+ from Zadar toward Plitvice/Senj on a narrow mountain road; the full point-to-point needs a paid shuttle (~€90–100), so for our one-way car a Zavižan→Rossi's-shelter out-and-back (2–3h each way) is the sane day option. Only worth the northern detour if Plitvice is also a 'yes'.",
+    "communityNotes": "Uniquely friendly to the exposure-averse member: 'as there are virtually no steep ascents, the route is suitable for visitors unaccustomed to mountaineering' — walled and engineered along cliff edges, never a scramble. Near-universal acclaim: 'we are experienced hikers but this hike was maybe the best ever!' (AllTrails, 4.9★). The real challenges are LENGTH and total sun exposure: 'a long, exposed limestone traverse that will fry your brain if you underestimate sun, distance, or water.' NO drinkable water on the trail — fill at Zavižan hut, Rossi's shelter (rainwater, treat), Alan hut. Coldest/windiest spot in Croatia — pack a windproof even in summer. LOGISTICS: Zavižan is ~2h+ from Zadar toward Plitvice/Senj on a narrow mountain road; the full point-to-point needs a paid shuttle (~€90–100), so for our one-way car a Zavižan→Rossi's-shelter out-and-back (2–3h each way) is the sane day option. Only worth the northern detour if Plitvice is also a 'yes'. | Off-route: Premuzic trail is in North Velebit NP, 69km north. We hike Paklenica (South Velebit) on Day 1.",
     "sources": [
       "https://np-sjeverni-velebit.hr/www/en/park-en/premuzic-trail",
       "https://www.alltrails.com/trail/croatia/lika-senj/premuziceva-staza-dan-1-zavizan-alan",
@@ -39,9 +47,17 @@
     "cost": "Northern Velebit NP €7/adult day, €15/3-day",
     "timeNeeded": "Day-hike Zavižan→Rossi & back 4–6h; full Zavižan→Alan 5.5–7h one-way",
     "bestTime": "June is ideal; start early for the light on the kukovi, carry all water + a windproof",
-    "tags": ["hike", "velebit", "easy-moderate", "no-exposure", "off-corridor", "scenic", "plitvice-pairing"],
+    "tags": [
+      "hike",
+      "velebit",
+      "easy-moderate",
+      "no-exposure",
+      "off-corridor",
+      "scenic",
+      "plitvice-pairing"
+    ],
     "rating": 5,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-tulove-grede-hike",
@@ -61,7 +77,16 @@
     "cost": "Free (outside the national parks)",
     "timeNeeded": "1.5–2.5h",
     "bestTime": "May–Oct; stay strictly on marked paths (mines off-trail), watch for vipers",
-    "tags": ["hike", "scramble", "cable", "exposed-summit", "velebit", "short", "film-set", "high-reward"],
+    "tags": [
+      "hike",
+      "scramble",
+      "cable",
+      "exposed-summit",
+      "velebit",
+      "short",
+      "film-set",
+      "high-reward"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -83,7 +108,16 @@
     "cost": "Biokovo Nature Park pedestrian €15/adult Jun–Sep (€10 with mountaineering card); free parking at Makar. Some report Vošac sits at/below the fee gate — verify on arrival.",
     "timeNeeded": "Vošac 5–6h RT; continue to Sveti Jure = 9–11h full day",
     "bestTime": "Sunrise start essential in June (south wall, no shade); summit windy/cold — bring a layer",
-    "tags": ["hike", "biokovo", "summit", "high-effort", "drop-off-exposure", "no-water", "heat-risk", "makarska"],
+    "tags": [
+      "hike",
+      "biokovo",
+      "summit",
+      "high-effort",
+      "drop-off-exposure",
+      "no-water",
+      "heat-risk",
+      "makarska"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -104,7 +138,15 @@
     "cost": "Free",
     "timeNeeded": "5–7h RT depending on trailhead (Nakovanj shorter, Orebić steeper)",
     "bestTime": "Dawn or late afternoon in June (little shade, hot rock); clear day for the island panorama",
-    "tags": ["hike", "summit", "peljesac", "sea-views", "moderate", "islands-block", "no-exposure"],
+    "tags": [
+      "hike",
+      "summit",
+      "peljesac",
+      "sea-views",
+      "moderate",
+      "islands-block",
+      "no-exposure"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -128,7 +170,16 @@
     "timeNeeded": "Half day (single lake) to full day (multi-lake loop)",
     "bestTime": "June for green meadows + flowers; pick a dry day for the dirt road",
     "facilities": "Lakeside wild camping; Orlovačko has a mountain hut; swimming OK",
-    "tags": ["hike", "lakes", "easy", "swim", "camp", "sutjeska", "zelengora", "4x4-access"],
+    "tags": [
+      "hike",
+      "lakes",
+      "easy",
+      "swim",
+      "camp",
+      "sutjeska",
+      "zelengora",
+      "4x4-access"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -150,7 +201,18 @@
     "cost": "Free trail; 4x4 transfer to Tisovica via a Konjic operator (paid)",
     "timeNeeded": "Long full day from Tisovica; or overnight at Jezerce hut",
     "bestTime": "Late June onward (snow clears); dawn start, carry 3–4L water pp, take a guide",
-    "tags": ["hike", "summit", "via-ferrata", "exposed", "no-water", "prenj", "guide-recommended", "high-effort", "konjic", "4x4-access"],
+    "tags": [
+      "hike",
+      "summit",
+      "via-ferrata",
+      "exposed",
+      "no-water",
+      "prenj",
+      "guide-recommended",
+      "high-effort",
+      "konjic",
+      "4x4-access"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -171,7 +233,15 @@
     "cost": "Free",
     "timeNeeded": "Half day (~3–4h RT)",
     "bestTime": "Clear day for the 360° panorama; sunrise option",
-    "tags": ["hike", "summit", "easy", "no-exposure", "bjelasnica", "paved-access", "half-day"],
+    "tags": [
+      "hike",
+      "summit",
+      "easy",
+      "no-exposure",
+      "bjelasnica",
+      "paved-access",
+      "half-day"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -193,7 +263,15 @@
     "cost": "Blidinje Nature Park entry (small fee); free trail",
     "timeNeeded": "~7–8h RT from Vitlenica/Muharnica (3.5–4h each way)",
     "bestTime": "June–Sept; cool high plateau, clear day for the arch + Vilinac views",
-    "tags": ["hike", "rock-arch", "cvrsnica", "blidinje", "natural-monument", "medium", "konjic-corridor"],
+    "tags": [
+      "hike",
+      "rock-arch",
+      "cvrsnica",
+      "blidinje",
+      "natural-monument",
+      "medium",
+      "konjic-corridor"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -214,7 +292,16 @@
     "cost": "Durmitor NP €5 pp/day (warden) + €2 parking at Black Lake",
     "timeNeeded": "6–7.5h RT (Mali + Veliki Međed); +Terzin Bogaz extension = ~9h",
     "bestTime": "Dry, low-wind morning only — the exposed grassy spine is dangerous wet/windy",
-    "tags": ["hike", "summit", "durmitor", "scramble", "cables", "exposed", "high-effort", "group-wish"],
+    "tags": [
+      "hike",
+      "summit",
+      "durmitor",
+      "scramble",
+      "cables",
+      "exposed",
+      "high-effort",
+      "group-wish"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -236,7 +323,16 @@
     "cost": "Durmitor NP €5 pp/day; chairlift ~€8–12 pp return if running",
     "timeNeeded": "On foot from Black Lake 5.5–6.5h RT; with the lift ~1–2h on top",
     "bestTime": "Calm day (windiest peak); mid-June–mid-Sept; normal route avoids the cabled Sljeme traverse",
-    "tags": ["hike", "summit", "durmitor", "moderate", "spring-water", "windy", "chairlift-uncertain", "low-exposure-normal-route"],
+    "tags": [
+      "hike",
+      "summit",
+      "durmitor",
+      "moderate",
+      "spring-water",
+      "windy",
+      "chairlift-uncertain",
+      "low-exposure-normal-route"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -257,7 +353,16 @@
     "cost": "Durmitor NP €5 pp/day + €2 parking at Black Lake",
     "timeNeeded": "7.5–8h RT (full day, but non-technical)",
     "bestTime": "Clear day for the Škrka/Bobotov panorama; not in a washout (open, exposed plateau)",
-    "tags": ["hike", "durmitor", "viewpoint", "non-technical", "no-exposure", "long-day", "low-crowds", "exposure-averse-ok"],
+    "tags": [
+      "hike",
+      "durmitor",
+      "viewpoint",
+      "non-technical",
+      "no-exposure",
+      "long-day",
+      "low-crowds",
+      "exposure-averse-ok"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -280,7 +385,16 @@
     "timeNeeded": "6–7h RT to the lakes; ideal as a 1-night camp",
     "bestTime": "Mid-June onward (lodge opens, lakes melted); dry conditions for the Prutaš extension",
     "facilities": "Planinarski dom Škrka (basic cabin) + tent meadow + freshwater spring; swimming in summer",
-    "tags": ["hike", "lakes", "durmitor", "camp", "swim", "moderate", "spring-water", "overnight"],
+    "tags": [
+      "hike",
+      "lakes",
+      "durmitor",
+      "camp",
+      "swim",
+      "moderate",
+      "spring-water",
+      "overnight"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -301,7 +415,15 @@
     "cost": "Lovćen NP entry ~€3–5/person (gate); no extra hiking fee",
     "timeNeeded": "3–4h return (half day with the drive-up)",
     "bestTime": "Clear morning — exposed karst, little shade; haze builds in afternoon heat",
-    "tags": ["hike", "lovcen", "summit", "easy-moderate", "viewpoint", "low-crowds", "no-exposure"],
+    "tags": [
+      "hike",
+      "lovcen",
+      "summit",
+      "easy-moderate",
+      "viewpoint",
+      "low-crowds",
+      "no-exposure"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -324,7 +446,17 @@
     "timeNeeded": "~5h hike + ~2h drive each way from Kolašin/coast",
     "bestTime": "Morning start; mid-to-late June safest for snow-free upper slopes",
     "facilities": "Štavna katun (chalets w/ hot-water showers reported, status uncertain) + free parking + ~4 spring water points at the trailhead",
-    "tags": ["hike", "komovi", "summit", "scramble", "exposure", "katun", "backup-wish", "remote", "rough-access"],
+    "tags": [
+      "hike",
+      "komovi",
+      "summit",
+      "scramble",
+      "exposure",
+      "katun",
+      "backup-wish",
+      "remote",
+      "rough-access"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -347,7 +479,17 @@
     "timeNeeded": "~8h round trip (full day) + deep-south positioning",
     "bestTime": "Dawn start — sea-level heat makes a late start dangerous in June; clear day for the double sea+lake view",
     "facilities": "No facilities on the mountain; one cold spring/fountain partway (unreliable in summer); park at Stari Bar",
-    "tags": ["hike", "rumija", "summit", "deep-south", "skadar", "adriatic", "long-day", "heat", "gpx-needed"],
+    "tags": [
+      "hike",
+      "rumija",
+      "summit",
+      "deep-south",
+      "skadar",
+      "adriatic",
+      "long-day",
+      "heat",
+      "gpx-needed"
+    ],
     "rating": 3,
     "status": "candidate"
   }

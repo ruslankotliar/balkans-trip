@@ -17,7 +17,16 @@
     "cost": "Free",
     "timeNeeded": "30-60 min stop (swim)",
     "bestTime": "Midday June for warmest water; pairs with the Sedlo Pass drive",
-    "tags": ["deep-dive", "hidden-gem", "lake", "swimming", "durmitor", "piva-plateau", "quick-stop", "free"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "lake",
+      "swimming",
+      "durmitor",
+      "piva-plateau",
+      "quick-stop",
+      "free"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -38,7 +47,16 @@
     "cost": "Free (wild camp); small cafe on site",
     "timeNeeded": "1-3h, or overnight camp",
     "bestTime": "June-Sept; weekday for solitude",
-    "tags": ["deep-dive", "hidden-gem", "lake", "sinjajevina", "wild-camping", "swimming", "forest", "off-route"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "lake",
+      "sinjajevina",
+      "wild-camping",
+      "swimming",
+      "forest",
+      "off-route"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -50,7 +68,7 @@
     "lat": 42.8552,
     "lng": 19.6888,
     "description": "Bjelasica's second-largest glacial lake at ~1,830m under Crna Glava/Zekova Glava — a green mirror in the high pastures, reached on foot from Eko Katun Vranjak (1,800m), a real working shepherd settlement turned rustic homestay. You can drive a normal car to the Kolašin 1600 ski centre and on to Vranjak, sleep/eat in the katuns, then hike to the lake. The deep-backcountry alternative to the crowded Biogradsko jezero lake loop the group already has.",
-    "communityNotes": "TripAdvisor Montenegro forum (a local mountaineer): a regular car safely reaches the ski centre and Eko Katun Vranjak; the final macadam to Zekova Glava 'could be easily impassable in spring because of snow/ice' but is fine once snow-free — 'almost entirely snow free by late May.' Crucial timing: 'Eko katun Vranjak does not open until the beginning of summer' → mid/late June is the first window. Jonty (2024 trek report) stayed two nights at the tourist-developed katun huts ('toilet and shower block') in near-total 'solitude,' meeting only farmers. At Vranjak you can 'try homemade food, ride horses... milk cows' — authentic katun life.",
+    "communityNotes": "TripAdvisor Montenegro forum (a local mountaineer): a regular car safely reaches the ski centre and Eko Katun Vranjak; the final macadam to Zekova Glava 'could be easily impassable in spring because of snow/ice' but is fine once snow-free — 'almost entirely snow free by late May.' Crucial timing: 'Eko katun Vranjak does not open until the beginning of summer' → mid/late June is the first window. Jonty (2024 trek report) stayed two nights at the tourist-developed katun huts ('toilet and shower block') in near-total 'solitude,' meeting only farmers. At Vranjak you can 'try homemade food, ride horses... milk cows' — authentic katun life. | Off-route: Pesica jezero is in Bjelasica NE Montenegro, 48km from route. On the Kolasin road we never travel.",
     "sources": [
       "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k13893633-Pesica_lake-Montenegro.html",
       "https://jontynz.com/2024/02/01/bjelasica-mountains-kolasin-to-katun-vranjak/",
@@ -60,9 +78,18 @@
     "cost": "Free hike; katun homestay/meals extra (rustic)",
     "timeNeeded": "Half/full day hike from Vranjak; overnight katun option",
     "bestTime": "Katun opens early summer — late June onward; clear morning",
-    "tags": ["deep-dive", "hidden-gem", "hike", "lake", "bjelasica", "katun", "homestay", "off-route"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "hike",
+      "lake",
+      "bjelasica",
+      "katun",
+      "homestay",
+      "off-route"
+    ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-bukumirsko-jezero",
@@ -81,7 +108,16 @@
     "cost": "Free (wild camp possible)",
     "timeNeeded": "Half day incl. drive from Podgorica (~1h15 each way)",
     "bestTime": "Midsummer for swim; weekday for solitude",
-    "tags": ["deep-dive", "hidden-gem", "lake", "kucka-krajina", "swimming", "wild-camping", "off-route", "legend"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "lake",
+      "kucka-krajina",
+      "swimming",
+      "wild-camping",
+      "off-route",
+      "legend"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -93,7 +129,7 @@
     "lat": 42.5705,
     "lng": 19.6044,
     "description": "The largest glacial lake of the Kučka krajina (525x230m, ~14m deep) at 1,313m, sitting in raw highland a few hundred metres from the Albanian border between the Širokar plateau and Mt Vila. Far wilder and emptier than Bukumirsko — a backcountry add-on for the group's deep-east day, with brisk swimming and katun-dotted meadows. Home to the endemic Montenegrin newt.",
-    "communityNotes": "Discover-Montenegro: 'the largest lake of Kučka krajina... close to Rikavac Katun and just a few hundred metres from the Albanian border'; described as a base for climbs to Pasjak. Lustica Bay/local features call it a 'mythical mountain escape.' Swimming 'brisk but refreshing in the peak of summer.' Genuinely remote — the road in is rough highland macadam; best as a paired wild day with Bukumirsko or Grlo Sokolovo. Border zone: carry passports, don't stray across.",
+    "communityNotes": "Discover-Montenegro: 'the largest lake of Kučka krajina... close to Rikavac Katun and just a few hundred metres from the Albanian border'; described as a base for climbs to Pasjak. Lustica Bay/local features call it a 'mythical mountain escape.' Swimming 'brisk but refreshing in the peak of summer.' Genuinely remote — the road in is rough highland macadam; best as a paired wild day with Bukumirsko or Grlo Sokolovo. Border zone: carry passports, don't stray across. | Off-route: Rikavacko lake is in Kucka krajina near Albania, 50km off our Zabljak-Ostrog-Skadar arc.",
     "sources": [
       "https://www.discover-montenegro.com/kucka-krajina/",
       "https://montenegro-for.me/2019/10/an-off-road-tour-through-the-kucka-krajina-mountains/",
@@ -102,9 +138,18 @@
     "cost": "Free",
     "timeNeeded": "Half/full day with the rough drive",
     "bestTime": "Peak summer (snow lingers late); clear weather only",
-    "tags": ["deep-dive", "hidden-gem", "lake", "kucka-krajina", "remote", "border-zone", "swimming", "off-route"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "lake",
+      "kucka-krajina",
+      "remote",
+      "border-zone",
+      "swimming",
+      "off-route"
+    ],
     "rating": 3,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-karuc-skadar",
@@ -123,7 +168,17 @@
     "cost": "Free (boat taxi from Rijeka Crnojevića extra)",
     "timeNeeded": "2-4h (swim + viewpoint + paddle)",
     "bestTime": "Morning for mirror water; avoid midday-only crowds (none early)",
-    "tags": ["deep-dive", "hidden-gem", "skadar", "swimming", "spring", "kayak", "viewpoint", "village", "mimo-turista"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "skadar",
+      "swimming",
+      "spring",
+      "kayak",
+      "viewpoint",
+      "village",
+      "mimo-turista"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -144,7 +199,17 @@
     "cost": "Free entry; parking €2-3; Beška boat ~€20",
     "timeNeeded": "Half day (swim + Beška boat)",
     "bestTime": "Mid-June onward for warm water; arrive early; check litter locally",
-    "tags": ["deep-dive", "hidden-gem", "skadar", "beach", "swimming", "warm-water", "serpentine", "monastery", "off-route"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "skadar",
+      "beach",
+      "swimming",
+      "warm-water",
+      "serpentine",
+      "monastery",
+      "off-route"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -165,7 +230,17 @@
     "cost": "Guided packraft tour (operator-priced); free to hike sections",
     "timeNeeded": "3-4h packraft; can be a full day",
     "bestTime": "Summer water levels; cold water — bring layers",
-    "tags": ["deep-dive", "hidden-gem", "canyon", "packraft", "river", "savnik", "swimming", "go-now", "off-route"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "canyon",
+      "packraft",
+      "river",
+      "savnik",
+      "swimming",
+      "go-now",
+      "off-route"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -184,7 +259,15 @@
     "cost": "Free",
     "timeNeeded": "1-2h incl. detour",
     "bestTime": "Late spring/early summer for strongest flow",
-    "tags": ["deep-dive", "hidden-gem", "waterfall", "savnik", "swimming", "off-the-beaten-track", "off-route"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "waterfall",
+      "savnik",
+      "swimming",
+      "off-the-beaten-track",
+      "off-route"
+    ],
     "rating": 2,
     "status": "candidate"
   },
@@ -205,7 +288,15 @@
     "cost": "Free",
     "timeNeeded": "1-2h (swim/walk/sunset)",
     "bestTime": "June (higher water); evening for the viewpoint",
-    "tags": ["deep-dive", "lake", "niksic", "swimming", "viewpoint", "quiet", "off-route"],
+    "tags": [
+      "deep-dive",
+      "lake",
+      "niksic",
+      "swimming",
+      "viewpoint",
+      "quiet",
+      "off-route"
+    ],
     "rating": 2,
     "status": "candidate"
   },
@@ -226,7 +317,15 @@
     "cost": "Free",
     "timeNeeded": "20-30 min curiosity stop",
     "bestTime": "Oct-May for active spring; June = likely dry sink",
-    "tags": ["deep-dive", "geology", "karst", "niksic", "curiosity", "june-borderline", "off-route"],
+    "tags": [
+      "deep-dive",
+      "geology",
+      "karst",
+      "niksic",
+      "curiosity",
+      "june-borderline",
+      "off-route"
+    ],
     "rating": 2,
     "status": "candidate"
   },
@@ -247,7 +346,15 @@
     "cost": "Free",
     "timeNeeded": "45-90 min wander",
     "bestTime": "Late afternoon light; cooler for walking",
-    "tags": ["deep-dive", "hidden-gem", "abandoned", "ghost-village", "lustica", "walk", "olive-groves"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "abandoned",
+      "ghost-village",
+      "lustica",
+      "walk",
+      "olive-groves"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -268,7 +375,16 @@
     "cost": "Free (exterior only); parking at Mirište",
     "timeNeeded": "1-2h (walk + swim/snorkel)",
     "bestTime": "Morning before Žanjic boats arrive nearby",
-    "tags": ["deep-dive", "hidden-gem", "fortress", "abandoned", "austro-hungarian", "lustica", "swimming", "snorkel"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "fortress",
+      "abandoned",
+      "austro-hungarian",
+      "lustica",
+      "swimming",
+      "snorkel"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -289,7 +405,16 @@
     "cost": "Free beach; water taxi extra",
     "timeNeeded": "Half day",
     "bestTime": "Morning; calm sea",
-    "tags": ["deep-dive", "hidden-gem", "beach", "lustica", "boat-access", "swimming", "snorkel", "secluded"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "beach",
+      "lustica",
+      "boat-access",
+      "swimming",
+      "snorkel",
+      "secluded"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -310,7 +435,17 @@
     "cost": "Free if self-paddled; boat tours operator-priced",
     "timeNeeded": "1-2h add-on",
     "bestTime": "Calm sea; midday light helps inside",
-    "tags": ["deep-dive", "hidden-gem", "abandoned", "military", "kayak", "swimming", "boka", "lustica", "unusual"],
+    "tags": [
+      "deep-dive",
+      "hidden-gem",
+      "abandoned",
+      "military",
+      "kayak",
+      "swimming",
+      "boka",
+      "lustica",
+      "unusual"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -330,7 +465,15 @@
     "cost": "Free (usually seen via rafting)",
     "timeNeeded": "Bonus stop on a raft trip",
     "bestTime": "Snowmelt/early summer for max power",
-    "tags": ["deep-dive", "curiosity", "river", "waterfall", "tara", "rafting-bonus", "off-route"],
+    "tags": [
+      "deep-dive",
+      "curiosity",
+      "river",
+      "waterfall",
+      "tara",
+      "rafting-bonus",
+      "off-route"
+    ],
     "rating": 2,
     "status": "candidate"
   }

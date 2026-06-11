@@ -124,7 +124,7 @@
     "lat": 42.88844,
     "lng": 19.70581,
     "description": "A two-bedroom mountain cabin in the heart of Biogradska Gora National Park on Bjelasica, with a terrace and a 'beautiful view on the most beautiful mountain in Montenegro.' Deep-green, flower-meadow isolation — 'where you listen only to the swarm of bees and chirping of birds.' A serene alternative/extension to the Durmitor block (note: it's NE of Mojkovac, off the direct loop — attach a detour cost). Sleeps 5 (3 beds, 1.5 baths). ★4.98 from 46 reviews.",
-    "communityNotes": "Listing (verified): 'Two bedrooms, terrasse, place for hang out with a beautiful view on most beautiful mountain in Montenegro... located in heart of National park Biogradska gora... imagine yourself on place full of greenery, flowers... where you listen only swarm of bees and chirping of birds.' ★4.98/46, sleeps 5. LOCATION: Bjelasica side (Berane municipality) — a detour off the main Durmitor→coast line.",
+    "communityNotes": "Listing (verified): 'Two bedrooms, terrasse, place for hang out with a beautiful view on most beautiful mountain in Montenegro... located in heart of National park Biogradska gora... imagine yourself on place full of greenery, flowers... where you listen only swarm of bees and chirping of birds.' ★4.98/46, sleeps 5. LOCATION: Bjelasica side (Berane municipality) — a detour off the main Durmitor→coast line. | Off-route: Biogradska Gora (Bjelasica) is 50km NE of our route. Beautiful park but our Montenegro arc goes Žabljak→Ostrog→Skadar, not via Kolašin.",
     "sources": [
       "https://www.airbnb.com/rooms/933867552547474821"
     ],
@@ -133,7 +133,7 @@
       "villa-tier"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-villa-mountain-star-mojkovac",
@@ -143,7 +143,7 @@
     "lat": 42.9333,
     "lng": 19.5596,
     "description": "A mountain house set between the Sinjajevina and Bjelasica ranges (between Durmitor and Biogradska Gora NPs), overlooking Mojkovac and the Tara river. An off-the-grid escape with local-specialty food on offer and big-mountain views — a candidate for the Durmitor→south leg if routing via Mojkovac. Sleeps 5 (3 beds). ★5.0 from 10 reviews.",
-    "communityNotes": "Listing (verified): 'Located between the mountains of Sinjajevina and Bjelasica, the national parks of Durmitor and Biogradska Gora overlooking the city of Mojkovac and the river Tara, staying with us will give you unforgettable moments. With accommodation you can also consume local specialties.' ★5.0/10, sleeps 5. Newer listing (fewer reviews) but strong.",
+    "communityNotes": "Listing (verified): 'Located between the mountains of Sinjajevina and Bjelasica, the national parks of Durmitor and Biogradska Gora overlooking the city of Mojkovac and the river Tara, staying with us will give you unforgettable moments. With accommodation you can also consume local specialties.' ★5.0/10, sleeps 5. Newer listing (fewer reviews) but strong. | Off-route: Mojkovac is on the Kolašin/Bijelo Polje road, 39km east of our route. We drive south from Žabljak, not east toward Serbia.",
     "sources": [
       "https://www.airbnb.com/rooms/1326042546948203978"
     ],
@@ -152,7 +152,7 @@
       "villa-tier"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-villa-eternum-glamping-ninkovici",

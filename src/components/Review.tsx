@@ -11,6 +11,7 @@ const COUNTRY_FLAG: Record<Country, string> = {
 
 type CountryFilter = Country | 'all';
 type StatusQueue = 'candidates' | 'backup' | 'all';
+type CategoryGroup = 'all' | 'sleep' | 'activity' | 'eat' | 'nature';
 
 interface Props {
   places: PlaceWithOverride[];
@@ -21,12 +22,22 @@ interface Props {
 export default function Review({ places, onStatus, onExit }: Props) {
   const [countryFilter, setCountryFilter] = useState<CountryFilter>('all');
   const [statusQueue, setStatusQueue] = useState<StatusQueue>('candidates');
+  const [categoryGroup, setCategoryGroup] = useState<CategoryGroup>('sleep');
   const [index, setIndex] = useState(0);
+
+  const CAT_GROUP: Record<CategoryGroup, (c: string) => boolean> = {
+    all: () => true,
+    sleep: (c) => c === 'accommodation' || c === 'campsite',
+    activity: (c) => c === 'activity' || c === 'hike' || c === 'beach',
+    eat: (c) => c === 'food' || c === 'nightlife',
+    nature: (c) => c === 'nature' || c === 'sight' || c === 'viewpoint' || c === 'town',
+  };
 
   // Build queue based on filters
   const queue = places.filter((p) => {
     if (p.status === 'rejected') return false;
     if (countryFilter !== 'all' && p.country !== countryFilter) return false;
+    if (!CAT_GROUP[categoryGroup](p.category)) return false;
     if (statusQueue === 'candidates') return p.status === 'candidate';
     if (statusQueue === 'backup') return p.status === 'backup';
     // 'all' = candidates + backup (non-shortlisted, non-rejected)
@@ -84,6 +95,19 @@ export default function Review({ places, onStatus, onExit }: Props) {
           ✕ Exit review
         </button>
         <div className="review-filters">
+          <select
+            value={categoryGroup}
+            onChange={(e) => {
+              setCategoryGroup(e.target.value as CategoryGroup);
+              handleFilterChange();
+            }}
+          >
+            <option value="sleep">🛏 Sleep</option>
+            <option value="activity">🏄 Activity / Hike / Beach</option>
+            <option value="eat">🍽 Food / Nightlife</option>
+            <option value="nature">🏛 Sights / Nature / Towns</option>
+            <option value="all">All categories</option>
+          </select>
           <select
             value={countryFilter}
             onChange={(e) => {
@@ -144,6 +168,17 @@ export default function Review({ places, onStatus, onExit }: Props) {
                     {place.category}
                   </span>
                 </div>
+
+                {place.sources && place.sources[0] && (
+                  <a
+                    className="review-listing-link"
+                    href={place.sources[0]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Open listing ↗
+                  </a>
+                )}
 
                 {place.rating && (
                   <p className="review-rating">{'★'.repeat(place.rating)}{'☆'.repeat(5 - place.rating)}</p>

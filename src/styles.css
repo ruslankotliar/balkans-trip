@@ -2356,6 +2356,21 @@ body.trip-mode .ess-tel {
   flex-shrink: 0;
 }
 
+.review-listing-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a73e8;
+  text-decoration: none;
+  background: #e8f0fe;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 4px;
+}
+.review-listing-link:hover {
+  background: #c8dcfd;
+}
+
 .review-rating {
   margin: 0;
   font-size: 17px;
