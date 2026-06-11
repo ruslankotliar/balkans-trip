@@ -111,6 +111,7 @@
     "sources": [
       "https://park4night.com/en/place/56665"
     ],
+    "bestTime": "Book by email (kamp-lisicina@inet.hr) or phone (+385 95 5123 473) — no online booking. Night 2 (Jun 17).",
     "cost": "~€30–40/night for 4 + tent + car (cash only)",
     "facilities": "Warm showers, clean sanitary block, electricity, WiFi, drinking water, laundry",
     "tags": [
@@ -333,7 +334,7 @@
     "lat": 42.7294,
     "lng": 17.5439,
     "description": "Collapsed sea cave with an emerald pool open to the Adriatic near Babino Polje (eastern Mljet, ~10min from Sobra ferry) — free, with cliff-jump ledges and a swim-through. The approach is tougher than blogs suggest: sharp, jagged karst with steep, wobbly final sections — up to ~1h down with breaks, not a uniform 20–30 min — and the cave interior is swim-in only. Water shoes mandatory.",
-    "communityNotes": "'Multiple cliff jumping points... from 2–3m to 5m+ and 10m+.' 'Find the spot with a rope anchored onto the rocks' for the exit. Go in the morning — 'around 12:00 there's more people.' Perfect to do the afternoon you land, before driving to the NP side. (Coord derived from DMS, medium confidence.)",
+    "communityNotes": "'Multiple cliff jumping points... from 2–3m to 5m+ and 10m+.' 'Find the spot with a rope anchored onto the rocks' for the exit. Go in the morning — 'around 12:00 there's more people.' Perfect to do the afternoon you land, before driving to the NP side. Park at Tommy's Supermarket in Babino Polje then follow the marked trail (~20 min). Best cave light 09:00–11:00. Cave is technically outside the NP boundary — free even without a park ticket. (Coord derived from DMS, medium confidence.)",
     "sources": [
       "https://www.tripadvisor.com/Attraction_Review-g1501915-d10680152-Reviews-Odysseus_Cave-Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html",
       "https://www.lifeandventures.com/mljet-national-park-adventure/"
@@ -347,8 +348,8 @@
     ],
     "rating": 4,
     "status": "shortlist",
-    "cost": "Free (included in Mljet NP ticket)",
-    "timeNeeded": "30-45 min"
+    "cost": "Free (outside NP boundary — no ticket needed)",
+    "timeNeeded": "2h including hike"
   },
   {
     "id": "hr-camp-marina-mljet",
@@ -452,6 +453,7 @@
       "https://www.tripadvisor.com/Attraction_Review-g608714-d17778320-Reviews-Mali_Ston_Oysters-Mali_Ston_Dubrovnik_Neretva_County_Dalmatia.html",
       "https://www.tommyeats.com/tommyeats/2017/06/eating-in-croatia-oysters-at-kapetanova-kuca-in-mali-ston.html"
     ],
+    "bestTime": "Day 3 (Jun 18) lunch stop en route Split→Dubrovnik. Bota Šare opens 12:00 — call ahead: +385 20 754-482. Off-peak = quicker service.",
     "cost": "~€2–2.5 per oyster",
     "tags": [
       "peljesac",
