@@ -8,7 +8,8 @@
     "lng": 15.2191,
     "description": "Trip starting point. Old town peninsula with the Sea Organ and Greeting to the Sun at sunset — Hitchcock called it the best sunset in the world.",
     "bestTime": "sunset",
-    "status": "shortlist"
+    "status": "shortlist",
+    "communityNotes": "\"Sea Organ at sunset is genuinely one of the most peaceful things on the trip — the sounds are random and beautiful.\" Alfred Hitchcock allegedly called the Zadar sunset the most beautiful in the world. Sun Salutation (giant solar-powered light disk) activates at night right next to the Organ — stay for dusk. Old town is a 5-minute walk from the ferry port. Parking outside walls, walk in. Maraschino cherry liqueur is the local speciality. Not crowded at 10:00 on Day 1."
   },
   {
     "id": "hr-plitvice",
@@ -45,7 +46,8 @@
     "lng": 15.4843,
     "description": "Velebit canyon park ~45min from Zadar: serious hiking and one of Europe's best-known climbing spots. Velika Paklenica gorge walk to the mountain hut is the classic.",
     "timeNeeded": "half to full day",
-    "status": "candidate"
+    "status": "candidate",
+    "communityNotes": "\"Paklenica gorge walk feels like a slot canyon for the first few km — sheer 300m walls.\" Big Paklenica (Velika Paklenica) starts at the Starigrad carpark. Free entry to the gorge approach; the deeper NP costs €10pp. Climbing: Anića Kuk is one of Croatia's famous rock faces. The walk to Manita Peć cave (1.5-2h RT) is the most-praised hike for non-climbers. Night sky: Jun 16-18 is new moon window — Cape Planka visible from the Paklenica coast if camping nearby."
   },
   {
     "id": "hr-telascica",
@@ -69,7 +71,8 @@
       "nightlife",
       "ferry-hub"
     ],
-    "status": "shortlist"
+    "status": "shortlist",
+    "communityNotes": "\"Diocletian's Palace is a living city — apartments and restaurants built into 1,700-year-old Roman walls.\" Meštrović Gallery is worthwhile if time allows. The Riva seafront promenade is good for an hour in the evening but thick with tourists. Best kept short (1-2h transit stop). Parking: best at the port garage, expensive. Krka NP: skip — €40pp boardwalk, no swimming since 2021, bad ratio."
   },
   {
     "id": "hr-omis",
@@ -78,13 +81,14 @@
     "category": "activity",
     "lat": 43.4447,
     "lng": 16.6891,
-    "description": "Pirate town where the Cetina river canyon meets the sea: ziplining over the canyon, rafting, canyoning, free-climbing, fortress viewpoints. Adventure-sports hub of the coast.",
+    "description": "Small town at the mouth of the Cetina river canyon — pebble beach meets sheer cliff walls. Base for extreme sports: canyoning (€70pp), zipline over the Cetina (€80pp, one of Croatia's longest), river rafting, and kayaking. Cetina river swimming holes are free and cold. Day 2 hub activity.",
     "tags": [
       "zipline",
       "rafting",
       "canyoning"
     ],
-    "status": "candidate"
+    "status": "candidate",
+    "communityNotes": "\"Extreme canyoning was the best thing we did in Croatia — 4h of jumping, abseiling, swimming through gorges.\" (Reddit r/croatia, 2024). Zipline: 150m height, 1.3km long, views over the canyon and sea. Must book 1-2 days ahead in June. River Cetina swim (free): find the pull-off near Radmanove Mlinice — emerald-green, cold, beautiful. \"Omiš felt like one of Croatia's best-kept secrets — touristy but not wrecked.\" Camp Lisičina nearby is the obvious night before activity."
   },
   {
     "id": "hr-biokovo-skywalk",
@@ -93,8 +97,10 @@
     "category": "viewpoint",
     "lat": 43.336,
     "lng": 17.054,
-    "description": "Glass platform at ~1228m above the Makarska riviera; mountain road drive up Biokovo. Sea-and-islands panorama.",
-    "status": "candidate"
+    "description": "Glass-bottomed viewing platform 1,228m above the Adriatic on the Biokovo NP road — hanging out over the edge with sea and islands below. On the same toll road as Sveti Jure summit drive. Car slot must be pre-booked online (sells out in June).",
+    "status": "candidate",
+    "communityNotes": "\"The drive up alone is stunning — you emerge above the clouds.\" Pre-book the car slot online: biokovo.hrvi.hr (max 300 cars/day, fills ahead). Skywalk entry ~€15pp on top of NP entry (~€10). Open 08:00-19:00. Arrive early — the afternoon haze reduces the views. Best June strategy: pre-book Day 3 morning, leave Makarska by 08:00 to reach Skywalk before the crowd.",
+    "cost": "~€10pp NP entry + ~€15pp Skywalk + parking; car slot booking mandatory"
   },
   {
     "id": "hr-hvar",
@@ -118,8 +124,9 @@
     "lat": 42.6414,
     "lng": 18.11,
     "description": "Trip end point — car drop-off and bus/flight back to Vienna on Jun 28. Walls walk, Srđ cable car/viewpoint, Buža cliff bar.",
-    "bestTime": "early morning or evening — brutal cruise-ship crowds midday",
-    "status": "shortlist"
+    "bestTime": "Pre-08:00 or after 19:00; avoid 10:00–17:00 in peak season",
+    "status": "shortlist",
+    "communityNotes": "\"The walls are best before 08:00 — by 09:30 they're shoulder-to-shoulder with cruise tourists.\" Wall entry ~€35pp. Old town itself free to walk. Lokrum boat from the old harbor (10min, €15-20rt) is a great half-day — peacocks, saltwater lake, Game of Thrones ruins. Elaphiti islands: day-trip boat from Gruž harbor. Game of Thrones filming locations scattered throughout. Evening old town after 20:00 is the best vibe — most day-trippers gone."
   },
   {
     "id": "ba-mostar",
@@ -129,8 +136,9 @@
     "lat": 43.3372,
     "lng": 17.815,
     "description": "Ottoman old town around the rebuilt 16th-century bridge; locals dive 24m into the Neretva. Main Bosnia base candidate.",
-    "bestTime": "stay overnight — day-trip crowds leave by 18:00",
-    "status": "shortlist"
+    "bestTime": "Arrive late afternoon; evening and morning are the magic hours",
+    "status": "shortlist",
+    "communityNotes": "\"The old town bazaar near the bridge is incredibly atmospheric — feel the same street as 500 years ago, minus the tourists.\" Divers jump from Stari Most daily at ~14:00 (can be €20-30 for a dive by young locals showing off). Kujundžiluk bazaar street is very commercialized but worth walking once. Evening walk after 20:00: bridge lit, few tourists left, genuinely beautiful. 'Black Dog' bar is the local/traveler hangout. Blagaj Tekija (whirling dervish tekke at a spring, 15min south) is a must-add — often skipped and absolutely worth it."
   },
   {
     "id": "ba-blagaj",
@@ -235,6 +243,7 @@
       "mountains",
       "on-route"
     ],
-    "status": "candidate"
+    "status": "candidate",
+    "communityNotes": "\"Tjentište memorial is genuinely moving — one of Yugoslavia's great monuments. Dramatic location between mountains.\" Perućica primeval forest requires pre-booking: max 16pp/day, guided only, ~€38pp (call +387 58 233-130). Skakavac waterfall visible from Dragoš Sedlo viewpoint without a guide. The macadam road to Dragoš Sedlo is doable in a regular car (5km, 1.5h stop total). Given the Day 8 time pressure (Tara rafting), Sutjeska fits best as a quick transit stop: Tjentište monument (30min, on-road) + Dragoš Sedlo (1.5h detour) if arriving Šćepan Polje by 13:00."
   }
 ]

@@ -6,7 +6,7 @@
     "category": "other",
     "lat": 43.3492,
     "lng": 18.8403,
-    "description": "Border crossing from Bosnia into Montenegro. From here, drive the spectacular Piva river canyon road along Piva Lake through Plužine, continuing to Žabljak. One of the most scenic drives in Montenegro. ROADWORKS 2026: active works on the BA side (Brod na Drini/Foča → Hum) with slow traffic and temporary ~10-min stoppages, and the 24-tunnel Plužine section is earmarked for reconstruction (the new joint Šćepan Polje–Hum border post is still paperwork — no relief by June). Budget an extra 30–60 min on top of the 2.5–3h; daylight-only rule unchanged.",
+    "description": "The gateway into Montenegro and the lead-up to Durmitor. Šćepan Polje sits on the Tara River at the BiH/ME border — the Tara rafting operators are literally here. After crossing, the route follows Piva Canyon through 56 unlit tunnels (lights mandatory) with the turquoise reservoir below. One of the most dramatic roads in the Balkans.",
     "sources": [
       "https://www.glassrpske.com/lat/novosti/drustvo/oprez-radovi-na-putevima/634896",
       "https://bankar.me/scepan-polje-pluzine-na-20-kilometara-cak-24-tunela/",
@@ -17,7 +17,9 @@
       "scenic-drive",
       "border-crossing"
     ],
-    "status": "shortlist"
+    "status": "shortlist",
+    "communityNotes": "Tara rafting departs Šćepan Polje (book ahead, ~€60pp, 3-4h on water). The 56 tunnels are genuinely dark — some 2-3km long, no lighting, sections barely one car wide. Lights on, drive slowly, horn on entry. \"Absolutely stunning\" is the consensus; the contrast between the black tunnels and sudden canyon vistas is unforgettable. Speed cameras on the M18 approach in RS — obey 60km/h limits exactly.",
+    "bestTime": "Morning crossing to make Piva Lake + Žabljak by afternoon"
   },
   {
     "id": "me-pluzine",
@@ -26,12 +28,14 @@
     "category": "town",
     "lat": 43.1539,
     "lng": 18.8419,
-    "description": "Town on the turquoise Piva Lake, waypoint on the canyon drive from Šćepan Polje to Žabljak.",
+    "description": "Small town on Piva Lake (reservoir), the turquoise-blue water created by the Mratinje dam. Free swimming in the lake — cold and clear. Quick 30-min stop between the canyon tunnels and Žabljak. Good petrol and services.",
     "tags": [
       "user-note",
       "scenic-drive"
     ],
-    "status": "shortlist"
+    "status": "shortlist",
+    "communityNotes": "\"The colour of the water is unreal — that electric turquoise.\" The dam wall is impressive to see from below. Free parking and access to the lake shore. No entry fee. Worth a 20–30min stop and a swim if the group has the energy after rafting. Town itself has a small supermarket and a kafana.",
+    "bestTime": "Afternoon (post-rafting, cool down)"
   },
   {
     "id": "me-zabljak",
@@ -40,12 +44,14 @@
     "category": "town",
     "lat": 43.1547,
     "lng": 19.1226,
-    "description": "Mountain town, base for Durmitor National Park. Overnight base for the Durmitor hiking day(s).",
+    "description": "Mountain town at 1,456m — the highest-altitude town in the Balkans and gateway to Durmitor National Park. Small but functional: a few kafanas, supermarket, bakeries. Base for Prutaš hike, Black Lake circuit, and canyon viewing platforms. Nights are cool even in June (pack a layer).",
     "tags": [
       "user-note",
       "base-town"
     ],
-    "status": "shortlist"
+    "status": "shortlist",
+    "communityNotes": "\"Bring a sleeping bag liner even in summer — nights drop to 8–10°C at altitude.\" Supermarket stocked for cooking. The Black Lake circuit (3km, easy, 1h) is worth doing the evening you arrive if tired. Stars here are extraordinary — 1,400m+ altitude, no light pollution. Durmitor NP entry €5/person/day. A few good local restaurants on the main drag.",
+    "bestTime": "2 nights recommended: Day 8 arrive evening, Day 9 full hike day"
   },
   {
     "id": "me-durmitor-black-lake",
@@ -120,12 +126,14 @@
     "category": "town",
     "lat": 42.2778,
     "lng": 18.8366,
-    "description": "Walled old town on the coast, also Montenegro's main nightlife/party hub. Stop between Skadar Lake and Kotor.",
+    "description": "Medieval Venetian walled old town on a small rocky peninsula — Montenegro's party capital and most tourist-dense coastal spot. The old town itself is atmospheric with narrow alleys, Orthodox churches, and sea views from the walls. Best known for nightlife (Sparta, Arsenal, various beach clubs) and Mogren Beach, one of the best in Montenegro.",
     "tags": [
       "user-note",
       "nightlife"
     ],
-    "status": "shortlist"
+    "status": "shortlist",
+    "communityNotes": "\"Budva old town at night is very atmospheric despite the crowds — worth 1-2 hours wandering.\" June builds fast: Balkan school holidays haven't started yet so the first half of June is better. Mogren Beach (pebble, clear water, 4-5min walk from old town through short tunnel) is the one to go to. \"The beach clubs can get obnoxiously loud until 04:00 — if you want sleep, stay 1-2km back from the old town.\" Parking in old town: near-impossible, use the lot at the top of town.",
+    "bestTime": "Evening arrival and morning beach swim; avoid midday old town"
   },
   {
     "id": "me-kotor",
