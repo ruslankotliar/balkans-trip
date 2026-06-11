@@ -256,6 +256,12 @@ export const HOSPITAL_ZONES: HospitalZone[] = [
     pinId: 'hr-er-sibenik',
   },
   {
+    zone: 'Mljet island (Jun 20)',
+    hospital: 'No hospital on island — Dubrovnik General (Opća bolnica Dubrovnik) nearest, ~70 km via ferry + drive ~2h. Clinic only at Babino Polje.',
+    where: 'Leave on first ferry, drive to Dubrovnik Lapad',
+    pharmacy: 'No 24h pharmacy on island — carry your own kit',
+  },
+  {
     zone: 'Dubrovnik (Jun 18–19)',
     hospital: 'Opća bolnica Dubrovnik — 24/7 ER',
     where: 'Lapad (Roka Mišetića / A. Šercera)',
@@ -270,7 +276,7 @@ export const HOSPITAL_ZONES: HospitalZone[] = [
     pinId: 'ba-er-trebinje',
   },
   {
-    zone: 'Mostar (Jun 21–22)',
+    zone: 'Mostar (Jun 21)',
     hospital: 'SKB Mostar — region’s largest, 24h ER',
     where: 'Bijeli Brijeg · +387 36 336 000',
     pharmacy: '24h pharmacies in Mostar',
@@ -278,11 +284,19 @@ export const HOSPITAL_ZONES: HospitalZone[] = [
     tel: '+38736336000',
   },
   {
-    zone: 'Konjic / Boračko (Jun 22)',
-    hospital: 'Clinic only → real hospital = Mostar (~35 min) or Sarajevo (~1h)',
+    zone: 'Konjic / Boračko day-stop (Jun 22)',
+    hospital: 'Clinic only — real hospital = Mostar (~35 min) or Sarajevo (~1h)',
     where: 'Konjic town',
     pharmacy: 'Town pharmacies',
     pinId: 'ba-er-mostar',
+  },
+  {
+    zone: 'Sarajevo (Jun 22 overnight)',
+    hospital: 'KCUS Klinički centar Sarajevo — main BA tertiary, 24h ER',
+    where: 'Bolnička 25, Sarajevo · +387 33 297 000',
+    pharmacy: '24h pharmacies across the city',
+    pinId: 'ba-er-mostar',
+    tel: '+38733297000',
   },
   {
     zone: 'Žabljak / Durmitor (Jun 23–24)',
