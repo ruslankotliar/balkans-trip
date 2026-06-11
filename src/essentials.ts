@@ -177,8 +177,11 @@ export const QUICK_TIPS: TipSection[] = [
     title: '⚡ Book before Jun 16 (urgent)',
     tips: [
       'CALL Sicily By Car (+385 23 646 547) — confirm BiH + ME cross-border permission + written letter. Ref: D013947246.',
-      'BOOK Tara rafting Jun 23 — email office@raftingtara.com or info@tarasportrafting.com: 4 adults, Jun 23, 10:00 start, Brštanovica→Šćepan Polje. ~€60pp. URGENT.',
+      'BOOK Tara rafting Jun 23 — office@raftingtara.com or +381 64 420 1956 (Drina-Tara, €60pp) OR info@tarasportrafting.com / +387 66 606 306 (TaraSport, €50pp). 4 adults, Jun 23, Brštanovica→Šćepan Polje.',
       'BOOK Biokovo Skywalk Jun 18 morning slot — shop.pp-biokovo.hr. 20-car/hour cap, sells out. 4 × €15 = €60.',
+      'BOOK Camp Lisičina Omiš (Jun 17) — kamp-lisicina@inet.hr. Croatian peak season, fills fast.',
+      'BOOK Camping Kate Mlini (Jun 18–19) — info@campingkate.com. ~€51/night for 4 + tent, 10 min from DBV airport.',
+      'BOOK Autokamp Lovor Mljet (Jun 20) — +385 98 702 200. Only campsite on the island on the right side; fills in June.',
       'Book Cetina Extreme Canyoning Jun 17 (1–2 days ahead) — canyoning-cetina.com (~€70pp) or maldukadventures.com.',
     ],
     links: [
