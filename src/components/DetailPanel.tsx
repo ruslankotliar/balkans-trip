@@ -36,6 +36,24 @@ interface Props {
   onComment: (body: string) => void;
 }
 
+/** Render inline phone numbers (+XX ...) as tappable tel: links. */
+function TelText({ text }: { text: string }) {
+  const parts = text.split(/(\+\d[\d\s]{6,14}\d)/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        /^\+\d[\d\s]{6,14}\d$/.test(part) ? (
+          <a key={i} className="hint-tel" href={`tel:${part.replace(/\s/g, '')}`}>
+            {part}
+          </a>
+        ) : (
+          part
+        ),
+      )}
+    </>
+  );
+}
+
 export default function DetailPanel({
   place,
   tripMode = false,
@@ -110,7 +128,7 @@ export default function DetailPanel({
       {/* ---- Description: what it is + why it matters (most useful content on-road) ---- */}
       <p className="detail-desc">{p.description}</p>
       {p.communityNotes && <p className="community">"{p.communityNotes}"</p>}
-      {p.bestTime && <p className="meta">Best time: {p.bestTime}</p>}
+      {p.bestTime && <p className="meta">Best time: <TelText text={p.bestTime} /></p>}
       {p.facilities && <p className="meta">Facilities: {p.facilities}</p>}
       {p.tags && p.tags.length > 0 && (
         <p className="tag-row">
