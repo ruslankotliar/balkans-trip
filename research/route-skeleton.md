@@ -35,7 +35,8 @@ Loop logic: Zadar → Dubrovnik fast-ish (airport pickup Jun 18 evening), then a
 
 ## Still open
 
-- Krka vs Omiš on Day 2 — the group decides. Krka = calm + turquoise waterfalls; Omiš = adrenaline (zipline/canyoning). Can't seriously do both.
+- ~~Krka vs Omiš on Day 2~~ → **RESOLVED: Omiš.** Krka rejected (€40pp boardwalk, no swimming since 2021). Day 2 = Extreme Canyoning (€70pp, Cetina) OR Zipline (€80pp) + Cetina swim hole.
 - Mljet: what if the Jun 20 ferry is full? Have a plan B (extra Pelješac day + Korčula).
+- **Deep south extension (Day 11):** Camping now researched — ~€25/night all-in at Velika Plaža (Safari Beach Camp) or Ada Bojana island (FKK camp). Ada Bojana stilt-restaurant fish dinner is worth the detour. Total detour from Stari Bar → Ulcinj → back to Budva = +2-2.5h driving. Strong case for: sleep Ada Bojana, wake up Budva Day 12. Clothing optional at Ada Bojana (not mandatory).
 - Perućica primeval forest in Sutjeska: guided-only, €38pp, quota 16pp/day — probably too late to book. Skip unless they call today (+387 58 233-130).
 - ⚠️ Sicily By Car cross-border permission for BiH + Montenegro: **CALL TODAY** (+385 23 646 547). Trip depends on this.
