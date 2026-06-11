@@ -114,7 +114,7 @@ The Cetina canyon above Omiš has a sequence of swim/jump spots along a 10km str
 ---
 
 ### 7. Vruja / Brela — Sea but Worth Noting
-**Status:** `[NEW PIN CANDIDATE]`
+**Status:** `[IN DATA]` — `hr-vruja-spring-beach` added to hr-south.json.
 
 **Coordinates:** 43.3733°N, 16.9397°E (approximate — the northernmost cove of Brela, ~2km north of Punta Rata along the coastal path)
 
@@ -179,7 +179,7 @@ The Cetina canyon above Omiš has a sequence of swim/jump spots along a 10km str
 ---
 
 ### 11. Neretva Canyon — Čelebići Swimming Spot
-**Status:** `[NEW PIN CANDIDATE]`
+**Status:** `[IN DATA]` — `ba-celebici-neretva-swim` added to ba-places.json.
 
 **Coordinates:** 43.6700°N, 18.0333°E (Čelebići village; the Idbar tributary junction with the Neretva, ~25km north of Mostar on M-17)
 
@@ -283,7 +283,7 @@ The Cetina canyon above Omiš has a sequence of swim/jump spots along a 10km str
 ---
 
 ### 16. Rijeka Crnojevića — River Swim + Kayak
-**Status:** `[NEW PIN CANDIDATE]`
+**Status:** `[IN DATA]` — `me-rijeka-crnojevica-swim` added to me-places.json.
 
 **Coordinates:** 42.3333°N, 19.0167°E (the village where the river meets Skadar Lake)
 

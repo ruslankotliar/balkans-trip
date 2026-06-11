@@ -854,5 +854,32 @@
     ],
     "rating": 3,
     "status": "candidate"
+  },
+  {
+    "id": "hr-vruja-spring-beach",
+    "name": "Vruja Bay — submarine freshwater spring (Brela, 2km north of Punta Rata)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.3733,
+    "lng": 16.9397,
+    "description": "A secluded pebble cove where a massive submarine freshwater spring (60m diameter cave at 28m depth) erupts directly onto a sea beach — Croatia's only protected underwater spring. You swim in clear Adriatic water that turns noticeably colder and fresher near shore. No road access: reach by a 2km coastal path north from Punta Rata, or by kayak from Brela.",
+    "communityNotes": "Officially protected as a natural monument. 'Snorkeling over the spring vent is surreal — you can see the cold fresh water spiralling up through the warm sea.' Uncrowded because there's no road — most tourists stick to Punta Rata. Best paired as an afternoon walk after the Punta Rata swim stop. No facilities at the cove itself (no shade, no water); bring food and water. June: sea ~22°C surface, noticeable cold upwelling near the spring.",
+    "sources": [
+      "https://brela.hr/en/nature/vruja",
+      "https://dalmatia-outdoor.hr/en/attraction/vruja-bay/"
+    ],
+    "cost": "Free (2km walk from Brela)",
+    "timeNeeded": "2h (coastal walk + swim + return)",
+    "bestTime": "afternoon after Punta Rata; quiet on weekdays",
+    "tags": [
+      "swimming",
+      "hidden-gem",
+      "makarska-riviera",
+      "coastal-walk",
+      "snorkeling",
+      "free"
+    ],
+    "rating": 4,
+    "status": "candidate"
   }
 ]
