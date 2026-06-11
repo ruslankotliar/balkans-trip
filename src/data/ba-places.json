@@ -502,10 +502,10 @@
     "category": "activity",
     "lat": 43.6609,
     "lng": 17.7655,
-    "description": "Self-guided kayak rental on the emerald Neretva canyon below Jablanica dam. 5-star reviews, €25pp, zero operator dependency — rent and paddle. On the confirmed route between Mostar and Konjic. Perfect 2-3h stop.",
-    "communityNotes": "Discovered by overlanders 'accidentally while stopping for fuel' — consistently the surprise hit of the Bosnia leg. Brilliant turquoise water in a dramatic canyon. Rental shop near the dam. Available without pre-booking in June.",
+    "description": "Self-guided kayak rental on the emerald Neretva canyon below Jablanica dam — paddle through sheer canyon walls to a secluded river beach. Staff brief you, kayaks + life jackets + waterproof bags provided; return tow available. 5-star across 60+ reviews, €25pp. On the confirmed route between Mostar and Konjic.",
+    "communityNotes": "'Self guided kayak down the canyon, you can go at your own pace and enjoy the stunning scenery'; 'the calm river currents make it easy to paddle with minimal effort'. Red Bull cliff-diver rocks mid-route for optional jumps. Discovered by overlanders 'accidentally while stopping for fuel' — consistently the Bosnia leg surprise. Available without pre-booking in June; open 10:00–19:00.",
     "cost": "~€25pp kayak rental",
-    "timeNeeded": "2-3h",
+    "timeNeeded": "3–4h (1.5h one-way paddle + turnaround)",
     "bestTime": "morning, before afternoon wind",
     "tags": [
       "kayak",
@@ -591,6 +591,25 @@
       "on-route"
     ],
     "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-kino-bosna-sarajevo",
+    "name": "Kino Bosna (Sarajevo — former cinema bar)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.8602,
+    "lng": 18.4114,
+    "description": "Former Austro-Hungarian cinema in Sarajevo's Marijin Dvor district converted into a bar and cultural space — the architecture alone is worth the visit. Cheap food and drinks; live sevdah (Bosnian blues) concerts on Mondays and Thursdays.",
+    "communityNotes": "One of the best Sarajevo locals' night-out venues: 'architecture alone worth it, live sevdah on Mon/Thu, cheap food and drinks.' Sevdah is the soulful folk music of Bosnia — hearing it live in a place like this is a genuine experience. Not a tourist bar.",
+    "sources": [
+      "research/ba-deep2.md"
+    ],
+    "cost": "Cheap — drinks ~€2–4",
+    "timeNeeded": "2–4h (evening)",
+    "bestTime": "Monday or Thursday evenings for live sevdah",
+    "tags": ["sarajevo", "bar", "live-music", "sevdah", "local", "cheap", "nightlife"],
+    "rating": 4,
     "status": "candidate"
   }
 ]

@@ -724,6 +724,44 @@
     "status": "candidate"
   },
   {
+    "id": "ba-studenac-trebinje",
+    "name": "Restoran Studenac (Trebinje — riverside trout)",
+    "country": "BA",
+    "category": "food",
+    "lat": 42.7119,
+    "lng": 18.3731,
+    "description": "Trebinje's most-recommended restaurant, on the banks of the Trebišnjica river slightly outside the old town (car needed). Riverside summer garden (~120 seats) with trout from their own pond, tuna, mixed grill. Affordable/moderate pricing.",
+    "communityNotes": "4.4/5 on 321 TripAdvisor reviews — consistently top-ranked in Trebinje. 'Lots of local food for little money'; 'great price.' CASH ONLY — no cards. Reserve for weekends (can be turned away without booking). 'Ask anyone in town' for directions — it's the local's standard answer.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g303196-d3135231-Reviews-Studenac-Trebinje.html"
+    ],
+    "cost": "Affordable/moderate; mains ~€10–15",
+    "timeNeeded": "1–1.5h",
+    "bestTime": "Lunch or early dinner; book ahead for evenings",
+    "tags": ["trebinje", "trout", "riverside", "local-pick", "cash-only"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-baklava-ducan-sarajevo",
+    "name": "Baklava Dućan (Sarajevo — THE baklava shop)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.8592,
+    "lng": 18.4296,
+    "description": "Sarajevo's most-celebrated artisan baklava shop in the Baščaršija bazaar (Čizmezdžiluk 20). Bosnian baklava = more layers, less sweet than Turkish, crunchier. Their signature: Džandar baklava, which takes 3 days to prepare. All handmade using hand-stretched phyllo.",
+    "communityNotes": "Described as 'THE place' for baklava in Sarajevo. 200-year-old family recipes. 'Hidden gem' with consistent praise. Baklava Sarajbosna (Gajev Trg) is the main rival; Ministry of Ćejf nearby combines the coffee ceremony with good baklava if you want both in one stop.",
+    "sources": [
+      "https://baklava.ba/en/"
+    ],
+    "cost": "€3–8 per box/portion",
+    "timeNeeded": "15 min",
+    "bestTime": "Morning or afternoon; closes earlier than tourist shops",
+    "tags": ["sarajevo", "bascarsija", "sweets", "baklava", "local-institution"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
     "id": "me-voli-budva",
     "name": "Voli Supermarket (Budva — camping stock-up)",
     "country": "ME",
