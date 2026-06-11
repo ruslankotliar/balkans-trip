@@ -57,7 +57,8 @@
     "lat": 43.8907,
     "lng": 15.1635,
     "description": "Cliffs, salt lake and bays on Dugi Otok island, reachable by ferry from Zadar. Candidate for the 'island day' if we take the car ferry.",
-    "status": "candidate"
+    "status": "candidate",
+    "communityNotes": "\"Telašćica is what Plitvice would be if it were by the sea — dramatic cliffs, a saltwater lake warm enough to swim in, stunning.\" (travel forums). The saltwater Mir lake is the main draw: 2°C warmer than the sea, very calm. Day-trip by boat from Sali (Dugi Otok) or from Zadar by charter. If you're in Zadar on Day 1, this could be a boat-day from Sali (but it adds a ferry to Dugi Otok). More realistically a Zadar area boat option if the group has the energy. Entrance to the nature park: ~€5-10pp."
   },
   {
     "id": "hr-split",
@@ -114,7 +115,8 @@
       "nightlife",
       "island"
     ],
-    "status": "candidate"
+    "status": "candidate",
+    "communityNotes": "\"Hvar is beautiful but has become a party destination for a reason — it's also expensive.\" The old town itself is lovely (Fortica fortress views, loggia square, harbor). Lavender fields June–July. The bus to Stari Grad for the ferry is separate from the car ferry. Verdict for this route: almost certainly doesn't fit Days 1-3 pre-pickup (it requires ferry from Split then you're stranded on the island). Post-pickup backtracking to Hvar is poor value. Kept as candidate in case the group finds an unexpected day."
   },
   {
     "id": "hr-dubrovnik",
@@ -154,7 +156,8 @@
       "https://exploremostar.com/blagaj-tekke/",
       "https://www.thetripverdict.com/blagaj-tekija"
     ],
-    "status": "backup"
+    "status": "backup",
+    "communityNotes": "\"One of the most atmospheric places in the whole Balkans — the tekija building literally sits on the karst spring with emerald water gushing out below it.\" 20 min south of Mostar. Entrance ~€2pp. Combine with Mostar Day 6 morning (drive, park below, 30–45min). The Buna spring gushes 43m³/sec — the blue-green water color is surreal. Tekija (dervish lodge) still active; remove shoes before entering. Summer: warm enough for a dip in the pool below. \"Worth every minute; felt like a fairytale.\""
   },
   {
     "id": "ba-kravica",
@@ -185,7 +188,8 @@
     "lng": 17.7261,
     "description": "Ottoman hillside fortress village on the Neretva, basically on the Mostar–coast road. Quick climb to the tower for the view. Free 30-min stop if passing at golden hour.",
     "timeNeeded": "1h",
-    "status": "backup"
+    "status": "backup",
+    "communityNotes": "\"The village is only a 10-min stop but the climb to the Gavankula tower gives a great view over the Neretva. Worth it if passing.\" Literally on the road between coast and Mostar — no detour. Ottoman clock tower + mosque + old houses. Entrance free (tower may charge €1-2). \"It's small but very picturesque — the contrast of the pale stone against the Neretva below.\" Combine with Kravica in the same morning (Kravica at 07:00, Počitelj 09:30, Mostar by 11:00)."
   },
   {
     "id": "ba-trebinje",
@@ -199,7 +203,8 @@
       "wine",
       "budget-base"
     ],
-    "status": "candidate"
+    "status": "candidate",
+    "communityNotes": "\"The most underrated old town in the Balkans — a real Balkan city with almost no tourists.\" The stari grad (walled old town, Arslanagić bridge) is 20 min walk from anywhere. Tvrdoš Monastery with its winery (Vranac wine, €3 a glass in the cellar shop) is a 20-minute drive. Hercegovina Gračanica mosque above town gives a view over the valley. Very hot in June (35°C+). Republika Srpska entity — Cyrillic signage, Orthodox flavor, completely different from Mostar or Sarajevo. Good €35/night Airbnb (Gaga City Center). Half-day is enough; good transit stop Day 3-4 and the Day 12 overnight before Dubrovnik."
   },
   {
     "id": "hr-dubrovnik-airport",
