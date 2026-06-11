@@ -240,6 +240,11 @@ export default function Today({
               >
                 Navigate ↗
               </a>
+              {next.bestTime && (
+                <div className="today-next-hint">
+                  <HintText text={next.bestTime.length > 90 ? next.bestTime.slice(0, next.bestTime.indexOf(' ', 85) + 1 || 90) + '…' : next.bestTime} />
+                </div>
+              )}
             </>
           ) : (
             <span>All stops done 🎉</span>
