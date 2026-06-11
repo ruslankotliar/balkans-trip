@@ -164,12 +164,18 @@ export default function Review({ places, onStatus, onExit }: Props) {
                     <p className="review-rating">{'★'.repeat(place.rating)}{'☆'.repeat(5 - place.rating)}</p>
                   )}
 
-                  {(place.cost || place.timeNeeded) && (
+                  {(place.cost || place.timeNeeded || place.bestTime) && (
                     <p className="review-meta">
                       {place.cost && <span>💶 {place.cost}</span>}
                       {place.cost && place.timeNeeded && ' · '}
                       {place.timeNeeded && <span>⏱ {place.timeNeeded}</span>}
+                      {(place.cost || place.timeNeeded) && place.bestTime && ' · '}
+                      {place.bestTime && <span>🕐 {place.bestTime}</span>}
                     </p>
+                  )}
+
+                  {place.facilities && (
+                    <p className="review-facilities">🚿 {place.facilities}</p>
                   )}
 
                   <p className="review-desc">{place.description}</p>

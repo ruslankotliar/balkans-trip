@@ -12,7 +12,11 @@
       "https://bankar.me/scepan-polje-pluzine-na-20-kilometara-cak-24-tunela/",
       "https://rtnk.me/drustvo/mup-priprema-projektnu-dokumentaciju-za-izgradnju-granicnog-prelaza-scepan-polje-hum/"
     ],
-    "tags": ["user-note", "scenic-drive", "border-crossing"],
+    "tags": [
+      "user-note",
+      "scenic-drive",
+      "border-crossing"
+    ],
     "status": "shortlist"
   },
   {
@@ -23,7 +27,10 @@
     "lat": 43.1539,
     "lng": 18.8419,
     "description": "Town on the turquoise Piva Lake, waypoint on the canyon drive from Šćepan Polje to Žabljak.",
-    "tags": ["user-note", "scenic-drive"],
+    "tags": [
+      "user-note",
+      "scenic-drive"
+    ],
     "status": "shortlist"
   },
   {
@@ -34,7 +41,10 @@
     "lat": 43.1547,
     "lng": 19.1226,
     "description": "Mountain town, base for Durmitor National Park. Overnight base for the Durmitor hiking day(s).",
-    "tags": ["user-note", "base-town"],
+    "tags": [
+      "user-note",
+      "base-town"
+    ],
     "status": "shortlist"
   },
   {
@@ -49,7 +59,10 @@
       "https://www.outdooractive.com/en/route/mountain-hike/opstina-zabljak/mountain-tour-from-crno-jezero-black-lake-to-veliki-meded-sjeverni/343480610/"
     ],
     "timeNeeded": "full day",
-    "tags": ["user-note", "hiking"],
+    "tags": [
+      "user-note",
+      "hiking"
+    ],
     "status": "backup"
   },
   {
@@ -59,9 +72,12 @@
     "category": "sight",
     "lat": 42.6747,
     "lng": 19.0297,
-    "description": "Cliffside mountain monastery built into a vertical rock face. Stop on the way from Žabljak south towards Kotor.",
-    "tags": ["user-note"],
-    "status": "shortlist"
+    "description": "Cliffside monastery built directly INTO a 900m vertical rock face — one of the most visited and venerated sites in the entire Balkans. Two churches: Lower (easier access) and Upper (the cave chapel, carved into the cliff). Free entry, donations welcome. Cover shoulders and knees — it's an active Orthodox monastery and dress code is enforced.",
+    "tags": [
+      "user-note"
+    ],
+    "status": "shortlist",
+    "communityNotes": "Peak summer sees thousands of pilgrims and tourists — go before 09:00 or after 16:00 to avoid the worst. Road up is narrow/winding; parking fills fast. \"Seeing it built into the rock face is genuinely breathtaking — one of those places that lives up to the hype.\" Some pilgrims sleep outdoors on the cliff overnight. Take the stairs to the Upper church — the Lower is fine but the Upper is the magic."
   },
   {
     "id": "me-skadar-lake",
@@ -70,9 +86,14 @@
     "category": "nature",
     "lat": 42.2464,
     "lng": 19.0917,
-    "description": "Largest lake in the Balkans. Options: kayaking on the lake, visiting a hillside winery, or skipping to the coast (Sveti Stefan beach) instead. Virpazar is the main base for boats/kayaks.",
-    "tags": ["user-note", "kayak", "winery"],
-    "status": "shortlist"
+    "description": "Largest lake in the Balkans straddling the ME/AL border — national park, 264 bird species, endemic carp. Virpazar is the main base for kayak rentals, boat tours, and lakeside winery visits. Turquoise-green water, lotus flowers in June, pelicans.",
+    "tags": [
+      "user-note",
+      "kayak",
+      "winery"
+    ],
+    "status": "shortlist",
+    "communityNotes": "Best experienced by kayak (Kingfisher Virpazar ~€15-22pp half-day) or wooden boat tour. Lotus flowers bloom June–July. \"The lake is extraordinarily beautiful, completely undiscovered compared to Croatian coast.\" Local wineries (Vinarija Mašanović, Jablan Winery) are a highlight — organic wine, lake views, almost no tourists. No wild camping inside the park boundaries."
   },
   {
     "id": "me-sveti-stefan",
@@ -87,7 +108,9 @@
       "https://www.euronews.com/travel/2026/05/06/amans-sveti-stefan-resort-in-montenegro-to-reopen-five-years-after-beach-access-row",
       "https://www.rferl.org/a/free-beach-sveti-stefan-montenegro/33467608.html"
     ],
-    "tags": ["user-note"],
+    "tags": [
+      "user-note"
+    ],
     "status": "backup"
   },
   {
@@ -98,7 +121,10 @@
     "lat": 42.2778,
     "lng": 18.8366,
     "description": "Walled old town on the coast, also Montenegro's main nightlife/party hub. Stop between Skadar Lake and Kotor.",
-    "tags": ["user-note", "nightlife"],
+    "tags": [
+      "user-note",
+      "nightlife"
+    ],
     "status": "shortlist"
   },
   {
@@ -108,11 +134,15 @@
     "category": "town",
     "lat": 42.4247,
     "lng": 18.7712,
-    "description": "UNESCO old town in the Bay of Kotor. Plan: climb the fortress walls (San Giovanni) for the bay view, then wander the old town. From Kotor we return towards Dubrovnik.",
+    "description": "UNESCO-walled Venetian old town at the innermost finger of the Bay of Kotor. San Giovanni fortress hike (~1,200 stone steps) gives the best bay panorama in Montenegro. From Kotor the group returns toward Dubrovnik via Vitaljina crossing.",
     "timeNeeded": "half day",
     "bestTime": "fortress climb early morning or late afternoon (heat)",
-    "tags": ["user-note", "hiking"],
-    "status": "shortlist"
+    "tags": [
+      "user-note",
+      "hiking"
+    ],
+    "status": "shortlist",
+    "communityNotes": "\"Go at 07:30 — by 10:00 you're sharing steps with 3 cruise ships worth of tourists.\" Fortress entry €8/adult (free before 08:00). Old town itself is free to wander. Best photo: view from fortress looking down over the terracotta rooftops and perfect bay geometry. Cats everywhere — Kotor is famously a cat city. Avoid midday heat in the walls."
   },
   {
     "id": "me-komovi",
@@ -122,7 +152,11 @@
     "lat": 42.6622,
     "lng": 19.6433,
     "description": "Optional extra if we have time left from Croatia: summit one of the Komovi peaks or do a light hike. Off the main route (east Montenegro), so only if schedule allows.",
-    "tags": ["user-note", "hiking", "optional"],
+    "tags": [
+      "user-note",
+      "hiking",
+      "optional"
+    ],
     "status": "backup"
   }
 ]

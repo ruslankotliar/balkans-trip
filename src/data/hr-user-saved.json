@@ -35,19 +35,28 @@
   },
   {
     "id": "hr-scirovac",
-    "name": "Šćirovac (Biokovo ridge above Brela)",
+    "name": "Šćirovac / Miletnjak (Biokovo, 1619m)",
     "country": "HR",
     "category": "viewpoint",
-    "lat": 43.3807,
-    "lng": 16.9752,
-    "description": "Point on the western Biokovo massif above Brela. User-saved from Google Maps — exact nature (peak/viewpoint/trailhead) to verify.",
+    "lat": 43.3809,
+    "lng": 16.9756,
+    "description": "1,619m summit on the northwestern Biokovo massif, also known as Miletnjak — a Croatian Hiking Tour checkpoint (KT 17). Reached from Gornja Brela/Bartulovići via Bukovac mountain lodge and Pozjata cave. Full summit, not a drive-up viewpoint. 360° panorama: full Makarska Riviera, Brač/Hvar/Korčula/Vis, Bosnia inland.",
     "tags": [
       "user-saved",
       "makarska-riviera",
       "biokovo",
-      "verify"
+      "hard-hike",
+      "full-day"
     ],
-    "status": "candidate"
+    "status": "candidate",
+    "communityNotes": "Serious mountain: 4–4.5h one way from Gornja Brela (Bartulovići trailhead), ~1,400m gain. Trail markings faint for ~half the route — GPS/GPX track strongly recommended, 3–4L water per person, early start (pre-06:00). \"Steep sides on both sides,\" genuinely hard ridge walk. Reward: views that include coast, 6 islands, Bosnia, Italy on clear days. Sources: planinarenje.hr, PeakVisor, Via Dinarica, AllTrails, Komoot/Wikiloc trails.",
+    "sources": [
+      "https://planinarenje.hr/odredista/scirovac-miletnjak?podrucje=biokovo-i-zagora",
+      "https://peakvisor.com/peak/scirovac.html",
+      "https://trail.viadinarica.com/en/point/summit/miletnjak-scirovac-peak/16347072/"
+    ],
+    "timeNeeded": "4–4.5h one way from Bartulovići (Gornja Brela); full day round trip",
+    "rating": 5
   },
   {
     "id": "hr-camping-krvavica",
