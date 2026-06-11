@@ -1430,6 +1430,29 @@ export default function App() {
             {person ? `🙂 ${person}` : '🙂 Set name'}
           </button>
           <button
+            className="share-plan-btn"
+            title="Share plan with the group — sends a link others can import"
+            onClick={async () => {
+              const url = makeShareLink();
+              if (navigator.share) {
+                try {
+                  await navigator.share({ title: 'Balkans Trip plan', url });
+                  return;
+                } catch {
+                  // cancelled or unsupported — fall through to clipboard
+                }
+              }
+              try {
+                await navigator.clipboard.writeText(url);
+                alert('Share link copied! Paste it in the group chat — others open it to import the plan.');
+              } catch {
+                prompt('Copy this link and send it to the group:', url);
+              }
+            }}
+          >
+            📤 Share
+          </button>
+          <button
             className={`mode-pill ${mode}`}
             onClick={() => setMode(mode === 'trip' ? 'planning' : 'trip')}
             title="Switch between planning (research) and trip (on the road) mode"

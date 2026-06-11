@@ -1160,6 +1160,17 @@ body.trip-mode .detail-nav-btn {
   background: #2c3e50;
   color: #fff;
 }
+.share-plan-btn {
+  border: 1.5px solid #5a9cf8;
+  border-radius: 16px;
+  background: #fff;
+  color: #2471c8;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 11px;
+  cursor: pointer;
+  white-space: nowrap;
+}
 
 /* ---- Today view (trip mode) ---- */
 .today {
