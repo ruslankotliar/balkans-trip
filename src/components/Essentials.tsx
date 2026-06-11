@@ -124,6 +124,21 @@ export default function Essentials({ onClose, onShowPin }: Props) {
                 <li key={i}>{t}</li>
               ))}
             </ul>
+            {sec.links && (
+              <div className="ess-tip-links">
+                {sec.links.map((l) => (
+                  <a
+                    key={l.url}
+                    className="ess-tip-link"
+                    href={l.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {l.label} ↗
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </Section>

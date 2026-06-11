@@ -2033,6 +2033,22 @@ body.trip-mode .card-links .today-nav-link {
 .ess-phrasegrp {
   margin-bottom: 6px;
 }
+.ess-tip-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+.ess-tip-link {
+  font-size: 12px;
+  padding: 3px 8px;
+  border: 1px solid #b3d4f5;
+  border-radius: 12px;
+  background: #eef6ff;
+  color: #1a6bbf;
+  text-decoration: none;
+  white-space: nowrap;
+}
 .ess-zone {
   border-bottom: 1px solid #eee;
   padding: 8px 0;

@@ -168,6 +168,8 @@ export const IF_THEN: IfThen[] = [
 export interface TipSection {
   title: string;
   tips: string[];
+  /** Optional quick-links rendered as chips after the tip list. */
+  links?: { label: string; url: string }[];
 }
 
 export const QUICK_TIPS: TipSection[] = [
@@ -178,6 +180,10 @@ export const QUICK_TIPS: TipSection[] = [
       'Make sure HR + BA + ME are written on the contract — crossing into a non-listed country voids your insurance.',
       'Guards mostly just check passports — but make sure you get entry/exit stamps.',
       'ME→HR on Jun 27: use VITALJINA/Karasovići (15 km south of Kotor toward Herceg Novi) — 15–45 min. Do NOT use Debeli Brijeg (1–4 h EES biometric queues). If Vitaljina is closed, fall back to Debeli Brijeg before 08:00 or after 21:00.',
+    ],
+    links: [
+      { label: 'Live ME border cams', url: 'https://kamere.mup.gov.me' },
+      { label: 'nakordoni.eu wait times', url: 'https://www.nakordoni.eu/en/montenegro' },
     ],
   },
   {
