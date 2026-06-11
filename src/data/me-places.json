@@ -143,13 +143,14 @@
     "lat": 43.1503,
     "lng": 19.2952,
     "description": "Whitewater rafting in Europe's deepest canyon. The exciting, popular run is the ~18km Brštanovica → Šćepan Polje section with 21 of the Tara's ~50 rapids; most operators put in near the Đurđevića Tara bridge. Coordinate = the bridge (meeting points cluster here and at Šćepan Polje).",
-    "communityNotes": "Most operators run the Brštanovica section, 'technically the most demanding... 21 of 50 cascades and the nicest waterfall.' PRICES people report: half-day ~€70 pp (~2h on water), full-day ~€150 pp incl. lunch. LATE-JUNE WATER: May-June = high, fast, COLD water (~10-12°C), 'recommended for experienced rafters' — the most adrenaline-y time (high flow can compress the run to ~30-45min vs 3-4h in August). Wetsuits compulsory. A TripAdvisor regular flags 'Durmitor Adventure' for a half-day starting near the bridge/zipline so you can pair activities; other reputable names: Rafting Montenegro, Tara Tour, Montenegro Adventure. Book a specific company, not a random booth.",
+    "communityNotes": "Most operators run the Brštanovica section, 'technically the most demanding... 21 of 50 cascades and the nicest waterfall.' LATE-JUNE WATER: high, fast, COLD (~10-12°C), 'most adrenaline-y time' — wetsuits compulsory. ⚠️ BOOK URGENTLY for Jun 23: email office@raftingtara.com (Rafting Centar Drina-Tara, ~€60pp) or info@tarasportrafting.com (TaraSport, ~€50pp). State: 4 adults, Jun 23, 10:00–10:30 start, arriving from Sarajevo via Foča. Within the 2-week window = filling up now.",
     "sources": [
-      "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k14843114-Half_day_rafting_Tara_Canyon-Montenegro.html",
-      "https://www.zabljak.com/rafting-in-tara-zabljak-durmitor",
-      "https://www.raftingmontenegro.com/about-tara-river-rafting"
+      "https://raftingtara.com",
+      "https://tarasportrafting.com",
+      "https://bluerivertara.me",
+      "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k14843114-Half_day_rafting_Tara_Canyon-Montenegro.html"
     ],
-    "cost": "half-day ~€70 pp; full-day ~€150 pp incl. lunch",
+    "cost": "~€60 pp (Rafting Centar Drina-Tara, Day 8 = Jun 23); 4 × €60 = €240",
     "timeNeeded": "half day (most common) or full day",
     "bestTime": "late June = high/fast water, coldest, most thrilling; wetsuit required",
     "tags": [
