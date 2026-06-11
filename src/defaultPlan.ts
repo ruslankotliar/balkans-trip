@@ -75,8 +75,8 @@ export const DEFAULT_PLAN: Overrides = {
 
   // ── Day 8: Jun 23 (Tue) — Sarajevo → Tara rafting → Žabljak ─────────────
   'ba-tjentiste-monument':   { day: 8, dayOrder: 1 },
-  'me-scepan-polje-piva-canyon': { day: 8, dayOrder: 2 },
-  'me-tara-rafting-brstanovica': { day: 8, dayOrder: 3 },
+  'me-tara-rafting-brstanovica': { day: 8, dayOrder: 2 },
+  'me-scepan-polje-piva-canyon': { day: 8, dayOrder: 3 },
   'me-mratinje-dam':         { day: 8, dayOrder: 4 },
   'me-pluzine':              { day: 8, dayOrder: 5 },
   'me-piva-lake-swim':       { day: 8, dayOrder: 6 },

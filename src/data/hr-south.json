@@ -292,6 +292,8 @@
       "https://total-croatia-news.com/news/travel/split-to-dubrovnik/",
       "https://www.europamaut.com/en/blog/renovation-of-the-peljesac-bridge-to-dubrovnik"
     ],
+    "cost": "Free (drive-over — no toll, no dedicated stop)",
+    "timeNeeded": "0 min (on-route bridge crossing)",
     "tags": [
       "logistics",
       "route",
@@ -455,6 +457,7 @@
       "https://www.tommyeats.com/tommyeats/2017/06/eating-in-croatia-oysters-at-kapetanova-kuca-in-mali-ston.html"
     ],
     "bestTime": "Day 3 (Jun 18) lunch stop en route Split→Dubrovnik. Bota Šare opens 12:00 — call ahead: +385 20 754-482. Off-peak = quicker service.",
+    "timeNeeded": "30-45 min",
     "cost": "~€2–2.5 per oyster",
     "tags": [
       "peljesac",
