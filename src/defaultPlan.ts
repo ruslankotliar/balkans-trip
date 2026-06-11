@@ -16,7 +16,9 @@ export const DEFAULT_PLAN: Overrides = {
   'hr-zadar-airport':        { day: 1, dayOrder: 1 },
   'hr-zadar-old-town':       { day: 1, dayOrder: 2 },
   'hr-cape-planka-stargazing': { day: 1, dayOrder: 3 },
-  'hr-camp-np-paklenica':    { day: 1, dayOrder: 4 },
+  'hr-velika-paklenica-gorge': { day: 1, dayOrder: 4 },
+  'hr-anica-kuk':            { day: 1, dayOrder: 5 },
+  'hr-camp-np-paklenica':    { day: 1, dayOrder: 6 },
 
   // ── Day 2: Jun 17 (Wed) — Omiš canyoning ─────────────────────────────────
   'hr-split':                { day: 2, dayOrder: 1 },
@@ -29,8 +31,9 @@ export const DEFAULT_PLAN: Overrides = {
   'hr-sveti-jure':           { day: 3, dayOrder: 2 },
   'hr-biokovo-tollroad':     { day: 3, dayOrder: 3 },
   'hr-peljesac-bridge':      { day: 3, dayOrder: 4 },
-  'hr-mali-ston-oysters':    { day: 3, dayOrder: 5 },
-  'hr-camping-kate-mlini':   { day: 3, dayOrder: 6 },
+  'hr-konoba-feral-brijesta': { day: 3, dayOrder: 5 },
+  'hr-mali-ston-oysters':    { day: 3, dayOrder: 6 },
+  'hr-camping-kate-mlini':   { day: 3, dayOrder: 7 },
 
   // ── Day 4: Jun 19 (Fri) — Dubrovnik ─────────────────────────────────────
   'hr-dubrovnik':            { day: 4, dayOrder: 1 },
@@ -51,12 +54,13 @@ export const DEFAULT_PLAN: Overrides = {
 
   // ── Day 7: Jun 22 (Mon) — Mostar → Sarajevo ─────────────────────────────
   'ba-jablanica-kayak-neretva': { day: 7, dayOrder: 1 },
-  'ba-sarajevo':             { day: 7, dayOrder: 2 },
-  'ba-tunnel-of-hope':       { day: 7, dayOrder: 3 },
-  'ba-bobsled-track':        { day: 7, dayOrder: 4 },
-  'ba-zuta-tabija':          { day: 7, dayOrder: 5 },
-  'ba-sarajevo-petica-ferhatovic': { day: 7, dayOrder: 6 },
-  'ba-air-1542024184506963047': { day: 7, dayOrder: 7 },
+  'ba-neretva-rafting-konjic': { day: 7, dayOrder: 2 },
+  'ba-sarajevo':             { day: 7, dayOrder: 3 },
+  'ba-tunnel-of-hope':       { day: 7, dayOrder: 4 },
+  'ba-bobsled-track':        { day: 7, dayOrder: 5 },
+  'ba-zuta-tabija':          { day: 7, dayOrder: 6 },
+  'ba-sarajevo-petica-ferhatovic': { day: 7, dayOrder: 7 },
+  'ba-air-1542024184506963047': { day: 7, dayOrder: 8 },
 
   // ── Day 8: Jun 23 (Tue) — Sarajevo → Tara rafting → Žabljak ─────────────
   'ba-tjentiste-monument':   { day: 8, dayOrder: 1 },
