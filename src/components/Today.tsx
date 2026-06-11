@@ -199,6 +199,12 @@ export default function Today({
         </div>
       )}
 
+      {preTrip && daysLeft > 0 && daysLeft <= 7 && (
+        <button className="today-predep-banner" onClick={onEssentials}>
+          ⚡ {daysLeft}d to go — pre-departure actions needed → tap to open Essentials
+        </button>
+      )}
+
       {DAY_HINTS[day] && (
         <div className="today-hint">
           <span className="today-hint-icon">{DAY_HINTS[day].icon}</span>

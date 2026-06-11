@@ -1278,6 +1278,22 @@ body.trip-mode .detail-nav-btn {
   font-weight: 400;
   color: #999;
 }
+.today-predep-banner {
+  width: 100%;
+  background: #fff3cd;
+  border: 1px solid #e67e22;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a4000;
+  text-align: left;
+  cursor: pointer;
+  line-height: 1.4;
+}
+.today-predep-banner:hover {
+  background: #ffe9a0;
+}
 .today-hint {
   background: #fff9e6;
   border: 1px solid #f0d060;
