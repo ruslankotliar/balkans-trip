@@ -16,7 +16,9 @@
       "user-saved",
       "makarska-riviera"
     ],
-    "status": "shortlist"
+    "status": "shortlist",
+    "communityNotes": "\"One of the most beautiful beaches in Croatia — pine trees down to the water, the colour is incredible.\" (TripAdvisor, multiple). Voted one of Europe's best beaches by Lonely Planet. Best early morning (pre-09:00) before the parasol crowd lands. Parking: the €11/day lot is a 10-min walk; the €25 lot is 2 min — the walk is worth it. Mid-June is manageable before the Croatian school holiday rush. June swim temp ~20–22°C. Sunbeds optional (€7), but the free shingle at the water's edge is fine.",
+    "rating": 5
   },
   {
     "id": "hr-sveti-jure",
@@ -25,13 +27,21 @@
     "category": "viewpoint",
     "lat": 43.3423,
     "lng": 17.0539,
-    "description": "Highest peak of Biokovo, second-highest in Croatia — drivable via the Biokovo NP toll road, or hikeable. Panorama over the Makarska Riviera and islands; the Skywalk is on the same road. User-saved from Google Maps.",
+    "description": "Biokovo's highest peak (1,762m) — second-highest in Croatia. Drivable via the Biokovo NP toll road (car slot booking mandatory, fills up in June). At the summit: 360° panorama over the Makarska Riviera, all major Dalmatian islands (Brač, Hvar, Vis, Korčula), and the Apennines on clear days. Skywalk glass platform is on the same road (separate entry ~€15pp).",
     "tags": [
       "user-saved",
       "makarska-riviera",
       "biokovo"
     ],
-    "status": "shortlist"
+    "status": "shortlist",
+    "communityNotes": "\"On a clear day you can see Italy — the view is unlike anything else.\" Road booking: biokovo.hrvi.hr (max 300 cars/day, go early). NP entry ~€10pp + road access. Bring a jacket: wind and cold at 1,762m even in June. The drive itself through the clouds is an experience. The summit road ends at the telecom tower — 5-min walk to the cairn. Combine with the Skywalk stop on the way up. Best: leave Makarska 08:00, summit by 10:00 before afternoon haze.",
+    "sources": [
+      "https://biokovo.com/en/sightseeing",
+      "https://www.alltrails.com/explore/trail/croatia/split-dalmatia/sveti-jure"
+    ],
+    "cost": "~€10pp NP entry + road toll; car slot booking mandatory at biokovo.hrvi.hr",
+    "bestTime": "Early morning (pre-10:00) for clear views; pre-book car slot days ahead",
+    "rating": 5
   },
   {
     "id": "hr-scirovac",
@@ -89,13 +99,19 @@
     "category": "viewpoint",
     "lat": 42.7728,
     "lng": 17.3832,
-    "description": "Highest viewpoint in Mljet National Park, overlooking the salt lakes and open sea. Implies a Mljet island day — car ferry from Prapratno (Pelješac) to Sobra fits the Dubrovnik end of the route. User-saved from Google Maps.",
+    "description": "The highest point in Mljet National Park — a forested summit trail giving panoramic views over the salt lakes (Malo and Veliko jezero), the sea, and the island interior. The trail starts near the Soline inlet and takes ~1.5–2h round-trip. Worth doing during the Mljet day to earn the lake views from above.",
     "tags": [
       "user-saved",
       "island",
       "mljet"
     ],
-    "status": "shortlist"
+    "status": "shortlist",
+    "communityNotes": "\"Views from Montokuc over the lakes are stunning — completely different perspective than being at water level.\" Trail is well-marked from the NP reception area at Pristanište. Some exposure near the top but nothing technical. Carry water — shade is patchy. NP entry included in the day ticket (~€40pp). Best combined with a morning lake swim and afternoon return to mainland. \"The combination of lake swim + hilltop view makes Mljet a proper full day.\"",
+    "sources": [
+      "https://www.np-mljet.hr/en/activities/hiking/"
+    ],
+    "timeNeeded": "1.5–2h round-trip from NP park area",
+    "rating": 4
   },
   {
     "id": "hr-veliki-prstavac",
