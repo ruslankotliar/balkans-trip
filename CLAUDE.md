@@ -36,6 +36,15 @@ The user drew a route sketch (described in `research/route-sketch-notes.md`); dr
 - Be ambitious but balanced: the plan must not be a stress machine. Every day should survive dropping an item ("we're tired" → exclude a stop → the app rebuilds the road). Prefer plans with built-in slack and obvious skip candidates over wall-to-wall schedules.
 - Accommodation is value-for-money driven: price + conditions (showers!) + view/location. Campsites and Airbnbs/apartments compete on equal footing per night.
 
+## Accommodation: THREE TIERS (the user's model — pick the right tier per night, not one-size-fits-all)
+
+Every overnight zone should offer options across these three tiers so the group can choose by mood/budget that night:
+1. **Camping (cheapest).** The default-cheap option, especially in Bosnia & Montenegro where wild/informal camping is lax and cheap (non-EU, few strict rules). Want both real campsites (park4night/iOverlander, with price+facilities+view) AND tolerated wild-camp spots with a view.
+2. **Cheap apartment / sober stay (~€40-60 for 4).** A no-frills bed for nights we just want a shower, a real bed, and to move on. Practical, well-located, well-rated — doesn't need to be special.
+3. **Special villa / house (the WOW tier, up to ~€100-130 for 4 when worth it).** A standout place that is itself part of the experience: a house in the mountains, on the sea/lake, in a vineyard or village — pool, killer view, isolation, character. **NOT in a city center.** These justify paying more. Finding them needs HARD, creative work: read the listing description, the PHOTOS, and the REVIEWS to judge whether it's genuinely special — a generic town apartment is the opposite of this tier. Better 1-2 stunning per zone than 5 mediocre.
+
+City-center apartments are tier-2 at best; they are NOT the villa tier. Scenic/rural/waterfront is the villa-tier signal.
+
 Draft day-by-day skeleton: `research/route-skeleton.md` (a working draft — research findings may reshuffle it).
 
 ## App
