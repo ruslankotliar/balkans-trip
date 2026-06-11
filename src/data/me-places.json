@@ -500,7 +500,8 @@
       "walkable"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "shortlist",
+    "cost": "€2-4 per drink"
   },
   {
     "id": "me-jaz-beach-budva",
@@ -848,7 +849,8 @@
       "croatia"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "shortlist",
+    "cost": "Free (€1pp tourist tax payable cash)"
   },
   {
     "id": "me-prutas-hike",
@@ -1106,6 +1108,32 @@
       "velika-plaza",
       "deep-south",
       "new-2025"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-rijeka-crnojevica-swim",
+    "name": "Rijeka Crnojevića — Danilo's Bridge swim + kayak village",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.3333,
+    "lng": 19.0167,
+    "description": "Small historic village where the crystal-clear Rijeka Crnojevića river flows under a 19th-century stone arch bridge (Danilo's Bridge) into Skadar Lake. Rent kayaks to paddle out toward the lake, swimming en route; water is lake-warm (~24-26°C). The horseshoe bend viewpoint (15min walk uphill) is one of Montenegro's most iconic landscape photos.",
+    "communityNotes": "Kayak hire from the village. Calm current, clear warm water — a striking contrast to the cold canyon rivers earlier in the trip. 'The view from the bend above the village is absolutely spectacular — totally worth the short climb.' NationalParksOfEurope confirms kayak rental here. Also: Danilo's Bridge itself is a photogenic arch over turquoise water. Add-on to the Skadar Lake kayak/winery day — not a standalone detour. Budget 1.5h including viewpoint.",
+    "sources": [
+      "https://nationalparksofeurope.com/kayaking-rijeka-crnojevica-lake-skadar/"
+    ],
+    "cost": "Kayak hire ~€10-15/h; viewpoint free",
+    "timeNeeded": "1.5h",
+    "bestTime": "morning or golden hour",
+    "tags": [
+      "swimming",
+      "kayak",
+      "skadar",
+      "bridge",
+      "photo",
+      "warm-water"
     ],
     "rating": 4,
     "status": "candidate"

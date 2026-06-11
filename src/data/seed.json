@@ -9,7 +9,8 @@
     "description": "Trip starting point. Old town peninsula with the Sea Organ and Greeting to the Sun at sunset — Hitchcock called it the best sunset in the world.",
     "bestTime": "sunset",
     "status": "shortlist",
-    "communityNotes": "\"Sea Organ at sunset is genuinely one of the most peaceful things on the trip — the sounds are random and beautiful.\" Alfred Hitchcock allegedly called the Zadar sunset the most beautiful in the world. Sun Salutation (giant solar-powered light disk) activates at night right next to the Organ — stay for dusk. Old town is a 5-minute walk from the ferry port. Parking outside walls, walk in. Maraschino cherry liqueur is the local speciality. Not crowded at 10:00 on Day 1."
+    "communityNotes": "\"Sea Organ at sunset is genuinely one of the most peaceful things on the trip — the sounds are random and beautiful.\" Alfred Hitchcock allegedly called the Zadar sunset the most beautiful in the world. Sun Salutation (giant solar-powered light disk) activates at night right next to the Organ — stay for dusk. Old town is a 5-minute walk from the ferry port. Parking outside walls, walk in. Maraschino cherry liqueur is the local speciality. Not crowded at 10:00 on Day 1.",
+    "rating": 5
   },
   {
     "id": "hr-plitvice",
@@ -73,7 +74,8 @@
       "ferry-hub"
     ],
     "status": "shortlist",
-    "communityNotes": "\"Diocletian's Palace is a living city — apartments and restaurants built into 1,700-year-old Roman walls.\" Meštrović Gallery is worthwhile if time allows. The Riva seafront promenade is good for an hour in the evening but thick with tourists. Best kept short (1-2h transit stop). Parking: best at the port garage, expensive. Krka NP: skip — €40pp boardwalk, no swimming since 2021, bad ratio."
+    "communityNotes": "\"Diocletian's Palace is a living city — apartments and restaurants built into 1,700-year-old Roman walls.\" Meštrović Gallery is worthwhile if time allows. The Riva seafront promenade is good for an hour in the evening but thick with tourists. Best kept short (1-2h transit stop). Parking: best at the port garage, expensive. Krka NP: skip — €40pp boardwalk, no swimming since 2021, bad ratio.",
+    "rating": 5
   },
   {
     "id": "hr-omis",
@@ -128,7 +130,8 @@
     "description": "Trip end point — car drop-off and bus/flight back to Vienna on Jun 28. Walls walk, Srđ cable car/viewpoint, Buža cliff bar.",
     "bestTime": "Pre-08:00 or after 19:00; avoid 10:00–17:00 in peak season",
     "status": "shortlist",
-    "communityNotes": "\"The walls are best before 08:00 — by 09:30 they're shoulder-to-shoulder with cruise tourists.\" Wall entry ~€35pp. Old town itself free to walk. Lokrum boat from the old harbor (10min, €15-20rt) is a great half-day — peacocks, saltwater lake, Game of Thrones ruins. Elaphiti islands: day-trip boat from Gruž harbor. Game of Thrones filming locations scattered throughout. Evening old town after 20:00 is the best vibe — most day-trippers gone."
+    "communityNotes": "\"The walls are best before 08:00 — by 09:30 they're shoulder-to-shoulder with cruise tourists.\" Wall entry ~€35pp. Old town itself free to walk. Lokrum boat from the old harbor (10min, €15-20rt) is a great half-day — peacocks, saltwater lake, Game of Thrones ruins. Elaphiti islands: day-trip boat from Gruž harbor. Game of Thrones filming locations scattered throughout. Evening old town after 20:00 is the best vibe — most day-trippers gone.",
+    "rating": 5
   },
   {
     "id": "ba-mostar",
@@ -140,7 +143,8 @@
     "description": "Ottoman old town around the rebuilt 16th-century bridge; locals dive 24m into the Neretva. Main Bosnia base candidate.",
     "bestTime": "Arrive late afternoon; evening and morning are the magic hours",
     "status": "shortlist",
-    "communityNotes": "\"The old town bazaar near the bridge is incredibly atmospheric — feel the same street as 500 years ago, minus the tourists.\" Divers jump from Stari Most daily at ~14:00 (can be €20-30 for a dive by young locals showing off). Kujundžiluk bazaar street is very commercialized but worth walking once. Evening walk after 20:00: bridge lit, few tourists left, genuinely beautiful. 'Black Dog' bar is the local/traveler hangout. Blagaj Tekija (whirling dervish tekke at a spring, 15min south) is a must-add — often skipped and absolutely worth it."
+    "communityNotes": "\"The old town bazaar near the bridge is incredibly atmospheric — feel the same street as 500 years ago, minus the tourists.\" Divers jump from Stari Most daily at ~14:00 (can be €20-30 for a dive by young locals showing off). Kujundžiluk bazaar street is very commercialized but worth walking once. Evening walk after 20:00: bridge lit, few tourists left, genuinely beautiful. 'Black Dog' bar is the local/traveler hangout. Blagaj Tekija (whirling dervish tekke at a spring, 15min south) is a must-add — often skipped and absolutely worth it.",
+    "rating": 5
   },
   {
     "id": "ba-blagaj",
@@ -177,7 +181,8 @@
       "https://kravica.ba/en/for-visitors/"
     ],
     "status": "shortlist",
-    "communityNotes": "Arrive 07:00–09:00 before tour buses arrive (~10:30 is the cutoff). Entry €10/adult (cash preferred). \"Swimming below the falls is incredible — feels like a tropical paradise.\" Slippery rocks — water shoes strongly recommended. Summer afternoons: loud music, crowded platforms, very different vibe. | Early entry = empty falls + better photos."
+    "communityNotes": "Arrive 07:00–09:00 before tour buses arrive (~10:30 is the cutoff). Entry €10/adult (cash preferred). \"Swimming below the falls is incredible — feels like a tropical paradise.\" Slippery rocks — water shoes strongly recommended. Summer afternoons: loud music, crowded platforms, very different vibe. | Early entry = empty falls + better photos.",
+    "rating": 5
   },
   {
     "id": "ba-pocitelj",

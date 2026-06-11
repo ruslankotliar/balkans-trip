@@ -318,11 +318,13 @@
 
 **URGENCY: MODERATE.** Budva in late June on a Friday is genuinely busy. The coast fills up from domestic (Serbian, Bosnian) tourists on weekends.
 
-**Option A (TOP PICK): Autocamp Avala — Bečići**
-- **What it is:** Camp in Bečići, 2 km from Budva, 300 m from the beach. 135 pitches. Better facilities and reviews than Jaz. Estimate €30–35 for 4 in June.
-- **Contact:** Find on Booking.com search "Autocamp Avala Budva" — or call ahead (no confirmed online booking link found). Phone via campercontact.com listing.
-- **Pitchup:** [Pitchup Budva campsites](https://www.pitchup.com/campsites/montenegro/coastal/budva/)
-- **Note:** Avoid Camp Jaz Hostel — poor reviews (1.5/5, "terrible sanitation, noise, no hot water despite claims"). Avala is the better campsite option.
+**Option A (TOP PICK for camping): Camp Kunjic — Jaz Beach (3km from Budva)**
+- **What it is:** Small family campsite 20m from Jaz Beach, 3km from Budva old town. Grass pitches, hot showers, electricity, WiFi, direct beach access.
+- **Rating:** 4.16/5 on park4night (95 reviews) — "Super nette Betreiberin, gepflegte Sanitäranlagen, direkt am Strand" / "Great spot, clean and perfect location."
+- **Price:** ~€25–35 for 4 + tent + car (estimated; no toilet paper/soap provided — bring your own)
+- **Contact:** park4night listing #151004 — call ahead to confirm June 26 availability
+- **Note (re Jaz):** Camp Jaz *Hostel* has terrible reviews (1.5/5, avoid) but this is a **separate family campsite**. Also note: Jaz Beach occasionally hosts concerts — check the calendar (could be loud or excellent depending on timing).
+- **Autocamp Avala (Bečići) is a fallback** if Kunjic is full — but Avala has mixed TripAdvisor reviews (1.8/5, outdated sanitary block complaints). Prefer Kunjic.
 
 **Option B: Apartment in Budva / near Jaz Beach**
 - **Airbnb Budva:** [Search Budva Airbnb](https://www.airbnb.com/s/Budva--Montenegro) — expect €60–100 for a decent apartment for 4 in June
@@ -338,9 +340,9 @@
 
 ### Night 12 — Jun 27 (Sat): Near Dubrovnik / Trebinje
 
-**Context:** Kotor morning (GREAT day for it — only 1 cruise ship, 170 pax, the quietest of the entire fortnight) → Perast → cross Debeli Brijeg border into Croatia → arrive near Dubrovnik. Last night before car drop.
+**Context:** Kotor morning (GREAT day for it — only 1 cruise ship, 170 pax, the quietest of the entire fortnight) → Perast → cross into Croatia → arrive near Dubrovnik. Last night before car drop.
 
-**BORDER TIMING IS CRITICAL:** Cross Debeli Brijeg border **before 08:00 or after 21:00.** New EES biometric checks since Apr 2026 → peak queues 2–5 hours during 10:00–14:00. Since you're doing Kotor in the morning, plan accordingly: either cross at dawn and then do Kotor, or do Kotor and cross late evening. Given Jun 28 is a full free day (car drop at 20:00), crossing in the evening makes sense.
+**BORDER: Use VITALJINA (not Debeli Brijeg).** Vitaljina = 15–45 min wait vs Debeli Brijeg = 1–4h with EES queues. Vitaljina crossing is 15 km south of Kotor (Herceg Novi direction). New EES biometric checks since Apr 2026 make Debeli Brijeg very slow in peak season; avoid unless Vitaljina is closed for some reason. Add 15 min to drive time vs Debeli Brijeg but saves 1–3h waiting.
 
 **URGENCY: MODERATE.** Saturday near Dubrovnik = peak prices. Trebinje is the smart play again — cheap, 30–40 min from DBV airport.
 
@@ -619,17 +621,24 @@ This section adds specific verified URLs, phone numbers, and booking methods fou
 
 ### Night 11 — Jun 26 — Budva
 
-**Option A: Autocamp Avala, Bečići — contact direct (no online booking found)**
+**Option A (TOP PICK for camping): Camp Kunjic, Jaz Beach — contact direct**
+- park4night listing: https://park4night.com/en/place/151004
+- Rating: 4.16/5, 95 reviews — family-run, hot showers, direct beach 20m
+- Action: Contact via park4night messaging or call the number on the listing for Jun 26
+- Price: ~€25–35/night for 4 + tent + car (no toilet paper/soap — bring your own)
+- Location: Jaz Beach, 3km from Budva old town (taxi or short drive to old town at night)
+
+**Option B: Autocamp Avala, Bečići (fallback if Kunjic full)**
 - Phone: +382 67 518 114
 - Address: Omladinskih brigada 1, Bečići, Budva
-- No Booking.com or Pitchup listing confirmed. Call ahead to reserve.
-- PiNCAMP listing (info only): https://www.pincamp.com/campings/autocamp-avala
-- Note: Mixed TripAdvisor reviews (1.8/5) — outdated sanitary block per reviewers. Budget option only.
-- TripAdvisor reviews: https://www.tripadvisor.com/Hotel_Review-g304074-d10405152-Reviews-Auto_Camp_Avala-Budva_Budva_Municipality.html
+- Note: TripAdvisor reviews 1.8/5 (outdated sanitary block). Use only as a fallback.
+- PiNCAMP listing: https://www.pincamp.com/campings/autocamp-avala
 
-**Alternative: Budva Airbnb apartment for Jun 26**
+**Option C: Budva Airbnb apartment for Jun 26**
 - All Budva stays: https://www.airbnb.com/s/Budva--Montenegro
 - Filter: 4 guests, Jun 26–27, entire place — expect €60–100 for decent apartment.
+- Specific option (shortlisted): Apartment "Got it" https://www.airbnb.com/rooms/1220858053013401317 — ~€98, central, Guest favorite
+- Or: Masha 1 (27 Obilaznica, 1.6km walk to old town, parking): https://www.airbnb.com/rooms/26737670 — ~€64
 
 ---
 

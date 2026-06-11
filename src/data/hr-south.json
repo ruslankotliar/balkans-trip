@@ -344,7 +344,9 @@
       "cave"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "shortlist",
+    "cost": "Free (included in Mljet NP ticket)",
+    "timeNeeded": "30-45 min"
   },
   {
     "id": "hr-camp-marina-mljet",
@@ -687,7 +689,8 @@
       "lighthouse"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "shortlist",
+    "cost": "Free"
   },
   {
     "id": "hr-virgin-beach-djevicanska",

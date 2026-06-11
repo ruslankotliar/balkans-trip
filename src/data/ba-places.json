@@ -563,5 +563,30 @@
     ],
     "rating": 4,
     "status": "candidate"
+  },
+  {
+    "id": "ba-celebici-neretva-swim",
+    "name": "Čelebići river swim — Idbar meets Neretva (M-17 roadside stop)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.67,
+    "lng": 18.0333,
+    "description": "Where the clear Idbar tributary meets the emerald Neretva, ~25km north of Mostar on the M-17 Jablanica road. A natural swim pool with a small waterfall next to a roadside restaurant — zero detour, already on the Day 7 Mostar→Konjic road.",
+    "communityNotes": "Cold river water (12-15°C — Neretva is glacier-fed all summer) but an emerald color that rewards the dip. The Čelebići restaurant next to the confluence has parking, toilets, and cold drinks. Pull off, swim, continue — perfect 30min reset between Mostar and Konjic. More of a 'roadside paradise' than a destination. The M-17 itself has several pull-off gravel banks along Jablaničko Lake further north — locals swim from these on hot days.",
+    "sources": [
+      "research/swimming-holes.md"
+    ],
+    "cost": "Free",
+    "timeNeeded": "30 min",
+    "bestTime": "midday (afternoon gets shade from canyon walls)",
+    "tags": [
+      "swimming",
+      "neretva",
+      "roadside-stop",
+      "free",
+      "on-route"
+    ],
+    "rating": 3,
+    "status": "candidate"
   }
 ]

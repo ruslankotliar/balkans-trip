@@ -19,7 +19,9 @@
     ],
     "status": "shortlist",
     "communityNotes": "Tara rafting departs Šćepan Polje (book ahead, ~€60pp, 3-4h on water). The 56 tunnels are genuinely dark — some 2-3km long, no lighting, sections barely one car wide. Lights on, drive slowly, horn on entry. \"Absolutely stunning\" is the consensus; the contrast between the black tunnels and sudden canyon vistas is unforgettable. Speed cameras on the M18 approach in RS — obey 60km/h limits exactly.",
-    "bestTime": "Morning crossing to make Piva Lake + Žabljak by afternoon"
+    "bestTime": "Morning crossing to make Piva Lake + Žabljak by afternoon",
+    "rating": 5,
+    "cost": "Free (drive)"
   },
   {
     "id": "me-pluzine",
@@ -35,7 +37,8 @@
     ],
     "status": "shortlist",
     "communityNotes": "\"The colour of the water is unreal — that electric turquoise.\" The dam wall is impressive to see from below. Free parking and access to the lake shore. No entry fee. Worth a 20–30min stop and a swim if the group has the energy after rafting. Town itself has a small supermarket and a kafana.",
-    "bestTime": "Afternoon (post-rafting, cool down)"
+    "bestTime": "Afternoon (post-rafting, cool down)",
+    "rating": 4
   },
   {
     "id": "me-zabljak",
@@ -51,7 +54,8 @@
     ],
     "status": "shortlist",
     "communityNotes": "\"Bring a sleeping bag liner even in summer — nights drop to 8–10°C at altitude.\" Supermarket stocked for cooking. The Black Lake circuit (3km, easy, 1h) is worth doing the evening you arrive if tired. Stars here are extraordinary — 1,400m+ altitude, no light pollution. Durmitor NP entry €5/person/day. A few good local restaurants on the main drag.",
-    "bestTime": "2 nights recommended: Day 8 arrive evening, Day 9 full hike day"
+    "bestTime": "2 nights recommended: Day 8 arrive evening, Day 9 full hike day",
+    "rating": 4
   },
   {
     "id": "me-durmitor-black-lake",
@@ -84,7 +88,10 @@
       "user-note"
     ],
     "status": "shortlist",
-    "communityNotes": "Peak summer sees thousands of pilgrims and tourists — go before 09:00 or after 16:00 to avoid the worst. Road up is narrow/winding; parking fills fast. \"Seeing it built into the rock face is genuinely breathtaking — one of those places that lives up to the hype.\" Some pilgrims sleep outdoors on the cliff overnight. Take the stairs to the Upper church — the Lower is fine but the Upper is the magic."
+    "communityNotes": "Peak summer sees thousands of pilgrims and tourists — go before 09:00 or after 16:00 to avoid the worst. Road up is narrow/winding; parking fills fast. \"Seeing it built into the rock face is genuinely breathtaking — one of those places that lives up to the hype.\" Some pilgrims sleep outdoors on the cliff overnight. Take the stairs to the Upper church — the Lower is fine but the Upper is the magic.",
+    "rating": 5,
+    "cost": "Free",
+    "timeNeeded": "1.5-2h"
   },
   {
     "id": "me-skadar-lake",
@@ -100,7 +107,10 @@
       "winery"
     ],
     "status": "shortlist",
-    "communityNotes": "Best experienced by kayak (Kingfisher Virpazar ~€15-22pp half-day) or wooden boat tour. Lotus flowers bloom June–July. \"The lake is extraordinarily beautiful, completely undiscovered compared to Croatian coast.\" Local wineries (Vinarija Mašanović, Jablan Winery) are a highlight — organic wine, lake views, almost no tourists. No wild camping inside the park boundaries."
+    "communityNotes": "Best experienced by kayak (Kingfisher Virpazar ~€15-22pp half-day) or wooden boat tour. Lotus flowers bloom June–July. \"The lake is extraordinarily beautiful, completely undiscovered compared to Croatian coast.\" Local wineries (Vinarija Mašanović, Jablan Winery) are a highlight — organic wine, lake views, almost no tourists. No wild camping inside the park boundaries.",
+    "rating": 5,
+    "cost": "€5pp NP entry (day visit); boat tours ~€15-22pp",
+    "timeNeeded": "full day"
   },
   {
     "id": "me-sveti-stefan",
@@ -137,7 +147,8 @@
     ],
     "status": "shortlist",
     "communityNotes": "\"Budva old town at night is very atmospheric despite the crowds — worth 1-2 hours wandering.\" June builds fast: Balkan school holidays haven't started yet so the first half of June is better. Mogren Beach (pebble, clear water, 4-5min walk from old town through short tunnel) is the one to go to. \"The beach clubs can get obnoxiously loud until 04:00 — if you want sleep, stay 1-2km back from the old town.\" Parking in old town: near-impossible, use the lot at the top of town.",
-    "bestTime": "Evening arrival and morning beach swim; avoid midday old town"
+    "bestTime": "Evening arrival and morning beach swim; avoid midday old town",
+    "rating": 4
   },
   {
     "id": "me-kotor",
@@ -154,7 +165,8 @@
       "hiking"
     ],
     "status": "shortlist",
-    "communityNotes": "\"Go at 07:30 — by 10:00 you're sharing steps with 3 cruise ships worth of tourists.\" Fortress entry €8/adult (free before 08:00). Old town itself is free to wander. Best photo: view from fortress looking down over the terracotta rooftops and perfect bay geometry. Cats everywhere — Kotor is famously a cat city. Avoid midday heat in the walls."
+    "communityNotes": "\"Go at 07:30 — by 10:00 you're sharing steps with 3 cruise ships worth of tourists.\" Fortress entry €8/adult (free before 08:00). Old town itself is free to wander. Best photo: view from fortress looking down over the terracotta rooftops and perfect bay geometry. Cats everywhere — Kotor is famously a cat city. Avoid midday heat in the walls.",
+    "rating": 5
   },
   {
     "id": "me-komovi",

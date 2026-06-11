@@ -16,7 +16,11 @@
     "cost": "4 adults + car ≈ €49.90 each way (adult €6.10, car €25.50, 2026 high season)",
     "timeNeeded": "~45 min crossing + 60–120 min queue buffer",
     "bestTime": "Take an early sailing on busy weekends to avoid full-ferry queues",
-    "tags": ["ferry", "logistics", "mljet"],
+    "tags": [
+      "ferry",
+      "logistics",
+      "mljet"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -33,7 +37,11 @@
       "https://www.dubrovnik-online.net/prapratno-mljet-ferry"
     ],
     "timeNeeded": "~45 min crossing",
-    "tags": ["ferry", "logistics", "mljet"],
+    "tags": [
+      "ferry",
+      "logistics",
+      "mljet"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -52,7 +60,11 @@
     ],
     "cost": "4 adults + car ≈ €36 each way (adult €4.50, car €18.00, 2026 low season)",
     "timeNeeded": "~60 min crossing",
-    "tags": ["ferry", "logistics", "peljesac"],
+    "tags": [
+      "ferry",
+      "logistics",
+      "peljesac"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -69,7 +81,11 @@
       "https://www.dubrovnik-online.net/ploce-trpanj-ferry"
     ],
     "timeNeeded": "~60 min crossing",
-    "tags": ["ferry", "logistics", "peljesac"],
+    "tags": [
+      "ferry",
+      "logistics",
+      "peljesac"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -87,7 +103,11 @@
     ],
     "cost": "4 adults + car ≈ €14–15 each way (adult €2.50, car €4.40, 2026 high season)",
     "timeNeeded": "~15–20 min crossing",
-    "tags": ["ferry", "logistics", "korcula"],
+    "tags": [
+      "ferry",
+      "logistics",
+      "korcula"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -106,8 +126,12 @@
       "https://easybalkantransfers.com/blog/border-crossings-balkans/"
     ],
     "bestTime": "Cross before 08:00 or after 21:00; or use Vitaljina/Kobila to skip the queue",
-    "tags": ["border", "logistics"],
+    "tags": [
+      "border",
+      "logistics"
+    ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "shortlist",
+    "cost": "Free"
   }
 ]
