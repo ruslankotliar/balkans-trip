@@ -539,5 +539,29 @@
     ],
     "rating": 4,
     "status": "candidate"
+  },
+  {
+    "id": "ba-cinemas-sloga-latin-night",
+    "name": "Cinemas Sloga — Monday Latin Night (Sarajevo)",
+    "country": "BA",
+    "category": "nightlife",
+    "lat": 43.857,
+    "lng": 18.399,
+    "description": "Sarajevo's best-known regular weekly event — free Latin dance night every Monday at a retro cinema venue near Baščaršija. Student and local crowd (~1,000 capacity), free entry, runs 19:00–05:00. The skeleton confirms this as the actual highlight of the Monday Sarajevo night, ahead of any club.",
+    "communityNotes": "Free every Monday — no cover charge. Salsa, bachata, merengue. 'Local crowd, excellent atmosphere, genuinely a Sarajevo institution.' Confirmed at salsavida.com and nightflow.com. Capacity ~1,000. Gets going properly around 22:00. Alternative same-night: **Kino Bosna** (live Bosnian folk/sevdalinka music on Mondays, bookable in advance). The Ferhadija/Baščaršija bar crawl (€1.50 rakija, €2.30 craft beer) is the pre-warmup.",
+    "sources": [
+      "https://salsavida.com",
+      "https://nightflow.com"
+    ],
+    "cost": "Free entry",
+    "bestTime": "Monday only, 19:00-05:00; peaks 22:00+",
+    "tags": [
+      "monday-only",
+      "free",
+      "latin",
+      "sarajevo"
+    ],
+    "rating": 4,
+    "status": "candidate"
   }
 ]

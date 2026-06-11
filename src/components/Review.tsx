@@ -178,6 +178,25 @@ export default function Review({ places, onStatus, onExit }: Props) {
                     <p className="review-facilities">🚿 {place.facilities}</p>
                   )}
 
+                  {place.tags && place.tags.length > 0 && (() => {
+                    const PRIORITY_TAGS: Record<string, string> = {
+                      'book-ahead': '📅 book ahead',
+                      'full-day': '🕐 full day',
+                      'off-route': '🔀 off-route',
+                      'hard-hike': '⛰ hard hike',
+                      'monday-only': '📅 monday only',
+                      'coord-approx': '📍 coords approx',
+                      'user-saved': '📌 user saved',
+                      'deep-south': '🔽 deep south',
+                    };
+                    const shown = place.tags!.filter(t => PRIORITY_TAGS[t]);
+                    return shown.length > 0 ? (
+                      <div className="review-tags">
+                        {shown.map(t => <span key={t} className="review-tag">{PRIORITY_TAGS[t]}</span>)}
+                      </div>
+                    ) : null;
+                  })()}
+
                   <p className="review-desc">{place.description}</p>
 
                   {place.communityNotes && (
