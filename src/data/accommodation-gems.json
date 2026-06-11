@@ -227,7 +227,7 @@
     "lat": 42.7055,
     "lng": 18.3553,
     "description": "Dedicated Airbnb gem hunt. Trebinje (Jun 18 / Jun 27): a ★4.96 Top-guest-favorite two-bedroom in the old-town quarter by the Trebišnjica river, sleeps 4. Walk to Trebinje's Ottoman bridge and evening square. Excellent value runner-up to Apartment NN.",
-    "communityNotes": "Airbnb ★4.96, Top guest favorite. 3 beds / 2 bedrooms, sleeps 4. Central, near the riverside old town.",
+    "communityNotes": "Airbnb ★4.96, Top guest favorite. 3 beds / 2 bedrooms, sleeps 4. Central, near the riverside old town. | Redundant: Trebinje €53 apartment. Gaga City Center (€35) and Ena1 river (€43) cover the Trebinje cheap tier. Three standard apartments in one small town is too many.",
     "sources": [
       "https://www.airbnb.com/rooms/35260105"
     ],
@@ -237,7 +237,7 @@
       "zone-trebinje"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-gem-trebinje-ena1-river",
@@ -287,7 +287,7 @@
     "lat": 43.33807,
     "lng": 17.81024,
     "description": "Dedicated Airbnb gem hunt. Mostar (Jun 21): a ★4.97 Top-guest-favorite apartment with a private terrace, steps from the Old Town and the Kriva Ćuprija pocket — perfect for the softly-lit 21:00 Old Bridge that is the overnighter's reward. Entire home/apt, sleeps 4.",
-    "communityNotes": "Airbnb ★4.97, Top guest favorite, personCapacity 4. Private terrace; right by the Old Town.",
+    "communityNotes": "Airbnb ★4.97, Top guest favorite, personCapacity 4. Private terrace; right by the Old Town. | City-center Mostar apartment with terrace, €103 — over €100 for a standard city apt. Nana's House (€40 whole house) is 1/3 the price and genuinely better.",
     "sources": [
       "https://www.airbnb.com/rooms/23391433"
     ],
@@ -297,7 +297,7 @@
       "zone-mostar"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-gem-mostar-zara-oldtown",
@@ -307,7 +307,7 @@
     "lat": 43.33189604716705,
     "lng": 17.81641302859405,
     "description": "Dedicated Airbnb gem hunt. Mostar (Jun 21) upgrade pick: a ★4.95 Top-guest-favorite two-bedroom right by the Old Town with a terrace and 3 ACs (useful in 30-35 °C Herzegovina heat), sleeps 4. Roomier than the budget options for a group that wants space.",
-    "communityNotes": "Airbnb ★4.95, Top guest favorite. 4 beds / 2 bedrooms, sleeps 4. Terrace + strong cooling; minutes from the Old Bridge.",
+    "communityNotes": "Airbnb ★4.95, Top guest favorite. 4 beds / 2 bedrooms, sleeps 4. Terrace + strong cooling; minutes from the Old Bridge. | City-center Mostar apartment at €138 — not a cool house or villa in nature and over €100. Nana's House (€40 whole house) and the Cold River treehouse cover Mostar.",
     "sources": [
       "https://www.airbnb.com/rooms/857246687380313532"
     ],
@@ -317,7 +317,7 @@
       "zone-mostar"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-gem-konjic-lakeview-studio",
@@ -347,7 +347,7 @@
     "lat": 43.6576,
     "lng": 17.9661,
     "description": "Dedicated Airbnb gem hunt. Konjic (Jun 22): a ★5.0 Top-guest-favorite whole apartment in central Konjic, sleeps 4 (verified). Walkable to the old Ottoman bridge and rafting-operator meeting points. The in-town perfect-rated pick if you'd rather sleep by the river than the lake.",
-    "communityNotes": "Airbnb ★5.0, Top guest favorite, personCapacity 4, ~24 reviews. Central, near the historic bridge and Neretva.",
+    "communityNotes": "Airbnb ★5.0, Top guest favorite, personCapacity 4, ~24 reviews. Central, near the historic bridge and Neretva. | Redundant: €66 central Konjic apartment. The lakeside studio (ba-gem-konjic-lakeview-studio, €46) is cheaper with a lake view. Middle-tier city apartment.",
     "sources": [
       "https://www.airbnb.com/rooms/1322564662787435506"
     ],
@@ -357,7 +357,7 @@
       "zone-konjic"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-gem-sarajevo-biber-deluxe",
@@ -387,7 +387,7 @@
     "lat": 43.84965,
     "lng": 18.40699,
     "description": "Dedicated Airbnb gem hunt. Sarajevo (Jun 22): a ★5.0 whole apartment, 5 beds / sleeps 5, central and walkable. Another perfect-rated, well-priced Sarajevo gem alongside Biber — the city is a thick market so you have good options, but these two top it on rating-for-price.",
-    "communityNotes": "Airbnb ★5.0, personCapacity 5, ~54 reviews. Central Sarajevo; great rating-to-price.",
+    "communityNotes": "Airbnb ★5.0, personCapacity 5, ~54 reviews. Central Sarajevo; great rating-to-price. | Redundant: €68 city Sarajevo apartment. Pearl Downtown covers the cheap tier at €48; mountain chalets cover the WOW tier. This middle zone adds no value.",
     "sources": [
       "https://www.airbnb.com/rooms/36942587"
     ],
@@ -397,7 +397,7 @@
       "zone-sarajevo"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-gem-sarajevo-kapa",
@@ -407,7 +407,7 @@
     "lat": 43.8627,
     "lng": 18.4322,
     "description": "Dedicated Airbnb gem hunt. Sarajevo (Jun 22) upgrade pick: a near-flawless ★4.99 Top-guest-favorite two-bedroom on the slopes just above the old town, sleeps 4-6. Pricier than Biber/Emir but the highest-rated Sarajevo gem — for a group that wants a designer flat with a view over the city.",
-    "communityNotes": "Airbnb ★4.99, Top guest favorite. 3 beds / 2 bedrooms, sleeps 4+. Elevated old-town-edge location.",
+    "communityNotes": "Airbnb ★4.99, Top guest favorite. 3 beds / 2 bedrooms, sleeps 4+. Elevated old-town-edge location. | City center Sarajevo apartment, €135 — nearly 3x the price of The Pearl Downtown (€48). Expensive city apartment, not a WOW rural/scenic property.",
     "sources": [
       "https://www.airbnb.com/rooms/894303815059584844"
     ],
@@ -417,7 +417,7 @@
       "zone-sarajevo"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-gem-zabljak-mountain-spark",
@@ -527,7 +527,7 @@
     "lat": 42.3673,
     "lng": 19.2135,
     "description": "Dedicated Airbnb gem hunt. Skadar Lake (Jun 25): a near-flawless ★4.99 whole house above the lake's NE shore near Rijeka Crnojevića/Ljajkovići, sleeps 4. Quiet hillside lake-view setting and great value — a top-rated alternative to the Virpazar cottages if you want the dramatic Pavlova Strana side.",
-    "communityNotes": "Airbnb ★4.99, 'Houses' category, personCapacity 4. Lake-view hillside near Rijeka Crnojevića; high rating at a low price.",
+    "communityNotes": "Airbnb ★4.99, 'Houses' category, personCapacity 4. Lake-view hillside near Rijeka Crnojevića; high rating at a low price. | Redundant: Cloud 9 Skadar €51. With orahovo-koliba (€48, stone cottage), jablan-winery (€96, WOW), and feel-the-village (€48, highly rated), the Skadar zone is well covered.",
     "sources": [
       "https://www.airbnb.com/rooms/1441439219255304099"
     ],
@@ -537,7 +537,7 @@
       "zone-skadar"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-gem-skadar-above-the-lake",
@@ -567,7 +567,7 @@
     "lat": 42.36767,
     "lng": 19.22568,
     "description": "Dedicated Airbnb gem hunt. Skadar Lake (Jun 25): a much-loved ★4.96 whole apartment near Dodoši on the NE shore (~262 reviews — very proven), 4 beds, sleeps 4-5. Excellent value and the most-reviewed lake gem of the set, near the Rijeka Crnojevića viewpoints and boat launches.",
-    "communityNotes": "Airbnb ★4.96, ~262 reviews, personCapacity 5. One of the most-reviewed (proven) lakeside listings; strong value.",
+    "communityNotes": "Airbnb ★4.96, ~262 reviews, personCapacity 5. One of the most-reviewed (proven) lakeside listings; strong value. | Redundant: Boljević Skadar €58. Same as above — Skadar zone is already covered with better options across all tiers.",
     "sources": [
       "https://www.airbnb.com/rooms/881879383427669389"
     ],
@@ -577,7 +577,7 @@
       "zone-skadar"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-gem-budva-got-it",
@@ -607,7 +607,7 @@
     "lat": 42.29155647520656,
     "lng": 18.851520304098194,
     "description": "Dedicated Airbnb gem hunt. Budva (Jun 26): a ★5.0 whole family-suite with free parking (rare and valuable in Budva), sleeps 4. Perfect rating and parking sorted for the car — a clean, central pick for the coast night.",
-    "communityNotes": "Airbnb ★5.0, Guest favorite, free parking, 3 beds / 1 bedroom, sleeps 4. Parking is a real plus in central Budva.",
+    "communityNotes": "Airbnb ★5.0, Guest favorite, free parking, 3 beds / 1 bedroom, sleeps 4. Parking is a real plus in central Budva. | City Budva apartment, €105 — over €100 for a standard guesthouse. Got it (€98) + Masha 1 (€64) + Camp Maslina cover the Budva zone.",
     "sources": [
       "https://www.airbnb.com/rooms/1421730894815437951"
     ],
@@ -617,7 +617,7 @@
       "zone-budva"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-gem-kotor-danilo-filip-risan",
@@ -626,8 +626,8 @@
     "category": "accommodation",
     "lat": 42.5127087729241,
     "lng": 18.699663848942354,
-    "description": "Dedicated Airbnb gem hunt. Kotor Bay (final-area night, Jun 27): a ★4.94 Guest-favorite whole apartment at Risan on the quiet inner bay (the Perast/Risan side), 4 beds, personCapacity 6 — roomy and the best value in a zone with a €70+ floor. A bay-front sleep with the Kotor fortress an easy early-morning drive away.",
-    "communityNotes": "Airbnb ★4.94, Guest favorite, personCapacity 6. Inner Bay of Kotor at Risan (near Perast); best value in the pricey Kotor zone.",
+    "description": "4-bedroom apartment at Risan — the quietest and most affordable village on the inner Bay of Kotor, 5 min to Perast, 15-20 min to Kotor old town and fortress. Sleeps 6 across 4 beds, the roomiest Kotor-zone option. Risan's beach is calm and uncrowded; the town is genuinely local, low-tourist, and cheap.",
+    "communityNotes": "Airbnb ★4.94, Guest Favourite, sleeps 6. Risan consistently described as \"quieter, cheaper alternative\" to Kotor/Perast — \"less crowded, easy access to Kotor and Perast\" with \"authentically Balkan pace.\" One honest caveat: Risan gets less direct sun due to its position in the bay — fine for a night, not a sun-all-day beach stop.",
     "sources": [
       "https://www.airbnb.com/rooms/1389121000073479356"
     ],
@@ -647,7 +647,7 @@
     "lat": 42.4847,
     "lng": 18.7303,
     "description": "Dedicated Airbnb gem hunt. Kotor Bay (Jun 27): a ★4.91 Top-guest-favorite two-bedroom at Dobrota, on the waterfront just north of Kotor old town, sleeps 4. Walkable/short drive to the fortress climb (do it before ~8am, free + cool + empty). A well-rated bayfront pick if you want to be right by Kotor rather than across the bay.",
-    "communityNotes": "Airbnb ★4.91, Top guest favorite, personCapacity 4. Dobrota waterfront, minutes from Kotor old town and the fortress trail.",
+    "communityNotes": "Airbnb ★4.91, Top guest favorite, personCapacity 4. Dobrota waterfront, minutes from Kotor old town and the fortress trail. | Over budget (€116) for Day 12 which is a transit day (Kotor → Trebinje). Risan option (ba-gem-kotor-danilo-filip-risan, €94) is cheaper and better positioned. Day 12 overnight is likely Trebinje anyway.",
     "sources": [
       "https://www.airbnb.com/rooms/670829777501296802"
     ],
@@ -657,6 +657,6 @@
       "zone-kotor"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   }
 ]

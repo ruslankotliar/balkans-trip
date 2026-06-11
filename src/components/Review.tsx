@@ -17,9 +17,11 @@ interface Props {
   places: PlaceWithOverride[];
   onStatus: (id: string, status: Status) => void;
   onExit: () => void;
+  /** Show a place on the main map and exit review. */
+  onShowOnMap: (p: PlaceWithOverride) => void;
 }
 
-export default function Review({ places, onStatus, onExit }: Props) {
+export default function Review({ places, onStatus, onExit, onShowOnMap }: Props) {
   const [countryFilter, setCountryFilter] = useState<CountryFilter>('all');
   const [statusQueue, setStatusQueue] = useState<StatusQueue>('candidates');
   const [categoryGroup, setCategoryGroup] = useState<CategoryGroup>('accommodation');
@@ -173,16 +175,32 @@ export default function Review({ places, onStatus, onExit }: Props) {
                   </span>
                 </div>
 
-                {place.sources && place.sources[0] && (
+                <div className="review-links">
+                  {place.sources && place.sources[0] && (
+                    <a
+                      className="review-listing-link"
+                      href={place.sources[0]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Open listing ↗
+                    </a>
+                  )}
                   <a
-                    className="review-listing-link"
-                    href={place.sources[0]}
+                    className="review-listing-link review-map-link"
+                    href={`https://www.openstreetmap.org/?mlat=${place.lat}&mlon=${place.lng}#map=12/${place.lat}/${place.lng}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Open listing ↗
+                    🗺 Map
                   </a>
-                )}
+                  <button
+                    className="review-listing-link review-show-map-btn"
+                    onClick={() => onShowOnMap(place)}
+                  >
+                    Pin on app map ↗
+                  </button>
+                </div>
 
                 {place.rating && (
                   <p className="review-rating">{'★'.repeat(place.rating)}{'☆'.repeat(5 - place.rating)}</p>

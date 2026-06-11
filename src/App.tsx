@@ -526,6 +526,7 @@ export default function App() {
       p.name.toLowerCase().includes(q) ||
       (p.note ?? '').toLowerCase().includes(q) ||
       (p.description ?? '').toLowerCase().includes(q) ||
+      (p.communityNotes ?? '').toLowerCase().includes(q) ||
       (p.tags ?? []).some((t) => t.toLowerCase().includes(q))
     );
   };
@@ -1447,7 +1448,9 @@ export default function App() {
         ) : (
         <>
         <p className="subtitle">
-          Jun 16–28 · Zadar → Dubrovnik · {visible.length}/{places.length} places
+          Jun 16–28 · Zadar → Dubrovnik ·{' '}
+          <strong>{statusCounts.shortlist}</strong> shortlisted ·{' '}
+          <strong>{statusCounts.candidate}</strong> to review
         </p>
 
         <div className="view-tabs">
@@ -1497,6 +1500,21 @@ export default function App() {
                 </button>
               ))}
             </div>
+
+            {/* One-tap hint when candidates are hidden (the largest pool). */}
+            {!statusFilter.has('candidate') && statusCounts.candidate > 0 && (
+              <div className="filter-group">
+                <button
+                  className="chip chip-hint"
+                  onClick={() => {
+                    setStatusFilter(toggle(statusFilter, 'candidate'));
+                    setVoteFilter('all');
+                  }}
+                >
+                  + show {statusCounts.candidate} candidates
+                </button>
+              </div>
+            )}
 
             {/* Progressive disclosure: the full filter wall lives behind a
                 single toggle so it doesn't overwhelm. */}
@@ -1592,12 +1610,34 @@ export default function App() {
             <button className="add-place-btn" onClick={openAddPlace}>
               ＋ Add place
             </button>
+            {visible.length === 0 && (
+              <div className="place-list-empty">
+                <p>No places match these filters.</p>
+                {search && (
+                  <button onClick={() => setSearch('')}>Clear search</button>
+                )}
+                {!statusFilter.has('candidate') && statusCounts.candidate > 0 && (
+                  <button
+                    className="hint-btn"
+                    onClick={() => { setStatusFilter(toggle(statusFilter, 'candidate')); setVoteFilter('all'); }}
+                  >
+                    Show {statusCounts.candidate} candidates
+                  </button>
+                )}
+                <button onClick={() => applyPreset(FILTER_PRESETS.find(p => p.id === 'reset')!)}>
+                  Reset filters
+                </button>
+              </div>
+            )}
+
             <ul className="place-list">
               {[...visible]
-                .sort(
-                  (a, b) =>
-                    (b.rating ?? 0) - (a.rating ?? 0) || a.name.localeCompare(b.name),
-                )
+                .sort((a, b) => {
+                  const statusOrder = { shortlist: 0, backup: 1, candidate: 2, rejected: 3 };
+                  const sd = statusOrder[a.status] - statusOrder[b.status];
+                  if (sd !== 0) return sd;
+                  return (b.rating ?? 0) - (a.rating ?? 0) || a.name.localeCompare(b.name);
+                })
                 .map((p) => {
                   const booking = bookingById.get(p.id);
                   const t = tallies.get(p.id);
@@ -2036,6 +2076,10 @@ export default function App() {
           places={places}
           onStatus={setStatus}
           onExit={() => setView('places')}
+          onShowOnMap={(p) => {
+            selectPlace(p);
+            setView('places');
+          }}
         />
       )}
     </div>

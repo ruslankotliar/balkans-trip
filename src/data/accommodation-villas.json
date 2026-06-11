@@ -47,7 +47,7 @@
     "lat": 42.32337,
     "lng": 19.15734,
     "description": "Riverside house at Žabljak Crnojevića on Lake Skadar that can be reached ONLY by boat — total isolation and quiet, 200 m from the lake, with free kayaks and a local fresh-fish restaurant just across the river. A standout 'arrive by water' experience for the adventurous. Sleeps 4 but only 2 real beds (1 bedroom) — FLAG: verify the sleeping setup for 4 adults. ★4.99 from 83 reviews.",
-    "communityNotes": "Listing (verified): 'The place is very quiet and calm, and it can be approached only by boat what makes it unique. For our guests, kayaks are free to use during their stay. Restaurant with local fresh fish is just on the other side of the river... located on the river side, just 200 meters from lake.' ★4.99/83. CAPACITY: sleeps 4 but 1BR / 2 beds — confirm bedding before booking for 4 adults.",
+    "communityNotes": "Listing (verified): 'The place is very quiet and calm, and it can be approached only by boat what makes it unique. For our guests, kayaks are free to use during their stay. Restaurant with local fresh fish is just on the other side of the river... located on the river side, just 200 meters from lake.' ★4.99/83. CAPACITY: sleeps 4 but 1BR / 2 beds — confirm bedding before booking for 4 adults. | Boat-only access adds logistics overhead on a tight day (Day 10). Group arrives from Ostrog and needs to coordinate kayak/boat taxi for accommodation check-in. Jablan Winery (€96, road-accessible) is the WOW pick.",
     "sources": [
       "https://www.airbnb.com/rooms/897103099520868198"
     ],
@@ -56,7 +56,7 @@
       "villa-tier"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-villa-cold-river-treehouse-bunica",
@@ -162,7 +162,7 @@
     "lat": 43.1917,
     "lng": 19.1829,
     "description": "A 'luxury touch' glamping unit at Ninkovići just outside Žabljak, set in open Durmitor highland with sweeping mountain and nature views — for the Durmitor night when you want something more atmospheric than a town apartment. Sleeps 4 but only 2 beds (2 bedrooms) — FLAG: confirm the sleeping setup for 4 adults. ★5.0 from 17 reviews.",
-    "communityNotes": "Listing (verified): 'Eternum Glamping is beautiful place for finding peace in heart of nature. If you want to relax and enjoy in awesome view on mountains and nature, here we are. Our objects are made with best standards and everything has luxury touch.' ★5.0/17. CAPACITY: listed for 4 but 2BR / 2 beds — verify bedding for 4 adults.",
+    "communityNotes": "Listing (verified): 'Eternum Glamping is beautiful place for finding peace in heart of nature. If you want to relax and enjoy in awesome view on mountains and nature, here we are. Our objects are made with best standards and everything has luxury touch.' ★5.0/17. CAPACITY: listed for 4 but 2BR / 2 beds — verify bedding for 4 adults. | Capacity issue: glamping unit has only 2 beds for 4 people — 2 people sleep on the floor. Over budget at €117. WOW tier is covered by Mountain Spark cabin (€82).",
     "sources": [
       "https://www.airbnb.com/rooms/1221454142431996809"
     ],
@@ -171,7 +171,7 @@
       "villa-tier"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-villa-magical-cottage-krivodol",

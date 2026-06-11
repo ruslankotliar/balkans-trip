@@ -110,6 +110,59 @@ body {
   white-space: nowrap;
 }
 
+/* Empty state when filters produce no results */
+.place-list-empty {
+  padding: 24px 16px;
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+  border-top: 1px solid #e5e5e5;
+}
+.place-list-empty p {
+  margin: 0 0 12px;
+}
+.place-list-empty button {
+  display: inline-block;
+  margin: 4px;
+  padding: 7px 14px;
+  font-size: 12px;
+  border-radius: 16px;
+  border: 1.5px solid #bbb;
+  background: #fff;
+  color: #444;
+  cursor: pointer;
+  font-weight: 500;
+}
+.place-list-empty button:hover {
+  background: #f0f0f0;
+}
+.place-list-empty .hint-btn {
+  border-color: #2980b9;
+  color: #2980b9;
+}
+
+/* Subtle chip that appears when candidates are hidden */
+.chip-hint {
+  border-color: #2980b9 !important;
+  color: #2980b9 !important;
+  opacity: 1 !important;
+  font-size: 11px !important;
+}
+
+/* Route builder group headers in the candidate list */
+.rb-group-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 4px 2px;
+  border-top: 1px solid #eee;
+}
+.rb-group-label:first-child {
+  border-top: none;
+}
+
 .badge {
   font-size: 10px;
   padding: 1px 6px;
@@ -544,14 +597,15 @@ body.trip-mode .detail-nav-btn {
   margin-left: auto;
 }
 .itin-actions button {
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #fff;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1;
+  touch-action: manipulation;
 }
 .itin-actions button:disabled {
   opacity: 0.3;
@@ -596,6 +650,21 @@ body.trip-mode .detail-nav-btn {
   border-radius: 6px;
   background: #fff;
   cursor: pointer;
+}
+.rb-shortcuts button.rb-select-all {
+  border-color: #e67e22;
+  color: #e67e22;
+  font-weight: 600;
+}
+.rb-shortcuts button.rb-select-all:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.rb-sel-count {
+  font-size: 11px;
+  color: #2980b9;
+  margin: 0;
+  text-align: center;
 }
 .rb-endpoints {
   display: flex;
@@ -1310,9 +1379,9 @@ body.trip-mode .detail-close {
   font-size: 16px;
 }
 @media (max-width: 760px) {
-  /* Trip mode: a shorter sheet keeps more of today's route on the map. */
+  /* Trip mode: a taller sheet so description + actions fit without scrolling. */
   body.trip-mode .detail-panel {
-    max-height: 45vh;
+    max-height: min(60vh, calc(100vh - 80px));
   }
 }
 
@@ -2356,6 +2425,12 @@ body.trip-mode .ess-tel {
   flex-shrink: 0;
 }
 
+.review-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
 .review-listing-link {
   display: inline-block;
   font-size: 13px;
@@ -2365,10 +2440,18 @@ body.trip-mode .ess-tel {
   background: #e8f0fe;
   padding: 4px 12px;
   border-radius: 20px;
-  margin-bottom: 4px;
+  border: none;
+  cursor: pointer;
 }
 .review-listing-link:hover {
   background: #c8dcfd;
+}
+.review-show-map-btn {
+  background: #e6f4ea;
+  color: #1e7e34;
+}
+.review-show-map-btn:hover {
+  background: #c6e8cc;
 }
 
 .review-rating {

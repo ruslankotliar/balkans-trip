@@ -63,6 +63,14 @@ export default function RouteBuilder({
   const chosen = candidates.filter((p) => selectedIds.has(p.id));
   const byId = new Map(candidates.map((p) => [p.id, p]));
   const anchors = anchorIds.map((id) => byId.get(id)).filter(Boolean) as PlaceWithOverride[];
+  const shortlistedCount = candidates.filter((p) => p.status === 'shortlist').length;
+
+  // Sort candidates: shortlisted first, then backup, then others — each group by rating desc.
+  const STATUS_ORDER: Record<string, number> = { shortlist: 0, backup: 1, candidate: 2, rejected: 3 };
+  const sortedCandidates = [...candidates].sort((a, b) => {
+    const sd = STATUS_ORDER[a.status] - STATUS_ORDER[b.status];
+    return sd !== 0 ? sd : (b.rating ?? 0) - (a.rating ?? 0) || a.name.localeCompare(b.name);
+  });
   const ordered = trip
     ? (trip.order.map((i) => tripPlaces[i]).filter(Boolean) as PlaceWithOverride[])
     : [];
@@ -91,16 +99,22 @@ export default function RouteBuilder({
   return (
     <div className="route-builder">
       <p className="rb-intro">
-        Tick stops, pick a start &amp; end, then solve the optimal driving order locally
-        (exact for ≤13 stops). 📌 a stop to pin it as an ordered anchor.
+        Tick stops below → set start &amp; end → <strong>Build route</strong>. Solves optimal
+        driving order (exact for ≤13). 📌 pins an ordered anchor.
       </p>
 
       <div className="rb-shortcuts">
-        <button onClick={onSelectAllShortlisted}>Select all shortlisted</button>
+        <button className="rb-select-all" onClick={onSelectAllShortlisted} disabled={shortlistedCount === 0}>
+          ⭐ Select all shortlisted ({shortlistedCount})
+        </button>
         <button onClick={onClearSelection} disabled={selectedIds.size === 0}>
           Clear ({selectedIds.size})
         </button>
       </div>
+
+      {selectedIds.size > 0 && (
+        <p className="rb-sel-count">{selectedIds.size} stop{selectedIds.size !== 1 ? 's' : ''} selected — need ≥2 to build</p>
+      )}
 
       {selectedIds.size >= 2 && (
         <div className="rb-endpoints">
@@ -270,30 +284,42 @@ export default function RouteBuilder({
       )}
 
       <div className="rb-list">
-        {candidates.map((p) => (
-          <label key={p.id} className={`rb-item ${selectedIds.has(p.id) ? 'on' : ''}`}>
-            <input
-              type="checkbox"
-              checked={selectedIds.has(p.id)}
-              onChange={() => onToggleSelect(p.id)}
-            />
-            <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
-            <span className="place-name">{p.name}</span>
-            {selectedIds.has(p.id) && (
-              <button
-                className={`rb-pin ${anchorIds.includes(p.id) ? 'on' : ''}`}
-                title={anchorIds.includes(p.id) ? 'Unpin anchor' : 'Pin as ordered anchor'}
-                onClick={(e) => {
-                  e.preventDefault();
-                  onToggleAnchor(p.id);
-                }}
-              >
-                📌
-              </button>
-            )}
-            <span className={`badge badge-${p.status}`}>{p.status}</span>
-          </label>
-        ))}
+        {sortedCandidates.map((p, i) => {
+          const prevStatus = i > 0 ? sortedCandidates[i - 1].status : null;
+          const showGroupHeader = p.status !== prevStatus;
+          const groupLabel =
+            p.status === 'shortlist' ? '⭐ Shortlisted' :
+            p.status === 'backup' ? '📋 Backup' :
+            p.status === 'candidate' ? '🔍 Candidates' : p.status;
+          return (
+            <div key={p.id}>
+              {showGroupHeader && (
+                <div className="rb-group-label">{groupLabel}</div>
+              )}
+              <label className={`rb-item ${selectedIds.has(p.id) ? 'on' : ''}`}>
+                <input
+                  type="checkbox"
+                  checked={selectedIds.has(p.id)}
+                  onChange={() => onToggleSelect(p.id)}
+                />
+                <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
+                <span className="place-name">{p.name}</span>
+                {selectedIds.has(p.id) && (
+                  <button
+                    className={`rb-pin ${anchorIds.includes(p.id) ? 'on' : ''}`}
+                    title={anchorIds.includes(p.id) ? 'Unpin anchor' : 'Pin as ordered anchor'}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onToggleAnchor(p.id);
+                    }}
+                  >
+                    📌
+                  </button>
+                )}
+              </label>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
