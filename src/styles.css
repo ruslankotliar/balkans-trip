@@ -1270,8 +1270,13 @@ body.trip-mode .detail-nav-btn {
 .today-progress {
   text-align: center;
   font-size: 12px;
-  color: #888;
+  color: #555;
+  font-weight: 600;
   padding: 2px 0 4px;
+}
+.today-progress-trip {
+  font-weight: 400;
+  color: #999;
 }
 .today-hint {
   background: #fff9e6;

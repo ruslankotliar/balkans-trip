@@ -151,6 +151,7 @@ export default function Today({
   const isToday = day === realDay;
   const preTrip = realDay === -1;
   const daysLeft = preTrip ? daysToTripStart() : 0;
+  const todayDone = stops.filter((p) => done[p.id]).length;
   const nextIdx = isToday ? stops.findIndex((p) => !done[p.id]) : -1;
   const next = nextIdx >= 0 ? stops[nextIdx] : null;
   const nextLegSec =
@@ -187,9 +188,14 @@ export default function Today({
         </button>
       </div>
 
-      {totalPlanned > 0 && (
+      {(stops.length > 0 || totalPlanned > 0) && (
         <div className="today-progress">
-          Day {day}/{TRIP_DAYS} · {totalDone}/{totalPlanned} stops done
+          {stops.length > 0 && (
+            <span>Today {todayDone}/{stops.length} done</span>
+          )}
+          {totalPlanned > 0 && (
+            <span className="today-progress-trip"> · trip {totalDone}/{totalPlanned}</span>
+          )}
         </div>
       )}
 
