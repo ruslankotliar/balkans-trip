@@ -445,3 +445,103 @@ under the deploy base path (`vite preview`).
   Actions), every push deploys to `https://ruslankotliar.github.io/balkans-trip/`.
 
 `src/data/` and the `Place` schema untouched. `npm run build` green.
+
+## Add-place + Share + Essentials (2026-06-11)
+
+Three MUST features from `feature-ideas.md` (Part A, B1, B5). `src/data/*.json`
+untouched (feature content the app generates lives in the NEW `src/essentials.ts`).
+`npm run build` green after each feature; verified in headless Chrome (CDP) at
+**desktop 1440×900 AND phone 390×844**, against the **production build served
+under the deploy base path** (`vite preview` at
+`http://localhost:4173/balkans-trip/`). The GitHub Pages base path + PWA keep
+working: prod `index.html` assets resolve under `/balkans-trip/`, manifest
+`scope` `/balkans-trip/`, and the SW precaches 9 entries (the bundled
+`essentials.ts` content rides in the JS bundle → precached → fully offline).
+
+### Feature A — Add a place (tap-map default + paste coords + paste GMaps URL)
+- **Data model:** added optional `userAdded?: boolean` + `source?: 'user'` to the
+  `Place` type (`src/types.ts`). New localStorage key `balkans-trip-user-places`
+  with `loadUserPlaces`/`saveUserPlaces` in `store.ts` (mirrors the existing
+  `safeSetItem` + try/catch pattern; `isUserPlace` narrows bad imports).
+- **Merge for free:** `App.tsx` holds `userPlaces` in state and
+  `basePlaces = [...loadPlaces(), ...userPlaces]` (user places AFTER baked, so the
+  existing "first id wins" de-dupe protects against collisions). They appear on
+  the map, in filters, the route builder, the day planner, the finders, and the
+  KML/GPX exports with **zero** downstream changes. Ids are `user-<timestamp>`;
+  new places default `status:'shortlist'`, `country` inferred by a cheap
+  bounding-box check (HR/BA/ME).
+- **Three inputs** (`src/components/AddPlace.tsx`), tap-map as the primary/default:
+  1. **Tap the map** — a `MapTapCapture` (`useMapEvents`) drops a draggable pin;
+     a "use my location" shortcut fills lat/lng from the GPS fix. Works offline.
+  2. **Paste `lat, lng`** — `parseLatLng` tolerates `,` / `, ` / ` ` separators,
+     validates ranges, warns (not blocks) outside the trip bounding box.
+  3. **Paste an expanded Google Maps URL** — `parseMapsUrl` regexes `!3d!4d`
+     (preferred) then `@lat,lng`, and lifts the name from `/place/<Name>/`. For
+     `goo.gl` / `maps.app.goo.gl` **short links** it detects them
+     (`isShortMapsLink`) and shows the friendly "open it first to expand, then
+     paste the long link" message — **no backend / proxy**.
+- **Form:** name (required), category chips (the Category union), optional
+  assign-to-day, optional note. Status/day/note flow through the **existing
+  overrides layer** (one code path); only the immutable identity lives in
+  `userPlaces`.
+- **Edit / delete:** the DetailPanel shows "✎ Edit / move / delete" only when
+  `place.userAdded`. Editing re-drops the pin (map tap moves it live), renames,
+  recategorises; Delete (confirm) removes from `userPlaces` AND cleans its
+  override + done keys.
+- **Entry points:** "＋ Add place" in the Today action row (trip mode) and above
+  the place list (planning mode).
+- **Survives a redeploy:** `userPlaces` is its own localStorage key — a redeploy
+  (which can change `src/data/*.json`) never touches it.
+- **Verified (CDP, desktop + phone):** tap-the-map is the default mode and
+  captured coords on a synthetic map click; coords-paste parsed `43.155, 19.106`
+  and saved; URL parse preferred `!3d!4d` (`43.14220, 19.09510`) and prefilled
+  "Black Lake"; short link `maps.app.goo.gl/...` showed the expand instruction;
+  the user place appeared in the planning list; Edit→rename persisted;
+  Delete→0 places; persists across a full reload.
+
+### Feature B1 — Share plan (replaces the removed Export JSON)
+- Added the **`lz-string`** dependency (ships its own types).
+- `encodePlan`/`decodePlan` in `store.ts` serialize `{overrides, userPlaces}`,
+  compress with `LZString.compressToEncodedURIComponent`, and put the payload in
+  the **URL hash** (`#plan=…`). 100% static — no server.
+- **"🔗 Share plan (copy link)"** button (`src/components/SharePlan.tsx`,
+  `ShareButton`) sits where Export JSON used to be (the planning sidebar action
+  row) — copies to clipboard and shows the link in a selectable textarea.
+- **On load**, an effect decodes a `#plan=` hash (robust try/catch — a malformed
+  payload shows a friendly alert, never crashes), then **always clears the hash**
+  (`history.replaceState`) so a refresh doesn't re-prompt. A modal (`ImportPrompt`)
+  offers **Merge / Replace / Cancel**: Merge applies incoming overrides/userPlaces
+  on top of mine (last-writer-per-place; the importer chooses for the whole
+  import); Replace swaps wholesale.
+- **Verified (CDP, desktop + phone):** the Share button produced a `#plan=…` link
+  (~313 chars for a 1-place plan); navigating to it showed the import modal;
+  **Replace** populated localStorage and cleared the hash; **Merge** kept the
+  local "Plan-B pin" and added the incoming "Plan-A pin" (both present);
+  `#plan=THIS_IS_NOT_VALID@@@` produced no modal and no crash (graceful alert).
+
+### Feature B5 — Offline Essentials
+- New **`src/essentials.ts`** (authored from `contingency.md` + `trip-ops.md`,
+  reading—not writing—`contingency-places.json` for the hospital pin ids): a
+  universal **112** card + per-country police/ambulance/fire/roadside/
+  mountain-rescue numbers (HR/BA/ME), fill-in prompts for the rental + insurer
+  lines, an "if X happens → do Y → call Z" list (breakdown / accident / police /
+  medical / lost in mountains / lost passport / towed), condensed border/car/
+  police/fuel/theft tips, a per-overnight-zone **nearest hospital + pharmacy**
+  table (each linked by `pinId` to a `contingency-places.json` pin), a packing
+  checklist, and a **survival-phrases** set for Croatian / Bosnian-Serbian /
+  Montenegrin (hello/thanks/please/yes-no/help/hospital/police/water/how-much/
+  where-is/numbers 1–10/"table for 4"/"fill up the tank", with pronunciation and
+  the HR vs BA/ME variants noted).
+- **`src/components/Essentials.tsx`:** a static accordion (Emergency open by
+  default), big touch targets, `tel:` links so a tap dials, and "map ↗" buttons
+  that fly the map to a hospital pin (`focusPin` in App). Because the content is
+  bundled JS, the PWA precaches it → works **fully offline**.
+- **Entry points:** "🆘 Essentials" in the Today action row (trip mode) and the
+  planning action row.
+- **Verified (CDP, desktop + phone):** the panel opened, rendered the big 112
+  link, 37 phrase rows, and "Upomoć"; on phone it computes to `bottom: 0` and
+  full width (390px) — a true bottom sheet. Zero console errors throughout.
+
+`src/data/` and the baked schema untouched (only the optional `userAdded`/
+`source` fields were ADDED to the `Place` type). `npm run build` green; PWA emits
+`sw.js` + `manifest.webmanifest` with 9 precache entries under `/balkans-trip/`.

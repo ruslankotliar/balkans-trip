@@ -41,4 +41,8 @@ export interface Place {
   /** 1–5: how strong/consistent the community feedback is. */
   rating?: number;
   status: Status;
+  /** True for places the user added at runtime (live in localStorage userPlaces, editable/deletable). */
+  userAdded?: boolean;
+  /** Origin of the place: 'user' for runtime-added pins, otherwise the baked bundle. */
+  source?: 'user';
 }

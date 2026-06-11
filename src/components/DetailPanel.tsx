@@ -12,6 +12,8 @@ interface Props {
   onStatus: (id: string, status: Status) => void;
   onAssignDay: (id: string, day: number | null) => void;
   onNote: (id: string, note: string) => void;
+  /** Present only for user-added places: opens the edit form. */
+  onEdit?: () => void;
   // Nearby finder
   nearbyActive: boolean;
   nearbyRadius: number;
@@ -27,6 +29,7 @@ export default function DetailPanel({
   onStatus,
   onAssignDay,
   onNote,
+  onEdit,
   nearbyActive,
   nearbyRadius,
   nearbyCount,
@@ -52,7 +55,14 @@ export default function DetailPanel({
         {p.cost ? ` · ${p.cost}` : ''}
         {p.timeNeeded ? ` · ${p.timeNeeded}` : ''}
         {p.rating ? ` · ${'★'.repeat(p.rating)}` : ''}
+        {p.userAdded ? ' · ✎ added by you' : ''}
       </p>
+
+      {onEdit && (
+        <button className="detail-edit" onClick={onEdit}>
+          ✎ Edit / move / delete
+        </button>
+      )}
 
       {booking && (
         <a

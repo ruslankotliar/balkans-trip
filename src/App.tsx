@@ -7,11 +7,15 @@ import {
   Polyline,
   TileLayer,
   useMap,
+  useMapEvents,
 } from 'react-leaflet';
+import AddPlace, { type DraftPlace } from './components/AddPlace';
 import CorridorPanel, { type CorridorMatch } from './components/CorridorPanel';
 import DetailPanel from './components/DetailPanel';
+import Essentials from './components/Essentials';
 import Itinerary from './components/Itinerary';
 import RouteBuilder from './components/RouteBuilder';
+import { ImportPrompt, ShareButton } from './components/SharePlan';
 import Today, { type ProximityMatch } from './components/Today';
 import {
   CATEGORIES,
@@ -26,6 +30,8 @@ import { fetchRoute, fetchTable, fetchTrip, routeKey, type LatLng } from './osrm
 import { solveOrder, type SolveResult } from './solver';
 import { buildGpx, buildKml, downloadText } from './exports';
 import {
+  decodePlan,
+  encodePlan,
   ferryPairKey,
   loadDone,
   loadFerryHours,
@@ -35,6 +41,7 @@ import {
   loadRouteCache,
   loadSavedMode,
   loadTripCache,
+  loadUserPlaces,
   saveDone,
   saveFerryHours,
   saveLastFix,
@@ -42,11 +49,13 @@ import {
   saveOverrides,
   saveRouteCache,
   saveTripCache,
+  saveUserPlaces,
   type FerryHours,
   type GpsFix,
   type Mode,
   type Overrides,
   type PlaceWithOverride,
+  type SharedPlan,
   type TripResult,
 } from './store';
 import {
@@ -186,6 +195,16 @@ function HashSync() {
   return null;
 }
 
+/** Captures map clicks while the Add-place form is open (feature A, mode 1). */
+function MapTapCapture({ active, onTap }: { active: boolean; onTap: (lat: number, lng: number) => void }) {
+  useMapEvents({
+    click(e) {
+      if (active) onTap(e.latlng.lat, e.latlng.lng);
+    },
+  });
+  return null;
+}
+
 function numberIcon(n: number, color: string) {
   return L.divIcon({
     className: 'num-marker',
@@ -196,7 +215,12 @@ function numberIcon(n: number, color: string) {
 }
 
 export default function App() {
-  const basePlaces = useMemo(loadPlaces, []);
+  // User-added places (feature A) merge AFTER the bundle so the existing
+  // "first id wins" de-dupe protects against a user id colliding with a baked
+  // one. Everything downstream (map, filters, route builder, finders, exports)
+  // treats them as ordinary places.
+  const [userPlaces, setUserPlaces] = useState<Place[]>(loadUserPlaces);
+  const basePlaces = useMemo<Place[]>(() => [...loadPlaces(), ...userPlaces], [userPlaces]);
   const [overrides, setOverrides] = useState<Overrides>(loadOverrides);
   const places = useMemo<PlaceWithOverride[]>(
     () => basePlaces.map((p) => ({ ...p, ...overrides[p.id] })),
@@ -266,6 +290,19 @@ export default function App() {
   const [sleepOpen, setSleepOpen] = useState(false);
   const [nearOpen, setNearOpen] = useState(false);
   const [undoToast, setUndoToast] = useState<{ label: string; undo: () => void } | null>(null);
+
+  // ---- Add place (feature A) ----
+  // addPlaceOpen drives both the form and the tap-the-map capture. editingId is
+  // set when editing an existing user place. tappedPoint is the last map tap.
+  const [addPlaceOpen, setAddPlaceOpen] = useState(false);
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [tappedPoint, setTappedPoint] = useState<{ lat: number; lng: number } | null>(null);
+
+  // ---- Offline Essentials (feature B5) ----
+  const [essentialsOpen, setEssentialsOpen] = useState(false);
+
+  // ---- Share plan import prompt (feature B1) ----
+  const [importPlan, setImportPlan] = useState<SharedPlan | null>(null);
 
   // GPS "you are here" (last fix cached so a cold start still shows a dot)
   const [gpsFix, setGpsFix] = useState<GpsFix | null>(loadLastFix);
@@ -639,6 +676,172 @@ export default function App() {
     });
   }
 
+  function applyUserPlaces(updater: (u: Place[]) => Place[]) {
+    setUserPlaces((prev) => {
+      const next = updater(prev);
+      saveUserPlaces(next);
+      return next;
+    });
+  }
+
+  // ---- Add place (feature A) ----
+  const editingPlace = editingId
+    ? userPlaces.find((p) => p.id === editingId) ?? null
+    : null;
+
+  /** Cheap bounding-box country guess (HR/BA/ME), defaulting to ME. */
+  function guessCountry(lat: number, lng: number): Country {
+    // Bosnia: the inland pocket roughly N of 42.6 and E of 17.0 (Mostar/Konjic).
+    if (lat > 42.55 && lng > 17.0 && lng < 19.7) return 'BA';
+    // Croatia: the Adriatic coast strip (and the NW); broadly W/N of the ME line.
+    if (lat > 42.6 || lng < 17.5) return 'HR';
+    return 'ME';
+  }
+
+  function openAddPlace() {
+    setEditingId(null);
+    setTappedPoint(null);
+    setEssentialsOpen(false);
+    setSelectedId(null);
+    setAddPlaceOpen(true);
+  }
+
+  function openEditPlace(id: string) {
+    setEditingId(id);
+    setTappedPoint(null);
+    setSelectedId(null);
+    setAddPlaceOpen(true);
+  }
+
+  function closeAddPlace() {
+    setAddPlaceOpen(false);
+    setEditingId(null);
+    setTappedPoint(null);
+  }
+
+  function saveDraftPlace(draft: DraftPlace) {
+    if (draft.lat == null || draft.lng == null) return;
+    if (editingId) {
+      // Edit: update the immutable identity in userPlaces; status/day/note flow
+      // through the overrides layer (one code path with baked places).
+      applyUserPlaces((u) =>
+        u.map((p) =>
+          p.id === editingId
+            ? {
+                ...p,
+                name: draft.name,
+                category: draft.category,
+                lat: draft.lat!,
+                lng: draft.lng!,
+                country: guessCountry(draft.lat!, draft.lng!),
+              }
+            : p,
+        ),
+      );
+      applyOverrides((o) => ({
+        ...o,
+        [editingId]: { ...o[editingId], day: draft.day ?? undefined, note: draft.note || undefined },
+      }));
+      closeAddPlace();
+      setSelectedId(editingId);
+      return;
+    }
+    // New: collision-proof, obviously user-origin id; defaults to shortlist.
+    const id = `user-${Date.now()}`;
+    const place: Place = {
+      id,
+      name: draft.name,
+      country: guessCountry(draft.lat, draft.lng),
+      category: draft.category,
+      lat: draft.lat,
+      lng: draft.lng,
+      description: draft.note || 'Added on the trip.',
+      status: 'shortlist',
+      userAdded: true,
+      source: 'user',
+    };
+    applyUserPlaces((u) => [...u, place]);
+    if (draft.day != null || draft.note) {
+      applyOverrides((o) => ({
+        ...o,
+        [id]: { ...o[id], day: draft.day ?? undefined, note: draft.note || undefined },
+      }));
+    }
+    closeAddPlace();
+    setSelectedId(id); // open the detail panel on the new pin
+  }
+
+  function deleteUserPlace(id: string) {
+    if (!confirm('Delete this place? This cannot be undone.')) return;
+    applyUserPlaces((u) => u.filter((p) => p.id !== id));
+    // Clean its override + done keys so nothing dangles.
+    applyOverrides((o) => {
+      const next = { ...o };
+      delete next[id];
+      return next;
+    });
+    setDoneIds((prev) => {
+      if (!prev[id]) return prev;
+      const next = { ...prev };
+      delete next[id];
+      saveDone(next);
+      return next;
+    });
+    closeAddPlace();
+    setSelectedId(null);
+  }
+
+  /** A map tap while the Add-place form is open captures/moves the pin. */
+  function onMapTap(lat: number, lng: number) {
+    if (!addPlaceOpen) return;
+    setTappedPoint({ lat, lng });
+    // When editing, persist the moved coordinate immediately.
+    if (editingId) {
+      applyUserPlaces((u) =>
+        u.map((p) =>
+          p.id === editingId ? { ...p, lat, lng, country: guessCountry(lat, lng) } : p,
+        ),
+      );
+    }
+  }
+
+  // ---- Share plan (feature B1) ----
+  function makeShareLink(): string {
+    const encoded = encodePlan({ overrides, userPlaces });
+    const base = `${location.origin}${location.pathname}${location.search}`;
+    return `${base}#plan=${encoded}`;
+  }
+
+  function applyImportedPlan(plan: SharedPlan, mode: 'merge' | 'replace') {
+    if (mode === 'replace') {
+      setOverrides(plan.overrides);
+      saveOverrides(plan.overrides);
+      setUserPlaces(plan.userPlaces);
+      saveUserPlaces(plan.userPlaces);
+    } else {
+      // Merge: incoming wins per place (importer chose for the whole import).
+      applyOverrides((o) => ({ ...o, ...plan.overrides }));
+      applyUserPlaces((u) => {
+        const byId = new Map(u.map((p) => [p.id, p]));
+        for (const p of plan.userPlaces) byId.set(p.id, p);
+        return [...byId.values()];
+      });
+    }
+    setImportPlan(null);
+  }
+
+  // On load: decode a #plan= hash (robust to malformed input), prompt, clear it.
+  useEffect(() => {
+    const m = location.hash.match(/[#&]plan=([^&]+)/);
+    if (!m) return;
+    const plan = decodePlan(m[1]);
+    // Always clear the hash so a refresh doesn't re-prompt.
+    history.replaceState(null, '', location.pathname + location.search);
+    if (plan) setImportPlan(plan);
+    else alert('That shared-plan link could not be read (it may be corrupted or truncated).');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   function setStatus(id: string, status: Status) {
     applyOverrides((o) => ({ ...o, [id]: { ...o[id], status } }));
   }
@@ -938,6 +1141,18 @@ export default function App() {
     setSelectedId(p.id);
   }
 
+  /** Focus the map (and detail panel) on a place by id — used by Essentials
+   *  to jump to a hospital pin from contingency-places.json. */
+  function focusPin(id: string) {
+    const p = placeById.get(id);
+    if (!p) return;
+    setEssentialsOpen(false);
+    setSelectedId(id);
+    mapRef.current?.flyTo([p.lat, p.lng], Math.max(mapRef.current.getZoom(), 11), {
+      duration: 0.8,
+    });
+  }
+
   // ---- Offline prep: build every day route once on wifi so it replays from
   // the localStorage cache in dead zones (tiles cache as you pan, via the SW).
   const [prepping, setPrepping] = useState(false);
@@ -1043,6 +1258,8 @@ export default function App() {
             }}
             nearMatches={nearMatches}
             anchorLabel={tripAnchor?.label ?? null}
+            onAddPlace={openAddPlace}
+            onEssentials={() => setEssentialsOpen(true)}
           />
         ) : (
         <>
@@ -1173,6 +1390,9 @@ export default function App() {
 
         {!corridor && view === 'places' && (
           <>
+            <button className="add-place-btn" onClick={openAddPlace}>
+              ＋ Add place
+            </button>
             <ul className="place-list">
               {[...visible]
                 .sort(
@@ -1279,6 +1499,13 @@ export default function App() {
           />
         )}
 
+        <div className="sidebar-actions col plan-actions">
+          <ShareButton makeLink={makeShareLink} />
+          <button className="export" onClick={() => setEssentialsOpen(true)}>
+            🆘 Essentials (offline)
+          </button>
+        </div>
+
         <details className="export-menu">
           <summary>Offline &amp; phone export…</summary>
           <div className="sidebar-actions col">
@@ -1332,8 +1559,23 @@ export default function App() {
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <HashSync />
+        <MapTapCapture active={addPlaceOpen} onTap={onMapTap} />
         <FlyTo placeId={selectedId} lat={selected?.lat} lng={selected?.lng} />
         <FitBounds pts={visible.map((p) => [p.lat, p.lng])} nonce={fitNonce} />
+
+        {/* Add-place: a draggable pin for the tapped/captured point */}
+        {addPlaceOpen && tappedPoint && (
+          <Marker
+            position={[tappedPoint.lat, tappedPoint.lng]}
+            draggable
+            eventHandlers={{
+              dragend: (e) => {
+                const ll = (e.target as L.Marker).getLatLng();
+                onMapTap(ll.lat, ll.lng);
+              },
+            }}
+          />
+        )}
 
         {/* Per-day committed routes (trip mode: only today's, to cut clutter) */}
         {Object.entries(routes)
@@ -1511,12 +1753,42 @@ export default function App() {
         onStatus={setStatus}
         onAssignDay={assignDay}
         onNote={setNote}
+        onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}
         nearbyActive={nearbyActive}
         nearbyRadius={nearbyRadius}
         nearbyCount={nearbyMatchIds.size}
         onToggleNearby={() => setNearbyActive((a) => !a)}
         onNearbyRadius={setNearbyRadius}
       />
+
+      {addPlaceOpen && (
+        <AddPlace
+          tappedPoint={tappedPoint}
+          gpsFix={gpsFix ? { lat: gpsFix.lat, lng: gpsFix.lng } : null}
+          editing={editingPlace}
+          editingDay={editingId ? overrides[editingId]?.day ?? null : null}
+          editingNote={editingId ? overrides[editingId]?.note ?? '' : ''}
+          onSave={saveDraftPlace}
+          onDelete={editingId ? () => deleteUserPlace(editingId) : undefined}
+          onClose={closeAddPlace}
+        />
+      )}
+
+      {essentialsOpen && (
+        <Essentials onClose={() => setEssentialsOpen(false)} onShowPin={focusPin} />
+      )}
+
+      {importPlan && (
+        <ImportPrompt
+          summary={{
+            overrides: Object.keys(importPlan.overrides).length,
+            userPlaces: importPlan.userPlaces.length,
+          }}
+          onMerge={() => applyImportedPlan(importPlan, 'merge')}
+          onReplace={() => applyImportedPlan(importPlan, 'replace')}
+          onCancel={() => setImportPlan(null)}
+        />
+      )}
     </div>
   );
 }

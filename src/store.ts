@@ -1,3 +1,4 @@
+import LZString from 'lz-string';
 import type { Place, Status } from './types';
 
 const modules = import.meta.glob('./data/*.json', { eager: true }) as Record<
@@ -118,6 +119,78 @@ export function loadOverrides(): Overrides {
 
 export function saveOverrides(o: Overrides) {
   safeSetItem(KEY, JSON.stringify(o));
+}
+
+// ---- User-added places (Add-place feature) ----
+//
+// Full `Place` objects the user dropped at runtime, in their own localStorage
+// key so a redeploy (which can change src/data/*.json) never touches them.
+// loadPlaces()-side merge in App keeps them appearing on the map, in filters,
+// the route builder, the day planner, the finders, and exports — for free.
+// Only the immutable identity (name/category/lat/lng) lives here; status/day/
+// note flow through the same overrides layer as baked places.
+
+const USER_PLACES_KEY = 'balkans-trip-user-places';
+
+/** Narrow an unknown value to a plausible user Place (defensive against bad imports). */
+function isUserPlace(x: unknown): x is Place {
+  if (!x || typeof x !== 'object') return false;
+  const p = x as Record<string, unknown>;
+  return (
+    typeof p.id === 'string' &&
+    typeof p.name === 'string' &&
+    typeof p.lat === 'number' &&
+    typeof p.lng === 'number'
+  );
+}
+
+export function loadUserPlaces(): Place[] {
+  try {
+    const a = JSON.parse(localStorage.getItem(USER_PLACES_KEY) ?? '[]');
+    return Array.isArray(a) ? a.filter(isUserPlace) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function saveUserPlaces(places: Place[]): boolean {
+  return safeSetItem(USER_PLACES_KEY, JSON.stringify(places));
+}
+
+// ---- Share plan (B1): {overrides, userPlaces} ⇄ a compressed URL hash ----
+//
+// 100% static: the plan is a few KB of JSON, LZ-string compressed into the URL
+// hash. Send the link in the group chat; opening it offers merge/replace.
+
+export interface SharedPlan {
+  overrides: Overrides;
+  userPlaces: Place[];
+}
+
+/** Encode {overrides, userPlaces} into a compact, URL-hash-safe string. */
+export function encodePlan(plan: SharedPlan): string {
+  return LZString.compressToEncodedURIComponent(JSON.stringify(plan));
+}
+
+/** Decode a shared-plan payload; returns null on any malformed input. */
+export function decodePlan(encoded: string): SharedPlan | null {
+  try {
+    const json = LZString.decompressFromEncodedURIComponent(encoded);
+    if (!json) return null;
+    const obj = JSON.parse(json) as unknown;
+    if (!obj || typeof obj !== 'object') return null;
+    const o = obj as Record<string, unknown>;
+    const overrides =
+      o.overrides && typeof o.overrides === 'object'
+        ? (o.overrides as Overrides)
+        : {};
+    const userPlaces = Array.isArray(o.userPlaces)
+      ? (o.userPlaces as unknown[]).filter(isUserPlace)
+      : [];
+    return { overrides, userPlaces };
+  } catch {
+    return null;
+  }
 }
 
 // ---- OSRM route cache (keyed by the coordinate sequence) ----

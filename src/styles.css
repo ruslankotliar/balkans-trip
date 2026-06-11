@@ -1404,3 +1404,519 @@ body.trip-mode .card-links .today-nav-link {
   background: #2c3e50;
   color: #fff;
 }
+
+/* ===== Add place + Share + Essentials (2026-06-11) ===== */
+
+/* ---- Entry buttons ---- */
+.add-place-btn {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 9px 12px;
+  border: 1.5px dashed #2c3e50;
+  border-radius: 8px;
+  background: #fff;
+  color: #2c3e50;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.add-place-btn:hover {
+  background: #f3f6f9;
+}
+.plan-actions {
+  margin: 8px 0 4px;
+}
+.detail-edit {
+  margin-top: 8px;
+  padding: 8px 10px;
+  width: 100%;
+  border: 1px solid #b0b8bf;
+  border-radius: 8px;
+  background: #f6f8fa;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.detail-edit:hover {
+  background: #eceff2;
+}
+
+/* ---- Add-place form (overlay panel, mirrors the detail panel) ---- */
+.addplace {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 340px;
+  max-width: calc(100vw - 24px);
+  max-height: calc(100vh - 24px);
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  padding: 16px;
+  z-index: 1200;
+}
+.addplace-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addplace-top h2 {
+  margin: 0;
+  font-size: 17px;
+}
+.addplace-close {
+  border: none;
+  background: #f0f0f0;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.addplace-modes {
+  display: flex;
+  gap: 6px;
+  margin: 10px 0;
+}
+.addplace-modes button {
+  flex: 1;
+  padding: 8px 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+.addplace-modes button.on {
+  background: #2c3e50;
+  color: #fff;
+  border-color: #2c3e50;
+}
+.addplace-hint {
+  background: #eaf4ff;
+  border: 1px solid #b9dcff;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 13px;
+  color: #1c4e80;
+}
+.addplace-gps {
+  border: none;
+  background: #1e80ff;
+  color: #fff;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.addplace-input-row {
+  display: flex;
+  gap: 6px;
+}
+.addplace-input-row input {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.addplace-input-row button {
+  border: none;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.addplace-msg {
+  font-size: 12px;
+  color: #8a5a00;
+  background: #fff6e5;
+  border: 1px solid #ffe0a3;
+  border-radius: 8px;
+  padding: 8px 10px;
+  line-height: 1.4;
+}
+.addplace-coords {
+  font-size: 13px;
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 6px 0;
+}
+.addplace-name {
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.addplace-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.addplace-cats .chip {
+  font-size: 12px;
+}
+.addplace-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.addplace-save {
+  flex: 1;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: #27ae60;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.addplace-save:disabled {
+  background: #b6c8bd;
+  cursor: not-allowed;
+}
+.addplace-delete {
+  padding: 11px 14px;
+  border: 1px solid #e74c3c;
+  border-radius: 8px;
+  background: #fff;
+  color: #e74c3c;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---- Share plan ---- */
+.shareplan-out {
+  margin-top: 6px;
+}
+.shareplan-status {
+  font-size: 12px;
+  color: #1c6b2e;
+  margin: 4px 0;
+}
+.shareplan-link {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 54px;
+  font-size: 11px;
+  font-family: monospace;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  word-break: break-all;
+}
+
+/* ---- Import shared plan modal ---- */
+.import-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.import-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+.import-modal h2 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+.import-modal p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.import-help {
+  color: #555;
+  font-size: 13px;
+}
+.import-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+.import-actions button {
+  flex: 1;
+  padding: 12px 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.import-merge {
+  background: #27ae60;
+  color: #fff;
+}
+.import-replace {
+  background: #e67e22;
+  color: #fff;
+}
+.import-cancel {
+  background: #eee;
+  color: #333;
+}
+
+/* ---- Essentials panel (offline, big touch targets) ---- */
+.essentials {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 360px;
+  max-width: calc(100vw - 24px);
+  max-height: calc(100vh - 24px);
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  padding: 14px 14px 24px;
+  z-index: 1300;
+}
+.ess-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ess-top h2 {
+  margin: 0;
+  font-size: 19px;
+}
+.ess-close {
+  border: none;
+  background: #f0f0f0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.ess-sub {
+  font-size: 12px;
+  color: #888;
+  margin: 2px 0 10px;
+}
+.ess-section {
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.ess-section-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 12px;
+  border: none;
+  background: #f7f8fa;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+.ess-section.open .ess-section-head {
+  background: #eef2f6;
+}
+.ess-chevron {
+  color: #888;
+}
+.ess-section-body {
+  padding: 10px 12px 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ess-section-body h4 {
+  margin: 12px 0 4px;
+  font-size: 14px;
+}
+.ess-section-body ul,
+.ess-section-body ol {
+  margin: 4px 0;
+  padding-left: 20px;
+}
+.ess-section-body li {
+  margin: 4px 0;
+}
+.ess-tel-big {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 800;
+  color: #c0392b;
+  text-decoration: none;
+  padding: 4px 0;
+}
+.ess-112-note {
+  font-size: 12px;
+  color: #555;
+  margin: 0 0 8px;
+}
+.ess-country h4 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ess-cc {
+  font-size: 11px;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+.ess-contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.ess-contact-label {
+  color: #444;
+  font-size: 13px;
+}
+.ess-tel {
+  color: #1e80ff;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ess-contact-value {
+  color: #333;
+  text-align: right;
+}
+.ess-fillin {
+  margin-top: 12px;
+  background: #fff8e8;
+  border: 1px solid #ffe2a8;
+  border-radius: 8px;
+  padding: 10px;
+}
+.ess-fillin-row {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.ess-blank {
+  letter-spacing: 1px;
+  color: #aaa;
+}
+.ess-fillin-hint {
+  font-size: 11px;
+  color: #8a6d2f;
+}
+.ess-ifthen,
+.ess-tipsec,
+.ess-pack,
+.ess-phrasegrp {
+  margin-bottom: 6px;
+}
+.ess-zone {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+.ess-zone-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.ess-zone-actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.ess-zone-tel {
+  text-decoration: none;
+  font-size: 16px;
+}
+.ess-zone-pin {
+  border: 1px solid #2c3e50;
+  background: #fff;
+  color: #2c3e50;
+  border-radius: 6px;
+  font-size: 11px;
+  padding: 3px 7px;
+  cursor: pointer;
+}
+.ess-zone-hosp {
+  font-size: 13px;
+  color: #222;
+  margin-top: 2px;
+}
+.ess-zone-where {
+  font-size: 12px;
+  color: #666;
+}
+.ess-zone-pharm {
+  font-size: 12px;
+  color: #2980b9;
+  margin-top: 2px;
+}
+.ess-phrase-note {
+  font-size: 11px;
+  color: #888;
+  background: #f7f7f7;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+.ess-phrase {
+  padding: 5px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.ess-phrase-en {
+  font-size: 12px;
+  color: #888;
+}
+.ess-phrase-loc {
+  font-size: 14px;
+}
+.ess-phrase-say {
+  color: #777;
+  font-size: 12px;
+}
+.ess-phrase-var {
+  font-size: 11px;
+  color: #b15a00;
+}
+
+/* Phones: Add-place + Essentials become bottom sheets like the detail panel */
+@media (max-width: 760px) {
+  .addplace,
+  .essentials {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 14px 14px 0 0;
+  }
+}
+
+/* Trip mode: bigger essentials touch targets */
+body.trip-mode .ess-section-head {
+  padding: 16px 12px;
+  font-size: 16px;
+}
+body.trip-mode .ess-tel {
+  font-size: 15px;
+}

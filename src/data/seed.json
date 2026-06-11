@@ -177,13 +177,24 @@
   },
   {
     "id": "hr-dubrovnik-airport",
-    "name": "Dubrovnik Airport (Čilipi) — friend pickup Jun 18 evening",
+    "name": "Dubrovnik Airport (Čilipi) — friend pickup + car drop-off",
     "country": "HR",
     "category": "other",
     "lat": 42.5614,
     "lng": 18.2682,
-    "description": "HARD ANCHOR: pick up the 4th person here on Jun 18 in the evening. 20km south of Dubrovnik (Konavle). Days 1–3 must end here; the rest of the trip loops from Dubrovnik.",
-    "tags": ["logistics", "fixed-date"],
+    "description": "TWO HARD ANCHORS here (20km S of Dubrovnik, Konavle): (1) pick up the 4th person Jun 18 evening; (2) DROP THE RENTAL CAR by 20:00 on Jun 28 (Sicily By Car). Days 1–3 must end near here; the loop returns here at the end. Full day usable on Jun 28 before the 20:00 drop.",
+    "tags": ["logistics", "fixed-date", "car-dropoff"],
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-zadar-airport",
+    "name": "Zadar Airport (ZAD) — car pickup Jun 16 10:00",
+    "country": "HR",
+    "category": "other",
+    "lat": 44.1083,
+    "lng": 15.3467,
+    "description": "TRIP START: rental car (Kia Sportage or similar, Sicily By Car) ready at 10:00 on Jun 16, after arrival flight FR4807. 10km SE of Zadar old town. Day 1 effectively starts here ~10:30. See research/rental-car.md.",
+    "tags": ["logistics", "fixed-date", "car-pickup"],
     "status": "shortlist"
   },
   {

@@ -34,6 +34,10 @@ interface Props {
   nearMatches: ProximityMatch[];
   /** What proximity is measured from: "you" (GPS) or the last stop's name. */
   anchorLabel: string | null;
+  /** Open the Add-place form (feature A). */
+  onAddPlace: () => void;
+  /** Open the offline Essentials panel (feature B5). */
+  onEssentials: () => void;
 }
 
 const gmaps = (p: PlaceWithOverride) => navUrl(p.lat, p.lng);
@@ -112,6 +116,8 @@ export default function Today({
   onToggleNear,
   nearMatches,
   anchorLabel,
+  onAddPlace,
+  onEssentials,
 }: Props) {
   const isToday = day === realDay;
   const nextIdx = isToday ? stops.findIndex((p) => !done[p.id]) : -1;
@@ -227,6 +233,14 @@ export default function Today({
         </button>
         <button className={`today-big-btn ${nearOpen ? 'on' : ''}`} onClick={onToggleNear}>
           📍 Near me
+        </button>
+      </div>
+      <div className="today-actions">
+        <button className="today-big-btn" onClick={onAddPlace}>
+          ＋ Add place
+        </button>
+        <button className="today-big-btn" onClick={onEssentials}>
+          🆘 Essentials
         </button>
       </div>
       {(sleepOpen || nearOpen) && anchorLabel && (

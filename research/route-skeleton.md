@@ -6,7 +6,7 @@ Research sessions: treat this as scaffolding, not gospel. Flag anything that doe
 
 | Day | Date | Plan (draft) | Night |
 |-----|------|--------------|-------|
-| 1 | Tue Jun 16 | Land Zadar AM, pick up car. Zadar old town + sunset Sea Organ. Option: Paklenica or Plitvice detour if energy allows. | Zadar area (camp?) |
+| 1 | Tue Jun 16 | Flight FR4807, **car pickup Zadar Airport 10:00** (Sicily By Car). Zadar old town + sunset Sea Organ. Option: Paklenica/Velebit if energy allows. | Zadar area (camp?) |
 | 2 | Wed Jun 17 | Krka NP morning → Split (Diocletian's Palace) → Omiš (canyon look, maybe zipline). | Omiš / Makarska Riviera (camp?) |
 | 3 | Thu Jun 18 | Makarska Riviera: Punta Rata swim, Biokovo/Sveti Jure if time → drive to Dubrovnik (Neum corridor or Ploče–Trpanj ferry) → **evening: airport pickup**. | Dubrovnik area / Trebinje? |
 | 4 | Fri Jun 19 | Dubrovnik old town (early, beat crowds) + Lokrum or chill day. | Dubrovnik area |
@@ -18,7 +18,7 @@ Research sessions: treat this as scaffolding, not gospel. Flag anything that doe
 | 10 | Thu Jun 25 | Tara canyon rafting/zipline (Đurđevića bridge) → south via Ostrog Monastery. | Skadar Lake area / Podgorica side |
 | 11 | Fri Jun 26 | Skadar Lake kayak or winery → Sveti Stefan beach → Budva (night out?). | Budva / Jaz (camp?) |
 | 12 | Sat Jun 27 | Kotor: fortress climb early + old town, Perast → cross Debeli Brijeg (queue timing!) → Dubrovnik area. | near Dubrovnik / Trebinje |
-| 13 | Sun Jun 28 | Drop car Dubrovnik, depart to Vienna. | — |
+| 13 | Sun Jun 28 | Full day usable; **drop car Dubrovnik Airport by 20:00** (Sicily By Car), then fly to Vienna. | — |
 
 ## Known open questions
 
