@@ -171,7 +171,7 @@ export const DAY_HINTS: Record<number, DayHint> = {
   5:  { icon: '⛴', text: 'Mljet ferry (Prapratno → Sobra): queue 90+ min early on a Saturday. Target 13:00 sailing → arrive Sobra 13:45 → pay €25pp NP entry and use all afternoon. Arriving after 16:00 ferry saves €6pp but leaves only 3h of daylight on the island.' },
   6:  { icon: '💧', text: 'Kravica: arrive before 09:00 — packed with tour buses by 11:00. Mostar Stari Most glows amber at sunset.' },
   7:  { icon: '🎶', text: 'Blagaj + Boračko swim en route to Sarajevo. Tonight: Cinemas Sloga (Dalmatinska 36) or Underground Club — both do Monday Latin Night from 22:00.' },
-  8:  { icon: '🚗', text: 'Depart Sarajevo 07:00. Piva canyon: lights on, honk before blind tunnels — 56 unlit one-lane tunnels. Drive in daylight only.' },
+  8:  { icon: '🚣', text: 'Depart Sarajevo 07:00 → Foča by 09:00 → Tara raft start 10:00 (Brštanovica, ~3–4h) → cross border at Šćepan Polje → Piva canyon to Žabljak. Piva tunnels: lights on, honk before entry — drive daylight only.' },
   9:  { icon: '⛰️', text: 'Durmitor: leave camp by 06:30–07:00. Storm risk builds 12:00–15:00 — be off the ridge by noon. Žabljak nights 6–10°C.' },
   10: { icon: '🛐', text: 'Ostrog: cover knees+shoulders (no exceptions). Skadar: mosquitoes vicious at dusk — repellent essential.' },
   11: { icon: '🏖️', text: 'Sveti Stefan islet view free from the road. Budva Friday = busiest night on the coast — book ahead if you need parking.' },
