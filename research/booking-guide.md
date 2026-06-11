@@ -8,7 +8,7 @@
 
 | Urgency | Night | Sleep zone | Best option | Est. price (4p) | Link |
 |---------|-------|-----------|-------------|-----------------|------|
-| 🔴 BOOK NOW | Jun 16 | Paklenica/Starigrad | Camp NP Paklenica (walk-in) OR Bluesun Camping Paklenica (book) | €40–55 | Walk-in vs [Bluesun Booking.com](https://www.booking.com/hotel/hr/bluesuncamp-paklenica.html) |
+| 🔴 BOOK NOW | Jun 16 | Paklenica/Starigrad | **Stone House Martelina** (WOW, €136) OR Camp NP Paklenica (walk-in, €45–55) | €45–136 | [Martelina direct](https://www.stonehousemartelina.com) · [NP camp walk-in](https://np-paklenica.hr) |
 | 🔴 BOOK NOW | Jun 17 | Omiš/Makarska | Auto Camp Lisičina (Omiš) | ~€35–45 | Contact direct: kamp-lisicina@inet.hr |
 | 🟡 BOOK TODAY | Jun 18 | Trebinje, Bosnia | Gaga City Center Airbnb | ~€49/night | [Airbnb listing](https://www.airbnb.com/rooms/1165836464333612445) |
 | 🔴 BOOK NOW | Jun 19 | Dubrovnik area | Camping Kate (Mlini) | ~€51/night | Contact: info@campingkate.com |
@@ -43,7 +43,14 @@
 - **Price:** Check PDF price list at np-paklenica.hr; estimate ~€8–10/person + €5 tent + €3 car = **~€45–55 for 4**
 - **Address:** Dr. Franje Tuđmana 14a, 23244 Starigrad-Paklenica
 
-**Option B (BACKUP): Bluesun Camping Paklenica**
+**Option B (WOW TIER): Stone House Martelina**
+- **What it is:** 100+ year-old stone house, fully renovated 2014, in a Natura 2000 hillside hamlet — 2.5 km from Starigrad center, 5 min drive to Paklenica NP entrance. 2 bedrooms, sleeps 4. Fireplace, terrace, BBQ, fresh garden vegetables. Sea views from the hill. Private and quiet.
+- **Rating:** 4.8/5 (22 reviews on Adriagate). Tagline: "unclench your teeth, unhunch your shoulders." Guest: "cosy house on the hillside with a nice view over the Adriatic sea."
+- **Price:** ~€136/night for 4 (June pre-peak). Slightly over target but the best WOW option in the area.
+- **Booking:** Direct via [stonehousemartelina.com](https://www.stonehousemartelina.com) or [Adriagate listing](https://www.adriagate.com/Croatia-en/Accommodation-57851). **Contact now** — calendars on 3rd-party sites may be outdated; email/call direct for availability.
+- **Why pick over camping:** You'll be hiking all day in the gorge. Coming back to a stone house on a hill beats a sardine tent.
+
+**Option C (BACKUP CAMPING): Bluesun Camping Paklenica**
 - **What it is:** Larger private campsite, 95 standard + 6 superior sea-view pitches + 68 more. Pine forest, beach bar, Dalmatian restaurant, grocery. More resort-like.
 - **Booking:** Online via Booking.com — this one accepts reservations. **Book now if you want certainty.**
 - **Price:** Starts ~€35+ per pitch; expect **€45–65 for 4 with tent** in late June (rates not final until you enter dates)

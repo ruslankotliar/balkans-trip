@@ -19,6 +19,7 @@ export const DEFAULT_PLAN: Overrides = {
   'hr-velika-paklenica-gorge': { day: 1, dayOrder: 4 },
   'hr-anica-kuk':            { day: 1, dayOrder: 5 },
   'hr-camp-np-paklenica':    { day: 1, dayOrder: 6 },
+  'hr-villa-stone-house-martelina': { day: 1, dayOrder: 7 },
 
   // ── Day 2: Jun 17 (Wed) — Omiš canyoning ─────────────────────────────────
   'hr-split':                { day: 2, dayOrder: 1 },

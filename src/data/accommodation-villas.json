@@ -270,5 +270,27 @@
     ],
     "rating": 4,
     "status": "candidate"
+  },
+  {
+    "id": "hr-villa-stone-house-martelina",
+    "name": "Stone House Martelina (Starigrad-Paklenica)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 44.31365,
+    "lng": 15.43670,
+    "description": "100+ year-old stone house renovated 2014, set in a hillside hamlet inside the Velebit Natura 2000 zone — 2.5 km from Starigrad-Paklenica town, 5 min from Paklenica NP entrance, 2.5 km from beach. Sleeps 4 (2 bedrooms), fireplace, BBQ, terrace, garden where guests pick fresh vegetables. The WOW-tier Night 1 option: stone, views, quiet village, NP at your doorstep.",
+    "communityNotes": "Adriagate rating 4.8/5 (22 reviews), 'Great Host' badge. Guest: 'A very cosy House on the hillside with a nice view over the Adriatic sea.' Marketing tagline: 'unclench your teeth, unhunch your shoulders.' Located in one of the few active settlements inside Velebit Natura 2000. | Price ~€136/night (June) is slightly above €100-130 target but within range given it's the best WOW option in the area. 1-night OK via direct booking. Contact via stonehousemartelina.com or Adriagate.",
+    "sources": [
+      "https://www.adriagate.com/Croatia-en/Accommodation-57851",
+      "https://www.stonehousemartelina.com"
+    ],
+    "cost": "~€136/night for 4 (June pre-peak; confirmed from listing)",
+    "tags": [
+      "villa-tier",
+      "paklenica",
+      "night-1"
+    ],
+    "rating": 5,
+    "status": "candidate"
   }
 ]
