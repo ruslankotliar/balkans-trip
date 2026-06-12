@@ -1,7 +1,7 @@
 /**
  * Single Supabase client for the collaboration layer (votes / comments /
- * friend-added places). The 406 baked places stay compiled in — Supabase is
- * ONLY the dynamic shared layer.
+ * shared plan overrides / friend-added places). The 406 baked places stay
+ * compiled in — Supabase is ONLY the dynamic shared layer.
  *
  * #1 rule: this app must work in dead zones. So the client is OPTIONAL:
  *   - missing env vars → `supabase` is null, every collab call no-ops/degrades

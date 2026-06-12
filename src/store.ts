@@ -93,7 +93,7 @@ export function safeSetItem(key: string, value: string): boolean {
   }
 }
 
-/** Per-place user edits stored only in localStorage (never written back to data/). */
+/** Per-place user edits cached locally and mirrored through the collab layer. */
 export interface Override {
   status?: Status;
   /** Trip day 1–13 (Jun 16–28) this place is assigned to. undefined = unassigned. */
@@ -108,10 +108,55 @@ export interface Override {
 
 export type Overrides = Record<string, Override>;
 
+/** One plan override row as stored in Supabase. */
+export interface PlanOverrideRow {
+  place_id: string;
+  data: Override | null;
+  cleared: boolean;
+  updated_at: string;
+}
+
 /** A base place merged with its localStorage override. */
 export type PlaceWithOverride = Place & Override;
 
 const KEY = 'balkans-trip-overrides';
+
+/** Remove undefined fields and collapse empty override objects to null. */
+export function normalizeOverride(value: Override | undefined | null): Override | null {
+  if (!value) return null;
+  const next: Override = {};
+  if (value.status !== undefined) next.status = value.status;
+  if (value.day !== undefined) next.day = value.day;
+  if (value.dayOrder !== undefined) next.dayOrder = value.dayOrder;
+  if (value.note !== undefined) next.note = value.note;
+  if (value.timeMinutes !== undefined) next.timeMinutes = value.timeMinutes;
+  return Object.keys(next).length > 0 ? next : null;
+}
+
+/** Normalize an Overrides map and drop empty per-place entries. */
+export function normalizeOverrides(raw: Overrides): Overrides {
+  const next: Overrides = {};
+  for (const [id, value] of Object.entries(raw)) {
+    const normalized = normalizeOverride(value);
+    if (normalized) next[id] = normalized;
+  }
+  return next;
+}
+
+/** Apply Supabase plan rows over an existing overrides map. */
+export function applyPlanOverrideRows(base: Overrides, rows: PlanOverrideRow[]): Overrides {
+  const next: Overrides = { ...base };
+  for (const row of rows) {
+    if (row.cleared) {
+      delete next[row.place_id];
+      continue;
+    }
+    const normalized = normalizeOverride(row.data);
+    if (normalized) next[row.place_id] = normalized;
+    else delete next[row.place_id];
+  }
+  return normalizeOverrides(next);
+}
 
 function clearSchedule(next: Overrides, id: string): void {
   const current = next[id];
@@ -517,19 +562,23 @@ export function loadOverrides(): Overrides {
     const raw = localStorage.getItem(KEY);
     // On first visit (empty localStorage) seed from the baked default plan so
     // all 4 group members see the pre-populated Itinerary without importing a URL.
-    if (raw === null) return { ...DEFAULT_PLAN };
+    if (raw === null) return normalizeOverrides({ ...DEFAULT_PLAN });
     const parsed = JSON.parse(raw);
-    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return { ...DEFAULT_PLAN };
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed))
+      return normalizeOverrides({ ...DEFAULT_PLAN });
     const { overrides, changed } = migrateOverrides(parsed as Overrides);
-    if (changed) safeSetItem(KEY, JSON.stringify(overrides));
-    return overrides;
+    const next = normalizeOverrides(overrides);
+    if (changed || JSON.stringify(next) !== JSON.stringify(parsed)) {
+      safeSetItem(KEY, JSON.stringify(next));
+    }
+    return next;
   } catch {
-    return { ...DEFAULT_PLAN };
+    return normalizeOverrides({ ...DEFAULT_PLAN });
   }
 }
 
 export function saveOverrides(o: Overrides) {
-  safeSetItem(KEY, JSON.stringify(o));
+  safeSetItem(KEY, JSON.stringify(normalizeOverrides(o)));
 }
 
 // ---- User-added places (Add-place feature) ----

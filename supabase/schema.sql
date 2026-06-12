@@ -29,5 +29,13 @@ create table if not exists public.user_places (
   created_at timestamptz not null default now()
 );
 
+-- shared itinerary overrides (one row per place; cleared=true is a tombstone)
+create table if not exists public.plan_overrides (
+  place_id   text primary key,
+  data       jsonb,
+  cleared    boolean not null default false,
+  updated_at timestamptz not null default now()
+);
+
 -- open read/write for the app (no RLS)
-grant all on table public.votes, public.comments, public.user_places to anon, authenticated;
+grant all on table public.votes, public.comments, public.user_places, public.plan_overrides to anon, authenticated;

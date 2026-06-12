@@ -25,6 +25,7 @@ import {
   myVote as myVoteFor,
   pushUserPlace,
   savePerson,
+  queuePlanOverrideSync,
   syncCollab,
   type CommentRow,
   type VoteRow,
@@ -45,6 +46,7 @@ import { downloadText } from './exports';
 import {
   decodePlan,
   encodePlan,
+  applyPlanOverrideRows,
   ferryPairKey,
   loadDayNotes,
   loadDone,
@@ -67,6 +69,7 @@ import {
   saveRouteCache,
   saveTripCache,
   saveUserPlaces,
+  normalizeOverrides,
   type FerryHours,
   type GpsFix,
   type Mode,
@@ -347,6 +350,13 @@ export default function App() {
     setVotes(res.votes);
     setComments(res.comments);
     setRemotePlaces(res.remotePlaces);
+    if (res.planRows.length > 0) {
+      setOverrides((prev) => {
+        const next = applyPlanOverrideRows(prev, res.planRows);
+        saveOverrides(next);
+        return next;
+      });
+    }
   };
 
   // Sync on load and whenever the window regains focus (cheap, best-effort).
@@ -955,10 +965,12 @@ export default function App() {
   // ---- Mutations ----
   function applyOverrides(updater: (o: Overrides) => Overrides) {
     setOverrides((prev) => {
-      const next = updater(prev);
+      const next = normalizeOverrides(updater(prev));
+      queuePlanOverrideSync(prev, next);
       saveOverrides(next);
       return next;
     });
+    void runSync.current();
   }
 
   function applyUserPlaces(updater: (u: Place[]) => Place[]) {
@@ -1102,8 +1114,9 @@ export default function App() {
 
   function applyImportedPlan(plan: SharedPlan, mode: 'merge' | 'replace') {
     if (mode === 'replace') {
-      setOverrides(plan.overrides);
-      saveOverrides(plan.overrides);
+      const next = normalizeOverrides(plan.overrides);
+      setOverrides(next);
+      saveOverrides(next);
       setUserPlaces(plan.userPlaces);
       saveUserPlaces(plan.userPlaces);
     } else {

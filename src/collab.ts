@@ -1,5 +1,6 @@
 /**
- * Collaboration layer: identity, votes, comments, and friend-added-place sync.
+ * Collaboration layer: identity, votes, comments, shared-plan sync, and
+ * friend-added-place sync.
  *
  * OFFLINE-FIRST. Everything the UI reads comes from localStorage caches, so the
  * app is fully usable with no signal. Supabase is a best-effort sync on top:
@@ -8,9 +9,16 @@
  *   - every Supabase call is wrapped in try/catch and degrades to the cache.
  *
  * The 406 baked places stay compiled in — this module only touches the small,
- * dynamic shared state (a few KB): votes, comments, and user-added places.
+ * dynamic shared state (a few KB): votes, comments, plan overrides, and
+ * user-added places.
  */
-import { safeSetItem } from './store';
+import {
+  normalizeOverride,
+  safeSetItem,
+  type Override,
+  type Overrides,
+  type PlanOverrideRow,
+} from './store';
 import { hasSupabase, supabase } from './supabase';
 import type { Place } from './types';
 
@@ -71,6 +79,7 @@ const REMOTE_PLACES_CACHE = 'balkans-trip-remote-places-cache';
 const VOTE_QUEUE = 'balkans-trip-vote-queue';
 const COMMENT_QUEUE = 'balkans-trip-comment-queue';
 const PLACE_QUEUE = 'balkans-trip-place-queue';
+const PLAN_QUEUE = 'balkans-trip-plan-queue';
 
 function loadJson<T>(key: string, fallback: T): T {
   try {
@@ -162,6 +171,35 @@ function savePlaceQueue(q: UserPlaceRow[]) {
   safeSetItem(PLACE_QUEUE, JSON.stringify(q));
 }
 
+interface QueuedPlanOverride {
+  place_id: string;
+  data: Override | null;
+}
+
+function loadPlanQueue(): QueuedPlanOverride[] {
+  return loadJson<QueuedPlanOverride[]>(PLAN_QUEUE, []);
+}
+
+function savePlanQueue(q: QueuedPlanOverride[]) {
+  safeSetItem(PLAN_QUEUE, JSON.stringify(q));
+}
+
+function overrideEqual(a: Override | null | undefined, b: Override | null | undefined): boolean {
+  const normA = normalizeOverride(a);
+  const normB = normalizeOverride(b);
+  return JSON.stringify(normA) === JSON.stringify(normB);
+}
+
+function planRowFromQueue(item: QueuedPlanOverride): PlanOverrideRow {
+  const data = normalizeOverride(item.data);
+  return {
+    place_id: item.place_id,
+    data,
+    cleared: data == null,
+    updated_at: new Date().toISOString(),
+  };
+}
+
 // ---- Public mutation API (optimistic: update cache + queue, then sync) ----
 
 /**
@@ -231,6 +269,24 @@ export function pushUserPlace(place: Place, person: string | null): void {
   saveRemotePlacesCache(cached);
 }
 
+/**
+ * Queue plan overrides for remote sync. The queue stores the latest full
+ * override object for each place so independent edits on different stops can
+ * merge without a full-plan overwrite.
+ */
+export function queuePlanOverrideSync(prev: Overrides, next: Overrides): void {
+  const before = prev;
+  const after = next;
+  const queue = loadPlanQueue();
+  const byId = new Map(queue.map((item) => [item.place_id, item]));
+  const ids = new Set([...Object.keys(before), ...Object.keys(after)]);
+  for (const id of ids) {
+    if (overrideEqual(before[id], after[id])) continue;
+    byId.set(id, { place_id: id, data: normalizeOverride(after[id]) });
+  }
+  savePlanQueue([...byId.values()]);
+}
+
 // ---- Sync: pull latest from Supabase, push the queues. All best-effort. ----
 
 let syncing = false;
@@ -239,6 +295,7 @@ export interface SyncResult {
   votes: VoteRow[];
   comments: CommentRow[];
   remotePlaces: Place[];
+  planRows: PlanOverrideRow[];
   /** True when we actually reached the server this run. */
   online: boolean;
 }
@@ -254,6 +311,7 @@ export async function syncCollab(): Promise<SyncResult> {
     votes: loadVotesCache(),
     comments: loadCommentsCache(),
     remotePlaces: loadRemotePlacesCache(),
+    planRows: loadPlanQueue().map(planRowFromQueue),
     online: false,
   };
   if (!hasSupabase || !supabase || syncing) return local;
@@ -263,19 +321,24 @@ export async function syncCollab(): Promise<SyncResult> {
     await flushVoteQueue();
     await flushCommentQueue();
     await flushPlaceQueue();
+    await flushPlanQueue();
 
     // 2. Pull the latest snapshots.
-    const [votes, comments, places] = await Promise.all([
+    const [votes, comments, places, planRows] = await Promise.all([
       pullVotes(),
       pullComments(),
       pullUserPlaces(),
+      pullPlanOverrides(),
     ]);
+    const queuedPlanRows = loadPlanQueue().map(planRowFromQueue);
+    const effectivePlanRows = mergePlanRows(planRows ?? [], queuedPlanRows);
 
     return {
       votes: votes ?? local.votes,
       comments: comments ?? local.comments,
       remotePlaces: places ?? local.remotePlaces,
-      online: votes != null || comments != null || places != null,
+      planRows: effectivePlanRows,
+      online: votes != null || comments != null || places != null || planRows != null,
     };
   } catch (e) {
     console.warn('[collab] sync failed — using local cache', e);
@@ -357,6 +420,28 @@ async function pullUserPlaces(): Promise<Place[] | null> {
     return places;
   } catch (e) {
     console.warn('[collab] user_places fetch threw — local cache', e);
+    return null;
+  }
+}
+
+async function pullPlanOverrides(): Promise<PlanOverrideRow[] | null> {
+  if (!supabase) return null;
+  try {
+    const { data, error } = await supabase
+      .from('plan_overrides')
+      .select('place_id, data, cleared, updated_at');
+    if (error) {
+      console.warn('[collab] plan_overrides fetch error — local cache', error.message);
+      return null;
+    }
+    const rows = ((data ?? []) as PlanOverrideRow[]).map((row) => ({
+      ...row,
+      data: normalizeOverride(row.data),
+    }));
+    rows.sort((a, b) => a.updated_at.localeCompare(b.updated_at) || a.place_id.localeCompare(b.place_id));
+    return rows;
+  } catch (e) {
+    console.warn('[collab] plan_overrides fetch threw — local cache', e);
     return null;
   }
 }
@@ -445,6 +530,47 @@ async function flushPlaceQueue(): Promise<void> {
     }
   }
   savePlaceQueue(remaining);
+}
+
+async function flushPlanQueue(): Promise<void> {
+  if (!supabase) return;
+  const q = loadPlanQueue();
+  if (q.length === 0) return;
+  const succeeded: QueuedPlanOverride[] = [];
+  for (const item of q) {
+    try {
+      const { error } = await supabase.from('plan_overrides').upsert(
+        {
+          place_id: item.place_id,
+          data: item.data,
+          cleared: item.data == null,
+          updated_at: new Date().toISOString(),
+        },
+        { onConflict: 'place_id' },
+      );
+      if (error) {
+        // keep it queued
+      } else {
+        succeeded.push(item);
+      }
+    } catch {
+      // keep it queued
+    }
+  }
+  if (succeeded.length === 0) return;
+  const current = loadPlanQueue();
+  const remaining = current.filter(
+    (item) =>
+      !succeeded.some((done) => done.place_id === item.place_id && overrideEqual(done.data, item.data)),
+  );
+  savePlanQueue(remaining);
+}
+
+function mergePlanRows(serverRows: PlanOverrideRow[], queuedRows: PlanOverrideRow[]): PlanOverrideRow[] {
+  const byId = new Map<string, PlanOverrideRow>();
+  for (const row of serverRows) byId.set(row.place_id, row);
+  for (const row of queuedRows) byId.set(row.place_id, row);
+  return [...byId.values()];
 }
 
 // ---- Derived tallies (pure, computed from the votes cache) ----
