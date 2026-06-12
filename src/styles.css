@@ -1126,6 +1126,28 @@ body.trip-mode .detail-nav-btn {
   .itin-day .itin-empty {
     display: none;
   }
+  /* ---- Itinerary: compact action buttons (↑↓×) ---- */
+  .itin-actions button {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    border-color: #e0e0e0;
+  }
+  /* ---- Today view: ghost day-nav arrows ---- */
+  .today-arrow {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    color: #888;
+    font-size: 20px;
+  }
+  /* Today skip button: smaller tap target */
+  .today-skip {
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
 }
 
 /* ---- Route builder: solver label, anchors, ferry ---- */
@@ -2912,5 +2934,12 @@ body.trip-mode .ess-tel {
   }
   .review-card-title h2 {
     font-size: 18px;
+  }
+  /* Clamp description to 4 lines — saves space, keeps card compact */
+  .review-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
