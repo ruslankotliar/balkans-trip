@@ -42,6 +42,27 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.sync-state {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: #eef3f8;
+  color: #5b6872;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.sync-state.on {
+  background: #e7f7ef;
+  color: #147a48;
+}
+.sync-state.warn {
+  background: #fff2df;
+  color: #9a6700;
+}
 
 .search {
   padding: 8px 10px;
@@ -1763,7 +1784,7 @@ li.itin-sleep-stop {
   border-radius: 0 4px 4px 0;
 }
 
-/* ---- Footer strip: Ruslan / Share / Tasks ---- */
+/* ---- Footer strip: Ruslan / Share / Essentials ---- */
 .sidebar-footer {
   flex-shrink: 0;
   display: flex;
@@ -1786,6 +1807,20 @@ li.itin-sleep-stop {
   max-width: 140px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.share-pill {
+  border: 1px solid #2980b9;
+  border-radius: 14px;
+  background: #fff;
+  color: #2980b9;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.share-pill:hover {
+  background: #eef6fd;
 }
 .tools-menu-wrap {
   position: relative;

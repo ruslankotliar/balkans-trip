@@ -79,6 +79,7 @@ import {
   type TripResult,
   type TripTempo,
 } from './store';
+import { hasSupabase } from './supabase';
 import { buildDaySchedule, formatRecoveryNames } from './schedule';
 import {
   currentTripDay,
@@ -329,6 +330,7 @@ export default function App() {
   const [remotePlaces, setRemotePlaces] = useState<Place[]>(loadRemotePlacesCache);
   const [votes, setVotes] = useState<VoteRow[]>(loadVotesCache);
   const [comments, setComments] = useState<CommentRow[]>(loadCommentsCache);
+  const [syncOnline, setSyncOnline] = useState<boolean | null>(hasSupabase ? null : false);
   // whoOpen drives the "Who are you?" prompt (first use + later edits). reason
   // 'firstUse' has no Cancel (we want a name to vote with).
   const [whoOpen, setWhoOpen] = useState<'firstUse' | 'edit' | null>(null);
@@ -347,6 +349,7 @@ export default function App() {
   const runSync = useRef(async () => {});
   runSync.current = async () => {
     const res = await syncCollab();
+    setSyncOnline(res.online);
     setVotes(res.votes);
     setComments(res.comments);
     setRemotePlaces(res.remotePlaces);
@@ -746,6 +749,21 @@ export default function App() {
     [dayStops, doneIds],
   );
 
+  const syncLabel = !hasSupabase
+    ? 'local only'
+    : syncOnline === null
+      ? 'syncing…'
+      : syncOnline
+        ? 'shared'
+        : 'offline';
+  const syncTitle = !hasSupabase
+    ? 'This browser is running local-only — no shared Supabase sync is configured.'
+    : syncOnline === null
+      ? 'Checking shared plan sync…'
+      : syncOnline
+        ? 'Shared sync is live — plan edits should reach the other phones.'
+        : 'Shared sync is unavailable right now; changes are staying on this device until it reconnects.';
+
   /** Anchor point for proximity finders: GPS fix, else today's last stop. */
   const tripAnchor = useMemo(() => {
     if (mode !== 'trip') return null;
@@ -1113,6 +1131,24 @@ export default function App() {
     const encoded = encodePlan({ overrides, userPlaces });
     const base = `${location.origin}${location.pathname}${location.search}`;
     return `${base}#plan=${encoded}`;
+  }
+
+  async function sharePlanLink() {
+    const url = makeShareLink();
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: 'Balkans Trip plan', url });
+        return;
+      } catch {
+        // cancelled or unsupported — fall through to clipboard
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      alert('Share link copied! Paste it in the group chat — others open it to import the plan.');
+    } catch {
+      prompt('Copy this link and send it to the group:', url);
+    }
   }
 
   function applyImportedPlan(plan: SharedPlan, mode: 'merge' | 'replace') {
@@ -1625,7 +1661,16 @@ export default function App() {
         ) : (
         <>
         <p className="subtitle">
-          Jun 16–28 · <strong>{statusCounts.shortlist}</strong> shortlisted · <strong>{statusCounts.candidate}</strong> candidates
+          Jun 16–28 · <strong>{statusCounts.shortlist}</strong> shortlisted · <strong>{statusCounts.backup}</strong> backup · <strong>{statusCounts.candidate}</strong> candidates
+          <span
+            className={`sync-state ${
+              syncLabel === 'shared' ? 'on' : syncLabel === 'offline' ? 'warn' : ''
+            }`}
+            title={syncTitle}
+          >
+            {' '}
+            · {syncLabel}
+          </span>
         </p>
 
         <div className="view-tabs">
@@ -2014,6 +2059,11 @@ export default function App() {
             {person ? `🙂 ${person}` : '🙂 Set name'}
           </button>
           {mode === 'planning' && (
+            <button className="share-pill" onClick={() => void sharePlanLink()} title={syncTitle}>
+              🔗 Share plan
+            </button>
+          )}
+          {mode === 'planning' && (
             <div className="tools-menu-wrap">
               <button
                 className={`tools-pill ${toolsOpen ? 'on' : ''}`}
@@ -2047,36 +2097,12 @@ export default function App() {
                   </button>
                   <button
                     role="menuitem"
-                    onClick={async () => {
-                      const url = makeShareLink();
-                      if (navigator.share) {
-                        try {
-                          await navigator.share({ title: 'Balkans Trip plan', url });
-                          setToolsOpen(false);
-                          return;
-                        } catch {
-                          // cancelled or unsupported — fall through to clipboard
-                        }
-                      }
-                      try {
-                        await navigator.clipboard.writeText(url);
-                        alert('Share link copied! Paste it in the group chat — others open it to import the plan.');
-                      } catch {
-                        prompt('Copy this link and send it to the group:', url);
-                      }
-                      setToolsOpen(false);
-                    }}
-                  >
-                    Share link
-                  </button>
-                  <button
-                    role="menuitem"
                     onClick={() => {
                       setEssentialsOpen(true);
                       setToolsOpen(false);
                     }}
                   >
-                    Tasks
+                    Essentials
                   </button>
                 </div>
               )}
