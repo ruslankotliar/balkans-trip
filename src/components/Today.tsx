@@ -62,7 +62,7 @@ function stopHint(bestTime: string | undefined): string {
 function HintText({ text }: { text: string }) {
   const parts = text.split(/(\+\d[\d\s]{6,14}\d)/g);
   return (
-    <>
+    <span>
       {parts.map((part, i) =>
         /^\+\d[\d\s]{6,14}\d$/.test(part) ? (
           <a key={i} className="hint-tel" href={`tel:${part.replace(/\s/g, '')}`}>
@@ -72,7 +72,7 @@ function HintText({ text }: { text: string }) {
           part
         ),
       )}
-    </>
+    </span>
   );
 }
 

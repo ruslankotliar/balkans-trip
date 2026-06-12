@@ -13,15 +13,15 @@ import type { Overrides } from './store';
 
 export const DEFAULT_PLAN: Overrides = {
   // ── Day 1: Jun 16 (Tue) — Zadar → Paklenica ──────────────────────────────
+  // Pruned: Zrmanja kayaking (N of Zadar, opposite direction), Zavižan dark
+  // sky (Velebit summit, full-day detour), Cape Planka (80km S — Day 2 area).
+  // These are options for different routing choices, not all-at-once Day 1 stops.
   'hr-zadar-airport':        { day: 1, dayOrder: 1 },
   'hr-zadar-old-town':       { day: 1, dayOrder: 2 },
-  'hr-cape-planka-stargazing': { day: 1, dayOrder: 3 },
-  'hr-velika-paklenica-gorge': { day: 1, dayOrder: 4 },
-  'hr-anica-kuk':            { day: 1, dayOrder: 5 },
-  'hr-camp-np-paklenica':    { day: 1, dayOrder: 6 },
-  'hr-villa-stone-house-martelina': { day: 1, dayOrder: 7 },
-  'hr-zrmanja-kayaking':     { day: 1, dayOrder: 8 },
-  'hr-zavizan-dark-sky':     { day: 1, dayOrder: 9 },
+  'hr-velika-paklenica-gorge': { day: 1, dayOrder: 3 },
+  'hr-anica-kuk':            { day: 1, dayOrder: 4 },
+  'hr-camp-np-paklenica':    { day: 1, dayOrder: 5 },
+  'hr-villa-stone-house-martelina': { day: 1, dayOrder: 6 },
 
   // ── Day 2: Jun 17 (Wed) — Omiš canyoning ─────────────────────────────────
   'hr-split':                { day: 2, dayOrder: 1 },
@@ -61,7 +61,8 @@ export const DEFAULT_PLAN: Overrides = {
   'ba-tima-irma':            { day: 6, dayOrder: 8 },
   'ba-gem-mostar-nanas-house': { day: 6, dayOrder: 9 },
   'ba-villa-cold-river-treehouse-bunica': { day: 6, dayOrder: 10 },
-  'ba-daorson':              { day: 6, dayOrder: 11 },
+  // ba-daorson removed: Illyrian hillfurt on an unmarked dirt road 20km S of
+  // Mostar — too much detour for an already 10-stop Day 6.
 
   // ── Day 7: Jun 22 (Mon) — Mostar → Sarajevo ─────────────────────────────
   'ba-blagaj':               { day: 7, dayOrder: 0 },
@@ -76,8 +77,9 @@ export const DEFAULT_PLAN: Overrides = {
   'ba-zuta-tabija':          { day: 7, dayOrder: 9 },
   'ba-sarajevo-petica-ferhatovic': { day: 7, dayOrder: 10 },
   'ba-air-1542024184506963047': { day: 7, dayOrder: 11 },
-  'ba-lukomir':              { day: 7, dayOrder: 12 },
-  'ba-gem-konjic-lakeview-studio': { day: 7, dayOrder: 13 },
+  // ba-lukomir removed: full-day 4WD excursion, cannot fit on an already
+  // packed Day 7 with Blagaj + Konjic kayak + Sarajevo + cable car.
+  'ba-gem-konjic-lakeview-studio': { day: 7, dayOrder: 12 },
 
   // ── Day 8: Jun 23 (Tue) — Sarajevo → Sand Pyramids → Tara rafting → Žabljak ─
   'ba-sand-pyramids-foca':   { day: 8, dayOrder: 0 },
@@ -87,14 +89,14 @@ export const DEFAULT_PLAN: Overrides = {
   'me-mratinje-dam':         { day: 8, dayOrder: 4 },
   'me-pluzine':              { day: 8, dayOrder: 5 },
   'me-piva-lake-swim':       { day: 8, dayOrder: 6 },
-  'me-trnovacko-jezero':     { day: 8, dayOrder: 7 },
-  'me-camp-mlinski-potok':   { day: 8, dayOrder: 8 },
-  'me-camp-grab':            { day: 8, dayOrder: 9 },
+  'me-camp-mlinski-potok':   { day: 8, dayOrder: 7 },
+  'me-camp-grab':            { day: 8, dayOrder: 8 },
 
   // ── Day 9: Jun 24 (Wed) — Durmitor hike ─────────────────────────────────
   'me-veliki-medjed':        { day: 9, dayOrder: 1 },
   'me-prutas-hike':          { day: 9, dayOrder: 2 },
-  'me-vrazje-jezero':        { day: 9, dayOrder: 3 },
+  'me-trnovacko-jezero':     { day: 9, dayOrder: 3 },  // 4h hike — belongs on the rest day, not the Day 8 transit
+  'me-vrazje-jezero':        { day: 9, dayOrder: 4 },
   'me-zabljak':              { day: 9, dayOrder: 4 },
   'me-planinica':            { day: 9, dayOrder: 5 },
   'me-grabovica-canyon':     { day: 9, dayOrder: 6 },
@@ -129,8 +131,9 @@ export const DEFAULT_PLAN: Overrides = {
   'me-lovcen-njegos-mausoleum': { day: 12, dayOrder: 5 },
   'me-tanjga-kotor':         { day: 12, dayOrder: 6 },
   'me-perast':               { day: 12, dayOrder: 7 },
-  'me-lustica-blue-cave':    { day: 12, dayOrder: 8 },
-  'me-vitaljina-border':     { day: 12, dayOrder: 9 },
+  // me-lustica-blue-cave removed: no time on a day already holding Sveti Stefan
+  // + Kotor fortress + Lovćen + Perast + Trebinje border run.
+  'me-vitaljina-border':     { day: 12, dayOrder: 8 },
   'ba-trebinje-old-town':    { day: 12, dayOrder: 10 },
   'ba-air-1165836464333612445': { day: 12, dayOrder: 11 },
   'ba-villa-village-house-cvaljina': { day: 12, dayOrder: 12 },

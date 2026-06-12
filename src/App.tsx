@@ -143,7 +143,7 @@ const FILTER_PRESETS: FilterPreset[] = [
   {
     id: 'favorites',
     label: '⭐ Group favorites',
-    title: 'Clear group wins: net 👍 ≥ +2 (or all-positive with 2+ votes), any status',
+    title: 'Places where ≥2 people voted 👍 (net positive group vote)',
     categories: CATEGORIES,
     statuses: NON_REJECTED,
     vote: 'favorites',
@@ -1453,6 +1453,13 @@ export default function App() {
             📤 Share
           </button>
           <button
+            className="tasks-pill"
+            title="Tasks & shopping list"
+            onClick={() => setEssentialsOpen(true)}
+          >
+            ✅
+          </button>
+          <button
             className={`mode-pill ${mode}`}
             onClick={() => setMode(mode === 'trip' ? 'planning' : 'trip')}
             title="Switch between planning (research) and trip (on the road) mode"
@@ -1525,7 +1532,7 @@ export default function App() {
             }}
             title="Card-by-card triage: shortlist, skip, or reject"
           >
-            📋 Review
+            Review
           </button>
         </div>
 
@@ -1604,7 +1611,7 @@ export default function App() {
                   <button
                     key={c}
                     className={`chip ${categoryFilter.has(c) ? 'on' : ''}`}
-                    style={{ borderColor: CATEGORY_COLORS[c] }}
+                    style={categoryFilter.has(c) ? { borderColor: CATEGORY_COLORS[c], background: CATEGORY_COLORS[c] + '22' } : undefined}
                     onClick={() => {
                       setCategoryFilter(toggle(categoryFilter, c));
                       setVoteFilter('all');

@@ -279,6 +279,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   border-radius: 6px;
   background: #fff;
   cursor: pointer;
+  white-space: nowrap;
 }
 .view-tabs button.on {
   background: #2c3e50;
@@ -1314,6 +1315,16 @@ body.trip-mode .detail-nav-btn {
   cursor: pointer;
   white-space: nowrap;
 }
+.tasks-pill {
+  border: 1.5px solid #27ae60;
+  border-radius: 16px;
+  background: #fff;
+  font-size: 16px;
+  padding: 3px 9px;
+  cursor: pointer;
+  line-height: 1;
+  white-space: nowrap;
+}
 
 /* ---- Today view (trip mode) ---- */
 .today {
@@ -1665,6 +1676,7 @@ body.trip-mode .detail-close {
   }
   body.trip-mode .who-pill,
   body.trip-mode .share-plan-btn,
+  body.trip-mode .tasks-pill,
   body.trip-mode .mode-pill {
     font-size: 12px;
     padding: 5px 9px;
@@ -2677,19 +2689,9 @@ body.trip-mode .ess-tel {
 /* Review mode — full-screen card-by-card triage                          */
 /* ====================================================================== */
 
-/* Review tab button: smaller + accented so it stands out from the 3 main tabs */
+/* Review tab: same style as the other 3 tabs — no special color accent */
 .review-tab-btn {
-  font-size: 11px !important;
   white-space: nowrap;
-  background: #fff8f0 !important;
-  border-color: #e67e22 !important;
-  color: #c0560e !important;
-  font-weight: 600 !important;
-}
-.review-tab-btn.on {
-  background: #e67e22 !important;
-  color: #fff !important;
-  border-color: #e67e22 !important;
 }
 
 /* Full-screen overlay (above everything, including the sidebar FAB) */
