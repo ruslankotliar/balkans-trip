@@ -97,7 +97,7 @@ export const DEFAULT_PLAN: Overrides = {
   'me-prutas-hike':          { day: 9, dayOrder: 2 },
   'me-trnovacko-jezero':     { day: 9, dayOrder: 3 },  // 4h hike — belongs on the rest day, not the Day 8 transit
   'me-vrazje-jezero':        { day: 9, dayOrder: 4 },
-  'me-zabljak':              { day: 9, dayOrder: 4 },
+  'me-zabljak':              { day: 9, dayOrder: 5 },
   'me-planinica':            { day: 9, dayOrder: 5 },
   'me-grabovica-canyon':     { day: 9, dayOrder: 6 },
   'me-oro-zabljak':          { day: 9, dayOrder: 7 },
