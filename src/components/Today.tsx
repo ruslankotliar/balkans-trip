@@ -49,6 +49,15 @@ interface Props {
 
 const gmaps = (p: PlaceWithOverride) => navUrl(p.lat, p.lng);
 
+/** Extract a compact one-line hint from bestTime (strips the "Day X (Jun N) — " prefix). */
+function stopHint(bestTime: string | undefined): string {
+  if (!bestTime) return '';
+  let text = bestTime.replace(/^(?:Day|Night)\s+\d+[^—]*—\s*/, '').trim();
+  const dotIdx = text.indexOf('. ');
+  const snippet = dotIdx >= 0 && dotIdx < 70 ? text.slice(0, dotIdx) : text.slice(0, 65);
+  return snippet.length < text.length ? snippet + '…' : snippet;
+}
+
 /** Render hint text with phone numbers (+XX ...) as tappable tel: links. */
 function HintText({ text }: { text: string }) {
   const parts = text.split(/(\+\d[\d\s]{6,14}\d)/g);
@@ -288,6 +297,11 @@ export default function Today({
                     skip
                   </button>
                 </div>
+                {!isDone && stopHint(p.bestTime) && (
+                  <div className="today-stop-hint">
+                    <HintText text={stopHint(p.bestTime)} />
+                  </div>
+                )}
               </li>
             );
           })}
