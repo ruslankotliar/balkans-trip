@@ -1097,6 +1097,35 @@ body.trip-mode .detail-nav-btn {
     padding: 5px 10px;
     font-size: 12px;
   }
+  /* ---- Itinerary view: compact on mobile ---- */
+  /* Truncate each day hint to 2 lines — saves ~40px per day × 13 days */
+  .itin-day-hint {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  /* Total bar: minimal on mobile */
+  .itin-total {
+    font-size: 11px;
+    padding: 4px 6px;
+    margin-bottom: 4px;
+  }
+  /* Export buttons: compact text links at the very bottom */
+  .itin-export-row {
+    gap: 6px;
+    padding: 6px 2px 2px;
+  }
+  .itin-export-btn {
+    font-size: 11px;
+    padding: 4px 6px;
+    color: #666;
+    border-color: #ddd;
+  }
+  /* "no stops" text is redundant when you can see the empty day — hide it */
+  .itin-day .itin-empty {
+    display: none;
+  }
 }
 
 /* ---- Route builder: solver label, anchors, ferry ---- */
