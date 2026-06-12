@@ -525,6 +525,7 @@ export default function App() {
     saveTripTempo(tempo);
   }
   const paceMultiplier = TEMPO_MULTIPLIER[tripTempo];
+  const tripTempoLabel = TEMPO_OPTIONS.find((option) => option.tempo === tripTempo)?.label ?? tripTempo;
 
   useEffect(() => {
     document.body.classList.toggle('trip-mode', mode === 'trip');
@@ -733,7 +734,7 @@ export default function App() {
     }
 
     const recovery = tightest.schedule.overSec > 0 ? tightest.schedule.recovery[0] ?? null : null;
-    return { lateDays, totalOverSec, totalSlackSec, tightest, recovery, totalDays: schedules.length };
+    return { lateDays, totalOverSec, totalSlackSec, tightest, recovery };
   }, [daySchedules]);
 
   const totalPlanned = useMemo(
@@ -1643,49 +1644,66 @@ export default function App() {
         </div>
 
         {showPlanningTools && (
-          <div className="planning-tools">
-            <label className="tempo-control" title="Adjust how much time each stop usually takes">
-              <span>Pace</span>
-              <select
-                value={tripTempo}
-                onChange={(e) => setTripTempo(e.target.value as TripTempo)}
-                aria-label="Trip pace"
-              >
-                {TEMPO_OPTIONS.map((option) => (
-                  <option key={option.tempo} value={option.tempo}>
-                    {option.label} · {TEMPO_MULTIPLIER[option.tempo].toFixed(2)}x
-                  </option>
-                ))}
-              </select>
-            </label>
+          <details className="planning-tools">
+            <summary>
+              <span>Trip plan</span>
+              <span className="planning-tools-summary">
+                <span>{tripTempoLabel}</span>
+                {planningHealth ? (
+                  <span className={`planning-tools-status ${planningHealth.lateDays > 0 ? 'warn' : ''}`}>
+                    {planningHealth.lateDays > 0
+                      ? `${planningHealth.lateDays} late day${planningHealth.lateDays === 1 ? '' : 's'}`
+                      : 'All days fit'}
+                  </span>
+                ) : (
+                  <span className="planning-tools-status muted">No route yet</span>
+                )}
+              </span>
+            </summary>
+            <div className="planning-tools-body">
+              <label className="tempo-control" title="Adjust how much time each stop usually takes">
+                <span>Pace</span>
+                <select
+                  value={tripTempo}
+                  onChange={(e) => setTripTempo(e.target.value as TripTempo)}
+                  aria-label="Trip pace"
+                >
+                  {TEMPO_OPTIONS.map((option) => (
+                    <option key={option.tempo} value={option.tempo}>
+                      {option.label} · {TEMPO_MULTIPLIER[option.tempo].toFixed(2)}x
+                    </option>
+                  ))}
+                </select>
+              </label>
 
-            {planningHealth && (
-              <details className="plan-estimate">
-                <summary>
-                  {planningHealth.lateDays > 0
-                    ? `${planningHealth.lateDays} late day${planningHealth.lateDays === 1 ? '' : 's'} · ${formatDuration(planningHealth.totalOverSec)} over`
-                    : `All days fit · ${formatDuration(planningHealth.totalSlackSec)} slack`}
-                </summary>
-                <div className="plan-estimate-body">
-                  <div className="plan-estimate-row">
-                    <span>{planningHealth.lateDays > 0 ? 'Worst day' : 'Tightest day'}</span>
-                    <span>
-                      Day {planningHealth.tightest.day} ·{' '}
-                      {planningHealth.tightest.schedule.slackSec >= 0
-                        ? `${formatDuration(planningHealth.tightest.schedule.slackSec)} slack`
-                        : `+${formatDuration(planningHealth.tightest.schedule.overSec)} late`}
-                    </span>
-                  </div>
-                  {planningHealth.recovery && (
-                    <div className="plan-estimate-trim">
-                      Best trim: skip {formatRecoveryNames(planningHealth.recovery.names)} to recover{' '}
-                      {formatDuration(planningHealth.recovery.freedSec)}
+              {planningHealth && (
+                <details className="plan-estimate">
+                  <summary>
+                    {planningHealth.lateDays > 0
+                      ? `${planningHealth.lateDays} late day${planningHealth.lateDays === 1 ? '' : 's'} · ${formatDuration(planningHealth.totalOverSec)} over`
+                      : `All days fit · ${formatDuration(planningHealth.totalSlackSec)} slack`}
+                  </summary>
+                  <div className="plan-estimate-body">
+                    <div className="plan-estimate-row">
+                      <span>{planningHealth.lateDays > 0 ? 'Worst day' : 'Tightest day'}</span>
+                      <span>
+                        Day {planningHealth.tightest.day} ·{' '}
+                        {planningHealth.tightest.schedule.slackSec >= 0
+                          ? `${formatDuration(planningHealth.tightest.schedule.slackSec)} slack`
+                          : `+${formatDuration(planningHealth.tightest.schedule.overSec)} late`}
+                      </span>
                     </div>
-                  )}
-                </div>
-              </details>
-            )}
-          </div>
+                    {planningHealth.recovery && (
+                      <div className="plan-estimate-trim">
+                        Best trim: skip {formatRecoveryNames(planningHealth.recovery.names)} to recover{' '}
+                        {formatDuration(planningHealth.recovery.freedSec)}
+                      </div>
+                    )}
+                  </div>
+                </details>
+              )}
+            </div>
+          </details>
         )}
 
         <input

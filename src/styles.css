@@ -1337,10 +1337,9 @@ li.itin-sleep-stop {
     text-overflow: ellipsis;
     font-size: 12px;
   }
-  .planning-tools {
+  .planning-tools-body {
     flex-direction: column;
-    align-items: stretch;
-    padding: 7px 8px;
+    padding: 7px 8px 8px;
     gap: 6px;
   }
   .tempo-control {
@@ -1569,15 +1568,75 @@ li.itin-sleep-stop {
   margin: 0;
 }
 
-/* Compact planning tools shown only in itinerary / route views. */
+/* Trip plan disclosure shown only in itinerary / route views. */
 .planning-tools {
-  display: flex;
-  align-items: stretch;
-  gap: 8px;
-  padding: 8px 10px;
   border: 1px solid #dfe6ee;
   border-radius: 10px;
   background: linear-gradient(180deg, #f8fbff, #fff);
+  overflow: hidden;
+}
+.planning-tools summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.planning-tools summary::-webkit-details-marker {
+  display: none;
+}
+.planning-tools summary::after {
+  content: '▾';
+  margin-left: auto;
+  color: #8a6d2f;
+  font-size: 10px;
+}
+.planning-tools[open] summary::after {
+  content: '▴';
+}
+.planning-tools-summary {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #6d7a86;
+  text-align: right;
+  flex-wrap: wrap;
+}
+.planning-tools-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #edf2f7;
+  color: #4b5a67;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.planning-tools-status.warn {
+  background: #ffeae8;
+  color: #c0392b;
+}
+.planning-tools-status.muted {
+  background: #f0f3f6;
+}
+.planning-tools-body {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  padding: 8px 10px 10px;
+  border-top: 1px solid #e7edf3;
+  flex-wrap: wrap;
 }
 .tempo-control {
   display: flex;
