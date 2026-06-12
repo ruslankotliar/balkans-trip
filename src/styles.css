@@ -528,6 +528,54 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   font-size: 11px;
   color: #1a7f4b;
 }
+
+.detail-plan {
+  margin: 10px 0 0;
+  border: 1px solid #dfe6ee;
+  border-radius: 8px;
+  background: #fff;
+}
+.detail-plan summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.detail-plan summary::-webkit-details-marker {
+  display: none;
+}
+.detail-plan summary::after {
+  content: '▾';
+  margin-left: auto;
+  color: #8a6d2f;
+  font-size: 10px;
+}
+.detail-plan[open] summary::after {
+  content: '▴';
+}
+.detail-plan-summary {
+  margin-left: auto;
+  font-weight: 600;
+  color: #6d7a86;
+  text-align: right;
+  font-size: 11px;
+}
+.detail-plan-body {
+  border-top: 1px solid #edf1f5;
+  padding: 8px 10px 10px;
+}
+.detail-plan .detail-edit {
+  margin-top: 0;
+}
+.detail-plan .field-label:last-child {
+  margin-bottom: 0;
+}
 /* ---- Above-the-fold action row: Navigate + Book, side by side ---- */
 .detail-top-actions {
   display: flex;
@@ -1625,7 +1673,8 @@ li.itin-sleep-stop {
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: space-between;
+  gap: 8px;
   padding: 8px 0 2px;
   border-top: 1px solid #e5e5e5;
 }
@@ -1643,42 +1692,53 @@ li.itin-sleep-stop {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.mode-pill {
-  border: 1px solid #2c3e50;
+.tools-menu-wrap {
+  position: relative;
+  margin-left: auto;
+}
+.tools-pill {
+  border: 1px solid #95a5a6;
   border-radius: 14px;
   background: #fff;
-  color: #2c3e50;
+  color: #51606a;
   font-size: 12px;
   font-weight: 600;
   padding: 4px 10px;
   cursor: pointer;
   white-space: nowrap;
 }
-.mode-pill.trip {
-  background: #2c3e50;
-  color: #fff;
+.tools-pill.on {
+  border-color: #2c3e50;
+  color: #2c3e50;
+  background: #f7f9fb;
 }
-.share-plan-btn {
-  border: 1px solid #5a9cf8;
-  border-radius: 14px;
+.tools-menu {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  min-width: 170px;
+  padding: 6px;
+  border: 1px solid #d7dce2;
+  border-radius: 10px;
   background: #fff;
-  color: #2471c8;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 9px;
-  cursor: pointer;
-  white-space: nowrap;
+  box-shadow: 0 12px 28px rgba(25, 33, 49, 0.14);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
-.tasks-pill {
-  border: 1px solid #27ae60;
-  border-radius: 14px;
-  background: #fff;
-  color: #1e8449;
+.tools-menu button {
+  border: none;
+  background: transparent;
+  padding: 8px 10px;
+  text-align: left;
   font-size: 12px;
-  font-weight: 600;
-  padding: 4px 9px;
+  color: #2c3e50;
+  border-radius: 8px;
   cursor: pointer;
-  white-space: nowrap;
+}
+.tools-menu button:hover {
+  background: #f3f6f9;
 }
 
 /* ---- Today view (trip mode) ---- */
@@ -2102,8 +2162,6 @@ body.trip-mode .detail-close {
     gap: 6px;
   }
   body.trip-mode .who-pill,
-  body.trip-mode .share-plan-btn,
-  body.trip-mode .tasks-pill,
   body.trip-mode .mode-pill {
     font-size: 12px;
     padding: 5px 9px;

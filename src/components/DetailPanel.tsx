@@ -236,62 +236,73 @@ export default function DetailPanel({
         />
       </Suspense>
 
-      {/* ---- Planning / editing controls (below the fold is fine — not on-road actions) ---- */}
-      {onEdit && (
-        <button className="detail-edit" onClick={onEdit}>
-          ✎ Edit / move / delete
-        </button>
-      )}
-
-      {!tripMode && (
-        <div className="status-buttons">
-          {STATUSES.map((s) => (
-            <button
-              key={s}
-              className={p.status === s ? `on badge-${s}` : ''}
-              onClick={() => onStatus(p.id, s)}
-            >
-              {s}
-            </button>
-          ))}
-        </div>
-      )}
-
-      <label className="field-label">
-        {p.day ? (
-          <span>
-            Trip day{' '}
-            <span className="day-pill" style={{ background: dayColor(p.day) }}>
-              Day {p.day}
-            </span>
+      {/* ---- Planning / editing controls are tucked behind one disclosure. ---- */}
+      <details className="detail-plan" open={!tripMode}>
+        <summary>
+          <span>Plan this place</span>
+          <span className="detail-plan-summary">
+            {p.status}
+            {p.day ? ` · D${p.day}` : ' · unassigned'}
           </span>
-        ) : (
-          'Trip day'
-        )}
-        <select
-          value={p.day ?? ''}
-          onChange={(e) =>
-            onAssignDay(p.id, e.target.value === '' ? null : Number(e.target.value))
-          }
-        >
-          <option value="">— unassigned —</option>
-          {DAYS.map((d) => (
-            <option key={d} value={d}>
-              Day {d} · {dayDateLabel(d)}
-            </option>
-          ))}
-        </select>
-      </label>
+        </summary>
+        <div className="detail-plan-body">
+          {onEdit && (
+            <button className="detail-edit" onClick={onEdit}>
+              ✎ Edit / move / delete
+            </button>
+          )}
 
-      <label className="field-label">
-        My note
-        <textarea
-          className="note-area"
-          placeholder="Add a personal note…"
-          value={p.note ?? ''}
-          onChange={(e) => onNote(p.id, e.target.value)}
-        />
-      </label>
+          {!tripMode && (
+            <div className="status-buttons">
+              {STATUSES.map((s) => (
+                <button
+                  key={s}
+                  className={p.status === s ? `on badge-${s}` : ''}
+                  onClick={() => onStatus(p.id, s)}
+                >
+                  {s}
+                </button>
+              ))}
+            </div>
+          )}
+
+          <label className="field-label">
+            {p.day ? (
+              <span>
+                Trip day{' '}
+                <span className="day-pill" style={{ background: dayColor(p.day) }}>
+                  Day {p.day}
+                </span>
+              </span>
+            ) : (
+              'Trip day'
+            )}
+            <select
+              value={p.day ?? ''}
+              onChange={(e) =>
+                onAssignDay(p.id, e.target.value === '' ? null : Number(e.target.value))
+              }
+            >
+              <option value="">— unassigned —</option>
+              {DAYS.map((d) => (
+                <option key={d} value={d}>
+                  Day {d} · {dayDateLabel(d)}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="field-label">
+            My note
+            <textarea
+              className="note-area"
+              placeholder="Add a personal note…"
+              value={p.note ?? ''}
+              onChange={(e) => onNote(p.id, e.target.value)}
+            />
+          </label>
+        </div>
+      </details>
 
       <div className="nearby-box">
         <button

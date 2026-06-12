@@ -11,7 +11,7 @@ import {
 } from 'react-leaflet';
 import { type DraftPlace } from './components/AddPlace';
 import DetailPanel from './components/DetailPanel';
-import { ImportPrompt, ShareButton } from './components/SharePlan';
+import { ImportPrompt } from './components/SharePlan';
 import { type CorridorMatch } from './components/CorridorPanel';
 import { type ProximityMatch } from './components/Today';
 import {
@@ -466,6 +466,7 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [view, setView] = useState<View>('places');
   const [fitNonce, setFitNonce] = useState(0);
+  const [toolsOpen, setToolsOpen] = useState(false);
 
   // ---- Planning mode vs Trip mode ----
   // Trip mode is the on-the-road UI: today-centric, no research machinery.
@@ -509,6 +510,7 @@ export default function App() {
   function setMode(m: Mode) {
     setModeState(m);
     saveMode(m);
+    setToolsOpen(false);
     if (m === 'trip') {
       setTripDay(currentTripDay());
       setSidebarOpen(true);
@@ -1628,13 +1630,13 @@ export default function App() {
         <div className="view-tabs">
           <button
             className={view === 'places' || view === 'review' ? 'on' : ''}
-            onClick={() => { setView('places'); setCorridor(null); }}
+            onClick={() => { setView('places'); setCorridor(null); setToolsOpen(false); }}
           >
             Places
           </button>
           <button
             className={view === 'itinerary' || view === 'route' ? 'on' : ''}
-            onClick={() => { setView('itinerary'); setCorridor(null); }}
+            onClick={() => { setView('itinerary'); setCorridor(null); setToolsOpen(false); }}
           >
             Itinerary
           </button>
@@ -1817,18 +1819,11 @@ export default function App() {
 
         {!corridor && view === 'places' && (
           <>
-            <div className="places-action-row">
-              <button className="add-place-btn" onClick={openAddPlace}>
-                ＋ Add place
-              </button>
-              <button
-                className="triage-btn"
-                title="Card-by-card triage: shortlist, skip, or reject"
-                onClick={() => { setView('review'); setCorridor(null); }}
-              >
-                Triage →
-              </button>
-            </div>
+        <div className="places-action-row">
+          <button className="add-place-btn" onClick={openAddPlace}>
+            ＋ Add place
+          </button>
+        </div>
             {visible.length === 0 && (
               <div className="place-list-empty">
                 <p>No places match these filters.</p>
@@ -1938,15 +1933,6 @@ export default function App() {
         {!corridor && view === 'itinerary' && (
           <Suspense fallback={<PanelFallback text="Loading itinerary…" />}>
             <>
-              <div className="itin-header-row">
-                <button
-                  className="route-builder-btn"
-                  title="Build an optimized multi-day road trip from selected places"
-                  onClick={() => setView('route')}
-                >
-                  Route builder →
-                </button>
-              </div>
               <LazyItinerary
                 places={places}
                 routes={routes}
@@ -2009,36 +1995,75 @@ export default function App() {
           >
             {person ? `🙂 ${person}` : '🙂 Set name'}
           </button>
-          <button
-            className="share-plan-btn"
-            title="Share plan with the group — sends a link others can import"
-            onClick={async () => {
-              const url = makeShareLink();
-              if (navigator.share) {
-                try {
-                  await navigator.share({ title: 'Balkans Trip plan', url });
-                  return;
-                } catch {
-                  // cancelled or unsupported — fall through to clipboard
-                }
-              }
-              try {
-                await navigator.clipboard.writeText(url);
-                alert('Share link copied! Paste it in the group chat — others open it to import the plan.');
-              } catch {
-                prompt('Copy this link and send it to the group:', url);
-              }
-            }}
-          >
-            📤 Share
-          </button>
-          <button
-            className="tasks-pill"
-            title="Tasks & shopping list"
-            onClick={() => setEssentialsOpen(true)}
-          >
-            ✅ Tasks
-          </button>
+          {mode === 'planning' && (
+            <div className="tools-menu-wrap">
+              <button
+                className={`tools-pill ${toolsOpen ? 'on' : ''}`}
+                onClick={() => setToolsOpen((v) => !v)}
+                aria-expanded={toolsOpen}
+                title="Secondary tools"
+              >
+                ⋯ More
+              </button>
+              {toolsOpen && (
+                <div className="tools-menu" role="menu">
+                  <button
+                    role="menuitem"
+                    onClick={() => {
+                      setView('review');
+                      setCorridor(null);
+                      setToolsOpen(false);
+                    }}
+                  >
+                    Triage
+                  </button>
+                  <button
+                    role="menuitem"
+                    onClick={() => {
+                      setView('route');
+                      setCorridor(null);
+                      setToolsOpen(false);
+                    }}
+                  >
+                    Route builder
+                  </button>
+                  <button
+                    role="menuitem"
+                    onClick={async () => {
+                      const url = makeShareLink();
+                      if (navigator.share) {
+                        try {
+                          await navigator.share({ title: 'Balkans Trip plan', url });
+                          setToolsOpen(false);
+                          return;
+                        } catch {
+                          // cancelled or unsupported — fall through to clipboard
+                        }
+                      }
+                      try {
+                        await navigator.clipboard.writeText(url);
+                        alert('Share link copied! Paste it in the group chat — others open it to import the plan.');
+                      } catch {
+                        prompt('Copy this link and send it to the group:', url);
+                      }
+                      setToolsOpen(false);
+                    }}
+                  >
+                    Share link
+                  </button>
+                  <button
+                    role="menuitem"
+                    onClick={() => {
+                      setEssentialsOpen(true);
+                      setToolsOpen(false);
+                    }}
+                  >
+                    Tasks
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </aside>
 
