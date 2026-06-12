@@ -114,6 +114,8 @@ export default function DetailPanel({
 
   const autoEstimate = estimateBaseStopMinutes(p);
   const activeEstimate = estimateStopMinutes(p);
+  const activeEstimateSource =
+    activeEstimate.source === 'override' ? 'manual' : activeEstimate.source;
 
   return (
     <div className="detail-panel">
@@ -125,7 +127,6 @@ export default function DetailPanel({
         <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
         {p.category} · {COUNTRY_NAMES[p.country]}
         {p.cost ? ` · ${p.cost}` : ''}
-        {p.timeNeeded ? ` · ${p.timeNeeded}` : ''}
         {p.rating ? ` · ${'★'.repeat(p.rating)}` : ''}
         {p.userAdded ? ' · ✎ added by you' : ''}
       </p>
@@ -171,56 +172,58 @@ export default function DetailPanel({
         </p>
       )}
 
-      <div className="detail-time-box">
-        <div className="detail-time-head">
-          <strong>Time estimate</strong>
-          <span className="detail-time-active">{formatMinutes(activeEstimate.minutes)}</span>
-        </div>
-        <div className="detail-time-row">
-          <span className="detail-time-label">
-            Auto: {formatMinutes(autoEstimate.minutes)}
+      <details className="detail-time-box" open={!tripMode}>
+        <summary>
+          <span>Timing</span>
+          <span className="detail-time-summary">
+            {formatMinutes(activeEstimate.minutes)} · {activeEstimateSource}
             {p.timeMinutes != null && <span className="detail-time-note"> override active</span>}
           </span>
-          <span className="detail-time-source">
-            {activeEstimate.source === 'override' ? 'manual' : activeEstimate.source}
-          </span>
-        </div>
-        <div className="detail-time-edit">
-          <input
-            className="time-input"
-            type="text"
-            inputMode="text"
-            value={timeDraft}
-            onChange={(e) => setTimeDraft(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter') {
-                e.preventDefault();
-                saveTimeDraft();
-              }
-            }}
-            placeholder="1h 30m, 45m, half day"
-          />
-          <button className="detail-time-set" onClick={saveTimeDraft}>
-            Set
-          </button>
-          {p.timeMinutes != null && (
-            <button
-              className="detail-time-clear"
-              onClick={() => {
-                onTimeMinutes(p.id, null);
-                setTimeDraft(p.timeNeeded ?? '');
-                setTimeMsg('Override cleared');
+        </summary>
+        <div className="detail-time-body">
+          <div className="detail-time-row">
+            <span className="detail-time-label">
+              Auto: {formatMinutes(autoEstimate.minutes)}
+            </span>
+            <span className="detail-time-source">{activeEstimateSource}</span>
+          </div>
+          <div className="detail-time-edit">
+            <input
+              className="time-input"
+              type="text"
+              inputMode="text"
+              value={timeDraft}
+              onChange={(e) => setTimeDraft(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  saveTimeDraft();
+                }
               }}
-            >
-              Reset
+              placeholder="1h 30m, 45m, half day"
+            />
+            <button className="detail-time-set" onClick={saveTimeDraft}>
+              Set
             </button>
-          )}
+            {p.timeMinutes != null && (
+              <button
+                className="detail-time-clear"
+                onClick={() => {
+                  onTimeMinutes(p.id, null);
+                  setTimeDraft(p.timeNeeded ?? '');
+                  setTimeMsg('Override cleared');
+                }}
+              >
+                Reset
+              </button>
+            )}
+          </div>
+          <div className="detail-time-foot">
+            Used by Today, Itinerary, and route previews to recalculate the clock.
+          </div>
+          {timeMsg && <div className="detail-time-msg">{timeMsg}</div>}
         </div>
-        <div className="detail-time-foot">
-          Used by Today, Itinerary, and route previews to recalculate the clock.
-        </div>
-        {timeMsg && <div className="detail-time-msg">{timeMsg}</div>}
-      </div>
+      </details>
 
       {/* ---- Group votes (always visible); comments collapsed to save space ---- */}
       <Suspense fallback={<p className="loading-dot">Loading comments…</p>}>

@@ -460,6 +460,42 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   border: 1px solid #dfe6ee;
   border-radius: 8px;
   background: linear-gradient(180deg, #f8fbff, #fff);
+  overflow: hidden;
+}
+.detail-time-box summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.detail-time-box summary::-webkit-details-marker {
+  display: none;
+}
+.detail-time-box summary::after {
+  content: '▾';
+  margin-left: auto;
+  color: #8a6d2f;
+  font-size: 10px;
+}
+.detail-time-box[open] summary::after {
+  content: '▴';
+}
+.detail-time-summary {
+  margin-left: auto;
+  font-weight: 600;
+  color: #5e6d7a;
+  text-align: right;
+  font-size: 11px;
+}
+.detail-time-body {
+  border-top: 1px solid #e7edf3;
+  margin-top: 8px;
+  padding-top: 8px;
 }
 .detail-time-head {
   display: flex;
