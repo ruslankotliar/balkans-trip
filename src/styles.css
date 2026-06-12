@@ -50,7 +50,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 .filter-group {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 10px;
+  row-gap: 14px;
   column-gap: 6px;
 }
 
