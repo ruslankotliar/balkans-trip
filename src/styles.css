@@ -1289,15 +1289,19 @@ li.itin-sleep-stop {
     text-overflow: ellipsis;
     font-size: 12px;
   }
-  .tempo-row {
-    flex-wrap: wrap;
+  .planning-tools {
+    flex-direction: column;
+    align-items: stretch;
     padding: 7px 8px;
     gap: 6px;
   }
-  .tempo-note {
+  .tempo-control {
     width: 100%;
-    margin-left: 0;
-    text-align: left;
+    justify-content: space-between;
+  }
+  .tempo-control select {
+    min-width: 0;
+    flex: 1;
   }
   /* Filter chip rows: horizontal scroll, no wrapping */
   .filter-group {
@@ -1384,15 +1388,11 @@ li.itin-sleep-stop {
     padding: 0 10px;
     font-size: 12px;
   }
-  .plan-health-card {
-    padding: 7px 8px;
-    gap: 3px;
+  .plan-estimate {
+    width: 100%;
   }
-  .plan-health-row {
+  .plan-estimate-row {
     font-size: 11px;
-  }
-  .plan-health-open {
-    max-width: 100%;
   }
 }
 
@@ -1521,85 +1521,83 @@ li.itin-sleep-stop {
   margin: 0;
 }
 
-.tempo-row {
+/* Compact planning tools shown only in itinerary / route views. */
+.planning-tools {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 8px;
   padding: 8px 10px;
   border: 1px solid #dfe6ee;
   border-radius: 10px;
   background: linear-gradient(180deg, #f8fbff, #fff);
 }
-.tempo-label {
+.tempo-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.tempo-control span {
   flex-shrink: 0;
   font-size: 12px;
   font-weight: 700;
   color: #2c3e50;
   letter-spacing: 0.02em;
 }
-.tempo-switch {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.tempo-switch button {
+.tempo-control select {
+  min-width: 156px;
+  max-width: 100%;
   border: 1px solid #cbd6e2;
-  border-radius: 999px;
+  border-radius: 8px;
   background: #fff;
-  color: #546070;
-  font-size: 11px;
+  color: #2c3e50;
+  font-size: 12px;
   font-weight: 600;
-  padding: 4px 9px;
-  cursor: pointer;
+  padding: 6px 10px;
 }
-.tempo-switch button.on {
-  background: #2c3e50;
-  color: #fff;
-  border-color: #2c3e50;
-}
-.tempo-note {
-  margin-left: auto;
-  font-size: 10px;
-  line-height: 1.3;
-  color: #8090a3;
-  text-align: right;
-}
-.plan-health-card {
+.plan-estimate {
+  flex: 1;
   border: 1px solid #e6d9b8;
   border-radius: 10px;
   background: linear-gradient(180deg, #fdfaf1, #fff);
-  padding: 8px 10px;
+  padding: 6px 8px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
+  min-width: 0;
 }
-.plan-health-head {
+.plan-estimate summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-}
-.plan-health-head strong {
-  font-size: 13px;
-}
-.plan-health-badge {
-  font-size: 10px;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  font-size: 12px;
   font-weight: 700;
-  border-radius: 999px;
-  padding: 2px 8px;
-  white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  color: #2c3e50;
 }
-.plan-health-badge.ok {
-  background: #eaf7ee;
-  color: #1a7f4b;
+.plan-estimate summary::-webkit-details-marker {
+  display: none;
 }
-.plan-health-badge.late {
-  background: #fdecea;
-  color: #c0392b;
+.plan-estimate summary::after {
+  content: '▾';
+  margin-left: auto;
+  color: #8a6d2f;
+  font-size: 10px;
 }
-.plan-health-row {
+.plan-estimate[open] summary::after {
+  content: '▴';
+}
+.plan-estimate-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 4px;
+}
+.plan-estimate-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1607,12 +1605,12 @@ li.itin-sleep-stop {
   font-size: 12px;
   color: #555;
 }
-.plan-health-row span:last-child {
+.plan-estimate-row span:last-child {
   text-align: right;
   font-weight: 600;
   color: #2c3e50;
 }
-.plan-health-recovery {
+.plan-estimate-trim {
   font-size: 11px;
   line-height: 1.35;
   color: #8a5b00;
@@ -1620,26 +1618,6 @@ li.itin-sleep-stop {
   border-left: 2px solid #e8b800;
   padding: 3px 6px;
   border-radius: 0 4px 4px 0;
-}
-.plan-health-stay {
-  align-items: center;
-}
-.plan-health-open {
-  max-width: 56%;
-  border: 1px solid #2c3e50;
-  border-radius: 999px;
-  background: #fff;
-  color: #2c3e50;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 4px 8px;
-  cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.plan-health-open:hover {
-  background: #f4f7fb;
 }
 
 /* ---- Footer strip: Ruslan / Share / Tasks ---- */

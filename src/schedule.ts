@@ -152,6 +152,15 @@ export function formatTimeRange(startSec: number, endSec: number): string {
   return `${formatClock(startSec)}–${formatClock(endSec)}`;
 }
 
+/**
+ * Compress a recovery suggestion into something humans can scan quickly.
+ * Example: "Kotor Old Town + Perast + 2 more".
+ */
+export function formatRecoveryNames(names: string[], maxVisible = 2): string {
+  if (names.length <= maxVisible) return names.join(' + ');
+  return `${names.slice(0, maxVisible).join(' + ')} + ${names.length - maxVisible} more`;
+}
+
 /** Estimate minutes to spend at a stop, respecting explicit overrides first. */
 export function estimateStopMinutes(place: PlaceWithOverride): { minutes: number; source: 'override' | 'data' | 'heuristic' } {
   if (typeof place.timeMinutes === 'number' && Number.isFinite(place.timeMinutes) && place.timeMinutes >= 0) {

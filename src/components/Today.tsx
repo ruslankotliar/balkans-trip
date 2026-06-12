@@ -1,7 +1,7 @@
 import { CATEGORY_COLORS } from '../constants';
 import { bookingFor, navUrl } from '../links';
 import type { CachedRoute, PlaceWithOverride } from '../store';
-import { formatClock, type DaySchedule } from '../schedule';
+import { formatClock, formatRecoveryNames, type DaySchedule } from '../schedule';
 import { DAY_HINTS, DAY_OPS, TRIP_DAYS, daysToTripStart, dayDateLabel, formatDuration, stopHint } from '../trip';
 
 export interface ProximityMatch {
@@ -255,16 +255,9 @@ export default function Today({
             <div className="today-recovery">
               <strong>Fastest catch-up (approx):</strong>{' '}
               <span>
-                skip {schedule.recovery[0].names.join(' + ')} to recover{' '}
+                skip {formatRecoveryNames(schedule.recovery[0].names)} to recover{' '}
                 {formatDuration(schedule.recovery[0].freedSec)}
               </span>
-              {schedule.recovery.length > 1 && (
-                <span className="today-recovery-more">
-                  {' '}
-                  · +{schedule.recovery.length - 1} more option
-                  {schedule.recovery.length - 1 === 1 ? '' : 's'}
-                </span>
-              )}
             </div>
           )}
         </div>

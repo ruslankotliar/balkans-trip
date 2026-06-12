@@ -1,5 +1,5 @@
 import { CATEGORY_COLORS } from '../constants';
-import { formatClock, type DaySchedule } from '../schedule';
+import { formatClock, formatRecoveryNames, type DaySchedule } from '../schedule';
 import type { PlaceWithOverride, TripResult } from '../store';
 import { formatDistance, formatDuration } from '../trip';
 
@@ -221,7 +221,7 @@ export default function RouteBuilder({
               </div>
               {schedule.overSec > 0 && schedule.recovery.length > 0 && (
                 <div className="rb-clock-recovery">
-                  Catch-up (approx): skip {schedule.recovery[0].names.join(' + ')} to recover{' '}
+                  Catch-up (approx): skip {formatRecoveryNames(schedule.recovery[0].names)} to recover{' '}
                   {formatDuration(schedule.recovery[0].freedSec)}
                 </div>
               )}

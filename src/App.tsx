@@ -76,7 +76,7 @@ import {
   type TripResult,
   type TripTempo,
 } from './store';
-import { buildDaySchedule } from './schedule';
+import { buildDaySchedule, formatRecoveryNames } from './schedule';
 import {
   currentTripDay,
   dayColor,
@@ -1539,8 +1539,7 @@ export default function App() {
   }
 
   const showTripLayer = view === 'route' && !!rbTrip;
-  const topBookEarlyStay =
-    bookEarlyStays.find((s) => s.urgency === 'book now') ?? bookEarlyStays[0] ?? null;
+  const showPlanningTools = mode === 'planning' && (view === 'itinerary' || view === 'route');
 
   return (
     <div className="app">
@@ -1568,75 +1567,6 @@ export default function App() {
             {mode === 'trip' ? '🚗 Trip' : '🗺️ Planning'}
           </button>
         </div>
-
-        <div className="tempo-row">
-          <span className="tempo-label">Pace</span>
-          <div className="tempo-switch" role="group" aria-label="Trip pace">
-            {TEMPO_OPTIONS.map((option) => (
-              <button
-                key={option.tempo}
-                className={tripTempo === option.tempo ? 'on' : ''}
-                aria-pressed={tripTempo === option.tempo}
-                onClick={() => setTripTempo(option.tempo)}
-                title={`${option.label} pace`}
-              >
-                {option.label} · {TEMPO_MULTIPLIER[option.tempo].toFixed(2)}x
-              </button>
-            ))}
-          </div>
-          <span className="tempo-note">Used by the day clocks, route builder, and recovery hints.</span>
-        </div>
-
-        {mode === 'planning' && planningHealth && (
-          <div className="plan-health-card">
-            <div className="plan-health-head">
-              <strong>Plan health</strong>
-              <span className={`plan-health-badge ${planningHealth.lateDays > 0 ? 'late' : 'ok'}`}>
-                {planningHealth.lateDays > 0
-                  ? `${planningHealth.lateDays} late day${planningHealth.lateDays === 1 ? '' : 's'}`
-                  : 'All days fit'}
-              </span>
-            </div>
-            <div className="plan-health-row">
-              <span>Clock balance</span>
-              <span>
-                {planningHealth.lateDays > 0
-                  ? `+${formatDuration(planningHealth.totalOverSec)} over`
-                  : `${formatDuration(planningHealth.totalSlackSec)} slack`}
-              </span>
-            </div>
-            <div className="plan-health-row">
-              <span>Tightest day</span>
-              <span>
-                Day {planningHealth.tightest.day} ·{' '}
-                {planningHealth.tightest.schedule.slackSec >= 0
-                  ? `${formatDuration(planningHealth.tightest.schedule.slackSec)} slack`
-                  : `+${formatDuration(planningHealth.tightest.schedule.overSec)} late`}
-              </span>
-            </div>
-            {planningHealth.recovery && (
-              <div className="plan-health-recovery">
-                Fastest trim: skip {planningHealth.recovery.names.join(' + ')} to recover{' '}
-                {formatDuration(planningHealth.recovery.freedSec)}
-              </div>
-            )}
-            {topBookEarlyStay && (
-              <div className="plan-health-row plan-health-stay">
-                <span>
-                  Special stays · <strong>{bookEarlyStays.length}</strong>
-                </span>
-                <button
-                  className="plan-health-open"
-                  type="button"
-                  onClick={() => focusPin(topBookEarlyStay.place.id)}
-                  title="Open the highest-priority special stay"
-                >
-                  {topBookEarlyStay.place.name}
-                </button>
-              </div>
-            )}
-          </div>
-        )}
 
         {mode === 'trip' ? (
           <Suspense fallback={<PanelFallback text="Loading trip view…" />}>
@@ -1696,6 +1626,52 @@ export default function App() {
             Itinerary
           </button>
         </div>
+
+        {showPlanningTools && (
+          <div className="planning-tools">
+            <label className="tempo-control" title="Adjust how much time each stop usually takes">
+              <span>Pace</span>
+              <select
+                value={tripTempo}
+                onChange={(e) => setTripTempo(e.target.value as TripTempo)}
+                aria-label="Trip pace"
+              >
+                {TEMPO_OPTIONS.map((option) => (
+                  <option key={option.tempo} value={option.tempo}>
+                    {option.label} · {TEMPO_MULTIPLIER[option.tempo].toFixed(2)}x
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            {planningHealth && (
+              <details className="plan-estimate">
+                <summary>
+                  {planningHealth.lateDays > 0
+                    ? `${planningHealth.lateDays} late day${planningHealth.lateDays === 1 ? '' : 's'} · ${formatDuration(planningHealth.totalOverSec)} over`
+                    : `All days fit · ${formatDuration(planningHealth.totalSlackSec)} slack`}
+                </summary>
+                <div className="plan-estimate-body">
+                  <div className="plan-estimate-row">
+                    <span>{planningHealth.lateDays > 0 ? 'Worst day' : 'Tightest day'}</span>
+                    <span>
+                      Day {planningHealth.tightest.day} ·{' '}
+                      {planningHealth.tightest.schedule.slackSec >= 0
+                        ? `${formatDuration(planningHealth.tightest.schedule.slackSec)} slack`
+                        : `+${formatDuration(planningHealth.tightest.schedule.overSec)} late`}
+                    </span>
+                  </div>
+                  {planningHealth.recovery && (
+                    <div className="plan-estimate-trim">
+                      Best trim: skip {formatRecoveryNames(planningHealth.recovery.names)} to recover{' '}
+                      {formatDuration(planningHealth.recovery.freedSec)}
+                    </div>
+                  )}
+                </div>
+              </details>
+            )}
+          </div>
+        )}
 
         <input
           className="search"

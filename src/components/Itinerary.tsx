@@ -1,5 +1,5 @@
 import { CATEGORY_COLORS } from '../constants';
-import { formatClock, type DaySchedule } from '../schedule';
+import { formatClock, formatRecoveryNames, type DaySchedule } from '../schedule';
 import type { PlaceWithOverride } from '../store';
 import type { DayRoutes } from '../useDayRoutes';
 import {
@@ -126,7 +126,7 @@ export default function Itinerary({
             )}
             {schedule && schedule.overSec > 0 && schedule.recovery.length > 0 && (
               <div className="itin-day-recovery">
-                Catch-up (approx): skip {schedule.recovery[0].names.join(' + ')} to recover{' '}
+                Catch-up (approx): skip {formatRecoveryNames(schedule.recovery[0].names)} to recover{' '}
                 {formatDuration(schedule.recovery[0].freedSec)}
               </div>
             )}
