@@ -14,7 +14,13 @@
     "cost": "~€6-8/person for a full ćevapi plate + beer; ~€13 for two with drinks",
     "timeNeeded": "45 min",
     "bestTime": "Lunch or early dinner; it's residential so quieter than old-town spots",
-    "tags": ["cevapi", "grill", "cheap-eats", "local-favourite", "zadar"],
+    "tags": [
+      "cevapi",
+      "grill",
+      "cheap-eats",
+      "local-favourite",
+      "zadar"
+    ],
     "rating": 4,
     "status": "backup"
   },
@@ -23,7 +29,7 @@
     "name": "Slastičarnica Donat (Zadar gelato)",
     "country": "HR",
     "category": "food",
-    "lat": 44.1165520,
+    "lat": 44.116552,
     "lng": 15.2243269,
     "description": "Family-run gelateria since 1978 on the cathedral square (Trg Svete Stošije) in Zadar old town — the name locals and returning visitors give for the best ice cream in town. Central, scenic and cheap.",
     "communityNotes": "Reviewers: 'The nicest people and the most delicious gelato. We had 2×2 scoops and 1×1 scoop and it was 10€' (≈€2/scoop); 'best ice in town.' Consistently called the best ice cream people had in Croatia (chocolate, pistachio, yogurt, lemon repeatedly praised). Expect a queue in June peak season.",
@@ -34,7 +40,13 @@
     "cost": "~€2/scoop",
     "timeNeeded": "15 min",
     "bestTime": "After the Sea Organ / sunset stroll",
-    "tags": ["gelato", "dessert", "cheap", "old-town", "zadar"],
+    "tags": [
+      "gelato",
+      "dessert",
+      "cheap",
+      "old-town",
+      "zadar"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -55,7 +67,13 @@
     "timeNeeded": "30 min",
     "bestTime": "~9am for selection; closes mid-afternoon",
     "facilities": "Open-air stalls; cash only; adjacent fish/meat hall",
-    "tags": ["market", "self-catering", "camping-supplies", "produce", "zadar"],
+    "tags": [
+      "market",
+      "self-catering",
+      "camping-supplies",
+      "produce",
+      "zadar"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -64,7 +82,7 @@
     "name": "Kantun Paulina (Split ćevapi institution)",
     "country": "HR",
     "category": "food",
-    "lat": 43.5100680,
+    "lat": 43.510068,
     "lng": 16.4364206,
     "description": "Legendary takeaway ćevapi window in the Varoš quarter, going since the 1960s — the single most-named cheap eat in Split. Order by number of sausages (5/7/10) in lepinja; there is almost always a queue.",
     "communityNotes": "Review texts: 'It is 5€ small and 7.80 medium'; 'the small has 5 sausages… which was €5.50'; 'we shared a large and couldn't imagine going it solo (it's massive).' On the line: 'There is a constant queue especially at lunch time, around 30 min' — locals treat the queue as the quality signal. 'Much better and much more local' than the surrounding burger joints.",
@@ -75,7 +93,13 @@
     "cost": "€5 small (5 sausages) / €7.80 medium; meal for 4 ≈ €25-30",
     "timeNeeded": "30 min incl. queue",
     "bestTime": "Day 2 (Jun 17) — quick ćevapi stop in Split en route Paklenica → Omiš. Off-peak (before 12:00 or after 14:00) to skip the worst of the queue.",
-    "tags": ["cevapi", "takeaway", "institution", "cheap-eats", "split"],
+    "tags": [
+      "cevapi",
+      "takeaway",
+      "institution",
+      "cheap-eats",
+      "split"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -95,7 +119,14 @@
     "cost": "€25-40/person (mains €20-32)",
     "timeNeeded": "1-1.5h incl. wait",
     "bestTime": "Arrive right at opening to beat the wait; cash preferred",
-    "tags": ["konoba", "daily-menu", "dalmatian", "old-town", "split", "splurge-ish"],
+    "tags": [
+      "konoba",
+      "daily-menu",
+      "dalmatian",
+      "old-town",
+      "split",
+      "splurge-ish"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -104,8 +135,8 @@
     "name": "Pazar green market & Ribarnica fish market (Split)",
     "country": "HR",
     "category": "food",
-    "lat": 43.5084000,
-    "lng": 16.4421000,
+    "lat": 43.5084,
+    "lng": 16.4421,
     "description": "Split's self-catering one-two: the Pazar open-air green market against the eastern palace wall (cheap produce, cheese, pršut) and the Ribarnica fish market near Marmontova (~400 m away) for the day's catch. Both cheapest near closing when vendors discount to clear stock.",
     "communityNotes": "'Produce is fresh, cheap… a farm-to-table meal in your rented kitchen'; 'shopping after 12:30 can be an opportunity to budget — vendors are likely to accept haggling.' Ribarnica: 'vendors will surely give you a bargain' before closing. Pazar opens ~7am, closes ~14:00. Fish market coordinate ≈ 43.5091, 16.4374.",
     "sources": [
@@ -116,7 +147,13 @@
     "timeNeeded": "30-45 min",
     "bestTime": "Early for selection, ~13:00 for discounts",
     "facilities": "Open-air produce market + covered fish hall; cash",
-    "tags": ["market", "fish-market", "self-catering", "camping-supplies", "split"],
+    "tags": [
+      "market",
+      "fish-market",
+      "self-catering",
+      "camping-supplies",
+      "split"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -136,7 +173,13 @@
     "cost": "Grill mains ~€12-20; peka pre-ordered, priced per kg/person",
     "timeNeeded": "1.5-2h (sit-down)",
     "bestTime": "Call a day ahead if you want peka",
-    "tags": ["konoba", "peka", "pre-order", "grill", "omis"],
+    "tags": [
+      "konoba",
+      "peka",
+      "pre-order",
+      "grill",
+      "omis"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -156,7 +199,14 @@
     "cost": "€30-60/person at table; peka pre-ordered",
     "timeNeeded": "2h (sit-down)",
     "bestTime": "June reality: reserve ~3 days ahead (phone only), walk-ins wait ~30 min; peka still pre-order; sunset for the beachfront table",
-    "tags": ["konoba", "peka", "pre-order", "seafood", "brela", "makarska-riviera"],
+    "tags": [
+      "konoba",
+      "peka",
+      "pre-order",
+      "seafood",
+      "brela",
+      "makarska-riviera"
+    ],
     "rating": 4,
     "status": "backup"
   },
@@ -165,8 +215,8 @@
     "name": "Barba (Dubrovnik seafood street food)",
     "country": "HR",
     "category": "food",
-    "lat": 42.6415000,
-    "lng": 18.1099100,
+    "lat": 42.6415,
+    "lng": 18.10991,
     "description": "Tiny family-run seafood fast-food joint just inside the old-town walls on Boškovićeva — the go-to budget seafood stop in a brutally expensive city. Famous for an octopus burger in a cuttlefish-ink bun, octopus salad and tempura prawns. Limited seating, expect a queue at peak.",
     "communityNotes": "Reviews call it 'unrivalled for a lunch stop, inexpensive and tasty' and 'best lunch of [the] visit to Dubrovnik.' Octopus burger reported ~€9; a full sit-down dinner ~€20-25/person. Consistently flagged the best value-for-money seafood inside the walls.",
     "sources": [
@@ -176,7 +226,13 @@
     "cost": "Octopus burger ~€9-10; ~€15-20/person with sides/drinks",
     "timeNeeded": "30-45 min",
     "bestTime": "Off-peak lunch; few seats",
-    "tags": ["street-food", "seafood", "cheap-eats", "octopus", "dubrovnik"],
+    "tags": [
+      "street-food",
+      "seafood",
+      "cheap-eats",
+      "octopus",
+      "dubrovnik"
+    ],
     "rating": 4,
     "status": "backup"
   },
@@ -185,8 +241,8 @@
     "name": "Pizzeria Tabasco (Dubrovnik cheap pizza)",
     "country": "HR",
     "category": "food",
-    "lat": 42.6427400,
-    "lng": 18.1115100,
+    "lat": 42.64274,
+    "lng": 18.11151,
     "description": "Long-running local pizzeria up near the cable-car lower station / Ploče gate, widely cited as the best-value pizza in Dubrovnik — big portions, well away from the Stradun markup. A reliable cheap group feed (4 can share 2-3 pizzas).",
     "communityNotes": "Repeatedly named 'best pizza in town' at 'affordable prices compared to other similar places.' Context for Dubrovnik pizza pricing: Mezzanave's margherita is €7 ('most affordable in Dubrovnik'), Papillon €7.70-20 — Tabasco sits in that budget band with larger pies.",
     "sources": [
@@ -196,7 +252,12 @@
     "cost": "Pizzas ~€8-14",
     "timeNeeded": "1h",
     "bestTime": "Combine with a cable-car / Srđ sunset trip",
-    "tags": ["pizza", "cheap-eats", "casual", "dubrovnik"],
+    "tags": [
+      "pizza",
+      "cheap-eats",
+      "casual",
+      "dubrovnik"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -205,8 +266,8 @@
     "name": "Glorijet (Gruž fish market — where fishermen eat)",
     "country": "HR",
     "category": "food",
-    "lat": 42.6555600,
-    "lng": 18.0880900,
+    "lat": 42.65556,
+    "lng": 18.08809,
     "description": "Unpretentious spot right by the Gruž fish market and ferry port (where you'll catch the Mljet/island boats anyway) — best-value fresh fish and seafood in Dubrovnik, well outside the old-town tourist zone.",
     "communityNotes": "Local food writers single it out as 'the best restaurant in Dubrovnik to eat fresh fish and seafood for an affordable price — even local fishermen come to eat here.' Strong choice if grabbing a Jadrolinija ferry from Gruž; pairs with the Gruž market for self-catering supplies.",
     "sources": [
@@ -215,7 +276,13 @@
     "cost": "Fresh-fish mains ~€12-20 (far below old-town prices)",
     "timeNeeded": "1-1.5h",
     "bestTime": "Lunch before/after a Gruž ferry",
-    "tags": ["seafood", "fresh-fish", "local-favourite", "gruz", "near-ferry-port"],
+    "tags": [
+      "seafood",
+      "fresh-fish",
+      "local-favourite",
+      "gruz",
+      "near-ferry-port"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -224,8 +291,8 @@
     "name": "Peppino's Gelato (Dubrovnik old town)",
     "country": "HR",
     "category": "food",
-    "lat": 42.6414900,
-    "lng": 18.1108600,
+    "lat": 42.64149,
+    "lng": 18.11086,
     "description": "Artisan gelato shop widely rated the best in Dubrovnik over the more touristy Dolce Vita. Creative flavours (Dalmatian cake, carob & fig, lemon pie), gluten-free options, two old-town locations.",
     "communityNotes": "Reviewers (incl. self-described locals): 'best gelato in Old Town,' 'more dense, like true gelato' vs Dolce Vita's 'fluff.' Reported ~€4/scoop. A cheap treat that holds up against the Stradun's inflated cafés.",
     "sources": [
@@ -235,7 +302,12 @@
     "cost": "~€4/scoop",
     "timeNeeded": "15 min",
     "bestTime": "After the city-walls walk",
-    "tags": ["gelato", "dessert", "cheap-treat", "dubrovnik"],
+    "tags": [
+      "gelato",
+      "dessert",
+      "cheap-treat",
+      "dubrovnik"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -244,8 +316,8 @@
     "name": "Bota Šare (Mali Ston oysters & mussels)",
     "country": "HR",
     "category": "food",
-    "lat": 42.8465700,
-    "lng": 17.7044100,
+    "lat": 42.84657,
+    "lng": 17.70441,
     "description": "Waterfront seafood restaurant built into Mali Ston's old fortress wall, specializing in the bay's famous oysters and mussel buzara — generally the better-value of the two big Mali Ston names (Kapetanova Kuća is next door). The signature splurge: oysters straight from the bay they're farmed in.",
     "communityNotes": "Mixed but mostly positive: 'food as fresh and tasty but at half the price' of the neighbour; 'great fish and good price.' Critics call it 'an obvious tourist trap.' Price anchors: oysters ~€1 each at roadside farm stands (open ~9am-4pm), ~€1.3-2 each at restaurant tables (served in orders of 3); one 2025 bill listed steamed mussels (a full buzara pot for the table) at €61.52. Cheapest authentic move: buy oysters straight off the Mali Ston/Bistrina farm stands.",
     "sources": [
@@ -255,7 +327,14 @@
     "cost": "Oysters ~€1.5-2 each (table) / ~€1 at farm stands; mussel buzara ~€60/pot; ~€30-40/person full meal",
     "timeNeeded": "1-2h",
     "bestTime": "Jun 18 lunch (arrive 12:00 opening); call ahead: +385 20 754482",
-    "tags": ["oysters", "mussels", "seafood", "splurge", "mali-ston", "marquee"],
+    "tags": [
+      "oysters",
+      "mussels",
+      "seafood",
+      "splurge",
+      "mali-ston",
+      "marquee"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -264,8 +343,8 @@
     "name": "Grgić Vina (Trstenik — Mike Grgich's Pelješac winery)",
     "country": "HR",
     "category": "food",
-    "lat": 42.9149700,
-    "lng": 17.4052400,
+    "lat": 42.91497,
+    "lng": 17.40524,
     "description": "Cellar of legendary Napa winemaker Croatian-born Miljenko 'Mike' Grgich, dramatically sited on a headland above seaside Trstenik. Makes just two top-tier wines — Plavac Mali (red) and Pošip (white). A distinct alternative to the already-listed Matuško on the Pelješac wine road.",
     "communityNotes": "'The location is surreal and the Pošip and Plavac Mali were worth the trek.' Tasting €10/person for both wines (small pours), antipasti platters available. Bottles: Plavac Mali ~€34, Pošip ~€25 — some reviewers grumble 'expensive compared to other local wines,' so it reads as a name-prestige splurge; the Trstenik headland setting is the real draw.",
     "sources": [
@@ -276,7 +355,15 @@
     "timeNeeded": "1h",
     "bestTime": "Midday on the headland; call ahead in summer",
     "facilities": "Tasting room, terrace, antipasti platters, shop",
-    "tags": ["winery", "wine-tasting", "plavac-mali", "posip", "peljesac", "trstenik", "marquee"],
+    "tags": [
+      "winery",
+      "wine-tasting",
+      "plavac-mali",
+      "posip",
+      "peljesac",
+      "trstenik",
+      "marquee"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -285,8 +372,8 @@
     "name": "Konoba Antunović (Kuna Pelješka — farm peka)",
     "country": "HR",
     "category": "food",
-    "lat": 42.9667600,
-    "lng": 17.3461100,
+    "lat": 42.96676,
+    "lng": 17.34611,
     "description": "Family farm-tavern (OPG) in Kuna Pelješka, right on the Pelješac wine road between Ston and Orebić — pršut hangs from the ceiling, they raise their own sheep, goats and donkeys, and everything (pancetta, sausages, lamb under the peka) is homemade. The authentic, cheaper inland counterpoint to the coastal oyster spots.",
     "communityNotes": "Time Out and In Your Pocket highlight it for spit-roast lamb and food baked under the iron lid (ispod peke) with home-made bread — 'nothing like roast lamb and home-made bread.' A genuine agrotourism konoba, great for a group splitting a peka after wine tasting nearby. Order peka ~2-4h ahead (call). Also good for buying pršut/cheese for self-catering.",
     "sources": [
@@ -296,7 +383,15 @@
     "cost": "~€15-25/person with shared peka (cheaper than coastal restaurants)",
     "timeNeeded": "1.5-2h",
     "bestTime": "Call 2-4h ahead to order peka; pairs with a Pelješac wine stop",
-    "tags": ["konoba", "peka", "lamb", "agrotourism", "prsut", "peljesac-wine-road", "order-ahead"],
+    "tags": [
+      "konoba",
+      "peka",
+      "lamb",
+      "agrotourism",
+      "prsut",
+      "peljesac-wine-road",
+      "order-ahead"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -305,8 +400,8 @@
     "name": "Konoba Stermasi (Saplunara, Mljet — clifftop fish & peka)",
     "country": "HR",
     "category": "food",
-    "lat": 42.7008400,
-    "lng": 17.7378200,
+    "lat": 42.70084,
+    "lng": 17.73782,
     "description": "Hilltop konoba + apartments overlooking Saplunara bay at the far southeast tip of Mljet, away from the national-park crowds. Known for ultra-fresh fish, sea-urchin pasta, octopus and goat peka (pre-order), own olive oil and house grappa. The marquee dining experience on the island. (Coordinate is the Saplunara hamlet, ~150 m of the konoba.)",
     "communityNotes": "'The food, the view, the atmosphere — everything was perfect'; squid and octopus repeatedly praised; complimentary house grappa to finish. Peka needs ~4h notice — call ahead. Pricey for the island: menu shows fish bouillabaisse €82, steak ~€35, fresh fish ~€94/kg, so it's a $$-$$$ splurge. Best treated as the one nice Mljet dinner.",
     "sources": [
@@ -316,7 +411,17 @@
     "cost": "Mains €20-35; fresh fish ~€94/kg; ~€40+/person with wine",
     "timeNeeded": "2h",
     "bestTime": "Sunset; call ~4h ahead for peka",
-    "tags": ["konoba", "seafood", "peka", "goat", "view", "mljet", "saplunara", "order-ahead", "splurge"],
+    "tags": [
+      "konoba",
+      "seafood",
+      "peka",
+      "goat",
+      "view",
+      "mljet",
+      "saplunara",
+      "order-ahead",
+      "splurge"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -326,7 +431,7 @@
     "country": "BA",
     "category": "food",
     "lat": 43.3371372,
-    "lng": 17.8139900,
+    "lng": 17.81399,
     "description": "The most-named ćevapi/grill house in Mostar old town (Oneščukova, steps from the Old Bridge) — heaped plates of ćevapi, čevapi-and-meat platters, pljeskavica and grilled veggies in fresh somun with kajmak and onion. Touristy-popular but locals still rate the meat; arrive off-peak to skip the line.",
     "communityNotes": "Reddit/blog consensus: 'huge portions, you will not leave hungry,' the 'mixed grill for two could feed three.' A 'small' mixed plate often noted ~12-15 KM (€6-8); a big sharing platter ~30-40 KM for the table. Caveats travelers repeat: 'it's on the tourist drag so there's always a queue,' and locals point to Urban Grill / Šadrvan as quieter alternatives — but the food at Tima-Irma is 'still genuinely good.'",
     "sources": [
@@ -335,8 +440,15 @@
     ],
     "cost": "Small mixed plate ~12-15 KM (€6-8); sharing platter ~30-40 KM (€15-20) for 2-3",
     "timeNeeded": "1h",
-    "bestTime": "Day 6 (Jun 21) lunch — arrive before 12:00 or after 15:00. No reservation needed, walk-up only. Steps from the Old Bridge.",
-    "tags": ["cevapi", "grill", "somun", "mostar", "old-town", "institution"],
+    "bestTime": "Day 5 (Jun 20) lunch — arrive before 12:00 or after 15:00. No reservation needed, walk-up only. Steps from the Old Bridge.",
+    "tags": [
+      "cevapi",
+      "grill",
+      "somun",
+      "mostar",
+      "old-town",
+      "institution"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -356,7 +468,13 @@
     "cost": "Burek ~4 KM (€2)/piece; portion with yogurt ~5-6 KM (€3)",
     "timeNeeded": "20-30 min",
     "bestTime": "Breakfast / grab-and-go before the day's drive",
-    "tags": ["burek", "cheap-eats", "local-favourite", "mostar", "breakfast"],
+    "tags": [
+      "burek",
+      "cheap-eats",
+      "local-favourite",
+      "mostar",
+      "breakfast"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -365,8 +483,8 @@
     "name": "Blagaj Buna-spring trout terraces (Vrelo & neighbours)",
     "country": "BA",
     "category": "food",
-    "lat": 43.2566500,
-    "lng": 17.9004800,
+    "lat": 43.25665,
+    "lng": 17.90048,
     "description": "The row of fresh-trout (pastrmka) terraces hanging right over the Buna spring at the Tekija (dervish house) in Blagaj — Restoran Vrelo (the #1 view), plus Fajić and Hladovina next door as cheaper, less-touristy alternatives with the same vista. Grilling farmed trout here is a centuries-old Blagaj tradition.",
     "communityNotes": "On Vrelo (TripAdvisor #1/9 in Blagaj): 'fresh-catch trout cooked the Blagaj way… delicious'; 'stunning views, the soothing sound of running water… I had to drag myself away.' Two trout + veg per portion, prices 'quite reasonable,' free bread + complimentary dessert; ~25 KM (€12-13)/person. One dissenter calls Vrelo touristy and points to 'comparable restaurants along the riverbank' (Fajić/Hladovina) for the same view, fewer crowds.",
     "sources": [
@@ -376,7 +494,14 @@
     "cost": "Trout meal ~20-25 KM (€10-13)/person",
     "timeNeeded": "1-1.5h",
     "bestTime": "Lunch after visiting the Tekija; riverside tables fill up midday",
-    "tags": ["trout", "pastrmka", "riverside", "blagaj", "buna-spring", "view"],
+    "tags": [
+      "trout",
+      "pastrmka",
+      "riverside",
+      "blagaj",
+      "buna-spring",
+      "view"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -385,8 +510,8 @@
     "name": "Počitelj pomegranate-juice & fig/honey stalls",
     "country": "BA",
     "category": "food",
-    "lat": 43.1345000,
-    "lng": 17.7320000,
+    "lat": 43.1345,
+    "lng": 17.732,
     "description": "Počitelj is ringed by pomegranate (nar) and fig trees — locals sell hand-squeezed ice-cold pomegranate juice, dried figs, pomegranate molasses and honey from stalls at the M-17 roadside entrance and up the stepped climb to the Ottoman fortress. A 2-minute stop on the Mostar↔Kravica drive.",
     "communityNotes": "r/travel + travel blogs: 'famous for the pomegranate trees… buy pomegranate juice and pomegranate molasses'; the recommended move is to 'take a hand-squeezed ice-cold pomegranate juice and bring it to the top of the hill fort' for the 360° view. Most stalls are run by the families living in the stone houses. Juice a few KM a cup.",
     "sources": [
@@ -396,7 +521,14 @@
     "cost": "Fresh pomegranate juice ~2-4 KM (€1-2)/cup; figs/honey cheap",
     "timeNeeded": "20-30 min",
     "bestTime": "On the drive between Mostar and Kravica; hottest part of day = most refreshing",
-    "tags": ["roadside", "pomegranate", "figs", "honey", "pocitelj", "quick-stop"],
+    "tags": [
+      "roadside",
+      "pomegranate",
+      "figs",
+      "honey",
+      "pocitelj",
+      "quick-stop"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -405,7 +537,7 @@
     "name": "Restoran Han (Konjic — trout, tufahija, baklava)",
     "country": "BA",
     "category": "food",
-    "lat": 43.6474410,
+    "lat": 43.647441,
     "lng": 17.9628951,
     "description": "Konjic's best-known konoba (Donje Polje, by the river), doing grilled Neretva trout, pljeskavica and veal plus the local sweets — tufahija (poached apple stuffed with walnuts + cream) and baklava. Handy lunch on the Mostar→Sarajevo / Neretva-rafting axis.",
     "communityNotes": "RestaurantGuru/TripAdvisor: 'perfectly cooked trout, pljeskavica and veal, as well as tasty pancakes, tufahije and baklava'; most reviewers say 'adequate prices' and good service, though feedback is mixed (a few report slow service when busy). Tufahija is the regional dessert to order here.",
@@ -416,7 +548,14 @@
     "cost": "Mains ~12-20 KM (€6-10); tufahija a few KM",
     "timeNeeded": "1-1.5h",
     "bestTime": "Lunch stop between Mostar and the mountains",
-    "tags": ["trout", "tufahija", "konoba", "konjic", "neretva", "lunch"],
+    "tags": [
+      "trout",
+      "tufahija",
+      "konoba",
+      "konjic",
+      "neretva",
+      "lunch"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -425,8 +564,8 @@
     "name": "Eko Selo Boračko Jezero (Konjic — lakeside trout & rafting meals)",
     "country": "BA",
     "category": "food",
-    "lat": 43.5522000,
-    "lng": 18.0309000,
+    "lat": 43.5522,
+    "lng": 18.0309,
     "description": "Rustic wood-clad restaurant + ethno-village on the shore of Boračko Lake (~30 min from Konjic), serving traditional Bosnian food and freshly grilled trout. Also the base for Neretva rafting trips, so it doubles as the rafting-camp meal stop (and a campsite). Coordinate is the lake centroid; the village sits on the south shore.",
     "communityNotes": "Operator/traveler reports: 'a cosy wood-clad restaurant serving traditional Bosnian dishes and freshly caught grilled trout,' on the lake with the Neretva nearby. Popular as half-board for rafting groups; the lake setting is the draw.",
     "sources": [
@@ -437,7 +576,14 @@
     "timeNeeded": "1.5h (meal) / half day with rafting",
     "bestTime": "Lunch tied to a Neretva rafting trip",
     "facilities": "Restaurant, ethno-village, campsite, rafting base",
-    "tags": ["trout", "lakeside", "rafting", "konjic", "boracko-jezero", "camp-meals"],
+    "tags": [
+      "trout",
+      "lakeside",
+      "rafting",
+      "konjic",
+      "boracko-jezero",
+      "camp-meals"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -456,8 +602,15 @@
     ],
     "cost": "5-piece ~5-7 KM (€3); 10-piece ~12-14 KM (€6-7)",
     "timeNeeded": "30-45 min",
-    "bestTime": "Day 7 (Jun 22) lunch — part of the Baščaršija old-town crawl before the Žuta Tabija sunset walk.",
-    "tags": ["cevapi", "somun", "local-favourite", "sarajevo", "bascarsija", "cheap-eats"],
+    "bestTime": "Day 6 (Jun 21) lunch — part of the Baščaršija old-town crawl before the Žuta Tabija sunset walk.",
+    "tags": [
+      "cevapi",
+      "somun",
+      "local-favourite",
+      "sarajevo",
+      "bascarsija",
+      "cheap-eats"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -477,7 +630,14 @@
     "cost": "Burek portion ~6-7 KM (€3-3.5)",
     "timeNeeded": "20-30 min",
     "bestTime": "Breakfast; cash",
-    "tags": ["burek", "sac", "cheap-eats", "sarajevo", "bascarsija", "local-favourite"],
+    "tags": [
+      "burek",
+      "sac",
+      "cheap-eats",
+      "sarajevo",
+      "bascarsija",
+      "local-favourite"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -487,7 +647,7 @@
     "country": "BA",
     "category": "food",
     "lat": 43.8601786,
-    "lng": 18.4320980,
+    "lng": 18.432098,
     "description": "Tiny family tea-and-coffee house on the cobbled Kovači hill just above the Sebilj fountain — the atmospheric spot for the full Bosnian coffee ritual (džezva, sugar cube, rahat-lokum, glass of water) plus 50+ teas and homemade salep. Vine-shaded courtyard with a view over old Sarajevo.",
     "communityNotes": "Reviews: 'slow-cooked Bosnian coffee served in copper pots with the inevitable šerbet and rahat-lokum'; 'the courtyard under grapevines is one of Baščaršija's most atmospheric spots'; 'from the porch you can enjoy the view of the Sebilj and the surrounding mountains.' The ritual: sip water first, then drink the coffee slowly over 20-30 min.",
     "sources": [
@@ -497,7 +657,14 @@
     "cost": "Bosnian coffee ~3-5 KM (€1.5-2.5)",
     "timeNeeded": "30-45 min",
     "bestTime": "Late afternoon for shade + the view",
-    "tags": ["coffee", "kafana", "ritual", "sarajevo", "bascarsija", "view"],
+    "tags": [
+      "coffee",
+      "kafana",
+      "ritual",
+      "sarajevo",
+      "bascarsija",
+      "view"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -517,7 +684,14 @@
     "cost": "Baklava ~2.5 KM (€1.3); tufahija ~4-5 KM (€2-2.5)",
     "timeNeeded": "30 min",
     "bestTime": "After dinner; pairs with a Bosnian coffee",
-    "tags": ["sweets", "baklava", "tufahija", "kadaif", "sarajevo", "bascarsija"],
+    "tags": [
+      "sweets",
+      "baklava",
+      "tufahija",
+      "kadaif",
+      "sarajevo",
+      "bascarsija"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -538,7 +712,15 @@
     "timeNeeded": "30 min",
     "bestTime": "Stock up before heading inland (Konjic/Sutjeska) where shops thin out",
     "facilities": "Supermarket; card + cash (KM); parking",
-    "tags": ["supermarket", "camping-supplies", "groceries", "bingo", "cheapest", "mostar", "logistics"],
+    "tags": [
+      "supermarket",
+      "camping-supplies",
+      "groceries",
+      "bingo",
+      "cheapest",
+      "mostar",
+      "logistics"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -547,8 +729,8 @@
     "name": "Restaurant Or'O (Žabljak — mountain food)",
     "country": "ME",
     "category": "food",
-    "lat": 43.1550000,
-    "lng": 19.1201800,
+    "lat": 43.155,
+    "lng": 19.12018,
     "description": "The reliable sit-down restaurant in central Žabljak (Njegoševa St) for Montenegrin mountain classics — kačamak, cicvara, lamb under sač, fresh trout — alongside grilled meat and pizza. Solid all-rounder for a group wanting the local specialties without hunting them down.",
     "communityNotes": "Reviewers: 'a mixed meat dish was served for €10 in generous portions'; 'prices were cheap and the whole experience was great'; kačamak praised as 'an authentic flavour of the region.' Popular with both locals and tourists.",
     "sources": [
@@ -557,8 +739,16 @@
     ],
     "cost": "Mixed grill ~€10; mains €8-14; cheap for 4",
     "timeNeeded": "1-1.5h",
-    "bestTime": "Day 9 (Jun 24) dinner — reliable Žabljak sit-down for kačamak and mountain classics after the Durmitor hike.",
-    "tags": ["mountain-food", "kacamak", "lamb-sac", "trout", "cheap", "zabljak", "durmitor"],
+    "bestTime": "Day 8 (Jun 23) dinner — reliable Žabljak sit-down for kačamak and mountain classics after the Durmitor hike.",
+    "tags": [
+      "mountain-food",
+      "kacamak",
+      "lamb-sac",
+      "trout",
+      "cheap",
+      "zabljak",
+      "durmitor"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -577,7 +767,14 @@
     "cost": "Mains €8-15; lake-view setting, mid-cheap",
     "timeNeeded": "1-1.5h",
     "bestTime": "Lunch at the start/end of the Black Lake hike; call ahead for sač dishes",
-    "tags": ["mountain-food", "lamb-sac", "kacamak", "lake-view", "black-lake", "call-ahead"],
+    "tags": [
+      "mountain-food",
+      "lamb-sac",
+      "kacamak",
+      "lake-view",
+      "black-lake",
+      "call-ahead"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -586,8 +783,8 @@
     "name": "Eko-Oaza Suza Evrope (Tara canyon — farm-to-table)",
     "country": "ME",
     "category": "food",
-    "lat": 43.0172000,
-    "lng": 19.4102000,
+    "lat": 43.0172,
+    "lng": 19.4102,
     "description": "Family-run eco-camp + eatery on the Tara riverbank in Dobrilovina (downstream of the gorge, ~25 km from Mojkovac). The Đurišić family does genuine farm-to-table — homemade bread, own cow's milk, home-cured ham, garden veg, welcome rakija. A great rustic Tara-canyon meal stop (also a campsite).",
     "communityNotes": "Reviewers: 'the food is excellent — homemade bread, milk from the cow, home-cured ham for breakfast, veggies from the garden, homemade cordial and rakija as a welcome drink'; 'they keep chickens, goats etc. on the campground… both breakfast and dinner are of very good quality' and 'very affordable.' Breakfast ~€6/person.",
     "sources": [
@@ -598,7 +795,15 @@
     "timeNeeded": "Meal 1h / overnight",
     "bestTime": "On the Tara/Đurđevića-most → Durmitor axis",
     "facilities": "Restaurant, eco-camp, riverside, farm animals",
-    "tags": ["tara", "farm-to-table", "homemade", "rakija", "riverside", "dobrilovina", "eco-camp"],
+    "tags": [
+      "tara",
+      "farm-to-table",
+      "homemade",
+      "rakija",
+      "riverside",
+      "dobrilovina",
+      "eco-camp"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -607,8 +812,8 @@
     "name": "Kafana Kod Pera na Bukovicu (Njeguši pršut)",
     "country": "ME",
     "category": "food",
-    "lat": 42.4361000,
-    "lng": 18.8469500,
+    "lat": 42.4361,
+    "lng": 18.84695,
     "description": "The classic Kotor-Cetinje mountain-pass stop (~1,150 m) for Njeguški pršut + Njeguški cheese + sausage, plus house medovina (honey liqueur). Operating since 1881 — the oldest kafana of its type in Montenegro, with shaded terraces and a sušara (drying house) you can tour. Perfect 'we just drove the Lovćen serpentines' feast.",
     "communityNotes": "Travelers describe it as a quintessential cultural-cuisine experience — 'a breakfast of prosciutto-and-cheese sandwich with a glass of red wine'; vacuum-packed pršut/cheese/honey/wine/brandy sold to take away. The village also has cheaper roadside stalls selling pršut + cheese if you want a grab-and-go over a sit-down platter.",
     "sources": [
@@ -619,7 +824,15 @@
     "timeNeeded": "45 min-1h",
     "bestTime": "On the Kotor↔Cetinje/Lovćen drive; midday",
     "facilities": "Terraces, drying house tour, shop (vacuum-packed pršut/cheese/honey)",
-    "tags": ["prsut", "njegusi", "cheese-platter", "mountain-pass", "medovina", "historic", "lovcen-road"],
+    "tags": [
+      "prsut",
+      "njegusi",
+      "cheese-platter",
+      "mountain-pass",
+      "medovina",
+      "historic",
+      "lovcen-road"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -628,8 +841,8 @@
     "name": "Vinarija Mašanović (Virpazar — the Skadar winery stop)",
     "country": "ME",
     "category": "food",
-    "lat": 42.2401500,
-    "lng": 19.0834000,
+    "lat": 42.24015,
+    "lng": 19.0834,
     "description": "Ten-generation family winery in the heart of the Crmnica region at Virpazar, specializing in indigenous Vranac. Wine tasting + a generous local platter (cheese, charcuterie, nuts, dried fruit, veg). The strongest-reviewed, best-value winery actually IN Virpazar — the recommended pick for the group's planned Skadar Lake winery stop (see food-notes).",
     "communityNotes": "TripAdvisor: tasting 'costs 10 euros per person, includes 4 wines + 1 extra wine + a rakija'; 'super affordable and a lovely experience'; 'the wine is delicious and the whole tour is very informative.' Hosts repeatedly called 'friendly, knowledgeable, passionate.' Note: booking ≥1 day ahead is mandatory and it is CASH ONLY.",
     "sources": [
@@ -638,9 +851,17 @@
     ],
     "cost": "Tasting €10/person (4-5 wines + rakija); €20 pp with the food platter",
     "timeNeeded": "1.5-2h",
-    "bestTime": "Day 10 (Jun 25) afternoon — book +382 68 509 541 or vinarijamasanovic@yahoo.com the day before. Bring cash. Sequence: kayak morning → fish lunch → winery → Pavlova Strana golden hour.",
+    "bestTime": "Day 9 (Jun 24) afternoon — book +382 68 509 541 or vinarijamasanovic@yahoo.com the day before. Bring cash. Sequence: kayak morning → fish lunch → winery → Pavlova Strana golden hour.",
     "facilities": "Tasting room, local food platters; cash only; book ahead",
-    "tags": ["winery", "vranac", "crmnica", "virpazar", "wine-tasting", "cash-only", "book-ahead"],
+    "tags": [
+      "winery",
+      "vranac",
+      "crmnica",
+      "virpazar",
+      "wine-tasting",
+      "cash-only",
+      "book-ahead"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -649,8 +870,8 @@
     "name": "Konoba Badanj (Virpazar — Skadar fish)",
     "country": "ME",
     "category": "food",
-    "lat": 42.2460000,
-    "lng": 19.0909900,
+    "lat": 42.246,
+    "lng": 19.09099,
     "description": "The best-known traditional fish konoba in Virpazar — smoked and marinated carp, eel, river trout and bleak from Skadar Lake, paired with local Vranac. In the village centre, a 2-minute walk from the winery and kayak rentals.",
     "communityNotes": "'Great smoked carp, great service and the whole village is just adoring… prices are absolutely reasonable'; 'best restaurant in Virpazar,' 'homemade food with specialties of the region.' Reported: cold eel with potatoes €13; fish mains ~€10-14; per-person ~€9-22. One stale RestaurantGuru 'permanently closed' flag is wrong — 2025-26 TripAdvisor (267 reviews) and the active Facebook page confirm it's open; verify hours on arrival.",
     "sources": [
@@ -660,7 +881,15 @@
     "cost": "~€9-22/person; fish mains ~€10-14",
     "timeNeeded": "1.5h",
     "bestTime": "Lunch tied to the winery + kayak; verify it's open",
-    "tags": ["skadar-fish", "carp", "eel", "trout", "vranac", "virpazar", "konoba"],
+    "tags": [
+      "skadar-fish",
+      "carp",
+      "eel",
+      "trout",
+      "vranac",
+      "virpazar",
+      "konoba"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -669,8 +898,8 @@
     "name": "BBQ Tanjga (Kotor — legendary cheap grill)",
     "country": "ME",
     "category": "food",
-    "lat": 42.4219500,
-    "lng": 18.7703900,
+    "lat": 42.42195,
+    "lng": 18.77039,
     "description": "Kotor's famous family-run butcher-grill between the old town and the bus station — pick your meat, eat in the back garden. The value legend of Montenegro: massive portions of ćevapi, pljeskavica, mixed grill and steaks at prices that shame the old town.",
     "communityNotes": "'A €5 plate: pick one meat with roasted potatoes, salad and bread'; '5-piece ćevapi for €4.50, tasted fantastic'; 'mix-grill XXL, 1.1 kg of meat, €35 for 2'; '900g large meat portion €18, enough for two'; one traveler 'ate lunch there every day and didn't need to eat the rest of the day.' Consistent value/portion praise across dozens of independent reviews. Expect a wait at peak.",
     "sources": [
@@ -679,8 +908,16 @@
     ],
     "cost": "€4.50-5 single plate; XXL mixed grill ~€35 for 2; ~€10-13/person for a feast",
     "timeNeeded": "45 min-1h",
-    "bestTime": "Day 12 (Jun 27) lunch after the Kotor fortress — arrive before 12:00 or after 14:00. Cash only.",
-    "tags": ["cheap", "grill", "cevapi", "huge-portions", "value", "kotor", "locals-favourite"],
+    "bestTime": "Day 11 (Jun 26) lunch after the Kotor fortress — arrive before 12:00 or after 14:00. Cash only.",
+    "tags": [
+      "cheap",
+      "grill",
+      "cevapi",
+      "huge-portions",
+      "value",
+      "kotor",
+      "locals-favourite"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -689,8 +926,8 @@
     "name": "Konoba Bocun (Budva — cheap local grill)",
     "country": "ME",
     "category": "food",
-    "lat": 42.2931800,
-    "lng": 18.8381300,
+    "lat": 42.29318,
+    "lng": 18.83813,
     "description": "Small family-run, meat-focused konoba in the north of Budva — outside the old-town/tourist drag, genuinely where locals eat. Affordable Balkan grill and home cooking, cosy and unpretentious; a good cheap dinner before a Budva night out.",
     "communityNotes": "'Located a bit away from Budva's main areas but within walking distance… mostly meat-oriented, affordable and quite popular'; 'low prices for what you pay, tasty local food, cosy atmosphere, friendly staff.' Recurs on 'restaurants where locals go' threads. For old-town grill value, Pod Volat is the other locals' pick — 'always full, generous portions, modest prices.'",
     "sources": [
@@ -700,7 +937,15 @@
     "cost": "Grill mains ~€7-12; cheap by Budva standards",
     "timeNeeded": "1-1.5h",
     "bestTime": "Dinner before going out in Budva",
-    "tags": ["cheap", "konoba", "grill", "locals", "off-strip", "budva", "meat"],
+    "tags": [
+      "cheap",
+      "konoba",
+      "grill",
+      "locals",
+      "off-strip",
+      "budva",
+      "meat"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -709,8 +954,8 @@
     "name": "Moritz Eis (Kotor — gelato)",
     "country": "ME",
     "category": "food",
-    "lat": 42.4246100,
-    "lng": 18.7700100,
+    "lat": 42.42461,
+    "lng": 18.77001,
     "description": "Italian-style artisan gelato on the main old-town square (Pjaca od Oružja) — the most consistently name-dropped ice cream in Kotor. Fruit sorbets and creamy classics (stracciatella, chocolate), biodegradable cups. The reliable post-fortress-climb reward.",
     "communityNotes": "Repeatedly the top gelato mention for Kotor across listings/forums — 'minimalist Italian-style gelato, strong focus on seasonality and clean ingredients, short walk from the marina.' Also has branches in Budva and Tivat. Budva promenade equivalent worth knowing: 'Goddo' gelato.",
     "sources": [
@@ -719,7 +964,12 @@
     "cost": "~€2-3 per scoop/cup",
     "timeNeeded": "15 min",
     "bestTime": "After the Kotor fortress climb",
-    "tags": ["gelato", "ice-cream", "kotor-oldtown", "dessert"],
+    "tags": [
+      "gelato",
+      "ice-cream",
+      "kotor-oldtown",
+      "dessert"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -738,7 +988,13 @@
     "cost": "Affordable/moderate; mains ~€10–15",
     "timeNeeded": "1–1.5h",
     "bestTime": "Dinner Jun 18 or 28; call ahead: +387 59 482 627",
-    "tags": ["trebinje", "trout", "riverside", "local-pick", "cash-only"],
+    "tags": [
+      "trebinje",
+      "trout",
+      "riverside",
+      "local-pick",
+      "cash-only"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -757,7 +1013,13 @@
     "cost": "€3–8 per box/portion",
     "timeNeeded": "15 min",
     "bestTime": "Morning or afternoon; closes earlier than tourist shops",
-    "tags": ["sarajevo", "bascarsija", "sweets", "baklava", "local-institution"],
+    "tags": [
+      "sarajevo",
+      "bascarsija",
+      "sweets",
+      "baklava",
+      "local-institution"
+    ],
     "rating": 5,
     "status": "candidate"
   },
@@ -766,8 +1028,8 @@
     "name": "Voli Supermarket (Budva — camping stock-up)",
     "country": "ME",
     "category": "food",
-    "lat": 42.2857900,
-    "lng": 18.8405800,
+    "lat": 42.28579,
+    "lng": 18.84058,
     "description": "Voli is the dominant Montenegrin supermarket chain and the default cheap groceries / camping-supply stop — good assortment, low prices, branches in every town (Budva, Kotor, Žabljak, Bar, Podgorica). Stock up here before the Durmitor/Tara stretch where shops thin out.",
     "communityNotes": "Expat/traveler guides: Voli = 'large selection of quality products at affordable prices.' IDEA is sometimes marginally cheaper but harder to find; Franca has the best butcher counters; Aroma is small tourist-town shops (convenient, pricier). For a road trip, Voli is the reliable cheapest mainstream option. Buy water + supplies in Žabljak before the Durmitor ring (limited shops up high).",
     "sources": [
@@ -778,7 +1040,15 @@
     "timeNeeded": "30 min",
     "bestTime": "Stock up before Durmitor/Tara",
     "facilities": "Supermarket; card + cash (€); parking",
-    "tags": ["supermarket", "camping-supplies", "groceries", "voli", "cheapest", "budva", "logistics"],
+    "tags": [
+      "supermarket",
+      "camping-supplies",
+      "groceries",
+      "voli",
+      "cheapest",
+      "budva",
+      "logistics"
+    ],
     "rating": 4,
     "status": "candidate"
   }

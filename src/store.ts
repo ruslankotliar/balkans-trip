@@ -1,4 +1,5 @@
 import LZString from 'lz-string';
+import { CATEGORIES } from './constants';
 import { DEFAULT_PLAN } from './defaultPlan';
 import type { Place, Status } from './types';
 
@@ -185,8 +186,13 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
   // Jun 2026 itinerary correction: exact old baked-plan positions only.
   clear('hr-anica-kuk', 1, 4);
   clear('hr-villa-stone-house-martelina', 1, 6);
-  clear('hr-split', 2, 1);
-  clear('hr-kantun-paulina', 2, 2);
+
+  // Day 2: Add Split morning walk — Diocletian's Palace + Kantun Paulina ćevapi,
+  // both on the Paklenica→Omiš corridor (zero detour). Shift canyoning+camp to 3-4.
+  move('hr-cetina-canyoning', 2, 1, 2, 3);
+  move('hr-camp-lisicina', 2, 2, 2, 4);
+  assign('hr-split', 2, 1);
+  assign('hr-kantun-paulina', 2, 2);
 
   const fixedDay3 = [
     move('hr-biokovo-tollroad', 3, 3, 3, 2),
@@ -194,6 +200,12 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
     move('hr-camping-kate-mlini', 3, 7, 3, 8),
   ].some(Boolean);
   if (fixedDay3) assign('hr-dubrovnik-airport-pickup', 3, 7);
+
+  // Day 3: Remove Konoba Feral Brijesta (40 km U-turn detour on Pelješac); shift later stops down.
+  clear('hr-konoba-feral-brijesta', 3, 5);
+  move('hr-mali-ston-oysters', 3, 6, 3, 5);
+  move('hr-dubrovnik-airport-pickup', 3, 7, 3, 6);
+  move('hr-camping-kate-mlini', 3, 8, 3, 7);
 
   clear('hr-camp-lupis-loviste', 4, 3);
   const stagedPrapratno = move('hr-camp-prapratno', 5, 1, 4, 3);
@@ -209,6 +221,17 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
   move('ba-tima-irma', 6, 8, 6, 5);
   move('ba-gem-mostar-nanas-house', 6, 9, 6, 6);
   clear('ba-villa-cold-river-treehouse-bunica', 6, 10);
+
+  // Day 6: Sobra (Mljet) return ferry added as first stop; Bosnia stops shift up by one.
+  // These move() calls handle both the old-old state (places at 2-6 after prior migration)
+  // and the current default state (places already at 1-6 from DEFAULT_PLAN seed).
+  move('ba-kravica', 6, 1, 6, 2);
+  move('ba-pocitelj', 6, 2, 6, 3);
+  move('ba-mostar', 6, 3, 6, 4);
+  move('ba-cafe-de-alma-mostar', 6, 4, 6, 5);
+  move('ba-tima-irma', 6, 5, 6, 6);
+  move('ba-gem-mostar-nanas-house', 6, 6, 6, 7);
+  assign('hr-sobra-ferry', 6, 1);
 
   const fixedSarajevo = [
     move('ba-blagaj', 7, 0, 7, 1),
@@ -258,11 +281,61 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
   assign('me-durmitor-katun-krstajic', 8, 7);
   assign('me-durmitor-katun-homeland-nest', 9, 6);
 
+  // Day 10: Pavlova Strana is above Virpazar on the descent from Ostrog — it belongs
+  // BEFORE Skadar Lake, not after (was causing a north backtrack from Virpazar).
+  move('me-skadar-lake', 10, 3, 10, 4);
+  move('me-pavlova-strana', 10, 4, 10, 3);
+  // Rijeka Crnojevića pair (restaurant + kayak base, same location, NW of Virpazar)
+  // grouped before pelican-colony kayak so you drive north to RC then kayak east.
+  move('me-skadar-pelican-kayak', 10, 8, 10, 10);
+  move('me-stari-most-rijeka-crnojevica', 10, 9, 10, 8);
+  move('me-skadar-rijeka-crnojevica-kayak', 10, 10, 10, 9);
+  // Raicevic guesthouse (WOW tier, ★9.3, advance booking essential) added as Day 10
+  // sleep alternative alongside Camp Radoman — shift RC/pelican stops to make room.
+  move('me-stari-most-rijeka-crnojevica', 10, 8, 10, 9);
+  move('me-skadar-rijeka-crnojevica-kayak', 10, 9, 10, 10);
+  move('me-skadar-pelican-kayak', 10, 10, 10, 11);
+  assign('me-guesthouse-skadar-raicevic', 10, 8);
+
+  // Day 9/10 routing fix: Tara Bridge is only 15km east of Žabljak — move it to end
+  // of Day 9 (post-hike evening excursion) so Day 10 starts cleanly at Ostrog (SW)
+  // without the visual V-backtrack that made Day 10 look like a nonsensical route.
+  move('me-gem-zabljak-mountain-spark', 9, 5, 9, 6);
+  move('me-durmitor-katun-homeland-nest', 9, 6, 9, 7);
+  move('me-tara-bridge-zipline', 10, 1, 9, 5);
+  move('me-ostrog-monastery', 10, 2, 10, 1);
+  move('me-pavlova-strana', 10, 3, 10, 2);
+  move('me-skadar-lake', 10, 4, 10, 3);
+  move('me-virpazar-kayak', 10, 5, 10, 4);
+  move('me-vinarija-masanovic', 10, 6, 10, 5);
+  move('me-camp-radoman', 10, 7, 10, 6);
+  move('me-guesthouse-skadar-raicevic', 10, 8, 10, 7);
+  move('me-stari-most-rijeka-crnojevica', 10, 9, 10, 8);
+  move('me-skadar-rijeka-crnojevica-kayak', 10, 10, 10, 9);
+  move('me-skadar-pelican-kayak', 10, 11, 10, 10);
+
   const fixedAdaSleep = clear('me-fkk-camp-ada-bojana', 11, 5);
   if (fixedAdaSleep) {
     changed = true;
     assign('me-camp-safari-beach', 11, 5);
   }
+
+  // Day 6: Add Cold River Treehouse (★4.92) at Bunica/Blagaj as WOW sleep alternative.
+  // It's 10 min from Mostar old town AND 2km from Blagaj Tekija (Day 7's first stop),
+  // so sleeping here means waking up already at Day 7's starting point.
+  assign('ba-villa-cold-river-treehouse-bunica', 6, 8);
+
+  // Day 10: Add Jablan Winery house (★4.86, "trip's most special stay") as 3rd sleep
+  // option for the Skadar Lake night. 300-year stone house at organic winery near
+  // Rijeka Crnojevića — after the RC evening, only 9km east to the winery to sleep.
+  assign('me-villa-jablan-winery-rvasi', 10, 11);
+
+  // Day 11: Camp Safari (19.271°E) is between Ulcinj and Ada Bojana (19.374°E).
+  // Reorder so the group drops bags at camp first, then drives east to Ada Bojana
+  // and Misko for the afternoon — eliminating the westward end-of-day backtrack.
+  move('me-camp-safari-beach', 11, 5, 11, 3);
+  move('me-ada-bojana-beach', 11, 3, 11, 4);
+  move('me-misko-stilt-restaurant', 11, 4, 11, 5);
 
   clear('me-lovcen-njegos-mausoleum', 12, 5);
   move('me-tanjga-kotor', 12, 6, 12, 5);
@@ -271,6 +344,142 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
   clear('ba-villa-village-house-cvaljina', 12, 9);
   move('ba-trebinje-old-town', 12, 10, 12, 8);
   move('ba-air-1165836464333612445', 12, 11, 12, 9);
+
+  // Day 12: Remove me-kotor-fortress-paid (same GPS as me-kotor — 9 m apart).
+  // Having it as a separate waypoint creates a zero-distance OSRM leg and an
+  // overlapping duplicate pin. The fortress description lives in me-kotor.
+  clear('me-kotor-fortress-paid', 12, 4);
+  move('me-tanjga-kotor', 12, 5, 12, 4);
+  move('me-perast', 12, 6, 12, 5);
+  move('me-vitaljina-border', 12, 7, 12, 6);
+  move('ba-trebinje-old-town', 12, 8, 12, 7);
+  move('ba-air-1165836464333612445', 12, 9, 12, 8);
+
+  // ── BIG RESTRUCTURE (Jun 12 2026): eliminate dedicated Dubrovnik-city day ──
+  //
+  // Old plan: airport pickup Day 3 → sleep near Dubrovnik (Kate Mlini) → Dubrovnik
+  // walls+kayak Day 4 → drive to Camp Prapratno → Mljet Day 5.
+  //
+  // New plan: airport pickup Day 3 → drive directly to Camp Prapratno (~90 km,
+  // 1h20m) → Mljet on Friday Day 4 (lighter ferry queue than Saturday) → Bosnia
+  // Day 5 → Days 6–11 shift down by one → freed day becomes Dubrovnik walls on
+  // Day 12 (Jun 27), arriving from Trebinje (~30 min drive).
+  //
+  // Step 1: Unschedule old Day 4 Dubrovnik stops.
+  clear('hr-dubrovnik', 4, 1);
+  clear('hr-dubrovnik-sea-kayak', 4, 2);
+
+  // Step 2: Kate Mlini (was Day 3 overnight near Dubrovnik) → new Day 12.
+  move('hr-camping-kate-mlini', 3, 7, 12, 3);
+
+  // Step 3: Camp Prapratno moves from Day 4 → Day 3 (new post-airport overnight).
+  move('hr-camp-prapratno', 4, 3, 3, 7);
+
+  // Step 4: Mljet → Day 4 (was Day 5).
+  move('hr-prapratno-ferry', 5, 1, 4, 1);
+  move('hr-mljet-np', 5, 2, 4, 2);
+  move('hr-montokuc-mljet', 5, 3, 4, 3);
+  move('hr-odysseus-cave', 5, 4, 4, 4);
+  move('hr-camp-marina-mljet', 5, 5, 4, 5);
+
+  // Step 5: Bosnia/Mostar → Day 5 (was Day 6).
+  move('hr-sobra-ferry', 6, 1, 5, 1);
+  move('ba-kravica', 6, 2, 5, 2);
+  move('ba-pocitelj', 6, 3, 5, 3);
+  move('ba-mostar', 6, 4, 5, 4);
+  move('ba-cafe-de-alma-mostar', 6, 5, 5, 5);
+  move('ba-tima-irma', 6, 6, 5, 6);
+  move('ba-gem-mostar-nanas-house', 6, 7, 5, 7);
+  move('ba-villa-cold-river-treehouse-bunica', 6, 8, 5, 8);
+
+  // Step 6: Blagaj/Sarajevo → Day 6 (was Day 7).
+  move('ba-blagaj', 7, 1, 6, 1);
+  move('ba-boracko-lake', 7, 2, 6, 2);
+  move('ba-sarajevo', 7, 3, 6, 3);
+  move('ba-zuta-tabija', 7, 4, 6, 4);
+  move('ba-sarajevo-petica-ferhatovic', 7, 5, 6, 5);
+  move('ba-cinemas-sloga-latin-night', 7, 6, 6, 6);
+  move('ba-air-1542024184506963047', 7, 7, 6, 7);
+
+  // Step 7: Tara/Piva/Žabljak → Day 7 (was Day 8).
+  move('me-tara-rafting-brstanovica', 8, 1, 7, 1);
+  move('me-scepan-polje-piva-canyon', 8, 2, 7, 2);
+  move('me-mratinje-dam', 8, 3, 7, 3);
+  move('me-pluzine', 8, 4, 7, 4);
+  move('me-piva-lake-swim', 8, 5, 7, 5);
+  move('me-camp-mlinski-potok', 8, 6, 7, 6);
+  move('me-durmitor-katun-krstajic', 8, 7, 7, 7);
+
+  // Step 8: Durmitor hike → Day 8 (was Day 9).
+  move('me-veliki-medjed', 9, 1, 8, 1);
+  move('me-vrazje-jezero', 9, 2, 8, 2);
+  move('me-zabljak', 9, 3, 8, 3);
+  move('me-oro-zabljak', 9, 4, 8, 4);
+  move('me-tara-bridge-zipline', 9, 5, 8, 5);
+  move('me-gem-zabljak-mountain-spark', 9, 6, 8, 6);
+  move('me-durmitor-katun-homeland-nest', 9, 7, 8, 7);
+
+  // Step 9: Ostrog/Skadar → Day 9 (was Day 10).
+  move('me-ostrog-monastery', 10, 1, 9, 1);
+  move('me-pavlova-strana', 10, 2, 9, 2);
+  move('me-skadar-lake', 10, 3, 9, 3);
+  move('me-virpazar-kayak', 10, 4, 9, 4);
+  move('me-vinarija-masanovic', 10, 5, 9, 5);
+  move('me-camp-radoman', 10, 6, 9, 6);
+  move('me-guesthouse-skadar-raicevic', 10, 7, 9, 7);
+  move('me-stari-most-rijeka-crnojevica', 10, 8, 9, 8);
+  move('me-skadar-rijeka-crnojevica-kayak', 10, 9, 9, 9);
+  move('me-skadar-pelican-kayak', 10, 10, 9, 10);
+  move('me-villa-jablan-winery-rvasi', 10, 11, 9, 11);
+
+  // Step 10: Bar/Ulcinj/Ada Bojana → Day 10 (was Day 11).
+  move('me-stari-bar', 11, 1, 10, 1);
+  move('me-ulcinj-old-town', 11, 2, 10, 2);
+  move('me-camp-safari-beach', 11, 3, 10, 3);
+  move('me-ada-bojana-beach', 11, 4, 10, 4);
+  move('me-misko-stilt-restaurant', 11, 5, 10, 5);
+
+  // Step 11: Sveti Stefan/Kotor/Trebinje → Day 11 (was Day 12).
+  move('me-sveti-stefan', 12, 1, 11, 1);
+  move('me-budva', 12, 2, 11, 2);
+  move('me-kotor', 12, 3, 11, 3);
+  move('me-tanjga-kotor', 12, 4, 11, 4);
+  move('me-perast', 12, 5, 11, 5);
+  move('me-vitaljina-border', 12, 6, 11, 6);
+  move('ba-trebinje-old-town', 12, 7, 11, 7);
+  move('ba-air-1165836464333612445', 12, 8, 11, 8);
+
+  // Step 12: New Day 12 = Dubrovnik walls (the freed day).
+  // Kate Mlini (12,3) was moved in Step 2.
+  assign('hr-dubrovnik', 12, 1);
+  move('hr-pasjaca-beach', 13, 1, 12, 2);
+  // hr-dubrovnik-airport: was at 13,2; close the gap left by Pasjača moving out.
+  move('hr-dubrovnik-airport', 13, 2, 13, 1);
+
+  // Step 13: Reorder Day 10 — Camp Safari Beach to order 5 (overnight anchor) so
+  // Day 11's morning relocation starts from the campsite, not the dinner restaurant.
+  move('me-camp-safari-beach', 10, 3, 10, 5);
+  move('me-ada-bojana-beach', 10, 4, 10, 3);
+  move('me-misko-stilt-restaurant', 10, 5, 10, 4);
+
+  // Clear any Mljet/island places that leaked to Day 6 (those belong on Day 5 only)
+  for (const id of ['hr-mljet-np', 'hr-montokuc-mljet', 'hr-odysseus-cave',
+    'hr-camp-marina-mljet', 'hr-camp-lovor-mljet', 'hr-camp-mungos-mljet', 'hr-prapratno-ferry']) {
+    if (next[id]?.day === 6) {
+      clearSchedule(next, id);
+      changed = true;
+    }
+  }
+
+  // Sarajevo safety net: clear any Sarajevo-area place that leaked to Day 8+
+  for (const id of ['ba-air-1542024184506963047', 'ba-gem-sarajevo-biber-deluxe',
+    'ba-gem-sarajevo-apartman-emir', 'ba-gem-sarajevo-kapa', 'ba-sarajevo',
+    'ba-zuta-tabija', 'ba-sarajevo-petica-ferhatovic', 'ba-cinemas-sloga-latin-night']) {
+    if ((next[id]?.day ?? 0) >= 8) {
+      clearSchedule(next, id);
+      changed = true;
+    }
+  }
 
   return { overrides: next, changed };
 }
@@ -306,22 +515,69 @@ export function saveOverrides(o: Overrides) {
 
 const USER_PLACES_KEY = 'balkans-trip-user-places';
 
+function isStatus(x: unknown): x is Status {
+  return x === 'candidate' || x === 'shortlist' || x === 'backup' || x === 'rejected';
+}
+
+function isCountry(x: unknown): x is Place['country'] {
+  return x === 'HR' || x === 'BA' || x === 'ME';
+}
+
+function guessCountry(lat: number, lng: number): Place['country'] {
+  // Bosnia: inland pocket roughly N of 42.55 and E of 17.0 (Mostar/Konjic).
+  if (lat > 42.55 && lng > 17.0 && lng < 19.7) return 'BA';
+  // Croatia: coastal strip and the northwest; broadly W/N of the ME line.
+  if (lat > 42.6 || lng < 17.5) return 'HR';
+  return 'ME';
+}
+
 /** Narrow an unknown value to a plausible user Place (defensive against bad imports). */
-function isUserPlace(x: unknown): x is Place {
-  if (!x || typeof x !== 'object') return false;
+function normalizeUserPlace(x: unknown): Place | null {
+  if (!x || typeof x !== 'object') return null;
   const p = x as Record<string, unknown>;
-  return (
-    typeof p.id === 'string' &&
-    typeof p.name === 'string' &&
-    typeof p.lat === 'number' &&
-    typeof p.lng === 'number'
-  );
+  const id = typeof p.id === 'string' ? p.id.trim() : '';
+  const name = typeof p.name === 'string' ? p.name.trim() : '';
+  const lat = typeof p.lat === 'number' ? p.lat : null;
+  const lng = typeof p.lng === 'number' ? p.lng : null;
+  if (!id || !name || lat == null || lng == null) return null;
+
+  const category =
+    typeof p.category === 'string' && CATEGORIES.includes(p.category as Place['category'])
+      ? (p.category as Place['category'])
+      : 'other';
+  const description =
+    typeof p.description === 'string' && p.description.trim()
+      ? p.description.trim()
+      : 'Added by the group.';
+  const strings = (value: unknown): string[] | undefined =>
+    Array.isArray(value) ? value.filter((v): v is string => typeof v === 'string') : undefined;
+
+  return {
+    id,
+    name,
+    country: isCountry(p.country) ? p.country : guessCountry(lat, lng),
+    category,
+    lat,
+    lng,
+    description,
+    communityNotes: typeof p.communityNotes === 'string' ? p.communityNotes : undefined,
+    sources: strings(p.sources),
+    cost: typeof p.cost === 'string' ? p.cost : undefined,
+    timeNeeded: typeof p.timeNeeded === 'string' ? p.timeNeeded : undefined,
+    bestTime: typeof p.bestTime === 'string' ? p.bestTime : undefined,
+    facilities: typeof p.facilities === 'string' ? p.facilities : undefined,
+    tags: strings(p.tags),
+    rating: typeof p.rating === 'number' ? p.rating : undefined,
+    status: isStatus(p.status) ? p.status : 'shortlist',
+    userAdded: true,
+    source: 'user',
+  };
 }
 
 export function loadUserPlaces(): Place[] {
   try {
     const a = JSON.parse(localStorage.getItem(USER_PLACES_KEY) ?? '[]');
-    return Array.isArray(a) ? a.filter(isUserPlace) : [];
+    return Array.isArray(a) ? a.map(normalizeUserPlace).filter(Boolean) as Place[] : [];
   } catch {
     return [];
   }
@@ -359,7 +615,7 @@ export function decodePlan(encoded: string): SharedPlan | null {
         ? (o.overrides as Overrides)
         : {};
     const userPlaces = Array.isArray(o.userPlaces)
-      ? (o.userPlaces as unknown[]).filter(isUserPlace)
+      ? (o.userPlaces as unknown[]).map(normalizeUserPlace).filter(Boolean) as Place[]
       : [];
     return { overrides, userPlaces };
   } catch {

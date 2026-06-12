@@ -33,14 +33,39 @@ export async function fetchRoute(points: LatLng[]): Promise<CachedRoute | null> 
     const data = await res.json();
     const route = data?.routes?.[0];
     if (!route?.geometry?.coordinates) return null;
+    // Per-leg sanity check: if any leg is both >30 km and >4× its haversine
+    // distance, OSRM is almost certainly routing through a third country (e.g.
+    // Albania for Ada Bojana). Return null so the UI shows no route rather than
+    // a misleading loop. Threshold 4× leaves room for the Balkans' winding
+    // mountain roads (~2×) and coastal bay detours (~3×) without false positives.
+    const rawLegs = route.legs as Array<{ duration: number; distance: number }> ?? [];
+    if (rawLegs.length === points.length - 1) {
+      for (let i = 0; i < rawLegs.length; i++) {
+        const [lat1, lng1] = points[i];
+        const [lat2, lng2] = points[i + 1];
+        const dLat = ((lat2 - lat1) * Math.PI) / 180;
+        const dLng = ((lng2 - lng1) * Math.PI) / 180;
+        const a =
+          Math.sin(dLat / 2) ** 2 +
+          Math.cos((lat1 * Math.PI) / 180) *
+            Math.cos((lat2 * Math.PI) / 180) *
+            Math.sin(dLng / 2) ** 2;
+        const hvM = 2 * 6371000 * Math.asin(Math.sqrt(a));
+        if (rawLegs[i].distance > 30000 && rawLegs[i].distance > hvM * 4) {
+          console.warn(
+            `[OSRM] Leg ${i} rejected: ${Math.round(rawLegs[i].distance / 1000)} km road` +
+              ` vs ${Math.round(hvM / 1000)} km haversine` +
+              ` (${(rawLegs[i].distance / hvM).toFixed(1)}×) — likely third-country routing`,
+          );
+          return null;
+        }
+      }
+    }
     return {
       distance: route.distance,
       duration: route.duration,
       coordinates: route.geometry.coordinates as [number, number][],
-      legs: (route.legs ?? []).map((l: { duration: number; distance: number }) => ({
-        duration: l.duration,
-        distance: l.distance,
-      })),
+      legs: rawLegs.map((l) => ({ duration: l.duration, distance: l.distance })),
       snapped: (data.waypoints ?? []).map(
         (w: { location: [number, number] }) => w.location,
       ),

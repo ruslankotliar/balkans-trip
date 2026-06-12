@@ -16,8 +16,16 @@
     ],
     "cost": "Free",
     "timeNeeded": "1.5-3h",
-    "bestTime": "Day 13 (Jun 28) morning — 15 km/20 min south of Dubrovnik airport in Konavle, en route or a quick detour. Or Day 4 (Jun 19) if staying Dubrovnik-area. Arrive early or after 15:30; June weekday should still be quiet.",
-    "tags": ["gap-find", "hidden-gem", "swimming", "cliffs", "konavle", "near-airport", "free"],
+    "bestTime": "Day 12 (Jun 27) afternoon — 15 km/20 min south of Dubrovnik in Konavle, after the morning walls visit. Cliff descent via rope from the roadside pullout. Jun 27 Saturday may be busier than weekday — arrive before 11:00 or after 15:00.",
+    "tags": [
+      "gap-find",
+      "hidden-gem",
+      "swimming",
+      "cliffs",
+      "konavle",
+      "near-airport",
+      "free"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -36,7 +44,13 @@
     ],
     "cost": "€10 (€5 students)",
     "timeNeeded": "1h",
-    "tags": ["gap-find", "fortress", "viewpoint", "konavle", "near-airport"],
+    "tags": [
+      "gap-find",
+      "fortress",
+      "viewpoint",
+      "konavle",
+      "near-airport"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -45,7 +59,7 @@
     "name": "Konavoski dvori (Ljuta river mills restaurant)",
     "country": "HR",
     "category": "food",
-    "lat": 42.5380,
+    "lat": 42.538,
     "lng": 18.3785,
     "description": "Restaurant built into centuries-old watermills on the rushing, ice-cold Ljuta spring river in upper Konavle — grilled trout, peka lamb and pršut with your feet practically over the water. Completes a Konavle half-day (Pasjača + Sokol Grad + this) in the trip's emptiest map zone.",
     "communityNotes": "TripAdvisor 4.4/5 over ~550 reviews. 'Trouts were fantastic, I don't remember having better ones for a long, long time'; the mill-and-river terrace is what everyone remembers ('a midsummer afternoon dream'). HONEST CAVEAT: several reviewers call it 'nice setting, average food, very touristy' — go for the setting + trout, not a gourmet pilgrimage. The Ljuta spring just upstream is a beautiful 5-min walk.",
@@ -55,7 +69,14 @@
     "cost": "~€20-35 pp",
     "timeNeeded": "1.5h",
     "bestTime": "Lunch on the Jun 18 pre-pickup afternoon or Jun 27 final evening",
-    "tags": ["gap-find", "food", "trout", "river", "konavle", "watermill"],
+    "tags": [
+      "gap-find",
+      "food",
+      "trout",
+      "river",
+      "konavle",
+      "watermill"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -74,7 +95,13 @@
     ],
     "cost": "Free (beach)",
     "timeNeeded": "0 — skip, or 30min beach stop",
-    "tags": ["gap-find", "urbex", "verdict-skip", "heads-up", "beach"],
+    "tags": [
+      "gap-find",
+      "urbex",
+      "verdict-skip",
+      "heads-up",
+      "beach"
+    ],
     "rating": 2,
     "status": "candidate"
   },
@@ -94,7 +121,14 @@
     ],
     "timeNeeded": "evening / overnight",
     "bestTime": "Jun 18 pickup evening or Jun 27 final night",
-    "tags": ["gap-find", "base", "near-airport", "swimming", "sunset", "budget"],
+    "tags": [
+      "gap-find",
+      "base",
+      "near-airport",
+      "swimming",
+      "sunset",
+      "budget"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -115,7 +149,14 @@
     "cost": "Free",
     "timeNeeded": "2-3h",
     "bestTime": "Pairs with the Trpanj ferry variant (day 3 or the Pelješac/Mljet leg)",
-    "tags": ["gap-find", "hidden-gem", "swimming", "peljesac", "camping-nearby", "free"],
+    "tags": [
+      "gap-find",
+      "hidden-gem",
+      "swimming",
+      "peljesac",
+      "camping-nearby",
+      "free"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -136,7 +177,15 @@
     "cost": "Free (boat/kayak rental extra)",
     "timeNeeded": "15min viewpoint stop, or half day by kayak",
     "bestTime": "Day 2-3 driving the D8; calm sea for the kayak option",
-    "tags": ["gap-find", "hidden-gem", "swimming", "spring", "kayak", "viewpoint", "free"],
+    "tags": [
+      "gap-find",
+      "hidden-gem",
+      "swimming",
+      "spring",
+      "kayak",
+      "viewpoint",
+      "free"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -155,8 +204,15 @@
     ],
     "cost": "Free",
     "timeNeeded": "1h",
-    "bestTime": "Day 7 (Jun 22) sunset — walk up from Baščaršija 30-40 min before sundown (~20:45). Free, bring drinks. Pairs with the Kovači war cemetery below.",
-    "tags": ["gap-find", "sunset", "viewpoint", "free", "local-favourite", "sarajevo"],
+    "bestTime": "Day 6 (Jun 21) sunset — walk up from Baščaršija 30-40 min before sundown (~20:45). Free, bring drinks. Pairs with the Kovači war cemetery below.",
+    "tags": [
+      "gap-find",
+      "sunset",
+      "viewpoint",
+      "free",
+      "local-favourite",
+      "sarajevo"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -177,7 +233,14 @@
     "cost": "Free",
     "timeNeeded": "1-1.5h incl. drive up from Stolac",
     "bestTime": "Day 6 (Jun 21) — only on the Trebinje→Stolac→Mostar inland variant. Skip first if doing Kravica+Trebižat. Last km road is narrow; afternoon light is best on the walls.",
-    "tags": ["gap-find", "ruins", "illyrian", "free", "off-route", "hidden-gem"],
+    "tags": [
+      "gap-find",
+      "ruins",
+      "illyrian",
+      "free",
+      "off-route",
+      "hidden-gem"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -198,7 +261,14 @@
     "cost": "Free",
     "timeNeeded": "1h valley stroll to half-day Žlijeb hike",
     "bestTime": "Day 7 Mostar→Konjic transit; morning shade is kinder",
-    "tags": ["gap-find", "hike", "canyon", "off-route", "free", "hidden-gem"],
+    "tags": [
+      "gap-find",
+      "hike",
+      "canyon",
+      "off-route",
+      "free",
+      "hidden-gem"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -208,7 +278,7 @@
     "country": "BA",
     "category": "sight",
     "lat": 42.7147,
-    "lng": 18.3540,
+    "lng": 18.354,
     "description": "Trebinje's signature sight after the old town: a double-arched 1574 Ottoman bridge (moved stone-by-stone when the reservoir rose in the 1960s) over the glassy green Trebišnjica. 5 min away, the free city 'Bregovi' river-pool lido — natural shade, summer bar — is where locals cool off. The map already pins Trebinje 3 times but missed both.",
     "communityNotes": "Existing Gračanica pin's own notes call the bridge the town's other highlight. Travelers: best at dusk when it's lit and mirrored in the river; walkable 20-25 min along the riverbank from the plane-tree square. Bregovi: 'Trebinje has filtered a little of the river off to make a public bathing area with café which is free for all to use' — a genuinely local scene, perfect after the hot drive from the airport pickup.",
     "sources": [
@@ -220,7 +290,14 @@
     "cost": "Free",
     "timeNeeded": "45min (bridge) + optional swim",
     "bestTime": "Dusk for the bridge; afternoon heat for Bregovi",
-    "tags": ["gap-find", "bridge", "ottoman", "river-swim", "free", "trebinje"],
+    "tags": [
+      "gap-find",
+      "bridge",
+      "ottoman",
+      "river-swim",
+      "free",
+      "trebinje"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -241,7 +318,14 @@
     "cost": "~€25-40 pp incl. meal (confirm with operator)",
     "timeNeeded": "3-4h",
     "bestTime": "Day 6 combo with Kravica (falls early, paddle midday)",
-    "tags": ["gap-find", "canoe", "river", "swimming", "activity", "herzegovina"],
+    "tags": [
+      "gap-find",
+      "canoe",
+      "river",
+      "swimming",
+      "activity",
+      "herzegovina"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -262,7 +346,14 @@
     "cost": "Free",
     "timeNeeded": "1-1.5h",
     "bestTime": "On the Kotor↔Lovćen/Njeguši serpentine day; bring headlamps",
-    "tags": ["gap-find", "urbex", "fortress", "viewpoint", "free", "sunset"],
+    "tags": [
+      "gap-find",
+      "urbex",
+      "fortress",
+      "viewpoint",
+      "free",
+      "sunset"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -283,7 +374,14 @@
     "cost": "Free",
     "timeNeeded": "1-2h",
     "bestTime": "Midday heat on the Žabljak→Ostrog→Skadar day (day 10)",
-    "tags": ["gap-find", "swimming", "lake", "local-favourite", "free", "zero-detour"],
+    "tags": [
+      "gap-find",
+      "swimming",
+      "lake",
+      "local-favourite",
+      "free",
+      "zero-detour"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -292,7 +390,7 @@
     "name": "Vražje jezero (Devil's Lake) — swim with a Durmitor backdrop",
     "country": "ME",
     "category": "nature",
-    "lat": 43.0840,
+    "lat": 43.084,
     "lng": 19.1456,
     "description": "Glacial lake on the open Jezera plateau ~10km SE of Žabljak (old Šavnik/Nikšić road) with the full Durmitor massif mirrored in it — and unlike Black Lake, swimming is normal here and the water actually gets pleasant (17-20°C+). Devil legends included. A 15-min detour that gives the group their 'swim under the mountains' moment without crowds.",
     "communityNotes": "Park guides note it's 'where you will often see people swimming... larger and more popular for swimming in summer' among Durmitor's 18 lakes; TripAdvisor reviewers call it an 'escape from reality' with almost nobody around outside weekends. Caveats from locals: cold springs feed it — sudden cold patches and a silty, shallow entry; the lake's legend says the devil drags across-swimmers under, which locals enjoy telling you as you wade in.",
@@ -303,8 +401,15 @@
     ],
     "cost": "Free",
     "timeNeeded": "1h",
-    "bestTime": "Day 9 (Jun 24) afternoon after the Veliki Međed hike — 15 km on the Šavnik road from Žabljak. Calm evening = best Durmitor reflection. Or morning of Day 10 (Jun 25) en route Žabljak → Ostrog.",
-    "tags": ["gap-find", "lake", "swimming", "durmitor", "free", "local-favourite"],
+    "bestTime": "Day 8 (Jun 23) afternoon after the Veliki Međed hike — 15 km on the Šavnik road from Žabljak. Calm evening = best Durmitor reflection. Or morning of Day 9 (Jun 24) en route Žabljak → Ostrog.",
+    "tags": [
+      "gap-find",
+      "lake",
+      "swimming",
+      "durmitor",
+      "free",
+      "local-favourite"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -325,7 +430,15 @@
     "cost": "Free",
     "timeNeeded": "30min viewpoint; +1.5-2h with the lake descent",
     "bestTime": "On the Plužine→Trsa→Žabljak drive (day 8); June = lake is full",
-    "tags": ["gap-find", "canyon", "viewpoint", "viewpoint-road", "lake", "free", "piva-plateau"],
+    "tags": [
+      "gap-find",
+      "canyon",
+      "viewpoint",
+      "viewpoint-road",
+      "lake",
+      "free",
+      "piva-plateau"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -344,7 +457,13 @@
     ],
     "cost": "Gear rental at base (cheaper than guided tour ~€50pp)",
     "timeNeeded": "1.5–2h",
-    "tags": ["via-ferrata", "omis", "climbing", "cetina", "adventure"],
+    "tags": [
+      "via-ferrata",
+      "omis",
+      "climbing",
+      "cetina",
+      "adventure"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -353,8 +472,8 @@
     "name": "Via Ferrata Piva — Piva Canyon",
     "country": "ME",
     "category": "activity",
-    "lat": 43.1200,
-    "lng": 18.7900,
+    "lat": 43.12,
+    "lng": 18.79,
     "description": "Grade B/C via ferrata in the Piva canyon, 20 min south of Plužine on the Žabljak road. Traverse the canyon walls 2 m above the turquoise Piva River, then climb 80 m vertical. 2024-installed anchors to EN 16869 standard. Guided only (€65–150 depending on group size). 2–3h.",
     "communityNotes": "New route (2024 installation). 'Standing 100 meters above the Piva River with turquoise water below'; combinable with Tara rafting for a full adventure day. Professional photo package included. Zero detour from the Žabljak → Šćepan Polje road — this is literally on your confirmed route.",
     "sources": [
@@ -363,7 +482,13 @@
     ],
     "cost": "€65 pp (groups 3–8); €70 pp couples; €150 solo",
     "timeNeeded": "2–3h",
-    "tags": ["via-ferrata", "piva", "canyon", "guided", "adventure"],
+    "tags": [
+      "via-ferrata",
+      "piva",
+      "canyon",
+      "guided",
+      "adventure"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -382,7 +507,14 @@
     ],
     "cost": "€5/h single, €25/day double",
     "timeNeeded": "2h (quick loop) to full day",
-    "tags": ["kayak", "self-guided", "kotor", "bay", "perast", "dawn"],
+    "tags": [
+      "kayak",
+      "self-guided",
+      "kotor",
+      "bay",
+      "perast",
+      "dawn"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -391,8 +523,8 @@
     "name": "Hrčavka Canyon Canyoning — Sutjeska NP",
     "country": "BA",
     "category": "activity",
-    "lat": 43.3800,
-    "lng": 18.6900,
+    "lat": 43.38,
+    "lng": 18.69,
     "description": "Beginner canyoning in a narrow slot canyon within Sutjeska National Park, 20 min from Tjentište. Turquoise pools, natural slides, jumps to 7 m (optional). Water ~10°C. Groups capped at 8 (canyon is physically that narrow). June = peak waterfall volume from snowmelt. Guided only, ~2–3h.",
     "communityNotes": "Operator notes: 'Late May and early June bring the strongest waterfalls from snowmelt — best time of year.' 'The canyon's narrowest sections physically don't allow more than 8 people.' Multiple adventure travelers describe it as the most exciting thing at Sutjeska beyond the Maglić hike. Very manageable for beginners.",
     "sources": [
@@ -401,7 +533,14 @@
     ],
     "cost": "~€40–50 pp (operators: Outdoor Tara, Adventure Bosnia, Camp Sutjeska)",
     "timeNeeded": "2–3h (+ 20 min transfer from Tjentište)",
-    "tags": ["canyoning", "sutjeska", "swimming", "jumping", "canyon", "guided"],
+    "tags": [
+      "canyoning",
+      "sutjeska",
+      "swimming",
+      "jumping",
+      "canyon",
+      "guided"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -411,7 +550,7 @@
     "country": "HR",
     "category": "beach",
     "lat": 42.9598,
-    "lng": 17.0820,
+    "lng": 17.082,
     "description": "Top Adriatic windsurfing/kitesurfing spot in the Pelješac strait opposite Korčula. Reliable Maestral wind 12–25 knots from 14:00–sunset, June–August. LIBERAN Surf & Camp and Water Donkey offer lessons and rentals. For non-surfers: laid-back beach bars, clear water, iconic Korčula view.",
     "communityNotes": "Consistently described as the 'surfer vibe' antidote to Dubrovnik crowds. Overlanders stop here for an afternoon refresh. SUP also available. Hidden pebble coves between Viganj and Kučište accessible by foot from the main beach.",
     "sources": [
@@ -420,7 +559,14 @@
     ],
     "cost": "Beach: free. Lessons from ~€50; gear rental ~€25–40/h",
     "timeNeeded": "2h (stopover) to full day",
-    "tags": ["windsurfing", "kitesurfing", "peljesac", "korcula", "beach", "camping"],
+    "tags": [
+      "windsurfing",
+      "kitesurfing",
+      "peljesac",
+      "korcula",
+      "beach",
+      "camping"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -439,7 +585,14 @@
     ],
     "cost": "Free (village, beaches)",
     "timeNeeded": "2h stopover or overnight base",
-    "tags": ["peljesac", "beach", "hidden", "swimming", "wild-camping", "off-route"],
+    "tags": [
+      "peljesac",
+      "beach",
+      "hidden",
+      "swimming",
+      "wild-camping",
+      "off-route"
+    ],
     "rating": 3,
     "status": "candidate"
   }

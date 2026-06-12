@@ -15,7 +15,7 @@
     ],
     "cost": "4 adults + car ≈ €49.90 each way (adult €6.10, car €25.50, 2026 high season)",
     "timeNeeded": "~45 min crossing + 60–120 min queue buffer",
-    "bestTime": "Day 5 (Sat Jun 20) — target 10:15 sailing; queue 90+ min early. 13:00 is the last comfortable outbound; 17:00 is plan-B only.",
+    "bestTime": "Day 4 (Fri Jun 19) — Friday = lighter queue than Saturday. Target 07:00–08:00 sailing for maximum island time; queue 60+ min early. 13:00 is the last comfortable outbound; 17:00 plan-B only.",
     "tags": [
       "ferry",
       "logistics",
@@ -37,13 +37,14 @@
       "https://www.dubrovnik-online.net/prapratno-mljet-ferry"
     ],
     "timeNeeded": "~45 min crossing",
+    "bestTime": "Day 5 (Jun 20) — June sailings from Sobra: 06:00, 09:00, 12:00, 16:00, 19:30. To reach Kravica before crowds arrive: catch the 06:00 — depart camp by 05:30, arrive Prapratno ~06:45, drive 2h → Kravica 08:45. Otherwise 09:00 sailing lands at Kravica ~11:30 (still swimmable, busier). First-come; same queue rules as Prapratno.",
     "tags": [
       "ferry",
       "logistics",
       "mljet"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-ploce-ferry",
@@ -125,7 +126,7 @@
       "https://globonautas.org/en/travel-tips/border-between-croatia-montenegro/",
       "https://easybalkantransfers.com/blog/border-crossings-balkans/"
     ],
-    "bestTime": "Day 12 (Jun 27) — DO NOT USE for ME→HR. EES biometric queues 1–4h. Use VITALJINA/Karasovići (15 km south of Kotor, via Herceg Novi) instead — 15–45 min wait. Only fall back here before 08:00 or after 21:00 if Vitaljina is closed.",
+    "bestTime": "Day 11 (Jun 26) — DO NOT USE for ME→HR. EES biometric queues 1–4h. Use VITALJINA/Karasovići (15 km south of Kotor, via Herceg Novi) instead — 15–45 min wait. Only fall back here before 08:00 or after 21:00 if Vitaljina is closed.",
     "tags": [
       "border",
       "logistics"

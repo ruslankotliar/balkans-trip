@@ -1,7 +1,7 @@
 import { CATEGORY_COLORS } from '../constants';
 import { bookingFor, navUrl } from '../links';
 import type { CachedRoute, PlaceWithOverride } from '../store';
-import { DAY_HINTS, DAY_OPS, TRIP_DAYS, daysToTripStart, dayDateLabel, formatDuration } from '../trip';
+import { DAY_HINTS, DAY_OPS, TRIP_DAYS, daysToTripStart, dayDateLabel, formatDuration, stopHint } from '../trip';
 
 export interface ProximityMatch {
   place: PlaceWithOverride;
@@ -49,14 +49,6 @@ interface Props {
 
 const gmaps = (p: PlaceWithOverride) => navUrl(p.lat, p.lng);
 
-/** Extract a compact one-line hint from bestTime (strips the "Day X (Jun N) — " prefix). */
-function stopHint(bestTime: string | undefined): string {
-  if (!bestTime) return '';
-  let text = bestTime.replace(/^(?:Day|Night)\s+\d+[^—]*—\s*/, '').trim();
-  const dotIdx = text.indexOf('. ');
-  const snippet = dotIdx >= 0 && dotIdx < 70 ? text.slice(0, dotIdx) : text.slice(0, 65);
-  return snippet.length < text.length ? snippet + '…' : snippet;
-}
 
 /** Render hint text with phone numbers (+XX ...) as tappable tel: links. */
 function HintText({ text }: { text: string }) {
@@ -163,8 +155,14 @@ export default function Today({
   const todayDone = stops.filter((p) => done[p.id]).length;
   const nextIdx = isToday ? stops.findIndex((p) => !done[p.id]) : -1;
   const next = nextIdx >= 0 ? stops[nextIdx] : null;
+  // When dayPoints includes a prepended overnight stop, route.legs has one extra
+  // entry at index 0 (the morning relocation leg). Offset all leg lookups by 1
+  // so we show the correct scheduled-stop-to-scheduled-stop leg time.
+  const legOffset = stops.length > 0
+    ? Math.max(0, (route?.legs?.length ?? 0) - Math.max(0, stops.length - 1))
+    : 0;
   const nextLegSec =
-    next && nextIdx > 0 ? route?.legs?.[nextIdx - 1]?.duration : undefined;
+    next && nextIdx > 0 ? route?.legs?.[nextIdx - 1 + legOffset]?.duration : undefined;
   const nextFerryH =
     next && nextIdx > 0 ? ferryFor(stops[nextIdx - 1].id, next.id) : 0;
   const nextGpsKm = next ? kmFromGps(next.lat, next.lng) : null;
@@ -188,6 +186,11 @@ export default function Today({
             <span className="today-countdown">{daysLeft}d to go</span>
           ) : null}
         </div>
+        {realDay >= 1 && !isToday && (
+          <button className="today-jump-btn" onClick={() => onDay(realDay)} title="Jump to today">
+            Today
+          </button>
+        )}
         <button
           className="today-arrow"
           disabled={day >= TRIP_DAYS}
@@ -249,9 +252,9 @@ export default function Today({
               >
                 Navigate ↗
               </a>
-              {next.bestTime && (
+              {stopHint(next.bestTime) && (
                 <div className="today-next-hint">
-                  <HintText text={next.bestTime.length > 90 ? next.bestTime.slice(0, next.bestTime.indexOf(' ', 85) + 1 || 90) + '…' : next.bestTime} />
+                  <HintText text={stopHint(next.bestTime)} />
                 </div>
               )}
             </>
@@ -271,7 +274,7 @@ export default function Today({
           {stops.map((p, i) => {
             const isNext = isToday && i === nextIdx;
             const isDone = !!done[p.id];
-            const legSec = i > 0 ? route?.legs?.[i - 1]?.duration : undefined;
+            const legSec = i > 0 ? route?.legs?.[i - 1 + legOffset]?.duration : undefined;
             const ferryH = i > 0 ? ferryFor(stops[i - 1].id, p.id) : 0;
             return (
               <li key={p.id} className={isDone ? 'done' : isNext ? 'next' : ''}>

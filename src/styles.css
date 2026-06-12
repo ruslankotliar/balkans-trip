@@ -608,6 +608,11 @@ body.trip-mode .detail-nav-btn {
   border-left: 4px solid;
   padding: 2px 0 2px 8px;
 }
+.itin-day-head.today {
+  background: #eef6ff;
+  border-radius: 8px;
+  padding-right: 8px;
+}
 .itin-day-num {
   color: #fff;
   font-weight: 700;
@@ -623,10 +628,42 @@ body.trip-mode .detail-nav-btn {
   font-size: 13px;
   font-weight: 600;
 }
+.itin-today-badge {
+  display: inline-block;
+  background: #2471c8;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 9px;
+  text-transform: uppercase;
+}
+.itin-day-flags {
+  font-size: 13px;
+  line-height: 1;
+}
 .itin-day-route {
   margin-left: auto;
   font-size: 11px;
   color: #666;
+}
+.itin-day-route.drive-warn {
+  color: #c07000;
+  font-weight: 600;
+}
+.itin-day-route.drive-heavy {
+  color: #c03000;
+  font-weight: 700;
+}
+.itin-sleep-icon {
+  font-size: 10px;
+  opacity: 0.7;
+  margin-right: 3px;
+}
+.itin-stop-li.itin-sleep-stop,
+li.itin-sleep-stop {
+  background: rgba(0, 100, 200, 0.04);
+  border-radius: 4px;
 }
 .itin-day-hint {
   font-size: 11px;
@@ -634,6 +671,21 @@ body.trip-mode .detail-nav-btn {
   line-height: 1.3;
   margin: 2px 0 4px 4px;
   padding-left: 2px;
+}
+.itin-time-tips {
+  margin: 2px 0 4px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.itin-time-tip {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.3;
+  background: #fffbec;
+  border-left: 2px solid #e8b800;
+  padding: 2px 5px;
+  border-radius: 0 3px 3px 0;
 }
 .itin-day-note {
   font-size: 11px;
@@ -1155,6 +1207,11 @@ body.trip-mode .detail-nav-btn {
     color: #888;
     font-size: 20px;
   }
+  .today-jump-btn {
+    min-height: 36px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
   /* Today skip button: smaller tap target */
   .today-skip {
     min-height: 32px;
@@ -1399,6 +1456,20 @@ body.trip-mode .detail-nav-btn {
   display: block;
   font-size: 10px;
   color: #999;
+}
+.today-jump-btn {
+  flex-shrink: 0;
+  border: 1px solid #2471c8;
+  background: #fff;
+  color: #2471c8;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.today-jump-btn:hover {
+  background: #eef6ff;
 }
 .today-countdown {
   display: inline-block;

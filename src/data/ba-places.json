@@ -242,7 +242,7 @@
     ],
     "cost": "Apartments for 4 ~€50/night achievable (one of the cheaper capitals); hostels cheaper",
     "timeNeeded": "Half day on foot covers the core; overnight recommended",
-    "bestTime": "Day 7 (Jun 22) — afternoon arrival + overnight. Baščaršija at dusk, Žuta Tabija sunset (20:45), nightlife on Ferhadija. Practical base for Day 8's 07:00 departure.",
+    "bestTime": "Day 6 (Jun 21) — afternoon arrival + overnight. Baščaršija at dusk, Žuta Tabija sunset (20:45), nightlife on Ferhadija. Practical base for Day 7's 08:30 Tara rafting departure.",
     "tags": [
       "old-town",
       "ottoman",
@@ -375,7 +375,7 @@
     ],
     "cost": "Apartments for 4 ~€30-70/night (cheap hotels avg ~€45-50); Numbeo: Dubrovnik rent ~272% higher",
     "timeNeeded": "Half day to see; 1-2 nights as a base",
-    "bestTime": "Day 12 (Jun 27 Saturday) — planned Night 12 base, ~30 min from Dubrovnik airport. Jun 27 IS a Saturday so the green market runs in the morning. Or Day 4 (Jun 19) as a day trip from Dubrovnik. Old town and riverfront are lovely any time.",
+    "bestTime": "Day 11 (Jun 26 Friday) — Night 11 base, ~30 min from Dubrovnik. Old town and plane-tree riverfront lovely any time. Sat Jun 27 morning: famous green market if lingering before Dubrovnik walls drive.",
     "tags": [
       "base",
       "cheap",
@@ -559,7 +559,7 @@
       "https://www.salsavida.com/guides/bosnia-and-herzegovina/sarajevo/socials/"
     ],
     "cost": "Free entry",
-    "bestTime": "Day 7 (Mon Jun 22) — venue hours 20:00-05:00; Salsa Vida lists 19:00-05:00. Go only if Day 8's 07:00 departure still feels realistic.",
+    "bestTime": "Day 7 (Mon Jun 22) — Latin Night is MONDAY ONLY; current plan has Day 6 (Sun) in Sarajevo. To attend, extend the Sarajevo stay to Night 7 and shift Day 7's Tara start. Venue 20:00-05:00.",
     "tags": [
       "monday-only",
       "free",
@@ -609,7 +609,15 @@
     "cost": "Cheap — drinks ~€2–4",
     "timeNeeded": "2–4h (evening)",
     "bestTime": "Monday or Thursday evenings for live sevdah",
-    "tags": ["sarajevo", "bar", "live-music", "sevdah", "local", "cheap", "nightlife"],
+    "tags": [
+      "sarajevo",
+      "bar",
+      "live-music",
+      "sevdah",
+      "local",
+      "cheap",
+      "nightlife"
+    ],
     "rating": 4,
     "status": "candidate"
   }

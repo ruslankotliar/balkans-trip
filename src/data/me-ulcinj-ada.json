@@ -4,8 +4,8 @@
     "name": "Ada Bojana Island Beach",
     "country": "ME",
     "category": "beach",
-    "lat": 41.8531,
-    "lng": 19.3742,
+    "lat": 41.871,
+    "lng": 19.330,
     "description": "Triangular river-delta island at the mouth of the Bojana River — 3 km of wide dark volcanic sand, shallow entry, with a bohemian undeveloped feel unlike anywhere else on the Montenegrin coast. A row of wooden stilt restaurants built over the river serves wild-caught fish (carp, sole, eel); this dinner is the main event.",
     "communityNotes": "\"One of the most beautiful beaches I've ever seen — very wide and lasts for kilometres.\" FKK (nudist) section is clearly marked; outside it, clothing is optional and non-nudists are common everywhere. ⚠️ Mosquitoes in the delta evenings are genuinely severe — multiple sources say DEET is not optional. Windsurfing/kitesurfing on the sea-facing side; calm river side near restaurants.",
     "sources": [
@@ -13,8 +13,14 @@
       "https://balkancampers.com/blog/montenegro-road-trip-the-coast",
       "https://www.nakedwanderings.com/getting-naked-ada-bojana-island-montenegro/"
     ],
-    "bestTime": "Day 11 (Jun 26) afternoon → dinner — arrive mid-afternoon after Ulcinj. Dinner at Misko or Barbana stilt restaurant is the highlight. Sleep at Safari Beach/Velika Plaža for better facilities, then leave 06:00 Day 12 → pass Sveti Stefan viewpoint en route → arrive Kotor by 07:30–07:50.",
-    "tags": ["beach", "river", "delta", "ada-bojana", "overnight"],
+    "bestTime": "Day 10 (Jun 25) afternoon → dinner — arrive mid-afternoon after Ulcinj. Dinner at Misko or Barbana stilt restaurant is the highlight. Sleep at Safari Beach/Velika Plaža for better facilities, then leave 06:00 Day 11 → pass Sveti Stefan viewpoint en route → arrive Kotor by 07:30–07:50.",
+    "tags": [
+      "beach",
+      "river",
+      "delta",
+      "ada-bojana",
+      "overnight"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -23,8 +29,8 @@
     "name": "Misko Stilt Restaurant (Ada Bojana)",
     "country": "ME",
     "category": "food",
-    "lat": 41.8489,
-    "lng": 19.3765,
+    "lat": 41.856,
+    "lng": 19.340,
     "description": "Family-run stilt restaurant on the Bojana River since 1991, built on wooden pilings over the water. Wild-caught fresh fish (carp, sole, bream, eel) sourced directly from the river and Adriatic. Ranked #1 of 7 restaurants on Ada Bojana island, 485 TripAdvisor reviews (383 Excellent).",
     "communityNotes": "\"You feel like on a boat — amazing view on the river.\" \"Best Balkan restaurant for fish and seafood.\" Fish soup ~€6, fresh whole fish €15–30, beers included in meal estimates of ~€25–35pp. **Barbana** is the equally-praised alternative: candlelit, tables in trees, at the exact river mouth meeting the Adriatic — call it the more atmospheric of the two.",
     "sources": [
@@ -32,8 +38,14 @@
     ],
     "cost": "~€25–35pp (fish soup + main fish + drinks)",
     "timeNeeded": "1.5–2h",
-    "bestTime": "Day 11 (Jun 26) dinner — drive/taxi ~10 min from Safari Beach or park on Ada Bojana and walk to the stilt houses on the river. Aim for 19:00. Book ahead in high season or just show up early; both Misko and Barbana are within 200m of each other. Bring mosquito spray.",
-    "tags": ["fish", "stilt-restaurant", "local", "dinner", "ada-bojana"],
+    "bestTime": "Day 10 (Jun 25) dinner — drive/taxi ~10 min from Safari Beach or park on Ada Bojana and walk to the stilt houses on the river. Aim for 19:00. Book ahead in high season or just show up early; both Misko and Barbana are within 200m of each other. Bring mosquito spray.",
+    "tags": [
+      "fish",
+      "stilt-restaurant",
+      "local",
+      "dinner",
+      "ada-bojana"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -42,8 +54,8 @@
     "name": "FKK Auto Camp Ada Bojana",
     "country": "ME",
     "category": "campsite",
-    "lat": 41.8531,
-    "lng": 19.3742,
+    "lat": 41.863,
+    "lng": 19.334,
     "description": "Basic campsite on the Ada Bojana island itself, open since 1973. Sandy beach access, dated facilities (functional but rough around the edges), and the unique location 5-min walk from the Misko/Barbana stilt restaurants. Nudism only mandatory inside the designated FKK zone; rest of island is clothing-optional and textile visitors are welcome.",
     "communityNotes": "Facilities described as 'old' and 'basic' in reviews — no drinking water at pitches, some muddy after rain. The point isn't the facilities, it's sleeping on the island itself. ⚠️ Mosquitoes are severely bad at dusk in the delta — every camping review specifically calls this out. DEET is essential. **Safari Beach Camp** (Ulcinj, 4km, Velika Plaža) is the better-facilities alternative at ~€30–40/4 but you're not on the island.",
     "sources": [
@@ -52,8 +64,14 @@
     ],
     "cost": "~€22–25 for 4 adults + tent + car (off-peak before Jul 5). High season: ~€25–27.",
     "facilities": "Showers (basic), toilets, sandy beach access. No drinking water at pitches.",
-    "bestTime": "Day 11 night (Jun 26) — check in afternoon. Hard departure 06:00 Day 12 for Kotor fortress at 07:30. Bring DEET. Backup: Ulcinj apartment ~€40–50 for 4 if the group prefers no mosquitoes.",
-    "tags": ["camping", "beach", "island", "fkk", "ada-bojana"],
+    "bestTime": "Night 10 (Jun 25) — check in after afternoon beach/dinner visit. Hard departure 06:00 Day 11 for Kotor fortress at 07:30. Bring DEET. Backup: Ulcinj apartment ~€40–50 for 4 if the group prefers no mosquitoes.",
+    "tags": [
+      "camping",
+      "beach",
+      "island",
+      "fkk",
+      "ada-bojana"
+    ],
     "rating": 3,
     "status": "candidate"
   }

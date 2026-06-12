@@ -577,8 +577,26 @@ export default function App() {
 
   const dayPoints = useMemo(() => {
     const result: Record<number, [number, number][]> = {};
-    for (const [day, ps] of Object.entries(dayStops)) {
-      result[Number(day)] = ps.map((p) => [p.lat, p.lng] as [number, number]);
+    for (const [dayStr, ps] of Object.entries(dayStops)) {
+      const dayNum = Number(dayStr);
+      const pts: [number, number][] = ps.map((p) => [p.lat, p.lng]);
+      // Prepend the previous night's sleep location so the route — and its
+      // drive time — covers the full day including the morning relocation drive.
+      const prevPs = dayStops[dayNum - 1];
+      if (prevPs && prevPs.length > 0 && pts.length > 0) {
+        const sleepSet = new Set<string>(SLEEP_CATEGORIES);
+        const prevSleep =
+          [...prevPs].reverse().find((p) => sleepSet.has(p.category)) ??
+          prevPs[prevPs.length - 1];
+        // Skip if overnight stop is essentially the same location as first stop.
+        if (
+          Math.abs(prevSleep.lat - pts[0][0]) > 0.001 ||
+          Math.abs(prevSleep.lng - pts[0][1]) > 0.001
+        ) {
+          pts.unshift([prevSleep.lat, prevSleep.lng]);
+        }
+      }
+      result[dayNum] = pts;
     }
     return result;
   }, [dayStops]);
@@ -1731,6 +1749,7 @@ export default function App() {
               places={places}
               routes={routes}
               routesLoading={routesLoading}
+              realDay={isDuringTrip() ? currentTripDay() : -1}
               ferrySecByDay={dayFerrySec}
               selectedId={selectedId}
               onSelect={selectPlace}

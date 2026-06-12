@@ -75,7 +75,7 @@
       "strategic-position"
     ],
     "rating": 3,
-    "bestTime": "Day 5 (Jun 20 Saturday) — arrive early, the Mljet ferry leaves from this bay. Queue 90+ min early for car space. Sandy beach for a quick swim before departure.",
+    "bestTime": "Day 3 (Jun 18 Thursday) night — arrive after airport pickup (~19:00). Queue at port early next morning for the first Mljet ferry. Sandy beach for a quick evening swim.",
     "sources": [
       "https://www.tripadvisor.com/Hotel_Review-g608720-d2238999-Reviews-Autocamp_Prapratno-Ston_Peljesac_Peninsula_Dubrovnik_Neretva_County_Dalmatia.html",
       "https://www.camping-prapratno.com/",
@@ -327,7 +327,14 @@
       "https://www.tripadvisor.com/Hotel_Review-g7383125-d23348330-Reviews-Agroturizam_Antunovic-Kuna_Peljeska_Peljesac_Peninsula_Dubrovnik_Neretva_County_Dalm.html",
       "https://www.booking.com/hotel/hr/agroturizam-antunovic.html"
     ],
-    "tags": ["peljesac", "wow", "wine", "farmhouse", "inland", "night4"],
+    "tags": [
+      "peljesac",
+      "wow",
+      "wine",
+      "farmhouse",
+      "inland",
+      "night4"
+    ],
     "rating": 5,
     "status": "candidate"
   }

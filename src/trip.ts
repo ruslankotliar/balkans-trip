@@ -163,42 +163,63 @@ export interface DayHint {
   text: string;
 }
 
+// FIXED external facts only — these are true regardless of which stops are scheduled.
+// Stop-specific timing advice lives in each place's bestTime field and appears
+// dynamically in the itinerary day view when that stop is scheduled.
 export const DAY_HINTS: Record<number, DayHint> = {
-  1:  { icon: '🌑', text: 'New moon tonight — best dark sky of the trip (Jun 16–18). Paklenica NP: call camp at 08:00 (+385 23 369 452) if walking in.' },
-  2:  { icon: '🪂', text: 'Canyoning start early (09:00 latest). Leave Omiš by 13:00 if doing Biokovo/airport tomorrow.' },
-  3:  { icon: '🏔️', text: 'Leave Makarska by 13:00–13:30 sharp — flight lands 17:20, plan to be at arrivals by 17:30. Biokovo: booked? 20-car cap/hour.' },
-  4:  { icon: '🧱', text: 'Dubrovnik walls: arrive 07:30 — crowds pack in from 10:00. Use Ploče Gate side.' },
-  5:  { icon: '⛴', text: 'Mljet ferry (Prapratno → Sobra): cars are first-come, ticket does not reserve deck space. Queue 90+ min early on Saturday. Best target: 10:15 sailing; 13:00 is the last comfortable outbound. 17:00 arrives 17:45 = plan-B only.' },
-  6:  { icon: '💧', text: 'Kravica: arrive before 09:00 — packed with tour buses by 11:00. Mostar Stari Most glows amber at sunset.' },
-  7:  { icon: '🎶', text: 'Blagaj + Boračko swim en route to Sarajevo. Tonight: Cinemas Sloga, Mehmeda Spahe 20 — Monday Latin Night is listed; venue hours 20:00–05:00. Check Instagram before committing after a long drive.' },
-  8:  { icon: '🚣', text: 'Depart Sarajevo 07:00 → Foča by 09:00 → Tara raft start 10:00 (Brštanovica, ~3–4h) → cross border at Šćepan Polje → Piva canyon to Žabljak. Piva tunnels: lights on, honk before entry — drive daylight only.' },
-  9:  { icon: '⛰️', text: 'Durmitor: leave camp by 06:30–07:00. Storm risk builds 12:00–15:00 — be off the ridge by noon. Žabljak nights 6–10°C.' },
-  10: { icon: '🛐', text: 'Ostrog: cover knees+shoulders (no exceptions). Skadar: mosquitoes vicious at dusk — repellent essential.' },
-  11: { icon: '🦟', text: 'Ada Bojana: DEET repellent essential — mosquitoes are severe at dusk on the delta. Sleep at Safari Beach for better facilities; drive/taxi ~10 min to Misko/Barbana. Book dinner ahead or arrive by 18:00. Early night — 06:00 departure for Kotor.' },
-  12: { icon: '🚢', text: 'Leave Ada Bojana/Safari by 06:00 if doing Kotor properly. Cruise schedules conflict for Jun 27 (Star Clipper appears consistently; one source also shows Azamara Onward). Treat as cruise-risk: start fortress by 07:30–08:00, be down before 10:00. Use VITALJINA, not Debeli Brijeg.' },
-  13: { icon: '✈️', text: 'Flight FR9756: DBV 20:40 → Vienna 22:05. Car drop (Sicily By Car, ref D013947246) by 19:15 — fill fuel first, Ryanair check-in closes 20:00. Full day usable until ~18:30.' },
+  1:  { icon: '🌑', text: 'New moon Jun 16–18 — darkest skies of the trip. Good night for stargazing wherever you camp.' },
+  2:  { icon: '🕙', text: 'Day 3 airport run: leave wherever you are by ~14:00. Flight lands 17:20; be at arrivals by 17:30.' },
+  3:  { icon: '✈️', text: 'Flight FR9423 lands 17:20 — allow 3h drive from Makarska. After pickup: drive north to Camp Prapratno (~90 km, 1h20m) for the morning ferry to Mljet.' },
+  4:  { icon: '⛴', text: 'Mljet ferry (Prapratno→Sobra): first-come, no deck reservation. Friday = lighter queue than weekend. First sailings ~07:00; queue 60+ min early.' },
+  5:  { icon: '💧', text: 'Return ferry Sobra→Prapratno: 06:00 gets you to Kravica by 08:45 (before crowds). 09:00 ferry lands at Kravica ~11:30 — swimmable but busier.' },
+  6:  { icon: '🌞', text: 'Solstice week (Jun 21) — 15h+ daylight. Blagaj Tekija opens ~08:00. Žuta tabija (Yellow Fortress) in Sarajevo: golden-hour sunset ritual.' },
+  7:  { icon: '🚣', text: 'Tara rafting starts early (~08:30 meet). Piva tunnels: lights on, honk before entry — single-lane, no signal. Cross into Montenegro at Šćepan Polje.' },
+  8:  { icon: '⛰️', text: 'Durmitor: storm risk 12:00–15:00 — be off any exposed ridge by noon. Nights 6–10°C; warm layer required.' },
+  9:  { icon: '🛐', text: 'Ostrog Monastery: cover knees+shoulders strictly enforced. Skadar Lake delta: DEET at dusk — mosquitoes vicious.' },
+  10: { icon: '🦟', text: 'Ada Bojana delta: mosquitoes severe at dusk — DEET essential. Long beach drive: Ulcinj → Velika Plaža → Ada Bojana island.' },
+  11: { icon: '🚢', text: 'Summer cruise ships in Kotor Bay — start fortress before 08:00. Border: use Vitaljina (not Debeli Brijeg) for ME→HR on the drive to Trebinje.' },
+  12: { icon: '🏛️', text: 'Dubrovnik walls open 06:30 — hit them before cruise ships arrive (~10:00). Pasjača Beach: cliff descent via rope, park at the roadside pullout.' },
+  13: { icon: '✈️', text: 'Flight FR9756: DBV 20:40 → Vienna 22:05. Car drop ref D013947246 by 19:15 — fill fuel first. Ryanair check-in closes 20:00.' },
 };
 
 /**
  * Static weather + daylight digest per trip day.
  * Source: trip-ops.md §1 (weather zones) and §2 (sun times / CEST).
- * Sunrise/sunset ± 2 min across Jun 16–28; storm notes only where actionable.
+ * These are planning notes, not live forecasts.
  */
 export const DAY_OPS: Record<number, string> = {
-  1:  'Forecast Jun 12: 28/20°C, sunny · 🌅 05:13 → 20:47 · sea ~22°C',
-  2:  'Forecast Jun 12: Omiš ~31/22°C, sunny · 🌅 05:16 → 20:43 · Cetina river cold',
-  3:  'Forecast Jun 12: DBV ~32/24°C, hot/sunny · 🌅 05:08 → 20:30 · Biokovo breeze at altitude',
-  4:  'Forecast Jun 12: DBV ~31/25°C, sunny · 🌅 05:08 → 20:30 · sea ~23°C',
-  5:  'Forecast Jun 12: DBV/Mljet ~31/25°C, sunny · 🌅 05:08 → 20:30 · car ferry queue heat',
-  6:  'Forecast Jun 12: Mostar ~36/23°C, possible PM shower · 🌅 05:05 → 20:27 · solstice',
-  7:  'Forecast Jun 12: Mostar hot → Sarajevo ~33/18°C, PM thunder risk · 🌅 05:05 → 20:27',
-  8:  'Forecast Jun 12: Sarajevo ~31°C PM thunder risk → Žabljak ~25/13°C · ⛺ cool night · 🌅 05:02 → 20:23',
-  9:  'Forecast Jun 12: Žabljak ~24/12°C with thunderstorm risk · ⚡ be off ridge by noon · 🌅 05:02 → 20:23',
-  10: 'Forecast Jun 12: Žabljak cool AM → Skadar/Virpazar ~27/22°C · mosquitoes at dusk · 🌅 05:04 → 20:22',
-  11: '27–30°C coast likely · 🌅 05:04 → 20:22 · sea 23–24°C · Ada delta mosquitoes after sunset',
-  12: '27–30°C coast likely · 🌅 05:04 → 20:22 · Kotor bay shaded ~19:30',
+  1:  'Zadar coast ~28/20°C, sunny · 🌅 05:13 → 20:47 · sea ~22°C',
+  2:  'Omiš ~31/22°C, sunny · 🌅 05:16 → 20:43 · Cetina river cold',
+  3:  'DBV ~32/24°C, hot/sunny · 🌅 05:08 → 20:30 · Biokovo breeze at altitude',
+  4:  'Mljet ~31/25°C, sunny · 🌅 05:08 → 20:30 · sea ~23°C · Friday ferry lighter queue',
+  5:  'Mostar ~36/23°C, possible PM shower · 🌅 05:05 → 20:27 · Kravica: arrive early',
+  6:  'Mostar hot → Sarajevo ~33/18°C, PM thunder risk · 🌅 05:05 → 20:27 · solstice',
+  7:  'Sarajevo ~31°C PM thunder → Žabljak ~25/13°C · ⛺ cool night · 🌅 05:02 → 20:23',
+  8:  'Žabljak ~24/12°C with thunderstorm risk · ⚡ be off ridge by noon · 🌅 05:02 → 20:23',
+  9:  'Žabljak cool AM → Skadar/Virpazar ~27/22°C · mosquitoes at dusk · 🌅 05:04 → 20:22',
+  10: '27–30°C coast likely · 🌅 05:04 → 20:22 · sea 23–24°C · Ada delta mosquitoes after sunset',
+  11: '27–30°C coast likely · 🌅 05:04 → 20:22 · Kotor bay shaded from late afternoon',
+  12: '27–30°C likely · 🌅 05:08 → 20:30 · Dubrovnik sea 23°C · cruise ships in port by 10:00',
   13: '27–30°C likely · 🌅 05:08 → 20:30 · sea 23°C',
 };
+
+/**
+ * Strip "Day N (Jun DD) — " prefix from a bestTime string and truncate to
+ * the first sentence (up to 100 chars) or a word boundary near 75 chars.
+ * Used in both the Itinerary day view and the Today stop list.
+ */
+export function stopHint(bestTime: string | undefined): string {
+  if (!bestTime) return '';
+  const text = bestTime.replace(/^(?:Day|Night)\s+\d+[^—]*—\s*/, '').trim();
+  const dotIdx = text.indexOf('. ');
+  if (dotIdx >= 0 && dotIdx < 100) {
+    const snippet = text.slice(0, dotIdx);
+    return snippet.length < text.length ? snippet + '…' : snippet;
+  }
+  if (text.length <= 75) return text;
+  const lastSpace = text.lastIndexOf(' ', 75);
+  return text.slice(0, lastSpace > 0 ? lastSpace : 75) + '…';
+}
 
 /** Format seconds as "3h 25m" / "45m". */
 export function formatDuration(seconds: number): string {

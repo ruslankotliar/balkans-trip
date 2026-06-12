@@ -133,7 +133,7 @@
     "lng": 18.11,
     "description": "Trip end point — car drop-off and bus/flight back to Vienna on Jun 28. Walls walk, Srđ cable car/viewpoint, Buža cliff bar.",
     "timeNeeded": "half day minimum; full day for walls + Lokrum",
-    "bestTime": "Days 4–5 (Jun 19–20) base + Day 13 (Jun 28). Walls pre-08:00 (€35pp) before cruise crowds. Car drop at airport Jun 28 by 20:00 (Ref D013947246).",
+    "bestTime": "Day 12 (Jun 27 Saturday) — walls open 06:30 (€35pp); finish before cruise ships ~10:00. Car drop airport Jun 28 by 19:15 (Ref D013947246).",
     "status": "shortlist",
     "communityNotes": "\"The walls are best before 08:00 — by 09:30 they're shoulder-to-shoulder with cruise tourists.\" Wall entry ~€35pp. Old town itself free to walk. Lokrum boat from the old harbor (10min, €15-20rt) is a great half-day — peacocks, saltwater lake, Game of Thrones ruins. Elaphiti islands: day-trip boat from Gruž harbor. Game of Thrones filming locations scattered throughout. Evening old town after 20:00 is the best vibe — most day-trippers gone.",
     "rating": 5
@@ -147,7 +147,7 @@
     "lng": 17.815,
     "description": "Ottoman old town around the rebuilt 16th-century bridge; locals dive 24m into the Neretva. Main Bosnia base candidate.",
     "timeNeeded": "half day (evening arrival + morning exploration)",
-    "bestTime": "Day 6 (Jun 21) — arrive late afternoon from Kravica falls. Evening and morning are the magic hours — Stari Most glows amber at sunset (~20:25).",
+    "bestTime": "Day 5 (Jun 20) — arrive late afternoon from Kravica falls. Evening and morning are the magic hours — Stari Most glows amber at sunset (~20:25).",
     "status": "shortlist",
     "communityNotes": "\"The old town bazaar near the bridge is incredibly atmospheric — feel the same street as 500 years ago, minus the tourists.\" Divers jump from Stari Most daily at ~14:00 (can be €20-30 for a dive by young locals showing off). Kujundžiluk bazaar street is very commercialized but worth walking once. Evening walk after 20:00: bridge lit, few tourists left, genuinely beautiful. 'Black Dog' bar is the local/traveler hangout. Blagaj Tekija (whirling dervish tekke at a spring, 15min south) is a must-add — often skipped and absolutely worth it.",
     "rating": 5
@@ -181,7 +181,7 @@
     "description": "25m horseshoe waterfall arc on the Trebižat river — you can swim directly in the plunge pool below the falls. ~40min from Mostar, on the route to/from Croatia. June gets busy but manageable if you arrive early. Stunning emerald-green water.",
     "cost": "20 KM adult flat (~€10), year-round",
     "timeNeeded": "2–3h",
-    "bestTime": "Day 6 (Jun 21) — arrive 07:00–08:00 to beat the crowds. June pool swimmable (~18–20°C). Tour buses pack in from ~10:30.",
+    "bestTime": "Day 5 (Jun 20) — arrive 07:00–08:00 to beat the crowds. June pool swimmable (~18–20°C). Tour buses pack in from ~10:30.",
     "tags": [
       "swimming"
     ],
@@ -204,8 +204,10 @@
     "status": "shortlist",
     "rating": 4,
     "communityNotes": "\"The village is only a 10-min stop but the climb to the Gavankula tower gives a great view over the Neretva. Worth it if passing.\" Recommended by a group member who has done the route. Ottoman clock tower + mosque + old fortified houses. Free (tower: €1-2). \"It's small but very picturesque — the contrast of the pale stone against the Neretva below.\" Combine with Kravica in the same morning: Kravica 07:00 → Počitelj 09:30 → Mostar by 11:00.",
-    "sources": ["https://www.inyourpocket.com/mostar/pocitelj_82038v"],
-    "bestTime": "Day 6 (Jun 21) mid-morning — leave Kravica 09:00, arrive Počitelj 09:30. Free (small tower fee €1-2). Combine with Kravica 07:00 early swim and arrive Mostar by 11:00. Midday heat on the stone hill can be brutal — early is better."
+    "sources": [
+      "https://www.inyourpocket.com/mostar/pocitelj_82038v"
+    ],
+    "bestTime": "Day 5 (Jun 20) mid-morning — leave Kravica 09:00, arrive Počitelj 09:30. Free (small tower fee €1-2). Combine with Kravica 07:00 early swim and arrive Mostar by 11:00. Midday heat on the stone hill can be brutal — early is better."
   },
   {
     "id": "ba-trebinje",

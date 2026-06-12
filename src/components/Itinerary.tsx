@@ -8,12 +8,19 @@ import {
   dayDateLabel,
   formatDistance,
   formatDuration,
+  stopHint,
 } from '../trip';
+import type { Country } from '../types';
+
+
+const COUNTRY_FLAG: Record<Country, string> = { HR: '🇭🇷', BA: '🇧🇦', ME: '🇲🇪' };
 
 interface Props {
   places: PlaceWithOverride[];
   routes: DayRoutes;
   routesLoading: boolean;
+  /** The real current trip day, or -1 when the trip is not underway. */
+  realDay: number;
   /** Manual ferry seconds per day (only days that have any). */
   ferrySecByDay: Record<number, number>;
   selectedId: string | null;
@@ -32,6 +39,7 @@ export default function Itinerary({
   places,
   routes,
   routesLoading,
+  realDay,
   ferrySecByDay,
   selectedId,
   onSelect,
@@ -61,16 +69,25 @@ export default function Itinerary({
       {DAYS.map((day) => {
         const stops = assigned.filter((p) => p.day === day).sort(byOrder);
         const route = routes[day];
+        const isToday = realDay === day;
+        const driveSec = route ? route.duration + (ferrySecByDay[day] ?? 0) : 0;
+        const driveClass = driveSec > 4.5 * 3600 ? 'drive-heavy' : driveSec > 3 * 3600 ? 'drive-warn' : '';
+        const flags = [...new Set(stops.map((p) => p.country).filter(Boolean))]
+          .map((c) => COUNTRY_FLAG[c as Country] ?? '')
+          .join('');
         return (
-          <div key={day} className="itin-day">
-            <div className="itin-day-head" style={{ borderColor: dayColor(day) }}>
+          <div key={day} className={`itin-day${isToday ? ' today' : ''}`}>
+            <div className={`itin-day-head${isToday ? ' today' : ''}`} style={{ borderColor: dayColor(day) }}>
               <span className="itin-day-num" style={{ background: dayColor(day) }}>
                 {day}
               </span>
               <span className="itin-day-date">{dayDateLabel(day)}</span>
+              {isToday && <span className="itin-today-badge">today</span>}
+              {flags && <span className="itin-day-flags">{flags}</span>}
               {route && (
-                <span className="itin-day-route">
-                  {formatDuration(route.duration + (ferrySecByDay[day] ?? 0))}
+                <span className={`itin-day-route${driveClass ? ` ${driveClass}` : ''}`}>
+                  {driveClass === 'drive-heavy' ? '⚠️ ' : ''}
+                  {formatDuration(driveSec)}
                   {ferrySecByDay[day] ? ' ⛴' : ''} · {formatDistance(route.distance)}
                 </span>
               )}
@@ -94,6 +111,21 @@ export default function Itinerary({
                 📝 {dayNotes[day]}
               </div>
             )}
+            {stops.some((p) => p.bestTime) && (
+              <div className="itin-time-tips">
+                {stops
+                  .filter((p) => p.bestTime)
+                  .map((p) => {
+                    const hint = stopHint(p.bestTime);
+                    if (!hint) return null;
+                    return (
+                      <div key={p.id} className="itin-time-tip">
+                        ⏰ <strong>{p.name}:</strong> {hint}
+                      </div>
+                    );
+                  })}
+              </div>
+            )}
             {stops.length === 0 ? (
               <p className="itin-empty">no stops</p>
             ) : (
@@ -101,14 +133,19 @@ export default function Itinerary({
                 {stops.map((p, i) => (
                   <li
                     key={p.id}
-                    className={selectedId === p.id ? 'selected' : ''}
+                    className={`${selectedId === p.id ? 'selected' : ''}${p.category === 'campsite' || p.category === 'accommodation' ? ' itin-sleep-stop' : ''}`}
                     onClick={() => onSelect(p)}
                   >
                     <span
                       className="dot"
                       style={{ background: CATEGORY_COLORS[p.category] }}
                     />
-                    <span className="place-name">{p.name}</span>
+                    <span className="place-name">
+                      {(p.category === 'campsite' || p.category === 'accommodation') && (
+                        <span className="itin-sleep-icon" title="Sleep option">🛏</span>
+                      )}
+                      {p.name}
+                    </span>
                     <span className="itin-actions" onClick={(e) => e.stopPropagation()}>
                       <button
                         disabled={i === 0}

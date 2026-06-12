@@ -33,6 +33,10 @@ const PRESET_TASKS: Task[] = [
   { id: 'p7', text: 'Cash ready: €100–150 small bills + exchange some to BAM (Bosnia)', done: false },
   { id: 'p8', text: 'Download offline maps — OsmAnd for BiH + ME before leaving', done: false },
   { id: 'p9', text: 'Check Mljet ferry time at jadrolinija.hr — queue Prapratno 90min early Jun 20', done: false },
+  // URGENT — book these WOW stays before they fill (small properties, 4 days to trip)
+  { id: 'p10', text: 'Book Guesthouse Raicevic (Godinje, Skadar) Jun 25 night — ★9.3, tiny property, fills fast', done: false },
+  { id: 'p11', text: 'Book Cold River Treehouse (Bunica, near Blagaj) Jun 21 night — ★4.92, high demand', done: false },
+  { id: 'p12', text: 'Book Jablan Winery house (Rvaši, Skadar NW) Jun 25 night — ★4.86/219 reviews', done: false },
 ];
 
 function loadTasks(): Task[] {
