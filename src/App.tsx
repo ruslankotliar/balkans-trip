@@ -54,6 +54,7 @@ import {
   loadPlaces,
   loadRouteCache,
   loadSavedMode,
+  loadTripTempo,
   loadTripCache,
   loadUserPlaces,
   saveDayNotes,
@@ -61,6 +62,7 @@ import {
   saveFerryHours,
   saveLastFix,
   saveMode,
+  saveTripTempo,
   saveOverrides,
   saveRouteCache,
   saveTripCache,
@@ -72,6 +74,7 @@ import {
   type PlaceWithOverride,
   type SharedPlan,
   type TripResult,
+  type TripTempo,
 } from './store';
 import { buildDaySchedule } from './schedule';
 import {
@@ -81,6 +84,7 @@ import {
   isDuringTrip,
   nearestLegIndex,
   pointToPolylineKm,
+  formatDuration,
   splitIntoDays,
 } from './trip';
 import type { Category, Country, Place, Status } from './types';
@@ -129,6 +133,16 @@ const NEAR_ME_CATEGORIES: Category[] = [...SIGHT_CATEGORIES, 'food', 'nightlife'
 
 const SLEEP_TONIGHT_KM = 25;
 const NEAR_ME_KM = 30;
+const TEMPO_MULTIPLIER: Record<TripTempo, number> = {
+  tight: 0.9,
+  realistic: 1.15,
+  relaxed: 1.3,
+};
+const TEMPO_OPTIONS: Array<{ tempo: TripTempo; label: string }> = [
+  { tempo: 'tight', label: 'Tight' },
+  { tempo: 'realistic', label: 'Realistic' },
+  { tempo: 'relaxed', label: 'Relaxed' },
+];
 
 // One-tap quick filters: the common planning flows must be 1–2 taps.
 // (Trip mode has its own one-tap finders: 🛏 Sleep tonight / 📍 Near me.)
@@ -451,6 +465,7 @@ export default function App() {
     if (urlMode === 'trip' || urlMode === 'planning') return urlMode;
     return loadSavedMode() ?? (isDuringTrip() ? 'trip' : 'planning');
   });
+  const [tripTempo, setTripTempoState] = useState<TripTempo>(loadTripTempo);
   const [sidebarOpen, setSidebarOpen] = useState(mode === 'trip');
   // On phones the open sidebar fills the screen and would cover the detail
   // bottom-sheet, so selecting a place auto-collapses it; we remember whether
@@ -492,6 +507,12 @@ export default function App() {
     setSleepOpen(false);
     setNearOpen(false);
   }
+
+  function setTripTempo(tempo: TripTempo) {
+    setTripTempoState(tempo);
+    saveTripTempo(tempo);
+  }
+  const paceMultiplier = TEMPO_MULTIPLIER[tripTempo];
 
   useEffect(() => {
     document.body.classList.toggle('trip-mode', mode === 'trip');
@@ -659,16 +680,49 @@ export default function App() {
       const day = Number(dayStr);
       const route = routes[day];
       if (!route) continue;
-      const schedule = buildDaySchedule(stops, route, (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0);
+      const schedule = buildDaySchedule(
+        stops,
+        route,
+        (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0,
+        { paceMultiplier },
+      );
       if (schedule) out[day] = schedule;
     }
     return out;
-  }, [dayStops, routes, ferryHours]);
+  }, [dayStops, routes, ferryHours, paceMultiplier]);
 
   // ---- Trip mode: today, GPS, sleep tonight, near me ----
   const todayStops = useMemo(() => dayStops[tripDay] ?? [], [dayStops, tripDay]);
   const todayIds = useMemo(() => new Set(todayStops.map((p) => p.id)), [todayStops]);
   const todaySchedule = daySchedules[tripDay] ?? null;
+  const planningHealth = useMemo(() => {
+    const schedules = Object.entries(daySchedules)
+      .flatMap(([dayStr, schedule]) =>
+        schedule ? [{ day: Number(dayStr), schedule }] : [],
+      )
+      .sort((a, b) => a.day - b.day);
+    if (schedules.length === 0) return null;
+
+    let lateDays = 0;
+    let totalOverSec = 0;
+    let totalSlackSec = 0;
+    let tightest = schedules[0];
+
+    for (const entry of schedules) {
+      if (entry.schedule.overSec > 0) {
+        lateDays += 1;
+        totalOverSec += entry.schedule.overSec;
+      } else {
+        totalSlackSec += entry.schedule.slackSec;
+      }
+      if (entry.schedule.slackSec < tightest.schedule.slackSec) {
+        tightest = entry;
+      }
+    }
+
+    const recovery = tightest.schedule.overSec > 0 ? tightest.schedule.recovery[0] ?? null : null;
+    return { lateDays, totalOverSec, totalSlackSec, tightest, recovery, totalDays: schedules.length };
+  }, [daySchedules]);
 
   const totalPlanned = useMemo(
     () => Object.values(dayStops).reduce((sum, ps) => sum + ps.length, 0),
@@ -1355,9 +1409,14 @@ export default function App() {
   const rbSchedule = useMemo(
     () =>
       rbTrip && rbOrdered.length > 0
-        ? buildDaySchedule(rbOrdered, rbTrip, (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0)
+        ? buildDaySchedule(
+            rbOrdered,
+            rbTrip,
+            (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0,
+            { paceMultiplier },
+          )
         : null,
-    [rbTrip, rbOrdered, ferryHours],
+    [rbTrip, rbOrdered, ferryHours, paceMultiplier],
   );
 
   /** Trip legs with manual ferry hours folded in (ferry = wait + crossing). */
@@ -1480,6 +1539,8 @@ export default function App() {
   }
 
   const showTripLayer = view === 'route' && !!rbTrip;
+  const topBookEarlyStay =
+    bookEarlyStays.find((s) => s.urgency === 'book now') ?? bookEarlyStays[0] ?? null;
 
   return (
     <div className="app">
@@ -1507,6 +1568,75 @@ export default function App() {
             {mode === 'trip' ? '🚗 Trip' : '🗺️ Planning'}
           </button>
         </div>
+
+        <div className="tempo-row">
+          <span className="tempo-label">Pace</span>
+          <div className="tempo-switch" role="group" aria-label="Trip pace">
+            {TEMPO_OPTIONS.map((option) => (
+              <button
+                key={option.tempo}
+                className={tripTempo === option.tempo ? 'on' : ''}
+                aria-pressed={tripTempo === option.tempo}
+                onClick={() => setTripTempo(option.tempo)}
+                title={`${option.label} pace`}
+              >
+                {option.label} · {TEMPO_MULTIPLIER[option.tempo].toFixed(2)}x
+              </button>
+            ))}
+          </div>
+          <span className="tempo-note">Used by the day clocks, route builder, and recovery hints.</span>
+        </div>
+
+        {mode === 'planning' && planningHealth && (
+          <div className="plan-health-card">
+            <div className="plan-health-head">
+              <strong>Plan health</strong>
+              <span className={`plan-health-badge ${planningHealth.lateDays > 0 ? 'late' : 'ok'}`}>
+                {planningHealth.lateDays > 0
+                  ? `${planningHealth.lateDays} late day${planningHealth.lateDays === 1 ? '' : 's'}`
+                  : 'All days fit'}
+              </span>
+            </div>
+            <div className="plan-health-row">
+              <span>Clock balance</span>
+              <span>
+                {planningHealth.lateDays > 0
+                  ? `+${formatDuration(planningHealth.totalOverSec)} over`
+                  : `${formatDuration(planningHealth.totalSlackSec)} slack`}
+              </span>
+            </div>
+            <div className="plan-health-row">
+              <span>Tightest day</span>
+              <span>
+                Day {planningHealth.tightest.day} ·{' '}
+                {planningHealth.tightest.schedule.slackSec >= 0
+                  ? `${formatDuration(planningHealth.tightest.schedule.slackSec)} slack`
+                  : `+${formatDuration(planningHealth.tightest.schedule.overSec)} late`}
+              </span>
+            </div>
+            {planningHealth.recovery && (
+              <div className="plan-health-recovery">
+                Fastest trim: skip {planningHealth.recovery.names.join(' + ')} to recover{' '}
+                {formatDuration(planningHealth.recovery.freedSec)}
+              </div>
+            )}
+            {topBookEarlyStay && (
+              <div className="plan-health-row plan-health-stay">
+                <span>
+                  Special stays · <strong>{bookEarlyStays.length}</strong>
+                </span>
+                <button
+                  className="plan-health-open"
+                  type="button"
+                  onClick={() => focusPin(topBookEarlyStay.place.id)}
+                  title="Open the highest-priority special stay"
+                >
+                  {topBookEarlyStay.place.name}
+                </button>
+              </div>
+            )}
+          </div>
+        )}
 
         {mode === 'trip' ? (
           <Suspense fallback={<PanelFallback text="Loading trip view…" />}>

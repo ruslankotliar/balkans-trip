@@ -857,6 +857,19 @@ export function saveMode(m: Mode) {
   safeSetItem(MODE_KEY, m);
 }
 
+export type TripTempo = 'tight' | 'realistic' | 'relaxed';
+
+const TEMPO_KEY = 'balkans-trip-tempo';
+
+export function loadTripTempo(): TripTempo {
+  const v = localStorage.getItem(TEMPO_KEY);
+  return v === 'tight' || v === 'realistic' || v === 'relaxed' ? v : 'realistic';
+}
+
+export function saveTripTempo(t: TripTempo) {
+  safeSetItem(TEMPO_KEY, t);
+}
+
 const DONE_KEY = 'balkans-trip-done';
 
 /** Stop ids ticked off in the Today view. */

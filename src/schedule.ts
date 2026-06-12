@@ -257,11 +257,13 @@ export function buildDaySchedule(
   options?: {
     dayStartHour?: number;
     dayEndHour?: number;
+    paceMultiplier?: number;
   },
 ): DaySchedule | null {
   if (stops.length === 0) return null;
   const dayStartSec = (options?.dayStartHour ?? DEFAULT_DAY_START_HOUR) * 3600;
   const plannedEndSec = (options?.dayEndHour ?? DEFAULT_DAY_END_HOUR) * 3600;
+  const paceMultiplier = Math.max(0.5, options?.paceMultiplier ?? 1);
   const routeLegs = route?.legs ?? [];
   const offset = Math.max(0, routeLegs.length - Math.max(0, stops.length - 1));
 
@@ -281,7 +283,7 @@ export function buildDaySchedule(
     const place = stops[i];
     const estimate = estimateStopMinutes(place);
     const arrival = clock;
-    const stopStaySec = estimate.minutes * 60;
+    const stopStaySec = Math.round(estimate.minutes * paceMultiplier) * 60;
     const isSleep = isSleepStop(place);
     const effectiveStaySec = isSleep ? stopStaySec : stopStaySec;
     const departure = arrival + effectiveStaySec;
