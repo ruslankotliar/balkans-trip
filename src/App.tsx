@@ -1469,9 +1469,7 @@ export default function App() {
         ) : (
         <>
         <p className="subtitle">
-          Jun 16–28 · Zadar → Dubrovnik ·{' '}
-          <strong>{statusCounts.shortlist}</strong> shortlisted ·{' '}
-          <strong>{statusCounts.candidate}</strong> to review
+          Jun 16–28 · <strong>{statusCounts.shortlist}</strong> shortlisted · <strong>{statusCounts.candidate}</strong> candidates
         </p>
 
         <div className="view-tabs">

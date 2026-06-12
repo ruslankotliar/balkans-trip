@@ -38,6 +38,9 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   margin: 0;
   color: #666;
   font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .search {
