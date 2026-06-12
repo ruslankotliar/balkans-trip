@@ -31,7 +31,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 
 .sidebar h1 {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .subtitle {
@@ -50,7 +50,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 .filter-group {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 14px;
+  row-gap: 8px;
   column-gap: 6px;
 }
 
@@ -270,23 +270,30 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 /* ---- View tabs ---- */
 .view-tabs {
   display: flex;
-  gap: 4px;
+  gap: 0;
+  border-bottom: 1.5px solid #dde1e7;
 }
 .view-tabs button {
   flex: 1;
-  padding: 6px 4px;
+  padding: 8px 4px;
   font-size: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background: #fff;
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -1.5px;
+  border-radius: 0;
+  background: transparent;
+  color: #aaa;
   cursor: pointer;
   white-space: nowrap;
 }
+.view-tabs button:hover:not(.on) {
+  color: #555;
+}
 .view-tabs button.on {
-  background: #2c3e50;
-  color: #fff;
-  border-color: #2c3e50;
-  font-weight: 600;
+  background: transparent;
+  color: #2c3e50;
+  border-bottom-color: #2c3e50;
+  font-weight: 700;
 }
 
 .chip-count {
@@ -299,7 +306,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 .filters-disclosure {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 .filters-disclosure > summary {
   font-size: 13px;
@@ -1269,7 +1276,7 @@ body.trip-mode .detail-nav-btn {
 .head-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 8px;
   flex-wrap: wrap;
 }
@@ -1326,6 +1333,7 @@ body.trip-mode .detail-nav-btn {
   padding: 5px 11px;
   cursor: pointer;
   white-space: nowrap;
+  margin-left: auto;
 }
 
 /* ---- Today view (trip mode) ---- */
