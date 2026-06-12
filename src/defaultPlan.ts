@@ -50,14 +50,18 @@ export const DEFAULT_PLAN: Overrides = {
   'hr-odysseus-cave':        { day: 5, dayOrder: 4 },
   'hr-camp-marina-mljet':    { day: 5, dayOrder: 5 },
 
-  // ── Day 6: Jun 21 (Sun) — Kravica → Mostar ──────────────────────────────
+  // ── Day 6: Jun 21 (Sun) — Kravica → Počitelj → Fortica → Mostar ─────────
   'ba-trebizat-canoe':       { day: 6, dayOrder: 1 },
   'ba-kravica':              { day: 6, dayOrder: 2 },
-  'ba-mostar':               { day: 6, dayOrder: 3 },
-  'ba-tima-irma':            { day: 6, dayOrder: 4 },
-  'ba-gem-mostar-nanas-house': { day: 6, dayOrder: 5 },
-  'ba-villa-cold-river-treehouse-bunica': { day: 6, dayOrder: 6 },
-  'ba-daorson':              { day: 6, dayOrder: 7 },
+  'ba-pocitelj':             { day: 6, dayOrder: 3 },
+  'ba-fortica-mostar':       { day: 6, dayOrder: 4 },
+  'ba-mostar':               { day: 6, dayOrder: 5 },
+  'ba-sniper-tower-mostar':  { day: 6, dayOrder: 6 },
+  'ba-cafe-de-alma-mostar':  { day: 6, dayOrder: 7 },
+  'ba-tima-irma':            { day: 6, dayOrder: 8 },
+  'ba-gem-mostar-nanas-house': { day: 6, dayOrder: 9 },
+  'ba-villa-cold-river-treehouse-bunica': { day: 6, dayOrder: 10 },
+  'ba-daorson':              { day: 6, dayOrder: 11 },
 
   // ── Day 7: Jun 22 (Mon) — Mostar → Sarajevo ─────────────────────────────
   'ba-blagaj':               { day: 7, dayOrder: 0 },
@@ -68,13 +72,15 @@ export const DEFAULT_PLAN: Overrides = {
   'ba-tunnel-of-hope':       { day: 7, dayOrder: 5 },
   'ba-trebevic-cable-car':   { day: 7, dayOrder: 6 },
   'ba-bobsled-track':        { day: 7, dayOrder: 7 },
-  'ba-zuta-tabija':          { day: 7, dayOrder: 8 },
-  'ba-sarajevo-petica-ferhatovic': { day: 7, dayOrder: 9 },
-  'ba-air-1542024184506963047': { day: 7, dayOrder: 10 },
-  'ba-lukomir':              { day: 7, dayOrder: 11 },
-  'ba-gem-konjic-lakeview-studio': { day: 7, dayOrder: 12 },
+  'ba-sarajevo-pivara':      { day: 7, dayOrder: 8 },
+  'ba-zuta-tabija':          { day: 7, dayOrder: 9 },
+  'ba-sarajevo-petica-ferhatovic': { day: 7, dayOrder: 10 },
+  'ba-air-1542024184506963047': { day: 7, dayOrder: 11 },
+  'ba-lukomir':              { day: 7, dayOrder: 12 },
+  'ba-gem-konjic-lakeview-studio': { day: 7, dayOrder: 13 },
 
-  // ── Day 8: Jun 23 (Tue) — Sarajevo → Tara rafting → Žabljak ─────────────
+  // ── Day 8: Jun 23 (Tue) — Sarajevo → Sand Pyramids → Tara rafting → Žabljak ─
+  'ba-sand-pyramids-foca':   { day: 8, dayOrder: 0 },
   'ba-tjentiste-monument':   { day: 8, dayOrder: 1 },
   'me-tara-rafting-brstanovica': { day: 8, dayOrder: 2 },
   'me-scepan-polje-piva-canyon': { day: 8, dayOrder: 3 },

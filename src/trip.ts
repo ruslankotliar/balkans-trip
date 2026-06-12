@@ -192,7 +192,7 @@ export const DAY_OPS: Record<number, string> = {
   5:  '27–30°C · 🌅 05:08 → 20:30 · sea 23°C',
   6:  '30–35°C (Mostar bakes) · 🌅 05:05 → 20:27 · solstice! 15.5h day',
   7:  '25–28°C (Sarajevo, milder) · 🌅 05:05 → 20:27 · afternoon storms possible',
-  8:  '14–22°C Durmitor (5–10°C night) · 🌅 05:02 → 20:23',
+  8:  '25°C Sarajevo → 20°C Tara canyon → 14–22°C Žabljak · ⛺ night 5–10°C · 🌅 05:02 → 20:23',
   9:  '14–22°C Durmitor · ⚡ storms 12:00–15:00 · 🌅 05:02 → 20:23',
   10: '28–35°C Skadar basin (hottest zone) · 🌅 05:04 → 20:22',
   11: '27–30°C · 🌅 05:04 → 20:22 · sea 23–24°C',
