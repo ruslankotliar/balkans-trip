@@ -3557,6 +3557,14 @@ body.trip-mode .ess-tel {
   color: #1a7f4b;
 }
 .triage-shortlist:hover { background: #eafaf1; }
+.triage-backup-btn {
+  border-color: #9a6700;
+  color: #9a6700;
+}
+.triage-backup-btn:hover,
+.triage-backup-btn.on {
+  background: #fff4dd;
+}
 .triage-reject {
   border-color: #c0392b;
   color: #c0392b;

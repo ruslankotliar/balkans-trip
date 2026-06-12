@@ -37,13 +37,13 @@ export default function Review({ places, onStatus, onExit, onSelect, selectedId 
     [places, country, cat],
   );
 
-  const candidateCount = queue.filter((p) => p.status === 'candidate').length;
+  const reviewCount = queue.length;
 
   return (
     <div className="triage-panel">
       <div className="triage-header">
         <span className="triage-title">Triage</span>
-        <span className="triage-remaining">{candidateCount} to review</span>
+        <span className="triage-remaining">{reviewCount} to review</span>
         <button className="triage-close" onClick={onExit}>✕ Done</button>
       </div>
 
@@ -97,6 +97,12 @@ export default function Review({ places, onStatus, onExit, onSelect, selectedId 
                   onClick={() => onStatus(p.id, 'shortlist')}
                 >
                   ✓ Shortlist
+                </button>
+                <button
+                  className={`triage-btn triage-backup-btn ${p.status === 'backup' ? 'on' : ''}`}
+                  onClick={() => onStatus(p.id, 'backup')}
+                >
+                  📋 Backup
                 </button>
                 <button
                   className="triage-btn triage-reject"
