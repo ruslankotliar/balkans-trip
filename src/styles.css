@@ -7,6 +7,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+/* Remove 300ms tap delay on all interactive elements */
+a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
+  touch-action: manipulation;
+}
+
 .app {
   display: flex;
   height: 100vh;
@@ -81,7 +86,9 @@ body {
 
 .place-list {
   flex: 1;
+  min-height: 0; /* iOS Safari scroll fix */
   overflow-y: auto;
+  overscroll-behavior: contain;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -998,8 +1005,15 @@ body.trip-mode .detail-nav-btn {
     max-height: 55vh;
     border-radius: 16px 16px 0 0;
     box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.22);
-    padding-bottom: 24px;
+    padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
     z-index: 1150;
+  }
+  .detail-close {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+    top: 6px;
+    right: 6px;
   }
   /* Grab-handle affordance at the top of the sheet */
   .detail-panel::before {
@@ -1211,7 +1225,9 @@ body.trip-mode .detail-nav-btn {
 /* ---- Today view (trip mode) ---- */
 .today {
   flex: 1;
+  min-height: 0; /* iOS Safari: flex children with overflow-y need this to actually scroll */
   overflow-y: auto;
+  overscroll-behavior: contain; /* prevent map pan leaking through on iOS */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1543,7 +1559,25 @@ body.trip-mode .detail-close {
 @media (max-width: 760px) {
   /* Trip mode: a taller sheet so description + actions fit without scrolling. */
   body.trip-mode .detail-panel {
-    max-height: min(60vh, calc(100vh - 80px));
+    max-height: min(65vh, calc(100vh - 80px));
+  }
+  /* Trip mode: collapse the sidebar header to a single compact row so the
+     Today view gets maximum vertical space. */
+  body.trip-mode .sidebar .head-row h1 {
+    display: none;
+  }
+  body.trip-mode .sidebar .head-row {
+    padding-left: 52px; /* clear the fab */
+    gap: 6px;
+  }
+  body.trip-mode .who-pill,
+  body.trip-mode .share-plan-btn,
+  body.trip-mode .mode-pill {
+    font-size: 12px;
+    padding: 5px 9px;
+  }
+  body.trip-mode .who-pill {
+    max-width: 100px;
   }
 }
 
@@ -2221,6 +2255,11 @@ body.trip-mode .card-links .today-nav-link {
     max-width: 100%;
     max-height: 80vh;
     border-radius: 14px 14px 0 0;
+    padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  }
+  /* Prevent iOS zoom-on-focus for all text inputs */
+  input, textarea, select {
+    font-size: 16px !important;
   }
 }
 
