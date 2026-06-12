@@ -7,22 +7,22 @@
     "lat": 42.8116,
     "lng": 17.6787,
     "description": "Car-ferry harbour in a sandy cove ~3 km west of Ston on Pelješac. Jadrolinija line 832 to Sobra (Mljet), ~45 min crossing. Our main island gateway.",
-    "communityNotes": "First-come, first-served for cars — no reservation possible; a date ticket does NOT guarantee a deck slot. Travelers report needing to be in the vehicle queue 60–120 min before departure in peak summer, more on weekends. June (29 May–2 Jul block) = 5 sailings/day. The cove itself has 'one of the most beautiful sandy beaches in the Adriatic'.",
+    "communityNotes": "Official Jadrolinija line 832 is the source to check before driving to the port. Cars are first-come, first-served — a date ticket does NOT guarantee a deck slot. Travelers report needing to be in the vehicle queue 60–120 min before departure in peak summer, more on weekends. June (29 May–2 Jul block) = 5 sailings/day. The cove itself has 'one of the most beautiful sandy beaches in the Adriatic'.",
     "sources": [
+      "https://www.jadrolinija.hr/en/travel/prapratno_peljesac_-_sobra_mljet",
       "https://www.dubrovnik-online.net/prapratno-mljet-ferry",
-      "https://www.croatiaferries.com/prapratno-ferry-port.htm",
       "https://www.croatiaferries.com/topic/advance-booking-for-prapratno-sobra-ferry/"
     ],
     "cost": "4 adults + car ≈ €49.90 each way (adult €6.10, car €25.50, 2026 high season)",
     "timeNeeded": "~45 min crossing + 60–120 min queue buffer",
-    "bestTime": "Take an early sailing on busy weekends to avoid full-ferry queues",
+    "bestTime": "Day 5 (Sat Jun 20) — target 10:15 sailing; queue 90+ min early. 13:00 is the last comfortable outbound; 17:00 is plan-B only.",
     "tags": [
       "ferry",
       "logistics",
       "mljet"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-sobra-ferry",

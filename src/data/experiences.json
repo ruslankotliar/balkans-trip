@@ -424,12 +424,12 @@
   },
   {
     "id": "ba-boracko-lake",
-    "name": "Boračko Lake (swim + lakeside camp)",
+    "name": "Boračko Lake (swim stop; camp backup)",
     "country": "BA",
-    "category": "campsite",
+    "category": "nature",
     "lat": 43.5519,
     "lng": 18.0314,
-    "description": "Emerald glacial lake at the foot of Prenj, ~16km up a hairpin road from Konjic — warm-enough swimming, kayaks/pedalos, a beach bar and a well-run eco-camp. Ideal warm-water swim + overnight to bookend the Neretva rafting day.",
+    "description": "Emerald glacial lake at the foot of Prenj, ~16km up a hairpin road from Konjic — warm-enough swimming, kayaks/pedalos, a beach bar and a well-run eco-camp. Planned as a Day 7 swim reset on the Mostar → Sarajevo drive; camp remains the backup if skipping Sarajevo.",
     "communityNotes": "Eko Selo Boračko Jezero ~4.1/5 from campers — tranquil, clean, friendly. park4night: 'helpful and friendly staff... nice beach area and great swimming'; 'Fantastic eco-camp on crystal-clear Boračko Lake... shady pitches, spotless facilities and solid Wi-Fi,' restaurant with ćevapi and trout, 'colorful beach bar with hammocks.' One report: 2 nights for camper + 2 adults + 2 kids + dog + power = 100 KM total, cash only.",
     "sources": [
       "https://park4night.com/en/place/25976",
@@ -437,7 +437,7 @@
     ],
     "cost": "~€10–13 pp tent area; ~100 KM (~€50) loaded pitch w/ power (cash KM/EUR)",
     "facilities": "clean showers/toilets, electricity, restaurant, beach bar, kayak/pedalo rental, Wi-Fi, shade",
-    "timeNeeded": "overnight (or swim stop 2–3h)",
+    "timeNeeded": "2–3h swim stop; overnight only if skipping Sarajevo",
     "bestTime": "Day 7 (Jun 22) midday swim stop en route Jablanica → Sarajevo (~16 km from Konjic). Emerald glacial lake, perfect break on the long drive day. Or overnight if skipping Sarajevo.",
     "tags": [
       "campsite",
@@ -446,7 +446,7 @@
       "showers"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-paragliding-mostar",
