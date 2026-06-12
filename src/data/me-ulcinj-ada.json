@@ -1,25 +1,5 @@
 [
   {
-    "id": "me-ulcinj-old-town",
-    "name": "Ulcinj Old Town (Stari Grad)",
-    "country": "ME",
-    "category": "sight",
-    "lat": 41.9216,
-    "lng": 19.2189,
-    "description": "Compact walled Ottoman-Albanian hilltop town on a sea-facing headland, culturally distinct from anywhere else on the trip. Free to enter; ramparts give excellent sea views and the Old Bazaar has a strongly Albanian-Muslim character that's completely unlike Kotor or Dubrovnik.",
-    "communityNotes": "\"Not as hyped as Kotor's old town, but a delightful place to explore, with gorgeous views from the fortress walls.\" The distinctly Albanian Muslim culture stands out — 'feels like you've crossed into Albania.' June is still shoulder season in Ulcinj; peak crowds hit July–August. Avoid Velika Plaža for a quick stop (huge beach, 4km from old town — not worth the detour on a moving day).",
-    "sources": [
-      "https://maptrekking.com/is-ulcinj-worth-visiting/",
-      "https://johnnyafrica.com/montenegro-bar-budva-kotor-ulcinj/"
-    ],
-    "cost": "Free",
-    "timeNeeded": "45–60 min",
-    "bestTime": "Day 11 (Jun 26) midday — on the way south from Stari Bar to Ada Bojana. Stari Bar → Ulcinj ≈ 35 min, then Ada Bojana +30 min south. Wander the old town ramparts, buy supplies for the evening. Leave by 13:30 to reach Ada Bojana with full afternoon.",
-    "tags": ["ottoman", "albanian-culture", "views", "old-town", "ulcinj"],
-    "rating": 4,
-    "status": "candidate"
-  },
-  {
     "id": "me-ada-bojana-beach",
     "name": "Ada Bojana Island Beach",
     "country": "ME",
@@ -61,7 +41,7 @@
     "id": "me-fkk-camp-ada-bojana",
     "name": "FKK Auto Camp Ada Bojana",
     "country": "ME",
-    "category": "accommodation",
+    "category": "campsite",
     "lat": 41.8531,
     "lng": 19.3742,
     "description": "Basic campsite on the Ada Bojana island itself, open since 1973. Sandy beach access, dated facilities (functional but rough around the edges), and the unique location 5-min walk from the Misko/Barbana stilt restaurants. Nudism only mandatory inside the designated FKK zone; rest of island is clothing-optional and textile visitors are welcome.",
