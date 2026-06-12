@@ -202,6 +202,11 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 .rejected-list {
   border-top: none;
   margin-top: 4px;
+  /* Must NOT be a scroll container — .rejected-box is. Nested overflow-y:auto
+     on iOS Safari blocks touch-scroll of the parent. */
+  overflow-y: visible;
+  min-height: unset;
+  flex: none;
 }
 
 .rejected-list li {
@@ -1039,11 +1044,11 @@ body.trip-mode .detail-nav-btn {
     font-size: 13px;
   }
   .place-list li {
-    padding: 12px 6px;
+    padding: 10px 6px;
     font-size: 14px;
   }
   .view-tabs button {
-    padding: 10px 4px;
+    padding: 8px 4px;
     font-size: 13px;
   }
   .book-mini {
@@ -1054,6 +1059,43 @@ body.trip-mode .detail-nav-btn {
   .mode-pill {
     padding: 8px 14px;
     font-size: 14px;
+  }
+  /* ---- Planning mode: compact chrome to maximise list space ---- */
+  /* Subtitle: single truncated line */
+  .subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+  }
+  /* Filter chip rows: horizontal scroll, no wrapping */
+  .filter-group {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* hide scrollbar — gesture is enough */
+    gap: 6px;
+    padding-bottom: 2px;
+  }
+  .filter-group::-webkit-scrollbar { display: none; }
+  /* Chips slightly smaller on mobile */
+  .chip {
+    padding: 6px 10px;
+    font-size: 12px;
+    flex-shrink: 0; /* don't squish in nowrap row */
+  }
+  /* "+ Add place" — compact inline style instead of full-width block */
+  .add-place-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-bottom: 4px;
+    width: auto;
+    display: inline-block;
+  }
+  /* "+ show N candidates" hint chip */
+  .chip.chip-hint {
+    padding: 5px 10px;
+    font-size: 12px;
   }
 }
 
