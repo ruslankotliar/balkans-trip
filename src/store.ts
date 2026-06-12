@@ -165,6 +165,12 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
     changed = assignIfUnscheduled(next, id, day, order) || changed;
   };
 
+  // Force hr-zadar-airport to Day 1 if it got moved to Day 2 (car is picked up on arrival).
+  if (next['hr-zadar-airport']?.day === 2) {
+    next['hr-zadar-airport'] = { ...(next['hr-zadar-airport'] ?? {}), day: 1, dayOrder: 0 };
+    changed = true;
+  }
+
   // Jun 2026 itinerary correction: exact old baked-plan positions only.
   clear('hr-anica-kuk', 1, 4);
   clear('hr-villa-stone-house-martelina', 1, 6);

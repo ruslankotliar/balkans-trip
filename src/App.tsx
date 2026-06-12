@@ -149,14 +149,6 @@ const FILTER_PRESETS: FilterPreset[] = [
     vote: 'favorites',
   },
   {
-    id: 'split',
-    label: '⚖️ Split',
-    title: 'Both 👍 and 👎 — needs a group discussion',
-    categories: CATEGORIES,
-    statuses: NON_REJECTED,
-    vote: 'split',
-  },
-  {
     id: 'reset',
     label: '↺ All',
     title: 'Back to the default view (all categories, shortlist + backup)',
