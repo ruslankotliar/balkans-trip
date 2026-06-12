@@ -110,6 +110,149 @@ export type PlaceWithOverride = Place & Override;
 
 const KEY = 'balkans-trip-overrides';
 
+function clearSchedule(next: Overrides, id: string): void {
+  const current = next[id];
+  if (!current) return;
+  const rest = { ...current };
+  delete rest.day;
+  delete rest.dayOrder;
+  if (Object.keys(rest).length === 0) delete next[id];
+  else next[id] = rest;
+}
+
+function clearScheduleIf(next: Overrides, id: string, day: number, dayOrder: number): boolean {
+  const current = next[id];
+  if (!current || current.day !== day || current.dayOrder !== dayOrder) return false;
+  clearSchedule(next, id);
+  return true;
+}
+
+function moveScheduleIf(
+  next: Overrides,
+  id: string,
+  fromDay: number,
+  fromOrder: number,
+  toDay: number,
+  toOrder: number,
+): boolean {
+  const current = next[id];
+  if (!current || current.day !== fromDay || current.dayOrder !== fromOrder) return false;
+  next[id] = { ...current, day: toDay, dayOrder: toOrder };
+  return true;
+}
+
+function assignIfUnscheduled(next: Overrides, id: string, day: number, dayOrder: number): boolean {
+  const current = next[id];
+  if (current?.day !== undefined || current?.dayOrder !== undefined) return false;
+  next[id] = { ...(current ?? {}), day, dayOrder };
+  return true;
+}
+
+function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: boolean } {
+  const next: Overrides = { ...raw };
+  let changed = false;
+  const clear = (id: string, day: number, order: number) => {
+    const didClear = clearScheduleIf(next, id, day, order);
+    changed = didClear || changed;
+    return didClear;
+  };
+  const move = (id: string, fromDay: number, fromOrder: number, toDay: number, toOrder: number) => {
+    const didMove = moveScheduleIf(next, id, fromDay, fromOrder, toDay, toOrder);
+    changed = didMove || changed;
+    return didMove;
+  };
+  const assign = (id: string, day: number, order: number) => {
+    changed = assignIfUnscheduled(next, id, day, order) || changed;
+  };
+
+  // Jun 2026 itinerary correction: exact old baked-plan positions only.
+  clear('hr-anica-kuk', 1, 4);
+  clear('hr-villa-stone-house-martelina', 1, 6);
+  clear('hr-split', 2, 1);
+  clear('hr-kantun-paulina', 2, 2);
+
+  const fixedDay3 = [
+    move('hr-biokovo-tollroad', 3, 3, 3, 2),
+    move('hr-sveti-jure', 3, 2, 3, 3),
+    move('hr-camping-kate-mlini', 3, 7, 3, 8),
+  ].some(Boolean);
+  if (fixedDay3) assign('hr-dubrovnik-airport-pickup', 3, 7);
+
+  clear('hr-camp-lupis-loviste', 4, 3);
+  const stagedPrapratno = move('hr-camp-prapratno', 5, 1, 4, 3);
+  if (stagedPrapratno) assign('hr-prapratno-ferry', 5, 1);
+
+  clear('ba-trebizat-canoe', 6, 1);
+  move('ba-kravica', 6, 2, 6, 1);
+  move('ba-pocitelj', 6, 3, 6, 2);
+  clear('ba-fortica-mostar', 6, 4);
+  move('ba-mostar', 6, 5, 6, 3);
+  clear('ba-sniper-tower-mostar', 6, 6);
+  move('ba-cafe-de-alma-mostar', 6, 7, 6, 4);
+  move('ba-tima-irma', 6, 8, 6, 5);
+  move('ba-gem-mostar-nanas-house', 6, 9, 6, 6);
+  clear('ba-villa-cold-river-treehouse-bunica', 6, 10);
+
+  const fixedSarajevo = [
+    move('ba-blagaj', 7, 0, 7, 1),
+    clear('ba-jablanica-kayak-neretva', 7, 1),
+    clear('ba-neretva-rafting-konjic', 7, 2),
+    move('ba-boracko-lake', 7, 3, 7, 2),
+    move('ba-sarajevo', 7, 4, 7, 3),
+    clear('ba-tunnel-of-hope', 7, 5),
+    clear('ba-trebevic-cable-car', 7, 6),
+    clear('ba-bobsled-track', 7, 7),
+    clear('ba-sarajevo-pivara', 7, 8),
+    move('ba-zuta-tabija', 7, 9, 7, 4),
+    move('ba-sarajevo-petica-ferhatovic', 7, 10, 7, 5),
+    move('ba-air-1542024184506963047', 7, 11, 7, 7),
+    clear('ba-gem-konjic-lakeview-studio', 7, 12),
+  ].some(Boolean);
+  if (fixedSarajevo) {
+    changed = true;
+    assign('ba-cinemas-sloga-latin-night', 7, 6);
+  }
+
+  clear('ba-sand-pyramids-foca', 8, 1);
+  move('me-tara-rafting-brstanovica', 8, 2, 8, 1);
+  move('me-scepan-polje-piva-canyon', 8, 3, 8, 2);
+  move('me-mratinje-dam', 8, 4, 8, 3);
+  move('me-pluzine', 8, 5, 8, 4);
+  move('me-piva-lake-swim', 8, 6, 8, 5);
+  move('me-camp-mlinski-potok', 8, 7, 8, 6);
+  clear('ba-tjentiste-monument', 8, 8);
+  clear('me-camp-grab', 8, 9);
+
+  clear('me-prutas-hike', 9, 2);
+  clear('me-trnovacko-jezero', 9, 3);
+  move('me-vrazje-jezero', 9, 4, 9, 2);
+  move('me-zabljak', 9, 5, 9, 3);
+  clear('me-planinica', 9, 5);
+  clear('me-grabovica-canyon', 9, 6);
+  move('me-oro-zabljak', 9, 7, 9, 4);
+  move('me-gem-zabljak-mountain-spark', 9, 8, 9, 5);
+
+  clear('me-villa-jablan-winery-rvasi', 10, 6);
+  clear('me-gem-skadar-orahovo-koliba', 10, 7);
+  move('me-camp-radoman', 10, 8, 10, 7);
+
+  const fixedAdaSleep = clear('me-fkk-camp-ada-bojana', 11, 5);
+  if (fixedAdaSleep) {
+    changed = true;
+    assign('me-camp-safari-beach', 11, 5);
+  }
+
+  clear('me-lovcen-njegos-mausoleum', 12, 5);
+  move('me-tanjga-kotor', 12, 6, 12, 5);
+  move('me-perast', 12, 7, 12, 6);
+  move('me-vitaljina-border', 12, 8, 12, 7);
+  clear('ba-villa-village-house-cvaljina', 12, 9);
+  move('ba-trebinje-old-town', 12, 10, 12, 8);
+  move('ba-air-1165836464333612445', 12, 11, 12, 9);
+
+  return { overrides: next, changed };
+}
+
 export function loadOverrides(): Overrides {
   try {
     const raw = localStorage.getItem(KEY);
@@ -117,7 +260,10 @@ export function loadOverrides(): Overrides {
     // all 4 group members see the pre-populated Itinerary without importing a URL.
     if (raw === null) return { ...DEFAULT_PLAN };
     const parsed = JSON.parse(raw);
-    return parsed && typeof parsed === 'object' ? parsed : { ...DEFAULT_PLAN };
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return { ...DEFAULT_PLAN };
+    const { overrides, changed } = migrateOverrides(parsed as Overrides);
+    if (changed) safeSetItem(KEY, JSON.stringify(overrides));
+    return overrides;
   } catch {
     return { ...DEFAULT_PLAN };
   }

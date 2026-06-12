@@ -663,7 +663,7 @@
     "lat": 41.9242,
     "lng": 19.2086,
     "description": "Montenegro's most Albanian, most 'oriental'-feeling town (~60-70% Albanian). A well-preserved medieval citadel on a sea bluff, pirate/legend history, far less hyped than Kotor or Budva. Mala Plaža sits right below, fronted by the pedestrian 'Korzo' of cafés and pizzerias.",
-    "communityNotes": "Travelers say it's 'rough around the edges' vs Kotor/Budva but 'sufficiently different' to be worth it — praised for sunsets and atmosphere from the fortress walls. Forum experts warn it gets 'very busy in summer and very full on the little beach', and streets climb steeply from the sea — the OLD TOWN, not the tiny beach, is the draw. June is the start of high season.",
+    "communityNotes": "Travelers say it's 'rough around the edges' vs Kotor/Budva but 'sufficiently different' to be worth it — praised for sunsets and atmosphere from the fortress walls. Forum experts warn it gets 'very busy in summer and very full on the little beach', and streets climb steeply from the sea — the OLD TOWN, not the tiny beach, is the draw. The distinctly Albanian-Muslim culture is the reason to stop; avoid turning this into a Velika Plaža detour on a moving day.",
     "sources": [
       "https://www.visit-montenegro.com/destinations/ulcinj/attractions/old-town/",
       "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k15477387-Where_to_spend_10_days_in_Montenegro-Montenegro.html",
@@ -678,7 +678,7 @@
       "sunset"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-velika-plaza",
@@ -1054,7 +1054,7 @@
     ],
     "cost": "~€25–33 for 4 + tent + car (incl. electricity + tax; low season ~€25, peak July-Aug ~€33)",
     "facilities": "hot showers (new, cleaned around the clock), toilets, electricity hook-up, restaurant, beach bar, WiFi (unreliable), direct sandy beach access",
-    "bestTime": "June = start of high season, quieter and cheaper than July-Aug",
+    "bestTime": "Day 11 (Jun 26) night — primary deep-south camp. Arrive before dusk, then drive/taxi ~10 min to Ada Bojana for Misko/Barbana dinner. Better facilities than the island FKK camp.",
     "tags": [
       "camping",
       "beach",
@@ -1063,7 +1063,7 @@
       "kitesurf"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "me-camp-ada-bojana-fkk",

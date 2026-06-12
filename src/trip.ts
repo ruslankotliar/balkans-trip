@@ -168,14 +168,14 @@ export const DAY_HINTS: Record<number, DayHint> = {
   2:  { icon: '🪂', text: 'Canyoning start early (09:00 latest). Leave Omiš by 13:00 if doing Biokovo/airport tomorrow.' },
   3:  { icon: '🏔️', text: 'Leave Makarska by 14:30–15:00 sharp for ~19:00 airport pickup. Biokovo: booked? 20-car cap/hour.' },
   4:  { icon: '🧱', text: 'Dubrovnik walls: arrive 07:30 — crowds pack in from 10:00. Use Ploče Gate side.' },
-  5:  { icon: '⛴', text: 'Mljet ferry (Prapratno → Sobra): queue 90+ min early on a Saturday. Target 13:00 sailing → arrive Sobra 13:45 → pay €25pp NP entry and use all afternoon. Arriving after 16:00 ferry saves €6pp but leaves only 3h of daylight on the island.' },
+  5:  { icon: '⛴', text: 'Mljet ferry (Prapratno → Sobra): cars are first-come, ticket does not reserve deck space. Queue 90+ min early on Saturday. Best target: 10:15 sailing; 13:00 is the last comfortable outbound. 17:00 arrives 17:45 = plan-B only.' },
   6:  { icon: '💧', text: 'Kravica: arrive before 09:00 — packed with tour buses by 11:00. Mostar Stari Most glows amber at sunset.' },
-  7:  { icon: '🎶', text: 'Blagaj + Boračko swim en route to Sarajevo. Tonight: Cinemas Sloga (Dalmatinska 36) or Underground Club — both do Monday Latin Night from 22:00.' },
+  7:  { icon: '🎶', text: 'Blagaj + Boračko swim en route to Sarajevo. Tonight: Cinemas Sloga, Mehmeda Spahe 20 — Monday Latin Night is listed; venue hours 20:00–05:00. Check Instagram before committing after a long drive.' },
   8:  { icon: '🚣', text: 'Depart Sarajevo 07:00 → Foča by 09:00 → Tara raft start 10:00 (Brštanovica, ~3–4h) → cross border at Šćepan Polje → Piva canyon to Žabljak. Piva tunnels: lights on, honk before entry — drive daylight only.' },
   9:  { icon: '⛰️', text: 'Durmitor: leave camp by 06:30–07:00. Storm risk builds 12:00–15:00 — be off the ridge by noon. Žabljak nights 6–10°C.' },
   10: { icon: '🛐', text: 'Ostrog: cover knees+shoulders (no exceptions). Skadar: mosquitoes vicious at dusk — repellent essential.' },
-  11: { icon: '🦟', text: 'Ada Bojana: DEET repellent essential — mosquitoes are severe at dusk on the delta. Misko stilt restaurant: book ahead or arrive by 18:00. FKK camp €22–25/4+tent+car. Sleep early — early departure tomorrow for Kotor fortress.' },
-  12: { icon: '🚢', text: 'Leave Ada Bojana by 07:00 → Sveti Stefan (drive-by view, free) → Budva → Kotor fortress by 08:00 (start before cruise tourists). CONFIRMED: 1 cruise ship Jun 27 (Star Clipper, ~170 pax — tiny, lucky day). Fortress free before 08:00. Use VITALJINA crossing (not Debeli Brijeg) — 15–45 min vs 45–90 min.' },
+  11: { icon: '🦟', text: 'Ada Bojana: DEET repellent essential — mosquitoes are severe at dusk on the delta. Sleep at Safari Beach for better facilities; drive/taxi ~10 min to Misko/Barbana. Book dinner ahead or arrive by 18:00. Early night — 06:00 departure for Kotor.' },
+  12: { icon: '🚢', text: 'Leave Ada Bojana/Safari by 06:00 if doing Kotor properly. Cruise schedules conflict for Jun 27 (at least Star Clipper; one source also lists Norwegian Pearl). Treat as cruise-risk: start fortress by 07:30–08:00, be down before 10:00. Use VITALJINA, not Debeli Brijeg.' },
   13: { icon: '✈️', text: 'Car drop at Dubrovnik Airport (Sicily By Car) by 20:00. Ref: D013947246. Full usable day.' },
 };
 
@@ -185,19 +185,19 @@ export const DAY_HINTS: Record<number, DayHint> = {
  * Sunrise/sunset ± 2 min across Jun 16–28; storm notes only where actionable.
  */
 export const DAY_OPS: Record<number, string> = {
-  1:  '27–30°C · 🌅 05:13 → 20:47 · sea 22°C',
-  2:  '27–30°C · 🌅 05:16 → 20:43 · sea 22°C · Cetina river cold',
-  3:  '27–30°C → DBV: 🌅 05:08 → 20:30 · Biokovo breeze at altitude',
-  4:  '27–30°C · 🌅 05:08 → 20:30 · sea 23°C',
-  5:  '27–30°C · 🌅 05:08 → 20:30 · sea 23°C',
-  6:  '30–35°C (Mostar bakes) · 🌅 05:05 → 20:27 · solstice! 15.5h day',
-  7:  '25–28°C (Sarajevo, milder) · 🌅 05:05 → 20:27 · afternoon storms possible',
-  8:  '25°C Sarajevo → 20°C Tara canyon → 14–22°C Žabljak · ⛺ night 5–10°C · 🌅 05:02 → 20:23',
-  9:  '14–22°C Durmitor · ⚡ storms 12:00–15:00 · 🌅 05:02 → 20:23',
-  10: '28–35°C Skadar basin (hottest zone) · 🌅 05:04 → 20:22',
-  11: '27–30°C · 🌅 05:04 → 20:22 · sea 23–24°C',
-  12: '27–30°C · 🌅 05:04 → 20:22 · Kotor bay shaded ~19:30',
-  13: '27–30°C · 🌅 05:08 → 20:30 · sea 23°C',
+  1:  'Forecast Jun 12: 28/20°C, sunny · 🌅 05:13 → 20:47 · sea ~22°C',
+  2:  'Forecast Jun 12: Omiš ~31/22°C, sunny · 🌅 05:16 → 20:43 · Cetina river cold',
+  3:  'Forecast Jun 12: DBV ~32/24°C, hot/sunny · 🌅 05:08 → 20:30 · Biokovo breeze at altitude',
+  4:  'Forecast Jun 12: DBV ~31/25°C, sunny · 🌅 05:08 → 20:30 · sea ~23°C',
+  5:  'Forecast Jun 12: DBV/Mljet ~31/25°C, sunny · 🌅 05:08 → 20:30 · car ferry queue heat',
+  6:  'Forecast Jun 12: Mostar ~36/23°C, possible PM shower · 🌅 05:05 → 20:27 · solstice',
+  7:  'Forecast Jun 12: Mostar hot → Sarajevo ~33/18°C, PM thunder risk · 🌅 05:05 → 20:27',
+  8:  'Forecast Jun 12: Sarajevo ~31°C PM thunder risk → Žabljak ~25/13°C · ⛺ cool night · 🌅 05:02 → 20:23',
+  9:  'Forecast Jun 12: Žabljak ~24/12°C with thunderstorm risk · ⚡ be off ridge by noon · 🌅 05:02 → 20:23',
+  10: 'Forecast Jun 12: Žabljak cool AM → Skadar/Virpazar ~27/22°C · mosquitoes at dusk · 🌅 05:04 → 20:22',
+  11: '27–30°C coast likely · 🌅 05:04 → 20:22 · sea 23–24°C · Ada delta mosquitoes after sunset',
+  12: '27–30°C coast likely · 🌅 05:04 → 20:22 · Kotor bay shaded ~19:30',
+  13: '27–30°C likely · 🌅 05:08 → 20:30 · sea 23°C',
 };
 
 /** Format seconds as "3h 25m" / "45m". */

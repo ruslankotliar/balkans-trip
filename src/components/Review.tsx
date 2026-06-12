@@ -21,7 +21,7 @@ interface Props {
   onShowOnMap: (p: PlaceWithOverride) => void;
 }
 
-export default function Review({ places, onStatus, onExit }: Props) {
+export default function Review({ places, onStatus, onExit, onShowOnMap }: Props) {
   const [countryFilter, setCountryFilter] = useState<CountryFilter>('all');
   const [statusQueue, setStatusQueue] = useState<StatusQueue>('candidates');
   const [categoryGroup, setCategoryGroup] = useState<CategoryGroup>('accommodation');
@@ -152,13 +152,16 @@ export default function Review({ places, onStatus, onExit }: Props) {
                     </span>
                   </div>
 
-                  {place.sources && place.sources[0] && (
-                    <div className="review-links">
+                  <div className="review-links">
+                    {place.sources && place.sources[0] && (
                       <a className="review-listing-link" href={place.sources[0]} target="_blank" rel="noopener noreferrer">
                         Open listing ↗
                       </a>
-                    </div>
-                  )}
+                    )}
+                    <button className="review-map-link" onClick={() => onShowOnMap(place)}>
+                      Show on main map
+                    </button>
+                  </div>
 
                   {place.rating && (
                     <p className="review-rating">{'★'.repeat(place.rating)}{'☆'.repeat(5 - place.rating)}</p>

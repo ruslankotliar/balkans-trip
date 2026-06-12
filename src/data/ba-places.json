@@ -550,15 +550,15 @@
     "country": "BA",
     "category": "nightlife",
     "lat": 43.857,
-    "lng": 18.399,
-    "description": "Sarajevo's best Monday night — free Latin dance night every Monday at a retro cinema venue on Dalmatinska 36, near Baščaršija. Two-floor, ~500-person 'enormous cavernous club'. Salsa, bachata, merengue. Starts properly at 22:00.",
-    "communityNotes": "Free every Monday — no cover charge. 'Local crowd, excellent atmosphere, genuinely a Sarajevo institution.' Confirmed at salsavida.com and nightflow.com. Capacity ~500 (not 1,000 — that's Central the Club). Gets going properly around 22:00; ends earlier than weekends. Alternative same-night: **Underground Club** (Ulica Mehmeda Spahe 1) also does Monday Latin from 20:00. Bar crawl pre-warmup: Ferhadija/Baščaršija (€1.50 rakija, €2.30 craft beer).",
+    "lng": 18.405,
+    "description": "Sarajevo's best Monday night — free Latin dance night every Monday at Cinemas Club Sloga, Mehmeda Spahe 20. Two-floor retro cinema venue, salsa/bachata/Latin club night, listed as recurring on Mondays.",
+    "communityNotes": "Destination Sarajevo lists the venue at Mehmeda Spahe 20 with Mon-Sat hours 20:00-05:00 and says Latin Nights are held each Monday. Salsa Vida's calendar lists the Jun 22, 2026 event from 19:00-05:00. Expect it to get going later; verify Sloga's Instagram the day before because club programming changes.",
     "sources": [
-      "https://salsavida.com",
-      "https://nightflow.com"
+      "https://sarajevo.travel/en/things-to-do/cinemas-sloga/74",
+      "https://www.salsavida.com/guides/bosnia-and-herzegovina/sarajevo/socials/"
     ],
     "cost": "Free entry",
-    "bestTime": "Monday only, starts 22:00",
+    "bestTime": "Day 7 (Mon Jun 22) — venue hours 20:00-05:00; Salsa Vida lists 19:00-05:00. Go only if Day 8's 07:00 departure still feels realistic.",
     "tags": [
       "monday-only",
       "free",
@@ -566,7 +566,7 @@
       "sarajevo"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "ba-celebici-neretva-swim",
