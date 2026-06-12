@@ -303,11 +303,8 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 }
 
 /* Progressive disclosure: collapse the full filter wall behind one toggle */
-.filters-disclosure {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
+/* NOTE: <details> puts children in shadow slots — gap on the parent does NOT
+   reach them. Use margin-top on children instead. */
 .filters-disclosure > summary {
   font-size: 13px;
   color: #555;
@@ -316,9 +313,13 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   padding: 4px 0;
 }
 .filters-disclosure[open] > summary {
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   font-weight: 600;
   color: #2c3e50;
+}
+.filters-disclosure > .filter-group + .filter-group,
+.filters-disclosure > .filter-group + details {
+  margin-top: 10px;
 }
 
 .tag-filter summary {
