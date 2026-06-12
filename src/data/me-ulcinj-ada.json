@@ -1,0 +1,80 @@
+[
+  {
+    "id": "me-ulcinj-old-town",
+    "name": "Ulcinj Old Town (Stari Grad)",
+    "country": "ME",
+    "category": "sight",
+    "lat": 41.9216,
+    "lng": 19.2189,
+    "description": "Compact walled Ottoman-Albanian hilltop town on a sea-facing headland, culturally distinct from anywhere else on the trip. Free to enter; ramparts give excellent sea views and the Old Bazaar has a strongly Albanian-Muslim character that's completely unlike Kotor or Dubrovnik.",
+    "communityNotes": "\"Not as hyped as Kotor's old town, but a delightful place to explore, with gorgeous views from the fortress walls.\" The distinctly Albanian Muslim culture stands out — 'feels like you've crossed into Albania.' June is still shoulder season in Ulcinj; peak crowds hit July–August. Avoid Velika Plaža for a quick stop (huge beach, 4km from old town — not worth the detour on a moving day).",
+    "sources": [
+      "https://maptrekking.com/is-ulcinj-worth-visiting/",
+      "https://johnnyafrica.com/montenegro-bar-budva-kotor-ulcinj/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "45–60 min",
+    "bestTime": "Day 11 (Jun 26) midday — on the way south from Stari Bar to Ada Bojana. Stari Bar → Ulcinj ≈ 35 min, then Ada Bojana +30 min south. Wander the old town ramparts, buy supplies for the evening. Leave by 13:30 to reach Ada Bojana with full afternoon.",
+    "tags": ["ottoman", "albanian-culture", "views", "old-town", "ulcinj"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-ada-bojana-beach",
+    "name": "Ada Bojana Island Beach",
+    "country": "ME",
+    "category": "beach",
+    "lat": 41.8531,
+    "lng": 19.3742,
+    "description": "Triangular river-delta island at the mouth of the Bojana River — 3 km of wide dark volcanic sand, shallow entry, with a bohemian undeveloped feel unlike anywhere else on the Montenegrin coast. A row of wooden stilt restaurants built over the river serves wild-caught fish (carp, sole, eel); this dinner is the main event.",
+    "communityNotes": "\"One of the most beautiful beaches I've ever seen — very wide and lasts for kilometres.\" FKK (nudist) section is clearly marked; outside it, clothing is optional and non-nudists are common everywhere. ⚠️ Mosquitoes in the delta evenings are genuinely severe — multiple sources say DEET is not optional. Windsurfing/kitesurfing on the sea-facing side; calm river side near restaurants.",
+    "sources": [
+      "https://adriaticways.com/ada-bojana-beach/",
+      "https://balkancampers.com/blog/montenegro-road-trip-the-coast",
+      "https://www.nakedwanderings.com/getting-naked-ada-bojana-island-montenegro/"
+    ],
+    "bestTime": "Day 11 (Jun 26) afternoon → overnight — arrive mid-afternoon after Ulcinj. Dinner at Misko or Barbana stilt restaurant is the highlight. Sleep on the island (FKK camp ~€22–25 for 4+tent+car). Day 12: leave 06:00 → pass Sveti Stefan viewpoint en route → arrive Kotor by 07:30–07:50.",
+    "tags": ["beach", "river", "delta", "ada-bojana", "overnight"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-misko-stilt-restaurant",
+    "name": "Misko Stilt Restaurant (Ada Bojana)",
+    "country": "ME",
+    "category": "food",
+    "lat": 41.8489,
+    "lng": 19.3765,
+    "description": "Family-run stilt restaurant on the Bojana River since 1991, built on wooden pilings over the water. Wild-caught fresh fish (carp, sole, bream, eel) sourced directly from the river and Adriatic. Ranked #1 of 7 restaurants on Ada Bojana island, 485 TripAdvisor reviews (383 Excellent).",
+    "communityNotes": "\"You feel like on a boat — amazing view on the river.\" \"Best Balkan restaurant for fish and seafood.\" Fish soup ~€6, fresh whole fish €15–30, beers included in meal estimates of ~€25–35pp. **Barbana** is the equally-praised alternative: candlelit, tables in trees, at the exact river mouth meeting the Adriatic — call it the more atmospheric of the two.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowUserReviews-g2284129-d2232746-r521644629-Misko-Ada_Bojana_Ulcinj_Municipality.html"
+    ],
+    "cost": "~€25–35pp (fish soup + main fish + drinks)",
+    "timeNeeded": "1.5–2h",
+    "bestTime": "Day 11 (Jun 26) dinner — 5-min walk from the FKK camp to the stilt houses on the river. Aim for 19:00. Book ahead in high season or just show up early; both Misko and Barbana are within 200m of each other. Bring mosquito spray.",
+    "tags": ["fish", "stilt-restaurant", "local", "dinner", "ada-bojana"],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-fkk-camp-ada-bojana",
+    "name": "FKK Auto Camp Ada Bojana",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 41.8531,
+    "lng": 19.3742,
+    "description": "Basic campsite on the Ada Bojana island itself, open since 1973. Sandy beach access, dated facilities (functional but rough around the edges), and the unique location 5-min walk from the Misko/Barbana stilt restaurants. Nudism only mandatory inside the designated FKK zone; rest of island is clothing-optional and textile visitors are welcome.",
+    "communityNotes": "Facilities described as 'old' and 'basic' in reviews — no drinking water at pitches, some muddy after rain. The point isn't the facilities, it's sleeping on the island itself. ⚠️ Mosquitoes are severely bad at dusk in the delta — every camping review specifically calls this out. DEET is essential. **Safari Beach Camp** (Ulcinj, 4km, Velika Plaža) is the better-facilities alternative at ~€30–40/4 but you're not on the island.",
+    "sources": [
+      "https://www.camping.info/en/campsite/ada-bojana/reviews",
+      "https://visitadabojana.com/room/camp/"
+    ],
+    "cost": "~€22–25 for 4 adults + tent + car (off-peak before Jul 5). High season: ~€25–27.",
+    "facilities": "Showers (basic), toilets, sandy beach access. No drinking water at pitches.",
+    "bestTime": "Day 11 night (Jun 26) — check in afternoon. Hard departure 06:00 Day 12 for Kotor fortress at 07:30. Bring DEET. Backup: Ulcinj apartment ~€40–50 for 4 if the group prefers no mosquitoes.",
+    "tags": ["camping", "beach", "island", "fkk", "ada-bojana"],
+    "rating": 3,
+    "status": "candidate"
+  }
+]

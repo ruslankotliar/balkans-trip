@@ -2336,6 +2336,94 @@ body.trip-mode .card-links .today-nav-link {
   color: #b15a00;
 }
 
+/* ---- Task / shopping checklist ---- */
+.ess-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ess-task {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+.ess-task.done .ess-task-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+.ess-task-check {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  color: #27ae60;
+  line-height: 1;
+  touch-action: manipulation;
+}
+.ess-task-check.on {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: #fff;
+}
+.ess-task-text {
+  flex: 1;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.ess-task-del {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  touch-action: manipulation;
+}
+.ess-task-del:hover { color: #e74c3c; }
+.ess-task-add {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+.ess-task-input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 13px;
+}
+.ess-task-submit {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  background: #27ae60;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+  touch-action: manipulation;
+}
+.ess-task-submit:disabled { opacity: 0.4; }
+.ess-task-clear {
+  margin-top: 4px;
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 2px 0;
+  touch-action: manipulation;
+}
+
 /* Phones: Add-place + Essentials become bottom sheets like the detail panel */
 @media (max-width: 760px) {
   .addplace,

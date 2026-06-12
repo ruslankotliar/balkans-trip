@@ -17,6 +17,35 @@ import {
   type ContactLine,
 } from '../essentials';
 
+// ---- Trip Tasks (checklist + buy list) --------------------------------
+
+const TASKS_KEY = 'balkans-trip-tasks';
+
+interface Task { id: string; text: string; done: boolean }
+
+const PRESET_TASKS: Task[] = [
+  { id: 'p1', text: 'Call Sicily By Car (+385 23 646 547) — confirm BiH + ME permission, get letter', done: false },
+  { id: 'p2', text: 'Book Tara rafting Jun 23 — office@raftingtara.com or +381 64 420 1956', done: false },
+  { id: 'p3', text: 'Book Biokovo Skywalk Jun 18 — shop.pp-biokovo.hr (20-car/hour cap)', done: false },
+  { id: 'p4', text: 'Book Cetina canyoning Jun 17 — canyoning-cetina.com', done: false },
+  { id: 'p5', text: 'Buy mosquito repellent (DEET) — essential for Ada Bojana + Skadar Lake', done: false },
+  { id: 'p6', text: 'Pack warm layer — Žabljak nights 5–10°C', done: false },
+  { id: 'p7', text: 'Cash ready: €100–150 small bills + exchange some to BAM (Bosnia)', done: false },
+  { id: 'p8', text: 'Download offline maps — OsmAnd for BiH + ME before leaving', done: false },
+  { id: 'p9', text: 'Check Mljet ferry time at jadrolinija.hr — queue Prapratno 90min early Jun 20', done: false },
+];
+
+function loadTasks(): Task[] {
+  try {
+    const a = JSON.parse(localStorage.getItem(TASKS_KEY) ?? 'null');
+    if (Array.isArray(a) && a.length > 0) return a;
+  } catch {}
+  return PRESET_TASKS;
+}
+function saveTasks(t: Task[]) {
+  try { localStorage.setItem(TASKS_KEY, JSON.stringify(t)); } catch {}
+}
+
 interface Props {
   onClose: () => void;
   /** Focus the map on a hospital pin by id (from contingency-places.json). */
@@ -80,8 +109,25 @@ function Section({ id, title, openId, onToggle, children }: SectionProps) {
 
 export default function Essentials({ onClose, onShowPin }: Props) {
   // Emergency open by default — it's the one-tap-when-it-matters card.
-  const [openId, setOpenId] = useState<string | null>('emergency');
+  const [openId, setOpenId] = useState<string | null>('tasks');
   const toggle = (id: string) => setOpenId((cur) => (cur === id ? null : id));
+
+  // ---- Task list state ----
+  const [tasks, setTasksState] = useState<Task[]>(loadTasks);
+  const [draft, setDraft] = useState('');
+  function setTasks(next: Task[]) { setTasksState(next); saveTasks(next); }
+  function toggleTask(id: string) {
+    setTasks(tasks.map(t => t.id === id ? { ...t, done: !t.done } : t));
+  }
+  function addTask() {
+    const text = draft.trim();
+    if (!text) return;
+    setTasks([...tasks, { id: `u-${Date.now()}`, text, done: false }]);
+    setDraft('');
+  }
+  function removeTask(id: string) {
+    setTasks(tasks.filter(t => t.id !== id));
+  }
 
   return (
     <div className="essentials">
@@ -92,6 +138,35 @@ export default function Essentials({ onClose, onShowPin }: Props) {
         </button>
       </div>
       <p className="ess-sub">Works fully offline · tap a number to dial</p>
+
+      <Section id="tasks" title="✅ Tasks & shopping list" openId={openId} onToggle={toggle}>
+        <div className="ess-tasks">
+          {tasks.map(t => (
+            <div key={t.id} className={`ess-task ${t.done ? 'done' : ''}`}>
+              <button className={`ess-task-check ${t.done ? 'on' : ''}`} onClick={() => toggleTask(t.id)}>
+                {t.done ? '✓' : '○'}
+              </button>
+              <span className="ess-task-text">{t.text}</span>
+              <button className="ess-task-del" onClick={() => removeTask(t.id)} title="Remove">✕</button>
+            </div>
+          ))}
+          <div className="ess-task-add">
+            <input
+              className="ess-task-input"
+              placeholder="Add a task or item to buy…"
+              value={draft}
+              onChange={e => setDraft(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && addTask()}
+            />
+            <button className="ess-task-submit" onClick={addTask} disabled={!draft.trim()}>+</button>
+          </div>
+          {tasks.filter(t => t.done).length > 0 && (
+            <button className="ess-task-clear" onClick={() => setTasks(tasks.filter(t => !t.done))}>
+              Clear {tasks.filter(t => t.done).length} done
+            </button>
+          )}
+        </div>
+      </Section>
 
       <Section id="emergency" title="🚨 Emergency numbers" openId={openId} onToggle={toggle}>
         <a className="ess-tel ess-tel-big" href={`tel:${EMERGENCY_UNIVERSAL.tel}`}>

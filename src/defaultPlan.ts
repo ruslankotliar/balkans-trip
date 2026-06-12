@@ -112,26 +112,28 @@ export const DEFAULT_PLAN: Overrides = {
   'me-camp-radoman':         { day: 10, dayOrder: 8 },
   'me-gem-skadar-orahovo-koliba': { day: 10, dayOrder: 9 },
 
-  // ── Day 11: Jun 26 (Fri) — Stari Bar → Sveti Stefan → Budva ────────────
+  // ── Day 11: Jun 26 (Fri) — Stari Bar → Ulcinj → Ada Bojana (overnight) ──
   'me-stari-bar':            { day: 11, dayOrder: 1 },
-  'me-sveti-stefan':         { day: 11, dayOrder: 2 },
-  'me-budva':                { day: 11, dayOrder: 3 },
-  'me-budva-oldtown-bars':   { day: 11, dayOrder: 4 },
-  'me-sparta-club-budva':    { day: 11, dayOrder: 5 },
-  'me-gem-budva-got-it':     { day: 11, dayOrder: 6 },
-  'me-camp-maslina-buljarica': { day: 11, dayOrder: 7 },
+  'me-ulcinj-old-town':      { day: 11, dayOrder: 2 },
+  'me-ada-bojana-beach':     { day: 11, dayOrder: 3 },
+  'me-misko-stilt-restaurant': { day: 11, dayOrder: 4 },
+  'me-fkk-camp-ada-bojana':  { day: 11, dayOrder: 5 },
+  // Budva / Sparta club kept as candidates — group can add them Day 11 if
+  // skipping Ada Bojana, or Day 12 on the way back north through Budva.
 
-  // ── Day 12: Jun 27 (Sat) — Kotor → Perast → Trebinje ───────────────────
-  'me-kotor':                { day: 12, dayOrder: 1 },
-  'me-kotor-fortress-paid':  { day: 12, dayOrder: 2 },
-  'me-lovcen-njegos-mausoleum': { day: 12, dayOrder: 3 },
-  'me-tanjga-kotor':         { day: 12, dayOrder: 4 },
-  'me-perast':               { day: 12, dayOrder: 5 },
-  'me-lustica-blue-cave':    { day: 12, dayOrder: 6 },
-  'me-vitaljina-border':     { day: 12, dayOrder: 7 },
-  'ba-trebinje-old-town':    { day: 12, dayOrder: 8 },
-  'ba-air-1165836464333612445': { day: 12, dayOrder: 9 },
-  'ba-villa-village-house-cvaljina': { day: 12, dayOrder: 10 },
+  // ── Day 12: Jun 27 (Sat) — Ada Bojana → Sveti Stefan → Kotor → Trebinje ─
+  'me-sveti-stefan':         { day: 12, dayOrder: 1 },
+  'me-budva':                { day: 12, dayOrder: 2 },
+  'me-kotor':                { day: 12, dayOrder: 3 },
+  'me-kotor-fortress-paid':  { day: 12, dayOrder: 4 },
+  'me-lovcen-njegos-mausoleum': { day: 12, dayOrder: 5 },
+  'me-tanjga-kotor':         { day: 12, dayOrder: 6 },
+  'me-perast':               { day: 12, dayOrder: 7 },
+  'me-lustica-blue-cave':    { day: 12, dayOrder: 8 },
+  'me-vitaljina-border':     { day: 12, dayOrder: 9 },
+  'ba-trebinje-old-town':    { day: 12, dayOrder: 10 },
+  'ba-air-1165836464333612445': { day: 12, dayOrder: 11 },
+  'ba-villa-village-house-cvaljina': { day: 12, dayOrder: 12 },
 
   // ── Day 13: Jun 28 (Sun) — Dubrovnik → car drop ─────────────────────────
   'hr-pasjaca-beach':        { day: 13, dayOrder: 1 },
