@@ -252,6 +252,11 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
   clear('me-villa-jablan-winery-rvasi', 10, 6);
   clear('me-gem-skadar-orahovo-koliba', 10, 7);
   move('me-camp-radoman', 10, 8, 10, 7);
+  assign('me-skadar-pelican-kayak', 10, 8);
+  assign('me-stari-most-rijeka-crnojevica', 10, 9);
+  assign('me-skadar-rijeka-crnojevica-kayak', 10, 10);
+  assign('me-durmitor-katun-krstajic', 8, 7);
+  assign('me-durmitor-katun-homeland-nest', 9, 6);
 
   const fixedAdaSleep = clear('me-fkk-camp-ada-bojana', 11, 5);
   if (fixedAdaSleep) {

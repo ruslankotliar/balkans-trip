@@ -1,0 +1,255 @@
+[
+  {
+    "id": "me-skadar-self-drive-boat",
+    "name": "Skadar Lake self-drive motorboat (Click&Boat / Virpazar)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.23949,
+    "lng": 19.08405,
+    "description": "The only confirmed self-drive (no captain) motorboat rental on Skadar Lake — a wooden motorboat listed on Click&Boat from Virpazar. All major local operators (Kingfisher, Falcon, Milica) are guided-only; true bareboat exists only through international booking platforms. For the group's purpose, self-guided kayak rental is more practical and gives the same freedom.",
+    "communityNotes": "Nautal/Click&Boat aggregate: 'Rent a boat in Lake Skadar with or without a skipper' — the without-skipper listings are small wooden motorboats via Click&Boat. Prices cited: €107-260/day range. All SamBoat 'Bat 996 EFB' listings in Virpazar include a mandatory captain despite the 'self-drive' framing. Practical verdict: use kayak (€20/day double, Kingfisher) for true independence — far easier to organise. Book the wooden boat on Click&Boat only if the group specifically wants a motorized self-drive: search 'Virpazar motorboat' on clickandboat.com.",
+    "sources": [
+      "https://www.clickandboat.com/us/boat-rental/virpazar/motorboat/wooden-boat-boat-qp817gk",
+      "https://www.nautal.com/en/boat-rental/lake-skadar"
+    ],
+    "cost": "~€107-260/day (self-drive wooden motorboat via Click&Boat); guided private tours: €45-90 for 2h (whole boat, 4 pax = €11-22pp)",
+    "timeNeeded": "half day or full day",
+    "bestTime": "Morning start (before noon — strong afternoon winds on the open lake)",
+    "tags": [
+      "boat",
+      "motorboat",
+      "self-drive",
+      "skadar",
+      "virpazar",
+      "national-park"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-skadar-pelican-kayak",
+    "name": "Dalmatian Pelican Colony Kayak (Pančeva Oka, Skadar NP)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.28,
+    "lng": 19.22,
+    "description": "A guided kayak tour threading through lily-pad water-trails on the north shore of Skadar Lake to reach Pančeva Oka — the breeding colony of the Dalmatian Pelican, one of the world's rarest large birds. The narrow channel through dense reedbeds is impossible to navigate without local knowledge. Undiscovered Montenegro calls this their 'favourite adventure of all.'",
+    "communityNotes": "Undiscovered Montenegro (undiscoveredmontenegro.com / undiscoveredbalkans.com): 'Kayakers paddle along a narrow water-trail with floating fields of water lily either side to reach the rushes concealing the pelicans' lair.' Colony is in the extensive reedbeds along the north shore. Birdingplaces.eu confirms: 'The main breeding colony is known as Pančeva Oka, located at the north end of Lake Skadar.' Best May-July (nesting). NP regulations require staying at a distance — the guide manages this. Not accessible by standard Virpazar kayak rentals (too far and requires route knowledge). Book via Undiscovered Montenegro directly.",
+    "sources": [
+      "https://undiscoveredmontenegro.com/kayaking-to-the-pelicans-of-lake-skadar/",
+      "https://www.birdingplaces.eu/en/birdingplaces/montenegro/lake-skadar"
+    ],
+    "cost": "Guided kayak tour — price on enquiry (undiscoveredmontenegro.com). Expect ~€40-80pp for a half-day guided paddle.",
+    "timeNeeded": "half day (3-4h paddle)",
+    "bestTime": "June is ideal — nesting season, June light is spectacular on the lake",
+    "tags": [
+      "kayak",
+      "skadar",
+      "pelican",
+      "wildlife",
+      "hidden-gem",
+      "guided",
+      "coords-approx"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-stari-most-rijeka-crnojevica",
+    "name": "Konoba Stari Most (Rijeka Crnojevića)",
+    "country": "ME",
+    "category": "food",
+    "lat": 42.36558,
+    "lng": 19.00997,
+    "description": "A riverside konoba under the old stone bridge of Rijeka Crnojevića — Lonely Planet's pick for best restaurant in Montenegro. Serves eel, smoked carp, and trout from the lake, with fish soup as the standout. Full 3-course meal with drink: ~€13.50/person. Tables on the riverbank with mountain views. Hidden village only known to serious explorers of the Skadar Lake backcountry.",
+    "communityNotes": "TripAdvisor review: 'Magical place hidden in the heart of mountains. The fish soup was outstanding. Very friendly waiter and great position along the riverbank — quite inexpensive prices.' Multiple reviewers: 'best fish restaurant in Montenegro' (though one noted overcooked trout). Cash only. No phone reservations needed — walk in. Village is 30-40 min from Virpazar (via Podgorica or via the scenic mountain switchback road).",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g2362539-d4507323-Reviews-Stari_Most-Rijeka_Crnojevica_Cetinje.html",
+      "https://crnojevica.com/"
+    ],
+    "cost": "~€13.50/person full meal with drink (extremely cheap)",
+    "timeNeeded": "1-1.5h for a relaxed meal",
+    "bestTime": "Lunch or early dinner; pairs with a kayak from Enjoy Skadar Lake (300m away) + Karuč detour",
+    "tags": [
+      "food",
+      "fish",
+      "hidden-gem",
+      "local",
+      "konoba",
+      "skadar",
+      "rijeka-crnojevica",
+      "cash-only"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-skadar-rijeka-crnojevica-kayak",
+    "name": "Enjoy Skadar Lake kayak base (Rijeka Crnojevića)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.36558,
+    "lng": 19.00997,
+    "description": "A second, quieter kayak rental base on Skadar Lake — from Rijeka Crnojevića village rather than the busier Virpazar hub. The river channel here leads to Karuč fishing village and through Dodosi hamlet into the 'Amazon' lily fields. Self-guided, no guide needed. Run by Enjoy Skadar Lake (enjoyskadarlake.com), located below the Stari Most restaurant.",
+    "communityNotes": "enjoyskadarlake.com: single €7/h or €25/day; double €10/h or €35/day. Life jacket + waterproof bag + route tips included. The water channel near Ploče leads to Karuč village. Important safety note: 'Not recommended to kayak out into the open lake after 12:00 due to strong winds.' The sheltered river channel is calm at any hour. Pairs naturally with lunch at Stari Most konoba (50m away).",
+    "sources": [
+      "https://enjoyskadarlake.com/kayak.html"
+    ],
+    "cost": "single €7/h or €25/day; double €10/h or €35/day + €5/person NP entry",
+    "timeNeeded": "2-4h (Karuč round trip ~3h)",
+    "bestTime": "Morning — before noon to avoid lake winds. Perfect combo: kayak Karuč + lunch at Stari Most.",
+    "tags": [
+      "kayak",
+      "skadar",
+      "self-guided",
+      "rijeka-crnojevica",
+      "karuc",
+      "alternative-base"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-durmitor-katun-krstajic",
+    "name": "Domaćinstvo Krstajić — authentic Durmitor katun cabin",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 43.15,
+    "lng": 19.09,
+    "description": "A traditional Montenegrin katun (shepherd cabin) converted into 4-adult accommodation, 5 minutes outside Žabljak. Two-floor cabin with authentic chalet feel, full kitchen, cozy living space. Hosts serve homemade rakija. Rated 9.5/10 from 250+ reviews on Booking.com — the most-reviewed katun stay near Durmitor. Tier-2/3 option for the Durmitor night.",
+    "communityNotes": "The Bold Passport (2025): 'No visit to Durmitor is complete without a stay in a traditional wooden katun cabin. Domaćinstvo Krstajić: two-floor cabin with authentic feel, cozy chalet ambiance, hosts serve homemade rakija.' ★9.5/Booking.com (250+ reviews). Book early: 'katun cabins sometimes sell out weeks in advance for summer.' Charming without being expensive; feels genuinely local rather than touristy.",
+    "sources": [
+      "https://theboldpassport.com/where-to-stay-durmitor/"
+    ],
+    "cost": "~€110/night (whole unit, ~4 people)",
+    "timeNeeded": "1-2 nights",
+    "bestTime": "Durmitor nights (Day 8-9, ~Jun 23-24). Book weeks in advance.",
+    "tags": [
+      "accommodation",
+      "katun",
+      "durmitor",
+      "authentic",
+      "mountain",
+      "tier-2",
+      "coords-approx"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-durmitor-katun-homeland-nest",
+    "name": "Homeland Nest — WOW katun, Durmitor NP",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 43.12,
+    "lng": 19.07,
+    "description": "The villa-tier katun option in Durmitor National Park: impeccable woodwork, floor-to-ceiling curtains, loft bed, private pool, balcony with panoramic mountain views. Inside the national park. ★10.0/10 from 40+ reviews — a perfect score. Summer price ~$199/night for 4. The WOW accommodation option if the group wants to splurge one night in Montenegro's mountains.",
+    "communityNotes": "The Bold Passport (2025): 'Homeland Nest features incredible attention to detail — impeccable wood finishes, floor-to-ceiling curtains, loft bed, private pool, and balcony with mountain views.' ★10.0 from 40+ reviews (rare perfect score). Search on Booking.com. Located inside Durmitor NP, exact village not specified by source. Book months ahead for June.",
+    "sources": [
+      "https://theboldpassport.com/where-to-stay-durmitor/"
+    ],
+    "cost": "~$199/night summer (≈€185 for 4 people)",
+    "timeNeeded": "1-2 nights",
+    "bestTime": "Durmitor nights (Day 8-9, ~Jun 23-24). Book as early as possible.",
+    "tags": [
+      "accommodation",
+      "villa-tier",
+      "katun",
+      "durmitor",
+      "pool",
+      "mountain-view",
+      "wow",
+      "coords-approx"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-dingac-vineyard-peljesac",
+    "name": "Holiday Home in Vineyard — Dingač, Pelješac",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 42.905,
+    "lng": 17.285,
+    "description": "A holiday house in the heart of the Dingač wine region — Croatia's most prestigious red wine appellation, on steep sun-drenched slopes above the Adriatic on Pelješac Peninsula. Vineyard surrounds, terrace with sea views, fully equipped kitchen. A rare WOW-tier stay on the confirmed route: Pelješac is on the road between Dubrovnik and Mljet/Korčula. Allows a genuine 'sleep in a vineyard with sea views' experience at relatively modest cost.",
+    "communityNotes": "Booking.com listing (Potomje village, Dubrovnik-Neretva County): 'Nestled in the heart of Dingač, a renowned wine-growing region on the sun-drenched slopes of Pelješac Peninsula, this holiday house offers a tranquil retreat surrounded by lush vineyards.' Terrace with sea views. The Dingač Plavac Mali grown here is Croatia's finest. No price confirmed in this session — search Booking.com for 'Holiday home in wine yard paradise Dingač Pelješac'. Also search Airbnb 'Dingač' for alternatives. Croplan peninsula wine estates (Miloš, Grgić, Saints Hills) are nearby for tasting.",
+    "sources": [
+      "https://www.booking.com/hotel/hr/holiday-home-in-wine-yard-paradise-dingac-peljesac.html"
+    ],
+    "cost": "Price not confirmed — check Booking.com. Likely €80-150/night for a house.",
+    "timeNeeded": "1 night (Day 4-5, Pelješac leg)",
+    "bestTime": "Evening arrival after Pelješac bridge crossing, sunset on the vineyard terrace",
+    "tags": [
+      "accommodation",
+      "villa-tier",
+      "vineyard",
+      "wine",
+      "peljesac",
+      "dingac",
+      "sea-view",
+      "wow",
+      "coords-approx"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-perucica-guided-hike",
+    "name": "Perućica Primeval Forest — Guided Entry (Sutjeska NP)",
+    "country": "BA",
+    "category": "hike",
+    "lat": 43.3497,
+    "lng": 18.6898,
+    "description": "One of the last two primeval forests in Europe (the other is Bialowieza, Poland). Over 1,434 hectares of ancient beech and spruce untouched since the last ice age. Entry is ONLY with a licensed NP guide, maximum 16 people/day. The route leads to Skakavac Waterfall (98m high — one of the Balkans' tallest). 3.5-4h hike on uncleared trails with root-scrambling and some climbing. Genuinely extraordinary — not a curated park walk.",
+    "communityNotes": "sutjeskanp.com: 'Any visit is strictly prohibited except when announced, approved and monitored by authorized NP staff.' Capacity: 16 people/day maximum — book well ahead for June. How to book: email Sutjeska NP via sutjeskanp.com OR contact Camp Nomad (visitsutjeskanationalpark.com), Tara Sport (tarasportrafting.com), or Outdoor Tara (outdoortara.com) — they organize day-tours including the guide. Walk-ins are not accepted formally but Camp Nomad may have on-the-day spots. Bring sturdy boots (terrain is wet, rooted, uneven). No drones. Cost: ~€2.50 NP entry + guide flat-rate (~€50-75 for the group of 4). Skakavac Waterfall is the payoff — a 98m curtain of water in ancient forest.",
+    "sources": [
+      "https://sutjeskanp.com/primeval-forest-perucica-tour/",
+      "https://visitsutjeskanationalpark.com/tour/perucica-forest-hiking/",
+      "https://www.tarasportrafting.com/tours/hiking-tour-np-sutjeska-perucica-skakavac-waterfall"
+    ],
+    "cost": "~€2.50pp NP entry + ~€50-75 guide fee for group of 4 (total ~€65-85 for group)",
+    "timeNeeded": "full day (3.5-4h hike + 30 min each way to trailhead)",
+    "bestTime": "June is good (May-Sept is the season). Book 3-5 days ahead minimum via Camp Nomad or NP direct.",
+    "facilities": "No facilities in the forest. Nearest food/water at Tjentište village (NP headquarters). Bring your own.",
+    "tags": [
+      "hike",
+      "primeval-forest",
+      "sutjeska",
+      "guided",
+      "advance-booking",
+      "skakavac-waterfall",
+      "bucket-list",
+      "unique"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kotor-bay-motorboat-hire",
+    "name": "Kotor Bay motorboat hire (BBC Rent a Boat / self-drive)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.4246,
+    "lng": 18.7712,
+    "description": "BBC Rent a Boat (Tivat, Porto Montenegro) offers self-drive boat hire for Kotor Bay — their 4.8m/Mercury-60HP model is the entry option, 'perfect for couples and small groups.' They advertise 'sail independently with our fleets, with mandatory training and support.' No public pricing — quote by enquiry. A skipper license (ICC or equivalent) is generally required for motorboats in Montenegro; BBC may waive for small boats with a briefing. Alternative: Go Go Gaga speedboat tours (€80/h, skipper included, up to 7 people).",
+    "communityNotes": "BBC Rent a Boat (bbcrentaboat.com, Tivat): fleet of 4.8m–18m vessels. Their website states 'Sail independently with our fleets, with mandatory training and support' — implying self-drive is possible after briefing. Contact: +382 67 18 10 08 / office@bbcrentaboat.com. For Day 12 (Jun 27), the group already has the boatman to Our Lady of the Rocks (€5pp from Perast) and the kayak option (Go Go Gaga €25/day double) — a full motorboat hire is not needed unless they want a wider Bay of Kotor exploration beyond Perast. TripAdvisor forum: 'you do not need a license and you can use it without skipper' — this refers to specific small boats; verify with BBC directly.",
+    "sources": [
+      "https://bbcrentaboat.com/",
+      "https://www.tripadvisor.com/ShowTopic-g295381-i9638-k14724247-Boat_Rentals-Kotor_Kotor_Municipality.html"
+    ],
+    "cost": "Quote only (contact BBC direct). Market rate for self-drive small speedboat: ~€80-120/h.",
+    "timeNeeded": "half day (3-4h) for Perast + Our Lady of the Rocks + Blue Cave",
+    "bestTime": "Morning before sea-breeze. Day 12 (Jun 27) — already packed; only add if skipping the fortress.",
+    "tags": [
+      "boat",
+      "motorboat",
+      "kotor",
+      "bay",
+      "self-drive",
+      "tivat",
+      "bbc-rent-a-boat"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  }
+]

@@ -75,6 +75,8 @@ export const DEFAULT_PLAN: Overrides = {
   'me-pluzine':              { day: 8, dayOrder: 4 },
   'me-piva-lake-swim':       { day: 8, dayOrder: 5 },
   'me-camp-mlinski-potok':   { day: 8, dayOrder: 6 },
+  // sleep alternatives: katun cabin (Tier-2/3 WOW options)
+  'me-durmitor-katun-krstajic':   { day: 8, dayOrder: 7 },
 
   // ── Day 9: Jun 24 (Wed) — Durmitor hike ─────────────────────────────────
   'me-veliki-medjed':        { day: 9, dayOrder: 1 },
@@ -82,6 +84,8 @@ export const DEFAULT_PLAN: Overrides = {
   'me-zabljak':              { day: 9, dayOrder: 3 },
   'me-oro-zabljak':          { day: 9, dayOrder: 4 },
   'me-gem-zabljak-mountain-spark': { day: 9, dayOrder: 5 },
+  // sleep WOW option: Homeland Nest (★10/10, pool, mountain views)
+  'me-durmitor-katun-homeland-nest': { day: 9, dayOrder: 6 },
 
   // ── Day 10: Jun 25 (Thu) — Tara Bridge → Ostrog → Skadar Lake ───────────
   'me-tara-bridge-zipline':  { day: 10, dayOrder: 1 },
@@ -91,6 +95,10 @@ export const DEFAULT_PLAN: Overrides = {
   'me-virpazar-kayak':       { day: 10, dayOrder: 5 },
   'me-vinarija-masanovic':   { day: 10, dayOrder: 6 },
   'me-camp-radoman':         { day: 10, dayOrder: 7 },
+  // new: pelican kayak (book ahead), Rijeka Crnojevića restaurant + kayak base
+  'me-skadar-pelican-kayak':           { day: 10, dayOrder: 8 },
+  'me-stari-most-rijeka-crnojevica':   { day: 10, dayOrder: 9 },
+  'me-skadar-rijeka-crnojevica-kayak': { day: 10, dayOrder: 10 },
 
   // ── Day 11: Jun 26 (Fri) — Stari Bar → Ulcinj → Ada Bojana (overnight) ──
   'me-stari-bar':            { day: 11, dayOrder: 1 },
