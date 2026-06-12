@@ -174,8 +174,8 @@ export const DAY_HINTS: Record<number, DayHint> = {
   8:  { icon: '🚣', text: 'Depart Sarajevo 07:00 → Foča by 09:00 → Tara raft start 10:00 (Brštanovica, ~3–4h) → cross border at Šćepan Polje → Piva canyon to Žabljak. Piva tunnels: lights on, honk before entry — drive daylight only.' },
   9:  { icon: '⛰️', text: 'Durmitor: leave camp by 06:30–07:00. Storm risk builds 12:00–15:00 — be off the ridge by noon. Žabljak nights 6–10°C.' },
   10: { icon: '🛐', text: 'Ostrog: cover knees+shoulders (no exceptions). Skadar: mosquitoes vicious at dusk — repellent essential.' },
-  11: { icon: '🏖️', text: 'Sveti Stefan islet view free from the road. Budva Friday = busiest night on the coast — book ahead if you need parking.' },
-  12: { icon: '🚢', text: 'Kotor: CONFIRMED 1 cruise ship (Star Clipper, ~170 pax — a tiny clipper, very lucky day). Start the fortress at 07:30 (free before 08:00); cruise tourists arrive ~09:30. Use VITALJINA crossing (not Debeli Brijeg) — 15–45 min.' },
+  11: { icon: '🦟', text: 'Ada Bojana: DEET repellent essential — mosquitoes are severe at dusk on the delta. Misko stilt restaurant: book ahead or arrive by 18:00. FKK camp €22–25/4+tent+car. Sleep early — early departure tomorrow for Kotor fortress.' },
+  12: { icon: '🚢', text: 'Leave Ada Bojana by 07:00 → Sveti Stefan (drive-by view, free) → Budva → Kotor fortress by 08:00 (start before cruise tourists). CONFIRMED: 1 cruise ship Jun 27 (Star Clipper, ~170 pax — tiny, lucky day). Fortress free before 08:00. Use VITALJINA crossing (not Debeli Brijeg) — 15–45 min vs 45–90 min.' },
   13: { icon: '✈️', text: 'Car drop at Dubrovnik Airport (Sicily By Car) by 20:00. Ref: D013947246. Full usable day.' },
 };
 
