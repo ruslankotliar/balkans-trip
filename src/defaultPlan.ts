@@ -2,7 +2,7 @@
  * Default day-assignment plan — pre-populates the Itinerary view on first load
  * so all 4 group members see the same plan without needing to share a URL.
  *
- * Generated from research/route-skeleton.md (v3, 2026-06-12).
+ * Generated from research/route-skeleton.md (v4, 2026-06-12).
  * Only day + dayOrder are set here; status is baked into src/data/*.json.
  *
  * loadOverrides() seeds from this when localStorage is empty (first visit).
@@ -24,17 +24,14 @@ export const DEFAULT_PLAN: Overrides = {
   'hr-cetina-canyoning':     { day: 2, dayOrder: 3 },
   'hr-camp-lisicina':        { day: 2, dayOrder: 4 },
 
-  // ── Day 3: Jun 18 (Thu) — Makarska → Biokovo → airport pickup → Prapratno ──
-  // After pickup (~17:30), drive north to Camp Prapratno (~90 km, 1h20m) —
-  // positions the group for a Friday morning ferry to Mljet (lighter queue
-  // than Saturday) without wasting a night near Dubrovnik.
+  // ── Day 3: Jun 18 (Thu) — Makarska swim → airport pickup → Prapratno ──
+  // Keep this day conservative: Punta Rata + the pickup run, then straight to
+  // Camp Prapratno so Friday's ferry to Mljet starts from a calm base.
   'hr-punta-rata':           { day: 3, dayOrder: 1 },
-  'hr-biokovo-tollroad':     { day: 3, dayOrder: 2 },
-  'hr-sveti-jure':           { day: 3, dayOrder: 3 },
-  'hr-peljesac-bridge':      { day: 3, dayOrder: 4 },
-  'hr-mali-ston-oysters':    { day: 3, dayOrder: 5 },
-  'hr-dubrovnik-airport-pickup': { day: 3, dayOrder: 6 },
-  'hr-camp-prapratno':       { day: 3, dayOrder: 7 },
+  'hr-peljesac-bridge':      { day: 3, dayOrder: 2 },
+  'hr-mali-ston-oysters':    { day: 3, dayOrder: 3 },
+  'hr-dubrovnik-airport-pickup': { day: 3, dayOrder: 4 },
+  'hr-camp-prapratno':       { day: 3, dayOrder: 5 },
 
   // ── Day 4: Jun 19 (Fri) — Mljet ─────────────────────────────────────────
   // Friday ferry = lighter queue than Saturday. Full day on the island.
@@ -52,17 +49,14 @@ export const DEFAULT_PLAN: Overrides = {
   'ba-cafe-de-alma-mostar':  { day: 5, dayOrder: 5 },
   'ba-tima-irma':            { day: 5, dayOrder: 6 },
   'ba-gem-mostar-nanas-house': { day: 5, dayOrder: 7 },
-  // SLEEP alternative: Cold River Treehouse at Bunica/Blagaj — waking up at Day 6's first stop.
-  'ba-villa-cold-river-treehouse-bunica': { day: 5, dayOrder: 8 },
 
-  // ── Day 6: Jun 21 (Sun) — Blagaj → Boračko Lake → Sarajevo ─────────────
+  // ── Day 6: Jun 21 (Sun) — Blagaj → Sarajevo ───────────────────────────
   'ba-blagaj':               { day: 6, dayOrder: 1 },
-  'ba-boracko-lake':         { day: 6, dayOrder: 2 },
-  'ba-sarajevo':             { day: 6, dayOrder: 3 },
-  'ba-zuta-tabija':          { day: 6, dayOrder: 4 },
-  'ba-sarajevo-petica-ferhatovic': { day: 6, dayOrder: 5 },
-  'ba-cinemas-sloga-latin-night': { day: 6, dayOrder: 6 },
-  'ba-air-1542024184506963047': { day: 6, dayOrder: 7 },
+  'ba-sarajevo':             { day: 6, dayOrder: 2 },
+  'ba-zuta-tabija':          { day: 6, dayOrder: 3 },
+  'ba-sarajevo-petica-ferhatovic': { day: 6, dayOrder: 4 },
+  'ba-cinemas-sloga-latin-night': { day: 6, dayOrder: 5 },
+  'ba-air-1542024184506963047': { day: 6, dayOrder: 6 },
 
   // ── Day 7: Jun 22 (Mon) — Sarajevo → Tara rafting → Piva → Žabljak ──────
   'me-tara-rafting-brstanovica': { day: 7, dayOrder: 1 },
@@ -71,19 +65,14 @@ export const DEFAULT_PLAN: Overrides = {
   'me-pluzine':              { day: 7, dayOrder: 4 },
   'me-piva-lake-swim':       { day: 7, dayOrder: 5 },
   'me-camp-mlinski-potok':   { day: 7, dayOrder: 6 },
-  // sleep alternatives: katun cabin (WOW options)
-  'me-durmitor-katun-krstajic':   { day: 7, dayOrder: 7 },
 
-  // ── Day 8: Jun 23 (Tue) — Durmitor hike + Tara Bridge evening ───────────
-  'me-veliki-medjed':        { day: 8, dayOrder: 1 },
-  'me-vrazje-jezero':        { day: 8, dayOrder: 2 },
-  'me-zabljak':              { day: 8, dayOrder: 3 },
-  'me-oro-zabljak':          { day: 8, dayOrder: 4 },
-  // Tara Bridge is 15 km east of Žabljak — quick post-hike evening excursion.
-  'me-tara-bridge-zipline':  { day: 8, dayOrder: 5 },
-  'me-gem-zabljak-mountain-spark': { day: 8, dayOrder: 6 },
-  // sleep WOW option: Homeland Nest (★10/10, pool, mountain views)
-  'me-durmitor-katun-homeland-nest': { day: 8, dayOrder: 7 },
+  // ── Day 8: Jun 23 (Tue) — Durmitor hike day ─────────────────────────────
+  // Prutaš is the default mixed-group summit; the more technical Durmitor
+  // scrambles stay in the data as manual swaps.
+  'me-prutas-hike':          { day: 8, dayOrder: 1 },
+  'me-zabljak':              { day: 8, dayOrder: 2 },
+  'me-oro-zabljak':          { day: 8, dayOrder: 3 },
+  'me-gem-zabljak-mountain-spark': { day: 8, dayOrder: 4 },
 
   // ── Day 9: Jun 24 (Wed) — Ostrog → Skadar Lake ──────────────────────────
   'me-ostrog-monastery':     { day: 9, dayOrder: 1 },
@@ -91,23 +80,16 @@ export const DEFAULT_PLAN: Overrides = {
   'me-skadar-lake':          { day: 9, dayOrder: 3 },
   'me-virpazar-kayak':       { day: 9, dayOrder: 4 },
   'me-vinarija-masanovic':   { day: 9, dayOrder: 5 },
-  'me-camp-radoman':         { day: 9, dayOrder: 6 },
-  // WOW alternative: Raicevic guesthouse (★9.3, fish dinner, private beach).
-  'me-guesthouse-skadar-raicevic':     { day: 9, dayOrder: 7 },
-  'me-stari-most-rijeka-crnojevica':   { day: 9, dayOrder: 8 },
-  'me-skadar-rijeka-crnojevica-kayak': { day: 9, dayOrder: 9 },
-  'me-skadar-pelican-kayak':           { day: 9, dayOrder: 10 },
-  // SLEEP WOW option: Jablan Winery house (★4.86, 219 reviews, "TRIP'S MOST SPECIAL STAY")
-  'me-villa-jablan-winery-rvasi':      { day: 9, dayOrder: 11 },
+  // SLEEP option: Raicevic guesthouse (★9.3, fish dinner, private beach).
+  'me-guesthouse-skadar-raicevic':     { day: 9, dayOrder: 6 },
 
-  // ── Day 10: Jun 25 (Thu) — Stari Bar → Ulcinj → Ada Bojana (overnight) ──
-  // Camp Safari Beach is LAST so Day 11's morning start anchors to the campsite,
-  // not the dinner restaurant 5 km south.
+  // ── Day 10: Jun 25 (Thu) — Stari Bar → Ulcinj → Velika Plaža (overnight) ──
+  // Keep the deep-south day to a half-day unless the group explicitly wants
+  // a kitesurfing-heavy Ada Bojana extension.
   'me-stari-bar':            { day: 10, dayOrder: 1 },
   'me-ulcinj-old-town':      { day: 10, dayOrder: 2 },
-  'me-ada-bojana-beach':     { day: 10, dayOrder: 3 },
-  'me-misko-stilt-restaurant': { day: 10, dayOrder: 4 },
-  'me-camp-safari-beach':    { day: 10, dayOrder: 5 },
+  'me-misko-stilt-restaurant': { day: 10, dayOrder: 3 },
+  'me-camp-safari-beach':    { day: 10, dayOrder: 4 },
 
   // ── Day 11: Jun 26 (Fri) — Sveti Stefan → Budva → Kotor → Trebinje ───────
   'me-sveti-stefan':         { day: 11, dayOrder: 1 },
