@@ -1423,6 +1423,13 @@ export default function App() {
         <div className="head-row">
           <h1>Balkans Trip</h1>
           <button
+            className={`mode-pill ${mode}`}
+            onClick={() => setMode(mode === 'trip' ? 'planning' : 'trip')}
+            title="Switch between planning (research) and trip (on the road) mode"
+          >
+            {mode === 'trip' ? '🚗 Trip' : '🗺️ Planning'}
+          </button>
+          <button
             className="who-pill"
             onClick={() => setWhoOpen(person ? 'edit' : 'firstUse')}
             title="Your name (used on votes & comments) — tap to change"
@@ -1458,13 +1465,6 @@ export default function App() {
             onClick={() => setEssentialsOpen(true)}
           >
             ✅ Tasks
-          </button>
-          <button
-            className={`mode-pill ${mode}`}
-            onClick={() => setMode(mode === 'trip' ? 'planning' : 'trip')}
-            title="Switch between planning (research) and trip (on the road) mode"
-          >
-            {mode === 'trip' ? '🚗 Trip' : '🗺 Planning'}
           </button>
         </div>
 

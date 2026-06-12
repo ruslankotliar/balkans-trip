@@ -22,8 +22,8 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  padding: 16px;
-  gap: 10px;
+  padding: 14px 16px;
+  gap: 8px;
   overflow: hidden;
   border-right: 1px solid #ddd;
   background: #fafafa;
@@ -43,15 +43,15 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 .search {
   padding: 8px 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 14px;
 }
 
 .filter-group {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 8px;
-  column-gap: 6px;
+  row-gap: 6px;
+  column-gap: 5px;
 }
 
 .chip {
@@ -60,7 +60,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   gap: 5px;
   padding: 3px 9px;
   font-size: 12px;
-  border: 1.5px solid #bbb;
+  border: 1px solid #bbb;
   border-radius: 12px;
   background: #fff;
   color: #999;
@@ -313,13 +313,13 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   padding: 4px 0;
 }
 .filters-disclosure[open] > summary {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 600;
   color: #2c3e50;
 }
 .filters-disclosure > .filter-group + .filter-group,
 .filters-disclosure > .filter-group + details {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .tag-filter summary {
@@ -1066,9 +1066,9 @@ body.trip-mode .detail-nav-btn {
     height: 28px;
     font-size: 13px;
   }
-  .mode-pill {
-    padding: 8px 14px;
-    font-size: 14px;
+  .view-tabs .mode-pill {
+    padding: 5px 10px;
+    font-size: 12px;
   }
   /* ---- Planning mode: compact chrome to maximise list space ---- */
   /* Subtitle: single truncated line */
@@ -1285,13 +1285,13 @@ body.trip-mode .detail-nav-btn {
   flex: 1 1 auto;
 }
 .who-pill {
-  border: 1.5px solid #8e44ad;
-  border-radius: 16px;
+  border: 1px solid #8e44ad;
+  border-radius: 14px;
   background: #fff;
   color: #8e44ad;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  padding: 5px 12px;
+  padding: 4px 10px;
   cursor: pointer;
   white-space: nowrap;
   max-width: 140px;
@@ -1299,13 +1299,13 @@ body.trip-mode .detail-nav-btn {
   text-overflow: ellipsis;
 }
 .mode-pill {
-  border: 1.5px solid #2c3e50;
-  border-radius: 16px;
+  border: 1px solid #2c3e50;
+  border-radius: 14px;
   background: #fff;
   color: #2c3e50;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  padding: 5px 12px;
+  padding: 4px 10px;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -1314,27 +1314,26 @@ body.trip-mode .detail-nav-btn {
   color: #fff;
 }
 .share-plan-btn {
-  border: 1.5px solid #5a9cf8;
-  border-radius: 16px;
+  border: 1px solid #5a9cf8;
+  border-radius: 14px;
   background: #fff;
   color: #2471c8;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  padding: 5px 11px;
+  padding: 4px 9px;
   cursor: pointer;
   white-space: nowrap;
 }
 .tasks-pill {
-  border: 1.5px solid #27ae60;
-  border-radius: 16px;
+  border: 1px solid #27ae60;
+  border-radius: 14px;
   background: #fff;
   color: #1e8449;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  padding: 5px 11px;
+  padding: 4px 9px;
   cursor: pointer;
   white-space: nowrap;
-  margin-left: auto;
 }
 
 /* ---- Today view (trip mode) ---- */
@@ -1856,18 +1855,20 @@ body.trip-mode .card-links .today-nav-link {
 /* ---- Entry buttons ---- */
 .add-place-btn {
   width: 100%;
-  margin-bottom: 8px;
-  padding: 9px 12px;
-  border: 1.5px dashed #2c3e50;
+  margin-bottom: 6px;
+  padding: 7px 12px;
+  border: 1px dashed #9aa5ae;
   border-radius: 8px;
   background: #fff;
-  color: #2c3e50;
-  font-size: 14px;
-  font-weight: 600;
+  color: #6b7a87;
+  font-size: 13px;
+  font-weight: 500;
   cursor: pointer;
 }
 .add-place-btn:hover {
-  background: #f3f6f9;
+  border-color: #2c3e50;
+  color: #2c3e50;
+  background: #f6f8fa;
 }
 .plan-actions {
   margin: 8px 0 4px;
