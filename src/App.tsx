@@ -1429,43 +1429,6 @@ export default function App() {
           >
             {mode === 'trip' ? '🚗 Trip' : '🗺️ Planning'}
           </button>
-          <button
-            className="who-pill"
-            onClick={() => setWhoOpen(person ? 'edit' : 'firstUse')}
-            title="Your name (used on votes & comments) — tap to change"
-          >
-            {person ? `🙂 ${person}` : '🙂 Set name'}
-          </button>
-          <button
-            className="share-plan-btn"
-            title="Share plan with the group — sends a link others can import"
-            onClick={async () => {
-              const url = makeShareLink();
-              if (navigator.share) {
-                try {
-                  await navigator.share({ title: 'Balkans Trip plan', url });
-                  return;
-                } catch {
-                  // cancelled or unsupported — fall through to clipboard
-                }
-              }
-              try {
-                await navigator.clipboard.writeText(url);
-                alert('Share link copied! Paste it in the group chat — others open it to import the plan.');
-              } catch {
-                prompt('Copy this link and send it to the group:', url);
-              }
-            }}
-          >
-            📤 Share
-          </button>
-          <button
-            className="tasks-pill"
-            title="Tasks & shopping list"
-            onClick={() => setEssentialsOpen(true)}
-          >
-            ✅ Tasks
-          </button>
         </div>
 
         {mode === 'trip' ? (
@@ -1833,6 +1796,46 @@ export default function App() {
 
         </>
         )}
+
+        <div className="sidebar-footer">
+          <button
+            className="who-pill"
+            onClick={() => setWhoOpen(person ? 'edit' : 'firstUse')}
+            title="Your name (used on votes & comments) — tap to change"
+          >
+            {person ? `🙂 ${person}` : '🙂 Set name'}
+          </button>
+          <button
+            className="share-plan-btn"
+            title="Share plan with the group — sends a link others can import"
+            onClick={async () => {
+              const url = makeShareLink();
+              if (navigator.share) {
+                try {
+                  await navigator.share({ title: 'Balkans Trip plan', url });
+                  return;
+                } catch {
+                  // cancelled or unsupported — fall through to clipboard
+                }
+              }
+              try {
+                await navigator.clipboard.writeText(url);
+                alert('Share link copied! Paste it in the group chat — others open it to import the plan.');
+              } catch {
+                prompt('Copy this link and send it to the group:', url);
+              }
+            }}
+          >
+            📤 Share
+          </button>
+          <button
+            className="tasks-pill"
+            title="Tasks & shopping list"
+            onClick={() => setEssentialsOpen(true)}
+          >
+            ✅ Tasks
+          </button>
+        </div>
       </aside>
 
       <MapContainer ref={mapRef} className="map" center={[43.4, 17.3]} zoom={7} scrollWheelZoom>
