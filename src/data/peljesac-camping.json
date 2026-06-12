@@ -311,5 +311,24 @@
       "https://twogetlost.com/camping-korcula"
     ],
     "status": "candidate"
+  },
+  {
+    "id": "hr-agroturizam-antunovic",
+    "name": "Agroturizam Antunović (Kuna Pelješka)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 42.9481,
+    "lng": 17.3147,
+    "description": "300-year-old stone farmhouse agrotourism in the wine village of Kuna, inland Pelješac — donkey farm, home-cured meats hanging from beamed ceilings, own wine cellar. One of the most memorable rural stays on the whole peninsula, 20+ years in operation. Pre-ferry WOW tier for Night 4.",
+    "communityNotes": "TripAdvisor 9.7/10. Guests 2025: 'A completely unique experience — superb freshly prepared food from the farm, delicious bread, cured meats, succulent local lamb.' 'Stone walled dining room so full of character — hundreds of cured meats hanging from the beamed ceiling.' 'Jasmina was extremely friendly.' NOT a sea-view place — this is the inland wine-and-farm experience, not coastal.",
+    "cost": "~€80–120 estimated for 4 (2 rooms); confirm capacity and price direct: +385 98 9987 679",
+    "bestTime": "Night 4 (Jun 19) — stay here after Dubrovnik Day 4, then drive ~30–40 min to Prapratno ferry on Day 5 morning. Combines with Dingač wine route and Kuna village walk. Book well in advance — very small property.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g7383125-d23348330-Reviews-Agroturizam_Antunovic-Kuna_Peljeska_Peljesac_Peninsula_Dubrovnik_Neretva_County_Dalm.html",
+      "https://www.booking.com/hotel/hr/agroturizam-antunovic.html"
+    ],
+    "tags": ["peljesac", "wow", "wine", "farmhouse", "inland", "night4"],
+    "rating": 5,
+    "status": "candidate"
   }
 ]

@@ -1144,5 +1144,24 @@
     ],
     "rating": 4,
     "status": "candidate"
+  },
+  {
+    "id": "me-camping-dodosi",
+    "name": "Camping Dodosi (Skadar Lake NP)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 42.3214,
+    "lng": 19.1967,
+    "description": "Lakeside campsite inside Skadar Lake National Park at the confluence of the Karatuna River and the lake — swimming, kayaking, boat tours directly from camp. One of the cheapest overnight options on the whole trip with a genuinely spectacular NP setting.",
+    "communityNotes": "park4night 4.4/5, 43 reviews: 'A paradise on the water in nature'; 'Beautifully located in the middle of nature'; hospitality described as 'really nice.' Small restaurant on-site serves fresh meals. ⚠️ ACCESS: narrow bridge ~2.3–2.4m wide on the approach road — a standard passenger car fits, but verify rental car width beforehand. Winding unpaved track after the bridge.",
+    "cost": "~€8/person + €4/camper — approx €36–40 total for 4 adults + tent. Electricity €3 extra.",
+    "facilities": "Hot showers, toilets, waste disposal, WiFi/4G, small restaurant. Swimming direct from camp.",
+    "bestTime": "Day 10 (Jun 25) — check in afternoon after Ostrog Monastery, kayak the lake at golden hour, swim. Pairs perfectly with Virpazar kayak rental (20 min drive). Bridge width: confirm car is under 2.2m wide.",
+    "sources": [
+      "https://park4night.com/en/place/437470"
+    ],
+    "tags": ["skadar", "camping", "lakeside", "national-park", "day10"],
+    "rating": 4,
+    "status": "candidate"
   }
 ]
