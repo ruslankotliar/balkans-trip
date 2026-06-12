@@ -95,6 +95,7 @@ export interface DraftPlace {
   lng: number | null;
   day: number | null;
   note: string;
+  timeNeeded: string;
 }
 
 interface Props {
@@ -129,6 +130,7 @@ export default function AddPlace({
   const [lng, setLng] = useState<number | null>(editing?.lng ?? null);
   const [day, setDay] = useState<number | null>(editingDay ?? null);
   const [note, setNote] = useState(editingNote ?? '');
+  const [timeNeeded, setTimeNeeded] = useState(editing?.timeNeeded ?? '');
   const [coordsText, setCoordsText] = useState('');
   const [urlText, setUrlText] = useState('');
   const [parseMsg, setParseMsg] = useState<string | null>(null);
@@ -195,7 +197,15 @@ export default function AddPlace({
 
   function handleSave() {
     if (!canSave || lat == null || lng == null) return;
-    onSave({ name: name.trim(), category, lat, lng, day, note: note.trim() });
+    onSave({
+      name: name.trim(),
+      category,
+      lat,
+      lng,
+      day,
+      note: note.trim(),
+      timeNeeded: timeNeeded.trim(),
+    });
   }
 
   return (
@@ -316,6 +326,18 @@ export default function AddPlace({
           placeholder="Why it’s worth it / who recommended it…"
           value={note}
           onChange={(e) => setNote(e.target.value)}
+        />
+      </label>
+
+      <label className="field-label">
+        Time needed
+        <input
+          className="time-input"
+          type="text"
+          inputMode="text"
+          placeholder="1h 30m, 45m, half day"
+          value={timeNeeded}
+          onChange={(e) => setTimeNeeded(e.target.value)}
         />
       </label>
 

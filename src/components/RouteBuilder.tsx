@@ -1,4 +1,5 @@
 import { CATEGORY_COLORS } from '../constants';
+import { formatClock, type DaySchedule } from '../schedule';
 import type { PlaceWithOverride, TripResult } from '../store';
 import { formatDistance, formatDuration } from '../trip';
 
@@ -29,6 +30,7 @@ interface Props {
   onMaxHours: (h: number) => void;
   onApplyToDays: () => void;
   split: { days: number; overDays: { day: number; sec: number }[] } | null;
+  schedule?: DaySchedule | null;
   onFocus: (p: PlaceWithOverride) => void;
   onFindSleep: () => void;
 }
@@ -57,6 +59,7 @@ export default function RouteBuilder({
   onMaxHours,
   onApplyToDays,
   split,
+  schedule,
   onFocus,
   onFindSleep,
 }: Props) {
@@ -199,6 +202,31 @@ export default function RouteBuilder({
             )}{' '}
             / {formatDistance(trip.distance)} total
           </div>
+
+          {schedule && (
+            <div className="rb-clock">
+              <div className="rb-clock-row">
+                <span>Start {formatClock(schedule.dayStartSec)}</span>
+                <span>Finish {formatClock(schedule.finishSec)}</span>
+                <span className={`rb-clock-balance ${schedule.overSec > 0 ? 'late' : 'slack'}`}>
+                  {schedule.overSec > 0
+                    ? `+${formatDuration(schedule.overSec)} late`
+                    : `${formatDuration(schedule.slackSec)} slack`}
+                </span>
+              </div>
+              <div className="rb-clock-row rb-clock-small">
+                <span>Drive {formatDuration(schedule.driveSec)}</span>
+                <span>Stops {formatDuration(schedule.staySec)}</span>
+                {schedule.ferrySec > 0 && <span>Ferry {formatDuration(schedule.ferrySec)}</span>}
+              </div>
+              {schedule.overSec > 0 && schedule.recovery.length > 0 && (
+                <div className="rb-clock-recovery">
+                  Catch-up (approx): skip {schedule.recovery[0].names.join(' + ')} to recover{' '}
+                  {formatDuration(schedule.recovery[0].freedSec)}
+                </div>
+              )}
+            </div>
+          )}
 
           {segments.length > 1 && (
             <ul className="rb-segments">

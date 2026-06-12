@@ -102,6 +102,8 @@ export interface Override {
   dayOrder?: number;
   /** Free-form personal note. */
   note?: string;
+  /** Estimated minutes to spend at the stop. Used by the schedule clock. */
+  timeMinutes?: number;
 }
 
 export type Overrides = Record<string, Override>;

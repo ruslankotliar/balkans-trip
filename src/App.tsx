@@ -73,6 +73,7 @@ import {
   type SharedPlan,
   type TripResult,
 } from './store';
+import { buildDaySchedule } from './schedule';
 import {
   currentTripDay,
   dayColor,
@@ -84,6 +85,7 @@ import {
 } from './trip';
 import type { Category, Country, Place, Status } from './types';
 import { useDayRoutes } from './useDayRoutes';
+import { BOOK_EARLY_STAYS, type BookEarlyStay } from './bookEarlyStays';
 
 const AddPlace = lazy(() => import('./components/AddPlace'));
 const CorridorPanel = lazy(() => import('./components/CorridorPanel'));
@@ -394,6 +396,16 @@ export default function App() {
     return m;
   }, [basePlaces]);
 
+  const bookEarlyStays = useMemo(
+    () =>
+      BOOK_EARLY_STAYS.map((pick) => {
+        const place = placeById.get(pick.id);
+        if (!place) return null;
+        return { ...pick, place };
+      }).filter(Boolean) as Array<BookEarlyStay & { place: PlaceWithOverride }>,
+    [placeById],
+  );
+
   const [countryFilter, setCountryFilter] = useState<Set<Country>>(new Set(COUNTRIES));
   const [categoryFilter, setCategoryFilter] = useState<Set<Category>>(new Set(CATEGORIES));
   // Planning default: the plan you care about (shortlist+backup) — the candidate
@@ -641,9 +653,22 @@ export default function App() {
     return out;
   }, [dayStops, ferryHours]);
 
+  const daySchedules = useMemo(() => {
+    const out: Record<number, ReturnType<typeof buildDaySchedule>> = {};
+    for (const [dayStr, stops] of Object.entries(dayStops)) {
+      const day = Number(dayStr);
+      const route = routes[day];
+      if (!route) continue;
+      const schedule = buildDaySchedule(stops, route, (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0);
+      if (schedule) out[day] = schedule;
+    }
+    return out;
+  }, [dayStops, routes, ferryHours]);
+
   // ---- Trip mode: today, GPS, sleep tonight, near me ----
   const todayStops = useMemo(() => dayStops[tripDay] ?? [], [dayStops, tripDay]);
   const todayIds = useMemo(() => new Set(todayStops.map((p) => p.id)), [todayStops]);
+  const todaySchedule = daySchedules[tripDay] ?? null;
 
   const totalPlanned = useMemo(
     () => Object.values(dayStops).reduce((sum, ps) => sum + ps.length, 0),
@@ -937,6 +962,7 @@ export default function App() {
         lat: draft.lat!,
         lng: draft.lng!,
         country: guessCountry(draft.lat!, draft.lng!),
+        timeNeeded: draft.timeNeeded || undefined,
       };
       applyUserPlaces((u) => u.map((p) => (p.id === editingId ? updated : p)));
       applyOverrides((o) => ({
@@ -960,6 +986,7 @@ export default function App() {
       lat: draft.lat,
       lng: draft.lng,
       description: draft.note || 'Added on the trip.',
+      timeNeeded: draft.timeNeeded || undefined,
       status: 'shortlist',
       userAdded: true,
       source: 'user',
@@ -1055,6 +1082,21 @@ export default function App() {
 
   function setNote(id: string, note: string) {
     applyOverrides((o) => ({ ...o, [id]: { ...o[id], note } }));
+  }
+
+  function setTimeMinutes(id: string, minutes: number | null) {
+    applyOverrides((o) => {
+      const current = o[id] ?? {};
+      const next = { ...o };
+      if (minutes == null) {
+        const { timeMinutes, ...rest } = current;
+        if (Object.keys(rest).length === 0) delete next[id];
+        else next[id] = rest;
+      } else {
+        next[id] = { ...current, timeMinutes: minutes };
+      }
+      return next;
+    });
   }
 
   function assignDay(id: string, day: number | null) {
@@ -1310,6 +1352,14 @@ export default function App() {
     [rbTrip, rbInputPlaces],
   );
 
+  const rbSchedule = useMemo(
+    () =>
+      rbTrip && rbOrdered.length > 0
+        ? buildDaySchedule(rbOrdered, rbTrip, (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0)
+        : null,
+    [rbTrip, rbOrdered, ferryHours],
+  );
+
   /** Trip legs with manual ferry hours folded in (ferry = wait + crossing). */
   const rbLegSeconds = useMemo(() => {
     if (!rbTrip) return [];
@@ -1466,6 +1516,7 @@ export default function App() {
               onDay={setTripDay}
               stops={todayStops}
               route={routes[tripDay]}
+              schedule={todaySchedule}
               ferryFor={(a, b) => ferryHours[ferryPairKey(a, b)] ?? 0}
               done={doneIds}
               onToggleDone={toggleDone}
@@ -1789,6 +1840,7 @@ export default function App() {
                 onAssignDay={assignDay}
                 onFindSleep={findSleepAlongDay}
                 dayNotes={dayNotes}
+                scheduleByDay={daySchedules}
               />
             </>
           </Suspense>
@@ -1820,6 +1872,7 @@ export default function App() {
               onMaxHours={setRbMaxHours}
               onApplyToDays={applyTripToDays}
               split={rbSplit}
+              schedule={rbSchedule}
               onFocus={selectPlace}
               onFindSleep={findSleepAlongTrip}
             />
@@ -2087,6 +2140,7 @@ export default function App() {
         onStatus={setStatus}
         onAssignDay={assignDay}
         onNote={setNote}
+        onTimeMinutes={setTimeMinutes}
         onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}
         isDone={selected ? !!doneIds[selected.id] : false}
         onToggleDone={(id) => toggleDone(id)}
@@ -2121,7 +2175,12 @@ export default function App() {
 
       {essentialsOpen && (
         <Suspense fallback={<DialogFallback title="Loading essentials…" />}>
-          <LazyEssentials onClose={() => setEssentialsOpen(false)} onShowPin={focusPin} />
+          <LazyEssentials
+            onClose={() => setEssentialsOpen(false)}
+            onShowPin={focusPin}
+            onShowPlace={focusPin}
+            bookEarlyStays={bookEarlyStays}
+          />
         </Suspense>
       )}
 

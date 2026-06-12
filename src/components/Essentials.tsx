@@ -5,6 +5,7 @@
  * content is bundled (src/essentials.ts), so it works with zero signal.
  */
 import { useState } from 'react';
+import { bookingFor } from '../links';
 import {
   EMERGENCY_BY_COUNTRY,
   EMERGENCY_UNIVERSAL,
@@ -16,6 +17,8 @@ import {
   QUICK_TIPS,
   type ContactLine,
 } from '../essentials';
+import type { PlaceWithOverride } from '../store';
+import type { BookEarlyStay } from '../bookEarlyStays';
 
 // ---- Trip Tasks (checklist + buy list) --------------------------------
 
@@ -33,10 +36,12 @@ const PRESET_TASKS: Task[] = [
   { id: 'p7', text: 'Cash ready: €100–150 small bills + exchange some to BAM (Bosnia)', done: false },
   { id: 'p8', text: 'Download offline maps — OsmAnd for BiH + ME before leaving', done: false },
   { id: 'p9', text: 'Check Mljet ferry time at jadrolinija.hr — queue Prapratno 90min early Jun 20', done: false },
-  // URGENT — book these WOW stays before they fill (small properties, 4 days to trip)
-  { id: 'p10', text: 'Book Guesthouse Raicevic (Godinje, Skadar) Jun 25 night — ★9.3, tiny property, fills fast', done: false },
-  { id: 'p11', text: 'Book Cold River Treehouse (Bunica, near Blagaj) Jun 21 night — ★4.92, high demand', done: false },
-  { id: 'p12', text: 'Book Jablan Winery house (Rvaši, Skadar NW) Jun 25 night — ★4.86/219 reviews', done: false },
+  // URGENT — lock the special stays before they disappear
+  { id: 'p10', text: 'Book Jablan Winery house (Rvaši, Skadar) — the flagship stay, book now', done: false },
+  { id: 'p11', text: 'Book Cold River Treehouse (Bunica / Mostar) — unique river stay, high demand', done: false },
+  { id: 'p12', text: 'Book Mlinica watermill (Brijesta / Pelješac) — jacuzzi + bay views, coastal splurge', done: false },
+  { id: 'p13', text: 'Book Above the Lake (Bobija, Skadar) — premium lake cottage with kayaks', done: false },
+  { id: 'p14', text: 'Book Eternum Glamping (Ninkovići / Žabljak) — mountain night with atmosphere', done: false },
 ];
 
 function loadTasks(): Task[] {
@@ -54,6 +59,10 @@ interface Props {
   onClose: () => void;
   /** Focus the map on a hospital pin by id (from contingency-places.json). */
   onShowPin?: (pinId: string) => void;
+  /** Focus the map/detail panel on a place id. */
+  onShowPlace?: (placeId: string) => void;
+  /** Curated special stays already resolved from the main place map. */
+  bookEarlyStays: Array<BookEarlyStay & { place: PlaceWithOverride }>;
 }
 
 /** Render inline phone numbers (+XX ...) as tappable tel: links. */
@@ -111,7 +120,7 @@ function Section({ id, title, openId, onToggle, children }: SectionProps) {
   );
 }
 
-export default function Essentials({ onClose, onShowPin }: Props) {
+export default function Essentials({ onClose, onShowPin, onShowPlace, bookEarlyStays }: Props) {
   // Emergency open by default — it's the one-tap-when-it-matters card.
   const [openId, setOpenId] = useState<string | null>('tasks');
   const toggle = (id: string) => setOpenId((cur) => (cur === id ? null : id));
@@ -171,6 +180,61 @@ export default function Essentials({ onClose, onShowPin }: Props) {
           )}
         </div>
       </Section>
+
+      {bookEarlyStays.length > 0 && (
+        <Section id="stays" title="🏨 Book early stays" openId={openId} onToggle={toggle}>
+          <p className="ess-stays-note">
+            These are the 3–5 places worth locking early: special, high-demand, or both.
+          </p>
+          <div className="ess-stays">
+            {bookEarlyStays.map((s) => {
+              const booking = bookingFor(s.place.sources);
+              return (
+                <div key={s.place.id} className="ess-stay">
+                  <div className="ess-stay-head">
+                    <div>
+                      <h4>{s.place.name}</h4>
+                      <p className="ess-stay-sub">
+                        {s.bestUse} · {s.urgency}
+                      </p>
+                    </div>
+                    <span className={`ess-stay-pill ${s.urgency === 'book now' ? 'now' : 'soon'}`}>
+                      {s.urgency}
+                    </span>
+                  </div>
+                  <p className="ess-stay-why">{s.why}</p>
+                  <div className="ess-stay-foot">
+                    {s.place.cost && <span className="ess-stay-cost">{s.place.cost}</span>}
+                    {s.place.rating && (
+                      <span className="ess-stay-rating">
+                        {'★'.repeat(s.place.rating)}
+                      </span>
+                    )}
+                    {s.place.bestTime && <span className="ess-stay-time">{s.place.bestTime}</span>}
+                  </div>
+                  <div className="ess-stay-actions">
+                    {onShowPlace && (
+                      <button className="ess-stay-map" onClick={() => onShowPlace(s.place.id)}>
+                        map ↗
+                      </button>
+                    )}
+                    {booking && (
+                      <a
+                        className={`ess-stay-book kind-${booking.kind}`}
+                        href={booking.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {booking.label} ↗
+                      </a>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </Section>
+      )}
 
       <Section id="emergency" title="🚨 Emergency numbers" openId={openId} onToggle={toggle}>
         <a className="ess-tel ess-tel-big" href={`tel:${EMERGENCY_UNIVERSAL.tel}`}>

@@ -1,6 +1,7 @@
 import { CATEGORY_COLORS } from '../constants';
 import { bookingFor, navUrl } from '../links';
 import type { CachedRoute, PlaceWithOverride } from '../store';
+import { formatClock, type DaySchedule } from '../schedule';
 import { DAY_HINTS, DAY_OPS, TRIP_DAYS, daysToTripStart, dayDateLabel, formatDuration, stopHint } from '../trip';
 
 export interface ProximityMatch {
@@ -18,6 +19,7 @@ interface Props {
   /** Today's stops in visiting order. */
   stops: PlaceWithOverride[];
   route: CachedRoute | undefined;
+  schedule?: DaySchedule | null;
   /** Manual ferry hours for a leg between two place ids. */
   ferryFor: (idA: string, idB: string) => number;
   done: Record<string, boolean>;
@@ -129,6 +131,7 @@ export default function Today({
   onDay,
   stops,
   route,
+  schedule,
   ferryFor,
   done,
   onToggleDone,
@@ -228,6 +231,45 @@ export default function Today({
         <div className="today-ops">{DAY_OPS[day]}</div>
       )}
 
+      {schedule && (
+        <div className="today-clock">
+          <div className="today-clock-row">
+            <span>Start {formatClock(schedule.dayStartSec)}</span>
+            <span>Finish {formatClock(schedule.finishSec)}</span>
+            <span
+              className={`today-clock-balance ${
+                schedule.overSec > 0 ? 'late' : 'slack'
+              }`}
+            >
+              {schedule.overSec > 0
+                ? `+${formatDuration(schedule.overSec)} late`
+                : `${formatDuration(schedule.slackSec)} slack`}
+            </span>
+          </div>
+          <div className="today-clock-row today-clock-small">
+            <span>Drive {formatDuration(schedule.driveSec)}</span>
+            <span>Stops {formatDuration(schedule.staySec)}</span>
+            {schedule.ferrySec > 0 && <span>Ferry {formatDuration(schedule.ferrySec)}</span>}
+          </div>
+          {schedule.overSec > 0 && schedule.recovery.length > 0 && (
+            <div className="today-recovery">
+              <strong>Fastest catch-up (approx):</strong>{' '}
+              <span>
+                skip {schedule.recovery[0].names.join(' + ')} to recover{' '}
+                {formatDuration(schedule.recovery[0].freedSec)}
+              </span>
+              {schedule.recovery.length > 1 && (
+                <span className="today-recovery-more">
+                  {' '}
+                  · +{schedule.recovery.length - 1} more option
+                  {schedule.recovery.length - 1 === 1 ? '' : 's'}
+                </span>
+              )}
+            </div>
+          )}
+        </div>
+      )}
+
       {isToday && stops.length > 0 && (
         <div className="today-next">
           {next ? (
@@ -276,8 +318,16 @@ export default function Today({
             const isDone = !!done[p.id];
             const legSec = i > 0 ? route?.legs?.[i - 1 + legOffset]?.duration : undefined;
             const ferryH = i > 0 ? ferryFor(stops[i - 1].id, p.id) : 0;
+            const entry = schedule?.entries[i];
             return (
               <li key={p.id} className={isDone ? 'done' : isNext ? 'next' : ''}>
+                {entry && (
+                  <div className={`today-stop-time ${entry.source === 'override' ? 'override' : ''}`}>
+                    {formatClock(entry.arriveSec)} → {formatClock(entry.departSec)} ·{' '}
+                    {formatDuration(entry.staySec)}
+                    {entry.source !== 'heuristic' ? ` · ${entry.source}` : ''}
+                  </div>
+                )}
                 {i > 0 && (legSec != null || ferryH > 0) && (
                   <div className="today-leg">
                     ↓ {formatDuration((legSec ?? 0) + ferryH * 3600)}

@@ -1,4 +1,5 @@
 import { CATEGORY_COLORS } from '../constants';
+import { formatClock, type DaySchedule } from '../schedule';
 import type { PlaceWithOverride } from '../store';
 import type { DayRoutes } from '../useDayRoutes';
 import {
@@ -30,6 +31,8 @@ interface Props {
   onFindSleep: (day: number) => void;
   /** Free-text per-day notes (from Today view textarea). */
   dayNotes?: Record<number, string>;
+  /** Day clock estimate per day, derived from the current route + stop times. */
+  scheduleByDay?: Record<number, DaySchedule | null>;
 }
 
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
@@ -47,6 +50,7 @@ export default function Itinerary({
   onAssignDay,
   onFindSleep,
   dayNotes,
+  scheduleByDay,
 }: Props) {
   const assigned = places.filter((p) => p.day);
   const backlog = places
@@ -72,6 +76,7 @@ export default function Itinerary({
         const isToday = realDay === day;
         const driveSec = route ? route.duration + (ferrySecByDay[day] ?? 0) : 0;
         const driveClass = driveSec > 4.5 * 3600 ? 'drive-heavy' : driveSec > 3 * 3600 ? 'drive-warn' : '';
+        const schedule = scheduleByDay?.[day] ?? null;
         const flags = [...new Set(stops.map((p) => p.country).filter(Boolean))]
           .map((c) => COUNTRY_FLAG[c as Country] ?? '')
           .join('');
@@ -89,6 +94,14 @@ export default function Itinerary({
                   {driveClass === 'drive-heavy' ? '⚠️ ' : ''}
                   {formatDuration(driveSec)}
                   {ferrySecByDay[day] ? ' ⛴' : ''} · {formatDistance(route.distance)}
+                </span>
+              )}
+              {schedule && (
+                <span className={`itin-day-clock ${schedule.overSec > 0 ? 'late' : 'slack'}`}>
+                  finish {formatClock(schedule.finishSec)} ·{' '}
+                  {schedule.overSec > 0
+                    ? `+${formatDuration(schedule.overSec)} late`
+                    : `${formatDuration(schedule.slackSec)} slack`}
                 </span>
               )}
               {route && (
@@ -109,6 +122,12 @@ export default function Itinerary({
             {dayNotes?.[day] && (
               <div className="itin-day-note">
                 📝 {dayNotes[day]}
+              </div>
+            )}
+            {schedule && schedule.overSec > 0 && schedule.recovery.length > 0 && (
+              <div className="itin-day-recovery">
+                Catch-up (approx): skip {schedule.recovery[0].names.join(' + ')} to recover{' '}
+                {formatDuration(schedule.recovery[0].freedSec)}
               </div>
             )}
             {stops.some((p) => p.bestTime) && (
@@ -146,6 +165,11 @@ export default function Itinerary({
                       )}
                       {p.name}
                     </span>
+                    {schedule?.entries[i] && (
+                      <span className="itin-stop-clock">
+                        {formatClock(schedule.entries[i].arriveSec)}–{formatClock(schedule.entries[i].departSec)}
+                      </span>
+                    )}
                     <span className="itin-actions" onClick={(e) => e.stopPropagation()}>
                       <button
                         disabled={i === 0}

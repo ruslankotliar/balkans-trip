@@ -1,9 +1,10 @@
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useEffect, useState } from 'react';
 import type { CommentRow, Tally, VoteValue } from '../collab';
 import { CATEGORY_COLORS, COUNTRY_NAMES, STATUSES } from '../constants';
 import { bookingLink, deriveLinks, navUrl } from '../links';
 import type { PlaceWithOverride } from '../store';
 import type { Status } from '../types';
+import { estimateBaseStopMinutes, estimateStopMinutes, formatMinutes, parseDurationMinutes } from '../schedule';
 import { DAYS, dayColor, dayDateLabel } from '../trip';
 
 const CollabBlock = lazy(() => import('./CollabBlock'));
@@ -16,6 +17,7 @@ interface Props {
   onStatus: (id: string, status: Status) => void;
   onAssignDay: (id: string, day: number | null) => void;
   onNote: (id: string, note: string) => void;
+  onTimeMinutes: (id: string, minutes: number | null) => void;
   /** Present only for user-added places: opens the edit form. */
   onEdit?: () => void;
   /** Trip-mode: whether this place is marked visited. */
@@ -63,6 +65,7 @@ export default function DetailPanel({
   onStatus,
   onAssignDay,
   onNote,
+  onTimeMinutes,
   onEdit,
   isDone = false,
   onToggleDone,
@@ -85,6 +88,32 @@ export default function DetailPanel({
   const booking = bookingLink(links);
   // The primary button lives at the top; don't repeat it in the chip list.
   const chipLinks = links.filter((l) => l !== booking);
+  const [timeDraft, setTimeDraft] = useState('');
+  const [timeMsg, setTimeMsg] = useState<string | null>(null);
+
+  useEffect(() => {
+    setTimeDraft(p.timeMinutes != null ? String(p.timeMinutes) : p.timeNeeded ?? '');
+    setTimeMsg(null);
+  }, [p.id, p.timeMinutes, p.timeNeeded]);
+
+  function saveTimeDraft() {
+    const raw = timeDraft.trim();
+    if (!raw) {
+      onTimeMinutes(p.id, null);
+      setTimeMsg('Time estimate cleared');
+      return;
+    }
+    const minutes = parseDurationMinutes(raw);
+    if (minutes == null) {
+      setTimeMsg('Use 45m, 1h 30m, 90, or half day');
+      return;
+    }
+    onTimeMinutes(p.id, minutes);
+    setTimeMsg(`Set to ${formatMinutes(minutes)}`);
+  }
+
+  const autoEstimate = estimateBaseStopMinutes(p);
+  const activeEstimate = estimateStopMinutes(p);
 
   return (
     <div className="detail-panel">
@@ -141,6 +170,57 @@ export default function DetailPanel({
           ))}
         </p>
       )}
+
+      <div className="detail-time-box">
+        <div className="detail-time-head">
+          <strong>Time estimate</strong>
+          <span className="detail-time-active">{formatMinutes(activeEstimate.minutes)}</span>
+        </div>
+        <div className="detail-time-row">
+          <span className="detail-time-label">
+            Auto: {formatMinutes(autoEstimate.minutes)}
+            {p.timeMinutes != null && <span className="detail-time-note"> override active</span>}
+          </span>
+          <span className="detail-time-source">
+            {activeEstimate.source === 'override' ? 'manual' : activeEstimate.source}
+          </span>
+        </div>
+        <div className="detail-time-edit">
+          <input
+            className="time-input"
+            type="text"
+            inputMode="text"
+            value={timeDraft}
+            onChange={(e) => setTimeDraft(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                saveTimeDraft();
+              }
+            }}
+            placeholder="1h 30m, 45m, half day"
+          />
+          <button className="detail-time-set" onClick={saveTimeDraft}>
+            Set
+          </button>
+          {p.timeMinutes != null && (
+            <button
+              className="detail-time-clear"
+              onClick={() => {
+                onTimeMinutes(p.id, null);
+                setTimeDraft(p.timeNeeded ?? '');
+                setTimeMsg('Override cleared');
+              }}
+            >
+              Reset
+            </button>
+          )}
+        </div>
+        <div className="detail-time-foot">
+          Used by Today, Itinerary, and route previews to recalculate the clock.
+        </div>
+        {timeMsg && <div className="detail-time-msg">{timeMsg}</div>}
+      </div>
 
       {/* ---- Group votes (always visible); comments collapsed to save space ---- */}
       <Suspense fallback={<p className="loading-dot">Loading comments…</p>}>
