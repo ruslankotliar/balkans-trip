@@ -1457,7 +1457,7 @@ export default function App() {
             title="Tasks & shopping list"
             onClick={() => setEssentialsOpen(true)}
           >
-            ✅
+            ✅ Tasks
           </button>
           <button
             className={`mode-pill ${mode}`}

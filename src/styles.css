@@ -50,7 +50,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 .filter-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 6px;
 }
 
 .chip {
@@ -1319,10 +1319,11 @@ body.trip-mode .detail-nav-btn {
   border: 1.5px solid #27ae60;
   border-radius: 16px;
   background: #fff;
-  font-size: 16px;
-  padding: 3px 9px;
+  color: #1e8449;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 11px;
   cursor: pointer;
-  line-height: 1;
   white-space: nowrap;
 }
 
