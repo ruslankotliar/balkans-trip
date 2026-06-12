@@ -166,7 +166,7 @@ export interface DayHint {
 export const DAY_HINTS: Record<number, DayHint> = {
   1:  { icon: '🌑', text: 'New moon tonight — best dark sky of the trip (Jun 16–18). Paklenica NP: call camp at 08:00 (+385 23 369 452) if walking in.' },
   2:  { icon: '🪂', text: 'Canyoning start early (09:00 latest). Leave Omiš by 13:00 if doing Biokovo/airport tomorrow.' },
-  3:  { icon: '🏔️', text: 'Leave Makarska by 14:30–15:00 sharp for ~19:00 airport pickup. Biokovo: booked? 20-car cap/hour.' },
+  3:  { icon: '🏔️', text: 'Leave Makarska by 13:00–13:30 sharp — flight lands 17:20, plan to be at arrivals by 17:30. Biokovo: booked? 20-car cap/hour.' },
   4:  { icon: '🧱', text: 'Dubrovnik walls: arrive 07:30 — crowds pack in from 10:00. Use Ploče Gate side.' },
   5:  { icon: '⛴', text: 'Mljet ferry (Prapratno → Sobra): cars are first-come, ticket does not reserve deck space. Queue 90+ min early on Saturday. Best target: 10:15 sailing; 13:00 is the last comfortable outbound. 17:00 arrives 17:45 = plan-B only.' },
   6:  { icon: '💧', text: 'Kravica: arrive before 09:00 — packed with tour buses by 11:00. Mostar Stari Most glows amber at sunset.' },

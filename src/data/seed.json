@@ -246,8 +246,8 @@
     "category": "other",
     "lat": 42.5614,
     "lng": 18.2682,
-    "description": "HARD ANCHOR: pick up the 4th person at Dubrovnik Airport on Thu Jun 18 around 19:00. Days 1–3 have to land here on time before the full group loop begins.",
-    "bestTime": "Day 3 (Jun 18) — leave Makarska by 14:30–15:00 latest. Build in Pelješac Bridge / Ston buffer and aim to reach DBV by 18:30.",
+    "description": "HARD ANCHOR: pick up the 4th person at Dubrovnik Airport (Čilipi) on Thu Jun 18 — flight arrives 17:20, she's out by ~17:45. Days 1–3 have to land here on time before the full group loop begins.",
+    "bestTime": "Day 3 (Jun 18) — leave Makarska by 13:00–13:30 latest. Flight lands 17:20; plan to be at arrivals by 17:30. Drive Makarska→DBV is ~2.5h without stops.",
     "tags": [
       "logistics",
       "fixed-date",
