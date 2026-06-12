@@ -46,7 +46,7 @@ import {
 import { bookingFor, type SourceLink } from './links';
 import { fetchRoute, fetchTable, fetchTrip, routeKey, type LatLng } from './osrm';
 import { solveOrder, type SolveResult } from './solver';
-import { buildGpx, buildKml, downloadText } from './exports';
+import { downloadText } from './exports';
 import {
   decodePlan,
   encodePlan,
@@ -1737,28 +1737,6 @@ export default function App() {
               onFindSleep={findSleepAlongDay}
               dayNotes={dayNotes}
             />
-            <div className="itin-export-row">
-              <button
-                className="itin-export-btn"
-                title="Download KML — open in Organic Maps or Google My Maps for offline navigation"
-                onClick={() => {
-                  const assigned = places.filter((p) => p.day);
-                  downloadText(buildKml(assigned, routes, 'day'), 'balkans-trip.kml', 'application/vnd.google-earth.kml+xml');
-                }}
-              >
-                ⬇ KML (Organic Maps)
-              </button>
-              <button
-                className="itin-export-btn"
-                title="Download GPX — for GPS devices and hiking apps"
-                onClick={() => {
-                  const assigned = places.filter((p) => p.day);
-                  downloadText(buildGpx(assigned, routes), 'balkans-trip.gpx', 'application/gpx+xml');
-                }}
-              >
-                ⬇ GPX (hiking apps)
-              </button>
-            </div>
           </>
         )}
 
