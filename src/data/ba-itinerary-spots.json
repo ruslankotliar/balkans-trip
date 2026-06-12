@@ -1,0 +1,126 @@
+[
+  {
+    "id": "ba-trebevic-cable-car",
+    "name": "Trebević Cable Car (Žičara)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.8555,
+    "lng": 18.4351,
+    "description": "Rebuilt gondola cable car (reopened 2018) running 2.1 km from Bistrik neighbourhood in Sarajevo up to Vidikovac peak on Mt Trebević at 1,160 m. 7–9 min ride; at the top: panoramic views and a 10–20 min walk to the abandoned 1984 Olympic bobsled track — now an eerie street-art gallery.",
+    "communityNotes": "Widely praised as a highlight of Sarajevo. 'The fast way up to incredible views and favourite picnic spots for locals.' The tourist vs local price difference (15 KM vs 4 KM one-way) is regularly criticised but most rate it worth it. Walk to the bobsled track is easy (15–20 min stroll); the graffiti-covered tunnel is atmospheric. Mon opens 12:00 (later than other days) — verify at zicara.ba the day before.",
+    "sources": [
+      "https://bosnianvoyager.com/sarajevo-cable-car-trebevic/",
+      "https://www.zicara.ba/en/service-info",
+      "https://www.tripadvisor.com/Attraction_Review-g294450-d26305743-Reviews-Sarajevska_zicara-Sarajevo_Sarajevo_Canton_Federation_of_Bosnia_and_Herzegovina.html"
+    ],
+    "cost": "15 KM one-way / 20 KM return pp (tourist price ~€8/€10). BiH citizens 4/6 KM.",
+    "timeNeeded": "2–3h (cable car + bobsled track walk)",
+    "bestTime": "Day 7 (Jun 22, Monday) — opens 12:00 on Mondays (confirm at zicara.ba). Sequence: Blagaj morning → Konjic kayak/swim → Sarajevo afternoon → cable car 12:00–14:30 → bobsled track walk → Žuta Tabija sunset. Skip if behind schedule — Day 7 is already a full drive day.",
+    "tags": ["views", "cable-car", "sarajevo", "olympic-history"],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-cafe-de-alma-mostar",
+    "name": "Café de Alma",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.3374,
+    "lng": 17.8141,
+    "description": "Tiny traditional coffee house tucked in a quiet alley behind Tabačica Mosque, 20 m west of Stari Most. Beans are roasted, ground, and brewed in front of you — the barista sits with each group and explains the full Bosnian coffee ritual and its cultural history. Cash only.",
+    "communityNotes": "Consistently described as 'a magical hidden gem of something authentic' and 'an experience more than just having a coffee.' Called 'the best little coffee house in Mostar' across multiple independent reviews. Away from the tourist strip — 'a perfect escape from the busy crowds.' ⚠️ CLOSED MONDAY — only fits Day 6 (Sunday) for this group.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g295388-d10127794-Reviews-Cafe_de_Alma-Mostar_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Herzegov.html",
+      "https://www.likealocalguide.com/mostar/cafe-de-alma"
+    ],
+    "cost": "~3–5 KM per coffee (~€1.50–2.50)",
+    "timeNeeded": "30–45 min",
+    "bestTime": "Day 6 (Jun 21, Sunday) — ⚠️ CLOSED MONDAY, so Day 6 is the ONLY day this works. Open Tue–Sun 09:30–18:00. 20 m behind Stari Most on the west bank. Late afternoon (17:00) to catch it before closing.",
+    "tags": ["coffee", "bosnian-culture", "hidden-gem", "mostar-old-town"],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "ba-fortica-mostar",
+    "name": "Fortica Hill — Skywalk & Zipline",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.3455,
+    "lng": 17.8320,
+    "description": "Hilltop above Mostar's old town (500 m elevation) with a FREE 42-metre glass-floored skywalk giving a bird's-eye view of Stari Most and the Neretva gorge. Fortica Sports and Adventure Park operates a two-cable zipline (570 m + 430 m, max 90 km/h). Most visitors drive the 5 km rather than hike (1.5h).",
+    "communityNotes": "The skywalk is free — 'perhaps Europe's most affordable adrenaline experience.' Zipline operator: ZIPLine Fortica (zipline.ba), Tekija 73A. Both zipline cables: 50 KM/person. Via ferrata routes (A easy, C medium): 5–10 KM equipment hire. The hike up has open views throughout. Not reachable by public transport — drive or taxi. Call ahead to confirm opening: +387 62 115 100.",
+    "sources": [
+      "https://zipline.ba/price-list/",
+      "https://bosnianvoyager.com/fortica-mostar/",
+      "https://lyfeabroad.com/hiking-to-the-fortica-skywalk-in-mostar/"
+    ],
+    "cost": "Skywalk free. Both zipline cables: 50 KM/pp (~€25). Via ferrata equipment: 5–10 KM.",
+    "timeNeeded": "1.5–3h (depending on activities)",
+    "bestTime": "Day 6 (Jun 21) morning — morning for clearest views of Stari Most. Drive 5 km from town. Call +387 62 115 100 ahead to confirm open. Sequence: Kravica 07:00 → Počitelj 09:30 → Fortica 10:30 → Stari Most afternoon.",
+    "tags": ["views", "zipline", "adventure", "mostar", "via-ferrata", "free"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-sniper-tower-mostar",
+    "name": "Sniper Tower (Ljubljanska Banka)",
+    "country": "BA",
+    "category": "sight",
+    "lat": 43.3441,
+    "lng": 17.8063,
+    "description": "The former Ljubljanska Bank — 8-storey modernist tower at Spanish Square, ~1 km from Stari Most. Mostar's tallest building during the Bosnian War, used as a sniper position overlooking the siege front line. Post-war: covered in large anti-war murals and graffiti. Exterior is striking and free.",
+    "communityNotes": "Worth seeing from outside — impactful war remnant. Interior: officially not permitted, ground floor boarded up, stairwells with no handrails, unguarded lift shafts. Reports from 2021 describe genuinely dangerous conditions. Exterior only is the sensible call. No official plaque or acknowledgement. Atlas Obscura lists it; 'In Your Pocket' confirms exterior-only is the recommended visit.",
+    "sources": [
+      "https://www.atlasobscura.com/places/mostar-sniper-tower",
+      "https://www.inyourpocket.com/mostar/ljubljanska-banka-sniper-tower_166605v",
+      "https://flyingfluskey.com/mostar-sniper-tower/"
+    ],
+    "cost": "Free (exterior)",
+    "timeNeeded": "20–30 min",
+    "bestTime": "Day 6 (Jun 21) afternoon — 15-min walk west from Stari Most toward the Bulevar. Exterior only (interior is genuinely dangerous). Combine with Stari Most and old town wandering.",
+    "tags": ["dark-tourism", "war-history", "mostar", "free"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-sand-pyramids-foca",
+    "name": "Sand Pyramids (Pješčane Piramide, Daničići)",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.5232,
+    "lng": 18.6891,
+    "description": "Natural erosion columns of sandy clay and gravel rising up to 20 m in Daničići village, 9 km from Foča toward Sarajevo. Called 'Bosnian Colorado' for their pyramid shapes. Free site with a viewing stairway. Confirmed on the direct Sarajevo → Foča → Sutjeska NP driving route — NOT the Bosnian Pyramids in Visoko.",
+    "communityNotes": "Signposted from the main Foča–Sarajevo road. Access road ~6 km narrow macadam — passable by normal car in dry conditions; avoid after rain (muddy). No facilities. A 'quick stop' realistically adds 1.5h (drive in/out + 30–60 min on site). Skip if already behind schedule — Day 8 is a long drive day with the Tara raft. Best photography before 13:00.",
+    "sources": [
+      "https://www.inyourpocket.com/foca/sand-pyramids_166436v",
+      "https://montenegro-for.me/2014/06/amazing-foca-bh-from-sand-pyramids-to-sutjeska-national-park/",
+      "https://adria.fun/en/the-sand-pyramids-foca-bosnia/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1–1.5h (including drive from main road)",
+    "bestTime": "Day 8 (Jun 23) en route — signposted off the Sarajevo → Foča road, 9 km before Foča. Adds ~1.5h. Worth it only if departing Sarajevo by 06:30 (leaves time before the 10:00 Tara raft start). Skip confidently if behind schedule.",
+    "tags": ["geology", "off-beat", "free", "foca-route", "sutjeska-corridor"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-sarajevo-pivara",
+    "name": "Sarajevska Pivara (HS Pivara Brewery)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.8605,
+    "lng": 18.4195,
+    "description": "Historic 1864 brewery at Franjevačka 15 with a small war-history museum (5 KM) and the working Pivnica HS beer hall serving unfiltered, dark, and lager drafts in a dark-wood interior with evening live music.",
+    "communityNotes": "Museum praised as genuinely interesting and cheap (5 KM ~€2.50). Beer hall reviews mixed: beers called 'really good unfiltered,' atmosphere 'stylish and fun' (Apr 2025), but service can be slow and unwelcoming. Best for beer/history interest. Museum hours: Mon–Sat 11:00–17:30. Beer hall: daily 10:00–midnight.",
+    "sources": [
+      "https://pivnicahs.com/muzej/?lang=en",
+      "https://www.tripadvisor.com/Attraction_Review-g294450-d2284750-Reviews-Sarajevska_Pivara-Sarajevo_Sarajevo_Canton_Federation_of_Bosnia_and_Herzegovina.html"
+    ],
+    "cost": "Museum: 5 KM (~€2.50). Draft beer: ~7.5 KM. Meat platter ~20 KM for two.",
+    "timeNeeded": "1–1.5h (museum + a beer)",
+    "bestTime": "Day 7 (Jun 22) evening — museum open Mon–Sat 11:00–17:30 (Jun 22 is Monday, open). Beer hall until midnight. Franjevačka 15, near the old town. Good pre-dinner stop on arrival day.",
+    "tags": ["brewery", "history", "sarajevo", "beer", "museum"],
+    "rating": 3,
+    "status": "candidate"
+  }
+]

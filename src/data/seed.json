@@ -195,10 +195,12 @@
     "category": "sight",
     "lat": 43.1339,
     "lng": 17.7261,
-    "description": "Ottoman hillside fortress village on the Neretva, basically on the Mostar–coast road. Quick climb to the tower for the view. Free 30-min stop if passing at golden hour.",
-    "timeNeeded": "1h",
-    "status": "backup",
-    "communityNotes": "\"The village is only a 10-min stop but the climb to the Gavankula tower gives a great view over the Neretva. Worth it if passing.\" Literally on the road between coast and Mostar — no detour. Ottoman clock tower + mosque + old houses. Entrance free (tower may charge €1-2). \"It's small but very picturesque — the contrast of the pale stone against the Neretva below.\" Combine with Kravica in the same morning (Kravica at 07:00, Počitelj 09:30, Mostar by 11:00)."
+    "description": "Ottoman hillside fortress village on the Neretva, literally on the Mostar–coast road (N17). Pale stone houses, a 16th-century mosque, and the Gavankula clock tower up on the hill. Zero detour — the car park is right off the highway.",
+    "timeNeeded": "45–60 min",
+    "status": "shortlist",
+    "communityNotes": "\"The village is only a 10-min stop but the climb to the Gavankula tower gives a great view over the Neretva. Worth it if passing.\" Recommended by a group member who has done the route. Ottoman clock tower + mosque + old fortified houses. Free (tower: €1-2). \"It's small but very picturesque — the contrast of the pale stone against the Neretva below.\" Combine with Kravica in the same morning: Kravica 07:00 → Počitelj 09:30 → Mostar by 11:00.",
+    "sources": ["https://www.inyourpocket.com/mostar/pocitelj_82038v"],
+    "bestTime": "Day 6 (Jun 21) mid-morning — leave Kravica 09:00, arrive Počitelj 09:30. Free (small tower fee €1-2). Combine with Kravica 07:00 early swim and arrive Mostar by 11:00. Midday heat on the stone hill can be brutal — early is better."
   },
   {
     "id": "ba-trebinje",
