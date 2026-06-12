@@ -2339,6 +2339,7 @@ export default function App() {
         <Suspense fallback={<DialogFallback title="Loading essentials…" />}>
           <LazyEssentials
             onClose={() => setEssentialsOpen(false)}
+            tripMode={mode === 'trip'}
             onShowPin={focusPin}
             onShowPlace={focusPin}
             bookEarlyStays={bookEarlyStays}

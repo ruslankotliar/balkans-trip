@@ -57,6 +57,8 @@ function saveTasks(t: Task[]) {
 
 interface Props {
   onClose: () => void;
+  /** Trip mode defaults the accordion to the most urgent on-road section. */
+  tripMode?: boolean;
   /** Focus the map on a hospital pin by id (from contingency-places.json). */
   onShowPin?: (pinId: string) => void;
   /** Focus the map/detail panel on a place id. */
@@ -120,9 +122,15 @@ function Section({ id, title, openId, onToggle, children }: SectionProps) {
   );
 }
 
-export default function Essentials({ onClose, onShowPin, onShowPlace, bookEarlyStays }: Props) {
-  // Emergency open by default — it's the one-tap-when-it-matters card.
-  const [openId, setOpenId] = useState<string | null>('tasks');
+export default function Essentials({
+  onClose,
+  tripMode = false,
+  onShowPin,
+  onShowPlace,
+  bookEarlyStays,
+}: Props) {
+  // Trip mode defaults to emergency info; planning mode defaults to tasks.
+  const [openId, setOpenId] = useState<string | null>(tripMode ? 'emergency' : 'tasks');
   const toggle = (id: string) => setOpenId((cur) => (cur === id ? null : id));
 
   // ---- Task list state ----

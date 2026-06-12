@@ -1987,6 +1987,10 @@ li.itin-sleep-stop {
   font-size: 15px;
   line-height: 1.5;
 }
+.today-next.late {
+  background: #fff7ea;
+  border-color: #f0d060;
+}
 .today-next strong {
   cursor: pointer;
 }
@@ -2011,6 +2015,16 @@ li.itin-sleep-stop {
   font-size: 12px;
   color: #555;
   line-height: 1.4;
+}
+.today-next-recovery {
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 1.35;
+  color: #8a5b00;
+  background: #fff8e8;
+  border-left: 2px solid #e8b800;
+  padding: 3px 6px;
+  border-radius: 0 4px 4px 0;
 }
 .today-stop-hint {
   margin: 1px 0 4px 50px;

@@ -169,6 +169,11 @@ export default function Today({
   const nextFerryH =
     next && nextIdx > 0 ? ferryFor(stops[nextIdx - 1].id, next.id) : 0;
   const nextGpsKm = next ? kmFromGps(next.lat, next.lng) : null;
+  const scheduleOverSec = schedule?.overSec ?? 0;
+  const recovery = schedule && scheduleOverSec > 0 ? schedule.recovery[0] ?? null : null;
+  const recoveryText = recovery
+    ? `Fastest catch-up: skip ${formatRecoveryNames(recovery.names)} to recover ${formatDuration(recovery.freedSec)}`
+    : null;
 
   return (
     <div className="today">
@@ -231,40 +236,8 @@ export default function Today({
         <div className="today-ops">{DAY_OPS[day]}</div>
       )}
 
-      {schedule && (
-        <div className="today-clock">
-          <div className="today-clock-row">
-            <span>Start {formatClock(schedule.dayStartSec)}</span>
-            <span>Finish {formatClock(schedule.finishSec)}</span>
-            <span
-              className={`today-clock-balance ${
-                schedule.overSec > 0 ? 'late' : 'slack'
-              }`}
-            >
-              {schedule.overSec > 0
-                ? `+${formatDuration(schedule.overSec)} late`
-                : `${formatDuration(schedule.slackSec)} slack`}
-            </span>
-          </div>
-          <div className="today-clock-row today-clock-small">
-            <span>Drive {formatDuration(schedule.driveSec)}</span>
-            <span>Stops {formatDuration(schedule.staySec)}</span>
-            {schedule.ferrySec > 0 && <span>Ferry {formatDuration(schedule.ferrySec)}</span>}
-          </div>
-          {schedule.overSec > 0 && schedule.recovery.length > 0 && (
-            <div className="today-recovery">
-              <strong>Fastest catch-up (approx):</strong>{' '}
-              <span>
-                skip {formatRecoveryNames(schedule.recovery[0].names)} to recover{' '}
-                {formatDuration(schedule.recovery[0].freedSec)}
-              </span>
-            </div>
-          )}
-        </div>
-      )}
-
       {isToday && stops.length > 0 && (
-        <div className="today-next">
+        <div className={`today-next ${scheduleOverSec > 0 ? 'late' : ''}`}>
           {next ? (
             <>
               <span className="today-next-label">Next →</span>{' '}
@@ -296,6 +269,26 @@ export default function Today({
           ) : (
             <span>All stops done 🎉</span>
           )}
+          {recoveryText && <div className="today-next-recovery">{recoveryText}</div>}
+        </div>
+      )}
+
+      {schedule && (
+        <div className="today-clock">
+          <div className="today-clock-row">
+            <span>Start {formatClock(schedule.dayStartSec)}</span>
+            <span>Finish {formatClock(schedule.finishSec)}</span>
+            <span className={`today-clock-balance ${scheduleOverSec > 0 ? 'late' : 'slack'}`}>
+              {scheduleOverSec > 0
+                ? `+${formatDuration(scheduleOverSec)} late`
+                : `${formatDuration(schedule.slackSec)} slack`}
+            </span>
+          </div>
+          <div className="today-clock-row today-clock-small">
+            <span>Drive {formatDuration(schedule.driveSec)}</span>
+            <span>Stops {formatDuration(schedule.staySec)}</span>
+            {schedule.ferrySec > 0 && <span>Ferry {formatDuration(schedule.ferrySec)}</span>}
+          </div>
         </div>
       )}
 
