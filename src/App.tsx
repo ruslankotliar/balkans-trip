@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { Suspense, lazy, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
 import L from 'leaflet';
 import {
   CircleMarker,
@@ -9,16 +9,11 @@ import {
   useMap,
   useMapEvents,
 } from 'react-leaflet';
-import AddPlace, { type DraftPlace } from './components/AddPlace';
-import CorridorPanel, { type CorridorMatch } from './components/CorridorPanel';
+import { type DraftPlace } from './components/AddPlace';
 import DetailPanel from './components/DetailPanel';
-import Essentials from './components/Essentials';
-import Itinerary from './components/Itinerary';
-import Review from './components/Review';
-import RouteBuilder from './components/RouteBuilder';
 import { ImportPrompt, ShareButton } from './components/SharePlan';
-import Today, { type ProximityMatch } from './components/Today';
-import WhoAreYou from './components/WhoAreYou';
+import { type CorridorMatch } from './components/CorridorPanel';
+import { type ProximityMatch } from './components/Today';
 import {
   addCommentLocal,
   buildTallies,
@@ -89,6 +84,35 @@ import {
 } from './trip';
 import type { Category, Country, Place, Status } from './types';
 import { useDayRoutes } from './useDayRoutes';
+
+const AddPlace = lazy(() => import('./components/AddPlace'));
+const CorridorPanel = lazy(() => import('./components/CorridorPanel'));
+const Today = lazy(() => import('./components/Today'));
+const WhoAreYou = lazy(() => import('./components/WhoAreYou'));
+const LazyEssentials = lazy(() => import('./components/Essentials'));
+const LazyReview = lazy(() => import('./components/Review'));
+const LazyItinerary = lazy(() => import('./components/Itinerary'));
+const LazyRouteBuilder = lazy(() => import('./components/RouteBuilder'));
+
+function PanelFallback({ text }: { text: string }) {
+  return (
+    <div className="place-list-empty">
+      <p>{text}</p>
+      <p className="loading-dot">Loading…</p>
+    </div>
+  );
+}
+
+function DialogFallback({ title }: { title: string }) {
+  return (
+    <div className="import-overlay" role="dialog" aria-modal="true">
+      <div className="import-modal">
+        <h2>{title}</h2>
+        <p className="loading-dot">Loading…</p>
+      </div>
+    </div>
+  );
+}
 
 type View = 'places' | 'itinerary' | 'route' | 'review';
 
@@ -380,6 +404,7 @@ export default function App() {
   const [tagFilter, setTagFilter] = useState<Set<string>>(new Set());
   const [voteFilter, setVoteFilter] = useState<VoteFilter>('all');
   const [search, setSearch] = useState('');
+  const deferredSearch = useDeferredValue(search);
 
   // One-tap filter presets (filtering-convenience: common flows in 1–2 taps).
   const setEq = <T,>(set: Set<T>, arr: readonly T[]) =>
@@ -510,8 +535,8 @@ export default function App() {
   }, [places]);
 
   const matchesText = (p: PlaceWithOverride) => {
-    if (search === '') return true;
-    const q = search.toLowerCase();
+    if (deferredSearch === '') return true;
+    const q = deferredSearch.toLowerCase();
     return (
       p.name.toLowerCase().includes(q) ||
       (p.note ?? '').toLowerCase().includes(q) ||
@@ -1434,40 +1459,42 @@ export default function App() {
         </div>
 
         {mode === 'trip' ? (
-          <Today
-            day={tripDay}
-            realDay={isDuringTrip() ? currentTripDay() : -1}
-            onDay={setTripDay}
-            stops={todayStops}
-            route={routes[tripDay]}
-            ferryFor={(a, b) => ferryHours[ferryPairKey(a, b)] ?? 0}
-            done={doneIds}
-            onToggleDone={toggleDone}
-            onSkip={skipStop}
-            onSelect={selectPlace}
-            kmFromGps={(lat, lng) =>
-              gpsFix ? haversineKm(gpsFix.lat, gpsFix.lng, lat, lng) : null
-            }
-            sleepOpen={sleepOpen}
-            onToggleSleep={() => {
-              setSleepOpen((s) => !s);
-              setNearOpen(false);
-            }}
-            sleepMatches={sleepMatches}
-            nearOpen={nearOpen}
-            onToggleNear={() => {
-              setNearOpen((s) => !s);
-              setSleepOpen(false);
-            }}
-            nearMatches={nearMatches}
-            anchorLabel={tripAnchor?.label ?? null}
-            onAddPlace={openAddPlace}
-            onEssentials={() => setEssentialsOpen(true)}
-            totalPlanned={totalPlanned}
-            totalDone={totalDone}
-            dayNote={dayNotes[tripDay] ?? ''}
-            onDayNote={(text) => setDayNote(tripDay, text)}
-          />
+          <Suspense fallback={<PanelFallback text="Loading trip view…" />}>
+            <Today
+              day={tripDay}
+              realDay={isDuringTrip() ? currentTripDay() : -1}
+              onDay={setTripDay}
+              stops={todayStops}
+              route={routes[tripDay]}
+              ferryFor={(a, b) => ferryHours[ferryPairKey(a, b)] ?? 0}
+              done={doneIds}
+              onToggleDone={toggleDone}
+              onSkip={skipStop}
+              onSelect={selectPlace}
+              kmFromGps={(lat, lng) =>
+                gpsFix ? haversineKm(gpsFix.lat, gpsFix.lng, lat, lng) : null
+              }
+              sleepOpen={sleepOpen}
+              onToggleSleep={() => {
+                setSleepOpen((s) => !s);
+                setNearOpen(false);
+              }}
+              sleepMatches={sleepMatches}
+              nearOpen={nearOpen}
+              onToggleNear={() => {
+                setNearOpen((s) => !s);
+                setSleepOpen(false);
+              }}
+              nearMatches={nearMatches}
+              anchorLabel={tripAnchor?.label ?? null}
+              onAddPlace={openAddPlace}
+              onEssentials={() => setEssentialsOpen(true)}
+              totalPlanned={totalPlanned}
+              totalDone={totalDone}
+              dayNote={dayNotes[tripDay] ?? ''}
+              onDayNote={(text) => setDayNote(tripDay, text)}
+            />
+          </Suspense>
         ) : (
         <>
         <p className="subtitle">
@@ -1604,16 +1631,18 @@ export default function App() {
         )}
 
         {corridor && (
-          <CorridorPanel
-            label={corridor.label}
-            stops={corridor.stops}
-            radius={corridorRadius}
-            onRadius={setCorridorRadius}
-            matches={corridorMatches}
-            selectedId={selectedId}
-            onSelect={selectPlace}
-            onClose={() => setCorridor(null)}
-          />
+          <Suspense fallback={<PanelFallback text="Loading corridor view…" />}>
+            <CorridorPanel
+              label={corridor.label}
+              stops={corridor.stops}
+              radius={corridorRadius}
+              onRadius={setCorridorRadius}
+              matches={corridorMatches}
+              selectedId={selectedId}
+              onSelect={selectPlace}
+              onClose={() => setCorridor(null)}
+            />
+          </Suspense>
         )}
 
         {!corridor && view === 'places' && (
@@ -1725,70 +1754,76 @@ export default function App() {
         )}
 
         {!corridor && view === 'review' && (
-          <Review
-            places={places}
-            onStatus={setStatus}
-            onExit={() => setView('places')}
-            onSelect={(p) => { selectPlace(p); }}
-            selectedId={selectedId}
-          />
+          <Suspense fallback={<PanelFallback text="Loading triage view…" />}>
+            <LazyReview
+              places={places}
+              onStatus={setStatus}
+              onExit={() => setView('places')}
+              onSelect={(p) => { selectPlace(p); }}
+              selectedId={selectedId}
+            />
+          </Suspense>
         )}
 
         {!corridor && view === 'itinerary' && (
-          <>
-            <div className="itin-header-row">
-              <button
-                className="route-builder-btn"
-                title="Build an optimized multi-day road trip from selected places"
-                onClick={() => setView('route')}
-              >
-                Route builder →
-              </button>
-            </div>
-            <Itinerary
-              places={places}
-              routes={routes}
-              routesLoading={routesLoading}
-              realDay={isDuringTrip() ? currentTripDay() : -1}
-              ferrySecByDay={dayFerrySec}
-              selectedId={selectedId}
-              onSelect={selectPlace}
-              onMove={moveInDay}
-              onAssignDay={assignDay}
-              onFindSleep={findSleepAlongDay}
-              dayNotes={dayNotes}
-            />
-          </>
+          <Suspense fallback={<PanelFallback text="Loading itinerary…" />}>
+            <>
+              <div className="itin-header-row">
+                <button
+                  className="route-builder-btn"
+                  title="Build an optimized multi-day road trip from selected places"
+                  onClick={() => setView('route')}
+                >
+                  Route builder →
+                </button>
+              </div>
+              <LazyItinerary
+                places={places}
+                routes={routes}
+                routesLoading={routesLoading}
+                realDay={isDuringTrip() ? currentTripDay() : -1}
+                ferrySecByDay={dayFerrySec}
+                selectedId={selectedId}
+                onSelect={selectPlace}
+                onMove={moveInDay}
+                onAssignDay={assignDay}
+                onFindSleep={findSleepAlongDay}
+                dayNotes={dayNotes}
+              />
+            </>
+          </Suspense>
         )}
 
         {!corridor && view === 'route' && (
-          <RouteBuilder
-            candidates={visible}
-            selectedIds={rbSelected}
-            onToggleSelect={toggleRbSelect}
-            onSelectAllShortlisted={selectAllShortlisted}
-            onClearSelection={clearRbSelection}
-            startId={rbStart}
-            endId={rbEnd}
-            onStart={setRbStart}
-            onEnd={setRbEnd}
-            anchorIds={rbAnchors}
-            onToggleAnchor={toggleAnchor}
-            onMoveAnchor={moveAnchor}
-            onBuild={buildRoute}
-            building={rbBuilding}
-            error={rbError}
-            trip={rbTrip}
-            tripPlaces={rbInputPlaces}
-            getLegFerry={(a, b) => ferryHours[ferryPairKey(a, b)] ?? 0}
-            onSetLegFerry={setLegFerry}
-            maxHours={rbMaxHours}
-            onMaxHours={setRbMaxHours}
-            onApplyToDays={applyTripToDays}
-            split={rbSplit}
-            onFocus={selectPlace}
-            onFindSleep={findSleepAlongTrip}
-          />
+          <Suspense fallback={<PanelFallback text="Loading route builder…" />}>
+            <LazyRouteBuilder
+              candidates={visible}
+              selectedIds={rbSelected}
+              onToggleSelect={toggleRbSelect}
+              onSelectAllShortlisted={selectAllShortlisted}
+              onClearSelection={clearRbSelection}
+              startId={rbStart}
+              endId={rbEnd}
+              onStart={setRbStart}
+              onEnd={setRbEnd}
+              anchorIds={rbAnchors}
+              onToggleAnchor={toggleAnchor}
+              onMoveAnchor={moveAnchor}
+              onBuild={buildRoute}
+              building={rbBuilding}
+              error={rbError}
+              trip={rbTrip}
+              tripPlaces={rbInputPlaces}
+              getLegFerry={(a, b) => ferryHours[ferryPairKey(a, b)] ?? 0}
+              onSetLegFerry={setLegFerry}
+              maxHours={rbMaxHours}
+              onMaxHours={setRbMaxHours}
+              onApplyToDays={applyTripToDays}
+              split={rbSplit}
+              onFocus={selectPlace}
+              onFindSleep={findSleepAlongTrip}
+            />
+          </Suspense>
         )}
 
         </>
@@ -2070,20 +2105,24 @@ export default function App() {
       />
 
       {addPlaceOpen && (
-        <AddPlace
-          tappedPoint={tappedPoint}
-          gpsFix={gpsFix ? { lat: gpsFix.lat, lng: gpsFix.lng } : null}
-          editing={editingPlace}
-          editingDay={editingId ? overrides[editingId]?.day ?? null : null}
-          editingNote={editingId ? overrides[editingId]?.note ?? '' : ''}
-          onSave={saveDraftPlace}
-          onDelete={editingId ? () => deleteUserPlace(editingId) : undefined}
-          onClose={closeAddPlace}
-        />
+        <Suspense fallback={<DialogFallback title="Loading add place…" />}>
+          <AddPlace
+            tappedPoint={tappedPoint}
+            gpsFix={gpsFix ? { lat: gpsFix.lat, lng: gpsFix.lng } : null}
+            editing={editingPlace}
+            editingDay={editingId ? overrides[editingId]?.day ?? null : null}
+            editingNote={editingId ? overrides[editingId]?.note ?? '' : ''}
+            onSave={saveDraftPlace}
+            onDelete={editingId ? () => deleteUserPlace(editingId) : undefined}
+            onClose={closeAddPlace}
+          />
+        </Suspense>
       )}
 
       {essentialsOpen && (
-        <Essentials onClose={() => setEssentialsOpen(false)} onShowPin={focusPin} />
+        <Suspense fallback={<DialogFallback title="Loading essentials…" />}>
+          <LazyEssentials onClose={() => setEssentialsOpen(false)} onShowPin={focusPin} />
+        </Suspense>
       )}
 
       {importPlan && (
@@ -2099,11 +2138,13 @@ export default function App() {
       )}
 
       {whoOpen && (
-        <WhoAreYou
-          current={whoOpen === 'edit' ? person : null}
-          onSave={saveName}
-          onCancel={whoOpen === 'edit' ? () => setWhoOpen(null) : undefined}
-        />
+        <Suspense fallback={<DialogFallback title="Loading name prompt…" />}>
+          <WhoAreYou
+            current={whoOpen === 'edit' ? person : null}
+            onSave={saveName}
+            onCancel={whoOpen === 'edit' ? () => setWhoOpen(null) : undefined}
+          />
+        </Suspense>
       )}
 
     </div>

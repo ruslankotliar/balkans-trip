@@ -1,10 +1,12 @@
-import CollabBlock from './CollabBlock';
+import { Suspense, lazy } from 'react';
 import type { CommentRow, Tally, VoteValue } from '../collab';
 import { CATEGORY_COLORS, COUNTRY_NAMES, STATUSES } from '../constants';
 import { bookingLink, deriveLinks, navUrl } from '../links';
 import type { PlaceWithOverride } from '../store';
 import type { Status } from '../types';
 import { DAYS, dayColor, dayDateLabel } from '../trip';
+
+const CollabBlock = lazy(() => import('./CollabBlock'));
 
 interface Props {
   place: PlaceWithOverride | null;
@@ -141,16 +143,18 @@ export default function DetailPanel({
       )}
 
       {/* ---- Group votes (always visible); comments collapsed to save space ---- */}
-      <CollabBlock
-        placeId={p.id}
-        person={person}
-        myVote={myVote}
-        tally={tally}
-        comments={comments}
-        onNeedName={onNeedName}
-        onVote={onVote}
-        onComment={onComment}
-      />
+      <Suspense fallback={<p className="loading-dot">Loading comments…</p>}>
+        <CollabBlock
+          placeId={p.id}
+          person={person}
+          myVote={myVote}
+          tally={tally}
+          comments={comments}
+          onNeedName={onNeedName}
+          onVote={onVote}
+          onComment={onComment}
+        />
+      </Suspense>
 
       {/* ---- Planning / editing controls (below the fold is fine — not on-road actions) ---- */}
       {onEdit && (

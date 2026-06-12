@@ -9,6 +9,17 @@ const BASE = '/balkans-trip/';
 
 export default defineConfig({
   base: BASE,
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          leaflet: ['leaflet', 'react-leaflet'],
+          storage: ['lz-string', '@supabase/supabase-js'],
+        },
+      },
+    },
+  },
   plugins: [
     react(),
     VitePWA({

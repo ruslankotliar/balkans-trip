@@ -88,8 +88,9 @@ export const DEFAULT_PLAN: Overrides = {
   // a kitesurfing-heavy Ada Bojana extension.
   'me-stari-bar':            { day: 10, dayOrder: 1 },
   'me-ulcinj-old-town':      { day: 10, dayOrder: 2 },
-  'me-misko-stilt-restaurant': { day: 10, dayOrder: 3 },
-  'me-camp-safari-beach':    { day: 10, dayOrder: 4 },
+  'me-ada-bojana-beach':     { day: 10, dayOrder: 3 },
+  'me-misko-stilt-restaurant': { day: 10, dayOrder: 4 },
+  'me-camp-safari-beach':    { day: 10, dayOrder: 5 },
 
   // ── Day 11: Jun 26 (Fri) — Sveti Stefan → Budva → Kotor → Trebinje ───────
   'me-sveti-stefan':         { day: 11, dayOrder: 1 },

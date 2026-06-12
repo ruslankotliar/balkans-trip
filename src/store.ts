@@ -462,6 +462,32 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
   move('me-ada-bojana-beach', 10, 4, 10, 3);
   move('me-misko-stilt-restaurant', 10, 5, 10, 4);
 
+  // Current seed-plan normalization (v4, Jun 12 2026):
+  // trim the overpacked mountain/inland tails and keep the baseline aligned with
+  // src/defaultPlan.ts for users who already have an older saved override set.
+  clear('hr-biokovo-tollroad', 3, 2);
+  clear('hr-sveti-jure', 3, 3);
+  clear('ba-villa-cold-river-treehouse-bunica', 5, 8);
+  clear('ba-villa-cold-river-treehouse-bunica', 6, 8);
+  clear('ba-boracko-lake', 6, 2);
+  clear('ba-boracko-lake', 7, 2);
+  clear('me-durmitor-katun-krstajic', 7, 7);
+  clear('me-veliki-medjed', 8, 1);
+  clear('me-vrazje-jezero', 8, 2);
+  clear('me-tara-bridge-zipline', 8, 5);
+  clear('me-durmitor-katun-homeland-nest', 8, 7);
+  move('me-zabljak', 8, 3, 8, 2);
+  move('me-oro-zabljak', 8, 4, 8, 3);
+  move('me-gem-zabljak-mountain-spark', 8, 6, 8, 4);
+  move('me-guesthouse-skadar-raicevic', 10, 7, 9, 6);
+  move('me-guesthouse-skadar-raicevic', 10, 8, 9, 6);
+  move('me-guesthouse-skadar-raicevic', 9, 7, 9, 6);
+  clear('me-camp-radoman', 9, 6);
+  clear('me-stari-most-rijeka-crnojevica', 9, 8);
+  clear('me-skadar-rijeka-crnojevica-kayak', 9, 9);
+  clear('me-skadar-pelican-kayak', 9, 10);
+  clear('me-villa-jablan-winery-rvasi', 9, 11);
+
   // Clear any Mljet/island places that leaked to Day 6 (those belong on Day 5 only)
   for (const id of ['hr-mljet-np', 'hr-montokuc-mljet', 'hr-odysseus-cave',
     'hr-camp-marina-mljet', 'hr-camp-lovor-mljet', 'hr-camp-mungos-mljet', 'hr-prapratno-ferry']) {
