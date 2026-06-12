@@ -176,7 +176,7 @@ export const DAY_HINTS: Record<number, DayHint> = {
   10: { icon: '🛐', text: 'Ostrog: cover knees+shoulders (no exceptions). Skadar: mosquitoes vicious at dusk — repellent essential.' },
   11: { icon: '🦟', text: 'Ada Bojana: DEET repellent essential — mosquitoes are severe at dusk on the delta. Sleep at Safari Beach for better facilities; drive/taxi ~10 min to Misko/Barbana. Book dinner ahead or arrive by 18:00. Early night — 06:00 departure for Kotor.' },
   12: { icon: '🚢', text: 'Leave Ada Bojana/Safari by 06:00 if doing Kotor properly. Cruise schedules conflict for Jun 27 (Star Clipper appears consistently; one source also shows Azamara Onward). Treat as cruise-risk: start fortress by 07:30–08:00, be down before 10:00. Use VITALJINA, not Debeli Brijeg.' },
-  13: { icon: '✈️', text: 'Car drop at Dubrovnik Airport (Sicily By Car) by 20:00. Ref: D013947246. Full usable day.' },
+  13: { icon: '✈️', text: 'Flight FR9756: DBV 20:40 → Vienna 22:05. Car drop (Sicily By Car, ref D013947246) by 19:15 — fill fuel first, Ryanair check-in closes 20:00. Full day usable until ~18:30.' },
 };
 
 /**

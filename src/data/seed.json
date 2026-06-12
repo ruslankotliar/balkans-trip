@@ -224,13 +224,13 @@
   },
   {
     "id": "hr-dubrovnik-airport",
-    "name": "Dubrovnik Airport (Čilipi) — car drop-off Jun 28",
+    "name": "Dubrovnik Airport (Čilipi) — car drop & fly Jun 28",
     "country": "HR",
     "category": "other",
     "lat": 42.5614,
     "lng": 18.2682,
-    "description": "FINAL HARD ANCHOR: drop the rental car by 20:00 on Jun 28 (Sicily By Car, ref D013947246). Full day usable before the drop-off; keep passports, rental papers, and fuel receipt easy to reach.",
-    "bestTime": "Day 13 (Jun 28) — arrive by 19:30 for a no-stress 20:00 car drop. Fill fuel before the airport.",
+    "description": "FINAL HARD ANCHOR: drop rental car by 19:15 (Sicily By Car, ref D013947246). Flight FR9756 departs 20:40 DBV→VIE, arrives Vienna 22:05. Ryanair check-in closes 40 min before = must be checked in by 20:00. Keep passports, rental papers, and fuel receipt easy to reach.",
+    "bestTime": "Day 13 (Jun 28) — car drop by 19:15 at latest to have 45 min for fuel+return before check-in closes. Flight FR9756 20:40→VIE 22:05. Full day usable up to ~18:30.",
     "tags": [
       "logistics",
       "fixed-date",

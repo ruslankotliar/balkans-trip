@@ -171,6 +171,17 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
     changed = true;
   }
 
+  // Zavižan (Northern Velebit) is 100km north of Zadar — routes Day 1 into a 6h+ loop. Unschedule.
+  if (next['hr-zavizan-dark-sky']?.day === 1) {
+    clearSchedule(next, 'hr-zavizan-dark-sky');
+    changed = true;
+  }
+  // Zrmanja kayaking is north of Zadar, opposite direction to Paklenica — unschedule from Day 1.
+  if (next['hr-zrmanja-kayaking']?.day === 1) {
+    clearSchedule(next, 'hr-zrmanja-kayaking');
+    changed = true;
+  }
+
   // Jun 2026 itinerary correction: exact old baked-plan positions only.
   clear('hr-anica-kuk', 1, 4);
   clear('hr-villa-stone-house-martelina', 1, 6);

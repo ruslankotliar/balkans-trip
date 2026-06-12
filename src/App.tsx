@@ -141,14 +141,6 @@ const FILTER_PRESETS: FilterPreset[] = [
     categories: SIGHT_CATEGORIES,
   },
   {
-    id: 'favorites',
-    label: '⭐ Group favorites',
-    title: 'Places where ≥2 people voted 👍 (net positive group vote)',
-    categories: CATEGORIES,
-    statuses: NON_REJECTED,
-    vote: 'favorites',
-  },
-  {
     id: 'reset',
     label: '↺ All',
     title: 'Back to the default view (all categories, shortlist + backup)',
@@ -1465,27 +1457,17 @@ export default function App() {
         </p>
 
         <div className="view-tabs">
-          {(['places', 'itinerary', 'route'] as View[]).map((v) => (
-            <button
-              key={v}
-              className={view === v ? 'on' : ''}
-              onClick={() => {
-                setView(v);
-                setCorridor(null);
-              }}
-            >
-              {v === 'places' ? 'Places' : v === 'itinerary' ? 'Itinerary' : 'Route builder'}
-            </button>
-          ))}
           <button
-            className={view === 'review' ? 'on review-tab-btn' : 'review-tab-btn'}
-            onClick={() => {
-              setView('review');
-              setCorridor(null);
-            }}
-            title="Card-by-card triage: shortlist, skip, or reject"
+            className={view === 'places' || view === 'review' ? 'on' : ''}
+            onClick={() => { setView('places'); setCorridor(null); }}
           >
-            Review
+            Places
+          </button>
+          <button
+            className={view === 'itinerary' || view === 'route' ? 'on' : ''}
+            onClick={() => { setView('itinerary'); setCorridor(null); }}
+          >
+            Itinerary
           </button>
         </div>
 
@@ -1496,7 +1478,7 @@ export default function App() {
           onChange={(e) => setSearch(e.target.value)}
         />
 
-        {!corridor && view !== 'itinerary' && (
+        {!corridor && view !== 'itinerary' && view !== 'review' && (
           <>
             {/* Always-visible: one-tap presets cover the common flows. */}
             <div className="filter-group preset-row">
@@ -1618,9 +1600,18 @@ export default function App() {
 
         {!corridor && view === 'places' && (
           <>
-            <button className="add-place-btn" onClick={openAddPlace}>
-              ＋ Add place
-            </button>
+            <div className="places-action-row">
+              <button className="add-place-btn" onClick={openAddPlace}>
+                ＋ Add place
+              </button>
+              <button
+                className="triage-btn"
+                title="Card-by-card triage: shortlist, skip, or reject"
+                onClick={() => { setView('review'); setCorridor(null); }}
+              >
+                Triage →
+              </button>
+            </div>
             {visible.length === 0 && (
               <div className="place-list-empty">
                 <p>No places match these filters.</p>
@@ -1715,8 +1706,27 @@ export default function App() {
           </>
         )}
 
+        {!corridor && view === 'review' && (
+          <Review
+            places={places}
+            onStatus={setStatus}
+            onExit={() => setView('places')}
+            onSelect={(p) => { selectPlace(p); }}
+            selectedId={selectedId}
+          />
+        )}
+
         {!corridor && view === 'itinerary' && (
           <>
+            <div className="itin-header-row">
+              <button
+                className="route-builder-btn"
+                title="Build an optimized multi-day road trip from selected places"
+                onClick={() => setView('route')}
+              >
+                Route builder →
+              </button>
+            </div>
             <Itinerary
               places={places}
               routes={routes}
@@ -2077,17 +2087,6 @@ export default function App() {
         />
       )}
 
-      {view === 'review' && (
-        <Review
-          places={places}
-          onStatus={setStatus}
-          onExit={() => setView('places')}
-          onShowOnMap={(p) => {
-            selectPlace(p);
-            setView('places');
-          }}
-        />
-      )}
     </div>
   );
 }
