@@ -122,6 +122,60 @@ interface FilterPreset {
   categories?: Category[];
   statuses?: Status[];
 }
+
+function insertionDetourKm(
+  prev: Pick<PlaceWithOverride, 'lat' | 'lng'> | undefined,
+  next: Pick<PlaceWithOverride, 'lat' | 'lng'> | undefined,
+  candidate: Pick<PlaceWithOverride, 'lat' | 'lng'>,
+): number {
+  if (prev && next) {
+    return (
+      haversineKm(prev.lat, prev.lng, candidate.lat, candidate.lng) +
+      haversineKm(candidate.lat, candidate.lng, next.lat, next.lng) -
+      haversineKm(prev.lat, prev.lng, next.lat, next.lng)
+    );
+  }
+  if (prev) return haversineKm(prev.lat, prev.lng, candidate.lat, candidate.lng);
+  if (next) return haversineKm(candidate.lat, candidate.lng, next.lat, next.lng);
+  return 0;
+}
+
+function chooseBestInsertionIndex(
+  candidate: Pick<PlaceWithOverride, 'lat' | 'lng' | 'category'>,
+  stops: PlaceWithOverride[],
+): number {
+  if (stops.length === 0) return 0;
+  const preferLater = candidate.category === 'campsite' || candidate.category === 'accommodation';
+  const tolerance = 0.05; // ~50m: small enough to stay practical, big enough for ties.
+  let bestIndex = 0;
+  let bestScore = Infinity;
+
+  for (let i = 0; i <= stops.length; i++) {
+    const score = insertionDetourKm(stops[i - 1], stops[i], candidate);
+    if (score + tolerance < bestScore) {
+      bestScore = score;
+      bestIndex = i;
+      continue;
+    }
+    if (Math.abs(score - bestScore) <= tolerance) {
+      bestIndex = preferLater ? Math.max(bestIndex, i) : Math.min(bestIndex, i);
+    }
+  }
+  return bestIndex;
+}
+
+function dayOrderForInsertion(stops: PlaceWithOverride[], index: number): number {
+  const prev = stops[index - 1];
+  const next = stops[index];
+  const prevOrder = prev?.dayOrder ?? index - 1;
+  const nextOrder = next?.dayOrder ?? index;
+
+  if (!prev && !next) return 0;
+  if (!prev) return nextOrder - 1;
+  if (!next) return prevOrder + 1;
+  if (nextOrder <= prevOrder) return prevOrder + 0.5;
+  return (prevOrder + nextOrder) / 2;
+}
 const FILTER_PRESETS: FilterPreset[] = [
   {
     id: 'sleep',
@@ -837,6 +891,7 @@ export default function App() {
     if (editingId) {
       // Edit: update the immutable identity in userPlaces; status/day/note flow
       // through the overrides layer (one code path with baked places).
+      const existing = placeById.get(editingId);
       const updated: Place = {
         ...(userPlaces.find((p) => p.id === editingId) as Place),
         name: draft.name,
@@ -848,7 +903,28 @@ export default function App() {
       applyUserPlaces((u) => u.map((p) => (p.id === editingId ? updated : p)));
       applyOverrides((o) => ({
         ...o,
-        [editingId]: { ...o[editingId], day: draft.day ?? undefined, note: draft.note || undefined },
+        [editingId]: (() => {
+          const current = o[editingId];
+          const next = { ...(current ?? {}) };
+          if (draft.day == null) {
+            delete next.day;
+            delete next.dayOrder;
+          } else if (existing?.day === draft.day && current?.dayOrder != null) {
+            next.day = draft.day;
+            next.dayOrder = current.dayOrder;
+          } else {
+            const peers = (dayStops[draft.day] ?? []).filter((p) => p.id !== editingId);
+            const insertAt = chooseBestInsertionIndex(
+              { lat: draft.lat!, lng: draft.lng!, category: draft.category },
+              peers,
+            );
+            next.day = draft.day;
+            next.dayOrder = dayOrderForInsertion(peers, insertAt);
+          }
+          if (draft.note) next.note = draft.note;
+          else delete next.note;
+          return next;
+        })(),
       }));
       // Propagate the edit to the other phones too.
       pushUserPlace(updated);
@@ -875,7 +951,21 @@ export default function App() {
     if (draft.day != null || draft.note) {
       applyOverrides((o) => ({
         ...o,
-        [id]: { ...o[id], day: draft.day ?? undefined, note: draft.note || undefined },
+        [id]: (() => {
+          const next = { ...(o[id] ?? {}) };
+          if (draft.day != null) {
+            const peers = (dayStops[draft.day] ?? []).filter((p) => p.id !== id);
+            const insertAt = chooseBestInsertionIndex(
+              { lat: draft.lat!, lng: draft.lng!, category: draft.category },
+              peers,
+            );
+            next.day = draft.day;
+            next.dayOrder = dayOrderForInsertion(peers, insertAt);
+          }
+          if (draft.note) next.note = draft.note;
+          else delete next.note;
+          return next;
+        })(),
       }));
     }
     // Sync to user_places so all 4 phones see this pin (best-effort + queued).
@@ -947,7 +1037,12 @@ export default function App() {
       applyOverrides((o) => ({ ...o, [id]: { ...o[id], day: undefined, dayOrder: undefined } }));
       return;
     }
-    const order = places.filter((p) => p.day === day && p.id !== id).length;
+    const place = placeById.get(id);
+    if (!place) return;
+    if (place.day === day && place.dayOrder != null) return;
+    const peers = (dayStops[day] ?? []).filter((p) => p.id !== id);
+    const insertAt = chooseBestInsertionIndex(place, peers);
+    const order = dayOrderForInsertion(peers, insertAt);
     applyOverrides((o) => ({ ...o, [id]: { ...o[id], day, dayOrder: order } }));
   }
 
