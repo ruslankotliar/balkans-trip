@@ -563,14 +563,14 @@ export default function App() {
       ? 'syncing…'
       : syncOnline
         ? 'shared'
-        : 'offline';
+        : 'sync unavailable';
   const syncTitle = !hasSupabase
     ? 'This browser is running local-only — no shared Supabase sync is configured.'
     : syncOnline === null
       ? 'Checking shared plan sync…'
       : syncOnline
         ? 'Shared sync is live — plan edits should reach the other phones.'
-        : 'Shared sync is unavailable right now; changes are staying on this device until it reconnects.';
+        : 'Shared sync is unavailable right now; local changes are still saved on this device and queued for later.';
 
   /** Anchor point for proximity finders: GPS fix, else today's last stop. */
   const tripAnchor = useMemo(() => {
@@ -1132,7 +1132,7 @@ export default function App() {
           Jun 16–28 · planning
           <span
             className={`sync-state ${
-              syncLabel === 'shared' ? 'on' : syncLabel === 'offline' ? 'warn' : ''
+              syncLabel === 'shared' ? 'on' : syncLabel === 'sync unavailable' ? 'warn' : ''
             }`}
             title={syncTitle}
           >
