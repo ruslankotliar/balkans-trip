@@ -1374,6 +1374,21 @@ body.trip-mode .detail-visited-btn {
   flex: 1;
   margin: 0;
 }
+.mode-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 6px 12px;
+  border: 1px solid #7d7d7d;
+  border-radius: 6px;
+  background: #fff;
+  color: #111;
+  font-size: 18px;
+  line-height: 1;
+  white-space: nowrap;
+}
 
 /* ---- Sidebar footer: secondary tools ---- */
 .sidebar-footer {

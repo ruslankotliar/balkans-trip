@@ -1179,13 +1179,9 @@ export default function App() {
       <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="head-row">
           <h1>Balkans Trip</h1>
-          <button
-            className={`mode-pill ${mode}`}
-            onClick={() => setMode(mode === 'trip' ? 'plan' : 'trip')}
-            title="Switch between plan and trip mode"
-          >
-            {mode === 'trip' ? '🗺️ Plan' : '🚗 Trip'}
-          </button>
+          <span className={`mode-pill ${mode}`} aria-label={`Current mode: ${mode}`}>
+            {mode === 'trip' ? '🚗 Trip' : '🗺️ Plan'}
+          </span>
         </div>
 
         {mode === 'trip' ? (
