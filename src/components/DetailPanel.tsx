@@ -102,7 +102,6 @@ export default function DetailPanel({
         <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
         {p.category} · {COUNTRY_NAMES[p.country]}
         {p.cost ? ` · ${p.cost}` : ''}
-        {p.rating ? ` · ${'★'.repeat(p.rating)}` : ''}
         {p.userAdded ? ' · ✎ added by you' : ''}
       </p>
 
@@ -152,12 +151,19 @@ export default function DetailPanel({
 
       {/* ---- One combined summary block: what it is + why it matters. ---- */}
       <p className="detail-desc">{[p.description, p.communityNotes].filter(Boolean).join(' ')}</p>
-      {p.bestTime && <p className="meta">Best time: <TelText text={p.bestTime} /></p>}
-      {p.facilities && <p className="meta">Facilities: {p.facilities}</p>}
+      {(p.bestTime || p.facilities) && (
+        <details className="detail-facts">
+          <summary>More details</summary>
+          <div className="detail-facts-body">
+            {p.bestTime && <p className="meta">Best time: <TelText text={p.bestTime} /></p>}
+            {p.facilities && <p className="meta">Facilities: {p.facilities}</p>}
+          </div>
+        </details>
+      )}
 
       {!tripMode && (
         <>
-          <details className="detail-time-box" open>
+          <details className="detail-time-box">
             <summary>
               <span>Duration</span>
               <span className="detail-time-summary">

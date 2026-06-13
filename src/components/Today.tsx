@@ -74,12 +74,10 @@ function MatchCards({
   matches,
   empty,
   onSelect,
-  showSleepInfo,
 }: {
   matches: ProximityMatch[];
   empty: string;
   onSelect: (p: PlaceWithOverride) => void;
-  showSleepInfo: boolean;
 }) {
   if (matches.length === 0) return <p className="today-empty">{empty}</p>;
   return (
@@ -91,11 +89,8 @@ function MatchCards({
             <div className="corridor-card-top">
               <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
               <span className="place-name">{p.name}</span>
-              {p.rating ? <span>{'★'.repeat(p.rating)}</span> : null}
               <span className="corridor-dist">{dist.toFixed(1)} km</span>
             </div>
-            {showSleepInfo && p.cost && <div className="corridor-cost">💶 {p.cost}</div>}
-            {showSleepInfo && p.facilities && <div className="corridor-fac">🚿 {p.facilities}</div>}
             <div className="card-links">
               {booking && (
                 <a
@@ -221,15 +216,17 @@ export default function Today({
         </button>
       )}
 
-      {DAY_HINTS[day] && (
-        <div className="today-hint">
-          <span className="today-hint-icon">{DAY_HINTS[day].icon}</span>
-          <HintText text={DAY_HINTS[day].text} />
-        </div>
-      )}
-
-      {DAY_OPS[day] && (
-        <div className="today-ops">{DAY_OPS[day]}</div>
+      {(DAY_HINTS[day] || DAY_OPS[day]) && (
+        <details className="today-notes">
+          <summary>Day notes</summary>
+          {DAY_HINTS[day] && (
+            <div className="today-hint">
+              <span className="today-hint-icon">{DAY_HINTS[day].icon}</span>
+              <HintText text={DAY_HINTS[day].text} />
+            </div>
+          )}
+          {DAY_OPS[day] && <div className="today-ops">{DAY_OPS[day]}</div>}
+        </details>
       )}
 
       {isToday && stops.length > 0 && (
@@ -269,22 +266,27 @@ export default function Today({
       )}
 
       {schedule && (
-        <div className="today-clock">
-          <div className="today-clock-row">
-            <span>Start {formatClock(schedule.dayStartSec)}</span>
-            <span>Finish {formatClock(schedule.finishSec)}</span>
+        <details className="today-clock">
+          <summary>
+            <span>Day clock</span>
             <span className={`today-clock-balance ${scheduleOverSec > 0 ? 'late' : 'slack'}`}>
               {scheduleOverSec > 0
-                ? `+${formatDuration(scheduleOverSec)} late`
-                : `${formatDuration(schedule.slackSec)} slack`}
+                ? `Finish ${formatClock(schedule.finishSec)} · +${formatDuration(scheduleOverSec)} late`
+                : `Finish ${formatClock(schedule.finishSec)} · ${formatDuration(schedule.slackSec)} slack`}
             </span>
+          </summary>
+          <div className="today-clock-body">
+            <div className="today-clock-row">
+              <span>Start {formatClock(schedule.dayStartSec)}</span>
+              <span>Finish {formatClock(schedule.finishSec)}</span>
+            </div>
+            <div className="today-clock-row today-clock-small">
+              <span>Drive {formatDuration(schedule.driveSec)}</span>
+              <span>Stops {formatDuration(schedule.staySec)}</span>
+              {schedule.ferrySec > 0 && <span>Ferry {formatDuration(schedule.ferrySec)}</span>}
+            </div>
           </div>
-          <div className="today-clock-row today-clock-small">
-            <span>Drive {formatDuration(schedule.driveSec)}</span>
-            <span>Stops {formatDuration(schedule.staySec)}</span>
-            {schedule.ferrySec > 0 && <span>Ferry {formatDuration(schedule.ferrySec)}</span>}
-          </div>
-        </div>
+        </details>
       )}
 
       {stops.length === 0 ? (
@@ -377,7 +379,6 @@ export default function Today({
           matches={sleepMatches}
           empty="No campsites or stays within 25 km. Try the map."
           onSelect={onSelect}
-          showSleepInfo
         />
       )}
       {nearOpen && (
@@ -385,7 +386,6 @@ export default function Today({
           matches={nearMatches}
           empty="Nothing shortlist-worthy within 30 km."
           onSelect={onSelect}
-          showSleepInfo={false}
         />
       )}
     </div>

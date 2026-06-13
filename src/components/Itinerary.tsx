@@ -1,20 +1,8 @@
 import { CATEGORY_COLORS } from '../constants';
-import { formatClock, type DaySchedule } from '../schedule';
+import { formatClock, formatTimeRange, type DaySchedule } from '../schedule';
 import type { PlaceWithOverride } from '../store';
 import type { DayRoutes } from '../useDayRoutes';
-import {
-  DAY_HINTS,
-  DAYS,
-  dayColor,
-  dayDateLabel,
-  formatDistance,
-  formatDuration,
-  stopHint,
-} from '../trip';
-import type { Country } from '../types';
-
-
-const COUNTRY_FLAG: Record<Country, string> = { HR: '🇭🇷', BA: '🇧🇦', ME: '🇲🇪' };
+import { DAYS, dayColor, dayDateLabel, formatDistance, formatDuration } from '../trip';
 
 interface Props {
   day: number;
@@ -40,6 +28,12 @@ interface Props {
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
 
+interface AgendaEntry {
+  place: PlaceWithOverride;
+  arriveSec: number | null;
+  departSec: number | null;
+}
+
 export default function Itinerary({
   day,
   onDay,
@@ -52,8 +46,6 @@ export default function Itinerary({
   onSelect,
   onMove,
   onAssignDay,
-  onFindSleep,
-  dayNotes,
   scheduleByDay,
 }: Props) {
   const assigned = places.filter((p) => p.day);
@@ -65,15 +57,14 @@ export default function Itinerary({
   const route = routes[day];
   const isToday = realDay === day;
   const driveSec = route ? route.duration + (ferrySecByDay[day] ?? 0) : 0;
-  const driveClass =
-    driveSec > 4.5 * 3600 ? 'drive-heavy' : driveSec > 3 * 3600 ? 'drive-warn' : '';
   const schedule = scheduleByDay?.[day] ?? null;
-  const flags = [...new Set(stops.map((p) => p.country).filter(Boolean))]
-    .map((c) => COUNTRY_FLAG[c as Country] ?? '')
-    .join('');
-  const timelineTotalSec = schedule ? Math.max(1, schedule.plannedEndSec - schedule.dayStartSec) : 1;
-  const startHour = schedule ? Math.floor(schedule.dayStartSec / 3600) : 8;
-  const endHour = schedule ? Math.floor(schedule.plannedEndSec / 3600) : 21;
+  const scheduleEntries: AgendaEntry[] = schedule?.entries?.length
+    ? schedule.entries
+    : stops.map((place) => ({
+        place,
+        arriveSec: null,
+        departSec: null,
+      }));
 
   return (
     <div className="itinerary">
@@ -81,14 +72,22 @@ export default function Itinerary({
         <button className="itin-day-nav-btn" disabled={day <= 1} onClick={() => onDay(day - 1)}>
           ◀
         </button>
-        <select className="itin-day-select" value={day} onChange={(e) => onDay(Number(e.target.value))}>
+        <select
+          className="itin-day-select"
+          value={day}
+          onChange={(e) => onDay(Number(e.target.value))}
+        >
           {DAYS.map((d) => (
             <option key={d} value={d}>
               Day {d} · {dayDateLabel(d)}
             </option>
           ))}
         </select>
-        <button className="itin-day-nav-btn" disabled={day >= DAYS[DAYS.length - 1]} onClick={() => onDay(day + 1)}>
+        <button
+          className="itin-day-nav-btn"
+          disabled={day >= DAYS[DAYS.length - 1]}
+          onClick={() => onDay(day + 1)}
+        >
           ▶
         </button>
         {realDay >= 1 && !isToday && (
@@ -99,7 +98,7 @@ export default function Itinerary({
       </div>
 
       <div className="itin-total">
-        <strong>Day {day}</strong> · <strong>{stops.length}</strong> stops ·{' '}
+        <strong>{stops.length}</strong> stops ·{' '}
         <strong>{formatDuration(driveSec)}</strong> / {route ? formatDistance(route.distance) : '0 km'} driving
         {routesLoading && <span className="loading-dot"> · routing…</span>}
       </div>
@@ -111,143 +110,74 @@ export default function Itinerary({
           </span>
           <span className="itin-day-date">{dayDateLabel(day)}</span>
           {isToday && <span className="itin-today-badge">today</span>}
-          {flags && <span className="itin-day-flags">{flags}</span>}
-          {route && (
-            <span className={`itin-day-route${driveClass ? ` ${driveClass}` : ''}`}>
-              {driveClass === 'drive-heavy' ? '⚠️ ' : ''}
-              {formatDuration(driveSec)}
-              {ferrySecByDay[day] ? ' ⛴' : ''} · {formatDistance(route.distance)}
-            </span>
-          )}
-          {schedule && (
-            <span className={`itin-day-clock ${schedule.overSec > 0 ? 'late' : 'slack'}`}>
-              finish {formatClock(schedule.finishSec)} ·{' '}
-              {schedule.overSec > 0
-                ? `+${formatDuration(schedule.overSec)} late`
-                : `${formatDuration(schedule.slackSec)} slack`}
-            </span>
-          )}
-          {route && (
-            <button
-              className="itin-sleep-btn"
-              title="Find sleep spots along this day's route"
-              onClick={() => onFindSleep(day)}
-            >
-              🛏
-            </button>
-          )}
         </div>
-        {DAY_HINTS[day] && (
-          <div className="itin-day-hint">
-            {DAY_HINTS[day].icon} {DAY_HINTS[day].text}
+        {schedule && (
+          <div className={`itin-day-summary ${schedule.overSec > 0 ? 'late' : 'slack'}`}>
+            {schedule.overSec > 0
+              ? `Finishes ${formatClock(schedule.finishSec)} · ${formatDuration(schedule.overSec)} late`
+              : `Finishes ${formatClock(schedule.finishSec)} · ${formatDuration(schedule.slackSec)} slack`}
           </div>
         )}
-        {dayNotes?.[day] && (
-          <div className="itin-day-note">
-            📝 {dayNotes[day]}
-          </div>
-        )}
-        {schedule && schedule.entries.length > 0 && (
-          <div className={`itin-timeline${schedule.overSec > 0 ? ' late' : ''}`}>
-            <div className="itin-timeline-scale">
-              {Array.from({ length: endHour - startHour + 1 }, (_, i) => startHour + i).map(
-                (hour) => (
-                  <span key={hour}>{String(hour).padStart(2, '0')}:00</span>
-                ),
-              )}
-            </div>
-            <div className="itin-timeline-bar">
-              {schedule.entries.map((entry) => {
-                const left = ((entry.arriveSec - schedule.dayStartSec) / timelineTotalSec) * 100;
-                const width = Math.max(
-                  ((entry.departSec - entry.arriveSec) / timelineTotalSec) * 100,
-                  2.5,
-                );
-                return (
-                  <button
-                    key={`${day}-${entry.place.id}-${entry.arriveSec}`}
-                    type="button"
-                    className={`itin-timeline-block kind-${entry.kind} source-${entry.source}`}
-                    style={{ left: `${left}%`, width: `${width}%` }}
-                    onClick={() => onSelect(entry.place)}
-                    title={`${entry.place.name} · ${formatClock(entry.arriveSec)}–${formatClock(
-                      entry.departSec,
-                    )} · ${formatDuration(entry.staySec)}`}
-                  >
-                    <span className="itin-timeline-name">{entry.place.name}</span>
-                    <span className="itin-timeline-time">
-                      {formatClock(entry.arriveSec)}–{formatClock(entry.departSec)}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        )}
-        {stops.some((p) => p.bestTime) && (
-          <div className="itin-time-tips">
-            {stops
-              .filter((p) => p.bestTime)
-              .map((p) => {
-                const hint = stopHint(p.bestTime);
-                if (!hint) return null;
-                return (
-                  <div key={p.id} className="itin-time-tip">
-                    ⏰ <strong>{p.name}:</strong> {hint}
-                  </div>
-                );
-              })}
-          </div>
-        )}
-        {stops.length === 0 ? (
+
+        {scheduleEntries.length === 0 ? (
           <p className="itin-empty">no stops</p>
         ) : (
-          <ol className="itin-stops">
-            {stops.map((p, i) => (
-              <li
-                key={p.id}
-                className={`${selectedId === p.id ? 'selected' : ''}${p.category === 'campsite' || p.category === 'accommodation' ? ' itin-sleep-stop' : ''}`}
-                onClick={() => onSelect(p)}
-              >
-                <span
-                  className="dot"
-                  style={{ background: CATEGORY_COLORS[p.category] }}
-                />
-                <span className="place-name">
-                  {(p.category === 'campsite' || p.category === 'accommodation') && (
-                    <span className="itin-sleep-icon" title="Sleep option">🛏</span>
+          <div className="itin-stop-list">
+            {scheduleEntries.map((entry, i) => {
+              const timeRange =
+                entry.arriveSec != null && entry.departSec != null
+                  ? formatTimeRange(entry.arriveSec, entry.departSec)
+                  : 'Unscheduled';
+
+              return (
+                <div key={`${day}-${entry.place.id}-${i}`} className="itin-stop-entry">
+                  <button
+                    type="button"
+                    className={`itin-stop-row${selectedId === entry.place.id ? ' selected' : ''}`}
+                    onClick={() => onSelect(entry.place)}
+                  >
+                    <span className="itin-stop-step" style={{ background: dayColor(day) }}>
+                      {i + 1}
+                    </span>
+                    <span className="itin-stop-name">{entry.place.name}</span>
+                    <span className={`itin-stop-time${entry.arriveSec == null ? ' muted' : ''}`}>
+                      {timeRange}
+                    </span>
+                  </button>
+                  {selectedId === entry.place.id && (
+                    <div className="itin-stop-actions">
+                      <button
+                        type="button"
+                        disabled={i === 0}
+                        onClick={() => onMove(entry.place.id, 'up')}
+                        title="Move earlier"
+                      >
+                        ↑
+                      </button>
+                      <button
+                        type="button"
+                        disabled={i === scheduleEntries.length - 1}
+                        onClick={() => onMove(entry.place.id, 'down')}
+                        title="Move later"
+                      >
+                        ↓
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => onAssignDay(entry.place.id, null)}
+                        title="Remove from day"
+                      >
+                        ✕
+                      </button>
+                    </div>
                   )}
-                  {p.name}
-                </span>
-                {schedule?.entries[i] && (
-                  <span className="itin-stop-clock">
-                    {formatClock(schedule.entries[i].arriveSec)}–{formatClock(schedule.entries[i].departSec)}
-                  </span>
-                )}
-                <span className="itin-actions" onClick={(e) => e.stopPropagation()}>
-                  <button
-                    disabled={i === 0}
-                    onClick={() => onMove(p.id, 'up')}
-                    title="Move earlier"
-                  >
-                    ↑
-                  </button>
-                  <button
-                    disabled={i === stops.length - 1}
-                    onClick={() => onMove(p.id, 'down')}
-                    title="Move later"
-                  >
-                    ↓
-                  </button>
-                  <button onClick={() => onAssignDay(p.id, null)} title="Remove from day">
-                    ✕
-                  </button>
-                </span>
-              </li>
-            ))}
-          </ol>
+                </div>
+              );
+            })}
+          </div>
         )}
       </div>
+
       <details className="itin-backlog">
         <summary>Backlog · shortlisted, no day ({backlog.length})</summary>
         {backlog.length === 0 ? (

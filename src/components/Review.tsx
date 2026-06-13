@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { CATEGORY_COLORS } from '../constants';
+import { CATEGORY_COLORS, COUNTRY_NAMES } from '../constants';
 import type { PlaceWithOverride } from '../store';
 import type { Country, Status } from '../types';
 
@@ -46,6 +46,24 @@ export default function Review({ places, onStatus, onExit, onSelect, selectedId 
   );
 
   const reviewCount = queue.length;
+  const sections = useMemo(() => {
+    if (country !== 'all') {
+      return [
+        {
+          key: country,
+          label: COUNTRY_NAMES[country],
+          items: queue,
+        },
+      ];
+    }
+    return (['HR', 'BA', 'ME'] as const)
+      .map((c) => ({
+        key: c,
+        label: COUNTRY_NAMES[c],
+        items: queue.filter((p) => p.country === c),
+      }))
+      .filter((section) => section.items.length > 0);
+  }, [country, queue]);
 
   return (
     <div className="triage-panel">
@@ -70,51 +88,57 @@ export default function Review({ places, onStatus, onExit, onSelect, selectedId 
           <button onClick={onExit}>← Back to places</button>
         </div>
       ) : (
-        <ul className="triage-list">
-          {queue.map((p) => (
-            <li
-              key={p.id}
-              className={`triage-item${selectedId === p.id ? ' selected' : ''}${p.status === 'backup' ? ' triage-backup' : ''}`}
-              onClick={() => onSelect(p)}
-            >
-              <div className="triage-item-row">
-                <span className="triage-flag">{COUNTRY_FLAG[p.country]}</span>
-                <span className="triage-dot" style={{ background: CATEGORY_COLORS[p.category] }} />
-                <span className="triage-name">{p.name}</span>
-                {p.rating && (
-                  <span className="triage-stars">{'★'.repeat(p.rating)}</span>
-                )}
-              </div>
-              {p.bestTime && (
-                <p className="triage-time">{p.bestTime}</p>
+        <div className="triage-list">
+          {sections.map((section) => (
+            <section key={section.key} className="triage-country-group">
+              {country === 'all' && (
+                <div className="triage-country-head">
+                  <span className="triage-country-title">
+                    {COUNTRY_FLAG[section.key]} {section.label}
+                  </span>
+                  <span className="triage-country-count">{section.items.length}</span>
+                </div>
               )}
-              <p className="triage-desc">{p.description}</p>
-              {p.communityNotes && (
-                <blockquote className="triage-notes">{p.communityNotes.slice(0, 160)}{p.communityNotes.length > 160 ? '…' : ''}</blockquote>
-              )}
-              <div className="triage-actions" onClick={(e) => e.stopPropagation()}>
-                <button
-                  className="triage-btn triage-shortlist"
-                  onClick={() => onStatus(p.id, 'shortlist')}
-                >
-                  ✓ Shortlist
-                </button>
-                <button
-                  className={`triage-btn triage-backup-btn ${p.status === 'backup' ? 'on' : ''}`}
-                  onClick={() => onStatus(p.id, 'backup')}
-                >
-                  📋 Backup
-                </button>
-                <button
-                  className="triage-btn triage-reject"
-                  onClick={() => onStatus(p.id, 'rejected')}
-                >
-                  ✗ Reject
-                </button>
+              <div className="triage-country-items">
+                {section.items.map((p) => (
+                  <div
+                    key={p.id}
+                    className={`triage-item${selectedId === p.id ? ' selected' : ''}${p.status === 'backup' ? ' triage-backup' : ''}`}
+                    onClick={() => onSelect(p)}
+                  >
+                    <div className="triage-item-row">
+                      <span className="triage-flag">{COUNTRY_FLAG[p.country]}</span>
+                      <span className="triage-dot" style={{ background: CATEGORY_COLORS[p.category] }} />
+                      <span className="triage-name">{p.name}</span>
+                    </div>
+                    {p.bestTime && <p className="triage-time">{p.bestTime}</p>}
+                    {p.description && <p className="triage-desc">{p.description}</p>}
+                    <div className="triage-actions" onClick={(e) => e.stopPropagation()}>
+                      <button
+                        className="triage-btn triage-shortlist"
+                        onClick={() => onStatus(p.id, 'shortlist')}
+                      >
+                        ✓ Shortlist
+                      </button>
+                      <button
+                        className={`triage-btn triage-backup-btn ${p.status === 'backup' ? 'on' : ''}`}
+                        onClick={() => onStatus(p.id, 'backup')}
+                      >
+                        📋 Backup
+                      </button>
+                      <button
+                        className="triage-btn triage-reject"
+                        onClick={() => onStatus(p.id, 'rejected')}
+                      >
+                        ✗ Reject
+                      </button>
+                    </div>
+                  </div>
+                ))}
               </div>
-            </li>
+            </section>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );

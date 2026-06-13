@@ -616,16 +616,15 @@ export default function App() {
     [sleepMatches, nearMatches],
   );
 
-  // Trip-mode base pins: today's + tomorrow's stops, plus the shortlist/backup
-  // plan. The 150-candidate haystack stays hidden on the road.
+  // Trip-mode base pins: only today's + tomorrow's stops. The road view should
+  // stay focused on what matters now; finder results and the selected place are
+  // still added on top when needed.
   const tripBase = useMemo(() => {
     if (mode !== 'trip') return [];
     return places.filter(
       (p) =>
         p.day === tripDay ||
-        p.day === tripDay + 1 ||
-        p.status === 'shortlist' ||
-        p.status === 'backup',
+        p.day === tripDay + 1,
     );
   }, [mode, places, tripDay]);
 

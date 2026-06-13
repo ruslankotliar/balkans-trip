@@ -92,11 +92,8 @@ export default function CorridorPanel({
                         style={{ background: CATEGORY_COLORS[p.category] }}
                       />
                       <span className="place-name">{p.name}</span>
-                      {p.rating ? <span>{'★'.repeat(p.rating)}</span> : null}
                       <span className="corridor-dist">{dist.toFixed(1)} km off</span>
                     </div>
-                    {p.cost && <div className="corridor-cost">💶 {p.cost}</div>}
-                    {p.facilities && <div className="corridor-fac">🚿 {p.facilities}</div>}
                     <div className="card-links">
                       {booking && (
                         <a
