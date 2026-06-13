@@ -1,7 +1,8 @@
 /**
- * Add-place form (feature A) — three input modes, tap-the-map default/primary.
- * Used for BOTH adding a new user place and EDITING an existing one. Storage +
- * merge live in App; this is just the form + the three coordinate parsers.
+ * Add-place form (feature A) — Google Maps link first, with map tap and raw
+ * coordinates as fallback inputs. Used for BOTH adding a new user place and
+ * EDITING an existing one. Storage + merge live in App; this is just the form
+ * + the three coordinate parsers.
  */
 import { useEffect, useState } from 'react';
 import { CATEGORY_COLORS } from '../constants';
@@ -95,7 +96,6 @@ export interface DraftPlace {
   lng: number | null;
   day: number | null;
   note: string;
-  timeNeeded: string;
 }
 
 interface Props {
@@ -123,19 +123,18 @@ export default function AddPlace({
   onDelete,
   onClose,
 }: Props) {
-  const [inputMode, setInputMode] = useState<InputMode>('map');
+  const [inputMode, setInputMode] = useState<InputMode>('url');
   const [name, setName] = useState(editing?.name ?? '');
   const [category, setCategory] = useState<Category>(editing?.category ?? 'other');
   const [lat, setLat] = useState<number | null>(editing?.lat ?? null);
   const [lng, setLng] = useState<number | null>(editing?.lng ?? null);
   const [day, setDay] = useState<number | null>(editingDay ?? null);
   const [note, setNote] = useState(editingNote ?? '');
-  const [timeNeeded, setTimeNeeded] = useState(editing?.timeNeeded ?? '');
   const [coordsText, setCoordsText] = useState('');
   const [urlText, setUrlText] = useState('');
   const [parseMsg, setParseMsg] = useState<string | null>(null);
 
-  // A map tap (mode 1) drops the pin: capture its coords.
+  // A map tap drops the pin: capture its coords.
   useEffect(() => {
     if (inputMode === 'map' && tappedPoint) {
       setLat(tappedPoint.lat);
@@ -204,7 +203,6 @@ export default function AddPlace({
       lng,
       day,
       note: note.trim(),
-      timeNeeded: timeNeeded.trim(),
     });
   }
 
@@ -219,14 +217,14 @@ export default function AddPlace({
 
       {!editing && (
         <div className="addplace-modes">
-          <button className={inputMode === 'map' ? 'on' : ''} onClick={() => setInputMode('map')}>
-            Tap the map
+          <button className={inputMode === 'url' ? 'on' : ''} onClick={() => setInputMode('url')}>
+            Paste Google link
           </button>
           <button className={inputMode === 'coords' ? 'on' : ''} onClick={() => setInputMode('coords')}>
             Paste lat,lng
           </button>
-          <button className={inputMode === 'url' ? 'on' : ''} onClick={() => setInputMode('url')}>
-            Paste link
+          <button className={inputMode === 'map' ? 'on' : ''} onClick={() => setInputMode('map')}>
+            Tap the map
           </button>
         </div>
       )}
@@ -258,7 +256,7 @@ export default function AddPlace({
         <div className="addplace-input-row">
           <input
             type="text"
-            placeholder="Paste an expanded Google Maps link…"
+            placeholder="Paste a Google Maps link…"
             value={urlText}
             onChange={(e) => setUrlText(e.target.value)}
           />
@@ -326,18 +324,6 @@ export default function AddPlace({
           placeholder="Why it’s worth it / who recommended it…"
           value={note}
           onChange={(e) => setNote(e.target.value)}
-        />
-      </label>
-
-      <label className="field-label">
-        Time needed
-        <input
-          className="time-input"
-          type="text"
-          inputMode="text"
-          placeholder="1h 30m, 45m, half day"
-          value={timeNeeded}
-          onChange={(e) => setTimeNeeded(e.target.value)}
         />
       </label>
 

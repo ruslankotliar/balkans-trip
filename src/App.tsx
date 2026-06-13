@@ -150,12 +150,10 @@ const FILTER_PRESETS: FilterPreset[] = [
   },
 ];
 
-/** A place qualifies as a group favorite: net ≥ +2, or all-positive with ≥2 votes. */
 function isFavorite(t: { up: number; down: number; net: number } | undefined): boolean {
   if (!t) return false;
   return t.net >= 2 || (t.down === 0 && t.up >= 2);
 }
-/** A split: both an up and a down vote → contested. */
 function isSplit(t: { up: number; down: number } | undefined): boolean {
   return !!t && t.up > 0 && t.down > 0;
 }
@@ -261,17 +259,13 @@ function numberIcon(n: number, color: string) {
   });
 }
 
-/** A small 👍/👎 tally badge anchored to the top-right of a pin. */
 export default function App() {
-  // User-added places (feature A) merge AFTER the bundle so the existing
-  // "first id wins" de-dupe protects against a user id colliding with a baked
-  // one. Everything downstream (map, filters, route builder, finders, exports)
-  // treats them as ordinary places.
+  // User-added places merge after the bundle so a runtime pin can override a
+  // baked id without breaking the rest of the app.
   const [userPlaces, setUserPlaces] = useState<Place[]>(loadUserPlaces);
   const [remotePlaces, setRemotePlaces] = useState<Place[]>(loadRemotePlacesCache);
   const [syncOnline, setSyncOnline] = useState<boolean | null>(hasSupabase ? null : false);
-  // Merge baked → local user places → remote user places (first id wins, so a
-  // local edit of a place I added shadows the remote copy until it syncs).
+  // Merge baked → local user places → remote user places (first id wins).
   const basePlaces = useMemo<Place[]>(() => {
     const localIds = new Set(userPlaces.map((p) => p.id));
     const remoteOnly = remotePlaces.filter((p) => !localIds.has(p.id));
@@ -854,7 +848,6 @@ export default function App() {
         lat: draft.lat!,
         lng: draft.lng!,
         country: guessCountry(draft.lat!, draft.lng!),
-        timeNeeded: draft.timeNeeded || undefined,
       };
       applyUserPlaces((u) => u.map((p) => (p.id === editingId ? updated : p)));
       applyOverrides((o) => ({
@@ -878,7 +871,6 @@ export default function App() {
       lat: draft.lat,
       lng: draft.lng,
       description: draft.note || 'Added on the trip.',
-      timeNeeded: draft.timeNeeded || undefined,
       status: 'shortlist',
       userAdded: true,
       source: 'user',

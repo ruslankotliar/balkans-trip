@@ -588,12 +588,12 @@ export function saveOverrides(o: Overrides) {
   safeSetItem(KEY, JSON.stringify(normalizeOverrides(o)));
 }
 
-// ---- User-added places (Add-place feature) ----
+// ---- User-added places ----
 //
 // Full `Place` objects the user dropped at runtime, in their own localStorage
 // key so a redeploy (which can change src/data/*.json) never touches them.
 // loadPlaces()-side merge in App keeps them appearing on the map, in filters,
-// the route builder, the day planner, the finders, and exports — for free.
+// the day planner, the finders, and exports — for free.
 // Only the immutable identity (name/category/lat/lng) lives here; status/day/
 // note flow through the same overrides layer as baked places.
 

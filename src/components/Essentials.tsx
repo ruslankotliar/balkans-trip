@@ -17,7 +17,7 @@ import {
   type ContactLine,
 } from '../essentials';
 
-// ---- Trip Tasks (checklist + buy list) --------------------------------
+// ---- Pre-trip checklist ------------------------------------------------
 
 const TASKS_KEY = 'balkans-trip-tasks';
 const LEGACY_TASK_IDS = new Set([
@@ -138,19 +138,9 @@ export default function Essentials({
 
   // ---- Task list state ----
   const [tasks, setTasksState] = useState<Task[]>(loadTasks);
-  const [draft, setDraft] = useState('');
   function setTasks(next: Task[]) { setTasksState(next); saveTasks(next); }
   function toggleTask(id: string) {
     setTasks(tasks.map(t => t.id === id ? { ...t, done: !t.done } : t));
-  }
-  function addTask() {
-    const text = draft.trim();
-    if (!text) return;
-    setTasks([...tasks, { id: `u-${Date.now()}`, text, done: false }]);
-    setDraft('');
-  }
-  function removeTask(id: string) {
-    setTasks(tasks.filter(t => t.id !== id));
   }
 
   return (
@@ -163,7 +153,7 @@ export default function Essentials({
       </div>
       <p className="ess-sub">Works fully offline · tap a number to dial</p>
 
-      <Section id="tasks" title="✅ Tasks & shopping list" openId={openId} onToggle={toggle}>
+      <Section id="tasks" title="✅ Pre-trip checklist" openId={openId} onToggle={toggle}>
         <div className="ess-tasks">
           {tasks.map(t => (
             <div key={t.id} className={`ess-task ${t.done ? 'done' : ''}`}>
@@ -171,19 +161,8 @@ export default function Essentials({
                 {t.done ? '✓' : '○'}
               </button>
               <span className="ess-task-text">{t.text}</span>
-              <button className="ess-task-del" onClick={() => removeTask(t.id)} title="Remove">✕</button>
             </div>
           ))}
-          <div className="ess-task-add">
-            <input
-              className="ess-task-input"
-              placeholder="Add a task or item to buy…"
-              value={draft}
-              onChange={e => setDraft(e.target.value)}
-              onKeyDown={e => e.key === 'Enter' && addTask()}
-            />
-            <button className="ess-task-submit" onClick={addTask} disabled={!draft.trim()}>+</button>
-          </div>
           {tasks.filter(t => t.done).length > 0 && (
             <button className="ess-task-clear" onClick={() => setTasks(tasks.filter(t => !t.done))}>
               Clear {tasks.filter(t => t.done).length} done
