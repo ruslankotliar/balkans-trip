@@ -697,6 +697,12 @@ export default function App() {
     });
   }
 
+  function focusPlanDay(day: number) {
+    setView('plan');
+    setTripDay(day);
+    if (!sidebarOpen) setSidebarOpen(true);
+  }
+
   /** "We're tired" — drop a stop from its day, with a 6s undo. */
   function skipStop(p: PlaceWithOverride) {
     const prev = overrides[p.id];
@@ -929,6 +935,7 @@ export default function App() {
       // Propagate the edit to the other phones too.
       pushUserPlace(updated);
       void runSync.current();
+      if (draft.day != null) focusPlanDay(draft.day);
       closeAddPlace();
       setSelectedId(editingId);
       return;
@@ -971,6 +978,7 @@ export default function App() {
     // Sync to user_places so all 4 phones see this pin (best-effort + queued).
     pushUserPlace(place);
     void runSync.current();
+    if (draft.day != null) focusPlanDay(draft.day);
     closeAddPlace();
     setSelectedId(id); // open the detail panel on the new pin
   }
@@ -1681,6 +1689,7 @@ export default function App() {
         onClose={closeDetail}
         onStatus={setStatus}
         onAssignDay={assignDay}
+        onFocusDay={focusPlanDay}
         onNote={setNote}
         onTimeMinutes={setTimeMinutes}
         onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}

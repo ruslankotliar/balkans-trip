@@ -14,6 +14,7 @@ interface Props {
   onClose: () => void;
   onStatus: (id: string, status: Status) => void;
   onAssignDay: (id: string, day: number | null) => void;
+  onFocusDay?: (day: number) => void;
   onNote: (id: string, note: string) => void;
   onTimeMinutes: (id: string, minutes: number | null) => void;
   /** Present only for user-added places: opens the edit form. */
@@ -54,6 +55,7 @@ export default function DetailPanel({
   onClose,
   onStatus,
   onAssignDay,
+  onFocusDay,
   onNote,
   onTimeMinutes,
   onEdit,
@@ -265,7 +267,11 @@ export default function DetailPanel({
                 <select
                   value={p.day ?? ''}
                   onChange={(e) =>
-                    onAssignDay(p.id, e.target.value === '' ? null : Number(e.target.value))
+                    {
+                      const nextDay = e.target.value === '' ? null : Number(e.target.value);
+                      onAssignDay(p.id, nextDay);
+                      if (nextDay != null) onFocusDay?.(nextDay);
+                    }
                   }
                 >
                   <option value="">— unassigned —</option>
