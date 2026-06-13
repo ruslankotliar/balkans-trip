@@ -5,6 +5,7 @@ import type { PlaceWithOverride } from '../store';
 import type { Status } from '../types';
 import { parseDurationMinutes } from '../schedule';
 import { DAYS, dayColor, dayDateLabel } from '../trip';
+import { excerptText, normalizeText } from '../text';
 
 interface Props {
   place: PlaceWithOverride | null;
@@ -70,6 +71,9 @@ export default function DetailPanel({
   const booking = bookingLink(links);
   const [timeDraft, setTimeDraft] = useState('');
   const [timeMsg, setTimeMsg] = useState<string | null>(null);
+  const description = normalizeText(p.description);
+  const communityNotes = normalizeText(p.communityNotes);
+  const summary = excerptText(description || communityNotes, 230);
 
   useEffect(() => {
     setTimeDraft(p.timeMinutes != null ? String(p.timeMinutes) : p.timeNeeded ?? '');
@@ -149,13 +153,23 @@ export default function DetailPanel({
         </div>
       )}
 
-      {/* ---- One combined summary block: what it is + why it matters. ---- */}
-      <p className="detail-desc">{[p.description, p.communityNotes].filter(Boolean).join(' ')}</p>
-      {(p.bestTime || p.facilities) && (
+      {/* ---- Short preview first; the full copy stays behind one disclosure. ---- */}
+      {summary && (
+        <p className="detail-desc">
+          <span className="detail-desc-label">Quick take:</span> {summary}
+        </p>
+      )}
+      {(description || communityNotes || p.bestTime || p.facilities) && (
         <details className="detail-facts">
           <summary>More details</summary>
           <div className="detail-facts-body">
-            {p.bestTime && <p className="meta">Best time: <TelText text={p.bestTime} /></p>}
+            {description && <p className="detail-body-copy">{description}</p>}
+            {communityNotes && <p className="community detail-body-copy">{communityNotes}</p>}
+            {p.bestTime && (
+              <p className="meta">
+                Best time: <TelText text={p.bestTime} />
+              </p>
+            )}
             {p.facilities && <p className="meta">Facilities: {p.facilities}</p>}
           </div>
         </details>

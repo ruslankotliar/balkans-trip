@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { CATEGORY_COLORS, COUNTRY_NAMES } from '../constants';
 import type { PlaceWithOverride } from '../store';
 import type { Country, Status } from '../types';
+import { excerptText } from '../text';
 
 const COUNTRY_FLAG: Record<Country, string> = { HR: '🇭🇷', BA: '🇧🇦', ME: '🇲🇪' };
 const COUNTRY_ORDER: Record<Country, number> = { HR: 0, BA: 1, ME: 2 };
@@ -112,7 +113,9 @@ export default function Review({ places, onStatus, onExit, onSelect, selectedId 
                       <span className="triage-name">{p.name}</span>
                     </div>
                     {p.bestTime && <p className="triage-time">{p.bestTime}</p>}
-                    {p.description && <p className="triage-desc">{p.description}</p>}
+                    {(p.description || p.communityNotes) && (
+                      <p className="triage-desc">{excerptText(p.description || p.communityNotes, 160)}</p>
+                    )}
                     <div className="triage-actions" onClick={(e) => e.stopPropagation()}>
                       <button
                         className="triage-btn triage-shortlist"
