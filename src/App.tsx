@@ -1130,7 +1130,7 @@ export default function App() {
         ) : (
         <>
         <p className="subtitle">
-          Jun 16–28 · <strong>{statusCounts.shortlist}</strong> shortlisted · <strong>{statusCounts.backup}</strong> backup · <strong>{statusCounts.candidate}</strong> candidates
+          Jun 16–28 · planning
           <span
             className={`sync-state ${
               syncLabel === 'shared' ? 'on' : syncLabel === 'offline' ? 'warn' : ''
@@ -1157,12 +1157,14 @@ export default function App() {
           </button>
         </div>
 
-        <input
-          className="search"
-          placeholder="Search name or note…"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        {view === 'places' && (
+          <input
+            className="search"
+            placeholder="Search name or note…"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        )}
 
         {!corridor && view !== 'itinerary' && view !== 'review' && (
           <>
@@ -1365,6 +1367,8 @@ export default function App() {
           <Suspense fallback={<PanelFallback text="Loading itinerary…" />}>
             <>
               <LazyItinerary
+                day={tripDay}
+                onDay={setTripDay}
                 places={places}
                 routes={routes}
                 routesLoading={routesLoading}
