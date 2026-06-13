@@ -799,7 +799,7 @@ body.trip-mode .detail-visited-btn {
   color: #555;
 }
 
-/* ---- Itinerary ---- */
+/* ---- Plan ---- */
 .itinerary {
   flex: 1;
   overflow-y: auto;
@@ -1242,7 +1242,7 @@ body.trip-mode .detail-visited-btn {
     padding: 5px 10px;
     font-size: 12px;
   }
-  /* ---- Planning mode: compact chrome to maximise list space ---- */
+  /* ---- Plan mode: compact chrome to maximise list space ---- */
   /* Subtitle: single truncated line */
   .subtitle {
     white-space: nowrap;
@@ -1279,7 +1279,7 @@ body.trip-mode .detail-visited-btn {
     padding: 5px 10px;
     font-size: 12px;
   }
-  /* ---- Itinerary view: compact on mobile ---- */
+  /* ---- Plan view: compact on mobile ---- */
   .itin-day-nav {
     gap: 5px;
   }

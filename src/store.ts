@@ -244,7 +244,7 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
     changed = true;
   }
 
-  // Jun 2026 itinerary correction: exact old baked-plan positions only.
+  // Jun 2026 plan correction: exact old baked-plan positions only.
   clear('hr-anica-kuk', 1, 4);
   clear('hr-villa-stone-house-martelina', 1, 6);
 
@@ -571,7 +571,7 @@ export function loadOverrides(): Overrides {
   try {
     const raw = localStorage.getItem(KEY);
     // On first visit (empty localStorage) seed from the baked default plan so
-    // all 4 group members see the pre-populated Itinerary without importing a URL.
+    // all 4 group members see the pre-populated Plan without importing a URL.
     if (raw === null) return normalizeOverrides({ ...DEFAULT_PLAN });
     const parsed = JSON.parse(raw);
     if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed))
@@ -864,13 +864,15 @@ export function saveFerryHours(f: FerryHours) {
 
 // ---- Trip-mode state (mode, done stops, last GPS fix) ----
 
-export type Mode = 'planning' | 'trip';
+export type Mode = 'plan' | 'trip';
 
 const MODE_KEY = 'balkans-trip-mode';
 
 export function loadSavedMode(): Mode | null {
   const v = localStorage.getItem(MODE_KEY);
-  return v === 'planning' || v === 'trip' ? v : null;
+  if (v === 'plan' || v === 'trip') return v;
+  if (v === 'planning') return 'plan';
+  return null;
 }
 
 export function saveMode(m: Mode) {

@@ -24,7 +24,7 @@ export function dayLabel(day: number): string {
   return `Day ${day} · ${dayDateLabel(day)}`;
 }
 
-// Distinct color per trip day for route polylines / itinerary accents.
+// Distinct color per trip day for route polylines / plan accents.
 const DAY_PALETTE = [
   '#e6194b', '#3cb44b', '#4363d8', '#f58231', '#911eb4',
   '#469990', '#9A6324', '#800000', '#808000', '#000075',
@@ -165,7 +165,7 @@ export interface DayHint {
 
 // FIXED external facts only — these are true regardless of which stops are scheduled.
 // Stop-specific timing advice lives in each place's bestTime field and appears
-// dynamically in the itinerary day view when that stop is scheduled.
+// dynamically in the plan day view when that stop is scheduled.
 export const DAY_HINTS: Record<number, DayHint> = {
   1:  { icon: '🌑', text: 'New moon Jun 16–18 — darkest skies of the trip. Good night for stargazing wherever you camp.' },
   2:  { icon: '🕙', text: 'Day 3 airport run: leave wherever you are by ~14:00. Flight lands 17:20; be at arrivals by 17:30.' },
@@ -185,7 +185,7 @@ export const DAY_HINTS: Record<number, DayHint> = {
 /**
  * Static weather + daylight digest per trip day.
  * Source: trip-ops.md §1 (weather zones) and §2 (sun times / CEST).
- * These are planning notes, not live forecasts.
+ * These are plan notes, not live forecasts.
  */
 export const DAY_OPS: Record<number, string> = {
   1:  'Zadar coast ~28/20°C, sunny · 🌅 05:13 → 20:47 · sea ~22°C',
@@ -206,7 +206,7 @@ export const DAY_OPS: Record<number, string> = {
 /**
  * Strip "Day N (Jun DD) — " prefix from a bestTime string and truncate to
  * the first sentence (up to 100 chars) or a word boundary near 75 chars.
- * Used in both the Itinerary day view and the Today stop list.
+ * Used in both the plan day view and the Today stop list.
  */
 export function stopHint(bestTime: string | undefined): string {
   if (!bestTime) return '';

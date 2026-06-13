@@ -291,8 +291,8 @@ export default function Today({
 
       {stops.length === 0 ? (
         <p className="today-empty">
-          No stops planned for {isToday ? 'today' : 'this day'} — switch to Planning mode to
-          assign some, or just use the map.
+          No stops planned for {isToday ? 'today' : 'this day'} — open the plan to assign some,
+          or just use the map.
         </p>
       ) : (
         <ol className="today-stops">

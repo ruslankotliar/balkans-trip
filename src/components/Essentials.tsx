@@ -132,7 +132,7 @@ export default function Essentials({
   tripMode = false,
   onShowPin,
 }: Props) {
-  // Trip mode defaults to emergency info; planning mode defaults to tasks.
+  // Trip mode defaults to emergency info; plan mode defaults to tasks.
   const [openId, setOpenId] = useState<string | null>(tripMode ? 'emergency' : 'tasks');
   const toggle = (id: string) => setOpenId((cur) => (cur === id ? null : id));
 

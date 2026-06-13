@@ -217,13 +217,13 @@ export default function DetailPanel({
                 )}
               </div>
               <div className="detail-time-foot">
-                Manual duration used by Today and Itinerary.
+                Manual duration used by Today and the plan.
               </div>
               {timeMsg && <div className="detail-time-msg">{timeMsg}</div>}
             </div>
           </details>
 
-          {/* ---- Planning / editing controls are tucked behind one disclosure. ---- */}
+          {/* ---- Plan / editing controls are tucked behind one disclosure. ---- */}
           <details className="detail-plan" open>
             <summary>
               <span>Plan this place</span>

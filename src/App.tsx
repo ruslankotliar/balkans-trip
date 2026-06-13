@@ -77,7 +77,7 @@ const CorridorPanel = lazy(() => import('./components/CorridorPanel'));
 const Today = lazy(() => import('./components/Today'));
 const LazyEssentials = lazy(() => import('./components/Essentials'));
 const LazyReview = lazy(() => import('./components/Review'));
-const LazyItinerary = lazy(() => import('./components/Itinerary'));
+const LazyPlan = lazy(() => import('./components/Itinerary'));
 function PanelFallback({ text }: { text: string }) {
   return (
     <div className="place-list-empty">
@@ -98,7 +98,7 @@ function DialogFallback({ title }: { title: string }) {
   );
 }
 
-type View = 'places' | 'itinerary' | 'review';
+type View = 'places' | 'plan' | 'review';
 
 // Categories that count as a place to sleep, for the nearby finder.
 const SLEEP_CATEGORIES: Category[] = ['campsite', 'accommodation'];
@@ -111,10 +111,10 @@ const NEAR_ME_CATEGORIES: Category[] = [...SIGHT_CATEGORIES, 'food', 'nightlife'
 
 const SLEEP_TONIGHT_KM = 25;
 const NEAR_ME_KM = 30;
-// One-tap quick filters: the common planning flows must be 1–2 taps.
+// One-tap quick filters: the common plan flows must be 1–2 taps.
 // (Trip mode has its own one-tap finders: 🛏 Sleep tonight / 📍 Near me.)
 const NON_REJECTED: Status[] = ['candidate', 'shortlist', 'backup'];
-const DEFAULT_PLANNING_STATUSES: Status[] = ['shortlist'];
+const DEFAULT_PLAN_STATUSES: Status[] = ['shortlist'];
 interface FilterPreset {
   id: string;
   label: string;
@@ -147,7 +147,7 @@ const FILTER_PRESETS: FilterPreset[] = [
     label: '↺ All',
     title: 'Back to the default view (all categories, shortlist only)',
     categories: CATEGORIES,
-    statuses: DEFAULT_PLANNING_STATUSES,
+    statuses: DEFAULT_PLAN_STATUSES,
   },
 ];
 
@@ -320,10 +320,10 @@ export default function App() {
 
   const [countryFilter, setCountryFilter] = useState<Set<Country>>(new Set(COUNTRIES));
   const [categoryFilter, setCategoryFilter] = useState<Set<Category>>(new Set(CATEGORIES));
-  // Planning default: the plan you care about (shortlist only) — backup stays
+  // Plan default: the plan you care about (shortlist only) — backup stays
   // available via the status chips, but it does not clutter the default view.
   const [statusFilter, setStatusFilter] = useState<Set<Status>>(
-    new Set<Status>(DEFAULT_PLANNING_STATUSES),
+    new Set<Status>(DEFAULT_PLAN_STATUSES),
   );
   const [search, setSearch] = useState('');
   const deferredSearch = useDeferredValue(search);
@@ -349,13 +349,14 @@ export default function App() {
   const [fitNonce, setFitNonce] = useState(0);
   const [toolsOpen, setToolsOpen] = useState(false);
 
-  // ---- Planning mode vs Trip mode ----
+  // ---- Plan mode vs Trip mode ----
   // Trip mode is the on-the-road UI: today-centric, no research machinery.
-  // ?mode=trip|planning overrides (handy for sharing/testing).
+  // ?mode=trip|plan overrides (handy for sharing/testing; "planning" still loads as plan).
   const [mode, setModeState] = useState<Mode>(() => {
     const urlMode = new URLSearchParams(location.search).get('mode');
-    if (urlMode === 'trip' || urlMode === 'planning') return urlMode;
-    return loadSavedMode() ?? (isDuringTrip() ? 'trip' : 'planning');
+    if (urlMode === 'trip' || urlMode === 'plan') return urlMode;
+    if (urlMode === 'planning') return 'plan';
+    return loadSavedMode() ?? (isDuringTrip() ? 'trip' : 'plan');
   });
   const [sidebarOpen, setSidebarOpen] = useState(mode === 'trip');
   // On phones the open sidebar fills the screen and would cover the detail
@@ -620,7 +621,7 @@ export default function App() {
   }, [mode, places, tripDay]);
 
   const routeDaysToShow = useMemo(() => {
-    if (mode === 'trip' || view === 'itinerary') return new Set<number>([tripDay]);
+    if (mode === 'trip' || view === 'plan') return new Set<number>([tripDay]);
     return null;
   }, [mode, view, tripDay]);
 
@@ -1077,10 +1078,10 @@ export default function App() {
           <h1>Balkans Trip</h1>
           <button
             className={`mode-pill ${mode}`}
-            onClick={() => setMode(mode === 'trip' ? 'planning' : 'trip')}
-            title="Switch between planning (research) and trip (on the road) mode"
+            onClick={() => setMode(mode === 'trip' ? 'plan' : 'trip')}
+            title="Switch between plan and trip mode"
           >
-            {mode === 'trip' ? '🚗 Trip' : '🗺️ Planning'}
+            {mode === 'trip' ? '🗺️ Plan' : '🚗 Trip'}
           </button>
         </div>
 
@@ -1125,7 +1126,7 @@ export default function App() {
         ) : (
         <>
         <p className="subtitle">
-          Jun 16–28 · planning
+          Jun 16–28 · trip plan
           <span
             className={`sync-state ${
               syncLabel === 'online' ? 'on' : ''
@@ -1145,10 +1146,10 @@ export default function App() {
             Places
           </button>
           <button
-            className={view === 'itinerary' ? 'on' : ''}
-            onClick={() => { setView('itinerary'); setCorridor(null); setToolsOpen(false); }}
+            className={view === 'plan' ? 'on' : ''}
+            onClick={() => { setView('plan'); setCorridor(null); setToolsOpen(false); }}
           >
-            Itinerary
+            Plan
           </button>
         </div>
 
@@ -1161,7 +1162,7 @@ export default function App() {
           />
         )}
 
-        {!corridor && view !== 'itinerary' && view !== 'review' && (
+        {!corridor && view !== 'plan' && view !== 'review' && (
           <>
             {/* Always-visible: one-tap presets cover the common flows. */}
             <div className="filter-group preset-row">
@@ -1358,10 +1359,10 @@ export default function App() {
           </Suspense>
         )}
 
-        {!corridor && view === 'itinerary' && (
-          <Suspense fallback={<PanelFallback text="Loading itinerary…" />}>
+        {!corridor && view === 'plan' && (
+          <Suspense fallback={<PanelFallback text="Loading plan…" />}>
             <>
-              <LazyItinerary
+              <LazyPlan
                 day={tripDay}
                 onDay={setTripDay}
                 places={places}
@@ -1385,7 +1386,7 @@ export default function App() {
         )}
 
         <div className="sidebar-footer">
-          {mode === 'planning' && (
+          {mode === 'plan' && (
             <div className="tools-menu-wrap">
               <button
                 className={`tools-pill ${toolsOpen ? 'on' : ''}`}

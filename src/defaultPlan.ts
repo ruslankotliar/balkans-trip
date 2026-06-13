@@ -1,5 +1,5 @@
 /**
- * Default day-assignment plan — pre-populates the Itinerary view on first load
+ * Default day-assignment plan — pre-populates the Plan view on first load
  * so all 4 group members see the same plan without needing to share a URL.
  *
  * Generated from research/route-skeleton.md (v4, 2026-06-12).
