@@ -114,6 +114,7 @@ const NEAR_ME_KM = 30;
 // One-tap quick filters: the common planning flows must be 1–2 taps.
 // (Trip mode has its own one-tap finders: 🛏 Sleep tonight / 📍 Near me.)
 const NON_REJECTED: Status[] = ['candidate', 'shortlist', 'backup'];
+const DEFAULT_PLANNING_STATUSES: Status[] = ['shortlist'];
 interface FilterPreset {
   id: string;
   label: string;
@@ -144,9 +145,9 @@ const FILTER_PRESETS: FilterPreset[] = [
   {
     id: 'reset',
     label: '↺ All',
-    title: 'Back to the default view (all categories, shortlist + backup)',
+    title: 'Back to the default view (all categories, shortlist only)',
     categories: CATEGORIES,
-    statuses: ['shortlist', 'backup'],
+    statuses: DEFAULT_PLANNING_STATUSES,
   },
 ];
 
@@ -319,10 +320,10 @@ export default function App() {
 
   const [countryFilter, setCountryFilter] = useState<Set<Country>>(new Set(COUNTRIES));
   const [categoryFilter, setCategoryFilter] = useState<Set<Category>>(new Set(CATEGORIES));
-  // Planning default: the plan you care about (shortlist+backup) — the candidate
-  // haystack is one tap away on the status chips.
+  // Planning default: the plan you care about (shortlist only) — backup stays
+  // available via the status chips, but it does not clutter the default view.
   const [statusFilter, setStatusFilter] = useState<Set<Status>>(
-    new Set<Status>(['shortlist', 'backup']),
+    new Set<Status>(DEFAULT_PLANNING_STATUSES),
   );
   const [search, setSearch] = useState('');
   const deferredSearch = useDeferredValue(search);
