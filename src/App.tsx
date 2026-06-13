@@ -545,6 +545,13 @@ export default function App() {
     return out;
   }, [dayStops, routes, ferryHours, paceMultiplier]);
 
+  const itineraryRoutePts = useMemo(() => {
+    if (mode !== 'planning' || view !== 'itinerary') return [];
+    const route = routes[tripDay];
+    if (route?.coordinates?.length >= 2) return toLatLngs(route.coordinates);
+    return (dayStops[tripDay] ?? []).map((p) => [p.lat, p.lng] as [number, number]);
+  }, [mode, view, tripDay, routes, dayStops]);
+
   // ---- Trip mode: today, GPS, sleep tonight, near me ----
   const todayStops = useMemo(() => dayStops[tripDay] ?? [], [dayStops, tripDay]);
   const todayIds = useMemo(() => new Set(todayStops.map((p) => p.id)), [todayStops]);
@@ -618,6 +625,11 @@ export default function App() {
         p.day === tripDay + 1,
     );
   }, [mode, places, tripDay]);
+
+  const routeDaysToShow = useMemo(() => {
+    if (mode === 'trip' || view === 'itinerary') return new Set<number>([tripDay]);
+    return null;
+  }, [mode, view, tripDay]);
 
   function toggleDone(id: string) {
     setDoneIds((prev) => {
@@ -703,6 +715,16 @@ export default function App() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mode, tripDay]);
+
+  // In itinerary mode, the selected day's route should own the map.
+  useEffect(() => {
+    if (mode !== 'planning' || view !== 'itinerary' || itineraryRoutePts.length === 0 || !mapRef.current) return;
+    mapRef.current.fitBounds(L.latLngBounds(itineraryRoutePts), {
+      padding: [60, 60],
+      maxZoom: 12,
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, view, tripDay, itineraryRoutePts]);
 
   // ---- Nearby matches ----
   const nearbyMatchIds = useMemo(() => {
@@ -1444,7 +1466,7 @@ export default function App() {
 
         {/* Per-day committed routes (trip mode: only today's, to cut clutter) */}
         {Object.entries(routes)
-          .filter(([day]) => mode !== 'trip' || Number(day) === tripDay)
+          .filter(([day]) => !routeDaysToShow || routeDaysToShow.has(Number(day)))
           .map(([day, r]) => (
             <Polyline
               key={`day-${day}`}
