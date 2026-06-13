@@ -1,7 +1,7 @@
 import { CATEGORY_COLORS } from '../constants';
 import { bookingFor, navUrl } from '../links';
 import type { CachedRoute, PlaceWithOverride } from '../store';
-import { formatClock, formatRecoveryNames, type DaySchedule } from '../schedule';
+import { formatClock, type DaySchedule } from '../schedule';
 import { DAY_HINTS, DAY_OPS, TRIP_DAYS, daysToTripStart, dayDateLabel, formatDuration, stopHint } from '../trip';
 
 export interface ProximityMatch {
@@ -170,10 +170,6 @@ export default function Today({
     next && nextIdx > 0 ? ferryFor(stops[nextIdx - 1].id, next.id) : 0;
   const nextGpsKm = next ? kmFromGps(next.lat, next.lng) : null;
   const scheduleOverSec = schedule?.overSec ?? 0;
-  const recovery = schedule && scheduleOverSec > 0 ? schedule.recovery[0] ?? null : null;
-  const recoveryText = recovery
-    ? `Fastest catch-up: skip ${formatRecoveryNames(recovery.names)} to recover ${formatDuration(recovery.freedSec)}`
-    : null;
 
   return (
     <div className="today">
@@ -269,7 +265,6 @@ export default function Today({
           ) : (
             <span>All stops done 🎉</span>
           )}
-          {recoveryText && <div className="today-next-recovery">{recoveryText}</div>}
         </div>
       )}
 
@@ -311,7 +306,6 @@ export default function Today({
                   <div className={`today-stop-time ${entry.source === 'override' ? 'override' : ''}`}>
                     {formatClock(entry.arriveSec)} → {formatClock(entry.departSec)} ·{' '}
                     {formatDuration(entry.staySec)}
-                    {entry.source !== 'heuristic' ? ` · ${entry.source}` : ''}
                   </div>
                 )}
                 {i > 0 && (legSec != null || ferryH > 0) && (

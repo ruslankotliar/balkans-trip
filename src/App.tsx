@@ -11,25 +11,13 @@ import {
 } from 'react-leaflet';
 import { type DraftPlace } from './components/AddPlace';
 import DetailPanel from './components/DetailPanel';
-import { ImportPrompt } from './components/SharePlan';
 import { type CorridorMatch } from './components/CorridorPanel';
 import { type ProximityMatch } from './components/Today';
 import {
-  addCommentLocal,
-  buildTallies,
-  castVoteLocal,
-  loadCommentsCache,
-  loadPerson,
   loadRemotePlacesCache,
-  loadVotesCache,
-  myVote as myVoteFor,
   pushUserPlace,
-  savePerson,
   queuePlanOverrideSync,
   syncCollab,
-  type CommentRow,
-  type VoteRow,
-  type VoteValue,
 } from './collab';
 import {
   CATEGORIES,
@@ -40,12 +28,8 @@ import {
   toggle,
 } from './constants';
 import { bookingFor, type SourceLink } from './links';
-import { fetchRoute, fetchTable, fetchTrip, routeKey, type LatLng } from './osrm';
-import { solveOrder, type SolveResult } from './solver';
-import { downloadText } from './exports';
+import { fetchRoute, routeKey } from './osrm';
 import {
-  decodePlan,
-  encodePlan,
   applyPlanOverrideRows,
   ferryPairKey,
   loadDayNotes,
@@ -56,7 +40,6 @@ import {
   loadPlaces,
   loadRouteCache,
   loadSavedMode,
-  loadTripTempo,
   loadTripCache,
   loadUserPlaces,
   saveDayNotes,
@@ -64,7 +47,6 @@ import {
   saveFerryHours,
   saveLastFix,
   saveMode,
-  saveTripTempo,
   saveOverrides,
   saveRouteCache,
   saveTripCache,
@@ -75,12 +57,9 @@ import {
   type Mode,
   type Overrides,
   type PlaceWithOverride,
-  type SharedPlan,
-  type TripResult,
-  type TripTempo,
 } from './store';
 import { hasSupabase } from './supabase';
-import { buildDaySchedule, formatRecoveryNames } from './schedule';
+import { buildDaySchedule } from './schedule';
 import {
   currentTripDay,
   dayColor,
@@ -89,21 +68,16 @@ import {
   nearestLegIndex,
   pointToPolylineKm,
   formatDuration,
-  splitIntoDays,
 } from './trip';
 import type { Category, Country, Place, Status } from './types';
 import { useDayRoutes } from './useDayRoutes';
-import { BOOK_EARLY_STAYS, type BookEarlyStay } from './bookEarlyStays';
 
 const AddPlace = lazy(() => import('./components/AddPlace'));
 const CorridorPanel = lazy(() => import('./components/CorridorPanel'));
 const Today = lazy(() => import('./components/Today'));
-const WhoAreYou = lazy(() => import('./components/WhoAreYou'));
 const LazyEssentials = lazy(() => import('./components/Essentials'));
 const LazyReview = lazy(() => import('./components/Review'));
 const LazyItinerary = lazy(() => import('./components/Itinerary'));
-const LazyRouteBuilder = lazy(() => import('./components/RouteBuilder'));
-
 function PanelFallback({ text }: { text: string }) {
   return (
     <div className="place-list-empty">
@@ -124,7 +98,7 @@ function DialogFallback({ title }: { title: string }) {
   );
 }
 
-type View = 'places' | 'itinerary' | 'route' | 'review';
+type View = 'places' | 'itinerary' | 'review';
 
 // Categories that count as a place to sleep, for the nearby finder.
 const SLEEP_CATEGORIES: Category[] = ['campsite', 'accommodation'];
@@ -137,32 +111,15 @@ const NEAR_ME_CATEGORIES: Category[] = [...SIGHT_CATEGORIES, 'food', 'nightlife'
 
 const SLEEP_TONIGHT_KM = 25;
 const NEAR_ME_KM = 30;
-const TEMPO_MULTIPLIER: Record<TripTempo, number> = {
-  tight: 0.9,
-  realistic: 1.15,
-  relaxed: 1.3,
-};
-const TEMPO_OPTIONS: Array<{ tempo: TripTempo; label: string }> = [
-  { tempo: 'tight', label: 'Tight' },
-  { tempo: 'realistic', label: 'Realistic' },
-  { tempo: 'relaxed', label: 'Relaxed' },
-];
-
 // One-tap quick filters: the common planning flows must be 1–2 taps.
 // (Trip mode has its own one-tap finders: 🛏 Sleep tonight / 📍 Near me.)
 const NON_REJECTED: Status[] = ['candidate', 'shortlist', 'backup'];
-// Vote-derived filters turn the group's 👍/👎 into decisions:
-//  - 'favorites' = clear group wins (net ≥ +2, or all-positive with ≥2 votes)
-//  - 'split'     = has BOTH up and down votes → needs discussion
-type VoteFilter = 'all' | 'favorites' | 'split';
 interface FilterPreset {
   id: string;
   label: string;
   title: string;
   categories?: Category[];
   statuses?: Status[];
-  /** A vote-derived filter applied on top of category/status. */
-  vote?: VoteFilter;
 }
 const FILTER_PRESETS: FilterPreset[] = [
   {
@@ -305,35 +262,14 @@ function numberIcon(n: number, color: string) {
 }
 
 /** A small 👍/👎 tally badge anchored to the top-right of a pin. */
-function voteBadgeIcon(up: number, down: number) {
-  const parts: string[] = [];
-  if (up > 0) parts.push(`<span class="vb-up">👍${up}</span>`);
-  if (down > 0) parts.push(`<span class="vb-down">👎${down}</span>`);
-  return L.divIcon({
-    className: 'vote-badge',
-    html: `<div class="vote-badge-inner">${parts.join('')}</div>`,
-    iconSize: [1, 1],
-    iconAnchor: [-8, 18],
-  });
-}
-
 export default function App() {
   // User-added places (feature A) merge AFTER the bundle so the existing
   // "first id wins" de-dupe protects against a user id colliding with a baked
   // one. Everything downstream (map, filters, route builder, finders, exports)
   // treats them as ordinary places.
   const [userPlaces, setUserPlaces] = useState<Place[]>(loadUserPlaces);
-  // ---- Collaboration layer (votes / comments / friend-added-place sync) ----
-  // Remote user places (added on other phones) merge in too; everything reads
-  // from localStorage caches first, so the app is fully usable offline.
-  const [person, setPerson] = useState<string | null>(loadPerson);
   const [remotePlaces, setRemotePlaces] = useState<Place[]>(loadRemotePlacesCache);
-  const [votes, setVotes] = useState<VoteRow[]>(loadVotesCache);
-  const [comments, setComments] = useState<CommentRow[]>(loadCommentsCache);
   const [syncOnline, setSyncOnline] = useState<boolean | null>(hasSupabase ? null : false);
-  // whoOpen drives the "Who are you?" prompt (first use + later edits). reason
-  // 'firstUse' has no Cancel (we want a name to vote with).
-  const [whoOpen, setWhoOpen] = useState<'firstUse' | 'edit' | null>(null);
   // Merge baked → local user places → remote user places (first id wins, so a
   // local edit of a place I added shadows the remote copy until it syncs).
   const basePlaces = useMemo<Place[]>(() => {
@@ -342,16 +278,11 @@ export default function App() {
     return [...loadPlaces(), ...userPlaces, ...remoteOnly];
   }, [userPlaces, remotePlaces]);
 
-  // Vote tallies + comments keyed by place id, recomputed when the caches change.
-  const tallies = useMemo(() => buildTallies(votes), [votes]);
-
   /** Pull the latest collab state from Supabase (best-effort; degrades to cache). */
   const runSync = useRef(async () => {});
   runSync.current = async () => {
     const res = await syncCollab();
     setSyncOnline(res.online);
-    setVotes(res.votes);
-    setComments(res.comments);
     setRemotePlaces(res.remotePlaces);
     if (res.planRows.length > 0) {
       setOverrides((prev) => {
@@ -370,37 +301,6 @@ export default function App() {
     return () => window.removeEventListener('focus', onFocus);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  // First-use identity prompt (only if no name yet).
-  useEffect(() => {
-    if (!person) setWhoOpen('firstUse');
-  }, [person]);
-
-  function saveName(name: string) {
-    savePerson(name);
-    setPerson(name);
-    setWhoOpen(null);
-  }
-
-  function castVote(placeId: string, vote: VoteValue) {
-    if (!person) {
-      setWhoOpen('firstUse');
-      return;
-    }
-    const { cache } = castVoteLocal(votes, placeId, person, vote);
-    setVotes(cache); // optimistic
-    void runSync.current(); // push + refresh in the background
-  }
-
-  function addComment(placeId: string, body: string) {
-    if (!person) {
-      setWhoOpen('firstUse');
-      return;
-    }
-    const { cache } = addCommentLocal(comments, placeId, person, body);
-    setComments(cache); // optimistic
-    void runSync.current();
-  }
   const [overrides, setOverrides] = useState<Overrides>(loadOverrides);
   const places = useMemo<PlaceWithOverride[]>(
     () => basePlaces.map((p) => ({ ...p, ...overrides[p.id] })),
@@ -423,16 +323,6 @@ export default function App() {
     return m;
   }, [basePlaces]);
 
-  const bookEarlyStays = useMemo(
-    () =>
-      BOOK_EARLY_STAYS.map((pick) => {
-        const place = placeById.get(pick.id);
-        if (!place) return null;
-        return { ...pick, place };
-      }).filter(Boolean) as Array<BookEarlyStay & { place: PlaceWithOverride }>,
-    [placeById],
-  );
-
   const [countryFilter, setCountryFilter] = useState<Set<Country>>(new Set(COUNTRIES));
   const [categoryFilter, setCategoryFilter] = useState<Set<Category>>(new Set(CATEGORIES));
   // Planning default: the plan you care about (shortlist+backup) — the candidate
@@ -440,8 +330,6 @@ export default function App() {
   const [statusFilter, setStatusFilter] = useState<Set<Status>>(
     new Set<Status>(['shortlist', 'backup']),
   );
-  const [tagFilter, setTagFilter] = useState<Set<string>>(new Set());
-  const [voteFilter, setVoteFilter] = useState<VoteFilter>('all');
   const [search, setSearch] = useState('');
   const deferredSearch = useDeferredValue(search);
 
@@ -451,21 +339,16 @@ export default function App() {
   function applyPreset(pr: FilterPreset) {
     setCategoryFilter(new Set(pr.categories ?? CATEGORIES));
     setStatusFilter(new Set(pr.statuses ?? NON_REJECTED));
-    setTagFilter(new Set());
-    setVoteFilter(pr.vote ?? 'all');
   }
   const presetActive = (pr: FilterPreset) =>
     setEq(categoryFilter, pr.categories ?? CATEGORIES) &&
-    setEq(statusFilter, pr.statuses ?? NON_REJECTED) &&
-    tagFilter.size === 0 &&
-    voteFilter === (pr.vote ?? 'all');
+    setEq(statusFilter, pr.statuses ?? NON_REJECTED);
 
   // How many advanced filters are narrowing the view (for the disclosure label).
   const advancedFilterCount =
     (countryFilter.size < COUNTRIES.length ? 1 : 0) +
     (categoryFilter.size < CATEGORIES.length ? 1 : 0) +
-    (statusFilter.size < STATUSES.length ? 1 : 0) +
-    (tagFilter.size > 0 ? 1 : 0);
+    (statusFilter.size < STATUSES.length ? 1 : 0);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [view, setView] = useState<View>('places');
   const [fitNonce, setFitNonce] = useState(0);
@@ -479,7 +362,6 @@ export default function App() {
     if (urlMode === 'trip' || urlMode === 'planning') return urlMode;
     return loadSavedMode() ?? (isDuringTrip() ? 'trip' : 'planning');
   });
-  const [tripTempo, setTripTempoState] = useState<TripTempo>(loadTripTempo);
   const [sidebarOpen, setSidebarOpen] = useState(mode === 'trip');
   // On phones the open sidebar fills the screen and would cover the detail
   // bottom-sheet, so selecting a place auto-collapses it; we remember whether
@@ -502,9 +384,6 @@ export default function App() {
   // ---- Offline Essentials (feature B5) ----
   const [essentialsOpen, setEssentialsOpen] = useState(false);
 
-  // ---- Share plan import prompt (feature B1) ----
-  const [importPlan, setImportPlan] = useState<SharedPlan | null>(null);
-
   // GPS "you are here" (last fix cached so a cold start still shows a dot)
   const [gpsFix, setGpsFix] = useState<GpsFix | null>(loadLastFix);
   const mapRef = useRef<L.Map | null>(null);
@@ -522,13 +401,7 @@ export default function App() {
     setSleepOpen(false);
     setNearOpen(false);
   }
-
-  function setTripTempo(tempo: TripTempo) {
-    setTripTempoState(tempo);
-    saveTripTempo(tempo);
-  }
-  const paceMultiplier = TEMPO_MULTIPLIER[tripTempo];
-  const tripTempoLabel = TEMPO_OPTIONS.find((option) => option.tempo === tripTempo)?.label ?? tripTempo;
+  const paceMultiplier = 1;
 
   useEffect(() => {
     document.body.classList.toggle('trip-mode', mode === 'trip');
@@ -561,27 +434,10 @@ export default function App() {
   } | null>(null);
   const [corridorRadius, setCorridorRadius] = useState(10);
 
-  // Route builder
-  const [rbSelected, setRbSelected] = useState<Set<string>>(new Set());
-  const [rbStart, setRbStart] = useState<string | null>(null);
-  const [rbEnd, setRbEnd] = useState<string | null>(null);
-  const [rbAnchors, setRbAnchors] = useState<string[]>([]); // ordered pinned stops
-  const [rbTrip, setRbTrip] = useState<TripResult | null>(null);
-  const [rbInputIds, setRbInputIds] = useState<string[]>([]);
-  const [rbBuilding, setRbBuilding] = useState(false);
-  const [rbError, setRbError] = useState<string | null>(null);
-  const [rbMaxHours, setRbMaxHours] = useState(3);
-
   // Manual ferry hours per leg (persisted; keyed by place-id pair)
   const [ferryHours, setFerryHours] = useState<FerryHours>(loadFerryHours);
 
   const selected = selectedId ? placeById.get(selectedId) ?? null : null;
-
-  const allTags = useMemo(() => {
-    const s = new Set<string>();
-    for (const p of places) for (const t of p.tags ?? []) s.add(t);
-    return [...s].sort();
-  }, [places]);
 
   const matchesText = (p: PlaceWithOverride) => {
     if (deferredSearch === '') return true;
@@ -590,18 +446,8 @@ export default function App() {
       p.name.toLowerCase().includes(q) ||
       (p.note ?? '').toLowerCase().includes(q) ||
       (p.description ?? '').toLowerCase().includes(q) ||
-      (p.communityNotes ?? '').toLowerCase().includes(q) ||
-      (p.tags ?? []).some((t) => t.toLowerCase().includes(q))
+      (p.communityNotes ?? '').toLowerCase().includes(q)
     );
-  };
-
-  const matchesTags = (p: PlaceWithOverride) =>
-    tagFilter.size === 0 || (p.tags ?? []).some((t) => tagFilter.has(t));
-
-  const matchesVote = (p: PlaceWithOverride) => {
-    if (voteFilter === 'all') return true;
-    const t = tallies.get(p.id);
-    return voteFilter === 'favorites' ? isFavorite(t) : isSplit(t);
   };
 
   const visible = places.filter(
@@ -609,8 +455,6 @@ export default function App() {
       countryFilter.has(p.country) &&
       categoryFilter.has(p.category) &&
       statusFilter.has(p.status) &&
-      matchesTags(p) &&
-      matchesVote(p) &&
       matchesText(p),
   );
 
@@ -626,7 +470,6 @@ export default function App() {
       if (
         countryFilter.has(p.country) &&
         categoryFilter.has(p.category) &&
-        matchesTags(p) &&
         matchesText(p)
       ) {
         counts[p.status]++;
@@ -634,7 +477,7 @@ export default function App() {
     }
     return counts;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [places, countryFilter, categoryFilter, tagFilter, search]);
+  }, [places, countryFilter, categoryFilter, search]);
 
   const rejected = places.filter((p) => p.status === 'rejected');
 
@@ -711,35 +554,6 @@ export default function App() {
   const todayStops = useMemo(() => dayStops[tripDay] ?? [], [dayStops, tripDay]);
   const todayIds = useMemo(() => new Set(todayStops.map((p) => p.id)), [todayStops]);
   const todaySchedule = daySchedules[tripDay] ?? null;
-  const planningHealth = useMemo(() => {
-    const schedules = Object.entries(daySchedules)
-      .flatMap(([dayStr, schedule]) =>
-        schedule ? [{ day: Number(dayStr), schedule }] : [],
-      )
-      .sort((a, b) => a.day - b.day);
-    if (schedules.length === 0) return null;
-
-    let lateDays = 0;
-    let totalOverSec = 0;
-    let totalSlackSec = 0;
-    let tightest = schedules[0];
-
-    for (const entry of schedules) {
-      if (entry.schedule.overSec > 0) {
-        lateDays += 1;
-        totalOverSec += entry.schedule.overSec;
-      } else {
-        totalSlackSec += entry.schedule.slackSec;
-      }
-      if (entry.schedule.slackSec < tightest.schedule.slackSec) {
-        tightest = entry;
-      }
-    }
-
-    const recovery = tightest.schedule.overSec > 0 ? tightest.schedule.recovery[0] ?? null : null;
-    return { lateDays, totalOverSec, totalSlackSec, tightest, recovery };
-  }, [daySchedules]);
-
   const totalPlanned = useMemo(
     () => Object.values(dayStops).reduce((sum, ps) => sum + ps.length, 0),
     [dayStops],
@@ -974,15 +788,6 @@ export default function App() {
     setCorridor({ coords: toLatLngs(route.coordinates), stops, label: `Day ${day} route` });
   }
 
-  function findSleepAlongTrip() {
-    if (!rbTrip) return;
-    setCorridor({
-      coords: toLatLngs(rbTrip.coordinates),
-      stops: rbOrdered,
-      label: 'the optimized route',
-    });
-  }
-
   // ---- Mutations ----
   function applyOverrides(updater: (o: Overrides) => Overrides) {
     setOverrides((prev) => {
@@ -1057,7 +862,7 @@ export default function App() {
         [editingId]: { ...o[editingId], day: draft.day ?? undefined, note: draft.note || undefined },
       }));
       // Propagate the edit to the other phones too.
-      pushUserPlace(updated, person);
+      pushUserPlace(updated);
       void runSync.current();
       closeAddPlace();
       setSelectedId(editingId);
@@ -1086,7 +891,7 @@ export default function App() {
       }));
     }
     // Sync to user_places so all 4 phones see this pin (best-effort + queued).
-    pushUserPlace(place, person);
+    pushUserPlace(place);
     void runSync.current();
     closeAddPlace();
     setSelectedId(id); // open the detail panel on the new pin
@@ -1125,62 +930,6 @@ export default function App() {
       );
     }
   }
-
-  // ---- Share plan (feature B1) ----
-  function makeShareLink(): string {
-    const encoded = encodePlan({ overrides, userPlaces });
-    const base = `${location.origin}${location.pathname}${location.search}`;
-    return `${base}#plan=${encoded}`;
-  }
-
-  async function sharePlanLink() {
-    const url = makeShareLink();
-    if (navigator.share) {
-      try {
-        await navigator.share({ title: 'Balkans Trip plan', url });
-        return;
-      } catch {
-        // cancelled or unsupported — fall through to clipboard
-      }
-    }
-    try {
-      await navigator.clipboard.writeText(url);
-      alert('Share link copied! Paste it in the group chat — others open it to import the plan.');
-    } catch {
-      prompt('Copy this link and send it to the group:', url);
-    }
-  }
-
-  function applyImportedPlan(plan: SharedPlan, mode: 'merge' | 'replace') {
-    if (mode === 'replace') {
-      const next = normalizeOverrides(plan.overrides);
-      setOverrides(next);
-      saveOverrides(next);
-      setUserPlaces(plan.userPlaces);
-      saveUserPlaces(plan.userPlaces);
-    } else {
-      // Merge: incoming wins per place (importer chose for the whole import).
-      applyOverrides((o) => ({ ...o, ...plan.overrides }));
-      applyUserPlaces((u) => {
-        const byId = new Map(u.map((p) => [p.id, p]));
-        for (const p of plan.userPlaces) byId.set(p.id, p);
-        return [...byId.values()];
-      });
-    }
-    setImportPlan(null);
-  }
-
-  // On load: decode a #plan= hash (robust to malformed input), prompt, clear it.
-  useEffect(() => {
-    const m = location.hash.match(/[#&]plan=([^&]+)/);
-    if (!m) return;
-    const plan = decodePlan(m[1]);
-    // Always clear the hash so a refresh doesn't re-prompt.
-    history.replaceState(null, '', location.pathname + location.search);
-    if (plan) setImportPlan(plan);
-    else alert('That shared-plan link could not be read (it may be corrupted or truncated).');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   function setStatus(id: string, status: Status) {
     applyOverrides((o) => ({ ...o, [id]: { ...o[id], status } }));
@@ -1232,279 +981,10 @@ export default function App() {
     });
   }
 
-  // ---- Route builder ----
-  function toggleRbSelect(id: string) {
-    setRbSelected((prev) => {
-      const next = toggle(prev, id);
-      if (!next.has(id)) setRbAnchors((a) => a.filter((x) => x !== id));
-      return next;
-    });
-  }
-  function selectAllShortlisted() {
-    setRbSelected(new Set(places.filter((p) => p.status === 'shortlist').map((p) => p.id)));
-  }
-  function clearRbSelection() {
-    setRbSelected(new Set());
-    setRbAnchors([]);
-    setRbTrip(null);
-    setRbError(null);
-  }
-  function toggleAnchor(id: string) {
-    setRbAnchors((a) => (a.includes(id) ? a.filter((x) => x !== id) : [...a, id]));
-  }
-  function moveAnchor(id: string, dir: 'up' | 'down') {
-    setRbAnchors((a) => {
-      const i = a.indexOf(id);
-      const j = i + (dir === 'up' ? -1 : 1);
-      if (i < 0 || j < 0 || j >= a.length) return a;
-      const next = [...a];
-      [next[i], next[j]] = [next[j], next[i]];
-      return next;
-    });
-  }
-
-  function setLegFerry(idA: string, idB: string, hours: number) {
-    setFerryHours((prev) => {
-      const next = { ...prev };
-      const key = ferryPairKey(idA, idB);
-      if (!hours || Number.isNaN(hours)) delete next[key];
-      else next[key] = hours;
-      saveFerryHours(next);
-      return next;
-    });
-  }
-
   /** Ferry seconds for the leg between two places (0 if not marked). */
   function legFerrySec(idA: string, idB: string): number {
     return (ferryHours[ferryPairKey(idA, idB)] ?? 0) * 3600;
   }
-
-  /**
-   * Build the optimal route: one OSRM /table call for the duration matrix,
-   * then a LOCAL solve (exact Held-Karp for small sets, NN + 2-opt/or-opt for
-   * larger). User-pinned anchors split the problem into independently-solved
-   * ordered segments. OSRM /route is used only to draw the final geometry.
-   */
-  async function buildRoute() {
-    const chosen = places.filter((p) => rbSelected.has(p.id));
-    if (chosen.length < 2) return;
-    const start = rbStart
-      ? chosen.find((p) => p.id === rbStart)
-      : [...chosen].sort((a, b) => b.lat - a.lat)[0]; // northernmost
-    const end = rbEnd
-      ? chosen.find((p) => p.id === rbEnd)
-      : [...chosen].sort((a, b) => a.lat - b.lat)[0]; // southernmost
-    if (!start || !end || start.id === end.id) {
-      setRbError('Pick a distinct start and end.');
-      return;
-    }
-    // Ordered anchor sequence: start → pinned stops (user order) → end.
-    const midAnchors = rbAnchors
-      .filter((id) => id !== start.id && id !== end.id)
-      .map((id) => chosen.find((p) => p.id === id))
-      .filter(Boolean) as PlaceWithOverride[];
-    const anchorSeq = [start, ...midAnchors, end];
-    const anchorIds = new Set(anchorSeq.map((p) => p.id));
-    const free = chosen.filter((p) => !anchorIds.has(p.id));
-    const inputPlaces = [...anchorSeq, ...free];
-    const points = inputPlaces.map((p) => [p.lat, p.lng] as LatLng);
-    if (points.length > 100) {
-      setRbError('Too many stops — the public OSRM server caps at ~100 waypoints.');
-      return;
-    }
-    setRbBuilding(true);
-    setRbError(null);
-
-    // Everything below must never leave the UI stuck on "Solving…": any
-    // unexpected throw (storage, parsing, …) is caught and surfaced, and the
-    // built route always renders from memory even if persisting it fails.
-    try {
-      const key = `trip2:${routeKey(points)}|a:${anchorSeq.length}`;
-      const cache = loadTripCache();
-      let result: TripResult | null = cache[key] ?? null;
-
-      if (!result) {
-        // 1. Duration matrix (one cheap call).
-        const table = await fetchTable(points);
-        if (!table) {
-          setRbError('OSRM /table failed (server busy?). Try again in a moment.');
-          return;
-        }
-        const dur = table.durations;
-
-        // 2. Assign each free stop to the anchor segment with the smallest detour.
-        const A = anchorSeq.length; // input indices 0..A-1 are anchors, in order
-        const segFree: number[][] = Array.from({ length: A - 1 }, () => []);
-        for (let f = A; f < points.length; f++) {
-          let bestSeg = 0;
-          let bestDetour = Infinity;
-          for (let s = 0; s < A - 1; s++) {
-            const detour = dur[s][f] + dur[f][s + 1] - dur[s][s + 1];
-            if (detour < bestDetour) {
-              bestDetour = detour;
-              bestSeg = s;
-            }
-          }
-          segFree[bestSeg].push(f);
-        }
-
-        // 3. Solve each segment locally (exact when small enough).
-        const order: number[] = [0];
-        const segStarts: number[] = [0];
-        let allExact = true;
-        let unroutable = false;
-        for (let s = 0; s < A - 1; s++) {
-          const nodes = [s, ...segFree[s], s + 1]; // input indices in this segment
-          const sub = nodes.map((i) => nodes.map((j) => dur[i][j]));
-          const solved: SolveResult = solveOrder(sub, 0, nodes.length - 1);
-          if (!Number.isFinite(solved.cost)) unroutable = true;
-          if (!solved.exact) allExact = false;
-          for (let k = 1; k < solved.order.length; k++) order.push(nodes[solved.order[k]]);
-          if (s < A - 2) segStarts.push(order.length - 1);
-        }
-        if (unroutable) {
-          setRbError('No road path between some of the chosen stops (check islands without ferries).');
-          return;
-        }
-
-        const method =
-          anchorSeq.length > 2
-            ? allExact
-              ? `anchored ${A - 1} segments · exact per segment`
-              : `anchored ${A - 1} segments · heuristic in large segments`
-            : allExact
-              ? 'exact optimum (Held-Karp)'
-              : 'heuristic (NN + 2-opt/or-opt)';
-
-        // 4. Geometry via /route, only for drawing. Fall back to straight lines.
-        const orderedPts = order.map((i) => points[i]);
-        const road = await fetchRoute(orderedPts);
-        const matrixLegs = order.slice(0, -1).map((from, k) => ({
-          duration: dur[from][order[k + 1]],
-          distance: table.distances[from]?.[order[k + 1]] ?? 0,
-        }));
-        result = road
-          ? {
-              distance: road.distance,
-              duration: road.duration,
-              coordinates: road.coordinates,
-              snapped: road.snapped,
-              legs: road.legs && road.legs.length === order.length - 1 ? road.legs : matrixLegs,
-              order,
-              exact: allExact,
-              method,
-              segStarts,
-            }
-          : {
-              distance: matrixLegs.reduce((s, l) => s + l.distance, 0),
-              duration: matrixLegs.reduce((s, l) => s + l.duration, 0),
-              coordinates: orderedPts.map(([lat, lng]) => [lng, lat] as [number, number]),
-              snapped: orderedPts.map(([lat, lng]) => [lng, lat] as [number, number]),
-              legs: matrixLegs,
-              order,
-              exact: allExact,
-              method: `${method} · straight-line preview (route fetch failed)`,
-              segStarts,
-            };
-        cache[key] = result;
-        // Quota-safe: slims geometry, evicts old entries, and on a full storage
-        // skips persisting entirely — the in-memory `result` still renders.
-        saveTripCache(cache);
-
-        // Dev-only sanity check: how does OSRM /trip's heuristic compare?
-        if (import.meta.env.DEV && anchorSeq.length === 2) {
-          const ours = result.duration;
-          fetchTrip(points).then((t) => {
-            if (!t) return;
-            const diff = t.duration - ours;
-            if (Math.abs(diff) < 30) {
-              console.log(`[route] /trip matches local solver (${Math.round(ours / 60)}min)`);
-            } else if (diff > 0) {
-              console.log(
-                `[route] local solver BEAT /trip by ${Math.round(diff / 60)}min ` +
-                  `(${Math.round(ours / 60)} vs ${Math.round(t.duration / 60)}min)`,
-              );
-            } else {
-              console.warn(
-                `[route] /trip was ${Math.round(-diff / 60)}min BETTER than local solver — investigate`,
-                { ours, trip: t.duration },
-              );
-            }
-          });
-        }
-      }
-
-      setRbTrip(result);
-      setRbInputIds(inputPlaces.map((p) => p.id));
-    } catch (e) {
-      console.warn('[route] build failed', e);
-      setRbError('Route build failed unexpectedly — see the console for details.');
-    } finally {
-      setRbBuilding(false);
-    }
-  }
-
-  const rbInputPlaces = useMemo(
-    () => rbInputIds.map((id) => placeById.get(id)).filter(Boolean) as PlaceWithOverride[],
-    [rbInputIds, placeById],
-  );
-
-  /** Places in optimal visiting order (aligned with rbTrip.legs). */
-  const rbOrdered = useMemo(
-    () =>
-      rbTrip
-        ? (rbTrip.order.map((i) => rbInputPlaces[i]).filter(Boolean) as PlaceWithOverride[])
-        : [],
-    [rbTrip, rbInputPlaces],
-  );
-
-  const rbSchedule = useMemo(
-    () =>
-      rbTrip && rbOrdered.length > 0
-        ? buildDaySchedule(
-            rbOrdered,
-            rbTrip,
-            (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0,
-            { paceMultiplier },
-          )
-        : null,
-    [rbTrip, rbOrdered, ferryHours, paceMultiplier],
-  );
-
-  /** Trip legs with manual ferry hours folded in (ferry = wait + crossing). */
-  const rbLegSeconds = useMemo(() => {
-    if (!rbTrip) return [];
-    return rbTrip.legs.map((l, i) => {
-      const a = rbOrdered[i];
-      const b = rbOrdered[i + 1];
-      return l.duration + (a && b ? legFerrySec(a.id, b.id) : 0);
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [rbTrip, rbOrdered, ferryHours]);
-
-  // Live "splits into N days" preview + over-the-limit day warnings.
-  const rbSplit = useMemo(() => {
-    if (!rbTrip) return null;
-    const orderedIds = rbTrip.order.map((i) => rbInputIds[i]);
-    const { days, dayTotals } = splitIntoDays(orderedIds, rbLegSeconds, rbMaxHours);
-    const overDays = dayTotals
-      .map((sec, i) => ({ day: i + 1, sec }))
-      .filter((d) => d.sec > rbMaxHours * 3600 + 60);
-    return { days, overDays };
-  }, [rbTrip, rbInputIds, rbLegSeconds, rbMaxHours]);
-
-  function applyTripToDays() {
-    if (!rbTrip) return;
-    const orderedIds = rbTrip.order.map((i) => rbInputIds[i]);
-    const { assign } = splitIntoDays(orderedIds, rbLegSeconds, rbMaxHours);
-    applyOverrides((o) => {
-      const next = { ...o };
-      for (const id of Object.keys(assign)) next[id] = { ...next[id], ...assign[id] };
-      return next;
-    });
-    setView('itinerary');
-  }
-
   function selectPlace(p: Place | PlaceWithOverride) {
     setSelectedId(p.id);
     // On a phone the open sidebar (list / Today view) covers the detail
@@ -1589,9 +1069,6 @@ export default function App() {
     );
     alert(lines.join('\n'));
   }
-
-  const showTripLayer = view === 'route' && !!rbTrip;
-  const showPlanningTools = mode === 'planning' && (view === 'itinerary' || view === 'route');
 
   return (
     <div className="app">
@@ -1681,79 +1158,16 @@ export default function App() {
             Places
           </button>
           <button
-            className={view === 'itinerary' || view === 'route' ? 'on' : ''}
+            className={view === 'itinerary' ? 'on' : ''}
             onClick={() => { setView('itinerary'); setCorridor(null); setToolsOpen(false); }}
           >
             Itinerary
           </button>
         </div>
 
-        {showPlanningTools && (
-          <details className="planning-tools">
-            <summary>
-              <span>Trip plan</span>
-              <span className="planning-tools-summary">
-                <span>{tripTempoLabel}</span>
-                {planningHealth ? (
-                  <span className={`planning-tools-status ${planningHealth.lateDays > 0 ? 'warn' : ''}`}>
-                    {planningHealth.lateDays > 0
-                      ? `${planningHealth.lateDays} late day${planningHealth.lateDays === 1 ? '' : 's'}`
-                      : 'All days fit'}
-                  </span>
-                ) : (
-                  <span className="planning-tools-status muted">No route yet</span>
-                )}
-              </span>
-            </summary>
-            <div className="planning-tools-body">
-              <label className="tempo-control" title="Adjust how much time each stop usually takes">
-                <span>Pace</span>
-                <select
-                  value={tripTempo}
-                  onChange={(e) => setTripTempo(e.target.value as TripTempo)}
-                  aria-label="Trip pace"
-                >
-                  {TEMPO_OPTIONS.map((option) => (
-                    <option key={option.tempo} value={option.tempo}>
-                      {option.label} · {TEMPO_MULTIPLIER[option.tempo].toFixed(2)}x
-                    </option>
-                  ))}
-                </select>
-              </label>
-
-              {planningHealth && (
-                <details className="plan-estimate">
-                  <summary>
-                    {planningHealth.lateDays > 0
-                      ? `${planningHealth.lateDays} late day${planningHealth.lateDays === 1 ? '' : 's'} · ${formatDuration(planningHealth.totalOverSec)} over`
-                      : `All days fit · ${formatDuration(planningHealth.totalSlackSec)} slack`}
-                  </summary>
-                  <div className="plan-estimate-body">
-                    <div className="plan-estimate-row">
-                      <span>{planningHealth.lateDays > 0 ? 'Worst day' : 'Tightest day'}</span>
-                      <span>
-                        Day {planningHealth.tightest.day} ·{' '}
-                        {planningHealth.tightest.schedule.slackSec >= 0
-                          ? `${formatDuration(planningHealth.tightest.schedule.slackSec)} slack`
-                          : `+${formatDuration(planningHealth.tightest.schedule.overSec)} late`}
-                      </span>
-                    </div>
-                    {planningHealth.recovery && (
-                      <div className="plan-estimate-trim">
-                        Best trim: skip {formatRecoveryNames(planningHealth.recovery.names)} to recover{' '}
-                        {formatDuration(planningHealth.recovery.freedSec)}
-                      </div>
-                    )}
-                  </div>
-                </details>
-              )}
-            </div>
-          </details>
-        )}
-
         <input
           className="search"
-          placeholder="Search name, note, tags…"
+          placeholder="Search name or note…"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
@@ -1781,7 +1195,6 @@ export default function App() {
                   className="chip chip-hint"
                   onClick={() => {
                     setStatusFilter(toggle(statusFilter, 'candidate'));
-                    setVoteFilter('all');
                   }}
                 >
                   + show {statusCounts.candidate} candidates
@@ -1811,10 +1224,7 @@ export default function App() {
                   <button
                     key={s}
                     className={`chip ${statusFilter.has(s) ? 'on' : ''}`}
-                    onClick={() => {
-                      setStatusFilter(toggle(statusFilter, s));
-                      setVoteFilter('all');
-                    }}
+                    onClick={() => setStatusFilter(toggle(statusFilter, s))}
                   >
                     {s} <span className="chip-count">{statusCounts[s]}</span>
                   </button>
@@ -1827,40 +1237,13 @@ export default function App() {
                     key={c}
                     className={`chip ${categoryFilter.has(c) ? 'on' : ''}`}
                     style={categoryFilter.has(c) ? { borderColor: CATEGORY_COLORS[c], background: CATEGORY_COLORS[c] + '22' } : undefined}
-                    onClick={() => {
-                      setCategoryFilter(toggle(categoryFilter, c));
-                      setVoteFilter('all');
-                    }}
+                    onClick={() => setCategoryFilter(toggle(categoryFilter, c))}
                   >
                     <span className="dot" style={{ background: CATEGORY_COLORS[c] }} />
                     {c}
                   </button>
                 ))}
               </div>
-
-              {allTags.length > 0 && (
-                <details className="tag-filter">
-                  <summary>
-                    Tags{tagFilter.size > 0 ? ` (${tagFilter.size})` : ''}
-                  </summary>
-                  <div className="filter-group">
-                    {allTags.map((t) => (
-                      <button
-                        key={t}
-                        className={`chip ${tagFilter.has(t) ? 'on' : ''}`}
-                        onClick={() => setTagFilter(toggle(tagFilter, t))}
-                      >
-                        #{t}
-                      </button>
-                    ))}
-                    {tagFilter.size > 0 && (
-                      <button className="chip clear-tags" onClick={() => setTagFilter(new Set())}>
-                        clear
-                      </button>
-                    )}
-                  </div>
-                </details>
-              )}
             </details>
           </>
         )}
@@ -1896,7 +1279,7 @@ export default function App() {
                 {!statusFilter.has('candidate') && statusCounts.candidate > 0 && (
                   <button
                     className="hint-btn"
-                    onClick={() => { setStatusFilter(toggle(statusFilter, 'candidate')); setVoteFilter('all'); }}
+                    onClick={() => { setStatusFilter(toggle(statusFilter, 'candidate')); }}
                   >
                     Show {statusCounts.candidate} candidates
                   </button>
@@ -1917,7 +1300,6 @@ export default function App() {
                 })
                 .map((p) => {
                   const booking = bookingById.get(p.id);
-                  const t = tallies.get(p.id);
                   // When the status filter is narrowed to a single status, the badge
                   // is redundant — every row has the same status, so suppress it.
                   const showBadge = statusFilter.size !== 1;
@@ -1929,12 +1311,6 @@ export default function App() {
                     >
                       <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
                       <span className="place-name">{p.name}</span>
-                      {t && (t.up > 0 || t.down > 0) && (
-                        <span className="row-tally" title={`👍 ${t.up} · 👎 ${t.down}`}>
-                          {t.up > 0 && <span className="row-tally-up">👍{t.up}</span>}
-                          {t.down > 0 && <span className="row-tally-down">👎{t.down}</span>}
-                        </span>
-                      )}
                       {booking && (
                         <a
                           className={`book-mini kind-${booking.kind}`}
@@ -2014,55 +1390,10 @@ export default function App() {
           </Suspense>
         )}
 
-        {!corridor && view === 'route' && (
-          <Suspense fallback={<PanelFallback text="Loading route builder…" />}>
-            <LazyRouteBuilder
-              candidates={visible}
-              selectedIds={rbSelected}
-              onToggleSelect={toggleRbSelect}
-              onSelectAllShortlisted={selectAllShortlisted}
-              onClearSelection={clearRbSelection}
-              startId={rbStart}
-              endId={rbEnd}
-              onStart={setRbStart}
-              onEnd={setRbEnd}
-              anchorIds={rbAnchors}
-              onToggleAnchor={toggleAnchor}
-              onMoveAnchor={moveAnchor}
-              onBuild={buildRoute}
-              building={rbBuilding}
-              error={rbError}
-              trip={rbTrip}
-              tripPlaces={rbInputPlaces}
-              getLegFerry={(a, b) => ferryHours[ferryPairKey(a, b)] ?? 0}
-              onSetLegFerry={setLegFerry}
-              maxHours={rbMaxHours}
-              onMaxHours={setRbMaxHours}
-              onApplyToDays={applyTripToDays}
-              split={rbSplit}
-              schedule={rbSchedule}
-              onFocus={selectPlace}
-              onFindSleep={findSleepAlongTrip}
-            />
-          </Suspense>
-        )}
-
         </>
         )}
 
         <div className="sidebar-footer">
-          <button
-            className="who-pill"
-            onClick={() => setWhoOpen(person ? 'edit' : 'firstUse')}
-            title="Your name (used on votes & comments) — tap to change"
-          >
-            {person ? `🙂 ${person}` : '🙂 Set name'}
-          </button>
-          {mode === 'planning' && (
-            <button className="share-pill" onClick={() => void sharePlanLink()} title={syncTitle}>
-              🔗 Share plan
-            </button>
-          )}
           {mode === 'planning' && (
             <div className="tools-menu-wrap">
               <button
@@ -2084,16 +1415,6 @@ export default function App() {
                     }}
                   >
                     Triage
-                  </button>
-                  <button
-                    role="menuitem"
-                    onClick={() => {
-                      setView('route');
-                      setCorridor(null);
-                      setToolsOpen(false);
-                    }}
-                  >
-                    Route builder
                   </button>
                   <button
                     role="menuitem"
@@ -2162,29 +1483,6 @@ export default function App() {
             );
           })}
 
-        {/* Route builder preview line */}
-        {showTripLayer && rbTrip && (
-          <Polyline
-            positions={toLatLngs(rbTrip.coordinates)}
-            pathOptions={{ color: '#111', weight: 5, opacity: 0.5, dashArray: '1 8' }}
-          />
-        )}
-
-        {/* Ferry legs: dashed blue overlay on legs marked with manual ferry hours */}
-        {showTripLayer &&
-          rbTrip?.snapped &&
-          rbOrdered.slice(0, -1).map((a, i) => {
-            const b = rbOrdered[i + 1];
-            if (!b || legFerrySec(a.id, b.id) <= 0) return null;
-            return (
-              <Polyline
-                key={`ferry-${a.id}-${b.id}`}
-                positions={toLatLngs(sliceLegCoords(rbTrip.coordinates, rbTrip.snapped!, i))}
-                pathOptions={{ color: '#0077be', weight: 5, opacity: 0.9, dashArray: '8 10' }}
-              />
-            );
-          })}
-
         {/* Corridor route highlight */}
         {corridor && (
           <Polyline
@@ -2196,7 +1494,6 @@ export default function App() {
         {markersToShow.map((p) => {
           const isTrip = mode === 'trip';
           const isSel = p.id === selectedId;
-          const rbSel = !isTrip && view === 'route' && rbSelected.has(p.id);
           let dim = false;
           let matchHi = false;
           let radius = p.status === 'shortlist' ? 10 : 7;
@@ -2229,8 +1526,8 @@ export default function App() {
               center={[p.lat, p.lng]}
               radius={radius}
               pathOptions={{
-                color: isSel ? '#FF3B30' : rbSel || matchHi ? '#111' : '#ffffff',
-                weight: isSel ? 4 : rbSel ? 3.5 : matchHi ? 2.5 : p.status === 'shortlist' ? 3 : 1.5,
+                color: isSel ? '#FF3B30' : matchHi ? '#111' : '#ffffff',
+                weight: isSel ? 4 : matchHi ? 2.5 : p.status === 'shortlist' ? 3 : 1.5,
                 fillColor: CATEGORY_COLORS[p.category],
                 fillOpacity: dim
                   ? 0.15
@@ -2242,21 +1539,6 @@ export default function App() {
                 opacity: dim ? 0.2 : softTrip ? 0.6 : 1,
               }}
               eventHandlers={{ click: () => selectPlace(p) }}
-            />
-          );
-        })}
-
-        {/* Vote tally badges on pins that have votes (both modes) */}
-        {markersToShow.map((p) => {
-          const t = tallies.get(p.id);
-          if (!t || (t.up === 0 && t.down === 0)) return null;
-          return (
-            <Marker
-              key={`vb-${p.id}`}
-              position={[p.lat, p.lng]}
-              icon={voteBadgeIcon(t.up, t.down)}
-              interactive={false}
-              keyboard={false}
             />
           );
         })}
@@ -2286,21 +1568,6 @@ export default function App() {
           />
         )}
 
-        {/* Numbered waypoints for the route-builder preview */}
-        {showTripLayer &&
-          rbTrip &&
-          rbTrip.order.map((inputIdx, pos) => {
-            const p = rbInputPlaces[inputIdx];
-            if (!p) return null;
-            return (
-              <Marker
-                key={`wp-${p.id}`}
-                position={[p.lat, p.lng]}
-                icon={numberIcon(pos + 1, '#111')}
-                eventHandlers={{ click: () => selectPlace(p) }}
-              />
-            );
-          })}
       </MapContainer>
 
       <button className="locate-fab" onClick={locateMe} title="Center on me">
@@ -2337,13 +1604,6 @@ export default function App() {
         nearbyCount={nearbyMatchIds.size}
         onToggleNearby={() => setNearbyActive((a) => !a)}
         onNearbyRadius={setNearbyRadius}
-        person={person}
-        myVote={selected ? myVoteFor(votes, selected.id, person) : 0}
-        tally={selected ? tallies.get(selected.id) : undefined}
-        comments={comments}
-        onNeedName={() => setWhoOpen('firstUse')}
-        onVote={(v) => selected && castVote(selected.id, v)}
-        onComment={(body) => selected && addComment(selected.id, body)}
       />
 
       {addPlaceOpen && (
@@ -2367,30 +1627,6 @@ export default function App() {
             onClose={() => setEssentialsOpen(false)}
             tripMode={mode === 'trip'}
             onShowPin={focusPin}
-            onShowPlace={focusPin}
-            bookEarlyStays={bookEarlyStays}
-          />
-        </Suspense>
-      )}
-
-      {importPlan && (
-        <ImportPrompt
-          summary={{
-            overrides: Object.keys(importPlan.overrides).length,
-            userPlaces: importPlan.userPlaces.length,
-          }}
-          onMerge={() => applyImportedPlan(importPlan, 'merge')}
-          onReplace={() => applyImportedPlan(importPlan, 'replace')}
-          onCancel={() => setImportPlan(null)}
-        />
-      )}
-
-      {whoOpen && (
-        <Suspense fallback={<DialogFallback title="Loading name prompt…" />}>
-          <WhoAreYou
-            current={whoOpen === 'edit' ? person : null}
-            onSave={saveName}
-            onCancel={whoOpen === 'edit' ? () => setWhoOpen(null) : undefined}
           />
         </Suspense>
       )}

@@ -17,13 +17,6 @@ export interface StopTiming {
   source: 'override' | 'data' | 'heuristic';
 }
 
-export interface RecoverySuggestion {
-  ids: string[];
-  names: string[];
-  freedSec: number;
-  penalty: number;
-}
-
 export interface DaySchedule {
   dayStartSec: number;
   plannedEndSec: number;
@@ -34,7 +27,6 @@ export interface DaySchedule {
   slackSec: number;
   overSec: number;
   entries: StopTiming[];
-  recovery: RecoverySuggestion[];
 }
 
 const CATEGORY_DEFAULT_MINUTES: Record<PlaceWithOverride['category'], number> = {
@@ -50,28 +42,6 @@ const CATEGORY_DEFAULT_MINUTES: Record<PlaceWithOverride['category'], number> = 
   viewpoint: 30,
   town: 120,
   other: 60,
-};
-
-const STATUS_PENALTY: Record<string, number> = {
-  candidate: 0,
-  backup: 20,
-  shortlist: 40,
-  rejected: 200,
-};
-
-const CATEGORY_PENALTY: Record<PlaceWithOverride['category'], number> = {
-  campsite: 999,
-  accommodation: 999,
-  food: 0,
-  nightlife: 5,
-  beach: 10,
-  sight: 12,
-  viewpoint: 12,
-  town: 15,
-  nature: 16,
-  activity: 18,
-  hike: 24,
-  other: 10,
 };
 
 function normalizeDurationText(text: string): string {
@@ -152,15 +122,6 @@ export function formatTimeRange(startSec: number, endSec: number): string {
   return `${formatClock(startSec)}–${formatClock(endSec)}`;
 }
 
-/**
- * Compress a recovery suggestion into something humans can scan quickly.
- * Example: "Kotor Old Town + Perast + 2 more".
- */
-export function formatRecoveryNames(names: string[], maxVisible = 2): string {
-  if (names.length <= maxVisible) return names.join(' + ');
-  return `${names.slice(0, maxVisible).join(' + ')} + ${names.length - maxVisible} more`;
-}
-
 /** Estimate minutes to spend at a stop, respecting explicit overrides first. */
 export function estimateStopMinutes(place: PlaceWithOverride): { minutes: number; source: 'override' | 'data' | 'heuristic' } {
   if (typeof place.timeMinutes === 'number' && Number.isFinite(place.timeMinutes) && place.timeMinutes >= 0) {
@@ -179,80 +140,6 @@ export function estimateBaseStopMinutes(place: PlaceWithOverride): { minutes: nu
   if (parsed != null) return { minutes: parsed, source: 'data' };
 
   return { minutes: CATEGORY_DEFAULT_MINUTES[place.category], source: 'heuristic' };
-}
-
-function isSleepStop(place: PlaceWithOverride): boolean {
-  return place.category === 'accommodation' || place.category === 'campsite';
-}
-
-function recoveryPenalty(place: PlaceWithOverride): number {
-  const statusPenalty = STATUS_PENALTY[place.status] ?? 50;
-  const categoryPenalty = CATEGORY_PENALTY[place.category] ?? 10;
-  const ratingPenalty = place.rating ? Math.max(0, 5 - place.rating) * 2 : 2;
-  return statusPenalty + categoryPenalty + ratingPenalty;
-}
-
-function summarizeNames(ids: string[], byId: Map<string, PlaceWithOverride>): string[] {
-  return ids.map((id) => byId.get(id)?.name ?? id);
-}
-
-function chooseRecoveryOptions(
-  stops: PlaceWithOverride[],
-  deficitSec: number,
-): RecoverySuggestion[] {
-  const candidates = stops
-    .filter((p) => !isSleepStop(p))
-    .map((p) => ({
-      place: p,
-      staySec: estimateStopMinutes(p).minutes * 60,
-      penalty: recoveryPenalty(p),
-    }))
-    .filter((x) => x.staySec > 0);
-
-  if (candidates.length === 0 || deficitSec <= 0) return [];
-
-  const maxCandidates = 16;
-  if (candidates.length > maxCandidates) {
-    candidates.sort((a, b) => a.penalty - b.penalty || b.staySec - a.staySec);
-    candidates.length = maxCandidates;
-  }
-
-  const byId = new Map(candidates.map((c) => [c.place.id, c.place]));
-  const results: RecoverySuggestion[] = [];
-  const n = candidates.length;
-  const limit = 1 << n;
-
-  for (let mask = 1; mask < limit; mask++) {
-    let freedSec = 0;
-    let penalty = 0;
-    const ids: string[] = [];
-    for (let i = 0; i < n; i++) {
-      if (!(mask & (1 << i))) continue;
-      const c = candidates[i];
-      freedSec += c.staySec;
-      penalty += c.penalty;
-      ids.push(c.place.id);
-    }
-    if (freedSec < deficitSec) continue;
-    results.push({
-      ids,
-      names: summarizeNames(ids, byId),
-      freedSec,
-      penalty,
-    });
-  }
-
-  results.sort((a, b) => a.penalty - b.penalty || a.freedSec - b.freedSec || a.ids.length - b.ids.length);
-  const unique: RecoverySuggestion[] = [];
-  const seen = new Set<string>();
-  for (const r of results) {
-    const key = [...r.ids].sort().join('|');
-    if (seen.has(key)) continue;
-    seen.add(key);
-    unique.push(r);
-    if (unique.length >= 3) break;
-  }
-  return unique;
 }
 
 /**
@@ -293,7 +180,7 @@ export function buildDaySchedule(
     const estimate = estimateStopMinutes(place);
     const arrival = clock;
     const stopStaySec = Math.round(estimate.minutes * paceMultiplier) * 60;
-    const isSleep = isSleepStop(place);
+    const isSleep = place.category === 'accommodation' || place.category === 'campsite';
     const effectiveStaySec = isSleep ? stopStaySec : stopStaySec;
     const departure = arrival + effectiveStaySec;
     const next = stops[i + 1];
@@ -325,7 +212,6 @@ export function buildDaySchedule(
   const finishSec = clock;
   const slackSec = plannedEndSec - finishSec;
   const overSec = Math.max(0, finishSec - plannedEndSec);
-  const recovery = overSec > 0 ? chooseRecoveryOptions(stops, overSec) : [];
 
   return {
     dayStartSec,
@@ -337,6 +223,5 @@ export function buildDaySchedule(
     slackSec,
     overSec,
     entries,
-    recovery,
   };
 }

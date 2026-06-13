@@ -1,5 +1,5 @@
 import { CATEGORY_COLORS } from '../constants';
-import { formatClock, formatRecoveryNames, type DaySchedule } from '../schedule';
+import { formatClock, type DaySchedule } from '../schedule';
 import type { PlaceWithOverride } from '../store';
 import type { DayRoutes } from '../useDayRoutes';
 import {
@@ -31,7 +31,7 @@ interface Props {
   onFindSleep: (day: number) => void;
   /** Free-text per-day notes (from Today view textarea). */
   dayNotes?: Record<number, string>;
-  /** Day clock estimate per day, derived from the current route + stop times. */
+  /** Day clock per day, derived from the current route + stop times. */
   scheduleByDay?: Record<number, DaySchedule | null>;
 }
 
@@ -80,6 +80,9 @@ export default function Itinerary({
         const flags = [...new Set(stops.map((p) => p.country).filter(Boolean))]
           .map((c) => COUNTRY_FLAG[c as Country] ?? '')
           .join('');
+        const timelineTotalSec = schedule ? Math.max(1, schedule.plannedEndSec - schedule.dayStartSec) : 1;
+        const startHour = schedule ? Math.floor(schedule.dayStartSec / 3600) : 8;
+        const endHour = schedule ? Math.floor(schedule.plannedEndSec / 3600) : 21;
         return (
           <div key={day} className={`itin-day${isToday ? ' today' : ''}`}>
             <div className={`itin-day-head${isToday ? ' today' : ''}`} style={{ borderColor: dayColor(day) }}>
@@ -124,10 +127,41 @@ export default function Itinerary({
                 📝 {dayNotes[day]}
               </div>
             )}
-            {schedule && schedule.overSec > 0 && schedule.recovery.length > 0 && (
-              <div className="itin-day-recovery">
-                Catch-up (approx): skip {formatRecoveryNames(schedule.recovery[0].names)} to recover{' '}
-                {formatDuration(schedule.recovery[0].freedSec)}
+            {schedule && schedule.entries.length > 0 && (
+              <div className={`itin-timeline${schedule.overSec > 0 ? ' late' : ''}`}>
+                <div className="itin-timeline-scale">
+                  {Array.from({ length: endHour - startHour + 1 }, (_, i) => startHour + i).map(
+                    (hour) => (
+                      <span key={hour}>{String(hour).padStart(2, '0')}:00</span>
+                    ),
+                  )}
+                </div>
+                <div className="itin-timeline-bar">
+                  {schedule.entries.map((entry) => {
+                    const left = ((entry.arriveSec - schedule.dayStartSec) / timelineTotalSec) * 100;
+                    const width = Math.max(
+                      ((entry.departSec - entry.arriveSec) / timelineTotalSec) * 100,
+                      2.5,
+                    );
+                    return (
+                      <button
+                        key={`${day}-${entry.place.id}-${entry.arriveSec}`}
+                        type="button"
+                        className={`itin-timeline-block kind-${entry.kind} source-${entry.source}`}
+                        style={{ left: `${left}%`, width: `${width}%` }}
+                        onClick={() => onSelect(entry.place)}
+                        title={`${entry.place.name} · ${formatClock(entry.arriveSec)}–${formatClock(
+                          entry.departSec,
+                        )} · ${formatDuration(entry.staySec)}`}
+                      >
+                        <span className="itin-timeline-name">{entry.place.name}</span>
+                        <span className="itin-timeline-time">
+                          {formatClock(entry.arriveSec)}–{formatClock(entry.departSec)}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             )}
             {stops.some((p) => p.bestTime) && (

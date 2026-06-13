@@ -1,19 +1,33 @@
-import LZString from 'lz-string';
 import { CATEGORIES } from './constants';
 import { DEFAULT_PLAN } from './defaultPlan';
-import type { Place, Status } from './types';
+import type { Category, Place, Status } from './types';
 
 const modules = import.meta.glob('./data/*.json', { eager: true }) as Record<
   string,
   { default: Place[] }
 >;
 
+const AUTO_BACKUP_CATEGORIES = new Set<Category>([
+  'accommodation',
+  'beach',
+  'food',
+  'nightlife',
+  'town',
+  'other',
+]);
+
+function normalizeBakedPlace(place: Place): Place {
+  if (place.status !== 'candidate') return place;
+  if (!AUTO_BACKUP_CATEGORIES.has(place.category)) return place;
+  return { ...place, status: 'backup' };
+}
+
 /** Merge all src/data/*.json files; first occurrence of an id wins. */
 export function loadPlaces(): Place[] {
   const seen = new Map<string, Place>();
   for (const mod of Object.values(modules)) {
     for (const p of mod.default) {
-      if (!seen.has(p.id)) seen.set(p.id, p);
+      if (!seen.has(p.id)) seen.set(p.id, normalizeBakedPlace(p));
     }
   }
   return [...seen.values()];
@@ -367,14 +381,10 @@ function migrateOverrides(raw: Overrides): { overrides: Overrides; changed: bool
     assign('me-camp-safari-beach', 11, 5);
   }
 
-  // Day 6: Add Cold River Treehouse (★4.92) at Bunica/Blagaj as WOW sleep alternative.
-  // It's 10 min from Mostar old town AND 2km from Blagaj Tekija (Day 7's first stop),
-  // so sleeping here means waking up already at Day 7's starting point.
+  // Day 6: Add the Bunica/Blagaj river stay as a nearby overnight option.
   assign('ba-villa-cold-river-treehouse-bunica', 6, 8);
 
-  // Day 10: Add Jablan Winery house (★4.86, "trip's most special stay") as 3rd sleep
-  // option for the Skadar Lake night. 300-year stone house at organic winery near
-  // Rijeka Crnojevića — after the RC evening, only 9km east to the winery to sleep.
+  // Day 10: Add the Rvaši winery house as a Skadar Lake overnight option.
   assign('me-villa-jablan-winery-rvasi', 10, 11);
 
   // Day 11: Camp Safari (19.271°E) is between Ulcinj and Ada Bojana (19.374°E).
@@ -566,12 +576,9 @@ export function loadOverrides(): Overrides {
     const parsed = JSON.parse(raw);
     if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed))
       return normalizeOverrides({ ...DEFAULT_PLAN });
-    const { overrides, changed } = migrateOverrides(parsed as Overrides);
-    const next = normalizeOverrides(overrides);
-    if (changed || JSON.stringify(next) !== JSON.stringify(parsed)) {
-      safeSetItem(KEY, JSON.stringify(next));
-    }
-    return next;
+    // Keep user edits stable: once a plan exists, normalize it but do not try to
+    // rewrite it back toward the original seed layout.
+    return normalizeOverrides(parsed as Overrides);
   } catch {
     return normalizeOverrides({ ...DEFAULT_PLAN });
   }
@@ -662,42 +669,6 @@ export function loadUserPlaces(): Place[] {
 
 export function saveUserPlaces(places: Place[]): boolean {
   return safeSetItem(USER_PLACES_KEY, JSON.stringify(places));
-}
-
-// ---- Share plan (B1): {overrides, userPlaces} ⇄ a compressed URL hash ----
-//
-// 100% static: the plan is a few KB of JSON, LZ-string compressed into the URL
-// hash. Send the link in the group chat; opening it offers merge/replace.
-
-export interface SharedPlan {
-  overrides: Overrides;
-  userPlaces: Place[];
-}
-
-/** Encode {overrides, userPlaces} into a compact, URL-hash-safe string. */
-export function encodePlan(plan: SharedPlan): string {
-  return LZString.compressToEncodedURIComponent(JSON.stringify(plan));
-}
-
-/** Decode a shared-plan payload; returns null on any malformed input. */
-export function decodePlan(encoded: string): SharedPlan | null {
-  try {
-    const json = LZString.decompressFromEncodedURIComponent(encoded);
-    if (!json) return null;
-    const obj = JSON.parse(json) as unknown;
-    if (!obj || typeof obj !== 'object') return null;
-    const o = obj as Record<string, unknown>;
-    const overrides =
-      o.overrides && typeof o.overrides === 'object'
-        ? (o.overrides as Overrides)
-        : {};
-    const userPlaces = Array.isArray(o.userPlaces)
-      ? (o.userPlaces as unknown[]).map(normalizeUserPlace).filter(Boolean) as Place[]
-      : [];
-    return { overrides, userPlaces };
-  } catch {
-    return null;
-  }
 }
 
 // ---- OSRM route cache (keyed by the coordinate sequence) ----
@@ -904,19 +875,6 @@ export function loadSavedMode(): Mode | null {
 
 export function saveMode(m: Mode) {
   safeSetItem(MODE_KEY, m);
-}
-
-export type TripTempo = 'tight' | 'realistic' | 'relaxed';
-
-const TEMPO_KEY = 'balkans-trip-tempo';
-
-export function loadTripTempo(): TripTempo {
-  const v = localStorage.getItem(TEMPO_KEY);
-  return v === 'tight' || v === 'realistic' || v === 'relaxed' ? v : 'realistic';
-}
-
-export function saveTripTempo(t: TripTempo) {
-  safeSetItem(TEMPO_KEY, t);
 }
 
 const DONE_KEY = 'balkans-trip-done';

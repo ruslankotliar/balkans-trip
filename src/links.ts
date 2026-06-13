@@ -98,9 +98,13 @@ export function deriveLinks(sources?: string[]): SourceLink[] {
   });
 }
 
-/** The primary "Book / View listing" link: first booking-type source, if any. */
+/**
+ * The primary "Book / View listing" link.
+ * Prefer campsite-review / campsite-portal links over Airbnb/Booking.com so camping
+ * stays surface the most useful action first.
+ */
 export function bookingLink(links: SourceLink[]): SourceLink | undefined {
-  return links.find((l) => l.booking);
+  return links.find((l) => l.kind === 'campsite') ?? links.find((l) => l.kind === 'booking');
 }
 
 /** Convenience: booking link straight from a place's sources. */

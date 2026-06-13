@@ -6,7 +6,7 @@
     "category": "accommodation",
     "lat": 42.37197,
     "lng": 19.10142,
-    "description": "TRIP'S MOST SPECIAL STAY. A 300-year-old stone house that IS the heart of Jablan Winery — Montenegro's only Demeter-certified organic winery — on a hillside above Rvaši on the NW shore of Lake Skadar. Listing: 'Imagine waking up, opening the shutters of a 300-year-old stone house, and seeing vineyards and meadows in front of you. No noise.' Guided tasting of small-batch organic wine made meters away, farm-to-table lunch, free mountain bikes, vineyard + lake-valley views, deep quiet inside the national park yet ~30 min from Podgorica. Sleeps 4 (1 bedroom, 2 beds — verify the bed setup for 4 adults). ★4.86 from 219 reviews (a heavily-proven gem).",
+    "description": "A 300-year-old stone house that IS the heart of Jablan Winery — Montenegro's only Demeter-certified organic winery — on a hillside above Rvaši on the NW shore of Lake Skadar. Listing: 'Imagine waking up, opening the shutters of a 300-year-old stone house, and seeing vineyards and meadows in front of you. No noise.' Guided tasting of small-batch organic wine made meters away, farm-to-table lunch, free mountain bikes, vineyard + lake-valley views, deep quiet inside the national park yet ~30 min from Podgorica. Sleeps 4 (1 bedroom, 2 beds — verify the bed setup for 4 adults). ★4.86 from 219 reviews (a heavily-proven gem).",
     "communityNotes": "Description (verified from listing): 'The Winemaker's House · Jablan Winery · Lake Skadar... the heart of Jablan Winery, Montenegro's only Demeter-certified winery... grounded and vibrant.' Independent confirmation (montenegropulse / mnevillage / argophilia): family-run hillside winery above Rvaši, wake to birdsong and wild herbs, evening organic wine on a private terrace as the sun sets over the mountains; complimentary mountain bikes. ★4.86 from 219 reviews. CAPACITY: 1BR / 2 beds = 4 max; check whether the second 'bed' suits 2 adults.",
     "sources": [
       "https://www.airbnb.com/rooms/1091457",
@@ -120,44 +120,6 @@
     "bestTime": "Book: airbnb.com/rooms/13365354 — check Jun 18 (Night 3, base after airport pickup, 1h from Dubrovnik) OR Jun 27 (Night 12, last night before return). Hosts Beba and Dragan — message on Airbnb."
   },
   {
-    "id": "me-villa-suvodo-biogradska-gora",
-    "name": "Mountain Cabin Suvodo (Bjelasica, Biogradska Gora)",
-    "country": "ME",
-    "category": "accommodation",
-    "lat": 42.88844,
-    "lng": 19.70581,
-    "description": "A two-bedroom mountain cabin in the heart of Biogradska Gora National Park on Bjelasica, with a terrace and a 'beautiful view on the most beautiful mountain in Montenegro.' Deep-green, flower-meadow isolation — 'where you listen only to the swarm of bees and chirping of birds.' A serene alternative/extension to the Durmitor block (note: it's NE of Mojkovac, off the direct loop — attach a detour cost). Sleeps 5 (3 beds, 1.5 baths). ★4.98 from 46 reviews.",
-    "communityNotes": "Listing (verified): 'Two bedrooms, terrasse, place for hang out with a beautiful view on most beautiful mountain in Montenegro... located in heart of National park Biogradska gora... imagine yourself on place full of greenery, flowers... where you listen only swarm of bees and chirping of birds.' ★4.98/46, sleeps 5. LOCATION: Bjelasica side (Berane municipality) — a detour off the main Durmitor→coast line. | Off-route: Biogradska Gora (Bjelasica) is 50km NE of our route. Beautiful park but our Montenegro arc goes Žabljak→Ostrog→Skadar, not via Kolašin.",
-    "sources": [
-      "https://www.airbnb.com/rooms/933867552547474821"
-    ],
-    "cost": "~€82/night for 4 (June sample; dates are route estimates, not final)",
-    "tags": [
-      "villa-tier"
-    ],
-    "rating": 5,
-    "status": "rejected"
-  },
-  {
-    "id": "me-villa-mountain-star-mojkovac",
-    "name": "Mountain Star House (Mojkovac, Sinjajevina/Bjelasica)",
-    "country": "ME",
-    "category": "accommodation",
-    "lat": 42.9333,
-    "lng": 19.5596,
-    "description": "A mountain house set between the Sinjajevina and Bjelasica ranges (between Durmitor and Biogradska Gora NPs), overlooking Mojkovac and the Tara river. An off-the-grid escape with local-specialty food on offer and big-mountain views — a candidate for the Durmitor→south leg if routing via Mojkovac. Sleeps 5 (3 beds). ★5.0 from 10 reviews.",
-    "communityNotes": "Listing (verified): 'Located between the mountains of Sinjajevina and Bjelasica, the national parks of Durmitor and Biogradska Gora overlooking the city of Mojkovac and the river Tara, staying with us will give you unforgettable moments. With accommodation you can also consume local specialties.' ★5.0/10, sleeps 5. Newer listing (fewer reviews) but strong. | Off-route: Mojkovac is on the Kolašin/Bijelo Polje road, 39km east of our route. We drive south from Žabljak, not east toward Serbia.",
-    "sources": [
-      "https://www.airbnb.com/rooms/1326042546948203978"
-    ],
-    "cost": "~€94/night for 4 (June sample; dates are route estimates, not final)",
-    "tags": [
-      "villa-tier"
-    ],
-    "rating": 4,
-    "status": "rejected"
-  },
-  {
     "id": "me-villa-eternum-glamping-ninkovici",
     "name": "Eternum Glamping (Ninkovići, Durmitor/Žabljak)",
     "country": "ME",
@@ -197,25 +159,6 @@
     "status": "rejected"
   },
   {
-    "id": "hr-villa-mare-jabuka-zrnovo",
-    "name": "Villa Mare Jabuka (Žrnovo, Korčula)",
-    "country": "HR",
-    "category": "accommodation",
-    "lat": 42.94366,
-    "lng": 17.10974,
-    "description": "A newly renovated village house in green, picturesque Žrnovo just above Korčula town (3.5 km from the centre, a few miles from the sea) — quiet, characterful, with lots of thoughtful detail and 3 private bathrooms. A relaxed island-village base for the Pelješac/Korčula leg, away from the harbour bustle. Sleeps 6 (2 bedrooms). ★4.93 from 28 reviews.",
-    "communityNotes": "Listing (verified): 'Beautiful village house, placed on quiet and green area. 3.5 km from town center. House is newly renovated, with the taste and many details making this property comfortable and cozy... Žrnovo is picturesque village, just a few miles from the sea.' ★4.93/28, 2BR / 3 baths, sleeps 6 — comfortable for 4 adults. | Island preference: camp on Korčula rather than pay €111 for a village house. Rejected per Croatian island camping policy.",
-    "sources": [
-      "https://www.airbnb.com/rooms/44587545"
-    ],
-    "cost": "~€111/night for 4 (June sample; dates are route estimates, not final)",
-    "tags": [
-      "villa-tier"
-    ],
-    "rating": 4,
-    "status": "rejected"
-  },
-  {
     "id": "hr-villa-mlinica-brijesta-peljesac",
     "name": "Mlinica — stone cottage with jacuzzi (Brijesta, Pelješac)",
     "country": "HR",
@@ -233,25 +176,6 @@
     ],
     "rating": 4,
     "status": "candidate"
-  },
-  {
-    "id": "hr-villa-grandpa-mate-dugi-otok",
-    "name": "Grandpa Mate House (Dragove, Dugi Otok)",
-    "country": "HR",
-    "category": "accommodation",
-    "lat": 44.1113,
-    "lng": 14.934,
-    "description": "A character island house at the edge of Dragove on Dugi Otok — built in 1930 by 'grandpa Mate' on his return from New York and lovingly kept original with modern retro comfort, in harmony with its surroundings and near Sakarun/Veli Žal beaches. The standout Zadar-zone stay IF the trip takes the Dugi Otok ferry (Day 1 island option). Sleeps 5 (2 beds in the parse; verify). ★4.92 from 25 reviews. NOTE: ~€170/night — above budget and ferry-dependent (off the mainland route).",
-    "communityNotes": "Listing (verified): 'Back in 1930, after leaving Dragove to work in New York, grandpa Mate built a beautiful house... Almost 90 years later we're following the very same path... retaining the originality of the house and combining it with modern retro comfort. Grandpa Mate House is based on Dugi Otok at the edge of the village Dragove.' Near Karuba/Veli Žal/Sakarun beaches. ★4.92/25. PRICE ~€170/night (over budget); needs the Dugi Otok ferry. | Over budget (€170) and requires a Zadar ferry that eats Day 1 travel time. The character is real but the logistics kill it.",
-    "sources": [
-      "https://www.airbnb.com/rooms/21262711"
-    ],
-    "cost": "~€170/night for 4 (June sample; OVER budget + ferry-dependent; dates are route estimates)",
-    "tags": [
-      "villa-tier"
-    ],
-    "rating": 4,
-    "status": "rejected"
   },
   {
     "id": "me-villa-lekovic-godinje",

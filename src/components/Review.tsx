@@ -4,16 +4,22 @@ import type { PlaceWithOverride } from '../store';
 import type { Country, Status } from '../types';
 
 const COUNTRY_FLAG: Record<Country, string> = { HR: '🇭🇷', BA: '🇧🇦', ME: '🇲🇪' };
+const COUNTRY_ORDER: Record<Country, number> = { HR: 0, BA: 1, ME: 2 };
 
 type CountryF = Country | 'all';
-type CatGroup = 'all' | 'sleep' | 'activity' | 'nature' | 'eat';
-
-const CAT_MATCH: Record<CatGroup, (c: string) => boolean> = {
-  all:      () => true,
-  sleep:    (c) => c === 'accommodation' || c === 'campsite',
-  activity: (c) => c === 'activity' || c === 'hike' || c === 'beach',
-  eat:      (c) => c === 'food' || c === 'nightlife',
-  nature:   (c) => c === 'nature' || c === 'sight' || c === 'viewpoint' || c === 'town',
+const CATEGORY_PRIORITY: Record<string, number> = {
+  activity: 0,
+  hike: 0,
+  nature: 0,
+  sight: 0,
+  viewpoint: 0,
+  campsite: 1,
+  accommodation: 1,
+  beach: 2,
+  food: 2,
+  nightlife: 2,
+  town: 2,
+  other: 2,
 };
 
 interface Props {
@@ -26,15 +32,17 @@ interface Props {
 
 export default function Review({ places, onStatus, onExit, onSelect, selectedId }: Props) {
   const [country, setCountry] = useState<CountryF>('all');
-  const [cat, setCat] = useState<CatGroup>('all');
 
   const queue = useMemo(
-    () => places.filter((p) =>
-      (p.status === 'candidate' || p.status === 'backup') &&
-      (country === 'all' || p.country === country) &&
-      CAT_MATCH[cat](p.category)
-    ),
-    [places, country, cat],
+    () =>
+      places
+        .filter((p) => (p.status === 'candidate' || p.status === 'backup') && (country === 'all' || p.country === country))
+        .sort((a, b) =>
+          COUNTRY_ORDER[a.country] - COUNTRY_ORDER[b.country] ||
+          CATEGORY_PRIORITY[a.category] - CATEGORY_PRIORITY[b.category] ||
+          a.name.localeCompare(b.name),
+        ),
+    [places, country],
   );
 
   const reviewCount = queue.length;
@@ -53,13 +61,6 @@ export default function Review({ places, onStatus, onExit, onSelect, selectedId 
           <option value="HR">🇭🇷 Croatia</option>
           <option value="BA">🇧🇦 Bosnia</option>
           <option value="ME">🇲🇪 Montenegro</option>
-        </select>
-        <select value={cat} onChange={(e) => setCat(e.target.value as CatGroup)}>
-          <option value="all">All types</option>
-          <option value="sleep">🛌 Sleep</option>
-          <option value="activity">🏄 Activities</option>
-          <option value="nature">🏛 Sights</option>
-          <option value="eat">🍽 Food</option>
         </select>
       </div>
 
