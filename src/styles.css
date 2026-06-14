@@ -3141,13 +3141,29 @@ body.trip-mode .ess-tel {
   margin-top: 2px;
 }
 
-/* Trip activity-mix tracker (Plan view) */
+/* Trip activity-mix tracker (Plan view) — pinned so it stays visible while
+   scrolling a day's stops (.itinerary is the scroll container). */
 .itin-mix {
-  margin: 4px 0 8px;
-  border: 1px solid #e2e2e2;
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  margin: 0 0 8px;
+  border: 1px solid #d7dde3;
   border-radius: 8px;
-  background: #fafbfc;
+  background: #f3f6f9;
   padding: 4px 10px;
+  max-height: 55vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+.itin-mix-heavy {
+  font-size: 11px;
+  color: #b9770e;
+  margin: 4px 0 2px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
 }
 .itin-mix > summary {
   cursor: pointer;

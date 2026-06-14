@@ -38,43 +38,36 @@ function hhmmToHour(v: string): number | undefined {
   return Number(m[1]) + Number(m[2]) / 60;
 }
 
-// ── Activity-type classifier (for the trip activity-mix tracker) ──
-const ACTIVITY_KEYWORDS: [RegExp, string][] = [
+// ── Big-highlight classifier (for the activity-mix tracker) ──
+// Only the MAJOR highlights worth balancing across days — the ones that cost
+// real time / money / planning (usually booked). Everything quick/free/ambient
+// (eating, swimming, cliff-jumping, snorkeling, viewpoints, town/sightseeing,
+// plain nature, scenic drives) is deliberately NOT tracked: you do those any
+// day, they don't need spreading out.
+const HIGHLIGHT_KEYWORDS: [RegExp, string][] = [
   [/raft/, 'rafting'],
-  [/kayak/, 'kayaking'],
+  [/kayak|canoe/, 'kayaking'],
   [/\bsup\b|paddle.?board|stand.?up.?paddle/, 'SUP'],
   [/canyon/, 'canyoning'],
-  [/cliff.?jump|jumpers|cliff/, 'cliff-jumping'],
-  [/scuba|div\b|diving/, 'diving'],
-  [/snorkel/, 'snorkeling'],
+  [/scuba|\bdiv(e|ing)\b/, 'diving'],
   [/zip.?line/, 'zipline'],
   [/paraglid/, 'paragliding'],
   [/skydiv/, 'skydiving'],
   [/\batv\b|buggy|quad|dirt.?bike/, 'ATV/buggy'],
-  [/e-?bike|cycling|bike (rental|circuit|route)/, 'e-bike'],
+  [/e-?bike|cycling|bike (tour|rental|circuit|route)/, 'e-bike'],
   [/ferrata|climbing/, 'climbing'],
-  [/speedboat|boat (tour|trip|rental|hire)|yacht|sail|blue cave/, 'boat'],
-  [/fish/, 'fishing'],
-  [/wine|vinarij|vineyard|winery/, 'wine'],
-  [/peka|cooking/, 'cooking'],
-  [/cave|spilja|pe[cć]ina/, 'caves'],
+  [/speedboat|motorboat|self-drive.*boat|boat (tour|trip|rental|hire|cruise)|\byacht|sailing|blue cave/, 'boat'],
+  [/\bfish(ing)?\b|charter/, 'fishing'],
+  [/wine|vinarij|vineyard|winery/, 'wine tasting'],
+  [/peka|cooking class|cook-your-own/, 'cooking'],
 ];
-/** Best-guess experience type for a place, or null to exclude (sleeps/logistics). */
+/** The big-highlight type for a place, or null if it's not a major (trackable) highlight. */
 function activityType(p: PlaceWithOverride): string | null {
-  if (p.category === 'campsite' || p.category === 'accommodation' || p.category === 'other') return null;
   const hay = `${p.id} ${p.name} ${(p.tags ?? []).join(' ')}`.toLowerCase();
-  for (const [re, t] of ACTIVITY_KEYWORDS) if (re.test(hay)) return t;
-  switch (p.category) {
-    case 'nightlife': return 'nightlife';
-    case 'food': return 'eating';
-    case 'hike': return 'hiking';
-    case 'beach': return 'beach/swim';
-    case 'nature': return /lake|river|swim|waterfall|slap|jezero|vir|buna/.test(hay) ? 'beach/swim' : 'nature';
-    case 'viewpoint': return 'viewpoint';
-    case 'sight': case 'town': return 'sightseeing';
-    case 'activity': return 'activity (other)';
-    default: return null;
-  }
+  for (const [re, t] of HIGHLIGHT_KEYWORDS) if (re.test(hay)) return t;
+  if (p.category === 'nightlife') return 'nightlife';
+  if (p.category === 'hike') return 'hiking'; // summits/canyon hikes = real time+effort
+  return null; // eat / swim / cliff-jump / view / sightseeing / nature / drive → ambient, not tracked
 }
 
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
@@ -129,10 +122,12 @@ export default function Itinerary({
         departSec: null,
       }));
 
-  // Trip-wide activity mix over the COMMITTED (shortlist) stops — keeps variety
-  // in view and flags the same activity on back-to-back days.
-  const mix = (() => {
+  // Trip-wide mix of the BIG highlights (the booked/time/money/effort ones)
+  // over the COMMITTED (shortlist) stops — keeps variety in view, flags the
+  // same highlight on back-to-back days, and flags days stacking 2+ of them.
+  const { mix, heavyDays } = (() => {
     const byType = new Map<string, { count: number; days: Set<number> }>();
+    const perDay = new Map<number, number>();
     for (const p of assigned) {
       if (p.status !== 'shortlist' || !p.day) continue;
       const t = activityType(p);
@@ -141,13 +136,16 @@ export default function Itinerary({
       e.count += 1;
       e.days.add(p.day);
       byType.set(t, e);
+      perDay.set(p.day, (perDay.get(p.day) ?? 0) + 1);
     }
-    return [...byType.entries()]
+    const mix = [...byType.entries()]
       .map(([type, e]) => {
         const days = [...e.days].sort((a, b) => a - b);
         return { type, count: e.count, days, adjacent: days.some((d, i) => i > 0 && d - days[i - 1] === 1) };
       })
       .sort((a, b) => b.count - a.count || a.type.localeCompare(b.type));
+    const heavyDays = [...perDay.entries()].filter(([, n]) => n >= 2).map(([d]) => d).sort((a, b) => a - b);
+    return { mix, heavyDays };
   })();
 
   return (
@@ -184,8 +182,25 @@ export default function Itinerary({
       {mix.length > 0 && (
         <details className="itin-mix">
           <summary>
-            Activity mix · {mix.length} types · {mix.reduce((n, m) => n + m.count, 0)} committed stops
+            🎯 Big highlights · {mix.length} types
+            {(() => {
+              const adj = mix.filter((m) => m.adjacent).length;
+              const w: string[] = [];
+              if (adj) w.push(`${adj} back-to-back`);
+              if (heavyDays.length) w.push(`${heavyDays.length} stacked day${heavyDays.length > 1 ? 's' : ''}`);
+              return w.length ? ` · ⚠ ${w.join(', ')}` : '';
+            })()}
           </summary>
+          {heavyDays.length > 0 && (
+            <div className="itin-mix-heavy">
+              ⚠ Days stacking 2+ big highlights (hard to fit a half-day each):{' '}
+              {heavyDays.map((dd) => (
+                <button key={dd} type="button" className={`itin-mix-day${dd === day ? ' cur' : ''}`} onClick={() => onDay(dd)}>
+                  {dd}
+                </button>
+              ))}
+            </div>
+          )}
           <ul className="itin-mix-list">
             {mix.map((m) => (
               <li key={m.type} className={m.adjacent ? 'adjacent' : ''}>
