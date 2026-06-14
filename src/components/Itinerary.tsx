@@ -21,6 +21,22 @@ interface Props {
   onFindSleep?: (day: number) => void;
   /** Day clock per day, derived from the current route + stop times. */
   scheduleByDay?: Record<number, DaySchedule | null>;
+  /** Per-day start hour (+ pace) for the schedule clock; undefined = default 08:00. */
+  dayConfig?: Record<number, { startHour?: number; pace?: number }>;
+  /** Set a day's start hour (decimal, e.g. 6.5 = 06:30); undefined resets to default. */
+  onSetDayStart?: (day: number, hour: number | undefined) => void;
+}
+
+/** Decimal hour (6.5) → "HH:MM" for a time input. */
+function hourToHHMM(h: number): string {
+  const total = Math.round(h * 60);
+  return `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`;
+}
+/** "HH:MM" → decimal hour, or undefined when blank. */
+function hhmmToHour(v: string): number | undefined {
+  const m = v.match(/^(\d{1,2}):(\d{2})$/);
+  if (!m) return undefined;
+  return Number(m[1]) + Number(m[2]) / 60;
 }
 
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
@@ -54,6 +70,8 @@ export default function Itinerary({
   onMove,
   onAssignDay,
   scheduleByDay,
+  dayConfig,
+  onSetDayStart,
 }: Props) {
   const assigned = places.filter((p) => p.day && p.status !== 'rejected');
   const backlog = places
@@ -129,6 +147,24 @@ export default function Itinerary({
           return <div className={`itin-verdict itin-verdict-${level}`}>{label}</div>;
         })()}
 
+        {onSetDayStart && (
+          <div className="itin-start">
+            <label>
+              Start day at{' '}
+              <input
+                type="time"
+                value={hourToHHMM(dayConfig?.[day]?.startHour ?? (schedule ? schedule.dayStartSec / 3600 : 8))}
+                onChange={(e) => onSetDayStart(day, hhmmToHour(e.target.value))}
+              />
+            </label>
+            {dayConfig?.[day]?.startHour != null && (
+              <button type="button" className="itin-start-reset" onClick={() => onSetDayStart(day, undefined)}>
+                reset
+              </button>
+            )}
+          </div>
+        )}
+
         {scheduleEntries.length === 0 ? (
           <p className="itin-empty">no stops</p>
         ) : (
@@ -161,6 +197,7 @@ export default function Itinerary({
                     <span className="itin-stop-main">
                       <span className="itin-stop-name">{entry.place.name}</span>
                       {hint && <span className="itin-stop-hint">{hint}</span>}
+                      {entry.place.note && <span className="itin-stop-note">🕘 {entry.place.note}</span>}
                     </span>
                     <span className={`itin-stop-time${entry.arriveSec == null ? ' muted' : ''}`}>
                       {timeRange}

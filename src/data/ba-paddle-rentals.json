@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ba-rentakayak-mostar-potoci",
+    "name": "Rent A Kayak Mostar — SUP & kayak on Lake Mostar (Potoci)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.4078,
+    "lng": 17.8758,
+    "description": "Genuine self-guided rental on the calm Neretva reservoir ('Lake Mostar') at Potoci, ~10 min north of Mostar old town. Rent a SUP or kayak and paddle off on your own — the owner just points you at the good directions. The reservoir is ~12 km long, dead-calm with no rapids, so it is the easiest, hottest-friendly flat-water paddle of the whole Bosnia leg. Paddle UPSTREAM ~4 km toward cold spring inflows and untouched pebble beaches; downstream is warmer and good for swim breaks.",
+    "communityNotes": "Operator site: SUP €20pp and kayak €20pp; 'the person decides for himself with the recommendation of the owner where to paddle', launch from roughly mid-lake. 'The lake is calm and safe for sailing. There are no rapids and it is suitable even for the youngest children.' Free parking, groups up to 10, runs effectively all day ('0-24', i.e. book ahead by Viber/WhatsApp +387 63-444-228, davidkljajo@gmail.com). Add-on options reported: raft €30pp / with grill €60, boat €60/day. Distinct from the Jablanica canyon trip — this is flat reservoir water, not a canyon run. Note the wider Neretva right in Mostar town (under the Old Bridge) is NOT a rent-and-float spot: travelers repeatedly warn the water is icy and 'the current is no joke' — for paddling, go to this Potoci reservoir or to Jablanica, not the town stretch.",
+    "cost": "SUP €20pp, kayak €20pp (self-guided). Raft €30pp / +grill €60; boat €60/day. ~€80 for 4 on SUP/kayak.",
+    "timeNeeded": "2-4h flexible (rent by the session)",
+    "bestTime": "Day 5 (Jun 20) — best as a hot-midday cool-off after Mostar/Blagaj, or early to dodge afternoon heat. Calm flat water all day; message ahead on WhatsApp/Viber in June high season.",
+    "facilities": "Free parking, SUP + kayak + life jackets, launch ~mid-lake; toilets at the base",
+    "tags": ["kayak", "sup", "neretva", "flatwater", "self-guided", "on-route", "hot-midday"],
+    "sources": [
+      "https://rentakayakmostar.com/",
+      "https://www.tripadvisor.com/Attraction_Review-g295388-d27743606-Reviews-Rent_A_Kayak-Mostar_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Herzegov.html",
+      "https://www.tripadvisor.com/Attractions-g295388-Activities-c61-t191-Mostar_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Herzegovina.html"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-blagaj-buna-sup-note",
+    "name": "Blagaj / Vrelo Bune — paddle reality check (mostly guided boat only)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.2573,
+    "lng": 17.9036,
+    "description": "Honest note pinned at the Buna spring below Blagaj Tekija. There is NO established self-guided kayak/SUP rental AT the source: the only on-water activity is the short GUIDED wooden-boat ride a few metres into the cave mouth (operated from the tekija). The Buna itself is one of Europe's biggest karst springs — gorgeous turquoise but ~10-11°C year-round, very short, and the spring/cave is a protected cultural-natural site, so do not plan a self-guided paddle here. For self-guided water near Mostar, use Rent A Kayak Mostar (Potoci reservoir, same day) or the Jablanica canyon (next day).",
+    "communityNotes": "Spring discharge ~43,000 L/s, constant 10-11°C; 'turquoise waters gushing from a cavern beneath a vertical limestone wall.' Travelers describe the only paddling-adjacent option as a 'short boat ride into the cave to see the underground karst river' — a guided dinghy, not a rental. Listicles loosely tag Blagaj for 'kayaking/paddleboarding' but no operator rents craft at the source for unaccompanied use; treat that as marketing, not reality. Worth visiting purely as a sight (tekija + spring) — the paddling happens elsewhere.",
+    "cost": "Cave boat ride a few KM/euros pp (guided); no self-rental",
+    "timeNeeded": "30-60 min as a sight (not a paddle)",
+    "bestTime": "Day 5 (Jun 20) morning — Blagaj before midday heat, then drive to Potoci for the actual self-guided paddle.",
+    "tags": ["guided-only", "sight", "buna", "blagaj", "reality-check"],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vrelo_Bune",
+      "https://www.getyourguide.com/mostar-l1334/from-mostar-blagaj-tekija-and-buna-river-half-day-trip-t1259110/",
+      "https://thirdeyetraveller.com/how-to-visit-blagaj-tekija-bosnia/"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-jablanica-neretva-selfguided-paddle",
+    "name": "Neretva Kayak Canoe Safari (Jablanica) — self-guided canyon paddle",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.6353,
+    "lng": 17.7582,
+    "description": "The standout self-guided paddle of the Bosnia leg. Rent a kayak at Donja Jablanica (launch in the lot by Restoran Kovačević/Prenj, ~300 m off the M17 Mostar-Sarajevo road) and paddle the emerald Neretva canyon at your own pace — no guide, no time limit beyond closing. Sheer canyon walls, a Red Bull cliff-diving rock mid-route for optional jumps, and a secluded river beach to swim and picnic. Round trip ~12 km, ~90 min downstream to the beach; if you are too tired to paddle back, pay €5/kayak for a tow/lift back. NOTE: this is the same operator as the 'ba-jablanica-kayak-neretva' shortlist entry — keep one, this version carries the verified self-rent details.",
+    "communityNotes": "Confirmed self-guided in reviews: 'You can turn up on the day... you don't have a time limit on the boats as long as you're back for closing time' (willjc95, Aug 2023). 'We paid in person cash 20 BAM per person' (Aroog, Jun 2025) — i.e. ~€10pp, cheaper than the ~€25pp booking-site listings; book direct/turn up to pay the local rate. 'They give you option to pick you up from the end... an extra 5 Euros per kayak' (Aroog). 'It takes around 90 minutes to reach the beach', '~12 km round trip.' 'Water is calm and host, Haris, is helpful' (Ioan H, May 2025). 5 stars across 60+ reviews; overlanders repeatedly call it the Bosnia-leg surprise. Open ~10:00-19:00; no pre-booking needed in June but message ahead on a busy weekend.",
+    "cost": "~20 BAM (~€10) pp paid cash on site (booking sites list ~€23-25pp); +€5/kayak optional tow-back. ~€40-60 for 4.",
+    "timeNeeded": "3-4h (≈90 min one-way + beach + return or tow)",
+    "bestTime": "Day 6 (Jun 21) morning — start by 10:00 on the Mostar/Jablanica → Konjic leg. Calm canyon water; cooler than the lowlands and shaded by walls, so good even on a hot day. Pay cash (BAM) on site.",
+    "facilities": "Kayaks + paddles + life jackets + waterproof bags; parking at Restoran Kovačević; optional tow-back boat; food at the restaurant",
+    "tags": ["kayak", "neretva", "canyon", "self-guided", "cliff-jump", "swim", "on-route"],
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g1632097-d16787373-Reviews-Neretva_Kayak_Canoe_Safari-Jablanica_Herzegovina_Neretva_Canton_Federation_of_B.html",
+      "https://www.getyourguide.com/jablanica-l142696/kayak-sup-safari-neretva-jablanica-t489220/",
+      "https://guidetoeurope.com/bosnia-and-herzegovina/best-tours-and-tickets/details/jablanica-kayak-rental-in-neretva-canyon"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-canoekor-konjic-hourly-rental",
+    "name": "CanoeKor / Neretva Canoeing (Konjic) — hourly self-guided rental",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.6516,
+    "lng": 17.9614,
+    "description": "Konjic-based outfitter (Stara Čaršija 18a, in the old bazaar by the Old Bridge) that rents canoes and kayaks BY THE HOUR for self-guided paddling 'with no fixed schedules' — your choice of three calm waters: the Neretva river around Konjic, Boračko Lake, or Jablaničko Lake. Good flexible fallback if you want a short flat-water paddle near town rather than committing to the full Jablanica canyon run. Equipment includes paddles, life jackets and safety helmets.",
+    "communityNotes": "Operator: 'canoe and kayak rentals' with 'the freedom to explore' and 'no fixed schedules', 'suitable for beginners and experienced paddlers alike, no experience needed', on 'River Neretva, Boračko Lake, or Jablaničko Lake.' Base address Stara Čaršija 18a, Konjic 88400; contact +387 61 474 507, info@www.neretvacanoeing.com. Prices/hours not published online — confirm by phone/WhatsApp ahead (June high season). Note: this is rentals; the same area's WHITEWATER (Glavatičevo → Konjic, ~23 km of rapids) is guided-rafting only — do not attempt that stretch self-guided.",
+    "cost": "Hourly rental (price not published — call/WhatsApp +387 61 474 507 to confirm)",
+    "timeNeeded": "1-3h, rent by the hour",
+    "bestTime": "Day 6 (Jun 21) — flexible add-on in/around Konjic. Use for a short Neretva or lake paddle if you skip the full Jablanica trip, or to paddle Boračko if you overnight there.",
+    "facilities": "Canoes/kayaks, paddles, life jackets, safety helmets; base in Konjic old bazaar",
+    "tags": ["kayak", "canoe", "neretva", "boracko", "jablanicko", "self-guided", "hourly", "on-route"],
+    "sources": [
+      "https://www.neretvacanoeing.com/",
+      "https://www.tripadvisor.com/Attractions-g294449-Activities-c61-t191-Bosnia_and_Herzegovina.html"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-boracko-lake-paddle",
+    "name": "Boračko Lake — calm-water paddle (rent in Konjic, bring to the lake)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.5522,
+    "lng": 18.0309,
+    "description": "Bosnia's glacial-origin lake ~20 km / 30 min SE of Konjic at the foot of Prenj, ringed by mountains with turquoise, swimmable water (up to ~25°C in summer). A serene flat-water SUP/kayak spot — paddle the shoreline, cross to quiet coves, then swim. There is no reliable fixed rental kiosk confirmed on the lakeshore itself, so the practical play is to rent from CanoeKor/Neretva Canoeing in Konjic (which lists Boračko as one of its waters) or arrange craft via the lakeside campsites. Pairs perfectly with camping here.",
+    "communityNotes": "Tourism + traveler sources: 'turquoise waters perfect for a refreshing swim or a peaceful kayak ride', water 'reaches 25°C in August'; 30-min drive from Konjic. Activities listed include 'swimming, fishing, jogging, canoe riding, campfire under the stars.' Eko Selo Boračko on the shore is a budget autocamp (2026: ~€8 auto-camp + €7 car + €6 small tent, €6 electricity, WiFi, security) but advertises rafting, NOT confirmed watercraft rental — verify on arrival. CanoeKor in Konjic explicitly rents for self-guided use on Boračko, so renting in town and driving craft out is the dependable option. Lake is calm/safe for beginners; afternoon mountain breeze can pick up ripple — paddle mornings if windy.",
+    "cost": "Rental via CanoeKor Konjic (hourly, confirm by phone); camping at Eko Selo ~€8 + car €7 + tent €6 (2026)",
+    "timeNeeded": "1-2h paddle + swim; or a full slow afternoon",
+    "bestTime": "Day 6 (Jun 21) — ideal if the group takes the slower Boračko swap instead of pushing straight to Sarajevo; morning paddle if afternoon breeze builds.",
+    "facilities": "Lakeside autocamp (Eko Selo: showers/toilets, electricity, WiFi); pebble/grass shore; swimming",
+    "tags": ["sup", "kayak", "lake", "boracko", "flatwater", "swim", "camping", "self-guided"],
+    "sources": [
+      "https://welcometokonjic.ba/en/boracko-lake/",
+      "https://ekoselo-bih.com/en/ponuda-i-smjestaj/",
+      "https://www.neretvacanoeing.com/"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  }
+]

@@ -92,6 +92,21 @@ const SLEEP_CATEGORIES: Category[] = ['campsite', 'accommodation'];
 const NON_REJECTED: Status[] = ['candidate', 'shortlist', 'extra', 'backup'];
 const DEFAULT_PLAN_STATUSES: Status[] = ['shortlist'];
 
+// Per-day schedule settings (start hour + pace) ride in a single sentinel
+// plan_overrides row so they sync across devices through the existing layer
+// without a new table. The id matches no real place, so it never renders.
+const DAY_CONFIG_ID = '__day_config__';
+type DayConfig = Record<number, { startHour?: number; pace?: number }>;
+function parseDayConfig(note: string | undefined): DayConfig {
+  if (!note) return {};
+  try {
+    const o = JSON.parse(note);
+    return o && typeof o === 'object' && !Array.isArray(o) ? (o as DayConfig) : {};
+  } catch {
+    return {};
+  }
+}
+
 function insertionDetourKm(
   prev: Pick<PlaceWithOverride, 'lat' | 'lng'> | undefined,
   next: Pick<PlaceWithOverride, 'lat' | 'lng'> | undefined,
@@ -429,6 +444,23 @@ export default function App() {
     return out;
   }, [dayStops, ferryHours]);
 
+  const dayConfig = useMemo<DayConfig>(
+    () => parseDayConfig(overrides[DAY_CONFIG_ID]?.note),
+    [overrides],
+  );
+  const setDayStart = (day: number, hour: number | undefined) => {
+    applyOverrides((o) => {
+      const cfg = parseDayConfig(o[DAY_CONFIG_ID]?.note);
+      const entry = { ...cfg[day] };
+      if (hour === undefined) delete entry.startHour;
+      else entry.startHour = hour;
+      const next: DayConfig = { ...cfg };
+      if (Object.keys(entry).length === 0) delete next[day];
+      else next[day] = entry;
+      return { ...o, [DAY_CONFIG_ID]: { note: JSON.stringify(next) } };
+    });
+  };
+
   const daySchedules = useMemo(() => {
     const out: Record<number, ReturnType<typeof buildDaySchedule>> = {};
     for (const [dayStr, stops] of Object.entries(dayStops)) {
@@ -439,11 +471,12 @@ export default function App() {
         stops,
         route,
         (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0,
+        { dayStartHour: dayConfig[day]?.startHour, paceMultiplier: dayConfig[day]?.pace },
       );
       if (schedule) out[day] = schedule;
     }
     return out;
-  }, [dayStops, routes, ferryHours]);
+  }, [dayStops, routes, ferryHours, dayConfig]);
 
   const syncLabel = syncOnline ? 'online' : 'offline';
   const syncTitle = syncOnline
@@ -1064,6 +1097,8 @@ export default function App() {
               onMove={moveInDay}
               onAssignDay={assignDay}
               scheduleByDay={daySchedules}
+              dayConfig={dayConfig}
+              onSetDayStart={setDayStart}
             />
           </Suspense>
         )}

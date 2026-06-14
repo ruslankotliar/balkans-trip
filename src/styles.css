@@ -3104,3 +3104,37 @@ body.trip-mode .ess-tel {
   transform: scale(0.97);
   filter: brightness(0.96);
 }
+
+/* Per-day start-time control + booking-time note (timeline feature) */
+.itin-start {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0 2px;
+  font-size: 12px;
+  color: var(--muted, #6b7280);
+}
+.itin-start label { display: inline-flex; align-items: center; gap: 6px; }
+.itin-start input[type='time'] {
+  font: inherit;
+  padding: 2px 6px;
+  border: 1px solid var(--border, #d1d5db);
+  border-radius: 6px;
+  background: var(--card, #fff);
+  color: inherit;
+}
+.itin-start-reset {
+  border: none;
+  background: none;
+  color: var(--accent, #2563eb);
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+  text-decoration: underline;
+}
+.itin-stop-note {
+  display: block;
+  font-size: 11px;
+  color: var(--accent, #2563eb);
+  margin-top: 2px;
+}
