@@ -71,13 +71,8 @@ export function parseDurationMinutes(text: string | undefined): number | null {
   if (/late\s*night/.test(s) && !/\d/.test(s)) return 180;
   if (/\bmeal\b/.test(s) && !/\d/.test(s)) return 90;
 
-  const mixedHour = s.match(
-    /(\d+(?:\.\d+)?)\s*(?:h|hr|hrs|hour|hours)\s*(\d{1,2})?\s*(?:m|min|mins|minute|minutes)?\b/,
-  );
-  if (mixedHour) {
-    return Math.round(Number(mixedHour[1]) * 60 + Number(mixedHour[2] ?? 0));
-  }
-
+  // Ranges must be tested BEFORE the single/mixed-hour patterns: otherwise
+  // "2-3h" matches the bare "3h" inside it and resolves to 180 instead of 150.
   const hourRange = s.match(
     /(\d+(?:\.\d+)?)\s*(?:-|to)\s*(\d+(?:\.\d+)?)\s*(?:h|hr|hrs|hour|hours)\b/,
   );
@@ -90,6 +85,13 @@ export function parseDurationMinutes(text: string | undefined): number | null {
   );
   if (minRange) {
     return Math.round((Number(minRange[1]) + Number(minRange[2])) / 2);
+  }
+
+  const mixedHour = s.match(
+    /(\d+(?:\.\d+)?)\s*(?:h|hr|hrs|hour|hours)\s*(\d{1,2})?\s*(?:m|min|mins|minute|minutes)?\b/,
+  );
+  if (mixedHour) {
+    return Math.round(Number(mixedHour[1]) * 60 + Number(mixedHour[2] ?? 0));
   }
 
   const hourSingle = s.match(/(\d+(?:\.\d+)?)\s*(?:h|hr|hrs|hour|hours)\b/);
@@ -108,7 +110,9 @@ export function formatClock(sec: number): string {
   const total = Math.max(0, Math.round(sec / 60));
   const h = Math.floor(total / 60);
   const m = total % 60;
-  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+  const label = `${String(h % 24).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+  // Past-midnight finishes (e.g. nightlife days) read as "01:30+1", not "25:30".
+  return h >= 24 ? `${label}+1` : label;
 }
 
 /** Format a clock range such as "08:00–09:30". */

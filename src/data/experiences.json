@@ -577,32 +577,6 @@
     "status": "shortlist"
   },
   {
-    "id": "me-durmitor-prutas",
-    "name": "Prutaš Peak Hike (Durmitor)",
-    "country": "ME",
-    "category": "hike",
-    "lat": 43.1265,
-    "lng": 19.0014,
-    "description": "Often called Durmitor's best effort-to-reward hike — distinctive layered-rock peak (2,393m) with sweeping park views, far less crowded than Bobotov Kuk.",
-    "communityNotes": "Described as having 'the best ratio of effort versus feeling of beauty' — ~4km, ~686m ascent, 'moderately difficult.' A strong alternative for a big-view summit without Bobotov Kuk's exposure.",
-    "sources": [
-      "https://www.moonhoneytravel.com/prutas-peak-hike-durmitor-national-park/",
-      "https://peakvisor.com/peak/prutas.html"
-    ],
-    "cost": "Free (NP ~€3–5 pp)",
-    "timeNeeded": "half–full day",
-    "bestTime": "morning",
-    "tags": [
-      "hike",
-      "summit",
-      "viewpoint",
-      "durmitor",
-      "less-crowded"
-    ],
-    "rating": 4,
-    "status": "candidate"
-  },
-  {
     "id": "me-durmitor-ice-cave",
     "name": "Durmitor Ice Cave (Ledena Pećina)",
     "country": "ME",
@@ -701,31 +675,6 @@
       "swimming",
       "island",
       "budva"
-    ],
-    "rating": 4,
-    "status": "candidate"
-  },
-  {
-    "id": "me-budva-paragliding",
-    "name": "Tandem Paragliding from Brajići (Budva)",
-    "country": "ME",
-    "category": "activity",
-    "lat": 42.3019,
-    "lng": 18.8914,
-    "description": "Tandem paragliding launching from Brajići (~760m) with a long glide over Budva, Bečići and the coast toward Sveti Stefan. One of Montenegro's signature easy-thrill activities, transfer included.",
-    "communityNotes": "Operators (Budva Paragliding, Go2Fly) run standard ~€75 and longer ~€125 flights; ~1.5h total with 15–20 min airtime. Reviews: pilots 'very professional, attentive and caring,' 'magnificent panoramic view of Budva during descent,' 'seamless booking, pick and drop.' Consistently rated easy and worth it for non-experts.",
-    "sources": [
-      "https://www.tripadvisor.com/Attraction_Review-g304074-d12035486-Reviews-Budva_Paragliding_Montenegro-Budva_Budva_Municipality.html",
-      "https://paragliding.me/about/locations/budva"
-    ],
-    "cost": "~€75 standard / ~€125 long; +€15 GoPro",
-    "timeNeeded": "~1.5h (15–20 min flight)",
-    "bestTime": "morning/late-afternoon thermals; wind-dependent",
-    "tags": [
-      "adrenaline",
-      "paragliding",
-      "budva",
-      "brajici"
     ],
     "rating": 4,
     "status": "candidate"

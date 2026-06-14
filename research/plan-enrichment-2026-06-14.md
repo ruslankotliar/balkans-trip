@@ -179,3 +179,55 @@ Per-day **start–wrap** windows are set and synced (editable in-app via the Sta
 - **D11→D12:** Friday is the biggest club night (Budva/Kotor), so D12's border start was moved 05:30→07:30 (still clears the Saturday queue per kotor-day12 timing). Don't dawn-start after the club.
 
 **Note:** Day 4 = Mljet morning → ferry → Kravica/Počitelj → **Poplat (Donji Poplat, Stolac, Bosnia — NOT Korčula)**. A review agent twice mis-read 'Poplat' as the Korčula village; the pin is verified at 43.03,18.02 and the day is coherent.
+
+
+---
+
+# Skeptical review (2026-06-14) — 66 confirmed findings, 0 false alarms
+
+**Applied (safe, high-confidence):**
+- App bug: `parseDurationMinutes` reordered so hour-ranges ("2-3h") parse to the average (150m), not the upper bound (180m).
+- App bug: `formatClock` shows past-midnight finishes as "01:30+1" instead of "25:30".
+- App: removed dead trip-mode/GPS/done/day-notes block from store.ts + unused `onFindSleep` prop; wrap-by cutoff now compares to the day's start; note styled muted (not link-like); start/end controls wrap on narrow phones.
+- Data: reconciled Krka (status rejected→candidate, dropped the stale "REJECTED" notes — it's scheduled D1); fixed `me-skadar-rijeka-crnojevica-kayak` coord (~1.6km off); removed 3 duplicate pins (paragliding, Prutaš, Drežanka swim).
+- Data: removed 2 redundant paddle data files (me/ba-paddle-rentals.json) that duplicated the live user_places paddle entries (dup-on-deploy hazard).
+
+**Top flags — your call (judgment, not auto-applied):**
+- **[plan/high]** Day 3 forces an evening Mljet ferry right after the evening airport pickup — a ~2h15 backtrack into a 20:30 last-ferry deadline
+    → Push the Mljet overnight to Day 4: sleep on the mainland Jun 18 after the pickup (Trebinje ~35-40 min east of the airport per booking-guide.md:128, or Camping Kate/Mlini near the airport as the lazy f
+- **[plan/high]** D3 last Mljet car ferry (20:30) vs evening airport pickup is the plan's single biggest fragility
+    → Primary (non-app): the 17:20 FR9423 landing is the linchpin — if it slips past ~17:45 or bags are slow, the 20:30 is unmakeable and there is no later car ferry. Lower-risk option: sleep MAINLAND night
+- **[plan/high]** Biokovo scenic road needs a pre-booked timed slot (20 vehicles/hour) — confirm the D2 reservation is actually made
+    → Book the Biokovo entry slot online in advance at the official web shop pp-biokovo.hr (NOT biokovo.hrvi.hr or biokovo.com) for an early Jun 17 hour — the 06:00 or 07:00 full-hour slot — and carry the Q
+- **[plan/high]** Day 3 (Jun 18): the friend's evening flight + last 20:30 Mljet ferry is a single-point-of-failure with no recorded flight time
+    → Get the 4th person's exact Jun 18 flight number + scheduled arrival into DBV and record it in REAL-PLAN-supabase.md as a fixed anchor (it is currently absent). Then back-solve against the verified 5-s
+- **[plan/high]** Booking-guide accommodation chain is stale: it does not match the live Supabase stay chain
+    → Add a one-line banner at the top of booking-guide.md: "⚠️ SUPERSEDED for stays (Jun 11 doc) — the live booked chain is in REAL-PLAN-supabase.md (Jun 14 FINAL). Booked = Krvavica N1-2, Autokamp Marina 
+- **[plan/medium]** Day 12: Blue Cave boat is listed first but doing it pushes the Saturday ME→HR border crossing into the 10:00–14:00 worst-queue window
+    → Flag Blue Cave and an on-time Saturday border crossing as mutually exclusive on Day 12. Preferred: cross Vitaljina FIRST (~08:00, before the 10:00-14:00 peak), and either (a) drop Blue Cave from Day 1
+- **[plan/medium]** Day 7 raft-at-10:00 anchor leaves zero morning buffer from Pale and is incompatible with the listed Sarajevo/Trebević cluster
+    → On the live Day-7 plan, drop or skip-flag only the 1984 Trebević Bobsled track (it's the lone NW-Sarajevo backtrack on Day 7); keep ASDŽ/Zeljo where they already are on Day 6. Make Day 7 a clean Pale→
+- **[plan/medium]** Day 10 overnight pin (Safari Beach Camping, Velika Plaža) contradicts the booked Rvaši N9-10 base it also lists
+    → In research/REAL-PLAN-supabase.md Day 10, restore a single overnight on the booked bed: change line 156 "-   Home in Rvaši" to "- 🛌 Home in Rvaši", and demote line 157 to a situational extra (e.g. "- 
+- **[data/medium]** Research note claims a Prapratno→Polače car ferry that does not exist (wrong port + wrong crossing time)
+    → In research/activities-booking.md, fix lines 134 and 137. Line 134: replace "Prapratno→Polače ferry is the main route" with "Prapratno→Sobra car ferry (the only vehicle ferry to Mljet) is the route; S
+- **[plan/medium]** Lukomir (rated-5 'meditation on a mountain' fit) is not pinned on any day — parked in 'reconsider'
+    → Surface ba-lukomir + ba-umoljani-rakitnica-hike on Day 6 as an explicit shortlist OPTION (not a silent add), framed as the morning "remote-mountain / meditation / sunrise" alternative to the Neretva w
+- **[plan/medium]** Day 11 ends with a 3am Budva club night but sleeps at Morinj camp ~45min around the bay — a late-night drive-home trap
+    → Keep at most ONE nightlife cluster on Day 11 and make the chosen sleep walkable/short-taxi from it: (a) commit the night-out to KOTOR (Club Maximus / old-town bars) and move the sleep to me-kotor-bay-
+- **[plan/medium]** Day 10 deep-south overnight (Velika Plaža) wastes a booked, paid Rvaši Airbnb night
+    → Decide Day 10's identity before departure, not in the field. The Rvaši Airbnb is booked for both N9 and N10 (Jun 24-26, ~€82/n) — if it is non-refundable, default to the calm-Skadar identity, sleep at
+- **[plan/medium]** Day 7 ends in the Piva canyon (56 unlit tunnels) — 'daylight only' rule leaves little margin if the day slips
+    → Add to the Day 7 plan note and to contingency.md's night-driving section: designate Via Ferrata Piva (150m) and the Piva Lake swim (40m) as Day 7's first drop-candidates — if the group is behind after
+- **[app/medium]** No way to add/edit a stop note (booking time) on baked plan places — setNote is dead code
+    → Add a one-line note editor to DetailPanel for ALL places and wire it to App's existing setNote. Mirror the existing "Hours here" duration control (DetailPanel.tsx:139-168) for UX consistency: add an `
+- **[app/medium]** Island ferry legs (Mljet D3/D4) are silently routed as fictional roads; the only fix (ferry-time input) is dead code
+    → Make the ferry correction actually do something instead of leaving inert code. Minimum viable, no-UI, no-sync (matches throwaway-tool ethos): add a tiny ferries.ts mapping known crossings keyed by fer
+- **[app/medium]** Day-fit verdict counts `extra` stops, so 'Overpacked' is the default state and the verdict loses signal
+    → Sound fix, but the proposed "smallest change" (filter the stop list passed to buildDaySchedule while reusing the same route) is NOT safe as written: the OSRM route + its `legs` are fetched over the FU
+- **[plan/medium]** Day 10 route yo-yos south→north→south because a stray 'Home in Rvaši' waypoint sits mid-day on a night they sleep at Velika Plaža
+    → Resolve the still-open D9/D10 deep-south-vs-Skadar decision WITH THE USER first (memory flags it open) — that decides which overnight identity Day 10 keeps. If the deep-south night stays (sleep = Safa
+- **[app/medium]** No 'does this day have a place to sleep?' guard — a day can have activities but no overnight, and the prev-night prepend will silently use a non-sleep stop
+    → Add a derived per-day flag in the daySchedules/render layer: for each day with ≥1 activity stop, check whether any stop is in SLEEP_CATEGORIES (reuse the existing kind:'sleep' entries from buildDaySch
+
+**Also flagged (lower priority):** ~30 more low-severity items (stale `bestTime` day-scripts on several stops, minor time mismatches, and a batch of confirmed-but-inert App.tsx dead code — undoToast / FitBounds / toolsOpen / nearby-finder / GPS affordance — safe to remove on request). Full list in /tmp/review.json.

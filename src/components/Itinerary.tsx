@@ -18,7 +18,6 @@ interface Props {
   onSelect: (p: PlaceWithOverride) => void;
   onMove: (id: string, dir: 'up' | 'down') => void;
   onAssignDay: (id: string, day: number | null) => void;
-  onFindSleep?: (day: number) => void;
   /** Day clock per day, derived from the current route + stop times. */
   scheduleByDay?: Record<number, DaySchedule | null>;
   /** Per-day start/end hour (+ pace) for the schedule clock; undefined = defaults 08:00–21:00. */
@@ -164,7 +163,8 @@ export default function Itinerary({
                 value={hourToHHMM(dayConfig?.[day]?.endHour ?? (schedule ? schedule.plannedEndSec / 3600 : 21))}
                 onChange={(e) => {
                   let h = hhmmToHour(e.target.value);
-                  if (h != null && h < 5) h += 24; // 00:00–04:59 → after midnight
+                  const start = dayConfig?.[day]?.startHour ?? (schedule ? schedule.dayStartSec / 3600 : 8);
+                  if (h != null && h <= start) h += 24; // wrap-time at/earlier than start = after midnight
                   onSetDayCfg(day, { endHour: h });
                 }}
               />

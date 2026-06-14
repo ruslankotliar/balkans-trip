@@ -166,32 +166,6 @@
     "status": "rejected"
   },
   {
-    "id": "ba-drezanka-swim-stupina",
-    "name": "Drežanka river — Stupina swim spot (Drežnica valley, ~30min from Mostar)",
-    "country": "BA",
-    "category": "beach",
-    "lat": 43.5189,
-    "lng": 17.7385,
-    "description": "Local swimming spot on the emerald Drežanka river in the 29km Drežnica canyon between mountains Čvrsnica and Čabulja. The 'Stupina' pool at Draga was historically used for training dives before the Stari Most competition. Crystal-clear karst water, cold even in June. Small restaurant on site.",
-    "communityNotes": "'Cold but crystal clear water, and there is a small restaurant at the place — ~30 min drive from Mostar.' (TripAdvisor forum locals). Favourite bathing place for Mostar locals, largely unknown to tourists. The canyon itself is spectacular karst scenery. Three waterfalls 10–12m near the spring upstream. Arrive before noon — afternoon sun angle drops off in the canyon. Not signposted from major roads; use GPS coordinates.",
-    "sources": [
-      "https://www.tripadvisor.com/ShowTopic-g295388-i17568-k14459137-Swimming_spots_in_and_around_Mostar_aside_from_kravice-Mostar_Herzegovina_Neretva_Canton_.html",
-      "https://en.wikipedia.org/wiki/Dre%C5%BEanka_(river)"
-    ],
-    "cost": "Free (small restaurant optional)",
-    "timeNeeded": "2–3h",
-    "bestTime": "Before noon for sun in the canyon",
-    "tags": [
-      "zone-3-mostar",
-      "swim",
-      "local",
-      "hidden",
-      "kravica-alternative"
-    ],
-    "rating": 4,
-    "status": "extra"
-  },
-  {
     "id": "ba-buna-brzatak-swim",
     "name": "Kupalište Brzatak (Buna river — south Mostar local swim)",
     "country": "BA",
