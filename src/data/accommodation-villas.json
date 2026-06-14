@@ -22,5 +22,150 @@
     ],
     "rating": 5,
     "status": "shortlist"
+  },
+  {
+    "id": "me-villa-jablan-winery-rvasi",
+    "name": "The Winemaker's House — Jablan Winery (Rvaši)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.37197,
+    "lng": 19.10142,
+    "description": "A 300-year-old stone house that IS the heart of Jablan Winery — Montenegro's only Demeter-certified organic winery — on a hillside above Rvaši on the NW shore of Lake Skadar. Listing: 'Imagine waking up, opening the shutters of a 300-year-old stone house, and seeing vineyards and meadows in front of you. No noise.' Guided tasting of small-batch organic wine made meters away, farm-to-table lunch, free mountain bikes, vineyard + lake-valley views, deep quiet inside the national park yet ~30 min from Podgorica. Sleeps 4 (1 bedroom, 2 beds — verify the bed setup for 4 adults). ★4.86 from 219 reviews (a heavily-proven gem).",
+    "communityNotes": "Description (verified from listing): 'The Winemaker's House · Jablan Winery · Lake Skadar... the heart of Jablan Winery, Montenegro's only Demeter-certified winery... grounded and vibrant.' Independent confirmation (montenegropulse / mnevillage / argophilia): family-run hillside winery above Rvaši, wake to birdsong and wild herbs, evening organic wine on a private terrace as the sun sets over the mountains; complimentary mountain bikes. ★4.86 from 219 reviews. CAPACITY: 1BR / 2 beds = 4 max; check whether the second 'bed' suits 2 adults.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1091457",
+      "https://www.jablanwinery.com/",
+      "https://www.montenegropulse.com/wine-tasting-montenegro.html"
+    ],
+    "cost": "~€96/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "villa-tier"
+    ],
+    "rating": 5,
+    "status": "candidate",
+    "bestTime": "Book: airbnb.com/rooms/1091457 — check Jun 25 (1 night, 4 guests). Night 10, the WOW Skadar stay. Verify the 2-bed setup fits 4 adults (check listing photos). Fills fast — book well ahead of departure."
+  },
+  {
+    "id": "me-villa-above-the-lake-bobija",
+    "name": "Above the Lake (Bobija, Skadar)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.3468,
+    "lng": 19.115,
+    "description": "Charming wooden cottage perched ABOVE Lake Skadar at Bobija (Cetinje municipality), with stunning open lake views, a big terrace for sunsets, and kayaks for rent to explore the lake's hidden coves. Genuinely scenic and private — 'where nature and peace meet.' Sleeps 4 (2 bedrooms, 4 beds). ★4.99 from 110 reviews — one of the highest-rated lake stays on the whole loop.",
+    "communityNotes": "Listing (verified): 'Welcome to our charming wooden cottage Above Lake Skadar, where nature and peace meet. Enjoy stunning lake views, fresh air, and beautiful sunsets... a spacious terrace for relaxing moments... We also offer kayaks for rent so you can explore the lake and its hidden beauty.' ★4.99 from 110 reviews, 2BR/4 beds — comfortably sleeps 4 adults.",
+    "sources": [
+      "https://www.airbnb.com/rooms/1376980285014320999"
+    ],
+    "cost": "~€116/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "villa-tier"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-villa-cold-river-treehouse-bunica",
+    "name": "Cold River Treehouse with private sand beach (Buna/Bunica)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.2259,
+    "lng": 17.8862,
+    "description": "A treehouse on the bank of the crystal-clear river Bunica at 'Cold River' camp near Buna/Blagaj (10 min from Mostar Old Bridge). Private sand beach, kayak to a riverside BBQ grill or paddle to a magical spring, hammocks, breakfast delivered to your treehouse. Romantic, remote-feeling nature spot that doubles as a base for Mostar/Blagaj/Kravica. Sleeps 4 (1 bedroom, 4 beds, private bath+kitchen). ★4.92 from 106 reviews.",
+    "communityNotes": "Listing (verified): 'Enjoy the lovely setting of this romantic nature spot nestled on the bank of tranquil river Bunica... Cold River camp consists of four Treehouses... You can rent a kayak and paddle to River Grill for delicious BBQ (breakfast can be delivered)... lay in a hammock on a sandy beach.' Guest review (via Booking/Airbnb): 'Super cosy and unique experience,' feels very remote even though it's close to lots to see and good restaurants. ★4.92/106, sleeps 4.",
+    "sources": [
+      "https://www.airbnb.com/rooms/661641412540717363",
+      "https://www.booking.com/hotel/ba/cold-river-treehouse-glamping.html"
+    ],
+    "cost": "~€112/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "villa-tier"
+    ],
+    "rating": 5,
+    "status": "candidate",
+    "bestTime": "Book: airbnb.com/rooms/661641412540717363 — check Jun 21 (1 night, 4 guests). Night 6, base for Mostar/Blagaj/Kravica day. Cash welcome at check-in."
+  },
+  {
+    "id": "ba-villa-kostela-stone-house-poplat",
+    "name": "Kostela Stone House (Poplat, Berkovići)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.031,
+    "lng": 18.0184,
+    "description": "Modernly restored old stone house in a rural area near Stolac/Berkovići in the Herzegovina hinterland, set in a large plantation of aromatic (etheric) plants with a spacious patio and a beautifully landscaped garden. Quiet, characterful, and perfectly placed on the southern Herzegovina line (Mostar → Trebinje). Sleeps 5 (4 beds: two doubles + two sofa beds). ★4.94 from 157 reviews — a heavily-proven gem.",
+    "communityNotes": "Listing (verified): 'Modernly restored old stone house, in a rural area, surrounded by a large plantation of etheric plants. A spacious patio and a beautifully decorated garden are ideal for a vacation... The bedroom has two creations (180x200 and 160x200) and two sofa beds (90x190).' ★4.94 from 157 reviews. Also appears in the user's own Airbnb wishlist (taste signal) — now confirmed available with a ~€119 June price. Sleeps 5.",
+    "sources": [
+      "https://www.airbnb.com/rooms/643252285251222758"
+    ],
+    "cost": "~€119/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "villa-tier"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-villa-village-house-cvaljina",
+    "name": "Village House (Čvaljina, Popovo polje)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 42.86846,
+    "lng": 17.97107,
+    "description": "Traditional rural household in the village of Čvaljina on the Popovo polje plain, in the Trebinje/Ravno hinterland — hosts Beba and Dragan, a terrace with valley views, and the Ćiro cycling trail at the door. Walking distance to the 13th-c. Zavala Monastery and Vjetrenica, BiH's most important cave; ~25 min to the Croatian coast and ~1 h to Dubrovnik. A real countryside stay that beats any city-center Trebinje flat. Sleeps 5 (2 bedrooms, 3 beds). ★5.0 from 46 reviews.",
+    "communityNotes": "Listing (verified): 'This rural household is perfect for holiday vacation and casual break. In less than 2 miles is Zavala Monastery (13th c.) and the cave Vjetrenica, the largest and most important cave in BiH... You will be warmly welcomed by the hosts Beba and Dragan.' Terrace view + 'Ćiro' bike trail. ★5.0 from 46 reviews. CAPACITY: 2BR / 3 beds — sleeps 4-5 (3 beds; verify if all 4 want separate beds).",
+    "sources": [
+      "https://www.airbnb.com/rooms/13365354"
+    ],
+    "cost": "~€82/night for 4 (June sample; dates are route estimates, not final)",
+    "tags": [
+      "villa-tier"
+    ],
+    "rating": 5,
+    "status": "candidate",
+    "bestTime": "Book: airbnb.com/rooms/13365354 — check Jun 18 (Night 3, base after airport pickup, 1h from Dubrovnik) OR Jun 27 (Night 12, last night before return). Hosts Beba and Dragan — message on Airbnb."
+  },
+  {
+    "id": "me-villa-lekovic-godinje",
+    "name": "Rustic House Leković (Godinje village, Skadar Lake)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.2503,
+    "lng": 19.047,
+    "description": "150-year-old stone farmhouse in the hilltop village of Godinje (~4km from Virpazar) — entire house for 4, with a terrace overlooking Skadar Lake and adjacent vineyards, organic garden and honey hives, and a full kitchen. The WOW-tier Skadar option that's actually IN a traditional village (Godinje is a classic stone-village on the hillside, very few tourists).",
+    "communityNotes": "★4.7/5 from 43 reviews: 'One of the best preserved rural environments.' 'Spacious, very clean rooms in a historic family home. Local home-grown food, winery.' 'Brilliant location and possibly best value in Montenegro.' | Capacity: 4 guests, 2 bedrooms — fits exactly. Access road to Godinje is narrow but passable. NOTE: coords approximate (Godinje village center) — cross-check before navigation.",
+    "sources": [
+      "https://hichee.com/listings/5676695"
+    ],
+    "cost": "~€80–100/night for 4 (whole house; June estimate)",
+    "tags": [
+      "villa-tier",
+      "skadar",
+      "godinje"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-villa-stone-house-martelina",
+    "name": "Stone House Martelina (Starigrad-Paklenica)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 44.31365,
+    "lng": 15.4367,
+    "description": "100+ year-old stone house renovated 2014, set in a hillside hamlet inside the Velebit Natura 2000 zone — 2.5 km from Starigrad-Paklenica town, 5 min from Paklenica NP entrance, 2.5 km from beach. Sleeps 4 (2 bedrooms), fireplace, BBQ, terrace, garden where guests pick fresh vegetables. The WOW-tier Night 1 option: stone, views, quiet village, NP at your doorstep.",
+    "communityNotes": "Adriagate rating 4.8/5 (22 reviews), 'Great Host' badge. Guest: 'A very cosy House on the hillside with a nice view over the Adriatic sea.' Marketing tagline: 'unclench your teeth, unhunch your shoulders.' Located in one of the few active settlements inside Velebit Natura 2000. | Price ~€136/night (June) is slightly above €100-130 target but within range given it's the best WOW option in the area. 1-night OK via direct booking. Contact via stonehousemartelina.com or Adriagate.",
+    "bestTime": "Book direct: stonehousemartelina.com (calendar more up-to-date than 3rd-party sites). Jun 16 (Night 1).",
+    "sources": [
+      "https://www.adriagate.com/Croatia-en/Accommodation-57851",
+      "https://www.stonehousemartelina.com"
+    ],
+    "cost": "~€136/night for 4 (June pre-peak; confirmed from listing)",
+    "tags": [
+      "villa-tier",
+      "paklenica",
+      "night-1"
+    ],
+    "rating": 5,
+    "status": "candidate"
   }
 ]

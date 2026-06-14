@@ -493,32 +493,6 @@
     "status": "candidate"
   },
   {
-    "id": "me-kotor-bay-kayak-rental",
-    "name": "Bay of Kotor Self-Guided Kayak Rental",
-    "country": "ME",
-    "category": "activity",
-    "lat": 42.4246,
-    "lng": 18.7712,
-    "description": "Rent sea kayaks from Go Go Gaga (Kotor waterfront) for self-guided paddling in the Bay of Kotor. €5/h single, €25/day double. Design your own route: Perast + Our Lady of the Rocks is a classic 16 km round trip. At dawn the bay is mirror-flat and deserted.",
-    "communityNotes": "Multiple reviewers: 'discover the magic of rowing while exploring Boka Kotorska Bay and determine your route yourself'; 'you can rent a kayak and start from Kotor' — true self-guided, no guide needed. If tired, a boat can tow you back. Blue Cave and submarine tunnels reachable by full-day paddle.",
-    "sources": [
-      "https://www.gogogagatours.com/en/rentals/",
-      "https://www.tripadvisor.com/Attraction_Review-g2558165-d19686857-Reviews-Kayak_Tours_Kotor-Kotor_Municipality.html"
-    ],
-    "cost": "€5/h single, €25/day double",
-    "timeNeeded": "2h (quick loop) to full day",
-    "tags": [
-      "kayak",
-      "self-guided",
-      "kotor",
-      "bay",
-      "perast",
-      "dawn"
-    ],
-    "rating": 4,
-    "status": "rejected"
-  },
-  {
     "id": "ba-hrcavka-canyoning",
     "name": "Hrčavka Canyon Canyoning — Sutjeska NP",
     "country": "BA",
