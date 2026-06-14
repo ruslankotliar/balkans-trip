@@ -133,7 +133,10 @@ export default function Itinerary({
     const byType = new Map<string, { count: number; days: Set<number> }>();
     const perDay = new Map<number, number>();
     for (const p of assigned) {
-      if (p.status !== 'shortlist' || !p.day) continue;
+      // Count everything COMMITTED to a day (anything with a day that isn't an
+      // `extra` area-option or rejected) — not just status==='shortlist', since
+      // a few in-route stops carry candidate/backup status after moves.
+      if (!p.day || p.status === 'extra' || p.status === 'rejected') continue;
       const t = activityType(p);
       if (!t) continue;
       const e = byType.get(t) ?? { count: 0, days: new Set<number>() };
