@@ -1,99 +1,196 @@
 /**
- * Default day-assignment plan — the canonical, driving-balanced itinerary.
- * Generated 2026-06 from the plan-rebalance workflow (planner→critic→reviser).
- * Only day + dayOrder live here; status lives in src/data/*.json.
- * "Options" (rich nearby extras, not scheduled) stay unscheduled in the data.
- *
- * loadOverrides() seeds from this on first visit; the shared plan then syncs
- * via Supabase (plan_overrides). Publish changes with the "Load latest plan" action.
+ * Default day-assignment plan — regenerated 2026-06-14 to MATCH the live Supabase plan.
+ * Seeds new/empty devices; the shared plan then syncs via Supabase plan_overrides.
+ * Keeping seed == live prevents phantom seed-only stops. Only day + dayOrder here.
  */
 import type { Overrides } from './store';
 
 export const DEFAULT_PLAN: Overrides = {
-  // ── Day 1: Jun 16 (Tue) — Zadar arrival, swim, Velika Paklenica gorge hike, camp under Velebit (drive ~1.1h · good) ──
-  'hr-zadar-airport':               { day: 1, dayOrder: 0 },
-  'hr-zadar-old-town':              { day: 1, dayOrder: 1 },
-  'hr-velika-paklenica-gorge':      { day: 1, dayOrder: 2 },
-  'hr-camp-np-paklenica':           { day: 1, dayOrder: 3 },
+  // ── Day 1: Jun16 Tue ──
+  "hr-zadar-airport":                        { day: 1, dayOrder: -0.5 },
+  "hr-zadar-skydive-adv":                    { day: 1, dayOrder: -0.05 },
+  "hr-zadar-old-town":                       { day: 1, dayOrder: 0.4 },
+  "hr-duboka-draga-vrsi":                    { day: 1, dayOrder: 0.5 },
+  "hr-krka":                                 { day: 1, dayOrder: 1.0 },
+  "hr-skradin-town-beach":                   { day: 1, dayOrder: 1.5 },
+  "hr-kantun-paulina":                       { day: 1, dayOrder: 2.5 },
+  "hr-split":                                { day: 1, dayOrder: 3.0 },
+  "hr-ramova-beach-krvavica":                { day: 1, dayOrder: 3.5 },
+  "hr-camping-krvavica":                     { day: 1, dayOrder: 4 },
 
-  // ── Day 2: Jun 17 (Wed) — Paklenica to Split, Cetina canyoning at Omis, sleep Makarska Riviera (not Omis) (drive ~3h · good) ──
-  'hr-split':                       { day: 2, dayOrder: 0 },
-  'hr-kantun-paulina':              { day: 2, dayOrder: 1 },
-  'hr-cetina-canyoning':            { day: 2, dayOrder: 2 },
-  'hr-camping-krvavica':            { day: 2, dayOrder: 3 },
+  // ── Day 2: Jun17 Wed ──
+  "hr-biokovo-tollroad":                     { day: 2, dayOrder: 1.0 },
+  "hr-sveti-jure":                           { day: 2, dayOrder: 1.5 },
+  "hr-biokovo-skywalk":                      { day: 2, dayOrder: 2.0 },
+  "hr-via-ferrata-fortica-omis":             { day: 2, dayOrder: 2.5 },
+  "hr-starigrad-fortica":                    { day: 2, dayOrder: 3.0 },
+  "hr-cetina-zipline":                       { day: 2, dayOrder: 3.5 },
+  "hr-cetina-rafting":                       { day: 2, dayOrder: 4.0 },
+  "hr-radmanove-mlinice":                    { day: 2, dayOrder: 4.5 },
+  "hr-cetina-cliff-jump-luka":               { day: 2, dayOrder: 5.0 },
+  "hr-cetina-canyoning":                     { day: 2, dayOrder: 5.5 },
+  "hr-gubavica-waterfall":                   { day: 2, dayOrder: 6.0 },
+  "hr-konoba-gusti-omis":                    { day: 2, dayOrder: 6.5 },
+  "hr-punta-rata":                           { day: 2, dayOrder: 7.0 },
+  "hr-konoba-feral-brela":                   { day: 2, dayOrder: 7.5 },
+  "hr-biokovo-paragliding":                  { day: 2, dayOrder: 8.0 },
+  "hr-makarska-nightlife":                   { day: 2, dayOrder: 8.5 },
+  "user-clone-krvavica-n2":                  { day: 2, dayOrder: 9 },
 
-  // ── Day 3: Jun 18 (Thu) — Riviera to Peljesac to the Dubrovnik-airport pickup, then north to the Mljet-ferry camp (drive ~5h · full) ──
-  'hr-peljesac-bridge':             { day: 3, dayOrder: 0 },
-  'hr-mali-ston-oysters':           { day: 3, dayOrder: 1 },
-  'hr-dubrovnik-airport-pickup':    { day: 3, dayOrder: 2 },
-  'hr-camp-prapratno':              { day: 3, dayOrder: 3 },
+  // ── Day 3: Jun18 Thu ──
+  "hr-bacina-jezera":                        { day: 3, dayOrder: 0.0 },
+  "hr-peljesac-bridge":                      { day: 3, dayOrder: 0.5 },
+  "hr-ston-walls":                           { day: 3, dayOrder: 2.0 },
+  "hr-mali-ston-oysters":                    { day: 3, dayOrder: 2.5 },
+  "hr-kobas-bay":                            { day: 3, dayOrder: 3.0 },
+  "hr-gastro-mare-kobas":                    { day: 3, dayOrder: 3.5 },
+  "hr-dubrovnik-airport-pickup":             { day: 3, dayOrder: 4.0 },
+  "hr-prapratno-ferry":                      { day: 3, dayOrder: 4.5 },
+  "hr-camp-marina-mljet":                    { day: 3, dayOrder: 5 },
 
-  // ── Day 4: Jun 19 (Fri) — Ferry to Mljet, bike the salt-lake loop, cliff-jump at Odysseus Cave (drive ~0.4h · good) ──
-  'hr-prapratno-ferry':             { day: 4, dayOrder: 0 },
-  'hr-mljet-np':                    { day: 4, dayOrder: 1 },
-  'hr-mljet-bike-rental-lakes':     { day: 4, dayOrder: 2 },
-  'hr-odysseus-cave':               { day: 4, dayOrder: 3 },
-  'hr-camp-marina-mljet':           { day: 4, dayOrder: 4 },
+  // ── Day 4: Jun19 Fri ──
+  "hr-mljet-bike-rental-lakes":              { day: 4, dayOrder: 3.0 },
+  "hr-mljet-np":                             { day: 4, dayOrder: 3.5 },
+  "hr-montokuc-mljet":                       { day: 4, dayOrder: 4.0 },
+  "hr-konoba-ribar-mljet":                   { day: 4, dayOrder: 4.5 },
+  "hr-odysseus-cave":                        { day: 4, dayOrder: 5.0 },
+  "hr-zuljana":                              { day: 4, dayOrder: 6.0 },
+  "ba-kravica":                              { day: 4, dayOrder: 7.0 },
+  "ba-pocitelj":                             { day: 4, dayOrder: 8.0 },
+  "ba-pocitelj-stalls":                      { day: 4, dayOrder: 8.5 },
+  "user-1781357020737":                      { day: 4, dayOrder: 9 },
 
-  // ── Day 5: Jun 20 (Sat) — Ferry to the mainland, Kravica falls, Pocitelj, into Mostar (drive ~3.8h · full) ──
-  'hr-sobra-ferry':                 { day: 5, dayOrder: 0 },
-  'ba-kravica':                     { day: 5, dayOrder: 1 },
-  'ba-pocitelj':                    { day: 5, dayOrder: 2 },
-  'ba-mostar':                      { day: 5, dayOrder: 3 },
-  'ba-tima-irma':                   { day: 5, dayOrder: 4 },
-  'ba-gem-mostar-nanas-house':      { day: 5, dayOrder: 5 },
+  // ── Day 5: Jun20 Sat ──
+  "ba-radimlja-stecci":                      { day: 5, dayOrder: 2.5 },
+  "ba-stolac-bregava":                       { day: 5, dayOrder: 3.0 },
+  "ba-trebizat-canoe":                       { day: 5, dayOrder: 3.15 },
+  "ba-blagaj":                               { day: 5, dayOrder: 3.5 },
+  "ba-buna-blagaj-swim":                     { day: 5, dayOrder: 4.0 },
+  "ba-blagaj-trout-terraces":                { day: 5, dayOrder: 4.5 },
+  "ba-mostar":                               { day: 5, dayOrder: 5.0 },
+  "ba-mostar-jumpers-viewpoint":             { day: 5, dayOrder: 5.5 },
+  "ba-tima-irma":                            { day: 5, dayOrder: 6.0 },
+  "ba-fortica-mostar":                       { day: 5, dayOrder: 6.5 },
+  "ba-bingo-mostar":                         { day: 5, dayOrder: 7.0 },
+  "ba-dreznica-canyon":                      { day: 5, dayOrder: 7.5 },
+  "ba-mostarska-bijela-canyon":              { day: 5, dayOrder: 8.0 },
+  "ba-mostar-black-dog-pub":                 { day: 5, dayOrder: 8.5 },
+  "user-1781358765546":                      { day: 5, dayOrder: 9 },
 
-  // ── Day 6: Jun 21 (Sun) — Blagaj Tekija, drive to Sarajevo via Konjic, Bascarsija, sunset fortress, night out (drive ~1.8h · good) ──
-  'ba-blagaj':                      { day: 6, dayOrder: 0 },
-  'ba-sarajevo':                    { day: 6, dayOrder: 1 },
-  'ba-zuta-tabija':                 { day: 6, dayOrder: 2 },
-  'ba-sarajevo-petica-ferhatovic':  { day: 6, dayOrder: 3 },
-  'ba-kino-bosna-sarajevo':         { day: 6, dayOrder: 4 },
-  'ba-air-1542024184506963047':     { day: 6, dayOrder: 5 },
+  // ── Day 6: Jun21 Sun ──
+  "ba-diva-grabovica":                       { day: 6, dayOrder: -1.5 },
+  "ba-jablanica-kayak-neretva":              { day: 6, dayOrder: -1.0 },
+  "ba-jablanica-neretva-museum":             { day: 6, dayOrder: -0.5 },
+  "ba-neretva-rafting-konjic":               { day: 6, dayOrder: 0.0 },
+  "ba-crni-vir-dzajici":                     { day: 6, dayOrder: 1.5 },
+  "ba-konjic-stara-cuprija":                 { day: 6, dayOrder: 2.0 },
+  "ba-sarajevo-asdz":                        { day: 6, dayOrder: 2.239 },
+  "ba-zeljo-cevapi":                         { day: 6, dayOrder: 2.25 },
+  "ba-sarajevo":                             { day: 6, dayOrder: 2.5 },
+  "ba-sarajevo-pivara":                      { day: 6, dayOrder: 3.0 },
+  "ba-sarajevo-petica-ferhatovic":           { day: 6, dayOrder: 3.5 },
+  "ba-sarajevo-ramis":                       { day: 6, dayOrder: 4.0 },
+  "ba-zuta-tabija":                          { day: 6, dayOrder: 4.5 },
+  "ba-kino-bosna-sarajevo":                  { day: 6, dayOrder: 5.0 },
+  "ba-bascarsija-bar-cluster":               { day: 6, dayOrder: 5.5 },
+  "user-1781362126170":                      { day: 6, dayOrder: 6 },
 
-  // ── Day 7: Jun 22 (Mon) — Sarajevo to the Tara rafting put-in, then the Piva canyon drive to Zabljak (drive ~5.8h · full) ──
-  'ba-tjentiste-monument':          { day: 7, dayOrder: 0 },
-  'me-tara-rafting-brstanovica':    { day: 7, dayOrder: 1 },
-  'me-scepan-polje-piva-canyon':    { day: 7, dayOrder: 2 },
-  'me-mratinje-dam':                { day: 7, dayOrder: 3 },
-  'me-piva-lake-swim':              { day: 7, dayOrder: 4 },
-  'me-camp-mlinski-potok':          { day: 7, dayOrder: 5 },
+  // ── Day 7: Jun22 Mon ──
+  "ba-bobsled-track":                        { day: 7, dayOrder: -0.5 },
+  "ba-sand-pyramids-foca":                   { day: 7, dayOrder: 0.0 },
+  "ba-gradac-foca-viewpoint":                { day: 7, dayOrder: 0.5 },
+  "ba-tjentiste-monument":                   { day: 7, dayOrder: 1.0 },
+  "me-tara-rafting-brstanovica":             { day: 7, dayOrder: 1.5 },
+  "me-scepan-polje-piva-canyon":             { day: 7, dayOrder: 2.0 },
+  "me-mratinje-dam":                         { day: 7, dayOrder: 2.5 },
+  "me-via-ferrata-piva":                     { day: 7, dayOrder: 3.0 },
+  "me-piva-lake-swim":                       { day: 7, dayOrder: 3.5 },
+  "user-1781356614119":                      { day: 7, dayOrder: 4 },
 
-  // ── Day 8: Jun 23 (Tue) — One Durmitor summit (Prutas), Tara-bridge zipline, easy lake time around Zabljak (drive ~1.5h · good) ──
-  'me-prutas-hike':                 { day: 8, dayOrder: 0 },
-  'me-tara-bridge-zipline':         { day: 8, dayOrder: 1 },
-  'me-oro-zabljak':                 { day: 8, dayOrder: 2 },
-  'me-gem-zabljak-mountain-spark':  { day: 8, dayOrder: 3 },
+  // ── Day 8: Jun23 Tue ──
+  "me-durmitor-sedlo-pass":                  { day: 8, dayOrder: -2.0 },
+  "me-savin-kuk-hike":                       { day: 8, dayOrder: -1.533 },
+  "me-grabovica-canyon":                     { day: 8, dayOrder: -1.522 },
+  "me-komarnica-canyon-packraft":            { day: 8, dayOrder: -1.511 },
+  "me-prutas-hike":                          { day: 8, dayOrder: -1.5 },
+  "me-zminje-jezero":                        { day: 8, dayOrder: -0.5 },
+  "me-durmitor-curevac":                     { day: 8, dayOrder: -0.022 },
+  "me-vrazje-jezero":                        { day: 8, dayOrder: -0.011 },
+  "me-durmitor-bike-black-lake":             { day: 8, dayOrder: 0.0 },
+  "me-crno-jezero-restoran":                 { day: 8, dayOrder: 0.5 },
+  "me-durmitor-buggy-soa":                   { day: 8, dayOrder: 1.0 },
+  "me-tara-bridge-zipline":                  { day: 8, dayOrder: 1.5 },
+  "me-oro-zabljak":                          { day: 8, dayOrder: 2.5 },
+  "me-camp-mlinski-potok":                   { day: 8, dayOrder: 3 },
 
-  // ── Day 9: Jun 24 (Wed) — Off the mountain: Ostrog Monastery, Pavlova Strana, into Skadar Lake (drive ~4.3h · full) ──
-  'me-ostrog-monastery':            { day: 9, dayOrder: 0 },
-  'me-pavlova-strana':              { day: 9, dayOrder: 1 },
-  'me-skadar-lake':                 { day: 9, dayOrder: 2 },
-  'me-virpazar-kayak':              { day: 9, dayOrder: 3 },
-  'me-vinarija-masanovic':          { day: 9, dayOrder: 4 },
-  'me-guesthouse-skadar-raicevic':  { day: 9, dayOrder: 5 },
+  // ── Day 9: Jun24 Wed ──
+  "me-ostrog-monastery":                     { day: 9, dayOrder: 6.5 },
+  "me-skadar-rijeka-crnojevica-kayak":       { day: 9, dayOrder: 7.0 },
+  "me-karuc-skadar":                         { day: 9, dayOrder: 7.478 },
+  "me-rijeka-crnojevica-swim":               { day: 9, dayOrder: 7.489 },
+  "me-konoba-mostina-rijeka-crnojevica":     { day: 9, dayOrder: 7.5 },
+  "me-pavlova-strana":                       { day: 9, dayOrder: 8.5 },
+  "user-1781370817091":                      { day: 9, dayOrder: 9 },
 
-  // ── Day 10: Jun 25 (Thu) — Deep south: Bar sea-fishing, Stari Bar ruins, Ulcinj old town, Ada Bojana sunset (drive ~1.1h · good) ──
-  'me-bar-fishing-beli':            { day: 10, dayOrder: 0 },
-  'me-stari-bar':                   { day: 10, dayOrder: 1 },
-  'me-ulcinj-old-town':             { day: 10, dayOrder: 2 },
-  'me-ada-bojana-beach':            { day: 10, dayOrder: 3 },
-  'me-camp-safari-beach':           { day: 10, dayOrder: 4 },
+  // ── Day 10: Jun25 Thu ──
+  "me-bar-fishing-beli":                     { day: 10, dayOrder: 0.0 },
+  "me-stari-bar":                            { day: 10, dayOrder: 0.5 },
+  "me-ulcinj-old-town":                      { day: 10, dayOrder: 1.0 },
+  "me-ada-bojana-beach":                     { day: 10, dayOrder: 1.5 },
+  "me-camp-safari-beach":                    { day: 10, dayOrder: 2.0 },
+  "me-skadar-ebike-wine-3e":                 { day: 10, dayOrder: 2.4 },
+  "me-jakocev-krs-skadar-swim":              { day: 10, dayOrder: 2.5 },
+  "me-skadar-lake":                          { day: 10, dayOrder: 3.0 },
+  "me-virpazar-kayak":                       { day: 10, dayOrder: 3.5 },
+  "me-skadar-self-drive-boat":               { day: 10, dayOrder: 4.0 },
+  "me-rijeka-crnojevica-kom-boat":           { day: 10, dayOrder: 4.5 },
+  "me-vinarija-masanovic":                   { day: 10, dayOrder: 5.5 },
+  "me-konoba-badanj":                        { day: 10, dayOrder: 6.0 },
+  "user-clone-rvasi-n10":                    { day: 10, dayOrder: 8 },
 
-  // ── Day 11: Jun 26 (Fri) — Coast north: Budva, Kotor fortress, Perast, inland over the border to Trebinje (drive ~4.3h · full) ──
-  'me-budva':                       { day: 11, dayOrder: 0 },
-  'me-kotor':                       { day: 11, dayOrder: 1 },
-  'me-tanjga-kotor':                { day: 11, dayOrder: 2 },
-  'me-perast':                      { day: 11, dayOrder: 3 },
-  'ba-trebinje-old-town':           { day: 11, dayOrder: 4 },
-  'ba-air-1165836464333612445':     { day: 11, dayOrder: 5 },
+  // ── Day 11: Jun26 Fri ──
+  "me-budva-fishing-predator":               { day: 11, dayOrder: -0.5 },
+  "me-budva-paraglide-becici":               { day: 11, dayOrder: 0.0 },
+  "me-kotor-fortress-free-ladder":           { day: 11, dayOrder: 0.45 },
+  "me-sveti-nikola-island":                  { day: 11, dayOrder: 0.5 },
+  "me-mogren-beach-budva":                   { day: 11, dayOrder: 1.0 },
+  "me-budva":                                { day: 11, dayOrder: 1.5 },
+  "me-sveti-stefan-viewpoint":               { day: 11, dayOrder: 2.0 },
+  "me-lovcen-atv-cosmopolitan":              { day: 11, dayOrder: 2.5 },
+  "me-kod-pera-njegusi":                     { day: 11, dayOrder: 3.0 },
+  "me-kotor-serpentine-bend10":              { day: 11, dayOrder: 3.5 },
+  "me-kotor-via-ferrata":                    { day: 11, dayOrder: 4.5 },
+  "me-tanjga-kotor":                         { day: 11, dayOrder: 5.0 },
+  "me-kotor":                                { day: 11, dayOrder: 5.5 },
+  "me-moritz-eis-kotor":                     { day: 11, dayOrder: 6.0 },
+  "me-perast":                               { day: 11, dayOrder: 6.5 },
+  "me-perast-viewpoint-stop":                { day: 11, dayOrder: 7.0 },
+  "me-maximus-kotor":                        { day: 11, dayOrder: 7.5 },
+  "me-sparta-club-budva":                    { day: 11, dayOrder: 8.0 },
+  "me-budva-oldtown-bars":                   { day: 11, dayOrder: 8.5 },
+  "me-autocamp-naluka-morinj":               { day: 11, dayOrder: 9 },
 
-  // ── Day 12: Jun 27 (Sat) — Trebinje to the Dubrovnik finale: Pasjaca cliff beach on the way in, then the walls, camp near the city (drive ~1.3h · good) ──
-  'hr-pasjaca-beach':               { day: 12, dayOrder: 0 },
-  'hr-dubrovnik':                   { day: 12, dayOrder: 1 },
-  'hr-camping-kate-mlini':          { day: 12, dayOrder: 2 },
+  // ── Day 12: Jun27 Sat ──
+  "hr-pasjaca-beach":                        { day: 12, dayOrder: -4.5 },
+  "hr-konavle-stone-villa-tier3":            { day: 12, dayOrder: -4.0 },
+  "me-kotor-blue-cave-speedboat":            { day: 12, dayOrder: -3.6 },
+  "hr-konoba-ivankovski":                    { day: 12, dayOrder: -3.5 },
+  "hr-cavtat-sea-kayak":                     { day: 12, dayOrder: -2.5 },
+  "hr-cavtat":                               { day: 12, dayOrder: -2.0 },
+  "hr-cavtat-apt-tier2":                     { day: 12, dayOrder: -1.5 },
+  "hr-camping-kate-mlini":                   { day: 12, dayOrder: 0 },
 
-  // ── Day 13: Jun 28 (Sun) — Mlini to a last Dubrovnik morning, car drop, fly out (drive ~1h · light) ──
-  'hr-dubrovnik-airport':           { day: 13, dayOrder: 0 },
+  // ── Day 13: Jun28 Sun ──
+  "hr-dubrovnik-sea-kayak":                  { day: 13, dayOrder: 1.0 },
+  "hr-dubrovnik-dive-blueplanet":            { day: 13, dayOrder: 1.5 },
+  "hr-bellevue-beach-jumps":                 { day: 13, dayOrder: 1.8 },
+  "hr-lokrum":                               { day: 13, dayOrder: 2.0 },
+  "hr-glorijet-gruz":                        { day: 13, dayOrder: 2.5 },
+  "hr-sveti-jakov-beach":                    { day: 13, dayOrder: 2.6 },
+  "hr-barba-dubrovnik":                      { day: 13, dayOrder: 3.0 },
+  "hr-dubrovnik":                            { day: 13, dayOrder: 3.5 },
+  "hr-peppinos-gelato":                      { day: 13, dayOrder: 4.0 },
+  "hr-buza-bar":                             { day: 13, dayOrder: 4.5 },
+  "hr-dubrovnik-airport":                    { day: 13, dayOrder: 5 },
 
 };
