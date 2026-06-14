@@ -63,6 +63,7 @@ const AddPlace = lazy(() => import('./components/AddPlace'));
 const CorridorPanel = lazy(() => import('./components/CorridorPanel'));
 const LazyEssentials = lazy(() => import('./components/Essentials'));
 const LazyPlan = lazy(() => import('./components/Itinerary'));
+const LazyMix = lazy(() => import('./components/ActivityMix'));
 function PanelFallback({ text }: { text: string }) {
   return (
     <div className="place-list-empty">
@@ -83,7 +84,7 @@ function DialogFallback({ title }: { title: string }) {
   );
 }
 
-type View = 'places' | 'plan';
+type View = 'places' | 'plan' | 'mix';
 
 // Categories that count as a place to sleep (used when prepending the previous
 // night's overnight to a day's route).
@@ -931,6 +932,12 @@ export default function App() {
           >
             Plan
           </button>
+          <button
+            className={view === 'mix' ? 'on' : ''}
+            onClick={() => { setView('mix'); setCorridor(null); setToolsOpen(false); }}
+          >
+            Highlights
+          </button>
         </div>
 
         {view === 'places' && (
@@ -1087,6 +1094,12 @@ export default function App() {
               </details>
             )}
           </>
+        )}
+
+        {!corridor && view === 'mix' && (
+          <Suspense fallback={<PanelFallback text="Loading highlights…" />}>
+            <LazyMix places={places} onPickDay={focusPlanDay} />
+          </Suspense>
         )}
 
         {!corridor && view === 'plan' && (

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { CATEGORY_COLORS } from '../constants';
 import { formatClock, formatTimeRange, type DaySchedule } from '../schedule';
 import type { PlaceWithOverride } from '../store';
@@ -39,41 +38,6 @@ function hhmmToHour(v: string): number | undefined {
   return Number(m[1]) + Number(m[2]) / 60;
 }
 
-// ── Big-highlight classifier (for the activity-mix tracker) ──
-// Only the MAJOR highlights worth balancing across days — the booked / time /
-// money / effort ones. Everything quick/free/ambient (eating, swimming,
-// cliff-jumping, snorkeling, viewpoints, town/sightseeing, plain nature,
-// scenic drives, dams) is deliberately NOT tracked. Gated by CATEGORY (so a
-// drive/dam/viewpoint named "...Canyon..." isn't counted) and matched on the
-// NAME only (ids + tags are too noisy and cause false hits).
-function activityType(p: PlaceWithOverride): string | null {
-  if (p.category === 'nightlife') return 'nightlife';
-  if (p.category === 'hike') return 'hiking'; // summits / canyon hikes = real effort
-  const n = p.name.toLowerCase();
-  if (p.category === 'food') {
-    if (/\bwine\b|vinarij|winery|vineyard/.test(n)) return 'wine tasting';
-    if (/peka|cooking class|cook[ -]your[ -]own/.test(n)) return 'cooking';
-    return null; // a meal = ambient
-  }
-  if (p.category !== 'activity') return null; // nature/beach/sight/viewpoint/town/other/sleeps
-  // category 'activity' → subtype; check SPECIFIC activities before the generic
-  // "canyon" (so "Tara Canyon rafting"/"Cetina Canyon Zipline" classify right).
-  if (/raft/.test(n)) return 'rafting';
-  if (/ferrata|rock.?climb|\bclimbing\b/.test(n)) return 'climbing';
-  if (/kayak|canoe/.test(n)) return 'kayaking';
-  if (/\bsup\b|paddle.?board|stand.?up.?paddle/.test(n)) return 'SUP';
-  if (/scuba|diving|dive cent/.test(n)) return 'diving';
-  if (/zip.?line/.test(n)) return 'zipline';
-  if (/paraglid/.test(n)) return 'paragliding';
-  if (/skydiv/.test(n)) return 'skydiving';
-  if (/\batv\b|buggy|quad|dirt.?bike/.test(n)) return 'ATV/buggy';
-  if (/e-?bike|cycling|\bbike\b/.test(n)) return 'e-bike';
-  if (/speedboat|motorboat|boat tour|boat trip|boat rental|boat hire|blue cave|\bcruise\b|\byacht\b/.test(n)) return 'boat';
-  if (/fishing|charter/.test(n)) return 'fishing';
-  if (/\bwine\b|vinarij|winery/.test(n)) return 'wine tasting';
-  if (/canyon/.test(n)) return 'canyoning'; // generic fallback, after the specifics
-  return null; // unrecognized 'activity' (e.g. a scenic toll road) → not tracked
-}
 
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
@@ -109,7 +73,6 @@ export default function Itinerary({
   dayConfig,
   onSetDayCfg,
 }: Props) {
-  const [mixOpen, setMixOpen] = useState(false);
   const assigned = places.filter((p) => p.day && p.status !== 'rejected');
   const backlog = places
     .filter((p) => !p.day && p.status === 'shortlist')
@@ -127,35 +90,6 @@ export default function Itinerary({
         arriveSec: null,
         departSec: null,
       }));
-
-  // Trip-wide mix of the BIG highlights (the booked/time/money/effort ones)
-  // over the COMMITTED (shortlist) stops — keeps variety in view, flags the
-  // same highlight on back-to-back days, and flags days stacking 2+ of them.
-  const { mix, heavyDays } = (() => {
-    const byType = new Map<string, { count: number; days: Set<number> }>();
-    const perDay = new Map<number, number>();
-    for (const p of assigned) {
-      // Count everything COMMITTED to a day (anything with a day that isn't an
-      // `extra` area-option or rejected) — not just status==='shortlist', since
-      // a few in-route stops carry candidate/backup status after moves.
-      if (!p.day || p.status === 'extra' || p.status === 'rejected') continue;
-      const t = activityType(p);
-      if (!t) continue;
-      const e = byType.get(t) ?? { count: 0, days: new Set<number>() };
-      e.count += 1;
-      e.days.add(p.day);
-      byType.set(t, e);
-      perDay.set(p.day, (perDay.get(p.day) ?? 0) + 1);
-    }
-    const mix = [...byType.entries()]
-      .map(([type, e]) => {
-        const days = [...e.days].sort((a, b) => a - b);
-        return { type, count: e.count, days, adjacent: days.some((d, i) => i > 0 && d - days[i - 1] === 1) };
-      })
-      .sort((a, b) => b.count - a.count || a.type.localeCompare(b.type));
-    const heavyDays = [...perDay.entries()].filter(([, n]) => n >= 2).map(([d]) => d).sort((a, b) => a - b);
-    return { mix, heavyDays };
-  })();
 
   return (
     <div className="itinerary">
@@ -187,84 +121,6 @@ export default function Itinerary({
           </button>
         )}
       </div>
-
-      {mix.length > 0 && (() => {
-        const adj = mix.filter((m) => m.adjacent).length;
-        const w: string[] = [];
-        if (adj) w.push(`${adj} back-to-back`);
-        if (heavyDays.length) w.push(`${heavyDays.length} stacked`);
-        return (
-          <button type="button" className="itin-mix-bar" onClick={() => setMixOpen(true)}>
-            <span className="itin-mix-bar-label">🎯 Big highlights · {mix.length}</span>
-            {w.length > 0 && <span className="itin-mix-bar-warn">⚠ {w.join(', ')}</span>}
-            <span className="itin-mix-bar-open">view ▸</span>
-          </button>
-        );
-      })()}
-
-      {mixOpen && (
-        <div className="mix-overlay" role="dialog" aria-modal="true" onClick={() => setMixOpen(false)}>
-          <div className="mix-dialog" onClick={(e) => e.stopPropagation()}>
-            <div className="mix-dialog-head">
-              <strong>🎯 Big-highlight mix</strong>
-              <button type="button" className="mix-dialog-close" onClick={() => setMixOpen(false)} aria-label="Close">
-                ✕
-              </button>
-            </div>
-            <p className="mix-dialog-sub">
-              Big (book/€/half-day) activities you've committed across the trip — keep variety, avoid back-to-back
-              repeats. Tap a day to jump there.
-            </p>
-            {heavyDays.length > 0 && (
-              <div className="itin-mix-heavy">
-                ⚠ Days stacking 2+ big highlights (hard to fit a half-day each):{' '}
-                {heavyDays.map((dd) => (
-                  <button
-                    key={dd}
-                    type="button"
-                    className={`itin-mix-day${dd === day ? ' cur' : ''}`}
-                    onClick={() => {
-                      onDay(dd);
-                      setMixOpen(false);
-                    }}
-                  >
-                    {dd}
-                  </button>
-                ))}
-              </div>
-            )}
-            <ul className="itin-mix-list">
-              {mix.map((m) => (
-                <li key={m.type} className={m.adjacent ? 'adjacent' : ''}>
-                  <span className="itin-mix-type">{m.type}</span>
-                  <span className="itin-mix-count">×{m.count}</span>
-                  <span className="itin-mix-days">
-                    {m.days.map((dd) => (
-                      <button
-                        key={dd}
-                        type="button"
-                        className={`itin-mix-day${dd === day ? ' cur' : ''}`}
-                        onClick={() => {
-                          onDay(dd);
-                          setMixOpen(false);
-                        }}
-                        title={`Go to day ${dd}`}
-                      >
-                        {dd}
-                      </button>
-                    ))}
-                  </span>
-                  {m.adjacent && (
-                    <span className="itin-mix-warn" title="Scheduled on back-to-back days">
-                      ⚠ back-to-back
-                    </span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      )}
 
       <div className="itin-total">
         <strong>{stops.length}</strong> stops ·{' '}
