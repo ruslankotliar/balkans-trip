@@ -65,14 +65,10 @@ export function parseDurationMinutes(text: string | undefined): number | null {
     return null;
   }
 
-  if (/half[\s-]*day/.test(s)) return 240;
-  if (/full[\s-]*day/.test(s)) return 480;
-  if (/evening/.test(s) && !/\d/.test(s)) return 150;
-  if (/late\s*night/.test(s) && !/\d/.test(s)) return 180;
-  if (/\bmeal\b/.test(s) && !/\d/.test(s)) return 90;
-
-  // Ranges must be tested BEFORE the single/mixed-hour patterns: otherwise
-  // "2-3h" matches the bare "3h" inside it and resolves to 180 instead of 150.
+  // Numeric durations are parsed FIRST, so an explicit number always wins over a
+  // vague word: "2-3h (full day possible)" must be 2.5h (not 8h), and
+  // "half day (4-6h)" should use the 4-6h range, not the blunt 240-min default.
+  // Ranges before single/mixed-hour: "2-3h" must not match the bare "3h" inside.
   const hourRange = s.match(
     /(\d+(?:\.\d+)?)\s*(?:-|to)\s*(\d+(?:\.\d+)?)\s*(?:h|hr|hrs|hour|hours)\b/,
   );
@@ -102,6 +98,14 @@ export function parseDurationMinutes(text: string | undefined): number | null {
 
   const plainMinutes = s.match(/^(\d{1,4})$/);
   if (plainMinutes) return Math.round(Number(plainMinutes[1]));
+
+  // Word-based fallbacks — only reached when NO explicit number was given, so a
+  // stray "full day possible" can never override a real "2-3h".
+  if (/half[\s-]*day/.test(s)) return 240;
+  if (/full[\s-]*day/.test(s)) return 480;
+  if (/evening/.test(s)) return 150;
+  if (/late\s*night/.test(s)) return 180;
+  if (/\bmeal\b/.test(s)) return 90;
 
   return null;
 }

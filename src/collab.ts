@@ -8,7 +8,7 @@
  * Everything is best-effort and offline-first. If Supabase is unavailable, the
  * localStorage caches remain the source of truth for this device.
  */
-import { normalizeOverride, safeSetItem, type Override, type Overrides, type PlanOverrideRow } from './store';
+import { normalizeOverride, normalizeUserPlace, safeSetItem, type Override, type Overrides, type PlanOverrideRow } from './store';
 import { hasSupabase, supabase } from './supabase';
 import type { Place } from './types';
 
@@ -167,7 +167,9 @@ async function pullUserPlaces(): Promise<Place[] | null> {
       return null;
     }
     const rows = (data ?? []) as UserPlaceRow[];
-    const places = rows.map((r) => r.data).filter((p): p is Place => !!p && typeof p.id === 'string');
+    // Normalize remote pins the same as local ones (drains "candidate" → extra/backup,
+    // fills defaults) so the status model is consistent regardless of sync path.
+    const places = rows.map((r) => normalizeUserPlace(r.data)).filter((p): p is Place => !!p);
     saveRemotePlacesCache(places);
     return places;
   } catch (e) {

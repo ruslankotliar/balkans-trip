@@ -19,11 +19,6 @@ export function dayDateLabel(day: number): string {
   });
 }
 
-/** e.g. "Day 1 · Tue Jun 16" */
-export function dayLabel(day: number): string {
-  return `Day ${day} · ${dayDateLabel(day)}`;
-}
-
 // Distinct color per trip day for route polylines / plan accents.
 const DAY_PALETTE = [
   '#e6194b', '#3cb44b', '#4363d8', '#f58231', '#911eb4',
@@ -155,70 +150,6 @@ export function nearestLegIndex(
     }
   }
   return idx;
-}
-
-/** One-line daily ops hint shown at the top of the Today view. */
-export interface DayHint {
-  icon: string;
-  text: string;
-}
-
-// FIXED external facts only — these are true regardless of which stops are scheduled.
-// Stop-specific timing advice lives in each place's bestTime field and appears
-// dynamically in the plan day view when that stop is scheduled.
-export const DAY_HINTS: Record<number, DayHint> = {
-  1:  { icon: '🌑', text: 'New moon Jun 16–18 — darkest skies of the trip. Good night for stargazing wherever you camp.' },
-  2:  { icon: '🕙', text: 'Day 3 airport run: leave Makarska by ~13:30. Flight lands 17:20; be at arrivals by 17:30.' },
-  3:  { icon: '✈️', text: 'Flight FR9423 lands 17:20 — allow 3h drive from Makarska. After pickup: drive north to Camp Prapratno (~90 km, 1h20m) for the morning ferry to Mljet.' },
-  4:  { icon: '⛴', text: 'Mljet ferry (Prapratno→Sobra): first-come, no deck reservation. Friday = lighter queue than weekend. First sailings ~07:00; queue 60+ min early.' },
-  5:  { icon: '💧', text: 'Return ferry Sobra→Prapratno: 06:00 gets you to Kravica by 08:45 (before crowds). 09:00 ferry lands at Kravica ~11:30 — swimmable but busier.' },
-  6:  { icon: '🌞', text: 'Solstice week (Jun 21) — 15h+ daylight. Blagaj Tekija opens ~08:00. Žuta tabija (Yellow Fortress) in Sarajevo: golden-hour sunset ritual.' },
-  7:  { icon: '🚣', text: 'Tara rafting starts early (~08:30 meet). Piva tunnels: lights on, honk before entry — single-lane, no signal. Cross into Montenegro at Šćepan Polje.' },
-  8:  { icon: '⛰️', text: 'Durmitor: storm risk 12:00–15:00 — be off any exposed ridge by noon. Nights 6–10°C; warm layer required.' },
-  9:  { icon: '🛐', text: 'Ostrog Monastery: cover knees+shoulders strictly enforced. Skadar Lake delta: DEET at dusk — mosquitoes vicious.' },
-  10: { icon: '🦟', text: 'Velika Plaža / Ada Bojana: mosquitoes severe at dusk — DEET essential. The south end of the coast is a long beach drive, so keep the afternoon compact.' },
-  11: { icon: '🚢', text: 'Summer cruise ships in Kotor Bay — start fortress before 08:00. Border: use Vitaljina (not Debeli Brijeg) for ME→HR on the drive to Trebinje.' },
-  12: { icon: '🏛️', text: 'Dubrovnik walls open 06:30 — hit them before cruise ships arrive (~10:00). Pasjača Beach: cliff descent via rope, park at the roadside pullout.' },
-  13: { icon: '✈️', text: 'Flight FR9756: DBV 20:40 → Vienna 22:05. Car drop ref D013947246 by 19:15 — fill fuel first. Ryanair check-in closes 20:00.' },
-};
-
-/**
- * Static weather + daylight digest per trip day.
- * Source: trip-ops.md §1 (weather zones) and §2 (sun times / CEST).
- * These are plan notes, not live forecasts.
- */
-export const DAY_OPS: Record<number, string> = {
-  1:  'Zadar coast ~28/20°C, sunny · 🌅 05:13 → 20:47 · sea ~22°C',
-  2:  'Omiš ~31/22°C, sunny · 🌅 05:16 → 20:43 · Cetina river cold',
-  3:  'Makarska→DBV coast ~32/24°C, hot/sunny · 🌅 05:08 → 20:30 · sea ~23°C · Pelješac bridge windy',
-  4:  'Mljet ~31/25°C, sunny · 🌅 05:08 → 20:30 · sea ~23°C · Friday ferry lighter queue',
-  5:  'Mostar ~36/23°C, possible PM shower · 🌅 05:05 → 20:27 · Kravica: arrive early',
-  6:  'Mostar hot → Sarajevo ~33/18°C, PM thunder risk · 🌅 05:05 → 20:27 · solstice',
-  7:  'Sarajevo ~31°C PM thunder → Žabljak ~25/13°C · ⛺ cool night · 🌅 05:02 → 20:23',
-  8:  'Žabljak ~24/12°C with thunderstorm risk · ⚡ be off ridge by noon · 🌅 05:02 → 20:23',
-  9:  'Žabljak cool AM → Skadar/Virpazar ~27/22°C · mosquitoes at dusk · 🌅 05:04 → 20:22',
-  10: '27–30°C coast likely · 🌅 05:04 → 20:22 · sea 23–24°C · mosquitoes after sunset on the south coast',
-  11: '27–30°C coast likely · 🌅 05:04 → 20:22 · Kotor bay shaded from late afternoon',
-  12: '27–30°C likely · 🌅 05:08 → 20:30 · Dubrovnik sea 23°C · cruise ships in port by 10:00',
-  13: '27–30°C likely · 🌅 05:08 → 20:30 · sea 23°C',
-};
-
-/**
- * Strip "Day N (Jun DD) — " prefix from a bestTime string and truncate to
- * the first sentence (up to 100 chars) or a word boundary near 75 chars.
- * Used in both the plan day view and the Today stop list.
- */
-export function stopHint(bestTime: string | undefined): string {
-  if (!bestTime) return '';
-  const text = bestTime.replace(/^(?:Day|Night)\s+\d+[^—]*—\s*/, '').trim();
-  const dotIdx = text.indexOf('. ');
-  if (dotIdx >= 0 && dotIdx < 100) {
-    const snippet = text.slice(0, dotIdx);
-    return snippet.length < text.length ? snippet + '…' : snippet;
-  }
-  if (text.length <= 75) return text;
-  const lastSpace = text.lastIndexOf(' ', 75);
-  return text.slice(0, lastSpace > 0 ? lastSpace : 75) + '…';
 }
 
 /** Format seconds as "3h 25m" / "45m". */

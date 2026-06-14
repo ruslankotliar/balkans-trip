@@ -1,8 +1,9 @@
-import { CATEGORY_COLORS } from '../constants';
+import { useState } from 'react';
+import { CATEGORY_COLORS, GROUP_OF } from '../constants';
 import { formatClock, formatTimeRange, type DaySchedule } from '../schedule';
 import type { PlaceWithOverride } from '../store';
 import type { DayRoutes } from '../useDayRoutes';
-import { DAYS, dayColor, dayDateLabel, formatDistance, formatDuration } from '../trip';
+import { DAYS, dayColor, dayDateLabel, formatDistance, formatDuration, haversineKm } from '../trip';
 
 interface Props {
   day: number;
@@ -42,6 +43,18 @@ function hhmmToHour(v: string): number | undefined {
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
 
+// Rough straight-line km → drive minutes on winding Balkan roads (road ≈ 1.35×
+// straight-line at ~55 km/h). An estimate, not routing — shown with a "~".
+const EST_MIN_PER_KM = 1.5;
+function formatDriveEst(km: number): string {
+  const min = Math.max(1, Math.round(km * EST_MIN_PER_KM));
+  if (min < 60) return `~${min} min`;
+  const h = Math.floor(min / 60);
+  const m = min % 60;
+  return m ? `~${h}h${String(m).padStart(2, '0')}` : `~${h}h`;
+}
+const RADIUS_CHOICES = [20, 30, 45, 60, 90, 120];
+
 /** Short timing cue from a place's bestTime (strip the "Day N — " prefix, first sentence). */
 function bestTimeHint(bt?: string): string {
   if (!bt) return '';
@@ -73,12 +86,42 @@ export default function Itinerary({
   dayConfig,
   onSetDayCfg,
 }: Props) {
+  // Adjustable search radius for "options nearby today", in estimated drive-minutes.
+  const [optRadiusMin, setOptRadiusMin] = useState(45);
+
   const assigned = places.filter((p) => p.day && p.status !== 'rejected');
   const backlog = places
     .filter((p) => !p.day && p.status === 'shortlist')
     .sort((a, b) => a.name.localeCompare(b.name));
 
   const stops = assigned.filter((p) => p.day === day).sort(byOrder);
+
+  // Ready-to-go OPTIONS near this day: prepared "things to do" option pins
+  // (extra/backup, no committed day) within the chosen drive-radius of the day's
+  // stops. Excludes SLEEP (beds) and LOGISTICS (ferry ports, borders, ER/clinics)
+  // — those belong on the map / Essentials, not in a "what else can we do" menu.
+  const dayAnchors = stops.filter((p) => p.lat != null && p.lng != null);
+  const optRadiusKm = optRadiusMin / EST_MIN_PER_KM;
+  const nearbyOptions =
+    dayAnchors.length === 0
+      ? []
+      : places
+          .filter(
+            (p) =>
+              (p.status === 'extra' || p.status === 'candidate' || p.status === 'backup') &&
+              p.day == null &&
+              GROUP_OF[p.category] !== 'sleep' &&
+              GROUP_OF[p.category] !== 'logistics' &&
+              p.lat != null,
+          )
+          .map((p) => ({
+            p,
+            km: Math.min(...dayAnchors.map((a) => haversineKm(a.lat, a.lng, p.lat, p.lng))),
+          }))
+          .filter((x) => x.km <= optRadiusKm)
+          .sort((a, b) => a.km - b.km)
+          .slice(0, 40);
+
   const route = routes[day];
   const isToday = realDay === day;
   const driveSec = route ? route.duration + (ferrySecByDay[day] ?? 0) : 0;
@@ -254,11 +297,47 @@ export default function Itinerary({
         )}
       </div>
 
-      <details className="itin-backlog">
-        <summary>Backlog · shortlisted, no day ({backlog.length})</summary>
-        {backlog.length === 0 ? (
-          <p className="itin-empty">nothing waiting — all shortlist places are scheduled</p>
-        ) : (
+      {nearbyOptions.length > 0 && (
+        <details className="itin-nearby">
+          <summary>✨ Options nearby today ({nearbyOptions.length}) · spare time / if you want more</summary>
+          <div className="itin-nearby-hint">
+            Researched options within a ~{optRadiusMin >= 60 ? `${Math.floor(optRadiusMin / 60)}h${optRadiusMin % 60 ? optRadiusMin % 60 : ''}` : `${optRadiusMin} min`} drive of today's
+            stops — pick one on the spot instead of googling. Tap to open.{' '}
+            <label className="itin-nearby-radius">
+              within{' '}
+              <select
+                value={optRadiusMin}
+                onClick={(e) => e.stopPropagation()}
+                onChange={(e) => setOptRadiusMin(Number(e.target.value))}
+              >
+                {RADIUS_CHOICES.map((m) => (
+                  <option key={m} value={m}>
+                    {m < 60 ? `${m} min` : `${Math.floor(m / 60)}h${m % 60 ? m % 60 : ''}`}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+          <ul className="place-list">
+            {nearbyOptions.map(({ p, km }) => (
+              <li
+                key={p.id}
+                className={selectedId === p.id ? 'selected' : ''}
+                onClick={() => onSelect(p)}
+              >
+                <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
+                <span className="place-name">{p.name}</span>
+                <span className="itin-nearby-cat">{p.category}</span>
+                <span className="itin-nearby-km" title="estimated drive time (straight-line based)">{formatDriveEst(km)}</span>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
+
+      {backlog.length > 0 && (
+        <details className="itin-backlog">
+          <summary>⚠ Shortlisted but no day yet ({backlog.length}) — give each a day or make it an option</summary>
           <ul className="place-list">
             {backlog.map((p) => (
               <li
@@ -284,8 +363,8 @@ export default function Itinerary({
               </li>
             ))}
           </ul>
-        )}
-      </details>
+        </details>
+      )}
     </div>
   );
 }

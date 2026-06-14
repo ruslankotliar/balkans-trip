@@ -101,8 +101,6 @@ export interface DraftPlace {
 interface Props {
   /** A point captured by tapping the map (lat/lng), or null while waiting. */
   tappedPoint: { lat: number; lng: number } | null;
-  /** Current GPS fix, for the "use my location" shortcut. */
-  gpsFix: { lat: number; lng: number } | null;
   /** When editing, the place being edited (prefills name/category/lat/lng). */
   editing?: Place | null;
   /** Current override values for the edited place (day/note live in overrides). */
@@ -115,7 +113,6 @@ interface Props {
 
 export default function AddPlace({
   tappedPoint,
-  gpsFix,
   editing,
   editingDay,
   editingNote,
@@ -186,14 +183,6 @@ export default function AddPlace({
     applyCoords(res.coords[0], res.coords[1]);
   }
 
-  function useMyLocation() {
-    if (!gpsFix) {
-      setParseMsg('No GPS fix yet — tap the 📍 locate button first.');
-      return;
-    }
-    applyCoords(gpsFix.lat, gpsFix.lng);
-  }
-
   const canSave = name.trim().length > 0 && lat != null && lng != null;
 
   function handleSave() {
@@ -232,13 +221,7 @@ export default function AddPlace({
       )}
 
       {!editing && inputMode === 'map' && (
-        <div className="addplace-hint">
-          📍 Tap the map where it is. {gpsFix && (
-            <button className="addplace-gps" onClick={useMyLocation}>
-              use my location
-            </button>
-          )}
-        </div>
+        <div className="addplace-hint">📍 Tap the map where it is.</div>
       )}
 
       {!editing && inputMode === 'coords' && (

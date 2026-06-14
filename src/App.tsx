@@ -11,7 +11,6 @@ import {
 } from 'react-leaflet';
 import { type DraftPlace } from './components/AddPlace';
 import DetailPanel from './components/DetailPanel';
-import { type CorridorMatch } from './components/CorridorPanel';
 import {
   loadRemotePlacesCache,
   pushUserPlace,
@@ -53,16 +52,14 @@ import {
   dayColor,
   haversineKm,
   isDuringTrip,
-  nearestLegIndex,
-  pointToPolylineKm,
 } from './trip';
 import type { Category, Country, Place, Status } from './types';
 import { useDayRoutes } from './useDayRoutes';
 
 const AddPlace = lazy(() => import('./components/AddPlace'));
-const CorridorPanel = lazy(() => import('./components/CorridorPanel'));
 const LazyEssentials = lazy(() => import('./components/Essentials'));
 const LazyPlan = lazy(() => import('./components/Itinerary'));
+const LazyBoard = lazy(() => import('./components/TripBoard'));
 const LazyMix = lazy(() => import('./components/ActivityMix'));
 function PanelFallback({ text }: { text: string }) {
   return (
@@ -84,7 +81,7 @@ function DialogFallback({ title }: { title: string }) {
   );
 }
 
-type View = 'places' | 'plan' | 'mix';
+type View = 'places' | 'plan' | 'board' | 'mix';
 
 // Categories that count as a place to sleep (used when prepending the previous
 // night's overnight to a day's route).
@@ -293,7 +290,6 @@ export default function App() {
     groupFilter.size < GROUPS.length || !NON_REJECTED.every((s) => statusFilter.has(s));
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [view, setView] = useState<View>('places');
-  const [toolsOpen, setToolsOpen] = useState(false);
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   // On phones the open sidebar fills the screen and would cover the detail
@@ -323,18 +319,6 @@ export default function App() {
     const t = setTimeout(() => setUndoToast(null), 6000);
     return () => clearTimeout(t);
   }, [undoToast]);
-
-  // Nearby finder
-  const [nearbyActive, setNearbyActive] = useState(false);
-  const [nearbyRadius, setNearbyRadius] = useState(15);
-
-  // Corridor finder (sleep along a built route)
-  const [corridor, setCorridor] = useState<{
-    coords: [number, number][];
-    stops: PlaceWithOverride[];
-    label: string;
-  } | null>(null);
-  const [corridorRadius, setCorridorRadius] = useState(10);
 
   // Manual ferry hours per leg (persisted; keyed by place-id pair)
   const [ferryHours, setFerryHours] = useState<FerryHours>(loadFerryHours);
@@ -399,7 +383,9 @@ export default function App() {
   const routeStops = useMemo(() => {
     const out: Record<number, PlaceWithOverride[]> = {};
     for (const [day, ps] of Object.entries(dayStops)) {
-      const kept = ps.filter((p) => p.status !== 'extra');
+      // The route/clock is ONLY the committed plan: shortlist + a day. Anything
+      // else pinned to a day (backup/candidate/extra) is an option, not routed.
+      const kept = ps.filter((p) => p.status === 'shortlist');
       if (kept.length) out[Number(day)] = kept;
     }
     return out;
@@ -513,62 +499,16 @@ export default function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [view, planDay]);
 
-  // ---- Nearby matches ----
-  const nearbyMatchIds = useMemo(() => {
-    const ids = new Set<string>();
-    if (!nearbyActive || !selected) return ids;
-    for (const p of places) {
-      if (p.id === selected.id) continue;
-      if (p.status === 'rejected') continue;
-      if (!SLEEP_CATEGORIES.includes(p.category)) continue;
-      if (haversineKm(selected.lat, selected.lng, p.lat, p.lng) <= nearbyRadius) {
-        ids.add(p.id);
-      }
-    }
-    return ids;
-  }, [nearbyActive, selected, places, nearbyRadius]);
-
-  // ---- Corridor matches (sleep along a route) ----
-  const corridorMatches = useMemo<CorridorMatch[]>(() => {
-    if (!corridor) return [];
-    const stopCoords = corridor.stops.map((s) => [s.lat, s.lng] as [number, number]);
-    const stopIds = new Set(corridor.stops.map((s) => s.id));
-    const out: CorridorMatch[] = [];
-    for (const p of places) {
-      if (p.status === 'rejected') continue;
-      if (!SLEEP_CATEGORIES.includes(p.category)) continue;
-      if (stopIds.has(p.id)) continue; // skip the route's own stops
-      const dist = pointToPolylineKm(p.lat, p.lng, corridor.coords);
-      if (dist <= corridorRadius) {
-        const leg = stopCoords.length >= 2 ? nearestLegIndex(p.lat, p.lng, stopCoords) : 0;
-        out.push({ place: p, dist, leg });
-      }
-    }
-    return out.sort((a, b) => a.dist - b.dist);
-  }, [corridor, corridorRadius, places]);
-
-  const corridorMatchIds = useMemo(
-    () => new Set(corridorMatches.map((m) => m.place.id)),
-    [corridorMatches],
-  );
-  const corridorStopIds = useMemo(
-    () => new Set(corridor?.stops.map((s) => s.id) ?? []),
-    [corridor],
-  );
-
-  // Nearby/corridor/proximity matches must show on the map even if filters
-  // would hide them — the whole point of the finders is to surface places.
+  // The selected place must show on the map even if the current filters would
+  // hide it (e.g. selecting a rejected pin from the list).
   const markersToShow = useMemo(() => {
-    const base = visible;
-    const forced = new Set<string>([...nearbyMatchIds, ...corridorMatchIds, ...corridorStopIds]);
-    // Always show the selected place even if rejected or filtered out.
-    if (selectedId) forced.add(selectedId);
-    if (forced.size === 0) return base;
-    const inBase = new Set(base.map((p) => p.id));
-    const extra = places.filter((p) => forced.has(p.id) && !inBase.has(p.id));
-    return [...base, ...extra];
+    if (!selectedId) return visible;
+    const inBase = visible.some((p) => p.id === selectedId);
+    if (inBase) return visible;
+    const sel = places.find((p) => p.id === selectedId);
+    return sel ? [...visible, sel] : visible;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [visible, nearbyMatchIds, corridorMatchIds, corridorStopIds, selectedId]);
+  }, [visible, selectedId]);
 
   // ---- Mutations ----
   function applyOverrides(updater: (o: Overrides) => Overrides) {
@@ -925,19 +865,25 @@ export default function App() {
         <div className="view-tabs">
           <button
             className={view === 'places' ? 'on' : ''}
-            onClick={() => { setView('places'); setCorridor(null); setToolsOpen(false); }}
+            onClick={() => setView('places')}
           >
             Places
           </button>
           <button
             className={view === 'plan' ? 'on' : ''}
-            onClick={() => { setView('plan'); setCorridor(null); setToolsOpen(false); }}
+            onClick={() => setView('plan')}
           >
             Plan
           </button>
           <button
+            className={view === 'board' ? 'on' : ''}
+            onClick={() => setView('board')}
+          >
+            Board
+          </button>
+          <button
             className={view === 'mix' ? 'on' : ''}
-            onClick={() => { setView('mix'); setCorridor(null); setToolsOpen(false); }}
+            onClick={() => setView('mix')}
           >
             Highlights
           </button>
@@ -952,7 +898,7 @@ export default function App() {
           />
         )}
 
-        {!corridor && view === 'places' && (
+        {view === 'places' && (
           <>
             {/* What: category-group chips (the primary "what do we want" filter). */}
             <div className="filter-group">
@@ -992,22 +938,7 @@ export default function App() {
           </>
         )}
 
-        {corridor && (
-          <Suspense fallback={<PanelFallback text="Loading corridor view…" />}>
-            <CorridorPanel
-              label={corridor.label}
-              stops={corridor.stops}
-              radius={corridorRadius}
-              onRadius={setCorridorRadius}
-              matches={corridorMatches}
-              selectedId={selectedId}
-              onSelect={selectPlace}
-              onClose={() => setCorridor(null)}
-            />
-          </Suspense>
-        )}
-
-        {!corridor && view === 'places' && (
+        {view === 'places' && (
           <>
         <div className="places-action-row">
           <button className="add-place-btn" onClick={openAddPlace}>
@@ -1099,13 +1030,24 @@ export default function App() {
           </>
         )}
 
-        {!corridor && view === 'mix' && (
+        {view === 'board' && (
+          <Suspense fallback={<PanelFallback text="Loading board…" />}>
+            <LazyBoard
+              places={places}
+              scheduleByDay={daySchedules}
+              realDay={isDuringTrip() ? currentTripDay() : -1}
+              onPickDay={focusPlanDay}
+            />
+          </Suspense>
+        )}
+
+        {view === 'mix' && (
           <Suspense fallback={<PanelFallback text="Loading highlights…" />}>
             <LazyMix places={places} onPickDay={focusPlanDay} />
           </Suspense>
         )}
 
-        {!corridor && view === 'plan' && (
+        {view === 'plan' && (
           <Suspense fallback={<PanelFallback text="Loading plan…" />}>
             <LazyPlan
               day={planDay}
@@ -1173,29 +1115,9 @@ export default function App() {
             />
           ))}
 
-        {/* Corridor route highlight */}
-        {corridor && (
-          <Polyline
-            positions={corridor.coords}
-            pathOptions={{ color: '#8e44ad', weight: 6, opacity: 0.35 }}
-          />
-        )}
-
         {markersToShow.map((p) => {
           const isSel = p.id === selectedId;
-          let dim = false;
-          let matchHi = false;
-          let radius = p.status === 'shortlist' ? 10 : 7;
-          if (isSel) radius = 15;
-          if (corridor) {
-            matchHi = corridorMatchIds.has(p.id);
-            dim = !matchHi && !corridorStopIds.has(p.id);
-            if (matchHi) radius = 11;
-          } else if (nearbyActive && selected) {
-            matchHi = nearbyMatchIds.has(p.id);
-            dim = selectedId !== p.id && !matchHi;
-            if (matchHi) radius = 11;
-          }
+          const radius = isSel ? 15 : p.status === 'shortlist' ? 10 : 7;
           // No Leaflet popup: one pin click opens ONE surface — the detail panel.
           return (
             <CircleMarker
@@ -1203,11 +1125,11 @@ export default function App() {
               center={[p.lat, p.lng]}
               radius={radius}
               pathOptions={{
-                color: isSel ? '#FF3B30' : matchHi ? '#111' : '#ffffff',
-                weight: isSel ? 4 : matchHi ? 2.5 : p.status === 'shortlist' ? 3 : 1.5,
+                color: isSel ? '#FF3B30' : '#ffffff',
+                weight: isSel ? 4 : p.status === 'shortlist' ? 3 : 1.5,
                 fillColor: CATEGORY_COLORS[p.category],
-                fillOpacity: dim ? 0.15 : p.status === 'rejected' ? 0.3 : 0.9,
-                opacity: dim ? 0.2 : 1,
+                fillOpacity: p.status === 'rejected' ? 0.3 : 0.9,
+                opacity: 1,
               }}
               eventHandlers={{ click: () => selectPlace(p) }}
             />
@@ -1244,7 +1166,6 @@ export default function App() {
         <Suspense fallback={<DialogFallback title="Loading add place…" />}>
           <AddPlace
             tappedPoint={tappedPoint}
-            gpsFix={null}
             editing={editingPlace}
             editingDay={editingId ? overrides[editingId]?.day ?? null : null}
             editingNote={editingId ? overrides[editingId]?.note ?? '' : ''}

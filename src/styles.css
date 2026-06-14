@@ -819,42 +819,6 @@ body.trip-mode .detail-visited-btn {
   margin-right: 6px;
 }
 
-/* ---- Nearby finder ---- */
-.nearby-box {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 8px;
-  margin: 10px 0;
-  background: #fafbfc;
-}
-.nearby-toggle {
-  width: 100%;
-  padding: 6px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background: #fff;
-  cursor: pointer;
-  font-size: 13px;
-}
-.nearby-toggle.on {
-  background: #1abc9c;
-  color: #fff;
-  border-color: #1abc9c;
-}
-.nearby-controls {
-  margin-top: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  font-size: 12px;
-}
-.nearby-controls input[type='range'] {
-  width: 100%;
-}
-.nearby-count {
-  color: #555;
-}
-
 /* ---- Plan ---- */
 .itinerary {
   flex: 1;
@@ -1079,6 +1043,10 @@ body.trip-mode .detail-visited-btn {
   font-weight: 500;
   color: #6b7079;
   line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .itin-stop-list {
   margin: 4px 0 6px 4px;
@@ -1198,94 +1166,6 @@ body.trip-mode .detail-visited-btn {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-left: auto;
-}
-
-/* ---- Corridor finder ---- */
-.corridor-panel {
-  flex: 1;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  border-top: 1px solid #e5e5e5;
-  padding-top: 8px;
-}
-.corridor-head {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.corridor-head h3 {
-  margin: 0;
-  font-size: 14px;
-  flex: 1;
-}
-.corridor-back {
-  border: 1px solid #ccc;
-  background: #fff;
-  border-radius: 6px;
-  padding: 4px 8px;
-  cursor: pointer;
-  font-size: 12px;
-}
-.corridor-slider {
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.corridor-slider input {
-  width: 100%;
-}
-.corridor-leg {
-  margin-top: 6px;
-}
-.corridor-leg h4 {
-  margin: 6px 0 4px;
-  font-size: 12px;
-  color: #8e44ad;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 2px;
-}
-.corridor-card {
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  padding: 6px 8px;
-  margin-bottom: 5px;
-  cursor: pointer;
-  font-size: 12px;
-}
-.corridor-card:hover,
-.corridor-card.selected {
-  background: #f6eefb;
-  border-color: #8e44ad;
-}
-.corridor-card-top {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.corridor-card-top .place-name {
-  font-weight: 600;
-  font-size: 13px;
-  min-width: 0;
-}
-.corridor-dist {
-  margin-left: auto;
-  color: #8e44ad;
-  font-weight: 600;
-  white-space: nowrap;
-}
-.corridor-cost {
-  color: #1a7f4b;
-  font-weight: 600;
-}
-.corridor-fac {
-  color: #666;
-}
-.corridor-empty {
-  font-size: 12px;
-  color: #717982;
 }
 
 /* numbered waypoint markers */
@@ -2378,16 +2258,6 @@ body.trip-mode .card-links .today-nav-link {
   font-size: 13px;
   color: #1c4e80;
 }
-.addplace-gps {
-  border: none;
-  background: #1e80ff;
-  color: #fff;
-  border-radius: 6px;
-  padding: 3px 8px;
-  font-size: 12px;
-  cursor: pointer;
-  margin-left: 4px;
-}
 .addplace-input-row {
   display: flex;
   gap: 6px;
@@ -3135,62 +3005,22 @@ body.trip-mode .ess-tel {
   text-decoration: underline;
 }
 .itin-stop-note {
-  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-size: 11px;
   color: var(--muted, #6b7280);
   margin-top: 2px;
 }
+/* Tap a stop to reveal its full booking note + hint (kept compact otherwise). */
+.itin-stop-row.selected .itin-stop-note,
+.itin-stop-row.selected .itin-stop-hint {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
 
-/* Activity-mix tracker — a thin sticky BAR that opens a dialog (so the day-plan
-   list keeps its space). */
-.itin-mix-bar {
-  position: sticky;
-  top: 0;
-  z-index: 6;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 0 8px;
-  padding: 6px 10px;
-  border: 1px solid #d7dde3;
-  border-radius: 8px;
-  background: #f3f6f9;
-  font-size: 12px;
-  font-weight: 600;
-  color: #2c3e50;
-  cursor: pointer;
-  text-align: left;
-}
-.itin-mix-bar-label { white-space: nowrap; }
-.itin-mix-bar-warn { color: #b9770e; font-weight: 600; flex: 1; }
-.itin-mix-bar-open { margin-left: auto; color: var(--accent, #2563eb); font-weight: 600; }
-/* Dialog overlay for the full mix (doesn't crowd the day list). */
-.mix-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 1400;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-}
-.mix-dialog {
-  background: #fff;
-  border-radius: 12px;
-  width: min(440px, 100%);
-  max-height: 82vh;
-  overflow-y: auto;
-  padding: 14px 16px 18px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
-}
-.mix-dialog-head { display: flex; align-items: center; justify-content: space-between; font-size: 16px; }
-.mix-dialog-close {
-  border: none; background: #f0f0f0; border-radius: 50%; width: 30px; height: 30px;
-  cursor: pointer; font-size: 14px;
-}
-.mix-dialog-sub { font-size: 12px; color: #646b74; margin: 4px 0 10px; }
+/* Activity-mix highlights — shared list styling (Highlights tab). */
 .itin-mix-heavy {
   font-size: 11px;
   color: #b9770e;
@@ -3226,6 +3056,34 @@ body.trip-mode .ess-tel {
 .itin-mix-day.cur { background: #2563eb; color: #fff; border-color: #2563eb; }
 .itin-mix-warn { color: #b9770e; font-size: 11px; white-space: nowrap; }
 
+/* Plan view — "options nearby today" (prepared area-options per day) */
+.itin-nearby {
+  margin: 10px 4px 4px;
+  border: 1px solid #d8e6dd;
+  border-radius: 8px;
+  background: #f4faf6;
+  padding: 4px 8px;
+}
+.itin-nearby > summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a7f4b;
+  padding: 4px 2px;
+}
+.itin-nearby-hint { font-size: 11px; color: #646b74; margin: 4px 2px 6px; line-height: 1.45; }
+/* The Plan reuses .place-list inside <details>; that list must NOT be its own
+   scroll container (it traps the page scroll). Let it flow so the plan scrolls as one. */
+.itin-nearby .place-list,
+.itin-backlog .place-list {
+  flex: none;
+  overflow: visible;
+  overscroll-behavior: auto;
+  border-top: none;
+}
+.itin-nearby-cat { font-size: 10px; color: #8a929b; text-transform: capitalize; }
+.itin-nearby-km { font-size: 11px; color: #1a7f4b; font-weight: 600; white-space: nowrap; margin-left: 4px; }
+
 /* Highlights tab — full-view activity mix */
 .mixview {
   flex: 1;
@@ -3234,3 +3092,112 @@ body.trip-mode .ess-tel {
   padding: 6px 2px 16px;
 }
 .mixview-sub { font-size: 12px; color: #646b74; margin: 2px 0 12px; line-height: 1.5; }
+.mixview-empty-warn {
+  font-size: 12px;
+  font-weight: 600;
+  color: #c0392b;
+  background: #fdecea;
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin: 0 0 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.mixview-ok {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a7f4b;
+  background: #eaf7ee;
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin: 0 0 12px;
+}
+
+/* Board tab — all 13 days on one screen */
+.board {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 6px 2px 16px;
+}
+.board-summary { font-size: 13px; color: #2c3e50; margin: 2px 0 4px; }
+.board-summary-warn { color: #b9770e; font-weight: 600; }
+.board-sub { font-size: 12px; color: #646b74; margin: 0 0 12px; line-height: 1.5; }
+.board-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.board-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 9px 11px;
+  border: 1.5px solid #e3e7ec;
+  border-radius: 10px;
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+.board-row:hover { border-color: #c4ccd6; background: #fafbfc; }
+.board-row.today { border-color: #2563eb; box-shadow: 0 0 0 1px #2563eb33; }
+.board-row-head { display: flex; align-items: center; gap: 8px; }
+.board-day-num {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.board-day-date { font-size: 13px; font-weight: 700; color: #2c3e50; }
+.board-today-badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2563eb;
+  background: #2563eb18;
+  padding: 1px 6px;
+  border-radius: 6px;
+}
+.board-fit {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+.board-fit-ok { background: #eaf7ee; color: #1a7f4b; }
+.board-fit-tight { background: #fff4e5; color: #b9770e; }
+.board-fit-over { background: #fdecea; color: #c0392b; }
+.board-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  font-size: 12px;
+  color: #646b74;
+}
+.board-sleep { color: #2c3e50; font-weight: 600; max-width: 100%; }
+.board-meta .muted { color: #aab1ba; }
+.board-hl { display: flex; flex-wrap: wrap; gap: 4px; }
+.board-hl-chip {
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  background: #eef1f4;
+  border-radius: 6px;
+  padding: 2px 7px;
+}
+.board-hl-none {
+  font-size: 11px;
+  font-weight: 600;
+  color: #c0392b;
+  background: #fdecea;
+  border-radius: 6px;
+  padding: 2px 7px;
+}

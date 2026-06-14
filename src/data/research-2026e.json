@@ -1,0 +1,398 @@
+[
+  {
+    "id": "hr-cavtat-selfrent-boat-milicic",
+    "name": "Cavtat self-drive boat rental — no licence/skipper (Mario Milicic)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.5794,
+    "lng": 18.2208,
+    "description": "Rent a small 5hp boat (up to 6 people) WITHOUT a skipper and WITHOUT a licence right from Cavtat old port, ~10-15 min from your Mlini base. You drive it yourself around the Cavtat bay and the three little reserve islands (Mrkan, Bobara, Supetar), dropping anchor to swim/snorkel anywhere off the back ladder. The headline self-rent water option for a relaxed D12, on the Day-13 path and zero driving.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "TripAdvisor reviewers of Mario Milicic's Cavtat rental: 'We rented a boat without license for 8h... super clear and complete briefing'; one couple did '4 hours for 60 euros, an absolute bargain.' On the legal-area limit: 'You are limited to the local area and cannot go as far as Dubrovnik or Lokrum, but you wouldn't want to, the allowed area is plenty and includes three islands and countless bays.' Swim verdict: 'Just drop anchor close to shore pretty much anywhere you fancy and dive in off the boat which has a ladder at the back.' Boats are 5hp / max 6 pax with sunshade + ladder; ~15-min on-water briefing. LICENCE FACT: Croatian rule = no licence for boats up to 5m and 5kW/6.8hp, but only within 500m of shore, which is why these boats stay in Cavtat bay + the three islands and CANNOT legally cross to Lokrum or the Elaphiti (open-water hops needing a bigger boat + licence; see the with-licence entry). June books up, reserve a few days ahead.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g303804-d12651860-Reviews-Rent_a_boat_Cavtat_Cavtat_sailing_by_Mario_Milicic-Cavtat_Konavle_Dubrovnik_Nere.html",
+      "https://www.getyourguide.com/mlini-l191024/cavtat-boat-rental-t751888/",
+      "https://www.sea-help.eu/en/news-general/boat-driving-license-croatia-6-8-hp/",
+      "https://www.mcp.hr/questions-about-motorboats-and-rentals/what-boat-can-i-rent-in-croatia-without-a-license"
+    ],
+    "rating": 4,
+    "cost": "~€60 for 4h, up to 8h available (small 5hp boat, 6 pax), bargain split 4 ways",
+    "timeNeeded": "half day (4h is plenty)"
+  },
+  {
+    "id": "hr-mrkan-bobara-supetar-islands",
+    "name": "Mrkan, Bobara & Supetar islands (Cavtat's reserve islets, swim/snorkel)",
+    "country": "HR",
+    "category": "nature",
+    "lat": 42.575,
+    "lng": 18.1944,
+    "description": "Three tiny uninhabited nature-reserve islets just off Cavtat: Mrkan (the largest, steep SW gorges and clear deep water), Bobara and Supetar. No facilities, no crowds: anchor, swim and snorkel the rocky drop-offs. The swim reward you reach with the self-rent Cavtat boat or by kayak.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Local operators and kayak guides: 'The little islands Mrkan, Bobara and Supetar are now classed as nature reserves, and this is usually where everyone has a break and a swim, Mrkan has rugged charm, Bobara a tranquil atmosphere, Supetar stunning vistas.' Cavtat's seabed 'abounds in beautiful underwater walls' (good snorkel relief), though a frank local caution applies coast-wide: 'the Adriatic is not the Red Sea', expect clear water, rocks and small fish, not coral. Mrkan is a protected ornithological reserve (gull nesting), so land lightly / mostly swim from the boat. Coords: Mrkan ~42.5750/18.1944, Bobara ~42.5867/18.1761, Supetar just east of Mrkan.",
+    "sources": [
+      "https://www.croatiagems.com/sea-kayaking-in-cavtat-bay-konavle/",
+      "https://www.croatiagems.com/scuba-diving-in-cavtat-bay-konavle/",
+      "https://en.wikipedia.org/wiki/Mrkan"
+    ],
+    "rating": 3,
+    "timeNeeded": "1-2h of anchoring/swimming as part of the boat or kayak day"
+  },
+  {
+    "id": "hr-cavtat-rat-peninsula-swims",
+    "name": "Cavtat Rat peninsula swim & snorkel coves (Kamen Mali, Ključice, Žal)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.5783,
+    "lng": 18.215,
+    "description": "A free, no-boat fallback: the wooded Rat peninsula promenade loop in Cavtat is lined with concrete swim platforms, ladders into deep clear water, and small coves: Kamen Mali at the outer tip (clearest, best snorkel), Ključice cove, and pebbly Žal on the west side. Park the car, walk the shaded loop, jump in wherever you like.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Travelers: 'The entire Rat peninsula coastline is dotted with easily accessible concrete platforms and small coves, perfect for finding a secluded spot, with incredibly clear water making it excellent for snorkelling.' 'Kamen Mali, almost at the outermost tip... the sea is wonderfully clear, ideal for snorkelling.' On the promenade: 'steps and ladders into the deep clear water along the seafront, water clarity especially good at the southern end where the depth drops quickly.' Best snorkel rocks per a diver: 'along Put Tihe (the coast road between town and hotel Albatros)', avoid the boat mooring areas.",
+    "sources": [
+      "https://www.tripadvisor.com/ShowTopic-g303804-i10581-k5592781-Best_Place_To_Snorkel_In_Cavtat-Cavtat_Konavle_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.placesofjuma.com/cavtat-beaches/",
+      "https://www.frankaboutcroatia.com/cavtat-croatia/"
+    ],
+    "rating": 4,
+    "cost": "free",
+    "timeNeeded": "1-3h, flexible"
+  },
+  {
+    "id": "hr-cavtat-bay-sea-kayak",
+    "name": "Cavtat bay sea kayaking (self-rent or short guided) to the three islets",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.5794,
+    "lng": 18.2208,
+    "description": "Sea kayaking out of Cavtat old port, paddling the sheltered bay to the Mrkan/Bobara/Supetar reserve islets with swim stops, calmer and far quieter than the busy Dubrovnik old-town kayak route. No experience needed; doubles and singles available; sunset trips end at the Kamen Mali sundowner bar.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Cavtat kayak operators: tours 'begin at the Old Port of Cavtat... continue to three nature reserve islands Mrkan, Bobara and Supetar, where paddlers usually stop for swimming breaks'; 'all ages catered for, no previous experience required'; half-day suits beginners, late departures 'return at sunset just in time for a sundowner at the Kamen Mali sunset bar.' Self-rent kayaks are available in Cavtat for those who'd rather skip the guide. NOTE vs D13: Dubrovnik's famous kayak route (Old Town walls + Lokrum + Betina Cave) is the Day-13 guided trip, keep this Cavtat-bay paddle as the distinct, quieter D12 option so you're not doing the same thing twice.",
+    "sources": [
+      "https://www.croatiagems.com/sea-kayaking-in-cavtat-bay-konavle/",
+      "https://visit.cavtat-konavle.com/en/active-holidays"
+    ],
+    "rating": 3,
+    "cost": "Guided half-day ~€40-50/pax typical; self-rent kayaks cheaper per hour (confirm with the Cavtat operator on the day)",
+    "timeNeeded": "half day"
+  },
+  {
+    "id": "hr-cavtat-withlicence-boat-elaphiti",
+    "name": "With-licence self-drive boat from Cavtat to Lokrum / Elaphiti (if someone holds a boat licence)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.5794,
+    "lng": 18.2208,
+    "description": "If anyone in the group holds a recognised boat-leader licence, rent a bigger self-drive motorboat (~40hp+, no skipper) from Cavtat and legally cross open water to Lokrum, Koločep's Blue Cave, Lopud's sandy Šunj and Šipan: your own Elaphiti day at your own pace, no guide. Boats at Cavtat port next to parking.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Cavtat rental platforms: 'motorboats great for quickly reaching the Elaphite Islands... reach Koločep, Lopud, Šipan and Lokrum'; self-drive rentals from ~€109-138/day. Croatia requires a boating licence to self-skipper anything above the 5kW/6.8hp licence-free class, and recognises a range of international skipper certificates for bareboat rental, bring the physical licence. A verified Cavtat charter customer reached 'the blue cave in Koločep, Lopud and Lokrum' (skippered charter, confirms the route is doable from Cavtat, you just need the licence to do it yourself). If NO ONE has a licence: do the licence-free Cavtat boat for the islets, or use the existing Elaphiti ferry/skipper options already in the plan.",
+    "sources": [
+      "https://www.adriana-cavtat.com/boat-tours/rent-a-boat/",
+      "https://cavtatboat.com/",
+      "https://www.borrowaboat.com/m/en/boat-license-croatia-do-i-need-one-to-rent-a-boat-in-croatia/",
+      "https://www.nautal.com/en/boat-rental/croatia/cavtat"
+    ],
+    "rating": 3,
+    "cost": "~€109-150/day for a self-drive ~40hp+ motorboat + fuel (split 4 ways); licence required",
+    "timeNeeded": "full day"
+  },
+  {
+    "id": "hr-mljet-kayak-sup-selfrent-lakes",
+    "name": "Self-rent kayak / SUP on the Mljet salt lakes (Mali Most & Pomena)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.7825,
+    "lng": 17.355,
+    "description": "The marquee self-guided water highlight for Day 4: hire a sit-on-top kayak, double kayak, canoe or SUP and paddle the completely sheltered Veliko/Malo Jezero salt lakes yourself, no guide. Pick up at Mali Most (Radulj Tours, the central bridge between the two lakes, nearest the Pomena entrance) or at Pomena/Mali Most via Aloha Mljet. Paddle ~30 min across calm water to St Mary islet, then snorkel and swim off the rocks. SUP boards and snorkel masks are part of the kit at the bigger operators. Best done in the morning: calm water, fewer crowds, avoids full midday sun on the open lake.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Real-traveler consensus: 'since these lakes are completely sheltered, sea kayaking is great fun for every age and fitness level... visiting Sveta Marija islet by kayak is easy, about 30 minutes to paddle there.' A TripAdvisor reviewer: 'This is a salt water lake fed by the sea, but because it is enclosed you are sheltered from any big waves' - paid 250 kn (~EUR33) for a 6-hour rental but warned 6h is too long 'out in the full sun', so a morning 2-3h slot is the sweet spot. Operators: Radulj Tours at Mali Most (open 09:00-19:00, kayaks/canoes/bikes); Aloha Mljet stations at Mali Most, Pomena and Polace (kayaks from ~EUR50/day, will arrange early pickup); Prozura Travel SUP boards 'brand new, safety equipment + snorkel masks included.' SUP is genuinely available here despite some guides only listing kayaks. Cost: double kayak/canoe ~EUR25-30/day (or ~250 kn for 3-6h); SUP from ~EUR25; life jacket + waterproof bag included; NP entry (~EUR25/adult) separate. Time needed 2-3h.",
+    "sources": [
+      "https://www.mljettravel.com/kayaking/",
+      "https://www.mljettravel.com/rental/",
+      "https://www.tripadvisor.com/ShowUserReviews-g1501915-d548269-r508434790-Mljet_National_Park-Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://alohamljet.com/",
+      "https://www.island-mljet.com/kayaking-paddeling/"
+    ],
+    "rating": 5,
+    "cost": "Double kayak / canoe ~EUR25-30/day (~250 kn for 3-6h); SUP from ~EUR25; life jacket + waterproof bag included. NP entry separate.",
+    "timeNeeded": "2-3h (morning best; full day possible)"
+  },
+  {
+    "id": "hr-mljet-st-mary-islet-snorkel",
+    "name": "St Mary islet (Sveta Marija) - swim & snorkel, north side",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.769,
+    "lng": 17.3601,
+    "description": "The wooded islet with the Benedictine monastery in the middle of Veliko Jezero - and, more usefully for this group, the island's best in-lake swim and snorkel. Reach it for free on the park's hourly electric boat from Mali Most or Pristaniste (included in the NP ticket) OR self-paddle a rented kayak (~30 min). Skip the restaurant scrum: swim off the rocky NORTH shore where entry is easy and the water is clear with schools of small fish. Best mid-morning before day-trip boats arrive.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "'Islet of Sveta Marija is probably the favorite swimming and snorkeling spot on the island... best place to swim is the northern part of the coast, away from the restaurant and tourist crowd - rocky with gentle slopes into the sea, easy entry.' 'The underwater world here is abundant in small fish schools.' Access by kayak is 'easy and manageable for anyone'; the park boat 'departs every hour from Mali most and Pristaniste' and is covered by the entry ticket. One reviewer found the islet staff 'a little unfriendly' - reinforces just swimming/snorkeling the north shore rather than lingering at the monastery cafe. NOTE: diving/underwater activities are officially forbidden in the lakes, so this is snorkel-and-swim only, no scuba. Free with NP ticket; 1-2h combined with the kayak/bike loop.",
+    "sources": [
+      "https://np-mljet.hr/faq-2/?lang=en",
+      "https://www.absolute-croatia.com/mljet",
+      "https://www.somtoseeks.com/ultimate-guide-to-mljet-national-park/"
+    ],
+    "rating": 4,
+    "cost": "Free with NP ticket (electric boat included); or via self-rented kayak",
+    "timeNeeded": "1-2h combined with the kayak/bike loop"
+  },
+  {
+    "id": "hr-mljet-noskipper-boat-polace",
+    "name": "Self-drive no-licence boat in Polace bay (Island Boat Rentals)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.7855,
+    "lng": 17.3779,
+    "description": "Self-rent a small no-licence motorboat (5 hp) from Island Boat Rentals, based at Polace and Prozurska Luka, and putter around the sheltered Polace bay's islets and quiet coves with no skipper - swim and snorkel off your own boat. They give a hands-on briefing for first-timers and will collect you and ferry you to the boat. Fleet also has larger boats and e-bikes/scooters if wanted. Calm mornings best; the bay is sheltered.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Reviewers: 'rented a small 5hp boat for a day... first time driving a boat, staff explained how to handle it - very easy,' 'boat was brand new and good equipped,' 'drove around the islands at Polace and swam in clean open sea.' 'They came to pick us up at Polace and drove us to Prozurska Luka where the boat was ready.' IMPORTANT LICENCE/RANGE CAVEAT: Croatia's no-licence rule = boat under 5 m AND engine under 5 kW (~5 hp), drivers 18+, and you must stay within ~500 m of shore. That makes this perfect for Polace bay coves but it legally/practically CANNOT reach Odysseus Cave on the exposed south coast - for the cave use the existing land hike (already in the plan) or a licensed skipper. So this boat = self-guided cove-and-swim cruising inside the bay, not a cave run. Cost ~EUR80-120/day for the small 5hp boat (reviewers didn't post the exact figure; in line with HR no-licence rates) = ~EUR20-30pp; fuel usually extra. Half to full day.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g3200569-d13276377-Reviews-Island_Boat_Rentals-Polace_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.tripadvisor.com/ShowUserReviews-g3200569-d13276377-r550187696-Island_Boat_Rentals-Polace_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.sea-help.eu/en/news-general/boat-driving-license-croatia-6-8-hp/"
+    ],
+    "rating": 4,
+    "cost": "Small 5hp no-licence boat ~EUR80-120/day = ~EUR20-30pp; fuel usually extra",
+    "timeNeeded": "Half to full day"
+  },
+  {
+    "id": "hr-mljet-np-coastal-coves-snorkel",
+    "name": "Hidden coves & snorkeling along the NP coastal trail (Veliko Jezero outer shore)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.7905,
+    "lng": 17.3585,
+    "description": "Beyond the famous lakes, the national park's outer Adriatic shore (reached on the coastal walking/cycling trail between Pomena/Polace and the lake loop) hides small rocky coves with deep, crystal-clear water and excellent snorkeling - far quieter than the lake beaches. Scramble over the rocks out of the protected bay to find swim spots you can have to yourselves. Good midday escape when the lake beaches get busy.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Trip report: 'our favorite place to swim on the whole island was in the hidden coves along the coastal trail in the national park - azure waters and solitude, amazing vistas and awesome snorkeling. Scramble on the rocks and get out of the protected bay - very deep water and crystal clear coves, great for snorkeling.' Forum travelers add that around Pomena, Kozarica and Polace there are 'smaller pebbly and rocky swim spots, usually with very clear water and easy snorkeling,' and Polace's own beach is 'fine but there will be yachts around' - the scramble-out coves are the better call for the adventurous. Bring water shoes for the rock entries. Coords are an approximate point on the outer-shore trail, hence low confidence - treat as a zone to explore, not an exact pin. Free inside the NP (ticket covers it).",
+    "sources": [
+      "https://ourwanders.com/mljet-island-croatia/",
+      "https://www.tripadvisor.com/ShowTopic-g1501915-i16255-k13115738-Is_there_any_beach_or_a_nice_swimming_spot_in_Polace_Pomena-Mljet_Island_Dubrovnik_Neret.html"
+    ],
+    "rating": 3,
+    "cost": "Free (inside NP - ticket covers it)",
+    "timeNeeded": "Flexible - tack onto the bike/kayak loop"
+  },
+  {
+    "id": "hr-mljet-prozura-sup-kayak-prozurska",
+    "name": "Kayak + SUP self-rent at Prozurska Luka (Prozura Travel) - east-side base",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.7293,
+    "lng": 17.6487,
+    "description": "An east-side alternative to the lake rentals: Prozura Travel at Prozurska Luka harbour rents single/double sit-on-top kayaks and SUP boards (snorkel masks + waterproof drum + safety kit included) for self-paddling the calm Prozurska Luka bay and its little caves. Handy if you base or eat on the east/Saplunara side of the island rather than the NP end. Morning calm is best.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Operator details: 'sit-on-top kayaks, single and double, include waterproof drum, safety equipment and snorkeling masks'; 'SUP boards brand new, safety equipment included'; 'combine kayaking and snorkeling in the National Park bay of Polace - no previous experience necessary, just being able to swim.' Price from ~EUR25. They run both guided trips and equipment rental, with meeting points at Prozurska Luka, Polace and Pomena - so you can rent here without a guide. Best for a group sleeping/eating on the east side (near Konoba Stermasi/Saplunara, already in your plan) who want a paddle without driving back to Mali Most. Time 1-3h.",
+    "sources": [
+      "https://www.island-mljet.com/kayaking-paddeling/",
+      "https://www.tripadvisor.com/AttractionProductReview-g1501915-d19148663-Kayak_and_Stand_up_paddle_rental_Mljet-Mljet_Island_Dubrovnik_Neretva_County_Dalm.html"
+    ],
+    "rating": 3,
+    "cost": "Kayak / SUP from ~EUR25; snorkel masks + safety gear included",
+    "timeNeeded": "1-3h"
+  },
+  {
+    "id": "me-skadar-virpazar-sup",
+    "name": "SUP self-rent on Skadar (Virpazar — Boat Milica all-day SUP)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.2398,
+    "lng": 19.0928,
+    "description": "Stand-up paddleboard self-rent from the Virpazar bridge — the data only had kayaks, but SUP is a fun change for a group and great for calm lily-pad channels. Boat Milica (family-run, Trg Ustanka 17) sells an all-day self-guided SUP day at €40pp incl. board, paddle, life-jacket, dry-bag, route map and a safety briefing; you then chart your own course at your own pace. Launch before noon — afternoon wind picks up on the open lake.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Boat Milica is consistently TripAdvisor-praised: 'family run business shows the real wild beauty of the lake', 'skipper incredible at spotting wildlife… beautiful relaxed swim in the middle of the lake', '100% recommend'. NB those rave reviews are mostly for their GUIDED 90-min/3-hr boat+kayak combos — their website separately lists an all-day SELF-GUIDED SUP at €40pp (NP ticket €5 extra), so specify self-guided when you book. Meeting point is unmistakable: 'near the bridge, turn right just before crossing, between the tourist office and the restaurant-boat Silistria, look for the Boat Milica sign.' Cheaper pure self-rent kayaks (no operator briefing) are also right there: ~€5/hr or €20/day single, €10/hr or €30/day double.",
+    "sources": [
+      "https://boatmilica.com/tours/all-day-self-guided-paddleboard-experience-on-skadar-lake/",
+      "https://www.tripadvisor.com/Attraction_Review-g1232143-d3497072-Reviews-Boat_Milica-Virpazar_Bar_Municipality.html"
+    ],
+    "rating": 4,
+    "cost": "Self-guided SUP day ~€40pp (+€5pp NP ticket); plain kayak self-rent ~€20/day single, €30/day double",
+    "timeNeeded": "half day to full day"
+  },
+  {
+    "id": "me-skadar-sup-rent-vranjina",
+    "name": "Kayak + SUP self-rent from Vranjina (quiet launch, Skadar)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.2783,
+    "lng": 19.1347,
+    "description": "A third, much quieter Skadar launch — the fishing village of Vranjina on the causeway island in the lake's north arm, away from the Virpazar tourist-shack crowd. Rent a single/double kayak OR a SUP board and head out with no guides or schedules, total freedom over your route. Closest launch to the pelican reedbeds and the wide open water of the upper lake. Go in the morning for calmer water and better bird activity.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Veronika's Adventure (review/booking writeup): kayak & SUP self-rent from 'the quiet village of Vranjina', 'freedom to set your own pace — no guides or schedules', 'fully equipped single or double kayaks, SUP boards, waterproof bags and safety gear', staff give a safety briefing. Reported price 'just under $12 per person' (~€11). Important: transport NOT included — you drive yourself to Vranjina (it's right on the E80/E762 causeway, can't miss it). Weather-dependent, refund/reschedule if cancelled. Coordinate confidence medium: Vranjina village is verified (~42.278, 19.135) but the exact rental jetty wasn't pinned — pin is the village/causeway.",
+    "sources": [
+      "https://veronikasadventure.com/skadar-lake-kayak-and-sup-rental/",
+      "https://en.wikipedia.org/wiki/Vranjina"
+    ],
+    "rating": 3,
+    "cost": "~€11-12pp (kayak or SUP); transport to Vranjina not included",
+    "timeNeeded": "half day"
+  },
+  {
+    "id": "me-murici-beska-swim",
+    "name": "Murići → Beška island self-swim / €20 boat-taxi (Skadar south shore)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.1635,
+    "lng": 19.2213,
+    "description": "The pin is Murići's small stone pier — the jump-off for Beška, the wooded islet sitting just offshore with two 14th-c churches. The fun bit for this group: Beška is close enough to SWIM to across bath-warm (~30°C) freshwater, or hire a local boatman at the pier for ~€20 (whole boat) if you'd rather not swim back wet. Murići itself is the lake's biggest swim beach, oak-shaded, reached by a spectacular single-lane serpentine. Water is warmest midday/afternoon; arrive earlier for parking in June.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Multiple guides agree: 'Beška island lies just opposite Murići and can be reached by swimming; on the island you can visit the 14th-c monastery church of Sveti Đorđe.' 'From the small stone pier at Murići you can hire local boatmen for a short scenic trip to Beška, costing ~€20.' On the swim itself: water is famously warm — 'bath-like ~30°C at the peak of summer'. Murići: 'has a sandy beach, the only one in this area… loungers and restaurants… both beaches'. Access warning repeated everywhere: the Rumija serpentine in is 'narrow, winding, largely single-lane… demands focus, not for beginner drivers or motorhomes' — but 'the finest views in the country'. Parking ~€2-3.",
+    "sources": [
+      "https://www.montenegropulse.com/lake-skadar.html",
+      "https://adriaticways.com/murici-beach-lake-skadar/",
+      "https://franks-travelbox.com/en/europa/montenegro/skadar-see-skadarsko-jezero-nationalpark-montenegro-albanien/"
+    ],
+    "rating": 4,
+    "cost": "Swim = free; boat-taxi to Beška ~€20 whole boat; parking €2-3",
+    "timeNeeded": "2-4h incl. the drive in"
+  },
+  {
+    "id": "me-skadar-pavlova-self-boat-rijeka",
+    "name": "Rijeka Crnojevića self-rent kayak to Pavlova Strana bend + Karuč swim",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.3563,
+    "lng": 19.0227,
+    "description": "The single best self-rent paddle on Skadar for this group: launch your own kayak (no guide) from Rijeka Crnojevića village, paddle the calm, sheltered river channel UNDER the iconic Pavlova Strana horseshoe bend (the most-photographed view in the park, seen from the water instead of the car-park) and on toward Karuč hamlet's cold spring-eye for a swim. This channel is wind-sheltered ALL day, unlike the open lake. Lunch 50m from the launch at Konoba Stari Most.",
+    "status": "candidate",
+    "source": "research-2026e",
+    "communityNotes": "Operator Enjoy Skadar Lake (enjoyskadarlake.com), base below the Stari Most restaurant: single €7/hr or €25/day, double €10/hr or €35/day; life-jacket, waterproof bag and route tips included. Their own safety line: 'Not recommended to kayak out into the open lake after 12:00 due to strong winds' — but the river channel here 'is calm at any hour', so this is the relaxed all-day choice. The channel leads past Ploče toward Karuč village; Karučko Oko is a deep (~20m) cold sublacustrine spring that stays crystal-clear and cool all summer — a swim even in a July heatwave. Pair with Konoba Stari Most (Lonely Planet's pick for best restaurant in Montenegro; full meal + drink ~€13.50pp, cash only).",
+    "sources": [
+      "https://enjoyskadarlake.com/kayak.html",
+      "https://www.montenegropulse.com/lake-skadar-kayaking.html",
+      "https://crnojevica.com/"
+    ],
+    "rating": 5,
+    "cost": "Kayak €25/day single, €35/day double (+€5pp NP fee); lunch ~€13.50pp",
+    "timeNeeded": "half day (paddle + swim + lunch)"
+  },
+  {
+    "id": "ba-restoran-han-stolac",
+    "name": "Restoran Han (Stolac — Herzegovina platters & soups)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.0829,
+    "lng": 17.9585,
+    "description": "Relaxed local restaurant in the centre of Stolac (the historic Bregava-river town), serving classic Herzegovina home cooking — grilled meats, big mixed platters, soups, salads. The natural Day-4 dinner: it sits right on the Počitelj→Poplat line, just 8 min / 8 km from the 'Home in Poplat' stay, and the food is generous and cheap. Stolac itself is on the Bregava with old Ottoman bridges/mills you can stroll before or after.",
+    "status": "candidate",
+    "source": "research-2026e-qa",
+    "communityNotes": "4.5/5 on TripAdvisor, ranked #3 of 5 in Stolac. Reviewers: \"We hadn't eaten such a well-prepared and natural lunch for a long time... soups since childhood.\" \"Delicious meat and salads at a good price. Very generous serve.\" \"The platter for four easily fed seven of us with some salads.\" \"A lovely experience — delicious and good-value food, great service and outstanding location.\" Central-square location, gentle staff. One caveat: menu choice can be limited on a given day (it's a small-town kitchen), so ask what's being cooked rather than expecting the full card.",
+    "cost": "Cheap — locals report generous platters at low prices; ~€10-15/person with drinks",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g303195-d18803440-Reviews-Restoran_Han-Stolac_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Herzegov.html",
+      "https://www.openstreetmap.org/search?query=Restoran%20Han%20Stolac"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "ba-konoba-kocusa",
+    "name": "Konoba Koćuša (waterfall-side trout konoba, Veljaci)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.2464,
+    "lng": 17.4554,
+    "description": "A genuinely special konoba built right beside the wide Koćuša waterfall on the Trebižat river near Ljubuški — terraces over cascading water, trout (and frog) kept live in pens and grilled to order. The kind of destination dinner the group likes, paired with a swimmable river/waterfall. NOTE: it's OFF the route — northwest of Počitelj, the opposite direction to the Poplat stay. Detour cost is real: Počitelj→Koćuša ~31 min, then Koćuša→Poplat ~66 min, vs ~40 min going direct (i.e. roughly +57 min of driving). Only worth it as a deliberate destination evening (or combine with a Kravica/Koćuša waterfall swim earlier in the day), not as a quick stop.",
+    "status": "candidate",
+    "source": "research-2026e-qa",
+    "communityNotes": "Repeatedly praised as a hidden gem: \"Stunning views of the river and absolutely brilliant local cuisine... full on most days with locals, so we knew it was authentic.\" \"The setting could not be more beautiful or sound more soothing\" — trout \"a great meal.\" \"Tasty food... grilled veal steak... grilled fresh trout... friendly and fast service.\" \"Food is lovely whatever you choose — fish, grill or something else.\" Fish swim in pens inside the restaurant; you can watch your meal be netted. Prices called very reasonable; locals advise booking at peak times.",
+    "cost": "$$ — fresh trout/grill, reported as good value; reservation advised at peak",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g660752-d6885072-Reviews-Konoba_Kocusa-Ljubuski_West_Herzegovina_Canton_Federation_of_Bosnia_and_Herzegovi.html",
+      "https://en.wikipedia.org/wiki/Ko%C4%87u%C5%A1a_(waterfall)",
+      "https://www.openstreetmap.org/search?query=Konoba%20Ko%C4%87u%C5%A1a"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "me-etno-restoran-socica",
+    "name": "Etno Restoran Sočica (Plužine — lamb ispod sača & Piva-lake terrace)",
+    "country": "ME",
+    "category": "food",
+    "lat": 43.1568,
+    "lng": 18.8411,
+    "description": "The standout dinner for the Piva/Plužine night: a rustic stone-and-wood etno restaurant in Sočica hamlet right by Plužine, terrace looking over Lake Piva and the surrounding mountains. Northern Montenegrin mountain food — lamb/veal baked ispod sača (under the bell), kačamak, cicvara, kajmak, trout. Only ~3 km from the 'Home in Boričje' stay, so a perfect low-effort post-rafting dinner.",
+    "status": "candidate",
+    "source": "research-2026e-qa",
+    "communityNotes": "Ranked #1 of 6 restaurants in Plužine (TripAdvisor 4.2/5; ~4.6 with 800+ reviews on RestaurantGuru). Reviewers: \"Food at Sočica is as good as it gets, some dishes even better than my grandma was making\" (kačamak/cicvara). \"The lamb melted away on your tongue.\" \"€30 for two with drinks, mains and copious desserts — unbeatable prices,\" portions generous (don't over-order). Terrace view of the lake repeatedly called \"breathtaking.\" One caveat: a reviewer got grilled trout served not-fresh, so lean toward the lamb/veal-under-sač and traditional dishes it's famous for. RAFTING-MEAL NOTE: full-day Tara rafting from Šćepan Polje almost always INCLUDES a big post-raft lunch at the operator's camp (roast lamb/veal or trout, ćevapi, kajmak, bread, rakija) — so the group may arrive at Boričje already well-fed; a half-day raft or just-in-time evening at Sočica is the way to actually be hungry for dinner. Lakeside alternative: Restoran Jezero (shaded terrace on Lake Piva, mixed grill + Vranac wine, cash only, good value but service can be cool).",
+    "cost": "~€12-18/person; \"€30 for two with drinks, mains and desserts\" reported",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g1728094-d7007109-Reviews-Etno_Restoran_Socica-Pluzine_Pluzine_Municipality.html",
+      "https://restaurantguru.com/Restoran-Caffe-Socica-Pluzine",
+      "https://www.openstreetmap.org/search?query=So%C4%8Dica%20Plu%C5%BEine",
+      "https://balkanadventure.me/activities/one-day-rafting-with-lunch-scepan-polje/"
+    ],
+    "rating": 5
+  },
+  {
+    "id": "ba-mostar-bridge-jump",
+    "name": "Stari Most Bridge Jump (Mostari Diving Club)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.3373,
+    "lng": 17.8147,
+    "description": "The iconic ~24m jump off Mostar's Stari Most with the Mostari diving club (mandatory training jump off a lower platform first, then the bridge). EXTREME — needs confidence + the club's sign-off; people have been hurt jumping unprepared. The regret-if-missed wow for cliff-jumpers on D5.",
+    "communityNotes": "Jump only via the Mostari club (training jump required); do it early ~08-09:00 when the bridge is empty/cool.",
+    "status": "candidate",
+    "source": "qa-2026e",
+    "rating": 4
+  },
+  {
+    "id": "hr-camp-dole-zivogosce",
+    "name": "Camp Dole (Živogošće, Makarska Riviera)",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 43.1707,
+    "lng": 17.1967,
+    "description": "Scenic WATERFRONT alternative to Camping Krvavica for the Makarska nights — pitches sit directly on a ~700m natural pebble beach with pine shade and clear water. ~25km south of Krvavica.",
+    "status": "candidate",
+    "source": "qa-2026e",
+    "rating": 4
+  },
+  {
+    "id": "me-krcma-nostalgija-zabljak",
+    "name": "Krčma Nostalgija (Žabljak — traditional Durmitor dinner)",
+    "country": "ME",
+    "category": "food",
+    "lat": 43.1542,
+    "lng": 19.1256,
+    "description": "Better committed D8 dinner than Or'O after the Prutaš summit — highest-rated in Žabljak (4.8, 1200+ reviews), rustic 'frozen-in-time' interior, hearty Durmitor mountain food (steak, lamb, cicvara).",
+    "status": "candidate",
+    "source": "qa-2026e",
+    "rating": 5
+  },
+  {
+    "id": "ba-restoran-behar-stolac",
+    "name": "Restoran Behar (Stolac — Bregava riverside)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.0822,
+    "lng": 17.9508,
+    "description": "Second open dinner option for the D4 Poplat night (hedge against Restoran Han's single kitchen) — riverside on the emerald Bregava in Stolac, local Herzegovina food.",
+    "status": "candidate",
+    "source": "qa-2026e",
+    "rating": 4
+  },
+  {
+    "id": "hr-konoba-kalalarga-makarska",
+    "name": "Konoba Kalalarga (Makarska — fresh catch, no-reservation)",
+    "country": "HR",
+    "category": "food",
+    "lat": 43.2957,
+    "lng": 17.0203,
+    "description": "No-reservation D2 fallback if the group skips the pre-order Gušti peka — pedestrian alley off the Makarska seafront, fresh fish, repeatedly praised by travelers.",
+    "status": "candidate",
+    "source": "qa-2026e",
+    "rating": 4
+  }
+]

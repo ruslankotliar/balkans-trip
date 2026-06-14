@@ -1,0 +1,202 @@
+[
+  {
+    "id": "me-camping-mimoza-stoliv",
+    "name": "Camping Mimoza (Donji Stoliv, Kotor Bay)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 42.472016,
+    "lng": 18.707584,
+    "description": "The best real tent campsite IN Kotor Bay for D11. A tiny terraced family camp in Donji Stoliv that drops in cascading platforms right to the water (~3m from the sea) on the quiet Stoliv/Prčanj shore, looking straight across the fjord at Perast/Risan. Tent pitches sit up near the forest, well shaded; swim off the stone pier in front. The default-cheap CAMP tier for the Kotor-nightlife night — you sleep on the bay, then bus or taxi into Kotor.",
+    "communityNotes": "TripAdvisor #1 of 7 in Donji Stoliv, ~4.0/5 (165 reviews), 8.6/10 on searchforsites. 'Beautiful location right on the water, perfect for swimming.' 'Gorgeous views, friendly welcome, parked up in the shade. Decent showers with good hot water and water pressure.' 'The top pitches for the tents, near the forest, well shaded, are very nice — value for money is absolutely correct.' Caveat (typical small family camp): variance in reviews — a few 2025 guests reported dirty sanitary on busy days and a host quoting €35 instead of €30, so confirm the price on arrival. NIGHTLIFE LOGISTICS: 9km to Kotor old town. Blue Line bus Stoliv–Prčanj–Muo–Kotor stops in front of the camp, €1.50pp cash, ~30min, last bus FROM Kotor 23:05 in summer — fine for dinner/early bars; for a late night out take a taxi back (Kotor↔Stoliv ~€10-12 for the car, split 4 ways), or just drive yourselves and keep one person sober (you have the car).",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g12969289-d15000597-Reviews-Camping_Mimoza-Donji_Stoliv_Tivat_Municipality.html",
+      "https://park4night.com/en/place/39610",
+      "https://www.searchforsites.co.uk/marker.php?id=47971",
+      "https://adriaticways.com/kotor-to-stoliv-bus/"
+    ],
+    "cost": "~€30–40/night for 4 + 1-2 tents + car (cash; ~€10-12/pitch-ish, €5-7pp range reported, electricity ~€3-5). Confirm price on arrival.",
+    "timeNeeded": "overnight",
+    "bestTime": "June: very small (≈12 pitches) and 'one of the most booked' — reserve ahead. Top forest pitches are the shaded tent spots.",
+    "facilities": "Hot showers (good pressure), toilets (basic, cleanliness varies on busy days), electricity, free WiFi, on-site restaurant/bar (08:00–23:00), stone-pier swimming/snorkel access. Cash only for camping. Narrow steep access road — fine for a car, bad for big motorhomes.",
+    "tags": [
+      "camp-tier",
+      "kotor-bay",
+      "night-11",
+      "waterfront",
+      "view",
+      "swimming"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-autocamp-naluka-morinj",
+    "name": "Autocamp Naluka (Morinj, Boka Bay)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 42.48694,
+    "lng": 18.65214,
+    "description": "Backup CAMP tier for D11 with the best FACILITIES in the bay: a small family camp on the Morinj river where it meets the inner Boka, with several pitches directly on the water and a swimming beach ~20-30m across the road. Sanitary block was renovated in 2025 and is repeatedly called spotless. Tents ARE allowed (covered car-port shelter for tent campers in bad weather). Trade-off vs Mimoza: it's further from Kotor (~30min) and sits right on the E65, so there's road noise.",
+    "communityNotes": "camping.info / Campercontact / park4night well-rated. 'New toilets and showers, spotless and continually cleaned. Owner very helpful.' 'Beautiful setting on the river flowing into Kotor Bay — direct paddle access to the sea via SUP.' Tramontana beach bar across the road; bus stop 200-500m. NEGATIVES: 'located directly on a busy main road, which creates traffic noise — those looking for peace may find it disturbing'; showers 'difficult to adjust, water either very hot or cold'; one guest reported being turned away despite a reservation, owner has 'particular rules' — so CALL/confirm. NIGHTLIFE LOGISTICS: ~22km / ~30min drive to Kotor; no late bus realistically, so this is a drive-yourself-and-stay-sober or taxi night (pricier than from Stoliv). Better as a quiet/facilities choice than a nightlife-night base.",
+    "sources": [
+      "https://park4night.com/en/place/19104",
+      "https://www.tripadvisor.com/Hotel_Review-g2183284-d5123174-Reviews-Autocamp_Naluka-Morinj_Kotor_Municipality.html",
+      "https://www.campercontact.com/en/montenegro/kotor-municipality/morinj/27133/autocamp-naluka"
+    ],
+    "cost": "~€30–40/night for 4 + tent + car (cash; €30 reported for 2+caravan+car+elec high season, add per-person for 4).",
+    "timeNeeded": "overnight",
+    "bestTime": "June: small site, call ahead. Riverside-on-water pitches are the best spots.",
+    "facilities": "Renovated 2025 showers + hot water, clean toilets, electricity, free WiFi, washing machine (~€4-5), drinking water, boat/SUP launch + small dock, swimming beach ~20m, restaurant/bar across road. Tents allowed (covered shelter). Cash only.",
+    "tags": [
+      "camp-tier",
+      "kotor-bay",
+      "night-11",
+      "backup",
+      "waterfront",
+      "facilities"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-skaljari-waterfront-park-note",
+    "name": "Škaljari waterfront lot — 500m to Kotor (NOT for tents)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 42.4217,
+    "lng": 18.7649,
+    "description": "Logistics note, not a tent recommendation. This is the closest overnight-on-the-water spot to Kotor old town — a monitored waterfront parking lot in Škaljari, ~500m / 10-15min walk along the bay to the old-town bars, with a pebble beach, café, bakery and supermarket right there. It's a MOTORHOME/van lot only: no tent pitches, no real sanitary block (bar toilets nearby). Included so the group knows: if anyone sleeps in/by the car, this is the walk-to-nightlife option; for tents you must use Mimoza or Naluka and bus/taxi in.",
+    "communityNotes": "park4night: 'Perfect location right by the water with amazing bay views,' 'friendly attendant gives great city tips,' but 'pricey for basic parking' and at night it 'becomes a hangout for youth with loud music.' €20-40/24h (van), €3-7/h, electricity ~€4. Busy with tour buses by day. NOT a campsite — no showers/toilets, tents not suitable.",
+    "sources": [
+      "https://park4night.com/en/place/349089",
+      "https://park4night.com/en/place/152376"
+    ],
+    "cost": "€20–40 / 24h for a van (parking only); free after 19:00 at the adjacent barrier lot.",
+    "timeNeeded": "overnight",
+    "bestTime": "Daytime it fills with tour buses; nights can be noisy.",
+    "facilities": "Paved waterfront lot, drinking water, WiFi, electricity (paid), waste bins, pebble beach. NO showers/toilets on site. Tents not allowed.",
+    "tags": [
+      "kotor-bay",
+      "night-11",
+      "walk-to-nightlife",
+      "note",
+      "not-tent"
+    ],
+    "rating": 2,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kotor-bay-villa-prcanj-stoliv-wow",
+    "name": "Waterfront stone villa — Prčanj / Stoliv (Kotor Bay, WOW tier)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.4564,
+    "lng": 18.7375,
+    "description": "WOW tier for D11 so all three tiers exist. The Prčanj–Stoliv shore (the quiet side of the bay, opposite Kotor) is full of restored traditional STONE houses built right on the fjord — terraces hanging over the water, private boat docks/moorings, big bay-and-mountain views, the antithesis of a city-center flat. Target AREA (pick a specific 4.8★+ entire-house listing): e.g. 'Villa Aqua Vita' Stoliv (stone, sea-front, private boat docking, jacuzzi — top-10% home, but a 6-guest luxury villa likely above €130) or a smaller 1-2BR waterfront stone house in Prčanj 165 in the €100-130 band. Boat dock = bonus given the group's self-rent-a-boat preference.",
+    "communityNotes": "Airbnb/Booking listings describe 'a stunning stone villa, nestled between tall mountains, directly on the sea-front of the Kotor fjord,' with private boat docking and terraces above the water; the Prčanj/Stoliv shore is repeatedly called the quiet, scenic, traditional-stone alternative to staying inside touristy Kotor. NOTE: this is a TARGET AREA — Airbnb listing pages are login-gated so exact 4-guest June price isn't verified here; vet the specific listing's photos + reviews before booking, and confirm bed setup fits 4 adults. Coords = approximate Prčanj waterfront centroid (coordConfidence medium).",
+    "sources": [
+      "https://www.airbnb.com/prcanj-montenegro/stays/houses",
+      "https://www.airbnb.com/rooms/574564152040229914",
+      "https://www.airbnb.com/bay-of-kotor/stays/waterfront"
+    ],
+    "cost": "~€100–150/night for 4 (June; varies by listing — small stone houses ~€100-130, full Aqua Vita-class villas higher). Verify on listing.",
+    "timeNeeded": "overnight",
+    "bestTime": "June books out — reserve early. Prefer listings with a private boat dock + waterfront terrace.",
+    "facilities": "Entire house, sea-front terrace, bay+mountain views, often private boat mooring/dock; kitchen, parking. City nightlife via 10-15min bay-road drive/taxi or the Blue Line bus.",
+    "tags": [
+      "villa-tier",
+      "kotor-bay",
+      "night-11",
+      "waterfront",
+      "stone-house",
+      "boat-dock"
+    ],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kotor-bay-apt-dobrota-stasije",
+    "name": "Sea-view apartment — Dobrota / Muo (Kotor Bay, tier-2)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.4448,
+    "lng": 18.7706,
+    "description": "Tier-2 cheap-bed option for D11 (the practical 'we just want a shower and a bed near the bars' choice). Quiet sea-view studios/apartments line the Dobrota shore (Sveti Stasije zone — the sunniest part of the bay, '50 steps from the sea') and Muo across the water from Kotor — both a short walk or cheap taxi to old-town nightlife. Target AREA, pick a 4.7★+ listing. Sister entry to the existing Muo/Dobrota apt note already in the data; this adds the Sveti Stasije / Dobrota-north cluster specifically.",
+    "communityNotes": "Travelers report 50–85m² Dobrota apartments with big terraces '50 steps from the sea' and panoramic Boka views in the 'sunniest zone of the bay'; Muo studios on the 2nd floor of historic stone homes with seafront balconies, ~15-25min walk to old town (no pavement on part of the road — taxi at night is safer). Waterfront rentals here start ~$30-40 before fees. Quiet, cheaper alternative to sleeping inside the old town while staying walk/short-taxi distance to its bars. AREA target, not one verified listing — vet photos/reviews and confirm 4-guest June price.",
+    "sources": [
+      "https://www.airbnb.com/dobrota-montenegro/stays",
+      "https://www.tripadvisor.co.uk/ShowTopic-g295381-i9638-k13657096-Staying_in_Muo-Kotor_Kotor_Municipality.html"
+    ],
+    "cost": "~€45–70/night for 4 (June; varies). Verify on listing.",
+    "timeNeeded": "overnight",
+    "bestTime": "June: book a few weeks ahead. Dobrota (Sveti Stasije) = most sun; Muo = quietest, closest to old town across the water.",
+    "facilities": "Sea-view apartment/studio, terrace/balcony, kitchen, parking (varies), short walk or cheap taxi to Kotor old-town bars.",
+    "tags": [
+      "apt-tier",
+      "kotor-bay",
+      "night-11",
+      "sea-view",
+      "walk-to-nightlife"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-camping-verige-tivat-lepetane",
+    "name": "Camping Verige 65 (Lepetane / Tivat, Boka Bay)",
+    "country": "ME",
+    "category": "campsite",
+    "lat": 42.4378,
+    "lng": 18.6754,
+    "description": "Second-backup CAMP tier on the Boka, on the Lepetane (Tivat) shore right by the Kamenari–Lepetane ferry, along the open Adriatic-side coastline of the bay with crystal water and mountain backdrop. Bigger/more organised than the tiny Stoliv and Morinj camps, so more likely to have space in June, with shaded pitches. Further from Kotor than Mimoza (~20min via the bay road / ferry side), so a facilities-and-space pick rather than a walk-to-nightlife base. Verify exact coords before navigating.",
+    "communityNotes": "~4.2/5 (309 Google reviews). Described as 'situated along the beautiful Adriatic coastline' with 'breathtaking views of the crystal-clear waters and surrounding mountains' and 'spacious and shaded pitches.' Less Reddit/forum chatter than Mimoza/Naluka, so treat rating as indicative; good as an overflow option if the two small bay camps are full. NIGHTLIFE: ~20-30min to Kotor by car; the Kamenari–Lepetane ferry runs 24h every ~15min in summer (€~4.50/car) — a fun way to cross the bay but you still drive into Kotor after, so plan a sober driver or taxi.",
+    "sources": [
+      "https://kamping.me/",
+      "https://www.camping.info/en/country/montenegro"
+    ],
+    "cost": "~€30–40/night for 4 + tent + car (June estimate; verify with site).",
+    "timeNeeded": "overnight",
+    "bestTime": "June: larger site, better availability than the tiny camps. Waterfront pitches best.",
+    "facilities": "Hot showers, toilets, electricity hookups, waterfront/coastline location with swimming and bay+mountain views. Confirm tent pricing + exact GPS with the operator.",
+    "tags": [
+      "camp-tier",
+      "kotor-bay",
+      "night-11",
+      "backup",
+      "waterfront",
+      "coordConfidence-medium"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-vile-calimero-zabljak",
+    "name": "Vile Calimero — wooden cabins, Žabljak (Durmitor, WOW tier N7-8)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 43.1515,
+    "lng": 19.129,
+    "description": "Fills the missing WOW-tier mountain stay for the Žabljak/Durmitor nights (N7-8). A cluster of cozy wooden lodges on the edge of Žabljak — log-cabin character (wood interiors, fireplaces, hydro-massage showers), forest/mountain views, fully equipped kitchens — yet only ~500m from town and ~3km from Black Lake, so it's both atmospheric AND practical as a Durmitor base. The wood-cabin experience is exactly what elevates a Durmitor stay over a generic town apartment.",
+    "communityNotes": "Booking.com ★9.3/10 from 800+ reviews (one of the most-reviewed stays in Žabljak). Guests: 'a wooden cabin with a burning fireplace in the heart of Žabljak — beautiful view, cozy living room, very comfortable and well-equipped kitchen.' From ~$64/night base. Travel writers note converted katun/wooden cabins 'genuinely elevate the whole national park experience in a way a standard Žabljak hotel can't.' Verify the specific cabin sleeps 4 (some units are smaller). COORDS APPROXIMATE: address is 'Junca do Javorovača bb' by the Javorovača ski lift on the E edge of Žabljak, 500m from center — cross-check the exact unit before navigating (coordConfidence medium).",
+    "sources": [
+      "https://www.durmitornp.com/holiday-home-vile-calimero/",
+      "https://www.booking.com/hotel/me/renta-vile-calimero.html",
+      "https://www.tripadvisor.com/Hotel_Review-g1096284-d14978771-Reviews-Renta_Vile_Calimero-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html"
+    ],
+    "cost": "~€70–110/night for 4 (cabin sleeping 4; base from ~$64 for smaller units — verify capacity + June price)",
+    "timeNeeded": "overnight",
+    "bestTime": "June: book ahead, popular. Ask for a cabin that sleeps 4 with a fireplace + terrace.",
+    "facilities": "Wooden cabin: full kitchen (dishwasher/oven/microwave), fireplace, hydro-massage shower, terrace, satellite TV, free WiFi, private parking. ~500m to Žabljak center, ~3km to Black Lake, 50m to a restaurant.",
+    "tags": [
+      "villa-tier",
+      "durmitor",
+      "zabljak",
+      "night-7",
+      "night-8",
+      "wooden-cabin",
+      "coordConfidence-medium"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  }
+]

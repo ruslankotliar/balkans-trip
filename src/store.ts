@@ -1,25 +1,22 @@
 import { CATEGORIES } from './constants';
 import { DEFAULT_PLAN } from './defaultPlan';
-import type { Category, Place, Status } from './types';
+import type { Place, Status } from './types';
 
 const modules = import.meta.glob('./data/*.json', { eager: true }) as Record<
   string,
   { default: Place[] }
 >;
 
-const AUTO_BACKUP_CATEGORIES = new Set<Category>([
-  'accommodation',
-  'beach',
-  'food',
-  'nightlife',
-  'town',
-  'other',
-]);
-
 function normalizeBakedPlace(place: Place): Place {
+  // Clean, specific status model (no "undecided candidate" pile):
+  //   shortlist = IN THE PLAN (has a day, drives the route/schedule)
+  //   backup    = FALLBACK BED for a night (alternative place to sleep)
+  //   extra     = OPTION to do if we want / have spare time (the "nearby options" pool)
+  //   rejected  = not interested
+  // Researched candidates become a fallback bed (if a sleep) or an extra (anything else).
   if (place.status !== 'candidate') return place;
-  if (!AUTO_BACKUP_CATEGORIES.has(place.category)) return place;
-  return { ...place, status: 'backup' };
+  const sleep = place.category === 'accommodation' || place.category === 'campsite';
+  return { ...place, status: sleep ? 'backup' : 'extra' };
 }
 
 /** Merge all src/data/*.json files; first occurrence of an id wins. */
@@ -220,7 +217,7 @@ function guessCountry(lat: number, lng: number): Place['country'] {
 }
 
 /** Narrow an unknown value to a plausible user Place (defensive against bad imports). */
-function normalizeUserPlace(x: unknown): Place | null {
+export function normalizeUserPlace(x: unknown): Place | null {
   if (!x || typeof x !== 'object') return null;
   const p = x as Record<string, unknown>;
   const id = typeof p.id === 'string' ? p.id.trim() : '';
@@ -240,7 +237,7 @@ function normalizeUserPlace(x: unknown): Place | null {
   const strings = (value: unknown): string[] | undefined =>
     Array.isArray(value) ? value.filter((v): v is string => typeof v === 'string') : undefined;
 
-  return {
+  const userPlace: Place = {
     id,
     name,
     country: isCountry(p.country) ? p.country : guessCountry(lat, lng),
@@ -260,6 +257,9 @@ function normalizeUserPlace(x: unknown): Place | null {
     userAdded: true,
     source: 'user',
   };
+  // Drain user "candidate" pins the same way as baked ones (→ backup if a sleep,
+  // else → extra) so the candidate bucket stays empty everywhere.
+  return normalizeBakedPlace(userPlace);
 }
 
 export function loadUserPlaces(): Place[] {
