@@ -187,17 +187,6 @@ function FlyTo({ placeId, lat, lng }: { placeId: string | null; lat?: number; ln
   return null;
 }
 
-function FitBounds({ pts, nonce }: { pts: [number, number][]; nonce: number }) {
-  const map = useMap();
-  useEffect(() => {
-    if (nonce > 0 && pts.length > 0) {
-      map.fitBounds(L.latLngBounds(pts), { padding: [40, 40] });
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [nonce]);
-  return null;
-}
-
 function HashSync() {
   const map = useMap();
   useEffect(() => {
@@ -303,7 +292,6 @@ export default function App() {
     groupFilter.size < GROUPS.length || !NON_REJECTED.every((s) => statusFilter.has(s));
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [view, setView] = useState<View>('places');
-  const [fitNonce, setFitNonce] = useState(0);
   const [toolsOpen, setToolsOpen] = useState(false);
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -1143,7 +1131,6 @@ export default function App() {
         <HashSync />
         <MapTapCapture active={addPlaceOpen} onTap={onMapTap} />
         <FlyTo placeId={selectedId} lat={selected?.lat} lng={selected?.lng} />
-        <FitBounds pts={visible.map((p) => [p.lat, p.lng])} nonce={fitNonce} />
 
         {/* Add-place: a draggable pin for the tapped/captured point */}
         {addPlaceOpen && tappedPoint && (

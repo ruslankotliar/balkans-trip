@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { CATEGORY_COLORS } from '../constants';
 import { formatClock, formatTimeRange, type DaySchedule } from '../schedule';
 import type { PlaceWithOverride } from '../store';
@@ -108,6 +109,7 @@ export default function Itinerary({
   dayConfig,
   onSetDayCfg,
 }: Props) {
+  const [mixOpen, setMixOpen] = useState(false);
   const assigned = places.filter((p) => p.day && p.status !== 'rejected');
   const backlog = places
     .filter((p) => !p.day && p.status === 'shortlist')
@@ -186,55 +188,82 @@ export default function Itinerary({
         )}
       </div>
 
-      {mix.length > 0 && (
-        <details className="itin-mix">
-          <summary>
-            🎯 Big highlights · {mix.length} types
-            {(() => {
-              const adj = mix.filter((m) => m.adjacent).length;
-              const w: string[] = [];
-              if (adj) w.push(`${adj} back-to-back`);
-              if (heavyDays.length) w.push(`${heavyDays.length} stacked day${heavyDays.length > 1 ? 's' : ''}`);
-              return w.length ? ` · ⚠ ${w.join(', ')}` : '';
-            })()}
-          </summary>
-          {heavyDays.length > 0 && (
-            <div className="itin-mix-heavy">
-              ⚠ Days stacking 2+ big highlights (hard to fit a half-day each):{' '}
-              {heavyDays.map((dd) => (
-                <button key={dd} type="button" className={`itin-mix-day${dd === day ? ' cur' : ''}`} onClick={() => onDay(dd)}>
-                  {dd}
-                </button>
-              ))}
+      {mix.length > 0 && (() => {
+        const adj = mix.filter((m) => m.adjacent).length;
+        const w: string[] = [];
+        if (adj) w.push(`${adj} back-to-back`);
+        if (heavyDays.length) w.push(`${heavyDays.length} stacked`);
+        return (
+          <button type="button" className="itin-mix-bar" onClick={() => setMixOpen(true)}>
+            <span className="itin-mix-bar-label">🎯 Big highlights · {mix.length}</span>
+            {w.length > 0 && <span className="itin-mix-bar-warn">⚠ {w.join(', ')}</span>}
+            <span className="itin-mix-bar-open">view ▸</span>
+          </button>
+        );
+      })()}
+
+      {mixOpen && (
+        <div className="mix-overlay" role="dialog" aria-modal="true" onClick={() => setMixOpen(false)}>
+          <div className="mix-dialog" onClick={(e) => e.stopPropagation()}>
+            <div className="mix-dialog-head">
+              <strong>🎯 Big-highlight mix</strong>
+              <button type="button" className="mix-dialog-close" onClick={() => setMixOpen(false)} aria-label="Close">
+                ✕
+              </button>
             </div>
-          )}
-          <ul className="itin-mix-list">
-            {mix.map((m) => (
-              <li key={m.type} className={m.adjacent ? 'adjacent' : ''}>
-                <span className="itin-mix-type">{m.type}</span>
-                <span className="itin-mix-count">×{m.count}</span>
-                <span className="itin-mix-days">
-                  {m.days.map((dd) => (
-                    <button
-                      key={dd}
-                      type="button"
-                      className={`itin-mix-day${dd === day ? ' cur' : ''}`}
-                      onClick={() => onDay(dd)}
-                      title={`Go to day ${dd}`}
-                    >
-                      {dd}
-                    </button>
-                  ))}
-                </span>
-                {m.adjacent && (
-                  <span className="itin-mix-warn" title="Scheduled on back-to-back days">
-                    ⚠ back-to-back
+            <p className="mix-dialog-sub">
+              Big (book/€/half-day) activities you've committed across the trip — keep variety, avoid back-to-back
+              repeats. Tap a day to jump there.
+            </p>
+            {heavyDays.length > 0 && (
+              <div className="itin-mix-heavy">
+                ⚠ Days stacking 2+ big highlights (hard to fit a half-day each):{' '}
+                {heavyDays.map((dd) => (
+                  <button
+                    key={dd}
+                    type="button"
+                    className={`itin-mix-day${dd === day ? ' cur' : ''}`}
+                    onClick={() => {
+                      onDay(dd);
+                      setMixOpen(false);
+                    }}
+                  >
+                    {dd}
+                  </button>
+                ))}
+              </div>
+            )}
+            <ul className="itin-mix-list">
+              {mix.map((m) => (
+                <li key={m.type} className={m.adjacent ? 'adjacent' : ''}>
+                  <span className="itin-mix-type">{m.type}</span>
+                  <span className="itin-mix-count">×{m.count}</span>
+                  <span className="itin-mix-days">
+                    {m.days.map((dd) => (
+                      <button
+                        key={dd}
+                        type="button"
+                        className={`itin-mix-day${dd === day ? ' cur' : ''}`}
+                        onClick={() => {
+                          onDay(dd);
+                          setMixOpen(false);
+                        }}
+                        title={`Go to day ${dd}`}
+                      >
+                        {dd}
+                      </button>
+                    ))}
                   </span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </details>
+                  {m.adjacent && (
+                    <span className="itin-mix-warn" title="Scheduled on back-to-back days">
+                      ⚠ back-to-back
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       )}
 
       <div className="itin-total">

@@ -3141,36 +3141,64 @@ body.trip-mode .ess-tel {
   margin-top: 2px;
 }
 
-/* Trip activity-mix tracker (Plan view) — pinned so it stays visible while
-   scrolling a day's stops (.itinerary is the scroll container). */
-.itin-mix {
+/* Activity-mix tracker — a thin sticky BAR that opens a dialog (so the day-plan
+   list keeps its space). */
+.itin-mix-bar {
   position: sticky;
   top: 0;
   z-index: 6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin: 0 0 8px;
+  padding: 6px 10px;
   border: 1px solid #d7dde3;
   border-radius: 8px;
   background: #f3f6f9;
-  padding: 4px 10px;
-  max-height: 55vh;
-  overflow-y: auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  font-size: 12px;
+  font-weight: 600;
+  color: #2c3e50;
+  cursor: pointer;
+  text-align: left;
 }
+.itin-mix-bar-label { white-space: nowrap; }
+.itin-mix-bar-warn { color: #b9770e; font-weight: 600; flex: 1; }
+.itin-mix-bar-open { margin-left: auto; color: var(--accent, #2563eb); font-weight: 600; }
+/* Dialog overlay for the full mix (doesn't crowd the day list). */
+.mix-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1400;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.mix-dialog {
+  background: #fff;
+  border-radius: 12px;
+  width: min(440px, 100%);
+  max-height: 82vh;
+  overflow-y: auto;
+  padding: 14px 16px 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+.mix-dialog-head { display: flex; align-items: center; justify-content: space-between; font-size: 16px; }
+.mix-dialog-close {
+  border: none; background: #f0f0f0; border-radius: 50%; width: 30px; height: 30px;
+  cursor: pointer; font-size: 14px;
+}
+.mix-dialog-sub { font-size: 12px; color: #646b74; margin: 4px 0 10px; }
 .itin-mix-heavy {
   font-size: 11px;
   color: #b9770e;
-  margin: 4px 0 2px;
+  margin: 4px 0 8px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 4px;
-}
-.itin-mix > summary {
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 600;
-  color: #2c3e50;
-  padding: 4px 0;
 }
 .itin-mix-list { list-style: none; margin: 4px 0 2px; padding: 0; }
 .itin-mix-list li {
