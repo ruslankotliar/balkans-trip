@@ -96,7 +96,7 @@ const DEFAULT_PLAN_STATUSES: Status[] = ['shortlist'];
 // plan_overrides row so they sync across devices through the existing layer
 // without a new table. The id matches no real place, so it never renders.
 const DAY_CONFIG_ID = '__day_config__';
-type DayConfig = Record<number, { startHour?: number; pace?: number }>;
+type DayConfig = Record<number, { startHour?: number; endHour?: number; pace?: number }>;
 function parseDayConfig(note: string | undefined): DayConfig {
   if (!note) return {};
   try {
@@ -448,12 +448,14 @@ export default function App() {
     () => parseDayConfig(overrides[DAY_CONFIG_ID]?.note),
     [overrides],
   );
-  const setDayStart = (day: number, hour: number | undefined) => {
+  const setDayCfg = (day: number, patch: { startHour?: number; endHour?: number; pace?: number }) => {
     applyOverrides((o) => {
       const cfg = parseDayConfig(o[DAY_CONFIG_ID]?.note);
-      const entry = { ...cfg[day] };
-      if (hour === undefined) delete entry.startHour;
-      else entry.startHour = hour;
+      const entry: { startHour?: number; endHour?: number; pace?: number } = { ...cfg[day] };
+      for (const k of Object.keys(patch) as (keyof typeof patch)[]) {
+        if (patch[k] === undefined) delete entry[k];
+        else entry[k] = patch[k];
+      }
       const next: DayConfig = { ...cfg };
       if (Object.keys(entry).length === 0) delete next[day];
       else next[day] = entry;
@@ -471,7 +473,11 @@ export default function App() {
         stops,
         route,
         (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0,
-        { dayStartHour: dayConfig[day]?.startHour, paceMultiplier: dayConfig[day]?.pace },
+        {
+          dayStartHour: dayConfig[day]?.startHour,
+          dayEndHour: dayConfig[day]?.endHour,
+          paceMultiplier: dayConfig[day]?.pace,
+        },
       );
       if (schedule) out[day] = schedule;
     }
@@ -1098,7 +1104,7 @@ export default function App() {
               onAssignDay={assignDay}
               scheduleByDay={daySchedules}
               dayConfig={dayConfig}
-              onSetDayStart={setDayStart}
+              onSetDayCfg={setDayCfg}
             />
           </Suspense>
         )}

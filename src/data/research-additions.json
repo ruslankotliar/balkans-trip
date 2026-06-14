@@ -75,10 +75,10 @@
     "id": "ba-bascarsija-bar-cluster",
     "name": "Baščaršija bar cluster (Sunday night out: Barometar, Zlatna Ribica, Cheers, Raya 71)",
     "country": "BA",
-    "category": "activity",
+    "category": "nightlife",
     "lat": 43.85831,
     "lng": 18.42661,
-    "description": "The realistic Jun 21 (Sunday) night-out plan: a short walkable bar crawl on/around Ferhadija–Muvekita–Zelenih Beretki rather than a club. Cheers Pub (cheap beers, casual, Muvekita) → Café Barometar (coffee-to-craft-beer/gin, beer from ~5 KM) → Zlatna Ribica (quirky antique-stuffed 'goldfish' bar, an institution) → Raya 71 (Art Deco cocktails, open to ~01:00-02:00). Honest expectation: Sunday is qu",
+    "description": "A walkable bar crawl on/around Ferhadija–Muvekita–Zelenih Beretki rather than a club night. Cheers Pub (cheap, casual, on Muvekita) → Café Barometar (coffee-to-craft-beer/gin, beer from ~5 KM) → Zlatna Ribica (quirky antique-stuffed 'goldfish' bar, an institution) → Raya 71 (Art-Deco cocktails, open to ~01:00–02:00). On a Sunday the scene is quieter than weekends, but these spots stay open.",
     "status": "candidate",
     "tags": [
       "research"
@@ -505,7 +505,7 @@
     "category": "beach",
     "lat": 43.3216,
     "lng": 16.9883,
-    "description": "The pebble cove ~200m below Camping Krvavica — large smooth pebbles, crystal water, pine shade, and notably uncrowded for the Makarska Riviera. This is the no-driving Day-1 arrival swim: roll into camp and walk straight down. Good snorkelling on the rocks at the edges.",
+    "description": "Pebble cove ~200m below Camping Krvavica — large smooth pebbles, crystal water, pine shade, and notably uncrowded for the Makarska Riviera. Good snorkelling on the rocks at the edges.",
     "status": "candidate",
     "tags": [
       "research"
@@ -696,10 +696,10 @@
     "id": "me-maximus-kotor",
     "name": "Club Maximus (Kotor old town)",
     "country": "ME",
-    "category": "activity",
+    "category": "nightlife",
     "lat": 42.4244,
     "lng": 18.7709,
-    "description": "The biggest and most famous nightclub in Montenegro, hidden inside Kotor old town at Trg od Oružja — a multi-level venue (~4,000 capacity) with several dance floors playing techno/EDM and commercial hits, plus laser/dancer shows. The serious club night the bay otherwise lacks; the existing nightlife notes missed it entirely.",
+    "description": "The biggest and most famous nightclub in Montenegro, set inside Kotor old town at Trg od Oružja — a multi-level venue (~4,000 capacity) with several dance floors playing techno/EDM and commercial hits, plus laser and dancer shows. The serious club night the bay otherwise lacks.",
     "status": "candidate",
     "tags": [
       "research"
@@ -803,7 +803,7 @@
     "category": "hike",
     "lat": 43.1399,
     "lng": 19.0853,
-    "description": "Small, still, dark glacial lake a short, easy forest walk from Black Lake — the calm, crowd-free counterpoint to busy Crno jezero. Folds into the '3 Glacier Lakes' loop (Black + Snake + Barno, ~7km total). Ideal low-effort Day-9 morning option before leaving Žabljak, or a tired-evening N8 leg-stretch, when a big second summit is too much.",
+    "description": "Small, still, dark glacial lake a short, easy forest walk from Black Lake — the calm, crowd-free counterpoint to busy Crno jezero. Folds into the '3 Glacier Lakes' loop (Black + Snake + Barno, ~7km total). A low-effort lake walk rather than a destination in itself.",
     "status": "candidate",
     "tags": [
       "research"

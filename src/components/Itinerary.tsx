@@ -21,15 +21,15 @@ interface Props {
   onFindSleep?: (day: number) => void;
   /** Day clock per day, derived from the current route + stop times. */
   scheduleByDay?: Record<number, DaySchedule | null>;
-  /** Per-day start hour (+ pace) for the schedule clock; undefined = default 08:00. */
-  dayConfig?: Record<number, { startHour?: number; pace?: number }>;
-  /** Set a day's start hour (decimal, e.g. 6.5 = 06:30); undefined resets to default. */
-  onSetDayStart?: (day: number, hour: number | undefined) => void;
+  /** Per-day start/end hour (+ pace) for the schedule clock; undefined = defaults 08:00–21:00. */
+  dayConfig?: Record<number, { startHour?: number; endHour?: number; pace?: number }>;
+  /** Patch a day's start/end hour (decimal, e.g. 6.5 = 06:30; >24 = past midnight); undefined value resets. */
+  onSetDayCfg?: (day: number, patch: { startHour?: number; endHour?: number }) => void;
 }
 
-/** Decimal hour (6.5) → "HH:MM" for a time input. */
+/** Decimal hour (6.5, or 26 for 02:00 next day) → "HH:MM" for a time input. */
 function hourToHHMM(h: number): string {
-  const total = Math.round(h * 60);
+  const total = Math.round((((h % 24) + 24) % 24) * 60);
   return `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`;
 }
 /** "HH:MM" → decimal hour, or undefined when blank. */
@@ -71,7 +71,7 @@ export default function Itinerary({
   onAssignDay,
   scheduleByDay,
   dayConfig,
-  onSetDayStart,
+  onSetDayCfg,
 }: Props) {
   const assigned = places.filter((p) => p.day && p.status !== 'rejected');
   const backlog = places
@@ -147,18 +147,34 @@ export default function Itinerary({
           return <div className={`itin-verdict itin-verdict-${level}`}>{label}</div>;
         })()}
 
-        {onSetDayStart && (
+        {onSetDayCfg && (
           <div className="itin-start">
             <label>
-              Start day at{' '}
+              Start{' '}
               <input
                 type="time"
                 value={hourToHHMM(dayConfig?.[day]?.startHour ?? (schedule ? schedule.dayStartSec / 3600 : 8))}
-                onChange={(e) => onSetDayStart(day, hhmmToHour(e.target.value))}
+                onChange={(e) => onSetDayCfg(day, { startHour: hhmmToHour(e.target.value) })}
               />
             </label>
-            {dayConfig?.[day]?.startHour != null && (
-              <button type="button" className="itin-start-reset" onClick={() => onSetDayStart(day, undefined)}>
+            <label>
+              · wrap by{' '}
+              <input
+                type="time"
+                value={hourToHHMM(dayConfig?.[day]?.endHour ?? (schedule ? schedule.plannedEndSec / 3600 : 21))}
+                onChange={(e) => {
+                  let h = hhmmToHour(e.target.value);
+                  if (h != null && h < 5) h += 24; // 00:00–04:59 → after midnight
+                  onSetDayCfg(day, { endHour: h });
+                }}
+              />
+            </label>
+            {(dayConfig?.[day]?.startHour != null || dayConfig?.[day]?.endHour != null) && (
+              <button
+                type="button"
+                className="itin-start-reset"
+                onClick={() => onSetDayCfg(day, { startHour: undefined, endHour: undefined })}
+              >
                 reset
               </button>
             )}

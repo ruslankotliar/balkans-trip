@@ -6,7 +6,7 @@
     "category": "beach",
     "lat": 42.5134,
     "lng": 18.3213,
-    "description": "Tiny pebble beach at the foot of sheer Konavle cliffs, reached by a stone stairway carved into the rock face — Forbes' 'most beautiful hidden beach in Europe' (2024), yet still uncrowded because of the climb. 15km from Dubrovnik airport, i.e. essentially ON the Jun 18 pickup / Jun 27 final-night zone where the map currently has zero pins.",
+    "description": "Tiny pebble beach at the foot of sheer Konavle cliffs below Popovići, reached by a stone stairway and tunnels carved into the rock face. Repeatedly ranked among Europe's most beautiful beaches yet stays uncrowded because of the descent. About 15 km from Dubrovnik airport; turquoise water and no facilities, so bring water and sturdy shoes.",
     "communityNotes": "World's 50 Best Beaches: 'one of those beaches you have to work a little to get to, but you will be rewarded with the most fantastic prize at the end.' Visitors consistently report turquoise water, dramatic tunnel-and-stairs descent, and NO facilities — bring water and sturdy shoes. Parking is a small lot in Popovići village, then ~10–15 min down (and a sweaty climb back up). Can shrink after winter storms — it is partly man-made from tunnel spoil, which locals find part of the charm.",
     "sources": [
       "https://en.wikipedia.org/wiki/Pasja%C4%8Da_Beach",
@@ -112,7 +112,7 @@
     "category": "town",
     "lat": 42.5814,
     "lng": 18.2177,
-    "description": "Pretty horseshoe harbour town 10 min from Dubrovnik airport — palm waterfront, two wooded peninsulas with a swimmable promenade loop, and the hilltop Račić Mausoleum view at sunset. The obvious cheap, calm anchor for the Jun 18 pickup evening and/or the Jun 27 last night, in a zone the map currently leaves blank.",
+    "description": "Pretty horseshoe harbour town 10 min from Dubrovnik airport — palm-lined waterfront, two wooded peninsulas with a swimmable promenade loop, and the hilltop Račić Mausoleum view at sunset. Quieter and cheaper than Dubrovnik, with boat taxis and bus #10 running to the old town so you can leave the car parked.",
     "communityNotes": "Forum consensus (TripAdvisor/Rick Steves): 'Cavtat was quieter and much less touristy than Dubrovnik, even though it's not that far away'; cheaper food and rooms; boat taxis and bus #10 (~€4) run to Dubrovnik old town so you can leave the car parked. Verdict pattern: sightseeing base = Dubrovnik, relaxing base = Cavtat. Swimming off the Sustjepan peninsula rocks is genuinely nice.",
     "sources": [
       "https://www.tripadvisor.com/ShowTopic-g295371-i1555-k14409022-Dubrovnik_or_Cavtat-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html",
@@ -196,7 +196,7 @@
     "category": "viewpoint",
     "lat": 43.8615,
     "lng": 18.4377,
-    "description": "Ottoman bastion on the Vratnik hill, a free 15-20 min walk up from Baščaršija, where half of Sarajevo gathers every evening with drinks and snacks to watch the sun drop over the minarets and the valley. THE local sunset spot — oddly absent from all 300 existing pins despite a likely Sarajevo overnight.",
+    "description": "Ottoman bastion on the Vratnik hill, a free 15-20 min walk up from Baščaršija, where Sarajevans gather most evenings with drinks and snacks to watch the sun drop over the minarets and the valley. The classic local sunset viewpoint; open 24/7, free.",
     "communityNotes": "Free, open 24/7, café kiosk in season. 'Many visitors bring small picnics and drinks to enjoy while watching the sunset — a popular local pastime'; during Ramadan the cannon (Ramazanski top) fires from here at sunset. Locals' tip: come 30-40 min before sundown for a wall seat. Pairs with a wander through the old Vratnik gate quarter and the Kovači war cemetery below (itself a moving sight).",
     "sources": [
       "https://lll.ba/yellow-fortress-zuta-tabija/",
@@ -251,7 +251,7 @@
     "category": "nature",
     "lat": 43.6036,
     "lng": 17.6763,
-    "description": "Hamlet-dotted valley buried between 1,800m rock walls on the SE side of Čvrsnica — Herzegovina's most dramatic 'Yosemite corridor', entered via a 5km gravel track off the M-17 Mostar→Jablanica road the group already drives on day 7. Also a swim spot: the Diva Grabovica stream meets the Neretva at a pebble delta — cold (12-15°C), emerald, wild camping allowed. Walk 30 min for the views or 2h up to the Žlijeb viewpoint.",
+    "description": "Hamlet-dotted valley buried between ~1,800m rock walls on the SE side of Čvrsnica — Herzegovina's most dramatic 'Yosemite corridor', entered via a ~5km gravel track off the M-17 north of Mostar. Also a swim spot: the Diva Grabovica stream meets the Neretva at a pebble delta — cold (12-15°C), emerald, with wild camping. Walk 30 min for the views or up to ~4h to the Žlijeb viewpoint.",
     "communityNotes": "AllTrails (40 reviews) and Via Dinarica describe the Žlijeb route: ~8km, ~730m up, 4-4.5h, 'through closed beech forests with a fairly sharp climb', springs en route. Turnoff: cross the Neretva at HE Grabovica dam, then ~5km macadam to the info board (250m asl) — fine driven slowly in a normal car. Even non-hikers rave about just standing in the valley floor surrounded by the walls. Quiet: a handful of people on a summer weekday. Swim angle: two streams form a small pebble delta on the valley floor — wading/plunge pool. Neretva is always cold; the color compensates.",
     "sources": [
       "https://www.alltrails.com/trail/bosnia-herzegovina/herzegovina-neretva/diva-grabovica-zlijeb-cvrsnica",
@@ -472,8 +472,8 @@
     "name": "Via Ferrata Piva — Piva Canyon",
     "country": "ME",
     "category": "activity",
-    "lat": 43.12,
-    "lng": 18.79,
+    "lat": 43.29432,
+    "lng": 18.85283,
     "description": "Grade B/C via ferrata in the Piva canyon, 20 min south of Plužine on the Žabljak road. Traverse the canyon walls 2 m above the turquoise Piva River, then climb 80 m vertical. 2024-installed anchors to EN 16869 standard. Guided only (€65–150 depending on group size). 2–3h.",
     "communityNotes": "New route (2024 installation). 'Standing 100 meters above the Piva River with turquoise water below'; combinable with Tara rafting for a full adventure day. Professional photo package included. Zero detour from the Žabljak → Šćepan Polje road — this is literally on your confirmed route.",
     "sources": [
