@@ -39,35 +39,39 @@ function hhmmToHour(v: string): number | undefined {
 }
 
 // ── Big-highlight classifier (for the activity-mix tracker) ──
-// Only the MAJOR highlights worth balancing across days — the ones that cost
-// real time / money / planning (usually booked). Everything quick/free/ambient
-// (eating, swimming, cliff-jumping, snorkeling, viewpoints, town/sightseeing,
-// plain nature, scenic drives) is deliberately NOT tracked: you do those any
-// day, they don't need spreading out.
-const HIGHLIGHT_KEYWORDS: [RegExp, string][] = [
-  [/raft/, 'rafting'],
-  [/kayak|canoe/, 'kayaking'],
-  [/\bsup\b|paddle.?board|stand.?up.?paddle/, 'SUP'],
-  [/canyon/, 'canyoning'],
-  [/scuba|\bdiv(e|ing)\b/, 'diving'],
-  [/zip.?line/, 'zipline'],
-  [/paraglid/, 'paragliding'],
-  [/skydiv/, 'skydiving'],
-  [/\batv\b|buggy|quad|dirt.?bike/, 'ATV/buggy'],
-  [/e-?bike|cycling|bike (tour|rental|circuit|route)/, 'e-bike'],
-  [/ferrata|climbing/, 'climbing'],
-  [/speedboat|motorboat|self-drive.*boat|boat (tour|trip|rental|hire|cruise)|\byacht|sailing|blue cave/, 'boat'],
-  [/\bfish(ing)?\b|charter/, 'fishing'],
-  [/wine|vinarij|vineyard|winery/, 'wine tasting'],
-  [/peka|cooking class|cook-your-own/, 'cooking'],
-];
-/** The big-highlight type for a place, or null if it's not a major (trackable) highlight. */
+// Only the MAJOR highlights worth balancing across days — the booked / time /
+// money / effort ones. Everything quick/free/ambient (eating, swimming,
+// cliff-jumping, snorkeling, viewpoints, town/sightseeing, plain nature,
+// scenic drives, dams) is deliberately NOT tracked. Gated by CATEGORY (so a
+// drive/dam/viewpoint named "...Canyon..." isn't counted) and matched on the
+// NAME only (ids + tags are too noisy and cause false hits).
 function activityType(p: PlaceWithOverride): string | null {
-  const hay = `${p.id} ${p.name} ${(p.tags ?? []).join(' ')}`.toLowerCase();
-  for (const [re, t] of HIGHLIGHT_KEYWORDS) if (re.test(hay)) return t;
   if (p.category === 'nightlife') return 'nightlife';
-  if (p.category === 'hike') return 'hiking'; // summits/canyon hikes = real time+effort
-  return null; // eat / swim / cliff-jump / view / sightseeing / nature / drive → ambient, not tracked
+  if (p.category === 'hike') return 'hiking'; // summits / canyon hikes = real effort
+  const n = p.name.toLowerCase();
+  if (p.category === 'food') {
+    if (/\bwine\b|vinarij|winery|vineyard/.test(n)) return 'wine tasting';
+    if (/peka|cooking class|cook[ -]your[ -]own/.test(n)) return 'cooking';
+    return null; // a meal = ambient
+  }
+  if (p.category !== 'activity') return null; // nature/beach/sight/viewpoint/town/other/sleeps
+  // category 'activity' → subtype; check SPECIFIC activities before the generic
+  // "canyon" (so "Tara Canyon rafting"/"Cetina Canyon Zipline" classify right).
+  if (/raft/.test(n)) return 'rafting';
+  if (/ferrata|rock.?climb|\bclimbing\b/.test(n)) return 'climbing';
+  if (/kayak|canoe/.test(n)) return 'kayaking';
+  if (/\bsup\b|paddle.?board|stand.?up.?paddle/.test(n)) return 'SUP';
+  if (/scuba|diving|dive cent/.test(n)) return 'diving';
+  if (/zip.?line/.test(n)) return 'zipline';
+  if (/paraglid/.test(n)) return 'paragliding';
+  if (/skydiv/.test(n)) return 'skydiving';
+  if (/\batv\b|buggy|quad|dirt.?bike/.test(n)) return 'ATV/buggy';
+  if (/e-?bike|cycling|\bbike\b/.test(n)) return 'e-bike';
+  if (/speedboat|motorboat|boat tour|boat trip|boat rental|boat hire|blue cave|\bcruise\b|\byacht\b/.test(n)) return 'boat';
+  if (/fishing|charter/.test(n)) return 'fishing';
+  if (/\bwine\b|vinarij|winery/.test(n)) return 'wine tasting';
+  if (/canyon/.test(n)) return 'canyoning'; // generic fallback, after the specifics
+  return null; // unrecognized 'activity' (e.g. a scenic toll road) → not tracked
 }
 
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
