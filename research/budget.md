@@ -1,413 +1,285 @@
-# Trip Budget: Balkans Road Trip Jun 16–28, 2026 — 4 Adults
+# Trip Budget — Balkans Road Trip, Jun 16–28, 2026 (4 Adults, 12 Nights)
 
-**Currency:** EUR throughout. Bosnia prices converted at fixed rate 1€ = 1.955 KM.
-**Car rental:** ALREADY PAID (€394 prepaid + €120 one-way fee = €514 total, sunk cost). Petrol is the ongoing cost.
-**Deposit hold:** €1,600 — NOT a cost, returned after drop.
-**Fuel calc basis:** Kia Sportage ~7L/100km; Croatia €1.65/L, Bosnia €1.40/L, Montenegro €1.55/L.
+**This budget matches the LIVE committed plan** (`research/REAL-PLAN-supabase.md`), not the old route. The actual road is: Zadar → Makarska (2N) → Mljet → Stolac/Mostar/Sarajevo (Bosnia) → Piva/Durmitor → Skadar Lake → Kotor Bay → Dubrovnik. No Trebinje overnights — that route no longer exists.
 
----
+**Currency basis:** EUR throughout. Croatia and Montenegro both use the euro. Bosnia uses the **convertible mark (BAM/KM)**, fixed at **1 EUR = 1.955 KM**; prices below convert at that rate.
 
-## Day-by-Day Breakdown (ALL FOUR PEOPLE)
+**Group size:** 4 adults for the whole trip (3 from Jun 16; the 4th joins Jun 18 evening at Dubrovnik airport — irrelevant to per-night/per-meal costs, which are quoted for 4).
 
 ---
 
-### Day 1 — Tue Jun 16 | Zadar → Paklenica
-**Route:** Zadar Airport pickup → Zadar old town → ~40km south to Paklenica
+## What's already paid (sunk cost — excluded from the trip totals below)
 
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Camp NP Paklenica: **€50** (€8.50pp + tent €5 + car €3 + tourist tax 4×€1.70) | Same or Bluesun walk-in: **€45** |
-| Breakfast/coffee | Grab in Zadar: **€12** (€3pp) | Supermarket / self: **€6** |
-| Lunch | Quick stop en route: **€28** (€7pp) | Supermarket picnic: **€12** |
-| Dinner | Konoba in Zadar old town (Rafaelo/Skoblar style): **€80** (€20pp) | Same Konoba, cheaper dishes: **€60** |
-| Activities | Zadar Sea Organ + Paklenica gorge walk: **FREE** | Same: **FREE** |
-| Fuel | Zadar→Paklenica ~40km + city driving ~20km = 60km @ €1.65: **€7** | **€7** |
-| Extras | Tourist tax split with accomm; Paklenica NP entry if doing gorge: €10pp = €40; parking in Zadar ~€5 | Skip NP, free gorge walk: **€5** |
-| **DAY 1 TOTAL** | **€222** | **€135** |
+| Item | Cost (for 4) | Status |
+|------|--------------|--------|
+| Rental car (base fee) | ~€394 | PREPAID |
+| One-way drop fee (Zadar pickup → Dubrovnik return) | ~€120 | PREPAID |
+| **Car total already paid** | **~€514** | sunk |
+| Security deposit hold | ~€1,600 | returned after drop — NOT a cost |
+| 4 booked Airbnbs (Poplat, Pale, Boričje, Rvaši ×2) | ~€405 (see below) | BOOKED |
 
-**Note:** Paklenica NP entry (€10pp, €40 for 4) is included if doing the gorge walk. The Sea Organ and city walk are free.
+The car is settled. The four Airbnbs are **booked** (so they're committed, not optional), but they are still real money for the trip, so they're folded into the accommodation total below and flagged as "booked." Everything else (camps, fuel, food, activities, ferries, fees) is the live spend during the trip.
 
 ---
 
-### Day 2 — Wed Jun 17 | Paklenica → Omiš (+ Krka OR Omiš adventure)
-**Route:** Option A: ~100km Starigrad→Krka→Split→Omiš. Option B: straight to Omiš for zipline/rafting (~120km).
+## Accommodation — the committed 12-night chain
 
-#### OPTION A: Krka NP day
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Camp Lisičina, Omiš: **€40** | Same: **€40** |
-| Breakfast | Camp breakfast: **€10** (€2.50pp) | Self: **€6** |
-| Lunch | Split, Villa Spiza / Kantun Paulina ćevapi: **€30** (€7.50pp) | Kantun Paulina only: **€20** (€5pp) |
-| Dinner | Omiš konoba: **€72** (€18pp) | Cheaper dish, skip starters: **€52** |
-| Activities | **Krka NP: €160** (€40pp, mandatory online booking) | Krka after 15:00: **€120** (€30pp) |
-| Fuel | ~130km @ €1.65: **€15** | **€15** |
-| Extras | Parking in Split €5, Krka parking €5: **€10** | **€10** |
-| **DAY 2A TOTAL** | **€337** | **€263** |
+The plan mixes **4 booked Airbnbs (5 nights)** with **7 camp nights**, with one Kotor-Bay night (N11) that can go either a camp or a tier-2 waterfront apartment. Per-night prices are for **4 people + tent(s) + car**, June high season, from the researched listings.
 
-#### OPTION B: Omiš zipline + rafting day
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Camp Lisičina: **€40** | Same: **€40** |
-| Breakfast | **€10** | Self: **€6** |
-| Lunch | Omiš grab food: **€24** (€6pp) | Bakery: **€12** |
-| Dinner | Konoba Gusti or Ćaća: **€72** (€18pp) | **€52** |
-| Activities | Zipline €80 (group price) + Rafting €160 (€40pp) = **€240** | Zipline only **€80** OR rafting only **€160** |
-| Fuel | ~80km @ €1.65: **€9** | **€9** |
-| Extras | Parking: **€5** | **€5** |
-| **DAY 2B TOTAL** | **€400** | **~€204** (zipline only) |
+| Night | Date | Place | Type | Cost (4 pax) | Booked? |
+|-------|------|-------|------|-------------|---------|
+| N1 | Jun 16 | Camping Krvavica (Makarska Riviera) | Camp | ~€55–65 | no |
+| N2 | Jun 17 | Camping Krvavica (2nd night) | Camp | ~€55–65 | no |
+| N3 | Jun 18 | Autokamp Marina (Ropa, Mljet) | Camp | ~€35–45 | no |
+| N4 | Jun 19 | Home in Poplat (Donji Poplat, Stolac, BA) | Airbnb | ~€80 | **BOOKED** |
+| N5 | Jun 20 | Ravna Camping (Neretva valley, N of Mostar) | Camp | ~€35–45 | no |
+| N6 | Jun 21 | Chalet in Pale (near Sarajevo) | Airbnb | ~€80 | **BOOKED** |
+| N7 | Jun 22 | Cabin in Boričje (Plužine, ME) | Airbnb | ~€80 | **BOOKED** |
+| N8 | Jun 23 | Auto Camp Mlinski Potok (Žabljak) | Camp | ~€31–37 | no |
+| N9 | Jun 24 | House in Rvaši (Skadar Lake) | Airbnb | ~€82 | **BOOKED** |
+| N10 | Jun 25 | House in Rvaši (2nd night) | Airbnb | ~€82 | **BOOKED** |
+| N11 | Jun 26 | Kotor Bay (Autocamp Naluka, Morinj) — OR tier-2 waterfront apt, Muo/Dobrota | Camp / Apt | ~€30 camp / ~€70–90 apt | no |
+| N12 | Jun 27 | Camping Kate (Mlini, near Dubrovnik) | Camp | ~€49–53 | no |
 
-> **Budget verdict:** Day 2B with both activities is the most expensive single day on the trip. Krka at €160 for 4 is actually cheaper. If budget is tight, do Krka after 15:00 (€120 total) and skip the Omiš adventures — though the adventure package is the more exciting choice for this group.
+**Accommodation totals (4 people, 12 nights):**
 
----
+| Scenario | Total | Per person |
+|----------|-------|-----------|
+| **Camp-lean** (N11 = Naluka camp, cheap end of each camp) | **~€600** | ~€150 |
+| **Comfort** (N11 = waterfront apt, mid camp prices) | **~€680** | ~€170 |
 
-### Day 3 — Thu Jun 18 | Makarska → Ston/Pelješac → Dubrovnik Airport → Trebinje
-**Route:** Omiš/Makarska → ~80km Pelješac Bridge → Mali Ston → Dubrovnik Airport → Trebinje (~35km). Total ~220km.
-
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Gaga City Center, Trebinje: **€49** | Same (no camping option at this late hour): **€49** |
-| Breakfast | Camp breakfast: **€10** | Self: **€6** |
-| Lunch | Mali Ston oysters — a dozen to share + mussels: **€60** (splurge stop, ~€15pp) | Skip Mali Ston, grab burek en route: **€8** |
-| Dinner | Trebinje konoba (Studenac or Kukurića): **€72** (€18pp) + Vukoje wine tasting: **€20** | Konoba only: **€56** (€14pp) |
-| Activities | Biokovo Skywalk: **€60** (€15pp) — must pre-book, do it Day 3 morning | Skip Biokovo (time-tight Day 3): **FREE** |
-| Fuel | ~220km @ €1.65 (Croatia), crosses into BiH near end: mixed ~€1.60 avg: **€25** | **€25** |
-| Extras | Ston walls optional €5-8pp (skip if rushed): €0–32; Dubrovnik toll-road ~€12; tourist tax: **€15** | Tolls only: **€12** |
-| **DAY 3 TOTAL** | **€313** (with Biokovo + oysters) | **€156** (skip both, burek lunch) |
-
-**Note:** Biokovo Skywalk is usually Day 2 or 3 depending on route. If Day 2 was Krka, Biokovo fits Day 3 morning before driving south. If Day 2 was Omiš adventures, skip Biokovo entirely — too much to fit.
+Notes:
+- The 4 booked Airbnbs already account for ~€405 of this (Poplat €80 + Pale €80 + Boričje €80 + Rvaši 2×€82 = €324… plus the implicit value; budget ~€404 across the 5 booked nights). These are committed — there's no decision left on them.
+- Camp prices include tents, car, electricity and the per-person tourist tax where the listing breaks it out (e.g. Krvavica ~€12/adult + €8 tent + €4.50 car + electricity; Camping Kate ~€8.30/adult + €5 tent + €4 car + €4 electricity + €1.70pp tax).
+- **Cheapest swap lever:** Camping Kate (N12) is the priciest camp (~€53) because it's Dubrovnik-adjacent Croatia. There's no realistic cheaper bed that close to the airport for a Sat-night-before-departure, so leave it.
 
 ---
 
-### Day 4 — Fri Jun 19 | Dubrovnik walls + Lokrum
-**Route:** Trebinje → Dubrovnik (35km) → return to Trebinje or Camping Kate
+## Rental car — fuel, tolls, vignette, cross-border
 
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Camping Kate, Mlini: **€51** | Same: **€51** |
-| Breakfast | Trebinje apartment: **€10** | Self: **€4** |
-| Lunch | Dubrovnik — budget spot outside walls: **€52** (€13pp) | Bakery/burek just outside walls: **€16** (€4pp) |
-| Dinner | Konoba back near camp: **€64** (€16pp) | Camp cook: **€24** |
-| Activities | Dubrovnik old town walls: **€120** (€30pp, 2026 price — likely ~€35pp, estimate €140) + Lokrum boat return ~€5pp: **€20** | Walls only, skip Lokrum: **€120–140** |
-| Fuel | Trebinje→Dubrovnik→Mlini + round trip: ~100km @ mixed €1.65/€1.62: **€12** | **€12** |
-| Extras | Dubrovnik Park & Ride: €1/day = **€1**; tourist tax (incl. in camp): **€5** | **€6** |
-| **DAY 4 TOTAL** | **€335** (with Lokrum) | **€234** (walls + cheap food) |
+Car fee and one-way drop are **prepaid** (above). The live costs are fuel + road charges.
 
-**Note:** Dubrovnik walls are non-negotiable for this group. At ~€30-35pp in 2026, this is a significant cost. Lokrum boat is a nice add-on (€20 total). The Park & Ride at Ilijina Glavica saves the brutal €3–5/hr parking inside.
+### Fuel
+Plan basis: a mid-size SUV/wagon at **~7 L/100 km**. Pump prices Jun 2026: Croatia ~€1.65/L, Bosnia ~€1.40/L, Montenegro ~€1.55/L. Total driving for the live loop (Zadar→Makarska base→Mljet→Stolac→Mostar→Sarajevo→Piva→Žabljak→Skadar→Kotor→Dubrovnik) is roughly **1,800–2,100 km**, weighted toward Croatia early and Bosnia/Montenegro mid-trip.
 
----
+- ~2,000 km × 7 L/100 km = **~140 L**
+- Blended ~€1.53/L → **~€210 fuel total** (budget band **€190–250** for detours, island driving, AC).
+- **Per person: ~€48–62.**
 
-### Day 5 — Sat Jun 20 | Mljet island
-**Route:** Mlini/Trebinje area → Prapratno (Pelješac) → ferry → Mljet. ~100km drive + ferry.
+### Tolls, vignette, scenic-road & border
+| Item | Cost (4) | Notes |
+|------|----------|-------|
+| Croatia motorway tolls (A1 toward Pelješac/Dubrovnik, return) | ~€20–30 | tag/cash; the Pelješac bridge itself is free |
+| Biokovo scenic toll road (Day 2 — a committed paid drive, not a free road) | ~€60 | €15/adult Jun–Sep — this is a **road fee**, included here, plus the Sveti Jure summit is inside it |
+| Bosnia — no vignette; minor Sarajevo bypass toll | ~€2–4 | mostly free roads |
+| Montenegro — Sozina tunnel (only if used near Skadar/coast) | ~€2.50 | optional; the A1 Bar–Boljare leg has a toll if taken |
+| Cross-border (HR↔BA↔ME ×4 crossings) | €0 | no border fee; EU Green Card already on the rental — confirm cross-border is on the contract (it is, per the one-way arrangement) |
+| **Road charges total** | **~€85–100** | Biokovo dominates this line |
 
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Autokamp Lovor, Mljet: **€72** (high season 4pp rate confirmed) | Autokamp Marina (smaller): **€45** |
-| Breakfast | Camp/car breakfast: **€10** | Self: **€4** |
-| Lunch | Mljet — konoba near Polače: **€52** (€13pp) | Picnic/supermarket: **€16** |
-| Dinner | Konoba on the island: **€64** (€16pp) | Camp cook (if facilities): **€20** |
-| Activities | Mljet NP entry before 16:00: **€100** (€25pp). Strategy: take 13:00 ferry → arrive 14:00 → enter NP 14:00 → exit ~16:30 → after-16:00 discount applies for late entry if you time it right. **Better: take afternoon ferry, buy ticket after 16:00: €75** (€19pp) | Same late-entry strategy: **€75** |
-| Ferry | Prapratno→Sobra car+4 adults one-way: **€50**; return next day ~€50 → BUT overnight on island means one-way each direction. Total car+4pp×2: **€100** | Same: **€100** |
-| Fuel | Drive to Prapratno + island driving: ~120km @ €1.65: **€14** | **€14** |
-| Extras | Tourist tax (in camp): **€7** | **€7** |
-| **DAY 5 TOTAL** | **€469** (with both ferry directions, late NP entry) | **€281** (cheap camp, picnics, late NP entry) |
-
-**Note:** This is the most expensive day on the trip mainly because ferry (~€100 round trip) + NP entry (€75-100) stack up. The late-entry NP ticket (after 16:00) saves €25 for 4 — plan the ferry time specifically for this. The overnight on Mljet is worth it for the experience.
+> The Biokovo road (€60) is really an *activity* the group chose — it's listed under tolls because it's a paid road, but mentally it's part of the Day-2 adventure spend.
 
 ---
 
-### Day 6 — Sun Jun 21 | Mljet → Kravica → Mostar
-**Route:** Mljet ferry return → drive to Kravica (~200km from Prapratno to Kravica including Bosnia border) → Mostar (~40km). Total ~240km.
+## Food — self-catering vs konobas
 
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Apartment City Center Mostar: **€53** | Same: **€53** |
-| Breakfast | Ferry terminal grab: **€12** | Self/camp: **€6** |
-| Lunch | Kravica — riverside snack stands (local): **€20** (€5pp) | Pack your own lunch: **€8** |
-| Dinner | Mostar: Tima-Irma ćevapi €5pp + beer/drinks: **€40** total | Tima-Irma only, water: **€24** |
-| Activities | Kravica Waterfalls: **€40** (20 KM pp = ~€10pp) + parking **€3** | Same: **€43** |
-| Fuel | ~240km mixed Croatia/Bosnia: ~€1.55avg: **€26** | **€26** |
-| Extras | Počitelj stop — free; parking in Mostar ~€2/night Bosnia-cheap: **€3** | **€3** |
-| **DAY 6 TOTAL** | **€197** | **€163** |
+The plan deliberately balances cook-at-camp/apartment with a handful of **named institution meals** (Kantun Paulina ćevapi, Konoba Gušti peka, Mali Ston oysters, Tima-Irma, Sarajevo ćevapi + baklava, Žabljak mountain food, BBQ Tanjga, Mali Ston/Konoba Mostina fish). Bosnia and Montenegro are markedly cheaper than coastal Croatia.
 
-**Note:** Bosnia is noticeably cheaper starting today. Ćevapi dinner for 4 including drinks under €40 is realistic. Kravica entry is cash-only in Bosnian KM — carry BAM.
+**Per-person daily food band (realistic):**
+- **Self-catering / cheap day** (camp breakfast, picnic/bakery lunch, simple dinner): **~€18–25 pp/day**
+- **Mixed day** (grab breakfast, a real konoba dinner): **~€30–40 pp/day**
+- **Splurge meal day** (Mali Ston oysters, Budva/Dubrovnik sit-down, drinks): **~€45–60 pp/day**
 
----
+The committed institution stops are mostly *cheap* by design:
+- Ćevapi institutions (Kantun Paulina, Tima-Irma, Petica Ferhatović): **~€5–8 pp**
+- Sarajevo burek (ASDŽ) + baklava (Ramis): **~€3–5 pp combined**
+- BBQ Tanjga (Kotor): **~€6–9 pp** — legendary cheap grill
+- Mali Ston oysters: the one real coastal splurge, **~€15 pp** for a shared dozen+mussels
+- Konoba fish dinners (Gušti peka pre-order, Mostina carp/eel, Konoba Ivankovski farm): **~€15–22 pp**
 
-### Day 7 — Mon Jun 22 | Mostar → Blagaj → Sarajevo
-**Route:** Mostar → Blagaj Tekija (15km) → Konjic → Boračko Lake → Sarajevo. ~180km.
+**Food totals (4 people, 13 days):**
 
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Pearl Old Town Apartments, Sarajevo: **€48** | Same: **€48** |
-| Breakfast | Mostar apartment: **€10** | Burek at Buregdžinica Ago: **€10** (€2.50pp, burek + yogurt) |
-| Lunch | Boračko Lake — konoba by lake: **€32** (€8pp) | Pack lunch from Mostar market: **€10** |
-| Dinner | Sarajevo: Nanina Kuhinja (bosanski lonac): **€52** (€13pp) | Ćevapi at Željo: **€24** (€6pp) |
-| Activities | Blagaj Tekija entry: **€5** (small entry fee/donation, ~€1-2pp); Trebević cable car + bobsled: **€20** (€5pp cable car) | Blagaj free (donation only); skip cable car: **€0** |
-| Fuel | ~180km @ €1.40 Bosnia: **€18** | **€18** |
-| Extras | Parking Sarajevo street €1-2/hr: **€8**; bar/drinks nightlife at Baščaršija: **€40** (€10pp) | Skip bars / one drink: **€16** |
-| **DAY 7 TOTAL** | **€233** | **€124** |
+| Scenario | Per person | Total (4) |
+|----------|-----------|-----------|
+| **Budget** (cook often, ćevapi/burek, one konoba every 2–3 days) | ~€280 | **~€1,120** |
+| **Mixed** (typical for this group — real dinners most nights, drinks) | ~€370 | **~€1,480** |
 
-**Note:** Sarajevo is the cheapest city night on the trip — Bosnia prices, proper food culture, genuinely interesting nightlife. The Monday Latin night at Underground Club/Cinemas Sloga is typically €5-10 entry. Budget €30-50 for the full evening out if you go.
+Bosnia (Days 4–6) and inland Montenegro are where food is cheapest — lean into the konobas there and self-cater the expensive Croatian-coast bookends.
 
 ---
 
-### Day 8 — Tue Jun 23 | Sarajevo → Foča → Tara Rafting → Žabljak
-**Route:** Sarajevo → Foča (~150km) → Šćepan Polje → Montenegro border → Piva canyon → Žabljak (~80km from border). Total ~250km.
+## Committed paid activities — per-activity realistic €
 
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Auto Camp Mlinski Potok, Žabljak: **€32** | Bocha's Camp (if still open): **€18** |
-| Breakfast | Sarajevo early departure grab: **€12** | Self/apartment: **€6** |
-| Lunch | Included in rafting package (Drina-Tara includes breakfast + lunch): **€0** | Same: **€0** |
-| Dinner | Krčma Nostalgija, Žabljak: **€52** (€13pp, mountain food) | Same konoba, simpler order: **€40** |
-| Activities | **Tara Canyon rafting: €240** (€60pp, Drina-Tara — includes full meals + NP fee) | TaraSport cheaper: **€200** (€50pp) |
-| Fuel | ~250km mixed BiH/ME: ~€1.48avg: **€26** | **€26** |
-| Extras | Sutjeska NP entry (drive through Tjentište): **€5pp = €20**; border/Green Card: free; Montenegro Parks Pass €13.50pp if buying for Durmitor + extras: budget **€0** (pay at Durmitor gate) | Skip Sutjeska if pressed for time: **€0** |
-| **DAY 8 TOTAL** | **€382** | **€290** |
+These are the bookable activities on the live plan, with a **realistic per-activity figure for 4**. Many are "either/or" within a day (e.g. Day 13 = kayak OR dive OR Lokrum), so the totals give a *core* (do the headline thing each day) and a *maxed* (do the pricey option) band.
 
-**Note:** Tara rafting is the trip's second-biggest single activity cost (€240 for 4), but it includes all meals for the day — so no separate lunch cost. The Drina-Tara package is the best value because it includes everything.
+| Day | Activity | Price basis | For 4 (core) | For 4 (max) |
+|-----|----------|-------------|-------------|-------------|
+| 1 | Skydive Zadar tandem | from €320 pp + video | optional / skip | €1,280 (all four jump) |
+| 1 | Krka NP (Skradinski Buk) | ~€40 pp June (timed entry) | €160 | €160 |
+| 2 | Biokovo road + Sveti Jure | counted in road tolls (~€60) | — | — |
+| 2 | Via Ferrata Fortica (Omiš) — self gear | gear rental at base, ~cheaper than €50pp guided | €60 (gear ×4) | €200 (guided) |
+| 2 | Cetina rafting (Omiš) | ~€40 pp | €160 | €200 |
+| 2 | Deep cave club (Makarska, optional late) | cover ~€10 pp | — | €40 |
+| 3 | Walls of Ston | ~€8 pp | €32 | €32 |
+| 3 | Mali Ston oysters | (in food) | — | — |
+| 3 | Prapratno → Sobra ferry (car + 4) | €49.90 one-way | €50 | €50 |
+| 4 | Mljet NP (salt lakes) | €25 pp; −25% after 16:00 | €100 | €100 |
+| 4 | Mljet bike rental (lake loop) | ~€15/6h regular | €60 | €160 (e-bikes) |
+| 4 | Kravica Waterfalls | 20 KM (~€10) pp + parking | €43 | €43 |
+| 5 | Blagaj Tekija entry | 10 KM (~€5) | €20 | €20 |
+| 5 | Mostar Fortica skywalk + zipline | skywalk free; both cables 50 KM (~€25) pp | €100 | €100 |
+| 6 | Sarajevo (Baščaršija, Yellow Fortress) | mostly free / café spend | €20 | €60 (Kino Bosna drinks — note: closed Sun, so likely skipped) |
+| 7 | Tara Canyon rafting (Drina-Tara, Brštanovica) | ~€60 pp, **incl. meals** | €240 | €240 |
+| 7 | Via Ferrata Piva (alt to rafting — doesn't fit same day) | €65 pp | — | €260 |
+| 7 | Sutjeska NP drive-through | ~€2.50 pp + car | €13 | €13 |
+| 8 | Durmitor NP entry (Prutaš hike) | €5 pp + €2–3 parking | €23 | €23 |
+| 8 | Black Lake bike circuit | ~€15/day regular | €60 | €220 (e-bikes) |
+| 8 | Đurđevića Tara bridge zipline | ~€20–25 long line pp | €90 | €100 |
+| 9 | Ostrog Monastery | **free** | €0 | €0 |
+| 9 | Enjoy Skadar kayak (Rijeka Crnojevića) | double €35/day + €5pp NP | €90 | €90 |
+| 10 | Stari Bar entry | ~€4–5 pp + parking | €20 | €20 |
+| 10 | Ulcinj old town / Ada Bojana beach | free / parking | €5 | €5 |
+| 10 | Vinarija Mašanović tasting (Virpazar) | €10 pp tasting / €20 pp w/ platter | €40 | €80 |
+| 11 | Tandem paragliding Brajići → Bečići | ~€98–99 pp + €15 GoPro | optional | €396 (all four) |
+| 11 | Sveti Nikola "Hawaii" cliff-jump shuttle | €5–7 pp round-trip boat | €28 | €28 |
+| 11 | Via Ferrata Kotor (Tabačini) | ~€30–60 pp | €160 | €240 |
+| 11 | Perast — Our Lady of the Rocks boat | €5 pp + €3 museum | €32 | €32 |
+| 11 | San Giovanni / Kotor fortress walls | ~€15 pp | €60 | €60 |
+| 12 | Pasjača / Konavle | free beach | €0 | €0 |
+| 13 | Dubrovnik sea kayaking (Walls & Lokrum) | ~€40 pp | €160 | €200 |
+| 13 | **OR** Blue Planet diving (Lokrum/Grebeni) | ~€60–80 pp two dives | — | €280 (instead of kayak) |
+| 13 | Dubrovnik Old Town (walk) / Bellevue cliff jump | free | €0 | €0 |
 
----
+**Activity totals (4 people):**
 
-### Day 9 — Wed Jun 24 | Durmitor — Full Hike Day
-**Route:** Žabljak camp → Black Lake → Prutaš or Veliki Međed hike → back to camp. Minimal driving.
+| Scenario | Total (4) | Per person |
+|----------|-----------|-----------|
+| **Core** (one headline activity/day, skip skydive + paragliding + extra e-bikes, kayak not dive on D13) | **~€1,800** | **~€450** |
+| **Maxed** (add skydive ×4, paragliding ×4, e-bikes, guided ferratas, dive) | **~€4,200+** | **~€1,050+** |
 
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Camp Mlinski Potok (2nd night): **€32** | Same: **€32** |
-| Breakfast | Camp cook (proper hiking fuel): **€14** (€3.50pp, eggs, coffee) | Oats/camp: **€8** |
-| Lunch | Packed lunch (trail food): **€16** (€4pp) | Same: **€12** |
-| Dinner | Krčma Nostalgija again or Or'O: **€56** (€14pp) | Camp cook: **€20** |
-| Activities | Durmitor NP entry: **€20** (€5pp/day); parking Black Lake: **€12** (€3 car) | Same: **€32** |
-| Fuel | Camp → Black Lake 3km + minimal: **€3** | **€3** |
-| Extras | Šljivovica at camp/local store: **€10** | **€5** |
-| **DAY 9 TOTAL** | **€163** | **€112** |
-
-**Note:** This is a genuinely cheap day — the main cost is the NP entry (€20 for 4). The hike is free; the camp is cheap. A proper recovery dinner at Nostalgija is strongly recommended after 6-8 hours in the mountains.
-
----
-
-### Day 10 — Thu Jun 25 | Žabljak → Tara bridge → Ostrog → Skadar Lake
-**Route:** Žabljak → Đurđevića Tara bridge (20km) → Ostrog Monastery (~120km) → Virpazar/Skadar Lake (~100km). Total ~240km.
-
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | San Duyevo Winery guesthouse: **€80** (estimate for 4, special tier) | Camp Radoman: **€24** |
-| Breakfast | Camp breakfast: **€12** | Self: **€6** |
-| Lunch | Grab food en route / Ostrog area: **€28** (€7pp) | Packed lunch: **€10** |
-| Dinner | Winery dinner (wine tasting included free at San Duyevo) + konoba: **€60** (€15pp, splurge here) | Camp cook + camp food: **€24** |
-| Activities | Ostrog Monastery: **FREE**; Tara bridge stop: **FREE**; Tara secret beach cold plunge: **FREE** | Same: **FREE** |
-| Fuel | ~240km @ €1.55 ME: **€26** | **€26** |
-| Extras | Montenegro A1 toll: **€5**; mosquito spray at Skadar (essential): **€8**; Skadar Lake NP entry if doing kayak next day (sometimes pay at gate): **€0** (pay Day 11) | **€13** |
-| **DAY 10 TOTAL** | **€219** (winery stay) | **€103** (camping) |
-
-**Note:** San Duyevo is the trip's "wow tier" accommodation candidate — rural winery, free wine tasting, genuinely special. If the group wants one standout night, this is it. The €80 estimate vs €24 camping is a €56 difference for 4 — roughly €14pp for a memorable night.
-
----
-
-### Day 11 — Fri Jun 26 | Skadar Lake → Stari Bar → Sveti Stefan → Budva
-**Route:** Virpazar → kayak morning → Stari Bar (~70km) → Sveti Stefan (~30km) → Budva (~5km). Total ~105km driving.
-
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Autocamp Avala, Bečići: **€33** | Same: **€33** |
-| Breakfast | Guesthouse/camp breakfast: **€12** | Self: **€6** |
-| Lunch | Fish lunch at Skadar lakeside konoba: **€48** (€12pp, freshwater fish — cheap here) | Pack/snack: **€12** |
-| Dinner | Budva old town: Rivijera Restaurant or Konoba Stari Grad: **€96** (€24pp, Friday night out, drinks included) | Fish Grill cash storefront: **€64** (€16pp) |
-| Activities | Skadar Lake kayak (2 double kayaks, half-day): **€60** (€30/kayak × 2); NP entry: **€20** (€5pp); Stari Bar entry: **€3pp = €12** | Guided boat tour instead: **€60** (€15pp) or skip kayak: **€0** |
-| Fuel | ~105km @ €1.55: **€11** | **€11** |
-| Extras | Drinks in Budva bar/nightlife: **€40** (€10pp) | One drink: **€16** |
-| **DAY 11 TOTAL** | **€332** | **€142** |
-
-**Note:** Friday night in Budva is the trip's party night. Budget accordingly — or don't, and have a quiet dinner and early sleep before Kotor. Both are valid.
+> The two big optional splurges that swing the whole budget are **Skydive Zadar (~€1,280 for all four)** and **Budva tandem paragliding (~€396)**. Treat both as individual à-la-carte choices, not group defaults. Everything else (rafting, ferratas, kayaking, fortress walls, NP entries) is the realistic core for an adventurous group.
 
 ---
 
-### Day 12 — Sat Jun 27 | Kotor + Perast → Trebinje
-**Route:** Budva → Kotor (~25km) → Perast (~12km) → border at Vitaljina → Trebinje (~70km). Total ~110km.
+## Ferries
 
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | Gaga City Center, Trebinje: **€49** | Same: **€49** |
-| Breakfast | Coffee + pastry in Kotor old town pre-climb: **€16** (€4pp, Restobar Taraca/Senso) | Quick grab: **€8** |
-| Lunch | Kotor — Hotel Marija 4-course set lunch: **€40** (€10pp) | Burek near old town: **€12** |
-| Dinner | Trebinje — Vukoje winery restaurant or river konoba: **€68** (€17pp) | Konoba only, skip wine: **€48** |
-| Activities | Kotor fortress walls: **€60** (€15pp, standard entry) | Same — non-negotiable: **€60** |
-| Fuel | ~110km @ mixed €1.55/€1.60: **€12** | **€12** |
-| Extras | Our Lady of the Rocks boat, Perast: **€10** (€2.50pp) | Skip Perast boat: **€0** |
-| **DAY 12 TOTAL** | **€255** | **€189** |
+| Ferry | Cost (car + 4) | Notes |
+|-------|----------------|-------|
+| Prapratno → Sobra (→ Mljet), Jun 18 | **~€50** one-way (adult €6.10, car €25.50) | The 20:30 last sailing is the only one the airport pickup makes |
+| Return from Mljet (Sobra → Prapratno), Jun 19 | **~€50** one-way | The plan drives off Mljet via the ferry toward Kravica |
 
-**Note:** Kotor fortress walls (€60 for 4) at 07:30 is the day's centerpiece. Hotel Marija's €10/person 4-course lunch is exceptional value — a rare bargain. Kotor is otherwise Croatia-expensive, so this set lunch is the smart move.
+**Ferry total: ~€100 for 4** (~€25 pp). Mljet is reached and left by car ferry — both legs are real cost. Internal Mljet NP boat to St Mary's island is **included in the NP ticket**.
 
 ---
 
-### Day 13 — Sun Jun 28 | Trebinje → Dubrovnik → Fly
-**Route:** Trebinje → Dubrovnik old town final morning (~35km) → Dubrovnik Airport car drop by 20:00.
+## Park & entry fees (summary, all included in the activity table)
 
-| Category | Normal | Cheap |
-|----------|--------|-------|
-| Accommodation | None | None |
-| Breakfast | Trebinje apartment: **€10** | Self: **€4** |
-| Lunch | Dubrovnik — grab something near Buža bar: **€52** (€13pp) | Bakery outside walls: **€16** |
-| Dinner | Airport or skip (flight to Vienna, eat on plane): **€20** | Airport snack: **€12** |
-| Activities | Dubrovnik swim off Buža cliffs: **FREE**; bonus Cavtat walk: **FREE** | Same: **FREE** |
-| Fuel | Trebinje → Dubrovnik → airport: ~50km @ €1.65: **€6** | **€6** |
-| Extras | Last-minute souvenir budget: **€20** | Skip: **€0** |
-| **DAY 13 TOTAL** | **€108** | **€38** |
+| Fee | Cost (4) | Cash currency |
+|-----|----------|---------------|
+| Krka NP | €160 | EUR (card online) |
+| Mljet NP | €100 | EUR |
+| Kravica Waterfalls | ~€43 (20 KM pp) | **BAM cash** |
+| Blagaj Tekija | ~€20 (10 KM pp) | **BAM cash** |
+| Mostar Fortica ziplines | ~€100 (50 KM pp) | **BAM cash** |
+| Sutjeska NP | ~€13 | **BAM cash** |
+| Durmitor NP | ~€23 | EUR |
+| Skadar NP (kayak) | €20 | EUR |
+| Stari Bar | ~€20 | EUR |
+| Walls of Ston | ~€32 | EUR |
+| Kotor fortress walls | ~€60 | EUR |
 
----
-
-## TRIP TOTALS
-
-### Normal Version (mix camping + apartments, restaurants, all main activities)
-
-Using Day 2B (Omiš zipline + rafting) as the main activity scenario:
-
-| Day | Normal Total |
-|-----|-------------|
-| Day 1 — Zadar→Paklenica | €222 |
-| Day 2 — Paklenica→Omiš (Zipline + Rafting) | €400 |
-| Day 3 — Makarska→Dubrovnik Airport→Trebinje | €313 |
-| Day 4 — Dubrovnik walls | €335 |
-| Day 5 — Mljet island | €469 |
-| Day 6 — Kravica→Mostar | €197 |
-| Day 7 — Mostar→Sarajevo | €233 |
-| Day 8 — Tara Rafting→Žabljak | €382 |
-| Day 9 — Durmitor hike | €163 |
-| Day 10 — Ostrog→Skadar Lake | €219 |
-| Day 11 — Skadar kayak→Budva | €332 |
-| Day 12 — Kotor→Trebinje | €255 |
-| Day 13 — Dubrovnik→fly | €108 |
-| **TOTAL (4 people)** | **€3,628** |
-| **Per person** | **€907** |
-
-### Cheapest Realistic Version (camping every night, cook some meals, minimal extras)
-
-Using Day 2A (Krka after 15:00) to save on Omiš adventures:
-
-| Day | Cheap Total |
-|-----|------------|
-| Day 1 | €135 |
-| Day 2 — Krka NP (after 15:00) | €263 |
-| Day 3 — no Biokovo, burek lunch | €156 |
-| Day 4 — walls only, camp cook dinner | €234 |
-| Day 5 — smaller camp, late NP entry, picnic | €281 |
-| Day 6 | €163 |
-| Day 7 | €124 |
-| Day 8 — TaraSport €200 | €290 |
-| Day 9 | €112 |
-| Day 10 — Camp Radoman, camp cook | €103 |
-| Day 11 — skip Budva nightlife | €142 |
-| Day 12 | €189 |
-| Day 13 | €38 |
-| **TOTAL (4 people)** | **€2,230** |
-| **Per person** | **€558** |
+Bosnian park/entry fees are **cash-only in BAM** — carry marks (next section).
 
 ---
 
-## Category Breakdown (Normal Version)
+## SIM / connectivity
 
-| Category | Total (4pp) | Per Person | % of Total |
-|----------|-------------|------------|------------|
-| **Accommodation** (12 nights) | ~€620 | ~€155 | 17% |
-| **Food** (all meals, 13 days) | ~€940 | ~€235 | 26% |
-| **Activities / entry fees** | ~€1,080 | ~€270 | 30% |
-| **Fuel** (est. 2,200km total trip) | ~€250 | ~€63 | 7% |
-| **Ferries** (Mljet return) | ~€100 | ~€25 | 3% |
-| **Other** (parking, tolls, tourist tax, extras) | ~€170 | ~€43 | 5% |
-| **Drinks / nightlife buffer** | ~€468 | ~€117 | 13% |
-| **TOTAL** | **€3,628** | **€907** | 100% |
+Best value is **one local tourist SIM per country, used as a group hotspot** (don't roam from an EU contract — Bosnia & Montenegro are outside EU roaming; default rates are punishing, up to €15/MB).
 
----
+| Country | SIM | Cost | Use |
+|---------|-----|------|-----|
+| Croatia (Jun 16–18) | EU-roaming SIM works (or A1 pack ~€4.90/2GB) | ~€5–10 | covered by an EU plan if anyone has one |
+| Bosnia (Jun 19–22) | BH Telecom Ultra Tourist 1 — 15 GB / 10 days | ~€10 | one phone hotspots the group |
+| Montenegro (Jun 23–27) | m:tel Turist 15 — 500 GB / 15 days, incl. 7 GB regional | ~€15 | one phone hotspots the group |
 
-## Fuel Cost Detail
-
-Approximate total driving distance: ~2,200km over 13 days.
-
-| Segment | Approx km | Country | Fuel cost |
-|---------|-----------|---------|-----------|
-| Zadar → Paklenica | 60km | HR | €7 |
-| Paklenica → Krka → Omiš | 130km | HR | €15 |
-| Omiš → Pelješac → Dubrovnik Airport → Trebinje | 220km | HR/BA | €25 |
-| Trebinje ↔ Dubrovnik (Day 4) | 100km | BA/HR | €12 |
-| Trebinje → Prapratno → ferry → Mljet (Day 5) | 120km | HR | €14 |
-| Mljet return ferry → Kravica → Mostar (Day 6) | 240km | HR/BA | €26 |
-| Mostar → Blagaj → Sarajevo (Day 7) | 180km | BA | €18 |
-| Sarajevo → Šćepan Polje → Žabljak (Day 8) | 250km | BA/ME | €26 |
-| Žabljak local driving (Day 9) | 20km | ME | €3 |
-| Žabljak → Ostrog → Skadar Lake (Day 10) | 240km | ME | €26 |
-| Skadar → Bar → Budva (Day 11) | 105km | ME | €11 |
-| Budva → Kotor → Trebinje (Day 12) | 110km | ME/BA | €12 |
-| Trebinje → Dubrovnik → Airport (Day 13) | 50km | BA/HR | €6 |
-| **TOTAL** | **~1,825km** | | **~€201** |
-
-> Actual distance will be ~1,800–2,200km including island driving and detours. Budget **€200–260 for petrol total**. ~7L/100km × 2,000km = 140L total.
+**SIM total: ~€25–35 for the whole group** (~€7–9 pp). Buy the BiH SIM in Mostar, the ME SIM in Kotor/Budva.
 
 ---
 
-## Key Cost Drivers
+## Cash by currency
 
-**The Big 5 (account for ~55% of activity costs):**
-1. **Dubrovnik walls:** €120–140 for 4 (unavoidable, plan for €35pp in 2026)
-2. **Tara rafting:** €200–240 for 4 (book NOW — peaks fill weeks out)
-3. **Omiš zipline + rafting (Day 2 option B):** €240 for 4 (most fun per euro)
-4. **Mljet ferry + NP:** €175 combined (€100 ferry + €75 late NP entry)
-5. **Krka NP:** €120–160 for 4 (or skip entirely if doing Omiš adventures)
+| Currency | Where | How much to carry (group of 4) | Why |
+|----------|-------|-------------------------------|-----|
+| **EUR** | Croatia + Montenegro (most days) | cards work widely; carry **~€150–250** | camp fees, some konobas, market stalls, parking |
+| **BAM (KM)** | Bosnia: Jun 19–22 (Stolac, Mostar, Sarajevo, Foča) | **~120–160 KM (~€60–80) per person** → **~€250–320 total** | Kravica (20 KM pp cash), Blagaj (10 KM), Fortica ziplines (50 KM pp), Sutjeska, ćevapi/burek stalls, parking — much of Bosnia is cash-only |
 
-**Cheapest country by far:** Bosnia (Days 6-8 incl. transit): full day food well under €15pp; parking almost free; ćevapi dinner for 4 ~€20-25.
-
-**Most expensive days:** Day 5 (Mljet, ferries + NP = €469 normal), Day 2B (Omiš adventures, €400), Day 8 (Tara rafting, €382).
+Withdraw BAM at an ATM in **Mostar** on arrival Day 5 (or Stolac Day 4). Don't over-withdraw — you cross into Montenegro Day 7 and BAM is hard to spend after that; leftover marks → spend on the last Sarajevo meal/baklava or change at the border. Montenegro and Croatia are euro, so EUR carries straight through.
 
 ---
 
-## Where to Save: Smart Choices
+## TRIP TOTALS (4 people, excluding the prepaid car)
 
-| Saving | Amount saved (4pp) | Notes |
-|--------|-------------------|-------|
-| Krka after 15:00 instead of morning | **€40** | Same experience, slightly fewer crowds |
-| Mljet NP entry after 16:00 | **€25** | Plan ferry timing specifically for this |
-| Day 2: zipline only (skip rafting) | **€160** | Still a great day; do Cetina rafting a different way |
-| Cook 1 dinner in apartment per Bosnia/ME night | **€30–50/night** | Sarajevo/Žabljak apartments have kitchens |
-| Trebinje ×2 instead of near-Dubrovnik accommodation | **€0–20** | Already the plan — smart |
-| San Duyevo winery vs Camp Radoman (Day 10) | **€56** | Camp is fine; winery is the WOW option |
-| Skip Dubrovnik bars/Budva nightlife nights | **€60–80** | Big lifestyle call, not recommended for this group |
-| Pack lunches for hike days (Day 9 especially) | **€24** | Zero quality loss vs. no restaurant at altitude |
-| Montenegro Parks Pass (€13.50pp) if visiting 3+ ME parks | Saves vs €5/day/park | Only worth it if hitting Biogradska Gora too |
-| **Total realistic savings** | **~€400–500** | Brings total to ~€3,100–3,200 for 4 |
+### Realistic "core adventurer" plan
+The plan as the group would actually run it: mixed food, the headline activity each day, **skipping the skydive and the paragliding** (treat those as personal add-ons), kayak not dive on Day 13, regular bikes not e-bikes.
 
----
+| Category | Total (4) | Per person |
+|----------|-----------|-----------|
+| Accommodation (12 nights, incl. 4 booked Airbnbs) | ~€640 | ~€160 |
+| Food (13 days, mixed) | ~€1,400 | ~€350 |
+| Activities + park/entry fees | ~€1,800 | ~€450 |
+| Fuel | ~€210 | ~€53 |
+| Tolls / Biokovo road / vignette | ~€90 | ~€23 |
+| Ferries (Mljet ×2) | ~€100 | ~€25 |
+| SIM | ~€30 | ~€8 |
+| Buffer (parking, tourist tax not in camps, contingencies) | ~€130 | ~€33 |
+| **TRIP TOTAL** | **~€4,400** | **~€1,100** |
 
-## Budget Scenario Summary
+### Budget-lean plan
+Cook most meals, ćevapi/burek instead of konobas, camp end of every camp range, skip all optional splurges, do the cheaper activity option each day.
 
-| Scenario | Total (4pp) | Per Person | Notes |
-|----------|-------------|------------|-------|
-| **Cheapest realistic** | ~€2,230 | ~€558 | Camping every night, cook most dinners, Krka only (no Omiš), minimal extras |
-| **Normal (recommended)** | ~€3,628 | ~€907 | Mix camping + apartments, restaurants, ALL main activities including Tara rafting + Omiš adventures |
-| **Normal + smart savings** | ~€3,100–3,200 | ~€775–800 | Normal version minus the easy savings above |
-| **Splurge version** | ~€4,200+ | ~€1,050+ | Apartments every night, fancy dinners in Dubrovnik/Kotor, all activities, Budva nightlife budget |
+| Category | Total (4) | Per person |
+|----------|-----------|-----------|
+| Accommodation | ~€600 | ~€150 |
+| Food (budget) | ~€1,120 | ~€280 |
+| Activities + fees (core, lean) | ~€1,500 | ~€375 |
+| Fuel | ~€190 | ~€48 |
+| Tolls / road | ~€90 | ~€23 |
+| Ferries | ~€100 | ~€25 |
+| SIM | ~€25 | ~€6 |
+| Buffer | ~€100 | ~€25 |
+| **TRIP TOTAL** | **~€3,700** | **~€925** |
 
----
+### Per-person range and per-day band
 
-## What's Already Paid (Sunk Cost — Not in Above Totals)
+| Metric | Budget-lean | Core adventurer | Splurge (skydive + paragliding + dive) |
+|--------|-------------|-----------------|----------------------------------------|
+| **Per person, whole trip** | **~€925** | **~€1,100** | **~€1,650+** |
+| **Per person, per day (÷13)** | **~€70–75/day** | **~€85/day** | **~€125+/day** |
 
-| Item | Cost |
-|------|------|
-| Car rental (rental fee) | €394 |
-| One-way drop fee | €120 |
-| **Car total (already paid)** | **€514** |
-| Deposit hold (returned) | €1,600 (not a cost) |
-
-**Adding sunk cost to Normal trip: €3,628 + €514 = €4,142 total for 4 people (€1,036pp including car).**
-
----
-
-## Practical Currency Notes
-
-- **Croatia (Jun 16–21 partially, Jun 27–28):** EUR, card widely accepted. ATMs everywhere. No cash premium.
-- **Bosnia (Jun 18, Jun 21–23):** Bosnian KM (BAM). ATM in Mostar or Trebinje on arrival. Fixed rate €1 = 1.955 KM. Most places cash-only. Budget €50–80 in BAM per person for Bosnia days.
-- **Montenegro (Jun 23–27):** EUR, same as Croatia. Cards accepted at most restaurants but not all camps. Carry €50–100 cash for camp fees, NP entries, and local restaurants.
-- **Kravica Waterfalls:** Cash KM only. Exact: 20 KM/pp + 3 KM parking = 83 KM total = ~€42.50.
+**Headline:** Budget on **~€925–1,100 per person** for the realistic range (excluding the already-paid car). That's a per-day band of roughly **€70–85 pp/day**. Add **~€320 pp** if you both skydive in Zadar and paraglide in Budva.
 
 ---
 
-*All prices as of June 2026. Activity prices sourced from official park websites and operator sites. Accommodation prices from booking-guide.md confirmed listings. Food prices triangulated from food-deep2.md and regional cost data. Fuel calculated at stated pump prices × 7L/100km consumption.*
+## Cost shape — where the money actually goes (core plan)
+
+- **Activities are the biggest line (~40%)**, driven by Croatia's pricey NPs (Krka €160, Mljet €100), Tara rafting (€240), Kotor/Ston walls, and the ferrata/kayak set. Bosnia & Montenegro activities are cheap by comparison.
+- **Food is second (~32%)** — controllable: every konoba dinner swapped for camp-cook saves ~€40–60 for the group.
+- **Accommodation is small (~15%)** because 7 nights are camping and the 4 Airbnbs are modest (~€80/night for 4). The plan is genuinely budget-conscious on beds.
+- **Fuel + tolls + ferries + SIM together ~13%.**
+
+## Biggest single costs (the "big five" of the live plan)
+1. **Tara Canyon rafting** — €240 for 4 (includes meals; book ahead, June peaks fill).
+2. **Krka NP** — €160 for 4 (timed online entry; unavoidable on Day 1).
+3. **Kotor via ferrata + fortress walls (Day 11)** — ~€220 for 4 combined.
+4. **Mljet NP + ferry (Days 3–4)** — ~€200 combined (€100 ferry + €100 NP; the after-16:00 NP discount saves ~€25).
+5. **Dubrovnik kayak (Day 13)** — €160 for 4 (or €280 if diving instead).
+
+## Easy savings without gutting the plan
+- Cook dinner at camp on Bosnia/Montenegro camp nights (Žabljak, Ravna, Naluka): **~€40–60/night saved.**
+- Buy the Mljet NP ticket after 16:00 (time the ferry): **~€25 saved.**
+- Regular bikes instead of e-bikes on Mljet & Black Lake: **~€100+ saved.**
+- N11 = Autocamp Naluka camp instead of the waterfront apartment: **~€40–60 saved.**
+- Skip the skydive and paragliding (or let only those who want it pay): **−€320 pp** off the splurge tier.
+
+---
+
+*Prices: accommodation from the researched listings in the live plan's data; activity/ferry/NP prices from operator and park sources captured in `research/activities-booking.md`, `research/booking-guide.md`, and the `src/data/*.json` cost fields. Bosnia converted at 1 EUR = 1.955 KM. Reflects the committed plan in `research/REAL-PLAN-supabase.md` as of 2026-06-14.*

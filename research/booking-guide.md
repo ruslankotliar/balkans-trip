@@ -1,692 +1,177 @@
-# Booking Guide — Balkans Trip Jun 16–28, 2026
+# Booking Guide — Balkans Trip Jun 16–28, 2026 (LIVE PLAN)
 
-**Written:** Jun 11, 2026 — trip starts in 5 days. Croatia coast nights (Jun 16–20) are the highest-risk: peak season started Jun 15 (Croatian school holidays). Book those first, today.
+**Regenerated:** Jun 14, 2026. This guide matches the **live committed plan** in `research/REAL-PLAN-supabase.md` — the Mljet-island / Stolac–Sarajevo–Piva–Durmitor–Skadar–Budva–Kotor loop. The old Trebinje-overnight route no longer exists; ignore any older draft.
 
----
+**What's already booked** (do NOT re-book): the 4 Airbnbs — **Poplat (Jun 19), Pale (Jun 21), Boričje (Jun 22), Rvaši (Jun 24 + 25)**. Everything below is what still needs reserving or confirming.
 
-## Quick-Reference Table
-
-| Urgency | Night | Sleep zone | Best option | Est. price (4p) | Link |
-|---------|-------|-----------|-------------|-----------------|------|
-| 🔴 BOOK NOW | Jun 16 | Paklenica/Starigrad | **Stone House Martelina** (WOW, €136) OR Camp NP Paklenica (walk-in, €45–55) | €45–136 | [Martelina direct](https://www.stonehousemartelina.com) · [NP camp walk-in](https://np-paklenica.hr) |
-| 🔴 BOOK NOW | Jun 17 | Omiš/Makarska | Auto Camp Lisičina (Omiš) | ~€35–45 | Contact direct: kamp-lisicina@inet.hr |
-| 🟡 BOOK TODAY | Jun 18 | Trebinje, Bosnia | Gaga City Center Airbnb | ~€49/night | [Airbnb listing](https://www.airbnb.com/rooms/1165836464333612445) |
-| 🔴 BOOK NOW | Jun 19 | Dubrovnik area | Camping Kate (Mlini) | ~€51/night | Contact: info@campingkate.com |
-| 🔴 BOOK NOW | Jun 20 | Mljet island | Autokamp Lovor (on island) | ~€39–45/night | Contact: +385 98 702 200 |
-| 🟠 THIS WEEK | Jun 21 | Mostar, Bosnia | Apartment City Center Mostar (Airbnb) | ~$53–60/night | [Airbnb listing](https://www.airbnb.com/rooms/14231459) |
-| 🟠 THIS WEEK | Jun 22 | Sarajevo OR Konjic | The Pearl / Old Town Pearl Apartments | ~€48–55/night | [Booking.com](https://www.booking.com/hotel/ba/old-town-pearl-apartments.en-gb.html) |
-| 🟢 FLEXIBLE | Jun 23 | Žabljak, Durmitor | Auto Camp Mlinski Potok | ~€32/night | minakamp@gmail.com / walk-in |
-| 🟢 FLEXIBLE | Jun 24 | Žabljak, Durmitor | Auto Camp Mlinski Potok (2nd night) | ~€32/night | Walk-in likely fine |
-| 🟢 FLEXIBLE | Jun 25 | Skadar Lake | Auto Camp Radoman (Virpazar) | ~€24–30/night | [Booking.com](https://www.booking.com/hotel/me/auto-camp-radoman.html) |
-| 🟢 FLEXIBLE | Jun 26 | Budva/Jaz Beach | **Camp Kunjic** (Jaz Beach, 4.16/5, 95 reviews) | ~€30–40/night | Walk-in or call: +382 69 055 555 |
-| 🟡 BOOK TODAY | Jun 27 | Trebinje or near DBV | Gaga City Center Airbnb (again) | ~€49/night | [Airbnb listing](https://www.airbnb.com/rooms/1165836464333612445) |
-
-**Color key:** 🔴 Croatia peak season coast = book today, may already be filling. 🟠 Bosnia cities in summer = some availability but confirm this week. 🟢 Montenegro inland = generally easier to walk in. 🟡 Trebinje = low-risk but book to avoid searching tired at midnight.
+**Top of the list, do first (peak Croatian season, small camps, island ferry):** Camping Krvavica (Jun 16–17), the Mljet ferry + Autokamp Marina (Jun 18), the Biokovo car slot (Jun 17), and the rental car's cross-border permit.
 
 ---
 
-## Night-by-Night Details
+## Priority Snapshot
+
+| Priority | Item | Date | Lead time | How |
+|----------|------|------|-----------|-----|
+| 🔴 NOW | **Rental car cross-border permit (BiH + ME)** | before Jun 16 | days | Call rental desk (Zadar pickup) for written authorization |
+| 🔴 NOW | **Camping Krvavica** (2 nights, N1–N2) | Jun 16–17 | now | Email/phone — small camp, peak season |
+| 🔴 NOW | **Biokovo toll-road car slot** | Jun 17 | now | Online only: shop.pp-biokovo.hr / biokovo.hrvi.hr |
+| 🔴 NOW | **Mljet ferry plan + Autokamp Marina** | Jun 18 | now | Marina: phone/form. Ferry: no car reso — arrive early |
+| 🔴 NOW | **Tara Canyon rafting** (4 pax) | Jun 22 | 1–2 wks (you're at the limit) | Email/WhatsApp Rafting Centar Drina-Tara |
+| 🟠 THIS WEEK | **Auto Camp Mlinski Potok** (Žabljak, N8) | Jun 23 | days | Pitchup online or email |
+| 🟠 THIS WEEK | **Ravna Camping** (Bijela / Mostar area, N5) | Jun 20 | days | Confirm operating + call ahead (no verified contact on file) |
+| 🟠 THIS WEEK | **Camping Kate** (Mlini, N12) | Jun 27 | days | Email/phone — small camp, no online booking |
+| 🟡 SOON | **Waterfront apartment Muo/Dobrota** (N11) | Jun 26 | days | Pick a specific 4.7★+ Airbnb/Booking listing — currently an area target, NOT booked |
+| 🟡 SOON | **Vinarija Mašanović** winery tasting | Jun 25 | 1–2 days | Phone/booking — reserve the ~18:00 slot |
+| 🟢 OPTIONAL | Rafting / via ferrata / ziplines / boat tours / kayak / diving / fishing | various | 1–3 days each | See per-day rows below |
+
+**Color key:** 🔴 do now (peak-season risk or hard lead time) · 🟠 confirm this week · 🟡 reserve soon · 🟢 optional adventure activity, book 1–2 days ahead once the day is locked.
 
 ---
 
-### Night 1 — Jun 16 (Tue): Paklenica / Starigrad area
+## Date-Ordered Checklist
 
-**Context:** Arrive Zadar ~10:00, full day. Options: Zadar old town → south toward Paklenica, OR go north to Velebit. Either way, sleep south of Zadar to be positioned for Jun 17 drive to Omiš. Paklenica area is 40 km south of Zadar.
+### Jun 16 (Tue) — Day 1 · Zadar → Split → Camping Krvavica
 
-**URGENCY: HIGH.** Croatian school holidays started Jun 15. Starigrad-Paklenica is a small town — accommodation fills fast in peak season.
+- 🔴 **SLEEP: Camping Krvavica** (also covers Jun 17 — book **2 nights**). Terraced pine/olive camp, 200 m to a quiet pebble beach (Ramova). Hot showers, electricity, WiFi, washing machine, BBQ; **cash only**, nearest ATM in Promajna.
+  - **Est:** ~€55–65/night for 4 + tent + car (June).
+  - **How:** Email **autocamp-krvavica.com** + call to confirm. Small (~30 pitches), peak season — reserve now. (park4night #10004)
+- 🟢 **Skydive Zadar — Beach Tandem (Adventure Driven Vacations)** — *optional, big-ticket*. From €320pp + video. If doing it, book an early-afternoon slot (~12:00–14:00). [adventure-driven-vacations.com](https://adventure-driven-vacations.com/tour/skydiving-zadar-tandem-jump/)
+- 🟢 **Krka NP (Skradinski Buk)** — book a timed entry ~11:30–12:00. [np-krka.hr]
+- ★ Car pickup ZAD 10:00; Duboka Draga cove; Kantun Paulina (Split ćevapi); Diocletian's Palace — no booking.
 
-**Option A (BEST): Camp "Nacionalni park" (inside Paklenica NP)**
-- **What it is:** The official NP camp, right on a pebble beach, 2 km from NP entrance. 90 person capacity, 4,000 m², pine shade, 11 sanitary blocks. Opens Mar 15.
-- **Key fact:** **NO RESERVATIONS ACCEPTED.** Walk-in only, first come first served.
-- **Risk:** Can fill completely in peak season. Review: "got one of the last spots, everything sardine-tight" (September visit). June is softer than July/August but the campsite is small.
-- **Action:** **Call at 08:00 on Jun 16 morning**: +385 (0) 23 369 452 to ask about space. If they confirm availability, go directly. If they're reporting full, switch to Bluesun.
-- **Price:** Check PDF price list at np-paklenica.hr; estimate ~€8–10/person + €5 tent + €3 car = **~€45–55 for 4**
-- **Address:** Dr. Franje Tuđmana 14a, 23244 Starigrad-Paklenica
+### Jun 17 (Wed) — Day 2 · Biokovo → Omiš via ferrata → Cetina rafting
 
-**Option B (WOW TIER): Stone House Martelina**
-- **What it is:** 100+ year-old stone house, fully renovated 2014, in a Natura 2000 hillside hamlet — 2.5 km from Starigrad center, 5 min drive to Paklenica NP entrance. 2 bedrooms, sleeps 4. Fireplace, terrace, BBQ, fresh garden vegetables. Sea views from the hill. Private and quiet.
-- **Rating:** 4.8/5 (22 reviews on Adriagate). Tagline: "unclench your teeth, unhunch your shoulders." Guest: "cosy house on the hillside with a nice view over the Adriatic sea."
-- **Price:** ~€136/night for 4 (June pre-peak). Slightly over target but the best WOW option in the area.
-- **Booking:** Direct via [stonehousemartelina.com](https://www.stonehousemartelina.com) or [Adriagate listing](https://www.adriagate.com/Croatia-en/Accommodation-57851). **Contact now** — calendars on 3rd-party sites may be outdated; email/call direct for availability.
-- **Why pick over camping:** You'll be hiking all day in the gorge. Coming back to a stone house on a hill beats a sardine tent.
+- 🔴 **Biokovo NP scenic toll-road car slot** — **online only, ~300 cars/day, books out.** Reserve the **~06:30 / 07:00** entry (first slots = empty road, cool, clear). €15/adult Jun–Sep (~€60 for 4). [shop.pp-biokovo.hr](https://shop.pp-biokovo.hr) / [biokovo.hrvi.hr](https://biokovo.hrvi.hr) · pricelist: [pp-biokovo.hr](https://pp-biokovo.hr/en/plan-your-visit/pricelist)
+- 🟢 **Via Ferrata Fortica — Omiš** — start ~07:30–08:00 before the rock bakes. Gear rental at base (~€50pp guided). [ferratago.com/fortica-omis](https://www.ferratago.com/fortica-omis/)
+- 🟢 **Cetina River Rafting (Omiš)** — take the **afternoon** departure if this is the main Cetina activity. ~€35–50pp. Book 1–2 days ahead. [getyourguide.com Omiš rafting](https://www.getyourguide.com/omis-l2096/rafting-on-cetina-river-from-omis-t35592/)
+- 🟢 **Makarska — Deep cave club / Osejava cliffs** — optional late night ~23:00–02:00, walk-in.
+- 🛌 **SLEEP: Camping Krvavica** (night 2 of the 2-night booking above).
+- ★ Sveti Jure summit (covered by Biokovo slot); Konoba Gušti (Omiš peka — **pre-order** the peka by phone the day before).
 
-**Option C (BACKUP CAMPING): Bluesun Camping Paklenica**
-- **What it is:** Larger private campsite, 95 standard + 6 superior sea-view pitches + 68 more. Pine forest, beach bar, Dalmatian restaurant, grocery. More resort-like.
-- **Booking:** Online via Booking.com — this one accepts reservations. **Book now if you want certainty.**
-- **Price:** Starts ~€35+ per pitch; expect **€45–65 for 4 with tent** in late June (rates not final until you enter dates)
-- **Link:** [Booking.com — Bluesun Camping Paklenica](https://www.booking.com/hotel/hr/bluesuncamp-paklenica.html)
-- **Phone:** +385 13 844 288 (Bluesun Reservation Center)
+### Jun 18 (Thu) — Day 3 · Ston → Dubrovnik airport pickup → Mljet ferry
 
-**Notes:**
-- If you stay in Zadar proper the first night instead (sea organ sunset), any Zadar apartment works — plenty of options, search Airbnb for Zadar June 16 with 4 guests. Move to Paklenica the following evening.
-- Drive Zadar → Paklenica is ~40 min.
+- 🔴 **Mljet ferry — Prapratno → Sobra, Jadrolinija line 832.** Target the **20:30 last sailing** (the only one that works after the airport pickup). **Cars are first-come-first-served — no car reservation exists.** Arrive **60+ min early.** ~€50 for car + 4 adults (adult €6.10, car €25.50). Check the 2026 timetable before driving. [jadrolinija.hr line 832](https://www.jadrolinija.hr/en/travel/prapratno_peljesac_-_sobra_mljet)
+- 🔴 **SLEEP: Autokamp Marina (Ropa, Mljet)** — small, quiet, tent-friendly, ~10 olive-shaded terraced pitches, closest camp to the NP side. Hot showers, shared kitchen + fridge, electricity.
+  - **Est:** ~€35–45/night for 4 + tent.
+  - **How:** Phone **+385 20 745 071** / mob **+385 98 915 56 76**. Confirm a late arrival (you land on Mljet ~21:15 after the last ferry). (park4night #53353)
+- ★ Walls of Ston (~10:00–11:30); Mali Ston oysters (~11:45 lunch); Kobaš bay; Dubrovnik Airport pickup — **be parked by ~17:10**, roll out ~17:45. Then drive to Prapratno for the 20:30 ferry.
 
----
+### Jun 19 (Fri) — Day 4 · Mljet NP → Kravica → Počitelj
 
-### Night 2 — Jun 17 (Wed): Omiš or Makarska Riviera
+- 🟢 **Mljet NP lake-loop bike rental (Radulj / Mali Most)** — **arrange the night before** for an ~08:00–08:15 pickup. ~€15/6h regular (~€60–80 for 4); e-bikes more. [mljettravel.com/rental](https://www.mljettravel.com/rental/)
+- **Mljet NP entry** — €25/adult June (−25% after 16:00); pay at the gate or online. Enter at gate opening ~07:30–08:00 for calm, empty lakes. [np-mljet.hr/price-list](https://np-mljet.hr/price-list/?lang=en)
+- ★ Montokuc viewpoint; Odysseus Cave cliff-jump; Kravica Waterfalls (~15:45–16:00 arrival is fine); Počitelj — no advance booking.
+- 🛌 **SLEEP: Home in Poplat — ALREADY BOOKED** (Airbnb). No action.
 
-**Context:** Day plan is Omiš Extreme Canyoning OR Cetina Zipline (book 1–2 days ahead). Cetina swimming hole (Radmanove Mlinice) for the afternoon. Sleep at Omiš or down toward Makarska Riviera, positioned for Jun 18 drive to Dubrovnik. Note: Krka NP is NOT on this route (€40pp boardwalk, no swimming since 2021).
+### Jun 20 (Sat) — Day 5 · Stolac → Blagaj → Mostar → Ravna Camping
 
-**URGENCY: HIGH.** Makarska Riviera is peak Croatia in late June. Campsites here are small and family-run.
+- 🟢 **Fortica Hill — Skywalk & Zipline (Mostar)** — skywalk free; both zipline cables 50 KM (~€25pp); via-ferrata gear 5–10 KM. Late afternoon ~16:15–17:30. Operator: **ZIPLine Fortica**, Tekija 73A. [zipline.ba/price-list](https://zipline.ba/price-list/)
+- 🟠 **SLEEP: Ravna Camping** (Mostarska Bijela area, ~11 km N of the canyons — the direct camp, no late-night backtrack into Mostar). Arrive **~19:00 with daylight** to pitch tents.
+  - **Caution:** no verified phone/website on file. **Call ahead this week to confirm it's operating in 2026 and holds a spot;** if unreachable, line up a Mostar/Konjic fallback. Arrive with daylight regardless.
+- ★ Stolac old town; Blagaj Tekija; Buna River swim; Mostar Stari Most; Tima-Irma (ćevapi); Mostarska Bijela cave-canyon waterfall — no booking.
 
-**Option A (TOP PICK): Auto Camp Lisičina — Omiš**
-- **What it is:** Well-regarded small family campsite in the heart of Omiš Riviera. Kitchen, hot showers, electric hookups. Open year-round.
-- **Location:** Omiš, halfway between Split and Makarska. Beach 10-min walk, historic center 5 min.
-- **Price:** From ~€22/night base, estimate **€35–45 for 4 with tent** in June
-- **Booking:** **Email or call directly — no online booking system.** Send inquiry with: arrival/departure dates, 4 adults, tent size, 1 car.
-  - Email: kamp-lisicina@inet.hr
-  - Phone: +385 95 5123 473
-- **Do today:** Send email + follow up by phone. Ask if they have space Jun 17 and whether they need a deposit.
-- **Park4night:** [Listing #56665](https://park4night.com/en/place/56665)
+### Jun 21 (Sun) — Day 6 · Diva Grabovica / Drežnica → Sarajevo
 
-**Option B (BACKUP): Camping Krvavica**
-- **What it is:** Small family-owned camp in the heart of Makarska Riviera, 6 km from Makarska. Pine trees, terraced pitches, 100 m from sea. Highly rated for cleanliness.
-- **Location:** Krvavica 101a, 21320 Krvavica (further south, more toward Makarska)
-- **Booking:** Email first, they accept advance requests
-  - Email: autocampkrvavica@gmail.com
-  - Phone: +385 91 526 7058
-- **Important caveat:** Reviews mention management can be unresponsive to booking requests. Call as well as email. Cash only on arrival.
-- **Price:** Estimate **€35–55 for 4** in June (summer 2026 price list exists on their site)
-- **Website:** [autocamp-krvavica.com](https://www.autocamp-krvavica.com/)
+- ★ Diva Grabovica valley; Drežnica/Drežanka canyon; Crni Vir waterfall; Sarajevo Baščaršija (burek at ASDŽ, ćevapi at Petica Ferhatović, baklava at Ramis); Žuta tabija sunset — no booking.
+- ⚠️ **Kino Bosna — do NOT plan for tonight.** Day 6 is a **Sunday** and Kino Bosna's signature night is Monday. Skip it tonight.
+- 🛌 **SLEEP: Home in Pale — ALREADY BOOKED** (Airbnb). No action.
 
-**Option C (WOW TIER — call to verify): Oak House Zadvarje**
-- **What it is:** Whole rural property in Zadvarje village (Biokovo inland, ~20 min from Makarska, ~25 min from Omiš). 3 bedrooms, mountain views, garden, BBQ. 98% guest rating (14 reviews). Stone village house — the best character option found in this corridor.
-- **Price:** Unknown — call directly before assuming it's available or affordable.
-- **Action:** **Call today** — +385 98 980 9505 or +385 97 764 0883. Ask: available Jun 17 (1 night), 4 adults, price. If available and ≤€130, book immediately.
-- **Alternative:** Old House Lapis (also Zadvarje) — 120-year-old stone house with pool, ~€130–160. Airbnb: [rooms/858721671716864744](https://www.airbnb.com/rooms/858721671716864744). Check Jun 17, 4 guests; verify 1-night minimum and max occupancy for 4.
-- **Zadvarje context:** A village 15km inland from Makarska — quieter and 4–5°C cooler. Great if you've had a hot canyoning day on Cetina.
+### Jun 22 (Mon) — Day 7 · Trebević → Tara rafting → Piva Canyon
 
-**Notes:**
-- Makarska Riviera is a major Croatian resort area. Do not arrive and hope to find a pitch on a random walk-in in peak season — these are small camps.
-- Krvavica is ~20 km further south than Omiš. If sleeping Krvavica, you're perfectly positioned for the Biokovo/Punta Rata morning before driving to Dubrovnik on Jun 18.
+- 🔴 **Tara Canyon rafting — Brštanovica section (4 adults).** **Morning slot — arrive ~10:15–10:30 for the 11:30 launch.** Peak-June water is high/fast/cold — most adrenaline. Books 1–2 weeks ahead; you're at the limit, book now.
+  - **Est:** ~€60pp = ~€240 for 4.
+  - **How:** Email/WhatsApp **Rafting Centar Drina-Tara** ([raftingtara.com](https://raftingtara.com)) or **TaraSport** ([tarasportrafting.com](https://tarasportrafting.com)) / Blue River Tara ([bluerivertara.me](https://bluerivertara.me)). Ask for Jun 22, 4 adults, 1-day trip with meals.
+- ⚠️ **Via Ferrata Piva** — **does NOT fit a rafting day** at its default 08:00 start. Flag/skip, or only if you drop rafting. (€65pp groups; new 2024 route. [viaferratapiva.me](https://viaferratapiva.me/en/blog/via-ferrata-piva-guide/))
+- ★ 1984 Olympic Bobsled track; Gradac viewpoint; Šćepan Polje → Piva Canyon drive; Mratinje Dam; Piva Lake swim — no booking.
+- 🛌 **SLEEP: Home in Boričje — ALREADY BOOKED** (Airbnb). No action.
 
----
+### Jun 23 (Tue) — Day 8 · Prutaš summit → Black Lake → Tara bridge zipline
 
-### Night 3 — Jun 18 (Thu): After airport pickup → Trebinje, Bosnia
+- 🟠 **SLEEP: Auto Camp Mlinski Potok (Žabljak)** — top-rated tent camp at 1,472 m, ~15 min walk to Black Lake (i.e. walkable to trailheads). Hot showers (new block), communal kitchen, washing machine, WiFi, campfire. **Bring warm sleeping bags — cold mountain nights.**
+  - **Est:** à-la-carte (adult €5 + big tent €4 + car €3 + elec €2.50 + tax €1.20pp) → **~€31–37/night for 4.**
+  - **How:** **Pitchup** (binding online, 15% deposit, instant confirm): [pitchup.com — Mlinski Potok](https://www.pitchup.com/en-us/campsites/montenegro/northern/zabljak/pitomine/autocamp_mlinski_potok/) · or email **minakamp@gmail.com** / phone **+382 69 821-730**. Walk-in usually fine in June, but booking removes stress. [autocampmlinskipotok.com](https://autocampmlinskipotok.com/en/)
+- 🟢 **Black Lake bike circuit (Durmitor Adventure)** — grab bikes ~08:00 for a cool-morning ride. Rental from ~€15/day. [durmitoradventure.com](https://durmitoradventure.com/e-mountain-biking/)
+- 🟢 **Đurđevića Tara Bridge zipline** — late afternoon ~16:00–17:30 (open till 19:00). ~€20–25 long line; walk-up, no advance booking needed. [montenegropulse.com](https://www.montenegropulse.com/durdevica-tara-bridge.html)
+- ★ Prutaš (2393m) — trailhead 06:30, off the summit ridge by ~12:00 (afternoon storms); Vražje jezero; Katun Lokvice; Restaurant Or'O — no booking.
 
-**Context:** Pick up 4th person at Dubrovnik airport (Čilipi) evening. The airport is 20 km SOUTH of Dubrovnik. Head east into Bosnia (Trebinje is only 30 km from the airport). This is the smart move: avoids doubling back, cheap, positions you for the loop.
+### Jun 24 (Wed) — Day 9 · Ostrog → Skadar Lake (Rijeka Crnojevića)
 
-**URGENCY: MODERATE.** Trebinje is not a major tourist hub — availability is better than the Croatian coast. But book now to avoid hunting at 22:00.
+- 🟢 **Enjoy Skadar Lake kayak base (Rijeka Crnojevića)** — best as a **calm-water morning paddle.** Single €7/h or €25/day; double €10/h or €35/day; + €5pp NP entry. [enjoyskadarlake.com/kayak](https://enjoyskadarlake.com/kayak.html)
+- ★ Ostrog Monastery (~08:00–08:30 arrival, first thing); Karuč + Karučko Oko; Konoba Mostina (Skadar carp/eel, ~€12–20pp); Pavlova Strana viewpoint — no booking.
+- ⚠️ **Mosquitoes at Skadar dusk are the worst on the trip** — bring DEET.
+- 🛌 **SLEEP: Home in Rvaši — ALREADY BOOKED** (Airbnb, night 1 of 2). No action.
 
-**Option A (TOP PICK): Gaga City Center — Trebinje**
-- **What it is:** Entire apartment, centrally located, 5-star rated, 40 reviews. Steps from old town.
-- **Price:** ~$49/night entire unit (confirmed from Airbnb 2025 listing)
-- **Fits 4:** Yes (check listing for exact guest count)
-- **Link:** [Airbnb — Gaga City Center](https://www.airbnb.com/rooms/1165836464333612445)
-- **Do now:** Check if available Jun 18–19 (one night). If so, book immediately.
-- **Note:** Also check Jun 27 for the return night.
+### Jun 25 (Thu) — Day 10 · Stari Bar → Ulcinj → Ada Bojana → Virpazar winery
 
-**Option B: General Trebinje search**
-- [Airbnb Trebinje all listings](https://www.airbnb.com/trebinje-bosnia-and-herzegovina/stays) — filter by 4 guests, check Jun 18
-- [Booking.com Trebinje apartments](https://www.booking.com/apartments/city/ba/trebinje.en-gb.html)
-- Budget target: €30–50 for 4 in Trebinje (cheap by any standard)
+- 🟡 **Vinarija Mašanović (Virpazar)** — reserve the **~18:00 late-afternoon/sunset tasting** (Vranac & Kratošija). Tasting €10pp; €20pp with the food platter. Call/book 1–2 days ahead. [winery-masanovic](https://www.tripadvisor.com/Attraction_Review-g1232143-d6819135-Reviews-Wine_tasting_Winery_Masanovic-Virpazar_Bar_Municipality.html)
+- ★ Stari Bar fortress town; Ulcinj Old Town + Mala Plaža; Ada Bojana — no booking.
+- 🛌 **SLEEP: Home in Rvaši — ALREADY BOOKED** (Airbnb, night 2 of 2). No action.
 
-**Option C (fallback camp): Near Dubrovnik airport**
-- If you want to skip driving to Trebinje at night: Camping Kate (Mlini, 10 km south of Dubrovnik) is also close to the airport. See Night 4 details.
-- Only use this if the group arrives very late or is too tired to drive 30 min to Trebinje.
+### Jun 26 (Fri) — Day 11 · Lovćen/Njeguši → Budva → Kotor
 
-**Driving note:** Dubrovnik Airport → Trebinje is ~35–40 min via the coastal road and border (quick crossing at Ivanica). Simple and well-signed.
+- 🟡 **SLEEP: Waterfront apartment — Muo / Dobrota (Kotor Bay, tier-2)** — **NOT booked yet; this is an area target, not a verified listing.** Sea-view apartments line the bay shore; short walk/drive to Kotor old town so you can walk back from the bars.
+  - **Est:** ~€40–60 for 4.
+  - **How:** **Pick a specific 4.7★+ listing** on Airbnb ([Muo beachfront](https://www.airbnb.com/muo-montenegro/stays/beachfront) / [Dobrota waterfront](https://www.airbnb.com/dobrota-montenegro/stays/waterfront)) or Booking and reserve. Friday on the Montenegrin coast is busy — do this soon.
+- 🟢 **Tandem Paragliding Brajići → Bečići (GO2FLY / Budva)** — late afternoon ~16:00–17:00 for the best thermals. ~€98–99pp standard. [go2fly.me](https://go2fly.me/en/locations-and-prices/)
+- 🟢 **Sveti Nikola Island ("Hawaii") cliff jumping (Budva)** — ~16:00–18:30. Shuttle boat ~€5–7 round trip, walk-up. [adriaticways.com](https://adriaticways.com/sveti-nikola-island-budva/)
+- 🟢 **Via Ferrata Kotor (Vrata na Tabačini)** — early morning ~08:30–09:00. ~€30–60pp. (Mixed reviews on the owner; book direct or guided.) [ferrataguide.com](https://ferrataguide.com/en/ferrata/Ferrata_Kotor)
+- ★ Budva Old Town; Kafana Kod Pera (Njeguši pršut); BBQ Tanjga; San Giovanni Fortress hike; Perast; Club Maximus — no booking.
 
----
+### Jun 27 (Sat) — Day 12 · Pasjača → Konavle → Camping Kate (Dubrovnik area)
 
-### Night 4 — Jun 19 (Fri): Dubrovnik area
+- 🟠 **SLEEP: Camping Kate (Mlini, near Dubrovnik)** — small family camp 10 km S of Dubrovnik, on the Day-13 path. Hot showers, electricity, WiFi, laundry; pebble beach via 160 steps; **Bus #10 to Dubrovnik 200 m away** (last bus back 23:50 wk / 01:30 wknd) so no city parking.
+  - **Est:** ~€49–53/night for 4 (adults €8.30 + tent €5 + car €4 + elec €4 + tax €1.70pp).
+  - **How:** **No online booking — contact direct.** Email **info@campingkate.com** + phone **+385 20 487 006**. Small camp, Saturday peak — reserve this week. [campingkate.com/price](https://campingkate.com/price/)
+- 🟢 **Konoba Ivankovski (Konavle farm konoba)** — **peka must be pre-ordered ~24h ahead** by phone (no website). [visit.cavtat-konavle.com listing](https://visit.cavtat-konavle.com/en/rural-tourism/show/6/konoba-ivankovi)
+- ⚠️ **Blue Cave private speedboat (Speed Boat Montenegro)** — **does NOT fit Day 12; flag/skip.** Earliest 09:00 tour doesn't slot in. ([speedboatmontenegro.com](https://speedboatmontenegro.com/boat-tours/blue-cave-private-tour-6-people/))
+- ★ Pasjača Beach (Konavle cliffs) — no booking.
+- ⚠️ **ME → HR border:** prefer the smaller **Vitaljina/Karasovići** crossing (~15–45 min) over Debeli Brijeg, which has long EES biometric queues in peak season.
 
-**Context:** Day plan — Dubrovnik old town (walls at 08:00 before cruise wave), Lokrum boat, beach. Sleep somewhere near Dubrovnik without paying Dubrovnik prices.
+### Jun 28 (Sun) — Day 13 · Dubrovnik activities → car drop & fly
 
-**URGENCY: HIGH.** Dubrovnik accommodation is among the most expensive and sold-out locations in Croatia. Avoid the city center for budget sleeping.
-
-**Option A (TOP PICK): Camping Kate — Mlini**
-- **What it is:** Small family campsite 10 km south of Dubrovnik, 15 km north of Cavtat. On the way to/from the airport. Pebble beach nearby, pine trees, good facilities.
-- **Price (June, Category B — May 1 to Jul 19):**
-  - 4 adults × €8.30 = €33.20
-  - Tourist tax: 4 × €1.70 = €6.80
-  - Large tent: €7.00
-  - Car: €4.00
-  - **Total: ~€51/night for 4**
-- **Booking:** Contact direct — no confirmed online booking; they likely do email/phone
-  - Phone: +385 20 487 006
-  - Email: info@campingkate.com
-- **Do today:** Email or call to ask if they take reservations for Jun 19 (peak season, small camp)
-- **Website:** [campingkate.com](https://campingkate.com/)
-- **Bus to Dubrovnik:** Local bus line connects Mlini to Dubrovnik, so no need to drive/pay parking in the city.
-
-**Option B: Camping Solitudo — Dubrovnik**
-- **What it is:** Only campsite ON the Dubrovnik Lapad peninsula. 400 pitches, all have electricity. Very convenient for the old town (10 min drive). Managed by Valamar.
-- **Price:** Expect **€60–80+ for 4 in peak June** (Valamar is corporate-priced). Reviews mention €60 for just 2 people in August.
-- **Booking:** Can only be booked by phone: +385 (0)52 465 010. Call hours Mon–Sun 08:00–20:00.
-- **Link:** [Camping Solitudo](https://www.valamarcamping.com/solitudo-camp-dubrovnik)
-- **Verdict:** More convenient, more expensive. If budget matters, Camping Kate at €51 is better value.
-
-**Option C: Apartment near airport (Čilipi/Konavle area)**
-- If you stayed in Trebinje Jun 18, you could stay in Trebinje again Jun 19 (no re-driving) and do Dubrovnik as a day trip from there. Trebinje is 35–40 min from Dubrovnik old town. Cheaper, quieter.
-- This works if the group doesn't want 2 camp nights in a row.
+- 🟢 **Dubrovnik Sea Kayaking — Walls & Lokrum** — **10:00 departure, back ~13:00**, leaves the afternoon for the flight. ~€35–50pp, ~8 km paddle. [tripadvisor product](https://www.tripadvisor.com/AttractionProductReview-g295371-d12560650-Dubrovnik_and_Lokrum_island_sea_kayak_tour-Dubrovnik_Dubrovnik_Neretva_County_Dalm.html)
+- 🟢 **Blue Planet Diving Center (Dubrovnik — Lokrum & Grebeni wrecks)** — *alternative to kayaking.* Morning dive (check-in 09:00, back ~12:15). No verified contact on file — book direct via the operator's site once chosen.
+- 🟢 **Lokrum island** — if choosing Lokrum over a guided activity, catch an early boat (walk-up tickets at the old port).
+- ⚠️ **Glorijet (Gruž fish market) is closed Sunday** — use **Barba** (Old Town seafood street food) instead.
+- ★ Bellevue/Miramare cliff jumping; Dubrovnik Old Town; Peppino's Gelato — no booking.
+- ★ **Dubrovnik Airport (Čilipi)** — car drop & fly. No accommodation needed tonight.
 
 ---
 
-### Night 5 — Jun 20 (Sat): Mljet island
+## Pre-Departure Logistics (not date-pinned)
 
-**Context:** Car ferry Prapratno (on Pelješac peninsula) → Sobra (Mljet). NP lakes swim, Montokuc viewpoint. Overnight on the island.
-
-**URGENCY: HIGH.** Saturday night in peak Croatia, island location, limited beds. Book now.
-
-**FERRY FIRST — Critical logistics:**
-- Route: Prapratno (Pelješac) → Sobra (Mljet), operated by Jadrolinija line 832
-- Journey: ~45 minutes; up to 5–6 daily departures in summer
-- **Car reservations NOT available** — first-come, first-served for vehicles
-- Pricing (high season May 29–Sep 27): adult ~€6.10, car up to 5m ~€25.50 → **~€50 total for 4 adults + Kia Sportage**
-- **Action:** Arrive at Prapratno **at least 60 minutes before departure** in June. This is not a small ferry and forum moderators say it rarely turns away cars — but arrive early to be safe. You can buy tickets at the port or at jadrolinija.hr.
-- **Timetable 2026:** [Jadrolinija](https://www.jadrolinija.hr/en/travels) or [putovnica.net](https://www.putovnica.net/en/transport/passenger-vehicle-car-ferry-prapratno-peljesac-sobra-mljet-jadrolinija)
-
-**Option A (TOP PICK): Autokamp Lovor — Mljet island**
-- **What it is:** Camp in the Ropa/Babino Polje area of Mljet (southern part of island, outside the NP entrance zone). ~€39 for 2 adults + tent (June), with additional charge for 2 more adults.
-- **Price estimate for 4:** ~€39–45/night based on per-person rates found (2 adults + tent = €39 at June rates)
-- **Booking:** Online reservation form on their site, or contact:
-  - Phone: +385 98 702 200
-- **Do today:** Call or fill in the online form at the camp website. Mention Jun 20 specifically (Saturday = peak demand)
-- **Note:** This is the camp whose booking page showed €39 for 2 adults + tent in June — confirm 4-adult pricing. Rate structure: 4 × €11 (person) + €9 (tent) + tourist tax ≈ ~€53–55 for 4.
-
-**Option B: Autokamp "Marina" — Ropa, Mljet**
-- **What it is:** Smaller, simpler camp in village Ropa. 3 terraces, common kitchen, basic shop, great views, 10 min walk to beach.
-- **Price:** €28/night (2p + van), with additional per-person charge for extra guests. Estimate ~€40 for 4.
-- **Contact:** +385 20 745 071 / mob: +385 98 915 56 76
-- **Address:** Ropa, 20225 Babino Polje, Mljet
-- **Park4night:** [Listing #53353](https://park4night.com/en/place/53353)
-
-**Option C: Apartment in Polače**
-- Polače is the main ferry/NP village with Roman ruins right by the dock. The most scenic location on Mljet.
-- [Airbnb search: Polače, Mljet](https://www.airbnb.com/polace-croatia/stays) — average ~$100/night for apartments; filter for 4 guests
-- Check also: [Airbnb Mljet NP](https://www.airbnb.com/mljet-national-park-croatia/stays)
-
-**Notes:**
-- NP entry fee is separate (around €20–25/person in peak season). Pay at the gate or online.
-- The camps in Ropa are outside the NP boundary — you drive or bike to the NP entrance. Polače apartments put you right at the NP entrance and the Roman ruins.
+- 🔴 **Rental car cross-border permit (BiH + Montenegro).** The whole loop crosses into Bosnia & Herzegovina and Montenegro. The rental company must issue **written border-crossing authorization** — without it, border guards can turn you away. Call the **Zadar pickup desk now** and get it in writing before Jun 16. Non-negotiable.
+- **Cash:** Carry €50–100 in **Bosnian KM** (BiH; exchange at an ATM in Mostar/Sarajevo). Montenegro uses **EUR**. Several camps and konobas on this plan are **cash only** (Krvavica, Mlinski Potok, Konoba Ivankovski, Mašanović).
+- **Ferry timetable:** Re-check the 2026 Jadrolinija Prapratno↔Sobra schedule before Jun 18 in case the last sailing time shifted; the 20:30 is the only post-pickup option.
+- **Warm layers for Durmitor** (Jun 23 at 1,472 m — cold nights) and **DEET for Skadar** (Jun 24, dusk mosquitoes).
 
 ---
 
-### Night 6 — Jun 21 (Sun): Mostar, Bosnia
+## Cost Snapshot — Unbooked Sleeps Only
 
-**Context:** Drive from Mljet/Pelješac → Bosnia: Kravica falls swim → Počitelj → arrive Mostar evening. Mostar old town is best at night when day-trippers are gone.
+| Date | Stay | Est. for 4 | Status |
+|------|------|-----------|--------|
+| Jun 16–17 | Camping Krvavica (2 nts) | ~€55–65/nt | 🔴 book now |
+| Jun 18 | Autokamp Marina, Mljet | ~€35–45 | 🔴 book now |
+| Jun 20 | Ravna Camping | low (BiH wild/camp) | 🟠 confirm operating |
+| Jun 23 | Auto Camp Mlinski Potok | ~€31–37 | 🟠 this week |
+| Jun 26 | Waterfront apt Muo/Dobrota | ~€40–60 | 🟡 pick + book |
+| Jun 27 | Camping Kate, Mlini | ~€49–53 | 🟠 this week |
 
-**URGENCY: MODERATE.** Mostar has plenty of accommodation, but Jun 21 is a Sunday at the start of peak tourist season. Book this week.
-
-**Option A (TOP PICK): Apartment City Center Mostar**
-- **What it is:** Airbnb apartment, city center, 200 m from Old Town. Confirmed 4-person capacity, terrace (45 m² + 23 m² terrace), 1 bedroom + sofa bed in living room. ★4.92 with 105+ reviews.
-- **Price:** ~$53–60/night in June (listed at ~$71 for similar periods; Jun may be slightly lower before peak July)
-- **Link:** [Airbnb — Apartment City Center Mostar](https://www.airbnb.com/rooms/14231459)
-- **Do this week:** Check Jun 21 availability and book.
-
-**Option B: Booking.com Mostar apartments**
-- [Booking.com Mostar](https://www.booking.com/hotel/ba/city-center-luxury-apartment-mostar.html) — several city center options around €40–70 for 4 in June
-- Filter: 4 guests, Jun 21–22, apartments
-
-**Notes:**
-- Mostar is NOT expensive by European standards — €50–60 for a 4-person apartment is the norm.
-- Pick anything within walking distance of Stari Most (Old Bridge). You'll want to walk there after midnight when it's lit up and empty.
-- Parking: most apartments have private parking or public parking is cheap in Bosnia.
+(Jun 19, 21, 22, 24, 25 are the **already-booked Airbnbs** — Poplat, Pale, Boričje, Rvaši×2.)
 
 ---
 
-### Night 7 — Jun 22 (Mon): Sarajevo (or Konjic/Boračko fallback)
-
-**Context:** Two variants — (A) Mostar morning + Blagaj spring, then north to Sarajevo (only +13 min vs direct route to Konjic), OR (B) Konjic + Neretva rafting + Boračko Lake, skip Sarajevo. Decision for the group — both are in the data.
-
-**URGENCY: MODERATE.** Book whichever you choose this week.
-
-**Sarajevo Option A (TOP PICK): The Pearl / Old Town Pearl Apartments**
-- **What it is:** Airbnb/Booking apartment in Sarajevo's Old Town (Baščaršija). ★4.95, highly rated. 9-min walk from Eternal Flame.
-- **Price:** Starts ~$50–55/night; listed from $48 on some platforms
-- **Booking.com link:** [Old Town Pearl Apartments](https://www.booking.com/hotel/ba/old-town-pearl-apartments.en-gb.html)
-- **Airbnb search for Sarajevo 4p:** [Sarajevo Airbnb](https://www.airbnb.com/s/Sarajevo--Bosnia-and-Herzegovina)
-
-**Sarajevo Option B: General search**
-- Budget: €45–65 for 4 people in Sarajevo Old Town
-- Sarajevo has abundant, cheap accommodation — if The Pearl is booked, a dozen similar options exist
-- Avoid the "holiday inn" tourist hotel area; Old Town (Baščaršija) or Grbavica are the right zones
-
-**Konjic/Boračko fallback:**
-- Boračko Lake is ~45 min from Mostar. Small lakeside camps and guesthouses — walk-in likely fine in June, or search:
-  - Booking.com: search "Konjic" or "Boračko jezero"
-  - Airbnb: search Konjic, Bosnia and Herzegovina
-
-**Notes:**
-- Sarajevo is a genuine city: better food, coffee culture, nightlife. Worthwhile if the group wants a city night.
-- Konjic/Boračko is for those who prefer mountains and a lake over a city.
-- Only about 13 minutes difference in driving time — so the call is purely about what you want that evening.
-
----
-
-### Nights 8 & 9 — Jun 23 & 24 (Tue/Wed): Žabljak, Durmitor
-
-**Context:** Two nights here for the Durmitor program: Bobotov Kuk / Veliki Međed hike (start 06:00!), Black Lake, possibly Tara canyon rim. Altitude 1,450 m — BRING WARM SLEEPING BAGS (6–10°C nights).
-
-**URGENCY: LOW.** Žabljak is a small mountain town, not a beach resort. June is hiking season but not as packed as July. Walk-in likely fine, but booking ahead removes stress.
-
-**Option A (TOP PICK): Auto Camp Mlinski Potok**
-- **What it is:** Well-reviewed camp at 1,472 m altitude, 2 km from Žabljak center, 15 min walk to Black Lake. Open May 1–Nov 21. Intimate terraced pitches. Kitchen, showers, campfire area. ★4.7 / 60+ TripAdvisor reviews.
-- **Price:**
-  - Big tent: €4
-  - Car: €3
-  - 4 adults × €5 = €20
-  - Tourist tax 4 × €1.20 = €4.80
-  - **Total: ~€32/night for 4**
-- **Booking:** Email or call — walk-in also fine in June
-  - Email: minakamp@gmail.com
-  - Phone: +382 (0) 69/821-730 or +382 (0) 69/497-625
-- **Website:** [autocampmlinskipotok.com](https://autocampmlinskipotok.com/en/)
-- **Booking via Pitchup:** [Pitchup listing](https://www.pitchup.com/campsites/montenegro/northern/zabljak/pitomine/autocamp_mlinski_potok/) — online booking with 15% deposit
-
-**Option B: Bocha's Campsite (Kamp kod Boče)**
-- **What it is:** Small, peaceful, 2.1 km southwest of Žabljak center. ★4.9 / 14 reviews ("Campsite nice and peaceful in June, had nice hot showers with good flow"). Also offers bungalows.
-- **Price:** ~€7/night per tent with 2 persons; estimate **€15–20 for 4 people + tent + car** — possibly the cheapest camp on the whole trip
-- **Contact:** +382 69 223218
-- **Website:** [kampkodboce.me](http://www.kampkodboce.me/location-contact/)
-- **Note:** Small = may fill. Call ahead.
-
-**Option C: Hostel Hikers Den**
-- **What it is:** The only dedicated hostel in Žabljak. Voted #1 hostel in Montenegro 2015–2018. ★9.6 / 955 reviews on Hostelworld. For nights the group wants beds not tents.
-- **Price:** Dorms from €11/bed, private rooms from €20/room. For 4 people in dorms: ~€44/night. Private rooms for 2×2 people: ~€40–60/night.
-- **Payment:** Cash only on arrival
-- **Cancellation:** Free if cancelled 3+ days before
-- **Book:** [Hostelworld — Hikers Den](https://www.hostelworld.com/hostels/p/73957/hostel-hikers-den/)
-- **Note:** This is the comfortable backup if anyone wants a real bed after a long hike day.
-
-**Important ops note for Durmitor hike day (Jun 24):**
-- Start Bobotov Kuk / Veliki Međed at **06:00 from camp.** Afternoon thunderstorms build 12:00–15:00. Be off the ridgeline before noon. Long day (+15 h of light) makes this completely feasible.
-
----
-
-### Night 10 — Jun 25 (Thu): Skadar Lake area
-
-**Context:** Drive south from Žabljak via Tara canyon (rafting/bridge) → Ostrog Monastery → arrive Skadar Lake/Virpazar area afternoon. Kayak, winery visit, sunset at Pavlova Strana.
-
-**URGENCY: LOW–MODERATE.** Montenegro inland is much lower tourist pressure than Croatia coast. Walk-in possible but booking a specific winery guesthouse requires advance notice.
-
-**Option A (BEST — the WOW option): Estate & Winery San Duyevo**
-- **What it is:** Working winery and guesthouse in village Dujeva, 3 km from Rijeka Crnojevića (NP Skadar Lake). Free wine tasting of homemade wine included. Two apartment types. Rural, atmospheric, actually special.
-- **Booking:** Via Booking.com
-- **Link:** [Booking.com — Estate & Winery San Duyevo](https://www.booking.com/hotel/me/estate-amp-winery-san-duyevo.html)
-- **Note:** This is the "winery guesthouse" flagged in the research. Check dates now — small property, specific.
-
-**Option B: Guesthouse Skadar Lake — Raicevic (Virpazar)**
-- **What it is:** Guesthouse in Virpazar (the main lake town), mountain views, private beach area, restaurant, free shuttle service. ★9.3 on Booking.com.
-- **Price:** Reported from ~$22/night — very cheap. Estimate €50–80 for 4 in June depending on room type.
-- **Link:** [Booking.com — Guesthouse Skadar Lake Raicevic](https://www.booking.com/hotel/me/godinje-apartment.html)
-
-**Option C: Auto Camp Radoman (Virpazar)**
-- **What it is:** Excellent camp on the lake near Virpazar. ★9.5 / 40 reviews on Booking.com. River views, free WiFi. Also has pre-pitched tents via Airbnb.
-- **Price:** From ~$13–24/night per unit
-- **Booking.com:** [Auto Camp Radoman](https://www.booking.com/hotel/me/auto-camp-radoman.html)
-- **Airbnb tent option:** [Airbnb — Auto Camp Radoman tents](https://www.airbnb.com/rooms/908028851992560673)
-
-**Option D: Camp Podkraj (Virpazar)**
-- **What it is:** ★9.7 / 47 reviews — one of the top-rated camps in the region. Terrace, garden, air-con rooms, WiFi. Can also bring own tent (cheaper rate).
-- **Link:** [Booking.com — Camp Podkraj](https://www.booking.com/hotel/me/camp-podkraj-virpazar.html)
-
-**Mosquito warning:** Skadar Lake at dusk is "the worst on the whole trip" according to trip-ops research. Bring/buy DEET spray. Cover up at sunset even if it's hot.
-
----
-
-### Night 11 — Jun 26 (Fri): Budva / Jaz Beach area
-
-**Context:** Skadar kayak morning → Sveti Stefan beach visit → Budva. Friday night = busiest night of the Montenegrin coast week.
-
-**URGENCY: MODERATE.** Budva in late June on a Friday is genuinely busy. The coast fills up from domestic (Serbian, Bosnian) tourists on weekends.
-
-**Option A (TOP PICK for camping): Camp Kunjic — Jaz Beach (3km from Budva)**
-- **What it is:** Small family campsite 20m from Jaz Beach, 3km from Budva old town. Grass pitches, hot showers, electricity, WiFi, direct beach access.
-- **Rating:** 4.16/5 on park4night (95 reviews) — "Super nette Betreiberin, gepflegte Sanitäranlagen, direkt am Strand" / "Great spot, clean and perfect location."
-- **Price:** ~€25–35 for 4 + tent + car (estimated; no toilet paper/soap provided — bring your own)
-- **Contact:** park4night listing #151004 — call ahead to confirm June 26 availability
-- **Note (re Jaz):** Camp Jaz *Hostel* has terrible reviews (1.5/5, avoid) but this is a **separate family campsite**. Also note: Jaz Beach occasionally hosts concerts — check the calendar (could be loud or excellent depending on timing).
-- **Autocamp Avala (Bečići) is a fallback** if Kunjic is full — but Avala has mixed TripAdvisor reviews (1.8/5, outdated sanitary block complaints). Prefer Kunjic.
-
-**Option B: Apartment in Budva / near Jaz Beach**
-- **Airbnb Budva:** [Search Budva Airbnb](https://www.airbnb.com/s/Budva--Montenegro) — expect €60–100 for a decent apartment for 4 in June
-- Filter: 4 guests, Jun 26–27
-- If the group wants a real bed and proper bathroom after Durmitor + Skadar, this is the night to splurge slightly.
-
-**Notes:**
-- Budva Friday night has good restaurant and bar options. The old town is nice but small.
-- Sveti Stefan islet view from the road (free) is worth a stop — access to the island itself is resort guests only, but the view is the point.
-- Jaz Beach (3 km from Budva) has a famous open-air concert history, but there is NO major festival during our dates (Sea Dance festival left Montenegro after 2022; the Budva "Sea of Rhythms" was May 21–25).
-
----
-
-### Night 12 — Jun 27 (Sat): Near Dubrovnik / Trebinje
-
-**Context:** Kotor morning (GREAT day for it — only 1 cruise ship, 170 pax, the quietest of the entire fortnight) → Perast → cross into Croatia → arrive near Dubrovnik. Last night before car drop.
-
-**BORDER: Use VITALJINA (not Debeli Brijeg).** Vitaljina = 15–45 min wait vs Debeli Brijeg = 1–4h with EES queues. Vitaljina crossing is 15 km south of Kotor (Herceg Novi direction). New EES biometric checks since Apr 2026 make Debeli Brijeg very slow in peak season; avoid unless Vitaljina is closed for some reason. Add 15 min to drive time vs Debeli Brijeg but saves 1–3h waiting.
-
-**URGENCY: MODERATE.** Saturday near Dubrovnik = peak prices. Trebinje is the smart play again — cheap, 30–40 min from DBV airport.
-
-**Option A (TOP PICK): Gaga City Center — Trebinje (again)**
-- **Same apartment as Night 3 if available** — cheapest, most practical base before the drop
-- **Link:** [Airbnb — Gaga City Center](https://www.airbnb.com/rooms/1165836464333612445)
-- Check Jun 27–28 (one night or two nights if staying Jun 28 as well)
-- **Price:** ~€49/night
-
-**Option B: Any Trebinje apartment**
-- [Airbnb Trebinje](https://www.airbnb.com/trebinje-bosnia-and-herzegovina/stays) — filter Jun 27, 4 guests
-- Trebinje apartments are €30–55 for 4 — much better value than anything near Dubrovnik
-- Dubrovnik Airport is 35–40 min from Trebinje center (same route as night 3)
-
-**Option C: Camp near Dubrovnik (if group prefers)**
-- Camping Kate (Mlini, ~10 km south of Dubrovnik, same as potential Night 4)
-  - Price: ~€51/night, call first: info@campingkate.com
-- Better for groups who want to be in Croatia and have a beach morning Jun 28
-
----
-
-### Jun 28 (Sun): No accommodation needed
-
-Car drop at Dubrovnik Airport (Čilipi) by **20:00**. Full day available. Options: Dubrovnik old town one more time (walls, swimming off Buža bar), Cavtat, or relax near the airport.
-
----
-
-## Key Pre-Departure Actions
-
-### TODAY (Jun 11):
-0. **🚨 CRITICAL — Rental car cross-border permission (Sicily By Car):** The entire route crosses into BiH and Montenegro. Sicily By Car must issue a written border-crossing permit. Call their Zadar Airport desk TODAY: **+385 23 646 547**. Ask specifically for written authorization to enter Bosnia & Herzegovina and Montenegro. Without this permit the border guards may turn you away. This is non-negotiable and must be resolved before Jun 16.
-1. **🚨 Book Tara Canyon Rafting (Jun 23, Day 8):** Peak June fills 1–2 weeks ahead — you're already at the minimum. Email or WhatsApp today: Rafting Centar Drina-Tara office@raftingtara.com / +381 64 420 1956 (€60/pp incl. meals, ~€240 total) OR TaraSport info@tarasportrafting.com / +387 66 606 306 (€50/pp). Ask for Jun 23, 4 adults, 1-day trip.
-2. **Book Biokovo Skywalk (Jun 18, Day 3):** Online-only booking required, 20-car cap per hour. Book Jun 18 first slot at [shop.pp-biokovo.hr](https://shop.pp-biokovo.hr). €15/pp = €60 for 4.
-3. **Book Bluesun Camping Paklenica** via Booking.com if you want certainty for Night 1 — OR plan to walk in to Camp NP Paklenica and call at 08:00 on Jun 16
-4. **Email Auto Camp Lisičina** (kamp-lisicina@inet.hr) for Night 2 — attach: dates Jun 17, 4 adults, 1 large tent, 1 car, request confirmation
-5. **Book Gaga City Center Trebinje** on Airbnb for Jun 18 (Night 3) and Jun 27 (Night 12)
-6. **Email Camping Kate** (info@campingkate.com) for Night 4 — same format as Lisičina
-7. **Call or email Autokamp Lovor** (+385 98 702 200) for Mljet Night 5
-
-### THIS WEEK (by Jun 14):
-8. **Book Cetina Extreme Canyoning (Jun 17, Day 2):** 1–2 days ahead. [canyoning-cetina.com](https://canyoning-cetina.com) (€70/pp) or Malduk Adventures. 4 adults = ~€280.
-9. **Book Apartment City Center Mostar** (Airbnb rooms/14231459) for Jun 21
-10. **Book Old Town Pearl Apartments Sarajevo** or choose Konjic alternative for Jun 22
-11. **Book/confirm Skadar Lake (Jun 25)** — pick one tier:
-    - **WOW tier:** Jablan Winery House (Rvaši) ~€96 — [Airbnb rooms/1091457](https://www.airbnb.com/rooms/1091457)
-    - **Mid tier:** Orahovo cottages (Virpazar) ~€48 — [Airbnb rooms/32586701](https://www.airbnb.com/rooms/32586701)
-    - **Camping:** Camp Radoman (Virpazar) ~€15–20 — [Booking.com](https://www.booking.com/hotel/me/auto-camp-radoman.html) or walk-in
-12. **Žabljak camps** — email Mlinski Potok (minakamp@gmail.com) for Jun 23–24 if you want certainty; walk-in also fine
-
-### LOGISTICS TO CONFIRM:
-- **Mljet ferry (Jun 20):** No advance car booking needed — arrive Prapratno 60+ minutes before departure. Buy tickets at port or jadrolinija.hr. Cost ~€50 (car + 4 adults).
-- **NP Paklenica (Jun 16):** Call camp at 08:00 on arrival day: +385 (0) 23 369 452. No reservations accepted.
-- **Bosnia/Montenegro currency:** Carry €50–100 equivalent in Bosnian KM (exchange at ATM in Mostar or Sarajevo). Montenegro uses EUR.
-- **ME→HR border (Jun 27):** Use **Vitaljina/Karasovići** crossing (15km south of Kotor toward Herceg Novi) — 15–45min. Do NOT use Debeli Brijeg (1–4h EES biometric queues in peak season). Vitaljina is small, local, much faster.
-
----
-
-## Price Summary (Estimates)
-
-| Night | Option | Estimate for 4 |
-|-------|--------|---------------|
-| Jun 16 | Camp NP Paklenica (walk-in) | €45–55 |
-| Jun 17 | Camp Lisičina or Krvavica | €35–55 |
-| Jun 18 | Gaga City Center, Trebinje | ~€49 |
-| Jun 19 | Camping Kate, Mlini | ~€51 |
-| Jun 20 | Autokamp Lovor, Mljet | ~€50–55 |
-| Jun 21 | Mostar apartment | ~€53–60 |
-| Jun 22 | Sarajevo apartment | ~€48–55 |
-| Jun 23 | Camp Mlinski Potok, Žabljak | ~€32 |
-| Jun 24 | Camp Mlinski Potok, Žabljak | ~€32 |
-| Jun 25 | Skadar winery/camp | ~€30–60 |
-| Jun 26 | Camp Kunjic, Jaz Beach | ~€25–35 |
-| Jun 27 | Gaga City Center, Trebinje | ~€49 |
-| **Total** | | **~€509–607** |
-
-Average: ~€42–51/night for 4 across 12 nights. Well within budget.
-
----
-
-## Sources Consulted
-
-- Camp NP Paklenica official: [np-paklenica.hr](https://www.np-paklenica.hr/en/what-to-visit-en/camp-nacionalni-park-en)
-- Bluesun Camping Paklenica: [Booking.com](https://www.booking.com/hotel/hr/bluesuncamp-paklenica.html)
-- Auto Camp Lisičina: [ac-lisicina.hr](http://www.ac-lisicina.hr/en)
-- Camping Krvavica: [autocamp-krvavica.com](https://www.autocamp-krvavica.com/)
-- Camping Kate prices: [campingkate.com/price](https://campingkate.com/price/)
-- Camping Solitudo: [valamarcamping.com](https://www.valamarcamping.com/solitudo-camp-dubrovnik)
-- Gaga City Center Trebinje: [Airbnb](https://www.airbnb.com/rooms/1165836464333612445)
-- Autocamp "Marina" Mljet: [park4night](https://park4night.com/en/place/53353) / [autocamp-mljet.com](https://www.autocamp-mljet.com/?lang=eng)
-- Mljet ferry info: [ferryhopper.com](https://www.ferryhopper.com/en/ferries/croatia/mljet) / [croatiaferries.com](https://www.croatiaferries.com/topic/advance-booking-for-prapratno-sobra-ferry/)
-- Apartment City Center Mostar: [Airbnb](https://www.airbnb.com/rooms/14231459)
-- Old Town Pearl Apartments Sarajevo: [Booking.com](https://www.booking.com/hotel/ba/old-town-pearl-apartments.en-gb.html)
-- Auto Camp Mlinski Potok: [autocampmlinskipotok.com](https://autocampmlinskipotok.com/en/price-list/)
-- Bocha's Campsite Žabljak: [TripAdvisor](https://www.tripadvisor.com/Hotel_Review-g1096284-d4594236-Reviews-Bocha_s_Campsite-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html) / [kampkodboce.me](http://www.kampkodboce.me/)
-- Hostel Hikers Den: [Hostelworld](https://www.hostelworld.com/hostels/p/73957/hostel-hikers-den/)
-- Estate & Winery San Duyevo: [Booking.com](https://www.booking.com/hotel/me/estate-amp-winery-san-duyevo.html)
-- Guesthouse Skadar Lake Raicevic: [Booking.com](https://www.booking.com/hotel/me/godinje-apartment.html)
-- Auto Camp Radoman: [Booking.com](https://www.booking.com/hotel/me/auto-camp-radoman.html)
-- Camp Podkraj Virpazar: [Booking.com](https://www.booking.com/hotel/me/camp-podkraj-virpazar.html)
-- Autocamp Avala Budva: [TripAdvisor](https://www.tripadvisor.com/Hotel_Review-g304074-d10405152-Reviews-Auto_Camp_Avala-Budva_Budva_Municipality.html)
-- Camp Jaz (NOT recommended): [camping.info](https://en.camping.info/montenegro/montenegro/camp-jaz-hostel-23760) — 1.5/5 rating
-- Jadrolinija ferry booking: [jadrolinija.hr](https://www.jadrolinija.hr/en/search-buy-ticket)
-- EES border queue / Debeli Brijeg: trip-ops.md
-- June crowd/cruise info: trip-ops.md
-
----
-
-## Verified Links — Researched Jun 11, 2026
-
-This section adds specific verified URLs, phone numbers, and booking methods found by live web research. Use these to book directly. Airbnb blocks programmatic access so individual listing prices must be confirmed by clicking through — base prices noted below are from search snippets and may not reflect exact Jun 2026 rates.
-
----
-
-### Night 1 — Jun 16 — Paklenica
-
-**Option A: Camp NP Paklenica (walk-in only)**
-- Phone: +385 (0) 23 369 452
-- Official page: https://www.np-paklenica.hr/en/what-to-visit-en/camp-nacionalni-park-en
-- Confirmed: NO reservations accepted. Walk-in only. Call at 08:00 on Jun 16 to check space.
-
-**Option B: Bluesun Camping Paklenica — BOOK ONLINE NOW**
-- Direct booking page (pitches): https://www.bluesunhotels.com/en/booking/paklenica-parcele
-- Booking.com listing: https://www.booking.com/hotel/hr/bluesuncamp-paklenica.html
-- Bluesun Reservation Center: +385 13 844 288 / reservations@bluesunhotels.com
-- Price list page: https://www.bluesuncamping.com/en/price-list-camp-paklenica-parcels.aspx
-- Action: Go to the direct booking page above, select Jun 16–17, tent pitch. This is confirmed online-bookable.
-
----
-
-### Night 2 — Jun 17 — Omiš
-
-**Option A: Auto Camp Lisičina — contact direct**
-- Official website: http://www.ac-lisicina.hr/en
-- Contact page: https://www.ac-lisicina.hr/en/contact?lang=en
-- Email: kamp-lisicina@inet.hr (primary) / apartmani.lisicina@gmail.com
-- Phone: +385 95 5123 473 / +385 95 5773 707
-- Also listed on Trip.com: https://in.trip.com/hotels/omis-hotel-detail-28788140/auto-camp-lisicina/
-- Action: Email today + call to confirm Jun 17 availability. No online booking — direct contact only.
-
-**Airbnb backup options in Omiš (4 guests, Jun 17):**
-- Omiš apartments search: https://www.airbnb.com/omis-croatia/stays/apartments
-- Specific listing — Apartment 3422-5 (4p): https://www.airbnb.com/rooms/23989856
-- Specific listing — East Side Apartment (5p capacity): https://www.airbnb.com/rooms/1019281104454358706
-- Filter for 4 guests and Jun 17 check-in on the search link above for current pricing.
-
----
-
-### Night 3 — Jun 18 — Trebinje (and Night 12 — Jun 27)
-
-**Primary: Gaga City Center Trebinje — BOOK NOW**
-- Airbnb listing: https://www.airbnb.com/rooms/1165836464333612445
-- Confirmed active listing, ~$49/night entire unit, 5.0 rating, 40+ reviews, Top Guest Favourite
-- Check Jun 18–19 AND Jun 27–28 at the same time. Book both nights if available.
-
-**Backup Trebinje options (4 guests, entire place):**
-- Apartman Gaga (different listing, same city, near centre): https://www.airbnb.com/rooms/1213677023929554909
-- Riverside Apartment Vivida (river views, 10–15 min walk to old town): https://www.airbnb.com/rooms/1093274441797229414
-- Minex Apartment 1: https://www.airbnb.com/rooms/652928
-- Minex Apartment 2: https://www.airbnb.com/rooms/1232260
-- Apartments Minex on Booking.com: https://www.booking.com/hotel/ba/minex-studio.html
-- Spacious loft with terrace: https://www.airbnb.com/rooms/17938359
-- All Trebinje apartments Airbnb: https://www.airbnb.com/trebinje-bosnia-and-herzegovina/stays/apartments
-
----
-
-### Night 4 — Jun 19 — Dubrovnik area
-
-**Option A: Camping Kate, Mlini — contact direct (no online booking)**
-- Official website: https://campingkate.com/
-- Price list: https://campingkate.com/price/
-- Phone: +385 20 487 006
-- Email: info@campingkate.com
-- CamplinQ listing (may have online booking): https://camplinq.com/camps/camping-kate-2/
-- Confirmed: No Booking.com listing found. Contact direct by email + phone.
-
-**Option B: Camping Solitudo, Dubrovnik (book by phone)**
-- Website: https://www.valamarcamping.com/solitudo-camp-dubrovnik
-- Phone (reservations): +385 (0)52 465 010
-
-**Airbnb options near Dubrovnik/Mlini for Jun 19 (backup to camping):**
-- All Mlini apartments: https://www.airbnb.com/mlini-croatia/stays/apartments
-- Apartment Srebreno (near Mlini): https://www.airbnb.com/rooms/11889879
-- All Srebreno stays: https://www.airbnb.com/srebreno-croatia/stays
-
----
-
-### Night 5 — Jun 20 — Mljet island
-
-**Option A: Autokamp Lovor, Kozarica, Mljet — BOOK VIA WEBSITE FORM**
-- Official website + online reservation form: https://www.autocamp-mljet.com/?lang=eng
-- Phone: +385 98 70 22 00 / +385 98 22 92 22
-- Confirmed: Website has an embedded reservation form where you select adults, children, tents, extras. Use it now for Jun 20 (Saturday — peak demand).
-- Confirmed price (high season Jun 15–Sep 15): 4 adults × €15 = €60 + tent pitch €12 = **€72/night** + tourist tax. (Low season until Jun 14 would be €53 — you're in high season.)
-- Park4night listing: https://park4night.com/en/place/137639
-
-**Airbnb options in Polače/Mljet (if camping full):**
-- Stella Maris Apartments, Polače (right at ferry dock + NP entrance): https://www.airbnb.com/rooms/23655939
-- All Polače stays: https://www.airbnb.com/polace-croatia/stays
-- All Mljet NP stays: https://www.airbnb.com/mljet-national-park-croatia/stays
-
----
-
-### Night 6 — Jun 21 — Mostar
-
-**Option A: Apartment City Center Mostar — BOOK NOW**
-- Airbnb listing: https://www.airbnb.com/rooms/14231459
-- Also available on Airbnb UK: https://www.airbnb.co.uk/rooms/14231459
-- Confirmed active listing. 200 m from Old Town, 7th floor with lift, terrace. ~$53–60/night.
-- Book Jun 21–22 directly.
-
-**Other Mostar options (4 guests):**
-- Mostar Family Apartment (condo): https://www.airbnb.com/rooms/20546902
-- Boutique Apartment Mostar: https://www.airbnb.com/rooms/53119845
-- All Mostar stays search: https://www.airbnb.com/mostar-bosnia-and-herzegovina/stays
-- Booking.com Mostar apartments: https://www.booking.com/apartments/city/ba/mostar.html
-
----
-
-### Night 7 — Jun 22 — Sarajevo
-
-**Option A: Old Town Pearl Apartments ("Dzeno") — BOOK NOW**
-- Booking.com: https://www.booking.com/hotel/ba/old-town-pearl-apartments.html
-- Also on Agoda: https://www.agoda.com/dzeno-old-town-pearl-apartments/hotel/sarajevo-ba.html
-- Direct booking site: https://dzeno-old-town-pearl-apartments.sarajevohotels.org/
-- Confirmed NOT on Airbnb — Booking.com is the right platform. Prices from ~€31–55/night.
-
-**Airbnb Sarajevo Old Town options (backup):**
-- "Stay in the Old Town of Sarajevo" (entire place): https://www.airbnb.com/rooms/6667649
-- Old Town Luxury Apartment: https://www.airbnb.com/rooms/606545162567004956
-- Magical attic Old Town (private garage): https://www.airbnb.com/rooms/876424
-- All Sarajevo Old Town stays: https://www.airbnb.com/sarajevo-city-hall-bosnia-and-herzegovina/stays
-
----
-
-### Nights 8–9 — Jun 23–24 — Žabljak / Durmitor
-
-**Option A: Auto Camp Mlinski Potok — book via Pitchup or direct**
-- Official website: https://autocampmlinskipotok.com/en/
-- Pitchup (online booking with 15% deposit, immediate confirmation): https://www.pitchup.com/en-us/campsites/montenegro/northern/zabljak/pitomine/autocamp_mlinski_potok/
-- Price list page: https://autocampmlinskipotok.com/en/price-list/
-- Phone: +382 69 821-730
-- Email: minakamp@gmail.com
-- 2025 price reference (2026 TBC): 4 adults €20 + tent €3 + car €3 = ~€26 + tourist tax. Final price for 2026 may be slightly higher. Use Pitchup for binding online booking.
-
-**Option B: Bocha's Camp — contact direct**
-- Website domain expired (kampkodboce.me is for sale — site is down as of Jun 2026)
-- TripAdvisor listing (reviews only): https://www.tripadvisor.com/Hotel_Review-g1096284-d4594236-Reviews-Bocha_s_Campsite-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html
-- Phone (from camping directories): +382 69 223218
-- Action: Call to confirm they're still operating before relying on this option.
-
-**Option C: Hostel Hikers Den (private room for 4) — BOOK VIA HOSTELWORLD**
-- Hostelworld: https://www.hostelworld.com/hostels/p/73957/hostel-hikers-den/
-- Official site: https://www.hostelzabljak.com/
-- Pricing: dorms from ~$13/bed, private rooms from ~$28/room. Cash only on arrival.
-- Best Montenegro hostel 2015–2018. Free cancellation 3+ days before. Book via Hostelworld link.
-
----
-
-### Night 10 — Jun 25 — Skadar Lake
-
-**Option A: Estate & Winery San Duyevo — BOOK NOW (small property)**
-- Booking.com: https://www.booking.com/hotel/me/estate-amp-winery-san-duyevo.en-gb.html
-- Airbnb listing 1: https://www.airbnb.com/rooms/14401858
-- Airbnb listing 2 (deluxe): https://www.airbnb.com/rooms/1606521822737829256
-- From ~$27–41/night, small property, rated 8.1. Free wine tasting included. Cash only.
-- Book soon — small winery property, limited rooms.
-
-**Option B: Guesthouse Skadar Lake — Raicevic (Virpazar)**
-- Booking.com: https://www.booking.com/hotel/me/godinje-apartment.html
-- Hostelworld: https://www.hostelworld.com/bed-and-breakfasts/p/90413/guesthouse-skadar-lake/
-- Confirmed 9.3/10 on Booking.com, 134 reviews, from ~$22/night. Mountain views, private beach, restaurant, free shuttle.
-
-**Option C: Auto Camp Radoman (Virpazar)**
-- Booking.com: https://www.booking.com/hotel/me/auto-camp-radoman.html
-- Airbnb (pre-pitched tents): https://www.airbnb.com/rooms/908028851992560673
-- Rated 9.2, from ~$12–24/night. River views. Cash only.
-
-**Option D: Camp Podkraj (Virpazar)**
-- Booking.com: https://www.booking.com/hotel/me/camp-podkraj-virpazar.html
-- Rated 9.7, from ~$26/night. Pool, WiFi, home-cooked meals available (€7 breakfast, €9 dinner with wine).
-
----
-
-### Night 11 — Jun 26 — Budva
-
-**Option A (TOP PICK for camping): Camp Kunjic, Jaz Beach — contact direct**
-- park4night listing: https://park4night.com/en/place/151004
-- Rating: 4.16/5, 95 reviews — family-run, hot showers, direct beach 20m
-- Action: Contact via park4night messaging or call the number on the listing for Jun 26
-- Price: ~€25–35/night for 4 + tent + car (no toilet paper/soap — bring your own)
-- Location: Jaz Beach, 3km from Budva old town (taxi or short drive to old town at night)
-
-**Option B: Autocamp Avala, Bečići (fallback if Kunjic full)**
-- Phone: +382 67 518 114
-- Address: Omladinskih brigada 1, Bečići, Budva
-- Note: TripAdvisor reviews 1.8/5 (outdated sanitary block). Use only as a fallback.
-- PiNCAMP listing: https://www.pincamp.com/campings/autocamp-avala
-
-**Option C: Budva Airbnb apartment for Jun 26**
-- All Budva stays: https://www.airbnb.com/s/Budva--Montenegro
-- Filter: 4 guests, Jun 26–27, entire place — expect €60–100 for decent apartment.
-- Specific option (shortlisted): Apartment "Got it" https://www.airbnb.com/rooms/1220858053013401317 — ~€98, central, Guest favorite
-- Or: Masha 1 (27 Obilaznica, 1.6km walk to old town, parking): https://www.airbnb.com/rooms/26737670 — ~€64
-
----
-
-### Night 12 — Jun 27 — Trebinje (same as Night 3)
-
-Same options as Jun 18 above. Key links repeated:
-- Gaga City Center: https://www.airbnb.com/rooms/1165836464333612445
-- All Trebinje apartments: https://www.airbnb.com/trebinje-bosnia-and-herzegovina/stays/apartments
-- Book Jun 27–28 at the same time as Jun 18–19.
-
----
-
-### Summary of Confirmed Online-Bookable Options
-
-| Night | Where to book | Direct link |
-|-------|--------------|-------------|
-| Jun 16 | Bluesun Camping Paklenica pitches | https://www.bluesunhotels.com/en/booking/paklenica-parcele |
-| Jun 16 | Bluesun on Booking.com | https://www.booking.com/hotel/hr/bluesuncamp-paklenica.html |
-| Jun 17 | Auto Camp Lisičina (email/phone) | kamp-lisicina@inet.hr / +385 95 5123 473 |
-| Jun 18 | Gaga City Center, Trebinje (Airbnb) | https://www.airbnb.com/rooms/1165836464333612445 |
-| Jun 19 | Camping Kate (email/phone) | info@campingkate.com / +385 20 487 006 |
-| Jun 20 | Autokamp Lovor, Mljet (web form) | https://www.autocamp-mljet.com/?lang=eng |
-| Jun 21 | Apartment City Center Mostar (Airbnb) | https://www.airbnb.com/rooms/14231459 |
-| Jun 22 | Old Town Pearl Apartments (Booking) | https://www.booking.com/hotel/ba/old-town-pearl-apartments.html |
-| Jun 23–24 | Auto Camp Mlinski Potok (Pitchup) | https://www.pitchup.com/en-us/campsites/montenegro/northern/zabljak/pitomine/autocamp_mlinski_potok/ |
-| Jun 25 | San Duyevo Winery (Booking.com) | https://www.booking.com/hotel/me/estate-amp-winery-san-duyevo.en-gb.html |
-| Jun 25 | Guesthouse Raicevic (Booking.com) | https://www.booking.com/hotel/me/godinje-apartment.html |
-| Jun 25 | Camp Podkraj (Booking.com) | https://www.booking.com/hotel/me/camp-podkraj-virpazar.html |
-| Jun 26 | Autocamp Avala (phone only) | +382 67 518 114 |
-| Jun 27 | Gaga City Center, Trebinje (Airbnb) | https://www.airbnb.com/rooms/1165836464333612445 |
+## Key Contacts (reusable)
+
+- **Camping Krvavica:** autocamp-krvavica.com (email + call)
+- **Autokamp Marina (Mljet):** +385 20 745 071 / +385 98 915 56 76
+- **Camping Kate (Mlini):** info@campingkate.com · +385 20 487 006
+- **Auto Camp Mlinski Potok (Žabljak):** minakamp@gmail.com · +382 69 821-730 · Pitchup (online)
+- **Biokovo car slot:** shop.pp-biokovo.hr / biokovo.hrvi.hr
+- **Tara rafting:** raftingtara.com · tarasportrafting.com · bluerivertara.me
+- **Mljet ferry:** jadrolinija.hr (line 832) — no car reservation; arrive 60+ min early
+- **GO2FLY paragliding (Budva):** go2fly.me
+- **ZIPLine Fortica (Mostar):** zipline.ba
+- **Vinarija Mašanović (Virpazar):** wineofmontenegro.com/wineries/winery-masanovic
+- **Enjoy Skadar Lake kayak:** enjoyskadarlake.com

@@ -1,328 +1,300 @@
-# Pre-Trip Risk Register — Balkans Jun 16–28, 2026
+# Pre-Trip Risk Register — Balkans Jun 16–28, 2026 (LIVE PLAN)
 
-_Written Jun 11, 2026. Trip starts in 5 days. 4 adults, Kia Sportage, Sicily By Car ref D013947246._
+_Regenerated Jun 14, 2026. Trip starts in 2 days. 4 adults, Kia Sportage one-way Zadar→Dubrovnik, Sicily By Car ref D013947246. Route: Zadar → coast → Dubrovnik (Jun 18 airport pickup) → Mljet → Bosnia (Mostar, Sarajevo) → Montenegro (Tara, Piva, Durmitor, Skadar, Bar/Ulcinj, Budva, Kotor) → back to Dubrovnik for Jun 28._
 
-This is not a paranoia list. It is a menu of things trips like this actually hit, each with a realistic probability and a concrete mitigation. Read it once, action the mitigations, and travel with confidence.
+This is not a paranoia list. It is a menu of things trips like this actually hit, mapped to the **live committed plan**, each with a realistic probability and a concrete mitigation. Read it once, action the top block, and travel with confidence.
 
----
-
-## RISK 1 — Cross-border permission for BiH and Montenegro
-
-**What could go wrong:** You arrive at the Croatian–Bosnian border (Day 3 or Day 8) and the border guard asks for the rental company's written authorisation for cross-border travel. If you cannot produce it, you are turned back. The Šćepan Polje crossing is also the border directly before Tara rafting — a refusal there collapses the entire Bosnia and Montenegro legs.
-
-**What's actually known:** The rental-car.md file records that cross-border permission is explicitly flagged as unresolved ("MUST VERIFY BEFORE THE TRIP — the trip depends on it"). Sicily By Car's own FAQ page mentions it but Albania (commonly forbidden) was the only country visible in the page text. BiH and Montenegro are normally allowed by Croatian suppliers but must be confirmed. The Full Coverage add-on policy says "no geographical restrictions — anywhere permitted under the rental agreement," which is circular: it defers entirely to the rental agreement itself.
-
-**Probability of problem if unresolved:** HIGH — border guards at Ivanica (HR→BA) and Šćepan Polje (BA→ME) do spot-check rental agreements and sometimes ask for written permission letters from the supplier. Croatian rental companies know this and the reputable ones issue letters as standard.
-
-**Impact if it happens:** HIGH — trip collapses or is severely rerouted.
-
-**Probability of problem if you call today:** LOW — almost every Croatian rental company allows both ME and BiH; they just want you to tell them and sometimes charge €20–50/country.
-
-**Mitigations:**
-1. **Call Sicily By Car TODAY: +385 23 646 547.** Ask explicitly: "We are driving into Bosnia-Herzegovina and Montenegro — is this permitted under our contract, and do we need a written cross-border permission letter or any additional fee?" Record the agent's name and get a confirmation email.
-2. At pickup on Jun 16, ask the desk agent to issue a written permission letter (a single A4 page on their letterhead confirming the countries are allowed). This is standard at Croatian rental desks — they have it ready.
-3. If they refuse permission: contact DiscoverCars via your booking (ref D013947246) — they sometimes act as intermediary and can escalate.
-4. Last resort: DiscoverCars has a relocation assistance clause. If the car truly cannot go into BiH/ME, the whole trip needs replanning — so this must be resolved before Jun 16, not at the border.
+**Accommodation status:** Airbnbs are **booked** — Poplat (N4, Jun19), Pale (N6, Jun21), Boričje (N7, Jun22), Rvaši (N9–10, Jun24–25). **Campsites are NOT yet booked** — Krvavica (N1–2), Autokamp Marina/Mljet (N3), Ravna Camping (N5), Mlinski Potok/Žabljak (N8), Kotor Bay waterfront apt (N11), Camping Kate/Mlini (N12).
 
 ---
 
-## RISK 2 — Mljet ferry full on Saturday Jun 20
+## THE FOUR ACTIONS THAT MUST HAPPEN BEFORE JUN 16
 
-**What could go wrong:** You arrive at Prapratno on Saturday morning and the ferry to Sobra/Polače is full of vehicles. You either miss the sailing or cannot get the car on.
+These can collapse or badly dent the trip and cannot be fixed on the road:
 
-**What's actually known:** Jadrolinija line 832 (Prapratno→Sobra/Polače) operates 5–6 sailings per day in summer. Car reservations are NOT available — first-come, first-served. The booking-guide.md says "forum moderators say it rarely turns away cars" but adds the caveat to arrive 60+ minutes early. Saturday Jun 20 is the first Saturday of peak summer (Croatian school holidays started Jun 15). Pelješac is a peninsula, so Prapratno gets competitive. The ferry carries roughly 50 cars per sailing and is not a massive vessel.
-
-**Probability of problem:** MEDIUM — it's first-come-first-served so it's solvable by arriving early. The risk is you're coming from Trebinje (Night 4), which is a longer drive, and if you dawdle in the morning you may hit the Saturday crunch.
-
-**Impact:** MEDIUM — missing one sailing means waiting 1–2 hours for the next. Missing the car slot entirely (unlikely if you're there early enough) means no car on island.
-
-**Mitigations:**
-1. **Leave Trebinje/Dubrovnik area by 08:00 at the latest.** Prapratno is ~2h drive. Target arrival at Prapratno by 10:00, for the mid-morning sailing. With 60 min of queue buffer, this is comfortable.
-2. **Buy tickets online at jadrolinija.hr the night before** to confirm timetable and avoid ticket queue. You still wait for boarding, but you're not hunting for the ticket desk.
-3. **Contingency if the car can't board:** Without a car you can still go to Mljet — foot passengers + bicycles take priority and are essentially never turned away. Polače to the NP lakes is walkable. You'd need to sort the Mljet campsite without a car, but Autokamp Lovor is in Kozarica (island's south) — a taxi from Sobra is €15–20.
-4. **Plan B if you skip the ferry entirely:** An extra day on Pelješac is genuinely good — Korčula is reachable via a short car ferry from Orebić (much smaller vessel, regular service, much less demand). You lose Mljet but gain Korčula, which is arguably richer in architecture and winemaking.
-5. Do NOT plan any fixed activity on Mljet in the morning that requires a specific sailing. Leave the first sailing flexible.
+1. **Cross-border permission in writing for BiH + Montenegro.** Call Sicily By Car (+385 23 646 547) today; get the written letter at Zadar pickup Jun 16. The first border is **Day 3 evening (Jun 18, HR→BA)** — only two days after pickup, so this must be sorted at the desk on day one.
+2. **Day 3 is built on the 20:30 LAST Mljet ferry.** Everything after the airport pickup hinges on catching Prapratno→Mljet 20:30. Miss it and Night 3 has no roof. Pre-buy/verify the sailing and protect the timing (Risk 2).
+3. **Confirm Tara rafting (Day 7, Mon Jun 22, 11:30 Brštanovica launch) is booked with a written reference.** Peak-June slots fill; you are inside the window now (Risk 4).
+4. **Every phone: activate a non-EU roaming day-pass OR plan a Sarajevo SIM, and download offline maps for HR/BiH/ME tonight.** The first BiH border is Day 3; do not learn this at the booth (Risk 11).
 
 ---
 
-## RISK 3 — Tara rafting Day 8 (Šćepan Polje sequence)
+## RISK 1 — Cross-border permission for BiH and Montenegro (Day 3 onward)
 
-**What could go wrong:** Three distinct sub-risks on this high-stakes morning.
+**What could go wrong:** At the Croatian→Bosnian border on **Day 3 evening (Jun 18, after the airport pickup)** the guard asks for the rental company's written authorisation for cross-border travel. No letter → turned back → the entire Bosnia+Montenegro spine of the trip (Days 5–12) collapses, and you're stranded the same evening you're trying to reach the Mljet ferry.
 
-### 3a — Operator is full
+**What's known:** Cross-border permission is flagged unresolved in rental-car.md ("MUST VERIFY BEFORE THE TRIP"). Sicily By Car's FAQ only explicitly names Albania (forbidden). BiH and ME are normally allowed by Croatian suppliers but must be confirmed in writing. The Full Coverage add-on says "no geographical restrictions — anywhere permitted under the rental agreement," which is circular and defers to the agreement itself.
 
-**What's actually known:** activities-booking.md says "Book at minimum 1–2 weeks out for June; many operators already have peak summer dates filling up." Same-day availability is described as "unlikely." The departure date is Jun 16 — you are already within the 2-week window.
-
-**Probability:** HIGH if not booked before you leave. LOW if booked in the next 24–48 hours.
-
-**Impact:** HIGH — this is the emotional centrepiece of the Montenegro leg.
+**Probability if unresolved:** HIGH — guards at HR→BiH and at Šćepan Polje (BA→ME, Day 7) do spot-check rental agreements. **Probability if you call today and collect the letter at pickup:** LOW. **Impact:** HIGH — trip collapses or is severely rerouted.
 
 **Mitigations:**
-1. **Email and WhatsApp all four operators today (Jun 11):**
-   - Rafting Centar Drina-Tara: office@raftingtara.com / +381 64 420 1956 — for Jun 23, 4 adults, 10:00 start
-   - TaraSport: info@tarasportrafting.com / +387 66 606 306
-   - Blue River Tara: bluerivertara.me
-   - Rafting Montenegro: raftingmontenegro.com
-2. Get written confirmation with a booking reference or deposit receipt. Do not accept a verbal "yes, come along."
-3. Backup date: If Jun 23 is completely sold out, ask about Jun 24 — you have two nights in Žabljak and could raft on Day 9 instead and hike Prutaš on Day 8.
-
-### 3b — Running late from Sarajevo (10:00 arrival target for rafting)
-
-**What's actually known:** Route skeleton says "Leave 07:00 Day 8 → Foča → Šćepan Polje → Tara rafting 10:00 (2h drive, works)." This is realistic under normal conditions — Sarajevo → Foča → Šćepan Polje is ~130 km / 2h on the skeleton's estimate.
-
-**Probability of being late:** MEDIUM — Monday night in Sarajevo is explicitly noted as a "Latin nights until 05:00" event. If the group is out until 3am, a 07:00 departure becomes painful.
-
-**Impact:** MEDIUM — operators are used to travelers showing up 30–60 min late; most will hold your slot for 30 minutes before reassigning it. Calling ahead buys more grace.
-
-**Mitigations:**
-1. When booking the rafting, **tell the operator you are driving from Sarajevo and ask if 10:30 is OK as a safety buffer.** Most operators offer 09:00, 10:00, and sometimes 11:00 starts.
-2. Set a hard "everyone in the car" deadline of 07:15 the night before, regardless of the bar situation.
-3. The road Sarajevo → Foča → Šćepan Polje passes through Tjentište (Sutjeska NP). It's a beautiful drive but has no good place to stop if you're running late — so skip the Sutjeska monument stop if you're behind schedule.
-4. The stretch Foča → Šćepan Polje is a narrow mountain road (~40 km, allow 1h). Do not try to make up time here.
-
-### 3c — Weather closes rafting
-
-**What's actually known:** The Tara canyon runs in a deep gorge, which gives some protection from storms, but operators will cancel on days of extreme rainfall or flash flood risk. June is generally fine — snow melt makes it the best rafting month (high water, powerful rapids). The risk is a one-day freak storm.
-
-**Probability:** LOW in June.
-
-**Impact:** MEDIUM — a wasted travel day, no refund on a day of activity (though some operators offer reschedule).
-
-**Mitigations:**
-1. When booking, ask the operator their weather cancellation policy and whether a reschedule is possible if they cancel.
-2. If weather cancels: the Piva canyon drive is spectacular in any weather, and Žabljak hikes are accessible. The day is not lost, just reorganized.
+1. **Call Sicily By Car TODAY (+385 23 646 547):** "We are driving into Bosnia-Herzegovina and Montenegro — is this permitted under our contract, and do we need a written cross-border permission letter or extra fee?" Record the agent's name; get a confirmation email.
+2. **At Zadar pickup Jun 16, get the A4 letterhead permission letter in hand.** Standard at Croatian desks. Photograph it; keep printed copies in the glovebox.
+3. If refused: escalate via DiscoverCars (ref D013947246) before Jun 16 — never at the border.
+4. The relevant crossings: HR→BiH (Day 3 eve, Jun 18), BA→ME at Šćepan Polje (Day 7, Jun 22), ME→HR (Day 12, Jun 27).
 
 ---
 
-## RISK 4 — Žabljak accommodation: Bocha's Camp and Mlinski Potok
+## RISK 2 — Day 3 hinges on the 20:30 LAST Mljet ferry (Jun 18)
 
-**What could go wrong:** Bocha's Camp website is confirmed dead (domain for sale as of Jun 2026). Auto Camp Mlinski Potok is listed on Pitchup with a 15% deposit system — not inherently problematic, but Pitchup's Montenegro inventory can be stale, and a payment confirmation does not guarantee a pitch is physically available on arrival.
+**What could go wrong:** Day 3 puts the Jun-18 airport pickup at ~17:10 in Dubrovnik, then a ~1h drive up Pelješac to Prapratno for the **20:30 sailing — the only one the airport pickup leaves time for, and the last of the day.** Miss it (late flight, slow pickup, missed turn, car queue full) and you have **no way onto Mljet that night and a booked-but-unreachable** plan: no Autokamp Marina pitch, and Day 4's Mljet NP morning evaporates.
 
-**Probability of problem with Mlinski Potok:** LOW — the camp has been operating consistently and is well-reviewed. Pitchup bookings for campsites in Montenegro are generally honoured.
+**What's known:** Jadrolinija line 832 (Prapratno→Sobra) is first-come-first-served for cars; no reservations. ~50 cars/sailing. Jun 18 is a Thursday in peak season. The friend's flight time is the single biggest variable — a delayed arrival cascades straight into a missed last ferry.
 
-**Probability of Bocha's being operational:** UNKNOWN — a dead website does not always mean a dead campsite in rural Montenegro. They may be operating off WhatsApp/phone only.
-
-**Impact:** MEDIUM — Žabljak has limited sleeping options. In high season (July–August it is very busy; in June it is manageable) you could be scrambling at 19:00 after a long drive.
+**Probability:** MEDIUM (timing is tight but achievable). **Impact:** HIGH — it breaks the only sleep plan for Night 3 and the Day-4 island morning.
 
 **Mitigations:**
-1. **Book Mlinski Potok via Pitchup NOW:** pitchup.com link is confirmed. The 15% deposit (~€9.60) is worth it for certainty.
-2. **Call Bocha's on +382 69 223218 to confirm they're operating.** If the line works and someone answers, ask if they have space Jun 23–24. This takes 2 minutes.
-3. **Have Hostel Hikers Den as a fallback:** It's the best hostel in Žabljak (★9.6), bookable on Hostelworld, takes 4 people in private rooms or dorms. Book a free-cancellation reservation now and cancel once Mlinski Potok is confirmed.
-4. If all preferred camps are full: park4night shows several tolerated overnight spots on the Durmitor plateau — with the camping gear you have, one wild-camp night at 1,500m is not a disaster, it's a highlight.
+1. **Pre-check the live Jun-18 timetable on jadrolinija.hr** and confirm 20:30 is running (summer schedules occasionally shift). Buy tickets online the night before to skip the desk queue.
+2. **Be parked at the airport by ~17:10 and rolling by ~17:45.** Build zero slack-killers into the afternoon — Ston walls + oysters + Kobaš earlier in the day must finish on time, not the ferry.
+3. **Track the friend's flight.** If it's delayed past ~18:30, abandon the 20:30 attempt early and switch to Plan B rather than racing.
+4. **Get to Prapratno ≥45 min early** to make the car queue. Foot passengers/bikes are never turned away; cars can be.
+5. **Plan B (no ferry):** sleep on the mainland near Ston/Dubrovnik Night 3 and reach Mljet next morning, OR drop Mljet and do an extra Pelješac/Korčula morning (Orebić→Korčula car ferry is small and frequent). Note this re-sequences Day 4's Kravica/Počitelj run into Bosnia — decide at the airport, not at the ramp.
+6. **Do NOT add any fixed early activity that depends on a specific morning sailing back** — keep Day 4's first Mljet block flexible.
 
 ---
 
-## RISK 5 — Cash management across three currencies
+## RISK 3 — Saturday Day 12 Montenegro→Croatia border queue (Jun 27)
 
-**What could go wrong:** Running out of local currency in a cash-only situation (Kravica entrance, Mlinski Potok camp, Durmitor NP entry, some konobas). ATMs exist in Mostar and Sarajevo but are sparse in rural Bosnia and can have variable limits.
+**What could go wrong:** Day 12 crosses ME→HR back toward Dubrovnik on a **Saturday in peak June** — the worst day/season combination for the EES biometric queue. A 1–4h wait at the wrong crossing eats your last full day (Pasjača, Konavle, Camping Kate) and frays nerves before the Jun-28 flight day.
 
-**The currency split:**
-- **Croatia (Days 1–7 mostly):** Euro. ATMs everywhere, cards widely accepted.
-- **Bosnia (Days 6–8):** Bosnian convertible mark (BAM/KM). Rate is fixed: 1€ = 1.955 KM. Bosnia is cash-heavy, especially outside Mostar/Sarajevo.
-- **Montenegro (Days 8–12):** Euro. Cards increasingly accepted in tourist areas, but campsites and some restaurants are cash only.
+**What's known:** The EU Entry/Exit System (EES) has been live since April 2026; first-time registration adds fingerprints + facial scan (2–4 min/person), subsequent crossings ~30s. ME→HR is a non-Schengen→Schengen **entry**, so EES applies. Debeli Brijeg (the big crossing) runs 1–4h in peak; Vitaljina/Karasovići is consistently 15–45 min. Saturday is changeover day for coastal rentals/holiday lets — heavy traffic both ways.
 
-**Cash needs by segment:**
-
-| Segment | Cash needed (4p) | Why |
-|---|---|---|
-| Croatia (Kravica is BA but nearby) | €50–80 in Euros | NP entries, campsites that don't take card (Camping Kate, some konobas) |
-| Bosnia leg | 200–250 KM (~€100–130) | Kravica (80 KM total), meals in Mostar/Sarajevo, petrol if cards refused, tips |
-| Montenegro | €80–120 | Durmitor entry (€20/day × 2 days = €40 for group, cash preferred), camp fees, Ostrog donation, konoba meals |
-
-**Probability of running out:** MEDIUM if you don't plan ahead. LOW if you withdraw before entering each country.
+**Probability of significant delay:** HIGH in the 09:00–18:00 Saturday window; LOW before ~08:00 or after ~20:00. **Impact:** MEDIUM — costs time on Day 12, doesn't threaten the Jun-28 flight (car drop is the morning of Day 13).
 
 **Mitigations:**
-1. **Withdraw 250 KM in Mostar** (there are ATMs near the old bridge). This covers Kravica, meals, and Bosnia overnight costs.
-2. **Mostar ATMs:** Raiffeisen Bank and Sparkasse (both Austrian-owned, lowest foreign card fees) have branches on the main street near Stari Most. Avoid bureau de change counters — the fixed peg means ATMs give the exact official rate.
-3. **Montenegro:** Withdraw €100–150 in Podgorica if passing through, or at an ATM in Nikšić (on the route south from Ostrog). Žabljak ATMs exist but are reportedly unreliable in Jun–Aug (long queues, sometimes empty).
-4. **Do not rely on Revolut/Wise in Montenegro remotely.** Both work fine in Montenegrin towns but contactless can fail at small campsites.
-5. **Emergency cash:** One person should carry €100 in physical emergency euros across the whole trip, untouched unless needed. This covers a tow, an unexpected medical co-pay, or a night's camping if everything else fails.
+1. **Use Vitaljina/Karasovići, NOT Debeli Brijeg.** This alone is the single biggest lever.
+2. **Cross early (before ~08:00) or late (after ~20:00).** Day 12 starts 07:30 with Pasjača in Konavle (Croatian side) — so cross the border **early in the morning before Pasjača**, getting the EES hit done while queues are thin, then enjoy the Konavle coast and Camping Kate on the HR side.
+3. **Passports physically in hand before the booth.** Austrian ID cards are NOT accepted at ME/HR borders; EU passports only.
+4. **If any group member has crossed a Schengen land border since April 2026,** their biometrics are already on file — that lane moves faster; put them forward.
+5. Have the rental cross-border letter ready in case it's requested on re-entry.
 
 ---
 
-## RISK 6 — Phone data in Bosnia and Montenegro
+## RISK 4 — Tara rafting (Day 7, Mon Jun 22) — booking, timing, weather
 
-**What could go wrong:** EU roaming does not apply in BiH or Montenegro (neither is EU). Your SIM reverts to roaming charges. You either rack up a large bill or lose navigation/maps when you need them most (crossing into Montenegro via Šćepan Polje, the 56-tunnel Piva canyon, finding Žabljak in the dark).
+The Day-7 morning is the highest-stakes sequence: Sarajevo/Pale wake-up → Foča → **Tara rafting Brštanovica, 11:30 launch (arrive 10:15–10:30)** → Šćepan Polje → Piva canyon.
 
-**What's realistic for common carriers:**
-- **A1 Austria:** Has a "World Roaming" add-on (approx €2–5/day in Western Balkans) that must be activated before travel. Without it, data in BiH and ME is billed at A1's international rates (~€5–15/MB — instant bill shock). A1 has reasonable network coverage in both countries via partner agreements (Mtel in BiH, T-Mobile ME/Crnogorski Telekom).
-- **T-Mobile (Germany/Austria):** Similar situation — roaming in BiH and ME is outside their EU flat rate. T-Mobile has its own "MagentaMobil" world options; check your specific plan. T-Mobile roaming partner in ME is Crnogorski Telekom (strong coverage). In BiH, coverage via BH Telecom.
-- **Vodafone:** Outside EU roaming zone. "Vodafone Passes" for non-EU travel cost approx €3–10/day. Network quality in BiH/ME via roaming partners is adequate in towns, weaker in Durmitor mountains.
-- **General pattern:** All major EU carriers have non-EU daily roaming add-ons in the €2–8/day range for Balkans. WITHOUT activating one, a single morning of Maps navigation could cost €30–100.
+### 4a — Operator full
+**Known:** June peak slots fill 1–2 weeks out; same-day is "unlikely." Departure is imminent. **Probability:** HIGH if not booked; LOW if confirmed now. **Impact:** HIGH — centrepiece of the Montenegro leg.
+- **Confirm in writing with a booking reference** for Jun 22, 4 adults, 11:30 Brštanovica launch. Operators: Rafting Centar Drina-Tara (office@raftingtara.com / +381 64 420 1956), TaraSport (+387 66 606 306), Blue River Tara, Rafting Montenegro. Don't accept a verbal "just come."
+- Backup: ask about a later Jun-22 launch, or shifting raft↔hike (raft Day 8 / Prutaš Day 7) if needed.
 
-**Coverage in remote areas:** The Šćepan Polje valley, Piva canyon tunnels, and high Durmitor (above 2,000m) have poor or no signal regardless of carrier. This is not a roaming issue — it's geography.
+### 4b — Running late from the Pale/Sarajevo night
+**Known:** Day 6 ends in Sarajevo (Žuta tabija, Kino Bosna noted as **closed Sunday** — so no late club night is even on the table that night), sleeping in Pale. Day 7 must be moving by ~07:00 to make a 10:15 rafting arrival via Foča (~2h, narrow mountain road through Tjentište). **Probability:** MEDIUM. **Impact:** MEDIUM — operators usually hold ~30 min if you call.
+- Set a hard "in the car by 07:15" deadline. The Sunday-closed Kino Bosna actually helps here — the group won't be out till 05:00.
+- Tell the operator you're driving from Sarajevo/Pale; ask if an 11:30 launch gives you comfortable buffer (it does) and whether a 12:00 fallback exists.
+- Foča→Šćepan Polje is narrow mountain road (~1h) — don't try to claw back time there.
 
-**Probability of data bill shock:** HIGH if no one checks their plan before departure.
-
-**Impact:** MEDIUM financially. HIGH logistically if you have no maps in the mountain sections.
-
-**Mitigations:**
-1. **Each person checks their carrier's roaming policy for BiH + Montenegro this week.** Look for a "daily roaming" or "travel day pass" option. Activate it before Jun 16 if your plan doesn't automatically apply it.
-2. **Download offline maps for ALL countries before departure.** Google Maps offline works well; Maps.me/OsmAnd are better for Montenegro mountain trails. Download: Croatia coast, BiH (full), Montenegro (full), with extra detail around Žabljak/Durmitor.
-3. **Buy a local SIM in Sarajevo (~€5–10 for a week of data, 10–20 GB).** BiH and ME SIMs are interchangeable in local shops. One person buys a SIM; the others use their phone's hotspot and keep carrier data off. This is the cheapest and most reliable option for the group.
-   - In Sarajevo: Mtel, BH Telecom, or HT Eronet shops are on the main streets. Tourist SIMs are available. In Montenegro: T-Mobile ME or Telenor shops in Nikšić or Budva.
-4. **Navigation fallback:** A car mount + one phone on local SIM for maps, others on wifi-only mode, is the standard setup for this kind of trip.
+### 4c — Weather cancels rafting
+**Known:** Tara runs in a deep gorge (storm-sheltered); June snowmelt = best rafting month. Risk is a one-day freak storm. **Probability:** LOW. **Impact:** MEDIUM.
+- Ask the operator's cancellation/reschedule policy at booking.
+- If cancelled: the Piva canyon drive + Piva Lake swim + Via Ferrata Piva are spectacular in any weather — Day 7 isn't lost, just resequenced.
 
 ---
 
-## RISK 7 — Car insurance and unpaved road damage
+## RISK 5 — Alpine weather on the high days: Durmitor Day 8 (Prutaš) & Sutjeska/Piva Day 7
 
-**What could go wrong:** Sicily By Car's terms almost certainly exclude damage caused by driving on unpaved roads. If the car sustains underbody damage, puncture, or suspension damage on a gravel track, the supplier could void your Full Coverage add-on and charge the full €1,600 deposit plus repair costs.
+**What could go wrong:** Days 7–8 sit at altitude. The **Prutaš summit (2393m) on Day 8** is an exposed ridge; afternoon thunderstorms build fast and are far worse on the ridge than they look from Black Lake. Day 7's Foča→Šćepan Polje→Piva run passes through Sutjeska's terrain and high reservoir country where weather turns quickly. Lightning, hypothermia from a soaking at altitude, and washed-out visibility are the real hazards — not the climb itself.
 
-**Specific route sections with unpaved risk:**
-
-| Section | Risk level | Notes |
-|---|---|---|
-| Šćepan Polje approach from BiH side | MEDIUM | The road from Foča to Šćepan Polje is paved but narrow. The last 2–3 km approaching the rafting base can be unpaved gravel in places. Forum reports vary — some say fully paved, some say rough patches. The Sportage handles it, but the contract is the issue. |
-| Piva canyon road (56 tunnels) | LOW | Fully paved, just unlit and narrow. Not a damage risk but needs headlights in tunnels. |
-| Durmitor trailheads | MEDIUM | The Black Lake approach road is paved. Side roads to less-visited Durmitor peaks (Prutaš, Šljeme) can be unpaved for the last 500m–2km. These are optional — park at the nearest paved point and walk. |
-| Lukomir village (if added) | HIGH | The road to Lukomir is a graded dirt track. Do not drive to Lukomir in the Sportage — park before the track starts. |
-| Cape Planka (Dark Sky night 1) | MEDIUM | The viewpoint road is reportedly rough. Check condition before committing — if it looks bad, stay on the paved pull-off. |
-| Bosnia rural roads generally | LOW-MEDIUM | Main roads are paved but poorly maintained. Large potholes are common. Speed-adapted driving prevents most damage. |
-
-**The Sincera Full Coverage caveat:** The policy says "no geographical restrictions — anywhere permitted under the rental agreement." It does NOT say unpaved roads are covered. Sincera and Sicily By Car are separate entities; Sincera pays the claim, but Sicily By Car still controls what voids the contract at the deposit level.
-
-**Probability of damage:** LOW if you stick to paved roads. MEDIUM if you try to drive to scenic spots via rough tracks "because the Sportage can handle it."
-
-**Impact:** HIGH — €1,600 deposit hold could be retained, or contested repair bills could follow.
+**What's known:** The plan already front-loads this correctly — Prutaš trailhead is **06:30 with a stated goal to be off the summit ridge by ~12:00.** Durmitor June weather is generally good in the morning, unstable in the afternoon. **Probability of an afternoon storm window:** MEDIUM. **Impact:** HIGH if caught exposed on the ridge.
 
 **Mitigations:**
-1. **Default rule: if you're unsure whether a road is paved, park and walk.** The Sportage is not an off-road vehicle for insurance purposes.
-2. **At Šćepan Polje:** The rafting operators are used to rental cars. Ask them "is the road to your camp paved or gravel?" when you book — they'll know exactly. If there's a short gravel section, park before it and walk the last 500m.
-3. **Do the full video walk-around at Zadar pickup** — every panel, all four wheels, undercarriage edges, windscreen. This proves any pre-existing damage was not caused by you.
-4. **Tyre check:** The Sportage will come with standard road tyres. Potholes in rural Bosnia are the more realistic risk than off-road tracks. Slow down on rough paved roads.
-5. **If you do scrape or damage the car:** Report it to Sicily By Car immediately by phone (+385 23 646 547) and document with photos. Do not try to conceal damage — it always makes deposit disputes worse.
+1. **Honour the 06:30 start and the ~12:00 turnaround.** If anyone is slow, turn back before noon regardless of how close the summit looks — this is non-negotiable on Prutaš.
+2. **Check the Žabljak mountain forecast the night before** (Meteo ME / Mountain-Forecast for Durmitor). If a storm is flagged, swap Prutaš for the **Black Lake bike circuit + Vražje jezero swim + Đurđevića zipline** (all in the plan, all low-exposure) and summit nothing.
+3. **Pack for alpine on a sunny morning:** layers, waterproof shell, hat/gloves, headlamp, 2L water/person, sun protection. 2393m is cold and windy even in June.
+4. **Download the Prutaš GPX (Wikiloc/Komoot)**, carry a power bank, and share the route with someone off-trip — signal is poor above the trailhead.
+5. **Day 7:** if weather is bad on the Piva/Sutjeska stretch, keep moving (the canyon drive is fine) but skip Via Ferrata Piva and any exposed scrambling that day.
 
 ---
 
-## RISK 8 — Medical and emergency services in remote areas
+## RISK 6 — Water-activity safety (rafting, canyoning, cliff jumps, self-guided paddles)
 
-**What could go wrong:** Someone is injured rafting, hiking Prutaš/Veliki Međed, or cliff jumping. In Žabljak and the Piva canyon, you are far from major hospitals.
+This plan is unusually water-heavy. The risks differ by activity:
 
-**Nearest hospitals:**
-- **Žabljak:** No hospital in Žabljak itself. The nearest emergency hospital is **Berane** (~90 min northeast) or **Nikšić** (~2h south). Žabljak has a **Health Centre (Dom zdravlja Žabljak, +382 52 361 411)** — a clinic for minor injuries, not surgery.
-- **Piva canyon / Šćepan Polje area:** Nearest is **Foča (BiH)** (~40 km, 1h north) or **Nikšić** (~80 km, 1.5h south). This is genuinely remote.
-- **Durmitor plateau above 2,000m:** If injured on the mountain, helicopter is the realistic evacuation. No road access above the trailhead.
-- **Tara river gorge:** Rafting operators have first aid on the water. Serious injuries are evacuated to road by raft to takeout point, then by ambulance. Operators are trained for this.
+- **Guided/commercial (lower risk, follow the guide):** Cetina rafting (Day 2), Tara rafting (Day 7), Mljet bike/lake loop, Skadar kayak base (Day 9), Dubrovnik sea kayak (Day 13), Blue Planet diving (Day 13). June Tara water is ~10°C — cold shock is real even in the included wetsuit; confirm all four can swim (operators ask).
+- **Cliff jumping (highest unmanaged risk):** Odysseus Cave (Day 4), Sveti Nikola "Hawaii" (Day 11), Bellevue/Miramare Dubrovnik (Day 13). Submerged rocks, variable depth with tide/swell, and boat traffic are the killers.
+- **Wild canyon swims (cold + remote):** Buna River @ Blagaj (Day 5), Mostarska Bijela cave-canyon (Day 5), Drežnica/Drežanka & Crni Vir (Day 6), Piva Lake & Vražje jezero swims (Days 7–8). Cold water, slippery rock, no lifeguards, weak/no signal.
+- **Self-guided paddle (Day 9 Skadar):** the booking note pushes the main session to a **calm-water MORNING paddle** — correct; Skadar afternoon wind picks up and you're on open water.
+- **Ada Bojana / open-coast swims (Day 10):** currents and river-mouth outflow.
 
-**Mountain rescue in Montenegro:** JATRC (Jedinica za traganje i spasavanje) — Montenegro Search and Rescue. Emergency number: **112** (works in both ME and BiH, GSM coverage permitting). Mountain rescue is available but response times in Durmitor can be 1–2+ hours depending on location.
-
-**Rafting operators:** All reputable Tara operators carry first aid kits and have emergency protocols. Serious injuries on the Tara canyon are rare but not unknown — the operators have dealt with them before.
-
-**Probability of injury:** LOW for a fit, careful group. MEDIUM on the Veliki Međed scramble (steep, loose terrain) and cliff jumping (impact depth, rocks).
-
-**Impact if injury occurs:** HIGH in remote areas due to access time.
+**Probability of a serious incident:** LOW for a fit, careful group; MEDIUM at unscouted cliff jumps. **Impact:** HIGH (see Risk 9 — remote evac).
 
 **Mitigations:**
-1. **Travel insurance with emergency medical evacuation is non-negotiable for this route.** Confirm before you go. Medical helicopter evacuation from Montenegro to a major hospital can cost €10,000–50,000 without insurance.
-2. **Group first aid kit:** Pack one proper kit — not just plasters. Include: blister care, bandage, antiseptic, ibuprofen/paracetamol, antihistamine, rehydration sachets, athletic tape.
-3. **Save 112 in every phone** before crossing the BiH border.
-4. **For Durmitor hike:** Download the trail GPX (Wikiloc has Prutaš and Veliki Međed), share your planned route with someone not on the trip, carry a power bank. If a team member is significantly slower, turn back before noon regardless of how close the summit seems — afternoon thunderstorms on the ridge are faster and worse than they look from below.
-5. **Cliff jumping:** Scout every jump before anyone enters the water. Look for shallow rocks and strong currents. Montenegro has specific spots with known safe depths (Tara cold plunge below Đurđevića bridge is well-documented) — at unmarked spots, go feet-first and shallow on the first attempt.
-6. **Tara rafting:** Confirm all four people can swim before booking (operators ask this). Wetsuits are included — June Tara water is ~10°C, which causes cold shock even in a wetsuit. Follow guide instructions on capsize procedure before you start.
+1. **Cliff jumps: scout EVERY jump before anyone leaps.** First jumper goes feet-first into the deepest, most-used line; check for rocks and depth; watch for boats at Sveti Nikola and Bellevue. Never jump into water you haven't seen someone surface from.
+2. **Self-guided Skadar paddle: go in the morning** (as the plan says), check wind, stay near shore, carry phone in a dry bag, tell the kayak base your route and return time.
+3. **Cold-water canyon swims:** enter slowly (cold-shock), never dive head-first into unknown pools, designate a non-swimmer spotter, and don't swim alone in Mostarska Bijela / Crni Vir where you may be the only people there.
+4. **Guided activities:** book reputable operators, listen to the capsize/safety brief, wear the helmet+PFD provided.
+5. **Tara/Cetina:** confirm swim ability; treat 10°C water seriously even in a wetsuit.
 
 ---
 
-## RISK 9 — EES biometric border checks and queue times
+## RISK 7 — Biokovo timed slot (Day 2, ~06:30/07:00 car entry)
 
-**What could go wrong:** The EU Entry/Exit System (EES) biometric registration has been operational since April 2026. At Debeli Brijeg (Montenegro→Croatia, Day 12) and other Croatian border crossings, first-time EES registration involves fingerprints and facial scan. This adds 2–4 minutes per person on first entry and 30 seconds on subsequent crossings. In summer, the queue effect is significant.
+**What could go wrong:** Biokovo NP scenic road requires a **timed, pre-booked car entry**, and the plan pins the **first ~06:30/07:00 slot** (coolest, emptiest, best light) to leave the rest of the day for Via Ferrata Fortica, Cetina rafting and Makarska. No booking = no entry (slots cap and sell out in season); wrong slot = blows the whole Day-2 chain. The Biokovo road is also narrow with steep drop-offs and a one-way upper section — a poor time slot means meeting descending traffic.
 
-**Plan:** Use Vitaljina/Karasovići crossing (NOT Debeli Brijeg) — consistently 15–45 min vs 1–4 h at Debeli Brijeg in peak season. Cross before 08:00 or after 21:00 at Vitaljina to avoid the EES peak window.
+**Probability:** MEDIUM (purely a booking/discipline risk). **Impact:** MEDIUM — derails Day 2's tight sequence but not the trip.
 
-**Affected crossings on this trip:**
+**Mitigations:**
+1. **Book the ~06:30 or 07:00 entry online in advance** (biokovo.com / pp-biokovo ticketing); print/screenshot the QR.
+2. **Be at the toll gate at slot time** — they enforce the window. The early slot also dodges the Via-Ferrata-Fortica heat conflict later in the morning.
+3. Drive the narrow road defensively, headlights on; respect the one-way upper section.
+4. If the dawn slot is sold out, take the next available and compress the Cetina/Makarska afternoon, or drop Sveti Jure summit time.
 
-| Crossing | Day | Direction | EES impact |
+---
+
+## RISK 8 — Piva canyon unlit tunnels & narrow gorge road (Day 7)
+
+**What could go wrong:** The Šćepan Polje→Plužine→Mratinje Dam→Piva Lake drive runs through **dozens of narrow, unlit, single-vehicle rock tunnels** carved into the canyon wall, plus the dam crossing. Hazards: oncoming cars mid-tunnel, no lighting, dripping water/loose rock, sudden darkness after bright gorge sun, and tour buses. Done late on a rafting day, you may be driving it tired and toward dusk.
+
+**Probability of a scare/scrape:** MEDIUM. **Impact:** MEDIUM (a scrape voids/erodes the deposit — see Risk 12); LOW–HIGH if a tunnel near-miss escalates.
+
+**Mitigations:**
+1. **Headlights ON before every tunnel, slow down, sound the horn approaching blind single-lane tunnels** (local practice). Let your eyes adjust — don't accelerate into the dark.
+2. **Drive the canyon in daylight.** Sequence Day 7 so the Piva tunnels are done before light fades; if rafting runs long, the via-ferrata/Piva-Lake-swim extras are the things to cut, not daylight driving time.
+3. The road is **paved** (low damage risk) but narrow — yield early at passing points; don't rush for an oncoming vehicle in a tunnel.
+4. Phone signal drops in the canyon — have the route downloaded offline before you enter.
+
+---
+
+## RISK 9 — Medical & rescue in remote areas (Days 7–9 especially)
+
+**What could go wrong:** An injury rafting (Day 7), on the Prutaš ridge (Day 8), cliff jumping (Days 4/11/13), or in a remote canyon (Days 5–6) — far from hospitals.
+
+**Nearest help:**
+- **Šćepan Polje / Piva (Day 7):** Foča BiH (~40 km/1h) or Nikšić (~80 km/1.5h). Genuinely remote.
+- **Žabljak / Durmitor (Day 8):** no hospital in Žabljak; clinic only (Dom zdravlja Žabljak +382 52 361 411). Nearest ER: Nikšić (~2h) or Berane (~90 min). Above-trailhead Prutaš = helicopter the realistic evac.
+- **Tara gorge (Day 7):** operators carry first aid and evac by raft to the takeout; they've handled serious injuries before.
+- **Emergency number: 112** works in BiH and ME (signal permitting). Montenegro mountain rescue (JATRC) response in Durmitor can be 1–2h+.
+
+**Probability:** LOW for a careful group; MEDIUM on Prutaš (loose terrain) and unscouted cliff jumps. **Impact:** HIGH due to access time.
+
+**Mitigations:**
+1. **Travel insurance with emergency medical evacuation is non-negotiable** — confirm all four are covered before Jun 16. Heli-evac from Durmitor can run €10,000–50,000 uninsured.
+2. **One proper group first-aid kit:** blister care, bandage, antiseptic, ibuprofen/paracetamol, antihistamine, rehydration sachets, athletic tape.
+3. **Save 112 in every phone** before the Day-3 BiH border.
+4. **Prutaš:** carry the GPX, a power bank, water; turn back before noon if anyone lags (ties to Risk 5).
+5. **Cliff jumps:** scout first, feet-first first attempt (ties to Risk 6).
+
+---
+
+## RISK 10 — Heat (peak-June, exposed days)
+
+**What could go wrong:** Late June in the Balkans interior can hit 35°C+. Exposure points: Stari Bar / Ulcinj / Ada Bojana (Day 10, no shade), Ston walls and Kravica midday (Days 3–4), Mostar Fortica zipline (Day 5), Stari Bar fortress (Day 10), via ferratas (Days 2, 7, 11 — rock bakes), and any midday hiking. Heat exhaustion, sunburn, dehydration, and a flat group by afternoon are the realistic outcomes — plus the plan's own notes repeatedly steer activities to early-morning or late-afternoon for exactly this reason.
+
+**Probability:** MEDIUM–HIGH that at least some days are very hot. **Impact:** MEDIUM (saps energy, can ruin a day; rarely dangerous if managed).
+
+**Mitigations:**
+1. **Respect the plan's timing notes** — they already push via ferratas and fortress walks to early morning, and zipline/winery/cliff-swims to late afternoon. Don't drift the schedule into midday on exposed stops.
+2. **Carry 2L water/person on activity days; refill at every opportunity.** Electrolyte sachets for rafting/hiking days.
+3. **Sun protection always:** SPF, hat, sunglasses; the Adriatic/canyon glare is strong even when it feels mild.
+4. **Build the midday around water or shade** — Kravica, Buna swim, Piva Lake, Vražje jezero, Odysseus cave are natural heat-of-day stops; use them as such.
+5. **Every day must survive dropping an item** (CLAUDE.md principle) — if the group is heat-flattened, cut the exposed stop and let the route rebuild.
+
+---
+
+## RISK 11 — Phone data & connectivity in dead zones (BiH + ME)
+
+**What could go wrong:** EU roaming does NOT apply in BiH or Montenegro. Either bill shock (~€5–15/MB on default international rates) or, worse, **no maps in the exact places you need them** — the Šćepan Polje crossing, Piva canyon tunnels, the Foča road, and high Durmitor all have poor/no signal regardless of carrier.
+
+**Known:** All major EU carriers (A1, T-Mobile, Vodafone) have non-EU Western-Balkans day-passes (~€2–8/day) that **must be activated before travel**. Coverage via partners (BiH: Mtel/BH Telecom; ME: Crnogorski Telekom/T-Mobile ME) is fine in towns, weak in the mountains. The first BiH border is **Day 3** — this matters from day three, not day six.
+
+**Probability of bill shock or lost navigation:** HIGH if no one checks. **Impact:** MEDIUM financially, HIGH logistically in the mountain sections.
+
+**Mitigations:**
+1. **Each person checks their carrier's BiH+ME roaming policy this week** and activates a day-pass before Jun 16.
+2. **Download offline maps TONIGHT for HR coast, BiH (full), ME (full)** — Google Maps offline + OsmAnd/Maps.me for Durmitor/Skadar trails. Pre-download the Piva canyon and Žabljak areas at high detail.
+3. **Buy one local SIM in Sarajevo (Day 6, ~€5–10 / 10–20 GB)** and hotspot the group; cheapest and most reliable. Mtel/BH Telecom/HT Eronet shops on the main streets.
+4. **Navigation setup:** one phone on local SIM in a car mount for maps; others on wifi-only to avoid accidental roaming charges.
+5. **Accept the dead zones:** in Piva canyon / above the Durmitor trailhead, signal will be gone — that's geography. Rely on the downloaded GPX/maps and the planned route, not live data.
+
+---
+
+## RISK 12 — Cash across three currencies + unpaved/rough roads (deposit risk)
+
+**Cash — what could go wrong:** Running out of local cash where cards aren't taken — campsites (Krvavica, Ravna, Mlinski Potok, Camping Kate), Durmitor NP entry, Kravica, Ostrog donation, rural konobas (Skadar, Konavle, Njeguši), and the Virpazar winery. ATMs are sparse in rural Bosnia/Montenegro.
+
+- **HR (Days 1–3, 12–13):** Euro. ATMs everywhere, cards fine.
+- **BiH (Days 4–7):** Bosnian mark (BAM/KM), fixed 1€ = 1.955 KM. Cash-heavy outside Mostar/Sarajevo. Kravica and rural meals want cash.
+- **ME (Days 7–12):** Euro. Cards in tourist areas; campsites/konobas often cash-only. Žabljak ATMs unreliable in summer.
+
+**Mitigations:**
+1. **Withdraw ~200–250 KM in Mostar (Day 5)** — Raiffeisen/Sparkasse near Stari Most (lowest fees; fixed peg so ATMs give official rate). Covers Kravica, BiH meals, Ravna camp.
+2. **Withdraw €100–150 in Montenegro early** (Nikšić on the Day-8 route south, not Žabljak). Covers Durmitor entry, camps, Ostrog, konobas, winery.
+3. **One person carries €100 untouched emergency cash** for the whole trip (tow, medical co-pay, an unplanned camp night).
+4. Don't rely on contactless at small ME/BiH campsites; have cash for every campsite night.
+
+**Roads — what could go wrong:** Sicily By Car almost certainly excludes unpaved-road damage; a gravel-track scrape/puncture could cost the **€1,600 deposit + repairs**.
+
+| Section | Day | Risk | Note |
 |---|---|---|---|
-| Zadar Airport → Croatia entry (Day 1) | Jun 16 | You're arriving INTO Croatia. No EES check on entry for those ENTERING the Schengen zone for the first time on this trip — EES checks travelers entering AND exiting. If you flew into Zadar from Vienna (Schengen), there's no land border EES check. |
-| HR → BiH at Ivanica (Day 3 evening) | Jun 18 | Schengen EXIT → BiH. EES applies. You're leaving Schengen. Expect 15–30 min in low season; 45–90 min on a Thursday evening in peak June. |
-| BiH → ME at Šćepan Polje (Day 8) | Jun 23 | Non-Schengen → Non-Schengen. EES does NOT apply. This crossing has no EES checks (neither country is Schengen). |
-| ME → HR at Vitaljina (Day 12) | Jun 27 | Non-Schengen → Schengen ENTRY. EES applies. This is where the risk is high. |
-| ME → HR at Debeli Brijeg (Day 12 backup) | Jun 27 | Same as above — Debeli Brijeg is the larger crossing with longer queues. |
-
-**Probability of significant delay at Vitaljina (Day 12):** HIGH in the 09:00–17:00 window. LOW before 08:00 or after 21:00.
-
-**Impact:** MEDIUM — a 2-hour border delay on Day 12 eats into your last free day but doesn't threaten the flight (car drop is 20:00 and you're flying Jun 28 or later).
+| Šćepan Polje rafting-base approach | 7 | MEDIUM | Last stretch can be gravel; ask the operator and park before any gravel |
+| Piva canyon road (tunnels) | 7 | LOW (damage), but narrow/unlit | Paved; hazard is tunnels (Risk 8), not surface |
+| Durmitor side roads to Prutaš trailhead | 8 | MEDIUM | Last 0.5–2 km can be unpaved — park at the paved point and walk |
+| Karuč / Rvaši lanes (Skadar) | 9–10 | LOW–MEDIUM | Narrow village lanes; drive slow |
+| Bosnia rural roads generally | 4–7 | LOW–MEDIUM | Paved but potholed — speed-adapt |
 
 **Mitigations:**
-1. **Use Vitaljina, not Debeli Brijeg, for the Day 12 crossing.** Vitaljina is consistently 15–45 minutes vs. Debeli Brijeg's 1–4 hours in peak season. This is already in the skeleton.
-2. **Cross before 08:00 OR after 21:00 at Vitaljina.** Given you're doing Kotor in the morning on Day 12, the realistic plan is: cross in the evening after Kotor/Perast, spend the night in Trebinje, and use Jun 28 for Dubrovnik/airport.
-3. **Have passports physically in hand before joining the queue.** Each person needs their passport — Austrian ID cards are NOT accepted at BiH or ME borders, and only EU passports (not ID cards) work for the HR→BiH crossing.
-4. **EES registration goes faster if one person in the car has already been registered on a previous trip.** First-timers take longer. If any group member has crossed into/out of Schengen via a land border since April 2026, their fingerprints are already in the system.
+1. **Default rule: unsure if it's paved → park and walk.** The Sportage is not an off-road car for insurance purposes.
+2. **Full video walk-around at Zadar pickup** (all panels, wheels, undercarriage, windscreen) to fix pre-existing damage on record.
+3. **Ask the Tara operator** whether their base access is paved or gravel when you confirm the booking; park before any gravel.
+4. If you scrape it, report to Sicily By Car immediately (+385 23 646 547) with photos — concealment worsens disputes.
 
 ---
 
-## RISK 10 — Language barrier
+## RISK 13 — Sunday / Monday closures and night-out timing
 
-**The actual situation:**
+**What could go wrong:** Two plan notes already flag this and must be respected:
+- **Kino Bosna (Day 6) is closed Sunday** — Jun 21 is a Sunday, so the planned Sarajevo night-out venue won't happen. Don't build the evening around it; pick an open alternative (or treat Day 6 as an early night, which helps the Day-7 rafting start — Risk 4b).
+- **Glorijet / Gruž fish market (Day 13) closed Sunday** — Jun 28 is Sunday; the plan already names **Barba (Old Town)** as the fallback. Use it.
+- **Club Maximus (Day 11, Fri Jun 26)** is the real night-out slot (Friday) — that's the night to go late, knowing Day 12 is a transit/border day where an early border crossing (Risk 3) still matters, so don't go *too* hard.
 
-Bosnia-Herzegovina and Montenegro are not difficult countries for English-speaking travelers. The genuine gaps are specific:
-
-**Where English works fine:**
-- Sarajevo: very good English in Old Town, restaurants, hostels, most hotels
-- Mostar: good English in tourist zone (near Stari Most)
-- Kotor, Budva: good English (heavy tourist traffic means staff speak English and often German, Italian, Russian)
-- Žabljak: decent English at rafting operators (international bookings), Hikers Den hostel (excellent English), and most guesthouses
-- Younger Montenegrins and Bosnians under ~35 generally speak passable to fluent English
-
-**Where English breaks down:**
-- Rural petrol stations in Bosnia (Foča area, road to Šćepan Polje): staff may speak only Bosnian/Serbian. Not a problem for fuel (point and pay), but for directions or mechanical issues this is a real communication gap.
-- Small family campsites (Mlinski Potok, Bocha's): owners typically speak basic functional English ("pitch here, shower there, €10 per person") but not conversational.
-- Border crossings: guards understand "rental car permission, going to Montenegro" but document-related conversations work better in clear slow English or with Google Translate open.
-- Ostrog Monastery: monks speak Serbian/Montenegrin, some Russian and Greek, little English. No communication needed beyond respectful behavior.
-- Remote konobas (Skadar Lake lakeshore restaurants): usually family-run, Serbian/Montenegrin only. Point at the menu; "jedno/dva pivo" and a smile goes a long way.
-
-**Probability of a genuine communication problem:** LOW (you'll figure it out). MEDIUM for specific edge cases below.
-
-**Impact:** LOW in most cases, MEDIUM in a car breakdown scenario.
-
-**Must-know phrases (transliterated, both Bosnian and Serbian/Montenegrin work):**
-
-| Situation | Phrase |
-|---|---|
-| Hello / Thank you | Zdravo / Hvala |
-| How much? | Koliko košta? |
-| Do you have space (camping)? | Imate li mjesta? |
-| Where is...? | Gdje je...? |
-| Petrol station | Benzinska stanica |
-| We have a problem with the car | Imamo problem s autom |
-| Call an ambulance | Pozovite hitnu pomoć |
-| Hospital | Bolnica |
-| Police | Policija |
-| I need a receipt | Trebam račun |
+**Probability:** CERTAIN (these are calendar facts). **Impact:** LOW if planned around, MEDIUM if discovered on the night.
 
 **Mitigations:**
-1. **Download Google Translate offline packs** for Bosnian/Serbian before the trip. The camera translation feature reads menus and signs in real time — it's the most useful feature for rural konobas.
-2. **Save key numbers in local language** as contacts: "Kamp Mlinski Potok," "Tara rafting," "Hitna pomoć (BiH)" 124, "Hitna pomoć (ME)" 124.
-3. At borders: have the rental permission letter, passports, and (when resolved) cross-border document printed and ready before you reach the booth. Don't make the guard wait while you dig through a bag.
-4. At petrol stations in Bosnia: card payment works at most modern stations (INA, NIS, BH Petrol). Cash as fallback. Unleaded (benzin bezolovni) or diesel (dizel) — know which the Sportage takes before you fill.
+1. Treat the booking notes as binding: no Kino Bosna Sunday, Barba not Glorijet on Day 13.
+2. Concentrate the big night out on **Day 11 (Friday, Budva/Kotor)**; keep Day 6 (Sun, pre-rafting) and Day 10 mellow.
+3. Verify opening days/hours of any must-do konoba (many rural ones close one weekday) the day before.
+
+---
+
+## RISK 14 — Language barrier (edge cases only)
+
+**Reality:** English is fine in Sarajevo, Mostar, Kotor, Budva, Žabljak rafting operators, and with under-35s. It breaks down at: rural Bosnian petrol stations (Foča/Šćepan Polje road), small family campsites (Mlinski Potok, Ravna), Ostrog monks, and remote Skadar/Konavle konobas. **Probability of a genuine problem:** LOW; MEDIUM in a breakdown scenario. **Impact:** LOW–MEDIUM.
+
+**Mitigations:**
+1. **Download Google Translate offline packs (Bosnian/Serbian)** — camera translation reads menus and signs.
+2. Save key contacts in local naming: campsites, Tara rafting, "Hitna pomoć" (ambulance) 124, emergency 112.
+3. Keep passports + cross-border letter ready before each booth.
+4. Key phrases: Zdravo / Hvala · Koliko košta? · Imate li mjesta? (camping) · Gdje je…? · Benzinska stanica · Imamo problem s autom · Pozovite hitnu pomoć · Bolnica · Policija · Trebam račun.
 
 ---
 
 ## Summary matrix
 
-| # | Risk | Probability | Impact | Status |
-|---|---|---|---|---|
-| 1 | Cross-border permission not in writing | HIGH (if not resolved) | HIGH | **Action: call Sicily By Car today** |
-| 2 | Mljet ferry full on Saturday | MEDIUM | MEDIUM | Arrive early, have Plan B (Korčula) |
-| 3a | Tara rafting not booked in time | HIGH (if not resolved) | HIGH | **Action: email all operators today** |
-| 3b | Late departure from Sarajevo for Tara | MEDIUM | MEDIUM | Hard 07:15 departure; buffer in booking |
-| 3c | Weather cancels Tara rafting | LOW | MEDIUM | Ask operator's rebooking policy |
-| 4 | Žabljak camps unavailable | MEDIUM (Bocha's) | MEDIUM | Book Mlinski Potok via Pitchup + Hikers Den backup |
-| 5 | Cash shortage in Bosnia/ME | MEDIUM | MEDIUM | Withdraw KM in Mostar; €100 emergency cash |
-| 6 | Data roaming bill shock | HIGH (if not checked) | MEDIUM | Check plans + buy local SIM in Sarajevo |
-| 7 | Unpaved road voids insurance | LOW (if careful) | HIGH | Default to parking + walking; video at pickup |
-| 8 | Medical emergency in remote areas | LOW | HIGH | Travel insurance with evac; first aid kit; 112 |
-| 9 | EES border queue on Day 12 | HIGH (in peak hours) | MEDIUM | Use Vitaljina, cross before 08:00 or after 21:00 |
-| 10 | Language barrier | LOW–MEDIUM | LOW | Offline Google Translate + 5 key phrases |
+| # | Risk | Day(s) | Probability | Impact | Status / lever |
+|---|---|---|---|---|---|
+| 1 | Cross-border permission not in writing | 3, 7, 12 | HIGH if unresolved | HIGH | **Call Sicily By Car today; letter at pickup** |
+| 2 | Day-3 20:30 LAST Mljet ferry missed | 3 | MEDIUM | HIGH | Be rolling by 17:45; verify timetable; Plan B ready |
+| 3 | Saturday ME→HR border queue | 12 | HIGH peak hours | MEDIUM | Vitaljina; cross before Pasjača, before 08:00 |
+| 4 | Tara rafting booking/timing/weather | 7 | HIGH if unbooked | HIGH | **Written booking; 07:15 departure; ask reschedule policy** |
+| 5 | Alpine weather (Prutaš / Piva-Sutjeska) | 7–8 | MEDIUM | HIGH | 06:30 start, 12:00 turnaround; check forecast; swap to bike loop |
+| 6 | Water safety (raft/canyon/cliff/paddle) | 2,4,5,6,7,9,11,13 | LOW; MED at cliffs | HIGH | Scout every jump; morning Skadar paddle; cold-water care |
+| 7 | Biokovo timed slot | 2 | MEDIUM | MEDIUM | Book 06:30/07:00 online; be at gate on time |
+| 8 | Piva canyon unlit tunnels | 7 | MEDIUM | MEDIUM | Lights on, slow, daylight; horn at blind tunnels |
+| 9 | Remote medical/rescue | 7–9 (also 4,11,13) | LOW; MED Prutaš/cliffs | HIGH | Evac insurance; first-aid kit; 112; turn back by noon |
+| 10 | Heat (peak June) | 3,4,5,10 + ferratas | MED–HIGH | MEDIUM | Honour timing notes; 2L water; midday = water/shade |
+| 11 | Data/connectivity dead zones | 3–12 | HIGH if unchecked | MED (HIGH nav) | Roaming pass + offline maps tonight; Sarajevo SIM |
+| 12 | Cash 3 currencies + rough-road deposit | 4–12 | MEDIUM | MED–HIGH | KM in Mostar; € in Nikšić; park & walk; pickup video |
+| 13 | Sunday/Monday closures & night timing | 6, 11, 13 | CERTAIN | LOW–MED | No Kino Bosna Sun; Barba not Glorijet; big night = Fri D11 |
+| 14 | Language barrier | 5–10 | LOW | LOW–MED | Offline Translate + 5 phrases |
 
 ---
 
-## The three actions that MUST happen before Jun 16
+## The four pre-departure non-negotiables (recap)
 
-These are the only risks that could genuinely collapse the trip if not resolved:
+1. **Written cross-border permission (BiH + ME)** — call today, collect at pickup. First border is Day 3.
+2. **Protect the Day-3 20:30 Mljet ferry** — verify the sailing, be rolling from the airport by 17:45, have Plan B chosen.
+3. **Tara rafting confirmed in writing (Day 7, 11:30 Brštanovica)**.
+4. **Roaming pass + offline maps for all three countries** — sorted before the Day-3 BiH border.
 
-1. **Call Sicily By Car (+385 23 646 547) and get written cross-border permission for BiH + Montenegro.** This is non-negotiable. Do it before anything else.
-2. **Book Tara rafting for Jun 23.** Email all four operators today (contact details in activities-booking.md). A trip to Montenegro without the Tara is possible but it's the loss of the single most praised activity on the route.
-3. **Check every phone's roaming plan and activate a non-EU roaming add-on OR plan to buy a Sarajevo SIM.** Do not discover this at the BiH border with a live navigation session running.
-
-Everything else on this list is manageable in the field. These three cannot be fixed once you're on the road.
+Everything else on this list is manageable in the field. These four cannot be fixed once you're on the road.

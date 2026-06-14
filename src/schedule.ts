@@ -65,8 +65,8 @@ export function parseDurationMinutes(text: string | undefined): number | null {
     return null;
   }
 
-  if (/half\s*day/.test(s)) return 240;
-  if (/full\s*day/.test(s)) return 480;
+  if (/half[\s-]*day/.test(s)) return 240;
+  if (/full[\s-]*day/.test(s)) return 480;
   if (/evening/.test(s) && !/\d/.test(s)) return 150;
   if (/late\s*night/.test(s) && !/\d/.test(s)) return 180;
   if (/\bmeal\b/.test(s) && !/\d/.test(s)) return 90;
@@ -136,7 +136,9 @@ export function estimateBaseStopMinutes(place: PlaceWithOverride): { minutes: nu
   const parsed = parseDurationMinutes(place.timeNeeded);
   if (parsed != null) return { minutes: parsed, source: 'data' };
 
-  return { minutes: CATEGORY_DEFAULT_MINUTES[place.category], source: 'heuristic' };
+  // Fallback to 60 if the category is unknown/invalid — never return undefined,
+  // or the stop's stay (and the whole day's clock) becomes NaN.
+  return { minutes: CATEGORY_DEFAULT_MINUTES[place.category] ?? 60, source: 'heuristic' };
 }
 
 /**
