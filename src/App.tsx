@@ -777,7 +777,10 @@ export default function App() {
     const peers = (dayStops[day] ?? []).filter((p) => p.id !== id);
     const insertAt = chooseBestInsertionIndex(place, peers);
     const order = dayOrderForInsertion(peers, insertAt);
-    applyOverrides((o) => ({ ...o, [id]: { ...o[id], day, dayOrder: order } }));
+    // On a day ⟹ committed: assigning a day promotes the stop to shortlist so we
+    // never get a candidate/backup sitting on a day (a `extra` stays an area
+    // option only while it has no day).
+    applyOverrides((o) => ({ ...o, [id]: { ...o[id], status: 'shortlist', day, dayOrder: order } }));
   }
 
   function moveInDay(id: string, dir: 'up' | 'down') {
