@@ -137,3 +137,45 @@ _★Dubrovnik Sea Kayaking → ★Blue Planet Diving Center → ★Lokrum island
 **Opt-in big-ticket options (NOT pinned, to avoid distorting the route — on the map / available):** Perućica primeval forest + Trnovačko jezero (D7 Sutjeska, the nature the monument-day lacks; Perućica needs a guided booking); Bobotov Kuk (D8, Montenegro's highest, hard); Murići beach + Rumija summit (D10); Njegoš Mausoleum on Lovćen (D11); Imotski Blue Lake (D2, ~40min inland); Trsteno Arboretum (near the D3 Pelješac approach); Sokol Grad + Konavoski dvori (D12 Konavle valley).
 
 **Drive-balance verdict:** the loop shape is sound (no road driven twice, ~27–36h total). Remaining stress days after the rebalance are **D11** (Kotor Bay — densest) and **D5/D6** (Mostar→Sarajevo) — all fine as overpacked menus to prune.
+
+
+---
+
+# Timeline (final polish) — LIVE 2026-06-14
+
+Per-day **start–wrap** windows are set and synced (editable in-app via the Start / wrap-by controls). Late/dark arrivals are intentional where useful; nightlife days wrap past midnight.
+
+- **Day 1** 10:00–21:00 · doesnt-fit-even-as-menu — Start 10:00 (pickup 1h → rolling ~11:00). Full menu = ~975 min stops + ~4.5h driving ≈ 20.5h → would land ~07:30 next day: hugely over, this is a menu
+- **Day 2** 06:00–22:00 · doesnt-fit-even-as-menu — Start 06:00. A realistic ambitious pick (Biokovo toll+Sveti Jure+Skywalk ~3.25h done by 09:15 → sweep N to one Cetina water activity ~rafting+cliff-ju
+- **Day 3** 08:30–21:45 · tight — Start 08:00 → Baćina 60m, bridge+leg, Ston walls 90m (~10:00-11:30, beat midday heat), Mali Ston oysters 40m, Kobaš beach 90m + Gastro Mare lunch 100m
+- **Day 4** 08:00–19:00 · doesnt-fit-even-as-menu — Start 08:00 west Mljet. Full Mljet menu (bike loop 180 + Montokuc 120 + Odysseus 120 + Konoba lunch 75 + ~45 island drives) = ~9h, blowing past the 16
+- **Day 5** 06:00–23:30 · tight — 06:00 start near Stolac → Radimlja 25m + Stolac old town 75m (cool morning) → 40m drive west to Trebižat canoe 3.5h (the day's big anchor) → 35m back 
+- **Day 6** 08:00–00:00 · full-ok — Start 08:00 Mostar; Diva Grabovica hike (~90m incl. dead-end-valley access) + Jablanica kayak (180m) + sunken bridge → ~44km canyon/hwy to Sarajevo by
+- **Day 7** 07:00–19:00 · tight — 07:00 leave Sarajevo → ~2h transit (quick Tjentiste photo) → 10:00 Tara raft (half-day to ~13:30) + camp lunch → Piva canyon: Mratinje dam, Via Ferrat
+- **Day 8** 06:00–19:00 · doesnt-fit-even-as-menu — 06:00 start → drive 15m to trailhead → Prutaš 5h (back ~11:30) beats the storms → lunch Crno Jezero 1.25h → Žminje walk 1.5h → ~15:00 with a light aft
+- **Day 9** 06:30–18:30 · full-ok — Start 06:30 Žabljak → ~2h15 mountain leg → Ostrog ~08:45 (1h45) → ~1h20 to Skadar ~11:50 → Pavlova viewpoint + ONE water activity (kayak base ~2h30) +
+- **Day 10** 06:30–20:00 · tight — Realistic Skadar-core path (skip the deep-south morning): start ~08:00, boat AM + cold swim + late winery -> arrive Rvaši ~15:00, big slack to chill/e
+- **Day 11** 06:30–03:00 · tight — 06:30 Budva fishing(2h)+paraglide(1.25h)→~10:00, drive up Lovćen ~30min, ATV 10:30→15:30(5h), Njeguši lunch→16:15, serpentine descent ~25min→16:40, La
+- **Day 12** 07:30–21:30 · full-ok — 07:30 leave Naluka (Morinj) -> Vitaljina/Karasovici border (~30-45min Sat queue) -> Pasjaca ~09:30 (2h, beat midday heat on the cliff descent) -> Cavt
+- **Day 13** 07:30–18:30 · full-ok — Start 08:00 (one water activity, e.g. kayak 180m -> 11:00), Gruž lunch 75m -> 12:25, Old Town 120m -> 14:35, gelato 15m -> 14:50, Buža 45m -> 15:35, B
+
+**Overload 'make-it-an-option' flags (your call to un-pin):**
+- D1: Skydive Zadar - Beach Tandem Jump (Adventure Driven Vacations), Duboka Draga cove (Vrsi, near Zadar), Zadar SUP rental — Salty Society (delivered to your beach), Zadar Old Town (Sea Organ + Sun Salutation)
+- D2: Biokovo Tandem Paragliding (Makarska), Cetina Canyon Zipline (Omiš), Cetina Canyoning (Zadvarje / Gubavica), Makarska Riviera self-guided SUP/kayak — Tučepi & Punta Rata coves, Omiš Cetina River self-guided kayak rental (Old Town), Konoba Feral (Brela — peka & seafood), Radmanove Mlinice (Cetina canyon / rafting finish)
+- D3: Kobaš bay (secluded cove + fish konobas near Ston), Gastro Mare (Kobaš fish konoba), Mljet lakes self-guided kayak/canoe rental (Mali Most / Pomena)
+- D4: Žuljana beach (Pelješac), Kravica Waterfalls, Počitelj, Počitelj pomegranate-juice & fig/honey stalls
+- D5: Mostarska Bijela — hidden cave-canyon waterfall, Drežnica / Drežanka canyon — local swim canyon, Rent A Kayak Mostar — SUP & kayak on Lake Mostar (Potoci), Fortica Hill — Skywalk & Zipline, Blagaj / Vrelo Bune — paddle reality check (mostly guided boat only)
+- D6: Neretva River Rafting (Konjic), Neretva Kayak Canoe Safari (Jablanica) — self-guided canyon paddle, CanoeKor / Neretva Canoeing (Konjic) — hourly self-guided rental, Boračko Lake — calm-water paddle (rent in Konjic, bring to the lake)
+- D7: 1984 Olympic Bobsled & Luge Track (Trebević), Gradac / Gradačka stijena viewpoint (above Foča), Sand Pyramids (Pješčane Piramide, Daničići)
+- D8: Savin Kuk (2313m) — easiest high Durmitor summit (on foot or chairlift), Grabovica Canyon Canyoning (pre-season Nevidio substitute), Komarnica canyon (Dragišnica i Komarnica NP) — wild packraft/hike, Šavnik, SOA Experience Can-Am 4-seat buggy & quads (Durmitor), Đurđevića Tara Bridge zipline
+- D9: Vranjina self-rent kayak + SUP (Skadar Lake), Karuč + Karučko Oko — the secret stone village & spring-eye of Skadar, Rijeka Crnojevića — Danilo's Bridge swim + kayak village
+- D10: Sea Fishing Charter - Fishing Montenegro Bar (Captain Beli), Stari Bar (Old Bar) — abandoned fortress town, Ulcinj Old Town (Stari Grad) + Mala Plaža, Ada Bojana Island Beach, Safari Beach Camping, Velika Plaža, Skadar Lake self-drive motorboat (Click&Boat / Virpazar), Kom Monastery boat tour (Skadar Lake, from Rijeka Crnojevića / Virpazar), Rijeka Crnojevica — Enjoy Skadar Lake kayak rental
+- D11: Lovćen ATV 'Lovćen Legends' (Ivanova Korita), Balkan Flow — Budva self-rent SUP + kayak, Pržno / Sveti Stefan — beach SUP + kayak rent, Go Go Gaga — Bay of Kotor self-rent kayak + SUP, Kotor Bay Tours — self-rent kayak (Dobrota), Sveti Nikola Island ("Hawaii") Cliff Jumping (Budva), Via Ferrata Kotor (Vrata na Tabačini), Club Sparta (Budva — premier nightclub, open June), Budva Old Town bars (Casper, El Mundo, Mañana)
+- D12: Blue Cave Private Speedboat Tour (Speed Boat Montenegro), Cavtat / Konavle self-guided kayak & SUP rental
+- D13: Blue Planet Diving Center (Dubrovnik — Lokrum & Grebeni wrecks), Dubrovnik self-guided kayak rental — Pile Beach to Lokrum & Betina Cave, Lokrum island (Dubrovnik), Sveti Jakov beach (Dubrovnik), Barba (Dubrovnik seafood street food)
+
+**Cross-day coherence (the two real pinch points):**
+- **D6→D7:** Sarajevo Sunday night out, but D7's Tara rafting (~10:00) forces a ~07:00 leave — protect the morning; keep the night moderate or accept a tired rafting start.
+- **D11→D12:** Friday is the biggest club night (Budva/Kotor), so D12's border start was moved 05:30→07:30 (still clears the Saturday queue per kotor-day12 timing). Don't dawn-start after the club.
+
+**Note:** Day 4 = Mljet morning → ferry → Kravica/Počitelj → **Poplat (Donji Poplat, Stolac, Bosnia — NOT Korčula)**. A review agent twice mis-read 'Poplat' as the Korčula village; the pin is verified at 43.03,18.02 and the day is coherent.
