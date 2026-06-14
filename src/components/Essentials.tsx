@@ -34,13 +34,13 @@ interface Task { id: string; text: string; done: boolean }
 // committed activity + its correct date (see research/booking-guide.md).
 const PRESET_TASKS: Task[] = [
   { id: 'c1', text: 'Call Sicily By Car (+385 23 646 547) — confirm BiH+ME cross-border permission, get the letter', done: false },
-  { id: 'c2', text: 'Book Skydive Zadar tandem (D1 Jun 16) — Adventure Driven Vacations', done: false },
+  { id: 'c2', text: 'Buy Krka NP timed-entry tickets online (D1 Jun 16) — np-krka.hr; the swim is at Skradin, not in the park', done: false },
   { id: 'c3', text: 'Book Biokovo NP toll-road car entry (D2 Jun 17, ~06:30) — shop.pp-biokovo.hr, ~20 cars/hr', done: false },
   { id: 'c4', text: 'Book Cetina CANYONING (D2 Jun 17 AM) — Zadvarje/Gubavica (jumps + 55m rappel); rafting = backup', done: false },
   { id: 'c5', text: 'Book Tara rafting (D7 Jun 22) — office@raftingtara.com / +381 64 420 1956', done: false },
   { id: 'c6', text: 'Book GO2FLY tandem paragliding Brajići→Bečići (D11 Jun 26, late afternoon) — Budva', done: false },
   { id: 'c7', text: 'Book Dubrovnik sea kayak Walls & Lokrum (D13 Jun 28, AM) — clear for the 20:40 flight', done: false },
-  { id: 'c8', text: 'Mljet ferry Prapratno→Sobra D3 Jun 18 — buy ticket ONLINE; catch last 20:30 OR Plan B (sleep mainland, 10:15 ferry D4)', done: false },
+  { id: 'c8', text: 'Mljet ferry: buy Prapratno→Sobra ticket ONLINE (D3 Jun 18), catch the 20:30 LAST sailing. Return Sobra→Prapratno D4: 06/09/12/16/19:30, no car reservation — queue early', done: false },
   { id: 'c9', text: 'Self-rent boat plan: HR no licence under 5m/~5kW; ME small boats — arrange in Kotor/Budva/Cavtat', done: false },
   { id: 'c10', text: 'Cash: €100–150 small bills + exchange some to BAM for Bosnia', done: false },
   { id: 'c11', text: 'Download OsmAnd offline maps for BiH + ME', done: false },
