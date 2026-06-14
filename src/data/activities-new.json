@@ -46,7 +46,7 @@
       "day-4"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-bar-fishing-beli",
@@ -276,7 +276,7 @@
       "budget"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-lovcen-atv-cosmopolitan",
@@ -330,6 +330,6 @@
       "budget"
     ],
     "rating": 3,
-    "status": "shortlist"
+    "status": "candidate"
   }
 ]

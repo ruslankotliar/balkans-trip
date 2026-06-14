@@ -120,7 +120,7 @@
       "river"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "hr-kasjuni",
@@ -698,7 +698,7 @@
       "lighthouse"
     ],
     "rating": 5,
-    "status": "shortlist",
+    "status": "candidate",
     "cost": "Free"
   },
   {

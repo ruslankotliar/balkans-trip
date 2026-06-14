@@ -351,7 +351,7 @@
       "panorama"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-kotor-serpentine-viewpoint",
@@ -404,7 +404,7 @@
       "free-loophole"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-kotor-fortress-free-ladder",
@@ -629,7 +629,7 @@
       "lustica"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-stari-bar",
@@ -805,7 +805,7 @@
       "petrovac"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "me-petrovac",
@@ -992,7 +992,7 @@
       "virpazar"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "me-camp-virpazar",

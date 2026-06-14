@@ -22,7 +22,7 @@
       "near-zadar"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "hr-anica-kuk",
@@ -47,7 +47,7 @@
       "exposed"
     ],
     "rating": 5,
-    "status": "shortlist",
+    "status": "candidate",
     "cost": "Free"
   },
   {
@@ -98,7 +98,7 @@
       "zrmanja"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "hr-tulove-grede",
@@ -598,7 +598,7 @@
       "hiking-base"
     ],
     "rating": 4,
-    "status": "shortlist"
+    "status": "backup"
   },
   {
     "id": "hr-camping-simuni",

@@ -5,7 +5,7 @@
     "country": "ME",
     "category": "beach",
     "lat": 41.871,
-    "lng": 19.330,
+    "lng": 19.33,
     "description": "Triangular river-delta island at the mouth of the Bojana River — 3 km of wide dark volcanic sand, shallow entry, with a bohemian undeveloped feel unlike anywhere else on the Montenegrin coast. A row of wooden stilt restaurants built over the river serves wild-caught fish (carp, sole, eel); this dinner is the main event.",
     "communityNotes": "\"One of the most beautiful beaches I've ever seen — very wide and lasts for kilometres.\" FKK (nudist) section is clearly marked; outside it, clothing is optional and non-nudists are common everywhere. ⚠️ Mosquitoes in the delta evenings are genuinely severe — multiple sources say DEET is not optional. Windsurfing/kitesurfing on the sea-facing side; calm river side near restaurants.",
     "sources": [
@@ -30,7 +30,7 @@
     "country": "ME",
     "category": "food",
     "lat": 41.856,
-    "lng": 19.340,
+    "lng": 19.34,
     "description": "Family-run stilt restaurant on the Bojana River since 1991, built on wooden pilings over the water. Wild-caught fresh fish (carp, sole, bream, eel) sourced directly from the river and Adriatic. Ranked #1 of 7 restaurants on Ada Bojana island, 485 TripAdvisor reviews (383 Excellent).",
     "communityNotes": "\"You feel like on a boat — amazing view on the river.\" \"Best Balkan restaurant for fish and seafood.\" Fish soup ~€6, fresh whole fish €15–30, beers included in meal estimates of ~€25–35pp. **Barbana** is the equally-praised alternative: candlelit, tables in trees, at the exact river mouth meeting the Adriatic — call it the more atmospheric of the two.",
     "sources": [
@@ -47,7 +47,7 @@
       "ada-bojana"
     ],
     "rating": 5,
-    "status": "shortlist"
+    "status": "candidate"
   },
   {
     "id": "me-fkk-camp-ada-bojana",

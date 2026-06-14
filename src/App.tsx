@@ -403,14 +403,27 @@ export default function App() {
     return grouped;
   }, [places]);
 
+  // The route line + driving + day-fit clock reflect only the COMMITTED plan
+  // (shortlist & friends). `extra` = situational "what else is around here"
+  // options the group browses on the ground — they must never bend the route
+  // or the schedule, even if one has a day assigned.
+  const routeStops = useMemo(() => {
+    const out: Record<number, PlaceWithOverride[]> = {};
+    for (const [day, ps] of Object.entries(dayStops)) {
+      const kept = ps.filter((p) => p.status !== 'extra');
+      if (kept.length) out[Number(day)] = kept;
+    }
+    return out;
+  }, [dayStops]);
+
   const dayPoints = useMemo(() => {
     const result: Record<number, [number, number][]> = {};
-    for (const [dayStr, ps] of Object.entries(dayStops)) {
+    for (const [dayStr, ps] of Object.entries(routeStops)) {
       const dayNum = Number(dayStr);
       const pts: [number, number][] = ps.map((p) => [p.lat, p.lng]);
       // Prepend the previous night's sleep location so the route — and its
       // drive time — covers the full day including the morning relocation drive.
-      const prevPs = dayStops[dayNum - 1];
+      const prevPs = routeStops[dayNum - 1];
       if (prevPs && prevPs.length > 0 && pts.length > 0) {
         const sleepSet = new Set<string>(SLEEP_CATEGORIES);
         const prevSleep =
@@ -427,14 +440,14 @@ export default function App() {
       result[dayNum] = pts;
     }
     return result;
-  }, [dayStops]);
+  }, [routeStops]);
 
   const { routes, loading: routesLoading } = useDayRoutes(dayPoints);
 
   // Manual ferry hours per day (sum over the day's consecutive stop pairs).
   const dayFerrySec = useMemo(() => {
     const out: Record<number, number> = {};
-    for (const [day, ps] of Object.entries(dayStops)) {
+    for (const [day, ps] of Object.entries(routeStops)) {
       let s = 0;
       for (let i = 0; i < ps.length - 1; i++) {
         s += (ferryHours[ferryPairKey(ps[i].id, ps[i + 1].id)] ?? 0) * 3600;
@@ -442,7 +455,7 @@ export default function App() {
       if (s > 0) out[Number(day)] = s;
     }
     return out;
-  }, [dayStops, ferryHours]);
+  }, [routeStops, ferryHours]);
 
   const dayConfig = useMemo<DayConfig>(
     () => parseDayConfig(overrides[DAY_CONFIG_ID]?.note),
@@ -465,7 +478,7 @@ export default function App() {
 
   const daySchedules = useMemo(() => {
     const out: Record<number, ReturnType<typeof buildDaySchedule>> = {};
-    for (const [dayStr, stops] of Object.entries(dayStops)) {
+    for (const [dayStr, stops] of Object.entries(routeStops)) {
       const day = Number(dayStr);
       const route = routes[day];
       if (!route) continue;
@@ -482,7 +495,7 @@ export default function App() {
       if (schedule) out[day] = schedule;
     }
     return out;
-  }, [dayStops, routes, ferryHours, dayConfig]);
+  }, [routeStops, routes, ferryHours, dayConfig]);
 
   const syncLabel = syncOnline ? 'online' : 'offline';
   const syncTitle = syncOnline

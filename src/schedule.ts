@@ -110,9 +110,8 @@ export function formatClock(sec: number): string {
   const total = Math.max(0, Math.round(sec / 60));
   const h = Math.floor(total / 60);
   const m = total % 60;
-  const label = `${String(h % 24).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
-  // Past-midnight finishes (e.g. nightlife days) read as "01:30+1", not "25:30".
-  return h >= 24 ? `${label}+1` : label;
+  // Wrap past-midnight finishes (nightlife days) to a normal clock: 25:30 -> 01:30.
+  return `${String(h % 24).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
 }
 
 /** Format a clock range such as "08:00–09:30". */
