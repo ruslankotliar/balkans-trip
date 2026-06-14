@@ -1,4 +1,3 @@
-import { formatDuration } from './trip';
 import type { CachedRoute, PlaceWithOverride } from './store';
 
 export const DEFAULT_DAY_START_HOUR = 8;
@@ -112,11 +111,6 @@ export function formatClock(sec: number): string {
   return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
 }
 
-/** Format a minute estimate in the same "3h 25m" style as drive durations. */
-export function formatMinutes(minutes: number): string {
-  return formatDuration(minutes * 60);
-}
-
 /** Format a clock range such as "08:00–09:30". */
 export function formatTimeRange(startSec: number, endSec: number): string {
   return `${formatClock(startSec)}–${formatClock(endSec)}`;
@@ -181,7 +175,7 @@ export function buildDaySchedule(
     const arrival = clock;
     const stopStaySec = Math.round(estimate.minutes * paceMultiplier) * 60;
     const isSleep = place.category === 'accommodation' || place.category === 'campsite';
-    const effectiveStaySec = isSleep ? stopStaySec : stopStaySec;
+    const effectiveStaySec = stopStaySec;
     const departure = arrival + effectiveStaySec;
     const next = stops[i + 1];
     let legSec = 0;

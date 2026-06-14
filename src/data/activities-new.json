@@ -1,0 +1,335 @@
+[
+  {
+    "id": "me-kotor-blue-cave-speedboat",
+    "name": "Blue Cave Private Speedboat Tour (Speed Boat Montenegro)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.4266,
+    "lng": 18.7679,
+    "description": "Captained 3h private speedboat from Kotor Old Town: swim inside the Blue Cave on Luštica, WWII submarine tunnels, Mamula island, Our Lady of the Rocks. No licence needed; choose your own swim/cliff-jump coves and timing.",
+    "communityNotes": "Operator (Montenegro Submarine brand) 4.8/5 across 2,700+ TripAdvisor reviews, Travellers' Choice 2017-2025, captains praised by name (Igor, Luka, Mark); reviews as recent as June 2026 ('one of the highlights of our trip'). Private page confirms onboard shower, Wi-Fi, snorkel gear, multilingual captain, €300 base. Consistent advice: go MORNING for the blue light and before the cave gets chaotically crowded with tour boats mid-day.",
+    "sources": [
+      "https://speedboatmontenegro.com/boat-tours/blue-cave-private-tour-6-people/",
+      "https://speedboatmontenegro.com/boat-tours/blue-cave-group-tour/",
+      "https://www.tripadvisor.com/Attraction_Review-g295381-d8141019-Reviews-Montenegro_Submarine_Kotor_Speed_Boat_Tours-Kotor_Kotor_Municipality.html"
+    ],
+    "cost": "From €300 whole boat (up to 8) = ~€75pp for 4; group/shared tour ~€36pp",
+    "timeNeeded": "3h (book a morning slot, ~9-12, for cave light)",
+    "tags": [
+      "boat",
+      "swimming",
+      "day-11"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-zaton-noboat-elaphiti",
+    "name": "No-Licence Self-Drive Boat to the Elaphiti (AdriaWave, Zaton)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.6889,
+    "lng": 18.0331,
+    "description": "Legally rent a no-skipper small boat (<5m, <5kW) from Zaton/Dubrovnik and self-drive to the Elaphiti islands (Koločep, Lopud, Šipan) - sheltered, short hops, your own swimming coves. Fuel, snorkel gear, safety kit and ~20-min briefing included; apartment pickup/dropoff offered.",
+    "communityNotes": "AdriaWave 5.0/5 (117 reviews overall); the no-licence listing actively booking for June 2026 ('booked 9 days in advance on average'). Reviewers praise the 'like new' boat, briefing, personalized map, apartment pickup. Only gripe: modest engine power (expected for a legal <5kW boat). Croatian no-licence rule confirmed: boat <5m AND engine <5kW, over-18s, stay within ~500m of shore - so keep to the NEAR Elaphiti, don't push to Mljet.",
+    "sources": [
+      "https://www.getyourguide.com/dubrovnik-l513/rent-a-small-boat-without-skipper-explore-the-islands-t622571/",
+      "https://www.tripadvisor.com/AttractionProductReview-g1190304-d26580910-Dubrovnik_Boat_Rental_without_License-Zaton_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://www.sea-help.eu/en/news-general/boat-driving-license-croatia-6-8-hp/"
+    ],
+    "cost": "From ~€85-120/day = ~€22-30pp for 4",
+    "timeNeeded": "Full day self-drive",
+    "tags": [
+      "boat",
+      "self-drive",
+      "swimming",
+      "day-4"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-bar-fishing-beli",
+    "name": "Sea Fishing Charter - Fishing Montenegro Bar (Captain Beli)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.0953,
+    "lng": 19.0875,
+    "description": "Owner-run sea fishing charter from Bar Marina on a 23ft Arvor pilothouse with a live fish tank (Capt. Beli + son). June targets: barracuda trolling, dentex, mackerel, amberjack, leer fish. Licence is required by law but covered by the charter; captain cleans/fillets your catch.",
+    "communityNotes": "5.0/5 over 61 reviews, verified recent: Jun 13 2026 'Beli was an excellent captain - knows the location better than anyone'; May 28 2026 'comfortable, stable boat, tank for the fish'; May 15 2026 'caught our biggest ever leer fish (9kg).' Best TIMING fit on the trip - lands on the Day-10 Bar stop with near-zero detour, and Bar is nearest the southern grounds. Bar backups: Tuna III (Capt. Nino 4.9/33) and a smaller Arvor 25 (5.0/16, from €180).",
+    "sources": [
+      "https://fishingbooker.com/charters/view/19618",
+      "https://fishingbooker.com/charters/view/17452",
+      "https://fishingbooker.com/destinations/location/me/bar"
+    ],
+    "cost": "Whole boat 4h €280 (~€70pp); longer/offshore €340-800",
+    "timeNeeded": "4-5h half-day (early start, drive on by midday)",
+    "tags": [
+      "fishing",
+      "boat",
+      "day-10"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-budva-fishing-predator",
+    "name": "Sea Fishing Charter - Predator Budva (Captain Zoran, No Fish No Pay)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.2783,
+    "lng": 18.8388,
+    "description": "Highest-volume Budva fishing operator: owner-run 28ft Arvor (Capt. Zoran), rods/tackle/live bait + drinks/snacks + toilet aboard, you keep your catch (he fillets it). Real 'No Fish No Pay' policy. Licence covered by the charter. Backup/alt to the Bar charter if the group fishes on the Day-11 Budva leg instead.",
+    "communityNotes": "4.9/5 over 143 reviews, verified recent (May 24 2026 'professional, friendly, knew all the best spots; boat was clean'; Oct 13 2025). Recurring theme: Zoran changes spots until fish are found; guests catch multiple species per session. A 2023 review confirms the No-Fish-No-Pay policy is honored. Co-equal Budva alt: SoMax / Capt. Bojan (5.0/125 reviews) who also runs snorkel/island trips if the group wants fishing + swim combined.",
+    "sources": [
+      "https://fishingbooker.com/charters/view/769",
+      "https://fishingbooker.com/charters/view/31175",
+      "https://fishingbooker.com/destinations/location/me/budva"
+    ],
+    "cost": "Whole boat 3h €280 (~€70pp), 2h €200, 6h €450",
+    "timeNeeded": "2-3h half-day from Budva Marina",
+    "tags": [
+      "fishing",
+      "boat",
+      "day-11"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-budva-paraglide-becici",
+    "name": "Tandem Paragliding Brajići → Bečići (GO2FLY / Budva)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.3019,
+    "lng": 18.8914,
+    "description": "Tandem paraglide off the Brajići ridge (~760m) below Fort Kosmač, gliding over Budva, Sveti Stefan and turquoise sea, landing at the Bečići beach meadow. No experience needed; hotel pickup/transfer to launch included, so zero extra driving on the Budva day.",
+    "communityNotes": "4.9/5 across 460+ TripAdvisor reviews, recent genuine text (Becky H May 2026 'excellent reading of the conditions'; Nov 2025 'pure adrenaline, one of the most exciting experiences of my life'). Multiple polished operators compete on this launch (GO2FLY +382 69 100 777, budva-paragliding.me). Take an EARLY-MORNING slot for calmer southerly wind; flights are weather-dependent and rebookable, so confirm the slot that morning. Pay cash for an 8% discount at GO2FLY.",
+    "sources": [
+      "https://go2fly.me/en/locations-and-prices/",
+      "https://budva-paragliding.me/adventures/becici-standard",
+      "https://www.tripadvisor.com/Attraction_Review-g304074-d12035486-Reviews-Budva_Paragliding_Montenegro-Budva_Budva_Municipality.html"
+    ],
+    "cost": "Standard ~€98-99pp; cross-country ~€155pp; GoPro video €15",
+    "timeNeeded": "~1-1.25h total incl. transfer (15 min airtime)",
+    "tags": [
+      "paragliding",
+      "adrenaline",
+      "day-11"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-zadar-skydive-adv",
+    "name": "Skydive Zadar - Beach Tandem Jump (Adventure Driven Vacations)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 44.1083,
+    "lng": 15.3467,
+    "description": "Tandem skydive from 4000m (up to 60s freefall at ~200-230 kph) over the Adriatic with Velebit and the Paklenica/Kornati parks below, landing on the sandy beach at Razanac. Departs Zadar Airport - in the group's Day-1 start zone. No licence or experience needed.",
+    "communityNotes": "5.0/5 across 51 TripAdvisor reviews with recent genuine entries (Feven G July 2024 'beyond amazing', praising instructor Murphy; Tatijana L Aug 2024 'unforgettable'). Beach landing over the Adriatic repeatedly singled out as the highlight - the most scenic skydive on the route. Realistic only on Day 1 (Jun 16) if arrival is kept slow or they take a dawn slot, since Day 1 also has car pickup + Velebit + the drive south. Book a morning slot; weather/wind dependent.",
+    "sources": [
+      "https://adventure-driven-vacations.com/tour/skydiving-zadar-tandem-jump/",
+      "https://www.tripadvisor.com/Attraction_Review-g295374-d6882591-Reviews-Skydiving_Zadar-Zadar_Zadar_County_Dalmatia.html",
+      "https://www.zadar.hr/en/experience/explore/skydiving-in-zadar-region"
+    ],
+    "cost": "From €320pp; video add-ons €70/€140/€160",
+    "timeNeeded": "~2h on site (morning slot, keep a weather buffer)",
+    "tags": [
+      "skydiving",
+      "adrenaline",
+      "day-1"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "hr-mljet-bike-rental-lakes",
+    "name": "Mljet NP lake-loop bike rental (Radulj / Mali Most)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.7825,
+    "lng": 17.355,
+    "description": "Rent regular MTBs or e-bikes at the park centre (Mali Most) or Pomena entrance and ride the traffic-free shaded loop around the two emerald salt lakes — the signature Mljet experience, with swim stops, two bridges and a boat to St Mary islet mid-loop.",
+    "communityNotes": "'We paid 150 kuna each for 6 hours'; 'hire them as soon as you arrive and make a day of it.' Mostly flat once at the lakes so regular bikes are fine for fit adults; e-bikes a comfort upgrade. Repeated warning: 'the bridge at Veli Most is a monster — you have to carry the bikes over.' Radulj's at Mali Most recommended as best base if you intend to cycle around the lakes.",
+    "sources": [
+      "https://www.mljettravel.com/cycling/",
+      "https://www.mljettravel.com/rental/",
+      "https://www.tripadvisor.com/ShowTopic-g303816-i15234-k9703387-Bike_Rental_Mljet_Mljet_National_Park_Dubrovnik_Neretva_County_Dalmatia.html",
+      "https://np-mljet.hr/faq-2/?lang=en"
+    ],
+    "cost": "~€15/6h per regular bike (~€60-80 for 4); e-bike ~€40/4h. NP entry extra unless bundled.",
+    "timeNeeded": "3-4h (lake loop ~9-15 km, mostly flat)",
+    "bestTime": "Rent on arrival; rentals open ~9:00-19:00, no need to pre-book",
+    "tags": [
+      "cycling",
+      "day4",
+      "mljet"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-durmitor-bike-black-lake",
+    "name": "Black Lake bike circuit (Durmitor Adventure rental)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 43.1389,
+    "lng": 19.095,
+    "description": "Easy, scenic ~10 km loop around Durmitor's biggest glacial lake with the peaks reflected in dark still water — do it on a basic rental, no tour needed. Rent at Durmitor Adventure in Žabljak (Vuka Karadžića 9); their guided viewpoint/plateau tours add the alpine-MTB climbing if you want excitement.",
+    "communityNotes": "Multiple sources: 'a relatively easy 10 km route, perfect for families and beginners, stunning views against Durmitor's peaks.' Guides, GPS units and pro equipment praised for the harder tours; no dedicated 'Black Lake' guided tour exists because it's the easy DIY ride everyone does on a rental. For challenge from the same rental: Sedlo Pass (25 km moderate-hard) or 18 Glacial Lakes (40 km, advanced).",
+    "sources": [
+      "https://durmitoradventure.com/e-mountain-biking/",
+      "https://www.zabljak.com/bicycles-cycling-in-zabljak-montenegro",
+      "https://www.komoot.com/guide/181465/mtb-trails-around-black-lake"
+    ],
+    "cost": "Bike rental from ~€15/day; e-bike €35-45 half-day / €55-80 full-day. Guided viewpoint/ring tours €55-80/pp. NP entry small fee.",
+    "timeNeeded": "1-2h (easy loop) up to 3h+ guided",
+    "bestTime": "May-Oct; late June ideal (no snow, long days)",
+    "tags": [
+      "cycling",
+      "mtb",
+      "day8",
+      "durmitor",
+      "slack-item"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-skadar-ebike-wine-3e",
+    "name": "Skadar Lake e-bike + Vranac wine tour (3E Travel)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.2444,
+    "lng": 19.095,
+    "description": "Guided e-bike day tour from Virpazar through lakeside villages to the Rijeka Crnojevića bridge, the iconic Pavlova Strana horseshoe viewpoint and an artisan Vranac winery for tasting with ham and cheese — exactly the Day-9 lakeside + wine-route theme.",
+    "communityNotes": "3E Travel is a recognized regional cycling operator. Honesty caveat: their public page foregrounds a 7-day package and lists no clear single-day price — email office@3etravel.me / +382 67 636364 for the day-tour quote and confirm the standalone version. Independent cyclists report bikes rentable in Virpazar for ~€10/day if you'd rather self-ride the rolling, partly-trafficked road.",
+    "sources": [
+      "https://3etravel.me/tours/biking-through-vines-lake-skadar-e-bike-tour-with-wine-tasting/",
+      "https://www.montenegropulse.com/Lake-skadar-bike.html",
+      "https://thesandyfeet.com/virpazar-montenegro-guide/"
+    ],
+    "cost": "Day-tour price not published (email for quote); self-rent in Virpazar ~€10/day per bike.",
+    "timeNeeded": "Day tour (villages -> Rijeka Crnojevica -> Pavlova Strana -> winery)",
+    "bestTime": "Spring-autumn; late June ideal but start early (hot midday)",
+    "tags": [
+      "cycling",
+      "ebike",
+      "day9",
+      "skadar",
+      "wine"
+    ],
+    "rating": 3,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-durmitor-buggy-soa",
+    "name": "SOA Experience Can-Am 4-seat buggy & quads (Durmitor)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 43.1487,
+    "lng": 19.1003,
+    "description": "Self-drive a real 4-seat Can-Am Maverick buggy (all four in one vehicle) on off-road routes climbing from pine forest to alpine meadows with viewpoints over Black Lake, Tara Canyon and Durmitor peaks. Starts at Hotel SOA ~1.2 km from Žabljak — no transfer.",
+    "communityNotes": "Žabljak ATV tours meeting at Hotel SOA praise guide Stefan ('Mountain People'): 'made sure we had the time of our lives,' 5.0/5, scenery 'beautiful,' UTVs 'in good shape.' Expect dust and bumps ('scent of pine, wind in your face'). Book 2-3 days ahead in peak July/Aug; June easier.",
+    "sources": [
+      "https://www.soaexperience.com/tours/quad-and-buggy-adventure",
+      "https://www.tripadvisor.com/AttractionProductReview-g1096284-d18273157-ATV_Tours-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+      "https://www.zabljak.com/atv-tours-in-zabljak-montenegro"
+    ],
+    "cost": "4-seat buggy self-drive: €220 (Momcilov Grad, 23km ~1h20m), €350 (3 Lakes, 40km ~3h), €500 (Sinjajevina, 90km 5-6h). Guided short tour €120 for 4; long guided + lunch €360 for 4.",
+    "timeNeeded": "1h20m to 5-6h (3-Lakes ~3h is the half-day sweet spot)",
+    "bestTime": "~May 15-early Oct; June well within season",
+    "tags": [
+      "quad",
+      "buggy",
+      "atv",
+      "day8",
+      "durmitor"
+    ],
+    "rating": 5,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-durmitor-atv-balkan-adventure",
+    "name": "Balkan Adventure ATV — Riblje & Vražje Lakes (Durmitor)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 43.1547,
+    "lng": 19.1228,
+    "description": "Budget quad option from Žabljak town centre: a short, scenic off-road loop through the Žugića swamps to two glacial lakes (Riblje and Vražje). Well-reviewed local operator; cheap hit if you want a quick ride rather than a half-day.",
+    "communityNotes": "Trustpilot/TripAdvisor: 'went above and beyond,' 'reasonably priced and flawlessly executed,' professional guides, quads in good shape, responsive via WhatsApp. Honest note: 2 quads needed to seat 4 (1 driver + 1 passenger each), so for a foursome the SOA 4-seat buggy may be comfier. Expect dust and bumps.",
+    "sources": [
+      "https://balkanadventure.me/activities/atv-tours-durmitor-riblje-and-vrazje-lakes/",
+      "https://balkanadventure.me/activities/atv-durmitor-lookouts/",
+      "https://www.trustpilot.com/review/balkanadventure.me"
+    ],
+    "cost": "Riblje & Vražje Lakes €80 per quad (1h30m) — ~€160 for 4 on 2 quads. 'Durmitor Lookouts' listed €165/pp, 2h (confirm if per quad).",
+    "timeNeeded": "1h30m (lakes) to ~2h (lookouts)",
+    "bestTime": "~mid-May to early Oct; June fine",
+    "tags": [
+      "quad",
+      "atv",
+      "day8",
+      "durmitor",
+      "budget"
+    ],
+    "rating": 4,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-lovcen-atv-cosmopolitan",
+    "name": "Lovćen ATV 'Lovćen Legends' (Ivanova Korita)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.38171,
+    "lng": 18.83433,
+    "description": "Off-road ATV ride across Lovćen's high plateau from Ivanova Korita with viewpoints over the Budva Riviera and the Krstac viewpoint over Boka Bay, plus Dolovi village and the Njegoš Mausoleum area — the most scenic coast-to-mountain ride on the whole route. Njeguši lunch included.",
+    "communityNotes": "Operators describe 'enchanting rides with fantastic views of the Mediterranean coast and Boka-Kotor harbour,' Njeguši ham/cheese lunch included. Honesty: less independent traveler-review volume than the Durmitor tours, and Globtour's competing page has an expired SSL cert — book via Cosmopolitan by phone/email and verify exact route/price. Min 2 ATVs to run (fine for 4).",
+    "sources": [
+      "https://www.cosmopolitandmc.com/excursion-mne/lovcen-legends-atv-ride-to-montenegros-iconic-peaks/",
+      "https://www.globtourmontenegro.com/en/excursions/excursion-quad-adventure-in-lovcen-mountain-229",
+      "https://www.montenegropulse.com/atv-tours-in-montenegro.html"
+    ],
+    "cost": "From €93.50/pp (~€374 for 4); includes ATV+fuel, gear, guide, Njeguši lunch, refreshments.",
+    "timeNeeded": "~5-6h (off-road ride ~12-13km)",
+    "bestTime": "15 Apr - 15 Oct; June ideal",
+    "tags": [
+      "quad",
+      "atv",
+      "day11",
+      "lovcen",
+      "views"
+    ],
+    "rating": 3,
+    "status": "shortlist"
+  },
+  {
+    "id": "me-budva-quad-tour",
+    "name": "Quad Tour Budva — backcountry & coastal ride",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.2789,
+    "lng": 18.8386,
+    "description": "Town-based guided quad ride into the hills behind Budva — mountain backroads with very few cars, a hidden church, a waterfall and a mountain bar, plus coastal panoramas. Easier, cheaper Day-11 alternative to the Lovćen ATV; French-run (guides Romain & Mathieu).",
+    "communityNotes": "TripAdvisor 4.7/5 (14 reviews), #18 of 103 Budva activities: 'dream landscapes,' 'magnificent landscapes on small paths with very few cars,' 'comfortable quads with backrests for passengers,' 'very good value for money.' Red flag — one review: 'they were 1 hour late, stopped answering WhatsApp and phone, I lost half a day' — reconfirm the day before. Alt operator: Budva Quad Adventures (budvaquad.me).",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g304074-d25103435-Reviews-Quad_Tour_Budva-Budva_Budva_Municipality.html",
+      "https://www.getyourguide.com/budva-l32215/budva-guided-quad-adventure-tour-t1263506/",
+      "https://www.budvaquad.me/"
+    ],
+    "cost": "~€160-165 per 2-person quad via GetYourGuide (~€320-330 for 4 on 2 quads); ~€99/pp on some listings. Confirm per-quad price direct.",
+    "timeNeeded": "~2h or ~4h (popular tour ~3h riding)",
+    "bestTime": "April-October; June good",
+    "tags": [
+      "quad",
+      "atv",
+      "day11",
+      "budva",
+      "budget"
+    ],
+    "rating": 3,
+    "status": "shortlist"
+  }
+]

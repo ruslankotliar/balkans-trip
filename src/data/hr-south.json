@@ -72,7 +72,7 @@
       "omis"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-starigrad-fortica",
@@ -142,7 +142,7 @@
       "swimming"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-marjan-vidilica",
@@ -164,7 +164,7 @@
       "marjan"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-split-nightlife",
@@ -185,7 +185,7 @@
       "nightlife"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-trogir",
@@ -277,7 +277,7 @@
       "cliff-jumping"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-peljesac-bridge",
@@ -417,7 +417,7 @@
       "beach"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-ston-walls",
@@ -507,7 +507,7 @@
       "food"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-srd",
@@ -530,7 +530,7 @@
       "hike"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-buza-bar",
@@ -555,7 +555,7 @@
       "sunset"
     ],
     "rating": 4,
-    "status": "backup"
+    "status": "extra"
   },
   {
     "id": "hr-sveti-jakov-beach",
@@ -576,7 +576,7 @@
       "swimming"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-lokrum",
@@ -737,7 +737,7 @@
       "free"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-camp-lovor-mljet",
@@ -801,7 +801,7 @@
     ],
     "cost": "~€53/night for 4 adults + small tent + car + electricity (Jun, Cat B: €8.30/adult + €5 tent + €4 car + €4 elec + €1.70/pp tourist tax). Without electricity: ~€49.",
     "facilities": "Hot showers (6), toilets (10), electricity hookups, free WiFi, laundry machines + dryer (€4/€4), private fridge boxes, grey water disposal, chemical disposal. Pebble beach via 160 steps. Bus #10 stop 200m (to Dubrovnik €2.50, last bus 23:50/01:30).",
-    "bestTime": "Book ahead: info@campingkate.com or +385 20 487 006 (Jun, peak). Arrive before 14:00. Jun 18 evening after airport pickup = fine (10 min from DBV airport).",
+    "bestTime": "Book ahead: info@campingkate.com or +385 20 487 006 (Jun, peak). Arrive before 14:00. Night 12 (Jun 27) — the Dubrovnik-area overnight, ~25 min from the old town.",
     "tags": [
       "dubrovnik",
       "mlini",

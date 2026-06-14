@@ -16,7 +16,12 @@
     "cost": "15 KM one-way / 20 KM return pp (tourist price ~€8/€10). BiH citizens 4/6 KM.",
     "timeNeeded": "2–3h (cable car + bobsled track walk)",
     "bestTime": "Day 7 (Jun 22, Monday) — opens 12:00 on Mondays (confirm at zicara.ba). Sequence: Blagaj morning → Konjic kayak/swim → Sarajevo afternoon → cable car 12:00–14:30 → bobsled track walk → Žuta Tabija sunset. Skip if behind schedule — Day 7 is already a full drive day.",
-    "tags": ["views", "cable-car", "sarajevo", "olympic-history"],
+    "tags": [
+      "views",
+      "cable-car",
+      "sarajevo",
+      "olympic-history"
+    ],
     "rating": 4,
     "status": "shortlist"
   },
@@ -36,7 +41,12 @@
     "cost": "~3–5 KM per coffee (~€1.50–2.50)",
     "timeNeeded": "30–45 min",
     "bestTime": "Day 5 (Jun 20, Saturday) — Open Tue–Sun 09:30–18:00; aim for 17:00 before closing. 20 m behind Stari Most on the west bank.",
-    "tags": ["coffee", "bosnian-culture", "hidden-gem", "mostar-old-town"],
+    "tags": [
+      "coffee",
+      "bosnian-culture",
+      "hidden-gem",
+      "mostar-old-town"
+    ],
     "rating": 5,
     "status": "shortlist"
   },
@@ -46,7 +56,7 @@
     "country": "BA",
     "category": "activity",
     "lat": 43.3455,
-    "lng": 17.8320,
+    "lng": 17.832,
     "description": "Hilltop above Mostar's old town (500 m elevation) with a FREE 42-metre glass-floored skywalk giving a bird's-eye view of Stari Most and the Neretva gorge. Fortica Sports and Adventure Park operates a two-cable zipline (570 m + 430 m, max 90 km/h). Most visitors drive the 5 km rather than hike (1.5h).",
     "communityNotes": "The skywalk is free — 'perhaps Europe's most affordable adrenaline experience.' Zipline operator: ZIPLine Fortica (zipline.ba), Tekija 73A. Both zipline cables: 50 KM/person. Via ferrata routes (A easy, C medium): 5–10 KM equipment hire. The hike up has open views throughout. Not reachable by public transport — drive or taxi. Call ahead to confirm opening: +387 62 115 100.",
     "sources": [
@@ -57,7 +67,14 @@
     "cost": "Skywalk free. Both zipline cables: 50 KM/pp (~€25). Via ferrata equipment: 5–10 KM.",
     "timeNeeded": "1.5–3h (depending on activities)",
     "bestTime": "Day 6 (Jun 21) morning — morning for clearest views of Stari Most. Drive 5 km from town. Call +387 62 115 100 ahead to confirm open. Sequence: Kravica 07:00 → Počitelj 09:30 → Fortica 10:30 → Stari Most afternoon.",
-    "tags": ["views", "zipline", "adventure", "mostar", "via-ferrata", "free"],
+    "tags": [
+      "views",
+      "zipline",
+      "adventure",
+      "mostar",
+      "via-ferrata",
+      "free"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -78,7 +95,12 @@
     "cost": "Free (exterior)",
     "timeNeeded": "20–30 min",
     "bestTime": "Day 6 (Jun 21) afternoon — 15-min walk west from Stari Most toward the Bulevar. Exterior only (interior is genuinely dangerous). Combine with Stari Most and old town wandering.",
-    "tags": ["dark-tourism", "war-history", "mostar", "free"],
+    "tags": [
+      "dark-tourism",
+      "war-history",
+      "mostar",
+      "free"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -99,7 +121,13 @@
     "cost": "Free",
     "timeNeeded": "1–1.5h (including drive from main road)",
     "bestTime": "Day 8 (Jun 23) en route — signposted off the Sarajevo → Foča road, 9 km before Foča. Adds ~1.5h. Worth it only if departing Sarajevo by 06:30 (leaves time before the 10:00 Tara raft start). Skip confidently if behind schedule.",
-    "tags": ["geology", "off-beat", "free", "foca-route", "sutjeska-corridor"],
+    "tags": [
+      "geology",
+      "off-beat",
+      "free",
+      "foca-route",
+      "sutjeska-corridor"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -119,8 +147,14 @@
     "cost": "Museum: 5 KM (~€2.50). Draft beer: ~7.5 KM. Meat platter ~20 KM for two.",
     "timeNeeded": "1–1.5h (museum + a beer)",
     "bestTime": "Day 7 (Jun 22) evening — museum open Mon–Sat 11:00–17:30 (Jun 22 is Monday, open). Beer hall until midnight. Franjevačka 15, near the old town. Good pre-dinner stop on arrival day.",
-    "tags": ["brewery", "history", "sarajevo", "beer", "museum"],
+    "tags": [
+      "brewery",
+      "history",
+      "sarajevo",
+      "beer",
+      "museum"
+    ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   }
 ]

@@ -65,7 +65,7 @@
       "zone-5-trebinje"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-vinska-galerija-vukoje",
@@ -90,7 +90,7 @@
       "zone-5-trebinje"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-restoran-vukoje-trebinje",
@@ -114,7 +114,7 @@
       "zone-5-trebinje"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-konoba-ribar-mljet",
@@ -163,34 +163,7 @@
       "off-np"
     ],
     "rating": 4,
-    "status": "candidate"
-  },
-  {
-    "id": "hr-mljet-odysseus-cave",
-    "name": "Odysseus Cave (Mljet — swim-in sea cave near Babino Polje)",
-    "country": "HR",
-    "category": "activity",
-    "lat": 42.7296,
-    "lng": 17.5439,
-    "description": "Dramatic sea cave carved into Mljet's south coast, reachable via 20-minute hike from Babino Polje village — no NP ticket needed since it's outside the park. Swim into the cave from the sea or scramble down the cliffside path. Turquoise water inside, great cliff-jump potential from the rocks above.",
-    "communityNotes": "One of Mljet's most memorable spots yet most day-trippers skip it for the lakes. 'The cave itself is stunning — swam in from outside and felt completely alone inside.' Best reached by parking at Tommy's Supermarket in Babino Polje then following marked trail. Entrance is ~4–5m wide by sea. The steep slope approach has loose rocks — wear shoes with grip. Crowds: minimal even in peak season because it requires effort.",
-    "sources": [
-      "https://tayloronatrip.com/odysseus-cave-mljet-island-croatia",
-      "https://trek.zone/en/croatia/places/614256/odysseus-cave-mljet"
-    ],
-    "cost": "Free (no NP ticket needed)",
-    "timeNeeded": "2h including hike",
-    "bestTime": "Morning — best light in the cave is 09:00–11:00",
-    "tags": [
-      "zone-2-mljet",
-      "cave",
-      "swim",
-      "cliff-jump",
-      "off-np"
-    ],
-    "rating": 4,
-    "status": "rejected",
-    "communityNotes": "One of Mljet's most memorable spots yet most day-trippers skip it for the lakes. 'The cave itself is stunning — swam in from outside and felt completely alone inside.' Best reached by parking at Tommy's Supermarket in Babino Polje then following marked trail. Entrance is ~4–5m wide by sea. The steep slope approach has loose rocks — wear shoes with grip. Crowds: minimal even in peak season because it requires effort. | Duplicate of hr-odysseus-cave — use that entry."
+    "status": "rejected"
   },
   {
     "id": "ba-drezanka-swim-stupina",
@@ -216,7 +189,7 @@
       "kravica-alternative"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-buna-brzatak-swim",
@@ -241,13 +214,13 @@
       "buna"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-old-crew-pub-mostar",
     "name": "Old Crew Gastro Pub (Mostar — riverside bar off the tourist strip)",
     "country": "BA",
-    "category": "food",
+    "category": "nightlife",
     "lat": 43.338,
     "lng": 17.8151,
     "description": "Craft beer pub hanging over the Radobolja creek just upstream from the Crooked Bridge (Kriva Ćuprija) — locals and expats mix here, far less touristy than the Stari Most strip. Riverside terraces, boat-themed interior, local beers on tap, affordable prices. Good alternative evening option before or instead of Stari Most.",
@@ -266,13 +239,13 @@
       "riverside"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-ima-moze-craft-beer",
     "name": "Ima i Može Craft Beer Garden (Mostar)",
     "country": "BA",
-    "category": "food",
+    "category": "nightlife",
     "lat": 43.3365,
     "lng": 17.8069,
     "description": "The leading craft beer spot in Bosnia, at Gojka Vukovica 4 near the Old Town. Smoke-free (rare in BiH), large outdoor garden, staff who walk you through the tap selection and let you taste before you commit. Food menu expanding. Good for a first evening drink before dinner elsewhere.",
@@ -290,7 +263,7 @@
       "smoke-free"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-autocamp-green-park-mostar",
@@ -339,7 +312,7 @@
       "afternoon"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-jaz-beach-camp-kunjic",
@@ -411,7 +384,7 @@
       "old-town"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-sparta-club-budva",
@@ -461,7 +434,7 @@
       "iconic"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-kotor-serpentine-bend10",
@@ -486,7 +459,7 @@
       "morning"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-perast-viewpoint-stop",
@@ -511,6 +484,6 @@
       "historic"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   }
 ]

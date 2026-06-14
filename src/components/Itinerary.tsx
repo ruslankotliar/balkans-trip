@@ -18,15 +18,22 @@ interface Props {
   onSelect: (p: PlaceWithOverride) => void;
   onMove: (id: string, dir: 'up' | 'down') => void;
   onAssignDay: (id: string, day: number | null) => void;
-  onFindSleep: (day: number) => void;
-  /** Free-text per-day notes (from Today view textarea). */
-  dayNotes?: Record<number, string>;
+  onFindSleep?: (day: number) => void;
   /** Day clock per day, derived from the current route + stop times. */
   scheduleByDay?: Record<number, DaySchedule | null>;
 }
 
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
+
+/** Short timing cue from a place's bestTime (strip the "Day N — " prefix, first sentence). */
+function bestTimeHint(bt?: string): string {
+  if (!bt) return '';
+  const t = bt.replace(/^(?:Day|Night)\s+\d+[^—]*—\s*/, '').trim();
+  const dot = t.indexOf('. ');
+  const s = dot > 0 && dot < 80 ? t.slice(0, dot) : t;
+  return s.length > 72 ? s.slice(0, 69).trimEnd() + '…' : s;
+}
 
 interface AgendaEntry {
   place: PlaceWithOverride;
@@ -48,7 +55,7 @@ export default function Itinerary({
   onAssignDay,
   scheduleByDay,
 }: Props) {
-  const assigned = places.filter((p) => p.day);
+  const assigned = places.filter((p) => p.day && p.status !== 'rejected');
   const backlog = places
     .filter((p) => !p.day && p.status === 'shortlist')
     .sort((a, b) => a.name.localeCompare(b.name));
@@ -111,13 +118,16 @@ export default function Itinerary({
           <span className="itin-day-date">{dayDateLabel(day)}</span>
           {isToday && <span className="itin-today-badge">today</span>}
         </div>
-        {schedule && (
-          <div className={`itin-day-summary ${schedule.overSec > 0 ? 'late' : 'slack'}`}>
-            {schedule.overSec > 0
-              ? `Finishes ${formatClock(schedule.finishSec)} · ${formatDuration(schedule.overSec)} late`
-              : `Finishes ${formatClock(schedule.finishSec)} · ${formatDuration(schedule.slackSec)} slack`}
-          </div>
-        )}
+        {schedule && (() => {
+          const level = schedule.overSec > 0 ? 'over' : schedule.slackSec < 3600 ? 'tight' : 'ok';
+          const label =
+            level === 'over'
+              ? `⚠ Overpacked · ends ${formatClock(schedule.finishSec)} · ${formatDuration(schedule.overSec)} over — drop a stop`
+              : level === 'tight'
+                ? `Tight · ends ${formatClock(schedule.finishSec)} · ${formatDuration(schedule.slackSec)} spare`
+                : `✓ Realistic · ends ${formatClock(schedule.finishSec)} · ${formatDuration(schedule.slackSec)} spare`;
+          return <div className={`itin-verdict itin-verdict-${level}`}>{label}</div>;
+        })()}
 
         {scheduleEntries.length === 0 ? (
           <p className="itin-empty">no stops</p>
@@ -128,9 +138,18 @@ export default function Itinerary({
                 entry.arriveSec != null && entry.departSec != null
                   ? formatTimeRange(entry.arriveSec, entry.departSec)
                   : 'Unscheduled';
+              const prev = i > 0 ? scheduleEntries[i - 1] : null;
+              const legSec =
+                prev && entry.arriveSec != null && prev.departSec != null
+                  ? entry.arriveSec - prev.departSec
+                  : null;
+              const hint = bestTimeHint(entry.place.bestTime);
 
               return (
                 <div key={`${day}-${entry.place.id}-${i}`} className="itin-stop-entry">
+                  {legSec != null && legSec > 0 && (
+                    <div className="itin-leg">↓ {formatDuration(legSec)} drive</div>
+                  )}
                   <button
                     type="button"
                     className={`itin-stop-row${selectedId === entry.place.id ? ' selected' : ''}`}
@@ -139,7 +158,10 @@ export default function Itinerary({
                     <span className="itin-stop-step" style={{ background: dayColor(day) }}>
                       {i + 1}
                     </span>
-                    <span className="itin-stop-name">{entry.place.name}</span>
+                    <span className="itin-stop-main">
+                      <span className="itin-stop-name">{entry.place.name}</span>
+                      {hint && <span className="itin-stop-hint">{hint}</span>}
+                    </span>
                     <span className={`itin-stop-time${entry.arriveSec == null ? ' muted' : ''}`}>
                       {timeRange}
                     </span>

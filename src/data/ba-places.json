@@ -23,32 +23,7 @@
       "local-pick"
     ],
     "rating": 4,
-    "status": "candidate"
-  },
-  {
-    "id": "ba-mostar-tima-irma",
-    "name": "Cevabdzinica Tima-Irma (Mostar)",
-    "country": "BA",
-    "category": "food",
-    "lat": 43.337137,
-    "lng": 17.81399,
-    "description": "The most-hyped cevapi/grill house in Mostar, a 30-year family business on Onescukova in the old town. Huge portions; famous and therefore touristy.",
-    "communityNotes": "Verdict is MIXED, not a slam-dunk. Many love it ('amazing cevapi with ajvar and kajmak') but recurring complaints about long waits, theatrical slow service, and one reviewer said the cevapi were 'just okay compared to Sarajevo'. Worth it but go early and expect a queue — not a hidden local secret.",
-    "sources": [
-      "https://www.tripadvisor.com/Restaurant_Review-g295388-d4422166-Reviews-Cevabdzinica_Tima_Irma-Mostar.html",
-      "https://wanderlog.com/list/geoCategory/1571797/best-spots-for-cevapi-in-mostar"
-    ],
-    "cost": "Large mixed plate ~15-20 KM (€8-10)",
-    "timeNeeded": "1h+ (waits common)",
-    "bestTime": "Before 12:00 or after 14:00 to dodge the queue",
-    "tags": [
-      "cevapi",
-      "famous",
-      "touristy",
-      "family-run"
-    ],
-    "rating": 4,
-    "status": "rejected"
+    "status": "extra"
   },
   {
     "id": "ba-mostar-hindin-han",
@@ -73,7 +48,7 @@
       "sit-down"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-mostar-jumpers-viewpoint",
@@ -97,7 +72,7 @@
       "stari-most"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-mostar-black-dog-pub",
@@ -121,7 +96,7 @@
       "backpacker"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-mostar-ali-baba",
@@ -146,7 +121,7 @@
       "late-night"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-blagaj-vrelo",
@@ -171,7 +146,7 @@
       "trout"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-kocusa-falls",
@@ -303,7 +278,7 @@
       "cash-only"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-tjentiste-monument",
@@ -331,34 +306,6 @@
     ],
     "rating": 4,
     "status": "shortlist"
-  },
-  {
-    "id": "ba-tjentiste-mladost",
-    "name": "Hotel Mladost & Kamp Sutjeska (Tjentiste)",
-    "country": "BA",
-    "category": "accommodation",
-    "lat": 43.34944,
-    "lng": 18.69556,
-    "description": "The practical place to sleep at the heart of Sutjeska: a basic communist-era hotel plus an adjacent riverside campsite, right by the monument and the only real cluster of services (2 restaurants, 1 small shop) in the park.",
-    "communityNotes": "Hotel Mladost is the de-facto base: 'probably the best place to base yourself for Sutjeska... basic by American standards but will more than suffice', 'staff super helpful, rooms comfortable with good bathrooms', big outdoor pool. Kamp Sutjeska sits next to it 'by the river with several barbecue areas' (~8.3 recent rating) but an older review trashed the sanitary block — check current state. Buy ALL food before arriving: 'learn from our mistakes and bring supplies'.",
-    "sources": [
-      "https://www.tripadvisor.com/Hotel_Review-g3336967-d3224759-Reviews-Hotel_Mladost-Sutjeska_National_Park.html",
-      "https://www.camping.info/en/campsite/camp-sutjeska-tjentiste/reviews"
-    ],
-    "cost": "Hotel Mladost: budget 2-star (cheap); Kamp Sutjeska: small per-tent fee; wild camping at Prijevor/Trnovacko free",
-    "timeNeeded": "Overnight base",
-    "bestTime": "Book the hotel ahead in June; stock up on food first",
-    "facilities": "Hotel: rooms, restaurant, large pool. Camp: riverside pitches, BBQ, toilets/showers (quality variable)",
-    "tags": [
-      "base",
-      "hotel",
-      "campsite",
-      "tjentiste",
-      "budget",
-      "on-route"
-    ],
-    "rating": 3,
-    "status": "candidate"
   },
   {
     "id": "ba-trebinje-old-town",
@@ -465,7 +412,7 @@
       "sunset"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-vjetrenica-cave",
@@ -592,13 +539,13 @@
       "on-route"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-kino-bosna-sarajevo",
     "name": "Kino Bosna (Sarajevo — former cinema bar)",
     "country": "BA",
-    "category": "food",
+    "category": "nightlife",
     "lat": 43.8602,
     "lng": 18.4114,
     "description": "Former Austro-Hungarian cinema in Sarajevo's Marijin Dvor district converted into a bar and cultural space — the architecture alone is worth the visit. Cheap food and drinks; live sevdah (Bosnian blues) concerts on Mondays and Thursdays.",
@@ -619,6 +566,6 @@
       "nightlife"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "shortlist"
   }
 ]

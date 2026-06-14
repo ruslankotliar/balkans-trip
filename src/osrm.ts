@@ -1,4 +1,4 @@
-import type { CachedRoute, TripResult } from './store';
+import type { CachedRoute } from './store';
 
 /** [lat, lng] pairs in visiting order. */
 export type LatLng = [number, number];
@@ -6,14 +6,6 @@ export type LatLng = [number, number];
 /** Stable cache key for an ordered coordinate sequence. */
 export function routeKey(points: LatLng[]): string {
   return points.map(([lat, lng]) => `${lat.toFixed(5)},${lng.toFixed(5)}`).join(';');
-}
-
-/**
- * Cache key for a Trip request. Order-dependent on purpose: the cached result's
- * `order` indices reference the exact input sequence, so the key must too.
- */
-export function tripKey(points: LatLng[]): string {
-  return `trip:${routeKey(points)}`;
 }
 
 /**
@@ -33,34 +25,7 @@ export async function fetchRoute(points: LatLng[]): Promise<CachedRoute | null> 
     const data = await res.json();
     const route = data?.routes?.[0];
     if (!route?.geometry?.coordinates) return null;
-    // Per-leg sanity check: if any leg is both >30 km and >4× its haversine
-    // distance, OSRM is almost certainly routing through a third country (e.g.
-    // Albania for Ada Bojana). Return null so the UI shows no route rather than
-    // a misleading loop. Threshold 4× leaves room for the Balkans' winding
-    // mountain roads (~2×) and coastal bay detours (~3×) without false positives.
-    const rawLegs = route.legs as Array<{ duration: number; distance: number }> ?? [];
-    if (rawLegs.length === points.length - 1) {
-      for (let i = 0; i < rawLegs.length; i++) {
-        const [lat1, lng1] = points[i];
-        const [lat2, lng2] = points[i + 1];
-        const dLat = ((lat2 - lat1) * Math.PI) / 180;
-        const dLng = ((lng2 - lng1) * Math.PI) / 180;
-        const a =
-          Math.sin(dLat / 2) ** 2 +
-          Math.cos((lat1 * Math.PI) / 180) *
-            Math.cos((lat2 * Math.PI) / 180) *
-            Math.sin(dLng / 2) ** 2;
-        const hvM = 2 * 6371000 * Math.asin(Math.sqrt(a));
-        if (rawLegs[i].distance > 30000 && rawLegs[i].distance > hvM * 4) {
-          console.warn(
-            `[OSRM] Leg ${i} rejected: ${Math.round(rawLegs[i].distance / 1000)} km road` +
-              ` vs ${Math.round(hvM / 1000)} km haversine` +
-              ` (${(rawLegs[i].distance / hvM).toFixed(1)}×) — likely third-country routing`,
-          );
-          return null;
-        }
-      }
-    }
+    const rawLegs = (route.legs as Array<{ duration: number; distance: number }>) ?? [];
     return {
       distance: route.distance,
       duration: route.duration,
@@ -69,77 +34,6 @@ export async function fetchRoute(points: LatLng[]): Promise<CachedRoute | null> 
       snapped: (data.waypoints ?? []).map(
         (w: { location: [number, number] }) => w.location,
       ),
-    };
-  } catch {
-    return null;
-  }
-}
-
-/** Duration (s) + distance (m) matrices between all point pairs, from OSRM /table. */
-export interface TableResult {
-  durations: number[][];
-  distances: number[][];
-}
-
-/**
- * Fetch the full driving duration+distance matrix for the given points from
- * OSRM /table (one cheap call). Unroutable pairs come back as Infinity.
- * Returns null on failure.
- */
-export async function fetchTable(points: LatLng[]): Promise<TableResult | null> {
-  if (points.length < 2) return null;
-  const coords = points.map(([lat, lng]) => `${lng},${lat}`).join(';');
-  const url =
-    `https://router.project-osrm.org/table/v1/driving/${coords}` +
-    `?annotations=duration,distance`;
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-    if (data?.code !== 'Ok' || !data?.durations) return null;
-    const clean = (m: (number | null)[][]) =>
-      m.map((row) => row.map((v) => (v == null ? Infinity : v)));
-    return {
-      durations: clean(data.durations),
-      distances: clean(data.distances ?? []),
-    };
-  } catch {
-    return null;
-  }
-}
-
-/**
- * Solve the optimal visiting order (TSP) through the given points using the
- * OSRM Trip service. Endpoints are fixed: first point = start, last = end
- * (source=first, destination=last, roundtrip=false). Returns null on failure.
- */
-export async function fetchTrip(points: LatLng[]): Promise<TripResult | null> {
-  if (points.length < 2) return null;
-  const coords = points.map(([lat, lng]) => `${lng},${lat}`).join(';');
-  const url =
-    `https://router.project-osrm.org/trip/v1/driving/${coords}` +
-    `?source=first&destination=last&roundtrip=false&overview=full&geometries=geojson`;
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-    // OSRM returns {code:"Ok"} on success, or an error code + message otherwise.
-    if (data?.code !== 'Ok' || !data?.trips?.[0] || !data?.waypoints) return null;
-    const trip = data.trips[0];
-    const n = points.length;
-    // waypoints[i] is input point i; waypoint_index = its position in the trip.
-    const order = new Array<number>(n);
-    data.waypoints.forEach((wp: { waypoint_index: number }, i: number) => {
-      order[wp.waypoint_index] = i;
-    });
-    const legs = (trip.legs ?? []).map((l: { duration: number; distance: number }) => ({
-      duration: l.duration,
-      distance: l.distance,
-    }));
-    return {
-      distance: trip.distance,
-      duration: trip.duration,
-      coordinates: trip.geometry.coordinates as [number, number][],
-      order,
-      legs,
     };
   } catch {
     return null;

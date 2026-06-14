@@ -14,7 +14,10 @@ export type Category =
   | 'nature'
   | 'other';
 
-export type Status = 'candidate' | 'shortlist' | 'backup' | 'rejected';
+// candidate = undecided · shortlist = in the plan · extra = situational
+// "while you're in the area" pick (food/bars/beaches/swims/views), never
+// auto-scheduled · backup = contingency fallback (campsites/sleeps) · rejected = no.
+export type Status = 'candidate' | 'shortlist' | 'extra' | 'backup' | 'rejected';
 
 export interface Place {
   id: string;

@@ -106,7 +106,7 @@
       "rest-day"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-durmitor-sedlo-pass",
@@ -143,14 +143,14 @@
     "lat": 43.349,
     "lng": 18.836,
     "description": "Whitewater rafting in Europe's deepest canyon. The exciting, popular run is the ~18km Brštanovica → Šćepan Polje section with 21 of the Tara's ~50 rapids; most operators put in near the Đurđevića Tara bridge. Coordinate = Šćepan Polje raft take-out (car parks here; operator's bus shuttles to the Brštanovica put-in at the bridge, ~35 km upstream).",
-    "communityNotes": "Most operators run the Brštanovica section, 'technically the most demanding... 21 of 50 cascades and the nicest waterfall.' LATE-JUNE WATER: high, fast, COLD (~10-12°C), 'most adrenaline-y time' — wetsuits compulsory. ⚠️ BOOK URGENTLY for Jun 23: email office@raftingtara.com (Rafting Centar Drina-Tara, ~€60pp) or info@tarasportrafting.com (TaraSport, ~€50pp). State: 4 adults, Jun 23, 10:00–10:30 start, arriving from Sarajevo via Foča. Within the 2-week window = filling up now.",
+    "communityNotes": "Most operators run the Brštanovica section, 'technically the most demanding... 21 of 50 cascades and the nicest waterfall.' LATE-JUNE WATER: high, fast, COLD (~10-12°C), 'most adrenaline-y time' — wetsuits compulsory. ⚠️ BOOK URGENTLY for Jun 22: email office@raftingtara.com (Rafting Centar Drina-Tara, ~€60pp) or info@tarasportrafting.com (TaraSport, ~€50pp). State: 4 adults, Jun 22, 10:00–10:30 start, arriving from Sarajevo via Foča. Within the 2-week window = filling up now.",
     "sources": [
       "https://raftingtara.com",
       "https://tarasportrafting.com",
       "https://bluerivertara.me",
       "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k14843114-Half_day_rafting_Tara_Canyon-Montenegro.html"
     ],
-    "cost": "~€60 pp (Rafting Centar Drina-Tara, Day 8 = Jun 23); 4 × €60 = €240",
+    "cost": "~€60 pp (Rafting Centar Drina-Tara, Day 7 = Jun 22); 4 × €60 = €240",
     "timeNeeded": "half day (most common) or full day",
     "bestTime": "Day 7 (Jun 22) — raft Brštanovica → Šćepan Polje (~18km, 3–4h). Book before Jun 16 via email/phone (see Essentials). Late June = high/fast water; wetsuit required (river ~8°C).",
     "tags": [
@@ -206,7 +206,7 @@
     "cost": "à la carte (adult €5, big tent €4, car €3, electricity €2.50, tax €1.20pp) → ~€31-37/night for 4 + tent + car",
     "facilities": "hot showers (new block), flush toilets, communal kitchen, washing machine, free WiFi, bar/breakfast, campfire; near Black Lake",
     "timeNeeded": "base for 2 nights",
-    "bestTime": "Nights 8–9 (Jun 23–24) — base for the Durmitor hike day. Walk-in OK or email minakamp@gmail.com. 0.6km walk to Black Lake trailhead.",
+    "bestTime": "Night 7 (Jun 22) — base for the Durmitor hike day (next morning). Walk-in OK or email minakamp@gmail.com. 0.6km walk to Black Lake trailhead.",
     "tags": [
       "campsite",
       "zabljak",
@@ -324,7 +324,7 @@
       "food"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-lovcen-njegos-mausoleum",
@@ -445,7 +445,7 @@
     ],
     "cost": "Our Lady of the Rocks boat €5-10 pp return + €3 church/museum; parking ~€8/day paid lot, or free roadside if you find a spot",
     "timeNeeded": "2-3h incl. boat (island open to ~18:00 in June)",
-    "bestTime": "Day 11 (Jun 26) — after the Lovćen mausoleum, arrive ~15:00–16:00 when the day-trippers thin. Our Lady of the Rocks boat: buy at the pier, €5-10 return.",
+    "bestTime": "Day 11 (Jun 26) — after Kotor, arrive ~15:00–16:00 when the day-trippers thin. Our Lady of the Rocks boat: buy at the pier, €5-10 return.",
     "tags": [
       "scenic-town",
       "boat",
@@ -477,7 +477,7 @@
       "bay-of-kotor"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-budva-oldtown-bars",
@@ -551,7 +551,7 @@
       "petrovac"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-ploce-beach",
@@ -861,14 +861,14 @@
     "category": "hike",
     "lat": 43.108,
     "lng": 18.995,
-    "description": "Durmitor's best effort-to-reward ratio hike: 9km, 5-6h, no technical exposure. From Black Lake trailhead. Wild horses and goats on the open plateau, arguably the best panoramic view in the park with near-total solitude — far fewer people than Bobotov Kuk. Recommended over Veliki Međed for most groups.",
+    "description": "Durmitor's best effort-to-reward ratio hike: 9km, 5-6h, no technical exposure. Starts from the Sedlo pass on the scenic Durmitor ring road (the over-the-mountain drive is the trailhead access). Wild horses and goats on the open plateau, arguably the best panoramic view in the park with near-total solitude. Recommended over Veliki Međed for most groups.",
     "communityNotes": "Called 'arguably the best view in the entire park' with 'a feeling of complete isolation' (The Sandy Feet). The only challenge is LENGTH (long 4-hour grind), not terrain — no scrambling. One slightly unstable rubble section near the summit but nothing requiring hands. June: plateau melts early, no snow issues. Carry 2L water pp (no reliable sources on route). COMPARE WITH VELIKI MEĐED (same start, Black Lake): that route has UIAA-I scrambling and fixed cables — much harder. Prutaš is the everyone-can-do-it choice; do Veliki Međed only if the group is experienced with exposed scrambling.",
     "sources": [
       "https://www.thesandyfeet.com/prutas-mountain-hike-durmitor/"
     ],
     "cost": "€5/pp NP entry + €2-3 parking",
     "timeNeeded": "5-6h RT",
-    "bestTime": "Day 9 (Jun 24) — alternative Durmitor plateau walk if skipping Veliki Međed. Start by 07:00; no shelter on the open plateau if storms close in.",
+    "bestTime": "Day 8 (Jun 23) — alternative Durmitor plateau walk if skipping Veliki Međed. Start by 07:00; no shelter on the open plateau if storms close in.",
     "tags": [
       "hike",
       "summit",

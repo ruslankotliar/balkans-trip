@@ -17,7 +17,13 @@
     "cost": "free",
     "timeNeeded": "1-2h",
     "bestTime": "midday so the water is warmest; weekends in June for the open bars",
-    "tags": ["deep-dive", "off-route", "river-swimming", "free", "inland-variant"],
+    "tags": [
+      "deep-dive",
+      "off-route",
+      "river-swimming",
+      "free",
+      "inland-variant"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -38,9 +44,14 @@
     "cost": "free",
     "timeNeeded": "30-60 min (rim viewpoints)",
     "bestTime": "more impressive after rain; full-flow drops in high summer",
-    "tags": ["deep-dive", "viewpoint", "free", "cetina"],
+    "tags": [
+      "deep-dive",
+      "viewpoint",
+      "free",
+      "cetina"
+    ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-mosor-girometta",
@@ -60,7 +71,13 @@
     "cost": "free (lodge sells food/drinks)",
     "timeNeeded": "lodge only ~2-3h round; summit Veliki Kabal full day",
     "bestTime": "early morning or late afternoon in June heat; carry water",
-    "tags": ["deep-dive", "hike", "viewpoint", "free", "local-favourite"],
+    "tags": [
+      "deep-dive",
+      "hike",
+      "viewpoint",
+      "free",
+      "local-favourite"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -81,7 +98,13 @@
     "cost": "free",
     "timeNeeded": "half day / swim stop",
     "bestTime": "late afternoon; the gravel access keeps numbers low even in June",
-    "tags": ["deep-dive", "beach", "hidden-cove", "free", "zadar"],
+    "tags": [
+      "deep-dive",
+      "beach",
+      "hidden-cove",
+      "free",
+      "zadar"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -102,9 +125,16 @@
     "cost": "free (outside Mljet NP ticket zone)",
     "timeNeeded": "half day",
     "bestTime": "warm shallows make it good even on a cooler/windy day; go via Saplunara",
-    "tags": ["deep-dive", "beach", "sandy", "lagoon", "mljet", "free"],
+    "tags": [
+      "deep-dive",
+      "beach",
+      "sandy",
+      "lagoon",
+      "mljet",
+      "free"
+    ],
     "rating": 5,
-    "status": "candidate"
+    "status": "shortlist"
   },
   {
     "id": "hr-kobas-bay",
@@ -123,7 +153,13 @@
     "cost": "free (beach); konobas mid-range",
     "timeNeeded": "half day (swim + lunch)",
     "bestTime": "lunchtime to combine swim + konoba; road is narrow, drive slowly",
-    "tags": ["deep-dive", "beach", "hidden-cove", "peljesac", "food"],
+    "tags": [
+      "deep-dive",
+      "beach",
+      "hidden-cove",
+      "peljesac",
+      "food"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -143,9 +179,15 @@
     "cost": "mid-range seafood (~€20-35pp)",
     "timeNeeded": "1.5-2h lunch",
     "bestTime": "lunch; pair with a Kobaš bay swim",
-    "tags": ["deep-dive", "food", "konoba", "seafood", "peljesac"],
+    "tags": [
+      "deep-dive",
+      "food",
+      "konoba",
+      "seafood",
+      "peljesac"
+    ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-nakovana",
@@ -164,7 +206,14 @@
     "cost": "free",
     "timeNeeded": "~2h walk (more if continuing to Sveti Ilija)",
     "bestTime": "morning, cooler; bring a torch for the cave",
-    "tags": ["deep-dive", "abandoned-village", "cave", "peljesac", "free", "history"],
+    "tags": [
+      "deep-dive",
+      "abandoned-village",
+      "cave",
+      "peljesac",
+      "free",
+      "history"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -185,7 +234,13 @@
     "cost": "free",
     "timeNeeded": "half day / swim stop",
     "bestTime": "south-coast coves get afternoon sun; quieter than the sandy beaches",
-    "tags": ["deep-dive", "beach", "hidden-cove", "korcula", "free"],
+    "tags": [
+      "deep-dive",
+      "beach",
+      "hidden-cove",
+      "korcula",
+      "free"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -205,7 +260,14 @@
     "cost": "free (guided canyoning/climbing extra)",
     "timeNeeded": "half to full day depending on activity",
     "bestTime": "spring/early summer for water; viewpoints fine any time",
-    "tags": ["deep-dive", "off-route", "canyon", "climbing", "inland-belt", "free"],
+    "tags": [
+      "deep-dive",
+      "off-route",
+      "canyon",
+      "climbing",
+      "inland-belt",
+      "free"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -226,9 +288,15 @@
     "cost": "tasting menus ~€40-70pp (book ahead)",
     "timeNeeded": "2-3h",
     "bestTime": "reserve; the village is remote (use Google Maps for the exact turn)",
-    "tags": ["deep-dive", "food", "konoba", "zagora", "off-route"],
+    "tags": [
+      "deep-dive",
+      "food",
+      "konoba",
+      "zagora",
+      "off-route"
+    ],
     "rating": 4,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "hr-konoba-ivankovski",
@@ -246,8 +314,15 @@
     "cost": "home-cooking prices; peka pre-order 24h",
     "timeNeeded": "2h dinner",
     "bestTime": "book a day ahead for the lamb peka; great final-night Konavle dinner",
-    "tags": ["deep-dive", "food", "konoba", "konavle", "no-website", "local-favourite"],
+    "tags": [
+      "deep-dive",
+      "food",
+      "konoba",
+      "konavle",
+      "no-website",
+      "local-favourite"
+    ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   }
 ]

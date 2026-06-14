@@ -224,7 +224,7 @@
     "id": "ba-jajce-pliva-waterfall",
     "name": "Jajce — Pliva waterfall under the old town",
     "country": "BA",
-    "category": "sight",
+    "category": "nature",
     "lat": 44.3377,
     "lng": 17.2705,
     "description": "A 20m waterfall crashing in the literal centre of a walled medieval royal town — the Pliva drops into the Vrbas right under Jajce fortress. Unique image, almost no foreign tourists. DETOUR MATH: Mostar -> Jajce 3:03 + Jajce -> Sarajevo 2:33 = 5:36 vs Mostar -> Sarajevo via Konjic 2:12 = +3:24, and it bypasses Konjic/Boračko/Neretva rafting. VERDICT: skip — too far for this loop; flag for a future central-Bosnia trip (with Travnik + Pliva lakes).",
@@ -470,7 +470,7 @@
       "june-borderline"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-grlo-sokolovo",

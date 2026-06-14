@@ -123,7 +123,7 @@
       "inland-route"
     ],
     "rating": 4,
-    "status": "backup"
+    "status": "rejected"
   },
   {
     "id": "hr-zrmanja-viewpoint",
@@ -148,7 +148,7 @@
       "inland-route"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-knin-fortress",
@@ -194,7 +194,7 @@
       "old-town"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-bruschetta-zadar",
@@ -217,7 +217,7 @@
       "waterfront"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-garden-lounge-zadar",
@@ -240,7 +240,7 @@
       "city-walls"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-ledana-zadar",
@@ -262,7 +262,7 @@
       "central"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-nin-old-town",
@@ -384,7 +384,7 @@
       "zadar-city"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-roski-slap",

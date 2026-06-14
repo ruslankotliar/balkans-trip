@@ -81,7 +81,7 @@
       "cash-only"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-skadar-rijeka-crnojevica-kayak",
@@ -105,90 +105,6 @@
       "rijeka-crnojevica",
       "karuc",
       "alternative-base"
-    ],
-    "rating": 4,
-    "status": "candidate"
-  },
-  {
-    "id": "me-durmitor-katun-krstajic",
-    "name": "Domaćinstvo Krstajić — authentic Durmitor katun cabin",
-    "country": "ME",
-    "category": "accommodation",
-    "lat": 43.15,
-    "lng": 19.09,
-    "description": "A traditional Montenegrin katun (shepherd cabin) converted into 4-adult accommodation, 5 minutes outside Žabljak. Two-floor cabin with authentic chalet feel, full kitchen, cozy living space. Hosts serve homemade rakija. Rated 9.5/10 from 250+ reviews on Booking.com — the most-reviewed katun stay near Durmitor. Tier-2/3 option for the Durmitor night.",
-    "communityNotes": "The Bold Passport (2025): 'No visit to Durmitor is complete without a stay in a traditional wooden katun cabin. Domaćinstvo Krstajić: two-floor cabin with authentic feel, cozy chalet ambiance, hosts serve homemade rakija.' ★9.5/Booking.com (250+ reviews). Note: katun cabins sometimes sell out weeks in advance for summer. Charming without being expensive; feels genuinely local rather than touristy.",
-    "sources": [
-      "https://theboldpassport.com/where-to-stay-durmitor/"
-    ],
-    "cost": "~€110/night (whole unit, ~4 people)",
-    "timeNeeded": "1-2 nights",
-    "bestTime": "Durmitor nights (Day 8-9, ~Jun 23-24). Book weeks in advance.",
-    "tags": [
-      "accommodation",
-      "katun",
-      "durmitor",
-      "authentic",
-      "mountain",
-      "tier-2",
-      "coords-approx"
-    ],
-    "rating": 4,
-    "status": "candidate"
-  },
-  {
-    "id": "me-durmitor-katun-homeland-nest",
-    "name": "Homeland Nest — WOW katun, Durmitor NP",
-    "country": "ME",
-    "category": "accommodation",
-    "lat": 43.12,
-    "lng": 19.07,
-    "description": "The villa-tier katun option in Durmitor National Park: impeccable woodwork, floor-to-ceiling curtains, loft bed, private pool, balcony with panoramic mountain views. Inside the national park. ★10.0/10 from 40+ reviews — a perfect score. Summer price ~$199/night for 4. The WOW accommodation option if the group wants to splurge one night in Montenegro's mountains.",
-    "communityNotes": "The Bold Passport (2025): 'Homeland Nest features incredible attention to detail — impeccable wood finishes, floor-to-ceiling curtains, loft bed, private pool, and balcony with mountain views.' ★10.0 from 40+ reviews (rare perfect score). Search on Booking.com. Located inside Durmitor NP, exact village not specified by source. Book months ahead for June.",
-    "sources": [
-      "https://theboldpassport.com/where-to-stay-durmitor/"
-    ],
-    "cost": "~$199/night summer (≈€185 for 4 people)",
-    "timeNeeded": "1-2 nights",
-    "bestTime": "Durmitor nights (Day 8-9, ~Jun 23-24). Book as early as possible.",
-    "tags": [
-      "accommodation",
-      "villa-tier",
-      "katun",
-      "durmitor",
-      "pool",
-      "mountain-view",
-      "wow",
-      "coords-approx"
-    ],
-    "rating": 5,
-    "status": "candidate"
-  },
-  {
-    "id": "hr-dingac-vineyard-peljesac",
-    "name": "Holiday Home in Vineyard — Dingač, Pelješac",
-    "country": "HR",
-    "category": "accommodation",
-    "lat": 42.905,
-    "lng": 17.285,
-    "description": "A holiday house in the heart of the Dingač wine region — Croatia's most prestigious red wine appellation, on steep sun-drenched slopes above the Adriatic on Pelješac Peninsula. Vineyard surrounds, terrace with sea views, fully equipped kitchen. A rare WOW-tier stay on the confirmed route: Pelješac is on the road between Dubrovnik and Mljet/Korčula. Allows a genuine 'sleep in a vineyard with sea views' experience at relatively modest cost.",
-    "communityNotes": "Booking.com listing (Potomje village, Dubrovnik-Neretva County): 'Nestled in the heart of Dingač, a renowned wine-growing region on the sun-drenched slopes of Pelješac Peninsula, this holiday house offers a tranquil retreat surrounded by lush vineyards.' Terrace with sea views. The Dingač Plavac Mali grown here is Croatia's finest. No price confirmed in this session — search Booking.com for 'Holiday home in wine yard paradise Dingač Pelješac'. Also search Airbnb 'Dingač' for alternatives. Croplan peninsula wine estates (Miloš, Grgić, Saints Hills) are nearby for tasting.",
-    "sources": [
-      "https://www.booking.com/hotel/hr/holiday-home-in-wine-yard-paradise-dingac-peljesac.html"
-    ],
-    "cost": "Price not confirmed — check Booking.com. Likely €80-150/night for a house.",
-    "timeNeeded": "1 night (Day 4-5, Pelješac leg)",
-    "bestTime": "Evening arrival after Pelješac bridge crossing, sunset on the vineyard terrace",
-    "tags": [
-      "accommodation",
-      "villa-tier",
-      "vineyard",
-      "wine",
-      "peljesac",
-      "dingac",
-      "sea-view",
-      "wow",
-      "coords-approx"
     ],
     "rating": 4,
     "status": "candidate"

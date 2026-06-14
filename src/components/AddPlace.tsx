@@ -134,9 +134,11 @@ export default function AddPlace({
   const [urlText, setUrlText] = useState('');
   const [parseMsg, setParseMsg] = useState<string | null>(null);
 
-  // A map tap drops the pin: capture its coords.
+  // A map tap drops the pin: capture its coords. When editing, the mode buttons
+  // are hidden but the panel still invites "tap the map to move it", so accept
+  // taps in edit mode regardless of inputMode.
   useEffect(() => {
-    if (inputMode === 'map' && tappedPoint) {
+    if ((inputMode === 'map' || editing) && tappedPoint) {
       setLat(tappedPoint.lat);
       setLng(tappedPoint.lng);
       setParseMsg(
@@ -145,7 +147,7 @@ export default function AddPlace({
           : null,
       );
     }
-  }, [tappedPoint, inputMode]);
+  }, [tappedPoint, inputMode, editing]);
 
   function applyCoords(la: number, ln: number, msg?: string | null) {
     setLat(la);

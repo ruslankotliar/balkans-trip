@@ -5,7 +5,7 @@
     "country": "BA",
     "category": "nature",
     "lat": 43.504061,
-    "lng": 18.104130,
+    "lng": 18.10413,
     "description": "Tiny mountain hamlet ~30 km SE of Konjic where the Neretva runs its purest emerald before the rafting canyon, ringed by Prenj/Visočica/Bjelašnica. Pebble beaches, an old stone Ottoman bridge (Stara Ćuprija Glavatičevo) over the river, and the put-in for the Neretva rafting run. The negative-space anchor of the whole upper valley — almost no foreign tourists, real shepherd-country.",
     "communityNotes": "Bosnian sources call it 'the perfect place to start your rafting adventure, in the heart of a natural environment'; the stretch downstream is 'greenish Neretva' with 'pebble beaches on the Neretva river banks'. The drive in from Boračko Lake/Konjic is repeatedly described as a scenic mountain road through stećci (medieval tomb) fields. Villa Neretva here is the eco-rural base: homemade food (cheese, kajmak, trout, veal-under-the-bell), fly-fishing and 'fish-rafting'; reviews praise hosts and setting but warn 'do not look only at the printed pricelist — confirm the bill' and 'food is homemade but there is no menu'.",
     "sources": [
@@ -17,7 +17,15 @@
     "cost": "Free to swim; Villa Neretva rooms/bungalows mid-budget (confirm bill on arrival)",
     "timeNeeded": "1-2h for a swim + bridge; or a base for rafting/fishing",
     "bestTime": "Mid-June: high snowmelt = full emerald river but COLD water (8-12°C)",
-    "tags": ["deep-dive", "neretva", "emerald-swim", "ottoman-bridge", "rafting-putin", "off-route", "hidden-gem"],
+    "tags": [
+      "deep-dive",
+      "neretva",
+      "emerald-swim",
+      "ottoman-bridge",
+      "rafting-putin",
+      "off-route",
+      "hidden-gem"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -38,7 +46,16 @@
     "cost": "Free",
     "timeNeeded": "1-1.5h incl. the walk and a swim",
     "bestTime": "Hot afternoons for a swim; pin is Džajići village — falls are a short walk up the side stream",
-    "tags": ["deep-dive", "waterfall", "swimming", "cliff-jump", "konjic", "neretva", "hidden-gem", "free"],
+    "tags": [
+      "deep-dive",
+      "waterfall",
+      "swimming",
+      "cliff-jump",
+      "konjic",
+      "neretva",
+      "hidden-gem",
+      "free"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -59,7 +76,16 @@
     "cost": "Free",
     "timeNeeded": "Half day (5-6h round trip incl. canyon)",
     "bestTime": "May-June for full waterfall flow; go on a dry day (river crossings)",
-    "tags": ["deep-dive", "canyon", "waterfall", "cave", "hike", "emerald-pool", "off-route", "hidden-gem"],
+    "tags": [
+      "deep-dive",
+      "canyon",
+      "waterfall",
+      "cave",
+      "hike",
+      "emerald-pool",
+      "off-route",
+      "hidden-gem"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -80,7 +106,15 @@
     "cost": "Free (informal; small charge possible at organized Donja Drežnica beach)",
     "timeNeeded": "Half day with a swim",
     "bestTime": "Summer for swimming; Veliki Movran waterfall only after heavy rain (not reliable in June)",
-    "tags": ["deep-dive", "canyon", "swimming", "cliff-jump", "river-beach", "off-route", "hidden-gem"],
+    "tags": [
+      "deep-dive",
+      "canyon",
+      "swimming",
+      "cliff-jump",
+      "river-beach",
+      "off-route",
+      "hidden-gem"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -101,7 +135,15 @@
     "cost": "Free",
     "timeNeeded": "30-45 min",
     "bestTime": "Golden hour on the river; quiet most of the day",
-    "tags": ["deep-dive", "ottoman-bridge", "old-town", "konjic", "on-route", "quick-stop", "free"],
+    "tags": [
+      "deep-dive",
+      "ottoman-bridge",
+      "old-town",
+      "konjic",
+      "on-route",
+      "quick-stop",
+      "free"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -122,7 +164,16 @@
     "cost": "Small museum entry (a few KM); the bridge view is free from the road",
     "timeNeeded": "30 min (bridge + museum)",
     "bestTime": "Daytime; combine with a lamb lunch in Jablanica",
-    "tags": ["deep-dive", "wwii", "history", "bridge", "film-location", "jablanica", "on-route", "quick-stop"],
+    "tags": [
+      "deep-dive",
+      "wwii",
+      "history",
+      "bridge",
+      "film-location",
+      "jablanica",
+      "on-route",
+      "quick-stop"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -143,7 +194,17 @@
     "cost": "Free to wander; budget apartments cheap",
     "timeNeeded": "Half day (town + fort + river); 1 night to slow down",
     "bestTime": "Late afternoon for the fort light; summer for a Bregava swim",
-    "tags": ["deep-dive", "old-town", "emerald-river", "watermills", "fortress", "ottoman-bridge", "swimming", "off-route", "hidden-gem"],
+    "tags": [
+      "deep-dive",
+      "old-town",
+      "emerald-river",
+      "watermills",
+      "fortress",
+      "ottoman-bridge",
+      "swimming",
+      "off-route",
+      "hidden-gem"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -152,7 +213,7 @@
     "name": "Donje Bare lake & Borić viewpoint (Zelengora, Sutjeska NP)",
     "country": "BA",
     "category": "nature",
-    "lat": 43.318140,
+    "lat": 43.31814,
     "lng": 18.630402,
     "description": "A glacial 'mountain eye' at ~1490m on NE Zelengora — the swimmable, accessible one of Sutjeska's lakes, reached by a ~20 km mountain road straight from Tjentište (no long hike needed) with a rentable wooden cabin on the shore. A short 400m walk up leads to the Borić viewpoint over the whole Sutjeska canyon, Maglić, Volujak and the Perućica primeval forest. A calmer, swim-friendly alternative to the harder Orlovačko/Štirinsko lakes already pinned.",
     "communityNotes": "Local park/blogs: lake ~200x140m, ~4m deep, 'a popular spot for swimming and picnicking in summer'; 'a small mountain house on the shore can be rented'. Borić: 'an easy 400m walk to the edge of the Sutjeska canyon' (locals say ~30 min from the lake) for 'a beautiful view of the entire canyon, Vučevo, Maglić, Perućica, Prijevor and the ruins of Vratar/Vratac/Kosman'. Final approach is rough — some operators run guests up by off-road vehicle, so check the road/your car before driving the last section.",
@@ -164,7 +225,16 @@
     "cost": "Free; shore cabin rentable (cheap, contact the park/camp)",
     "timeNeeded": "Half day from Tjentište (drive up + swim + Borić viewpoint)",
     "bestTime": "Summer for a (bracing) swim; clear morning for the canyon panorama",
-    "tags": ["deep-dive", "mountain-lake", "swimming", "viewpoint", "zelengora", "sutjeska", "off-route", "hidden-gem"],
+    "tags": [
+      "deep-dive",
+      "mountain-lake",
+      "swimming",
+      "viewpoint",
+      "zelengora",
+      "sutjeska",
+      "off-route",
+      "hidden-gem"
+    ],
     "rating": 4,
     "status": "candidate"
   },
@@ -173,8 +243,8 @@
     "name": "Gradac / Gradačka stijena viewpoint (above Foča)",
     "country": "BA",
     "category": "viewpoint",
-    "lat": 43.511500,
-    "lng": 18.769000,
+    "lat": 43.5115,
+    "lng": 18.769,
     "description": "An old fortress crag at 889m on the left bank of the Drina directly above Foča, reached by a short ~45-min hike from the bridge by the municipal building. The reward is a ~10 km panorama down the Drina valley, the Ćehotina confluence, and the peaks of Maglić, Zelengora, Treskavica and Ljubišnja. A free leg-stretch in the last town before the rough Šćepan Polje border road.",
     "communityNotes": "Tourist Organisation of Foča: 'a viewpoint where a fortress used to be, with a military-observing function, on the left side of the Drina above the town', 889m; 'the shortest route begins on the left bank near the bridge by the Municipal building, ~45 minutes to climb'. View takes in 'the Drina valley about ten km long, the Ćehotina 4-5 km upstream, and the peaks of Maglić, Zelengora, Treskavica, Ljubišnja'. Foča is where you fuel up before the narrow Šćepan Polje road — a natural pause point.",
     "sources": [
@@ -184,7 +254,16 @@
     "cost": "Free",
     "timeNeeded": "~2h round trip on foot",
     "bestTime": "Morning before the border push; clear day for the long valley view",
-    "tags": ["deep-dive", "viewpoint", "hike", "foca", "drina", "fortress", "on-route", "free"],
+    "tags": [
+      "deep-dive",
+      "viewpoint",
+      "hike",
+      "foca",
+      "drina",
+      "fortress",
+      "on-route",
+      "free"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -205,7 +284,16 @@
     "cost": "Free",
     "timeNeeded": "1.5-2.5h easy walk from Umoljani",
     "bestTime": "Spring/early summer for full flow; can thin out by late June",
-    "tags": ["deep-dive", "waterfall", "easy-walk", "umoljani", "bjelasnica", "legend", "sunrise", "off-route"],
+    "tags": [
+      "deep-dive",
+      "waterfall",
+      "easy-walk",
+      "umoljani",
+      "bjelasnica",
+      "legend",
+      "sunrise",
+      "off-route"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -226,7 +314,16 @@
     "cost": "Free",
     "timeNeeded": "1-2h (mills + village stroll)",
     "bestTime": "Daytime; pairs with Studeni Potok and Lukomir",
-    "tags": ["deep-dive", "watermills", "katun", "village", "umoljani", "bjelasnica", "off-route", "hidden-gem"],
+    "tags": [
+      "deep-dive",
+      "watermills",
+      "katun",
+      "village",
+      "umoljani",
+      "bjelasnica",
+      "off-route",
+      "hidden-gem"
+    ],
     "rating": 3,
     "status": "candidate"
   },
@@ -246,9 +343,17 @@
     "cost": "Free (donations)",
     "timeNeeded": "30-40 min",
     "bestTime": "Daytime; quiet most hours",
-    "tags": ["deep-dive", "monastery", "orthodox", "neretva", "on-route", "quiet", "free"],
+    "tags": [
+      "deep-dive",
+      "monastery",
+      "orthodox",
+      "neretva",
+      "on-route",
+      "quiet",
+      "free"
+    ],
     "rating": 3,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "ba-lastva-jazina-trebinje",
@@ -266,7 +371,16 @@
     "cost": "Free",
     "timeNeeded": "Half day with a swim",
     "bestTime": "Hot summer days; weekday mornings quietest",
-    "tags": ["deep-dive", "swimming", "lake", "waterfall", "trebinje", "local-secret", "off-route", "hidden-gem"],
+    "tags": [
+      "deep-dive",
+      "swimming",
+      "lake",
+      "waterfall",
+      "trebinje",
+      "local-secret",
+      "off-route",
+      "hidden-gem"
+    ],
     "rating": 3,
     "status": "candidate"
   }

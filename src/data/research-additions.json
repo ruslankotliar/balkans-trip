@@ -1,0 +1,861 @@
+[
+  {
+    "id": "ba-relax-guesthouse-blagaj",
+    "name": "Relax Guest House Blagaj (cheap, well-rated, on the Blagaj/Mostar approach)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.257,
+    "lng": 17.892,
+    "description": "CHEAP-APARTMENT-tier Night-5 pick: a no-frills, very-well-rated (9.2) guesthouse in Blagaj near the Buna spring, ~12 km from Mostar. Private entrance, soundproofed units, free parking — the practical 'just want a shower and a bed' option, and Blagaj is quieter and cheaper than central Mostar while still 15 min from the old bridge. Sits on the Day-5 arrival side (Kravica/Pocitelj/Blagaj come before",
+    "status": "candidate",
+    "tags": [
+      "apt",
+      "research"
+    ],
+    "communityNotes": "Rated 9.2 by recent guests; reviewers highlight the quiet, the private entrance and the easy parking. Blagaj stays overall average ~4.8/5 — travelers repeatedly choose Blagaj over central Mostar for a calmer, cheaper, better-value night within 15 min of the old town.",
+    "sources": [
+      "https://www.booking.com/hotel/ba/agnesa-apartmani-blagaj.html",
+      "https://www.airbnb.com/blagaj-bosnia-and-herzegovina/stays",
+      "https://www.booking.com/guest-house/city/ba/blagaj.en-gb.html"
+    ],
+    "rating": 4,
+    "cost": "Blagaj 4-person apartments commonly ~EUR35-55/night (area averages 4.8/5; doubles from ~EUR30). Confirm a 4-person unit on booking.",
+    "facilities": "Private entrance, soundproofing, free private parking, kitchen/kitchenette in apartment units, A/C, WiFi. Walking distance to Blagaj tekija and riverside trout restaurants.",
+    "timeNeeded": "1 night"
+  },
+  {
+    "id": "ba-villa-gana-buna",
+    "name": "Villa Gana - heated-pool riverside villa (Malosevici/Buna, S of Mostar)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.232,
+    "lng": 17.831,
+    "description": "WOW-tier Night-5 option: a modern 3-bedroom (2 bath, sleeps up to 8) villa on the Neretva at Malosevici/Buna, ~11 km S of Mostar old bridge and ~5 km from the airport, with a PRIVATE heated pool, big walled garden, BBQ, sauna/jacuzzi and river+mountain views. Remote and quiet — exactly the scenic, rural, NOT-city-center character the villa tier is for, and it sits on the road you arrive on from Kr",
+    "status": "candidate",
+    "tags": [
+      "villa",
+      "research"
+    ],
+    "communityNotes": "9.6/10 over 36+ reviews (Airbnb 4.95/39). 'The stay was phenomenal, the accommodation exceeded our expectations... a huge beautiful garden area with a pool.' 'Beautiful villa and modern design with gorgeous garden on river. At night there are classy lighting in the garden.' 'Very remote, so you can find your peace here. You are surrounded by nature.'",
+    "sources": [
+      "https://www.airbnb.com/rooms/617296726134083428",
+      "https://www.fvrentals.com/property/villa-gana/BC-8525046",
+      "https://villa-gana.bosnia-herzegovina.info/en/",
+      "https://www.instagram.com/villa_gana/"
+    ],
+    "rating": 5,
+    "cost": "~EUR220-260/night (USD ~234-275 on Airbnb/FVRentals); for 4 people that's the top of the WOW band but split 4 ways is reasonable for a standout night. Pool open ~Apr 1-Nov 1.",
+    "facilities": "Private heated outdoor pool, walled garden, BBQ, sauna, jacuzzi, fireplace, full kitchen (dishwasher/oven), 2 bathrooms, A/C, free WiFi, free private parking.",
+    "timeNeeded": "1 night"
+  },
+  {
+    "id": "ba-villa-neretva-glavaticevo",
+    "name": "Villa Neretva (rafting resort with pool, Glavaticevo nr Konjic)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.4982,
+    "lng": 18.1264,
+    "description": "NORTH-balancing WOW/activity option: a riverside resort at Glavaticevo (~30 km SE of Konjic on the upper Neretva) with an outdoor POOL, restaurant, grill, and on-site rafting/fly-fishing/MTB. Apartments and bungalows. If the group wants to sleep north on Night-5 AND have Day-6 rafting on the doorstep, this is the package option — but it adds significant Day-5 driving past Mostar (only do this if D",
+    "status": "candidate",
+    "tags": [
+      "villa",
+      "research"
+    ],
+    "communityNotes": "Listed across Booking/TripAdvisor/welcometokonjic as the main upper-Neretva rafting base; travelers use it specifically as a 'sleep + raft next morning' combo. Fewer independent review quotes than the Mostar options, so rating reflects moderate (not stacked) consensus — verify recent reviews before booking.",
+    "sources": [
+      "https://welcometokonjic.ba/en/listings/villa-neretva/",
+      "https://www.tripadvisor.com/Hotel_Review-g1931691-d2318912-Reviews-Villa_Neretva-Konjic_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Herzegovina.html"
+    ],
+    "rating": 4,
+    "cost": "Resort apartments/bungalows roughly EUR60-110 for a unit (confirm a 4-person unit + rafting package on booking/direct).",
+    "facilities": "Outdoor pool, restaurant + outdoor grill, on-site Neretva/Rakitnica rafting, fly-fishing, MTB, hiking, volleyball/table tennis, free parking. Mountain setting (Prenj/Visocica), ~8 km from Boracko Lake.",
+    "timeNeeded": "1 night"
+  },
+  {
+    "id": "ba-bascarsija-bar-cluster",
+    "name": "Baščaršija bar cluster (Sunday night out: Barometar, Zlatna Ribica, Cheers, Raya 71)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.85831,
+    "lng": 18.42661,
+    "description": "The realistic Jun 21 (Sunday) night-out plan: a short walkable bar crawl on/around Ferhadija–Muvekita–Zelenih Beretki rather than a club. Cheers Pub (cheap beers, casual, Muvekita) → Café Barometar (coffee-to-craft-beer/gin, beer from ~5 KM) → Zlatna Ribica (quirky antique-stuffed 'goldfish' bar, an institution) → Raya 71 (Art Deco cocktails, open to ~01:00-02:00). Honest expectation: Sunday is qu",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "discover.ba & local nightlife guides: Zlatna Ribica 'quirky bar... antique decor, eclectic interior, historical charm'; Barometar 'transitions from coffee to craft beer and gin cocktails,' beer from ~5 KM (€2.5); Raya 71 Art-Deco cocktail bar 'closes between 01:00-02:00'; Cheers on Muvekita & Zelenih Beretki, 'budget-friendly beers.' Repeated honest note: 'Thursdays, Fridays, and Saturdays are the busiest nights... Sunday evenings might be quieter' — and gokumquat warns to AVOID City Pub / Pivnica Sarajevo (rude staff, tourist overcharging). Rakija/craft beer ~2-3 KM/shot.",
+    "sources": [
+      "https://discover.ba/sarajevo-nightlife-guide/",
+      "https://wanderlog.com/list/geoCategory/817632/best-bars-with-live-music-in-sarajevo",
+      "https://www.gokumquat.com/bosnia-and-herzegovina/sarajevo/best-local-bars-and-nightlife-in-sarajevo-authentic-drinking-spots-away-from-tourist-crowds"
+    ],
+    "rating": 4,
+    "cost": "Beer ~5 KM, cocktails ~12 KM, rakija ~2-3 KM",
+    "facilities": "Walkable old-town bar district, restrooms in venues",
+    "timeNeeded": "2-3h"
+  },
+  {
+    "id": "ba-camping-neretva-mostar",
+    "name": "Camping Neretva (riverside camp, ~3 km from Mostar old town)",
+    "country": "BA",
+    "category": "campsite",
+    "lat": 43.3644,
+    "lng": 17.815,
+    "description": "CAMPING-tier Night-5 pick that keeps you right at Mostar: a small, shaded riverside campsite on the Neretva ~3-4 km from the old bridge (30-40 min walk / EUR4-5 taxi). Tent pitches under trees, direct river swimming, and a wooden bar-restaurant. Best base if you want to do Mostar old town + Fortica zipline in the evening and start Day-6's northern run (Dreznica/Diva Grabovica) fresh.",
+    "status": "candidate",
+    "tags": [
+      "camp",
+      "research"
+    ],
+    "communityNotes": "'Very nice camp near the beautiful river Neretva. Toilets and shower were also nice.' 'Beautiful place and excellent price. The parcel has shadows so the temperature is very good.' 'Super Platz... bestes WiFi, das wir auf dem Balkan hatten.'",
+    "sources": [
+      "https://park4night.com/en/place/124588",
+      "https://www.campingneretva.ba/",
+      "https://www.eurocampings.co.uk/bosnia-and-herzegovina/mostar/camping-neretva-125066/"
+    ],
+    "rating": 4,
+    "cost": "~EUR20-30/night for the pitch incl. electricity/water/WiFi (reviewers report EUR20-25 for 2 in a van/roof tent); ~EUR35-45 for 4 + tent + car is a safe budget.",
+    "facilities": "Hot-water showers (solar, can be inconsistent in the evening), clean modern toilets, electricity at pitches, free WiFi (reviewers say best WiFi they had in the Balkans), bar/restaurant, river swimming. Access: short gravel entrance then paved, steep final bit — fine for an SUV.",
+    "timeNeeded": "1 night"
+  },
+  {
+    "id": "ba-diva-grabovica-riverbeach-camp",
+    "name": "Diva Grabovica river-beach wild camp (Neretva confluence)",
+    "country": "BA",
+    "category": "campsite",
+    "lat": 43.5915,
+    "lng": 17.6815,
+    "description": "Tolerated WILD-CAMP / informal pitch where the Diva Grabovica and Plaski potok streams form a pebble delta on the Neretva, under Cvrsnica's 1,800 m walls. Camp, grill and swim on the beach; a dramatic free overnight that pre-positions you at the foot of Day-6's Diva Grabovica hike. Wild camping is tolerated in Bosnia, but this is informal — leave no trace.",
+    "status": "candidate",
+    "tags": [
+      "camp",
+      "research"
+    ],
+    "communityNotes": "iOverlander/park4night-style trip reports: 'the Neretva is calm here... pebble beaches between the two streams, you can camp, grill, swim and relax' with a 'gorgeous mountain backdrop'; the grassy trailhead area also has a small level parking/camp spot 'surrounded by vertical mountain sides.' Repeated caveat: the final road is rough — fine for higher-clearance cars, slow going for low ones.",
+    "sources": [
+      "https://ioverlander.com/places/64483-diva-grabovica",
+      "https://www.rexby.com/kathidaniela/ttd/local-beach-with-little-coves-and-streams",
+      "https://en.wikipedia.org/wiki/Diva_Grabovica_Valley"
+    ],
+    "rating": 3,
+    "cost": "Free (informal/wild).",
+    "facilities": "None — wild spot: no toilets/showers/water, bring everything and pack out trash. River swimming. Access: cross the Neretva at the HE Grabovica dam then ~5 km macadam; the LAST stretch is 'gravel/stony and a little rough, best for smaller vans' — passable for an SUV driven slowly, not after heavy rain.",
+    "timeNeeded": "1 night"
+  },
+  {
+    "id": "ba-eko-selo-boracko",
+    "name": "Eko Selo Boracko Jezero (lake eco-village: camp + bungalows, Konjic)",
+    "country": "BA",
+    "category": "campsite",
+    "lat": 43.5569,
+    "lng": 18.0289,
+    "description": "ALTERNATIVE Night-5 if the group pushes north to balance the drive: a large lakeside eco-village on Boracko Lake ~18-20 km from Konjic, offering BOTH tent camping with a private beach AND bungalows/cabins. Swim, BBQ on the beach, horse-riding, rafting base — and it pre-positions you for Day-6's Konjic Neretva rafting + Crni Vir. (Already exists in data as ba-konjic-eko-selo-boracko; including here",
+    "status": "candidate",
+    "tags": [
+      "camp",
+      "research"
+    ],
+    "communityNotes": "'The place is stunning when it comes to nature... untouched nature everywhere; toilets are clean, very hospitable, restaurant offers good food for average money.' Counterpoint: 'average camping with poor toilet facilities' and 'cold outdoor showers due to solar.' Consensus: gorgeous lake, basic amenities.",
+    "sources": [
+      "https://park4night.com/en/place/25976",
+      "https://www.campercontact.com/en/bosnia-and-herzegovina/federation-of-bosnia-and-herzegovina/jezero/26708/eko-selo-boracko-jezero",
+      "https://www.camping.info/en/campsite/eko-selo-boracko-jezero"
+    ],
+    "rating": 4,
+    "cost": "Camping ~5 KM pp + 5 KM car + tent/pitch fee (overnight from ~EUR34 listed); bungalow/'country house' ~EUR100/day for the unit. Budget ~EUR30-45 for 4 + tent + car.",
+    "facilities": "Toilets + showers (open-air, can be windy/cold per reviews), electricity, WiFi at restaurant, restaurant/bar, private lake beach, swimming, horse-riding, volleyball, BBQ. Flat grassy pitches suit tents. Note: review quality is mixed (4.1/5) — facilities are basic, the SETTING is the draw.",
+    "timeNeeded": "1 night"
+  },
+  {
+    "id": "ba-cakum-pakum-sarajevo",
+    "name": "Cakum-Pakum (Sarajevo — quirky all-day brunch)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.85964,
+    "lng": 18.42194,
+    "description": "Tiny, artsy all-day-brunch cafe on Kaptol (just NW of Baščaršija) beloved by Sarajevo's young/creative crowd — antique-suitcase, fringed-lamp, tartan-tablecloth decor and a menu of pancakes, eggs, homemade cakes, pasta and veggie options. A standout, characterful breakfast (very on-brand for this group) vs a generic hotel spread — a good Jun 22 morning fuel-up if they swing through central Sarajev",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "TripAdvisor ~4.7, ranked top ~10-15 of 500+ Sarajevo restaurants: 'trendy and modern... popular among the city's young and creative crowd,' 'eclectic menu with all-day brunches, homemade cakes, vegetarian options... variety of pancakes.' Repeated caveat: it's small and gets busy — 'arriving early or making reservations is advisable.' Open daily ~10:00-23:00.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g294450-d7028310-Reviews-Cakum_Pakum-Sarajevo_Sarajevo_Canton_Federation_of_Bosnia_and_Herzegovina.html",
+      "https://wanderlog.com/place/details/1181188/cakum-pakum",
+      "https://www.gokumquat.com/bosnia-and-herzegovina/sarajevo/best-local-breakfast-brunch-coffee-spots-in-sarajevo-authentic-bosnian-morning-experiences"
+    ],
+    "rating": 4,
+    "cost": "~10-20 KM/pp (€5-10) for brunch",
+    "facilities": "Cafe seating (small), indoor/some outdoor",
+    "timeNeeded": "45-60 min"
+  },
+  {
+    "id": "ba-morica-han-divan-sarajevo",
+    "name": "Morića Han / Café Divan (caravanserai courtyard coffee)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.85932,
+    "lng": 18.42814,
+    "description": "Sarajevo's last surviving Ottoman caravanserai (16th-17th c.) right on Sarači in Baščaršija — a stone-arched courtyard with rug-sellers and the city's most atmospheric coffee/tea house, Café Divan, for the full Bosnian-coffee ritual (džezva, sugar cube, rahat-lokum). Open early (Divan ~07:00) so it works as the standout Jun 22 morning coffee if they take the central route out, or an evening wind-d",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "Destination Sarajevo / Sarajevo Times: the only remaining han, 'famous city cafe Divan, known for Turkish tea and a pleasant atmosphere'; courtyard free to enter 09:00-18:00, Café Divan open daily ~07:00-23:00. Travelers repeatedly call it the most atmospheric coffee spot in the old town and a good morning starting point. Note: Divan leans tea/coffee + light pastries rather than a big breakfast — pair with a burek nearby for a full morning.",
+    "sources": [
+      "https://sarajevo.travel/en/things-to-do/morica-han/492",
+      "https://sarajevotimes.com/morica-han-one-of-the-most-visited-tourist-destinations-in-the-heart-of-bascarsija/",
+      "https://restaurantguru.com/Morica-Han-Sarajevo"
+    ],
+    "rating": 4,
+    "cost": "Coffee/tea ~2-4 KM; courtyard free",
+    "facilities": "Café (cash-friendly), historic courtyard, restrooms in complex",
+    "timeNeeded": "30-45 min"
+  },
+  {
+    "id": "ba-boracko-jezero-konjic",
+    "name": "Boračko jezero (Konjic) — glacial swim lake + Eko Selo",
+    "country": "BA",
+    "category": "nature",
+    "lat": 43.5145,
+    "lng": 17.987,
+    "description": "Clean glacial lake ~16 km up a hairpin mountain road south of Konjic — calm, mountain-ringed swimming and the Eko Selo Boračko Jezero base (rafting put-in, restaurant, bungalows/camping). It sits OFF the Konjic→Sarajevo line (a ~20-30 min detour up and back), so it competes with — rather than adds to — the Crni Vir / Neretva-rafting stops already on Day 6. Best treated as the alternative Konjic sw",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "camping.info / park4night / TripAdvisor: 'beautiful and very clean,' 'excellent lake for swimming,' water still swimmable into mid-September; access 'via a narrow mountain road, about 16 km climbing with many hairpin turns... if you like peace and quiet this is a must.' Eko Selo runs Neretva rafting and has tent pitches on grass. SUV-fine (paved but twisty).",
+    "sources": [
+      "https://park4night.com/en/place/25976",
+      "https://www.camping.info/en/campsite/eko-selo-boracko-jezero",
+      "https://www.tripadvisor.com/Attraction_Review-g1931691-d8047205-Reviews-Eko_Selo_Boracko_Jezero_Day_Tours-Konjic_Herzegovina_Neretva_Canton_Federation_o.html"
+    ],
+    "rating": 4,
+    "cost": "Free to swim; Eko Selo camping ~€20-30 for 4 + tent + car",
+    "facilities": "Lakeside restaurant, toilets, rafting base, camping/bungalows at Eko Selo",
+    "timeNeeded": "1-2h (swim/lunch)"
+  },
+  {
+    "id": "hr-apt-sobra-more-mljet",
+    "name": "Apartments by the sea Sobra (tier-2 base) — Sobra",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 42.7369,
+    "lng": 17.5989,
+    "description": "No-frills, well-located seaside apartments in Sobra — the ferry village (so zero extra drive after the 21:15 arrival in the dark). Multiple separate listings here (Sobra-4898, -4908, -15993, 'Apartments More') sleep 4 with kitchen, A/C, private bathroom, terrace, free parking. The practical tier-2 'just need a shower and a bed' option for the late arrival night.",
+    "status": "candidate",
+    "tags": [
+      "apt",
+      "research"
+    ],
+    "communityNotes": "Booking.com listings for Sobra/Babino Polje rate strongly on location & cleanliness. 'Apartments More' = 3 km from the ferry, kitchen + A/C + free parking + outdoor furniture. Sobra-4898 has 2 bedrooms + 2 bathrooms for 4. Being IN Sobra means you don't drive a dark island road tired after the late ferry — biggest practical win for night 3.",
+    "sources": [
+      "https://apartmentsmljet.com/",
+      "https://www.booking.com/hotel/hr/apartment-sobra-4898a.html",
+      "https://www.booking.com/hotel/hr/apartment-sobra-15993a.html",
+      "https://www.mljettravel.com/apartments/"
+    ],
+    "rating": 3,
+    "cost": "~€53-67/night for a smaller 4-person unit in June; larger units €105+. Tier-2 benchmark hit around €55-70.",
+    "facilities": "Kitchen, A/C, private bathroom(s), WiFi, free parking, terrace/sea view; walking distance to Sobra ferry & waterfront konobas"
+  },
+  {
+    "id": "hr-apt-stanici-omis",
+    "name": "Cheap apartment cluster — Stanići / Mimice (Omiš Riviera)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 43.4145,
+    "lng": 16.7269,
+    "description": "Tier-2 no-frills sleep zone: the small coastal villages of Stanići, Mimice and Lokva Rogoznica between Omiš and Makarska are the value belt for 4-person apartments (~EUR40-60), most 100-300m from a beach with parking. Practical, well-located for both the Cetina/Omiš activities and Biokovo, without paying Makarska-town prices. (Pin = Stanići; pick a specific well-rated listing on Booking/Airbnb.)",
+    "status": "candidate",
+    "tags": [
+      "apt",
+      "research"
+    ],
+    "communityNotes": "Local rental aggregators repeatedly flag 'Dugi Rat, Lokva Rogoznica and Mimice' as the affordable areas vs pricier Makarska/Omiš centre; one concrete example: 'apartment for 4 with pool in Stanići, 5km from Omiš, 200m from the beach, market and restaurant 100m away.' These are generic but clean/practical — exactly the tier-2 brief (shower + bed + move on), not a wow stay.",
+    "sources": [
+      "https://www.tourist-paradise.com/vacation-rentals/omis-riviera/r3812",
+      "https://www.private-apartments-croatia.com/apartments/makarska",
+      "https://www.croatia-hrvatska.eu/omis/"
+    ],
+    "rating": 3,
+    "cost": "~EUR40-60/night for 4 (apartment)"
+  },
+  {
+    "id": "hr-cavtat-apt-tier2",
+    "name": "Cheap sea-view apartment — Cavtat / Mlini (tier-2, N12)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 42.58,
+    "lng": 18.22,
+    "description": "Tier-2 (~€50–60 for 4) practical alternative to Camping Kate for N12: well-rated sea/bay-view apartments in Cavtat and Mlini, both ~10–20min from Dubrovnik and right on the Day-13 path. Walkable to a swim, restaurants and the water-taxi/bus to Dubrovnik. Target AREA — pick a specific 4.7★+ listing and verify.",
+    "status": "candidate",
+    "tags": [
+      "apt",
+      "research"
+    ],
+    "communityNotes": "Travelers single out 'Apartments Sandito, Mlini — 1-bed with balcony and sea view, 4.78/5 (27 reviews), breathtaking views and an amazing pool area' and various Cavtat-bay-view apartments. Cavtat is the calmer, prettier base than Dubrovnik itself; Mlini puts you next to Camping Kate so the group can choose camp-vs-apartment by mood that night.",
+    "sources": [
+      "https://www.airbnb.com/cavtat-croatia/stays/pools",
+      "https://www.vrbo.com/en-gb/holiday-rentals/croatia/dubrovnik-neretva-county/municipality-of-konavle/cavtat"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "hr-konavle-stone-villa-tier3",
+    "name": "WOW stone villa with pool — Konavle valley (Ljuta/Gruda/Pridvorje, tier-3, N12)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 42.535,
+    "lng": 18.365,
+    "description": "Tier-3 WOW target for the last night: restored 19th-century Dalmatian STONE houses with private pools in the green Konavle valley behind Cavtat (villages like Ljuta, Gruda, Pridvorje, Dubravka) — olive gardens, summer kitchen/BBQ, valley-to-sea views, ~20–30min to Dubrovnik and ~25–35min to the airport for the Day-13 flight. Rural/authentic = the villa signal, NOT city-center. Verify a specific li",
+    "status": "candidate",
+    "tags": [
+      "villa",
+      "research"
+    ],
+    "communityNotes": "Named candidates from rental sites: 'Villa Konavoski Miri, Cavtat — stone-built, pool house with summer kitchen, BBQ and pizza oven'; 'Villa Kameni Dvori, Konavle Valley — authentic, outdoor pool, expansive terrace'; 'Villa Royal House, Dubravka — 19th-c. stone house, fully renovated, views of sea/mountains/Sokol tower'; 'Villa Stone House Kuna, Kuna Konavoska, 5km from Pridvorje — 3-bed, pool'. Several sleep 6–11 (so a 4-person rate can be very good value off-peak); confirm late-June price lands in tier-3.",
+    "sources": [
+      "https://www.oliverstravels.com/croatia/dubrovnik/cavtat/villa-konavoski-miri/",
+      "https://www.sunvil.co.uk/holidays/croatia/dalmatia/konavle-valley/accommodation/villa-kameni-dvori",
+      "https://www.tripadvisor.com/VacationRentalReview-g2365175-d15520596-Villa_Stone_House_Kuna_Three_Bedroom_Villa_with_Private_Pool-Ljuta_Konavle_Dubrovnik.html"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "hr-villa-sea-star-sobra-mljet",
+    "name": "Villa / Sea Star House — Sobra (WOW tier, seaside + pool)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 42.7369,
+    "lng": 17.5989,
+    "description": "Traditional Mediterranean stone house in Sobra, ~2 m from the sea, with an outdoor pool ringed by Aleppo pines and a terrace with full sea view — a 'slow-pace, reset and reflect' design. The character/waterfront WOW option on Mljet, and conveniently in the ferry village so there's no dark drive after the 21:15 landing.",
+    "status": "candidate",
+    "tags": [
+      "villa",
+      "research"
+    ],
+    "communityNotes": "Listed on Airbnb, Hotels.com and Expedia (well-established). Described as a stone house 'for dreamers to reset', pool surrounded by Aleppo pine + Adriatic + starry sky, sea-view terrace, BBQ. Genuinely scenic/waterfront (the villa-tier signal), NOT a town-center flat. CAVEAT for THIS trip: it's a single night arriving ~21:35 in the dark then leaving for a full island day — a pool villa's value (lounging) is largely wasted on a one-night transit, so it's the splurge-only-if-they-want-comfort pick. Verify exact 4-person pricing/availability on the listing.",
+    "sources": [
+      "https://www.hotels.com/ho1234254144/villa-sea-star-mljet-croatia/",
+      "https://www.expedia.com/Mljet-Hotels-Sea-Star.h38539192.Hotel-Information",
+      "https://www.airbnb.com/sobra-croatia/stays"
+    ],
+    "rating": 3,
+    "cost": "Premium villa tier — budget toward the ~€100-130 ceiling for 4 in June (confirm on Airbnb/Expedia listing; pool houses on Mljet run higher in peak).",
+    "facilities": "Private outdoor pool, sea-view terrace, BBQ/grill, garden, kitchen, free parking, A/C; literally on the water in Sobra (no extra drive from the ferry)"
+  },
+  {
+    "id": "hr-villa-stone-babino-polje-mljet",
+    "name": "Stone pool house — Babino Polje (WOW tier, rural)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 42.7353,
+    "lng": 17.5505,
+    "description": "Restored traditional Mljet stone houses with private pools in/around Babino Polje (the island's old central village). Examples: a 3-bedroom semi-detached house sleeping 5 with private pool, garden and two terraces; 'Mediterranean Stone House' and 250-300-year-old family stone houses. Rural-village character with a pool — the inland WOW alternative to the seaside Sea Star.",
+    "status": "candidate",
+    "tags": [
+      "villa",
+      "research"
+    ],
+    "communityNotes": "Babino Polje vacation rentals rate 4.9 on Airbnb for location/cleanliness. Listings emphasise centuries-old restored stone, private pool, quiet village setting in 'pure nature' — strong character/isolation signals. Central position = balanced for both the NP (W) and Odysseus Cave/Blace (E). Read individual listing photos+reviews before booking to confirm the pool/condition; some are older/basic inside.",
+    "sources": [
+      "https://www.booking.com/hotel/hr/holiday-home-with-pool-stone.html",
+      "https://www.airbnb.com/rooms/13638047",
+      "https://www.airbnb.com/babino-polje-croatia/stays/houses"
+    ],
+    "rating": 3,
+    "cost": "~€90-130/night for a 4-5 person stone pool house in June (varies by listing); confirm on Booking/Airbnb.",
+    "facilities": "Private pool, garden + terraces, full kitchen, multiple bedrooms/bathrooms, BBQ, free parking; central village so shops/konobas walkable"
+  },
+  {
+    "id": "hr-villa-tucepi-makarska-mountainside",
+    "name": "WOW villa zone — Tučepi / Makarska mountainside (sea-view, Biokovo backdrop)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 43.2786,
+    "lng": 17.0556,
+    "description": "Tier-3 alternative right at the camp base: mountainside villas above Tučepi/Makarska with private pools, Biokovo rising behind and the open Adriatic + islands in front. Walkable-ish to the best Riviera beaches yet set back from the strip. Zero repositioning for Day-2 Biokovo (gate is minutes away). (Pin = Tučepi mountainside; e.g. 'Villa Yanko, Tučepi' 4.97, or 'Villa Sally, Makarska mountainside'",
+    "status": "candidate",
+    "tags": [
+      "villa",
+      "research"
+    ],
+    "communityNotes": "'Villa Yanko, Tučepi — 4.97/5, private pool and terrace, beach 70m away'; 'Villa Sally — new 4-bed on the mountainside overlooking the Adriatic, private pool, sauna/spa, 4.84/5.' Strong ratings, genuine sea-view-with-pool character. PRICE CAVEAT: most full villas here exceed EUR130/night for 4 in peak June (often EUR200+); realistic only if the group stretches the wow budget or finds a 1-bedroom pool studio. Verify exact June price + that it's the hillside (not strip) location per listing.",
+    "sources": [
+      "https://www.airbnb.com/tucepi-croatia/stays/pools",
+      "https://www.airbnb.com/makarska-riviera-croatia/stays/pools",
+      "https://www.vipholidaybooker.com/en/croatia-villas/makarska"
+    ],
+    "rating": 4,
+    "cost": "~EUR150-250/night for 4 (private-pool villa, peak June) — above wow ceiling unless stretched"
+  },
+  {
+    "id": "hr-villa-zvecanje-cetina-canyon",
+    "name": "WOW villa zone — Zvečanje / Naklice hillside above Omiš (Cetina canyon)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 43.4522,
+    "lng": 16.7681,
+    "description": "Tier-3 villa target: the dead-end hamlets of Zvečanje and Naklice on the hillside above Omiš — a scatter of ~10 isolated stone/modern villas with private pools looking down the Cetina river canyon to the sea, the polar opposite of a town apartment. Rural, quiet, character, killer view; ~7km/15min above Omiš so still 30min to Biokovo and on the doorstep of canyoning/rafting/zipline. (Pin = Zvečanje",
+    "status": "candidate",
+    "tags": [
+      "villa",
+      "research"
+    ],
+    "communityNotes": "'Quiet location near the Cetina River Canyon, stunning vistas, Omiš and the beaches ~7km away... amazingly quiet and lovely to relax, brilliant pool.' 'Hillside dead-end streets with only ~10 villas scattered on the hill — completely opposite to the densely populated coast.' Authentic Dalmatian stone houses with Cetina-canyon + sea views. HONEST PRICE CAVEAT: a true private-pool villa here in mid-June for 4 commonly runs ~EUR130-200+/night — at/above the wow-tier ceiling; the smaller stone houses are the ones to chase for ~EUR130. Read photos + reviews per listing.",
+    "sources": [
+      "https://www.vrbo.com/6901232ha",
+      "https://www.airbnb.com/naklice-croatia/stays/houses",
+      "https://feriehome.com/en/villas-croatia/omis/new-hillside-villa-paradise-2"
+    ],
+    "rating": 4,
+    "cost": "~EUR130-200/night for 4 (private-pool villa, peak June) — target the cheaper stone houses for ~EUR130"
+  },
+  {
+    "id": "hr-elaphiti-skipper-day-dubrovnik",
+    "name": "Elaphiti private skipper boat day (Mljet alternative)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.6589,
+    "lng": 18.0944,
+    "description": "Half-day (~4h) private speedboat from Dubrovnik's Gruž/old port to the Elaphiti islands (Koločep, Lopud's sandy Šunj beach, Šipan) with swim/snorkel stops — the zero-driving, zero-ferry-friction island alternative to the Mljet detour. Fully customisable: more swimming, blue caves, or lunch in a fishing village.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "Private half-day skipper tours run ~€330-360 total for up to 8 (so ~€90/head for 4), masks/GoPro/drinks often included. Travel framing: 'Elaphiti = closer to Dubrovnik, untouched bays, best for a chilled boat day; Mljet = unbeatable for nature lovers (lakes + green interior) but needs the car ferry.' Use this if the group decides the Pelješac-drive + double-ferry friction of Mljet isn't worth it, or as a relaxed alternative on the Day-13 Dubrovnik stretch (Lokrum is the even cheaper zero-cost version already in the plan).",
+    "sources": [
+      "https://www.viator.com/tours/Dubrovnik/Dubrovnik-Boat-Tour-Half-Day-Elafit-Islands/d904-118286P2",
+      "https://exploredubrovnik.com/location/elaphiti-islands-half-day/",
+      "https://www.travelersuniverse.com/half-day-private-speed-boat-tour-in-dubrovnik-on-elaphiti-islands/"
+    ],
+    "rating": 3,
+    "cost": "Private speedboat ~€330-360 for the boat (up to 8) → ~€90pp for 4, half day; public group Elaphiti tours ~€40-60pp",
+    "facilities": "Skipper, snorkel gear, drinks, swim stops; departs Dubrovnik (no driving, no car ferry)"
+  },
+  {
+    "id": "hr-banj-beach-sibenik",
+    "name": "Banj Beach, Šibenik",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.7414,
+    "lng": 15.8838,
+    "description": "Blue-Flag pebble city beach directly across the bay from Šibenik's old town — calm, clean water with a full-facility promenade (bars, restaurants, in-season inflatable waterpark). A convenient on-route Day-1 swim/lunch if you visit Krka via Skradin (it's ~25min from Skradin) instead of the Vrsi backtrack.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "'Blue Flag pebble beach... calm and clean with lots of facilities — restaurants, bars, volleyball courts, and an inflatable waterpark.' Praised as the best-equipped town beach in the area with a postcard view of Šibenik's cathedral skyline. More 'town beach' than wild cove — good for an easy facilities stop, not seclusion.",
+    "sources": [
+      "https://krkatours.com/blog/swim-skradin-best-beach-location-croatia",
+      "https://www.tripadvisor.com/Hotels-g303814-c3-zff29-Makarska_Split_Dalmatia_County_Dalmatia-Hotels.html"
+    ],
+    "rating": 3,
+    "cost": "free (facilities/rentals extra)",
+    "timeNeeded": "1h"
+  },
+  {
+    "id": "hr-nugal-beach-makarska",
+    "name": "Nugal beach (hidden cove, Makarska)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.2793,
+    "lng": 17.0338,
+    "description": "Dramatic pebble cove hemmed by towering cliffs and pines between Makarska and Tučepi, reachable only on foot (~20min cliff-path from Makarska promenade) or by boat — turquoise water, great snorkelling, no facilities. A genuinely special Day-2-afternoon swim if the group wants a wild cove over a town beach. (Part FKK/nudist at the far end.)",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "'A gem among the beaches of the Makarska Riviera... turquoise waters and smooth pebbles, embraced by towering cliffs.' '20-minute hike, rocky terrain and a cliff section, sturdy shoes essential.' 'No toilets, showers, shops — bring your own water and shade.' Roughly 1/3 nude, 1/3 topless, 1/3 textile. Less 'hidden' than it used to be but still scenic and quiet vs the town beaches.",
+    "sources": [
+      "https://croatiahiddengems.com/beaches-and-islands/nugal-fkk-beach-in-makarska",
+      "https://www.tripadvisor.com/Attraction_Review-g303814-d14989555-Reviews-or10-Nugal_Beach-Makarska_Split_Dalmatia_County_Dalmatia.html"
+    ],
+    "rating": 4,
+    "cost": "free",
+    "timeNeeded": "half-day or 2h swim"
+  },
+  {
+    "id": "hr-primosten-mala-raduca",
+    "name": "Mala Raduča beach, Primošten",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.5894,
+    "lng": 15.9192,
+    "description": "Pebble beach on the Primošten peninsula with clear turquoise water and a picture-postcard view back to the walled old town. The on-route Day-1 swim replacement for the Vrsi backtrack: it sits right on the Zadar->Makarska corridor (~83min/100km from the airport), so you stop to swim without driving the wrong way.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "'Crystal-clear waters and a pebbly shoreline, perfect for swimming'; 'splendid view of the Old Town... spectacular sunsets'. Regularly listed among Croatia's prettiest beaches; café/restaurant promenade right behind it. Gets busy midday in season — morning or late-afternoon dip is calmest.",
+    "sources": [
+      "https://croatia.hr/en-gb/beaches/mala-raduca-beach",
+      "https://visitprimosten.com/beaches/",
+      "https://www.adriatic.hr/en/guide/beach-mala-raduca-primosten-croatia/beach-5039"
+    ],
+    "rating": 4,
+    "cost": "free (paid parking + sunbed/umbrella rental in season)",
+    "timeNeeded": "45-90min swim/lunch stop"
+  },
+  {
+    "id": "hr-ramova-beach-krvavica",
+    "name": "Ramova Beach (Krvavica camp beach)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.3216,
+    "lng": 16.9883,
+    "description": "The pebble cove ~200m below Camping Krvavica — large smooth pebbles, crystal water, pine shade, and notably uncrowded for the Makarska Riviera. This is the no-driving Day-1 arrival swim: roll into camp and walk straight down. Good snorkelling on the rocks at the edges.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "'Pristine pebble shore, crystal-clear waters... cozy and not crowded, with pine trees casting natural shadow and purest water.' Repeatedly called the quietest beach on this stretch (between busier Promajna and Baška Voda). No big bars/clubs — calm, which suits an arrival night.",
+    "sources": [
+      "https://croatiahiddengems.com/beaches-and-islands/ramova-beach-in-krvavica",
+      "https://www.adriagate.com/Croatia-en/Krvavica-Baska-Voda-beach-Croatia"
+    ],
+    "rating": 4,
+    "cost": "free",
+    "timeNeeded": "arrival swim"
+  },
+  {
+    "id": "hr-saplunara-beach-mljet",
+    "name": "Saplunara beach (Blace gateway) — SE tip of Mljet",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.7008,
+    "lng": 17.7378,
+    "description": "Sandy pine-backed bay on Mljet's far SE tip and the parking/start point for the 20-min walk to the wilder Blace (Limuni) lagoon. A genuinely rare Dalmatian sand beach, ~1 km long, shallow, warm, quiet — but it's the longest in-island drive (47 min/31 km from Ropa) so it only makes sense as the morning anchor of an east-side cluster (Saplunara + Blace + Odysseus Cave) rather than tacked onto a NP d",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "Croatia.hr / mljettravel: Saplunara is a ~1 km sandy bay in thick pine forest; Blace is a 20-min walk 'around the corner' and accessible ONLY on foot. The narrow 8 m sea inlet keeps Blace's water bathtub-warm and swimmable even early-season. 'Wonderfully unspoiled, hidden from the crowd — a car makes life easy' for reaching the east tip. Pair it with Odysseus Cave (both on the east) to justify the drive.",
+    "sources": [
+      "https://www.mljettravel.com/saplunara/",
+      "https://croatia.hr/en-gb/beaches/blace-beach",
+      "https://www.croatia-beaches.com/sandy/mljet_saplunara_beach.htm"
+    ],
+    "rating": 4,
+    "cost": "Free beach; small seasonal beach bars in Saplunara",
+    "facilities": "Sandy beach, pine shade, a few seasonal cafes/apartments in Saplunara; Blace itself is wild (no facilities), reached on foot only"
+  },
+  {
+    "id": "hr-skradin-town-beach",
+    "name": "Skradin town beach (Krka swim alternative)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.8178,
+    "lng": 15.9233,
+    "description": "Since swimming was banned inside Krka NP (Skradinski Buk) in 2021, Skradin village itself has a small clear-water beach ~5min from the boat port — the natural place to cool off right after the Krka boardwalk, with no extra driving. Skradin is also where you park/board the Krka boat, so it's zero-detour.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "'Crystal-clear waters... a beautiful beach in the heart of Skradin, rich with natural shade, a short 5-minute stroll from the port.' Promoted by locals specifically as the legal swim alternative now that the falls are off-limits. Modest in size but right where you already are for Krka.",
+    "sources": [
+      "https://krkatours.com/blog/swim-skradin-best-beach-location-croatia",
+      "https://www.localguidetocroatia.com/single-post/can-you-swim-in-krka-national-park"
+    ],
+    "rating": 3,
+    "cost": "free",
+    "timeNeeded": "30-60min"
+  },
+  {
+    "id": "hr-autocamp-lovor-mljet",
+    "name": "Auto-camp Lovor (Autocamp Mljet) — Kozarica",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 42.7869,
+    "lng": 17.4017,
+    "description": "Family-run campsite in Kozarica village on the northern coast, on the NW edge near Mljet NP — the closest camp to the salt lakes and the highest-rated camp on the island. Tranquil pitches under mature Mediterranean trees on slopes above vineyards, small beach close by. The classic Mljet tent campsite.",
+    "status": "candidate",
+    "tags": [
+      "camp",
+      "research"
+    ],
+    "communityNotes": "park4night 4.31/5 (26 reviews). Friendly owner (Ana), 'very clean'. 24h reception, hot/cold water, kitchen. Tent-focused (not for motorhomes >6m). Access road ~3 km narrow/unpaved but fine for a standard rental car. Downside: only one restaurant nearby and no grocery store — bring food. Better positioned than Camp Marina for an early NP start (closest camp to the lakes).",
+    "sources": [
+      "https://www.autocamp-mljet.com/?lang=eng",
+      "https://park4night.com/en/place/137639",
+      "https://www.campingcroatia.net/campsite-lovor-kozarica-mljet-island/",
+      "https://avtokampi.si/campsites/camping-lovor"
+    ],
+    "rating": 4,
+    "cost": "Official site high season (15 Jun–15 Sep): adult €15 + tent €12 → 4 adults + 1 tent ≈ €72/night (+~€1.30pp tax ≈ €77). Electricity €7 extra.",
+    "facilities": "Hot showers, toilets, kitchen, electricity hookup, 24h reception, ~30 tent-focused pitches, small beach nearby. Book ahead: autocamp-mljet.com / +385 98 702 200"
+  },
+  {
+    "id": "me-boka-rock-villa-herceg-novi",
+    "name": "WOW villa — sea-view pool villas above Boka Bay (Podi/Herceg Novi, tier-3)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.4633,
+    "lng": 18.575,
+    "description": "Tier-3 WOW target for N11: private-pool villas on the hillside above Boka Bay around Podi / Herceg Novi (e.g. 'Boka Rock Montenegro', the Podi hillside villa rated 9.0/10) — infinity-style pool, big terrace, sweeping bay-and-mountain views, isolation, character. Up the slope (not city-center, scenic-rural = the villa signal) and conveniently near the airport/Croatia border for the last night. Veri",
+    "status": "candidate",
+    "tags": [
+      "villa",
+      "research"
+    ],
+    "communityNotes": "Booking/Airbnb listings in this cluster describe 'luxury villa with private pool and sea view' (Boka Rock, Brajkovina) and a 'villa on the hillside over Boka Bay in the quiet village of Podi, private pool, 4 bedrooms, 9.0/10'. These run higher than €130 in peak July/Aug but late-June 4-person rates can land near the top of the tier-3 budget if booked early. The pull is the view + pool + seclusion, not the town.",
+    "sources": [
+      "https://www.booking.com/hotel/me/boka-rock-montenegro-luxe-villa-met-prive-zwembad-en-zeezicht-n-podi-herceg-novi.en-gb.html",
+      "https://www.airbnb.com/montenegro/stays/pools",
+      "https://www.travelocity.com/Herceg-Novi-Hotels-Beautiful-Villa-With-Big-Private-Pool-And-Amazing-Sea-And-Mountain-Views.h27320305.Hotel-Information"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "me-eco-village-nevidio",
+    "name": "Eco Village Nevidio (Pošćenje) — wooden A-frame eco-cottages",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.9785,
+    "lng": 19.065,
+    "description": "WOW-tier rural eco-village on the quiet south side of Durmitor: nine wood A-frame cottages modelled on old Montenegrin houses, mountain + two-lake views over Mount Vojnik, an open-charcoal-grill restaurant that travellers rate as a trip highlight. EU Ecolabel-certified, deliberately not mass-market. ~30-40 min south of Žabljak (toward Šavnik/Nevidio canyon) — within detour tolerance as an N8 alter",
+    "status": "candidate",
+    "tags": [
+      "villa",
+      "research"
+    ],
+    "communityNotes": "TripAdvisor (9.3): 'Gorgeous place... beautifully designed and not mass market in any way whatsoever' (EJP); 'A very special experience: in the midst of nature and off the main routes... excellent cooking over open charcoal grill' (Berthold V); 'the surrounding land and the view from the restaurant was outstanding... some of the best food of our month-long trip' (Morgan C). Cottages are simple-but-complete with heating/wood stoves and balcony mountain views.",
+    "sources": [
+      "https://www.tripadvisor.com/Hotel_Review-g15809486-d7072684-Reviews-Eco_Village_Nevidio-Poscenje_Savnik_Municipality.html",
+      "https://www.booking.com/hotel/me/ethno-village-nevidio.en-gb.html",
+      "https://bigsee.eu/eco-village-nevidio-savnik/"
+    ],
+    "rating": 4,
+    "cost": "~€110-145/night for a cottage in summer (off-season from ~€52); restaurant well-priced",
+    "facilities": "private bathroom/shower per cottage, heating/wood stove, balcony, on-site restaurant + big homemade breakfast buffet, free bike rental, free parking, free WiFi in common areas, pet-friendly",
+    "timeNeeded": "overnight"
+  },
+  {
+    "id": "me-kotor-bay-apt-muo-dobrota",
+    "name": "Waterfront apartment — Muo / Dobrota (Kotor Bay, tier-2)",
+    "country": "ME",
+    "category": "accommodation",
+    "lat": 42.4286,
+    "lng": 18.7556,
+    "description": "Tier-2 (~€40–60 for 4) no-frills sea-view apartments line the bay shore at Muo (across the water from Kotor) and Dobrota (north of it) — both a short walk/drive from Kotor old town, so you can sleep here and walk back from Maximus/the bars. Practical, well-located, balconies over Boka Bay. NOTE: this is a target AREA, not one verified listing — pick a specific 4.7★+ listing on Airbnb/Booking and v",
+    "status": "candidate",
+    "tags": [
+      "apt",
+      "research"
+    ],
+    "communityNotes": "Travelers report waterfront studios in Muo on the 2nd floor of historic stone homes with seafront balconies, and 50–85m² apartments in Dobrota '50 steps from the sea' with panoramic Boka Bay views. Waterfront rentals in Prčanj/Dobrota 'start from ~$30–40 before fees'. Muo/Dobrota are the quiet, cheaper alternative to staying inside touristy Kotor old town while still being walking/short-taxi distance to its nightlife.",
+    "sources": [
+      "https://www.airbnb.com/muo-montenegro/stays/beachfront",
+      "https://www.airbnb.com/dobrota-montenegro/stays/waterfront",
+      "https://www.montenegroprospects.com/property/apartment-sea-view-dobrota-bay-kotor"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "me-blue-cave-herceg-novi-tour",
+    "name": "Blue Cave speedboat — depart Herceg Novi / Igalo (not Kotor)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.4531,
+    "lng": 18.538,
+    "description": "The smart way to do the Blue Cave on this route: launch from Herceg Novi (Škver) or Igalo (La Bamba) — right next to the Sutorina/Full Monte overnight — instead of doing a long 3h round-trip from Kotor. Short Blue Cave tours run ~1h45min; combo tours (Blue Cave + Mamula + Žanjic + submarine tunnels + Our Lady of the Rocks) run 3h+ and replace the standalone Perast boat.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "Departures from La Bamba/Igalo ~08:50/12:00/15:00 and Škver/Herceg Novi ~09:00/12:10/15:10; short tours from ~€25pp, combos ~€30–60pp. 'Private and shared boat taxis from Herceg Novi/Igalo are now much better organized.' Best blue light mid-morning; midday the cave gets 'crowded with 5 other boats and smelt like fuel' — go on the first or last departure. No cave entry fee, you only pay the boat.",
+    "sources": [
+      "https://www.pelago.com/en/activity/pfwi94zcl-blue-cave-boat-tour-from-herceg-novi-1h-45min-1-6-people-kotor/",
+      "https://petar.boats/en/regular-excursions/plava-spilja-izlet-brodom",
+      "https://www.weseektravel.com/blue-cave-montenegro/"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "me-club-sparta-budva",
+    "name": "Club Sparta (Budva) — main summer club",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.29,
+    "lng": 18.843,
+    "description": "Budva's flagship club that IS open in late June (unlike Top Hill, which only opens mid-July). Central Budva, ~600 capacity, EDM/R&B/house, pro lighting, runs 'until sunrise'. The real choice if the group wants a proper club night on the Montenegro coast — Budva is the country's party capital.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "'Club Sparta is the most exclusive nightclub in Budva… open in June and runs until sunrise.' Top Hill (the famous open-air mega-club) is 'NOT open in June — opens only for the height of peak season, ~mid-July', confirmed closed in your window — do not plan around it. Old-town bars (Casper, El Mundo, Mañana) warm up 21:00–01:00, then the crowd shifts to Sparta/promenade clubs ~midnight.",
+    "sources": [
+      "https://www.itimaker.com/blog/budva-nightlife-for-beginners",
+      "https://twopacksandapup.com/budva-nightlife-breakdown-all-the-top-spots-to-party/",
+      "https://www.tripadvisor.in/ShowTopic-g304074-i11583-k11482036-Budva_nightlife_on_Sundays-Budva_Budva_Municipality.html"
+    ],
+    "rating": 4
+  },
+  {
+    "id": "me-maximus-kotor",
+    "name": "Club Maximus (Kotor old town)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.4244,
+    "lng": 18.7709,
+    "description": "The biggest and most famous nightclub in Montenegro, hidden inside Kotor old town at Trg od Oružja — a multi-level venue (~4,000 capacity) with several dance floors playing techno/EDM and commercial hits, plus laser/dancer shows. The serious club night the bay otherwise lacks; the existing nightlife notes missed it entirely.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "'Arguably the biggest and most famous club in Montenegro… capacity up to 4000, multiple dance floors, international DJs.' Open nightly ~23:00–05:00 in summer (May–Sep peak). Reviews are MIXED: glory-days nostalgia ('lasers, dancers, unique performances') vs complaints of overpriced bars and cramped dancing 'unless you pay for a table.' Inside the old-town walls, walkable from any Kotor stay.",
+    "sources": [
+      "https://neontrails.com/montenegro/kotor-best-night-clubs",
+      "https://www.myguidemontenegro.com/nightlife/maximus",
+      "https://www.tripadvisor.com/Attraction_Review-g295381-d7736057-Reviews-Maximus-Kotor_Kotor_Municipality.html"
+    ],
+    "rating": 3
+  },
+  {
+    "id": "me-rijeka-crnojevica-kom-boat",
+    "name": "Kom Monastery boat tour (Skadar Lake, from Rijeka Crnojevića / Virpazar)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.3209,
+    "lng": 19.1316,
+    "description": "The lake's best boat objective: a 14th-century monastery with the best-preserved frescoes in the area, perched on Odrin hill near the north shore (Vranjina) and reachable ONLY by boat, threading through reed channels and water-lily 'meadows' past Vranjina fishing village. The relaxed counterpart to kayaking — lets the group cover open water + see pelican habitat without paddling.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "Kingfisher (skadarlakeboatcruise.com) runs the standard guided Kom tour from Virpazar (~3h, ~€25-30pp + NP fee); also on GetYourGuide/Pelago. 'Boat ventures past Vranjina... maintained its traditional charm'; 'narrow, reed-lined canals in traditional wooden boats... floating meadows bursting with water lilies.' Book ahead in June — boats fill. From the Rvaši base, the quieter departure is Rijeka Crnojevića (Enjoy Skadar Lake) rather than busy Virpazar.",
+    "sources": [
+      "https://skadarlakeboatcruise.com/tours/lake-skadar-guided-panoramic-boat-tour-to-kom-monastery/",
+      "https://www.getyourguide.com/virpazar-l143636/lake-skadar-guided-panoramic-boat-tour-to-kom-monastery-t384768/",
+      "https://en.wikipedia.org/wiki/Vranjina_Monastery"
+    ],
+    "rating": 4,
+    "cost": "~€25-30pp guided shared boat + ~€5pp NP fee",
+    "timeNeeded": "3h"
+  },
+  {
+    "id": "me-pjesacac-beach-skadar",
+    "name": "Pješačac beach (Skadar Lake's secret sandy cove)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.253,
+    "lng": 19.101,
+    "description": "A rare SANDY (not rocky) secluded cove on Lake Skadar reached only on foot from Godinje village or by boat — soft shoreline, warm freshwater swim, near-private feel. A low-key swim/picnic add to the Skadar day for a group that wants water without crowds.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "Kingfisher's own swimming guide: 'one of the most beautiful places for swimming in Lake Skadar... a secluded spot with a sandy beach'; 'stands out because of its soft, sandy shoreline — a rarity around Lake Skadar where rocky beaches are more common'; 'can only be reached on foot (or by boat), which adds to its secluded charm.' Drive to Godinje (~10 min / 5 km from Virpazar, normal car OK), park, then walk in. Coord approximate (Godinje shoreline) — verify final trailhead locally.",
+    "sources": [
+      "https://skadarlakeboatcruise.com/blog/swimming-spots-skadar-lake-montenegro/"
+    ],
+    "rating": 3,
+    "cost": "free (park in Godinje, short walk)",
+    "timeNeeded": "1-2h"
+  },
+  {
+    "id": "me-valdanos-bay-ulcinj",
+    "name": "Valdanos Bay (Ulcinj's olive-grove pebble cove)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 41.9492,
+    "lng": 19.1658,
+    "description": "A sheltered 376m pebble cove on the Ulcinj Riviera ringed by Montenegro's biggest ancient olive grove (some trees 1,000+ yrs) — crystal-clear, calm, snorkel-friendly water and almost no crowds even in peak season. The quiet, scenic alternative to the busy/built-up beaches further south, a good swim stop if you push deep south to Ulcinj.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "Adriatic Ways / Visit-Montenegro: 'a hidden gem... untouched nature and crystal clear Adriatic'; 'you can expect minimal crowds even during peak season'; 'does not receive as many beachgoers as neighbouring resorts due to its remote location at the foot of Mount Mavrian'; 'calm bay also ideal for snorkeling.' Pebble/gravel, surrounded by centuries-old olive trees. Coord verified via Wikipedia (41.94917, 19.16583).",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Valdanos",
+      "https://adriaticways.com/valdanos-beach-ulcinj/",
+      "https://www.visit-montenegro.com/destinations/ulcinj/attractions/valdanos/"
+    ],
+    "rating": 3,
+    "cost": "free / small parking fee",
+    "timeNeeded": "1-2h"
+  },
+  {
+    "id": "me-konoba-mostina-rijeka-crnojevica",
+    "name": "Konoba Mostina (Rijeka Crnojevića — Skadar carp & eel)",
+    "country": "ME",
+    "category": "food",
+    "lat": 42.3636,
+    "lng": 19.0107,
+    "description": "The most famous riverside konoba in Rijeka Crnojevića, ~8 km from the Rvaši base — Skadar Lake carp served three ways (dried, marinated, grilled) plus eel, fished from the river out front, with a calm waterside terrace. The natural dinner stop on the quiet NW lake shore for the group's Skadar nights.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "TripAdvisor: 'Best fish food'; 'the carp from Skadar Lake is very fresh and juicy... three different carp meals plus eel, all fished directly from the river'; repeatedly called the most famous restaurant in the village with a 'wonderful atmosphere.' Neighbours Konoba Stari Most (the Lonely-Planet-praised one, ~€13.50 3-course) and Konoba Lesendro are equally good fallbacks in the same village.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g2362539-d5262729-Reviews-Konoba_Mostina-Rijeka_Crnojevica_Cetinje.html"
+    ],
+    "rating": 4,
+    "cost": "~€12-20pp fish meal",
+    "timeNeeded": "1.5h"
+  },
+  {
+    "id": "me-zminje-jezero",
+    "name": "Zminje jezero (Snake Lake) — quiet Durmitor lake walk",
+    "country": "ME",
+    "category": "hike",
+    "lat": 43.1399,
+    "lng": 19.0853,
+    "description": "Small, still, dark glacial lake a short, easy forest walk from Black Lake — the calm, crowd-free counterpoint to busy Crno jezero. Folds into the '3 Glacier Lakes' loop (Black + Snake + Barno, ~7km total). Ideal low-effort Day-9 morning option before leaving Žabljak, or a tired-evening N8 leg-stretch, when a big second summit is too much.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "Hiker blogs: 'smaller, stiller and darker than Crno Jezero, a popular picnic spot... exceptional silence away from the tourist crowds.' AllTrails/Wikiloc confirm the Black Lake → Snake Lake → Barno loop is well-marked and easy (~7km RT). A peaceful add-on rather than a destination in itself.",
+    "sources": [
+      "https://jontynz.com/2024/02/12/durmitor-national-park-black-lake-snake-lake-zabljak/",
+      "https://www.alltrails.com/trail/montenegro/cetinje/black-lake"
+    ],
+    "rating": 3,
+    "cost": "Durmitor NP entry only (€5-10 pp, verify on arrival)",
+    "timeNeeded": "1.5-2.5h from Black Lake"
+  },
+  {
+    "id": "me-jakocev-krs-skadar-swim",
+    "name": "Jakočev Krš (cold-water swim spot, Skadar Lake)",
+    "country": "ME",
+    "category": "nature",
+    "lat": 42.252,
+    "lng": 19.095,
+    "description": "A lesser-known cold-water swimming spot a short drive from Virpazar — informal parking then a short walk to the water, notably cooler/fresher than the warm shallows elsewhere on the lake. A quick local swim option to mix into the Skadar day.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "Kingfisher swimming guide lists it as one of 4 Skadar swim spots: 'just a short drive from Virpazar' via scenic countryside roads, 'cold water', normal-car accessible to an informal parking spot then a short walk. Less documented than Murići/Pješačac — verify exact access locally; coordinates approximate (Virpazar-area shoreline).",
+    "sources": [
+      "https://skadarlakeboatcruise.com/blog/swimming-spots-skadar-lake-montenegro/"
+    ],
+    "rating": 3,
+    "cost": "free",
+    "timeNeeded": "1h"
+  },
+  {
+    "id": "me-cetinje-old-capital",
+    "name": "Cetinje (old royal capital — monastery + Eagle's Rock viewpoint)",
+    "country": "ME",
+    "category": "town",
+    "lat": 42.3911,
+    "lng": 18.9116,
+    "description": "Montenegro's historic capital (670m), a compact 'museum city' of old embassies and the free Cetinje Monastery (relics, seat of the Metropolitanate). For a group not into generic old towns, the draw is light: a 30-45 min stroll + the monastery, plus the 15-min climb to Eagle's Rock / Danilo's tomb for big views. Mainly useful as a stop ON the Lovćen NP loop, not a destination in itself.",
+    "status": "candidate",
+    "tags": [
+      "research"
+    ],
+    "communityNotes": "Travelers: 'an underrated gem... well worth a visit' for views+history, BUT it 'punches above its weight on museums' which this group can skip. Best non-museum picks: Cetinje Monastery (free, 1704), Eagle's Rock viewpoint, and nearby Lipa Cave. Honest verdict for a nature-first group: a 1-1.5h add-on while transiting Lovćen, not a half-day.",
+    "sources": [
+      "https://www.minimalistjourneys.com/cetinje-why-visit-what-not-to-miss/",
+      "https://wonderandsundry.com/day-trip-to-central-montenegro/"
+    ],
+    "rating": 3,
+    "cost": "monastery free; museums extra if wanted",
+    "timeNeeded": "1-1.5h"
+  }
+]

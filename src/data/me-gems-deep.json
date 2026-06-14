@@ -269,7 +269,7 @@
       "off-route"
     ],
     "rating": 2,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-slansko-jezero",
@@ -298,7 +298,7 @@
       "off-route"
     ],
     "rating": 2,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-gornjepoljski-vir",
@@ -327,7 +327,7 @@
       "off-route"
     ],
     "rating": 2,
-    "status": "candidate"
+    "status": "rejected"
   },
   {
     "id": "me-klinci-village",
@@ -475,6 +475,6 @@
       "off-route"
     ],
     "rating": 2,
-    "status": "candidate"
+    "status": "rejected"
   }
 ]

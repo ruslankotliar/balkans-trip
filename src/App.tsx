@@ -12,7 +12,6 @@ import {
 import { type DraftPlace } from './components/AddPlace';
 import DetailPanel from './components/DetailPanel';
 import { type CorridorMatch } from './components/CorridorPanel';
-import { type ProximityMatch } from './components/Today';
 import {
   loadRemotePlacesCache,
   pushUserPlace,
@@ -20,41 +19,30 @@ import {
   syncCollab,
 } from './collab';
 import {
-  CATEGORIES,
   CATEGORY_COLORS,
-  COUNTRIES,
   COUNTRY_NAMES,
+  GROUP_META,
+  GROUP_OF,
+  GROUPS,
   STATUSES,
   toggle,
+  type Group,
 } from './constants';
 import { bookingFor, type SourceLink } from './links';
 import { fetchRoute, routeKey } from './osrm';
 import {
   applyPlanOverrideRows,
   ferryPairKey,
-  loadDayNotes,
-  loadDone,
   loadFerryHours,
-  loadLastFix,
   loadOverrides,
   loadPlaces,
   loadRouteCache,
-  loadSavedMode,
-  loadTripCache,
   loadUserPlaces,
-  saveDayNotes,
-  saveDone,
-  saveFerryHours,
-  saveLastFix,
-  saveMode,
   saveOverrides,
   saveRouteCache,
-  saveTripCache,
   saveUserPlaces,
   normalizeOverrides,
   type FerryHours,
-  type GpsFix,
-  type Mode,
   type Overrides,
   type PlaceWithOverride,
 } from './store';
@@ -67,16 +55,13 @@ import {
   isDuringTrip,
   nearestLegIndex,
   pointToPolylineKm,
-  formatDuration,
 } from './trip';
 import type { Category, Country, Place, Status } from './types';
 import { useDayRoutes } from './useDayRoutes';
 
 const AddPlace = lazy(() => import('./components/AddPlace'));
 const CorridorPanel = lazy(() => import('./components/CorridorPanel'));
-const Today = lazy(() => import('./components/Today'));
 const LazyEssentials = lazy(() => import('./components/Essentials'));
-const LazyReview = lazy(() => import('./components/Review'));
 const LazyPlan = lazy(() => import('./components/Itinerary'));
 function PanelFallback({ text }: { text: string }) {
   return (
@@ -98,30 +83,14 @@ function DialogFallback({ title }: { title: string }) {
   );
 }
 
-type View = 'places' | 'plan' | 'review';
+type View = 'places' | 'plan';
 
-// Categories that count as a place to sleep, for the nearby finder.
+// Categories that count as a place to sleep (used when prepending the previous
+// night's overnight to a day's route).
 const SLEEP_CATEGORIES: Category[] = ['campsite', 'accommodation'];
 
-// Sightseeing categories for the "Do & see" filter preset.
-const SIGHT_CATEGORIES: Category[] = ['sight', 'viewpoint', 'beach', 'hike', 'activity', 'nature'];
-
-// Near me includes food/nightlife too — useful when near a town.
-const NEAR_ME_CATEGORIES: Category[] = [...SIGHT_CATEGORIES, 'food', 'nightlife', 'town'];
-
-const SLEEP_TONIGHT_KM = 25;
-const NEAR_ME_KM = 30;
-// One-tap quick filters: the common plan flows must be 1–2 taps.
-// (Trip mode has its own one-tap finders: 🛏 Sleep tonight / 📍 Near me.)
-const NON_REJECTED: Status[] = ['candidate', 'shortlist', 'backup'];
+const NON_REJECTED: Status[] = ['candidate', 'shortlist', 'extra', 'backup'];
 const DEFAULT_PLAN_STATUSES: Status[] = ['shortlist'];
-interface FilterPreset {
-  id: string;
-  label: string;
-  title: string;
-  categories?: Category[];
-  statuses?: Status[];
-}
 
 function insertionDetourKm(
   prev: Pick<PlaceWithOverride, 'lat' | 'lng'> | undefined,
@@ -176,43 +145,6 @@ function dayOrderForInsertion(stops: PlaceWithOverride[], index: number): number
   if (nextOrder <= prevOrder) return prevOrder + 0.5;
   return (prevOrder + nextOrder) / 2;
 }
-const FILTER_PRESETS: FilterPreset[] = [
-  {
-    id: 'sleep',
-    label: '🛏 Sleep spots',
-    title: 'Campsites + stays, every non-rejected option',
-    categories: SLEEP_CATEGORIES,
-    statuses: NON_REJECTED,
-  },
-  {
-    id: 'shortlist',
-    label: '⭐ Shortlist',
-    title: 'Only shortlisted places, all categories',
-    statuses: ['shortlist'],
-  },
-  {
-    id: 'dosee',
-    label: '🥾 Do & see',
-    title: 'Hikes, activities, beaches, nature, viewpoints, sights',
-    categories: SIGHT_CATEGORIES,
-  },
-  {
-    id: 'reset',
-    label: '↺ All',
-    title: 'Back to the default view (all categories, shortlist only)',
-    categories: CATEGORIES,
-    statuses: DEFAULT_PLAN_STATUSES,
-  },
-];
-
-function isFavorite(t: { up: number; down: number; net: number } | undefined): boolean {
-  if (!t) return false;
-  return t.net >= 2 || (t.down === 0 && t.up >= 2);
-}
-function isSplit(t: { up: number; down: number } | undefined): boolean {
-  return !!t && t.up > 0 && t.down > 0;
-}
-
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
 
@@ -228,33 +160,6 @@ function toLatLngs(coords: [number, number][]): [number, number][] {
   return coords.map(([lng, lat]) => [lat, lng]);
 }
 
-/**
- * Slice the geometry vertices belonging to one stop→stop leg, using the
- * snapped waypoint locations OSRM returned (both arrays are [lng, lat]).
- */
-function sliceLegCoords(
-  coords: [number, number][],
-  snapped: [number, number][],
-  leg: number,
-): [number, number][] {
-  const nearestIdx = (pt: [number, number]) => {
-    let best = 0;
-    let bestD = Infinity;
-    for (let i = 0; i < coords.length; i++) {
-      const dx = coords[i][0] - pt[0];
-      const dy = coords[i][1] - pt[1];
-      const d = dx * dx + dy * dy;
-      if (d < bestD) {
-        bestD = d;
-        best = i;
-      }
-    }
-    return best;
-  };
-  const a = nearestIdx(snapped[leg]);
-  const b = nearestIdx(snapped[leg + 1]);
-  return coords.slice(Math.min(a, b), Math.max(a, b) + 1);
-}
 
 function FlyTo({ placeId, lat, lng }: { placeId: string | null; lat?: number; lng?: number }) {
   const map = useMap();
@@ -305,14 +210,6 @@ function MapTapCapture({ active, onTap }: { active: boolean; onTap: (lat: number
   return null;
 }
 
-function numberIcon(n: number, color: string) {
-  return L.divIcon({
-    className: 'num-marker',
-    html: `<div style="background:${color}">${n}</div>`,
-    iconSize: [26, 26],
-    iconAnchor: [13, 13],
-  });
-}
 
 export default function App() {
   // User-added places merge after the bundle so a runtime pin can override a
@@ -372,56 +269,36 @@ export default function App() {
     return m;
   }, [basePlaces]);
 
-  const [countryFilter, setCountryFilter] = useState<Set<Country>>(new Set(COUNTRIES));
-  const [categoryFilter, setCategoryFilter] = useState<Set<Category>>(new Set(CATEGORIES));
-  // Plan default: the plan you care about (shortlist only) — backup stays
-  // available via the status chips, but it does not clutter the default view.
+  // Filter by category GROUP (Eat/Swim/Active/See/Sleep/Nightlife/Logistics)
+  // instead of the 12 fine-grained categories — fewer, clearer buttons.
+  const [groupFilter, setGroupFilter] = useState<Set<Group>>(new Set(GROUPS));
+  // Default view shows the committed plan (shortlist); other statuses (candidate,
+  // extra, backup) are one tap away via the status chips.
   const [statusFilter, setStatusFilter] = useState<Set<Status>>(
     new Set<Status>(DEFAULT_PLAN_STATUSES),
   );
   const [search, setSearch] = useState('');
   const deferredSearch = useDeferredValue(search);
 
-  // One-tap filter presets (filtering-convenience: common flows in 1–2 taps).
-  const setEq = <T,>(set: Set<T>, arr: readonly T[]) =>
-    set.size === arr.length && arr.every((x) => set.has(x));
-  function applyPreset(pr: FilterPreset) {
-    setCategoryFilter(new Set(pr.categories ?? CATEGORIES));
-    setStatusFilter(new Set(pr.statuses ?? NON_REJECTED));
+  function resetFilters() {
+    setGroupFilter(new Set(GROUPS));
+    setStatusFilter(new Set(NON_REJECTED));
   }
-  const presetActive = (pr: FilterPreset) =>
-    setEq(categoryFilter, pr.categories ?? CATEGORIES) &&
-    setEq(statusFilter, pr.statuses ?? NON_REJECTED);
-
-  // How many advanced filters are narrowing the view (for the disclosure label).
-  const advancedFilterCount =
-    (countryFilter.size < COUNTRIES.length ? 1 : 0) +
-    (categoryFilter.size < CATEGORIES.length ? 1 : 0) +
-    (statusFilter.size < STATUSES.length ? 1 : 0);
+  const filtersNarrowed =
+    groupFilter.size < GROUPS.length || !NON_REJECTED.every((s) => statusFilter.has(s));
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [view, setView] = useState<View>('places');
   const [fitNonce, setFitNonce] = useState(0);
   const [toolsOpen, setToolsOpen] = useState(false);
 
-  // ---- Plan mode vs Trip mode ----
-  // Trip mode is the on-the-road UI: today-centric, no research machinery.
-  // ?mode=trip|plan overrides (handy for sharing/testing; "planning" still loads as plan).
-  const [mode, setModeState] = useState<Mode>(() => {
-    const urlMode = new URLSearchParams(location.search).get('mode');
-    if (urlMode === 'trip' || urlMode === 'plan') return urlMode;
-    if (urlMode === 'planning') return 'plan';
-    return loadSavedMode() ?? (isDuringTrip() ? 'trip' : 'plan');
-  });
-  const [sidebarOpen, setSidebarOpen] = useState(mode === 'trip');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   // On phones the open sidebar fills the screen and would cover the detail
   // bottom-sheet, so selecting a place auto-collapses it; we remember whether
   // it was open so closing the sheet restores the list.
   const reopenSidebarOnClose = useRef(false);
-  const [tripDay, setTripDay] = useState(currentTripDay());
-  const [doneIds, setDoneIds] = useState<Record<string, boolean>>(loadDone);
-  const [dayNotes, setDayNotes] = useState<Record<number, string>>(loadDayNotes);
-  const [sleepOpen, setSleepOpen] = useState(false);
-  const [nearOpen, setNearOpen] = useState(false);
+  // Currently-viewed day in the Plan view (defaults to today's trip day if the
+  // trip is underway, else Day 1).
+  const [planDay, setPlanDay] = useState(currentTripDay());
   const [undoToast, setUndoToast] = useState<{ label: string; undo: () => void } | null>(null);
 
   // ---- Add place (feature A) ----
@@ -434,28 +311,7 @@ export default function App() {
   // ---- Offline Essentials (feature B5) ----
   const [essentialsOpen, setEssentialsOpen] = useState(false);
 
-  // GPS "you are here" (last fix cached so a cold start still shows a dot)
-  const [gpsFix, setGpsFix] = useState<GpsFix | null>(loadLastFix);
   const mapRef = useRef<L.Map | null>(null);
-  const watchRef = useRef<number | null>(null);
-
-  function setMode(m: Mode) {
-    setModeState(m);
-    saveMode(m);
-    setToolsOpen(false);
-    if (m === 'trip') {
-      setTripDay(currentTripDay());
-      setSidebarOpen(true);
-    }
-    setCorridor(null);
-    setSleepOpen(false);
-    setNearOpen(false);
-  }
-  const paceMultiplier = 1;
-
-  useEffect(() => {
-    document.body.classList.toggle('trip-mode', mode === 'trip');
-  }, [mode]);
 
   // Auto-dismiss the undo toast.
   useEffect(() => {
@@ -463,14 +319,6 @@ export default function App() {
     const t = setTimeout(() => setUndoToast(null), 6000);
     return () => clearTimeout(t);
   }, [undoToast]);
-
-  // Stop watching GPS on unmount.
-  useEffect(
-    () => () => {
-      if (watchRef.current != null) navigator.geolocation?.clearWatch(watchRef.current);
-    },
-    [],
-  );
 
   // Nearby finder
   const [nearbyActive, setNearbyActive] = useState(false);
@@ -502,32 +350,28 @@ export default function App() {
 
   const visible = places.filter(
     (p) =>
-      countryFilter.has(p.country) &&
-      categoryFilter.has(p.category) &&
+      groupFilter.has(GROUP_OF[p.category]) &&
       statusFilter.has(p.status) &&
       matchesText(p),
   );
 
-  // Facet counts per status (respecting the other filters, but not status).
+  // Facet counts per status (respecting the group + search filters, but not status).
   const statusCounts = useMemo(() => {
     const counts: Record<Status, number> = {
       candidate: 0,
       shortlist: 0,
+      extra: 0,
       backup: 0,
       rejected: 0,
     };
     for (const p of places) {
-      if (
-        countryFilter.has(p.country) &&
-        categoryFilter.has(p.category) &&
-        matchesText(p)
-      ) {
+      if (groupFilter.has(GROUP_OF[p.category]) && matchesText(p)) {
         counts[p.status]++;
       }
     }
     return counts;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [places, countryFilter, categoryFilter, search]);
+  }, [places, groupFilter, search]);
 
   const rejected = places.filter((p) => p.status === 'rejected');
 
@@ -535,7 +379,9 @@ export default function App() {
   const dayStops = useMemo(() => {
     const grouped: Record<number, PlaceWithOverride[]> = {};
     for (const p of places) {
-      if (!p.day) continue;
+      // Rejected places keep their day in storage (so un-rejecting restores it)
+      // but must not appear in the route, schedule, or itinerary — same as the map.
+      if (!p.day || p.status === 'rejected') continue;
       (grouped[p.day] ??= []).push(p);
     }
     for (const ps of Object.values(grouped)) ps.sort(byOrder);
@@ -593,182 +439,38 @@ export default function App() {
         stops,
         route,
         (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0,
-        { paceMultiplier },
       );
       if (schedule) out[day] = schedule;
     }
     return out;
-  }, [dayStops, routes, ferryHours, paceMultiplier]);
-
-  // ---- Trip mode: today, GPS, sleep tonight, near me ----
-  const todayStops = useMemo(() => dayStops[tripDay] ?? [], [dayStops, tripDay]);
-  const todayIds = useMemo(() => new Set(todayStops.map((p) => p.id)), [todayStops]);
-  const todaySchedule = daySchedules[tripDay] ?? null;
-  const totalPlanned = useMemo(
-    () => Object.values(dayStops).reduce((sum, ps) => sum + ps.length, 0),
-    [dayStops],
-  );
-  const totalDone = useMemo(
-    () => Object.values(dayStops).flat().filter((p) => doneIds[p.id]).length,
-    [dayStops, doneIds],
-  );
+  }, [dayStops, routes, ferryHours]);
 
   const syncLabel = syncOnline ? 'online' : 'offline';
   const syncTitle = syncOnline
     ? 'Shared sync is online.'
     : 'Shared sync is offline right now; local changes stay on this device and will queue until it reconnects.';
 
-  /** Anchor point for proximity finders: GPS fix, else today's last stop. */
-  const tripAnchor = useMemo(() => {
-    if (mode !== 'trip') return null;
-    if (gpsFix) return { lat: gpsFix.lat, lng: gpsFix.lng, label: 'you' };
-    const last = todayStops[todayStops.length - 1];
-    return last ? { lat: last.lat, lng: last.lng, label: last.name } : null;
-  }, [mode, gpsFix, todayStops]);
-
-  const sleepMatches = useMemo<ProximityMatch[]>(() => {
-    if (mode !== 'trip' || !sleepOpen || !tripAnchor) return [];
-    return places
-      .filter((p) => SLEEP_CATEGORIES.includes(p.category) && p.status !== 'rejected')
-      .map((p) => ({
-        place: p,
-        dist: haversineKm(tripAnchor.lat, tripAnchor.lng, p.lat, p.lng),
-      }))
-      .filter((m) => m.dist <= SLEEP_TONIGHT_KM)
-      .sort((a, b) => a.dist - b.dist)
-      .slice(0, 15);
-  }, [mode, sleepOpen, tripAnchor, places]);
-
-  const nearMatches = useMemo<ProximityMatch[]>(() => {
-    if (mode !== 'trip' || !nearOpen || !tripAnchor) return [];
-    return places
-      .filter(
-        (p) =>
-          NEAR_ME_CATEGORIES.includes(p.category) &&
-          p.status !== 'rejected' &&
-          !todayIds.has(p.id),
-      )
-      .map((p) => ({
-        place: p,
-        dist: haversineKm(tripAnchor.lat, tripAnchor.lng, p.lat, p.lng),
-      }))
-      .filter((m) => m.dist <= NEAR_ME_KM)
-      .sort((a, b) => a.dist - b.dist)
-      .slice(0, 15);
-  }, [mode, nearOpen, tripAnchor, places, todayIds]);
-
-  const tripMatchIds = useMemo(
-    () => new Set([...sleepMatches, ...nearMatches].map((m) => m.place.id)),
-    [sleepMatches, nearMatches],
-  );
-
-  // Trip-mode base pins: only today's + tomorrow's stops. The road view should
-  // stay focused on what matters now; finder results and the selected place are
-  // still added on top when needed.
-  const tripBase = useMemo(() => {
-    if (mode !== 'trip') return [];
-    return places.filter(
-      (p) =>
-        p.day === tripDay ||
-        p.day === tripDay + 1,
-    );
-  }, [mode, places, tripDay]);
-
+  // In the Plan view, draw only the selected day's route; in Places, none.
   const routeDaysToShow = useMemo(() => {
-    if (mode === 'trip' || view === 'plan') return new Set<number>([tripDay]);
+    if (view === 'plan') return new Set<number>([planDay]);
     return null;
-  }, [mode, view, tripDay]);
-
-  function toggleDone(id: string) {
-    setDoneIds((prev) => {
-      const next = { ...prev, [id]: !prev[id] };
-      if (!next[id]) delete next[id];
-      saveDone(next);
-      return next;
-    });
-  }
-
-  function setDayNote(day: number, text: string) {
-    setDayNotes((prev) => {
-      const next = { ...prev, [day]: text };
-      if (!text) delete next[day];
-      saveDayNotes(next);
-      return next;
-    });
-  }
+  }, [view, planDay]);
 
   function focusPlanDay(day: number) {
     setView('plan');
-    setTripDay(day);
+    setPlanDay(day);
     if (!sidebarOpen) setSidebarOpen(true);
   }
 
-  /** "We're tired" — drop a stop from its day, with a 6s undo. */
-  function skipStop(p: PlaceWithOverride) {
-    const prev = overrides[p.id];
-    const day = p.day;
-    assignDay(p.id, null);
-    setUndoToast({
-      label: `Removed ${p.name} from Day ${day}`,
-      undo: () =>
-        applyOverrides((o) => {
-          const next = { ...o };
-          if (prev) next[p.id] = prev;
-          else delete next[p.id];
-          return next;
-        }),
-    });
-  }
-
-  function applyFix(pos: GeolocationPosition) {
-    const f: GpsFix = {
-      lat: pos.coords.latitude,
-      lng: pos.coords.longitude,
-      acc: pos.coords.accuracy,
-      ts: Date.now(),
-    };
-    setGpsFix(f);
-    saveLastFix(f);
-    return f;
-  }
-
-  function locateMe() {
-    if (!('geolocation' in navigator)) {
-      alert('No geolocation available in this browser.');
-      return;
-    }
-    // Recenter on the cached fix immediately; refine when the real fix lands.
-    if (gpsFix) {
-      mapRef.current?.flyTo([gpsFix.lat, gpsFix.lng], Math.max(mapRef.current.getZoom(), 12));
-    }
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        const f = applyFix(pos);
-        mapRef.current?.flyTo([f.lat, f.lng], Math.max(mapRef.current.getZoom(), 12));
-        if (watchRef.current == null) {
-          watchRef.current = navigator.geolocation.watchPosition(applyFix, () => {}, {
-            enableHighAccuracy: true,
-            maximumAge: 30000,
-          });
-        }
-      },
-      () =>
-        alert(
-          'Location unavailable — check the location permission for this site (needs HTTPS on phones).',
-        ),
-      { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 },
-    );
-  }
-
-  // Entering trip mode / changing the viewed day focuses the map on its stops.
+  // Changing the viewed Plan day focuses the map on that day's stops.
   useEffect(() => {
-    if (mode !== 'trip') return;
-    const pts = (dayStops[tripDay] ?? []).map((p) => [p.lat, p.lng] as [number, number]);
+    if (view !== 'plan') return;
+    const pts = (dayStops[planDay] ?? []).map((p) => [p.lat, p.lng] as [number, number]);
     if (pts.length > 0 && mapRef.current) {
       mapRef.current.fitBounds(L.latLngBounds(pts), { padding: [60, 60], maxZoom: 12 });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mode, tripDay]);
+  }, [view, planDay]);
 
   // ---- Nearby matches ----
   const nearbyMatchIds = useMemo(() => {
@@ -816,12 +518,8 @@ export default function App() {
   // Nearby/corridor/proximity matches must show on the map even if filters
   // would hide them — the whole point of the finders is to surface places.
   const markersToShow = useMemo(() => {
-    const base = mode === 'trip' ? tripBase : visible;
-    const forced = new Set<string>(
-      mode === 'trip'
-        ? tripMatchIds
-        : [...nearbyMatchIds, ...corridorMatchIds, ...corridorStopIds],
-    );
+    const base = visible;
+    const forced = new Set<string>([...nearbyMatchIds, ...corridorMatchIds, ...corridorStopIds]);
     // Always show the selected place even if rejected or filtered out.
     if (selectedId) forced.add(selectedId);
     if (forced.size === 0) return base;
@@ -829,14 +527,7 @@ export default function App() {
     const extra = places.filter((p) => forced.has(p.id) && !inBase.has(p.id));
     return [...base, ...extra];
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mode, tripBase, visible, tripMatchIds, nearbyMatchIds, corridorMatchIds, corridorStopIds, selectedId]);
-
-  function findSleepAlongDay(day: number) {
-    const route = routes[day];
-    if (!route) return;
-    const stops = places.filter((p) => p.day === day).sort(byOrder);
-    setCorridor({ coords: toLatLngs(route.coordinates), stops, label: `Day ${day} route` });
-  }
+  }, [visible, nearbyMatchIds, corridorMatchIds, corridorStopIds, selectedId]);
 
   // ---- Mutations ----
   function applyOverrides(updater: (o: Overrides) => Overrides) {
@@ -848,6 +539,7 @@ export default function App() {
     });
     void runSync.current();
   }
+
 
   function applyUserPlaces(updater: (u: Place[]) => Place[]) {
     setUserPlaces((prev) => {
@@ -986,17 +678,10 @@ export default function App() {
   function deleteUserPlace(id: string) {
     if (!confirm('Delete this place? This cannot be undone.')) return;
     applyUserPlaces((u) => u.filter((p) => p.id !== id));
-    // Clean its override + done keys so nothing dangles.
+    // Clean its override so nothing dangles.
     applyOverrides((o) => {
       const next = { ...o };
       delete next[id];
-      return next;
-    });
-    setDoneIds((prev) => {
-      if (!prev[id]) return prev;
-      const next = { ...prev };
-      delete next[id];
-      saveDone(next);
       return next;
     });
     closeAddPlace();
@@ -1058,7 +743,9 @@ export default function App() {
     const place = placeById.get(id);
     if (!place?.day) return;
     const day = place.day;
-    const ordered = places.filter((p) => p.day === day).sort(byOrder);
+    const ordered = places
+      .filter((p) => p.day === day && p.status !== 'rejected')
+      .sort(byOrder);
     const idx = ordered.findIndex((p) => p.id === id);
     const swap = idx + (dir === 'up' ? -1 : 1);
     if (swap < 0 || swap >= ordered.length) return;
@@ -1072,10 +759,6 @@ export default function App() {
     });
   }
 
-  /** Ferry seconds for the leg between two places (0 if not marked). */
-  function legFerrySec(idA: string, idB: string): number {
-    return (ferryHours[ferryPairKey(idA, idB)] ?? 0) * 3600;
-  }
   function selectPlace(p: Place | PlaceWithOverride) {
     setSelectedId(p.id);
     // On a phone the open sidebar (list / Today view) covers the detail
@@ -1179,50 +862,8 @@ export default function App() {
       <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="head-row">
           <h1>Balkans Trip</h1>
-          <span className={`mode-pill ${mode}`} aria-label={`Current mode: ${mode}`}>
-            {mode === 'trip' ? '🚗 Trip' : '🗺️ Plan'}
-          </span>
         </div>
 
-        {mode === 'trip' ? (
-          <Suspense fallback={<PanelFallback text="Loading trip view…" />}>
-            <Today
-              day={tripDay}
-              realDay={isDuringTrip() ? currentTripDay() : -1}
-              onDay={setTripDay}
-              stops={todayStops}
-              route={routes[tripDay]}
-              schedule={todaySchedule}
-              ferryFor={(a, b) => ferryHours[ferryPairKey(a, b)] ?? 0}
-              done={doneIds}
-              onToggleDone={toggleDone}
-              onSkip={skipStop}
-              onSelect={selectPlace}
-              kmFromGps={(lat, lng) =>
-                gpsFix ? haversineKm(gpsFix.lat, gpsFix.lng, lat, lng) : null
-              }
-              sleepOpen={sleepOpen}
-              onToggleSleep={() => {
-                setSleepOpen((s) => !s);
-                setNearOpen(false);
-              }}
-              sleepMatches={sleepMatches}
-              nearOpen={nearOpen}
-              onToggleNear={() => {
-                setNearOpen((s) => !s);
-                setSleepOpen(false);
-              }}
-              nearMatches={nearMatches}
-              anchorLabel={tripAnchor?.label ?? null}
-              onAddPlace={openAddPlace}
-              onEssentials={() => setEssentialsOpen(true)}
-              totalPlanned={totalPlanned}
-              totalDone={totalDone}
-              dayNote={dayNotes[tripDay] ?? ''}
-              onDayNote={(text) => setDayNote(tripDay, text)}
-            />
-          </Suspense>
-        ) : (
         <>
         <p className="subtitle">
           Jun 16–28 · trip plan
@@ -1239,7 +880,7 @@ export default function App() {
 
         <div className="view-tabs">
           <button
-            className={view === 'places' || view === 'review' ? 'on' : ''}
+            className={view === 'places' ? 'on' : ''}
             onClick={() => { setView('places'); setCorridor(null); setToolsOpen(false); }}
           >
             Places
@@ -1261,79 +902,43 @@ export default function App() {
           />
         )}
 
-        {!corridor && view !== 'plan' && view !== 'review' && (
+        {!corridor && view === 'places' && (
           <>
-            {/* Always-visible: one-tap presets cover the common flows. */}
-            <div className="filter-group preset-row">
-              {FILTER_PRESETS.map((pr) => (
+            {/* What: category-group chips (the primary "what do we want" filter). */}
+            <div className="filter-group">
+              {GROUPS.map((g) => (
                 <button
-                  key={pr.id}
-                  className={`chip preset ${presetActive(pr) ? 'on' : ''}`}
-                  title={pr.title}
-                  onClick={() => applyPreset(pr)}
+                  key={g}
+                  className={`chip ${groupFilter.has(g) ? 'on' : ''}`}
+                  style={groupFilter.has(g) ? { borderColor: GROUP_META[g].color, background: GROUP_META[g].color + '22' } : undefined}
+                  onClick={() => setGroupFilter(toggle(groupFilter, g))}
                 >
-                  {pr.label}
+                  <span className="dot" style={{ background: GROUP_META[g].color }} />
+                  {GROUP_META[g].icon} {GROUP_META[g].label}
                 </button>
               ))}
             </div>
 
-            {/* One-tap hint when candidates are hidden (the largest pool). */}
-            {!statusFilter.has('candidate') && statusCounts.candidate > 0 && (
-              <div className="filter-group">
+            {/* Decision state: status chips with live counts. */}
+            <div className="filter-group">
+              {STATUSES.map((s) => (
                 <button
-                  className="chip chip-hint"
-                  onClick={() => {
-                    setStatusFilter(toggle(statusFilter, 'candidate'));
-                  }}
+                  key={s}
+                  className={`chip ${statusFilter.has(s) ? `on badge-${s}` : ''}`}
+                  onClick={() => setStatusFilter(toggle(statusFilter, s))}
                 >
-                  + show {statusCounts.candidate} candidates
+                  {s} <span className="chip-count">{statusCounts[s]}</span>
+                </button>
+              ))}
+            </div>
+
+            {filtersNarrowed && (
+              <div className="filter-group">
+                <button className="chip chip-hint" onClick={resetFilters}>
+                  ↺ Reset filters
                 </button>
               </div>
             )}
-
-            {/* Progressive disclosure: the full filter wall lives behind a
-                single toggle so it doesn't overwhelm. */}
-            <details className="filters-disclosure">
-              <summary>More filters{advancedFilterCount > 0 ? ` · ${advancedFilterCount} active` : ''}</summary>
-
-              <div className="filter-group">
-                {COUNTRIES.map((c) => (
-                  <button
-                    key={c}
-                    className={`chip ${countryFilter.has(c) ? 'on' : ''}`}
-                    onClick={() => setCountryFilter(toggle(countryFilter, c))}
-                  >
-                    {COUNTRY_NAMES[c]}
-                  </button>
-                ))}
-              </div>
-
-              <div className="filter-group">
-                {STATUSES.map((s) => (
-                  <button
-                    key={s}
-                    className={`chip ${statusFilter.has(s) ? 'on' : ''}`}
-                    onClick={() => setStatusFilter(toggle(statusFilter, s))}
-                  >
-                    {s} <span className="chip-count">{statusCounts[s]}</span>
-                  </button>
-                ))}
-              </div>
-
-              <div className="filter-group">
-                {CATEGORIES.map((c) => (
-                  <button
-                    key={c}
-                    className={`chip ${categoryFilter.has(c) ? 'on' : ''}`}
-                    style={categoryFilter.has(c) ? { borderColor: CATEGORY_COLORS[c], background: CATEGORY_COLORS[c] + '22' } : undefined}
-                    onClick={() => setCategoryFilter(toggle(categoryFilter, c))}
-                  >
-                    <span className="dot" style={{ background: CATEGORY_COLORS[c] }} />
-                    {c}
-                  </button>
-                ))}
-              </div>
-            </details>
           </>
         )}
 
@@ -1373,16 +978,14 @@ export default function App() {
                     Show {statusCounts.candidate} candidates
                   </button>
                 )}
-                <button onClick={() => applyPreset(FILTER_PRESETS.find(p => p.id === 'reset')!)}>
-                  Reset filters
-                </button>
+                <button onClick={resetFilters}>Reset filters</button>
               </div>
             )}
 
             <ul className="place-list">
               {[...visible]
                 .sort((a, b) => {
-                  const statusOrder = { shortlist: 0, backup: 1, candidate: 2, rejected: 3 };
+                  const statusOrder = { shortlist: 0, extra: 1, backup: 2, candidate: 3, rejected: 4 };
                   const sd = statusOrder[a.status] - statusOrder[b.status];
                   if (sd !== 0) return sd;
                   return (b.rating ?? 0) - (a.rating ?? 0) || a.name.localeCompare(b.name);
@@ -1446,80 +1049,35 @@ export default function App() {
           </>
         )}
 
-        {!corridor && view === 'review' && (
-          <Suspense fallback={<PanelFallback text="Loading triage view…" />}>
-            <LazyReview
+        {!corridor && view === 'plan' && (
+          <Suspense fallback={<PanelFallback text="Loading plan…" />}>
+            <LazyPlan
+              day={planDay}
+              onDay={setPlanDay}
               places={places}
-              onStatus={setStatus}
-              onExit={() => setView('places')}
-              onSelect={(p) => { selectPlace(p); }}
+              routes={routes}
+              routesLoading={routesLoading}
+              realDay={isDuringTrip() ? currentTripDay() : -1}
+              ferrySecByDay={dayFerrySec}
               selectedId={selectedId}
+              onSelect={selectPlace}
+              onMove={moveInDay}
+              onAssignDay={assignDay}
+              scheduleByDay={daySchedules}
             />
           </Suspense>
         )}
 
-        {!corridor && view === 'plan' && (
-          <Suspense fallback={<PanelFallback text="Loading plan…" />}>
-            <>
-              <LazyPlan
-                day={tripDay}
-                onDay={setTripDay}
-                places={places}
-                routes={routes}
-                routesLoading={routesLoading}
-                realDay={isDuringTrip() ? currentTripDay() : -1}
-                ferrySecByDay={dayFerrySec}
-                selectedId={selectedId}
-                onSelect={selectPlace}
-                onMove={moveInDay}
-                onAssignDay={assignDay}
-                onFindSleep={findSleepAlongDay}
-                dayNotes={dayNotes}
-                scheduleByDay={daySchedules}
-              />
-            </>
-          </Suspense>
-        )}
-
         </>
-        )}
 
         <div className="sidebar-footer">
-          {mode === 'plan' && (
-            <div className="tools-menu-wrap">
-              <button
-                className={`tools-pill ${toolsOpen ? 'on' : ''}`}
-                onClick={() => setToolsOpen((v) => !v)}
-                aria-expanded={toolsOpen}
-                title="Secondary tools"
-              >
-                ⋯ More
-              </button>
-              {toolsOpen && (
-                <div className="tools-menu" role="menu">
-                  <button
-                    role="menuitem"
-                    onClick={() => {
-                      setView('review');
-                      setCorridor(null);
-                      setToolsOpen(false);
-                    }}
-                  >
-                    Triage
-                  </button>
-                  <button
-                    role="menuitem"
-                    onClick={() => {
-                      setEssentialsOpen(true);
-                      setToolsOpen(false);
-                    }}
-                  >
-                    Essentials
-                  </button>
-                </div>
-              )}
-            </div>
-          )}
+          <button
+            className="tools-pill"
+            onClick={() => setEssentialsOpen(true)}
+            title="Shared pre-trip checklist + offline route cache"
+          >
+            ✅ Checklist
+          </button>
         </div>
       </aside>
 
@@ -1558,22 +1116,6 @@ export default function App() {
             />
           ))}
 
-        {/* Today's ferry legs, dashed (when the day's route has snapped waypoints) */}
-        {mode === 'trip' &&
-          routes[tripDay]?.snapped &&
-          todayStops.slice(0, -1).map((a, i) => {
-            const b = todayStops[i + 1];
-            if (!b || legFerrySec(a.id, b.id) <= 0) return null;
-            const r = routes[tripDay];
-            return (
-              <Polyline
-                key={`tferry-${a.id}-${b.id}`}
-                positions={toLatLngs(sliceLegCoords(r.coordinates, r.snapped!, i))}
-                pathOptions={{ color: '#0077be', weight: 5, opacity: 0.9, dashArray: '8 10' }}
-              />
-            );
-          })}
-
         {/* Corridor route highlight */}
         {corridor && (
           <Polyline
@@ -1583,24 +1125,12 @@ export default function App() {
         )}
 
         {markersToShow.map((p) => {
-          const isTrip = mode === 'trip';
           const isSel = p.id === selectedId;
           let dim = false;
           let matchHi = false;
           let radius = p.status === 'shortlist' ? 10 : 7;
           if (isSel) radius = 15;
-          if (isTrip) {
-            matchHi = tripMatchIds.has(p.id);
-            if (matchHi) {
-              radius = 11;
-            } else if (todayIds.has(p.id)) {
-              radius = 10;
-            } else if (sleepOpen || nearOpen) {
-              dim = true; // a finder is active: fade everything that isn't a match
-            } else {
-              radius = 6; // shortlist/backup/tomorrow backdrop pins
-            }
-          } else if (corridor) {
+          if (corridor) {
             matchHi = corridorMatchIds.has(p.id);
             dim = !matchHi && !corridorStopIds.has(p.id);
             if (matchHi) radius = 11;
@@ -1609,7 +1139,6 @@ export default function App() {
             dim = selectedId !== p.id && !matchHi;
             if (matchHi) radius = 11;
           }
-          const softTrip = isTrip && !matchHi && !todayIds.has(p.id) && !dim;
           // No Leaflet popup: one pin click opens ONE surface — the detail panel.
           return (
             <CircleMarker
@@ -1620,50 +1149,15 @@ export default function App() {
                 color: isSel ? '#FF3B30' : matchHi ? '#111' : '#ffffff',
                 weight: isSel ? 4 : matchHi ? 2.5 : p.status === 'shortlist' ? 3 : 1.5,
                 fillColor: CATEGORY_COLORS[p.category],
-                fillOpacity: dim
-                  ? 0.15
-                  : softTrip
-                    ? 0.55
-                    : p.status === 'rejected'
-                      ? 0.3
-                      : 0.9,
-                opacity: dim ? 0.2 : softTrip ? 0.6 : 1,
+                fillOpacity: dim ? 0.15 : p.status === 'rejected' ? 0.3 : 0.9,
+                opacity: dim ? 0.2 : 1,
               }}
               eventHandlers={{ click: () => selectPlace(p) }}
             />
           );
         })}
 
-        {/* Trip mode: big numbered pins for today's stops */}
-        {mode === 'trip' &&
-          todayStops.map((p, i) => (
-            <Marker
-              key={`today-${p.id}`}
-              position={[p.lat, p.lng]}
-              icon={numberIcon(i + 1, doneIds[p.id] ? '#9aa5ad' : dayColor(tripDay))}
-              eventHandlers={{ click: () => selectPlace(p) }}
-            />
-          ))}
-
-        {/* You-are-here dot (last cached fix until a fresh one lands) */}
-        {gpsFix && (
-          <CircleMarker
-            center={[gpsFix.lat, gpsFix.lng]}
-            radius={8}
-            pathOptions={{
-              color: '#ffffff',
-              weight: 3,
-              fillColor: '#1e80ff',
-              fillOpacity: 1,
-            }}
-          />
-        )}
-
       </MapContainer>
-
-      <button className="locate-fab" onClick={locateMe} title="Center on me">
-        📍
-      </button>
 
       {undoToast && (
         <div className="undo-toast">
@@ -1681,28 +1175,19 @@ export default function App() {
 
       <DetailPanel
         place={selected}
-        tripMode={mode === 'trip'}
         onClose={closeDetail}
         onStatus={setStatus}
         onAssignDay={assignDay}
         onFocusDay={focusPlanDay}
-        onNote={setNote}
         onTimeMinutes={setTimeMinutes}
         onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}
-        isDone={selected ? !!doneIds[selected.id] : false}
-        onToggleDone={(id) => toggleDone(id)}
-        nearbyActive={nearbyActive}
-        nearbyRadius={nearbyRadius}
-        nearbyCount={nearbyMatchIds.size}
-        onToggleNearby={() => setNearbyActive((a) => !a)}
-        onNearbyRadius={setNearbyRadius}
       />
 
       {addPlaceOpen && (
         <Suspense fallback={<DialogFallback title="Loading add place…" />}>
           <AddPlace
             tappedPoint={tappedPoint}
-            gpsFix={gpsFix ? { lat: gpsFix.lat, lng: gpsFix.lng } : null}
+            gpsFix={null}
             editing={editingPlace}
             editingDay={editingId ? overrides[editingId]?.day ?? null : null}
             editingNote={editingId ? overrides[editingId]?.note ?? '' : ''}
@@ -1717,8 +1202,9 @@ export default function App() {
         <Suspense fallback={<DialogFallback title="Loading essentials…" />}>
           <LazyEssentials
             onClose={() => setEssentialsOpen(false)}
-            tripMode={mode === 'trip'}
             onShowPin={focusPin}
+            onPrepOffline={prepOffline}
+            prepping={prepping}
           />
         </Suspense>
       )}

@@ -95,7 +95,7 @@
       "local-favourite"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-dubrovnik-sea-kayak",
@@ -167,7 +167,7 @@
       "pricey"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-banje-beach-club",
@@ -190,7 +190,7 @@
       "dubrovnik"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-zavizan-dark-sky",
@@ -420,7 +420,7 @@
       "mostar"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-boracko-lake",
@@ -493,7 +493,7 @@
       "coords-approx"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-terme-ilidza",

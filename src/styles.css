@@ -87,7 +87,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   border: 1px solid #bbb;
   border-radius: 12px;
   background: #fff;
-  color: #999;
+  color: #5f6b7a;
   cursor: pointer;
 }
 
@@ -96,9 +96,15 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   background: #fff;
   font-weight: 500;
 }
+/* Active status chips carry their status colour (override the generic .chip.on). */
+.chip.on.badge-candidate { background: #95a5a6; color: #fff; border-color: transparent; }
+.chip.on.badge-shortlist { background: #27ae60; color: #fff; border-color: transparent; }
+.chip.on.badge-extra { background: #6c5ce7; color: #fff; border-color: transparent; }
+.chip.on.badge-backup { background: #f39c12; color: #fff; border-color: transparent; }
+.chip.on.badge-rejected { background: #c0392b; color: #fff; border-color: transparent; }
 
 .chip:not(.on) {
-  opacity: 0.45;
+  opacity: 0.6;
 }
 
 .dot {
@@ -146,7 +152,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 .place-list-empty {
   padding: 24px 16px;
   text-align: center;
-  color: #888;
+  color: #646b74;
   font-size: 13px;
   border-top: 1px solid #e5e5e5;
 }
@@ -190,6 +196,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 
 .badge-candidate { background: #95a5a6; }
 .badge-shortlist { background: #27ae60; }
+.badge-extra { background: #6c5ce7; }
 .badge-backup { background: #f39c12; }
 .badge-rejected { background: #c0392b; }
 
@@ -258,23 +265,48 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
 
 .status-buttons {
   display: flex;
-  gap: 4px;
+  flex-wrap: wrap;
+  gap: 5px;
   margin-top: 8px;
 }
 
 .status-buttons button {
-  flex: 1;
-  font-size: 11px;
-  padding: 3px 4px;
+  flex: 1 1 0;
+  min-width: 56px;
+  min-height: 34px;
+  font-size: 12px;
+  padding: 4px 6px;
   border: 1px solid #ccc;
   border-radius: 6px;
   background: #fff;
+  color: #2c3e50;
   cursor: pointer;
+}
+.status-buttons button:active {
+  background: #eef3f9;
 }
 
 .status-buttons button.on {
   color: #fff;
   border-color: transparent;
+  font-weight: 700;
+}
+.detail-reject {
+  display: block;
+  margin: 8px 0 2px;
+  padding: 6px 4px;
+  border: none;
+  background: none;
+  color: #98a0ab;
+  font-size: 12px;
+  cursor: pointer;
+}
+.detail-reject.on {
+  color: #c0392b;
+  font-weight: 700;
+}
+.detail-reject:active {
+  color: #c0392b;
 }
 
 /* ---- View tabs ---- */
@@ -292,7 +324,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   margin-bottom: -1.5px;
   border-radius: 0;
   background: transparent;
-  color: #aaa;
+  color: #717982;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -496,6 +528,30 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   max-width: 100%;
   box-sizing: border-box;
 }
+.detail-duration {
+  margin: 10px 0;
+}
+.detail-duration-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.detail-duration-row .time-input {
+  width: 5.5em;
+}
+.detail-duration-unit {
+  font-size: 13px;
+  color: #555;
+  font-weight: 600;
+}
+.detail-duration-msg {
+  font-size: 12px;
+  color: #16a34a;
+}
+.detail-duration-hint {
+  font-size: 12px;
+  color: #6b7079;
+}
 .note-area {
   min-height: 60px;
   resize: vertical;
@@ -595,7 +651,7 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 10px;
-  color: #888;
+  color: #646b74;
 }
 .detail-time-edit {
   display: flex;
@@ -817,6 +873,75 @@ body.trip-mode .detail-visited-btn {
   border-radius: 8px;
   margin-bottom: 8px;
 }
+.ess-prep-offline {
+  margin-top: 10px;
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  background: #fff;
+  color: #2c3e50;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ess-prep-offline:active {
+  background: #eef3f9;
+}
+.ess-prep-offline:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.itin-find-sleep {
+  margin-left: auto;
+  height: 26px;
+  padding: 0 10px;
+  border: 1px solid #cfd8e3;
+  border-radius: 999px;
+  background: #fff;
+  color: #2c3e50;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.itin-find-sleep:active {
+  background: #eef3f9;
+}
+.preview-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #fff7e6;
+  border: 1px solid #f0c66b;
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a5a00;
+}
+.preview-banner-actions {
+  display: flex;
+  gap: 6px;
+}
+.preview-publish,
+.preview-exit {
+  min-height: 34px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+.preview-publish { background: #27ae60; color: #fff; }
+.preview-exit { background: #fff; border: 1px solid #d7c08a; color: #8a5a00; }
+.preview-publish:active,
+.preview-exit:active { filter: brightness(0.96); }
 .itin-day-nav {
   display: flex;
   align-items: center;
@@ -859,7 +984,7 @@ body.trip-mode .detail-visited-btn {
   color: #2471c8;
 }
 .loading-dot {
-  color: #999;
+  color: #6b7079;
   font-style: italic;
 }
 .itin-day {
@@ -922,6 +1047,39 @@ body.trip-mode .detail-visited-btn {
   background: #eaf7ee;
   color: #1a7f4b;
 }
+/* Loud "does this day fit?" verdict */
+.itin-verdict {
+  margin: 4px 0 10px 12px;
+  padding: 7px 11px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  width: fit-content;
+  max-width: calc(100% - 12px);
+}
+.itin-verdict-ok { background: #eaf7ee; color: #1a7f4b; }
+.itin-verdict-tight { background: #fff4e5; color: #b9770e; }
+.itin-verdict-over { background: #fdecea; color: #c0392b; }
+/* Drive time between consecutive stops */
+.itin-leg {
+  margin-left: 22px;
+  font-size: 11px;
+  color: #6b7079;
+  font-weight: 600;
+}
+.itin-stop-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.itin-stop-hint {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b7079;
+  line-height: 1.25;
+}
 .itin-stop-list {
   margin: 4px 0 6px 4px;
   display: flex;
@@ -968,7 +1126,6 @@ body.trip-mode .detail-visited-btn {
   flex-shrink: 0;
 }
 .itin-stop-name {
-  flex: 1;
   min-width: 0;
   font-size: 14px;
   line-height: 1.2;
@@ -996,14 +1153,17 @@ body.trip-mode .detail-visited-btn {
   padding-left: 34px;
 }
 .itin-stop-actions button {
-  width: 28px;
-  height: 28px;
+  min-width: 40px;
+  height: 40px;
   border: 1px solid #d7dee8;
-  border-radius: 6px;
+  border-radius: 8px;
   background: #fff;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1;
+}
+.itin-stop-actions button:active {
+  background: #eef3f9;
 }
 .itin-stop-actions button:disabled {
   opacity: 0.3;
@@ -1011,7 +1171,7 @@ body.trip-mode .detail-visited-btn {
 }
 .itin-empty {
   font-size: 12px;
-  color: #aaa;
+  color: #717982;
   margin: 2px 0 2px 12px;
 }
 .itin-backlog {
@@ -1108,6 +1268,7 @@ body.trip-mode .detail-visited-btn {
 .corridor-card-top .place-name {
   font-weight: 600;
   font-size: 13px;
+  min-width: 0;
 }
 .corridor-dist {
   margin-left: auto;
@@ -1124,7 +1285,7 @@ body.trip-mode .detail-visited-btn {
 }
 .corridor-empty {
   font-size: 12px;
-  color: #aaa;
+  color: #717982;
 }
 
 /* numbered waypoint markers */
@@ -1234,9 +1395,9 @@ body.trip-mode .detail-visited-btn {
     font-size: 13px;
   }
   .book-mini {
-    width: 28px;
-    height: 28px;
-    font-size: 13px;
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
   }
   .view-tabs .mode-pill {
     padding: 5px 10px;
@@ -1304,9 +1465,9 @@ body.trip-mode .detail-visited-btn {
     padding-left: 30px;
   }
   .itin-stop-actions button {
-    width: 24px;
-    height: 24px;
-    font-size: 12px;
+    min-width: 40px;
+    height: 40px;
+    font-size: 16px;
   }
   .itin-day-summary {
     margin-left: 8px;
@@ -1329,7 +1490,7 @@ body.trip-mode .detail-visited-btn {
     height: 36px;
     border: none;
     background: transparent;
-    color: #888;
+    color: #646b74;
     font-size: 20px;
   }
   .today-jump-btn {
@@ -1379,7 +1540,7 @@ body.trip-mode .detail-visited-btn {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-height: 32px;
+  min-height: 40px;
   padding: 6px 12px;
   border: 1px solid #7d7d7d;
   border-radius: 6px;
@@ -1388,6 +1549,16 @@ body.trip-mode .detail-visited-btn {
   font-size: 18px;
   line-height: 1;
   white-space: nowrap;
+  cursor: pointer;
+}
+.mode-pill:active {
+  transform: scale(0.97);
+  filter: brightness(0.96);
+}
+/* Trip mode: tint the toggle so the current mode is obvious at a glance. */
+.mode-pill.trip {
+  background: #eaf4ff;
+  border-color: #1f6da8;
 }
 
 /* ---- Sidebar footer: secondary tools ---- */
@@ -1498,7 +1669,7 @@ body.trip-mode .detail-visited-btn {
 .today-jump {
   display: block;
   font-size: 10px;
-  color: #999;
+  color: #6b7079;
 }
 .today-jump-btn {
   flex-shrink: 0;
@@ -1533,7 +1704,7 @@ body.trip-mode .detail-visited-btn {
 }
 .today-progress-trip {
   font-weight: 400;
-  color: #999;
+  color: #6b7079;
 }
 .today-predep-banner {
   width: 100%;
@@ -1731,7 +1902,7 @@ body.trip-mode .detail-visited-btn {
 }
 .today-leg {
   font-size: 12px;
-  color: #888;
+  color: #646b74;
   margin: 2px 0 2px 50px;
 }
 .today-stop {
@@ -1835,7 +2006,7 @@ body.trip-mode .detail-visited-btn {
 .today-anchor-note {
   margin: -4px 0 0;
   font-size: 11px;
-  color: #999;
+  color: #6b7079;
   text-align: center;
 }
 .today-cards .corridor-card {
@@ -1843,7 +2014,7 @@ body.trip-mode .detail-visited-btn {
 }
 .today-empty {
   font-size: 13px;
-  color: #888;
+  color: #646b74;
   background: #f7f7f7;
   border-radius: 8px;
   padding: 12px;
@@ -1961,7 +2132,7 @@ body.trip-mode .book-btn {
 }
 
 /* Domain-labeled link chips ("Trail guide / GPX", "Traveler reports", host…) */
-.link-chips {
+.detail-source-links {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
@@ -2009,7 +2180,7 @@ body.trip-mode .link-chip {
 /* Google Maps demoted: small secondary "Navigate" link */
 .nav-link {
   font-size: 12px;
-  color: #888;
+  color: #646b74;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -2018,7 +2189,7 @@ body.trip-mode .link-chip {
   text-decoration: underline;
 }
 .nav-link-sub {
-  color: #aaa;
+  color: #717982;
   font-size: 11px;
 }
 
@@ -2186,6 +2357,7 @@ body.trip-mode .card-links .today-nav-link {
 }
 .addplace-modes button {
   flex: 1;
+  min-height: 44px;
   padding: 8px 4px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -2230,6 +2402,7 @@ body.trip-mode .card-links .today-nav-link {
 }
 .addplace-input-row button {
   border: none;
+  min-height: 44px;
   background: #2c3e50;
   color: #fff;
   border-radius: 8px;
@@ -2364,7 +2537,7 @@ body.trip-mode .card-links .today-nav-link {
 }
 .ess-sub {
   font-size: 12px;
-  color: #888;
+  color: #646b74;
   margin: 2px 0 10px;
 }
 .ess-section {
@@ -2390,7 +2563,7 @@ body.trip-mode .card-links .today-nav-link {
   background: #eef2f6;
 }
 .ess-chevron {
-  color: #888;
+  color: #646b74;
 }
 .ess-section-body {
   padding: 10px 12px 14px;
@@ -2468,7 +2641,7 @@ body.trip-mode .card-links .today-nav-link {
 }
 .ess-blank {
   letter-spacing: 1px;
-  color: #aaa;
+  color: #717982;
 }
 .ess-fillin-hint {
   font-size: 11px;
@@ -2540,7 +2713,7 @@ body.trip-mode .card-links .today-nav-link {
 }
 .ess-phrase-note {
   font-size: 11px;
-  color: #888;
+  color: #646b74;
   background: #f7f7f7;
   border-radius: 6px;
   padding: 6px 8px;
@@ -2551,7 +2724,7 @@ body.trip-mode .card-links .today-nav-link {
 }
 .ess-phrase-en {
   font-size: 12px;
-  color: #888;
+  color: #646b74;
 }
 .ess-phrase-loc {
   font-size: 14px;
@@ -2577,14 +2750,68 @@ body.trip-mode .card-links .today-nav-link {
   gap: 8px;
   padding: 4px 0;
 }
-.ess-task.done .ess-task-text {
+.ess-task.done .ess-task-text,
+.ess-task.done .ess-task-input {
   text-decoration: line-through;
-  color: #aaa;
+  color: #717982;
 }
+.ess-task-input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.4;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 6px 6px;
+  background: transparent;
+  color: #1f2b3d;
+}
+.ess-task-input:focus {
+  outline: none;
+  border-color: #cfd8e3;
+  background: #fff;
+}
+.ess-task-del {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  color: #c0392b;
+  font-size: 13px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.ess-task-del:active { opacity: 1; }
+.ess-task-add {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+.ess-task-add input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-size: 13px;
+  padding: 8px 8px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+}
+.ess-task-add button {
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ess-task-add button:active { background: #eef3f9; }
 .ess-task-check {
   flex-shrink: 0;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 2px solid #ccc;
   background: #fff;
@@ -2609,7 +2836,7 @@ body.trip-mode .card-links .today-nav-link {
   align-self: flex-start;
   background: none;
   border: none;
-  color: #999;
+  color: #6b7079;
   font-size: 11px;
   cursor: pointer;
   padding: 2px 0;
@@ -2691,7 +2918,7 @@ body.trip-mode .ess-tel {
 .triage-remaining {
   flex: 1;
   font-size: 12px;
-  color: #888;
+  color: #646b74;
 }
 .triage-close {
   border: 1px solid #bbb;
@@ -2792,7 +3019,7 @@ body.trip-mode .ess-tel {
 }
 .triage-time {
   font-size: 11px;
-  color: #888;
+  color: #646b74;
   margin: 0 0 3px;
   line-height: 1.3;
 }
@@ -2848,7 +3075,7 @@ body.trip-mode .ess-tel {
   margin-top: 40px;
   text-align: center;
   font-size: 14px;
-  color: #888;
+  color: #646b74;
 }
 .triage-empty button {
   padding: 8px 18px;
@@ -2859,346 +3086,21 @@ body.trip-mode .ess-tel {
   font-size: 13px;
 }
 
-
-/* Left panel — card + filters */
-.review-left {
-  width: 420px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  background: #f4f6f9;
-  border-right: 1px solid #ddd;
-  overflow: hidden;
-}
-
-/* Right panel — full map */
-.review-map-full {
-  flex: 1;
-  height: 100%;
-  z-index: 0;
-}
-.review-map-empty {
-  background: #e8eaed;
-}
-
-/* Header row: exit button + filter selects */
-.review-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 12px;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-}
-
-.review-exit {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: #fff;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 6px 10px;
-  cursor: pointer;
-  color: #444;
-  white-space: nowrap;
-}
-.review-exit:hover {
-  background: #f0f0f0;
-}
-
-.review-filters {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  flex: 1;
-}
-.review-filters select {
-  padding: 6px 8px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 12px;
-  font-family: inherit;
-  background: #fff;
-  cursor: pointer;
-}
-
-/* Scrollable body */
-.review-body {
-  flex: 1;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px 12px 24px;
-}
-
-/* Progress + back button row */
-.review-progress {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-  max-width: 560px;
-  margin-bottom: 14px;
-}
-.review-back {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: #fff;
-  font-size: 13px;
-  padding: 6px 12px;
-  cursor: pointer;
-  color: #555;
-}
-.review-back:hover {
-  background: #f0f0f0;
-}
-.review-counter {
-  font-size: 13px;
-  color: #666;
-  font-weight: 600;
-}
-
-/* The card itself */
-.review-card {
-  width: 100%;
-  max-width: 560px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 14px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
-  padding: 20px 20px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.review-card-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.review-flag {
-  font-size: 20px;
-  flex-shrink: 0;
-}
-.review-card-title h2 {
-  flex: 1;
-  margin: 0;
-  font-size: 20px;
-  min-width: 0;
-}
-.review-cat-badge {
-  font-size: 11px;
-  color: #fff;
-  padding: 2px 9px;
-  border-radius: 10px;
-  font-weight: 600;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.review-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 6px;
-}
-.review-listing-link {
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 600;
-  color: #1a73e8;
-  text-decoration: none;
-  background: #e8f0fe;
-  padding: 4px 12px;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-}
-.review-listing-link:hover {
-  background: #c8dcfd;
-}
-.review-map-link {
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 600;
-  color: #4b5563;
-  background: #eef2f7;
-  padding: 4px 12px;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-}
-.review-map-link:hover {
-  background: #dbe4ef;
-}
-.review-mini-map {
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  margin: 8px 0 4px;
-  flex-shrink: 0;
-  z-index: 0;
-}
-
-.review-rating {
-  margin: 0;
-  font-size: 17px;
-  color: #e67e22;
-  letter-spacing: 1px;
-}
-
-.review-meta {
-  margin: 0;
-  font-size: 13px;
-  color: #555;
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.review-facilities {
-  margin: 0;
-  font-size: 12px;
-  color: #666;
-  background: #f0f5ff;
-  border-radius: 6px;
-  padding: 4px 8px;
-}
-
-.review-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin: 0;
-}
-
-.review-tag {
-  font-size: 11px;
-  font-weight: 500;
-  padding: 2px 7px;
-  border-radius: 10px;
-  background: #fff3cd;
-  color: #7a5800;
-  border: 1px solid #f0c040;
-  white-space: nowrap;
-}
-
-.review-desc {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #222;
-}
-
-.review-community {
-  margin: 0;
-  font-style: italic;
-  color: #444;
-  background: #f6f6f6;
-  padding: 8px 10px;
-  border-radius: 8px;
-  font-size: 13px;
-  border-left: 3px solid #ccc;
-}
-
-/* Action buttons */
-.review-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 6px;
-}
-.review-btn {
-  flex: 1;
-  min-height: 52px;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  transition: filter 0.1s;
-}
-.review-btn:hover {
-  filter: brightness(0.93);
-}
-.review-shortlist {
-  background: #27ae60;
-  color: #fff;
-}
-.review-skip {
-  background: #ecf0f1;
-  color: #555;
-  border: 1px solid #ccc;
-}
-.review-reject {
-  background: #e74c3c;
-  color: #fff;
-}
-
-/* Done state */
-.review-done {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  margin-top: 60px;
-  text-align: center;
-}
-.review-done p {
-  font-size: 18px;
-  font-weight: 600;
-  color: #2c3e50;
-}
-.review-exit-btn {
-  padding: 12px 28px;
-  border: none;
-  border-radius: 10px;
-  background: #2c3e50;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-}
-.review-exit-btn:hover {
-  background: #1a252f;
-}
-
-/* Narrow screens: collapse split layout to card-only */
-@media (max-width: 900px) {
-  .review-overlay {
-    flex-direction: column;
-  }
-  .review-left {
-    width: 100%;
-    flex: 1;
-    overflow-y: auto;
-  }
-  .review-map-full {
-    display: none;
-  }
-}
-
-/* Phone: bigger tap targets */
-@media (max-width: 760px) {
-  .review-card {
-    padding: 16px 14px 12px;
-  }
-  .review-btn {
-    min-height: 58px;
-    font-size: 16px;
-  }
-  .review-card-title h2 {
-    font-size: 18px;
-  }
-  /* Clamp description to 4 lines — saves space, keeps card compact */
-  .review-desc {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+/* ---- Touch feedback: phones have no :hover, so give primary controls a
+   visible press state (added in the careful-pass cleanup, 2026-06). ---- */
+.book-btn:active,
+.today-big-btn:active,
+.triage-btn:active,
+.add-place-btn:active,
+.itin-stop-row:active,
+.corridor-card:active,
+.today-stop-name:active,
+.today-check:active,
+.today-skip:active,
+.sidebar-fab:active,
+.locate-fab:active,
+.detail-nav-btn:active,
+.book-mini:active {
+  transform: scale(0.97);
+  filter: brightness(0.96);
 }

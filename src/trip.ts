@@ -168,7 +168,7 @@ export interface DayHint {
 // dynamically in the plan day view when that stop is scheduled.
 export const DAY_HINTS: Record<number, DayHint> = {
   1:  { icon: '🌑', text: 'New moon Jun 16–18 — darkest skies of the trip. Good night for stargazing wherever you camp.' },
-  2:  { icon: '🕙', text: 'Day 3 airport run: leave wherever you are by ~14:00. Flight lands 17:20; be at arrivals by 17:30.' },
+  2:  { icon: '🕙', text: 'Day 3 airport run: leave Makarska by ~13:30. Flight lands 17:20; be at arrivals by 17:30.' },
   3:  { icon: '✈️', text: 'Flight FR9423 lands 17:20 — allow 3h drive from Makarska. After pickup: drive north to Camp Prapratno (~90 km, 1h20m) for the morning ferry to Mljet.' },
   4:  { icon: '⛴', text: 'Mljet ferry (Prapratno→Sobra): first-come, no deck reservation. Friday = lighter queue than weekend. First sailings ~07:00; queue 60+ min early.' },
   5:  { icon: '💧', text: 'Return ferry Sobra→Prapratno: 06:00 gets you to Kravica by 08:45 (before crowds). 09:00 ferry lands at Kravica ~11:30 — swimmable but busier.' },
@@ -190,7 +190,7 @@ export const DAY_HINTS: Record<number, DayHint> = {
 export const DAY_OPS: Record<number, string> = {
   1:  'Zadar coast ~28/20°C, sunny · 🌅 05:13 → 20:47 · sea ~22°C',
   2:  'Omiš ~31/22°C, sunny · 🌅 05:16 → 20:43 · Cetina river cold',
-  3:  'DBV ~32/24°C, hot/sunny · 🌅 05:08 → 20:30 · Biokovo breeze at altitude',
+  3:  'Makarska→DBV coast ~32/24°C, hot/sunny · 🌅 05:08 → 20:30 · sea ~23°C · Pelješac bridge windy',
   4:  'Mljet ~31/25°C, sunny · 🌅 05:08 → 20:30 · sea ~23°C · Friday ferry lighter queue',
   5:  'Mostar ~36/23°C, possible PM shower · 🌅 05:05 → 20:27 · Kravica: arrive early',
   6:  'Mostar hot → Sarajevo ~33/18°C, PM thunder risk · 🌅 05:05 → 20:27 · solstice',
@@ -234,45 +234,4 @@ export function formatDuration(seconds: number): string {
 export function formatDistance(meters: number): string {
   const km = meters / 1000;
   return km >= 10 ? `${Math.round(km)} km` : `${km.toFixed(1)} km`;
-}
-
-/**
- * Split an ordered stop sequence into trip days, capping driving time per day.
- * `legSeconds[i]` is the drive from orderedIds[i] to orderedIds[i+1]; the
- * relocation leg that crosses midnight counts toward the new day.
- * Returns the day/dayOrder per id and the number of days used.
- */
-export function splitIntoDays(
-  orderedIds: string[],
-  legSeconds: number[],
-  maxHoursPerDay: number,
-): {
-  assign: Record<string, { day: number; dayOrder: number }>;
-  days: number;
-  /** Driving seconds per day, index 0 = day 1 (incl. the morning relocation leg). */
-  dayTotals: number[];
-} {
-  const maxSec = maxHoursPerDay * 3600;
-  const assign: Record<string, { day: number; dayOrder: number }> = {};
-  const dayTotals: number[] = [0];
-  let day = 1;
-  let orderInDay = 0;
-  let accum = 0;
-  orderedIds.forEach((id, i) => {
-    if (i > 0) {
-      const leg = legSeconds[i - 1] ?? 0;
-      if (orderInDay > 0 && accum + leg > maxSec) {
-        day++;
-        orderInDay = 0;
-        accum = leg; // morning relocation drive belongs to the new day
-        dayTotals.push(leg);
-      } else {
-        accum += leg;
-        dayTotals[day - 1] += leg;
-      }
-    }
-    assign[id] = { day, dayOrder: orderInDay };
-    orderInDay++;
-  });
-  return { assign, days: day, dayTotals };
 }

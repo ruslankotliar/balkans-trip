@@ -22,7 +22,7 @@
       "zadar"
     ],
     "rating": 4,
-    "status": "backup"
+    "status": "extra"
   },
   {
     "id": "hr-donat-gelato-zadar",
@@ -48,7 +48,7 @@
       "zadar"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-trznica-zadar",
@@ -128,7 +128,7 @@
       "splurge-ish"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-split-pazar-ribarnica",
@@ -181,7 +181,7 @@
       "omis"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-konoba-feral-brela",
@@ -208,7 +208,7 @@
       "makarska-riviera"
     ],
     "rating": 4,
-    "status": "backup"
+    "status": "extra"
   },
   {
     "id": "hr-barba-dubrovnik",
@@ -234,7 +234,7 @@
       "dubrovnik"
     ],
     "rating": 4,
-    "status": "backup"
+    "status": "extra"
   },
   {
     "id": "hr-tabasco-pizza-dubrovnik",
@@ -259,7 +259,7 @@
       "dubrovnik"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-glorijet-gruz",
@@ -284,7 +284,7 @@
       "near-ferry-port"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-peppinos-gelato",
@@ -309,7 +309,7 @@
       "dubrovnik"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-bota-sare-mali-ston",
@@ -336,7 +336,7 @@
       "marquee"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-grgic-vina-trstenik",
@@ -393,7 +393,7 @@
       "order-ahead"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "hr-stermasi-mljet",
@@ -423,7 +423,7 @@
       "splurge"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-tima-irma",
@@ -476,7 +476,7 @@
       "breakfast"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-blagaj-trout-terraces",
@@ -503,7 +503,7 @@
       "view"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-pocitelj-stalls",
@@ -530,7 +530,7 @@
       "quick-stop"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-konjic-han",
@@ -557,7 +557,7 @@
       "lunch"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-konjic-eko-selo-boracko",
@@ -585,7 +585,7 @@
       "camp-meals"
     ],
     "rating": 3,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-sarajevo-petica-ferhatovic",
@@ -639,7 +639,7 @@
       "local-favourite"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-sarajevo-cajdzinica-dzirlo",
@@ -666,7 +666,7 @@
       "view"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-sarajevo-ramis",
@@ -693,7 +693,7 @@
       "bascarsija"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-bingo-mostar",
@@ -722,7 +722,7 @@
       "logistics"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-oro-zabljak",
@@ -776,7 +776,7 @@
       "call-ahead"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-eko-oaza-suza-evrope",
@@ -805,7 +805,7 @@
       "eco-camp"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-kod-pera-njegusi",
@@ -834,7 +834,7 @@
       "lovcen-road"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-vinarija-masanovic",
@@ -891,7 +891,7 @@
       "konoba"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-tanjga-kotor",
@@ -947,7 +947,7 @@
       "meat"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-moritz-eis-kotor",
@@ -971,7 +971,7 @@
       "dessert"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-studenac-trebinje",
@@ -996,7 +996,7 @@
       "cash-only"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "ba-baklava-ducan-sarajevo",
@@ -1021,7 +1021,7 @@
       "local-institution"
     ],
     "rating": 5,
-    "status": "candidate"
+    "status": "extra"
   },
   {
     "id": "me-voli-budva",
@@ -1050,6 +1050,6 @@
       "logistics"
     ],
     "rating": 4,
-    "status": "candidate"
+    "status": "extra"
   }
 ]
