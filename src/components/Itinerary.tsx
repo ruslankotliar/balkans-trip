@@ -38,6 +38,45 @@ function hhmmToHour(v: string): number | undefined {
   return Number(m[1]) + Number(m[2]) / 60;
 }
 
+// ── Activity-type classifier (for the trip activity-mix tracker) ──
+const ACTIVITY_KEYWORDS: [RegExp, string][] = [
+  [/raft/, 'rafting'],
+  [/kayak/, 'kayaking'],
+  [/\bsup\b|paddle.?board|stand.?up.?paddle/, 'SUP'],
+  [/canyon/, 'canyoning'],
+  [/cliff.?jump|jumpers|cliff/, 'cliff-jumping'],
+  [/scuba|div\b|diving/, 'diving'],
+  [/snorkel/, 'snorkeling'],
+  [/zip.?line/, 'zipline'],
+  [/paraglid/, 'paragliding'],
+  [/skydiv/, 'skydiving'],
+  [/\batv\b|buggy|quad|dirt.?bike/, 'ATV/buggy'],
+  [/e-?bike|cycling|bike (rental|circuit|route)/, 'e-bike'],
+  [/ferrata|climbing/, 'climbing'],
+  [/speedboat|boat (tour|trip|rental|hire)|yacht|sail|blue cave/, 'boat'],
+  [/fish/, 'fishing'],
+  [/wine|vinarij|vineyard|winery/, 'wine'],
+  [/peka|cooking/, 'cooking'],
+  [/cave|spilja|pe[cć]ina/, 'caves'],
+];
+/** Best-guess experience type for a place, or null to exclude (sleeps/logistics). */
+function activityType(p: PlaceWithOverride): string | null {
+  if (p.category === 'campsite' || p.category === 'accommodation' || p.category === 'other') return null;
+  const hay = `${p.id} ${p.name} ${(p.tags ?? []).join(' ')}`.toLowerCase();
+  for (const [re, t] of ACTIVITY_KEYWORDS) if (re.test(hay)) return t;
+  switch (p.category) {
+    case 'nightlife': return 'nightlife';
+    case 'food': return 'eating';
+    case 'hike': return 'hiking';
+    case 'beach': return 'beach/swim';
+    case 'nature': return /lake|river|swim|waterfall|slap|jezero|vir|buna/.test(hay) ? 'beach/swim' : 'nature';
+    case 'viewpoint': return 'viewpoint';
+    case 'sight': case 'town': return 'sightseeing';
+    case 'activity': return 'activity (other)';
+    default: return null;
+  }
+}
+
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
 
@@ -90,6 +129,27 @@ export default function Itinerary({
         departSec: null,
       }));
 
+  // Trip-wide activity mix over the COMMITTED (shortlist) stops — keeps variety
+  // in view and flags the same activity on back-to-back days.
+  const mix = (() => {
+    const byType = new Map<string, { count: number; days: Set<number> }>();
+    for (const p of assigned) {
+      if (p.status !== 'shortlist' || !p.day) continue;
+      const t = activityType(p);
+      if (!t) continue;
+      const e = byType.get(t) ?? { count: 0, days: new Set<number>() };
+      e.count += 1;
+      e.days.add(p.day);
+      byType.set(t, e);
+    }
+    return [...byType.entries()]
+      .map(([type, e]) => {
+        const days = [...e.days].sort((a, b) => a - b);
+        return { type, count: e.count, days, adjacent: days.some((d, i) => i > 0 && d - days[i - 1] === 1) };
+      })
+      .sort((a, b) => b.count - a.count || a.type.localeCompare(b.type));
+  })();
+
   return (
     <div className="itinerary">
       <div className="itin-day-nav">
@@ -120,6 +180,40 @@ export default function Itinerary({
           </button>
         )}
       </div>
+
+      {mix.length > 0 && (
+        <details className="itin-mix">
+          <summary>
+            Activity mix · {mix.length} types · {mix.reduce((n, m) => n + m.count, 0)} committed stops
+          </summary>
+          <ul className="itin-mix-list">
+            {mix.map((m) => (
+              <li key={m.type} className={m.adjacent ? 'adjacent' : ''}>
+                <span className="itin-mix-type">{m.type}</span>
+                <span className="itin-mix-count">×{m.count}</span>
+                <span className="itin-mix-days">
+                  {m.days.map((dd) => (
+                    <button
+                      key={dd}
+                      type="button"
+                      className={`itin-mix-day${dd === day ? ' cur' : ''}`}
+                      onClick={() => onDay(dd)}
+                      title={`Go to day ${dd}`}
+                    >
+                      {dd}
+                    </button>
+                  ))}
+                </span>
+                {m.adjacent && (
+                  <span className="itin-mix-warn" title="Scheduled on back-to-back days">
+                    ⚠ back-to-back
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
 
       <div className="itin-total">
         <strong>{stops.length}</strong> stops ·{' '}
