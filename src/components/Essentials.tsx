@@ -1,8 +1,21 @@
 /**
- * Checklist panel — a fully-offline, editable shared pre-trip to-do list,
- * plus a one-tap "cache all routes for offline" action.
+ * Essentials panel — a fully-offline, editable shared pre-trip to-do list,
+ * a one-tap "cache all routes for offline" action, PLUS the on-the-road safety
+ * sheet (emergency numbers, what-do-I-do contingencies, hospital-by-zone, the
+ * driving/border/money rules and survival phrases). All of it is bundled static
+ * data (src/essentials.ts) so it works with no signal in a canyon.
  */
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
+import {
+  EMERGENCY_UNIVERSAL,
+  EMERGENCY_BY_COUNTRY,
+  FILL_IN_CONTACTS,
+  IF_THEN,
+  QUICK_TIPS,
+  HOSPITAL_ZONES,
+  PACKING,
+  PHRASES,
+} from '../essentials';
 
 // ---- Pre-trip checklist ------------------------------------------------
 
@@ -70,6 +83,7 @@ interface Props {
 
 export default function Essentials({
   onClose,
+  onShowPin,
   onPrepOffline,
   prepping = false,
 }: Props) {
@@ -94,15 +108,24 @@ export default function Essentials({
   }
   const doneCount = tasks.filter(t => t.done).length;
 
+  // ---- Offline safety sheet (accordion; Emergency open by default) ----
+  const [openSecs, setOpenSecs] = useState<Set<string>>(() => new Set(['emergency']));
+  const toggleSec = (id: string) =>
+    setOpenSecs(prev => {
+      const next = new Set(prev);
+      next.has(id) ? next.delete(id) : next.add(id);
+      return next;
+    });
+
   return (
     <div className="essentials">
       <div className="ess-top">
-        <h2>✅ Checklist</h2>
+        <h2>🧭 Essentials</h2>
         <button className="ess-close" onClick={onClose} title="Close">
           ✕
         </button>
       </div>
-      <p className="ess-sub">Shared to-do — tick it off, edit inline, add your own.</p>
+      <p className="ess-sub">Shared checklist + offline safety sheet — works with no signal.</p>
 
       <div className="ess-tasks">
         {tasks.map(t => (
@@ -147,6 +170,125 @@ export default function Essentials({
           {prepping ? '📥 Caching routes…' : '📥 Cache all routes for offline'}
         </button>
       )}
+
+      {/* ---- Offline safety sheet ---- */}
+      <Section id="emergency" title="🆘 Emergency numbers" open={openSecs.has('emergency')} onToggle={toggleSec}>
+        <a className="ess-tel-big" href={`tel:${EMERGENCY_UNIVERSAL.tel}`}>{EMERGENCY_UNIVERSAL.label}</a>
+        <p className="ess-112-note">{EMERGENCY_UNIVERSAL.value}</p>
+        {EMERGENCY_BY_COUNTRY.map(c => (
+          <div className="ess-country" key={c.code}>
+            <h4>{c.name} <span className="ess-cc">{c.code}</span></h4>
+            {c.lines.map(l => (
+              <div className="ess-contact" key={l.label}>
+                <span className="ess-contact-label">{l.label}</span>
+                {l.tel
+                  ? <a className="ess-tel" href={`tel:${l.tel}`}>{l.value}</a>
+                  : <span className="ess-contact-value">{l.value}</span>}
+              </div>
+            ))}
+          </div>
+        ))}
+        <div className="ess-fillin">
+          {FILL_IN_CONTACTS.map(f => (
+            <div className="ess-fillin-row" key={f.label}>
+              <strong>{f.label}:</strong> <span className="ess-blank">______________</span>
+              <div className="ess-fillin-hint">{f.hint}</div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      <Section id="ifthen" title="🧯 If this happens…" open={openSecs.has('ifthen')} onToggle={toggleSec}>
+        {IF_THEN.map(it => (
+          <div className="ess-ifthen" key={it.title}>
+            <h4>{it.icon} {it.title}</h4>
+            <ol>{it.steps.map((s, i) => <li key={i}>{s}</li>)}</ol>
+          </div>
+        ))}
+      </Section>
+
+      <Section id="hospitals" title="🏥 Hospitals by zone" open={openSecs.has('hospitals')} onToggle={toggleSec}>
+        {HOSPITAL_ZONES.map(z => (
+          <div className="ess-zone" key={z.zone}>
+            <div className="ess-zone-head">
+              <strong>{z.zone}</strong>
+              <div className="ess-zone-actions">
+                {z.tel && <a className="ess-zone-tel" href={`tel:${z.tel}`} title="Call">📞</a>}
+                {z.pinId && onShowPin && (
+                  <button className="ess-zone-pin" onClick={() => onShowPin(z.pinId!)}>📍 Map</button>
+                )}
+              </div>
+            </div>
+            <div className="ess-zone-hosp">{z.hospital}</div>
+            <div className="ess-zone-where">{z.where}</div>
+            <div className="ess-zone-pharm">💊 {z.pharmacy}</div>
+          </div>
+        ))}
+      </Section>
+
+      <Section id="driving" title="🚗 Driving, borders & money" open={openSecs.has('driving')} onToggle={toggleSec}>
+        {/* The "Book before Jun 16" section is intentionally skipped here — the
+            checklist above is the maintained, plan-accurate booking list. */}
+        {QUICK_TIPS.filter(s => !s.title.startsWith('⚡ Book before')).map(sec => (
+          <div className="ess-tipsec" key={sec.title}>
+            <h4>{sec.title}</h4>
+            <ul>{sec.tips.map((t, i) => <li key={i}>{t}</li>)}</ul>
+            {sec.links && (
+              <div className="ess-tip-links">
+                {sec.links.map(l => (
+                  <a className="ess-tip-link" key={l.url} href={l.url} target="_blank" rel="noreferrer">{l.label}</a>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </Section>
+
+      <Section id="phrases" title="🗣️ Survival phrases" open={openSecs.has('phrases')} onToggle={toggleSec}>
+        {PHRASES.map(g => (
+          <div className="ess-phrasegrp" key={g.title}>
+            <h4>{g.title}</h4>
+            {g.phrases.map((p, i) => (
+              <div className="ess-phrase" key={i}>
+                <div className="ess-phrase-en">{p.en}</div>
+                <div className="ess-phrase-loc">
+                  {p.hr}{p.say && <span className="ess-phrase-say"> · {p.say}</span>}
+                </div>
+                {p.variant && <div className="ess-phrase-var">{p.variant}</div>}
+              </div>
+            ))}
+          </div>
+        ))}
+      </Section>
+
+      <Section id="packing" title="🎒 Packing" open={openSecs.has('packing')} onToggle={toggleSec}>
+        {PACKING.map(g => (
+          <div className="ess-pack" key={g.title}>
+            <h4>{g.title}</h4>
+            <ul>{g.items.map((it, i) => <li key={i}>{it}</li>)}</ul>
+          </div>
+        ))}
+      </Section>
     </div>
+  );
+}
+
+interface SectionProps {
+  id: string;
+  title: string;
+  open: boolean;
+  onToggle: (id: string) => void;
+  children: ReactNode;
+}
+
+function Section({ id, title, open, onToggle, children }: SectionProps) {
+  return (
+    <section className={`ess-section ${open ? 'open' : ''}`}>
+      <button className="ess-section-head" onClick={() => onToggle(id)}>
+        <span>{title}</span>
+        <span className="ess-chevron">{open ? '▾' : '▸'}</span>
+      </button>
+      {open && <div className="ess-section-body">{children}</div>}
+    </section>
   );
 }
