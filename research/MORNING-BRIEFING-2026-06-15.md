@@ -15,6 +15,8 @@ The plan was already structurally solid. Overnight I (1) **restored a dead safet
 - D1 Skradin swim (legal Krka-area swim) · D3 Cavtat swim *during* the airport dead-window · D5 got a swim-canyon + a Neretva kayak at camp (5 activities now) · D8 a post-summit recovery lake swim (kept light on purpose) · D9 a river swim + merged the duplicate Karuč stop into the kayak · **D10 went from 2 stops to a real Skadar water day** (self-rent SUP + secret cove) · D13 an early swim before the kayak.
 - Self-rent water **upgrades**: Boračko (D6) and Piva Lake (D7) are now SUP/kayak, not passive swims.
 
+**Verified the new self-rent activities** (a separate adversarial web check): all real, self-rent confirmed — Jablanica Neretva kayak (Neretva Kayak Safari, ~€20–26pp, WhatsApp ahead), Virpazar SUP (Boat Milica, €10pp/1h or €40pp/day — say "self-guided"), Piva Lake kayak (Nature Park Piva info center, not the "Hook" bar), Boračko (pedalo/rowboat at the beach). Fixed 5 wrong pins (the Jablanica put-in was 3.7 km off) — all corrected live. Operator names + numbers are in each stop's note in the app.
+
 **App: restored the hidden safety sheet** — emergency numbers (112 + per-country), breakdown/accident/police/medical/mountain-rescue playbooks, hospital-by-zone with working map pins, driving/border/fuel/cash rules, survival phrases. It was 547 lines of dead code; now it's the second half of the ✅ Essentials panel and works fully offline. Also fixed two stale checklist items (skydive→Krka; Mljet ferry times).
 
 ## ⚠️ The one decision waiting for you: DEPLOY
