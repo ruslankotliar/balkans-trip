@@ -1,0 +1,393 @@
+[
+  {
+    "id": "hr-velika-duba-zivogosce",
+    "name": "Plaža Velika Duba (Živogošće Blato)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.1734045,
+    "lng": 17.1822572,
+    "description": "Hidden turquoise pebble cove under Biokovo between Živogošće and Blato, with a sea cave you can swim into. Narrow makadam road then a 5-10 min pine-forest walk from paid Blato parking; no cafes, loungers or souvenirs — carry water and shade. (fits D2)",
+    "sources": [
+      "https://putnikofer.hr/preporuke/plaza-velika-duba-zivogosce/ ; https://www.telegram.hr/super1/life/velika-duba-je-sve-sto-trazimo-od-idealne-plaze/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-jezero-duba-peljeska",
+    "name": "Plaža Jezero (Duba Pelješka)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 43.0239011,
+    "lng": 17.1564478,
+    "description": "Shingle cove ~1km from the hamlet Duba Pelješka with no road access — reached by boat/kayak or a foot scramble. Named for a small lake behind it whose water spills across the beach into the sea; faces straight across to Biokovo. A genuine secret cove on north Pelješac. (fits D3)",
+    "sources": [
+      "https://www.mojsmjestaj.hr/upoznaj-hrvatsku/poluotok-peljesac-10-najljepsih-plaza-za-kupanje ; https://blog.adriatic.hr/12-najljepsih-plaza-poluotoka-peljesca/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-uvala-mokalo-orebic",
+    "name": "Uvala Mokalo (Orebić)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.9784984,
+    "lng": 17.2251993,
+    "description": "Quiet pebble-and-rock 'skrivena uvala' just east of Orebić, the local alternative to busy Trstenica — clear water, calm hamlet feel, on the Korčula-ferry side of Pelješac. Low-effort swim/snorkel near the Orebić ferry. (fits D3)",
+    "sources": [
+      "https://www.telegram.hr/super1/life/peljesac-plaze-najljepse-na-jadranu/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-sutmiholjska-mljet",
+    "name": "Plaža i uvala Sutmiholjska (Mljet, Babino Polje)",
+    "country": "HR",
+    "category": "beach",
+    "lat": 42.7418009,
+    "lng": 17.4993829,
+    "description": "Pebble/sand cove on Mljet's south coast near Babino Polje, OUTSIDE the national park (no ticket), far less hyped than Saplunara or Blace/Limuni. Open-sea facing with wild Mediterranean scrub — 'just pebbles underfoot and a view to the open sea'. Good late-afternoon swim away from NP crowds. (fits D4)",
+    "sources": [
+      "https://putnikofer.hr/preporuke/sutmiholjska-plaza-i-uvala-na-otoku-mljetu/ ; https://www.turistickeprice.hr/mljet-plaze-kakve-necete-naci-nigdje-drugdje/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-rijeka-ljuta-konavle",
+    "name": "Rijeka Ljuta — izvor i kanjon (Konavle)",
+    "country": "HR",
+    "category": "swim",
+    "lat": 42.5366496,
+    "lng": 18.3780926,
+    "description": "Croatia's southernmost river: a powerful ice-cold karst spring erupting under a 100m cliff and roaring through a short laurel-shaded canyon past centuries-old stone mills. Glacial even in June — a refreshing cold-plunge + scenic walk; distinct from the Konavoski Dvori restaurant at the same mills. (fits D12)",
+    "sources": [
+      "https://www.dalmacijadanas.hr/svi-znaju-kako-funkcionira-mlin-no-mnogi-ne-znaju-sto-je-stupa-ivo-divanovic-uveo-nas-je-u-konavoske-mlinove-i-cudesni-izvor-ledene-ljute/ ; https://www.migk.hr/lokaliteti/rijeka-ljuta"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-plaza-dance-dubrovnik",
+    "name": "Plaža Danče (Dubrovnik)",
+    "country": "HR",
+    "category": "swim",
+    "lat": 42.6410038,
+    "lng": 18.1011388,
+    "description": "The locals' city swim: a rocky platform with ladders into the sea just west of the old town below the Danče monastery, 5 min from Pile. Authentic 'pravi Dubrovnik' feel, great for sunset — a final-day swim without the Banje tourist scene. (fits D13)",
+    "sources": [
+      "https://www.tportal.hr/lifestyle/clanak/bijeg-od-guzvi-i-skrivene-plaze-evo-sto-nikako-ne-smijete-propustiti-u-dubrovniku-20250627 ; https://blog.adriatic.hr/plaze-u-dubrovniku/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-konoba-skojera-trpanj",
+    "name": "Konoba Škojera (Trpanj, Pelješac)",
+    "country": "HR",
+    "category": "food",
+    "lat": 43.0088308,
+    "lng": 17.2695541,
+    "description": "Family konoba on the Trpanj waterfront known among Croatians for lamb and bread ispod peke (under the bell) and traditional Dalmatian dishes — a local peka stop near the Trpanj ferry. Reserve ahead; peka needs advance notice. (fits D3)",
+    "sources": [
+      "https://konobaskojeratrpanj.wordpress.com/category/janjetina-ispod-peke/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-vodopad-pjene-stolac",
+    "name": "Vodopad Pjene (Bregava, Stolac)",
+    "country": "BA",
+    "category": "swim",
+    "lat": 43.0903,
+    "lng": 17.9651,
+    "description": "The Bregava's prettiest waterfall just NE of Stolac (above the Begovina villas, by the Poplašić mill): a cave behind it, a small stone beach, swimming and water-jumping. Locals rent kayaks ~10 KM/hr at the bathing spot a few hundred metres downstream. Free, cool, self-rent — beats the Kravica crowds. Refine the exact platform on-site. (fits D4)",
+    "sources": [
+      "https://www.stolac.co/stolac/stolac-vijesti/najljepse-plaze-na-rijeci-bregavi-sve-popularnije-i-medu-turistima ; https://stolac.city/lifestyle/foto-video-oaza-ljepote-i-mira-vodopad-pjene-biser-nedaleko-od-sredista-stoca/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-pec-mlini-grude",
+    "name": "Avanturistički park Peć Mlini (Grude)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.3361,
+    "lng": 17.3293,
+    "description": "Adrenaline park at the karst spring of the Tihaljina, around old mills and the Ravlića cave (one of Europe's oldest inhabited caves, 5 KM). Headline: the longest zipline in BiH — 1km+, up to 62 km/h, 50 KM/person — plus sport climbing and a swimmable emerald spring. Daily 09:00-19:00 Apr-Oct, parking included. The optional via ferrata is separate/skippable. (fits D4)",
+    "sources": [
+      "https://furaj.ba/na-izvoru-tihaljine-avanturisticki-park-pec-mlini-kod-gruda/ ; https://outdoors.ba/reportaze/avanturisticki-park-pec-mlini/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-civelj-jablanicko-jezero",
+    "name": "Plaža Čivelj + Ostrožac iron bridge (Jablaničko jezero)",
+    "country": "BA",
+    "category": "swim",
+    "lat": 43.679,
+    "lng": 17.771,
+    "description": "Lake beach in Gornje Paprasko ~8km from Jablanica on the M17, fitted with a diving/jump platform (skakaonica), gravel shore and concrete water access; pair it with the big tin reservoir bridge at Ostrožac (~43.6851,17.8305) that locals call 'bosanski Golden Gate'. Self-organised swim+jump stop; busy on weekends. (fits D5)",
+    "sources": [
+      "https://furaj.ba/jablanicko-jezero/ ; https://shumarak.ba/2025/07/20/vodic-za-ljetovanje-s-djecom-na-jablanickom-jezeru/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-cevabdzinica-rota-mostar",
+    "name": "Ćevabdžinica Rota (Mostar)",
+    "country": "BA",
+    "category": "food",
+    "lat": 43.337,
+    "lng": 17.8133,
+    "description": "Locals' repeat pick for the best ćevapi in Mostar since 1996 (Onešćukova 7, 2 min from Stari Most), with a fan-cooled garden for the June heat — the genuine local alternative to tourist-famous Tima Irma. Cheap quick-grab. (fits D5)",
+    "sources": [
+      "https://hercegovina.in/pitanje-svih-pitanja-gdje-se-jedu-najbolji-cevapi-u-hercegovini/ ; https://www.akta.ba/Firma/cevabdzinica-rota-mostar/332502"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-stabanska-jezera",
+    "name": "Stabanska jezera (Volujak)",
+    "country": "ME",
+    "category": "lake",
+    "lat": 43.19922,
+    "lng": 18.721859,
+    "description": "Twin glacial lakes on Volujak's south flank almost no foreigner reaches; Veliko (1325m) is emerald, 9m deep, 16-20°C and swimmable, mountaineers wild-camp on its shore. A wilder, emptier alternative to Black/Trnovačko. Drive to Stabna village, then ~4.5km hike up; last road km is macadam. (fits D7)",
+    "sources": [
+      "https://www.photomontenegro.me/stabanska-jezera/ ; https://sharemontenegro.me/da-li-ste-culi-za-stabanska-jezera-dragulje-parka-prirode-piva/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-vidikovac-babina-greda-piva",
+    "name": "Vidikovac Babina Greda (Piva)",
+    "country": "ME",
+    "category": "viewpoint",
+    "lat": 43.189364,
+    "lng": 18.8610641,
+    "description": "Repeatedly called Piva's most beautiful viewpoint — and you can DRIVE to it (village Donji Unač, ~2.5km off the P14, ~9km from Plužine, paved). Covered shelters with benches/tables for a shaded picnic over the turquoise Piva reservoir, the canyon, and the Bioč-Maglić-Volujak + Durmitor wall. (fits D7)",
+    "sources": [
+      "https://sharemontenegro.me/park-prirode-piva-top-5-mjesta-koja-morate-posjetiti/ ; https://www.youtube.com/watch?v=xm4_rK6DH40"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-crvena-greda-durmitor",
+    "name": "Crvena greda (2164m), Durmitor",
+    "country": "ME",
+    "category": "hike",
+    "lat": 43.161905,
+    "lng": 19.052177,
+    "description": "A local hiking blogger's 'most beautiful Durmitor viewpoint' — only ~4km / ~424m gain, walking-only (no scrambling or via ferrata), a relaxed half-day looking down on Jablan/Crno/Zminje lakes and across to Bobotov Kuk and the Tara canyon. Bigger view-per-effort than the crowded Bobotov Kuk slog. Trailhead at Bosača near Žabljak. (fits D8)",
+    "sources": [
+      "https://jasninaputovanja.me/2020/12/06/crvena-greda-najljepsi-durmitorski-vidikovac/ ; https://peakvisor.com/peak/crvena-greda.html"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-dobri-do-durmitor-camp",
+    "name": "Dobri Do plateau wild-camp (Kamp Šarban)",
+    "country": "ME",
+    "category": "camping",
+    "lat": 43.1030316,
+    "lng": 19.0177824,
+    "description": "Rolling pasture on Durmitor's south side ~3km from Sedlo pass toward Trsa (~15km from Žabljak, mostly macadam) — just OUTSIDE the NP boundary, so tent camping is free and tolerated, with a water source and open views under Prutaš/Bobotov Kuk. A basic marked pitch (Kamp Šarban) exists too; classic dawn launch for Prutaš/Škrčka/Bobotov Kuk. (fits D8)",
+    "sources": [
+      "http://sasapetrovic.com/dobri-do-durmitor/ ; https://www.summitpost.org/dobri-do-route/161930"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-modro-srablje-valovito-jezera",
+    "name": "Modro–Srablje–Valovito jezera (Sedlo ring)",
+    "country": "ME",
+    "category": "lake",
+    "lat": 43.08583,
+    "lng": 19.07222,
+    "description": "Three small, quiet Durmitor lakes under Sedlena greda off the busy Black Lake circuit, on the scenic Žabljak→Sedlo→Trsa ring road. Modro (1609m, trout & wild ducks) sits with tiny Srablje and Valovito just over a moraine ridge — a short walk linking 'mountain eyes' with almost nobody around. (This is the Durmitor Modro jezero, not the Imotski one in data.) (fits D8)",
+    "sources": [
+      "https://www.durmitor.rs/modro-jezero/ ; https://jasninaputovanja.me/2021/01/16/durmitor-upoznajte-modro-srablje-i-valovito-jezero/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-sinjajevina-ckara-vidikovac",
+    "name": "Sinjajevina — Ckara vidikovac & paragliding plateau",
+    "country": "ME",
+    "category": "viewpoint",
+    "lat": 42.94642,
+    "lng": 19.513646,
+    "description": "Montenegro's vast (120,000ha) high pasture-plateau dotted with working katuns, almost untouched by tourism. The Ckara lodge area (1624m, ~12km / ~1h40 jeep-track from Mojkovac via Gacka) has the region's signature viewpoint and an official paragliding launch over the Tara valley — and a prime dark-sky / Milky-Way spot. Off-corridor; honest cost is the rough access track. (fits D8)",
+    "sources": [
+      "https://sharemontenegro.me/snimak-mjeseca-cudljiva-surova-zagonetna-sinjajevina/ ; https://peakvisor.com/peak/ckara.html"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-eko-katun-goles",
+    "name": "Eko Katun Goleš (Bjelasica, above Biogradska)",
+    "country": "ME",
+    "category": "food",
+    "lat": 42.8778547,
+    "lng": 19.5915654,
+    "description": "Working summer katun at ~1596m near Trabaljevo/Kolašin (jeep access, ~12km from Trebaljevo), 5 min from a viewpoint over Biogradska Lake. The draw is the real mountain table — own cheese, ham, handmade lemonade from the shepherds — plus simple eco-cabins to sleep up high; on the marked Bjelasica trails. Best as a D8→D9 transition; coord is the OSM Katun Goleš node (confirm exact pitch with host). (fits D9)",
+    "sources": [
+      "http://www.odmaraj.me/web/listing/eko-katun-goles-kolasin-crna-gora/ ; https://kolasin.me/me/smjestaj/eko-katun-goles/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-uvala-veslo-lustica",
+    "name": "Uvala / Rt Veslo (Luštica)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.3665773,
+    "lng": 18.6113532,
+    "description": "Free wild cove on outer Luštica with cascading limestone steps, turquoise water, cliffs ideal for jumping and warm natural rock-pools. No infrastructure (small kiosk at Kamp Begović above); reach via the village track or by SUP/kayak. Distinct from the existing Žanjic/Dobreč coves. Bring water shoes (sharp rock, sea urchins); dangerous in wind. (fits D11)",
+    "sources": [
+      "https://nova.rs/magazin/putovanja/rt-veslo-plaza/ ; https://www.turizzam.com/en/crna-gora/attraction/view/uvala-veslo/231"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-plaza-crvena-stijena-bar",
+    "name": "Plaža Crvena stijena (Red Rock, Bar)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.0712,
+    "lng": 19.0948,
+    "description": "A ~50m red-cliff cove hidden behind Volujica hill near Bar, walled off so it stayed 'saved from mass tourism' — turquoise and crystal clear. Best by small boat/SUP from Bar; the only land route is an unlit tunnel (Rikavac) + a short swim (lantern needed), or a steep risky scramble locals advise against. A real secret-swim payoff if you go deep south. (fits D9)",
+    "sources": [
+      "https://www.espreso.co.rs/svet/crna-gora/1553802/lepote-plaze-crvena-stijena-u-crnoj-gori-foto ; https://nova.rs/magazin/putovanja/plaza-crvena-stijena-u-crnoj-gori-najlepsa-na-jadranu/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-drobni-pijesak",
+    "name": "Drobni Pijesak (Sveti Stefan ↔ Reževići)",
+    "country": "ME",
+    "category": "beach",
+    "lat": 42.2345,
+    "lng": 18.9024,
+    "description": "A 240m ground-sand cove walled by green hills with blue-flag clear water, 3 min north of Rijeka Reževići yet minutes from the busiest resorts. Long boat-only so it stayed unspoiled; many still arrive by sea. Calm scenic alternative to crowded Sveti Stefan beaches — self-rent boat or a short trail in; only a small seasonal bar. (fits D11)",
+    "sources": [
+      "https://adriaticways.com/drobni-pijesak-beach-sveti-stefan/ ; https://www.total-montenegro-news.com/travel/1417-discover-the-beaches-of-montenegro-drobni-pijesak"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-zaboj-skadar-viewpoint",
+    "name": "Zaboj viewpoint (Skadar, Komarno trail)",
+    "country": "ME",
+    "category": "viewpoint",
+    "lat": 42.2879,
+    "lng": 19.0614,
+    "description": "An abandoned stone hamlet on a rocky perch over Skadar's central meanders — the quiet alternative to the mobbed Pavlova strana, with views from Lovćen to Rumija. A marked circular trail leaves the road near Komarno village and follows old moss-grown paths (no thorn-bushwhacking). Same infinity-meander view, basically alone. Coord = Komarno trailhead. (fits D9)",
+    "sources": [
+      "https://nestvarna.blog/2021/05/20/rijeka-crnojevica-skadarsko-jezero-karuc-dodosi-pavlova-strana/ ; https://sharemontenegro.me/plaze-vidikovci-i-ostrva-skadarskog-jezera/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-kafe-letrika-kotor",
+    "name": "Kafe Letrika (Kotor old town)",
+    "country": "ME",
+    "category": "bar",
+    "lat": 42.4248,
+    "lng": 18.7712,
+    "description": "Small characterful cocktail/DJ bar by the Sea Gate in Kotor's old town (Stari grad 427) where locals and travellers mix for music and live DJs — the genuine-vibe spot over the generic tourist terraces (often paired with nearby Nitrox Pub for craft beer). A real night-out anchor inside the walls; confirm the exact door on arrival. (fits D11)",
+    "sources": [
+      "https://www.planplus.rs/en/montenegro/kafe-letrika-cafe-bar/79785 ; https://montenegro.org/kotor-nightlife-our-5-favourite-spots/"
+    ],
+    "tags": [
+      "local-gem"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  }
+]
