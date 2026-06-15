@@ -35,15 +35,14 @@ Committed = shortlist + day. 🛌 overnight · ★ = Claude's recommended pick (
 - 🛌 Home in Poplat [accommodation]
 
 ## DAY 5 (Sat Jun20) — 06:00–23:30
+- • Blagaj Tekija [sight]
 - • ★ Stari Most Bridge Jump (Mostari Diving Club) [activity]
 - • Mostar (Stari Most) [town]
 - • Tima-Irma (Mostar ćevapi institution) [food]
-- • Blagaj Tekija [sight]
 - • Buna River Swimming @ Blagaj [nature]
 - • Blagaj Buna-spring trout terraces (Vrelo & neighbours) [food]
 - • Fortica Hill — Skywalk & Zipline [activity]
 - • ★ Drežnica / Drežanka canyon — local swim canyon [nature]
-- • Jablanica Kayak Safari (Neretva canyon) [activity]
 - 🛌 Ravna Camping [campsite]
 
 ## DAY 6 (Sun Jun21) — 08:00–00:00
@@ -53,7 +52,6 @@ Committed = shortlist + day. 🛌 overnight · ★ = Claude's recommended pick (
 - • ★ Sarajevo (Bascarsija old town) [town]
 - • Ćevabdžinica Petica Ferhatović (Sarajevo ćevapi) [food]
 - • Žuta tabija (Yellow Fortress) — Sarajevo's sunset ritual [viewpoint]
-- • Kino Bosna (Sarajevo — former cinema bar) [nightlife]
 - • Baščaršija bar cluster (Sunday night out: Barometar, Zlatna Ribica, Cheers, Raya 71) [nightlife]
 - 🛌 Home in Pale [accommodation]
 
@@ -97,7 +95,6 @@ Committed = shortlist + day. 🛌 overnight · ★ = Claude's recommended pick (
 - 🛌 Camping Mimoza (Donji Stoliv, Kotor Bay) [campsite]
 
 ## DAY 12 (Sat Jun27) — 07:30–21:30
-- • Pasjača Beach (Konavle cliffs) [beach]
 - • ★ Cavtat self-drive boat rental — no licence/skipper (Mario Milicic) [activity]
 - • ★ Cavtat Rat peninsula swim & snorkel coves (Kamen Mali, Ključice, Žal) [beach]
 - 🛌 Camping Kate (Mlini, near Dubrovnik) [campsite]
