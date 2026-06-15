@@ -776,18 +776,6 @@ export default function App() {
     }
   }
 
-  /** Focus the map (and detail panel) on a place by id — used by Essentials
-   *  to jump to a hospital pin from contingency-places.json. */
-  function focusPin(id: string) {
-    const p = placeById.get(id);
-    if (!p) return;
-    setEssentialsOpen(false);
-    setSelectedId(id);
-    mapRef.current?.flyTo([p.lat, p.lng], Math.max(mapRef.current.getZoom(), 11), {
-      duration: 0.8,
-    });
-  }
-
   // ---- Offline prep: build every day route once on wifi so it replays from
   // the localStorage cache in dead zones (tiles cache as you pan, via the SW).
   const [prepping, setPrepping] = useState(false);
@@ -1195,7 +1183,6 @@ export default function App() {
         <Suspense fallback={<DialogFallback title="Loading essentials…" />}>
           <LazyEssentials
             onClose={() => setEssentialsOpen(false)}
-            onShowPin={focusPin}
             onPrepOffline={prepOffline}
             prepping={prepping}
           />

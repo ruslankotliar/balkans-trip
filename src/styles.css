@@ -2643,7 +2643,7 @@ body.trip-mode .card-links .today-nav-link {
 }
 .ess-task {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   padding: 4px 0;
 }
@@ -2656,13 +2656,20 @@ body.trip-mode .card-links .today-nav-link {
   flex: 1;
   min-width: 0;
   font: inherit;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.4;
   border: 1px solid transparent;
   border-radius: 6px;
   padding: 6px 6px;
   background: transparent;
   color: #1f2b3d;
+  /* full task text, wrapped (no truncation) + auto-grown by JS */
+  display: block;
+  width: 100%;
+  resize: none;
+  overflow: hidden;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 .ess-task-input:focus {
   outline: none;
