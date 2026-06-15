@@ -73,7 +73,7 @@ Committed = shortlist + day. 🛌 overnight · ★ = Claude's recommended pick (
 - • Ostrog Monastery [sight]
 - • ★ Enjoy Skadar Lake kayak base (Rijeka Crnojevića) [activity]
 - • Rijeka Crnojevića — Danilo's Bridge swim + kayak village [activity]
-- • Konoba Mostina (Rijeka Crnojevića — Skadar carp & eel) [food]
+- • ★ Konoba Stari Most (Rijeka Crnojevića) [food]
 - • Pavlova Strana viewpoint (Skadar Lake) [viewpoint]
 - 🛌 Home in Rvaši [accommodation]
 
