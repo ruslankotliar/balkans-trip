@@ -157,6 +157,24 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 }
 
+/* Tappable star by the detail-view title — lets the user override a pick. */
+.pick-toggle {
+  border: none;
+  background: none;
+  padding: 0 6px 0 0;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #c2c7cf;
+  vertical-align: baseline;
+}
+.pick-toggle.on {
+  color: #f5a623;
+}
+.pick-toggle:active {
+  transform: scale(0.9);
+}
+
 /* Empty state when filters produce no results */
 .place-list-empty {
   padding: 24px 16px;
