@@ -114,6 +114,8 @@ export interface Override {
   note?: string;
   /** Estimated minutes to spend at the stop. Used by the schedule clock. */
   timeMinutes?: number;
+  /** ★ Recommended pick — Claude's suggested option for the day (renders a star badge). */
+  pick?: boolean;
 }
 
 export type Overrides = Record<string, Override>;
@@ -140,6 +142,9 @@ export function normalizeOverride(value: Override | undefined | null): Override 
   if (value.dayOrder !== undefined) next.dayOrder = value.dayOrder;
   if (value.note !== undefined) next.note = value.note;
   if (value.timeMinutes !== undefined) next.timeMinutes = value.timeMinutes;
+  // Only persist pick when truthy — a `false`/absent pick is the default and
+  // would otherwise keep an otherwise-empty override row alive.
+  if (value.pick) next.pick = true;
   return Object.keys(next).length > 0 ? next : null;
 }
 

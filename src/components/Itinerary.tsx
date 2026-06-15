@@ -119,7 +119,8 @@ export default function Itinerary({
             km: Math.min(...dayAnchors.map((a) => haversineKm(a.lat, a.lng, p.lat, p.lng))),
           }))
           .filter((x) => x.km <= optRadiusKm)
-          .sort((a, b) => a.km - b.km)
+          // ★ recommended picks first, then nearest.
+          .sort((a, b) => Number(!!b.p.pick) - Number(!!a.p.pick) || a.km - b.km)
           .slice(0, 40);
 
   const route = routes[day];
@@ -255,7 +256,10 @@ export default function Itinerary({
                       {i + 1}
                     </span>
                     <span className="itin-stop-main">
-                      <span className="itin-stop-name">{entry.place.name}</span>
+                      <span className="itin-stop-name">
+                        {entry.place.pick && <span className="pick-star" title="Recommended pick">★ </span>}
+                        {entry.place.name}
+                      </span>
                       {hint && <span className="itin-stop-hint">{hint}</span>}
                       {entry.place.note && <span className="itin-stop-note">🕘 {entry.place.note}</span>}
                     </span>
@@ -326,6 +330,7 @@ export default function Itinerary({
                 onClick={() => onSelect(p)}
               >
                 <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
+                {p.pick && <span className="pick-star" title="Recommended pick">★</span>}
                 <span className="place-name">{p.name}</span>
                 <span className="itin-nearby-cat">{p.category}</span>
                 <span className="itin-nearby-km" title="estimated drive time (straight-line based)">{formatDriveEst(km)}</span>

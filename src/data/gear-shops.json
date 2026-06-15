@@ -1,0 +1,63 @@
+[
+  {
+    "id": "hr-decathlon-zadar",
+    "name": "Decathlon Zadar — D1 gas canisters + any forgotten gear",
+    "country": "HR",
+    "category": "other",
+    "lat": 44.11585,
+    "lng": 15.2551,
+    "description": "The single most reliable D1 stop to buy camping-stove gas canisters (you can't fly with gas, so this is the mandatory tomorrow-morning errand). Stocks BOTH screw-thread EN417/7-16\" UNEF cartridges AND Campingaz clip/pierce cartridges — bring your stove or know its valve type, the two are NOT interchangeable. Also the catch-all for anything left at home: aqua/water shoes, dry bags, headtorch, trekking poles, a cheap sleeping bag/liner. In the Gaženica retail park ~10 min from Zadar airport, right on the way to the A1 northbound — Intersport and Hervis are in the same cluster (30 m / 2 km) if Decathlon is out of a thread type.",
+    "communityNotes": "Croatia traveler reports confirm screw-thread (EN417) canisters ARE obtainable in Croatia and Decathlon is the most consistent source; note one cross-Europe gotcha that a few stores have quietly dropped screw-thread in favour of Campingaz clip type — so check the cartridge matches your stove valve at the shelf before paying. Cheapest place to also grab water shoes (~€10-15), a 230 g + a 100 g canister covers a 13-day camp-cook trip with margin. Address: Ul. Bleiburških žrtava 17, 23000 Zadar. Tue Jun 16 = open (Decathlon HR typically 09:00-21:00 Mon-Sat).",
+    "sources": [
+      "https://www.decathlon.hr/content/51-store-zadar",
+      "https://www.tripadvisor.com/ShowTopic-g295374-i10777-k10544455-Decathlon-Zadar_Zadar_County_Dalmatia.html",
+      "https://www.cyclechat.net/threads/gas-cannisters-when-touring-in-europe.59748/"
+    ],
+    "cost": "Screw-thread canister ~€4-6 (230 g); Campingaz CV470 ~€7; aqua shoes ~€10-15",
+    "timeNeeded": "20-30 min",
+    "bestTime": "D1 right after airport pickup, before driving north to Krka",
+    "tags": ["logistics", "gear", "gas", "day1", "off-route"],
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-bauhaus-zadar",
+    "name": "BAUHAUS Zadar — early-open gas canister fallback (08:00)",
+    "country": "HR",
+    "category": "other",
+    "lat": 44.11296,
+    "lng": 15.26886,
+    "description": "DIY/hardware megastore in the same south-Zadar (Gaženica) zone as Decathlon, ~1.5 km apart. The value here is it OPENS AT 08:00 (Mon-Sat) — earlier than the sport shops — so if you land 09:00 and want the gas errand done before anything else, this is the fastest in-and-out. Stocks camping gas cartridges (Campingaz + threaded) in the garden/grill section. Use Decathlon for the wider gear range; use Bauhaus if you only need gas and want to be quick.",
+    "communityNotes": "BAUHAUS HR sells 'plinske kartuše za kampiranje' (camping gas cartridges) online and in-store; the Zadar branch carries them in the seasonal/grill aisle. Address: Ulica akcije Maslenica 6, 23000 Zadar. Hours Mon-Sat 08:00-21:00, Sun 09:00-14:00. Phone +385 23 233 900. Same caveat as everywhere: match the cartridge fitting (clip vs screw) to your stove.",
+    "sources": [
+      "https://www.bauhaus.hr/plinske-kartuse-za-kampiranje/c/10001072",
+      "https://radnenedjelje.com/trgovina/bauhaus-zadar/"
+    ],
+    "cost": "Camping gas cartridge ~€4-7",
+    "timeNeeded": "15 min",
+    "bestTime": "D1 08:00+ — earliest gas option in Zadar",
+    "tags": ["logistics", "gear", "gas", "day1", "off-route"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-iglusport-sibenik",
+    "name": "IgluSport Šibenik — on-route outdoor shop (airport→Krka)",
+    "country": "HR",
+    "category": "other",
+    "lat": 43.7350,
+    "lng": 15.8888,
+    "description": "Dedicated outdoor/mountaineering shop in central Šibenik, almost exactly on the Zadar-airport→Krka NP drive (the D1 route). Better for technical gear than a supermarket: quality sleeping bags, gas cartridges, trekking poles, proper boots — the place to fix a real gear gap, not just gas. Useful if you decide to buy your gas mid-drive rather than circling back through Zadar's retail park.",
+    "communityNotes": "Address: Mesarske stube 1, Šibenik. Hours Mon-Fri 09:00-13:00 and 17:00-20:00 (midday closure) — so a Tue-morning arrival window catches it 09:00-13:00, but it is CLOSED Sat/Sun. Phone +385 99 209 8008. Sister branch in Zadar (Antuna Dobronića 1) opens only at 10:00 and is closed Sat, so for an early start the Šibenik shop or Bauhaus/Decathlon beat it.",
+    "sources": [
+      "https://www.iglusport.hr/",
+      "https://adriacamps.com/en/camping-shops/"
+    ],
+    "cost": "Gas cartridge ~€5-7; sleeping bags / boots full retail",
+    "timeNeeded": "20 min",
+    "bestTime": "D1 09:00-13:00 only (midday + weekend closures)",
+    "tags": ["logistics", "gear", "gas", "day1", "off-route"],
+    "rating": 3,
+    "status": "candidate"
+  }
+]

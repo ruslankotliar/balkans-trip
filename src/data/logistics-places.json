@@ -15,7 +15,7 @@
     ],
     "cost": "4 adults + car ≈ €49.90 each way (adult €6.10, car €25.50, 2026 high season)",
     "timeNeeded": "~45 min crossing + 60–120 min queue buffer",
-    "bestTime": "Day 4 (Fri Jun 19) — Friday = lighter queue than Saturday. Target 07:00–08:00 sailing for maximum island time; queue 60+ min early. 13:00 is the last comfortable outbound; 17:00 plan-B only.",
+    "bestTime": "D3 (Thu Jun 18) EVENING — the trip's #1 fragility. Friend lands DBV 17:20; pickup, then ~1h45–2h drive DBV→Prapratno (via Dubrovnik+Ston) = arrive ~19:30–19:45 for the 20:30 LAST sailing. June 2026 Prapratno→Sobra (29 May–2 Jul block): 07:00, 10:15, 13:00, 17:00, 20:30 (verified Jun 2026). Cars first-come, no reservation, ~50/boat — be in the queue ≥45 min early. Pre-buy tickets online to skip the desk. Plan B if flight delayed past ~18:30: sleep mainland near Ston/Slano, take 07:00 or 10:15 ferry next morning.",
     "tags": [
       "ferry",
       "logistics",
@@ -32,12 +32,12 @@
     "lat": 42.73691,
     "lng": 17.59871,
     "description": "Mljet's main car-ferry port (north coast), the Mljet end of the Prapratno line. ~half-hour drive from the Mljet NP lakes / Montokuc viewpoint at the west end.",
-    "communityNotes": "Same first-come-first-served rule as Prapratno. Rough weather can delay Sobra departures ~60 min. June departures to Prapratno: 06:00, 09:00, 12:00, 16:00, 19:30.",
+    "communityNotes": "Same first-come-first-served rule as Prapratno. Rough weather can delay Sobra departures ~60 min. June 2026 departures to Prapratno: 06:00, 09:00, 12:00, 16:00, 19:30.",
     "sources": [
       "https://www.dubrovnik-online.net/prapratno-mljet-ferry"
     ],
     "timeNeeded": "~45 min crossing",
-    "bestTime": "Day 5 (Jun 20) — June sailings from Sobra: 06:00, 09:00, 12:00, 16:00, 19:30. To reach Kravica before crowds arrive: catch the 06:00 — depart camp by 05:30, arrive Prapratno ~06:45, drive 2h → Kravica 08:45. Otherwise 09:00 sailing lands at Kravica ~11:30 (still swimmable, busier). First-come; same queue rules as Prapratno.",
+    "bestTime": "D4 (Fri Jun 19) RETURN — after the Mljet morning (kayak/SUP + Odysseus Cave), target the 12:00 Sobra→Prapratno sailing (queue at Sobra by ~11:00), then drive ~2.5h to Kravica/Počitelj and on into Bosnia (Poplat). June 2026 Sobra→Prapratno: 06:00, 09:00, 12:00, 16:00, 19:30. Don't over-commit the morning — one marquee water activity, then the ferry. First-come; same queue rules as Prapratno.",
     "tags": [
       "ferry",
       "logistics",
@@ -126,10 +126,56 @@
       "https://globonautas.org/en/travel-tips/border-between-croatia-montenegro/",
       "https://easybalkantransfers.com/blog/border-crossings-balkans/"
     ],
-    "bestTime": "Day 11 (Jun 26) — DO NOT USE for ME→HR. EES biometric queues 1–4h. Use VITALJINA/Karasovići (15 km south of Kotor, via Herceg Novi) instead — 15–45 min wait. Only fall back here before 08:00 or after 21:00 if Vitaljina is closed.",
+    "bestTime": "D12 (Sat Jun 27) ME→HR return — DO NOT USE. Saturday peak-June EES queues 1–4h (worst 10:00–14:00). Use VITALJINA/Kobila instead (cars only, via Herceg Novi → Molunat, ~52km/55–65min from Kotor, then ~20–25min to DBV/Konavle) — consistently 10–45 min. Cross EARLY (before ~08:00), do the border first, then Pasjača/Konavle on the HR side. Vitaljina is 24/7 but OCCASIONALLY closed without notice — check the fanfani.me live camera before setting off; if closed, fall back here before 08:00 or after 21:00.",
     "tags": [
       "border",
       "logistics"
+    ],
+    "rating": 5,
+    "status": "candidate",
+    "cost": "Free"
+  },
+  {
+    "id": "hr-vitaljina-border",
+    "name": "Vitaljina / Kobila border (ME↔HR — the fast back-door)",
+    "country": "HR",
+    "category": "other",
+    "lat": 42.423366,
+    "lng": 18.513642,
+    "description": "The small ME↔HR coastal crossing south of Herceg Novi, reached via Sutorina → Njivice → Molunat. Cars and light vehicles ONLY (no buses/coaches) — which is exactly why it stays fast. THE recommended D12 (Jun 27 Sat) return crossing instead of Debeli Brijeg. Drops you straight into Croatia's Konavle region, ~20–25 min from Dubrovnik airport / Pasjača.",
+    "communityNotes": "As of 2026: 'quiet and mostly stable', queues usually 10–15 min, max ~45 min even on a peak weekend — vs 1–5 h at Debeli Brijeg on a summer Saturday. Open 24/7. THE one real catch: it is occasionally closed without advance notice; if it's shut you lose more time backtracking than you'd have waited at the main crossing. So CHECK the live camera (fanfani.me) before committing, and keep Debeli Brijeg as the fallback (cross it before 08:00 if you must). Approach roads paved but narrow/winding through rural Konavle — passable in any car, just slow. EES biometric registration still applies on HR entry (non-EU passports), but the queue is tiny.",
+    "sources": [
+      "https://www.fanfani.me/en/road-maps/croatia-montenegro-border-crossing-point-vitaljina-kobila-camera/",
+      "https://bordercrossinghub.com/vitaljina-kobila-border-crossing/",
+      "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k14068094-Vitaljina_border_crossing-Montenegro.html"
+    ],
+    "bestTime": "D12 (Sat Jun 27) — cross EARLY (before ~08:00, before Budva day-trippers fill the coast road). Kotor → Vitaljina ~52 km / 55–65 min via Herceg Novi then the Molunat turnoff. Border first, then Pasjača/Cavtat/Konavle on the HR side. Check fanfani.me camera before leaving Kotor Bay.",
+    "tags": [
+      "border",
+      "logistics"
+    ],
+    "rating": 5,
+    "status": "candidate",
+    "cost": "Free"
+  },
+  {
+    "id": "me-scepan-polje-border",
+    "name": "Hum / Šćepan Polje border (BA↔ME — the inland crossing)",
+    "country": "ME",
+    "category": "other",
+    "lat": 43.347922,
+    "lng": 18.845504,
+    "description": "Remote, scenic BA→ME crossing at the Tara/Piva confluence, where the rental enters Montenegro on D7 (Jun 22). The Tara-rafting put-in is right here, and the Piva-canyon tunnel road starts on the ME side. Open 24/7.",
+    "communityNotes": "Border itself is quick and uncongested — real reports: Bosnia exit = fast passport check; Montenegro entry wants the VEHICLE DOCUMENTS (registration) + gives an entry stamp, done in minutes. The Tara-canyon bridge has a 12-tonne limit (irrelevant for a car). The Foča → Hum approach (BA side) is narrow, in places single-lane — you stop and wait for oncoming traffic; fuel up in FOČA before this stretch. On the ME side the Piva canyon road (Šćepan Polje → Plužine → Mratinje dam) is 'tunnel after tunnel' — ~56 mostly unlit, single-lane tunnels carved into the cliff. Spectacular but slow: budget ~2.5–3 h Šćepan Polje → Žabljak, lights ON, honk before blind tunnels, daylight only. Have the rental cross-border letter + green card ready — this is where rental papers get spot-checked.",
+    "sources": [
+      "https://awaywiththesteiners.com/bosnia-montenegro-border-crossing/",
+      "https://bordercrossinghub.com/border-crossings-between-bosnia-and-herzegovina-and-montenegro/"
+    ],
+    "bestTime": "D7 (Mon Jun 22) — arrive ~10:15 for the 11:30 Tara raft at Brštanovica (the put-in is at the crossing). Cross after rafting into the Piva canyon in DAYLIGHT — never start the unlit tunnels for the first time after dark.",
+    "tags": [
+      "border",
+      "logistics",
+      "piva"
     ],
     "rating": 5,
     "status": "candidate",

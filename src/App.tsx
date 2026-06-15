@@ -691,6 +691,21 @@ export default function App() {
     applyOverrides((o) => ({ ...o, [id]: { ...o[id], note } }));
   }
 
+  function setPick(id: string, pick: boolean) {
+    applyOverrides((o) => {
+      const current = o[id] ?? {};
+      const next = { ...o };
+      if (pick) {
+        next[id] = { ...current, pick: true };
+      } else {
+        const { pick: _drop, ...rest } = current;
+        if (Object.keys(rest).length === 0) delete next[id];
+        else next[id] = rest;
+      }
+      return next;
+    });
+  }
+
   function setTimeMinutes(id: string, minutes: number | null) {
     applyOverrides((o) => {
       const current = o[id] ?? {};
@@ -983,6 +998,7 @@ export default function App() {
                       onClick={() => selectPlace(p)}
                     >
                       <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
+                      {p.pick && <span className="pick-star" title="Recommended pick">★</span>}
                       <span className="place-name">{p.name}</span>
                       {booking && (
                         <a
@@ -1159,6 +1175,7 @@ export default function App() {
         onAssignDay={assignDay}
         onFocusDay={focusPlanDay}
         onTimeMinutes={setTimeMinutes}
+        onPick={setPick}
         onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}
       />
 

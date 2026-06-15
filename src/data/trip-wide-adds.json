@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ba-camping-blagaj-buna",
+    "name": "Camping Blagaj (River Auto Camp, Buna) — Ravna fallback",
+    "country": "BA",
+    "category": "campsite",
+    "lat": 43.2575,
+    "lng": 17.8918,
+    "description": "Verified, contactable FALLBACK for the unverifiable Ravna Camping (N5, Jun 20). Real auto-camp on the Buna river right by Blagaj Tekija (a D5 stop anyway), hot showers + electricity. Use if Ravna can't be confirmed on the day.",
+    "communityNotes": "Booked/contactable via autocamp-blagaj.com — unlike Ravna, this one is verifiable. On the Buna, walkable to the Tekija; arrive with daylight to pitch.",
+    "sources": ["https://www.autocamp-blagaj.com/en/camping.php"],
+    "facilities": "hot showers, electricity, riverside",
+    "tags": ["fallback", "camping", "n5"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-voli-zabljak",
+    "name": "Voli supermarket (Žabljak) — Durmitor stock-up",
+    "country": "ME",
+    "category": "food",
+    "lat": 43.1547,
+    "lng": 19.1228,
+    "description": "The D8 grocery stock-up before the Durmitor ring, where shops thin out. Cheapest mainstream Montenegrin chain. Buy all camp food + the pre-06:00-start breakfast here the afternoon before the hike.",
+    "communityNotes": "Open Mon-Sat ~07:30-21:30 (D8 = Tue). Stock up the evening before an alpine start; nothing opens early enough at the trailhead.",
+    "sources": ["https://evendo.com/locations/montenegro/zabljak/shop/voli"],
+    "tags": ["groceries", "provisioning"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-tommy-babino-polje-mljet",
+    "name": "Tommy supermarket (Babino Polje, Mljet)",
+    "country": "HR",
+    "category": "food",
+    "lat": 42.7385,
+    "lng": 17.5352,
+    "description": "Largest shop on Mljet, in the Autokamp Mungos village — covers D4 breakfast + top-ups after the late post-ferry D3 arrival (there is also a Tommy at Sobra ferry port).",
+    "communityNotes": "Do the heavy self-cater shop on the mainland before the D3 ferry; this is the on-island top-up for breakfast and the morning before the kayak.",
+    "sources": ["https://www.mljettravel.com/shopping/"],
+    "tags": ["groceries", "provisioning", "mljet"],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-laundry-virpazar-skadar",
+    "name": "Laundry / rest-day wash (Virpazar — Skadar base)",
+    "country": "ME",
+    "category": "other",
+    "lat": 42.2486,
+    "lng": 19.0972,
+    "description": "There is NO laundry stop in 13 days of camping + hiking + saltwater. The 2-night Skadar base (D9-10, Rvaši) is the only realistic wash window — make D10 the rest + laundry day. Pin anchors Virpazar centre.",
+    "communityNotes": "Confirm a self-service machine in Virpazar on the day, or wash at the Rvaši house, or run to a Podgorica laundromat (~40 min). Treat as a rest-day chore, not a destination.",
+    "sources": ["coords = Virpazar centre (OSM); plan-gap reminder, not a verified laundromat"],
+    "tags": ["logistics", "rest-day", "laundry"],
+    "rating": 2,
+    "status": "candidate"
+  }
+]
