@@ -1,0 +1,1685 @@
+{
+ "days": [
+  {
+   "day": "1",
+   "findings": [
+    {
+     "stopId": "hr-zadar-airport",
+     "stopName": "Zadar Airport (ZAD) — car pickup Jun 16 10:00",
+     "checkType": "operator-status",
+     "claimChecked": "EES (live Apr 2026): if any of the 4 hold NON-EU passports, budget extra time for biometric enrolment at arrival and at the ME->HR border on D12.",
+     "finding": "Confirmed. The EU Entry/Exit System (EES) began progressive rollout 12 Oct 2025 and became FULLY operational on 10 April 2026 — so for the Jun 16 2026 arrival it is 100% live. Non-EU passport holders are biometrically enrolled (fingerprints + facial image) on first entry, which does add time at arrival and at land borders. All-EU/EEA travelers use the fast lane as the note says.",
+     "status": "confirmed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://home-affairs.ec.europa.eu/news/entryexit-system-will-become-fully-operational-10-april-2026-2026-03-30_en",
+     "recommendedAction": "No edit needed — the note is accurate. (Optional: the heaviest enrolment time is on FIRST entry, i.e. at Zadar on Jun 16; the D12 land-border note remains valid too.)"
+    },
+    {
+     "stopId": "hr-krka",
+     "stopName": "Krka National Park (Skradinski Buk)",
+     "checkType": "price",
+     "claimChecked": "Tickets ONLINE-ONLY timed entry, EUR40pp June, BUT after 15:00 = EUR30pp.",
+     "finding": "Confirmed for 2026. Official/guide sources: adult entrance €40 in Jun/Jul/Aug/Sep; reduced 'afternoon' ticket after 15:00 = €30 adult (€11.25 child/student). Park (Skradinski Buk) open 08:00–20:00 in June; Skradin office opens 07:30. Online timed entry via the webshop is correct.",
+     "status": "confirmed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.npkrka.hr/wp-content/uploads/CJENIK-2026-ENG.pdf",
+     "recommendedAction": "No edit needed — price (€40 / €30 after 15:00) and online-timed-entry are correct for June 2026."
+    },
+    {
+     "stopId": "hr-krka",
+     "stopName": "Krka National Park (Skradinski Buk)",
+     "checkType": "closure",
+     "claimChecked": "Swimming BANNED at Skradinski Buk since 2021 (walk/photo only); legal swim = Skradin town beach.",
+     "finding": "Confirmed and still in effect for 2026. Swimming prohibited at Skradinski Buk since Jan 2021; the only permitted swimming spots inside the park are Roški Slap, Stinica and Pisak (not on this route). Skradin town beach (outside the park, free) remains the legal swim, as the plan states.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.croatiaweek.com/swimming-ban-announced-at-krka-national-park/",
+     "recommendedAction": "No edit needed — swimming ban is current."
+    },
+    {
+     "stopId": "hr-krka",
+     "stopName": "Krka National Park (Skradinski Buk)",
+     "checkType": "ferry-schedule",
+     "claimChecked": "The Skradin<->falls boat is INCLUDED in the ticket (Apr-Oct).",
+     "finding": "Confirmed by the official park. The single entrance ticket INCLUDES the Krka NP boat transfer between Skradin and Skradinski Buk, operating 1 Apr–31 Oct during park working hours. (One third-party guide page wrongly says the boat is a separate paid ticket — that refers to the optional Visovac/Roški excursions, NOT the Skradin transfer; the official FAQ confirms the transfer is included.)",
+     "status": "confirmed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.npkrka.hr/en_US/informacije/f-a-q/",
+     "recommendedAction": "No edit needed — boat IS included. If you want to harden it, add 'buy/collect tickets at the Skradin office before boarding' (official requirement)."
+    },
+    {
+     "stopId": "hr-skradin-town-beach",
+     "stopName": "Skradin town beach (Krka swim alternative)",
+     "checkType": "ferry-schedule",
+     "claimChecked": "NP shuttle boat down from Skradinski Buk to Skradin town beach (~hourly, last boats early evening). Confirm the boat is running the day you go.",
+     "finding": "Mostly correct but the '~hourly' fixed-frequency framing is slightly off: the park states there is NO published fixed timetable — Skradin transfer boats run on demand during working hours (Skradinski Buk closes 20:00 in June), so the last boat is near closing/early evening, consistent with the note. The plan's existing 'confirm the boat is running' caveat covers the demand-based reality well. Note: you board the boat at Skradin entrance with your ticket, so the swim works whether you boat down from the falls or walk in from Skradin town.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://npkrka.hr/en_us/posjeti/ulazi-u-park/ulaz-skradin/",
+     "recommendedAction": "Optional wording tweak: change '~hourly' to 'frequent, demand-based (no fixed timetable), last boat near 20:00 closing' to avoid relying on an hourly cadence that isn't guaranteed."
+    },
+    {
+     "stopId": "hr-kantun-paulina",
+     "stopName": "Kantun Paulina (Split ćevapi institution)",
+     "checkType": "consistency",
+     "claimChecked": "note: 'Day 1 (Jun 16) — en route Krka -> Krvavica ... you'll likely hit it ~16:00-16:30'. bestTime: 'Day 2 (Jun 17) — en route Paklenica → Omiš.'",
+     "finding": "INTERNAL INCONSISTENCY: the note and the bestTime contradict each other on both the DAY and the ROUTE. The note says Day 1 (Jun 16), Krka->Krvavica; the bestTime says Day 2 (Jun 17), Paklenica->Omiš. This stop sits in the Day 1 array, so the note is the correct one and the bestTime is stale (leftover from an earlier route version). No closure issue — Kantun Paulina is open daily incl. Sundays, ~08:00–23:00, so a ~16:00 stop is fine.",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g295370-d3586088-Reviews-Kantun_Paulina-Split_Split_Dalmatia_County_Dalmatia.html",
+     "recommendedAction": "Replace the stale bestTime with: 'Day 1 (Jun 16) — quick ćevapi stop in Split en route Krka → Krvavica; open daily ~08:00–23:00. Off-peak (before 12:00 or after 14:00) is calmer; a ~16:00 stop is fine.'"
+    },
+    {
+     "stopId": "hr-ramova-beach-krvavica",
+     "stopName": "Ramova Beach (Krvavica camp beach)",
+     "checkType": "other",
+     "claimChecked": "Ramova Beach is the Camping Krvavica beach (note empty; implied 2-3 min walk from camp).",
+     "finding": "Confirmed as a real, free pebble cove between Makarska and Krvavica, reached by the pine-forest coastal path where the Makarska promenade ends; clear water, shaded by pines, dog-friendly. Coords 43.3216/16.9883 sit correctly at Krvavica. Adjacent to Camping Krvavica (camp at 43.3235/16.9857), so the ~2-3 min walk claim used on the campsite stop is accurate.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://croatiahiddengems.com/beaches-and-islands/ramova-beach-in-krvavica",
+     "recommendedAction": "No edit needed. (Optional: note has no text — could add 'free pebble cove, pine shade, ~3 min walk from Camping Krvavica' for the UI.)"
+    },
+    {
+     "stopId": "hr-camping-krvavica",
+     "stopName": "Camping Krvavica",
+     "checkType": "price",
+     "claimChecked": "Pricing ~EUR12 adult + ~EUR8 tent + ~EUR4.50 car (+EUR3-5 electricity) = ~EUR55-65 for 4.",
+     "finding": "Roughly confirmed and reasonable. park4night lists per-person €6–12 and electricity €2.70–5.50 (top of range is high-season June); recent reviews cite €15–50+/night depending on season. The ~€55-65 total for 4 + tent + car in June is a fair high-season estimate. IMPORTANT detail missing: the campsite is CASH-ONLY (no cards), per recent reviews. Showers/toilets repeatedly praised as clean; beach ~5 min / 200m walk (note says 2-3min — slightly optimistic but same order).",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://park4night.com/en/place/10004",
+     "recommendedAction": "Add 'CASH-ONLY (no cards) — have euros' to the note. Optionally soften 'Ramova/own beach is a 2-3min walk' to '~5min / 200m walk'. Price estimate is fine as-is."
+    }
+   ],
+   "skeptics": []
+  },
+  {
+   "day": "2",
+   "findings": [
+    {
+     "stopId": "hr-biokovo-tollroad",
+     "stopName": "Biokovo NP scenic toll road (booking + drive)",
+     "checkType": "road-access",
+     "claimChecked": "A special traffic regulation (fire-restoration) closes the Biokovo road to cars on WEEKDAYS ~07:00-15:00, in effect until Jun 19 2026; D2 (Wed Jun 17) is a weekday so a dawn slot likely can't summit+descend.",
+     "finding": "CONFIRMED and if anything UNDERSTATED. The official park site (pp-biokovo.hr) carries a banner: 'SPECIAL REGULATION OF WORKING HOURS AND TRAFFIC IN THE BIOKOVO NATURE PARK UNTIL JUNE 19, 2026 (FRIDAY)', and a news item stating the park is 'CLOSED FOR INDIVIDUAL VISITS FROM WEDNESDAY TO SATURDAY' due to post-fire restoration. Wed Jun 17 (D2) falls squarely inside the Wed-Sat individual-visit closure. The 20-cars/hour cap and 06:00-20:00 nominal hours are real but do not override the closure window.",
+     "status": "confirmed",
+     "impact": "high",
+     "confidence": "high",
+     "sourceUrl": "https://pp-biokovo.hr/en/news/biokovo-nature-park-closed-until-further",
+     "recommendedAction": "Keep the warning but harden it: the closure is likely a Wed-Sat individual-visit ban, not merely a 07:00-15:00 weekday window. Treat Biokovo/Sveti Jure as PROBABLY BLOCKED on Wed Jun 17 and lead D2 with the Cetina canyoning anchor as the plan already does. Update note to: 'Park CLOSED to individual visitors Wed-Sat until Jun 19 2026 (post-fire restoration) per pp-biokovo.hr. D2 is Wed Jun 17 = almost certainly blocked. Call +385 21 616 924 / info@pp-biokovo.hr to confirm; if blocked (likely), Biokovo is OFF and Cetina canyoning carries the day.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-biokovo-tollroad",
+     "stopName": "Biokovo NP scenic toll road (booking + drive)",
+     "checkType": "consistency",
+     "claimChecked": "note says 'D2 is Wed Jun 17 = a weekday'; bestTime says 'BOOK Jun 18 morning slot now at shop.pp-biokovo.hr'",
+     "finding": "Internal inconsistency: the note correctly identifies the stop as Day 2 = Wed Jun 17, but the bestTime field references 'Jun 18' (which is Day 3, the Dubrovnik-airport-pickup day). The booking date in bestTime is wrong by one day.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://pp-biokovo.hr/en/plan-your-visit/info-for-visitors",
+     "recommendedAction": "Change bestTime from 'BOOK Jun 18 morning slot' to 'BOOK Jun 17 (Wed) morning slot IF the Wed-Sat closure is lifted — otherwise do not book. Capped at 20 cars/hour. Nominal hours 06:00-20:00.' Align the date with Day 2 = Jun 17.",
+     "skeptic": {
+      "stopId": "hr-biokovo-tollroad",
+      "claim": "The note correctly identifies the stop as Day 2 = Wed Jun 17, but the bestTime field references 'Jun 18' (Day 3, the airport-pickup day). The booking date in bestTime is wrong by one day.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Pure-logic + repo verification, fully reproducible. (1) Calendar: `date -j` confirms 2026-06-16=Tuesday(D1, arrive Zadar), 2026-06-17=Wednesday(D2), 2026-06-18=Thursday(D3). (2) Day assignment: in research/_session-j-payload.json the Biokovo toll-road (and Sveti Jure, Cetina canyoning, Makarska) sit under day key \"2\"; the Dubrovnik airport pickup sits under day key \"3\" — so Biokovo is genuinely a Jun 17 stop, NOT Jun 18. I tried to refute by checking whether Biokovo was actually a Jun 18 activity (which would make bestTime correct); it is not. (3) The inconsistency is real and even SELF-contained within the same place object in src/data/hr-south.json (line ~around hr-biokovo-tollroad): its note/warning text says 'D2 is Wed Jun 17 = a weekday' while its bestTime says 'BOOK Jun 18 morning slot now at shop.pp-biokovo.hr'. Jun 18 (Thursday) is the airport-pickup day, not Biokovo day. The bestTime booking date is off by one day. Caveat: 'Jun 18' is logically wrong as the visit date, though one could argue the booking text is just sloppy — but it explicitly says 'BOOK ... morning slot', i.e. the slot date, which should be Jun 17.",
+      "sourceUrl": "https://pp-biokovo.hr/en/plan-your-visit/info-for-visitors"
+     }
+    },
+    {
+     "stopId": "hr-sveti-jure",
+     "stopName": "Sveti Jure (Biokovo summit, 1762m)",
+     "checkType": "consistency",
+     "claimChecked": "note says 'Conditional on the Biokovo road being open ... on Jun 17'; bestTime says 'Day 3 (Jun 18) early — leave Makarska 07:00, summit before 09:00'",
+     "finding": "Internal inconsistency: note ties the stop to Jun 17 (Day 2, correct), but bestTime says 'Day 3 (Jun 18) early'. Jun 18 is the fixed Dubrovnik-airport-pickup day, not a Biokovo-summit morning. Wrong day in bestTime, contradicting the note.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://biokovo.com/en/sightseeing",
+     "recommendedAction": "Change bestTime to: 'Day 2 (Jun 17) early IF the road is confirmed open — leave Makarska ~06:30, summit before 09:00 for the haze-free Adriatic+island panorama. But Wed Jun 17 is inside the Wed-Sat closure, so this is unlikely to run; default to skipping and let Cetina carry D2.' Fix the date and reflect the closure.",
+     "skeptic": {
+      "stopId": "hr-sveti-jure",
+      "claim": "The plan's note ties the Sveti Jure (Biokovo summit) stop to Jun 17 (Day 2), but the place's bestTime field says 'Day 3 (Jun 18) early' — an internal inconsistency, and Jun 18 is the wrong day because it is the fixed Dubrovnik-airport-pickup day.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "This is an internal-consistency check verifiable from the project files, no web data needed. The stop note (research/_session-j-payload.json line 123, mirrored in backups/plan_overrides-20260615-131951-sessionj.json) reads: 'Conditional on the Biokovo road being open to cars on Jun 17 ... Cetina canyoning carries D2 ... ~150min if it runs.' This pins the stop to Jun 17 = Day 2. The hr-sveti-jure object in src/data/hr-user-saved.json has bestTime: 'Day 3 (Jun 18) early — leave Makarska 07:00, summit before 09:00'. Day numbering: Jun 16 = Day 1 (arrive Zadar), Jun 17 = Day 2, Jun 18 = Day 3. The note (Jun 17 / D2) is self-consistent and matches the numbering; bestTime names Day 3 (Jun 18), a different day — a direct contradiction. Per project facts and MEMORY, Jun 18 is the hard-constraint Dubrovnik-airport-pickup day (friend lands 17:20), when the group is staging toward Dubrovnik, not summiting Biokovo above Makarska — so Jun 18 is the wrong morning. I tried to refute by reading bestTime as a generic 'mornings are best' tip, but it explicitly states 'Day 3 (Jun 18)' and 'leave Makarska 07:00', a concrete day assignment, so the contradiction stands. (The communityNotes field gives a third soft timing '08:00/by 10:00' but makes no day-number claim, so it does not affect the verdict.) The first checker's finding is correct.",
+      "sourceUrl": "https://biokovo.com/en/sightseeing"
+     }
+    },
+    {
+     "stopId": "hr-sveti-jure",
+     "stopName": "Sveti Jure (Biokovo summit, 1762m)",
+     "checkType": "coords",
+     "claimChecked": "lat 43.3423, lng 17.0539 for the 1762m Biokovo summit",
+     "finding": "Coordinates match the official Sveti Jure summit (Wikipedia/SummitPost: 43.342278 N, 17.053500 E). Elevation 1762m confirmed as the highest point of Biokovo.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://en.wikipedia.org/wiki/Sveti_Jure",
+     "recommendedAction": "No change — coords and elevation are correct.",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-cetina-canyoning",
+     "stopName": "Cetina Canyoning (Zadvarje / Gubavica)",
+     "checkType": "operator-status",
+     "claimChecked": "D2 anchor; book canyoning-cetina.com ~EUR70pp Extreme 18+ / maldukadventures.com; 12m jumps + 55m waterfall rappel; June = good water; ~3h",
+     "finding": "CONFIRMED operating in June 2026. Multiple Jun 2025 / Jun 2026 TripAdvisor reviews. The Extreme/Advanced tour includes 55m abseil down Gubavica + 7-12m jumps (matches the plan). Price is ~EUR65pp on canyoning-cetina.com / CheckYeti (plan's ~EUR70 is at the top of the range, not wrong). NOTE: the '18+' rule is operator-specific to MOCO Adventures; canyoning-cetina.com lists NO strict age limit (others quote 12-16). Tour duration is typically ~5-6h total incl. transfer/gear, not 3h on-water only.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://canyoning-cetina.com/advanced-canyoning/",
+     "recommendedAction": "Minor: change '~EUR70pp Extreme 18+' to '~EUR65-70pp Extreme (canyoning-cetina.com lists no strict min age; MOCO Adventures is the 18+ operator)'. Optionally note the ~5-6h total block (incl. transfer) so D2 timing isn't underestimated as just 3h. Otherwise the anchor is solid.",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-konoba-feral-brela",
+     "stopName": "Konoba Feral (Brela — peka & seafood)",
+     "checkType": "hours",
+     "claimChecked": "best-rated Brela konoba, 10m from the beach; pre-order peka in the morning; reserve ~3 days ahead, walk-ins wait ~30min",
+     "finding": "CONFIRMED open and well-rated (4.6 RestaurantGuru / 4.7 Google, 2800+ reviews), daily ~11:00-23:00. Peka must be pre-ordered 1-2 days ahead; walk-ins without a 3-day reservation wait ~30min, matching the note. No closure signal.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://restaurantguru.com/Konoba-Feral-Brela",
+     "recommendedAction": "No change needed. (One scraped phone number shows a +385 52 / Istria area code which is wrong for Brela; the note wisely says 'phone only' without a number, so nothing to fix — just don't add that 052 number.)",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-makarska-nightlife",
+     "stopName": "Makarska (Deep cave club + Osejava cliffs)",
+     "checkType": "closure",
+     "claimChecked": "OPTIONAL late night ~23:00-02:00 — Deep cave club + Osejava cliff walk",
+     "finding": "UNCERTAIN / possible season closure. One 2026 source states 'Deep will not open this summer' (pointing visitors to the Stardust festival instead). TripAdvisor still lists operating hours (09:00-05:00) with no closure banner, but the most recent visitor reviews there are from 2022 — a stale gap that is itself a red flag for a seasonal cave club. Could not firmly confirm it is open for summer 2026.",
+     "status": "uncertain",
+     "impact": "medium",
+     "confidence": "low",
+     "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g303814-d6596407-Reviews-Deep_Makarska-Makarska_Split_Dalmatia_County_Dalmatia.html",
+     "recommendedAction": "Add a verify caveat to the note: 'Confirm Deep is actually open this season before counting on it (check their Instagram / call) — 2026 reports are conflicting and one says it may not open this summer; the Osejava cliff walk is the reliable fallback either way.' Since this is already an optional drop-if-tired stop, no swap needed — just flag the uncertainty.",
+     "skeptic": {
+      "stopId": "hr-makarska-nightlife",
+      "claim": "OPTIONAL late-night plan (~23:00-02:00) at Deep cave club in Makarska on Day 2; check type = closure / is Deep open for summer 2026.",
+      "verdict": "confirmed",
+      "confidence": "medium",
+      "evidence": "I tried to refute the first checker's \"possible closure\" finding and instead found more support for it. Timeline from independent sources: Deep verifiably operated through 14 Sep 2023 (dated TikTok season-closing post). For 2024, a \"Deep will not open this summer, go to Stardust instead\" framing circulated — and the cited Stardust dates \"August 9-11\" match the 2024 edition exactly (Entrio.hr/AllEvents/INSITE confirm 9-11 Aug 2024), so that closure note refers to summer 2024, NOT 2026 (a slight misdating in the first checker's source, but it still documents a real non-opening). For 2025, a Feb 2025 visitor note states \"Google says it's open, but it isn't.\" For 2026 there is NO independent confirmation it reopened: TripAdvisor's most recent reviews are from 2022 (a ~4-year gap on a nightlife venue), the Croatian nightlife article listing it as open is from Feb 2022, and \"Open now / 09:00-05:00 hours\" on TripAdvisor/Trip.com is auto-generated from stale listed hours, not evidence of operation. No 2025/2026 review, Facebook season-opening post, or local report confirming Deep is operating could be found. Net: two consecutive seasons (2024, 2025) of \"did not open / not actually open\" signals and zero positive 2026 evidence. The finding stands — Deep cannot be relied on as a June 2026 late-night option. Recommend treating it as likely-closed and keeping the Osejava cliff walk (free, always available) as the real Day-2 night plan, with Deep only as a check-on-the-ground maybe.",
+      "sourceUrl": "https://www.entrio.hr/en/event/stardust-festival-2024-18138"
+     }
+    }
+   ]
+  },
+  {
+   "day": "3",
+   "findings": [
+    {
+     "stopId": "hr-prapratno-ferry",
+     "stopName": "Prapratno ferry port (→ Mljet)",
+     "checkType": "ferry-schedule",
+     "claimChecked": "June 2026 Prapratno→Sobra (29 May–2 Jul block): 07:00, 10:15, 13:00, 17:00, 20:30, with 20:30 the LAST sailing.",
+     "finding": "CONFIRMED exact match for the 29.05.2026–02.07.2026 block (Jun 18 falls inside it): departures 07:00, 10:15, 13:00, 17:00, 20:30 from Prapratno; 20:30 is the last sailing. An extra 14:50 sailing is added only from 03 Jul. Crossing ~45 min, so a 20:30 boat lands Sobra ~21:15. Jadrolinija line 832.",
+     "status": "confirmed",
+     "impact": "high",
+     "confidence": "high",
+     "sourceUrl": "https://www.dubrovnik-online.net/prapratno-mljet-ferry",
+     "recommendedAction": "No change. Timetable is correct. Keep the Plan-B note. (Bonus, verified: a ticket is valid for ANY departure on the printed date, so a pre-bought ticket also works on the 07:00/10:15 morning boat if they miss the 20:30 — you can state Plan B even more confidently.)",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-prapratno-ferry",
+     "stopName": "Prapratno ferry port (→ Mljet)",
+     "checkType": "ferry-schedule",
+     "claimChecked": "Cars first-come, no reservation, ~50/boat, queue ≥45 min early, pre-buy tickets online. Fares (implied) not stated.",
+     "finding": "CONFIRMED for 2026: vehicle spaces sell by queue order (can sell out), no car reservation, arrive ≥45 min early (60 min in peak season), online pre-buy recommended for weekends/peak. 2026 high-season (29.05–27.09) fares: adult €6.10, standard car (≤5.0 m) €25.50 — so ~€49 for 4 adults + 1 car.",
+     "status": "confirmed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.putovnica.net/en/transport/passenger-vehicle-car-ferry-prapratno-peljesac-sobra-mljet-jadrolinija",
+     "recommendedAction": "No change to mechanics. Optional: add the 2026 fare so the group budgets cash — append to note: 'Fare 2026: €6.10/adult + €25.50/car ≈ €49 total.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-prapratno-ferry",
+     "stopName": "Prapratno ferry port (→ Mljet)",
+     "checkType": "consistency",
+     "claimChecked": "note says 'DBV airport -> Prapratno is ~1h15 (budget 1h30 for June traffic)'; bestTime says '~1h45–2h drive DBV→Prapratno (via Dubrovnik+Ston)'.",
+     "finding": "Internal contradiction: the SAME stop gives two different drive estimates for the SAME leg (1h15/1h30 vs 1h45-2h). Verified reality: DBV airport→Prapratno is ~60 km / ~1h15 in normal conditions (~1h to Ston + ~10 min to Prapratno); June traffic can stretch it, but ~1h45-2h is a worst-case, not the expected time. The note's 1h15 / budget-1h30 figure is the accurate one.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.rome2rio.com/s/Dubrovnik-Airport-DBV/Prapratna",
+     "recommendedAction": "Make the two fields agree. Edit bestTime to: '~1h15–1h30 drive DBV airport→Prapratno (60 km via Ston) = on-time 17:20 landing → roll ~17:45 → Prapratno ~19:15 for the 20:30 last sailing.' Keep one conservative buffer line, not a 30-45 min disagreement between note and bestTime.",
+     "skeptic": {
+      "stopId": "hr-prapratno-ferry",
+      "claim": "The stop gives two contradictory drive estimates for the same DBV airport -> Prapratno leg: the note says ~1h15 (budget 1h30 for June traffic), while bestTime says ~1h45-2h. The first checker found this an internal contradiction and judged the 1h15/1h30 figure to be the accurate one.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Both estimates exist verbatim in the same stop. The note field (in research/_session-j-payload.json line 281) reads \"DBV airport -> Prapratno is ~1h15 (budget 1h30 for June traffic)\"; the bestTime field (logistics-places.json) reads \"~1h45-2h drive DBV->Prapratno (via Dubrovnik+Ston)\". These describe the identical leg yet differ by ~30-45 min with no reconciliation = a genuine internal contradiction. Independent web evidence converges on the ~1h15 figure as the EXPECTED drive, not 1h45-2h: (1) Rome2Rio DBV airport->Ston = 72 km road / 1h15m driving, and Prapratno is only ~4 km / ~10 min past Ston, so airport->Prapratno ~ 1h20-1h25; (2) three independent operator/travel sources (dubrovnik-travel.net, absolute-croatia.com, peljesactravel.com) all state \"from Dubrovnik Airport allow ~1 hour 15 minutes in typical conditions\" and \"~1h to Ston + 10 min to Prapratno\"; (3) Dubrovnik city->Ston is ~56 km/~1h, with the airport (SE of the city) adding ~20 min, consistent with the 1h15 airport figure. The 1h45-2h value is at best a worst-case traffic pad but is presented as the headline expected drive, which overstates it. Attempt to refute (June Thu-evening peak traffic could justify 2h) fails: no source presents 1h45-2h as typical; all cite ~1h15 plus a generic 'add time in summer' caveat. The first checker's finding (real contradiction; 1h15/budget-1h30 is the accurate figure) holds.",
+      "sourceUrl": "https://www.rome2rio.com/s/Dubrovnik-Airport-DBV/Ston"
+     }
+    },
+    {
+     "stopId": "hr-mali-ston-oysters",
+     "stopName": "Mali Ston oysters",
+     "checkType": "hours",
+     "claimChecked": "Do NOT sit down at Bota Šare 'opens 12:00 = burns ferry-critical time'; bestTime also says 'Bota Šare opens 12:00'.",
+     "finding": "Bota Šare Mali Ston actually opens earlier — listed as 11:00 (daily ~11:00–24:00 year-round) on aggregator data; one source says 11am. So the '12:00' opening in both note and bestTime is stale by ~1h. Net effect on the plan is unchanged (a sit-down lunch still burns ferry-critical time), but the stated open time is wrong.",
+     "status": "changed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://restaurantguru.com/Taverna-Bota-Sare-Ston",
+     "recommendedAction": "Change '12:00' to '11:00' in both the note and bestTime (e.g. 'Bota Šare opens 11:00'). The advice to skip the sit-down on the ferry day still stands. Phone +385 20 754482 still valid.",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-mali-ston-oysters",
+     "stopName": "Mali Ston oysters",
+     "checkType": "price",
+     "claimChecked": "Shuck-and-go at Mali Ston/Bistrina roadside farm stalls ~€1/oyster, cash, ~09:00-16:00.",
+     "finding": "~€1/oyster is supported: Croatian tourism/farming sources state retail of roughly '€1 for oysters, €2 for mussels' bought direct from farmers (Mali Ston bay / Hodilje / Bistrina). Buying direct from farmers is a real practice. The specific '~09:00–16:00' stall hours, however, are NOT verifiable from independent sources — most online presence is for booked farm tours and the Bota Šare restaurant, not fixed-hour roadside stalls.",
+     "status": "uncertain",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://www.croatiaweek.com/oysters-of-bay-of-mali-ston-legacy-of-tradition-and-taste/",
+     "recommendedAction": "Keep ~€1/oyster (verified). Soften the hours claim to avoid false precision: e.g. 'farmers sell direct (Hodilje/Bistrina) ~€1/oyster cash; availability is informal — not guaranteed at a fixed hour, so treat as a nice-if-open quick-grab, not a planned meal.' Optionally pre-message a farm (malistonoyster.com) the day before to lock a quick direct buy.",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-ston-walls",
+     "stopName": "Walls of Ston (Pelješac)",
+     "checkType": "price",
+     "claimChecked": "★ Walls of Ston ~€10pp; gates open 08:00; June pre-heat morning walk; Ston→Mali Ston traverse ~45-60min.",
+     "finding": "CONFIRMED for 2026: adult €10 (child €5; groups 10+ €8pp), single ticket covers both Ston and Mali Ston fortifications. Summer hours 08:00–19:30 (June 1–Jul 31), gates open 08:00 — matches the plan. Ston→Mali Ston full traverse is ~1h–1h30 walking; the ~45-60min in the note is a reasonable brisk estimate.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://citywallsdubrovnik.hr/walls-of-ston/",
+     "recommendedAction": "No change. €10pp and 08:00 open are correct for June 2026. The 08:30–10:00 'before midday heat and tour buses' window is well-judged (no shade, white limestone).",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-peljesac-bridge",
+     "stopName": "Pelješac Bridge (Dubrovnik approach)",
+     "checkType": "road-access",
+     "claimChecked": "Just drive over it en route Makarska → Dubrovnik (Jun 18).",
+     "finding": "CONFIRMED open and operating normally for the 2026 tourist season. Surface cracks on pillars were reported but authorities confirmed the bridge is safe/stable. Renovation works are scheduled to START in October 2026 (after this trip), run to ~May 2027, and even then a full closure is NOT planned — so June 2026 driving is unaffected.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.croatiaweek.com/peljesac-bridge-repairs-surface-cracks-october-2026/",
+     "recommendedAction": "No change. Optionally reassure: 'open normally in June; renovation only from Oct 2026, no full closure.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-bacina-jezera",
+     "stopName": "Baćina lakes (Baćinska jezera)",
+     "checkType": "seasonal",
+     "claimChecked": "Afternoon swim break on the drive south (no price/hours stated).",
+     "finding": "CONFIRMED suitable: entrance is free, freshwater lakes are warmer than the sea and ideal for swimming, and May–June is explicitly cited as a best window (smaller crowds, pleasant water). The Malo Jezero (Little Lake) is the deeper, better swim. Near Ploče, right on the Makarska→Dubrovnik line.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.expatincroatia.com/swim-croatia/",
+     "recommendedAction": "No change. Good low-stakes swim break. Optional note enrichment: 'Free; swim the deeper Malo Jezero side.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-camp-mungos-mljet",
+     "stopName": "Autokamp Mungos (Babino Polje, Mljet)",
+     "checkType": "consistency",
+     "claimChecked": "'Night-arrival-safe Mljet camp BY THE SOBRA FERRY ... pitch within minutes of the 20:30 ferry landing ~21:15.'",
+     "finding": "Mildly misleading: Mungos is in Babino Polje (central Mljet, ~9 min walk from Odysseus Cave), NOT adjacent to Sobra port. Babino Polje is ~4-7 km / ~10 min DRIVE from Sobra. So 'by the Sobra ferry' overstates proximity — it's a short night drive after landing, not steps from the dock. Timing still works (land ~21:15 + ~10 min drive → pitch ~21:30). Coords (42.739, 17.5355) correctly place it at Babino Polje. Camp is open May–September, so June is fine; has pool, restaurant, bar, mini-shop (showers implied).",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.tripadvisor.com/Hotel_Review-g8111016-d15333857-Reviews-Mungos_Babino_Polje_Campsite-Babino_Polje_Mljet_Island_Dubrovnik_Neretva_County_Dalm.html",
+     "recommendedAction": "Reword the note for accuracy: 'Night-arrival-safe Mljet camp at Babino Polje (~10 min / ~6 km DRIVE from Sobra port; pool, restaurant, mini-market) — pitch ~21:30 after the 20:30 ferry. Drive the dark island road carefully; watch for wildlife.' Drop the 'by the Sobra ferry / within minutes' phrasing.",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-dubrovnik-airport-pickup",
+     "stopName": "Dubrovnik Airport (Čilipi) — Jun 18 friend pickup",
+     "checkType": "consistency",
+     "claimChecked": "note: 'Be parked by ~17:10; roll out ~17:45-18:00'; bestTime: 'Flight lands 17:20; be at arrivals by 17:30'. (Memory: friend lands DBV 17:20.)",
+     "finding": "Consistent and aligned with the saved flight time (17:20 landing). Being parked by 17:10 = arriving slightly before the 17:20 landing, which is the correct, safe behaviour. The ~17:45-18:00 roll-out builds a realistic ~25-40 min bags/exit buffer. No web claim to verify here beyond the flight time, which matches.",
+     "status": "confirmed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.rome2rio.com/s/Dubrovnik-Airport-DBV/Prapratna",
+     "recommendedAction": "No change. The truncated note ('Leave Pelješac by ~15:45 to absorb June …') should be completed in the data so the full sentence reads, but the logic is sound. Tie this to the ferry stop's corrected drive estimate so the chain (roll ~17:45 → Prapratno ~19:15 → 20:30 boat) is internally consistent across both stops.",
+     "skeptic": null
+    }
+   ]
+  },
+  {
+   "day": "4",
+   "findings": [
+    {
+     "stopId": "hr-mljet-kayak-sup-selfrent-lakes",
+     "stopName": "Self-rent kayak / SUP on the Mljet salt lakes (Mali Most & Pomena)",
+     "checkType": "price",
+     "claimChecked": "NP entry ~EUR25pp; self-rent kayak/SUP; back to Sobra to queue for the 12:00 ferry; rental arranged the night before for ~08:00-08:30 start.",
+     "finding": "CONFIRMED for June 2026. Official Mljet NP 2026 price list: high season is 01.06.-30.09., adult ticket EUR25 (same online or on-site) — so June 19 = EUR25pp is correct. Boat to St Mary islet is included; kayak/SUP rental is NOT included (extra, ~EUR10/h or ~EUR25-30/2-person/day at Mali Most via Radulj Tours, open 09:00-19:00 but 'will arrange earlier if you ask in advance' — validates the night-before-for-08:00 plan). The 12:00 Sobra->Prapratno ferry exists in the 29 May-2 Jul 2026 block (Sobra departures: 06:00, 09:00, 12:00, 16:00, 19:30).",
+     "status": "confirmed",
+     "impact": "high",
+     "confidence": "high",
+     "sourceUrl": "https://np-mljet.hr/price-list/?lang=en",
+     "recommendedAction": "No edit needed — price, rental logistics, and the 12:00 return ferry all verify. Optionally add to the note: 'rental opens 09:00 but Radulj Tours arranges an earlier handout if you ask the night before' so the 08:00 start is explicitly pre-confirmable.",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-kravica",
+     "stopName": "Kravica Waterfalls",
+     "checkType": "consistency",
+     "claimChecked": "bestTime: 'Day 5 (Jun 20) — arrive 07:00-08:00 to beat the crowds... Tour buses pack in from ~10:30.' Note also says 'Go before ~10:00 — jammed by tour buses by mid-morning.'",
+     "finding": "WRONG DAY + self-contradicting logistics. Kravica is on Day 4 (Fri Jun 19), not Day 5 — the bestTime is stale from an earlier itinerary. More importantly, Day 4 starts on Mljet with the 12:00 Sobra ferry (arr Prapratno ~12:45), then a 2-3h drive INCLUDING a Croatia->Bosnia border crossing (summer waits can be long). Realistic Kravica arrival is ~15:00-16:00 — exactly the crowded afternoon window, making the 'arrive 07:00-08:00 / before 10:00 to beat buses' advice impossible to follow on this day.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.chasingthedonkey.com/day-trip-from-dubrovnik-to-kravice-waterfalls/",
+     "recommendedAction": "Rewrite bestTime to: 'Day 4 (Fri Jun 19) — realistic arrival ~15:00-16:00 after the 12:00 Sobra ferry + border crossing; this is a busy window, so expect crowds. Swim is still worth it (June pool ~14-20C). If the group wants a quieter visit, that needs a Day-5 morning slot instead.' Remove the 'beat the crowds at 07:00-08:00' framing from both note and bestTime since it cannot happen on Day 4.",
+     "skeptic": {
+      "stopId": "ba-kravica",
+      "claim": "The plan's bestTime/note for Kravica Waterfalls is internally inconsistent: it labels Kravica as 'Day 5 (Jun 20)' and advises 'arrive 07:00-08:00 / go before ~10:00 to beat the tour buses', but Kravica is actually on Day 4 (Fri Jun 19), a day that begins on Mljet and cannot reach Kravica before mid-afternoon.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Both parts of the finding verify. (1) WRONG DAY: The live plan snapshot (research/REAL-PLAN-supabase.md, DAY 4 Fri Jun19, 08:00-19:00) lists Kravica Waterfalls under Day 4 alongside Odysseus Cave + Mljet kayak/SUP + Počitelj; Day 5 (Sat Jun20) is the Mostar/Blagaj day with NO Kravica. plan-enrichment-2026-06-14.md line 181 confirms 'Day 4 = Mljet morning -> ferry -> Kravica/Počitelj -> Poplat.' Yet the ba-kravica entry's bestTime literally reads 'Day 5 (Jun 20) — arrive 07:00-08:00 to beat the crowds... Tour buses pack in from ~10:30' — a stale day label. (2) IMPOSSIBLE EARLY ARRIVAL: The plan's OWN logistics pin hr-sobra-ferry (logistics-places.json) states Day 4 'target the 12:00 Sobra->Prapratno sailing (queue at Sobra by ~11:00), then drive ~2.5h to Kravica/Počitelj.' Independently web-verified: Sobra->Prapratno is a ~45-min crossing (12:00 -> ~12:45 arrival), and Ston/Prapratno -> Kravica is ~2.5-3h including a Croatia->Bosnia border that 'in summer it's not uncommon for the border crossing to take 5+ hours' (chasingthedonkey, the first checker's own source). Realistic arrival ~15:00-16:00 — squarely the crowded afternoon. Attempt to refute failed: even the earliest sensible Day-4 ferry (09:00 -> ~09:45) + 2.5h = ~12:15, still past the 10:00/10:30 cutoff, and only if the planned Mljet morning (Odysseus Cave best 09:00-11:00 + kayak) is abandoned. No ferry+drive combo reaches Kravica before mid-morning while honoring the day's committed activities. Both the day number and the 'beat the buses' timing advice are therefore incorrect for this stop's actual position in the itinerary.",
+      "sourceUrl": "https://www.chasingthedonkey.com/day-trip-from-dubrovnik-to-kravice-waterfalls/"
+     }
+    },
+    {
+     "stopId": "ba-kravica",
+     "stopName": "Kravica Waterfalls",
+     "checkType": "price",
+     "claimChecked": "Cash-only (KM): entry ~20 KM/pp + parking; swimming under the falls allowed; June pool swimmable.",
+     "finding": "CONFIRMED for 2026. Adult entry 20 KM (10 KM for BiH residents); parking 3 KM/hour or 6 KM daily. Cash (KM) standard. Entrance fee is collected only 08:00-20:00 in summer (free before 08:00 / after 20:00 — irrelevant given the afternoon arrival). Swimming allowed June-Sept (water ~14-20C in June). June is a quieter 'golden month' vs Jul/Aug.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://kravica.ba/en/for-visitors/",
+     "recommendedAction": "No price edit needed (20 KM/pp + 3 KM/h parking is accurate). Keep 'cash-only KM' guidance.",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-pocitelj",
+     "stopName": "Počitelj",
+     "checkType": "consistency",
+     "claimChecked": "bestTime: 'Day 5 (Jun 20) mid-morning — leave Kravica 09:00, arrive Pocitelj 09:30... arrive Mostar by 11:00.' Note: 'Day 4 (Fri Jun 19) — late-afternoon stop ~17:00-17:30 between Kravica and the Poplat bed.'",
+     "finding": "WRONG DAY + the bestTime directly contradicts the note. Pocitelj is Day 4 (Fri Jun 19), confirmed; the note correctly sequences it as a late-afternoon stop (~17:00) before the Poplat bed. The bestTime is a stale Day-5 plan that routes onward to Mostar by 11:00 — but Mostar is a Day-5 stop in this itinerary, and the Day-4 bed is Poplat (south of Mostar). The two fields describe two different itineraries.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://en.wikipedia.org/wiki/Po%C4%8Ditelj,_%C4%8Capljina",
+     "recommendedAction": "Replace bestTime with: 'Day 4 (Fri Jun 19) late afternoon ~17:00-17:30 — heat eases on the bare stone hill; free (small tower fee EUR1-2); 45-50min on the way to the Poplat bed.' This matches the note and the actual Day-4 routing.",
+     "skeptic": {
+      "stopId": "ba-pocitelj",
+      "claim": "The Pocitelj stop's bestTime field (\"Day 5 (Jun 20) mid-morning... arrive Mostar by 11:00\") contradicts the live plan and the stop's own note, which place Pocitelj as a Day 4 (Fri Jun 19) late-afternoon stop between Kravica and the Poplat bed.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Internal-consistency check, verified against the authoritative live-plan snapshot and source files. The REAL-PLAN-supabase.md snapshot lists Day 4 (Fri Jun19) as: Mljet (Odysseus Cave, kayak/SUP) -> Kravica Waterfalls -> Pocitelj -> sleep Home in Poplat; and Day 5 (Sat Jun20) as: Blagaj -> Stari Most jump -> Mostar -> ... -> sleep Ravna Camping. So Pocitelj is unambiguously Day 4 and Mostar is Day 5. The note in _session-j-payload.json (line 366) correctly reads: \"Day 4 (Fri Jun 19) - late-afternoon stop ~17:00-17:30 between Kravica and the Poplat bed.\" But seed.json line 210 bestTime says: \"Day 5 (Jun 20) mid-morning - leave Kravica 09:00, arrive Pocitelj 09:30... arrive Mostar by 11:00\" - a stale Day-5 routing toward a Mostar that is actually a Day-5 stop, while the Day-4 bed is Poplat (south of Mostar). The same stale routing is also baked into the communityNotes (\"Kravica 07:00 -> Pocitelj 09:30 -> Mostar by 11:00\"), a second internal contradiction. Multiple independent project files corroborate Day 4 / Poplat bed (plan-enrichment-2026-06-14.md line 181, qa-findings-2026.md lines 47-56, MORNING-BRIEFING line 42, food-strategy line 10, budget.md N4 Jun19 = Poplat). I attempted to refute the finding but every internal source agrees; the bestTime/communityNotes describe a different (stale Day-5) itinerary than the note and the live plan. The cited Wikipedia URL is irrelevant to this internal-consistency check but does not affect the verdict.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Po%C4%8Ditelj,_%C4%8Capljina"
+     }
+    },
+    {
+     "stopId": "ba-pocitelj",
+     "stopName": "Počitelj",
+     "checkType": "price",
+     "claimChecked": "Free (small tower fee).",
+     "finding": "CONFIRMED. The Pocitelj site/old town is free to wander unsupervised; only the Sahat Kula (clock tower, built 1664) charges a small fee (~EUR1-2) to climb. No closures or access issues found for 2026.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://lovebih.com/en/pocitelj/",
+     "recommendedAction": "No edit needed — 'free (small tower fee)' is accurate.",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-odysseus-cave",
+     "stopName": "Odysseus Cave (Mljet, cliff-jump swim)",
+     "checkType": "consistency",
+     "claimChecked": "Note: 'Quick dawn cliff-jump/swim ... ~07:30'. bestTime: 'Day 4 (Jun 19) morning — first stop after the Sobra ferry (~10 min drive). Go 09:00-11:00 for best cave light.'",
+     "finding": "Internal timing contradiction within the stop. The note says ~07:30 dawn; the bestTime says go 09:00-11:00 for cave light. But Day 4 must be back at Sobra to queue for the 12:00 ferry, and the marquee activity is the salt-lakes kayak (~08:00-10:45) — a 09:00-11:00 cave visit collides with both. The note itself flags 'do this OR the kayak, NOT both.' Also the bestTime's 'first stop after the Sobra ferry (~10 min drive)' is slightly wrong: the group sleeps at Autokamp Mungos (Babino Polje) the night before, so the cave is reached from the camp (~1.3km), not after disembarking the ferry.",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.lifeandventures.com/odysseus-cave-on-mljet/",
+     "recommendedAction": "Trim bestTime to match the note: 'Day 4 (Fri Jun 19) early — ~07:30 from the Mungos camp (1.3km / 20-30min walk down). Do this OR the salt-lakes kayak, not both; if doing the kayak instead, skip. Free, cliff platforms open all day.' Drop the '09:00-11:00 for cave light' line since that window conflicts with the kayak + 12:00 ferry.",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-odysseus-cave",
+     "stopName": "Odysseus Cave (Mljet, cliff-jump swim)",
+     "checkType": "operator-status",
+     "claimChecked": "Free, no ticket; cliff-jumping with multiple jump levels; ~1.3km from Mungos camp.",
+     "finding": "CONFIRMED. Free public spot near Babino Polje, no ticket, accessed by a 20-30min marked downhill walk (rocky — proper footwear). Cliff jumping is established with multiple platform heights (~1m up to ~15m), deep water. Consistent across 2025 traveler reports. Coords (42.729, 17.544) plausibly on Mljet's south coast near Babino Polje/Mungos camp.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.lifeandventures.com/odysseus-cave-on-mljet/",
+     "recommendedAction": "No factual edit needed (only the timing-consistency fix above).",
+     "skeptic": null
+    },
+    {
+     "stopId": "user-1781357020737",
+     "stopName": "Home in Poplat",
+     "checkType": "coords",
+     "claimChecked": "Accommodation in Poplat at lat 43.0310, lng 18.0184 (no note/bestTime to fact-check).",
+     "finding": "Coords sanity-check passes. Poplat is a real village in the Stolac municipality, Herzegovina (official ~43.0339N, 17.9972E); the pin (43.031, 18.018) is ~1.5km from village center — same locality, plausible for a rural house. This is the Day-4 bed and is consistent with Pocitelj being the preceding late-afternoon stop. No bookable claims to verify.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://en.wikipedia.org/wiki/Poplat,_Stolac",
+     "recommendedAction": "No action — coords are plausible. (User-pinned accommodation; nothing to fact-check beyond location.)",
+     "skeptic": null
+    }
+   ]
+  },
+  {
+   "day": "5",
+   "findings": [
+    {
+     "stopId": "ba-blagaj",
+     "stopName": "Blagaj Tekija",
+     "checkType": "consistency",
+     "claimChecked": "note says 'Day 5 (Jun 20) — midday stop ~13:00-15:00 after the cool-morning Mostar block'; bestTime says 'Day 6 (Jun 21) — midday stop between Kravica and Mostar, directly on route... Arrive 10:00–11:30 or after 15:00'",
+     "finding": "bestTime is a STALE Day-6 plan: it names the wrong day (Day 6 not Day 5) and describes the wrong sequence (Kravica->Blagaj->Mostar) that no longer matches the current Day-5 note (Mostar morning, then Blagaj after). Also the note's own '~13:00-15:00 midday' arrival sits inside the tour-bus window the note tells you to avoid ('before 10:00 or after 15:00').",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://exploremostar.com/blagaj-tekke/",
+     "recommendedAction": "Replace bestTime with: 'Day 5 (Jun 20) — Blagaj sits 12km south of Mostar (~15min). Visit after the Mostar morning block, ideally arrive after 15:00 (or before 10:00) to dodge tour buses. 10KM/EUR5 cash, cover knees/shoulders (free wraps at the door), 1.5h max.' Aim Blagaj for ~15:00+ rather than 13:00 to honor the crowd-avoidance window.",
+     "skeptic": {
+      "stopId": "ba-blagaj",
+      "claim": "The Blagaj Tekija bestTime field is a stale Day-6 plan: it names the wrong day (Day 6 not Day 5) and the wrong sequence (Kravica->Blagaj->Mostar) that no longer matches the current Day-5 note (Mostar morning, then Blagaj after); additionally the note's own ~13:00-15:00 midday arrival falls inside the tour-bus window the same note says to avoid (before 10:00 or after 15:00).",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Exact ba-blagaj record (research/_session-j-payload.json index /5[0]) has note='Day 5 (Jun 20) ... after the cool-morning Mostar block ... Arrive before 10:00 or after 15:00 to miss tour buses' AND bestTime='Day 6 (Jun 21) — midday stop between Kravica and Mostar'. The authoritative Supabase snapshot (research/REAL-PLAN-supabase.md) decisively places Blagaj on DAY 5 (Sat Jun20) within the Mostar block, while DAY 6 (Sun Jun21) is entirely Sarajevo (Jablanica->Boracko Lake->Sarajevo) with no Blagaj/Mostar/Kravica; Kravica is on DAY 4. So bestTime's day (Day 6) and sequence (between Kravica and Mostar) are both stale and contradict the current note. (1) Wrong day confirmed. (2) Wrong sequence confirmed: Kravica and Mostar are now on different days (D4/D5), so no 'between Kravica and Mostar' leg exists; note correctly says Blagaj comes after the Mostar morning. (3) Internal contradiction confirmed by pure logic: 13:00-15:00 is neither before 10:00 nor after 15:00, so it sits inside the avoid window. Independent web sources corroborate that mid-day at Blagaj is peak tour-bus/crowd time and early-morning/late-afternoon is the advised window (thirdeyetraveller.com, thetripverdict.com: 'early in the morning or late afternoon to avoid tour groups'; mid-day means 'tour buses and pedestrians'). Attempted refutation failed on all three points.",
+      "sourceUrl": "https://thirdeyetraveller.com/how-to-visit-blagaj-tekija-bosnia/"
+     }
+    },
+    {
+     "stopId": "ba-blagaj",
+     "stopName": "Blagaj Tekija",
+     "checkType": "price",
+     "claimChecked": "10 KM / EUR5 cash; summer access; cover knees/shoulders, wraps at door",
+     "finding": "Confirmed for 2025/2026: entry 10KM (EUR5) at the booth before the bridge; summer hours 08:00-22:00; dress code enforced with free coverings provided. Cash. All accurate.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://exploremostar.com/blagaj-tekke/",
+     "recommendedAction": "No change to price/dress facts. (Only fix the day/sequence inconsistency noted separately.)",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-mostar-bridge-jump",
+     "stopName": "Stari Most Bridge Jump (Mostari Diving Club)",
+     "checkType": "operator-status",
+     "claimChecked": "Mostari Divers Club + mandatory training jump; ~EUR30-50pp TOTAL (training ~EUR10-25 + jump ~EUR20-25), cash; do it FIRST at ~09:00 cool + empty; ~24m",
+     "finding": "CONFIRMED operating in 2026: Mostar Divers Club (~30 members) runs tourist jumps with a mandatory ~10m training jump first; standard cost EUR30 total (EUR10 training + EUR20 bridge jump, the EUR20 = lifetime membership), cash. Bridge height ~21-24m. BUT: organized tourist-jump activity clusters 11:00-15:00 (May-Oct) — the divers may not be set up/available at the note's '~09:00' target, so a dawn jump is not guaranteed.",
+     "status": "confirmed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.dreambigtravelfarblog.com/blog/mostar-bridge-jump",
+     "recommendedAction": "Edit note: soften the time from a hard '~09:00' to 'go early ~10:00-11:00 (cooler, fewer crowds) — the divers' organized tourist-jump window is ~11:00-15:00, so confirm with the club at the Halebija tower that they're set up before counting on an early slot.' EUR30 is the realistic total; the note's EUR30-50 range is safe. Add sources (currently empty): dreambigtravelfarblog.com/blog/mostar-bridge-jump.",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-mostar",
+     "stopName": "Mostar (Stari Most)",
+     "checkType": "consistency",
+     "claimChecked": "note: 'do Mostar in the COOL MORNING ~09:30-10:30; Midday = mobbed'; bestTime: 'arrive late afternoon from Kravica falls. Evening and morning are the magic hours — Stari Most glows amber at sunset (~20:25)'",
+     "finding": "note and bestTime prescribe contradictory plans: note = morning-only block; bestTime = late-afternoon arrival + sunset. The bestTime also chains 'from Kravica falls' (a Day-4 stop in this payload), i.e. a stale earlier-itinerary artifact. Sunset fact: Mostar sunset ~June 20 is ~20:31-20:33 (per gaisma/timeanddate), so '~20:25' is ~6min early but close.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.gaisma.com/en/location/mostar.html",
+     "recommendedAction": "Pick the morning plan (matches the bridge-jump/Tima-Irma/Fortica notes) and rewrite bestTime to: 'Day 5 (Jun 20) cool morning ~09:30-10:30 — Stari Most empty + the jumpers are out; midday = mobbed + 35C. (If you instead end the day here, sunset glow is ~20:31.)' Drop the 'arrive late afternoon from Kravica' chain.",
+     "skeptic": {
+      "stopId": "ba-mostar",
+      "claim": "note and bestTime prescribe contradictory plans (morning-only block vs late-afternoon arrival + sunset); bestTime also chains 'from Kravica falls' (a Day-4 stop) as a stale earlier-itinerary artifact; and the '~20:25' sunset is ~6min early vs the real ~20:31-20:33.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Sunset sub-claim verified by two independent sources: sunrise-and-sunset.com gives Mostar sunset 20:31 on Jun 20 2026, generalblue.com gives 20:32 (timeanddate showed the same ~20:31-20:33 solstice window). So the plan's '~20:25' is ~6-7 min early but close — exactly as the first checker said. Stale-artifact sub-claim verified by reading the data: seed.json bestTime literally reads 'Day 5 (Jun 20) — arrive late afternoon from Kravica falls...', and Kravica is the Day-4 stop, so the chaining is an inconsistent earlier-itinerary leftover. Contradiction sub-claim holds by pure logic: a morning-only block ('do Mostar in the COOL MORNING ~09:30-10:30; Midday=mobbed') and a 'late-afternoon arrival + sunset' bestTime do prescribe different single-visit plans. NUANCE that does not refute the finding: the contradictory NOTE is not in any repo JSON file — grep for 'COOL MORNING'/'mobbed'/'09:30-10:30' returns zero hits, and the seed.json ba-mostar entry has no note field at all (note=None). The note comes from the live plan payload/Supabase override, not src/data. Within the data file the bestTime is self-consistent ('evening and morning are the magic hours'); the contradiction exists between the payload's note and that bestTime, as the checker described. Could not refute the finding; all three of its sub-claims stand.",
+      "sourceUrl": "https://www.sunrise-and-sunset.com/en/sun/bosnia-and-herzegovina/mostar/2026/june"
+     }
+    },
+    {
+     "stopId": "ba-tima-irma",
+     "stopName": "Tima-Irma (Mostar cevapi institution)",
+     "checkType": "operator-status",
+     "claimChecked": "quick cevapi off the bridge, before 12:00 to beat the queue; no reservation, walk-up only, cash only",
+     "finding": "Confirmed open and thriving in 2025/2026 (4.8 on RestaurantGuru, 5500+ reviews; Onescukova 7, steps from Old Bridge). No reservations, small/often a wait, cash only — exactly as the note says. Could not verify the exact morning opening hour from the official site (no hours published), but 'come for early lunch to avoid crowds' is corroborated.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://restaurantguru.com/Cevabdzinica-Tima-Irma-Mostar",
+     "recommendedAction": "No change. Optionally add 'cash only' to the note (it currently isn't stated; the restaurant does not take cards).",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-buna-blagaj-swim",
+     "stopName": "Buna River Swimming @ Blagaj",
+     "checkType": "seasonal",
+     "claimChecked": "icy karst-spring swim (~10-12C) on shaded terraces = ideal MIDDAY heat-relief ~13:30",
+     "finding": "Vrelo Bune spring water is a constant ~8-10C year-round (the note's 10-12C slightly UNDERstates how cold it is). Swimming is informal/not an officially designated bathing spot, but the cold clear water and riverside terraces are well documented; locals/visitors do dip. The 'midday heat relief' logic holds.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://en.wikipedia.org/wiki/Vrelo_Bune",
+     "recommendedAction": "Tighten the temp: change '~10-12C' to '~8-10C (genuinely icy, brief dips only)'. Note it's an informal swim, not a marked beach — fine for adventurous group, just set expectations.",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-blagaj-trout-terraces",
+     "stopName": "Blagaj Buna-spring trout terraces (Vrelo & neighbours)",
+     "checkType": "consistency",
+     "claimChecked": "order at RESTORAN VRELO (4.0★) NOT the cheaper Fajic/Hladovina (2.8-3.1★); ~EUR9-10/trout, walk-in, ~1h lunch",
+     "finding": "Confirmed: Restoran Vrelo is rated 4.0 on TripAdvisor (#1 of 7 in Blagaj) and 4.1 on RestaurantGuru (2173 reviews); riverside terrace over the Buna spring, trout specialty, fast service, reasonable prices. The 'pick Vrelo over neighbours' steer is sound and current.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g1759888-d4427325-Reviews-Restoran_Vrelo-Blagaj_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Herzeg.html",
+     "recommendedAction": "No change. Reviews note fish can arrive fried — the note's sibling Day-9 'ask for it grilled' tip would also help here; optional to add.",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-fortica-mostar",
+     "stopName": "Fortica Hill — Skywalk & Zipline",
+     "checkType": "consistency",
+     "claimChecked": "note: 'Day 5 (Jun 20) late afternoon ~16:00-18:00... before the 21:00 zipline close'; bestTime: 'Day 6 (Jun 21) morning... Sequence: Kravica 07:00 -> Pocitelj 09:30 -> Fortica 10:30 -> Stari Most afternoon'",
+     "status": "internal-inconsistency",
+     "finding": "bestTime is a STALE Day-6 plan: wrong day (Day 6 not Day 5), contradicts the note's late-afternoon timing, and chains Kravica/Pocitelj (Day-4 stops in this payload). On the FACTS, the NOTE is correct: zipline summer hours are 09:00-21:00 daily (Waze/zipline.ba), so '21:00 close' is accurate and a 16:00-18:00 slot works.",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://zipline.ba/price-list/",
+     "recommendedAction": "Replace bestTime with: 'Day 5 (Jun 20) late afternoon ~16:00-18:00 — exposed hilltop is heat-tolerant; zipline runs daily 09:00-21:00 (50KM/pp), Skywalk free. Call +387 62 115 100 to confirm open. Day's slack/skip candidate.' Keep the note as-is — it is the accurate version.",
+     "skeptic": {
+      "stopId": "ba-fortica-mostar",
+      "claim": "The plan's bestTime field is a stale Day-6 morning plan (wrong day, chains Kravica/Pocitelj) that contradicts the note's correct Day-5 late-afternoon 16:00-18:00 slot before the factually-accurate 21:00 summer zipline close.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Independently verified the JSON record at /Users/ruslankotliarenko/workspace-personal/balkans-trip/src/data/ba-itinerary-spots.json: its bestTime literally reads \"Day 6 (Jun 21) morning ... Sequence: Kravica 07:00 -> Pocitelj 09:30 -> Fortica 10:30 -> Stari Most afternoon\" while the live-plan note (per the task) says Day 5 (Jun 20) 16:00-18:00. So bestTime IS stale and contradicts the note on day and timing — the checker's core consistency point is correct. FACTUAL side: fresh Waze live-map (https://www.waze.com/live-map/directions/zipline-fortica-mostar) shows daily hours 09:00-21:00 every day, confirming the note's \"21:00 close\" and that a 16:00-18:00 slot works; the official zipline.ba/price-list only documents WINTER hours (weekends 10:00-17:00) and does not contradict the summer 09:00-21:00. Two adversarial caveats, neither changing the verdict: (1) the 21:00 figure comes from Waze, not the cited zipline.ba/price-list page, so the checker's source attribution slightly overstates the price-list page; (2) Kravica/Pocitelj are NOT actually in this payload (the file holds only 6 records: Trebevic, Cafe de Alma, Fortica, Sniper Tower, Sand Pyramids, Sarajevska Pivara), so calling them \"Day-4 stops in this payload\" is imprecise — but the substantive claim that bestTime references a stale different-day sequence holds regardless. Note also the note text quoted in the task lives in the Supabase live plan, not the JSON (the JSON record has no note field).",
+      "sourceUrl": "https://www.waze.com/live-map/directions/zipline-fortica-mostar?to=place.w.11665841.116855023.21265867"
+     }
+    },
+    {
+     "stopId": "ba-fortica-mostar",
+     "stopName": "Fortica Hill — Skywalk & Zipline",
+     "checkType": "price",
+     "claimChecked": "Skywalk free; zipline 50 KM/pp; open 09:00-21:00; no advance booking, call +387 62 115 100",
+     "finding": "Confirmed on official site: zipline 50 BAM (large zip) / 60 BAM tandem; summer hours daily 09:00-21:00 (winter weekends-only 10:00-17:00). Advance reservation 'desirable' for out-of-towners — the note's 'no advance booking but call ahead' is consistent. Price 50KM/pp accurate.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://zipline.ba/price-list/",
+     "recommendedAction": "No price change. Consider softening 'No advance booking' to 'walk-up usually fine, but reservation is desirable in peak June — call +387 62 115 100.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-dreznica-canyon",
+     "stopName": "Drežnica / Drežanka canyon — local swim canyon",
+     "checkType": "coords",
+     "claimChecked": "turquoise pools + local cliff-jump (Stupina) on the paved M17 side road, zero backtrack on the drive N to Ravna; free, cold glacier-fed water",
+     "finding": "Confirmed: the Drežanka canyon lies between Mostar and Jablanica (villages Gornja/Donja Drežnica), with Stupina (in Draga) a documented swim/jump spot once used as Old-Bridge jump training. Coords in payload (43.5196, 17.7385) match the Drežanka-Neretva confluence at Donja Drežnica (43°31'08\"N 17°44'19\"E) almost exactly. Geographically it IS on the Mostar->Jablanica/Ravna line = the note's 'zero backtrack N to Ravna' is correct. Water is cold karst, not strictly 'glacier-fed', but cold is right.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://en.wikipedia.org/wiki/Dre%C5%BEanka_(river)",
+     "recommendedAction": "No change to coords/route. The access road off the M17 into Drežnica is a narrow local road (not a wide highway) — minor: word it 'paved local road off the M17' rather than implying the M17 itself. Veliki Movran waterfall is rain-only (bestTime already says this) — fine.",
+     "skeptic": null
+    },
+    {
+     "stopId": "user-1781358765546",
+     "stopName": "Ravna Camping",
+     "checkType": "coords",
+     "claimChecked": "Ravna Camping, arrive ~19:00 with daylight; confirm arrival after ~18:00 is OK (user accommodation)",
+     "finding": "Coords (43.6363, 17.7883) place it at Ravna near Jablanica, on the M17 just N of the Drežnica turnoff — consistent with a 'drive N to Ravna' end-of-day. This is a user-saved booking with no checkable web claims beyond the host call-ahead note; could not independently verify a campsite branded 'Ravna Camping' but the location/region is sound (Via Dinarica lodging exists at 'Ravna bb, Jablanica').",
+     "status": "uncertain",
+     "impact": "low",
+     "confidence": "low",
+     "sourceUrl": "https://en.planetofhotels.com/bosnia-and-herzegovina/jablanica/dinarica-guesthouse",
+     "recommendedAction": "Flag to user only as a reminder: it's a user booking, so confirm the host's late-arrival policy directly (note already says to call). Sunset in this area June 20 is ~20:30, so a ~19:00 arrival has ample daylight to pitch — that part is sound.",
+     "skeptic": null
+    }
+   ]
+  },
+  {
+   "day": "6",
+   "findings": [
+    {
+     "stopId": "ba-zuta-tabija",
+     "stopName": "Žuta tabija (Yellow Fortress) — Sarajevo's sunset ritual",
+     "checkType": "consistency",
+     "claimChecked": "note says sunset Jun 21 is 20:32 and to start the walk by ~19:45; but the SAME stop's bestTime field still says '...30-40 min before sundown (~20:45)'.",
+     "finding": "Verified sunset in Sarajevo on Jun 21 2026 = 20:32 (longest day; timeanddate). The note's 20:32 is correct; the bestTime field's 20:45 is the stale value and contradicts the note within the same stop.",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.timeanddate.com/sun/bosnia-herzegovina/sarajevo?month=6",
+     "recommendedAction": "Edit the bestTime to match the note: change '(~20:45)' to '(~20:32)' — e.g. 'walk up from Baščaršija 30-40 min before sundown (~20:32). Free, bring drinks. Pairs with the Kovači war cemetery below.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-sarajevo",
+     "stopName": "Sarajevo (Baščaršija old town)",
+     "checkType": "consistency",
+     "claimChecked": "note and bestTime both cite 'Žuta Tabija sunset (~20:45)'.",
+     "finding": "Actual Jun 21 2026 sunset is 20:32, not 20:45 (13 min earlier). Minor but the group plans the uphill-walk start time off this number; 20:45 risks arriving as the light goes.",
+     "status": "changed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.timeanddate.com/sun/bosnia-herzegovina/sarajevo?month=6",
+     "recommendedAction": "Replace both '(~20:45)' instances with '(~20:32)' in the note and bestTime for consistency with the corrected Žuta Tabija stop.",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-sarajevo",
+     "stopName": "Sarajevo (Baščaršija old town)",
+     "checkType": "closure",
+     "claimChecked": "Anchor ★ logic: 'Kino Bosna is CLOSED Sundays'; group sleeps in Pale (~30min SE), driver designated for post-nightlife leg; Pale pre-positions for D7 Foča/Šćepan Polje rafting.",
+     "finding": "Confirmed: Kino Bosna operates Mon–Sat ~18:00–23:00, closed Sundays — the plan already routes around it to the Baščaršija bar cluster. Sarajevo→Pale verified ~21km / 23–30min, so the '~30min SE' and driver note are accurate. Anchor logic holds.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g294450-d7126178-Reviews-Kino_Bosna-Sarajevo_Sarajevo_Canton_Federation_of_Bosnia_and_Herzegovina.html",
+     "recommendedAction": "No change — anchor stop verified. (Just apply the 20:32 sunset fix above.)",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-sarajevo-asdz",
+     "stopName": "Buregdžinica/Aščinica ASDŽ (Sarajevo — sač-baked burek)",
+     "checkType": "hours",
+     "claimChecked": "ASDŽ burek as a late-morning Sarajevo-arrival bite on Day 6 (Sunday Jun 21).",
+     "finding": "Sources conflict on ASDŽ Sunday hours. The official Visit Sarajevo / korpa.ba listing and one recent (Jan 2026) source give Aščinica ASDŽ as Mon–Fri 09:00–19:00 (i.e., likely CLOSED weekends); another aggregator lists daily 08:00–24:00 but flags it 'Temporarily closed.' Day 6 is a Sunday, so there is real risk the sač-baked-burek spot is shut. The note itself already hedges (frames burek as a city bite, suggests a Jablanica/Konjic lamb-or-trout stop fits the morning better), so the day does not depend on it.",
+     "status": "uncertain",
+     "impact": "medium",
+     "confidence": "low",
+     "sourceUrl": "https://www.visitsarajevo.ba/bs/listings/ascinica-asdz/",
+     "recommendedAction": "Add a Sunday caveat to the note: 'NOTE: ASDŽ may be closed Sundays (some listings = Mon-Fri 09:00-19:00) — verify on the day or default to a Baščaršija burek alternative (e.g. Buregdžinica Bosna, open daily).' Keep the existing Jablanica/Konjic-lamb fallback.",
+     "skeptic": {
+      "stopId": "ba-sarajevo-asdz",
+      "claim": "ASDŽ (Sarajevo sač-baked burek/aščinica) is likely closed on weekends (Mon–Fri 09:00–19:00), so the Sunday Day-6 morning burek stop risks being shut.",
+      "verdict": "refuted",
+      "confidence": "high",
+      "evidence": "Multiple independent, authoritative sources contradict the \"closed weekends\" claim and indicate ASDŽ is open 7 days/week including Sunday: (1) The official restaurant site ascinica.ba explicitly states hours are \"Every day from 9:00 AM to 7:00 PM.\" (2) The official city tourism board listing (sarajevo.travel/Destination Sarajevo) lists a single all-week range \"08:00 - 19:00\" applying to Saturday and Sunday too. (3) Aggregated korpa.ba/Instagram data reads \"Pon-Ned 09-19\" = Monday-through-Sunday 09:00-19:00. (4) The first checker's own cited page (visitsarajevo.ba) actually shows NO Mon-Fri restriction on the live version — only address/phone/website. The \"Mon-Fri only\" reading appears to be a misinterpretation. One low-quality aggregator flagged \"Temporarily closed,\" but that single signal is contradicted by the active official website and live tourism/social listings, so it carries little weight. There are two related brand entities (Aščinica ASDŽ vs Buregdžinica ASDŽ), but both are shown with 7-day operation. Net: the Sunday Day-6 burek bite is very likely available; the closure risk is overstated. (Note: the plan note already hedges the stop as optional, so nothing downstream breaks either way.)",
+      "sourceUrl": "https://ascinica.ba/en/"
+     }
+    },
+    {
+     "stopId": "ba-sarajevo-petica-ferhatovic",
+     "stopName": "Ćevabdžinica Petica Ferhatović (Sarajevo ćevapi)",
+     "checkType": "hours",
+     "claimChecked": "bestTime: 'Day 6 (Jun 21) lunch — part of the Baščaršija old-town crawl before the Žuta Tabija sunset walk.'",
+     "finding": "Confirmed open Sunday, but ONLY from 12:00 (Sun & Mon 12:00–21:00; Tue–Sat 08:00–23:00). So it works as a Sunday LUNCH (the bestTime is fine) but is NOT available before noon — relevant because the ASDŽ-burek alternative for a pre-noon arrival bite may be closed. Price ~10–15 KM/person.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://restaurantguru.com/Cevabdzinica-Petica-Ferhatovic-Sarajevo-2",
+     "recommendedAction": "Optionally add to note: 'Sundays opens 12:00 (not 08:00) — fine for lunch, but no pre-noon ćevapi here.' No reorder needed since it is already slotted as lunch.",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-bascarsija-bar-cluster",
+     "stopName": "Baščaršija bar cluster (Barometar, Zlatna Ribica, Cheers, Raya 71)",
+     "checkType": "hours",
+     "claimChecked": "note: 'Sunday-safe Sarajevo night out (Kino Bosna closed Sundays). Verify each bar's Sunday hours on the day.'",
+     "finding": "Spot-checked two named bars: Barometar open daily incl. Sunday (~07:00–24:00) and Zlatna Ribica open Sunday (listings vary ~14:00 or 08:00 to ~24:00–01:30). Cluster is genuinely Sunday-viable; the note's 'verify on the day' hedge is appropriate. Kino-Bosna-closed-Sunday premise confirmed.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://restaurantguru.com/Zlatna-Ribica-Sarajevo",
+     "recommendedAction": "No change — Sunday-night-out logic verified.",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-jablanica-neretva-museum",
+     "stopName": "Battle of Neretva Museum & sunken bridge (Jablanica)",
+     "checkType": "hours",
+     "claimChecked": "Note: 'quick on-route stop... combine with a lamb lunch in Jablanica' (no hours stated).",
+     "finding": "Museum (official site) is open in summer Apr–Oct: Mon–Fri 08:00–18:00, Sat–Sun 10:00–18:00. Day 6 is Sunday Jun 21, so it opens at 10:00, NOT 08:00 — a very early departure from Ravna would arrive before opening. Ticket ~4 KM/€2 (grounds free, building ~€2). Stop is otherwise fine.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.muzej-jablanica.com/ba/en/",
+     "recommendedAction": "Add hours to the note: 'Open daily Apr-Oct; Sun (your day) 10:00-18:00 (Mon-Fri from 08:00) — don't arrive before 10:00 for the museum building; grounds/sunken bridge viewable anytime, ~4 KM/€2 to enter.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-jablanica-neretva-museum",
+     "stopName": "Battle of Neretva Museum & sunken bridge (Jablanica)",
+     "checkType": "closure",
+     "claimChecked": "'Iconic WWII sunken railway bridge ... right on the M-17' — implies the fallen bridge is still there to see.",
+     "finding": "Sunken bridge remains lying in the river and visible per current (2025/2026) traveler photos/reviews; museum is operating. Two caveats worth knowing: (1) there is a stated long-term plan to RECONSTRUCT the demolished bridge (no completion date found — unlikely to affect Jun 2026), and (2) the catastrophic Oct 2024 floods hit Donja Jablanica (downstream village), not the museum/bridge site in Jablanica town. No closure expected.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://heritagetribune.eu/bosniaherzegovina/demolished-bridge-on-the-neretva-river-in-bosnia-and-herzegovina-will-be-reconstructed/",
+     "recommendedAction": "No change needed. Optionally note 'a reconstruction of the bridge has been proposed — if scaffolding appears, the museum/story still carry the stop.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "ba-boracko-lake",
+     "stopName": "Boračko Lake (swim stop; camp backup)",
+     "checkType": "operator-status",
+     "claimChecked": "note: 'swim + self-rent a pedalo or wooden rowboat at the main beach (casual beach-bar rental; SUP sometimes at Eko Selo bar; no formal kayak operator).'",
+     "finding": "Swimming confirmed excellent (clear glacial water, swimming off the jetty/beach). Eko Selo lists kayaking among activities, but I could NOT confirm a walk-up self-rent pedalo/rowboat at the main beach from recent reviews — rentals appear informal/seasonal as the note already states. The note's hedged wording is honest and not overclaiming. Coords 43.5519/18.0314 correct.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "low",
+     "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g1931691-d8047205-Reviews-Eko_Selo_Boracko_Jezero_Day_Tours-Konjic_Herzegovina_Neretva_Canton_Federation_o.html",
+     "recommendedAction": "No change — wording is appropriately hedged. Treat the boat rental as 'maybe', the swim as the reliable draw.",
+     "skeptic": null
+    }
+   ]
+  },
+  {
+   "day": "7",
+   "findings": [
+    {
+     "stopId": "me-tara-rafting-brstanovica",
+     "stopName": "Tara Canyon rafting — Brštanovica section",
+     "checkType": "price",
+     "claimChecked": "2026 price ~EUR70-75pp (~EUR280-300 for 4), full-day incl lunch + gear + NP fee",
+     "finding": "Price confirmed in the correct range for 2026, though it skews to the high end. The Brštanovica→Šćepan Polje full-day is €75pp at montenegro.travel and montenegroadventure.travel (incl. 2 meals + transport + gear + fee), but €50-60pp at the camp operators cited in the plan (tarasportrafting.com €50, raftingtara.com €60, both confirmed booking 2026). So €280-300 for 4 is a safe ceiling; budget could be as low as €200-240 if booking direct with a Foča camp.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.montenegroadventure.travel/tour/daytrip-rafting-brstanovica-scepan-polje/",
+     "recommendedAction": "Optionally soften the note to '~EUR50-75pp depending on operator (camp-direct in Foča ~EUR50-60; agency ~EUR75)' so the group knows direct booking is cheaper. No hard edit required.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-tara-rafting-brstanovica",
+     "stopName": "Tara Canyon rafting — Brštanovica section",
+     "checkType": "operator-status",
+     "claimChecked": "Operators raftingtara.com / tarasportrafting.com / bluerivertara.me; 'single AM departure, shuttle-only'; re-confirm meeting point before Jun 16",
+     "finding": "All named operators are active and explicitly advertising '2026 Adventure' bookings (raftingtara.com office@raftingtara.com / +387 65 906 188; tarasportrafting.com info@tarasportrafting.com / +387 66 606 306). 'Shuttle-only single AM departure' is accurate. June season is operating (March–mid-Oct). Booking + meeting-point advice is sound.",
+     "status": "confirmed",
+     "impact": "high",
+     "confidence": "high",
+     "sourceUrl": "https://tarasportrafting.com",
+     "recommendedAction": "No change. Keep 'BOOK NOW + re-confirm meeting point' — it is the correct anchor for the day.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-tara-rafting-brstanovica",
+     "stopName": "Tara Canyon rafting — Brštanovica section",
+     "checkType": "hours",
+     "claimChecked": "Plan logistics imply a very early raft (Day6 note: '08:30 Tara rafting departure'; Day7 drive note: 'raft start 10:00')",
+     "finding": "Standard operator schedule is breakfast/meeting ~09:00-10:00 at the Šćepan Polje camp, gear + jeep transfer to Brštanovica ~11:00-11:30, on-river ~12:00-15:00. The typical actual rafting start is ~11:30-12:00, NOT 10:00. An earlier private departure is possible but must be pre-arranged — do not assume it. This pushes the river finish/border cross from ~14:00 toward ~15:00-15:30, compressing the Piva drive afternoon.",
+     "status": "uncertain",
+     "impact": "medium",
+     "confidence": "medium",
+     "sourceUrl": "https://raftingmontenegro.com/one-day-tara-river-rafting",
+     "recommendedAction": "When confirming the booking, explicitly ask for the actual on-river start time and lock an early slot; otherwise re-timeline the afternoon to take-out ~15:00 → border ~15:30 → Piva drive, and treat the Piva Lake swim/Sočica dinner as the same evening at the Boričje bed (which still works).",
+     "skeptic": {
+      "verdict": "confirmed",
+      "confidence": "high",
+      "stopId": "me-tara-rafting-brstanovica",
+      "claim": "Plan logistics assume a very early raft (Day6 note 08:30 Tara rafting departure; Day7 drive note raft start 10:00); first checker says actual on-river start is ~11:30-12:00, pushing finish toward ~15:00-15:30 and compressing the Piva drive.",
+      "evidence": "Triangulated across operators. tarasportrafting.com (named in plan), own-transport morning tour: 10:30-11:00 arrival, 11:00-11:30 raft prep at Brstanovica put-in, on-river 11:30-15:00/16:00. montenegroadventure.travel daytrip: 10:30 arrival, 12:00 rafting begins from Brstanovica, 15:30 end at Scepan Polje. Camp Modra Rijeka: 9:30 arrival, 10:00 prep, 11:00 departure. Rafting Green/Blue River Tara: ~9:00 camp meeting, ~11:00 SUV transfer to put-in. Every operator starts on-river ~11:30-12:00, never 10:00, take-out ~15:00-15:30. Searched specifically for early/private 8:30 or 10:00 starts to refute and found none advertised; an early private departure must be pre-arranged. Plan's 10:00 start is off by ~1.5-2h, compressing the afternoon Piva drive as the checker said.",
+      "sourceUrl": "https://www.tarasportrafting.com/tours/rafting-from-zabljak"
+     }
+    },
+    {
+     "stopId": "me-scepan-polje-piva-canyon",
+     "stopName": "Šćepan Polje → Piva Canyon drive (via Plužine)",
+     "checkType": "road-access",
+     "claimChecked": "note/route assume a clean morning drive down to the Šćepan Polje raft start and an afternoon Piva-canyon drive",
+     "finding": "VERIFIED 2026 roadworks: multiple current Bosnian traffic bulletins report works on the Brod na Drini (Foča)–Hum (Šćepan Polje) road — exactly the Day-7 morning approach to the raft start — with slow driving and temporary ~10-minute traffic stops. The Plužine–Šćepan Polje (Piva canyon) leg also has an active WBIF reconstruction underway. Neither is a full closure, but both add buffer time and the canyon road is narrow/tunnelled.",
+     "status": "changed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.glassrpske.com/lat/novosti/drustvo/oprez-radovi-na-putevima/634896",
+     "recommendedAction": "Add to the drive note: 'Roadworks on Foča→Hum (Šćepan Polje) in 2026 = slow driving + temporary ~10-min stops; add 20-30min buffer for the morning leg to the raft start.' Leave Pale earlier accordingly.",
+     "skeptic": {
+      "stopId": "me-scepan-polje-piva-canyon",
+      "claim": "Day-7 morning approach to the Šćepan Polje raft start (Brod na Drini/Foča–Hum road) has active 2026 roadworks with slow driving and ~10-min temporary traffic stops (not a closure); the Plužine–Šćepan Polje Piva-canyon leg also has an active WBIF reconstruction underway.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Independently confirmed the core, plan-relevant claim. A separate outlet (srpskainfo.com) mirroring the same Republika Srpska road-authority traffic bulletin, dated June 2, 2026 (12 days pre-trip), explicitly lists \"Brod na Drini (Foča)–Hum (Šćepan Polje)\" with \"se vozi usporeno sa privremenim prekidima u trajanju od 10 minuta\" (slower driving, temporary 10-minute interruptions) — exactly the Day-7 morning approach to the raft start, and not a full closure. Multiple recurring 2026 bulletins repeat this. The cited glassrpske URL (634896) and its siblings return HTTP 403 to fetch but appear in search with the identical wording, and the live 636843 bulletin corroborates. HOWEVER, the first checker's SECONDARY claim — an \"active WBIF reconstruction underway\" on the Plužine–Šćepan Polje canyon leg — is overstated/inaccurate: federalna.ba (Dec 14, 2025) and corroborating sources state the WBIF/World Bank/EBRD project is still in the TENDER phase (two qualified bidders, contract expected end-2025), with works only \"expected to start by mid-2026\" and not yet physically underway on the canyon. The one section under active construction (investitor.me) is the separate Zaborje–Jasenovo Polje stretch on the Nikšić approach, finishing early 2026, not the Piva canyon road. The canyon being narrow/tunnelled (24 tunnels in ~20km) is independently true. Net: the practical Day-7 advice (buffer time on the morning approach, no closure) holds and is confirmed; the \"active canyon reconstruction\" detail should be corrected to \"tender/planned, works expected mid-2026.\"",
+      "sourceUrl": "https://srpskainfo.com/drustvo/nema-duzih-zadrzavanja-na-granici-radovi-na-brojnim-putnim-prvacima-potreban-dodatni-oprez-u-saobracaju/"
+     }
+    },
+    {
+     "stopId": "me-scepan-polje-piva-canyon",
+     "stopName": "Šćepan Polje → Piva Canyon drive (via Plužine)",
+     "checkType": "consistency",
+     "claimChecked": "bestTime: 'Depart Sarajevo 07:00 → Foča 09:00 → raft start 10:00 → border crossing ~14:00'",
+     "finding": "Two internal inconsistencies: (1) Day 6 has the group SLEEPING IN PALE, not Sarajevo, so 'Depart Sarajevo 07:00' names the wrong base (minor — Pale is ~15min E of Sarajevo and on-route, so timing barely changes). (2) 'raft start 10:00' contradicts the operator-typical ~11:30-12:00 on-river start (see rafting finding). The Šćepan Polje/Hum border is 24/7 and quiet, so the ~14:00 cross is fine IF the early raft is locked.",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.dan.co.me/vijesti/drustvo/amscg-pojacan-saobracaj-tokom-dana-vise-obustava-zbog-radova/",
+     "recommendedAction": "Edit bestTime to 'Depart Pale ~06:45 → Foča ~09:00 (allow for Foča→Hum roadworks) → raft (confirm start time; agencies run ~11:30, lock an earlier slot if possible) → border cross early/mid afternoon.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-mratinje-dam",
+     "stopName": "Mratinje Dam (Piva dam)",
+     "checkType": "coords",
+     "claimChecked": "lat 43.27222, lng 18.84167; '56 mostly-unlit Piva-canyon tunnels just south' (note actually says tunnels south of the dam)",
+     "finding": "Coords match the Mratinje Dam exactly (43°16'20\"N 18°50'30\"E = 43.27222, 18.84167). The 56-tunnel figure is the consistently cited count for the Piva canyon road (some sources say up to 58/71, but 56 is the standard). Minor geographic nit: the bulk of the 56 tunnels are on the canyon road NORTH of the dam toward Šćepan Polje, not 'just south' — driving border→Plužine you hit the tunnels before reaching the dam wall. The 'headlights on' advice is correct regardless.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://en.wikipedia.org/wiki/Mratinje_Dam",
+     "recommendedAction": "Optional wording fix: 'Headlights ON for the 56 mostly-unlit Piva-canyon tunnels (most lie between the border and the dam).' Not load-bearing.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-piva-lake-swim",
+     "stopName": "Piva Lake (turquoise reservoir swim — on route)",
+     "checkType": "operator-status",
+     "claimChecked": "Self-rent kayak via Nature Park Piva info center at Plužine entrance (4 kayaks, May-Oct 08-20, +382 40 270 069); free swim ~18-22C",
+     "finding": "The Nature Park Piva Tourist Info Center at the Plužine town entrance is confirmed (open May–Oct, 08:00–20:00). Swimming is summer-pleasant. The specific '4 self-rent kayaks + phone +382 40 270 069' detail could not be independently re-verified online; rental on the lake is more commonly associated with Beach Bar Hook (which the plan correctly flags as GUIDED). Reservoir water level can be drawn down (variable), but no specific June 2026 low-water issue found.",
+     "status": "uncertain",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://parksdinarides.org/en/nature-park-piva/",
+     "recommendedAction": "Keep as-is but treat the self-rent as 'call the Plužine info center on the day to confirm kayaks are available'; the free swim is the reliable fallback. No hard edit.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-etno-restoran-socica",
+     "stopName": "Etno Restoran Sočica (Plužine — lamb ispod sača & Piva-lake terrace)",
+     "checkType": "other",
+     "claimChecked": "Lamb ispod sača + Piva-lake terrace in Plužine; D7 dinner near the Boričje bed",
+     "finding": "Confirmed: 4.6/5 on RestaurantGuru (839 reviews), traditional terrace overlooking Piva Lake, serves jagnjetina/lamb ispod sača, kačamak, cicvara — exactly as described. Located in Plužine, a short drive from the Boričje lakefront bed. Solid dinner pick.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://restaurantguru.com/Restoran-Caffe-Socica-Pluzine",
+     "recommendedAction": "No change. Optionally note 'no reservation needed / walk-in' as it's an etno-restaurant, not high-demand fine dining.",
+     "skeptic": null
+    }
+   ]
+  },
+  {
+   "day": "8",
+   "findings": [
+    {
+     "stopId": "me-prutas-hike",
+     "stopName": "Prutaš (2393m) — Best accessible Durmitor summit",
+     "checkType": "consistency",
+     "claimChecked": "bestTime says: 'Day 8 (Jun 23) — alternative Durmitor PLATEAU WALK if skipping Veliki Međed. Start by 07:00; no shelter on the open plateau if storms close in.'",
+     "finding": "The bestTime describes Prutaš as a gentle 'plateau walk' — but the NOTE and every source describe Prutaš as a steep, exposed, scrambly summit (UIAA-I, fixed cables, scree, sections of near-rock-climbing), NOT a plateau walk. The bestTime is leftover text from an earlier 'Veliki Međed' version of this slot and contradicts the note's own difficulty warning. Calling it a plateau walk dangerously understates the commitment.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.thesandyfeet.com/prutas-mountain-hike-durmitor/",
+     "recommendedAction": "Rewrite bestTime to match the note: 'Day 8 (Jun 23) — Prutaš is the conditions-dependent ★ summit, NOT a casual plateau walk: steep scramble (UIAA-I, cables, scree). Trailhead 06:00-06:30, off the ridge by noon (June PM storms, no shelter up high). Non-technical fallback = Planinica or Black Lake loop.'",
+     "skeptic": {
+      "stopId": "me-prutas-hike",
+      "claim": "The bestTime's \"plateau walk\" wording dangerously understates Prutaš, which (per the checker) the note and every source describe as a steep, exposed, scrambly UIAA-I summit with fixed cables and near-rock-climbing — leftover Veliki Međed text that contradicts the note's own difficulty warning.",
+      "verdict": "refuted",
+      "confidence": "high",
+      "evidence": "The finding's core premises are false. (1) The entry's NOTE field is empty (None) — there is no \"note's own difficulty warning\" to contradict; the checker fabricated it. (2) The UIAA-I / fixed-cables / scramble characterization belongs to VELIKI MEĐED, not Prutaš. The data file's own communityNotes say: \"COMPARE WITH VELIKI MEĐED... that route has UIAA-I scrambling and fixed cables — much harder. Prutaš is the everyone-can-do-it choice.\" Independent searches confirm the fixed cables / scramble-down-rock-face in this area belong to Veliki Međed (Black Lake start) and the Durmitor via ferratas (Uvita Greda/Bobotov Kuk), NOT the Prutaš plateau route. The checker mis-attributed the other peak's difficulty to Prutaš — the inverse of the truth. (3) Independent sources agree Prutaš's standard summit route is moderate/plateau-like: Moon & Honey Travel calls it \"a moderate and straightforward out-and-back day hike\" across \"wildflower-carpeted meadows\" with a summit that is \"a wide grassy plateau\"; The Sandy Feet says difficulty \"stems primarily from length and elevation change rather than technical climbing\" and the summit \"does not require hands.\" Serious scrambling/ropes only appear on the EXTENDED Prutaš→Škrčko Lake traverse or the harder Todorov Do western approach, not the standard Sedlo-pass summit-and-back the plan describes (9km, \"no technical exposure\"). The bestTime correctly says \"alternative ... if skipping Veliki Međed,\" matching the description — it is NOT leftover Veliki Međed text. Minor caveat: sources do note \"two rugged areas requiring light exposure\" and \"a short exposed section,\" so \"plateau walk\" is mildly optimistic — but vastly closer to truth than the checker's claim, and not dangerous or contradictory.",
+      "sourceUrl": "https://www.moonhoneytravel.com/prutas-peak-hike-durmitor-national-park/"
+     }
+    },
+    {
+     "stopId": "me-prutas-hike",
+     "stopName": "Prutaš (2393m) — Best accessible Durmitor summit",
+     "checkType": "seasonal",
+     "claimChecked": "Note: 'can hold late-June snow — ASK the Boricje host + check the AM sky' and recommends conditions-dependent, with Planinica/Black Lake fallbacks.",
+     "finding": "Confirmed accurate and important. Recommended season is mid-June to October; multiple reports note snow lingering on the upper sections into June, with a May 2025 report describing fresh snow forcing self-navigation on the steep ascent and June reports noting snow + scree. Upper ridge has ropes/cables and serious scrambling. The note's 'verify conditions, pick one summit only, have a fallback' framing is correct.",
+     "status": "confirmed",
+     "impact": "high",
+     "confidence": "high",
+     "sourceUrl": "https://www.alltrails.com/trail/montenegro/zabljak/prutas-skrka-stit",
+     "recommendedAction": "Keep the note's caveats as-is — they are well-supported. Just align the bestTime (see other finding). Optionally add: the easier Dobri Do/Šarban approach is longer but less exposed than the Todorov Do route if conditions are marginal.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-vrazje-jezero",
+     "stopName": "Vražje jezero (Devil's Lake) — swim with a Durmitor backdrop",
+     "checkType": "consistency",
+     "claimChecked": "bestTime: 'Day 8 (Jun 23) afternoon after the VELIKI MEĐED hike — 15 km on the Šavnik road from Žabljak.'",
+     "finding": "bestTime names the 'Veliki Međed hike', but Day 8's hike in the current plan is Prutaš (the note even says 'after the Prutas hike'). Leftover from the old plan. Same internal mismatch as the Prutaš stop. Also: distance is overstated — sources put Devil's Lake ~12 km SW of Žabljak (≈5 km on M6 + ≈3 km turnoff = ~8 km, ~20 min drive), not 15 km.",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://zabljak.travel/en/devils-lake/",
+     "recommendedAction": "Edit bestTime to: 'Day 8 (Jun 23) afternoon after the Prutaš hike — ~12 km SW of Žabljak via the M6/Šavnik road (~20 min). Or morning of Day 9 en route Žabljak → Ostrog.' Fix both the wrong hike name and the 15 km → ~12 km distance.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-vrazje-jezero",
+     "stopName": "Vražje jezero (Devil's Lake) — swim with a Durmitor backdrop",
+     "checkType": "other",
+     "claimChecked": "Note: 'Calm evening = best Durmitor reflection. Glacial-cold dip.' Swimming implied OK.",
+     "finding": "Swimming is generally permitted in summer (no official ban found), so the swim premise stands; water is reported genuinely cold so 'glacial-cold dip' is fair (some sources mention geothermal springs, but real visitor reports say cold). One caveat for the note's 'calm evening = best reflection' framing: multiple recent reviews say the lake's color/beauty is best at MIDDAY sun-high, and a 9 AM visit looked like 'an ordinary dark blue lake.' Reflection (evening calm) and color (midday) are different goals; the note is fine but slightly optimistic about an evening visit's visual payoff.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g1096284-d7266110-Reviews-Vrazje_Lake-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+     "recommendedAction": "Optional: add to note 'midday sun shows the best turquoise color; a flat-calm evening gives the best Durmitor reflection — pick by goal.' No urgent edit needed.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-oro-zabljak",
+     "stopName": "Restaurant Or'O (Žabljak — mountain food)",
+     "checkType": "other",
+     "claimChecked": "Note: 'lamb/trout under sač + kačamak, 4.4★ (2500+ reviews), walk-in, 0-5min from camp.'",
+     "finding": "Confirmed as a reliable pick. RestaurantGuru shows 4.3★ across ~2,730 reviews (note's '4.4★, 2500+' is close enough), open 7 days/week serving breakfast/lunch/dinner, menu includes Durmitor lamb/veal, grilled trout and kačamak, €10–20pp, walk-in. Recent 2025 reviews praise food and service.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://restaurantguru.com/Oro-Zabljak",
+     "recommendedAction": "No edit needed. Optionally tweak '4.4★ (2500+)' → '4.3★ (2700+)' for accuracy, but it is cosmetic.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-camp-mlinski-potok",
+     "stopName": "Auto Camp Mlinski Potok (Žabljak)",
+     "checkType": "consistency",
+     "claimChecked": "bestTime: 'Night 7 (Jun 22) — base for the Durmitor hike day (next morning).' vs Note: 'Night 8 (Jun 23) — 2nd night of the 2-night Žabljak base (Durmitor hike day).'",
+     "finding": "The bestTime says Night 7 while the note says Night 8. For Day 8 (the Durmitor hike day) this camp is the Night-8 / second-night overnight — the note is correct and the bestTime is stale (Night 7 would be the first night of the 2-night base). Mismatched day label only; same physical campsite.",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://autocampmlinskipotok.com/en/price-list/",
+     "recommendedAction": "Edit bestTime 'Night 7 (Jun 22)' → 'Night 8 (Jun 23) — 2nd night of the 2-night Žabljak base.' to match the note and the actual plan.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-camp-mlinski-potok",
+     "stopName": "Auto Camp Mlinski Potok (Žabljak)",
+     "checkType": "price",
+     "claimChecked": "Note implies a cheap Žabljak base; email minakamp@gmail.com; '0.6km to Black Lake trailhead.'",
+     "finding": "2025 official price list confirmed: adult €5, car €3, small tent €3, big tent €4, electricity €2.50, residential tax €1.20/adult. For 4 adults + 1-2 small tents + 1 car ≈ €29–35/night incl. tax — genuinely cheap, good value. Email minakamp@gmail.com and phone +382 69 821 730 confirmed. Camp altitude 1472m. Official site states Black Lake is '15 min from the camp' (walking) — the note's '0.6km' is plausible (≈0.9km straight-line from camp coords to the Black Lake parking) but slightly optimistic; '15-min walk' is the operator's own wording.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://autocampmlinskipotok.com/en/price-list/",
+     "recommendedAction": "Optionally soften '0.6km to Black Lake trailhead' → '~15-min walk to the Black Lake trailhead (operator's wording)'. Email/contact and the cheap-base claim are verified — no other change needed.",
+     "skeptic": null
+    }
+   ]
+  },
+  {
+   "day": "9",
+   "findings": [
+    {
+     "stopId": "me-ostrog-monastery",
+     "stopName": "Ostrog Monastery",
+     "checkType": "hours",
+     "claimChecked": "Open 06:00-17:00 May-Sep, free entry, cover knees/shoulders, park at Lower Monastery.",
+     "finding": "Confirmed for June 2026: summer hours 06:00-17:00 (May-Sep), entry free (donations only), strict knees/shoulders dress code with wraps provided at the Upper Monastery entrance, parking at lower (and a secondary upper lot ~200m from the upper entrance; €1-2 shuttle vans run). No midday closure of the Upper Monastery reported.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://adriaticways.com/ostrog-monastery-guide/",
+     "recommendedAction": "No change needed. Optionally add to note: 'a secondary upper parking lot ~200m below the Upper Monastery exists if the lower hike is too hot; €1-2 shuttle vans also run lower<->upper.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-ostrog-monastery",
+     "stopName": "Ostrog Monastery",
+     "checkType": "consistency",
+     "claimChecked": "Note: 'depart Zabljak ~06:45-07:00 (drive is a real 2:11/95km mountain road), arrive Ostrog ~09:00'. bestTime: 'depart Zabljak 09:00, arrive ~11:00 ... by 11:00 it's busy but manageable'.",
+     "finding": "Note and bestTime give CONTRADICTORY departure/arrival times (06:45->09:00 arrival vs 09:00->11:00 arrival). The newer note (06:45 dawn departure for a cool, crowd-free ~09:00 arrival) is the better plan and matches the off-peak 'before 09:00' advice; the stale bestTime's 09:00 departure/11:00 arrival contradicts its own 'before 09:00 is off-peak' line. Drive time: Rome2Rio estimates ~1h33 for ~96km; the note's 2:11 buffer is conservative (likely ~30-40min padding) but the 95km distance is accurate.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.rome2rio.com/s/%C5%BDabljak/Ostrog-Monastery",
+     "recommendedAction": "Overwrite the stale bestTime to match the note: 'Day 9 (Jun 24) - depart Zabljak ~06:45-07:00; arrive Ostrog ~09:00, cool and ahead of pilgrim buses (off-peak = before 09:00). Real drive ~1h45-2h over a 95km mountain road. Closes 17:00 May-Sep, free.'",
+     "skeptic": {
+      "stopId": "me-ostrog-monastery",
+      "claim": "The note and bestTime fields for Ostrog give contradictory departure/arrival times; the dawn-departure note is the better, internally-consistent plan, and the 95km distance is accurate while 2:11 is a conservative drive time.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Direct file inspection confirms the contradiction: bestTime in me-user-notes.json says depart 09:00 arrive 11:00, while the note in _session-j-payload.json says depart 06:45-07:00 arrive 09:00. The bestTime is self-defeating since it states off-peak is before 09:00 yet plans an 11:00 arrival. Rome2Rio confirms 96km/1h33; other sources show MNE mountain roads are much slower (70km can take 2h; Podgorica-Zabljak 125km plan 2.5h), so 2:11 is realistic. Could not refute.",
+      "sourceUrl": "https://www.rome2rio.com/s/Zabljak/Ostrog-Monastery"
+     }
+    },
+    {
+     "stopId": "me-skadar-rijeka-crnojevica-kayak",
+     "stopName": "Enjoy Skadar Lake kayak base (Rijeka Crnojevica)",
+     "checkType": "price",
+     "claimChecked": "Self-rent (no guide); single EUR7/h or EUR25/day, double EUR10/h or EUR35/day + EUR5pp NP fee; reserve 1-2 days ahead via WhatsApp; channel calm all day.",
+     "finding": "Confirmed on the operator's official page: single 7EUR/1h and 25EUR/day, double 10EUR/1h and 35EUR/day, all exactly as written; described as self-rent (no previous experience needed; life vest, paddle, waterproof bag included). Lake Skadar kayak season runs Apr-Nov so June is fully operational. The EUR5pp national-park fee is the standard Skadar NP charge and is consistent. Operator's own 'don't kayak the open lake after 12:00 (wind)' caution is confirmed; the sheltered Crnojevica channel toward the horseshoe is the correct calm choice.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://enjoyskadarlake.com/kayak.html",
+     "recommendedAction": "No change. Prices/operator/season all verified. (Reservation method not shown on the page; the WhatsApp note is plausible - keep but confirm contact on the day.)",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-stari-most-rijeka-crnojevica",
+     "stopName": "Konoba Stari Most (Rijeka Crnojevica)",
+     "checkType": "price",
+     "claimChecked": "D9 special meal, Lonely Planet MNE pick, ~EUR13.50 full 3-course, cash, walk-in, 50m from the kayak launch; ask for fish grilled.",
+     "finding": "Confirmed: a TripAdvisor review reports a three-course meal with a drink for EUR13.50pp; mains EUR8-25. Lonely Planet does name it among Montenegro's best. Located immediately at the river/bridge in Rijeka Crnojevica, ~50-300m from the Enjoy Skadar Lake launch. Reviews are mixed (3.9 avg) with some 'fish arrived deep-fried' complaints, so the 'ask for it grilled' tip is well-founded.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g2362539-d4507323-Reviews-Stari_Most-Rijeka_Crnojevica_Cetinje.html",
+     "recommendedAction": "No change to this stop. (But fix the OTHER stops that still reference 'Mostina' as the D9 meal - see findings on me-rijeka-crnojevica-swim and me-pavlova-strana.)",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-pavlova-strana",
+     "stopName": "Pavlova Strana viewpoint (Skadar Lake)",
+     "checkType": "consistency",
+     "claimChecked": "Note: 'late afternoon ~17:00-18:00 (day ends 18:30 at the Rvasi bed)'. bestTime: 'late afternoon - sunset ~20:22 ... Pavlova Strana golden hour'.",
+     "finding": "Internal contradiction: sunset on Jun 24 in this area is ~20:24 (verified; solstice latest is ~20:24), so golden hour is ~19:30-20:24. The note's '17:00-18:00, day ends 18:30 at the Rvasi bed' both MISSES golden hour by ~2h and contradicts the bestTime, which correctly aims for golden hour/sunset. Since the Rvasi accommodation is only ~15min away, there is no reason to be done by 18:30 - the group can easily stay for the ~20:00-20:24 sunset and reach the bed by ~20:45.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.gaisma.com/en/location/podgorica.html",
+     "recommendedAction": "Edit the note to: 'Day 9 (Jun 24) golden hour ~19:30-20:24 (sunset ~20:24); Rvasi bed is only ~15min away so stay for the light. Drive the WIDER approach road, not the rough forest track.' Drop the '17:00-18:00 / day ends 18:30' framing.",
+     "skeptic": {
+      "stopId": "me-pavlova-strana",
+      "claim": "The plan has an internal contradiction: Day 9 (Jun 24) ends 18:30 at the Rvasi bed with Pavlova Strana scheduled ~17:00-18:00, but the place's own bestTime field aims for golden hour / sunset (~20:22-20:24), so the schedule misses golden hour by ~2h with no logistical reason since the Rvasi bed is only ~15min (same village) away.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Independently verified all elements. SUNSET: trek.zone's location-specific page for Rijeka Crnojevica gives sunset 8:26 PM (20:26) on Jun 24-27, 2026 — agreeing with the checker's ~20:24 and the place's own bestTime '~20:22' (all cluster at ~20:24); golden hour is therefore ~19:25-20:26. PLAN NOTE: research/REAL-PLAN-supabase.md line 72 confirms 'DAY 9 (Wed Jun24) — 06:30–18:30' with Pavlova Strana (line 77) as the last stop before '🛌 Home in Rvaši' (line 78). BESTTIME: src/data/me-places.json line 292 says 'Day 9 (Jun 24) late afternoon — sunset ~20:22 ... Pavlova Strana golden hour'. CONTRADICTION: an 18:30 day-end is ~2h before the ~20:24 golden hour the bestTime correctly targets — a genuine internal inconsistency. PROXIMITY: web search confirms the Pavlova Strana viewpoint is 'situated in the quaint village of Rvasi' — the exact same village as the 'Home in Rvaši' bed (~3-4.5 km by road), so staying for the ~20:24 sunset and reaching the bed within minutes is trivially feasible; nothing forces an 18:30 end. I tried to refute by checking whether sunset could be much earlier or whether the bed was far away — both attempts failed; the data only strengthens the finding. Minor nuance: my location-specific source gives 20:26 vs the checker's 20:24 (Podgorica), which does not change the conclusion.",
+      "sourceUrl": "https://trek.zone/en/montenegro/places/37893/rijeka-crnojevica/sunrise-and-sunset"
+     }
+    },
+    {
+     "stopId": "me-pavlova-strana",
+     "stopName": "Pavlova Strana viewpoint (Skadar Lake)",
+     "checkType": "consistency",
+     "claimChecked": "Note sequence: 'kayak/swim midday -> Mostina lunch -> Pavlova Strana'. bestTime sequence: 'kayak morning -> Virpazar fish lunch -> Pavlova Strana'.",
+     "finding": "The D9 special-meal pick is Konoba Stari Most in Rijeka Crnojevica (a ★ stop in this same day). Yet this stop's note says 'Mostina lunch' and its bestTime says 'Virpazar fish lunch' - two different (and wrong) restaurants, neither of which is the day's chosen meal. Mostina is a separate Rijeka Crnojevica konoba; Virpazar is a different town entirely (~25min away, not on the D9 route to Rvasi). These are stale references from earlier plan versions.",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g2362539-d4507323-Reviews-Stari_Most-Rijeka_Crnojevica_Cetinje.html",
+     "recommendedAction": "Replace both 'Mostina lunch' (note) and 'Virpazar fish lunch' (bestTime) with 'Stari Most lunch' so the sequence matches the day's actual ★ meal pick (Konoba Stari Most).",
+     "skeptic": {
+      "stopId": "me-pavlova-strana",
+      "claim": "The plan has an internal contradiction: Day 9 (Jun 24) ends 18:30 at the Rvasi bed with Pavlova Strana scheduled ~17:00-18:00, but the place's own bestTime field aims for golden hour / sunset (~20:22-20:24), so the schedule misses golden hour by ~2h with no logistical reason since the Rvasi bed is only ~15min (same village) away.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Independently verified all elements. SUNSET: trek.zone's location-specific page for Rijeka Crnojevica gives sunset 8:26 PM (20:26) on Jun 24-27, 2026 — agreeing with the checker's ~20:24 and the place's own bestTime '~20:22' (all cluster at ~20:24); golden hour is therefore ~19:25-20:26. PLAN NOTE: research/REAL-PLAN-supabase.md line 72 confirms 'DAY 9 (Wed Jun24) — 06:30–18:30' with Pavlova Strana (line 77) as the last stop before '🛌 Home in Rvaši' (line 78). BESTTIME: src/data/me-places.json line 292 says 'Day 9 (Jun 24) late afternoon — sunset ~20:22 ... Pavlova Strana golden hour'. CONTRADICTION: an 18:30 day-end is ~2h before the ~20:24 golden hour the bestTime correctly targets — a genuine internal inconsistency. PROXIMITY: web search confirms the Pavlova Strana viewpoint is 'situated in the quaint village of Rvasi' — the exact same village as the 'Home in Rvaši' bed (~3-4.5 km by road), so staying for the ~20:24 sunset and reaching the bed within minutes is trivially feasible; nothing forces an 18:30 end. I tried to refute by checking whether sunset could be much earlier or whether the bed was far away — both attempts failed; the data only strengthens the finding. Minor nuance: my location-specific source gives 20:26 vs the checker's 20:24 (Podgorica), which does not change the conclusion.",
+      "sourceUrl": "https://trek.zone/en/montenegro/places/37893/rijeka-crnojevica/sunrise-and-sunset"
+     }
+    },
+    {
+     "stopId": "me-rijeka-crnojevica-swim",
+     "stopName": "Rijeka Crnojevica - Danilo's Bridge swim + kayak village",
+     "checkType": "consistency",
+     "claimChecked": "Note: 'in the same village as the kayak + Mostina'.",
+     "finding": "Stale restaurant reference: the day's chosen special meal is Konoba Stari Most, not Mostina. Mostina is a different restaurant in the same village; naming it here (and on Pavlova Strana) creates an inconsistency with the ★ Stari Most stop. The swim itself (free warm river swim at Danilo's Bridge in Rijeka Crnojevica) has no checkable price/hours and is fine.",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://crnojevica.com/",
+     "recommendedAction": "Change 'the same village as the kayak + Mostina' to 'the same village as the kayak + Konoba Stari Most' for consistency with the day's meal pick.",
+     "skeptic": null
+    },
+    {
+     "stopId": "user-1781370817091",
+     "stopName": "Home in Rvasi",
+     "checkType": "coords",
+     "claimChecked": "Accommodation at lat 42.3716, lng 19.1025 (Rvasi, Skadar Lake) - empty note/bestTime.",
+     "finding": "Coordinates plausibly match the hamlet of Rvasi on the north shore of Skadar Lake, ~15min east of Pavlova Strana - consistent with the note in me-pavlova-strana ('15min to Rvasi bed'). No facts to verify; no claims in the note.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://www.openstreetmap.org/#map=15/42.3716/19.1025",
+     "recommendedAction": "No change. Coordinates and proximity to Pavlova Strana check out.",
+     "skeptic": null
+    }
+   ]
+  },
+  {
+   "day": "10",
+   "findings": [
+    {
+     "stopId": "me-pjesacac-beach-skadar",
+     "stopName": "Pješačac beach (Skadar Lake's secret sandy cove)",
+     "checkType": "road-access",
+     "claimChecked": "Note frames Pješačac as a 'D10 midday warm-swim' slotted between the morning paddle and the sunset winery, implying you just drive there; no access caveat given.",
+     "finding": "The beach itself is NOT car-accessible. You drive to Godinje village (~5km / ~10min from Virpazar; no parking lot — park along village roads), then walk a short trail down to the cove; the only other access is a boat from Virpazar. Multiple 2025/2026 sources agree: 'The beach cannot be accessed by car, but only via walking trail from a nearby road' / 'only accessible on foot (or by boat).' It is below Godinje, ~7km from Virpazar. Sandy, shaded by greenery, calm — the warm-swim claim itself holds.",
+     "status": "uncertain",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://skadarlakeboatcruise.com/blog/swimming-spots-skadar-lake-montenegro/",
+     "recommendedAction": "Add an access note: replace with 'D10 midday warm-swim — drive to Godinje village (~10min from Virpazar; park on village roads, no lot) then a short walk-in trail down to the cove (no car access to the beach itself). Sandy, shaded, water bath-warm in June.' If the group wants zero-walk water, Murići or a Virpazar-launched swim is the no-walk alternative.",
+     "skeptic": {
+      "stopId": "me-pjesacac-beach-skadar",
+      "claim": "Pješačac beach on Skadar Lake is NOT car-accessible. Access is either (a) a boat from Virpazar through a reed tunnel, or (b) drive to Godinje village (~5km/~10min from Virpazar, park on village roads — no lot) then walk a short trail down to the cove. The plan's framing of it as a simple drive-up D10 midday swim slotted between paddle and winery is misleading; it needs a boat or a park-and-walk.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Multiple independent sources agree the beach cannot be reached by car. bar.travel (official Bar municipality tourism site) states verbatim: \"The beach cannot be accessed by car, but only via walking trail from a nearby road,\" and places it below Godinje. KASADOO, sharemontenegro.me, and the official pjesacac.com all state it is \"the only beach on Skadar Lake that can only be reached by boat... through a reed tunnel\" and \"there's no electricity nor can it be reached by a car.\" Petitfute/search summaries describe driving to Godinje (~5km/~10min from Virpazar), parking on village roads (no parking lot), then a short walk down the trail; experienced hikers can also reach it via small paths from Virpazar (~7km). The apparent tension between 'boat only' and 'walk from Godinje road' actually reinforces the central finding: ALL sources agree the car cannot reach the beach itself. The two access modes (boat from Virpazar, or park-at-Godinje + walk) both require leaving the car. The sandy/shaded/calm warm-swim character of the cove is also corroborated. The first checker's correction is fully validated; I could not refute it.",
+      "sourceUrl": "https://bar.travel/listing/pjesacac/"
+     }
+    },
+    {
+     "stopId": "me-pjesacac-beach-skadar",
+     "stopName": "Pješačac beach (Skadar Lake's secret sandy cove)",
+     "checkType": "coords",
+     "claimChecked": "lat 42.2255, lng 19.123",
+     "finding": "Plausible and roughly correct — Pješačac sits below Godinje on the SE Crmnica shore, ~7km from Virpazar; the pin lands in the right village/cove zone. No gross error.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://www.montenegropulse.com/lake-skadar.html",
+     "recommendedAction": "No change to coords. (Pin may sit at the road/Godinje rather than the foot-only beach itself, which is fine for navigation since you park at the village.)",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-murici-beska-swim",
+     "stopName": "Murići → Beška island self-swim / €20 boat-taxi (Skadar south shore)",
+     "checkType": "operator-status",
+     "claimChecked": "€20 boat-taxi from Murići to Beška island monasteries; ~1.5h single-lane serpentine each way; leave Rvaši by ~08:30.",
+     "finding": "Confirmed. Local boatmen at the small Murići pier run trips to the 14th-C Beška monastery, '~€20' (2026). Road from Virpazar to Murići is ~22km of classic single-lane serpentine ('an hour's drive' from Virpazar); Rvaši is ~30-40min NW of Virpazar, so ~1.5h each way from Rvaši is accurate, and the 08:30 departure to beat midday heat is sound.",
+     "status": "confirmed",
+     "impact": "high",
+     "confidence": "high",
+     "sourceUrl": "https://www.montenegropulse.com/lake-skadar.html",
+     "recommendedAction": "No change. Optionally add 'boatmen are informal/on-the-spot at the Murići pier — not pre-bookable; bring €20 cash and ask on arrival.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-skadar-virpazar-sup",
+     "stopName": "SUP self-rent on Skadar (Virpazar — Boat Milica all-day SUP)",
+     "checkType": "operator-status",
+     "claimChecked": "Boat Milica +382 69 358 118, SAY 'self-guided' (listings default to guided), NP ticket €5pp.",
+     "finding": "Confirmed and current. Boat Milica (family-run, next to the Virpazar tourist info center) is active in 2025; they rent SUPs and kayaks self-guided (provide a map + suggested route + waterproof bag). Their own site lists the all-day self-guided paddleboard at €40pp + €5pp National Park ticket (not included). Phone +382 69 358 118 matches the operator site. The note's 'listings default to guided, say self-guided' caveat is accurate — TripAdvisor/OTA listings show guided tours, the self-rent option is on boatmilica.com.",
+     "status": "confirmed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://boatmilica.com/tours/all-day-self-guided-paddleboard-experience-on-skadar-lake/",
+     "recommendedAction": "No change needed. Optional: add the price for budgeting — '~€40pp all-day self-guided SUP + €5pp NP ticket, cash.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-vinarija-masanovic",
+     "stopName": "Vinarija Mašanović (Virpazar — the Skadar winery stop)",
+     "checkType": "hours",
+     "claimChecked": "Late afternoon/sunset (~18:00); book +382 68 509 541 / vinarijamasanovic@yahoo.com the day before; CASH ONLY.",
+     "finding": "Confirmed. Winery is open daily ~09:00-20:00 (so an ~18:00 sunset slot is within hours). Reservation recommended due to limited capacity via the exact phone (0038268509541 = +382 68 509 541) and email in the note. A ~2h tasting + food-pairing is the standard format. Cash is the norm.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.trip.com/travel-guide/attraction/virpazar/vinarija-maanovi-winery-masanovic-50663716/",
+     "recommendedAction": "No change. (Minor: the full tasting is ~2h, so an 18:00 start runs close to 20:00 close — fine, but book the slot explicitly so they hold the kitchen.)",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-vinarija-masanovic",
+     "stopName": "Vinarija Mašanović (Virpazar — the Skadar winery stop)",
+     "checkType": "consistency",
+     "claimChecked": "note says 'Day 10 (Jun 25)' but bestTime field says 'Day 9 (Jun 24) afternoon … Sequence: kayak morning → fish lunch → winery → Pavlova Strana golden hour'.",
+     "finding": "Internal inconsistency: this stop lives under Day 10 in the payload and its note correctly says Day 10 (Jun 25) with the Virpazar SUP/swim sequence, but the stale bestTime field still describes the Day 9 (Jun 24) Rijeka Crnojevića sequence (Pavlova Strana, fish lunch). The bestTime contradicts the note and names the wrong day.",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.trip.com/travel-guide/attraction/virpazar/vinarija-maanovi-winery-masanovic-50663716/",
+     "recommendedAction": "Replace the bestTime with: 'Day 10 (Jun 25) late afternoon/sunset (~18:00). Book the day before (+382 68 509 541). Cash only. Sequence: Virpazar SUP/swim morning → midday warm swim (Pješačac/Murići) → winery sunset → back to Rvaši.' (i.e. mirror the note, drop the Day-9 Pavlova Strana wording).",
+     "skeptic": null
+    }
+   ]
+  },
+  {
+   "day": "11",
+   "findings": [
+    {
+     "stopId": "me-kotor",
+     "stopName": "Kotor Old Town + San Giovanni Fortress hike",
+     "checkType": "consistency",
+     "claimChecked": "note: 17:00 sunset climb, 1350 steps, EUR15pp fee applies 08:00-20:00, crest first rampart for the 20:26 sunset. bestTime: 'start the 1,200-step fortress climb at 07:30 (free before 08:00, cruise tourists arrive ~09:30). Combine with Perast + Lovcen mausoleum same day.'",
+     "finding": "The note (afternoon ~17:00 paid sunset climb, 1350 steps) and the bestTime (07:30 FREE morning climb, 1,200 steps, plus Perast+Lovcen) directly contradict each other on time-of-day, free-vs-paid, AND step count. The note is the coherent plan for Day 11 (this is the day's anchor and the day ends in Kotor with the bar night). The bestTime is a stale leftover from a different itinerary draft (Perast+Lovcen are not on Day 11). Separately, the bestTime's 'free before 08:00' loophole is increasingly unreliable for 2026: the Ladder-of-Kotor bypass/hole-in-the-wall was closed (April 2026 update) and fee enforcement has tightened.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.earthtrekkers.com/hiking-ladder-of-kotor-montenegro/",
+     "recommendedAction": "Replace the bestTime with one consistent with the note: 'Day 11 (Jun 26) ~17:00 — climb in late afternoon for cooler temps + golden light; crest the first rampart by the 20:26 sunset. EUR15pp (fee charged ~08:00-20:00, but trail open 24h = no lock-in on an evening descent). Bring water + grippy shoes.' Use a single step count (1350) in both fields.",
+     "skeptic": {
+      "stopId": "me-kotor",
+      "claim": "The day-11 note and the bestTime field contradict each other on time of day on free versus paid and on step count and the bestTime is stale.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "File inspection confirms the contradiction and web checks confirm the 15 euro fee the 1350 steps and the April 2026 ladder bypass closure.",
+      "sourceUrl": "https://www.earthtrekkers.com/hiking-ladder-of-kotor-montenegro/"
+     }
+    },
+    {
+     "stopId": "me-kotor",
+     "stopName": "Kotor Old Town + San Giovanni Fortress hike",
+     "checkType": "price",
+     "claimChecked": "EUR15pp fee applies 08:00-20:00 but the trail is open 24h — NO lock-in risk on an evening climb",
+     "finding": "Confirmed for 2026: San Giovanni fortress entrance is EUR15pp; fee charged during posted hours ~07:00/08:00-20:00 (May-Sep); trail/walls physically accessible 24h, so an evening climb has no gate lock-in. A 17:00 start IS within the fee window, so the group does pay EUR15pp (the note correctly states this). Cash in EUR preferred at the booth; online tickets now also exist.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://adriaticways.com/kotor-fortress-city-walls/",
+     "recommendedAction": "No change to the note's fee/24h logic. Optionally add 'cash EUR at the booth (or pre-buy online)'.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-budva",
+     "stopName": "Budva Old Town",
+     "checkType": "road-access",
+     "claimChecked": "summer-2026 Vrmac-tunnel + Tivat-Jaz roadworks can triple Budva->Kotor to 60-90min — leave Budva by ~15:00; if Vrmac tunnel shows dark-red take the Trojica turn-off (~20min faster)",
+     "finding": "Strongly confirmed. Summer-2026 Vrmac Tunnel reconstruction is a known bottleneck that can triple the normally ~30min drive; 'Via Tivat' buses take up to 75min at 2026 summer peak; the Tivat-Budva/Jaz (M-2) reconstruction is an active Bemax project; the Trojica turn-off (winding hill road) saves ~20min during jams. NEW detail: the Vrmac tunnel has had maintenance closures ~04:00-11:00 (irrelevant to a ~15:00 departure but worth knowing if plans shift earlier).",
+     "status": "confirmed",
+     "impact": "high",
+     "confidence": "high",
+     "sourceUrl": "https://en.wikipedia.org/wiki/Vrmac_Tunnel",
+     "recommendedAction": "Keep the warning as-is. Optionally append: 'Vrmac tunnel can also be CLOSED ~04:00-11:00 for maintenance — don't bank on it for any early-morning Budva->Kotor leg.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-budva-paraglide-becici",
+     "stopName": "Tandem Paragliding Brajici -> Becici (GO2FLY / Budva)",
+     "checkType": "operator-status",
+     "claimChecked": "Book GO2FLY ahead; they fly when conditions suit (AM often smoother, late-PM better light)",
+     "finding": "GO2FLY confirmed operating for the 2026 season. Standard panoramic tandem (15min flight, ~60-75min total) is EUR98pp (8% cash discount); 30min Cross Country EUR155pp; GoPro media EUR15. Take-off Brajici (765m), landing near Becici beach. Booking via website form / WhatsApp / Viber / email, 24h notice, free Budva+Becici hotel pickup. The note carries no price, so this is enrichment, not a correction.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://go2fly.me/en/locations-and-prices/",
+     "recommendedAction": "Add a price to the note: 'GO2FLY standard tandem ~EUR98pp (8% off cash), 30min cross-country EUR155pp, +EUR15 GoPro; book via WhatsApp/form, free Budva/Becici pickup, 24h notice.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-sveti-nikola-island",
+     "stopName": "Sveti Nikola Island (\"Hawaii\") Cliff Jumping (Budva)",
+     "checkType": "ferry-schedule",
+     "claimChecked": "shuttle boat ~12:30-15:00 from Budva Marina/Slovenska (~EUR5-7 RT, frequent in season)",
+     "finding": "Confirmed: shuttle boats run from Budva Marina and Slovenska Plaza every ~15-30min in summer season, standard round-trip EUR5-7pp (some private taxi-boats ~EUR10 one-way). The note's fare and frequency are accurate for June 2026.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://adriaticways.com/sveti-nikola-island-budva/",
+     "recommendedAction": "No change needed.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-kotor-bay-kayak",
+     "stopName": "Bay of Kotor self-guided kayak (Go Go Gaga)",
+     "checkType": "price",
+     "claimChecked": "Go Go Gaga / Dobrota self-rent, licence-free, ~EUR10-15/h",
+     "finding": "Go Go Gaga Tours confirmed operating, based in Dobrota, self-rent (no guide) available. Actual rates: single kayak EUR5/h or EUR20/day; double EUR10 first hour then EUR5/h, or EUR25/day. So 'EUR10-15/h' overstates the single-kayak rate (it's EUR5/h) — for 4 people in 2 doubles you'd pay ~EUR20 for the first hour, not ~EUR40-60.",
+     "status": "changed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.gogogagatours.com/en/rentals/",
+     "recommendedAction": "Edit the note price: 'self-rent EUR5/h single (EUR20/day), EUR10 first hour double then EUR5/h (EUR25/day)' instead of '~EUR10-15/h'.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-tanjga-kotor",
+     "stopName": "BBQ Tanjga (Kotor — legendary cheap grill)",
+     "checkType": "price",
+     "claimChecked": "EUR4.50-5/plate, XXL mix ~EUR35/2, cash only, 5min from the gate",
+     "finding": "Confirmed still open (hours ~11:00-22:00). But the prices look optimistic/stale: a standard mixed grill plate is ~EUR15.50 and a 2-person meat plate ~EUR20 in 2025/2026 sources (sandwiches are ~EUR4, likely the source of the 'EUR4.50-5/plate' figure). The 'XXL mix ~EUR35 for 2' could be roughly right for the largest XXL/XXXL platter but is not clearly corroborated. Could not confirm 'cash only' from current sources (it may now take cards).",
+     "status": "uncertain",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://restaurantguru.com/Tanjga-Kotor",
+     "recommendedAction": "Soften the price note: 'cheap grill — plates from ~EUR5 (sandwich) to ~EUR15-16 (mixed grill); big XXL platter ~EUR30-35 feeds 2-3. Bring cash to be safe.' Drop the unverified 'EUR4.50-5/plate'.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-kotor-oldtown-bars",
+     "stopName": "Kotor Old-Town Bars (Bokun, Letrika, Bandiera)",
+     "checkType": "operator-status",
+     "claimChecked": "Relaxed Kotor old-town bar night (Bokun, Letrika, Bandiera) — walkable",
+     "finding": "All three (Bokun wine bar, Letrika caffe bar, Bandiera pub) confirmed operating in Kotor Old Town in 2025/2026. Note: Letrika is cash-only. No closures found.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "medium",
+     "sourceUrl": "https://wanderlog.com/list/geoCategory/153421/best-nightlife-in-kotor-municipality",
+     "recommendedAction": "Optional: add 'Letrika is cash-only' to the note.",
+     "skeptic": null
+    },
+    {
+     "stopId": "me-camping-mimoza-stoliv",
+     "stopName": "Camping Mimoza (Donji Stoliv, Kotor Bay)",
+     "checkType": "price",
+     "claimChecked": "~12 pitches, one of the most booked in June; waterfront Donji Stoliv, hot showers, ~EUR30-40 for 4 cash; reserve ahead now",
+     "finding": "Confirmed open and accurate: ~12 pitches, multiple 2025 reviews say it fills fast in June ('arrive before lunch / all spots busy by evening' — reserve ahead). Hot showers present (solar-heated, may falter in bad weather). Website lists ~EUR30/night for 2 + 6m van; ~EUR30-40 for 4 with tents is a reasonable June estimate. Waterfront/pier across the road confirmed.",
+     "status": "confirmed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://park4night.com/en/place/39610",
+     "recommendedAction": "No change. Reservation urgency is well-justified — keep 'reserve AHEAD now' prominent.",
+     "skeptic": null
+    }
+   ]
+  },
+  {
+   "day": "12",
+   "findings": [
+    {
+     "stopId": "hr-cavtat-selfrent-boat-milicic",
+     "stopName": "Cavtat self-drive boat rental — Mario Milicic",
+     "checkType": "price",
+     "claimChecked": "~€85/half-day for 4 (2026 price, was €60); ~€15-21pp",
+     "finding": "Official site (rentaboatcavtat.com) and 2025 reviews confirm current pricing: half day (4h) = €85, full day (8h) = €120, sunset (18:30-20:30) = €60. The note's €85/half-day is correct and current. The 'was €60' note is accurate as a historical reference, though €60 now corresponds to the sunset trip; harmless.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.rentaboatcavtat.com/",
+     "recommendedAction": "No change. Price (€85/half-day) verified. Optionally add 'full day €120, sunset trip €60' if the group might want a longer slot."
+    },
+    {
+     "stopId": "hr-cavtat-selfrent-boat-milicic",
+     "stopName": "Cavtat self-drive boat rental — Mario Milicic",
+     "checkType": "operator-status",
+     "claimChecked": "★ self-drive boat operator, licence-free (≤5hp/500m-from-shore), book ahead",
+     "finding": "Operator is active and well-reviewed in 2025 (TripAdvisor recent reviews praise Mario's same-day arrangement, 10-15min handover, snorkel gear lent free). Boats are 5hp, max 6 persons, launch from Cavtat harbour. Croatia's licence-free rule confirmed: 18+, engine ≤5kW (~5hp), max 500m from shore, ID required, safety briefing — all match the note. The 'cannot legally reach Lokrum/Elaphiti' caution is correct: those crossings exceed the 500m-from-shore limit.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.sea-help.eu/en/news-general/boat-driving-license-croatia-6-8-hp/",
+     "recommendedAction": "No change. Operator confirmed running 2026, contact via Viber/WhatsApp +385 98 9392865. Book 1-2 days ahead as planned."
+    },
+    {
+     "stopId": "hr-cavtat-rat-peninsula-swims",
+     "stopName": "Cavtat Rat peninsula swim & snorkel coves",
+     "checkType": "other",
+     "claimChecked": "Free swim platforms & clear coves '1.5km from Cilipi airport'",
+     "finding": "The distance to Dubrovnik/Čilipi airport is wrong: Cavtat is ~5-6km (~10min drive) from Čilipi airport, not 1.5km. The coves themselves (Kamen Mali on the Rat peninsula tip, Žal, etc.) are real, clear-water, pine-shaded and snorkel-good — that part is confirmed. Only the airport-proximity figure is off.",
+     "status": "changed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://visit.cavtat-konavle.com/en/arrival",
+     "recommendedAction": "Edit note: replace '1.5km from Cilipi airport' with '~6km / 10min from Čilipi airport'. The swim spots and their use as the D3 airport-wait filler remain valid."
+    },
+    {
+     "stopId": "hr-cavtat-rat-peninsula-swims",
+     "stopName": "Cavtat Rat peninsula swim & snorkel coves",
+     "checkType": "other",
+     "claimChecked": "Free swim platforms & clear snorkel coves (Kamen Mali, Ključice, Žal)",
+     "finding": "Confirmed: Kamen Mali sits near the outer tip of the green Rat peninsula, reached by a promenade, rocky beach in a small bay backed by pine forest for shade, sea is very clear and ideal for snorkelling, quiet/fewer tourists. Free public access. Matches the note.",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.placesofjuma.com/cavtat-beaches/",
+     "recommendedAction": "No change to the swim-spot substance — only fix the airport distance (see other finding)."
+    },
+    {
+     "stopId": "hr-camping-kate-mlini",
+     "stopName": "Camping Kate (Mlini, near Dubrovnik)",
+     "checkType": "seasonal",
+     "claimChecked": "Last campsite night before Jun-28 flight; reserve ahead; ~25min to Dubrovnik Old Town",
+     "finding": "Official site confirms Camping Kate operates 28.3.2026–28.10.2026, so it is open for Night 12 (Jun 27). 2026 price list: late June = Category C (peak, 19 May–24 Jul) = €10.30/person/day + €1.70 tourist tax + tent €5-9 + car €5 + electricity €4 → ~€56-68 for 4 with tent+car. Note quotes no price so nothing is stale, but the group should expect peak-season pricing, not shoulder. ~8km from Dubrovnik (note's ~25min is reasonable).",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://campingkate.com/price/",
+     "recommendedAction": "No change required. Optionally add price guidance: '~€56-68 for 4 (peak Cat C: €10.30pp + €1.70 tax + tent + car + electricity)'."
+    },
+    {
+     "stopId": "hr-camping-kate-mlini",
+     "stopName": "Camping Kate (Mlini, near Dubrovnik)",
+     "checkType": "hours",
+     "claimChecked": "arrive before ~14:00 reception (June peak); info@campingkate.com / +385 20 487 006",
+     "finding": "Contact details are correct: phone +385 20 487 006 and email info@campingkate.com both match the official site. Could NOT find published reception/check-in hours on the official site or reviews — the specific '14:00 reception' cutoff is unverified (likely safe booking-ahead advice but not confirmed). No evidence it is wrong either.",
+     "status": "uncertain",
+     "impact": "low",
+     "confidence": "low",
+     "sourceUrl": "https://campingkate.com/",
+     "recommendedAction": "Soften to 'arrive in the afternoon and call ahead to confirm reception/check-in hours' since the 14:00 cutoff is not published. Contact details verified correct, keep them."
+    }
+   ],
+   "skeptics": []
+  },
+  {
+   "day": "13",
+   "findings": [
+    {
+     "stopId": "hr-sveti-jakov-beach",
+     "stopName": "Sveti Jakov beach (Dubrovnik)",
+     "checkType": "consistency",
+     "claimChecked": "note: 'Day 13 early morning — swim/snorkel 08:00-09:30 before the 10:00 kayak ... A quick pre-kayak filler'; bestTime: 'afternoon/sunset'",
+     "finding": "The bestTime field ('afternoon/sunset') directly contradicts the note, which uses this as an EARLY-MORNING pre-kayak filler (08:00-09:30). On D13 the only window for this beach is the early morning before the 10:00/10:45 kayak — there is no afternoon slot (the afternoon is flight buffer and the 18:00 airport leave). Sveti Jakov is genuinely best at sunset for light, but that is not when D13 can use it.",
+     "status": "internal-inconsistency",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://shippedaway.com/dubrovnik-beaches/",
+     "recommendedAction": "Replace bestTime 'afternoon/sunset' with: 'Day 13 (Jun 28) early morning ~08:00-09:30, before the kayak. (Light is best at sunset, but D13 only has the morning window.)'",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-dubrovnik-sea-kayak",
+     "stopName": "Dubrovnik Sea Kayaking — Walls & Lokrum",
+     "checkType": "consistency",
+     "claimChecked": "note: 'D13 morning ★ — book the 10:00 departure (back ~13:00) ... NOT the sunset tour'; bestTime: 'Day 4 (Jun 19) — book same-day via X-Adventure Dubrovnik. Sunset tour starts ~19:00 ... Book by 16:00.'",
+     "finding": "The bestTime field is wrong-day AND self-contradicting: it says 'Day 4 (Jun 19)' (this stop is Day 13, Jun 28) and pushes the SUNSET tour (~19:00) — which the note explicitly rules out because the day ends at the airport. The bestTime is a stale leftover and contradicts the whole D13 logic.",
+     "status": "internal-inconsistency",
+     "impact": "high",
+     "confidence": "high",
+     "sourceUrl": "https://www.dubrovnik-kayak.com/",
+     "recommendedAction": "Replace bestTime with: 'Day 13 (Jun 28) morning — book the morning half-day departure (X-Adventure: 08:45 or 10:45 slots, 3-4h, from €45pp). NOT the sunset tour (day ends at the airport). Book same-day or by 16:00 the day before.'",
+     "skeptic": {
+      "stopId": "hr-dubrovnik-sea-kayak",
+      "claim": "The bestTime field is a stale wrong-day leftover that contradicts the note: it says 'Day 4 (Jun 19)' and recommends the ~19:00 sunset tour, while the note commits this stop to 'D13 morning' (Jun 28) with the 10:00 departure and explicitly says 'NOT the sunset tour' because the day ends at the airport.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Read both fields verbatim from the same plan entry in research/_session-j-payload.json (lines 1184-1193). note: 'D13 morning ★ — book the 10:00 departure (back ~13:00) ... NOT the sunset tour — the day ends at the airport, so the afternoon stays as flight buffer.' bestTime: 'Day 4 (Jun 19) — book same-day via X-Adventure Dubrovnik. Sunset tour starts ~19:00; wine + walls glowing at dusk. Book by 16:00.' Two independent contradictions: (1) DAY — bestTime says Day 4/Jun 19, note says D13; per CLAUDE.md trip facts Day1=Jun16 so Day4=Jun19 and Day13=Jun28 (confirmed by date math, and by surrounding entry hr-camping-kate-mlini = Night 12/Jun 27, the final overnight before the Jun-28 flight). (2) TOUR — bestTime pushes the ~19:00 sunset tour; the note explicitly rules it out ('NOT the sunset tour'). A 19:00 sunset tour is also logically impossible on Day 13 (Jun-28 departure, 20:40 flight per memory). Attempted refutation fails: pick:true/dayOrder:1.0/'fitting finale'/'the day ends at the airport' unambiguously commit the stop to D13 morning, leaving no reading where the Jun-19 sunset bestTime is valid. The cited dubrovnik-kayak.com source is irrelevant to this purely internal-consistency check; the stop's real sources are TripAdvisor (sunset listing d13446931). The bestTime is a stale leftover from an earlier Day-4 placement.",
+      "sourceUrl": "https://www.tripadvisor.com/AttractionProductReview-g295371-d13446931-Sunset_Sea_Kayaking_and_Wine_Dubrovnik-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html"
+     }
+    },
+    {
+     "stopId": "hr-dubrovnik-sea-kayak",
+     "stopName": "Dubrovnik Sea Kayaking — Walls & Lokrum",
+     "checkType": "operator-status",
+     "claimChecked": "note: 'book the 10:00 departure (back ~13:00), same-day via X-Adventure Dubrovnik or by 16:00 the day before'",
+     "finding": "X-Adventure is operating in 2026 (active site dubrovnik-kayak.com + 2026 Viator/Tripadvisor listings). BUT the half-day tour departures are 08:45, 10:45, 12:45, 14:45 — there is NO 10:00 departure. Half-day is 3-4h, from €45pp. A 10:45 start returns ~13:45-14:45 (later than the note's '~13:00'); the 08:45 start returns ~11:45-12:45 and protects the afternoon flight buffer better.",
+     "status": "changed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.viator.com/tours/Dubrovnik/X-ADVENTURE-SEA-KAYAKING-HALF-DAY-TOUR-DUBROVNIK/d904-60915P4",
+     "recommendedAction": "Edit note: change 'book the 10:00 departure (back ~13:00)' to 'book the 08:45 departure (back ~12:30) — half-day is 3-4h, from €45pp; the 10:45 slot also works but returns ~14:00. Meeting point: Od Tabakarije 1 (pier below restaurant Orhan), arrive 10min early.'",
+     "skeptic": {
+      "stopId": "hr-dubrovnik-sea-kayak",
+      "claim": "X-Adventure Dubrovnik is operating in 2026; its half-day kayak tour departs at 08:45/10:45/12:45/14:45 (no 10:00 slot), runs 3-4h from €45pp, so the plan's '10:00 departure, back ~13:00' note is inaccurate on both start and return time.",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Independently confirmed via fresh fetches. X-Adventure's affiliated booking site kayak-dubrovnik.com/half-day-tour/ explicitly lists the half-day start times as '8.45, 10.45, 12.45, 14:45' — no 10:00 departure exists, matching the first checker. The official site dubrovnik-kayak.com confirms the operator is active with price 'from €45' pp and duration '3-4 hours'. 2026 listings on Viator (d904-60915P4), GetYourGuide (t146145), and Tripadvisor confirm operator-status active. A 10:45 start at 3-4h returns ~13:45-14:45, not the note's ~13:00; an 08:45 start returns ~11:45-12:45 and is the better fit for a same-day evening departure. I attempted to refute by checking multiple independent listing sources but all corroborate the 08:45/10:45/12:45/14:45 schedule and the absence of any 10:00 slot.",
+      "sourceUrl": "https://kayak-dubrovnik.com/half-day-tour/"
+     }
+    },
+    {
+     "stopId": "hr-dubrovnik",
+     "stopName": "Dubrovnik Old Town",
+     "checkType": "consistency",
+     "claimChecked": "note: 'Day 13 ... City walls EUR40pp (2026)'; bestTime: 'Day 12 (Jun 27 Saturday) — walls open 06:30 (€35pp); finish before cruise ships ~10:00. Car drop airport Jun 28 by 19:15'",
+     "finding": "The bestTime field is wrong-day and price-contradicting: it labels this 'Day 12 (Jun 27 Saturday)' while the note (and this stop's placement) is Day 13 (Jun 28). It also quotes €35pp for the walls, contradicting the note's €40pp. Calendar check: Jun 28 2026 is a SUNDAY, not a Saturday; Jun 27 is the Saturday. The bestTime conflates the wrong day and a stale price.",
+     "status": "internal-inconsistency",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://wallsofdubrovnik.com/info-ticket-prices-working-hours/",
+     "recommendedAction": "Replace bestTime with: 'Day 13 (Jun 28 Sunday) — go EARLY ~08:00, before cruise crowds (~10:00). City walls €40pp (incl. Lovrijenac, 2026). Protect the 18:00 Old-Town leave for the 20:40 flight; car drop airport by ~19:15.'",
+     "skeptic": {
+      "stopId": "hr-dubrovnik",
+      "claim": "The Dubrovnik Old Town bestTime field is internally inconsistent with the stop's note/placement: it labels the visit 'Day 12 (Jun 27 Saturday)' while the note and the stop's Day-13 placement are Jun 28 (which is a Sunday, not Saturday), and it quotes the walls at EUR35pp, contradicting the note's EUR40pp (2026).",
+      "verdict": "confirmed",
+      "confidence": "high",
+      "evidence": "Calendar (verified via `date -j`): Jun 28 2026 = Sunday, Jun 27 2026 = Saturday. The two contradicting fields sit in ONE record in research/_session-j-payload.json (lines 1240-1241): note='Day 13 Old Town (NOT the airport day's pickup). City walls EUR40pp (2026, incl. Lovrijenac)... go EARLY... on this Jun28 cruise day'; bestTime='Day 12 (Jun 27 Saturday) — walls open 06:30 (€35pp)'. The same bestTime string is also live in src/data/seed.json line 136, and seed's communityNotes still say 'Wall entry ~€35pp'. So within one stop the day label (Day 13/Jun28 vs Day 12/Jun27) and the price (€40 vs €35) directly contradict. The note is the wrong field on day numbering only in that it's the airport/departure day, but the bestTime's 'Day 12' is the wrong-day side: the note explicitly states this is the Day-13 Jun28 Old Town visit. Price: the official ticket page (wallsofdubrovnik.com) lists €40 for the current 1-day adult pass, matching the note's EUR40pp and making the bestTime's €35pp stale. The 'Jun 27 Saturday' day-of-week is internally self-consistent (the 27th IS a Saturday) but mislabels the actual Day-13 stop, which is Jun 28 (Sunday). All three of the finding's claims (wrong-day label, price contradiction, Jun28=Sunday) independently check out.",
+      "sourceUrl": "https://wallsofdubrovnik.com/info-ticket-prices-working-hours/"
+     }
+    },
+    {
+     "stopId": "hr-dubrovnik",
+     "stopName": "Dubrovnik Old Town",
+     "checkType": "price",
+     "claimChecked": "note: 'City walls EUR40pp (2026, incl. Lovrijenac); the EUR40 Dubrovnik Pass = same price + museums + 24h bus (better value if you want more).'",
+     "finding": "CONFIRMED for 2026: Dubrovnik City Walls = €40 adult (high season, includes Fort Lovrijenac + Western Outer Walls). The 1-Day Dubrovnik Pass = €40 and adds the walls PLUS 6 museums/2 galleries + 24h public transport. The note's numbers are correct; the conflicting €35 in the bestTime field is the stale value (an older season price).",
+     "status": "confirmed",
+     "impact": "low",
+     "confidence": "high",
+     "sourceUrl": "https://www.dubrovnik-travel-experience.com/dubrovnik-pass.html",
+     "recommendedAction": "Keep the note as-is (€40 walls / €40 Pass is correct for 2026). Fix only the bestTime field's stale €35 (see the consistency finding).",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-dubrovnik-airport",
+     "stopName": "Dubrovnik Airport (Čilipi) — car drop & fly Jun 28",
+     "checkType": "ferry-schedule",
+     "claimChecked": "note: 'FLIGHT FR9756 20:40 -> VIE 22:05 (check-in closes ~20:00; car drop ~19:15 ...)'",
+     "finding": "CONFIRMED: Ryanair FR9756 DBV→VIE departs 20:40 on SUNDAYS — and Jun 28 2026 is a Sunday, so the 20:40 time is correct for the actual travel day. (Caution: FR9756 is a rotating flight number — on weekdays it departs at very different times, e.g. ~08:40 Mon, ~14:00 Thu, ~11:55 Fri — so the 20:40 only holds because D13 is a Sunday. Arrival ~22:05 VIE is consistent with the ~1h25 block.)",
+     "status": "confirmed",
+     "impact": "high",
+     "confidence": "high",
+     "sourceUrl": "https://www.planemapper.com/flights/FR9756",
+     "recommendedAction": "Keep as-is. Optionally add to the note: 'FR9756 time is day-specific — 20:40 is the Sunday departure (correct for Jun 28); re-check Ryanair if the date ever shifts.'",
+     "skeptic": null
+    },
+    {
+     "stopId": "hr-dubrovnik-airport",
+     "stopName": "Dubrovnik Airport (Čilipi) — car drop & fly Jun 28",
+     "checkType": "closure",
+     "claimChecked": "note: 'Jun 28 is a LIKELY cruise day in Dubrovnik — Old Town->Cilipi can run 45-60min, NOT 25. LEAVE the Old Town by ~18:00 no matter what.'",
+     "finding": "CONFIRMED: Jun 28 2026 is a cruise day — Explorer of the Seas (~3,114 passengers) is in port 10:00-20:00, plus Star Clipper. The cruise-day traffic/congestion warning and the early-morning Old Town advice are well-founded; the 'leave by 18:00' buffer is justified.",
+     "status": "confirmed",
+     "impact": "medium",
+     "confidence": "high",
+     "sourceUrl": "https://www.cruisetimetables.com/dubrovnikcroatiaschedule-jun2026.html",
+     "recommendedAction": "Keep the note as-is — cruise-day warning is verified. No edit needed.",
+     "skeptic": null
+    }
+   ]
+  }
+ ],
+ "anchorPass": {
+  "summary": "This is a tight, taste-aware plan — most days lead with a nature/activity ★ (canyoning, bridge jump, Tara raft, Durmitor, kayaks, boat rentals) and the planner has already pre-demoted the obvious fat (Makarska nightlife, Mljet cave-OR-kayak, Skadar SUP, D13 Bellevue, Dubrovnik walls all carry explicit \"skip/option\" flags in their own notes). So I'm NOT padding the list. The genuinely weak committed stops cluster around sightseeing/monuments that survive in the itinerary as defaults rather than options: Krka (D1), Počitelj (D4), the Jablanica WWII museum (D6), Ostrog (D9), and Budva Old Town (D11) are the clearest taste-rule frictions. Ston Walls (D3, a ★) is the one debatable top-pick — a no-shade monument walk wedged onto the most time-fragile day. Mratinje Dam (D7) is low-payoff but nearly free on the road, so it's a softer flag. Net: the plan is strong; trim/demote these few and it gets tighter without losing a single big highlight. Note: I judged against the group's \"nature+activity over sightseeing, dislike generic old towns/museums/monuments unless iconic-and-on-route\" rule; coordinates and on-route logic check out across the file.",
+  "weakestStops": [
+   {
+    "day": 1,
+    "stopId": "hr-krka",
+    "stopName": "Krka National Park (Skradinski Buk)",
+    "whyWeak": "Worst payoff-for-cost on the trip for this group: ~77km-corridor inland NP where swimming has been BANNED since 2021, so it reduces to a paid boardwalk walk/photo at EUR40pp (EUR160 for 4) on a jet-lagged arrival day. That is exactly the 'sightseeing, no activity' the group dislikes, and the day already has its real water highlight (Skradin town beach swim, pick=true). Its own note calls it 'THE skip candidate.' It is committed (pick listed) rather than dropped, which is the weakness.",
+    "betterAlternative": "none — keep the Skradin beach swim as the day's water; treat Krka as drop-by-default. If they want moving water on D1, the legal Krka swim already lives in the Skradin beach stop, so no new stop is needed.",
+    "confidence": "high"
+   },
+   {
+    "day": 4,
+    "stopId": "ba-pocitelj",
+    "stopName": "Počitelj",
+    "whyWeak": "A textbook taste violation: a 'bare stone hill, little shade' Ottoman old-town/fortress photo stop — generic-old-town sightseeing that is NOT iconic-on-route in the Mostar-bridge/Kotor-fortress sense. On a day already carrying two strong water ★ (Mljet kayak) plus Kravica falls, it is the redundant low-energy add (group will be hot and ferry-rushed).",
+    "betterAlternative": "none — keep as an optional 5-min pomegranate-stall leg-stretch, not a committed 45-50min stop. The day is full; cutting it just adds slack, which the group values. (If they want one more swim, Kravica already covers water.)",
+    "confidence": "high"
+   },
+   {
+    "day": 6,
+    "stopId": "ba-jablanica-neretva-museum",
+    "stopName": "Battle of Neretva Museum & sunken bridge (Jablanica)",
+    "whyWeak": "Explicitly a WWII museum + monument — the single clearest hit against the 'dislike museums/monuments unless iconic' rule. It is on-route but not iconic to this young/adventurous group, and D6 is a long Sarajevo drive day where the real highlight (Baščaršija/Žuta sunset, pick=true) plus a Boračko Lake swim already fill the slack better.",
+    "betterAlternative": "Boračko Lake (ba-boracko-lake, already on the same day's drive ~16km from Konjic) — a glacial-lake swim + self-rent rowboat/pedalo is a strictly better on-route break than a museum for this group. Lead the morning with that and let the museum be a 10-min drive-by photo of the sunken bridge only.",
+    "confidence": "high"
+   },
+   {
+    "day": 9,
+    "stopId": "me-ostrog-monastery",
+    "stopName": "Ostrog Monastery",
+    "whyWeak": "A religious monument requiring covered knees/shoulders, no photos in prayer rooms, pilgrim-bus crowds — sightseeing, not nature/activity. It is roughly on the Žabljak→Skadar line and is the region's signature sight, so it is borderline-iconic, but for this group it is the day's weakest item and its own note already tags it 'the day's drop candidate.' Eats a real 2:11 mountain-drive morning before the D9 ★ kayak.",
+    "betterAlternative": "none — keep as a short 30-45min facade/cliff-setting stop (the cliff-embedded architecture is the genuinely striking part) and protect the time for the Crnojevića kayak + Pavlova Strana. Don't expand it.",
+    "confidence": "medium"
+   },
+   {
+    "day": 11,
+    "stopId": "me-budva",
+    "stopName": "Budva Old Town",
+    "whyWeak": "Generic walled old town the group will only 'quick stop' — they base in Stoliv and do the Kotor bar night, not Budva nightlife, so the old town itself adds little. D11 already has the real highlights (Sveti Nikola cliff-jumping, Kotor fortress ★, optional Kotor bay kayak). With the Vrmac-tunnel roadworks buffer warning on this very stop, time spent in Budva old town directly threatens the ~17:00 Kotor fortress sunset.",
+    "betterAlternative": "Sveti Nikola Island ('Hawaii') cliff-jumping + swim (me-sveti-nikola-island, same morning, same zone) — make that the Budva-area activity and reduce the old town to a parking-and-a-walk-through. That protects the drive buffer to Kotor and fits taste far better.",
+    "confidence": "medium"
+   },
+   {
+    "day": 3,
+    "stopId": "hr-ston-walls",
+    "stopName": "Walls of Ston (Pelješac)",
+    "whyWeak": "The one debatable ★ top-pick: a no-shade limestone monument-wall walk (EUR10pp) wedged into the most time-fragile day in the plan (D3 = airport pickup + last-ferry SPOF). It is a sightseeing climb, not nature/activity, and any overrun cascades into the 20:30 ferry risk flagged on the same day. Iconic-ish but a stretch for the taste rule, and the schedule cost is real.",
+    "betterAlternative": "none structurally, but de-star it: do the shortest Ston→Mali Ston traverse only (already noted) or drop it entirely if the morning runs late, leaning on Mali Ston oysters as the on-route Pelješac stop. Should be a flex/skip item, not a ★ anchor on the SPOF day.",
+    "confidence": "medium"
+   },
+   {
+    "day": 7,
+    "stopId": "me-mratinje-dam",
+    "stopName": "Mratinje Dam (Piva dam)",
+    "whyWeak": "A 'roadside photo stop, exposed concrete, no shade — don't linger' sight on a day that is already a strong activity day (Tara raft ★) plus genuine scenery (Piva Lake swim/kayak, the 56-tunnel canyon drive). Low payoff and pure sightseeing, though its cost is small since it's directly on the road south.",
+    "betterAlternative": "none — keep as a 10-min drive-by, not a 25-min stop; the Piva Lake turquoise swim (me-piva-lake-swim, same day, same road) is the superior and self-rentable on-route stop and already in the plan. This is the softest flag of the set.",
+    "confidence": "low"
+   }
+  ]
+ },
+ "guidePass": {
+  "changes": [
+   {
+    "day": 11,
+    "suggestion": "Flip the Kotor crowd assumption for THIS date. The cruise calendar shows ZERO ships in Kotor on Jun 26 2026 (vs 4 ships / ~7,500 pax the day before, Jun 25). The fortress and old town will be unusually calm all day — the plan's me-kotor 'cruise tourists arrive ~09:30' / forced-early logic does not apply Jun 26. Keep the ~17:00 golden-hour climb (heat is the real reason to go late, not crowds), but you are FREE to also wander the old town midday without the usual cruise crush. Update the me-kotor note so the group doesn't needlessly rush.",
+    "why": "cruisetimetables.com Kotor June 2026 calendar: Jun 26 has no scheduled calls; Jun 25 had Azamara Onward, Mein Schiff 4, MSC Armonia, Norwegian Pearl. The committed note assumes cruise crowding that isn't there on this specific date.",
+    "effort": "note-only",
+    "confidence": "high"
+   },
+   {
+    "day": 6,
+    "suggestion": "Add a date-specific nightlife anchor: Jun 21 2026 is the OPENING night of the Garden of Dreams electronic-music festival (multi-venue across Sarajevo, parties run late ~22:00+) AND the opening day of Summer in the Park – Hastahana (Marijin Dvor beer-garden with live music, runs all summer). This squarely fits the group's nightlife/electronic taste and lands exactly on their Sarajevo overnight. Note it on ba-bascarsija-bar-cluster as the headline option for the night, and verify the 2026 lineup/venue/ticket on sarajevo.travel a few days ahead (the detailed lineup I found was a cached prior edition).",
+    "why": "sarajevo.travel 'Top events June 20-26' lists Garden of Dreams (electronic, multi-venue) and Summer in the Park–Hastahana both opening Jun 21. A real festival on the exact overnight date is higher-value than a generic bar crawl for this group, and the sober-driver constraint already in the plan still applies.",
+    "effort": "note-only",
+    "confidence": "medium"
+   },
+   {
+    "day": 13,
+    "suggestion": "Harden the Jun 28 Dubrovnik cruise warning with the confirmed ship. Explorer of the Seas (3,114 pax) arrives Gruž at 10:00 on Jun 28 — the Old Town walls/Stradun will be at peak crush from ~10:30. If anyone wants the walls or Old Town, do it 08:00-09:30 and be out before 10:30; otherwise lead the day purely on the 10:00 sea-kayak (already the pick) and skip the Old Town. This also reinforces the existing 18:00 Old-Town-leave rule: Gruž cruise traffic + cruise-day road load is exactly why Old Town->Čilipi can run 45-60min. Note-only update to hr-dubrovnik and hr-dubrovnik-airport.",
+    "why": "cruisetimetables.com Dubrovnik Jun 28 2026: Explorer of the Seas 3,114 pax arr 10:00 dep 20:00, plus Star Clipper. Confirms — with a specific ship/time — the plan's general cruise-day caution; an 08:00 walls slot is the only comfortable window.",
+    "effort": "note-only",
+    "confidence": "high"
+   },
+   {
+    "day": 5,
+    "suggestion": "Re-sequence the D5 morning so the Stari Most jump truly lands first and cool. The committed picks have ba-mostar-bridge-jump (★, ~09:00) and ba-blagaj (midday ~13:00), but ba-mostar's note still carries a contradictory 'arrive late afternoon from Kravica / sunset' bestTime line, and ba-fortica's bestTime says 'morning.' For late June 35C+ heat, lock the order to: Stari Most jump + cevapi 09:00-11:00 (cool, empty) -> Blagaj Tekija + icy Buna swim + Vrelo trout 12:30-15:00 (midday heat-relief on cold karst water) -> Fortica skywalk/zipline 16:00-18:00 (exposed but heat eased) -> Drežnica canyon swim on the drive N. Clean up the stale bestTime strings so the morning-vs-afternoon is unambiguous.",
+    "why": "The picks are right but residual bestTime fields contradict the chosen order (some say sunset/afternoon Mostar, some say morning Fortica). On these hot dates the jump and old town MUST be the cool-morning block and the exposed Fortica hilltop the late-afternoon block; the cold Buna swim is the correct midday heat sink.",
+    "effort": "reorder",
+    "confidence": "high"
+   },
+   {
+    "day": 1,
+    "suggestion": "Make the late-arrival Krka decision date-honest. With a 10:00 Zadar car pickup and the full Zadar->Krvavica drive, you realistically reach Krka mid/late afternoon. Lean into the after-15:00 ticket (EUR30pp vs EUR40pp) the plan already flags, but add the local move: enter from the SKRADIN side (not Lozovac), park in Skradin, and walk/boat in — that way Skradin town beach swim (the legal swim, already the D1 ★) needs no separate boat hop and you skip the Lozovac bus queue. If energy is low, skip the falls entirely and just do the Skradin beach swim + camp at Krvavica with daylight. Note-only tightening of hr-krka / hr-skradin-town-beach.",
+    "why": "hr-krka already notes the EUR30 after-15:00 window and online-timed entry; the Skradin-side entry is the local trick that merges the paid park visit with the free legal swim and avoids the Lozovac shuttle bottleneck on a tired arrival afternoon.",
+    "effort": "note-only",
+    "confidence": "medium"
+   },
+   {
+    "day": 9,
+    "suggestion": "Flag the June water-lily bloom as a real timing payoff on the Crnojevića river. Lake Skadar / Rijeka Crnojevića water lilies and lush channel greenery peak in early summer and the lake sits ~26C (warm swim). For the D9 self-rent kayak and Pavlova Strana viewpoint, paddle the channel in the morning calm (operator wind rule + lily visibility both favor AM) and shoot Pavlova Strana in late-afternoon golden light as planned. Add a one-line note to me-skadar-rijeka-crnojevica-kayak that late June is peak lily season on the channel — a genuine this-window bonus, not generic.",
+    "why": "Montenegro Skadar sources confirm summer lake ~26C and water-lily cover; the bloom is a specific June visual that rewards the morning channel paddle the plan already schedules. Pure upside, no schedule change.",
+    "effort": "note-only",
+    "confidence": "medium"
+   },
+   {
+    "day": 8,
+    "suggestion": "Keep the Prutaš pick but make the snow fallback explicit for late June. Verified: snow lingers on Durmitor's higher/exposed ridges into late June, and the Prutaš upper section (UIAA-I, cables) is exactly where it holds. The plan's me-prutas-hike already says 'conditions-dependent' — strengthen it to a hard decision gate: ask the Boričje host on the D7 night AND check the AM sky; if snow/storm risk, default to the Black Lake loop or Planinica (both snow-free, no scramble) rather than improvising at the trailhead. This protects the group-taste 'one big highlight' without a sketchy ridge.",
+    "why": "Multiple Durmitor hiking sources confirm late-June snow patches at elevation; Prutaš's cabled upper ridge is the icing-prone part. Afternoon storms are typical in June, reinforcing the off-ridge-by-noon rule already noted. Fallbacks must be pre-decided, not gambled.",
+    "effort": "note-only",
+    "confidence": "high"
+   },
+   {
+    "day": 3,
+    "suggestion": "Pre-buy the Prapratno->Sobra ferry ticket online NOW and treat the 20:30 as Plan A only if clearing arrivals by ~17:50. Re-confirmed for the Jun 18 window: 20:30 is the last sailing, cars first-come (~50/boat, no reservation of the slot), queue 45-60min in peak season. The single highest-fragility moment of the trip. The online pre-buy only skips the desk — it does NOT guarantee a car space — so the real safeguard is the mainland Plan B (sleep near Ston, take 07:00/10:15 ferry D4). Make sure the to-do has the pre-buy as a do-now item, not a book-on-the-road item.",
+    "why": "Jadrolinija/croatiaferries confirm 20:30 last sailing + 45-60min peak queue; a delayed 17:20 friend landing can blow the window. The plan flags this as the #1 SPOF — the date-specific action is buy online now AND keep the mainland fallback booked-able, because a delayed flight on this exact evening is the realistic failure mode.",
+    "effort": "note-only",
+    "confidence": "high"
+   },
+   {
+    "day": 11,
+    "suggestion": "Verify the summer-2026 Budva->Kotor roadworks status a day or two ahead and pre-plan the Trojica bypass. The plan's me-budva note warns Vrmac-tunnel + Tivat-Jaz roadworks can triple the drive to 60-90min — this is a live 2026 construction situation, so check current status (Google Maps live + a quick local-forum/news check) on D10 evening. If the Vrmac tunnel shows dark-red Jun 26, take the Trojica switchback turn-off (~20min faster) and leave Budva by ~15:00 to hold the ~17:00 fortress sunset. Since Jun 26 has no Kotor cruise ships, you have more midday slack to absorb a slow transfer than the note assumes.",
+    "why": "The committed note already names the Vrmac/Tivat-Jaz roadworks as a 2026 hazard; roadwork status changes month to month, so it must be re-verified on the day. Combined with the zero-cruise Jun 26 finding, the group has more buffer than the worst-case note implies.",
+    "effort": "note-only",
+    "confidence": "medium"
+   }
+  ],
+  "summary": "Read the committed Jun 16-28 2026 plan and ran date-specific web checks. The plan is already very strong and heat/crowd-aware, so the highest-value moves are mostly note-only corrections and a couple of reorders rather than swaps. Top date-anchored findings: (1) Kotor on Jun 26 (D11) has ZERO scheduled cruise ships (vs 4 ships/~7,500 pax on Jun 25) — the plan's 'cruise crowds at 09:30' assumption is wrong for this date; the old town will be calm and the early-rush logic relaxes. (2) Dubrovnik Jun 28 (D13) has Explorer of the Seas (3,114 pax) arriving 10:00 — confirms the cruise-day caution; only an 08:00-09:30 walls window is comfortable, otherwise lead on the 10:00 kayak and protect the 18:00 Old-Town leave. (3) Sarajevo Jun 21 (D6) is the OPENING night of the Garden of Dreams electronic-music festival plus Summer in the Park-Hastahana — a real, on-taste nightlife anchor on the exact overnight date (verify 2026 lineup ahead). (4) Durmitor late-June snow lingers on the Prutaš upper cabled ridge — make the Black Lake/Planinica fallback a hard pre-decided gate. (5) Prapratno->Sobra 20:30 last ferry + 45-60min peak queue re-confirmed as the trip's #1 fragility: pre-buy online now AND keep the mainland Plan B. Also: tighten the D5 Mostar morning-vs-afternoon sequence (stale bestTime strings contradict the cool-morning jump / midday cold-Buna-swim / late-afternoon Fortica order), use the Skradin-side entry + after-15:00 EUR30 ticket for the tired D1 Krka arrival, note the June water-lily bloom on the D9 Crnojevica kayak, and re-verify the live Budva->Kotor Vrmac-tunnel roadworks for D11. Source for the plan: /Users/ruslankotliarenko/workspace-personal/balkans-trip/research/_session-j-payload.json. No file edits made; all suggestions are note-only or reorder (cheap to apply), none require a real swap."
+ }
+}

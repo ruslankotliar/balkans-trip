@@ -1,0 +1,3120 @@
+[
+  {
+    "place_id": "hr-autocamp-denka-loviste",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:32:42.178+00:00"
+  },
+  {
+    "place_id": "user-1781356614119",
+    "data": {
+      "day": 7,
+      "dayOrder": 4
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T17:01:54.147+00:00"
+  },
+  {
+    "place_id": "ba-air-1542024184506963047",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T14:57:56.734+00:00"
+  },
+  {
+    "place_id": "me-planinica",
+    "data": {
+      "note": "D8 co-lead OPTION alongside Prutaš — Planinica (2330m) is the NON-technical big-view Durmitor summit: trailhead at Black Lake (1.2km walk from the Mlinski Potok camp, NO car shuttle, unlike Prutaš). Pick this on the morning if the group wants the views without the exposed Prutaš scramble, or if weather/energy is marginal.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:25:25.861+00:00"
+  },
+  {
+    "place_id": "user-1781357020737",
+    "data": {
+      "day": 4,
+      "dayOrder": 9
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T12:34:36+00:00"
+  },
+  {
+    "place_id": "ba-villa-cold-river-treehouse-bunica",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T14:57:56.914+00:00"
+  },
+  {
+    "place_id": "ba-autocamp-green-park-mostar",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T14:57:56.968+00:00"
+  },
+  {
+    "place_id": "ba-gem-mostar-nanas-house",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T14:57:57.029+00:00"
+  },
+  {
+    "place_id": "ba-kravica-autocamp-ante",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T14:57:57.086+00:00"
+  },
+  {
+    "place_id": "ba-villa-village-house-cvaljina",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T14:57:57.14+00:00"
+  },
+  {
+    "place_id": "hr-camp-matkovica-srebreno",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T14:57:57.2+00:00"
+  },
+  {
+    "place_id": "hr-camp-lovor-mljet",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T14:57:57.622+00:00"
+  },
+  {
+    "place_id": "hr-grgic-vina-trstenik",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "hr-camp-prapratno",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T14:57:57.742+00:00"
+  },
+  {
+    "place_id": "me-camp-grab",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T14:57:57.91+00:00"
+  },
+  {
+    "place_id": "ba-kocusa-falls",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "ba-boracko-jezero-konjic",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "ba-konjic-eko-selo-boracko",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "me-pluzine",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:09:58.499+00:00"
+  },
+  {
+    "place_id": "me-skrcka-jezera",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "me-krupac-lake",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "hr-kupari-bay",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:16:04.162+00:00"
+  },
+  {
+    "place_id": "me-skadar-winery-kopitovic",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "ba-tunnel-of-hope",
+    "data": {
+      "note": "D6 afternoon ★ — walk the actual 800m siege tunnel under the airport runway; consistently travelers' favourite Sarajevo site, indoor/shaded (good for the hot afternoon). On the SW approach, ~20min from the old town — slot ~16:00 before the evening Bascarsija crawl.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "hr-banje-beach-club",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:17:58.607+00:00"
+  },
+  {
+    "place_id": "hr-er-dubrovnik",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:18:48.544+00:00"
+  },
+  {
+    "place_id": "me-vitaljina-border",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "ba-tvrdos-monastery",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "ba-ark-bunker-konjic",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:20:41.977+00:00"
+  },
+  {
+    "place_id": "hr-kolocep-blue-cave",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:23:11.318+00:00"
+  },
+  {
+    "place_id": "hr-camp-pod-maslinom-orasac",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:23:37.181+00:00"
+  },
+  {
+    "place_id": "hr-lopud-sunj",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "ba-vjetrenica-cave",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:24:47.792+00:00"
+  },
+  {
+    "place_id": "me-durmitor-ice-cave",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:25:35.016+00:00"
+  },
+  {
+    "place_id": "ba-gem-konjic-lakeview-studio",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T14:57:56.792+00:00"
+  },
+  {
+    "place_id": "hr-srd",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:57:19+00:00"
+  },
+  {
+    "place_id": "me-crno-jezero-restoran",
+    "data": {
+      "note": "Redundant — Restaurant Or'O is the D8 special refuel. Keep as a Black Lake terrace option.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "hr-sokol-grad",
+    "data": {
+      "note": "OPTION for D12 variety: dramatically restored medieval cliff-fortress carved into a Konavle crag (~20min inland, real ruin + big views, not a generic old town). Adds a non-water activity if you want one — otherwise skip.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "hr-blace-mljet",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "me-camp-razvrsje",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:28:01.546+00:00"
+  },
+  {
+    "place_id": "hr-bacina-jezera",
+    "data": {
+      "day": 3,
+      "status": "shortlist",
+      "dayOrder": 0.5
+    },
+    "cleared": true,
+    "updated_at": "2026-06-14T17:43:33.330174+00:00"
+  },
+  {
+    "place_id": "me-poscenska-jezera",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "hr-villa-mlinica-brijesta-peljesac",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T14:57:57.367+00:00"
+  },
+  {
+    "place_id": "hr-agroturizam-antunovic",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T14:57:57.424+00:00"
+  },
+  {
+    "place_id": "hr-nevio-camping-orebic",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:29:33.343+00:00"
+  },
+  {
+    "place_id": "hr-dalmata-camping-orebic",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:29:37.183+00:00"
+  },
+  {
+    "place_id": "hr-hvar",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:30:18.995+00:00"
+  },
+  {
+    "place_id": "hr-camp-mindel-vela-luka",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:31:30.098+00:00"
+  },
+  {
+    "place_id": "hr-korcula-town",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:31:32.554+00:00"
+  },
+  {
+    "place_id": "hr-dingac-vineyard-peljesac",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T14:57:57.484+00:00"
+  },
+  {
+    "place_id": "me-durmitor-katun-homeland-nest",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T15:22:55.178+00:00"
+  },
+  {
+    "place_id": "hr-port9-camping-korcula",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:32:18.472+00:00"
+  },
+  {
+    "place_id": "hr-viganj-windsurf-beach",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:32:20.494+00:00"
+  },
+  {
+    "place_id": "hr-pupnatska-luka",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:32:22.218+00:00"
+  },
+  {
+    "place_id": "hr-zitna-zavalatica",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:32:23.952+00:00"
+  },
+  {
+    "place_id": "hr-camp-lupis-loviste",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:32:35.73+00:00"
+  },
+  {
+    "place_id": "me-er-zabljak",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:33:42.276+00:00"
+  },
+  {
+    "place_id": "hr-camp-antony-boy-viganj",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:33:53.181+00:00"
+  },
+  {
+    "place_id": "hr-orebic-ferry",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:33:57.86+00:00"
+  },
+  {
+    "place_id": "hr-camp-perna-kuciste",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:34:00.64+00:00"
+  },
+  {
+    "place_id": "hr-autocamp-luka-duba",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:34:41.903+00:00"
+  },
+  {
+    "place_id": "hr-loviste-village",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:35:24.801+00:00"
+  },
+  {
+    "place_id": "hr-nakovana",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:34:47.737+00:00"
+  },
+  {
+    "place_id": "hr-camp-divna-trpanj",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:35:34.386+00:00"
+  },
+  {
+    "place_id": "me-gem-zabljak-aframe-durmitor",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T15:34:46.285+00:00"
+  },
+  {
+    "place_id": "me-durmitor-katun-krstajic",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T15:31:41.599+00:00"
+  },
+  {
+    "place_id": "hr-trpanj-ferry",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:36:03.235+00:00"
+  },
+  {
+    "place_id": "me-gem-zabljak-maslacak",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T15:32:17.879+00:00"
+  },
+  {
+    "place_id": "me-gem-zabljak-mountain-spark",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:36:57.964+00:00"
+  },
+  {
+    "place_id": "me-air-42302959",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T15:34:12.707+00:00"
+  },
+  {
+    "place_id": "hr-sobra-ferry",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:40:40.545+00:00"
+  },
+  {
+    "place_id": "user-1781362126170",
+    "data": {
+      "day": 6,
+      "dayOrder": 6
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:03:49.793+00:00"
+  },
+  {
+    "place_id": "hr-konoba-feral-brijesta",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "ba-trebinje-old-town",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-14T13:59:14.930729+00:00"
+  },
+  {
+    "place_id": "ba-air-1165836464333612445",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-14T13:59:14.930729+00:00"
+  },
+  {
+    "place_id": "hr-dubrovnik-dive-blueplanet",
+    "data": {
+      "note": "NOT on the fly-out day — no flying within 18-24h of diving (decompression risk). Keep as a dive option for a non-flying day only.",
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "ba-trebevic-cable-car",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:07:34.604+00:00"
+  },
+  {
+    "place_id": "ba-skakavac-waterfall",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:22:06.403+00:00"
+  },
+  {
+    "place_id": "ba-umoljani-watermills",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:22:49.162+00:00"
+  },
+  {
+    "place_id": "ba-hutovo-blato",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:39:44.965+00:00"
+  },
+  {
+    "place_id": "hr-sveti-ilija-peljesac",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:42:23.766+00:00"
+  },
+  {
+    "place_id": "me-tara-secret-beach",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "ba-lukomir",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:08:10.391+00:00"
+  },
+  {
+    "place_id": "me-gem-durmitor-bajka-ethno",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T15:41:37.818+00:00"
+  },
+  {
+    "place_id": "hr-cavtat-sea-kayak",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-durmitor-prutas",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-13T16:54:28.468+00:00"
+  },
+  {
+    "place_id": "ba-cafe-de-alma-mostar",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:48:27.47+00:00"
+  },
+  {
+    "place_id": "hr-omis-cetina-kayak-rental",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "hr-sveti-jure",
+    "data": {
+      "day": 2,
+      "note": "Conditional on the Biokovo road being open to cars on Jun 17 (see the toll-road warning: weekday 07:00-15:00 closure until Jun 19 2026). If confirmed open, summit early for the haze-free panorama; if not, skip — Cetina canyoning carries D2. ~150min if it runs.",
+      "dayOrder": 1.5,
+      "timeMinutes": 150
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "hr-zadar-sup-rental-salty",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-vodopad-crnjak",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:49:20.543+00:00"
+  },
+  {
+    "place_id": "hr-makarska-riviera-sup-kayak-rental",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-mljet-lakes-kayak-rental",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-rentakayak-mostar-potoci",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-studeni-potok-umoljani",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:18:56.14+00:00"
+  },
+  {
+    "place_id": "hr-dubrovnik-lokrum-kayak-rental",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-paragliding-mostar",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:52:25.923+00:00"
+  },
+  {
+    "place_id": "ba-sniper-tower-mostar",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:52:28.736+00:00"
+  },
+  {
+    "place_id": "ba-celebici-neretva-swim",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "ba-glavaticevo-neretva",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:23:12.083+00:00"
+  },
+  {
+    "place_id": "ba-trebizat-canoe",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "ba-umoljani-rakitnica-hike",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:19:06.545+00:00"
+  },
+  {
+    "place_id": "hr-glorijet-gruz",
+    "data": {
+      "note": "Closed Sundays (Jun 28) — Barba is the quick Dubrovnik seafood pick. Option for a non-Sunday.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T14:49:22.436594+00:00"
+  },
+  {
+    "place_id": "ba-bjelasnica-summit-babindo",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:19:12.841+00:00"
+  },
+  {
+    "place_id": "me-zabojsko-jezero",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "ba-prenj-zelena-glava",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:57:12.648+00:00"
+  },
+  {
+    "place_id": "user-1781345597793",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "me-guesthouse-skadar-raicevic",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:19:16.417+00:00"
+  },
+  {
+    "place_id": "ba-vrelo-bosne",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:20:02.923+00:00"
+  },
+  {
+    "place_id": "ba-terme-ilidza",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:20:29.774+00:00"
+  },
+  {
+    "place_id": "me-veliki-medjed",
+    "data": {},
+    "cleared": true,
+    "updated_at": "2026-06-14T10:46:52+00:00"
+  },
+  {
+    "place_id": "ba-cvrsnica-hajducka-vrata",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:58:01.596+00:00"
+  },
+  {
+    "place_id": "ba-radimlja-stecci",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:50+00:00"
+  },
+  {
+    "place_id": "me-ljutica-river",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "me-slansko-jezero",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "me-gornjepoljski-vir",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "me-skadar-virpazar-kayak-rent",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T21:00:43+00:00"
+  },
+  {
+    "place_id": "me-skadar-kingfisher-virpazar-rent",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T21:00:43+00:00"
+  },
+  {
+    "place_id": "hr-telascica-mir-kayak-rental",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T21:00:43+00:00"
+  },
+  {
+    "place_id": "ba-boracko-lake",
+    "data": {
+      "day": 6,
+      "lat": 43.5519,
+      "lng": 18.0314,
+      "note": "Emerald glacial lake ~16km up from Konjic, on the Jablanica->Sarajevo line — swim + self-rent a pedalo or wooden rowboat at the main beach (casual beach-bar rental; SUP sometimes at Eko Selo bar; no formal kayak operator). Morning reset; replaces the wrong-way detour.",
+      "status": "shortlist",
+      "dayOrder": -1.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "hr-lokrum",
+    "data": {
+      "pick": true,
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "me-bobotov-kuk",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:54:30.732+00:00"
+  },
+  {
+    "place_id": "ba-cinemas-sloga-latin-night",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:04:06.677+00:00"
+  },
+  {
+    "place_id": "me-zabljak",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T16:54:55.548+00:00"
+  },
+  {
+    "place_id": "me-villa-jablan-winery-rvasi",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T17:05:08.23+00:00"
+  },
+  {
+    "place_id": "ba-donje-bare-zelengora",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T20:44:14.835+00:00"
+  },
+  {
+    "place_id": "ba-zelengora-lakes",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T20:44:42.415+00:00"
+  },
+  {
+    "place_id": "hr-trznica-zadar",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "hr-cetina-canyoning",
+    "data": {
+      "day": 2,
+      "note": "D2 ★ ANCHOR (carries the day regardless of the Biokovo road closure). Book a slot 1-2 days ahead (canyoning-cetina.com ~EUR70pp Extreme 18+ / maldukadventures.com). Shaded cold canyon = ideal midday-heat block; 12m jumps + 55m waterfall rappel. ~3h.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": 4.0,
+      "timeMinutes": 180
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:26:36+00:00"
+  },
+  {
+    "place_id": "hr-zadar-airport",
+    "data": {
+      "day": 1,
+      "note": "Flight lands Jun 16 09:00; ~45-60min bags + rental desk; car pickup 10:00. ⚠ EES (live Apr 2026): if ANY of the 4 hold NON-EU passports, budget extra time at arrival for biometric enrolment (and on D12 cross ME->HR before ~09:00 / after ~15:00 — Karasovici 2-5h at midday peak). All-EU/EEA = fast lane, ignore.",
+      "dayOrder": -0.5,
+      "timeMinutes": 60
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:49:03.55457+00:00"
+  },
+  {
+    "place_id": "hr-nin-old-town",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T10:39:07.067+00:00"
+  },
+  {
+    "place_id": "hr-st-nicholas-nin",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T10:39:12.415+00:00"
+  },
+  {
+    "place_id": "hr-camp-lisicina",
+    "data": {
+      "day": 1,
+      "dayOrder": 5
+    },
+    "cleared": true,
+    "updated_at": "2026-06-14T11:36:39+00:00"
+  },
+  {
+    "place_id": "hr-er-zadar",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T10:42:09.629+00:00"
+  },
+  {
+    "place_id": "me-kotor-oldtown-bars",
+    "data": {
+      "day": 11,
+      "note": "Relaxed Kotor old-town bar night (Bokun, Letrika, Bandiera) — no dress code, walkable, ~10-15min taxi/water-taxi back to Stoliv camp.",
+      "status": "shortlist",
+      "dayOrder": 7.5,
+      "timeMinutes": 180
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T22:08:17.086753+00:00"
+  },
+  {
+    "place_id": "me-camp-full-monte",
+    "data": {
+      "day": 11,
+      "dayOrder": 5
+    },
+    "cleared": true,
+    "updated_at": "2026-06-14T12:39:48+00:00"
+  },
+  {
+    "place_id": "hr-sabunike-privlaka",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T10:42:24.33+00:00"
+  },
+  {
+    "place_id": "hr-telascica",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T10:43:51.393+00:00"
+  },
+  {
+    "place_id": "hr-zavizan-dark-sky",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T10:45:51.246+00:00"
+  },
+  {
+    "place_id": "hr-plitvice",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T10:46:16.555+00:00"
+  },
+  {
+    "place_id": "me-skadar-ebike-wine-3e",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-bar-fishing-beli",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "hr-veliki-prstavac",
+    "data": {},
+    "cleared": true,
+    "updated_at": "2026-06-14T11:07:14+00:00"
+  },
+  {
+    "place_id": "me-skadar-self-drive-boat",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "hr-camping-krvavica",
+    "data": {
+      "day": 1,
+      "note": "Arrival-night base ~10km W of Makarska; pitch ~18:00 with daylight. Pricing ~EUR12 adult + ~EUR8 tent + ~EUR4.50 car (+EUR3-5 electricity) = ~EUR55-65 for 4. CASH ONLY (no cards) — bring euros. Ramova/own beach is a ~5min / 200m walk — arrival swim then camp-cook dinner.",
+      "dayOrder": 4,
+      "timeMinutes": 120
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T11:57:29.113+00:00"
+  },
+  {
+    "place_id": "user-clone-rvasi-n10",
+    "data": {
+      "day": 10,
+      "dayOrder": 1.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "hr-velika-paklenica-gorge",
+    "data": {},
+    "cleared": true,
+    "updated_at": "2026-06-14T11:14:04+00:00"
+  },
+  {
+    "place_id": "hr-camp-np-paklenica",
+    "data": {},
+    "cleared": true,
+    "updated_at": "2026-06-14T11:14:04+00:00"
+  },
+  {
+    "place_id": "hr-zadar-old-town",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-etno-restoran-socica",
+    "data": {
+      "day": 7,
+      "note": "Lamb ispod saca + Piva-lake terrace in Pluzine - D7 dinner near the Boricje bed.",
+      "status": "shortlist",
+      "dayOrder": 3.8
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:31:53+00:00"
+  },
+  {
+    "place_id": "ba-canoekor-konjic-hourly-rental",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-boracko-lake-paddle",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-jablanica-neretva-selfguided-paddle",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-skadar-vranjina-kayak-sup-rent",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-kotor-fortress-free-ladder",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-budva-balkan-flow-sup-kayak-rent",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-kotor-gogogaga-kayak-rent",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-svetistefan-przno-sup-kayak-rent",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-kotor-bay-tours-kayak-rent",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-rijeka-crnojevica-kom-boat",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-virpazar-kayak",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-skadar-rijeka-crnojevica-rent",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "hr-er-split",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T11:58:31.554+00:00"
+  },
+  {
+    "place_id": "me-durmitor-buggy-soa",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-autocamp-naluka-morinj",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-piva-lake-sup-kayak",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "user-clone-krvavica-n2",
+    "data": {
+      "day": 2,
+      "dayOrder": 9
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T12:08:38+00:00"
+  },
+  {
+    "place_id": "user-1781370817091",
+    "data": {
+      "day": 9,
+      "dayOrder": 9
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T12:08:38+00:00"
+  },
+  {
+    "place_id": "hr-odysseus-cave",
+    "data": {
+      "day": 4,
+      "note": "Quick dawn cliff-jump/swim ~1.3km from the Mungos camp (~07:30) — do this OR the salt-lakes kayak, NOT a leisurely both, or you miss the 12:00 Sobra ferry. Free, no ticket. Kayak is the stronger single pick.",
+      "status": "shortlist",
+      "dayOrder": 1.0,
+      "timeMinutes": 75
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:49:03.55457+00:00"
+  },
+  {
+    "place_id": "me-camp-mlinski-potok",
+    "data": {
+      "day": 8,
+      "note": "Night 8 (Jun 23) — 2nd night of the 2-night Zabljak base (Durmitor hike day). Walk-in OK or email minakamp@gmail.com. 0.6km to Black Lake trailhead.",
+      "status": "shortlist",
+      "dayOrder": 3,
+      "timeMinutes": 0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-ostrog-monastery",
+    "data": {
+      "day": 9,
+      "note": "Day 9 (Jun 24) — depart Zabljak ~06:45-07:00 (drive is a real 2:11/95km mountain road), arrive Ostrog ~09:00 while it's cool and before the pilgrim buses. Open 06:00-17:00 May-Sep, free; cover knees/shoulders, no photos in prayer rooms; park at Lower Monastery. Keep it to 45-60min — the day's drop candidate if tired. Then ~1h45 on to Skadar.",
+      "status": "shortlist",
+      "dayOrder": 6.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:31:53+00:00"
+  },
+  {
+    "place_id": "hr-camp-marina-mljet",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:26:36+00:00"
+  },
+  {
+    "place_id": "me-kotor-blue-cave-speedboat",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "hr-duboka-draga-vrsi",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "me-katun-lokvice",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "user-1781345656267",
+    "data": {
+      "status": "backup",
+      "timeMinutes": 90
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "hr-punta-bajlo-zadar",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:10:41+00:00"
+  },
+  {
+    "place_id": "__day_config__",
+    "data": {
+      "note": "{\"1\": {\"startHour\": 10, \"endHour\": 21}, \"2\": {\"startHour\": 6, \"endHour\": 22}, \"3\": {\"startHour\": 8.5, \"endHour\": 21.75}, \"4\": {\"startHour\": 8, \"endHour\": 19}, \"5\": {\"startHour\": 6, \"endHour\": 23.5}, \"6\": {\"startHour\": 8, \"endHour\": 24}, \"7\": {\"startHour\": 7, \"endHour\": 19}, \"8\": {\"startHour\": 6, \"endHour\": 19}, \"9\": {\"startHour\": 6.5, \"endHour\": 18.5}, \"10\": {\"startHour\": 6.5, \"endHour\": 20}, \"11\": {\"startHour\": 6.5, \"endHour\": 27}, \"12\": {\"startHour\": 7.5, \"endHour\": 21.5}, \"13\": {\"startHour\": 7.5, \"endHour\": 18.5}}"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "ba-blagaj-trout-terraces",
+    "data": {
+      "day": 5,
+      "note": "SPECIAL meal: order at RESTORAN VRELO (terrace over the Buna spring, 4.0★) — NOT the cheaper Fajic/Hladovina next door (2.8-3.1★, undercooked + slow). ~EUR9-10/trout, walk-in, a normal ~1h lunch. Midday heat-relief block with the Buna swim.",
+      "status": "shortlist",
+      "dayOrder": 5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:28:10.396+00:00"
+  },
+  {
+    "place_id": "ba-buna-blagaj-swim",
+    "data": {
+      "day": 5,
+      "note": "Day 5 — icy karst-spring swim (~10-12C) on shaded terraces = the day's ideal MIDDAY heat-relief (~13:30), right after the Buna trout lunch.",
+      "status": "shortlist",
+      "dayOrder": 4,
+      "timeMinutes": 45
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:28:10.318+00:00"
+  },
+  {
+    "place_id": "ba-blagaj-buna-sup-note",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-cavtat-konavle-kayak-rental",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-konavle-stone-villa-tier3",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-cavtat-apt-tier2",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-montokuc-mljet",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "ba-kravica",
+    "data": {
+      "day": 4,
+      "note": "Cash-only (KM): entry ~20 KM/pp + parking. Bosnia = cash country — withdraw KM at the FIRST Bosnia ATM after the border (Capljina/Mostar Raiffeisen, no fee). Swimming under the falls allowed (June pool ~14-20C). ⚠ D4 reality: after the 12:00 Sobra ferry + the HR→BA border you realistically arrive ~15:00-16:00 (a busy window, NOT the quiet early slot) — the swim is still worth it; a quieter visit would need a different day.",
+      "dayOrder": 7.0,
+      "timeMinutes": 150
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-vinarija-masanovic",
+    "data": {
+      "day": 10,
+      "note": "Day 10 (Jun 25) late afternoon/sunset (~18:00) — book +382 68 509 541 / vinarijamasanovic@yahoo.com the day BEFORE; CASH ONLY. Sequence: morning SUP/swim near Virpazar -> midday warm swim (Pjesacac/Murici) -> winery sunset -> back to Rvasi.",
+      "dayOrder": 0.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-skadar-virpazar-sup",
+    "data": {
+      "day": 10,
+      "lat": 42.2455,
+      "lng": 19.09,
+      "note": "D10 OPTIONAL morning paddle (~09:00, flat water before afternoon lake wind) — Boat Milica +382 69 358 118, SAY 'self-guided' (listings default to guided), NP ticket EUR5pp. Demoted to an option so D10 leads on islands+winery (differentiates from D9's river kayak); do the SUP OR the Murici/Beska day-trip, not both.",
+      "status": "shortlist",
+      "dayOrder": -10
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T22:35:02.122211+00:00"
+  },
+  {
+    "place_id": "ba-fortica-mostar",
+    "data": {
+      "day": 5,
+      "note": "Day 5 (Jun 20) late afternoon ~16:00-18:00 — heat-tolerant exposed hilltop, fits after the Mostar core, before the 21:00 zipline close. Skywalk free; zipline 50 KM/pp. No advance booking but call +387 62 115 100 to confirm open. The day's slack/skip candidate.",
+      "status": "shortlist",
+      "dayOrder": 6
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:28:10.585+00:00"
+  },
+  {
+    "place_id": "hr-ston-walls",
+    "data": {
+      "day": 3,
+      "note": "D3 ★ — FIRST activity of the morning, gates open 08:00, walk 08:30-10:00. No shade, white limestone, real climb: do it before June midday heat and tour buses. ~EUR10pp. Do the shorter Ston->Mali Ston traverse (~45-60min) to stay on schedule for the ferry.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": 1.5,
+      "timeMinutes": 90
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "hr-mljet-kayak-sup-selfrent-lakes",
+    "data": {
+      "day": 4,
+      "note": "D4 ★ — self-rent kayak/SUP across the emerald salt lakes to St Mary islet. Arrange rental the NIGHT BEFORE for an ~08:00-08:30 start; NP entry ~EUR25pp. MUST be back near Sobra to queue for the 12:00 ferry by ~10:45 — this is the activity you SHORTEN if tight, never the ferry. Then ferry 12:00 -> drive ~2h -> Kravica.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": 1.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:06:13+00:00"
+  },
+  {
+    "place_id": "ba-blagaj",
+    "data": {
+      "day": 5,
+      "note": "Day 5 (Jun 20) — midday stop ~13:00-15:00 after the cool-morning Mostar block (12km south, ~15min). Arrive before 10:00 or after 15:00 to miss tour buses. 10 KM/EUR5 cash; cover knees/shoulders (wraps at door). 1.5h max.",
+      "dayOrder": 3.6,
+      "timeMinutes": 90
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:28:14.833+00:00"
+  },
+  {
+    "place_id": "hr-prapratno-ferry",
+    "data": {
+      "day": 3,
+      "note": "#1 SPOF. DBV airport -> Prapratno is ~1h15 (budget 1h30 for June traffic). On-time 17:20 landing -> rolling ~17:45 -> Prapratno ~19:30 for the 20:30 LAST sailing (queue >=45min, cars first-come). PLAN B: pre-buy the ticket ONLINE; if not clearing arrivals by ~17:50, SKIP the 20:30 and sleep mainland (Autocamp Prapratno/near Ston), take the 06:00/10:15 ferry D4 AM.",
+      "status": "shortlist",
+      "dayOrder": 4.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:26:36+00:00"
+  },
+  {
+    "place_id": "ba-pocitelj",
+    "data": {
+      "note": "OPTION (demoted from committed): a 5-min leg-stretch / photo of the Ottoman stone hill on the Kravica→Poplat drive — bare, little shade. Do it only if you want it; the day's slack is better spent at the Stolac/Bregava water or resting.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-piva-zipline",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:52:33.915503+00:00"
+  },
+  {
+    "place_id": "me-njegusi-zipline",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:52:33.915503+00:00"
+  },
+  {
+    "place_id": "ba-rakitnica-canyoning",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:52:33.915503+00:00"
+  },
+  {
+    "place_id": "hr-mljet-aquatica-diving",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:52:33.915503+00:00"
+  },
+  {
+    "place_id": "ba-glamping-bagrem-jablanica",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:52:33.915503+00:00"
+  },
+  {
+    "place_id": "hr-villa-royal-house-dubravka",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:52:33.915503+00:00"
+  },
+  {
+    "place_id": "me-skadar-pelican-kayak",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:52:33.915503+00:00"
+  },
+  {
+    "place_id": "hr-cavtat-rat-peninsula-swims",
+    "data": {
+      "day": 12,
+      "note": "Free swim platforms & clear pine-shaded coves (Kamen Mali, Zal) on the Cavtat Rat peninsula, ~6km / 10min from Cilipi airport — the fix for the D3 airport dead-window (hot afternoon water while waiting for the 17:20 landing), and a swim stop on D12. No backtrack, no cost.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": -4.5,
+      "timeMinutes": 60
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T22:35:01.412226+00:00"
+  },
+  {
+    "place_id": "hr-velika-duba-zivogosce",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T09:07:44.874577+00:00"
+  },
+  {
+    "place_id": "hr-rijeka-ljuta-konavle",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T09:07:44.874577+00:00"
+  },
+  {
+    "place_id": "ba-vodopad-pjene-stolac",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T09:07:44.874577+00:00"
+  },
+  {
+    "place_id": "hr-primosten-mala-raduca",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "hr-via-ferrata-fortica-omis",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T18:27:11+00:00"
+  },
+  {
+    "place_id": "hr-ramova-beach-krvavica",
+    "data": {
+      "day": 1,
+      "status": "shortlist",
+      "dayOrder": 3.5,
+      "timeMinutes": 90
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-konoba-feral-brela",
+    "data": {
+      "day": 2,
+      "note": "The ONE Riviera peka (the day's special meal) — best-rated Brela konoba, 10m from the beach, no Omiš backtrack. Pre-order octopus/veal peka in the morning. Replaces Konoba Gušti.",
+      "status": "shortlist",
+      "dayOrder": 6.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "user-1781358765546",
+    "data": {
+      "day": 5,
+      "note": "BOOK: Arrive ~19:00 with daylight to pitch tents; confirm with the host that arrival after ~18:00 is OK (call…",
+      "dayOrder": 9
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T14:49:22.436594+00:00"
+  },
+  {
+    "place_id": "me-kotor-bay-apt-muo-dobrota",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:09:39+00:00"
+  },
+  {
+    "place_id": "ba-pec-mlini-grude",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T09:07:44.874577+00:00"
+  },
+  {
+    "place_id": "hr-konoba-gusti-omis",
+    "data": {
+      "note": "Generic konoba (rated 3) + Omiš backtrack + peka needs 3-6h pre-order — replaced by Konoba Feral (Brela). Option only if you pre-order peka that morning.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-stabanska-jezera",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T09:07:44.874577+00:00"
+  },
+  {
+    "place_id": "me-vidikovac-babina-greda-piva",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T09:07:44.874577+00:00"
+  },
+  {
+    "place_id": "me-crvena-greda-durmitor",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T09:07:44.874577+00:00"
+  },
+  {
+    "place_id": "me-uvala-veslo-lustica",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T09:07:44.874577+00:00"
+  },
+  {
+    "place_id": "me-zaboj-skadar-viewpoint",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T09:07:44.874577+00:00"
+  },
+  {
+    "place_id": "hr-skradin-town-beach",
+    "data": {
+      "day": 1,
+      "note": "D1 HIGHLIGHT — the legal Krka swim: NP shuttle boat down from Skradinski Buk to Skradin town beach (~hourly, last boats early evening). Confirm the boat is running the day you go; if you walked in from the Skradin entrance you're already in town and need no boat.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": 1.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-neretva-rafting-konjic",
+    "data": {
+      "note": "Optional 2nd rafting (Class II-III, warmer than Tara, ~EUR45) — self-organise on the road for D5 or D6 near Konjic. Tara D7 is the marquee; this is the easy add if the group wants more white-water.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "ba-jablanica-neretva-museum",
+    "data": {
+      "day": 6,
+      "note": "Iconic WWII sunken railway bridge + Battle of Neretva museum, right on the M-17 as you leave Ravna/Jablanica - quick on-route stop.",
+      "status": "shortlist",
+      "dayOrder": -2.0,
+      "timeMinutes": 30
+    },
+    "cleared": true,
+    "updated_at": "2026-06-14T20:57:19+00:00"
+  },
+  {
+    "place_id": "hr-biokovo-skywalk",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-gubavica-waterfall",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-punta-rata",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "hr-biokovo-tollroad",
+    "data": {
+      "day": 2,
+      "note": "⚠ VERIFY FIRST: a SPECIAL TRAFFIC REGULATION (fire-restoration) closes the Biokovo road to cars on WEEKDAYS ~07:00-15:00, in effect until Jun 19 2026. D2 is Wed Jun 17 = a weekday, so a dawn ~06:30 slot likely can't summit + descend (blocked/stuck until 15:00). CALL info@pp-biokovo.hr / +385 21 616 924 to confirm Jun 17 car access BEFORE relying on it — the booking page can stay open under a closure. If blocked: lead D2 with the Cetina canyoning anchor; do Biokovo only if access is confirmed (or after 15:00, tight).",
+      "status": "shortlist",
+      "dayOrder": 1.0,
+      "timeMinutes": 60
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T14:49:22.436594+00:00"
+  },
+  {
+    "place_id": "hr-kantun-paulina",
+    "data": {
+      "day": 1,
+      "note": "Day 1 (Jun 16) — quick cevapi stop in Split en route Krka -> Krvavica. Off-peak (before 12:00 or after 14:00) skips the worst queue; you'll likely hit it ~16:00-16:30 which is fine.",
+      "status": "shortlist",
+      "dayOrder": 2.5,
+      "timeMinutes": 30
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-radmanove-mlinice",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "hr-krka",
+    "data": {
+      "day": 1,
+      "note": "Inland ~77km but on the Zadar->Split line. Swimming BANNED at Skradinski Buk since 2021 (walk/photo only). Tickets ONLINE-ONLY timed entry (shop.np-krka.hr) — EUR40pp June, BUT after 15:00 = EUR30pp (a tired late arrival hits this window). The Skradin<->falls boat is INCLUDED in the ticket (Apr-Oct) — legal swim = Skradin town beach. THE skip candidate if arrival-day energy is low.",
+      "status": "shortlist",
+      "dayOrder": 1.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:31:53+00:00"
+  },
+  {
+    "place_id": "hr-camp-mungos-mljet",
+    "data": {
+      "day": 3,
+      "note": "Night-arrival-safe Mljet camp at Babino Polje (~10min / ~6km DRIVE from Sobra port — not steps from the dock; pool, restaurant, mini-market). Pitch ~21:30 after the 20:30 ferry; drive the dark island road carefully (wildlife). (Autokamp Marina/Ropa kept as the NP-side alternative.)",
+      "status": "shortlist",
+      "dayOrder": 6.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:26:36+00:00"
+  },
+  {
+    "place_id": "hr-biokovo-paragliding",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "hr-starigrad-fortica",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "hr-split",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "hr-mljet-np",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "hr-mljet-bike-rental-lakes",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "hr-cetina-rafting",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "ba-diva-grabovica",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "hr-mali-ston-oysters",
+    "data": {
+      "day": 3,
+      "note": "Quick-grab on the airport/ferry day: shuck-and-go direct from the Mali Ston / Bistrina / Hodilje farmers (~EUR1/oyster, cash) — informal, not a fixed-hour stall, so treat as nice-if-open, not a planned meal. Do NOT sit down at Bota Sare (opens 11:00 = burns ferry-critical time). 20-30min stop.",
+      "dayOrder": 2.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-scepan-polje-piva-canyon",
+    "data": {
+      "day": 7,
+      "note": "Cross at the 24/7 Scepan Polje/Hum border after the Tara take-out. ⚠ 2026 roadworks on the Foca→Hum (Scepan Polje) approach = slow driving + temporary ~10-min stops; add 20-30min buffer for the morning leg, depart Pale ~06:45. Then the 56-tunnel Piva canyon drive to Zabljak (headlights ON, narrow) — active reconstruction on the Pluzine–Scepan Polje leg too.",
+      "dayOrder": 2.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:49:03.55457+00:00"
+  },
+  {
+    "place_id": "hr-kobas-bay",
+    "data": {
+      "pick": true,
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "ba-tima-irma",
+    "data": {
+      "day": 5,
+      "note": "Day 5 — quick cevapi straight off the bridge in the cool morning, before 12:00 to beat the queue.",
+      "status": "shortlist",
+      "dayOrder": 3,
+      "timeMinutes": 60
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:28:10.526+00:00"
+  },
+  {
+    "place_id": "ba-mostar",
+    "data": {
+      "day": 5,
+      "note": "Day 5 (Jun 20) — do Mostar in the COOL MORNING ~09:30-10:30; Stari Most is empty and the bridge/jumpers are cool then. Midday = mobbed + 35C. The morning is the move.",
+      "status": "shortlist",
+      "dayOrder": 2
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:28:12.965+00:00"
+  },
+  {
+    "place_id": "ba-bobsled-track",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "ba-sarajevo-petica-ferhatovic",
+    "data": {
+      "day": 6,
+      "dayOrder": 3.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:49:03.55457+00:00"
+  },
+  {
+    "place_id": "ba-stolac-bregava",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "ba-mostarska-bijela-canyon",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "ba-crni-vir-dzajici",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "ba-sarajevo-ramis",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "ba-gradac-foca-viewpoint",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "ba-mostar-black-dog-pub",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-zminje-jezero",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "ba-mostar-bridge-jump",
+    "data": {
+      "day": 5,
+      "note": "Do it FIRST at the bridge (~09:00, cool + empty) via the Mostari Divers Club + their mandatory training jump. ~24m — real commitment, decide PER PERSON on the day. Budget ~EUR30-50pp TOTAL (training ~EUR10-25 + the jump ~EUR20-25), cash. Non-jumpers watch from the Halebija/jumpers' viewpoint.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": 1,
+      "timeMinutes": 60
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:28:14.889+00:00"
+  },
+  {
+    "place_id": "hr-makarska-nightlife",
+    "data": {
+      "day": 2,
+      "note": "OPTIONAL late night ~23:00-02:00 — Deep cave club + Osejava cliff walk. ⚠ Confirm Deep is actually open this season (2026 reports conflict — one says it may not open; check their Instagram/call). The Osejava cliff walk is the reliable fallback either way. Only if NOT doing the early canyoning AND remembering Jun 18 (Day 3) is the FIXED Dubrovnik-airport pickup. The obvious drop-if-tired stop.",
+      "status": "shortlist",
+      "dayOrder": 8.5,
+      "timeMinutes": 120
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T14:49:22.436594+00:00"
+  },
+  {
+    "place_id": "hr-gastro-mare-kobas",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-peljesac-bridge",
+    "data": {
+      "day": 3,
+      "dayOrder": 1.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "hr-dubrovnik-airport-pickup",
+    "data": {
+      "day": 3,
+      "note": "BOOK: Be parked by ~17:10; expect to actually roll out ~17:45-18:00. Leave Pelješac by ~15:45 to absorb June …",
+      "dayOrder": 3.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "ba-sand-pyramids-foca",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:50+00:00"
+  },
+  {
+    "place_id": "ba-tjentiste-monument",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:50+00:00"
+  },
+  {
+    "place_id": "hr-konoba-ribar-mljet",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-zuljana",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-pocitelj-stalls",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-bingo-mostar",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-konjic-stara-cuprija",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-zeljo-cevapi",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-sarajevo-pivara",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-durmitor-sedlo-pass",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-ulcinj-old-town",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T18:56:14+00:00"
+  },
+  {
+    "place_id": "me-stari-bar",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T18:56:14+00:00"
+  },
+  {
+    "place_id": "hr-konoba-ivankovski",
+    "data": {
+      "note": "D12 is a camp-cook night at Camping Kate — keep this farm konoba as the option if you want one Konavle sit-down.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-dreznica-canyon",
+    "data": {
+      "day": 5,
+      "note": "D5 afternoon water ★ — turquoise pools + local cliff-jump (Stupina) on the paved M17 side road, zero backtrack on the drive N to Ravna. Free, cold glacier-fed water; keep as the on-route afternoon swim.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": 7,
+      "timeMinutes": 60
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:30:29.69+00:00"
+  },
+  {
+    "place_id": "me-vrazje-jezero",
+    "data": {
+      "day": 8,
+      "note": "Day 8 (Jun 23) afternoon after the Prutas hike — 15km on the Savnik road from Zabljak. Calm evening = best Durmitor reflection. Glacial-cold dip. (Also an option morning of Day 9 en route to Ostrog.)",
+      "status": "shortlist",
+      "dayOrder": 1.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "me-grabovica-canyon",
+    "data": {
+      "note": "Tamer canyoning near Savnik — the reliable substitute if Nevidio is closed/too high in late June. Half day, guided.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-kotor-serpentine-bend10",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-sarajevo",
+    "data": {
+      "day": 6,
+      "note": "D6 ★ (Jun 21, Sunday) — afternoon arrival, evening on foot: Bascarsija at dusk, Zuta Tabija sunset (~20:32). 🎉 Jun 21 2026 = OPENING night of the Garden of Dreams electronic festival (multi-venue, runs late ~22:00+) + Summer in the Park–Hastahana opens — a real party on this exact date, better than a generic bar crawl (Kino Bosna is CLOSED Sundays). Group SLEEPS in Pale (N6, ~30min SE) — designate a sober driver for the post-nightlife leg; Pale also pre-positions for Day 7's Foca/Scepan Polje rafting drive.",
+      "pick": true,
+      "dayOrder": 2.5,
+      "timeMinutes": 180
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-ada-bojana-beach",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "me-kod-pera-njegusi",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "hr-roski-slap",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "hr-vrulja-cove",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "hr-mljet-blace-beach",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "hr-velika-gubavica",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:55:49+00:00"
+  },
+  {
+    "place_id": "me-perast",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-maximus-kotor",
+    "data": {
+      "note": "Late dress-up club option (smart-casual dress code) — only if you want a proper club night.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:49:03.55457+00:00"
+  },
+  {
+    "place_id": "me-tara-bridge-zipline",
+    "data": {
+      "note": "~80min round-trip spur E to the Djurdjevica bridge — cut from D8 after the Prutas summit; do only if the morning was light.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-oro-zabljak",
+    "data": {
+      "day": 8,
+      "note": "Post-Durmitor recovery dinner — lamb/trout under sac + kacamak, 4.4★ (2500+ reviews), walk-in, 0-5min from camp. (Ignore older 'Nostalgija is higher-rated' notes — Or'O is the known-good wrecked-group pick.)",
+      "status": "shortlist",
+      "dayOrder": 2.5,
+      "timeMinutes": 75
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-konoba-mostina-rijeka-crnojevica",
+    "data": {
+      "note": "Same-village D9 meal fallback (Rijeka Crnojevica). Slipped to ~3.7★ (deep-fried complaints) — Konoba Stari Most is the better pick now; keep Mostina/Lesendro as backups.",
+      "status": "extra",
+      "timeMinutes": 90
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-mostar-jumpers-viewpoint",
+    "data": {
+      "note": "Front-row deck to watch the Stari Most divers without jumping — for non-jumpers while one or two do the Mostari-club jump. Zero detour, right under the bridge.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-camp-safari-beach",
+    "data": {
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:01:27.192026+00:00"
+  },
+  {
+    "place_id": "me-rijeka-crnojevica-swim",
+    "data": {
+      "day": 9,
+      "note": "Easy warm river swim at Danilo's Bridge in the same village as the kayak + Konoba Stari Most — fills the post-paddle gap, zero driving. (June: water-lilies in bloom on the Crnojevica bends, lake ~26C warm swim.)",
+      "status": "shortlist",
+      "dayOrder": 7.3
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-sveti-stefan-viewpoint",
+    "data": {
+      "note": "D11 opener ★ — free public bluff over the pink-roofed island, on the road between the Rvasi-side approach and Budva (the paraglide flies right over it). 10-15min photo stop.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-skadar-lake",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-komarnica-canyon-packraft",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "ba-jablanica-kayak-neretva",
+    "data": {
+      "day": 6,
+      "note": "D6 morning ★ — self-rent Neretva-canyon kayak (~EUR25pp, life jackets + dry bags + return tow), ~5min from the Ravna bed: the active on-route LEAD before the Sarajevo drive. Open 10:00-19:00 — depart Ravna ~09:30, paddle ~10:00-11:30. Optional cliff-jump rocks. (The WWII sunken bridge is a 60-sec glance from the M-17 on the way — no museum stop needed.)",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": -2.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-jakocev-krs-skadar-swim",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-moritz-eis-kotor",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-cavtat",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-budva-oldtown-bars",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-savin-kuk-hike",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-sparta-club-budva",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-via-ferrata-piva",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T18:31:43+00:00"
+  },
+  {
+    "place_id": "me-kotor-via-ferrata",
+    "data": {
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T18:31:43+00:00"
+  },
+  {
+    "place_id": "hr-buza-bar",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "ba-sarajevo-asdz",
+    "data": {
+      "day": 6,
+      "note": "ASDZ burek is IN Sarajevo (not roadside) — a late-morning bite once you reach the city, not a Jablanica breakfast. A Jablanica/Konjic lamb or trout stop fits the actual morning drive better.",
+      "status": "shortlist",
+      "dayOrder": 2.239,
+      "timeMinutes": 30
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "ba-kino-bosna-sarajevo",
+    "data": {
+      "note": "N/A on D6 — Kino Bosna is quiet/CLOSED Sundays. Use the committed Bascarsija bar cluster (Barometar/Zlatna Ribica/Cheers) instead; verify those venues' Sunday hours on the day.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:31:53+00:00"
+  },
+  {
+    "place_id": "me-prutas-hike",
+    "data": {
+      "day": 8,
+      "note": "Trailhead 06:00-06:30; off the ridge by noon (June PM storms). CONDITIONS-DEPENDENT, not default: upper ridge is exposed/scrambly (UIAA-I, some cables) and can hold late-June snow — ASK the Boricje host (D7 night) + check the AM sky. Non-technical fallbacks: Planinica or the Black Lake loop. Pick one summit only.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": -3.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:31:53+00:00"
+  },
+  {
+    "place_id": "me-kotor-serpentine-viewpoint",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:57:19+00:00"
+  },
+  {
+    "place_id": "ba-bascarsija-bar-cluster",
+    "data": {
+      "day": 6,
+      "note": "Sunday-safe Sarajevo night out (Kino Bosna is closed Sundays). DESIGNATE THE SOBER DRIVER before the crawl — it's a ~40min dark drive back to the Pale bed, then a 07:30 D7 start for the Tara raft. Verify each bar's Sunday hours on the day.",
+      "status": "shortlist",
+      "dayOrder": 5.2
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:31:53+00:00"
+  },
+  {
+    "place_id": "ba-zuta-tabija",
+    "data": {
+      "day": 6,
+      "note": "Sarajevo's sunset ritual — sunset Jun 21 is 20:32 (not 20:45). Start the 30-40min uphill walk by ~19:45 to be on the rampart with light to spare. Free.",
+      "dayOrder": 4.5,
+      "timeMinutes": 60
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-budva-paraglide-becici",
+    "data": {
+      "day": 11,
+      "note": "Book GO2FLY ahead; they fly when conditions suit (AM often smoother). Do it FIRST in the Budva zone (early-AM Brajići takeoff = smoother air). ⚠ Hard go/no-go: if they haven't flown the group by ~13:00, release the slot and drive N — don't let a weather hold eat the Kotor fortress sunset climb.",
+      "status": "shortlist",
+      "dayOrder": 0.0,
+      "timeMinutes": 90
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:18:32+00:00"
+  },
+  {
+    "place_id": "me-tara-rafting-brstanovica",
+    "data": {
+      "day": 7,
+      "note": "D7 ★ marquee — Tara, Europe's deepest canyon. 2026 price ~EUR70-75pp (~EUR280-300 for 4, cash at camp), full-day incl. lunch + gear + NP fee. ⚠ Confirm the ACTUAL on-river start when booking — operators typically launch ~11:30-12:00 (not 10:00); lock an early slot or plan take-out ~15:00 (still reaches the Boricje bed fine). Shuttle-only — re-confirm before Jun 16 + get the exact meeting point. BOOK NOW (fills weeks ahead).",
+      "pick": true,
+      "dayOrder": 1.5,
+      "timeMinutes": 210
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-durmitor-bike-black-lake",
+    "data": {
+      "note": "Bikes are a dead item after a 6h summit — the Vražje jezero recovery swim replaces it. Option for anyone who skips the summit.",
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-piva-lake-swim",
+    "data": {
+      "day": 7,
+      "lat": 43.1609,
+      "lng": 18.8353,
+      "note": "Self-rent kayak on turquoise Piva Lake at Pluzine — book via the Nature Park Piva info center at the Pluzine entrance (4 self-rent kayaks w/ life jackets, May-Oct 08-20, +382 40 270 069). Free swim too (~18-22C June). Boricje bed is on the lakefront 5min away, so this doubles as the evening/next-morning swim. (Hook beach bar runs GUIDED trips — not self-rent.)",
+      "status": "shortlist",
+      "dayOrder": 3.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-nedajno-susica",
+    "data": {
+      "note": "D7 afternoon ★ option — 800m-deep canyon-rim viewpoint on the western Piva plateau + Durmitor's only periodic lake (full of June snowmelt, gone by August). Low-effort big view on the drive to Boricje. Pick ONE Piva afternoon add max — keep the day light.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "me-mratinje-dam",
+    "data": {
+      "day": 7,
+      "note": "Pass ~14:30-15:00 driving south from the border; ~25min roadside photo stop (exposed concrete, no shade — don't linger). Headlights ON for the 56 mostly-unlit Piva-canyon tunnels just south of here.",
+      "dayOrder": 2.5,
+      "timeMinutes": 25
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "hr-barba-dubrovnik",
+    "data": {
+      "day": 13,
+      "status": "shortlist",
+      "dayOrder": 3.0,
+      "timeMinutes": 45
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-peppinos-gelato",
+    "data": {
+      "day": 13,
+      "status": "shortlist",
+      "dayOrder": 4.0,
+      "timeMinutes": 15
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-durmitor-curevac",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-perast-viewpoint-stop",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-lovcen-atv-cosmopolitan",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-budva-fishing-predator",
+    "data": {
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "me-skadar-rijeka-crnojevica-kayak",
+    "data": {
+      "day": 9,
+      "note": "D9 ★ — self-rent (no guide) on the wind-sheltered Crnojevic river bend toward the Pavlova horseshoe/Karuc; calm all day (operator's 'no open lake after 12:00' wind rule doesn't apply to the channel). Reserve 1-2 days ahead via Enjoy Skadar Lake / WhatsApp; single EUR7/h or EUR25/day, double EUR10/h or EUR35/day + EUR5pp NP fee.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": 7.0,
+      "timeMinutes": 150
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:31:53+00:00"
+  },
+  {
+    "place_id": "me-murici-beska-swim",
+    "data": {
+      "day": 10,
+      "note": "D10 ★ (the islands lead) — far-south Skadar (~1.5h single-lane serpentine each way; leave Rvasi by ~08:30 to drive it before midday heat). EUR20 boat-taxi to Beska island monasteries + swim off the boat (open-water swim-across is deceptively long, strong swimmers only). Pick THIS day-trip OR the Virpazar SUP/winery cluster — not both.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": -9
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:06:13+00:00"
+  },
+  {
+    "place_id": "me-mogren-beach-budva",
+    "data": {
+      "note": "D11 shade/swim fallback ★ — 15min walk from Budva old town; towering cliffs give welcome shade in the late afternoon (best after 16:00). The midday-heat fallback if Sveti Nikola is skipped or paraglide is cancelled.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-sveti-nikola-island",
+    "data": {
+      "day": 11,
+      "note": "Midday water — shuttle boat ~12:30-15:00 from Budva Marina/Slovenska (~EUR5-7 RT, frequent in season). Scout each ledge for depth before jumping. Keep it early-afternoon so the ~17:00 fortress climb stays free; a drop-if-tired candidate.",
+      "status": "shortlist",
+      "dayOrder": 0.5,
+      "timeMinutes": 150
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-camping-mimoza-stoliv",
+    "data": {
+      "day": 11,
+      "note": "Reserve AHEAD now — ~12 pitches, one of the most booked in the bay in June. Waterfront Donji Stoliv, hot showers, ~EUR30-40 for 4 cash. ~12min by car/water-taxi to Kotor old town for the bar night.",
+      "status": "shortlist",
+      "dayOrder": 100
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:06:13+00:00"
+  },
+  {
+    "place_id": "hr-cavtat-selfrent-boat-milicic",
+    "data": {
+      "day": 12,
+      "note": "D12 ★ self-drive boat — KEEP on D12: launches from Cavtat port (same SE side as the Mlini base + Pasjaca, zero net driving), licence-free (<=5hp/500m-from-shore), ~EUR85/half-day for 4 (2026 price, was EUR60; ~EUR15-21pp). Calm Konavle coast + the 3 reserve islets (Mrkan/Bobara/Supetar) for anchor-swim-snorkel. Cannot legally reach Lokrum/Elaphiti — those need a licence or a Zaton-launched boat (wrong side for D12).",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": -5,
+      "timeMinutes": 240
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:06:13+00:00"
+  },
+  {
+    "place_id": "hr-sveti-jakov-beach",
+    "data": {
+      "day": 13,
+      "note": "Day 13 (Jun 28) early morning — swim/snorkel 08:00-09:30 before the 10:00 kayak; quiet local beach with the best Old-Town view. A quick pre-kayak filler, skip if tight.",
+      "status": "shortlist",
+      "dayOrder": 0.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-dubrovnik-airport",
+    "data": {
+      "day": 13,
+      "note": "HARD anchor — FLIGHT FR9756 20:40 -> VIE 22:05 (check-in closes ~20:00; car drop ~19:15, Ref D013947246; allow 45min for fuel + return). Jun 28 is a LIKELY cruise day in Dubrovnik — Old Town->Cilipi can run 45-60min, NOT 25. LEAVE the Old Town by ~18:00 no matter what.",
+      "status": "shortlist",
+      "dayOrder": 5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T21:55:48.954+00:00"
+  },
+  {
+    "place_id": "me-pavlova-strana",
+    "data": {
+      "day": 9,
+      "note": "Day 9 (Jun 24) — golden hour ~19:30-20:24 (sunset ~20:24) is the best light here; the Rvasi bed is only ~15min away so stay for it rather than wrapping at 18:30. Drive the WIDER approach road, not the rough forest track. Sequence: Ostrog morning -> Crnojevica kayak/swim midday -> Konoba Stari Most lunch -> Pavlova Strana golden hour -> 15min to Rvasi.",
+      "dayOrder": 8.5,
+      "timeMinutes": 30
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "me-pjesacac-beach-skadar",
+    "data": {
+      "day": 10,
+      "lat": 42.2255,
+      "lng": 19.123,
+      "note": "D10 midday warm-swim — shade-backed sandy cove, water bath-warm in June. ⚠ NOT car-accessible: drive to Godinje village (~10min from Virpazar; park on village roads, no lot) then a short walk-in trail down to the cove (or boat from Virpazar). If the group wants zero-walk water, Murici or a Virpazar-launch swim is the easier alternative.",
+      "status": "shortlist",
+      "dayOrder": -8.0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T22:35:02.239905+00:00"
+  },
+  {
+    "place_id": "me-kotor-bay-kayak",
+    "data": {
+      "day": 11,
+      "note": "FLEX slot — Go Go Gaga / Dobrota self-rent, licence-free: ~EUR5/h single (EUR20/day), double EUR10 first hour then EUR5/h (EUR25/day). Grab it ~15:30-17:00 (golden hour) before the fortress, OR drop it if the Budva morning runs long. Self-rent (no guide), Kotor->Perast-direction paddle + swim.",
+      "status": "shortlist",
+      "dayOrder": 4.5,
+      "timeMinutes": 120
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T07:05:14.216478+00:00"
+  },
+  {
+    "place_id": "me-tanjga-kotor",
+    "data": {
+      "day": 11,
+      "note": "Legendary cheap grill — plates from ~EUR5 (sandwich) to ~EUR15-16 (mixed grill); big XXL platter ~EUR30-35 feeds 2-3. Bring cash. POST-fortress dinner, 5min from the gate, perfect after 1,350 steps — an evening visit after the ~20:00 sunset climb works (open ~11:00-22:00).",
+      "dayOrder": 6.5,
+      "timeMinutes": 45
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:49:03.55457+00:00"
+  },
+  {
+    "place_id": "hr-camping-kate-mlini",
+    "data": {
+      "day": 12,
+      "note": "Last campsite night before the Jun-28 flight — reserve ahead + arrive in the afternoon (call to confirm reception/check-in hours; June peak). info@campingkate.com / +385 20 487 006 (both verified). ~25min to Dubrovnik Old Town.",
+      "status": "shortlist",
+      "dayOrder": 0
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T21:56:12.058+00:00"
+  },
+  {
+    "place_id": "hr-dubrovnik-sea-kayak",
+    "data": {
+      "day": 13,
+      "note": "D13 morning ★ — X-Adventure half-day departures are 08:45 / 10:45 / 12:45 / 14:45 (3-4h, from EUR45pp); book the 08:45 (back ~12:30) to protect the flight buffer (the 10:45 also works, back ~14:00). NOT the sunset tour — the day ends at the airport. Meeting point Od Tabakarije 1 (pier below Orhan), arrive 10min early. Book same-day or by 16:00 the day before.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": 1.0,
+      "timeMinutes": 180
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T14:49:22.436594+00:00"
+  },
+  {
+    "place_id": "hr-dubrovnik",
+    "data": {
+      "day": 13,
+      "note": "Day 13 Old Town (NOT the airport day's pickup). City walls EUR40pp (2026, incl. Lovrijenac); the EUR40 Dubrovnik Pass = same price + museums + 24h bus (better value if you want more). OPTION not default — ⚠ Jun 28 cruise day: Explorer of the Seas (3,114 pax) docks Gruz 10:00 → walls/Stradun peak crush from ~10:30, so do the walls ~08:00 or skip. Protect the 18:00 Old-Town leave for the 20:40 flight.",
+      "dayOrder": 3.5,
+      "timeMinutes": 120
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T15:11:08.86918+00:00"
+  },
+  {
+    "place_id": "hr-bellevue-beach-jumps",
+    "data": {
+      "day": 13,
+      "note": "D13 SKIP-CANDIDATE — a third water item on a water-led flight-out day; tagged half-day, it competes with the 10:00 kayak. Keep it only as a short jump-and-swim if the morning runs ahead; otherwise drop so the 18:00 airport-leave is never in doubt.",
+      "status": "shortlist",
+      "dayOrder": 1.8,
+      "timeMinutes": 90
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T14:22:17.856416+00:00"
+  },
+  {
+    "place_id": "hr-zadar-skydive-adv",
+    "data": {
+      "note": "Optional/weather-dependent — group chose Krka as the D1 anchor. Only if you book ahead + the morning is clear; no next-day rebook (you drive south D2).",
+      "pick": true,
+      "status": "backup"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:43:14+00:00"
+  },
+  {
+    "place_id": "hr-berberov-buk",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T07:47:11.877144+00:00"
+  },
+  {
+    "place_id": "hr-cetina-zipline",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "hr-cetina-cliff-jump-luka",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T17:42:09.917711+00:00"
+  },
+  {
+    "place_id": "ba-daorson",
+    "data": {
+      "pick": true,
+      "status": "rejected"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T15:43:03.356+00:00"
+  },
+  {
+    "place_id": "ba-restoran-han-stolac",
+    "data": {
+      "note": "Quick food or cook at camp is the default — don't lose kayak/swim time to a sit-down dinner. Han stays as the OPTION for one nice Herzegovina meal if the group wants it.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:31:53+00:00"
+  },
+  {
+    "place_id": "me-trnovacko-jezero",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-13T20:48:55.231+00:00"
+  },
+  {
+    "place_id": "me-durmitor-black-lake",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T07:47:11.877144+00:00"
+  },
+  {
+    "place_id": "me-karuc-skadar",
+    "data": {
+      "note": "Merged into the self-rent kayak (which paddles to Karučko Oko) — no double-count. Still reachable by the paddle.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "me-skadar-pavlova-self-boat-rijeka",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T07:47:11.877144+00:00"
+  },
+  {
+    "place_id": "me-konoba-badanj",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T16:20:46.53011+00:00"
+  },
+  {
+    "place_id": "hr-konavoski-dvori",
+    "data": {
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "hr-cavtat-bay-sea-kayak",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T07:47:11.877144+00:00"
+  },
+  {
+    "place_id": "me-nevidio-canyon",
+    "data": {
+      "note": "★ World-class canyoning — ME's deepest canyon (8km, jumps/slides/rappels), ~40min from Zabljak (fits D7/D8). EXTREME + guide-ONLY (Nevidio Canyon team, book ahead); late-June snowmelt can make it unrunnable — the guides decide if it's open. Keep it on the table, decide on the day. Grabovica = the tamer pre-season substitute.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T08:48:19.006548+00:00"
+  },
+  {
+    "place_id": "me-stari-most-rijeka-crnojevica",
+    "data": {
+      "day": 9,
+      "note": "D9 special meal — Konoba Stari Most, 50m from the kayak launch in Rijeka Crnojevica (Lonely Planet's MNE pick). ~EUR13.50 full 3-course, cash, walk-in. Ask for the fish GRILLED (can arrive deep-fried).",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": 7.5
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:55:14.214461+00:00"
+  },
+  {
+    "place_id": "me-mrkan-bobara-supetar-islands",
+    "data": null,
+    "cleared": true,
+    "updated_at": "2026-06-15T07:47:11.877144+00:00"
+  },
+  {
+    "place_id": "hr-mrkan-bobara-supetar-islands",
+    "data": {
+      "pick": true
+    },
+    "cleared": false,
+    "updated_at": "2026-06-15T07:47:11.877144+00:00"
+  },
+  {
+    "place_id": "me-budva",
+    "data": {
+      "day": 11,
+      "note": "Budva Old Town — quick stop (you base at Stoliv + do the Kotor bar night, not Budva nightlife). ⚠ DRIVE BUFFER: summer-2026 Vrmac-tunnel + Tivat-Jaz roadworks can triple Budva->Kotor to 60-90min — leave Budva by ~15:00 to hold the ~17:00 fortress sunset; if the Vrmac tunnel shows dark-red, take the Trojica turn-off (switchbacks, ~20min faster).",
+      "dayOrder": 1.5,
+      "timeMinutes": 60
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T13:49:03.55457+00:00"
+  },
+  {
+    "place_id": "me-kotor",
+    "data": {
+      "day": 11,
+      "note": "Fortress climb (1350 steps) ~17:00 = cooler + golden light; crest the first rampart for the 20:26 sunset. EUR15pp fee applies 08:00-20:00 but the trail is open 24h — NO lock-in risk on an evening climb. ✓ Jun 26 2026 has ZERO cruise ships in Kotor (vs 4 the day before) — old town + fortress unusually calm all day, so the early-rush worry doesn't apply this date; the late-afternoon climb is relaxed. Bring water + proper shoes (slippery). The day's anchor.",
+      "pick": true,
+      "status": "shortlist",
+      "dayOrder": 5.5,
+      "timeMinutes": 150
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T19:31:53+00:00"
+  },
+  {
+    "place_id": "hr-pasjaca-beach",
+    "data": {
+      "note": "Day 12 (Jun 27 Sat) — FIRST stop, ~08:30-10:00, straight after crossing the Vitaljina/Debeli Brijeg border into Konavle. Steep cliff stair/tunnel descent (~250m), full sun/no shade — go early, be off the stairs before 11:00. Limited roadside parking fills early on a summer Saturday; ~10km/15min to Cavtat next. The obvious skip candidate if parking is full or the group is tired.",
+      "pick": true,
+      "status": "extra"
+    },
+    "cleared": false,
+    "updated_at": "2026-06-14T20:18:57+00:00"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "overwrites": [
+    {"place_id":"ba-jablanica-kayak-neretva","data":{"status":"shortlist","day":6,"dayOrder":-2.0,"pick":true,"note":"D6 morning ★ — self-rent Neretva-canyon kayak (~EUR25pp, life jackets + dry bags + return tow), ~5min from the Ravna bed: the active on-route LEAD before the Sarajevo drive. Open 10:00-19:00 — depart Ravna ~09:30, paddle ~10:00-11:30. Optional cliff-jump rocks. (The WWII sunken bridge is a 60-sec glance from the M-17 on the way — no museum stop needed.)"}},
+    {"place_id":"ba-pocitelj","data":{"status":"extra","note":"OPTION (demoted from committed): a 5-min leg-stretch / photo of the Ottoman stone hill on the Kravica→Poplat drive — bare, little shade. Do it only if you want it; the day's slack is better spent at the Stolac/Bregava water or resting."}},
+    {"place_id":"me-planinica","data":{"status":"extra","pick":true,"note":"D8 co-lead OPTION alongside Prutaš — Planinica (2330m) is the NON-technical big-view Durmitor summit: trailhead at Black Lake (1.2km walk from the Mlinski Potok camp, NO car shuttle, unlike Prutaš). Pick this on the morning if the group wants the views without the exposed Prutaš scramble, or if weather/energy is marginal."}}
+  ],
+  "clears": ["ba-jablanica-neretva-museum", "hr-bacina-jezera"]
+}

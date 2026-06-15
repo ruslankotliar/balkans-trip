@@ -1,0 +1,40 @@
+{
+  "updates": [
+    {"place_id":"hr-camping-krvavica","data":{"note":"Arrival-night base ~10km W of Makarska; pitch ~18:00 with daylight. Pricing ~EUR12 adult + ~EUR8 tent + ~EUR4.50 car (+EUR3-5 electricity) = ~EUR55-65 for 4. CASH ONLY (no cards) — bring euros. Ramova/own beach is a ~5min / 200m walk — arrival swim then camp-cook dinner."}},
+
+    {"place_id":"hr-makarska-nightlife","data":{"note":"OPTIONAL late night ~23:00-02:00 — Deep cave club + Osejava cliff walk. ⚠ Confirm Deep is actually open this season (2026 reports conflict — one says it may not open; check their Instagram/call). The Osejava cliff walk is the reliable fallback either way. Only if NOT doing the early canyoning AND remembering Jun 18 (Day 3) is the FIXED Dubrovnik-airport pickup. The obvious drop-if-tired stop."}},
+
+    {"place_id":"hr-camp-mungos-mljet","data":{"note":"Night-arrival-safe Mljet camp at Babino Polje (~10min / ~6km DRIVE from Sobra port — not steps from the dock; pool, restaurant, mini-market). Pitch ~21:30 after the 20:30 ferry; drive the dark island road carefully (wildlife). (Autokamp Marina/Ropa kept as the NP-side alternative.)"}},
+
+    {"place_id":"hr-mali-ston-oysters","data":{"note":"Quick-grab on the airport/ferry day: shuck-and-go direct from the Mali Ston / Bistrina / Hodilje farmers (~EUR1/oyster, cash) — informal, not a fixed-hour stall, so treat as nice-if-open, not a planned meal. Do NOT sit down at Bota Sare (opens 11:00 = burns ferry-critical time). 20-30min stop."}},
+
+    {"place_id":"ba-kravica","data":{"note":"Cash-only (KM): entry ~20 KM/pp + parking. Bosnia = cash country — withdraw KM at the FIRST Bosnia ATM after the border (Capljina/Mostar Raiffeisen, no fee). Swimming under the falls allowed (June pool ~14-20C). ⚠ D4 reality: after the 12:00 Sobra ferry + the HR→BA border you realistically arrive ~15:00-16:00 (a busy window, NOT the quiet early slot) — the swim is still worth it; a quieter visit would need a different day."}},
+
+    {"place_id":"ba-sarajevo","data":{"note":"D6 ★ (Jun 21, Sunday) — afternoon arrival, evening on foot: Bascarsija at dusk, Zuta Tabija sunset (~20:32). 🎉 Jun 21 2026 = OPENING night of the Garden of Dreams electronic festival (multi-venue, runs late ~22:00+) + Summer in the Park–Hastahana opens — a real party on this exact date, better than a generic bar crawl (Kino Bosna is CLOSED Sundays). Group SLEEPS in Pale (N6, ~30min SE) — designate a sober driver for the post-nightlife leg; Pale also pre-positions for Day 7's Foca/Scepan Polje rafting drive."}},
+
+    {"place_id":"me-tara-rafting-brstanovica","data":{"note":"D7 ★ marquee — Tara, Europe's deepest canyon. 2026 price ~EUR70-75pp (~EUR280-300 for 4, cash at camp), full-day incl. lunch + gear + NP fee. ⚠ Confirm the ACTUAL on-river start when booking — operators typically launch ~11:30-12:00 (not 10:00); lock an early slot or plan take-out ~15:00 (still reaches the Boricje bed fine). Shuttle-only — re-confirm before Jun 16 + get the exact meeting point. BOOK NOW (fills weeks ahead)."}},
+
+    {"place_id":"me-scepan-polje-piva-canyon","data":{"note":"Cross at the 24/7 Scepan Polje/Hum border after the Tara take-out. ⚠ 2026 roadworks on the Foca→Hum (Scepan Polje) approach = slow driving + temporary ~10-min stops; add 20-30min buffer for the morning leg, depart Pale ~06:45. Then the 56-tunnel Piva canyon drive to Zabljak (headlights ON, narrow) — active reconstruction on the Pluzine–Scepan Polje leg too."}},
+
+    {"place_id":"me-pavlova-strana","data":{"note":"Day 9 (Jun 24) — golden hour ~19:30-20:24 (sunset ~20:24) is the best light here; the Rvasi bed is only ~15min away so stay for it rather than wrapping at 18:30. Drive the WIDER approach road, not the rough forest track. Sequence: Ostrog morning -> Crnojevica kayak/swim midday -> Konoba Stari Most lunch -> Pavlova Strana golden hour -> 15min to Rvasi."}},
+
+    {"place_id":"me-rijeka-crnojevica-swim","data":{"note":"Easy warm river swim at Danilo's Bridge in the same village as the kayak + Konoba Stari Most — fills the post-paddle gap, zero driving. (June: water-lilies in bloom on the Crnojevica bends, lake ~26C warm swim.)"}},
+
+    {"place_id":"me-pjesacac-beach-skadar","data":{"note":"D10 midday warm-swim — shade-backed sandy cove, water bath-warm in June. ⚠ NOT car-accessible: drive to Godinje village (~10min from Virpazar; park on village roads, no lot) then a short walk-in trail down to the cove (or boat from Virpazar). If the group wants zero-walk water, Murici or a Virpazar-launch swim is the easier alternative."}},
+
+    {"place_id":"me-kotor","data":{"note":"Fortress climb (1350 steps) ~17:00 = cooler + golden light; crest the first rampart for the 20:26 sunset. EUR15pp fee applies 08:00-20:00 but the trail is open 24h — NO lock-in risk on an evening climb. ✓ Jun 26 2026 has ZERO cruise ships in Kotor (vs 4 the day before) — old town + fortress unusually calm all day, so the early-rush worry doesn't apply this date; the late-afternoon climb is relaxed. Bring water + proper shoes (slippery). The day's anchor."}},
+
+    {"place_id":"me-kotor-bay-kayak","data":{"note":"FLEX slot — Go Go Gaga / Dobrota self-rent, licence-free: ~EUR5/h single (EUR20/day), double EUR10 first hour then EUR5/h (EUR25/day). Grab it ~15:30-17:00 (golden hour) before the fortress, OR drop it if the Budva morning runs long. Self-rent (no guide), Kotor->Perast-direction paddle + swim."}},
+
+    {"place_id":"me-tanjga-kotor","data":{"note":"Legendary cheap grill — plates from ~EUR5 (sandwich) to ~EUR15-16 (mixed grill); big XXL platter ~EUR30-35 feeds 2-3. Bring cash. POST-fortress dinner, 5min from the gate, perfect after 1,350 steps — an evening visit after the ~20:00 sunset climb works (open ~11:00-22:00)."}},
+
+    {"place_id":"hr-cavtat-rat-peninsula-swims","data":{"note":"Free swim platforms & clear pine-shaded coves (Kamen Mali, Zal) on the Cavtat Rat peninsula, ~6km / 10min from Cilipi airport — the fix for the D3 airport dead-window (hot afternoon water while waiting for the 17:20 landing), and a swim stop on D12. No backtrack, no cost."}},
+
+    {"place_id":"hr-camping-kate-mlini","data":{"note":"Last campsite night before the Jun-28 flight — reserve ahead + arrive in the afternoon (call to confirm reception/check-in hours; June peak). info@campingkate.com / +385 20 487 006 (both verified). ~25min to Dubrovnik Old Town."}},
+
+    {"place_id":"hr-dubrovnik-sea-kayak","data":{"note":"D13 morning ★ — X-Adventure half-day departures are 08:45 / 10:45 / 12:45 / 14:45 (3-4h, from EUR45pp); book the 08:45 (back ~12:30) to protect the flight buffer (the 10:45 also works, back ~14:00). NOT the sunset tour — the day ends at the airport. Meeting point Od Tabakarije 1 (pier below Orhan), arrive 10min early. Book same-day or by 16:00 the day before."}},
+
+    {"place_id":"hr-dubrovnik","data":{"note":"Day 13 Old Town (NOT the airport day's pickup). City walls EUR40pp (2026, incl. Lovrijenac); the EUR40 Dubrovnik Pass = same price + museums + 24h bus (better value if you want more). OPTION not default — ⚠ Jun 28 cruise day: Explorer of the Seas (3,114 pax) docks Gruz 10:00 → walls/Stradun peak crush from ~10:30, so do the walls ~08:00 or skip. Protect the 18:00 Old-Town leave for the 20:40 flight."}}
+  ],
+  "clears": []
+}

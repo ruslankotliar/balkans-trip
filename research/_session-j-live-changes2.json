@@ -1,0 +1,12 @@
+{
+  "updates": [
+    {"place_id":"hr-pasjaca-beach","data":{"pick":true}},
+    {"place_id":"ba-jablanica-kayak-neretva","data":{"pick":true}},
+    {"place_id":"hr-kobas-bay","data":{"pick":true}},
+    {"place_id":"hr-buza-bar","data":{"pick":true}},
+    {"place_id":"hr-primosten-mala-raduca","data":{"pick":true}},
+    {"place_id":"ba-blagaj","data":{"dayOrder":3.6}},
+    {"place_id":"me-budva-paraglide-becici","data":{"note":"Book GO2FLY ahead; they fly when conditions suit (AM often smoother). Do it FIRST in the Budva zone (early-AM Brajići takeoff = smoother air). ⚠ Hard go/no-go: if they haven't flown the group by ~13:00, release the slot and drive N — don't let a weather hold eat the Kotor fortress sunset climb."}}
+  ],
+  "clears": []
+}

@@ -1,0 +1,330 @@
+{
+ "verifiedAdds": [
+  {
+   "source": "Z1",
+   "type": "sunset",
+   "name": "Mala Luka cove + Vela Luka sunset beach (Stanići, Omiš riviera)",
+   "lat": 43.4187,
+   "lng": 16.7175,
+   "country": "HR",
+   "complementsDay": "D1 Omiš → Krvavica coast drive (and D1/D2 Makarska base evenings)",
+   "whyBest": "This is the dual-purpose find your D1 is missing: a west-facing cove with what locals repeatedly call THE best sunset in Croatia, AND a genuine self-swim/snorkel cove off the tourist track — directly on the coastal road between the Cetina/Omiš activities and Camping Krvavica, so zero net detour on the drive south. The existing Stanići pin is only the apartment cluster; the cove and its sunset are net-new. Vela Luka is the long west-facing main pebble beach (sun lingers past 20:30, lighting up cliffs and water); Mala Luka, 'just around the corner,' is the smaller locals' cove with clear water for snorkelling. Beats the in-town Makarska sunset because it's quieter, free, and you can swim right up to golden hour. Taste-fit: nature + self-swim + sunset, non-generic, locals' spot.",
+   "communityNotes": "visitomis.hr (official riviera guide) and multiple Croatian beach guides: 'The main beach in Stanići — Velika luka — has the most beautiful sunsets in Croatia. The sun shines over Stanići beach until late in the evening.' 'Just around the corner there is Mala luka, a beautiful cove that's very popular among locals.' A local Omiš-riviera blog (greystonezvecanje) lists Stanići/Mala Luka among the 'more secluded' beaches: 'crystal-clear water and a more peaceful atmosphere... popular with the locals — always a good sign.' Putovnica.net beach DB rates Vela Luka a 600m gravel beach with café/shower/natural shade. The west orientation (sun setting over the open sea, not behind an island) is what makes the sunset claim stand out vs Punta Rata.",
+   "sources": [
+    "https://www.visitomis.hr/en/beaches",
+    "https://www.putovnica.net/en/beaches/beach/vela-luka-stanici-omis",
+    "https://www.putovnica.net/en/beaches/beach/mala-luka-stanici-omis",
+    "https://greystonezvecanje.com/en/omiska-rivijera-najljepse-plaze/",
+    "https://www.allbeachescroatia.com/en/beach/mala-luka-stanici-omis"
+   ],
+   "confidence": "high",
+   "verifyEvidence": "EXISTS + COORDS VERIFIED: Claimed coords 43.4187/16.7175 resolve to OSM \"Mala Luka, Stanići, Grad Omiš\" (hamlet at 43.41873/16.71749) within ~10m. Multiple independent sources (putovnica.net, omisinfo.com, beachrex, sandee, croatiahiddengems) confirm Mala Luka is a real, lesser-known cove in Stanići between Nemira and Stanići village.\n\nDESCRIPTION HOLDS (with a naming fix): Sources consistently describe Mala Luka as a SOUTHWEST-facing bay (not strictly \"west\") divided into two parts — main pebble beach + smaller side coves — that has \"the most beautiful sunsets on the Omiš riviera,\" sun setting in the sea between islands Šolta and Drvenik, AND clear turquoise water with rock formations that are \"wonderful places for snorkeling.\" So BOTH claimed qualities (best-sunset + self-swim/snorkel cove) are real and BOTH attach to Mala Luka itself. The submission garbles the naming: it casts \"Vela Luka\" as the headline sunset beach and Mala Luka as a separate snorkel cove. In reality all sources put both the sunset and the snorkeling at Mala Luka; Vela Luka is a separate, less-documented Stanići beach. RECOMMEND: rename the pin to lead with \"Mala Luka\" rather than Vela Luka. Facilities: €4/day parking, showers, toilets, restaurant/bar; eastern part near Cape Balica rat is the quietest/clearest, stays sunny to sunset.\n\nNET-NEW: Nearest existing pin is hr-apt-stanici-omis (43.4145/16.7269), an accommodation cluster ~0.85km E — not the beach/sunset/snorkel. No beach/sunset/swim pin exists within 500m of 43.4187/16.7175. Confirmed against full HR list.\n\nWORTHWHILE: Strong taste-fit (nature + self-swim/snorkel + sunset, off the main tourist track, on the coastal road south toward Camping Krvavica = ~zero net detour). Caveat for rating: evidence is mostly beach-catalog/local-blog sources rather than Reddit/forum traveler threads, so community-strength is moderate (~3/5), not \"repeatedly praised across independent traveler reports.\" Afternoon W winds can pick up; busy in peak season but eastern coves stay quiet.",
+   "verifySource": "https://www.omisinfo.com/stanici/beaches.htm"
+  },
+  {
+   "source": "Z1",
+   "type": "night-out",
+   "name": "Buba Beach Bar & Disco (Makarska, open-air beach party)",
+   "lat": 43.3058129,
+   "lng": 17.0020558,
+   "country": "HR",
+   "complementsDay": "D1/D2 Makarska base — the second night-out option besides Deep cave club",
+   "whyBest": "Your only Makarska nightlife pin is the Deep cave club (techno in a WWII cave). Buba is the complementary OTHER vibe a young group wants on the alternate night: an open-air beach bar on the sand at the western edge of town with DJs from noon to late, sunset sets, cheap cold beer, and an international young crowd — 'after-beach' parties that flow straight from swimming into a night out, no cave, no cover-charge club. Gives the group a real choice by mood: cave-club techno (Deep) vs barefoot beach party (Buba). On the Makarska promenade, ~15min walk from the center, walkable home.",
+   "communityNotes": "TripAdvisor/TimeOut reviewers: 'THE place for beach party'; 'set in a truly beautiful location right on the beach... cheap, cold, plentiful beer and DJs provide a great atmosphere as the sun sets over the Adriatic.' Tourist-board and blog consensus: 'Buba beach bar is known for its craziest parties on the Adriatic — after-beach parties during the day, DJs/bands/concerts at night.' Honest caveat from reviews: 'if you're after quiet contemplation over a glass of wine, it's not for you — music blasts from around noon till late,' and a few note it gets crowded/overpriced on cocktails. That's exactly the loud-young-crowd profile this group wants for a night out.",
+   "sources": [
+    "https://www.tripadvisor.com/Attraction_Review-g303814-d1063185-Reviews-Buba_Beach_Bar-Makarska_Split_Dalmatia_County_Dalmatia.html",
+    "https://www.timeout.com/croatia/bars-and-pubs/buba-beach-bar",
+    "https://makarska-touristik.com/nightlife-in-makarska/"
+   ],
+   "confidence": "high",
+   "verifyEvidence": "EXISTS: Confirmed across independent source types. OpenStreetMap has a node literally named \"Buba Beach Bar & Disco\" (osm node 8911331217) at 43.3058129/17.0020558, address \"Put Cvitačke, Zelenka, Puharići, Makarska\". TripAdvisor (d1063185, 67 reviews, 3.4*) describes an open-air beach bar directly on the sand, DJs/electronic music from noon to late evening, young party crowd, affordable-ish drinks — matches the claim. Also corroborated by its own website (beachbarbuba.com), Foursquare, TimeOut, and Croatian beach directories (Cvitačka cove, Put Cvitačka). Honest caveats from reviews: recent price inflation (~€4 small Coke), some \"monotonous drum'n'bass\" and a couple of \"rude service\" complaints — hence modest strength (rating ~3).\n\nCOORDS: Claimed 43.3058/17.0021 resolves to the OSM \"Buba Beach Bar & Disco\" node within ~4 m. Verified, no correction needed (returned coords are the precise OSM node). Location is the NW/southwestern edge of Makarska on the Cvitačka pebble cove, ~15 min walk from center, walkable home — consistent with the claim.\n\nNET-NEW: Passes the dedup test. Nearest existing pin hr-makarska-nightlife (Deep cave club + Osejava, 43.2969/17.0178) is 1,614 m E — well beyond the 500 m radius and a genuinely different venue + format (WWII sea-cave techno club vs open-air sand beach bar). CAVEAT: the string \"Buba Beach Bar\" already appears inside the DESCRIPTION of hr-makarska-nightlife (listed as a Riva waterfront bar), but it has no own pin and that mention mislocates it to the central Riva — it is actually 1.6 km NW on Cvitačka cove. A correctly-placed standalone pin is a net improvement.\n\nWORTHWHILE: Yes for a young, adventurous group. Complements the Deep cave-club techno pin with the other nightlife mood — barefoot open-air after-beach party that flows from swimming into a night out, sunset DJ sets, no cover charge. Aligns with the user's taste for special-vibe nightlife (Budva-style) while not being a generic old-town stop.",
+   "verifySource": "https://www.tripadvisor.com/Attraction_Review-g303814-d1063185-Reviews-Buba_Beach_Bar-Makarska_Split_Dalmatia_County_Dalmatia.html"
+  },
+  {
+   "source": "Z3",
+   "type": "swim",
+   "name": "Auto Camp Heaven in Nature (Bregava-river swim + camp, Stolac)",
+   "lat": 43.0977,
+   "lng": 17.976,
+   "country": "BA",
+   "complementsDay": "D4 Stolac/Poplat night",
+   "whyBest": "A real net-new TIER-1 camp option AND a summer-reliable cold-river swim for the Poplat/Stolac night. The town-center Bregava waterfalls (Pjene/Provalije) literally DRY UP in the June heat per local press, but this stretch ~2km upstream keeps deep, swimmable emerald water all summer. Self-rent-nothing-needed swimming + hot showers + kitchen for ~€19/2 people — exactly the cheap-camp-with-a-view tier, and it beats sleeping in a generic Poplat apartment with no water on site.",
+   "communityNotes": "park4night/camping.info reviewers (recent): 'crystal-clear water,' 'horribly cold but refreshing' (11–19°C), river 'ideal for kids and elders'; host repeatedly called 'exceptionally nice and kind,' 'spoke very good English,' generous with local tips; '€19 for two, free washing machine made the price/quality worth it.' One caveat: 'quite noisy because of the road' by day, quieter at night; a couple note 'sanitary facilities are somewhat aged.' 30 pitches, water+power, indoor/outdoor hot showers, open ~14 Apr–15 Oct. Local outlet furaj.ba lists it among the handful of spots where Stolac locals actually swim 'when it's ćelopek' (unbearably hot).",
+   "sources": [
+    "https://park4night.com/en/place/87853",
+    "https://www.camping.info/en/campsite/auto-camp-heaven-in-nature",
+    "https://furaj.ba/kupanje-na-bregavi-spas-kada-je-celopek/",
+    "https://www.stolac.co/stolac/stolac-vijesti/najljepse-plaze-na-rijeci-bregavi-sve-popularnije-i-medu-turistima"
+   ],
+   "confidence": "high",
+   "verifyEvidence": "EXISTS + well-documented across multiple independent sources. park4night (place 87853, \"Autocamp Heaven in Nature Stolac\") lists GPS 43.0977N/17.9760E, address \"R427, 88360 Stolac\", €19/night for 2 adults all-in, and 13 services including hot showers, toilets, drinking water, free laundry, kitchen, WiFi, bar/restaurant. Reviewer: \"Right next to the river, surrounded by mountains and 2 km from the center of town\"; \"Lots of hot water in showers\"; \"kitchen with cooker, fridge, and pot-wash.\" camping.info (30 pitches, open Apr 14–Oct 15, directly on the Bregava, ~15min walk from old town) confirms the SWIM claim: \"You can swim in the river with crystal clear water (part is deepened)\" and an \"ice-cold stream\" where \"you can cool off on hot days\" — cold/swimmable in summer, matching the WHY-CLAIMED (the town-center waterfalls dry up but this deepened upstream stretch stays swimmable). COORDS OK: Nominatim reverse-geocode of 43.0977/17.976 → R-427, Todorovići/Grad Stolac, 88360, exactly matching the park4night address; on-water point ~43.0981/17.9759 is ~45m from the submitted coords (well within 300m), so submitted coords kept. NET-NEW: nearest list pins are ba-vodopad-pjene-stolac (43.0903/17.9651, ~1.2km downstream) and ba-stolac-bregava (43.0831/17.958, ~1.5km); ba-villa-kostela-stone-house-poplat is ~8km away — nothing within 500m. WORTHWHILE: a genuine TIER-1 cheap camp (€19/2, hot showers + kitchen) with a free, self-rent-nothing cold-river swim — strong fit for this group's camping/activity priorities and a real alternative to a generic waterless Poplat apartment.",
+   "verifySource": "https://park4night.com/en/place/87853"
+  },
+  {
+   "source": "Z3",
+   "type": "swim",
+   "name": "Kupalište na Bunici (Bunica local sunset-swim, Buna/Hodbina)",
+   "lat": 43.2438,
+   "lng": 17.8529,
+   "country": "BA",
+   "complementsDay": "D4 Kravica/Počitelj corridor → D5 Mostar/Blagaj approach",
+   "whyBest": "A LOCALS' river-swim ritual on the Bunica — a different river from every Buna pin you already have, fed by the deepest karst spring in Europe (Vrelo Bunice, 69m), so the water is icy-clear and bath-calm. The cultural draw is exactly the group's vibe: Mostarci come here to 'swim, fish, grill meat and drink beer while watching the sunset' at the abandoned grand 1970s recreation center (once 5,000 bathers/day), now informally reclaimed each summer — zero tour buses, free, self-organised. A genuine off-the-radar swim+sunset combo on the Kravica→Mostar drive, not a guidebook stop. A 16th-c. 13-arch Ottoman bridge (Danijel-pasha) sits nearby at the Buna–Neretva confluence.",
+   "communityNotes": "hercegovina.info: 'kupalište na Bunici i danas privlači mnoge koji žele pobjeći od vrućine' — abandoned after the war but 'citizens informally restore and use the bathing area' every summer, ~15km S of Mostar. klix/Bunica coverage: locals 'swim, fish, roast meat and drink beer while watching the sunset' where the Bunica meets the Buna at Hodbina. Wiki/local sources: endemic softmouth trout, water 'calm flow and pleasant temperature' that taught generations of Mostar kids to swim; Vrelo Bunice spring itself (43.2215/17.8899) is a protected geomorphological monument but DEEP and dangerous to enter — swim at the downstream beach, not the spring eye.",
+   "sources": [
+    "https://www.hercegovina.info/hercegovina/mostar-hercegovina/mostar-kupaliste-na-bunici-i-danas-privlaci-mnoge-koji-zele-pobjeci-od-vrucine-128065/128065/",
+    "https://www.klix.ba/lifestyle/putovanja/rimski-most-na-buni-skrivena-historija-jednog-od-nasih-najljepsih-mostova/170224138",
+    "https://en.wikipedia.org/wiki/Bunica_(river)",
+    "https://ljubusaci.com/2020/01/31/bajkovito-i-misticno-vrelo-bunice/"
+   ],
+   "confidence": "medium",
+   "verifyEvidence": "EXISTS: SRC / Rekreacijski centar Bunica is a real decades-old summer recreation zone (~100,000 m2, formerly a campground now defunct 20+ years) on the Bunica river at the Buna confluence, ~14-15km south of Mostar between Hodbina and Malo Polje. Confirmed by multiple independent Hercegovinian sources (hercegovina.info, hercegovina.in, mostarski.ba, Grad Mostar municipal site) and Wikipedia. Locals informally reclaim it each summer to swim/socialize/grill; the self-organized, free, no-tourist character is well-documented (\"citizens do the upkeep on their own initiative every year\"). COORDS: Wikipedia places the Buna-Bunica confluence at 43.2445N/17.8516E; the claimed 43.2438/17.8529 sits ~140m SE of the confluence, on the Bunica river just upstream of the mouth — exactly where the recreation/beach zone is. Verified well within 300m; coords stand. NET-NEW: only other \"Bunica\" entry in dedup is ba-villa-cold-river-treehouse-bunica (43.2259/17.8862), an accommodation ~3.4km upstream — distinct. Nearest swim pin ba-buna-brzatak-swim (43.2474/17.8402) is ~1.1km away AND on the Buna (different river). WORTHWHILE: free local river swim+grill+sunset ritual on the Kravica->Mostar drive, non-generic, fits group's nature/activity preference. CAVEAT: the \"69m deepest karst spring in Europe\" claim is NOT in Wikipedia (which says only \"very deep and strong karstic spring\") and refers to the spring Vrelo Bunice 6km upstream, not this swim spot — does not affect the spot's identity. The nearby 16th-c. Ottoman bridge at the confluence is a known real feature (Roman/Ottoman bridge on the Buna).",
+   "verifySource": "https://www.hercegovina.info/hercegovina/mostar-hercegovina/mostar-kupaliste-na-bunici-i-danas-privlaci-mnoge-koji-zele-pobjeci-od-vrucine-128065/128065/"
+  },
+  {
+   "source": "Z3",
+   "type": "viewpoint",
+   "name": "Bregava karst-gorge scenic viewpoint (Stolac → Berkovići road)",
+   "lat": 43.0896,
+   "lng": 17.999,
+   "country": "BA",
+   "complementsDay": "D4 Stolac/Poplat night (on the Poplat/Berkovići side)",
+   "whyBest": "A net-new, crowd-free roadside viewpoint over the emerald Bregava exactly where the river 'suddenly disappears' into the karst — on the quiet Stolac→Berkovići/Poplat road, so it's literally on the way to the Poplat bed with near-zero detour. Komoot-rated 5.0/5, with informal wild-camp pull-offs along the river right there. A low-key nature stop (river, gorge, watermills nearby) rather than a museum/old-town — fits the 'nature over sightseeing' rule and the in-built-slack principle (easy drop if tired).",
+   "communityNotes": "Komoot highlight, 5.0/5 from 4 recommendations: cyclist (Sep 2024) calls the Stolac-side road 'very scenic,' river right alongside, 'many places to rest and even camp,' traffic only 'medium' on weekdays, and notes the Bregava 'suddenly disappears' here (classic sinking-river karst). Note: faces E up the valley, so it reads as a daytime/golden-hour scenic stop more than a hard sunset spot — pair it with the Heaven in Nature camp swim just downstream for the actual evening.",
+   "sources": [
+    "https://www.komoot.com/highlight/6070079",
+    "https://outdooractive.com/en/poi/bosnia-and-herzegovina/the-bregava-river-and-the-radimlja-river/15404041"
+   ],
+   "confidence": "medium",
+   "verifyEvidence": "EXISTS: Komoot highlight 6070079 is 'Scenic View of the Bregava River Near Stolac', a viewpoint rated 5.0/5 (4 recommendations). Cyclist tip matches the pitch verbatim: 'from Stolac the road is very scenic. Close to the river (then it suddenly disappears), many places to rest and even camp.' Wikipedia/viadinarica independently confirm the Bregava is a karst sinking river that disappears underground NE of Stolac (emerald-blue water, gorge toward Badanj Cave). COORDS: 43.0896/17.999 reverse-geocode (Nominatim) to road R-427 in Komanje Brdo, Berkovići municipality / Stolac district = exactly the Stolac->Berkovići corridor; matches the Komoot highlight to the decimal, well within 300m. NET-NEW: nearest existing pins are ba-vodopad-pjene-stolac (43.0903/17.9651, ~2.76km W) and ba-stolac-bregava (43.083/17.958, ~3.4km W) — both far beyond the 500m threshold; this is the distinct upstream gorge stretch. WORTHWHILE: low-key karst-river/gorge nature stop (not a generic old town/museum), informal wild-camp pull-offs corroborated by a park4night entry on the R427, sits ~6.5km NW of the Poplat villa bed (ba-villa-kostela-stone-house-poplat) on the same road = near-zero detour, easy drop if tired. CAVEAT: thin evidence base (4 Komoot recs + one cyclist tip), roadside scenic stop rather than a destination -> rate modestly (3). NOTE: the outdooractive URL in the prompt points to a different, broader 'Bregava+Radimlja biotope' POI at 43.0798/17.9226 (~6km away), NOT this viewpoint — use the Komoot highlight as the primary source.",
+   "verifySource": "https://www.komoot.com/highlight/6070079"
+  },
+  {
+   "source": "Z5",
+   "type": "swim",
+   "name": "Vrelo Paljanske Miljacke (Miljacka source + travertine waterfalls, Gornje Pale)",
+   "lat": 43.787836,
+   "lng": 18.572217,
+   "country": "BA",
+   "complementsDay": "D6 Sarajevo/Pale",
+   "whyBest": "The Pale-side nature/swim spot the brief wanted, and it sits literally ~200m from the group's D6 'Home in Pale' bed - so it's a zero-drive morning before the D7 Tara departure or an evening wind-down. It's the source of the Miljacka: spring water bubbling up beneath the medieval Gradina/Pavlović fortress ruins, then sliding down a staircase of moss-covered travertine waterfalls ~100-250m downstream. Marked forest trails run from here to the Goli Koran picnic area. A genuine non-touristy local spot (RS side, almost no foreign visitors), with a trout-pond restaurant if they want a quick fish lunch. Pairs with a scramble up to the Gradina ruins for a Pale-valley viewpoint.",
+   "communityNotes": "Local Pale blog palelive.com ('Vodopadi naše mladosti' / 'Waterfalls of our youth'): a beloved childhood-school-trip spot; 'only the bravest boys dared swim there, and only during the hottest August days, because the water at the source was very, very cold' - groups picnic, grill, and chill watermelon and beer in the spring water. klix.ba: 'magnificent nature that leaves you breathless, just two km from Pale.' furaj.ba/toopale: water is a constant ~6-6.5°C; waterfalls are strongest in spring/autumn, thinner in mid-summer - so in June expect a cold karst dip + a waterfall stroll + picnic rather than a warm swim. Forest shade, free, open access; short unpaved spur off the main road by Restoran Vrelo Miljacke.",
+   "sources": [
+    "https://www.palelive.com/vodopadi-nase-mladosti-vrelo-miljacke/",
+    "https://www.klix.ba/lifestyle/putovanja/vrelo-miljacke-velicanstvena-priroda-koja-ostavlja-bez-daha-samo-dva-kilometra-od-pala/190627052",
+    "https://furaj.ba/vrelo-miljacke-skriveni-biser-nadomak-sarajeva/",
+    "https://toopale.com/vrelo-miljacke/",
+    "https://en.wikipedia.org/wiki/Miljacka"
+   ],
+   "confidence": "high",
+   "verifyEvidence": "EXISTS & AS DESCRIBED — corroborated across Wikipedia, Destination Sarajevo, jahorinatravel.com, toopale.com (official Pale tourism org), 033.ba, palelive.com, furaj.ba. It is the spring/source of the Paljanska Miljacka at Gornje Pale (~1,010m), beneath the medieval Gradina Pavlovića fortress ruins (with a stećci necropolis where Pavlović family members are said to be buried). Source stream slides down moss-covered travertine blocks forming small waterfalls (most impressive in spring snowmelt / autumn rains). Two trout fishpond restaurants downstream (Restoran Vrelo Miljacke known for grilled trout raised in the local pond; drinks chilled in the river). Confirmed a 'favorite excursion site for locals,' non-touristy. ~2km / ~30-min walk from Pale center.\n\nCOORDS — claimed 43.78983/18.57222 sits 222m from the authoritative Wikipedia spring coordinate 43.787836/18.572217 (within the ~300m tolerance, both resolve to this feature). I corrected to the Wikipedia coordinate to pin the actual spring/waterfall source more precisely; the claimed point is slightly N of it.\n\nNET-NEW — confirmed not in research/_session-j-all-places.txt. Nearest entries: user-1781362126170 'Home in Pale' accommodation at 43.7914407/18.5735772 = ~210m away but a BED, not a nature feature (different category, distinct thing to do; group effectively sleeps at the trailhead). All other 'Vrelo' entries (ba-blagaj-vrelo, ba-vrelo-bosne, ba-blagaj-trout-terraces) are different rivers ~100km+ SW (Buna/Bosna), not the Miljacka. No Miljacka/Paljanska/Gradina/Pale nature spot exists in the list.\n\nWORTHWHILE — yes, non-generic and high activity value for this group: travertine-waterfall walk + scramble to Gradina fortress ruins/viewpoint + marked forest trails to Goli Koran picnic area + optional quick trout lunch, all at a zero-drive distance from their D6 Pale bed (morning before D7 Tara departure or evening wind-down). CAVEAT: 'swim' is a stretch — the spring is a consistently cold 6–6.5°C karst source, so this is a nature/picnic/cold-plunge spot rather than a casual swimming hole; still plausible for an adventurous group and matches the brief's wish for a Pale-side nature spot.",
+   "verifySource": "https://en.wikipedia.org/wiki/Miljacka"
+  },
+  {
+   "source": "Z6",
+   "type": "viewpoint",
+   "name": "Zarišnik viewpoint (Vidikovac Zarisnik) — hike above Plužine",
+   "lat": 43.15134,
+   "lng": 18.856835,
+   "country": "ME",
+   "complementsDay": "D7 Piva/Plužine (base Boričje)",
+   "whyBest": "The zone's only EARN-IT-ON-FOOT sunset over the lake: the existing Piva viewpoints are all drive-up roadside pulls (Babina Greda, Mratinje dam, Babići). Zarišnik is a non-technical ~3h round-trip hike (≈6km) straight from the edge of Plužine town up to a 1,350m grassy summit with a covered shelter + bench + table — a 360° over the whole turquoise reservoir, Plužine below, and the Bioč/Maglić/Volujak wall vs Durmitor/Prutaš. Perfect golden-hour move on the chill Boričje night: light hike, big payoff, zero crowds, free. Fits the group taste (activity + nature, not a monument).",
+   "communityNotes": "Park Prirode Piva's own guide (sharemontenegro.me): trail 'počinje na samom ulasku u grad' (starts right at the town entrance), blazed through beech forest up to the hamlet Seoca, ~1h20 up / under 6km RT, 'lagana, ne zahtijeva posebnu kondiciju' (easy, no special fitness). At the top: 'odmorište sa vidikovcem, stolom i klupama' (rest area with viewpoint, table and benches). Views named: Plužine, Pivsko jezero, Bioč, Maglić, Volujak, Prutaš, Durmitor, Pivska planina. PeakVisor confirms peak Zarišnik 1,350m, prominence 313m. A local FB/agency post (Riva Travel) runs guided day-trips here purely for 'pogled na Plužine i Pivsko jezero sa brda Zarisnik'.",
+   "sources": [
+    "https://sharemontenegro.me/vodimo-vas-do-brda-odakle-se-vidi-sva-ljepota-pivskog-jezera/",
+    "https://sharemontenegro.me/park-prirode-piva-top-5-mjesta-koja-morate-posjetiti/",
+    "https://peakvisor.com/peak/zarisnik.html",
+    "https://www.facebook.com/rivatravelbar/videos/1659356870885232/"
+   ],
+   "confidence": "high",
+   "verifyEvidence": "EXISTS & matches claim: 4 independent sources corroborate — PeakVisor peak DB, Share Montenegro (x2, the Piva nature-park guide), Komoot/Outdooractive, and a local tour operator. It's a marked, non-technical ~6km / ~3h round-trip hike starting at the edge of Plužine town (through beech forest + Seoca hamlet) up to a 1,350m grassy summit with a rest area (table + benches) and a 360° panorama: Plužine + turquoise Piva lake + the Bioč/Maglić/Volujak wall on one side, Prutaš/Durmitor/Pivska planina on the other. Described as easy/light, low fitness needed.\n\nCOORDS exact: PeakVisor lists Zarišnik at 43.15134 N, 18.856835 E, elevation 1,350m — IDENTICAL to the claimed coords (0m off, well within 300m). Resolves precisely to the hiked summit.\n\nNET-NEW: Not in _session-j-all-places.txt. Nearest Piva-zone pins are all lakeshore (~675m) and a different access type: me-vidikovac-babina-greda-piva (43.189,18.861) ~4.3km N is a confirmed DRIVE-UP roadside pull; me-pluzine town (43.154,18.842) ~1.3km; me-piva-zipline (43.158,18.846) ~1.0km; me-piva-lake-swim (43.161,18.835). None within 500m, and none is this earn-it-on-foot 1,350m summit. Genuinely new.\n\nWORTHWHILE: Fits the group (light activity + big nature payoff, free, zero crowds, golden-hour viewpoint) and fills a real gap — the only HIKED sunset viewpoint in the Piva zone, all other viewpoints being roadside/drive-up. Strong add.",
+   "verifySource": "https://peakvisor.com/peak/zarisnik.html"
+  },
+  {
+   "source": "Z6",
+   "type": "swim",
+   "name": "Kamp Vrbnica — turquoise Komarnica/Vrbnica riverside swim base (Stabna)",
+   "lat": 43.1619,
+   "lng": 18.779,
+   "country": "ME",
+   "complementsDay": "D7 Piva/Plužine (base Boričje)",
+   "whyBest": "A net-new turquoise WATER spot AND a tier-1 camping gem on the Plužine stretch in one. The existing Piva swim pin is the busy Plužine town beach; this is the opposite — a quiet, family-run riverside camp ~9km W toward Stabna where the glass-clear, ice-cold Komarnica/Vrbnica arm runs emerald before it widens into the lake. Free river dip with mountains all around, a waterfall ~3km away, and it doubles as the trailhead for the gorgeous ~4.5h hike up to the Stabanska lakes — so it's a cheaper, wilder, more scenic alternative to the town base for the Boričje night (clean HOT showers, ~€7-15 for 4+tent). Self-served swim, nature, no guide, no crowds: dead-on the group's taste.",
+   "communityNotes": "park4night/iOverlander reviewers: 'very quiet and cozy, family-owned, great for tents'; '9 km from Plužine towards the village of Stabna, at the riverside'; '7€ for 2 persons, a car and a tent'; 'Clean toilets and showers… hot water'; 'wonderful 4.5 hrs hike to the two lakes' (Stabanska jezera); water is 'fresh/ice-cold but swimmable', and '3km away there is a nice waterfall with bath possible'. Consistently flagged as peaceful and friendly owners — the antithesis of the town beach.",
+   "sources": [
+    "https://park4night.com/en/place/128779",
+    "https://ioverlander.com/places/239364-kamp-vrbnica",
+    "https://montenegrodigitalnomad.com/montenegro-blog/best-things-to-do-in-pluzine/"
+   ],
+   "confidence": "high",
+   "verifyEvidence": "EXISTS, confirmed by 4+ independent sources. park4night #128779 places \"Kamp Vrbnica\" at 43.1619, 18.7790 (exact match to claimed coords); Campercontact lists 43.1618125, 18.7789375 (~within a few meters). It is a small family-run riverside campsite at the mouth/confluence of the Vrbnica river into Piva Lake, 9km from Plužine toward the village Stabna (camping.info, parkpiva.com, Booking.com 172 verified reviews @ 9.0/10, park4night 4.5/5 over 66 reviews). HOT showers + clean sanitary facilities consistently praised; \"wonderfully quiet,\" friendly owners. The Stabanska jezera hike claim VERIFIED: the trail to the emerald Stabansko lake (1,325m, below Volujak) starts from this Vrbnica/Stabna road, and the camp itself advertises organized walking/cycling/hiking to the Stabna Lakes; a swimmable waterfall ~3km away (park4night). COORDS verified within a few meters. NET-NEW: nearest existing pins are me-piva-lake-swim (43.1609,18.8353) ~4.7km E, me-pluzine ~5.4km E, me-stabanska-jezera (the lakes, 43.199,18.722) ~6.5km NW — nothing within 500m on this Vrbnica arm. WORTHWHILE for this group: quiet self-served river dip + camping tier-1 + Stabanska-lakes trailhead, no crowds, no guide, on the Plužine/Boričje overnight stretch. ONE FIX: the WHY-claim price (~€7-15 for 4) is understated — actual is €12 per camper + €4/person + €3 electricity, i.e. ~€28-31 for 4+tent+car. Still cheap, but the description should reflect the real rate. Also note: setting is the Vrbnica-into-Piva-Lake confluence at 690m elevation (the \"emerald river arm before it widens into the lake\" framing is accurate); the steep camp access road is a recurring caution for larger vehicles (fine for a car).",
+   "verifySource": "https://park4night.com/en/place/128779"
+  },
+  {
+   "source": "G-HR",
+   "type": "cove",
+   "name": "Grdni Do (wild cliff-ringed cove, Žuljana)",
+   "lat": 42.8968,
+   "lng": 17.444,
+   "country": "HR",
+   "complementsDay": "D3 Makarska→Dubrovnik via Pelješac/Ston (airport/ferry day) — or any Pelješac transit",
+   "whyBest": "The one genuinely net-new wild cove the dense corridor list missed, and it nails the group's taste exactly: a turquoise, cliff-walled pebble cove with NO facilities, no bar, no road — you either arrive by sea (kayak/boat) or scramble down the rocks holding a fixed rope. That rope descent + sea-only access keeps it empty even in peak June, unlike the family-friendly Žuljana main beach 1.2km away. Self-arrive-by-water + clamber-down = real adventure, not a sunbed beach. FKK-tolerated so even quieter. Underwater caves offshore = good free-diving/snorkel.",
+   "communityNotes": "Croatian beach DBs and blogs describe it consistently and independently: 'Grdni Do je lijepa divlja šljunčana plaža sa tirkiznom bojom mora, okružena stijenama, sjeverno od Žuljana' (rezerviraj.hr). On access: 'Do nje možete doći s mora ili se spustiti niz stijene držeći se za uže. Ovdje je prilično strmo pa ovo mjesto ne preporučujemo obiteljima s djecom ili ljudima koji se boje penjanja' — i.e. reach it from the sea or climb down the rocks holding a rope; quite steep, not for families or anyone afraid of climbing. journal.hr/Nomago: 'isolated location and crystal-clear turquoise sea... surrounded by steep cliffs, providing a sense of privacy and peace.' Listed FKK on Google Maps though not officially nudist.",
+   "sources": [
+    "https://www.rezerviraj.hr/zuljana-plaze.html",
+    "https://www.adriatic.hr/hr/vodic/plaza-grdni-do-zuljana-peljesac-hrvatska/beach-2897",
+    "https://www.journal.hr/lifestyle/putovanja/najljepse-skrivene-plaze-hrvatska-ljeto-2021/",
+    "https://putovanja.nomago.hr/sve-o-putovanjima/30-najljepsih-skrivenih-plaza-u-hrvatskoj-i-europi/",
+    "https://nominatim.openstreetmap.org/search?q=Grdni+Do&format=json"
+   ],
+   "confidence": "high",
+   "verifyEvidence": "EXISTS & AS DESCRIBED: OpenStreetMap Nominatim returns a 'beach' feature named \"Grdni do\" at 42.8967648/17.4439523, address \"Grdni do, Popova Luka, Općina Janjina, Dubrovačko-neretvanska županija, Hrvatska\" — confirming the Pelješac/Žuljana location. Independent Croatian sources corroborate every signature claim. rezerviraj.hr: \"Grdni Do je lijepa divlja šljunčana plaža sa tirkiznom bojom mora, okružena stijenama, sjeverno od Žuljana\" (a beautiful wild pebble beach with turquoise sea, surrounded by rocks, north of Žuljana). The adventure access is confirmed verbatim: \"You can reach it from the sea or descend down the rocks holding onto a rope. Here it is quite steep so this place is not recommended for families with children or people who are afraid of climbing.\" FKK-tolerated confirmed: most commonly used by naturists, not officially designated, marked FKK on Google Maps. So: wild cliff cove, turquoise, pebble, rope-descent or sea-only access, FKK — all corroborated.\n\nCOORDS: Claimed 42.8968/17.444 sits 6 m from the OSM beach feature — a direct hit, no correction needed. Does NOT land on the busy Žuljana main beach.\n\nNET-NEW: Haversine distance to the only nearby pin hr-zuljana (Žuljana beach, 42.8903/17.4552) is 1164 m — well outside the ~500 m dedup radius. Sources confirm these are distinct beaches: hr-zuljana = the busy sandy/pebble family main beach in the village; Grdni Do = the wild rope-access cliff cove NW of it. No other pin within range.\n\nWORTHWHILE: Sea-only kayak/boat arrival or a fixed-rope scramble down steep rock keeps it near-empty even in peak June, a turquoise cliff-walled pebble cove with no facilities/road — exact fit for this group's nature + self-arrive-by-water adventure taste, non-generic, no sunbeds. Snorkel/free-dive potential on offshore rocks. ADD.\n\nCAVEAT for the data entry: the rope/cliff descent is genuinely steep (\"not recommended for those afraid of climbing\") — note this in communityNotes, and the comfortable arrival is by kayak/boat from Žuljana (~1.2 km by water).",
+   "verifySource": "https://www.rezerviraj.hr/zuljana-plaze.html"
+  },
+  {
+   "source": "G-HR",
+   "type": "swim",
+   "name": "Plaža Kremena (secluded pine-shaded cove, Žuljana bay)",
+   "lat": 42.8882,
+   "lng": 17.4505,
+   "country": "HR",
+   "complementsDay": "D3 Makarska→Dubrovnik via Pelješac/Ston — the gentler same-bay alternative to Grdni Do",
+   "whyBest": "Net-new small hidden cove in the same Žuljana bay, useful as the calmer option for whoever doesn't want the Grdni Do rope-scramble: a tiny pebble cove pinched between rock walls with natural pine shade, reached on foot down a path from the village church (Gospa od Sedam Žalosti) or along from the Žuljana waterfront. Far quieter than Žuljana's main beach, good easy snorkel water. Pairs with Grdni Do so the group can split by mood (adventure vs. chill) without driving.",
+   "communityNotes": "Local sources: 'Kremena je mala šljunčana plaža s blagim pristupom u more... Hlad je prirodni, od visokih borovih stabala iznad plaže, kao i stijena koje zatvaraju plažu sa obje strane' — small pebble beach, gentle entry, natural shade from tall pines, rocks enclosing it on both sides (rezerviraj.hr). 'na koje se možete spustiti slijedeći put iz lokalne crkve Gospe od Sedam Žalosti ili iz Žuljana sa rive' — descend via the path from the local church or from the Žuljana waterfront. Locals flag it as the better pick than the popular Vučine if you prefer small empty coves.",
+   "sources": [
+    "https://www.rezerviraj.hr/zuljana-plaze.html",
+    "https://www.rezerviraj.hr/plaze-za-kupanje-u-zuljana-i-okolici-blizini",
+    "https://nominatim.openstreetmap.org/search?q=Kremena+%C5%BDuljana&format=json"
+   ],
+   "confidence": "medium",
+   "verifyEvidence": "EXISTS: Multiple independent Croatian-language sources confirm Plaza Kremena, a small pebble cove in Zuljana bay (Peljesac). rezerviraj.hr describes a smaller cove called Kremena reached via a path from the church Gospe od Sedam Zalosti or along the Zuljana waterfront, with natural shade from tall pine trees above plus rock walls closing the cove on both sides. adriatic.hr classifies it as pebble (Sljuncana) with natural shade (Prirodni hlad). The claimed description (tiny pebble cove pinched between rock walls, pine shade, church-path access) matches precisely. COORDS: Nominatim returns Kremena, Racici, Zuljana neighbourhood at exactly 42.8882/17.4505 and the shore locality at ~42.8886/17.4525, so the pin lands on the Kremena shoreline in Zuljana bay, well within 300m of the cove; verified. NET-NEW: only nearby dedup pin is hr-zuljana (42.8903/17.4552, the main beach ~450-600m E); Kremena is a distinct smaller cove. WORTHWHILE: serves as the calm/easy-snorkel alternative to the Grdni Do rope-scramble in the same bay (split-by-mood, no driving). Mild caveat: adriatic.hr lists ~90 nearby accommodations so it is not truly obscure, and it is family-leaning rather than adventurous, but it is a legitimate scenic swim/snorkel cove worth the pin.",
+   "verifySource": "https://www.rezerviraj.hr/plaze-za-kupanje-u-zuljana-i-okolici-blizini"
+  },
+  {
+   "source": "G-BA",
+   "type": "viewpoint",
+   "name": "Bunski kanali — where Buna meets Neretva (two parallel coloured rivers + travertine cascades)",
+   "lat": 43.2403,
+   "lng": 17.8333,
+   "country": "BA",
+   "complementsDay": "D4/D5 Mostar–Blagaj–Počitelj corridor (on the M-17 between Buna and Počitelj)",
+   "whyBest": "A genuinely rare natural phenomenon right on the M-17, ~12-15min south of Mostar with zero net driving: the green Neretva and the blue Buna run side-by-side in parallel channels over a limestone (travertine) barrier before merging, with a series of small Buna cascades. Adds a non-generic, free, uncrowded nature/photo + short-walk stop to a day otherwise full of the heavily-visited Stari Most/Blagaj Tekija circuit — it complements the group's taste (wild karst water, not an old town) and sits between the existing Blagaj/Buna swims and the Počitelj/Kravica block. More a scenic walk + photo phenomenon than a deep swim/jump (honest: TripAdvisor reviewers note no organised swimming and patchy signage).",
+   "communityNotes": "Local portals call it 'mjesto gdje Buna ljubi Neretvu' (the place where Buna kisses Neretva) and 'rijetko viđeni fenomen' — from the bridge you see two distinct water colours flowing alongside each other before merging. TripAdvisor visitors: 'stunning natural phenomenon', 'scary and beautiful at the same time', 'beautiful view from the bridge', and note it's uncrowded and sits 'just meters from the main Mostar–Čapljina highway' with side-road parking by the bridge. Caveats from reviews: poor signage (hard to find), water can look murky, and locals say the whole area floods/submerges in winter — a summer-only spot. Wear proper footwear for the channel terrain.",
+   "sources": [
+    "https://www.rtvslon.ba/bunski-kanali-mjesto-gdje-buna-ljubi-neretvu/",
+    "https://hr.wikipedia.org/wiki/Bunski_kanali",
+    "https://bonjour.ba/bunski-kanali-zavirite-u-prirodni-raj-u-blizini-mostara",
+    "https://www.tripadvisor.com/Attraction_Review-g295388-d23645092-Reviews-Bunski_Kanal_Most-Mostar_Herzegovina_Neretva_Canton_Federation_of_Bosnia_and_Her.html",
+    "https://visitbih.ba/bunski-kanali-rijetko-vidjeni-fenomen-mjesto-gdje-buna-ljubi-neretvu/"
+   ],
+   "confidence": "high",
+   "verifyEvidence": "EXISTS — confirmed by multiple independent sources. The Buna doesn't flow straight into the Neretva: the two run side by side for ~850m, with part of the Buna spilling over a travertine barrier creating a line of small waterfalls (up to ~2m, seasonal) before merging — a karst hydrological phenomenon protected as a natural monument since 1970 (HR/EN Wikipedia \"Buna Canals\", visitbih, SeeSrpska). Located ~10-12km south of Mostar directly on the M-17 Mostar-Čapljina road.\n\nCOORDS VERIFIED — EN Wikipedia gives 43°14′25″N 17°50′00″E = 43.2403, 17.8333, ~25m from the claimed 43.2405,17.8335 (well within 300m). This is the canal/bridge spot on the M-17, NOT the Blagaj/Bunica area (one tour-operator page loosely conflates the two, but the authoritative coords + the confluence description place it here). TripAdvisor reviewers confirm a viewing bridge with a side-road parking spot right off the highway.\n\nNET-NEW — nearest existing pins: ba-buna-brzatak-swim (43.2474,17.8402) ~0.94km NE (a separate developed Buna bathing beach, not the confluence); ba-villa-gana-buna (43.232,17.831, accommodation) ~0.94km; ba-zitomislici-monastery (43.208,17.793) ~3.6km S. All outside 500m; this is a distinct phenomenon.\n\nWORTHWHILE (with honest caveats) — fits the group's taste (wild karst water, not an old town); free, uncrowded, zero net driving on the M-17 between the existing Blagaj/Buna swims and the Počitelj/Kravica block. Caveats from reviewers: it's a scenic walk + photo stop rather than a swim/jump site (no reviews mention swimming at the confluence itself), signage is poor (\"took a while to find it, but it was worth it\"), and one recent reviewer found the water dirty; locals say it can go fully underwater in winter (not a June concern). Best in summer when colours/travertine pop.",
+   "verifySource": "https://en.wikipedia.org/wiki/Buna_Canals"
+  },
+  {
+   "source": "G-ME",
+   "type": "viewpoint",
+   "name": "Gornji Stoliv — abandoned stone village + church terrace viewpoint (hike up from Donji Stoliv)",
+   "lat": 42.4662,
+   "lng": 18.715,
+   "country": "ME",
+   "complementsDay": "D11 Kotor Bay (Camping Mimoza, Donji Stoliv base)",
+   "whyBest": "A self-contained sunset/viewpoint hike that LITERALLY starts at the D11 camp — zero driving. The committed D11 is a packed Kotor-city day (San Giovanni fortress, BBQ Tanjga, old-town bars); this adds a quiet nature+activity option the group actually likes (hidden, abandoned village, ridge view) instead of more old-town. ~45-min shaded chestnut-forest climb on a 150-yr-old stepped path straight up from Donji Stoliv to a church terrace with a full panorama of Perast + Our Lady of the Rocks/Sveti Đorđe islands + the whole bay. Far better golden-hour spot than the city fortress crowd, and it's the trailhead for the longer Vrmac/Sveti Ilija (765m) ridge if they want more.",
+   "communityNotes": "Local blogs are unanimous it's a time-stopped gem: Jasnina Putovanja — '~40 min up from Donji Stoliv on a stepped path donated by a sailor 150+ years ago, still in excellent condition; only 3 permanent residents left, an informal kafana operates, mostly foreign visitors, minimal crowds.' Boka News — 'orderly rocky path through a chestnut forest... unique view of Perast and the islands; St Ilija festival 20 July.' English guides confirm: 'very easy though uphill, ~45 min through shaded chestnut woods, gorgeous panorama of Perast with Our Lady of the Rocks and St George — if short on time in Kotor Bay this is THE place to hike for the views; careful after rain, very slippery.' Down to ~1 inhabited house (1979 earthquake + emigration); church of St Anne has the panoramic platform, plus abandoned olive mills/bakeries.",
+   "sources": [
+    "https://jasninaputovanja.me/2022/02/04/mjesto-u-kojem-je-vrijeme-stalo-gornji-stoliv/",
+    "https://www.bokanews.me/gornji-stoliv-oazi-arhitekture-predaka-proslavljen-zastitnik-mjesta-sveti-ilija/",
+    "https://rtcg.me/magazin/putujtesanama/384811/gornji-stoliv-prkosi-vremenu-i-ceka-da-ozivi.html",
+    "https://medium.com/vrhovi-crne-gore/vrmac-sv-ilija-vrh-765-mnm-aa44d1c6b466"
+   ],
+   "confidence": "high",
+   "verifyEvidence": "EXISTS + as described: Gornji Stoliv is a well-documented abandoned 14th-c. stone village on the northern Vrmac slope (~240-260m) above Donji Stoliv on Kotor Bay, reachable only on foot. Multiple independent sources confirm a ~40-45 min stepped-stone donkey-track climb through chestnut forest, starting by the Church of St Ilija at the shore road (red/white blaze). The panoramic flagged terrace with \"the single best view over Perast in the whole Boka\" — both islands (Our Lady of the Rocks + Sveti Đorđe/St George) plus the bay's mountain horseshoe — is at the Baroque Church of St ANNE (Sveta Ana), not St Ilija (the claim slightly conflates the two churches; St Ilija is also the 785m Vrmac peak). It is also the trailhead for the longer Vrmac/Sveti Ilija ridge. COORDS: OSM Nominatim resolves Gornji Stoliv to 42.4661878/18.7150364 = claimed 42.4662/18.715 (~5m off; spot-on). NET-NEW: nearest pin is me-camping-mimoza-stoliv (the D11 base) 888m DOWNHILL on the shore — a campsite, not this uphill hike destination; next nearest are the Prčanj/Stoliv WOW villa 2.1km, Perast 2.6km, Fort Goražda 8.8km. Nothing within 500m. WORTHWHILE: hidden abandoned village + golden-hour ridge panorama, light shaded hike starting at the D11 camp (zero driving) — exactly the nature/activity/non-old-town option this group prefers; good one-per-day slack/highlight. NOTE for pin author: label the viewpoint as the Church of St Anne (Sveta Ana) terrace.",
+   "verifySource": "https://www.manvsglobe.com/gornji-stoliv-montenegro-guide/"
+  },
+  {
+   "source": "G-ME",
+   "type": "cove",
+   "name": "Uvala Trsteno — quiet turquoise fine-sand cove (Budva riviera)",
+   "lat": 42.2816,
+   "lng": 18.785,
+   "country": "ME",
+   "complementsDay": "D11 Budva → Sveti Stefan → Kotor (morning, before the bay)",
+   "whyBest": "The only swim pin in this Budva stretch is Ploče (the concrete party beach, most expensive + most crowded on the riviera). Trsteno is the opposite and directly on-route ~1.3km north: a tucked-in cove with fine sand, clear azure water and a sandy bottom — locals' choice for a calm clear-water swim with far fewer people. Fits the group's taste (self-swim, hidden-ish cove, non-generic, no party scene) as a morning dip before driving N to the Kotor bay, and it's a no-cost beach (sunbed ~€10 only if wanted).",
+   "communityNotes": "RTV Budva — 'Uvala Trsteno: turquoise sea and fine sand.' Local beach guides: 'known for untouched nature and crystal-clear water; 200m of fine sand, azure sea, sandy seabed; because it's tucked in there's not much room for sunbeds so it's LESS crowded than other beaches; entry free, sunbed ~€10, a few cafés for light bites.' Contrasted explicitly with Ploče which locals call 'the main party beach, packed in season, hardest place to park, priciest on the riviera, foam parties/festivals.'",
+   "sources": [
+    "https://www.rtvbudva.me/vijesti/uvala-trsteno-tirkizno-more-i-sitan-pijesak/24003",
+    "https://balkanfun.travel/blog/budva-plaze-lista-najlepsih-plaza-i-cene",
+    "https://www.bastabalkana.com/2012/05/najbolje-plaze-crne-gore-kamena-i-betonska-plaza-ploce-budva/"
+   ],
+   "confidence": "medium",
+   "verifyEvidence": "EXISTS + well documented. Trsteno is a real ~200m fine-sand cove on the Budva riviera, deeply set into the land (protected from waves/winds), with clear azure water and a shallow sandy bottom. COORDS VERIFIED within ~25m: two independent sources give 42.281618/18.785028 (worldbeachguide/virtlo) and a Sandee map pin at 42.281853/18.784823 — both essentially identical to the claimed 42.2816/18.7848. (I nudged lng from 18.7848 to 18.785 to match the consensus pin; difference is ~17m, immaterial.) NET-NEW: nearest existing pin is me-ploce-beach (42.26992/18.78486) ~1.3km SOUTH — confirmed by my own lat-delta calc (0.01168° ≈ 1.30 km) and corroborated by sources (\"Ploce is 0.9 mi from Trsteno\"). No other pin within 500m (Jaz ~1.5km E, Mogren further E). WORTHWHILE: TripAdvisor reviewers explicitly prefer Trsteno over busier Mogren for a more relaxed atmosphere and clean/clear water; soft sand \"soft as carpet\"; free access with optional paid sunbeds (~€5-30). Fits the group: free self-swim cove, non-generic, no club scene — the calm-water opposite of the Ploče party beach. HONEST CAVEATS: (1) not an obscure secret — it's an organized beach that does get crowded in peak season (June=high season) and has a beach-bar with occasional loud turbo-folk music; (2) geographically it sits ~5km WEST of Budva, reached via a short side road off the Adriatic highway near the Jaz cove — so it's a brief detour off the coastal road rather than literally on the through-route, though still very close (~1.3km from the Ploče pin).",
+   "verifySource": "https://www.tripadvisor.com/Attraction_Review-g15885971-d7052794-Reviews-Trsteno_Beach-Krimovice_Kotor_Municipality.html"
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Park-šuma Sveti Petar peninsula & lighthouse (Makarska — free sunset point)"
+  },
+  {
+   "name": "Velji Grad (Veliki Grad) summit — Mljet's 514m high point, hike from Babino Polje"
+  },
+  {
+   "name": "Uvala Gonoturska — secluded NP swim cove, north shore"
+  },
+  {
+   "name": "Soline channel mouth viewpoint — where Veliko Jezero meets the open sea"
+  },
+  {
+   "name": "Mostarsko jezero — Raštani lakeside swim (Neretva reservoir)"
+  },
+  {
+   "name": "Hum hill — Millennium Cross sunset viewpoint over Mostar & the Neretva"
+  },
+  {
+   "name": "Bistrik Kula / Čolina Kapa abandoned observatory (Trebević skyline sunset)"
+  },
+  {
+   "name": "Jazzbina (live jazz/blues/rock club, Maršala Tita 38)"
+  },
+  {
+   "name": "Pivsko jezero — Gradska plaža self-rent SUP/swim arm vs. the deep-canyon coves (note)"
+  },
+  {
+   "name": "Stožina (1908m) — short dawn walk-up over the Pošćenska valley"
+  },
+  {
+   "name": "Zminičko jezero — warm (22°C) quiet swim lake near Njegovuđa"
+  },
+  {
+   "name": "Prutaš trailhead (P14) — sunset & stargazing perch over southern Durmitor"
+  },
+  {
+   "name": "Dodoši — local warm-river swim & bridge jump (Crnojevića River)"
+  },
+  {
+   "name": "Vranjina hill — St Nikola Monastery summit (303m) sunrise over the lake"
+  },
+  {
+   "name": "Macalov brijeg — panoramic viewpoint café on the old Rijeka Crnojevića–Virpazar road"
+  },
+  {
+   "name": "Vidikovac Godinje — free lake-and-Grmožur panorama above Godinje"
+  },
+  {
+   "name": "Plat naturist & snorkel beach (Soline bay, between Mlini & Cavtat)"
+  },
+  {
+   "name": "Molunat bay (far-south Konavle local snorkel cove)"
+  },
+  {
+   "name": "Club Lazareti (Dubrovnik alternative/underground club, ex-quarantine stone barracks)"
+  },
+  {
+   "name": "Beach Bar Little Star (cliff-edge sunset bar, Cavtat Rat peninsula)"
+  },
+  {
+   "name": "Neretvica valley — Pasjak natural pool + river zipline (Parsovići, Konjic)"
+  },
+  {
+   "name": "Mostarsko jezero — Raštani beach (lake swim + kayak, ~15min NW of Mostar)"
+  }
+ ]
+}

@@ -1,0 +1,572 @@
+ba-air-1165836464333612445|Gaga City Center|42.709|18.3398|accommodation
+ba-air-1542024184506963047|The Pearl Downtown Sarajevo|43.8571|18.4076|accommodation
+ba-ark-bunker-konjic|ARK D-0 — Tito's Cold War Nuclear Bunker (Konjic)|43.6515|17.9575|sight
+ba-arslanagica-most|Arslanagića most + Bregovi river beach (Trebinje)|42.7147|18.354|sight
+ba-autocamp-green-park-mostar|AutoCamp Green Park (Žitomislići, 18km from Mostar)|43.23|17.75|campsite
+ba-baklava-ducan-sarajevo|Baklava Dućan (Sarajevo — THE baklava shop)|43.8592|18.4296|food
+ba-bascarsija-bar-cluster|Baščaršija bar cluster (Sunday night out: Barometar, Zlatna Ribica, Cheers, Raya 71)|43.85831|18.42661|nightlife
+ba-bingo-mostar|Bingo Supermarket (Mostar — camping stock-up)|43.3528369|17.8045894|food
+ba-bjelasnica-summit-babindo|Bjelašnica Summit (2067m) from Babin Do|43.7066|18.2766|hike
+ba-blagaj|Blagaj Tekija|43.2565|17.9031|sight
+ba-blagaj-buna-sup-note|Blagaj / Vrelo Bune — paddle reality check (guided boat only)|43.2572|17.9036|activity
+ba-blagaj-trout-terraces|Blagaj Buna-spring trout terraces (Vrelo & neighbours)|43.25665|17.90048|food
+ba-blagaj-vrelo|Restoran Vrelo (Blagaj, on the Buna)|43.256426|17.903008|food
+ba-bobsled-track|1984 Olympic Bobsled & Luge Track (Trebević)|43.84111|18.44222|sight
+ba-boracko-jezero-konjic|Boračko jezero (Konjic) — glacial swim lake + Eko Selo|43.5145|17.987|nature
+ba-boracko-lake|Boračko Lake (swim stop; camp backup)|43.5519|18.0314|nature
+ba-boracko-lake-paddle|Boračko Lake — calm-water SUP/kayak (rent in Konjic, bring to lake)|43.5522|18.0309|activity
+ba-buna-blagaj-swim|Buna River Swimming @ Blagaj|43.2573|17.9036|nature
+ba-buna-brzatak-swim|Kupalište Brzatak (Buna river — south Mostar local swim)|43.2474|17.8402|beach
+ba-cafe-de-alma-mostar|Café de Alma|43.3374|17.8141|food
+ba-cakum-pakum-sarajevo|Cakum-Pakum (Sarajevo — quirky all-day brunch)|43.85964|18.42194|food
+ba-camping-blagaj-buna|Camping Blagaj (River Auto Camp, Buna) — Ravna fallback|43.2575|17.8918|campsite
+ba-camping-neretva-mostar|Camping Neretva (riverside camp, ~3 km from Mostar old town)|43.3644|17.815|campsite
+ba-canoekor-konjic-hourly-rental|CanoeKor / Neretva Canoeing (Konjic) — hourly self-guided rental|43.6516|17.9614|activity
+ba-celebici-neretva-swim|Čelebići river swim — Idbar meets Neretva (M-17 roadside stop)|43.67|18.0333|nature
+ba-cevabdzinica-rota-mostar|Ćevabdžinica Rota (Mostar)|43.337|17.8133|food
+ba-cinemas-sloga-latin-night|Cinemas Sloga — Monday Latin Night (Sarajevo)|43.857|18.405|nightlife
+ba-civelj-jablanicko-jezero|Plaža Čivelj + Ostrožac iron bridge (Jablaničko jezero)|43.679|17.771|swim
+ba-crni-vir-dzajici|Crni Vir waterfall (Džajići, Konjic)|43.611329|18.013198|nature
+ba-cvrsnica-hajducka-vrata|Čvrsnica — Hajdučka vrata rock arch (Blidinje Nature Park)|43.6303|17.655|hike
+ba-daorson|Daorson megalithic walls (Ošanići, above Stolac)|43.1054|17.9296|sight
+ba-diva-grabovica|Diva Grabovica valley (Čvrsnica's hidden 1,800m-wall canyon)|43.6036|17.6763|nature
+ba-diva-grabovica-riverbeach-camp|Diva Grabovica river-beach wild camp (Neretva confluence)|43.5915|17.6815|campsite
+ba-donje-bare-zelengora|Donje Bare lake & Borić viewpoint (Zelengora, Sutjeska NP)|43.31814|18.630402|nature
+ba-dragos-sedlo-skakavac|Dragoš Sedlo viewpoint — Skakavac waterfall (Sutjeska NP)|43.3453|18.6654|viewpoint
+ba-dreznica-canyon|Drežnica / Drežanka canyon — local swim canyon|43.519623|17.738513|nature
+ba-eko-selo-boracko|Eko Selo Boracko Jezero (lake eco-village: camp + bungalows, Konjic)|43.5569|18.0289|campsite
+ba-er-mostar|ER — SKB Mostar|43.34489|17.78927|other
+ba-er-sarajevo|ER — KCUS Klinički centar Sarajevo|43.86771|18.41006|other
+ba-er-trebinje|ER — JZU Bolnica Trebinje|42.71014|18.35203|other
+ba-fortica-mostar|Fortica Hill — Skywalk & Zipline|43.3455|17.832|activity
+ba-gem-mostar-nanas-house|Nana's House — whole house with private yard (Mostar)|43.3459|17.8164|accommodation
+ba-glamping-bagrem-jablanica|Glamping Bagrem (Lake Jablanica)|43.6847|17.7944|accommodation
+ba-glavaticevo-neretva|Glavatičevo — upper-Neretva swim village & Ottoman bridge|43.504061|18.10413|nature
+ba-gracanica-viewpoint|Hercegovacka Gracanica (Trebinje monastery viewpoint)|42.7107369|18.3600128|viewpoint
+ba-gradac-foca-viewpoint|Gradac / Gradačka stijena viewpoint (above Foča)|43.5115|18.769|viewpoint
+ba-hrcavka-canyoning|Hrčavka Canyon Canyoning — Sutjeska NP|43.38|18.69|activity
+ba-hutovo-blato|Hutovo Blato wetland boat safari|43.0654|17.7545|activity
+ba-ima-moze-craft-beer|Ima i Može Craft Beer Garden (Mostar)|43.3365|17.8069|nightlife
+ba-jablanica-kayak-neretva|Jablanica Kayak Safari (Neretva canyon)|43.6609|17.7655|activity
+ba-jablanica-neretva-museum|Battle of Neretva Museum & sunken bridge (Jablanica)|43.653723|17.760688|sight
+ba-jablanica-neretva-selfguided-paddle|Neretva Kayak Canoe Safari (Jablanica) — self-guided canyon paddle|43.6353|17.7582|activity
+ba-jajce-pliva-waterfall|Jajce — Pliva waterfall under the old town|44.3377|17.2705|nature
+ba-kamp-usce-trebinje|Kamp Ušće (Trebinje, on the Sušica river)|42.7094|18.486|campsite
+ba-kino-bosna-sarajevo|Kino Bosna (Sarajevo — former cinema bar)|43.8602|18.4114|nightlife
+ba-kocusa-falls|Kocusa Waterfall (Trebizat)|43.249342|17.45222|nature
+ba-konjic-eko-selo-boracko|Eko Selo Boračko Jezero (Konjic — lakeside trout & rafting meals)|43.5522|18.0309|food
+ba-konjic-han|Restoran Han (Konjic — trout, tufahija, baklava)|43.647441|17.9628951|food
+ba-konjic-stara-cuprija|Konjic Old Bridge (Stara Ćuprija) & old town|43.651127|17.962917|sight
+ba-konoba-kocusa|Konoba Koćuša (waterfall-side trout konoba, Veljaci)|43.2464|17.4554|food
+ba-kravica|Kravica Waterfalls|43.1583|17.6083|nature
+ba-kravica-autocamp-ante|Auto Camp Ante (Kravica)|43.160359|17.614123|campsite
+ba-lastva-jazina-trebinje|Lastva lake & Jazina falls (Trebinje local swim)|42.700843|18.475309|nature
+ba-lukomir|Lukomir — Bosnia's Highest & Most Remote Village (Bjelašnica)|43.633|18.183|sight
+ba-morica-han-divan-sarajevo|Morića Han / Café Divan (caravanserai courtyard coffee)|43.85932|18.42814|food
+ba-mostar|Mostar (Stari Most)|43.3372|17.815|town
+ba-mostar-ali-baba|Ali Baba cave bar / club (Mostar)|43.337644|17.815573|nightlife
+ba-mostar-black-dog-pub|Black Dog Pub (Mostar)|43.336644|17.81308|nightlife
+ba-mostar-bridge-jump|Stari Most Bridge Jump (Mostari Diving Club)|43.3373|17.8147|activity
+ba-mostar-hindin-han|Restoran Hindin Han (Mostar)|43.336775|17.813709|food
+ba-mostar-jumpers-viewpoint|Stari Most jumpers viewpoint (west-bank terrace)|43.33726|17.8146|viewpoint
+ba-mostar-rodjeni|Buregdžinica Rođeni (Mostar — locals' burek)|43.3417672|17.8097485|food
+ba-mostar-urban-grill|Urban Grill (Mostar old town)|43.338518|17.815054|food
+ba-mostarska-bijela-canyon|Mostarska Bijela — hidden cave-canyon waterfall|43.535039|17.799597|hike
+ba-neretva-rafting-konjic|Neretva River Rafting (Konjic)|43.6544|17.9608|activity
+ba-nevesinje-quad|Quad/Buggy Off-Road (Nevesinje)|43.2589|18.1106|activity
+ba-old-crew-pub-mostar|Old Crew Gastro Pub (Mostar — riverside bar off the tourist strip)|43.338|17.8151|nightlife
+ba-paragliding-mostar|Tandem Paragliding over Mostar (Planinica)|43.3438|17.8078|activity
+ba-pec-mlini-grude|Avanturistički park Peć Mlini (Grude)|43.3361|17.3293|activity
+ba-perucica-guided-hike|Perućica Primeval Forest — Guided Entry (Sutjeska NP)|43.3497|18.6898|hike
+ba-pliva-mlincici|Pliva lakes + Mlinčići watermills|44.3473|17.2265|nature
+ba-pocitelj|Počitelj|43.1339|17.7261|sight
+ba-pocitelj-stalls|Počitelj pomegranate-juice & fig/honey stalls|43.1345|17.732|food
+ba-prenj-zelena-glava|Prenj — Zelena Glava (2155m), 'Himalayas of Herzegovina'|43.5678|17.8887|hike
+ba-prokosko-jezero|Prokoško jezero (Vranica highland lake)|43.9575|17.7546|nature
+ba-radimlja-stecci|Radimlja stećci necropolis (UNESCO), Stolac|43.0921|17.9238|sight
+ba-rakitnica-canyoning|Rakitnica Canyon Canyoning (Konjic)|43.6282|18.1857|activity
+ba-relax-guesthouse-blagaj|Relax Guest House Blagaj (cheap, well-rated, on the Blagaj/Mostar approach)|43.257|17.892|accommodation
+ba-rentakayak-mostar-potoci|Rent A Kayak Mostar — SUP & kayak on Lake Mostar (Potoci)|43.4078203|17.8758297|activity
+ba-restoran-behar-stolac|Restoran Behar (Stolac — Bregava riverside)|43.0822|17.9508|food
+ba-restoran-han-stolac|Restoran Han (Stolac — Herzegovina platters & soups)|43.0829|17.9585|food
+ba-restoran-vukoje-trebinje|Restoran Vukoje (Trebinje hilltop — same estate, more casual)|42.7156|18.3435|food
+ba-sand-pyramids-foca|Sand Pyramids (Pješčane Piramide, Daničići)|43.5232|18.6891|nature
+ba-sarajevo|Sarajevo (Bascarsija old town)|43.859|18.43|town
+ba-sarajevo-asdz|Buregdžinica ASDŽ (Sarajevo — sač-baked burek)|43.8589553|18.4315611|food
+ba-sarajevo-cajdzinica-dzirlo|Čajdžinica Džirlo (Sarajevo — Bosnian coffee ritual)|43.8601786|18.432098|food
+ba-sarajevo-petica-ferhatovic|Ćevabdžinica Petica Ferhatović (Sarajevo ćevapi)|43.8590269|18.4321819|food
+ba-sarajevo-pivara|Sarajevska Pivara (HS Pivara Brewery)|43.8605|18.4195|food
+ba-sarajevo-ramis|Slastičarna Ramis (Sarajevo — baklava, tufahija)|43.8593773|18.4281988|food
+ba-silver-smoke|Silver & Smoke (Sarajevo electronic club)|43.8576|18.425|nightlife
+ba-skakavac-waterfall|Skakavac Waterfall|43.94861|18.44889|nature
+ba-sniper-tower-mostar|Sniper Tower (Ljubljanska Banka)|43.3441|17.8063|sight
+ba-stara-hercegovina-trebinje|Stara Hercegovina (Tuli village, 7km from Trebinje)|42.6475|18.3763|food
+ba-stolac-bregava|Stolac old town — emerald Bregava, watermills & Vidoška fort|43.083059|17.958003|town
+ba-studenac-trebinje|Restoran Studenac (Trebinje — riverside trout)|42.7119|18.3731|food
+ba-studeni-potok-umoljani|Studeni Potok waterfall & stone-dragon (Umoljani)|43.658967|18.219808|hike
+ba-sutjeska|Sutjeska National Park (Tjentište)|43.3414|18.69|nature
+ba-terme-ilidza|Terme Ilidža Thermal Spa (Sarajevo)|43.823|18.307|activity
+ba-tima-irma|Tima-Irma (Mostar ćevapi institution)|43.3371372|17.81399|food
+ba-tjentiste-monument|Battle of Sutjeska Monument (Tjentiste)|43.34611|18.68683|sight
+ba-trebevic-cable-car|Trebević Cable Car (Žičara)|43.8555|18.4351|activity
+ba-trebinje|Trebinje|42.7087|18.3219|town
+ba-trebinje-old-town|Trebinje Old Town (Kastel) & Plane Tree Square|42.7109247|18.3470653|town
+ba-trebinje-zasad-polje|Zasad Polje — free riverside wild spot (Trebinje)|42.7051|18.3423|campsite
+ba-trebizat-canoe|Trebižat canoe safari (Božjak, Studenci → Struge)|43.1535|17.6377|activity
+ba-tunnel-of-hope|Tunnel of Hope (Sarajevo War Tunnel Museum)|43.81972|18.33722|sight
+ba-tvrdos-monastery|Tvrdos Monastery (wine-making monks)|42.7184351|18.2923489|sight
+ba-umoljani-rakitnica-hike|Umoljani → Lukomir Hike (Rakitnica Canyon rim)|43.6702|18.2282|hike
+ba-umoljani-watermills|Umoljani watermills (Sedrenik) & katun|43.670206|18.227862|sight
+ba-una-strbacki-buk|Štrbački buk, Una NP (skip — wrong trip)|44.6559|16.0101|nature
+ba-villa-cold-river-treehouse-bunica|Cold River Treehouse with private sand beach (Buna/Bunica)|43.2259|17.8862|accommodation
+ba-villa-gana-buna|Villa Gana - heated-pool riverside villa (Malosevici/Buna, S of Mostar)|43.232|17.831|accommodation
+ba-villa-kostela-stone-house-poplat|Kostela Stone House (Poplat, Berkovići)|43.031|18.0184|accommodation
+ba-villa-neretva-glavaticevo|Villa Neretva (rafting resort with pool, Glavaticevo nr Konjic)|43.4982|18.1264|accommodation
+ba-villa-village-house-cvaljina|Village House (Čvaljina, Popovo polje)|42.86846|17.97107|accommodation
+ba-vinska-galerija-vukoje|Vinska Galerija Vukoje (Trebinje hilltop winery restaurant)|42.7156|18.3434|food
+ba-vjetrenica-cave|Vjetrenica Cave (Zavala, near Ravno)|42.8458637|17.9837844|nature
+ba-vodopad-pjene-stolac|Vodopad Pjene (Bregava, Stolac)|43.0903|17.9651|swim
+ba-vrelo-bosne|Vrelo Bosne (Source of the Bosna River)|43.8189|18.2694|nature
+ba-vukoje-winery|Vukoje Winery (Podrumi Vukoje 1982, Trebinje)|42.7158941|18.3434894|food
+ba-zelengora-lakes|Zelengora Lakes (Orlovačko / Štirinsko / Kotlaničko) — Sutjeska NP|43.377|18.5497|hike
+ba-zeljo-cevapi|Cevabdzinica Zeljo (Sarajevo)|43.8589|18.4297|food
+ba-zitomislici-monastery|Žitomislići Monastery (Neretva valley)|43.207975|17.792727|sight
+ba-zuta-tabija|Žuta tabija (Yellow Fortress) — Sarajevo's sunset ritual|43.8615|18.4377|viewpoint
+hr-anica-kuk|Anića kuk (summit scramble + climbing wall)|44.29003|15.45505|hike
+hr-apt-sobra-more-mljet|Apartments by the sea Sobra (tier-2 base) — Sobra|42.7369|17.5989|accommodation
+hr-apt-stanici-omis|Cheap apartment cluster — Stanići / Mimice (Omiš Riviera)|43.4145|16.7269|accommodation
+hr-autocamp-denka-loviste|Autocamp Đenka — Lovište|43.02472|17.03493|campsite
+hr-autocamp-lovor-mljet|Auto-camp Lovor (Autocamp Mljet) — Kozarica|42.7869|17.4017|campsite
+hr-autocamp-luka-duba|Autocamp Luka — Duba Pelješka|43.01806|17.16808|campsite
+hr-bacina-jezera|Baćina lakes (Baćinska jezera)|43.0674|17.4272|nature
+hr-banj-beach-sibenik|Banj Beach, Šibenik|43.7414|15.8838|beach
+hr-banje-beach-club|Banje Beach Club (Dubrovnik)|42.6418|18.1175|nightlife
+hr-barba-dubrovnik|Barba (Dubrovnik seafood street food)|42.6415|18.10991|food
+hr-barone-fortress|Barone Fortress (Šibenik - sunset bar + views)|43.73729|15.89637|viewpoint
+hr-bauhaus-zadar|BAUHAUS Zadar — early-open gas canister fallback (08:00)|44.11296|15.26886|other
+hr-bellevue-beach-jumps|Bellevue (Miramare) Beach Cliff Jumping (Dubrovnik)|42.6462|18.0922|beach
+hr-berberov-buk|Berberov buk (Zrmanja swimming waterfall)|44.1974|15.7678|nature
+hr-biokovo-paragliding|Biokovo Tandem Paragliding (Makarska)|43.2945|17.0185|activity
+hr-biokovo-skywalk|Biokovo Skywalk (Makarska)|43.336|17.054|viewpoint
+hr-biokovo-tollroad|Biokovo NP scenic toll road (booking + drive)|43.2579|17.0807|activity
+hr-biokovo-vosac|Biokovo — Vošac (1421m) on foot from Makarska (± Sveti Jure)|43.30039|17.02825|hike
+hr-blace-mljet|Blace (Limuni) — the Caribbean lagoon, Mljet east tip|42.6908|17.7399|beach
+hr-bota-sare-mali-ston|Bota Šare (Mali Ston oysters & mussels)|42.84657|17.70441|food
+hr-bruschetta-zadar|Restaurant Bruschetta (Zadar waterfront)|44.11381|15.22498|food
+hr-buza-bar|Buža Bar (Dubrovnik cliff bar)|42.6403|18.1108|nightlife
+hr-camp-antony-boy-viganj|Camping Antony Boy — Viganj|42.97872|17.10803|campsite
+hr-camp-divna-trpanj|Camp Divna — near Trpanj (northern coast)|43.0164|17.2013|campsite
+hr-camp-dole-zivogosce|Camp Dole (Živogošće, Makarska Riviera)|43.1707|17.1967|campsite
+hr-camp-lisicina|Auto Camp Lisičina (Omiš)|43.4468|16.6909|campsite
+hr-camp-lovor-mljet|Autokamp Lovor (Kozarica, Mljet)|42.7738|17.4658|campsite
+hr-camp-lupis-loviste|Camp Lupis — Lovište|43.02683|17.03138|campsite
+hr-camp-marina-mljet|Autokamp Marina (Ropa, Mljet)|42.7532|17.4604|campsite
+hr-camp-matkovica-srebreno|Auto Camp Matkovica (Srebreno)|42.6244|18.1931|campsite
+hr-camp-mindel-vela-luka|Camp Mindel — Vela Luka, Korčula|42.963|16.702|campsite
+hr-camp-mungos-mljet|Autokamp Mungos (Babino Polje, Mljet)|42.739|17.5355|campsite
+hr-camp-np-paklenica|Camp 'Nacionalni park' Paklenica|44.2881|15.4458|campsite
+hr-camp-perna-kuciste|Camp Perna — Kućište (near Orebić)|42.9815|17.156|campsite
+hr-camp-pod-maslinom-orasac|Camp Pod Maslinom (Orašac, west of Dubrovnik)|42.6984|18.0052|campsite
+hr-camp-prapratno|Autocamp Prapratno — near Ston|42.8193|17.6728|campsite
+hr-camp-skradin|Camp Skradin (Krka base)|43.8348|15.9092|campsite
+hr-camping-kate-mlini|Camping Kate (Mlini, near Dubrovnik)|42.6247|18.208|campsite
+hr-camping-krvavica|Camping Krvavica|43.32347|16.98574|campsite
+hr-camping-pinus|Camping Pinus (Starigrad-Paklenica)|44.3225|15.392|campsite
+hr-camping-simuni|Camping Village Šimuni (Pag island)|44.46528|14.96738|campsite
+hr-cape-planka-stargazing|Cape Planka (Rt Planka) — New Moon Milky Way Jun 16-18|43.49|15.963|viewpoint
+hr-cavtat|Cavtat (quiet harbour town next to the airport)|42.5814|18.2177|town
+hr-cavtat-apt-tier2|Cheap sea-view apartment — Cavtat / Mlini (tier-2, N12)|42.58|18.22|accommodation
+hr-cavtat-bay-sea-kayak|Cavtat bay sea kayaking (self-rent or short guided) to the three islets|42.5794|18.2208|activity
+hr-cavtat-epidaurum-diving|Epidaurum Diving - Cavtat|42.5817|18.22|activity
+hr-cavtat-konavle-kayak-rental|Cavtat / Konavle self-guided kayak & SUP rental|42.5814|18.2169|activity
+hr-cavtat-rat-peninsula-swims|Cavtat Rat peninsula swim & snorkel coves (Kamen Mali, Ključice, Žal)|42.5783|18.215|beach
+hr-cavtat-sea-kayak|Cavtat Sea Kayaking + snorkel (Supetar islet / coves)|42.5814|18.2177|activity
+hr-cavtat-selfrent-boat-milicic|Cavtat self-drive boat rental — no licence/skipper (Mario Milicic)|42.5794|18.2208|activity
+hr-cavtat-sup-selfrent|SUP self-rent, Cavtat (Zal beach)|42.5817|18.2188|activity
+hr-cavtat-withlicence-boat-elaphiti|With-licence self-drive boat from Cavtat to Lokrum / Elaphiti (if someone holds a boat licence)|42.5794|18.2208|activity
+hr-cerovac-caves|Cerovac Caves (Gracac)|44.2748|15.8827|sight
+hr-cetina-canyoning|Cetina Canyoning (Zadvarje / Gubavica)|43.4324|16.891|activity
+hr-cetina-cliff-jump-luka|Cetina Cliff Jumping — Izletište Luka (Omiš)|43.45|16.706|activity
+hr-cetina-rafting|Cetina River Rafting (Omiš)|43.4517|16.716|activity
+hr-cetina-zipline|Cetina Canyon Zipline (Omiš)|43.4455|16.6926|activity
+hr-cikola-canyon|Čikola canyon (Drniš inland — climb/canyon/cave)|43.8547|16.1581|nature
+hr-culture-club-revelin|Culture Club Revelin (Dubrovnik)|42.642|18.1115|nightlife
+hr-dalmata-camping-orebic|Dalmata Camping — Orebić (Trstenica)|42.9786|17.1915|campsite
+hr-decathlon-zadar|Decathlon Zadar — D1 gas canisters + any forgotten gear|44.11585|15.2551|other
+hr-divna-beach|Divna beach (Pelješac north coast)|43.0171|17.2005|beach
+hr-donat-gelato-zadar|Slastičarnica Donat (Zadar gelato)|44.116552|15.2243269|food
+hr-duboka-draga-vrsi|Duboka Draga cove (Vrsi, near Zadar)|44.2688|15.2461|beach
+hr-dubrovnik|Dubrovnik Old Town|42.6414|18.11|town
+hr-dubrovnik-airport|Dubrovnik Airport (Čilipi) — car drop & fly Jun 28|42.5614|18.2682|other
+hr-dubrovnik-airport-pickup|Dubrovnik Airport (Čilipi) — Jun 18 friend pickup|42.5614|18.2682|other
+hr-dubrovnik-dive-blueplanet|Blue Planet Diving Center (Dubrovnik — Lokrum & Grebeni wrecks)|42.6509|18.0606|activity
+hr-dubrovnik-lokrum-kayak-rental|Dubrovnik self-guided kayak rental — Pile Beach to Lokrum & Betina Cave|42.6416|18.1042|activity
+hr-dubrovnik-sea-kayak|Dubrovnik Sea Kayaking — Walls & Lokrum|42.6385|18.107|activity
+hr-elaphiti-skipper-day-dubrovnik|Elaphiti private skipper boat day (Mljet alternative)|42.6589|18.0944|activity
+hr-er-dubrovnik|ER — Opća bolnica Dubrovnik|42.64902|18.0764|other
+hr-er-sibenik|ER — Opća bolnica Šibenik|43.73242|15.90002|other
+hr-er-split|ER — KBC Split (Firule)|43.50414|16.45818|other
+hr-er-zadar|ER — Opća bolnica Zadar|44.10746|15.23448|other
+hr-garden-lounge-zadar|The Garden Lounge (Zadar city walls)|44.11809|15.22362|nightlife
+hr-gastro-mare-kobas|Gastro Mare (Kobaš fish konoba)|42.8045|17.7428|food
+hr-glorijet-gruz|Glorijet (Gruž fish market — where fishermen eat)|42.65556|18.08809|food
+hr-grgic-vina-trstenik|Grgić Vina (Trstenik — Mike Grgich's Pelješac winery)|42.91497|17.40524|food
+hr-gricko-grill-zadar|Gricko Grill (Zadar ćevapi)|44.1196225|15.2351287|food
+hr-gubavica-waterfall|Gubavica Waterfall (Cetina canyon)|43.4324|16.8836|nature
+hr-hvar|Hvar Town|43.1729|16.4411|town
+hr-iglusport-sibenik|IgluSport Šibenik — on-route outdoor shop (airport→Krka)|43.735|15.8888|other
+hr-imotski-crveno-jezero|Crveno jezero (Red Lake), Imotski|43.4549|17.1985|viewpoint
+hr-imotski-modro-jezero|Modro jezero (Blue Lake), Imotski|43.451|17.2106|nature
+hr-izvor-cetine|Izvor Cetine — 'Eye of the Earth' spring|43.9769|16.4299|nature
+hr-jezero-duba-peljeska|Plaža Jezero (Duba Pelješka)|43.0239011|17.1564478|beach
+hr-kamenjak-vransko|Kamenjak viewpoint (Vransko jezero)|43.8942|15.6105|viewpoint
+hr-kantun-paulina|Kantun Paulina (Split ćevapi institution)|43.510068|16.4364206|food
+hr-kasjuni|Kašjuni Beach (Marjan, Split)|43.5064|16.4005|beach
+hr-knin-fortress|Knin Fortress (Kninska tvrđava)|44.03466|16.19331|sight
+hr-kobas-bay|Kobaš bay (secluded cove + fish konobas near Ston)|42.8025|17.7428|beach
+hr-kolocep-blue-cave|Koločep & Blue Cave (Elaphiti)|42.6889|18.0086|nature
+hr-konavle-stone-villa-tier3|WOW stone villa with pool — Konavle valley (Ljuta/Gruda/Pridvorje, tier-3, N12)|42.535|18.365|accommodation
+hr-konavoski-dvori|Konavoski dvori (Ljuta river mills restaurant)|42.538|18.3785|food
+hr-konoba-antunovic-kuna|Konoba Antunović (Kuna Pelješka — farm peka)|42.96676|17.34611|food
+hr-konoba-campanelo|Konoba Campanelo (Mirlović Zagora — hinterland peka + fine dining)|43.7586|16.1021|food
+hr-konoba-feral-brela|Konoba Feral (Brela — peka & seafood)|43.3673164|16.9329275|food
+hr-konoba-feral-brijesta|Konoba Feral — Brijesta, Pelješac (on-route seafood)|42.945|17.288|food
+hr-konoba-gusti-omis|Konoba Gušti (Omiš — peka, pre-order)|43.4444034|16.6926761|food
+hr-konoba-ivankovski|Konoba Ivankovski (Konavle — family farm konoba, no website)|42.5303|18.3666|food
+hr-konoba-kalalarga-makarska|Konoba Kalalarga (Makarska — fresh catch, no-reservation)|43.2957|17.0203|food
+hr-konoba-ribar-mljet|Konoba Ribar (Pomena, Mljet — waterside tavern)|42.7895|17.3448|food
+hr-konoba-skojera-trpanj|Konoba Škojera (Trpanj, Pelješac)|43.0088308|17.2695541|food
+hr-korcula-town|Korčula Old Town|42.9438|16.9135|town
+hr-kraljicina-plaza-nin|Queen's Beach (Kraljičina plaža) + Nin mud|44.25138|15.17524|beach
+hr-krka|Krka National Park (Skradinski Buk)|43.8025|15.9648|nature
+hr-kupari-bay|Kupari Bay — the 'abandoned hotels' are GONE (heads-up)|42.6236|18.1892|other
+hr-ledana-zadar|Ledana Lounge Bar (Queen Jelena park)|44.11253|15.22958|nightlife
+hr-lokrum|Lokrum island (Dubrovnik)|42.6258|18.1208|nature
+hr-lopud-sunj|Šunj beach, Lopud (Elaphiti)|42.6786|17.9519|beach
+hr-loviste-village|Lovište — End of Pelješac Peninsula|42.9986|17.1785|beach
+hr-makarska-nightlife|Makarska (Deep cave club + Osejava cliffs)|43.2969|17.0178|nightlife
+hr-makarska-riviera-sup-kayak-rental|Makarska Riviera self-guided SUP/kayak — Tučepi & Punta Rata coves|43.37|16.9228|activity
+hr-mali-ston-oysters|Mali Ston oysters|42.8464|17.704|food
+hr-marjan-vidilica|Marjan – Vidilica viewpoint (Split)|43.5083|16.4175|viewpoint
+hr-matusko-winery|Matuško winery (Potomje, Dingač)|42.9399|17.3387|food
+hr-mljet-aquatica-diving|Diving Centre Aquatica - Mljet NP (Pomena)|42.7853|17.3413|activity
+hr-mljet-bike-rental-lakes|Mljet NP lake-loop bike rental (Radulj / Mali Most)|42.7825|17.355|activity
+hr-mljet-blace-beach|Blace Beach (Mljet — secluded sandy cove, 20min from Saplunara)|42.708|17.47|beach
+hr-mljet-kayak-sup-selfrent-lakes|Self-rent kayak / SUP on the Mljet salt lakes (Mali Most & Pomena)|42.7825|17.355|activity
+hr-mljet-lakes-kayak-rental|Mljet lakes self-guided kayak/canoe rental (Mali Most / Pomena)|42.782903|17.351141|activity
+hr-mljet-noskipper-boat-polace|Self-drive no-licence boat in Polace bay (Island Boat Rentals)|42.7855|17.3779|activity
+hr-mljet-np|Mljet National Park (the salt lakes)|42.7829|17.3511|nature
+hr-mljet-np-coastal-coves-snorkel|Hidden coves & snorkeling along the NP coastal trail (Veliko Jezero outer shore)|42.7905|17.3585|beach
+hr-mljet-prozura-sup-kayak-prozurska|Kayak + SUP self-rent at Prozurska Luka (Prozura Travel) - east-side base|42.7293|17.6487|activity
+hr-mljet-st-mary-islet-snorkel|St Mary islet (Sveta Marija) - swim & snorkel, north side|42.769|17.3601|activity
+hr-modric-cave|Modrič Cave (adventure caving)|44.25684|15.53733|activity
+hr-montokuc-mljet|Montokuc viewpoint (Mljet NP)|42.7728|17.3832|viewpoint
+hr-mosor-girometta|Mosor — Girometta lodge & Veliki Kabal (the 'other' Split mountain)|43.5174|16.6093|hike
+hr-mrkan-bobara-supetar-islands|Mrkan, Bobara & Supetar islands (Cavtat's reserve islets, swim/snorkel)|42.575|18.1944|nature
+hr-nakovana|Nakovana ghost village + Spila Illyrian cave sanctuary|43.0037|17.0836|sight
+hr-nevio-camping-orebic|Nevio Camping — Orebić|42.9814|17.1987|campsite
+hr-nin-old-town|Nin Old Town|44.24335|15.18413|town
+hr-nugal|Nugal Beach (hidden cove, Makarska)|43.2789|17.035|beach
+hr-nugal-beach-makarska|Nugal beach (hidden cove, Makarska)|43.2793|17.0338|beach
+hr-odysseus-cave|Odysseus Cave (Mljet, cliff-jump swim)|42.7294|17.5439|activity
+hr-omis|Omiš (Cetina canyon)|43.4447|16.6891|activity
+hr-omis-cetina-kayak-rental|Omiš Cetina River self-guided kayak rental (Old Town)|43.4447|16.6925|activity
+hr-orebic-ferry|Orebić ferry port (→ Korčula)|42.967|17.167|other
+hr-paklenica|Paklenica National Park|44.3014|15.4843|hike
+hr-pasjaca-beach|Pasjača Beach (Konavle cliffs)|42.5134|18.3213|beach
+hr-peljesac-bridge|Pelješac Bridge (Dubrovnik approach)|42.9328|17.5369|sight
+hr-peppinos-gelato|Peppino's Gelato (Dubrovnik old town)|42.64149|18.11086|food
+hr-pet-bunara|Pet Bunara (Zadar old-town konoba)|44.11303|15.22919|food
+hr-pinadria-camping-baska-voda|Pinadria Camping Resort (ex-Baško Polje), Baška Voda|43.3469655|16.9647736|campsite
+hr-plaza-dance-dubrovnik|Plaža Danče (Dubrovnik)|42.6410038|18.1011388|swim
+hr-plitvice|Plitvice Lakes National Park|44.8654|15.582|nature
+hr-ploce-ferry|Ploče ferry port (→ Trpanj)|43.05667|17.43167|other
+hr-port9-camping-korcula|Aminess Planet Camping Port9 — Korčula|42.95089|17.14278|campsite
+hr-prapratno-ferry|Prapratno ferry port (→ Mljet)|42.8116|17.6787|other
+hr-premuzic-trail|Premužić Trail (Premužićeva staza) — North Velebit, Zavižan → Rossi / Alan|44.81505|14.97593|hike
+hr-primosten-mala-raduca|Mala Raduča beach, Primošten|43.5894|15.9192|beach
+hr-punta-bajlo-zadar|Punta Bajlo beach (Zadar)|44.09493|15.24882|beach
+hr-punta-rata|Punta Rata beach (Brela)|43.37|16.9228|beach
+hr-pupnatska-luka|Pupnatska Luka beach (Korčula)|42.9284|17.0033|beach
+hr-radmanove-mlinice|Radmanove Mlinice (Cetina canyon / rafting finish)|43.4384|16.7511|activity
+hr-ramova-beach-krvavica|Ramova Beach (Krvavica camp beach)|43.3216|16.9883|beach
+hr-rastoke|Rastoke watermill village (Slunj)|45.1205|15.5845|town
+hr-rijeka-ljuta-konavle|Rijeka Ljuta — izvor i kanjon (Konavle)|42.5366496|18.3780926|swim
+hr-roski-slap|Roški slap (Krka NP - waterfalls + legal swim)|43.90375|15.97507|nature
+hr-sabunike-privlaka|Sabunike Beach (Privlaka)|44.25783|15.16058|beach
+hr-sakarun-beach|Sakarun (Saharun) Beach, Dugi Otok|44.09317|14.86617|beach
+hr-saplunara-beach-mljet|Saplunara beach (Blace gateway) — SE tip of Mljet|42.7008|17.7378|beach
+hr-scirovac|Šćirovac / Miletnjak (Biokovo, 1619m)|43.3809|16.9756|viewpoint
+hr-sibenik-old-town|Šibenik Old Town|43.735|15.8895|town
+hr-skradin|Skradin (Krka gateway town)|43.81785|15.92332|town
+hr-skradin-town-beach|Skradin town beach (Krka swim alternative)|43.8178|15.9233|beach
+hr-sobra-ferry|Sobra ferry port (Mljet)|42.73691|17.59871|other
+hr-sokol-grad|Sokol Grad fortress (Konavle)|42.5423|18.4091|sight
+hr-split|Split (Diocletian's Palace)|43.5081|16.4402|town
+hr-split-nightlife|Split nightlife (Old Town bars + Vanilla)|43.5095|16.4394|nightlife
+hr-split-pazar-ribarnica|Pazar green market & Ribarnica fish market (Split)|43.5084|16.4421|food
+hr-srd|Mt Srđ + Fort Imperial (Dubrovnik)|42.6483|18.1108|viewpoint
+hr-st-nicholas-nin|Church of St. Nicholas (Prahulje, Nin)|44.231|15.1781|sight
+hr-starigrad-fortica|Starigrad (Fortica) Fortress, Omiš|43.4447|16.7|hike
+hr-stermasi-mljet|Konoba Stermasi (Saplunara, Mljet — clifftop fish & peka)|42.70084|17.73782|food
+hr-ston-walls|Walls of Ston (Pelješac)|42.8384|17.6963|hike
+hr-sutmiholjska-mljet|Plaža i uvala Sutmiholjska (Mljet, Babino Polje)|42.7418009|17.4993829|beach
+hr-sv-jakov-cathedral|Cathedral of St James (Šibenik, UNESCO)|43.73564|15.88913|sight
+hr-sveti-ilija-peljesac|Sveti Ilija (961m) — highest peak of Pelješac, above Orebić|42.9776|17.178|hike
+hr-sveti-jakov-beach|Sveti Jakov beach (Dubrovnik)|42.6347|18.1271|beach
+hr-sveti-jure|Sveti Jure (Biokovo summit, 1762m)|43.3423|17.0539|viewpoint
+hr-tabasco-pizza-dubrovnik|Pizzeria Tabasco (Dubrovnik cheap pizza)|42.64274|18.11151|food
+hr-telascica|Telašćica Nature Park (Dugi Otok)|43.8907|15.1635|nature
+hr-telascica-mir-kayak-rental|Telašćica / Jezero Mir self-guided kayak rental (Dugi Otok)|43.8862|15.1762|activity
+hr-tommy-babino-polje-mljet|Tommy supermarket (Babino Polje, Mljet)|42.7385|17.5352|food
+hr-trogir|Trogir Old Town|43.5165|16.2497|town
+hr-trpanj-ferry|Trpanj ferry port (Pelješac)|43.0|17.275|other
+hr-trznica-zadar|Tržnica Zadar (green market — self-catering)|44.1157014|15.2279802|food
+hr-tulove-grede|Tulove grede (Winnetou rocks)|44.26351|15.6556|viewpoint
+hr-tulove-grede-hike|Tulove grede scramble (Winnetou rocks) — southern Velebit|44.3401|15.64397|hike
+hr-uvala-mokalo-orebic|Uvala Mokalo (Orebić)|42.9784984|17.2251993|beach
+hr-vaganski-vrh|Vaganski vrh (1757m) — Velebit's highest, from Velika Paklenica|44.29408|15.45754|hike
+hr-velika-duba-zivogosce|Plaža Velika Duba (Živogošće Blato)|43.1734045|17.1822572|beach
+hr-velika-gubavica|Velika Gubavica waterfall + canyon viewpoints (Zadvarje)|43.4366|16.8923|viewpoint
+hr-velika-paklenica-gorge|Velika Paklenica gorge hike (to Lugarnica / mountain hut)|44.29408|15.45754|hike
+hr-veliki-prstavac|Veliki Prštavac waterfall (Plitvice)|44.878|15.6085|nature
+hr-via-ferrata-fortica-omis|Via Ferrata Fortica — Omiš|43.4462|16.6939|activity
+hr-viganj-windsurf-beach|Viganj Windsurfing Beach — Pelješac|42.9598|17.082|beach
+hr-villa-royal-house-dubravka|Villa Royal House (Dubravka, Konavle)|42.54065|18.40908|accommodation
+hr-villa-sea-star-sobra-mljet|Villa / Sea Star House — Sobra (WOW tier, seaside + pool)|42.7369|17.5989|accommodation
+hr-villa-spiza|Villa Spiza (Split blackboard konoba)|43.5095019|16.4393503|food
+hr-villa-stone-babino-polje-mljet|Stone pool house — Babino Polje (WOW tier, rural)|42.7353|17.5505|accommodation
+hr-villa-stone-house-martelina|Stone House Martelina (Starigrad-Paklenica)|44.31365|15.4367|accommodation
+hr-villa-tucepi-makarska-mountainside|WOW villa zone — Tučepi / Makarska mountainside (sea-view, Biokovo backdrop)|43.2786|17.0556|accommodation
+hr-villa-zvecanje-cetina-canyon|WOW villa zone — Zvečanje / Naklice hillside above Omiš (Cetina canyon)|43.4522|16.7681|accommodation
+hr-virgin-beach-djevicanska|Virgin Beach (Djevičanska plaža) — Drašnice/Igrane|43.185|17.138|beach
+hr-vis-bisevo-blue-cave|Vis island + Biševo Blue Cave (honest verdict: skip)|43.0594|16.1861|sight
+hr-vitaljina-border|Vitaljina / Kobila border (ME↔HR — the fast back-door)|42.423366|18.513642|other
+hr-vruja-spring-beach|Vruja Bay — submarine freshwater spring (Brela, 2km north of Punta Rata)|43.3733|16.9397|beach
+hr-vrulja-cove|Vrulja cove (Dubci) — biggest submarine spring on the Adriatic|43.3998|16.8818|nature
+hr-zadar-airport|Zadar Airport (ZAD) — car pickup Jun 16 10:00|44.1083|15.3467|other
+hr-zadar-kayak|Zadar / Dugi Otok Sea Kayaking|44.1197|15.231|activity
+hr-zadar-old-town|Zadar Old Town (Sea Organ + Sun Salutation)|44.1178|15.2191|town
+hr-zadar-skydive-adv|Skydive Zadar - Beach Tandem Jump (Adventure Driven Vacations)|44.1083|15.3467|activity
+hr-zadar-sup-rental-salty|Zadar SUP rental — Salty Society (delivered to your beach)|44.1048|15.2345|activity
+hr-zaton-noboat-elaphiti|No-Licence Self-Drive Boat to the Elaphiti (AdriaWave, Zaton)|42.6889|18.0331|activity
+hr-zavizan-dark-sky|Zavižan & Velebit Dark Sky (North Velebit NP)|44.8186|14.9776|viewpoint
+hr-zavratnica|Zavratnica bay + WWII wreck snorkel|44.6958|14.91|beach
+hr-zitna-zavalatica|Žitna cove (Zavalatica, south Korčula)|42.9158|16.9403|beach
+hr-zrmanja-kayaking|Zrmanja canyon kayaking (Obrovac base)|44.20098|15.6821|activity
+hr-zrmanja-selfrent-kayak|Zrmanja self-rent kayak (Raftrek)|44.1556|15.8581|activity
+hr-zrmanja-viewpoint|Zrmanja canyon viewpoint (Pariževačka glavica)|44.22369|15.61534|viewpoint
+hr-zuljana|Žuljana beach (Pelješac)|42.8903|17.4552|beach
+me-ada-bojana|Ada Bojana — river island, kitesurf + stilt fish restaurants|41.8625|19.3611|nature
+me-ada-bojana-beach|Ada Bojana Island Beach|41.871|19.33|beach
+me-arza-fortress-miriste|Arza fortress + Mirište cove (Austro-Hungarian, Luštica tip)|42.3899|18.5658|sight
+me-autocamp-naluka-morinj|Autocamp Naluka (Morinj, Boka Bay)|42.48694|18.65214|campsite
+me-bar-fishing-beli|Sea Fishing Charter - Fishing Montenegro Bar (Captain Beli)|42.0953|19.0875|activity
+me-biogradska-gora|Biogradska Gora NP — primeval forest lake|42.8971|19.6027|nature
+me-blue-cave-herceg-novi-tour|Blue Cave speedboat — depart Herceg Novi / Igalo (not Kotor)|42.4531|18.538|activity
+me-bobotov-kuk|Bobotov Kuk (2523m) — Montenegro's highest hike|43.12778|19.03333|hike
+me-boka-rock-villa-herceg-novi|WOW villa — sea-view pool villas above Boka Bay (Podi/Herceg Novi, tier-3)|42.4633|18.575|accommodation
+me-budva|Budva Old Town|42.2778|18.8366|town
+me-budva-balkan-flow-sup-kayak-rent|Balkan Flow — Budva self-rent SUP + kayak|42.2842595|18.8424718|activity
+me-budva-diving|Budva Diving Center (PADI 5-star)|42.2856|18.8447|activity
+me-budva-fishing-predator|Sea Fishing Charter - Predator Budva (Captain Zoran, No Fish No Pay)|42.2783|18.8388|activity
+me-budva-oldtown-bars|Budva Old Town bars (Casper, El Mundo, Mañana)|42.27845|18.8366|nightlife
+me-budva-paraglide-becici|Tandem Paragliding Brajići → Bečići (GO2FLY / Budva)|42.3019|18.8914|activity
+me-budva-quad-tour|Quad Tour Budva — backcountry & coastal ride|42.2789|18.8386|activity
+me-budva-top-hill|Top Hill Club (Budva)|42.2887|18.851|nightlife
+me-bukumirsko-jezero|Bukumirsko jezero — dragon-legend lake of Kučka krajina|42.6048|19.5566|nature
+me-buljarica-camp-private|Buljarica Private Seafront Camping (south of Petrovac, 6km from Budva zone)|42.1823|18.9707|campsite
+me-camp-ada-bojana-fkk|FKK Nudist Auto Camp, Ada Bojana island|41.8647|19.3416|campsite
+me-camp-full-monte|Camp Full Monte (Sutorina, near Herceg Novi)|42.4497|18.5187|campsite
+me-camp-grab|Etno Selo Grab (Šćepan Polje rafting camp)|43.35066|18.92336|campsite
+me-camp-greenfield-velika-plaza|Greenfield Campsite, Velika Plaža|41.905|19.266|campsite
+me-camp-maslina-buljarica|Auto Camp Maslina (Buljarica, near Petrovac)|42.1944|18.9628|campsite
+me-camp-mlinski-potok|Auto Camp Mlinski Potok (Žabljak)|43.15475|19.09964|campsite
+me-camp-modra-rijeka|Rafting Camp Modra Rijeka (Blue River, Šćepan Polje)|43.3612|18.7932|campsite
+me-camp-radoman|Auto Camp Radoman (Virpazar, Skadar Lake)|42.2539|19.0795|campsite
+me-camp-razvrsje|Camp Apartments Razvršje (Žabljak)|43.1444|19.1218|campsite
+me-camp-rijeka-crnojevica|Auto Camp Rijeka Crnojevića (northern Skadar shore)|42.3557|19.0288|campsite
+me-camp-safari-beach|Safari Beach Camping, Velika Plaža|41.905|19.2708|campsite
+me-camp-virpazar|Camp Virpazar (Boljevići, Skadar Lake)|42.2351|19.0922|campsite
+me-camping-dodosi|Camping Dodosi (Skadar Lake NP)|42.3214|19.1967|campsite
+me-camping-mimoza-stoliv|Camping Mimoza (Donji Stoliv, Kotor Bay)|42.472016|18.707584|campsite
+me-camping-verige-tivat-lepetane|Camping Verige 65 (Lepetane / Tivat, Boka Bay)|42.4378|18.6754|campsite
+me-casper-bar-budva|Casper Bar (Budva Old Town — jazz and craft beer garden)|42.277|18.8408|nightlife
+me-cetinje-old-capital|Cetinje (old royal capital — monastery + Eagle's Rock viewpoint)|42.3911|18.9116|town
+me-cijevna-niagara|Cijevna falls — 'Niagara of Montenegro'|42.3841|19.2794|nature
+me-club-sparta-budva|Club Sparta (Budva) — main summer club|42.29|18.843|activity
+me-crno-jezero-restoran|Nacionalni Restoran Crno Jezero (Black Lake)|43.1474117|19.0974242|food
+me-crvena-greda-durmitor|Crvena greda (2164m), Durmitor|43.161905|19.052177|hike
+me-dalovica-gorge|Đalovića gorge + cave (skip — not ready yet)|43.0725|19.9118|nature
+me-debeli-brijeg-border|Debeli Brijeg / Karasovići border (ME↔HR)|42.487389|18.437583|other
+me-dobrec-beach-lustica|Dobreč — boat/walk-only pine-and-cliff cove (Luštica)|42.4124|18.5591|beach
+me-dobri-do-durmitor-camp|Dobri Do plateau wild-camp (Kamp Šarban)|43.1030316|19.0177824|camping
+me-drobni-pijesak|Drobni Pijesak (Sveti Stefan ↔ Reževići)|42.2345|18.9024|beach
+me-durmitor-atv-balkan-adventure|Balkan Adventure ATV — Riblje & Vražje Lakes (Durmitor)|43.1547|19.1228|activity
+me-durmitor-bike-black-lake|Black Lake bike circuit (Durmitor Adventure rental)|43.1389|19.095|activity
+me-durmitor-black-lake|Durmitor NP — Black Lake (Crno jezero)|43.1466|19.0894|hike
+me-durmitor-buggy-soa|SOA Experience Can-Am 4-seat buggy & quads (Durmitor)|43.1487|19.1003|activity
+me-durmitor-curevac|Ćurevac viewpoint (Tara Canyon)|43.20146|19.09306|viewpoint
+me-durmitor-horseback|Durmitor Horseback Ride|43.084|19.1456|activity
+me-durmitor-ice-cave|Durmitor Ice Cave (Ledena Pećina)|43.118|19.071|hike
+me-durmitor-sedlo-pass|Sedlo Pass scenic drive (P14 Durmitor Ring)|43.0985|19.0503|viewpoint
+me-eco-village-nevidio|Eco Village Nevidio (Pošćenje) — wooden A-frame eco-cottages|42.9785|19.065|accommodation
+me-eko-katun-goles|Eko Katun Goleš (Bjelasica, above Biogradska)|42.8778547|19.5915654|food
+me-eko-oaza-suza-evrope|Eko-Oaza Suza Evrope (Tara canyon — farm-to-table)|43.0172|19.4102|food
+me-er-kotor|ER — Opšta bolnica Kotor|42.42078|18.76358|other
+me-er-niksic|ER — Opšta bolnica Nikšić|42.77755|18.9444|other
+me-er-podgorica|ER — Klinički centar Crne Gore (KCCG)|42.43745|19.24589|other
+me-er-zabljak|Clinic — Žabljak health station|43.15579|19.1248|other
+me-etno-restoran-socica|Etno Restoran Sočica (Plužine — lamb ispod sača & Piva-lake terrace)|43.1568|18.8411|food
+me-fkk-camp-ada-bojana|FKK Auto Camp Ada Bojana|41.863|19.334|campsite
+me-fort-gorazda|Fort Goražda — abandoned Austro-Hungarian fortress (above Kotor)|42.3959|18.7644|sight
+me-gem-zabljak-mountain-spark|Mountain spark — Durmitor cabin (Žabljak)|43.16847|19.18625|accommodation
+me-gornjepoljski-vir|Gornjepoljski vir — the Balkans' biggest estavelle (TIMING CAVEAT)|42.8461|18.9182|nature
+me-gospa-od-skrpjela|Our Lady of the Rocks (Gospa od Škrpjela)|42.48687|18.68859|sight
+me-grabovica-canyon|Grabovica Canyon Canyoning (pre-season Nevidio substitute)|43.0091|19.0725|activity
+me-grlo-sokolovo|Grlo Sokolovo viewpoint (Kučka krajina)|42.4828|19.547|viewpoint
+me-guesthouse-skadar-raicevic|Guesthouse Skadar Lake — Raicevic (Godinje village)|42.2507|19.098|accommodation
+me-jakocev-krs-skadar-swim|Jakočev Krš (cold-water swim spot, Skadar Lake)|42.252|19.095|nature
+me-jaz-beach-budva|Jaz Beach (camping + beach)|42.28219|18.80237|beach
+me-jaz-beach-camp-kunjic|Camping Apartmani Kunjic (Jaz Beach, 3km from Budva)|42.2823|18.8009|campsite
+me-kafe-letrika-kotor|Kafe Letrika (Kotor old town)|42.4248|18.7712|bar
+me-karuc-skadar|Karuč + Karučko Oko — the secret stone village & spring-eye of Skadar|42.3585|19.1069|nature
+me-katun-lokvice|Katun Lokvice (1800m) — working shepherd's katun below Međed|43.1334753|19.0633833|hike
+me-kiteloop-ada-bojana|Kiteloop Kiteboarding Center (Ada Bojana)|41.865|19.355|activity
+me-klinci-village|Klinci — abandoned olive-grove ghost hamlet on Luštica|42.4215|18.5673|sight
+me-kod-pera-njegusi|Kafana Kod Pera na Bukovicu (Njeguši pršut)|42.4361|18.84695|food
+me-komarnica-canyon-packraft|Komarnica canyon (Dragišnica i Komarnica NP) — wild packraft/hike, Šavnik|42.9785|19.065|activity
+me-komovi|Komovi mountains (optional)|42.6622|19.6433|hike
+me-komovi-vasojevicki-kom|Kom Vasojevićki (2461m) — Komovi summit from Eko Katun Štavna|42.71229|19.6829|hike
+me-konoba-badanj|Konoba Badanj (Virpazar — Skadar fish)|42.246|19.09099|food
+me-konoba-bocun-budva|Konoba Bocun (Budva — cheap local grill)|42.29318|18.83813|food
+me-konoba-mostina-rijeka-crnojevica|Konoba Mostina (Rijeka Crnojevića — Skadar carp & eel)|42.3636|19.0107|food
+me-kotor|Kotor Old Town + San Giovanni Fortress hike|42.4247|18.7712|town
+me-kotor-bay-apt-dobrota-stasije|Sea-view apartment — Dobrota / Muo (Kotor Bay, tier-2)|42.4448|18.7706|accommodation
+me-kotor-bay-apt-muo-dobrota|Waterfront apartment — Muo / Dobrota (Kotor Bay, tier-2)|42.4286|18.7556|accommodation
+me-kotor-bay-kayak|Bay of Kotor self-guided kayak (Go Go Gaga)|42.4246|18.7712|activity
+me-kotor-bay-motorboat-hire|Kotor Bay motorboat hire (BBC Rent a Boat / self-drive)|42.4246|18.7712|activity
+me-kotor-bay-tours-kayak-rent|Kotor Bay Tours — self-rent kayak (Dobrota)|42.449|18.7685|activity
+me-kotor-bay-villa-prcanj-stoliv-wow|Waterfront stone villa — Prčanj / Stoliv (Kotor Bay, WOW tier)|42.4564|18.7375|accommodation
+me-kotor-blue-cave-speedboat|Blue Cave Private Speedboat Tour (Speed Boat Montenegro)|42.4266|18.7679|activity
+me-kotor-fortress-free-ladder|Ladder of Kotor — free trail behind the fortress|42.42721|18.77336|hike
+me-kotor-fortress-paid|San Giovanni Fortress — official (paid) climb|42.42479|18.77012|hike
+me-kotor-gogogaga-kayak-rent|Go Go Gaga — Bay of Kotor self-rent kayak + SUP|42.4554|18.766|activity
+me-kotor-oldtown-bars|Kotor Old-Town Bars (Bokun, Letrika, Bandiera)|42.4246|18.7708|nightlife
+me-kotor-serpentine-bend10|Kotor Serpentine — Bend 10 panorama (Bay of Kotor from above)|42.445|18.772|viewpoint
+me-kotor-serpentine-viewpoint|Kotor Serpentine viewpoint (Kotor–Lovćen road)|42.40417|18.78303|viewpoint
+me-kotor-via-ferrata|Via Ferrata Kotor (Vrata na Tabačini)|42.4269|18.7753|activity
+me-kraljicina-plaza-canj|Kraljičina Plaža (Queen's Beach, near Čanj)|42.1665|18.9905|beach
+me-krcma-nostalgija-zabljak|Krčma Nostalgija (Žabljak — traditional Durmitor dinner)|43.1542|19.1256|food
+me-krupac-lake|Krupac lake (Nikšić's 'sea')|42.8001|18.8818|beach
+me-laundry-virpazar-skadar|Laundry / rest-day wash (Virpazar — Skadar base)|42.2486|19.0972|other
+me-lipa-cave|Lipa Cave show cave (near Cetinje)|42.374|18.9535|sight
+me-ljutica-river|Ljutica — world's shortest & most powerful river (Tara, Đurđevića)|43.155|19.282|nature
+me-lovcen-atv-cosmopolitan|Lovćen ATV 'Lovćen Legends' (Ivanova Korita)|42.38171|18.83433|activity
+me-lovcen-njegos-mausoleum|Njegoš Mausoleum (Lovćen NP)|42.39999|18.8375|sight
+me-lovcen-stirovnik-hike|Štirovnik (1749m) — Lovćen's true summit hike from Ivanova Korita|42.39917|18.81843|hike
+me-lucice-beach|Lučice Beach (Petrovac)|42.20028|18.95109|beach
+me-lustica-blue-cave|Blue Cave (Plava Špilja), Luštica|42.37401|18.59599|activity
+me-maximus-kotor|Club Maximus (Kotor old town)|42.4244|18.7709|nightlife
+me-misko-stilt-restaurant|Misko Stilt Restaurant (Ada Bojana)|41.856|19.34|food
+me-modro-srablje-valovito-jezera|Modro–Srablje–Valovito jezera (Sedlo ring)|43.08583|19.07222|lake
+me-mogren-beach-budva|Mogren Beach (Budva — twin sandy coves near Old Town)|42.2745|18.834|beach
+me-moritz-eis-kotor|Moritz Eis (Kotor — gelato)|42.42461|18.77001|food
+me-mratinje-dam|Mratinje Dam (Piva dam)|43.27222|18.84167|sight
+me-mrtvica-canyon|Mrtvica canyon hike (Gate of Wishes)|42.7243|19.3729|hike
+me-murici-beach-skadar|Murići beach — Skadar's biggest, oak-shaded, bath-warm beach|42.164|19.211|beach
+me-murici-beska-swim|Murići → Beška island self-swim / €20 boat-taxi (Skadar south shore)|42.1635|19.2213|beach
+me-nedajno-susica|Nedajno viewpoint + Sušičko jezero (Sušica canyon)|43.1984|18.9846|viewpoint
+me-nevidio-canyon|Nevidio Canyon Canyoning|42.9939|19.1303|activity
+me-njegusi-zipline|Njegusi Zipline (Boka Bay)|42.4181|18.8472|activity
+me-orjen-subra|Orjen — Subra Plateau (Full-Moon Sunrise & Dark Sky)|42.5667|18.5667|hike
+me-oro-zabljak|Restaurant Or'O (Žabljak — mountain food)|43.155|19.12018|food
+me-ostrog-monastery|Ostrog Monastery|42.6747|19.0297|sight
+me-pavlova-strana|Pavlova Strana viewpoint (Skadar Lake)|42.36298|19.06056|viewpoint
+me-perast|Perast|42.48627|18.69886|town
+me-perast-viewpoint-stop|Perast waterfront + Our Lady of the Rocks boat (Kotor Bay)|42.4851|18.6973|sight
+me-pesica-jezero-vranjak|Pešića jezero + Eko Katun Vranjak (Bjelasica)|42.8552|19.6888|hike
+me-petrovac|Petrovac (relaxed, cheaper coast base)|42.20684|18.94282|town
+me-piva-lake-sup-kayak|Piva Lake SUP / kayak / canoe rental (Plužine, Beach Bar Hook)|43.1542|18.8376|activity
+me-piva-lake-swim|Piva Lake (turquoise reservoir swim — on route)|43.1609|18.8353|nature
+me-piva-zipline|Piva Lake Zipline (Eko Piva, Pluzine)|43.1576|18.8461|activity
+me-pjesacac-beach-skadar|Pješačac beach (Skadar Lake's secret sandy cove)|42.253|19.101|beach
+me-planinica|Planinica (2330m) — the big-view, NON-technical Durmitor day|43.14451|19.02014|hike
+me-plaza-crvena-stijena-bar|Plaža Crvena stijena (Red Rock, Bar)|42.0712|19.0948|beach
+me-ploce-beach|Ploče Beach (party / pools / cliff jumps)|42.26992|18.78486|beach
+me-pluzine|Plužine (Piva Lake)|43.1539|18.8419|town
+me-poscenska-jezera|Pošćenska jezera (Pošćensko jezero) — warm, empty Durmitor swim lakes|43.091|19.1095|nature
+me-prokletije-grebaje|Prokletije NP — Grebaje valley (Volušnica/Talijanka)|42.5165|19.7841|hike
+me-prutas-hike|Prutaš (2393m) — Best accessible Durmitor summit|43.12646|19.0014|hike
+me-rijeka-crnojevica-kom-boat|Kom Monastery boat tour (Skadar Lake, from Rijeka Crnojevića / Virpazar)|42.3209|19.1316|activity
+me-rijeka-crnojevica-swim|Rijeka Crnojevića — Danilo's Bridge swim + kayak village|42.3558|19.0243|activity
+me-rikavacko-jezero|Rikavačko jezero — biggest Kučka krajina lake, on the Albanian rim|42.5705|19.6044|nature
+me-rumija-summit|Rumija (1593m) — sea + Skadar double-view summit above Bar|42.10319|19.1886|hike
+me-savin-kuk-hike|Savin Kuk (2313m) — easiest high Durmitor summit (on foot or chairlift)|43.12232|19.10319|hike
+me-scepan-polje-border|Hum / Šćepan Polje border (BA↔ME — the inland crossing)|43.347922|18.845504|other
+me-scepan-polje-piva-canyon|Šćepan Polje → Piva Canyon drive (via Plužine)|43.3492|18.8403|other
+me-sinjajevina-ckara-vidikovac|Sinjajevina — Ckara vidikovac & paragliding plateau|42.94642|19.513646|viewpoint
+me-skadar-ebike-wine-3e|Skadar Lake e-bike + Vranac wine tour (3E Travel)|42.2444|19.095|activity
+me-skadar-kingfisher-virpazar-rent|Kingfisher Virpazar — self-guided kayak rental|42.2462864|19.0909338|activity
+me-skadar-lake|Skadar Lake (Virpazar)|42.2464|19.0917|nature
+me-skadar-pavlova-self-boat-rijeka|Rijeka Crnojevića self-rent kayak to Pavlova Strana bend + Karuč swim|42.3563|19.0227|activity
+me-skadar-pelican-kayak|Dalmatian Pelican Colony Kayak (Pančeva Oka, Skadar NP)|42.28|19.22|activity
+me-skadar-rijeka-crnojevica-kayak|Enjoy Skadar Lake kayak base (Rijeka Crnojevića)|42.3563513|19.0226515|activity
+me-skadar-rijeka-crnojevica-rent|Rijeka Crnojevica — Enjoy Skadar Lake kayak rental|42.3563513|19.0226515|activity
+me-skadar-self-drive-boat|Skadar Lake self-drive motorboat (Click&Boat / Virpazar)|42.23949|19.08405|activity
+me-skadar-sup-rent-vranjina|Kayak + SUP self-rent from Vranjina (quiet launch, Skadar)|42.2783|19.1347|activity
+me-skadar-virpazar-kayak-rent|Virpazar self-rent kayak (Skadar Lake)|42.2394916|19.0840459|activity
+me-skadar-virpazar-sup|SUP self-rent on Skadar (Virpazar — Boat Milica all-day SUP)|42.2398|19.0928|activity
+me-skadar-vranjina-kayak-sup-rent|Vranjina self-rent kayak + SUP (Skadar Lake)|42.27833|19.13472|activity
+me-skadar-winery-kopitovic|Vinarija Kopitović (winery near Skadar Lake)|42.24988|19.00966|food
+me-skaljari-waterfront-park-note|Škaljari waterfront lot — 500m to Kotor (NOT for tents)|42.4217|18.7649|campsite
+me-skrcka-jezera|Škrčka jezera (Škrka lakes) — glacial lakes you can camp at (Durmitor)|43.13619|19.01447|hike
+me-slansko-jezero|Slansko jezero — island-studded quiet lake by Nikšić|42.7616|18.8439|nature
+me-sparta-club-budva|Club Sparta (Budva — premier nightclub, open June)|42.2769|18.8422|nightlife
+me-stabanska-jezera|Stabanska jezera (Volujak)|43.19922|18.721859|lake
+me-stari-bar|Stari Bar (Old Bar) — abandoned fortress town|42.0872|19.1264|sight
+me-stari-most-rijeka-crnojevica|Konoba Stari Most (Rijeka Crnojevića)|42.36558|19.00997|food
+me-submarine-tunnels-rose|Yugoslav submarine tunnels (Rose / Luštica) — swim inside|42.4277|18.59|activity
+me-sveti-nikola-island|Sveti Nikola Island ("Hawaii") Cliff Jumping (Budva)|42.2653|18.8533|beach
+me-sveti-stefan|Sveti Stefan beach|42.2562|18.8911|beach
+me-sveti-stefan-viewpoint|Sveti Stefan mainland viewpoint (free, 6km south of Budva)|42.252|18.894|viewpoint
+me-svetistefan-przno-sup-kayak-rent|Przno / Sveti Stefan — beach SUP + kayak rent|42.268107|18.8938065|activity
+me-tanjga-kotor|BBQ Tanjga (Kotor — legendary cheap grill)|42.42195|18.77039|food
+me-tara-bridge-zipline|Đurđevića Tara Bridge zipline|43.1504|19.2952|activity
+me-tara-rafting-brstanovica|Tara Canyon rafting — Brštanovica section|43.349|18.836|activity
+me-tara-secret-beach|Tara River secret beach (below Đurđevića bridge)|43.1514|19.2669|nature
+me-trnovacko-jezero|Trnovačko jezero — the heart-shaped lake|43.2519|18.725|hike
+me-ulcinj-old-town|Ulcinj Old Town (Stari Grad) + Mala Plaža|41.9242|19.2086|town
+me-uvala-veslo-lustica|Uvala / Rt Veslo (Luštica)|42.3665773|18.6113532|beach
+me-valdanos-bay-ulcinj|Valdanos Bay (Ulcinj's olive-grove pebble cove)|41.9492|19.1658|beach
+me-velika-plaza|Velika Plaža (Long Beach), Ulcinj|41.8817|19.3013|beach
+me-veliki-medjed|Veliki Međed (2287m) — the planned Black Lake → Međed ridge hike (Durmitor)|43.15233|19.09718|hike
+me-via-ferrata-piva|Via Ferrata Piva — Piva Canyon|43.29432|18.85283|activity
+me-vidikovac-babina-greda-piva|Vidikovac Babina Greda (Piva)|43.189364|18.8610641|viewpoint
+me-vile-calimero-zabljak|Vile Calimero — wooden cabins, Žabljak (Durmitor, WOW tier N7-8)|43.1515|19.129|accommodation
+me-villa-above-the-lake-bobija|Above the Lake (Bobija, Skadar)|42.3468|19.115|accommodation
+me-villa-jablan-winery-rvasi|The Winemaker's House — Jablan Winery (Rvaši)|42.37197|19.10142|accommodation
+me-villa-lekovic-godinje|Rustic House Leković (Godinje village, Skadar Lake)|42.2503|19.047|accommodation
+me-vinarija-masanovic|Vinarija Mašanović (Virpazar — the Skadar winery stop)|42.24015|19.0834|food
+me-virpazar-kayak|Virpazar kayak rental (Skadar Lake)|42.23949|19.08405|activity
+me-vitaljina-border|Vitaljina Border Crossing (ME→HR, fast alternative)|42.4279|18.5223|other
+me-vodopad-crnjak|Vodopad Crnjak — hidden 20m waterfall above Šavnik|42.902|19.1527|nature
+me-voli-budva|Voli Supermarket (Budva — camping stock-up)|42.28579|18.84058|food
+me-voli-zabljak|Voli supermarket (Žabljak) — Durmitor stock-up|43.1547|19.1228|food
+me-vrazje-jezero|Vražje jezero (Devil's Lake) — swim with a Durmitor backdrop|43.084|19.1456|nature
+me-wake-park-tivat|Wake Park Tivat (Solila)|42.4234|18.7053|activity
+me-zabljak|Žabljak|43.1547|19.1226|town
+me-zabljak-crnojevica|Žabljak Crnojevića fortress (Skadar wetland)|42.317|19.1565|sight
+me-zaboj-skadar-viewpoint|Zaboj viewpoint (Skadar, Komarno trail)|42.2879|19.0614|viewpoint
+me-zabojsko-jezero|Zabojsko jezero — the forest 'mountain eye' of Sinjajevina|43.0113|19.3782|nature
+me-zanjic-beach|Žanjic Beach (Luštica) + cliff jumping|42.40056|18.58454|beach
+me-zminje-jezero|Zminje jezero (Snake Lake) — quiet Durmitor lake walk|43.1399|19.0853|hike
+user-1781345597793|Fortica zipline|43.350070274012545|17.831711769104007|sight
+user-1781345656267|Fortica zipline|43.35024191164296|17.831572294235233|other
+user-1781356614119|Home in Boričje|43.136465|18.910228|accommodation
+user-1781357020737|Home in Poplat|43.0310186|18.0183739|accommodation
+user-1781358765546|Ravna Camping|43.6363413|17.7882794|campsite
+user-1781362126170|Home in Pale|43.7914407|18.5735772|accommodation
+user-1781370817091|Home in Rvaši|42.3716223|19.102537|accommodation
+user-clone-krvavica-n2|Camping Krvavica|43.3235|16.9857|campsite
+user-clone-rvasi-n10|Home in Rvaši|42.3716223|19.102537|accommodation

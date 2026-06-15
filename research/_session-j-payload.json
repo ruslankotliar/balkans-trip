@@ -1,0 +1,1274 @@
+{
+ "1": [
+  {
+   "id": "hr-zadar-airport",
+   "name": "Zadar Airport (ZAD) — car pickup Jun 16 10:00",
+   "category": "other",
+   "lat": 44.1083,
+   "lng": 15.3467,
+   "dayOrder": -0.5,
+   "pick": false,
+   "duration": "",
+   "note": "Flight lands Jun 16 09:00; ~45-60min bags + rental desk; car pickup 10:00. ⚠ EES (live Apr 2026): if ANY of the 4 hold NON-EU passports, budget extra time at arrival for biometric enrolment (and on D12 cross ME->HR before ~09:00 / after ~15:00 — Karasovici 2-5h at midday peak). All-EU/EEA = fast lane, ignore.",
+   "bestTime": "",
+   "sources": []
+  },
+  {
+   "id": "hr-krka",
+   "name": "Krka National Park (Skradinski Buk)",
+   "category": "nature",
+   "lat": 43.8025,
+   "lng": 15.9648,
+   "dayOrder": 1.0,
+   "pick": false,
+   "duration": "",
+   "note": "Inland ~77km but on the Zadar->Split line. Swimming BANNED at Skradinski Buk since 2021 (walk/photo only). Tickets ONLINE-ONLY timed entry (shop.np-krka.hr) — EUR40pp June, BUT after 15:00 = EUR30pp (a tired late arrival hits this window). The Skradin<->falls boat is INCLUDED in the ticket (Apr-Oct) — legal swim = Skradin town beach. THE skip candidate if arrival-day energy is low.",
+   "bestTime": "",
+   "sources": []
+  },
+  {
+   "id": "hr-skradin-town-beach",
+   "name": "Skradin town beach (Krka swim alternative)",
+   "category": "beach",
+   "lat": 43.8178,
+   "lng": 15.9233,
+   "dayOrder": 1.5,
+   "pick": true,
+   "duration": "",
+   "note": "D1 HIGHLIGHT — the legal Krka swim: NP shuttle boat down from Skradinski Buk to Skradin town beach (~hourly, last boats early evening). Confirm the boat is running the day you go; if you walked in from the Skradin entrance you're already in town and need no boat.",
+   "bestTime": "",
+   "sources": [
+    "https://krkatours.com/blog/swim-skradin-best-beach-location-croatia",
+    "https://www.localguidetocroatia.com/single-post/can-you-swim-in-krka-national-park"
+   ]
+  },
+  {
+   "id": "hr-kantun-paulina",
+   "name": "Kantun Paulina (Split ćevapi institution)",
+   "category": "food",
+   "lat": 43.510068,
+   "lng": 16.4364206,
+   "dayOrder": 2.5,
+   "pick": false,
+   "duration": "",
+   "note": "Day 1 (Jun 16) — quick cevapi stop in Split en route Krka -> Krvavica. Off-peak (before 12:00 or after 14:00) skips the worst queue; you'll likely hit it ~16:00-16:30 which is fine.",
+   "bestTime": "Day 2 (Jun 17) — quick ćevapi stop in Split en route Paklenica → Omiš. Off-peak (before 12:00 or after 14:00) to skip the worst of the queue.",
+   "sources": [
+    "https://www.tripadvisor.com/Restaurant_Review-g295370-d3586088-Reviews-Kantun_Paulina-Split_Split_Dalmatia_County_Dalmatia.html",
+    "https://wanderlog.com/list/geoCategory/1571795/best-spots-for-cevapi-in-split"
+   ]
+  },
+  {
+   "id": "hr-ramova-beach-krvavica",
+   "name": "Ramova Beach (Krvavica camp beach)",
+   "category": "beach",
+   "lat": 43.3216,
+   "lng": 16.9883,
+   "dayOrder": 3.5,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "",
+   "sources": [
+    "https://croatiahiddengems.com/beaches-and-islands/ramova-beach-in-krvavica",
+    "https://www.adriagate.com/Croatia-en/Krvavica-Baska-Voda-beach-Croatia"
+   ]
+  },
+  {
+   "id": "hr-camping-krvavica",
+   "name": "Camping Krvavica",
+   "category": "campsite",
+   "lat": 43.32347,
+   "lng": 16.98574,
+   "dayOrder": 4,
+   "pick": false,
+   "duration": "",
+   "note": "Arrival-night base ~10km W of Makarska; pitch ~18:00 with daylight. Pricing ~EUR12 adult + ~EUR8 tent + ~EUR4.50 car (+EUR3-5 electricity) = ~EUR55-65 for 4. Ramova/own beach is a 2-3min walk — arrival swim then camp-cook dinner.",
+   "bestTime": "",
+   "sources": [
+    "https://park4night.com/en/place/10004",
+    "https://www.autocamp-krvavica.com/",
+    "https://www.tripadvisor.com/Hotel_Review-g1943764-d21002761-Reviews-Camping_Krvavica-Krvavica_Split_Dalmatia_County_Dalmatia.html"
+   ]
+  }
+ ],
+ "2": [
+  {
+   "id": "hr-biokovo-tollroad",
+   "name": "Biokovo NP scenic toll road (booking + drive)",
+   "category": "activity",
+   "lat": 43.2579,
+   "lng": 17.0807,
+   "dayOrder": 1.0,
+   "pick": false,
+   "duration": "",
+   "note": "⚠ VERIFY FIRST: a SPECIAL TRAFFIC REGULATION (fire-restoration) closes the Biokovo road to cars on WEEKDAYS ~07:00-15:00, in effect until Jun 19 2026. D2 is Wed Jun 17 = a weekday, so a dawn ~06:30 slot likely can't summit + descend (blocked/stuck until 15:00). CALL info@pp-biokovo.hr / +385 21 616 924 to confirm Jun 17 car access BEFORE relying on it — the booking page can stay open under a closure. If blocked: lead D2 with the Cetina canyoning anchor; do Biokovo only if access is confirmed (or after 15:00, tight).",
+   "bestTime": "BOOK Jun 18 morning slot now at shop.pp-biokovo.hr — capped at 20 cars/hour; sells out in June. Open 06:00–20:00.",
+   "sources": [
+    "https://shop.pp-biokovo.hr",
+    "https://pp-biokovo.hr/en/plan-your-visit/pricelist",
+    "https://www.tripadvisor.com/ShowTopic-g294453-i1554-k11311698-Driving_to_Biokovo_mountains-Croatia.html",
+    "https://bbqboy.net/driving-spectacular-mt-biokovo-croatia/"
+   ]
+  },
+  {
+   "id": "hr-sveti-jure",
+   "name": "Sveti Jure (Biokovo summit, 1762m)",
+   "category": "viewpoint",
+   "lat": 43.3423,
+   "lng": 17.0539,
+   "dayOrder": 1.5,
+   "pick": false,
+   "duration": "",
+   "note": "Conditional on the Biokovo road being open to cars on Jun 17 (see the toll-road warning: weekday 07:00-15:00 closure until Jun 19 2026). If confirmed open, summit early for the haze-free panorama; if not, skip — Cetina canyoning carries D2. ~150min if it runs.",
+   "bestTime": "Day 3 (Jun 18) early — leave Makarska 07:00, summit before 09:00 (the Skywalk slot is booked at shop.pp-biokovo.hr, 20-car/hour cap). Clear morning essential for the 360° Adriatic + island view.",
+   "sources": [
+    "https://biokovo.com/en/sightseeing",
+    "https://www.alltrails.com/explore/trail/croatia/split-dalmatia/sveti-jure"
+   ]
+  },
+  {
+   "id": "hr-cetina-canyoning",
+   "name": "Cetina Canyoning (Zadvarje / Gubavica)",
+   "category": "activity",
+   "lat": 43.4324,
+   "lng": 16.891,
+   "dayOrder": 4.0,
+   "pick": true,
+   "duration": "",
+   "note": "D2 ★ ANCHOR (carries the day regardless of the Biokovo road closure). Book a slot 1-2 days ahead (canyoning-cetina.com ~EUR70pp Extreme 18+ / maldukadventures.com). Shaded cold canyon = ideal midday-heat block; 12m jumps + 55m waterfall rappel. ~3h.",
+   "bestTime": "Day 2 (Jun 17) — book 1–2 days ahead at canyoning-cetina.com (~€70pp) or maldukadventures.com. June = good water. Extreme tour is 18+.",
+   "sources": [
+    "https://canyoning-cetina.com",
+    "https://maldukadventures.com",
+    "https://www.tripadvisor.com/AttractionProductReview-g644074-d17063840-Extreme_Canyoning_on_Cetina_river_from_Omis-Omis_Split_Dalmatia_County_Dalmatia.html"
+   ]
+  },
+  {
+   "id": "hr-konoba-feral-brela",
+   "name": "Konoba Feral (Brela — peka & seafood)",
+   "category": "food",
+   "lat": 43.3673164,
+   "lng": 16.9329275,
+   "dayOrder": 6.5,
+   "pick": false,
+   "duration": "",
+   "note": "The ONE Riviera peka (the day's special meal) — best-rated Brela konoba, 10m from the beach, no Omiš backtrack. Pre-order octopus/veal peka in the morning. Replaces Konoba Gušti.",
+   "bestTime": "June reality: reserve ~3 days ahead (phone only), walk-ins wait ~30 min; peka still pre-order; sunset for the beachfront table",
+   "sources": [
+    "https://www.tripadvisor.com/Restaurant_Review-g480253-d1100633-Reviews-Konoba_Feral-Brela_Split_Dalmatia_County_Dalmatia.html",
+    "https://makarskagastro.com/index.php"
+   ]
+  },
+  {
+   "id": "hr-makarska-nightlife",
+   "name": "Makarska (Deep cave club + Osejava cliffs)",
+   "category": "nightlife",
+   "lat": 43.2969,
+   "lng": 17.0178,
+   "dayOrder": 8.5,
+   "pick": false,
+   "duration": "",
+   "note": "OPTIONAL late night ~23:00-02:00 — Deep cave club + Osejava cliff walk. Only if NOT doing the early canyoning AND remembering Jun 18 (Day 3) is the FIXED Dubrovnik-airport pickup with a long drive. The obvious drop-if-tired stop.",
+   "bestTime": "",
+   "sources": [
+    "https://www.adventuresnsunsets.com/things-to-do-in-makarska-croatia/",
+    "https://evendo.com/locations/croatia/makarska-riviera/landmark/deep-makarska"
+   ]
+  },
+  {
+   "id": "user-clone-krvavica-n2",
+   "name": "Camping Krvavica",
+   "category": "campsite",
+   "lat": 43.3235,
+   "lng": 16.9857,
+   "dayOrder": 9,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "",
+   "sources": []
+  }
+ ],
+ "3": [
+  {
+   "id": "hr-bacina-jezera",
+   "name": "Baćina lakes (Baćinska jezera)",
+   "category": "nature",
+   "lat": 43.0674,
+   "lng": 17.4272,
+   "dayOrder": 0.5,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "afternoon swim break on the drive south",
+   "sources": [
+    "https://explore-croatia.net/lovely-bacina-lakes-near-adriatic-sea/",
+    "https://www.bacinskajezera.com/",
+    "https://ecobnb.com/blog/2021/08/bacina-lakes-croatia/"
+   ]
+  },
+  {
+   "id": "hr-peljesac-bridge",
+   "name": "Pelješac Bridge (Dubrovnik approach)",
+   "category": "sight",
+   "lat": 42.9328,
+   "lng": 17.5369,
+   "dayOrder": 1.0,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "Day 3 (Jun 18) en route Makarska → Dubrovnik — you just drive over it",
+   "sources": [
+    "https://total-croatia-news.com/news/travel/split-to-dubrovnik/",
+    "https://www.europamaut.com/en/blog/renovation-of-the-peljesac-bridge-to-dubrovnik"
+   ]
+  },
+  {
+   "id": "hr-ston-walls",
+   "name": "Walls of Ston (Pelješac)",
+   "category": "hike",
+   "lat": 42.8384,
+   "lng": 17.6963,
+   "dayOrder": 1.5,
+   "pick": true,
+   "duration": "",
+   "note": "D3 ★ — FIRST activity of the morning, gates open 08:00, walk 08:30-10:00. No shade, white limestone, real climb: do it before June midday heat and tour buses. ~EUR10pp. Do the shorter Ston->Mali Ston traverse (~45-60min) to stay on schedule for the ferry.",
+   "bestTime": "morning/evening — no shade",
+   "sources": [
+    "https://mindfulmermaid.com/wall-of-europe/",
+    "https://www.alltrails.com/trail/croatia/dubrovnik-neretva/zidine-stona"
+   ]
+  },
+  {
+   "id": "hr-mali-ston-oysters",
+   "name": "Mali Ston oysters",
+   "category": "food",
+   "lat": 42.8464,
+   "lng": 17.704,
+   "dayOrder": 2.0,
+   "pick": false,
+   "duration": "",
+   "note": "Quick-grab on the airport/ferry day: shuck-and-go at the Mali Ston / Bistrina roadside farm stalls (~EUR1/oyster, cash, ~09:00-16:00). Do NOT sit down at Bota Sare (opens 12:00 = burns ferry-critical time). 20-30min stop.",
+   "bestTime": "Day 3 (Jun 18) lunch stop en route Split→Dubrovnik. Bota Šare opens 12:00 — call ahead: +385 20 754482. Off-peak = quicker service.",
+   "sources": [
+    "https://www.tripadvisor.com/Attraction_Review-g608714-d17778320-Reviews-Mali_Ston_Oysters-Mali_Ston_Dubrovnik_Neretva_County_Dalmatia.html",
+    "https://www.tommyeats.com/tommyeats/2017/06/eating-in-croatia-oysters-at-kapetanova-kuca-in-mali-ston.html"
+   ]
+  },
+  {
+   "id": "hr-dubrovnik-airport-pickup",
+   "name": "Dubrovnik Airport (Čilipi) — Jun 18 friend pickup",
+   "category": "other",
+   "lat": 42.5614,
+   "lng": 18.2682,
+   "dayOrder": 3.5,
+   "pick": false,
+   "duration": "",
+   "note": "BOOK: Be parked by ~17:10; expect to actually roll out ~17:45-18:00. Leave Pelješac by ~15:45 to absorb June …",
+   "bestTime": "Day 3 (Jun 18) — leave Makarska by 13:00–13:30 latest. Flight lands 17:20; plan to be at arrivals by 17:30. Drive Makarska→DBV is ~2.5h without stops.",
+   "sources": []
+  },
+  {
+   "id": "hr-prapratno-ferry",
+   "name": "Prapratno ferry port (→ Mljet)",
+   "category": "other",
+   "lat": 42.8116,
+   "lng": 17.6787,
+   "dayOrder": 4.0,
+   "pick": false,
+   "duration": "",
+   "note": "#1 SPOF. DBV airport -> Prapratno is ~1h15 (budget 1h30 for June traffic). On-time 17:20 landing -> rolling ~17:45 -> Prapratno ~19:30 for the 20:30 LAST sailing (queue >=45min, cars first-come). PLAN B: pre-buy the ticket ONLINE; if not clearing arrivals by ~17:50, SKIP the 20:30 and sleep mainland (Autocamp Prapratno/near Ston), take the 06:00/10:15 ferry D4 AM.",
+   "bestTime": "D3 (Thu Jun 18) EVENING — the trip's #1 fragility. Friend lands DBV 17:20; pickup, then ~1h45–2h drive DBV→Prapratno (via Dubrovnik+Ston) = arrive ~19:30–19:45 for the 20:30 LAST sailing. June 2026 Prapratno→Sobra (29 May–2 Jul block): 07:00, 10:15, 13:00, 17:00, 20:30 (verified Jun 2026). Cars first-come, no reservation, ~50/boat — be in the queue ≥45 min early. Pre-buy tickets online to skip the desk. Plan B if flight delayed past ~18:30: sleep mainland near Ston/Slano, take 07:00 or 10:15 ferry next morning.",
+   "sources": [
+    "https://www.jadrolinija.hr/en/travel/prapratno_peljesac_-_sobra_mljet",
+    "https://www.dubrovnik-online.net/prapratno-mljet-ferry",
+    "https://www.croatiaferries.com/topic/advance-booking-for-prapratno-sobra-ferry/"
+   ]
+  },
+  {
+   "id": "hr-camp-mungos-mljet",
+   "name": "Autokamp Mungos (Babino Polje, Mljet)",
+   "category": "campsite",
+   "lat": 42.739,
+   "lng": 17.5355,
+   "dayOrder": 6.0,
+   "pick": false,
+   "duration": "",
+   "note": "Night-arrival-safe Mljet camp by the Sobra ferry (pool, restaurant, mini-market) - pitch within minutes of the 20:30 ferry landing ~21:15. (Autokamp Marina/Ropa kept as the NP-side alternative.)",
+   "bestTime": "",
+   "sources": [
+    "https://www.tripadvisor.com/Hotel_Review-g8111016-d15333857-Reviews-Mungos_Babino_Polje_Campsite-Babino_Polje_Mljet_Island_Dubrovnik_Neretva_County_Dalm.html",
+    "https://www.camping.info/en/campsite/camping-mungos"
+   ]
+  }
+ ],
+ "4": [
+  {
+   "id": "hr-odysseus-cave",
+   "name": "Odysseus Cave (Mljet, cliff-jump swim)",
+   "category": "activity",
+   "lat": 42.7294,
+   "lng": 17.5439,
+   "dayOrder": 1.0,
+   "pick": false,
+   "duration": "",
+   "note": "Quick dawn cliff-jump/swim ~1.3km from the Mungos camp (~07:30) — do this OR the salt-lakes kayak, NOT a leisurely both, or you miss the 12:00 Sobra ferry. Free, no ticket. Kayak is the stronger single pick.",
+   "bestTime": "Day 4 (Jun 19) morning — first stop after the Sobra ferry (~10 min drive). Go 09:00–11:00 for best cave light. Outside cliff platforms open all day for cliff jumping.",
+   "sources": [
+    "https://www.tripadvisor.com/Attraction_Review-g1501915-d10680152-Reviews-Odysseus_Cave-Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html",
+    "https://www.lifeandventures.com/mljet-national-park-adventure/"
+   ]
+  },
+  {
+   "id": "hr-mljet-kayak-sup-selfrent-lakes",
+   "name": "Self-rent kayak / SUP on the Mljet salt lakes (Mali Most & Pomena)",
+   "category": "activity",
+   "lat": 42.7825,
+   "lng": 17.355,
+   "dayOrder": 1.5,
+   "pick": true,
+   "duration": "",
+   "note": "D4 ★ — self-rent kayak/SUP across the emerald salt lakes to St Mary islet. Arrange rental the NIGHT BEFORE for an ~08:00-08:30 start; NP entry ~EUR25pp. MUST be back near Sobra to queue for the 12:00 ferry by ~10:45 — this is the activity you SHORTEN if tight, never the ferry. Then ferry 12:00 -> drive ~2h -> Kravica.",
+   "bestTime": "",
+   "sources": [
+    "https://www.mljettravel.com/kayaking/",
+    "https://www.mljettravel.com/rental/",
+    "https://www.tripadvisor.com/ShowUserReviews-g1501915-d548269-r508434790-Mljet_National_Park-Mljet_Island_Dubrovnik_Neretva_County_Dalmatia.html",
+    "https://alohamljet.com/",
+    "https://www.island-mljet.com/kayaking-paddeling/"
+   ]
+  },
+  {
+   "id": "ba-kravica",
+   "name": "Kravica Waterfalls",
+   "category": "nature",
+   "lat": 43.1583,
+   "lng": 17.6083,
+   "dayOrder": 7.0,
+   "pick": false,
+   "duration": "",
+   "note": "Cash-only (KM): entry ~20 KM/pp + parking. Bosnia = cash country — withdraw KM at the FIRST Bosnia ATM after the border (Capljina/Mostar Raiffeisen, no fee). Go before ~10:00 — jammed by tour buses by mid-morning; swimming under the falls allowed.",
+   "bestTime": "Day 5 (Jun 20) — arrive 07:00–08:00 to beat the crowds. June pool swimmable (~18–20°C). Tour buses pack in from ~10:30.",
+   "sources": [
+    "https://kravica.ba/en/for-visitors/"
+   ]
+  },
+  {
+   "id": "ba-pocitelj",
+   "name": "Počitelj",
+   "category": "sight",
+   "lat": 43.1339,
+   "lng": 17.7261,
+   "dayOrder": 8.0,
+   "pick": false,
+   "duration": "",
+   "note": "Day 4 (Fri Jun 19) — late-afternoon stop ~17:00-17:30 between Kravica and the Poplat bed, kept short (45-50min). Bare stone hill, little shade; late afternoon is fine as heat eases. Free (small tower fee). Pomegranate/fig stalls at the base for a 5-min quick-grab.",
+   "bestTime": "Day 5 (Jun 20) mid-morning — leave Kravica 09:00, arrive Počitelj 09:30. Free (small tower fee €1-2). Combine with Kravica 07:00 early swim and arrive Mostar by 11:00. Midday heat on the stone hill can be brutal — early is better.",
+   "sources": [
+    "https://www.inyourpocket.com/mostar/pocitelj_82038v"
+   ]
+  },
+  {
+   "id": "user-1781357020737",
+   "name": "Home in Poplat",
+   "category": "accommodation",
+   "lat": 43.0310186,
+   "lng": 18.0183739,
+   "dayOrder": 9,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "",
+   "sources": []
+  }
+ ],
+ "5": [
+  {
+   "id": "ba-blagaj",
+   "name": "Blagaj Tekija",
+   "category": "sight",
+   "lat": 43.2565,
+   "lng": 17.9031,
+   "dayOrder": 0,
+   "pick": false,
+   "duration": "",
+   "note": "Day 5 (Jun 20) — midday stop ~13:00-15:00 after the cool-morning Mostar block (12km south, ~15min). Arrive before 10:00 or after 15:00 to miss tour buses. 10 KM/EUR5 cash; cover knees/shoulders (wraps at door). 1.5h max.",
+   "bestTime": "Day 6 (Jun 21) — midday stop between Kravica and Mostar (12 km south of Mostar, directly on route). Arrive 10:00–11:30 or after 15:00 to miss tour buses. Park at lower lots; cover knees/shoulders (wraps at door). Time: 1.5h max.",
+   "sources": [
+    "https://exploremostar.com/blagaj-tekke/",
+    "https://www.thetripverdict.com/blagaj-tekija"
+   ]
+  },
+  {
+   "id": "ba-mostar-bridge-jump",
+   "name": "Stari Most Bridge Jump (Mostari Diving Club)",
+   "category": "activity",
+   "lat": 43.3373,
+   "lng": 17.8147,
+   "dayOrder": 1,
+   "pick": true,
+   "duration": "",
+   "note": "Do it FIRST at the bridge (~09:00, cool + empty) via the Mostari Divers Club + their mandatory training jump. ~24m — real commitment, decide PER PERSON on the day. Budget ~EUR30-50pp TOTAL (training ~EUR10-25 + the jump ~EUR20-25), cash. Non-jumpers watch from the Halebija/jumpers' viewpoint.",
+   "bestTime": "",
+   "sources": []
+  },
+  {
+   "id": "ba-mostar",
+   "name": "Mostar (Stari Most)",
+   "category": "town",
+   "lat": 43.3372,
+   "lng": 17.815,
+   "dayOrder": 2,
+   "pick": false,
+   "duration": "",
+   "note": "Day 5 (Jun 20) — do Mostar in the COOL MORNING ~09:30-10:30; Stari Most is empty and the bridge/jumpers are cool then. Midday = mobbed + 35C. The morning is the move.",
+   "bestTime": "Day 5 (Jun 20) — arrive late afternoon from Kravica falls. Evening and morning are the magic hours — Stari Most glows amber at sunset (~20:25).",
+   "sources": []
+  },
+  {
+   "id": "ba-tima-irma",
+   "name": "Tima-Irma (Mostar ćevapi institution)",
+   "category": "food",
+   "lat": 43.3371372,
+   "lng": 17.81399,
+   "dayOrder": 3,
+   "pick": false,
+   "duration": "",
+   "note": "Day 5 — quick cevapi straight off the bridge in the cool morning, before 12:00 to beat the queue.",
+   "bestTime": "Day 5 (Jun 20) lunch — arrive before 12:00 or after 15:00. No reservation needed, walk-up only. Steps from the Old Bridge.",
+   "sources": [
+    "https://www.tripadvisor.com/Restaurant_Review-g295388-d2399896-Reviews-Tima_Irma-Mostar_Herzegovina_Neretva_Canton.html",
+    "https://www.theculinarytourists.com/bosnia-city-food-guides/mostar"
+   ]
+  },
+  {
+   "id": "ba-buna-blagaj-swim",
+   "name": "Buna River Swimming @ Blagaj",
+   "category": "nature",
+   "lat": 43.2573,
+   "lng": 17.9036,
+   "dayOrder": 4,
+   "pick": false,
+   "duration": "",
+   "note": "Day 5 — icy karst-spring swim (~10-12C) on shaded terraces = the day's ideal MIDDAY heat-relief (~13:30), right after the Buna trout lunch.",
+   "bestTime": "early or late to dodge Tekija crowds",
+   "sources": [
+    "https://culturetrekking.com/blagaj-tekke-buna-river",
+    "https://www.terra-balka.com/en/blog/non-classe/10-breathtaking-natural-swimming-spots-in-bosnia-herzegovina"
+   ]
+  },
+  {
+   "id": "ba-blagaj-trout-terraces",
+   "name": "Blagaj Buna-spring trout terraces (Vrelo & neighbours)",
+   "category": "food",
+   "lat": 43.25665,
+   "lng": 17.90048,
+   "dayOrder": 5,
+   "pick": false,
+   "duration": "",
+   "note": "SPECIAL meal: order at RESTORAN VRELO (terrace over the Buna spring, 4.0★) — NOT the cheaper Fajic/Hladovina next door (2.8-3.1★, undercooked + slow). ~EUR9-10/trout, walk-in, a normal ~1h lunch. Midday heat-relief block with the Buna swim.",
+   "bestTime": "Lunch after visiting the Tekija; riverside tables fill up midday",
+   "sources": [
+    "https://www.tripadvisor.com/ShowUserReviews-g1759888-d4427325-r568427369-Restoran_Vrelo-Blagaj.html",
+    "https://www.tripadvisor.com/Restaurants-g1759888-Blagaj.html"
+   ]
+  },
+  {
+   "id": "ba-fortica-mostar",
+   "name": "Fortica Hill — Skywalk & Zipline",
+   "category": "activity",
+   "lat": 43.3455,
+   "lng": 17.832,
+   "dayOrder": 6,
+   "pick": false,
+   "duration": "",
+   "note": "Day 5 (Jun 20) late afternoon ~16:00-18:00 — heat-tolerant exposed hilltop, fits after the Mostar core, before the 21:00 zipline close. Skywalk free; zipline 50 KM/pp. No advance booking but call +387 62 115 100 to confirm open. The day's slack/skip candidate.",
+   "bestTime": "Day 6 (Jun 21) morning — morning for clearest views of Stari Most. Drive 5 km from town. Call +387 62 115 100 ahead to confirm open. Sequence: Kravica 07:00 → Počitelj 09:30 → Fortica 10:30 → Stari Most afternoon.",
+   "sources": [
+    "https://zipline.ba/price-list/",
+    "https://bosnianvoyager.com/fortica-mostar/",
+    "https://lyfeabroad.com/hiking-to-the-fortica-skywalk-in-mostar/"
+   ]
+  },
+  {
+   "id": "ba-dreznica-canyon",
+   "name": "Drežnica / Drežanka canyon — local swim canyon",
+   "category": "nature",
+   "lat": 43.519623,
+   "lng": 17.738513,
+   "dayOrder": 7,
+   "pick": true,
+   "duration": "",
+   "note": "D5 afternoon water ★ — turquoise pools + local cliff-jump (Stupina) on the paved M17 side road, zero backtrack on the drive N to Ravna. Free, cold glacier-fed water; keep as the on-route afternoon swim.",
+   "bestTime": "Summer for swimming; Veliki Movran waterfall only after heavy rain (not reliable in June)",
+   "sources": [
+    "https://visitbih.ba/en/dreznica-heaven-on-earth-located-between-cabulja-and-cvrsnica/",
+    "https://bljesak.info/magazin/flash/skrivena-rijeka-koja-oduzima-dah-dobrodosli-u-kanjon-drezanke/525605",
+    "https://en.wikipedia.org/wiki/Dre%C5%BEanka_(river)"
+   ]
+  },
+  {
+   "id": "user-1781358765546",
+   "name": "Ravna Camping",
+   "category": "campsite",
+   "lat": 43.6363413,
+   "lng": 17.7882794,
+   "dayOrder": 9,
+   "pick": false,
+   "duration": "",
+   "note": "BOOK: Arrive ~19:00 with daylight to pitch tents; confirm with the host that arrival after ~18:00 is OK (call…",
+   "bestTime": "",
+   "sources": []
+  }
+ ],
+ "6": [
+  {
+   "id": "ba-jablanica-neretva-museum",
+   "name": "Battle of Neretva Museum & sunken bridge (Jablanica)",
+   "category": "sight",
+   "lat": 43.653723,
+   "lng": 17.760688,
+   "dayOrder": -2.0,
+   "pick": false,
+   "duration": "",
+   "note": "Iconic WWII sunken railway bridge + Battle of Neretva museum, right on the M-17 as you leave Ravna/Jablanica - quick on-route stop.",
+   "bestTime": "Daytime; combine with a lamb lunch in Jablanica",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bridge_on_the_Neretva",
+    "https://www.lifeandventures.com/battle-of-neretva-museum-jablanica/",
+    "https://www.tripadvisor.com/Attraction_Review-g1632097-d5123472-Reviews-Museum_Battle_for_the_Wounded_on_Neretva_River-Jablanica_Herzegovina_Neretva_Can.html"
+   ]
+  },
+  {
+   "id": "ba-boracko-lake",
+   "name": "Boračko Lake (swim stop; camp backup)",
+   "category": "nature",
+   "lat": 43.5519,
+   "lng": 18.0314,
+   "dayOrder": -1.0,
+   "pick": false,
+   "duration": "",
+   "note": "Emerald glacial lake ~16km up from Konjic, on the Jablanica->Sarajevo line — swim + self-rent a pedalo or wooden rowboat at the main beach (casual beach-bar rental; SUP sometimes at Eko Selo bar; no formal kayak operator). Morning reset; replaces the wrong-way detour.",
+   "bestTime": "Day 6 (Jun 21) midday swim stop en route Jablanica → Sarajevo (~16 km from Konjic). Emerald glacial lake, perfect break on the long drive day. Or overnight if skipping Sarajevo.",
+   "sources": [
+    "https://park4night.com/en/place/25976",
+    "https://www.camping.info/en/campsite/eko-selo-boracko-jezero"
+   ]
+  },
+  {
+   "id": "ba-sarajevo-asdz",
+   "name": "Buregdžinica ASDŽ (Sarajevo — sač-baked burek)",
+   "category": "food",
+   "lat": 43.8589553,
+   "lng": 18.4315611,
+   "dayOrder": 2.239,
+   "pick": false,
+   "duration": "",
+   "note": "ASDZ burek is IN Sarajevo (not roadside) — a late-morning bite once you reach the city, not a Jablanica breakfast. A Jablanica/Konjic lamb or trout stop fits the actual morning drive better.",
+   "bestTime": "Breakfast; cash",
+   "sources": [
+    "https://sarajevo.travel/en/text/twelve-of-the-best-buregdzinicas-in-sarajevo/470",
+    "https://bascarsija.ba/en/buregdzinice-bosnian-pie-makers/buregdzinica-asdz"
+   ]
+  },
+  {
+   "id": "ba-sarajevo",
+   "name": "Sarajevo (Bascarsija old town)",
+   "category": "town",
+   "lat": 43.859,
+   "lng": 18.43,
+   "dayOrder": 2.5,
+   "pick": true,
+   "duration": "",
+   "note": "D6 ★ (Jun 21, Sunday) — afternoon arrival, evening on foot: Bascarsija at dusk, Zuta Tabija sunset (~20:45), Sunday bar crawl on the Bascarsija cluster (Kino Bosna is CLOSED Sundays). Group SLEEPS in Pale (N6, ~30min SE) — designate a driver for the post-nightlife leg; Pale also pre-positions for Day 7's Foca/Scepan Polje rafting drive.",
+   "bestTime": "Day 6 (Jun 21) — afternoon arrival + overnight. Baščaršija at dusk, Žuta Tabija sunset (20:45), nightlife on Ferhadija. Practical base for Day 7's 08:30 Tara rafting departure.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ba%C5%A1%C4%8Dar%C5%A1ija",
+    "https://www.thebrokebackpacker.com/where-to-stay-in-sarajevo-bosnia-herzegovina/"
+   ]
+  },
+  {
+   "id": "ba-sarajevo-petica-ferhatovic",
+   "name": "Ćevabdžinica Petica Ferhatović (Sarajevo ćevapi)",
+   "category": "food",
+   "lat": 43.8590269,
+   "lng": 18.4321819,
+   "dayOrder": 3.5,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "Day 6 (Jun 21) lunch — part of the Baščaršija old-town crawl before the Žuta Tabija sunset walk.",
+   "sources": [
+    "https://soulhaus.ba/blog/best-cevapi-sarajevo",
+    "https://bosnianvoyager.com/old-town-sarajevo-bascarsija/"
+   ]
+  },
+  {
+   "id": "ba-zuta-tabija",
+   "name": "Žuta tabija (Yellow Fortress) — Sarajevo's sunset ritual",
+   "category": "viewpoint",
+   "lat": 43.8615,
+   "lng": 18.4377,
+   "dayOrder": 4.5,
+   "pick": false,
+   "duration": "",
+   "note": "Sarajevo's sunset ritual — sunset Jun 21 is 20:32 (not 20:45). Start the 30-40min uphill walk by ~19:45 to be on the rampart with light to spare. Free.",
+   "bestTime": "Day 6 (Jun 21) sunset — walk up from Baščaršija 30-40 min before sundown (~20:45). Free, bring drinks. Pairs with the Kovači war cemetery below.",
+   "sources": [
+    "https://lll.ba/yellow-fortress-zuta-tabija/",
+    "https://tourismattractions.net/bosnia_and_herzegovina/yellow-fortress-sunset-views"
+   ]
+  },
+  {
+   "id": "ba-bascarsija-bar-cluster",
+   "name": "Baščaršija bar cluster (Sunday night out: Barometar, Zlatna Ribica, Cheers, Raya 71)",
+   "category": "nightlife",
+   "lat": 43.85831,
+   "lng": 18.42661,
+   "dayOrder": 5.2,
+   "pick": false,
+   "duration": "",
+   "note": "Sunday-safe Sarajevo night out (Kino Bosna is closed Sundays). DESIGNATE THE SOBER DRIVER before the crawl — it's a ~40min dark drive back to the Pale bed, then a 07:30 D7 start for the Tara raft. Verify each bar's Sunday hours on the day.",
+   "bestTime": "",
+   "sources": [
+    "https://discover.ba/sarajevo-nightlife-guide/",
+    "https://wanderlog.com/list/geoCategory/817632/best-bars-with-live-music-in-sarajevo",
+    "https://www.gokumquat.com/bosnia-and-herzegovina/sarajevo/best-local-bars-and-nightlife-in-sarajevo-authentic-drinking-spots-away-from-tourist-crowds"
+   ]
+  },
+  {
+   "id": "user-1781362126170",
+   "name": "Home in Pale",
+   "category": "accommodation",
+   "lat": 43.7914407,
+   "lng": 18.5735772,
+   "dayOrder": 6,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "",
+   "sources": []
+  }
+ ],
+ "7": [
+  {
+   "id": "me-tara-rafting-brstanovica",
+   "name": "Tara Canyon rafting — Brštanovica section",
+   "category": "activity",
+   "lat": 43.349,
+   "lng": 18.836,
+   "dayOrder": 1.5,
+   "pick": true,
+   "duration": "",
+   "note": "D7 ★ marquee — Tara, Europe's deepest canyon. 2026 price ~EUR70-75pp (~EUR280-300 for 4, cash at camp), full-day incl. lunch + gear + NP fee. Operator shuttle-only, single AM departure — re-confirm before Jun 16 + get the exact meeting point. BOOK NOW (fills weeks ahead).",
+   "bestTime": "Day 7 (Jun 22) — raft Brštanovica → Šćepan Polje (~18km, 3–4h). Book before Jun 16 via email/phone (see Essentials). Late June = high/fast water; wetsuit required (river ~8°C).",
+   "sources": [
+    "https://raftingtara.com",
+    "https://tarasportrafting.com",
+    "https://bluerivertara.me",
+    "https://www.tripadvisor.com/ShowTopic-g635648-i11070-k14843114-Half_day_rafting_Tara_Canyon-Montenegro.html"
+   ]
+  },
+  {
+   "id": "me-scepan-polje-piva-canyon",
+   "name": "Šćepan Polje → Piva Canyon drive (via Plužine)",
+   "category": "other",
+   "lat": 43.3492,
+   "lng": 18.8403,
+   "dayOrder": 2.0,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "Day 7 (Jun 22) — cross here after the Tara rafting take-out (~14:00). Depart Sarajevo 07:00 → Foča 09:00 → raft start 10:00 → border crossing ~14:00.",
+   "sources": [
+    "https://www.glassrpske.com/lat/novosti/drustvo/oprez-radovi-na-putevima/634896",
+    "https://bankar.me/scepan-polje-pluzine-na-20-kilometara-cak-24-tunela/",
+    "https://rtnk.me/drustvo/mup-priprema-projektnu-dokumentaciju-za-izgradnju-granicnog-prelaza-scepan-polje-hum/"
+   ]
+  },
+  {
+   "id": "me-mratinje-dam",
+   "name": "Mratinje Dam (Piva dam)",
+   "category": "sight",
+   "lat": 43.27222,
+   "lng": 18.84167,
+   "dayOrder": 2.5,
+   "pick": false,
+   "duration": "",
+   "note": "Pass ~14:30-15:00 driving south from the border; ~25min roadside photo stop (exposed concrete, no shade — don't linger). Headlights ON for the 56 mostly-unlit Piva-canyon tunnels just south of here.",
+   "bestTime": "Day 7 (Jun 22) — roadside pullover on the Plužine stretch. The 56 tunnels are half the experience; the dam wall is the natural photo stop with the emerald reservoir below.",
+   "sources": [
+    "https://www.tripadvisor.com/Attraction_Review-g1728094-d6487521-Reviews-Piva_Canyon-Pluzine_Pluzine_Municipality.html",
+    "https://en.wikipedia.org/wiki/Mratinje_Dam"
+   ]
+  },
+  {
+   "id": "me-piva-lake-swim",
+   "name": "Piva Lake (turquoise reservoir swim — on route)",
+   "category": "nature",
+   "lat": 43.1609,
+   "lng": 18.8353,
+   "dayOrder": 3.5,
+   "pick": false,
+   "duration": "",
+   "note": "Self-rent kayak on turquoise Piva Lake at Pluzine — book via the Nature Park Piva info center at the Pluzine entrance (4 self-rent kayaks w/ life jackets, May-Oct 08-20, +382 40 270 069). Free swim too (~18-22C June). Boricje bed is on the lakefront 5min away, so this doubles as the evening/next-morning swim. (Hook beach bar runs GUIDED trips — not self-rent.)",
+   "bestTime": "Day 7 (Jun 22) — natural stop after the Šćepan Polje border crossing and before the 56-tunnel Piva canyon drive to Žabljak. Midday sun = best turquoise color.",
+   "sources": [
+    "https://www.lonelyplanet.com/montenegro/piva-lake",
+    "https://visitmontenegro.me/attractions/piva-lake"
+   ]
+  },
+  {
+   "id": "me-etno-restoran-socica",
+   "name": "Etno Restoran Sočica (Plužine — lamb ispod sača & Piva-lake terrace)",
+   "category": "food",
+   "lat": 43.1568,
+   "lng": 18.8411,
+   "dayOrder": 3.8,
+   "pick": false,
+   "duration": "",
+   "note": "Lamb ispod saca + Piva-lake terrace in Pluzine - D7 dinner near the Boricje bed.",
+   "bestTime": "",
+   "sources": [
+    "https://www.tripadvisor.com/Restaurant_Review-g1728094-d7007109-Reviews-Etno_Restoran_Socica-Pluzine_Pluzine_Municipality.html",
+    "https://restaurantguru.com/Restoran-Caffe-Socica-Pluzine",
+    "https://www.openstreetmap.org/search?query=So%C4%8Dica%20Plu%C5%BEine",
+    "https://balkanadventure.me/activities/one-day-rafting-with-lunch-scepan-polje/"
+   ]
+  },
+  {
+   "id": "user-1781356614119",
+   "name": "Home in Boričje",
+   "category": "accommodation",
+   "lat": 43.136465,
+   "lng": 18.910228,
+   "dayOrder": 4,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "",
+   "sources": []
+  }
+ ],
+ "8": [
+  {
+   "id": "me-prutas-hike",
+   "name": "Prutaš (2393m) — Best accessible Durmitor summit",
+   "category": "hike",
+   "lat": 43.12646,
+   "lng": 19.0014,
+   "dayOrder": -3.0,
+   "pick": true,
+   "duration": "",
+   "note": "Trailhead 06:00-06:30; off the ridge by noon (June PM storms). CONDITIONS-DEPENDENT, not default: upper ridge is exposed/scrambly (UIAA-I, some cables) and can hold late-June snow — ASK the Boricje host (D7 night) + check the AM sky. Non-technical fallbacks: Planinica or the Black Lake loop. Pick one summit only.",
+   "bestTime": "Day 8 (Jun 23) — alternative Durmitor plateau walk if skipping Veliki Međed. Start by 07:00; no shelter on the open plateau if storms close in.",
+   "sources": [
+    "https://www.thesandyfeet.com/prutas-mountain-hike-durmitor/"
+   ]
+  },
+  {
+   "id": "me-vrazje-jezero",
+   "name": "Vražje jezero (Devil's Lake) — swim with a Durmitor backdrop",
+   "category": "nature",
+   "lat": 43.084,
+   "lng": 19.1456,
+   "dayOrder": 1.0,
+   "pick": false,
+   "duration": "",
+   "note": "Day 8 (Jun 23) afternoon after the Prutas hike — 15km on the Savnik road from Zabljak. Calm evening = best Durmitor reflection. Glacial-cold dip. (Also an option morning of Day 9 en route to Ostrog.)",
+   "bestTime": "Day 8 (Jun 23) afternoon after the Veliki Međed hike — 15 km on the Šavnik road from Žabljak. Calm evening = best Durmitor reflection. Or morning of Day 9 (Jun 24) en route Žabljak → Ostrog.",
+   "sources": [
+    "https://www.tripadvisor.com/Attraction_Review-g1096284-d7266110-Reviews-Vrazje_Lake-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+    "https://www.durmitornp.com/vrazije-jezero/",
+    "https://zabljak.travel/en/devils-lake/"
+   ]
+  },
+  {
+   "id": "me-oro-zabljak",
+   "name": "Restaurant Or'O (Žabljak — mountain food)",
+   "category": "food",
+   "lat": 43.155,
+   "lng": 19.12018,
+   "dayOrder": 2.5,
+   "pick": false,
+   "duration": "",
+   "note": "Post-Durmitor recovery dinner — lamb/trout under sac + kacamak, 4.4★ (2500+ reviews), walk-in, 0-5min from camp. (Ignore older 'Nostalgija is higher-rated' notes — Or'O is the known-good wrecked-group pick.)",
+   "bestTime": "Day 8 (Jun 23) dinner — reliable Žabljak sit-down for kačamak and mountain classics after the Durmitor hike.",
+   "sources": [
+    "https://www.tripadvisor.com/Restaurant_Review-g1096284-d11725421-Reviews-Restaurant_Oro-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+    "https://restaurantguru.com/Oro-Zabljak"
+   ]
+  },
+  {
+   "id": "me-camp-mlinski-potok",
+   "name": "Auto Camp Mlinski Potok (Žabljak)",
+   "category": "campsite",
+   "lat": 43.15475,
+   "lng": 19.09964,
+   "dayOrder": 3,
+   "pick": false,
+   "duration": "",
+   "note": "Night 8 (Jun 23) — 2nd night of the 2-night Zabljak base (Durmitor hike day). Walk-in OK or email minakamp@gmail.com. 0.6km to Black Lake trailhead.",
+   "bestTime": "Night 7 (Jun 22) — base for the Durmitor hike day (next morning). Walk-in OK or email minakamp@gmail.com. 0.6km walk to Black Lake trailhead.",
+   "sources": [
+    "https://autocampmlinskipotok.com/en/price-list/",
+    "https://www.tripadvisor.com/Hotel_Review-g1096284-d5123170-Reviews-Auto_Camp_Mlinski_Potok-Zabljak_Durmitor_National_Park_Zabljak_Municipality.html",
+    "https://www.campercontact.com/en/montenegro/opstina-zabljak/pitomine/24531/auto-camp-mlinski-potok"
+   ]
+  }
+ ],
+ "9": [
+  {
+   "id": "me-ostrog-monastery",
+   "name": "Ostrog Monastery",
+   "category": "sight",
+   "lat": 42.6747,
+   "lng": 19.0297,
+   "dayOrder": 6.5,
+   "pick": false,
+   "duration": "",
+   "note": "Day 9 (Jun 24) — depart Zabljak ~06:45-07:00 (drive is a real 2:11/95km mountain road), arrive Ostrog ~09:00 while it's cool and before the pilgrim buses. Open 06:00-17:00 May-Sep, free; cover knees/shoulders, no photos in prayer rooms; park at Lower Monastery. Keep it to 45-60min — the day's drop candidate if tired. Then ~1h45 on to Skadar.",
+   "bestTime": "Day 9 (Jun 24) — depart Žabljak 09:00, arrive ~11:00. Off-peak window is before 09:00 or after 16:00; by 11:00 it's busy but manageable. Closes 17:00 May–Sep.",
+   "sources": []
+  },
+  {
+   "id": "me-skadar-rijeka-crnojevica-kayak",
+   "name": "Enjoy Skadar Lake kayak base (Rijeka Crnojevića)",
+   "category": "activity",
+   "lat": 42.3563513,
+   "lng": 19.0226515,
+   "dayOrder": 7.0,
+   "pick": true,
+   "duration": "",
+   "note": "D9 ★ — self-rent (no guide) on the wind-sheltered Crnojevic river bend toward the Pavlova horseshoe/Karuc; calm all day (operator's 'no open lake after 12:00' wind rule doesn't apply to the channel). Reserve 1-2 days ahead via Enjoy Skadar Lake / WhatsApp; single EUR7/h or EUR25/day, double EUR10/h or EUR35/day + EUR5pp NP fee.",
+   "bestTime": "Morning — before noon to avoid lake winds. Perfect combo: kayak Karuč + lunch at Stari Most.",
+   "sources": [
+    "https://enjoyskadarlake.com/kayak.html"
+   ]
+  },
+  {
+   "id": "me-rijeka-crnojevica-swim",
+   "name": "Rijeka Crnojevića — Danilo's Bridge swim + kayak village",
+   "category": "activity",
+   "lat": 42.3558,
+   "lng": 19.0243,
+   "dayOrder": 7.3,
+   "pick": false,
+   "duration": "",
+   "note": "Easy warm river swim at Danilo's Bridge in the same village as the kayak + Mostina — fills the post-paddle gap, zero driving.",
+   "bestTime": "morning or golden hour",
+   "sources": [
+    "https://nationalparksofeurope.com/kayaking-rijeka-crnojevica-lake-skadar/"
+   ]
+  },
+  {
+   "id": "me-stari-most-rijeka-crnojevica",
+   "name": "Konoba Stari Most (Rijeka Crnojevića)",
+   "category": "food",
+   "lat": 42.36558,
+   "lng": 19.00997,
+   "dayOrder": 7.5,
+   "pick": true,
+   "duration": "",
+   "note": "D9 special meal — Konoba Stari Most, 50m from the kayak launch in Rijeka Crnojevica (Lonely Planet's MNE pick). ~EUR13.50 full 3-course, cash, walk-in. Ask for the fish GRILLED (can arrive deep-fried).",
+   "bestTime": "Lunch or early dinner; pairs with a kayak from Enjoy Skadar Lake (300m away) + Karuč detour",
+   "sources": [
+    "https://www.tripadvisor.com/Restaurant_Review-g2362539-d4507323-Reviews-Stari_Most-Rijeka_Crnojevica_Cetinje.html",
+    "https://crnojevica.com/"
+   ]
+  },
+  {
+   "id": "me-pavlova-strana",
+   "name": "Pavlova Strana viewpoint (Skadar Lake)",
+   "category": "viewpoint",
+   "lat": 42.36298,
+   "lng": 19.06056,
+   "dayOrder": 8.5,
+   "pick": false,
+   "duration": "",
+   "note": "Day 9 (Jun 24) late afternoon ~17:00-18:00 (day ends 18:30 at the Rvasi bed). Drive the WIDER approach road, not the rough forest track. Sequence: Ostrog morning -> kayak/swim midday -> Mostina lunch -> Pavlova Strana -> 15min to Rvasi.",
+   "bestTime": "Day 9 (Jun 24) late afternoon — sunset ~20:22. Drive the wider approach road (not the forest track). Sequence: kayak morning → Virpazar fish lunch → Pavlova Strana golden hour.",
+   "sources": [
+    "https://www.tripadvisor.com/Attraction_Review-g19056348-d19055699-Reviews-Pavlova_Strana_Viewpoint-Sindon_Cetinje.html",
+    "https://www.earthtrekkers.com/photographing-lake-skadar-pavlova-strana/"
+   ]
+  },
+  {
+   "id": "user-1781370817091",
+   "name": "Home in Rvaši",
+   "category": "accommodation",
+   "lat": 42.3716223,
+   "lng": 19.102537,
+   "dayOrder": 9,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "",
+   "sources": []
+  }
+ ],
+ "10": [
+  {
+   "id": "me-skadar-virpazar-sup",
+   "name": "SUP self-rent on Skadar (Virpazar — Boat Milica all-day SUP)",
+   "category": "activity",
+   "lat": 42.2455,
+   "lng": 19.09,
+   "dayOrder": -10,
+   "pick": false,
+   "duration": "",
+   "note": "D10 OPTIONAL morning paddle (~09:00, flat water before afternoon lake wind) — Boat Milica +382 69 358 118, SAY 'self-guided' (listings default to guided), NP ticket EUR5pp. Demoted to an option so D10 leads on islands+winery (differentiates from D9's river kayak); do the SUP OR the Murici/Beska day-trip, not both.",
+   "bestTime": "",
+   "sources": [
+    "https://boatmilica.com/tours/all-day-self-guided-paddleboard-experience-on-skadar-lake/",
+    "https://www.tripadvisor.com/Attraction_Review-g1232143-d3497072-Reviews-Boat_Milica-Virpazar_Bar_Municipality.html"
+   ]
+  },
+  {
+   "id": "me-murici-beska-swim",
+   "name": "Murići → Beška island self-swim / €20 boat-taxi (Skadar south shore)",
+   "category": "beach",
+   "lat": 42.1635,
+   "lng": 19.2213,
+   "dayOrder": -9,
+   "pick": true,
+   "duration": "",
+   "note": "D10 ★ (the islands lead) — far-south Skadar (~1.5h single-lane serpentine each way; leave Rvasi by ~08:30 to drive it before midday heat). EUR20 boat-taxi to Beska island monasteries + swim off the boat (open-water swim-across is deceptively long, strong swimmers only). Pick THIS day-trip OR the Virpazar SUP/winery cluster — not both.",
+   "bestTime": "",
+   "sources": [
+    "https://www.montenegropulse.com/lake-skadar.html",
+    "https://adriaticways.com/murici-beach-lake-skadar/",
+    "https://franks-travelbox.com/en/europa/montenegro/skadar-see-skadarsko-jezero-nationalpark-montenegro-albanien/"
+   ]
+  },
+  {
+   "id": "me-pjesacac-beach-skadar",
+   "name": "Pješačac beach (Skadar Lake's secret sandy cove)",
+   "category": "beach",
+   "lat": 42.2255,
+   "lng": 19.123,
+   "dayOrder": -8.0,
+   "pick": false,
+   "duration": "",
+   "note": "D10 midday warm-swim — shade-backed cove, water bath-warm in June, ideal heat-of-day water between the morning paddle and the sunset winery.",
+   "bestTime": "",
+   "sources": [
+    "https://skadarlakeboatcruise.com/blog/swimming-spots-skadar-lake-montenegro/"
+   ]
+  },
+  {
+   "id": "me-vinarija-masanovic",
+   "name": "Vinarija Mašanović (Virpazar — the Skadar winery stop)",
+   "category": "food",
+   "lat": 42.24015,
+   "lng": 19.0834,
+   "dayOrder": 0.5,
+   "pick": false,
+   "duration": "",
+   "note": "Day 10 (Jun 25) late afternoon/sunset (~18:00) — book +382 68 509 541 / vinarijamasanovic@yahoo.com the day BEFORE; CASH ONLY. Sequence: morning SUP/swim near Virpazar -> midday warm swim (Pjesacac/Murici) -> winery sunset -> back to Rvasi.",
+   "bestTime": "Day 9 (Jun 24) afternoon — book +382 68 509 541 or vinarijamasanovic@yahoo.com the day before. Bring cash. Sequence: kayak morning → fish lunch → winery → Pavlova Strana golden hour.",
+   "sources": [
+    "https://www.tripadvisor.com/Attraction_Review-g1232143-d6819135-Reviews-Wine_tasting_Winery_Masanovic-Virpazar_Bar_Municipality.html",
+    "https://wineofmontenegro.com/wineries/winery-masanovic/"
+   ]
+  },
+  {
+   "id": "user-clone-rvasi-n10",
+   "name": "Home in Rvaši",
+   "category": "accommodation",
+   "lat": 42.3716223,
+   "lng": 19.102537,
+   "dayOrder": 1.5,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "",
+   "sources": []
+  }
+ ],
+ "11": [
+  {
+   "id": "me-budva-paraglide-becici",
+   "name": "Tandem Paragliding Brajići → Bečići (GO2FLY / Budva)",
+   "category": "activity",
+   "lat": 42.3019,
+   "lng": 18.8914,
+   "dayOrder": 0.0,
+   "pick": false,
+   "duration": "",
+   "note": "Book GO2FLY ahead; they fly when conditions suit (AM often smoother, late-PM better light). Do it while in the Budva area before heading N to Kotor.",
+   "bestTime": "",
+   "sources": [
+    "https://go2fly.me/en/locations-and-prices/",
+    "https://budva-paragliding.me/adventures/becici-standard",
+    "https://www.tripadvisor.com/Attraction_Review-g304074-d12035486-Reviews-Budva_Paragliding_Montenegro-Budva_Budva_Municipality.html"
+   ]
+  },
+  {
+   "id": "me-sveti-nikola-island",
+   "name": "Sveti Nikola Island (\"Hawaii\") Cliff Jumping (Budva)",
+   "category": "beach",
+   "lat": 42.2653,
+   "lng": 18.8533,
+   "dayOrder": 0.5,
+   "pick": false,
+   "duration": "",
+   "note": "Midday water — shuttle boat ~12:30-15:00 from Budva Marina/Slovenska (~EUR5-7 RT, frequent in season). Scout each ledge for depth before jumping. Keep it early-afternoon so the ~17:00 fortress climb stays free; a drop-if-tired candidate.",
+   "bestTime": "morning (crowds build midday in June)",
+   "sources": [
+    "https://adriaticways.com/sveti-nikola-island-budva/",
+    "https://en.wikipedia.org/wiki/Sveti_Nikola_Island_(Budva)"
+   ]
+  },
+  {
+   "id": "me-budva",
+   "name": "Budva Old Town",
+   "category": "town",
+   "lat": 42.2778,
+   "lng": 18.8366,
+   "dayOrder": 1.5,
+   "pick": false,
+   "duration": "",
+   "note": "Budva Old Town — quick stop (you base at Stoliv + do the Kotor bar night, not Budva nightlife). ⚠ DRIVE BUFFER: summer-2026 Vrmac-tunnel + Tivat-Jaz roadworks can triple Budva->Kotor to 60-90min — leave Budva by ~15:00 to hold the ~17:00 fortress sunset; if the Vrmac tunnel shows dark-red, take the Trojica turn-off (switchbacks, ~20min faster).",
+   "bestTime": "Day 11 (Jun 26) — morning stop en route Sveti Stefan → Kotor; quick beach swim before the bay. Avoid midday old town — crowds peak 10:00–16:00. Sparta club open 23:00+ (only if basing nearby).",
+   "sources": []
+  },
+  {
+   "id": "me-kotor-bay-kayak",
+   "name": "Bay of Kotor self-guided kayak (Go Go Gaga)",
+   "category": "activity",
+   "lat": 42.4246,
+   "lng": 18.7712,
+   "dayOrder": 4.5,
+   "pick": false,
+   "duration": "",
+   "note": "FLEX slot — Go Go Gaga / Dobrota self-rent, licence-free, ~EUR10-15/h. Grab it ~15:30-17:00 (golden hour) before the fortress, OR drop it if the Budva morning runs long. Self-rent (no guide), Kotor->Perast-direction paddle + swim.",
+   "bestTime": "dawn, before the boats start at 09:00",
+   "sources": []
+  },
+  {
+   "id": "me-kotor",
+   "name": "Kotor Old Town + San Giovanni Fortress hike",
+   "category": "town",
+   "lat": 42.4247,
+   "lng": 18.7712,
+   "dayOrder": 5.5,
+   "pick": true,
+   "duration": "",
+   "note": "Fortress climb (1350 steps) ~17:00 = cooler + golden light; crest the first rampart for the 20:26 sunset. EUR15pp fee applies 08:00-20:00 but the trail is open 24h — NO lock-in risk on an evening climb. Bring water + proper shoes (slippery). The day's anchor.",
+   "bestTime": "Day 11 (Jun 26) — start the 1,200-step fortress climb at 07:30 (free before 08:00, cruise tourists arrive ~09:30). Combine with Perast + Lovćen mausoleum same day.",
+   "sources": []
+  },
+  {
+   "id": "me-tanjga-kotor",
+   "name": "BBQ Tanjga (Kotor — legendary cheap grill)",
+   "category": "food",
+   "lat": 42.42195,
+   "lng": 18.77039,
+   "dayOrder": 6.5,
+   "pick": false,
+   "duration": "",
+   "note": "Legendary cheap grill (EUR4.50-5/plate, XXL mix ~EUR35/2), cash only — POST-fortress dinner, 5min from the gate, perfect after 1,350 steps. An evening visit after the ~20:00 sunset climb works; arrive before 12:00 or after ~14:00 only if going earlier.",
+   "bestTime": "Day 11 (Jun 26) lunch after the Kotor fortress — arrive before 12:00 or after 14:00. Cash only.",
+   "sources": [
+    "https://www.tripadvisor.com/Restaurant_Review-g295381-d6848872-Reviews-BBQ_Tanjga-Kotor_Kotor_Municipality.html",
+    "https://restaurantguru.com/Tanjga-Kotor"
+   ]
+  },
+  {
+   "id": "me-kotor-oldtown-bars",
+   "name": "Kotor Old-Town Bars (Bokun, Letrika, Bandiera)",
+   "category": "nightlife",
+   "lat": 42.4246,
+   "lng": 18.7708,
+   "dayOrder": 7.5,
+   "pick": false,
+   "duration": "",
+   "note": "Relaxed Kotor old-town bar night (Bokun, Letrika, Bandiera) — no dress code, walkable, ~10-15min taxi/water-taxi back to Stoliv camp.",
+   "bestTime": "",
+   "sources": []
+  },
+  {
+   "id": "me-camping-mimoza-stoliv",
+   "name": "Camping Mimoza (Donji Stoliv, Kotor Bay)",
+   "category": "campsite",
+   "lat": 42.472016,
+   "lng": 18.707584,
+   "dayOrder": 100,
+   "pick": false,
+   "duration": "",
+   "note": "Reserve AHEAD now — ~12 pitches, one of the most booked in the bay in June. Waterfront Donji Stoliv, hot showers, ~EUR30-40 for 4 cash. ~12min by car/water-taxi to Kotor old town for the bar night.",
+   "bestTime": "June: very small (≈12 pitches) and 'one of the most booked' — reserve ahead. Top forest pitches are the shaded tent spots.",
+   "sources": [
+    "https://www.tripadvisor.com/Hotel_Review-g12969289-d15000597-Reviews-Camping_Mimoza-Donji_Stoliv_Tivat_Municipality.html",
+    "https://park4night.com/en/place/39610",
+    "https://www.searchforsites.co.uk/marker.php?id=47971",
+    "https://adriaticways.com/kotor-to-stoliv-bus/"
+   ]
+  }
+ ],
+ "12": [
+  {
+   "id": "hr-cavtat-selfrent-boat-milicic",
+   "name": "Cavtat self-drive boat rental — no licence/skipper (Mario Milicic)",
+   "category": "activity",
+   "lat": 42.5794,
+   "lng": 18.2208,
+   "dayOrder": -5,
+   "pick": true,
+   "duration": "",
+   "note": "D12 ★ self-drive boat — KEEP on D12: launches from Cavtat port (same SE side as the Mlini base + Pasjaca, zero net driving), licence-free (<=5hp/500m-from-shore), ~EUR85/half-day for 4 (2026 price, was EUR60; ~EUR15-21pp). Calm Konavle coast + the 3 reserve islets (Mrkan/Bobara/Supetar) for anchor-swim-snorkel. Cannot legally reach Lokrum/Elaphiti — those need a licence or a Zaton-launched boat (wrong side for D12).",
+   "bestTime": "",
+   "sources": [
+    "https://www.tripadvisor.com/Attraction_Review-g303804-d12651860-Reviews-Rent_a_boat_Cavtat_Cavtat_sailing_by_Mario_Milicic-Cavtat_Konavle_Dubrovnik_Nere.html",
+    "https://www.getyourguide.com/mlini-l191024/cavtat-boat-rental-t751888/",
+    "https://www.sea-help.eu/en/news-general/boat-driving-license-croatia-6-8-hp/",
+    "https://www.mcp.hr/questions-about-motorboats-and-rentals/what-boat-can-i-rent-in-croatia-without-a-license"
+   ]
+  },
+  {
+   "id": "hr-cavtat-rat-peninsula-swims",
+   "name": "Cavtat Rat peninsula swim & snorkel coves (Kamen Mali, Ključice, Žal)",
+   "category": "beach",
+   "lat": 42.5783,
+   "lng": 18.215,
+   "dayOrder": -4.5,
+   "pick": true,
+   "duration": "",
+   "note": "Free swim platforms & clear coves 1.5km from Cilipi airport — the fix for the D3 airport dead-window (hot afternoon water while waiting for the 17:20 landing), and a swim stop on D12. No backtrack, no cost.",
+   "bestTime": "",
+   "sources": [
+    "https://www.tripadvisor.com/ShowTopic-g303804-i10581-k5592781-Best_Place_To_Snorkel_In_Cavtat-Cavtat_Konavle_Dubrovnik_Neretva_County_Dalmatia.html",
+    "https://www.placesofjuma.com/cavtat-beaches/",
+    "https://www.frankaboutcroatia.com/cavtat-croatia/"
+   ]
+  },
+  {
+   "id": "hr-camping-kate-mlini",
+   "name": "Camping Kate (Mlini, near Dubrovnik)",
+   "category": "campsite",
+   "lat": 42.6247,
+   "lng": 18.208,
+   "dayOrder": 0,
+   "pick": false,
+   "duration": "",
+   "note": "Last campsite night before the Jun-28 flight — reserve ahead + arrive before ~14:00 reception (June peak). info@campingkate.com / +385 20 487 006. ~25min to Dubrovnik Old Town.",
+   "bestTime": "Book ahead: info@campingkate.com or +385 20 487 006 (Jun, peak). Arrive before 14:00. Night 12 (Jun 27) — the Dubrovnik-area overnight, ~25 min from the old town.",
+   "sources": [
+    "https://park4night.com/en/place/22199",
+    "https://www.tripadvisor.com/Hotel_Review-g658382-d4594231-Reviews-Camping_Kate-Mlini_Dubrovnik_Neretva_County_Dalmatia.html",
+    "https://campingkate.com/price/",
+    "https://www.eurocampings.co.uk/croatia/dubrovnik-neretva/mlini/autokamp-kate-111766/",
+    "https://www.pincamp.com/campings/camping-kate"
+   ]
+  }
+ ],
+ "13": [
+  {
+   "id": "hr-sveti-jakov-beach",
+   "name": "Sveti Jakov beach (Dubrovnik)",
+   "category": "beach",
+   "lat": 42.6347,
+   "lng": 18.1271,
+   "dayOrder": 0.5,
+   "pick": false,
+   "duration": "",
+   "note": "Day 13 (Jun 28) early morning — swim/snorkel 08:00-09:30 before the 10:00 kayak; quiet local beach with the best Old-Town view. A quick pre-kayak filler, skip if tight.",
+   "bestTime": "afternoon/sunset",
+   "sources": [
+    "https://shippedaway.com/dubrovnik-beaches/"
+   ]
+  },
+  {
+   "id": "hr-dubrovnik-sea-kayak",
+   "name": "Dubrovnik Sea Kayaking — Walls & Lokrum",
+   "category": "activity",
+   "lat": 42.6385,
+   "lng": 18.107,
+   "dayOrder": 1.0,
+   "pick": true,
+   "duration": "",
+   "note": "D13 morning ★ — book the 10:00 departure (back ~13:00), same-day via X-Adventure Dubrovnik or by 16:00 the day before. NOT the sunset tour — the day ends at the airport, so the afternoon stays as flight buffer. Sea kayak under the Dubrovnik walls + Lokrum = a fitting finale.",
+   "bestTime": "Day 4 (Jun 19) — book same-day via X-Adventure Dubrovnik. Sunset tour starts ~19:00; wine + walls glowing at dusk. Book by 16:00.",
+   "sources": [
+    "https://www.tripadvisor.com/AttractionProductReview-g295371-d12560650-Dubrovnik_and_Lokrum_island_sea_kayak_tour-Dubrovnik_Dubrovnik_Neretva_County_Dalm.html",
+    "https://www.tripadvisor.com/AttractionProductReview-g295371-d13446931-Sunset_Sea_Kayaking_and_Wine_Dubrovnik-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html"
+   ]
+  },
+  {
+   "id": "hr-bellevue-beach-jumps",
+   "name": "Bellevue (Miramare) Beach Cliff Jumping (Dubrovnik)",
+   "category": "beach",
+   "lat": 42.6462,
+   "lng": 18.0922,
+   "dayOrder": 1.8,
+   "pick": false,
+   "duration": "",
+   "note": "D13 SKIP-CANDIDATE — a third water item on a water-led flight-out day; tagged half-day, it competes with the 10:00 kayak. Keep it only as a short jump-and-swim if the morning runs ahead; otherwise drop so the 18:00 airport-leave is never in doubt.",
+   "bestTime": "",
+   "sources": [
+    "https://www.dubrovnik-travel.net/bellevue-beach/",
+    "https://www.tripadvisor.com/Attraction_Review-g295371-d14932733-Reviews-Bellevue_beach-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html"
+   ]
+  },
+  {
+   "id": "hr-barba-dubrovnik",
+   "name": "Barba (Dubrovnik seafood street food)",
+   "category": "food",
+   "lat": 42.6415,
+   "lng": 18.10991,
+   "dayOrder": 3.0,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "Off-peak lunch; few seats",
+   "sources": [
+    "https://www.tripadvisor.com/Restaurant_Review-g295371-d6857537-Reviews-Barba-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html",
+    "https://www.inyourpocket.com/dubrovnik/barba_133027v"
+   ]
+  },
+  {
+   "id": "hr-dubrovnik",
+   "name": "Dubrovnik Old Town",
+   "category": "town",
+   "lat": 42.6414,
+   "lng": 18.11,
+   "dayOrder": 3.5,
+   "pick": false,
+   "duration": "",
+   "note": "Day 13 Old Town (NOT the airport day's pickup). City walls EUR40pp (2026, incl. Lovrijenac); the EUR40 Dubrovnik Pass = same price + museums + 24h bus (better value if you want more). OPTION not default — go EARLY (08:00, before the cruise crowds) on this Jun28 cruise day, and protect the 18:00 Old-Town leave for the 20:40 flight.",
+   "bestTime": "Day 12 (Jun 27 Saturday) — walls open 06:30 (€35pp); finish before cruise ships ~10:00. Car drop airport Jun 28 by 19:15 (Ref D013947246).",
+   "sources": []
+  },
+  {
+   "id": "hr-peppinos-gelato",
+   "name": "Peppino's Gelato (Dubrovnik old town)",
+   "category": "food",
+   "lat": 42.64149,
+   "lng": 18.11086,
+   "dayOrder": 4.0,
+   "pick": false,
+   "duration": "",
+   "note": "",
+   "bestTime": "After the city-walls walk",
+   "sources": [
+    "https://www.tripadvisor.com/ShowUserReviews-g295371-d12646350-r527668197-Peppino_s_Gelato_Factory-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html",
+    "https://peppinosgelato.com/"
+   ]
+  },
+  {
+   "id": "hr-dubrovnik-airport",
+   "name": "Dubrovnik Airport (Čilipi) — car drop & fly Jun 28",
+   "category": "other",
+   "lat": 42.5614,
+   "lng": 18.2682,
+   "dayOrder": 5,
+   "pick": false,
+   "duration": "",
+   "note": "HARD anchor — FLIGHT FR9756 20:40 -> VIE 22:05 (check-in closes ~20:00; car drop ~19:15, Ref D013947246; allow 45min for fuel + return). Jun 28 is a LIKELY cruise day in Dubrovnik — Old Town->Cilipi can run 45-60min, NOT 25. LEAVE the Old Town by ~18:00 no matter what.",
+   "bestTime": "Day 13 (Jun 28) — car drop by 19:15 at latest to have 45 min for fuel+return before check-in closes. Flight FR9756 20:40→VIE 22:05. Full day usable up to ~18:30.",
+   "sources": []
+  }
+ ]
+}

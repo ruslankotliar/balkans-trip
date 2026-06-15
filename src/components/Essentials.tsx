@@ -35,7 +35,7 @@ const PRESET_TASKS: Task[] = [
   { id: 's11', text: 'DEET + a warm layer for Žabljak nights', done: false },
   { id: 's12', text: 'Confirm passports/nationality (any non-EU = EES enrolment + slower borders)', done: false },
   // --- Book on the road, ~1-2 days ahead (stay flexible) ---
-  { id: 's13', text: 'ON THE ROAD: book each day’s activity ~1–2 days ahead — paragliding (~D9–10), Dubrovnik kayak (~D11–12), Skadar/Kotor/Cavtat rentals day-before', done: false },
+  { id: 's13', text: 'ON THE ROAD: book each day’s activity ~1–2 days ahead — paragliding (D11), Dubrovnik kayak (D13), Skadar/Kotor/Cavtat rentals day-before', done: false },
 ];
 
 function loadTasks(): Task[] {
