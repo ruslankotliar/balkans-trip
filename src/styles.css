@@ -2637,55 +2637,56 @@ body.trip-mode .card-links .today-nav-link {
 
 /* ---- Pre-trip checklist ---- */
 .ess-tasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
 }
 .ess-task {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  padding: 4px 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #eef1f5;
 }
-.ess-task.done .ess-task-text,
-.ess-task.done .ess-task-input {
-  text-decoration: line-through;
-  color: #717982;
-}
-.ess-task-input {
+.ess-task-label {
   flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
   min-width: 0;
-  font: inherit;
+}
+.ess-task-label input[type='checkbox'] {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin: 1px 0 0;
+  accent-color: #27ae60;
+  cursor: pointer;
+}
+.ess-task-text {
+  flex: 1;
   font-size: 14px;
   line-height: 1.4;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  padding: 6px 6px;
-  background: transparent;
   color: #1f2b3d;
-  /* full task text, wrapped (no truncation) + auto-grown by JS */
-  display: block;
-  width: 100%;
-  resize: none;
-  overflow: hidden;
-  white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
-.ess-task-input:focus {
-  outline: none;
-  border-color: #cfd8e3;
-  background: #fff;
+.ess-task.done .ess-task-text {
+  text-decoration: line-through;
+  color: #98a0ab;
 }
 .ess-task-del {
   flex-shrink: 0;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border: none;
   background: none;
   color: #c0392b;
   font-size: 13px;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.45;
 }
 .ess-task-del:active { opacity: 1; }
 .ess-task-add {
@@ -2712,29 +2713,6 @@ body.trip-mode .card-links .today-nav-link {
   cursor: pointer;
 }
 .ess-task-add button:active { background: #eef3f9; }
-.ess-task-check {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  background: #fff;
-  cursor: pointer;
-  font-size: 13px;
-  color: #27ae60;
-  line-height: 1;
-  touch-action: manipulation;
-}
-.ess-task-check.on {
-  background: #27ae60;
-  border-color: #27ae60;
-  color: #fff;
-}
-.ess-task-text {
-  flex: 1;
-  font-size: 13px;
-  line-height: 1.4;
-}
 .ess-task-clear {
   margin-top: 4px;
   align-self: flex-start;
