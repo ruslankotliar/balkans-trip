@@ -691,21 +691,6 @@ export default function App() {
     applyOverrides((o) => ({ ...o, [id]: { ...o[id], note } }));
   }
 
-  function setPick(id: string, pick: boolean) {
-    applyOverrides((o) => {
-      const current = o[id] ?? {};
-      const next = { ...o };
-      if (pick) {
-        next[id] = { ...current, pick: true };
-      } else {
-        const { pick: _drop, ...rest } = current;
-        if (Object.keys(rest).length === 0) delete next[id];
-        else next[id] = rest;
-      }
-      return next;
-    });
-  }
-
   function setTimeMinutes(id: string, minutes: number | null) {
     applyOverrides((o) => {
       const current = o[id] ?? {};
@@ -1175,7 +1160,6 @@ export default function App() {
         onAssignDay={assignDay}
         onFocusDay={focusPlanDay}
         onTimeMinutes={setTimeMinutes}
-        onPick={setPick}
         onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}
       />
 

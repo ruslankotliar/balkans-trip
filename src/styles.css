@@ -318,28 +318,6 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   color: #c0392b;
 }
 
-.detail-pick {
-  display: block;
-  width: 100%;
-  margin: 4px 0 10px;
-  padding: 7px 10px;
-  border: 1px solid #e7d199;
-  border-radius: 8px;
-  background: #fdf6e3;
-  color: #9a6a00;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.detail-pick.on {
-  border-color: #f5a623;
-  background: #fbe6b8;
-  color: #7a5200;
-}
-.detail-pick:active {
-  transform: translateY(1px);
-}
-
 /* ---- View tabs ---- */
 .view-tabs {
   display: flex;

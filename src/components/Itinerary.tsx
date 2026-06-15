@@ -119,8 +119,7 @@ export default function Itinerary({
             km: Math.min(...dayAnchors.map((a) => haversineKm(a.lat, a.lng, p.lat, p.lng))),
           }))
           .filter((x) => x.km <= optRadiusKm)
-          // ★ recommended picks first, then nearest.
-          .sort((a, b) => Number(!!b.p.pick) - Number(!!a.p.pick) || a.km - b.km)
+          .sort((a, b) => a.km - b.km)
           .slice(0, 40);
 
   const route = routes[day];

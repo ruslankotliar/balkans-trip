@@ -13,8 +13,6 @@ interface Props {
   onAssignDay: (id: string, day: number | null) => void;
   onFocusDay?: (day: number) => void;
   onTimeMinutes: (id: string, minutes: number | null) => void;
-  /** Toggle the ★ recommended-pick flag. */
-  onPick: (id: string, pick: boolean) => void;
   /** Present only for user-added places: opens the edit form. */
   onEdit?: () => void;
 }
@@ -44,7 +42,6 @@ export default function DetailPanel({
   onAssignDay,
   onFocusDay,
   onTimeMinutes,
-  onPick,
   onEdit,
 }: Props) {
   // All hooks must run unconditionally (Rules of Hooks) — guard AFTER them.
@@ -90,13 +87,6 @@ export default function DetailPanel({
         {p.pick && <span className="pick-star" title="Recommended pick">★ </span>}
         {p.name}
       </h2>
-      <button
-        className={`detail-pick ${p.pick ? 'on' : ''}`}
-        onClick={() => onPick(p.id, !p.pick)}
-        title="Mark this as a recommended pick for filtering with the group"
-      >
-        {p.pick ? '★ recommended pick — tap to unstar' : '☆ mark as recommended pick'}
-      </button>
       <p className="meta">
         <span className="dot" style={{ background: CATEGORY_COLORS[p.category] }} />
         {p.category} · {COUNTRY_NAMES[p.country]}
