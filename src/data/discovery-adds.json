@@ -1,0 +1,266 @@
+[
+  {
+    "id": "me-piva-zipline",
+    "name": "Piva Lake Zipline (Eko Piva, Pluzine)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 43.1576,
+    "lng": 18.8461,
+    "description": "Longest zipline in ME, 1400m ~50m over Piva reservoir, ~35eur, at the Pluzine swim/kayak stop (fits D7)",
+    "sources": [
+      "montenegroadventure.travel; raftingmontenegro.com"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-njegusi-zipline",
+    "name": "Njegusi Zipline (Boka Bay)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.4181,
+    "lng": 18.8472,
+    "description": "420m at 980m over Boka Bay ~10-15eur, on the Kotor-Lovcen serpentine, walk-up May-Oct (fits D11)",
+    "sources": [
+      "ziplinemontenegro.com"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-rakitnica-canyoning",
+    "name": "Rakitnica Canyon Canyoning (Konjic)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.6282,
+    "lng": 18.1857,
+    "description": "Europe 2nd-deepest canyon; ~62eur from Konjic or tamer Babin Do (fits D6)",
+    "sources": [
+      "travelkonjic.com/canyoning-rakitnica.html"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-mljet-aquatica-diving",
+    "name": "Diving Centre Aquatica - Mljet NP (Pomena)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.7853,
+    "lng": 17.3413,
+    "description": "Only dive base on Mljet, NP wrecks + sea cave Odisejeva spilja, 9 days pre-flight (fits D4)",
+    "sources": [
+      "tripadvisor Aquatica Pomena; mljet.hr/diving"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-cavtat-epidaurum-diving",
+    "name": "Epidaurum Diving - Cavtat",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.5817,
+    "lng": 18.22,
+    "description": "SSI center Cavtat Zal; amphora wreck + reef, deep WWII wrecks cert-only; dive D12 not D13 (fits D12)",
+    "sources": [
+      "epidaurum.com"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-budva-diving",
+    "name": "Budva Diving Center (PADI 5-star)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.2856,
+    "lng": 18.8447,
+    "description": "ME only PADI 5-star, boat dives to Sveti Nikola; dive D11 ONLY (~54h pre-flight) (fits D11)",
+    "sources": [
+      "budvadiving.com"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-durmitor-horseback",
+    "name": "Durmitor Horseback Ride",
+    "country": "ME",
+    "category": "activity",
+    "lat": 43.084,
+    "lng": 19.1456,
+    "description": "Plateau ride from Vrazje Lake (D8 stop) past UNESCO stecci, ~75eur, no experience (fits D8)",
+    "sources": [
+      "balkanadventure.me"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-zrmanja-selfrent-kayak",
+    "name": "Zrmanja self-rent kayak (Raftrek)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 44.1556,
+    "lng": 15.8581,
+    "description": "Self-rent kayak on the emerald Zrmanja. Inland Zadar-Split variant only (fits D1 inland)",
+    "sources": [
+      "raftrek.com; OSM"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-cerovac-caves",
+    "name": "Cerovac Caves (Gracac)",
+    "country": "HR",
+    "category": "sight",
+    "lat": 44.2748,
+    "lng": 15.8827,
+    "description": "Croatia largest cave complex, chill show-cave. Inland Zadar-Split variant only (fits D1 inland)",
+    "sources": [
+      "cerovacke-spilje.hr; OSM"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-cavtat-sup-selfrent",
+    "name": "SUP self-rent, Cavtat (Zal beach)",
+    "country": "HR",
+    "category": "activity",
+    "lat": 42.5817,
+    "lng": 18.2188,
+    "description": "Grab-and-go SUP self-rent at Cavtat Zal beach, no guide; mellow D12 option (fits D12)",
+    "sources": [
+      "adventuredubrovnik.com"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "me-wake-park-tivat",
+    "name": "Wake Park Tivat (Solila)",
+    "country": "ME",
+    "category": "activity",
+    "lat": 42.4234,
+    "lng": 18.7053,
+    "description": "Rixen cable wake park in Boka Bay; older reviews ~3.7/5; a playful SWAP not a D11 anchor (fits D11)",
+    "sources": [
+      "alliancewake.com"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-nevesinje-quad",
+    "name": "Quad/Buggy Off-Road (Nevesinje)",
+    "country": "BA",
+    "category": "activity",
+    "lat": 43.2589,
+    "lng": 18.1106,
+    "description": "The one in-corridor ATV near Mostar ~40km E. STRETCH: contact-only pricing, detour (fits D5 stretch)",
+    "sources": [
+      "hit-booker.com Nevesinje"
+    ],
+    "tags": [
+      "discovery"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "ba-glamping-bagrem-jablanica",
+    "name": "Glamping Bagrem (Lake Jablanica)",
+    "country": "BA",
+    "category": "accommodation",
+    "lat": 43.6847,
+    "lng": 17.7944,
+    "description": "Lakefront luxury glamping tent on Lake Jablanica ~1km from the Ravna pin — ZERO route penalty vs the current camp. Own terrace, private beach, beach bar, on-site restaurant, free SUP/canoe; ~3.9km/6min from Jablanica centre. The WOW tier without moving the sleep location: wake on the lake, paddle before the drive north.",
+    "cost": "~€90-120/night for the 42m² SUNSHINE tent (sleeps 5: 1 double + bunk, fits 4) in June; smaller units from ~€49",
+    "sources": [
+      "booking.com/hotel/ba/glamping-bagrem.html; airbnb.com/rooms/54396801; tripadvisor d27986663 (Booking 9.4, OSM-verified coords)"
+    ],
+    "tags": [
+      "discovery",
+      "wow-villa",
+      "N5 (Jun 20)"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-pinadria-camping-baska-voda",
+    "name": "Pinadria Camping Resort (ex-Baško Polje), Baška Voda",
+    "country": "HR",
+    "category": "campsite",
+    "lat": 43.3469655,
+    "lng": 16.9647736,
+    "description": "The with-a-restaurant + bar camp upgrade that Krvavica lacks — big pine-shaded resort 1km south of Baška Voda, 300m to a pebble beach, on-site restaurant/bar/laundry/tennis, clean sanitary block. Pick this on a night the group wants amenities and a livelier base; Krvavica when they want small/quiet/cheapest.",
+    "cost": "~€60-80/night for 4 + car in June (resort pricing, verify by date; rebranded Pinadria 2025)",
+    "sources": [
+      "camping.hr, camping.info, booking.com (Pinadria Camping Resort) — coords verified"
+    ],
+    "tags": [
+      "discovery",
+      "camping",
+      "N1+N2 (Jun 16-17)"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "hr-villa-royal-house-dubravka",
+    "name": "Villa Royal House (Dubravka, Konavle)",
+    "country": "HR",
+    "category": "accommodation",
+    "lat": 42.54065,
+    "lng": 18.40908,
+    "description": "The real WOW send-off: gut-renovated 19th-century Dalmatian stone house with a heated rooftop pool, hot tubs, sauna and gym on a quiet hillside in tiny Dubravka with valley-to-sea views. 10/10 from 18 reviews, only ~12km/~20min from Dubrovnik airport for the Jun 28 flight. Rural/scenic = exactly the villa signal. Caveat: sleeps 8, rents whole, and it's the airport not old-town direction.",
+    "cost": "Whole 8-person villa from ~€410/night — split 4 ways ≈ €100-110pp (above strict tier-3 total, but the send-off splurge candidate)",
+    "sources": [
+      "booking.com/hotel/hr/villa-royal-house; planetofhotels — coords verified vs Sokol Grad cluster"
+    ],
+    "tags": [
+      "discovery",
+      "wow-villa",
+      "N12 (Jun 27)"
+    ],
+    "rating": 3,
+    "status": "candidate"
+  }
+]

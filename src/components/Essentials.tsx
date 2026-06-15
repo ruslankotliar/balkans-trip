@@ -11,25 +11,28 @@ const TASKS_KEY = 'balkans-trip-tasks';
 const LEGACY_TASK_IDS = new Set([
   'p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10', 'p11', 'p12', 'p13', 'p14',
   'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9', 'c10', 'c11', 'c12', 'c13', 'c14',
+  't1', 't2', 't3', 't4', 't5', 't6', 't7', 't8', 't9', 't10', 't11', 't12', 't13',
 ]);
 
 interface Task { id: string; text: string; done: boolean }
 
-// Short, scannable actions. Full detail lives in the Plan stops + booking-guide.
+// Booking strategy: lock only what fills up / happens on D1-2; book everything
+// else on the road ~1-2 days ahead (flexible for weather + mood). Keep this
+// list in sync with the plan. Full detail lives in the Plan stops.
 const PRESET_TASKS: Task[] = [
-  { id: 't1', text: 'Cross-border letter + green card (BiH + ME) from Sicily By Car', done: false },
-  { id: 't2', text: 'Travel insurance for all 4 — covers BiH/ME + rafting, canyoning, cliff-jumps', done: false },
-  { id: 't3', text: 'Book Tara rafting (D7) — raftingtara.com', done: false },
-  { id: 't4', text: 'Book Biokovo toll-road slot (D2, ~06:30) — shop.pp-biokovo.hr', done: false },
-  { id: 't5', text: 'Book Cetina canyoning (D2)', done: false },
-  { id: 't6', text: 'Book GO2FLY paragliding (D11)', done: false },
-  { id: 't7', text: 'Book Dubrovnik sea kayak (D13 morning)', done: false },
-  { id: 't8', text: 'Pre-buy Mljet ferry online (D3) + agree the miss-it plan', done: false },
-  { id: 't9', text: 'Buy Krka timed-entry tickets (D1) — np-krka.hr', done: false },
-  { id: 't10', text: 'Regional eSIM (HR+BA+ME) + "Cache routes for offline" on every phone', done: false },
-  { id: 't11', text: 'Cash: €100–150 small bills + some BAM for Bosnia', done: false },
-  { id: 't12', text: 'Buy stove gas in Zadar (D1 — can’t fly with it)', done: false },
-  { id: 't13', text: 'DEET + a warm layer for Žabljak nights', done: false },
+  // --- Must lock before departure ---
+  { id: 'r1', text: 'Cross-border letter + green card (BiH + ME) from Sicily By Car', done: false },
+  { id: 'r2', text: 'Travel insurance for all 4 — covers BiH/ME + rafting, canyoning, cliff-jumps', done: false },
+  { id: 'r3', text: 'Book Tara rafting (D7) NOW — fills weeks ahead, the one you can’t leave late', done: false },
+  { id: 'r4', text: 'Book Biokovo slot + Cetina canyoning (both D2) — book now, they’re day 2', done: false },
+  { id: 'r5', text: 'Buy Krka timed-entry tickets (D1) — np-krka.hr, morning slots sell out', done: false },
+  { id: 'r6', text: 'Pre-buy Mljet ferry ticket (D3, valid any sailing) + agree the miss-it plan', done: false },
+  { id: 'r7', text: 'Regional eSIM (HR+BA+ME) + "Cache routes for offline" on every phone', done: false },
+  { id: 'r8', text: 'Cash: €100–150 small bills + some BAM for Bosnia', done: false },
+  { id: 'r9', text: 'Buy stove gas in Zadar (D1 — can’t fly with it)', done: false },
+  { id: 'r10', text: 'DEET + a warm layer for Žabljak nights', done: false },
+  // --- Book on the road, ~1-2 days ahead (stay flexible) ---
+  { id: 'r11', text: 'ON THE ROAD: book each day’s activity ~1–2 days ahead — paragliding (~D9–10), Dubrovnik kayak (~D11–12), Skadar/Kotor/Cavtat rentals day-before', done: false },
 ];
 
 function loadTasks(): Task[] {
