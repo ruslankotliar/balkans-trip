@@ -447,6 +447,32 @@
     "status": "candidate"
   },
   {
+    "id": "it-airbnb-night-2",
+    "name": "Poggiridenti Airbnb — night 2",
+    "country": "IT",
+    "category": "accommodation",
+    "lat": 46.157,
+    "lng": 9.989,
+    "description": "Back to base after the split-adventure day. The Airbnb in Poggiridenti — same location every night.",
+    "communityNotes": "Route endpoint for D2 so D3 correctly starts from the Airbnb.",
+    "timeNeeded": "overnight",
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "it-airbnb-night-3",
+    "name": "Poggiridenti Airbnb — night 3",
+    "country": "IT",
+    "category": "accommodation",
+    "lat": 46.157,
+    "lng": 9.989,
+    "description": "Back to base after the Lake Como day. Final night at the Airbnb before tomorrow's checkout.",
+    "communityNotes": "Route endpoint for D3 so D4 correctly starts from the Airbnb.",
+    "timeNeeded": "overnight",
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
     "id": "it-poggiridenti-panorama",
     "name": "Poggiridenti panorama terrace",
     "country": "IT",
