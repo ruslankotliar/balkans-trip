@@ -34,6 +34,25 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   font-size: 18px;
 }
 
+/* Trip selector — styled to look like the h1 heading */
+.trip-selector {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  color: #111;
+  max-width: 100%;
+  font-family: inherit;
+}
+.trip-selector:focus {
+  outline: 2px solid #1f6da8;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
 .subtitle {
   margin: 0;
   color: #666;

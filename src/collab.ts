@@ -10,11 +10,12 @@
  */
 import { normalizeOverride, normalizeUserPlace, safeSetItem, type Override, type Overrides, type PlanOverrideRow } from './store';
 import { hasSupabase, supabase } from './supabase';
+import { getActiveTripId } from './trips';
 import type { Place } from './types';
 
-const REMOTE_PLACES_CACHE = 'balkans-trip-remote-places-cache';
-const PLACE_QUEUE = 'balkans-trip-place-queue';
-const PLAN_QUEUE = 'balkans-trip-plan-queue';
+const remotePlacesCacheKey = () => `${getActiveTripId()}-remote-places-cache`;
+const placeQueueKey = () => `${getActiveTripId()}-place-queue`;
+const planQueueKey = () => `${getActiveTripId()}-plan-queue`;
 
 function loadJson<T>(key: string, fallback: T): T {
   try {
@@ -26,12 +27,12 @@ function loadJson<T>(key: string, fallback: T): T {
 }
 
 export function loadRemotePlacesCache(): Place[] {
-  const a = loadJson<Place[]>(REMOTE_PLACES_CACHE, []);
+  const a = loadJson<Place[]>(remotePlacesCacheKey(), []);
   return Array.isArray(a) ? a : [];
 }
 
 function saveRemotePlacesCache(p: Place[]) {
-  safeSetItem(REMOTE_PLACES_CACHE, JSON.stringify(p));
+  safeSetItem(remotePlacesCacheKey(), JSON.stringify(p));
 }
 
 export interface UserPlaceRow {
@@ -47,19 +48,19 @@ interface QueuedPlanOverride {
 }
 
 function loadPlaceQueue(): UserPlaceRow[] {
-  return loadJson<UserPlaceRow[]>(PLACE_QUEUE, []);
+  return loadJson<UserPlaceRow[]>(placeQueueKey(), []);
 }
 
 function savePlaceQueue(q: UserPlaceRow[]) {
-  safeSetItem(PLACE_QUEUE, JSON.stringify(q));
+  safeSetItem(placeQueueKey(), JSON.stringify(q));
 }
 
 function loadPlanQueue(): QueuedPlanOverride[] {
-  return loadJson<QueuedPlanOverride[]>(PLAN_QUEUE, []);
+  return loadJson<QueuedPlanOverride[]>(planQueueKey(), []);
 }
 
 function savePlanQueue(q: QueuedPlanOverride[]) {
-  safeSetItem(PLAN_QUEUE, JSON.stringify(q));
+  safeSetItem(planQueueKey(), JSON.stringify(q));
 }
 
 function overrideEqual(a: Override | null | undefined, b: Override | null | undefined): boolean {

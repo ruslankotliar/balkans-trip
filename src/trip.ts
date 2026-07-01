@@ -1,7 +1,14 @@
-// Trip is Jun 16 (day 1) → Jun 28, 2026 (day 13). 13 days, 12 nights.
-export const TRIP_START = new Date(2026, 5, 16); // months are 0-indexed → 5 = June
-export const TRIP_DAYS = 13;
-export const DAYS = Array.from({ length: TRIP_DAYS }, (_, i) => i + 1);
+// Default to Balkans; App.tsx calls setTripConfig() on mount and on every trip switch.
+export let TRIP_START = new Date(2026, 5, 16); // months are 0-indexed → 5 = June
+export let TRIP_DAYS = 13;
+export let DAYS = Array.from({ length: TRIP_DAYS }, (_, i) => i + 1);
+
+/** Called by App.tsx to reconfigure all trip-date helpers for the active trip. */
+export function setTripConfig(startDate: Date, numDays: number): void {
+  TRIP_START = startDate;
+  TRIP_DAYS = numDays;
+  DAYS = Array.from({ length: numDays }, (_, i) => i + 1);
+}
 
 /** Date object for trip day N (1-based). */
 export function dayDate(day: number): Date {

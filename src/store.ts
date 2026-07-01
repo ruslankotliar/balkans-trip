@@ -1,5 +1,6 @@
 import { CATEGORIES } from './constants';
 import { DEFAULT_PLAN } from './defaultPlan';
+import { getActiveTripId } from './trips';
 import type { Place, Status } from './types';
 
 const modules = import.meta.glob('./data/*.json', { eager: true }) as Record<
@@ -38,10 +39,16 @@ export function loadPlaces(): Place[] {
 // trip cache entries (object key order = insertion order = LRU order) and
 // retries once. If it still fails, the app keeps working from memory.
 
-const OSRM_KEY = 'balkans-trip-osrm-cache';
-
-/** Caches whose entries may be dropped (oldest first) to free quota. */
-const EVICTABLE_CACHE_KEYS = [OSRM_KEY];
+// ---- Trip-scoped localStorage keys ----
+// All keys are prefixed with the active trip ID so switching trips never
+// cross-contaminates overrides, user places, or route caches.
+// For the Balkans trip (id='balkans-trip') the keys are identical to the old
+// hardcoded strings, so existing data requires no migration.
+const overridesKey = () => `${getActiveTripId()}-overrides`;
+const userPlacesKey = () => `${getActiveTripId()}-user-places`;
+const osrmKey = () => `${getActiveTripId()}-osrm-cache`;
+const ferryKey = () => `${getActiveTripId()}-ferry-hours`;
+const evictableCacheKeys = () => [osrmKey()];
 
 function isQuotaError(e: unknown): boolean {
   return (
@@ -57,7 +64,7 @@ function isQuotaError(e: unknown): boolean {
  * preserves insertion order, so the first keys are the oldest entries).
  */
 function evictOldestCacheEntries(): void {
-  for (const key of EVICTABLE_CACHE_KEYS) {
+  for (const key of evictableCacheKeys()) {
     try {
       const raw = localStorage.getItem(key);
       if (!raw) continue;
@@ -131,8 +138,6 @@ export interface PlanOverrideRow {
 /** A base place merged with its localStorage override. */
 export type PlaceWithOverride = Place & Override;
 
-const KEY = 'balkans-trip-overrides';
-
 /** Remove undefined fields and collapse empty override objects to null. */
 export function normalizeOverride(value: Override | undefined | null): Override | null {
   if (!value) return null;
@@ -175,23 +180,22 @@ export function applyPlanOverrideRows(base: Overrides, rows: PlanOverrideRow[]):
 
 export function loadOverrides(): Overrides {
   try {
-    const raw = localStorage.getItem(KEY);
-    // On first visit (empty localStorage) seed from the baked default plan so
-    // all 4 group members see the pre-populated Plan without importing a URL.
-    if (raw === null) return normalizeOverrides({ ...DEFAULT_PLAN });
+    const raw = localStorage.getItem(overridesKey());
+    // On first visit (empty localStorage) seed from the baked default plan for
+    // the Balkans trip so all group members see the pre-populated itinerary.
+    // New trips start with an empty plan.
+    const seed = getActiveTripId() === 'balkans-trip' ? normalizeOverrides({ ...DEFAULT_PLAN }) : {};
+    if (raw === null) return seed;
     const parsed = JSON.parse(raw);
-    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed))
-      return normalizeOverrides({ ...DEFAULT_PLAN });
-    // Keep user edits stable: once a plan exists, normalize it but do not try to
-    // rewrite it back toward the original seed layout.
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return seed;
     return normalizeOverrides(parsed as Overrides);
   } catch {
-    return normalizeOverrides({ ...DEFAULT_PLAN });
+    return getActiveTripId() === 'balkans-trip' ? normalizeOverrides({ ...DEFAULT_PLAN }) : {};
   }
 }
 
 export function saveOverrides(o: Overrides) {
-  safeSetItem(KEY, JSON.stringify(normalizeOverrides(o)));
+  safeSetItem(overridesKey(), JSON.stringify(normalizeOverrides(o)));
 }
 
 // ---- User-added places ----
@@ -203,17 +207,17 @@ export function saveOverrides(o: Overrides) {
 // Only the immutable identity (name/category/lat/lng) lives here; status/day/
 // note flow through the same overrides layer as baked places.
 
-const USER_PLACES_KEY = 'balkans-trip-user-places';
-
 function isStatus(x: unknown): x is Status {
   return x === 'candidate' || x === 'shortlist' || x === 'extra' || x === 'backup' || x === 'rejected';
 }
 
 function isCountry(x: unknown): x is Place['country'] {
-  return x === 'HR' || x === 'BA' || x === 'ME';
+  return x === 'HR' || x === 'BA' || x === 'ME' || x === 'IT';
 }
 
 function guessCountry(lat: number, lng: number): Place['country'] {
+  // Italy: western Europe, west of ~15°E (Lake Como is ~9.3°E).
+  if (lat >= 36 && lat <= 47.5 && lng >= 6 && lng < 15) return 'IT';
   // Bosnia: inland pocket roughly N of 42.55 and E of 17.0 (Mostar/Konjic).
   if (lat > 42.55 && lng > 17.0 && lng < 19.7) return 'BA';
   // Croatia: coastal strip and the northwest; broadly W/N of the ME line.
@@ -269,7 +273,7 @@ export function normalizeUserPlace(x: unknown): Place | null {
 
 export function loadUserPlaces(): Place[] {
   try {
-    const a = JSON.parse(localStorage.getItem(USER_PLACES_KEY) ?? '[]');
+    const a = JSON.parse(localStorage.getItem(userPlacesKey()) ?? '[]');
     return Array.isArray(a) ? a.map(normalizeUserPlace).filter(Boolean) as Place[] : [];
   } catch {
     return [];
@@ -277,7 +281,7 @@ export function loadUserPlaces(): Place[] {
 }
 
 export function saveUserPlaces(places: Place[]): boolean {
-  return safeSetItem(USER_PLACES_KEY, JSON.stringify(places));
+  return safeSetItem(userPlacesKey(), JSON.stringify(places));
 }
 
 // ---- OSRM route cache (keyed by the coordinate sequence) ----
@@ -404,7 +408,7 @@ export interface CachedRoute {
 
 export function loadRouteCache(): Record<string, CachedRoute> {
   try {
-    return JSON.parse(localStorage.getItem(OSRM_KEY) ?? '{}');
+    return JSON.parse(localStorage.getItem(osrmKey()) ?? '{}');
   } catch {
     return {};
   }
@@ -412,7 +416,7 @@ export function loadRouteCache(): Record<string, CachedRoute> {
 
 /** Quota-safe; returns false when nothing could be persisted. */
 export function saveRouteCache(c: Record<string, CachedRoute>): boolean {
-  return persistCache(OSRM_KEY, c);
+  return persistCache(osrmKey(), c);
 }
 
 // ---- Manual ferry hours per leg (keyed by unordered place-id pair) ----
@@ -422,8 +426,6 @@ export function saveRouteCache(c: Record<string, CachedRoute>): boolean {
 
 export type FerryHours = Record<string, number>;
 
-const FERRY_KEY = 'balkans-trip-ferry-hours';
-
 /** Stable key for the leg between two places, direction-independent. */
 export function ferryPairKey(idA: string, idB: string): string {
   return idA < idB ? `${idA}|${idB}` : `${idB}|${idA}`;
@@ -431,7 +433,7 @@ export function ferryPairKey(idA: string, idB: string): string {
 
 export function loadFerryHours(): FerryHours {
   try {
-    return JSON.parse(localStorage.getItem(FERRY_KEY) ?? '{}');
+    return JSON.parse(localStorage.getItem(ferryKey()) ?? '{}');
   } catch {
     return {};
   }

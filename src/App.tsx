@@ -52,7 +52,9 @@ import {
   dayColor,
   haversineKm,
   isDuringTrip,
+  setTripConfig,
 } from './trip';
+import { findTrip, setActiveTripId, TRIPS, type TripConfig } from './trips';
 import type { Category, Country, Place, Status } from './types';
 import { useDayRoutes } from './useDayRoutes';
 
@@ -202,6 +204,20 @@ function HashSync() {
   return null;
 }
 
+/** Flies the map to the active trip's region whenever the trip changes. */
+function FlyToTrip({ center, zoom, tripId }: { center: [number, number]; zoom: number; tripId: string }) {
+  const map = useMap();
+  const prevId = useRef(tripId);
+  useEffect(() => {
+    if (prevId.current !== tripId) {
+      prevId.current = tripId;
+      map.flyTo(center, zoom, { duration: 0.9 });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tripId]);
+  return null;
+}
+
 /** Captures map clicks while the Add-place form is open (feature A, mode 1). */
 function MapTapCapture({ active, onTap }: { active: boolean; onTap: (lat: number, lng: number) => void }) {
   useMapEvents({
@@ -214,17 +230,32 @@ function MapTapCapture({ active, onTap }: { active: boolean; onTap: (lat: number
 
 
 export default function App() {
+  // MUST be first: initializes the active-trip singleton before any loadXxx()
+  // calls below, so all localStorage keys resolve to the correct trip.
+  const [currentTripId, setCurrentTripId] = useState<string>(() => {
+    const id = localStorage.getItem('current-trip-id') ?? 'balkans-trip';
+    const trip = findTrip(id);
+    setActiveTripId(id);
+    setTripConfig(trip.startDate, trip.numDays);
+    return id;
+  });
+  const activeTrip: TripConfig = findTrip(currentTripId);
+
   // User-added places merge after the bundle so a runtime pin can override a
   // baked id without breaking the rest of the app.
   const [userPlaces, setUserPlaces] = useState<Place[]>(loadUserPlaces);
   const [remotePlaces, setRemotePlaces] = useState<Place[]>(loadRemotePlacesCache);
   const [syncOnline, setSyncOnline] = useState<boolean | null>(hasSupabase ? null : false);
-  // Merge baked → local user places → remote user places (first id wins).
+  // Merge baked → local user places → remote user places (first id wins),
+  // then filter to only places that belong to the active trip's country codes.
   const basePlaces = useMemo<Place[]>(() => {
+    const tripCountries = new Set<Country>(activeTrip.countries);
     const localIds = new Set(userPlaces.map((p) => p.id));
     const remoteOnly = remotePlaces.filter((p) => !localIds.has(p.id));
-    return [...loadPlaces(), ...userPlaces, ...remoteOnly];
-  }, [userPlaces, remotePlaces]);
+    return [...loadPlaces(), ...userPlaces, ...remoteOnly].filter((p) =>
+      tripCountries.has(p.country),
+    );
+  }, [userPlaces, remotePlaces, currentTripId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   /** Pull the latest collab state from Supabase (best-effort; degrades to cache). */
   const runSync = useRef(async () => {});
@@ -249,6 +280,28 @@ export default function App() {
     return () => window.removeEventListener('focus', onFocus);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  /** Switch to a different trip: reconfigure module singletons then reload all trip-scoped state. */
+  function switchTrip(id: string) {
+    if (id === currentTripId) return;
+    const trip = findTrip(id);
+    // Update singletons first so subsequent loadXxx() calls use the new keys.
+    setActiveTripId(id);
+    setTripConfig(trip.startDate, trip.numDays);
+    localStorage.setItem('current-trip-id', id);
+    // Reload trip-specific state from the new localStorage keys.
+    setCurrentTripId(id);
+    setOverrides(loadOverrides());
+    setUserPlaces(loadUserPlaces());
+    setRemotePlaces(loadRemotePlacesCache());  // clear stale data from previous trip before sync
+    setFerryHours(loadFerryHours());
+    setSelectedId(null);
+    setPlanDay(1);
+    // Show all non-rejected places when switching trips (new trips have no shortlisted items yet).
+    setStatusFilter(new Set(NON_REJECTED));
+    void runSync.current();
+  }
+
   const [overrides, setOverrides] = useState<Overrides>(loadOverrides);
   const places = useMemo<PlaceWithOverride[]>(
     () => basePlaces.map((p) => ({ ...p, ...overrides[p.id] })),
@@ -846,12 +899,21 @@ export default function App() {
 
       <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="head-row">
-          <h1>Balkans Trip</h1>
+          <select
+            className="trip-selector"
+            value={currentTripId}
+            onChange={(e) => switchTrip(e.target.value)}
+            aria-label="Switch trip"
+          >
+            {TRIPS.map((t) => (
+              <option key={t.id} value={t.id}>{t.name}</option>
+            ))}
+          </select>
         </div>
 
         <>
         <p className="subtitle">
-          Jun 16–28 · trip plan
+          {activeTrip.subtitle}
           <span
             className={`sync-state ${
               syncLabel === 'online' ? 'on' : ''
@@ -1076,19 +1138,20 @@ export default function App() {
           <button
             className="tools-pill"
             onClick={() => setEssentialsOpen(true)}
-            title="Shared pre-trip checklist + offline route cache"
+            title="Cache all routes for offline use"
           >
-            ✅ Checklist
+            📥 Offline cache
           </button>
         </div>
       </aside>
 
-      <MapContainer ref={mapRef} className="map" center={[43.4, 17.3]} zoom={7} scrollWheelZoom>
+      <MapContainer ref={mapRef} className="map" center={activeTrip.mapCenter} zoom={activeTrip.mapZoom} scrollWheelZoom>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <HashSync />
+        <FlyToTrip center={activeTrip.mapCenter} zoom={activeTrip.mapZoom} tripId={currentTripId} />
         <MapTapCapture active={addPlaceOpen} onTap={onMapTap} />
         <FlyTo placeId={selectedId} lat={selected?.lat} lng={selected?.lng} />
 
