@@ -1,20 +1,20 @@
 [
   {
     "id": "it-adda-rafting",
-    "name": "Adda River Rafting — Base Valtellina",
+    "name": "Adda River Rafting — Castello dell'Acqua (Agua Rafting)",
     "country": "IT",
     "category": "activity",
-    "lat": 46.1657,
-    "lng": 10.0728,
-    "description": "Family rafting on the Adda in Teglio with Rafting Lombardia (Base Valtellina). Two tours: beginner Full Fun (age 8+, 3h, non-swimmers OK) and Adrenaline class-IV rapids (age 16+, 2h). Parents + 15-year-old take the Fun tour; user splits for Adrenaline if age allows.",
-    "communityNotes": "TripAdvisor 4.4/5, 361 reviews (Jun 2025). 'Guides make it incredibly fun with extra activities on top of the rafting.' The Full Fun is marketed as 'ideal first rafting experience' — Easy rating, explicit family-friendly. Safe for a non-sporty parent. Phone/WhatsApp: +39 333 317 8894 (Tresenda/Teglio). Book for 9AM slot Jul 8 — today is July 1, only 7 days out.",
+    "lat": 46.1505,
+    "lng": 9.9838,
+    "description": "White-water rafting on the Adda river, operated by Agua Rafting at Castello dell'Acqua, 12km east of Sondrio on SS38. Full Fun route: €59/pp for ages 13+. 2-2.5h session. Book in advance by phone: +39 333 317 8894 or raftinginlombardia.it. D1 logistics: airport → 2h drive north via SS36 (lake views) → SS38 east. Earliest realistic start: 10:30-11:00 (not 9AM — airport car rental + 2h drive). After: Teglio lunch is 15 min east/uphill, then Poggiridenti is 20 min west.",
+    "communityNotes": "Agua Rafting runs on the Adda, one of the Alpine rivers with consistent summer flow. Wetsuits and helmets provided. Parent can sit at a café or hike the riverbank path during the 2h session. The operator website advertises '~1.5h from Bergamo' (no-traffic baseline — add 30 min for summer SS36 traffic). Price 2026: €59/pp adult (Full Fun route). BOOK the 10:30 or 11:00 slot — not 9AM, which is physically unachievable from BGY landing at 07:10.",
     "sources": [
       "https://raftinglombardia.com/informazioni/",
       "https://raftinglombardia.understory.io/it"
     ],
-    "cost": "Full Fun €59/person (13+), €49 ages 8–12 (3h); Adrenaline €65/person (2h, age 16+ only)",
+    "cost": "€59/pp adult, €49 ages 8-12. Book: +39 333 317 8894",
     "timeNeeded": "3h (Full Fun) or 2h (Adrenaline)",
-    "bestTime": "Weekdays less crowded; pair with pizzoccheri lunch in Teglio (5 min away)",
+    "bestTime": "D1: 10:30 or 11:00 start (realistic after 07:10 BGY landing + 2h drive). Book ahead. After rafting: drive 15 min east to Teglio for pizzoccheri lunch, then 25 min west to Poggiridenti. Book Ristorante Combolo Teglio in advance (closes kitchen at 14:00).",
     "rating": 5,
     "status": "candidate"
   },
@@ -225,12 +225,12 @@
     "category": "town",
     "lat": 46.0116,
     "lng": 9.284,
-    "description": "The quieter, more authentic alternative to Bellagio on Lake Como's east shore. Charming stone harbour, lakeside promenade (Passeggiata degli Innamorati), Villa Monastero gardens, and easy ferry connections to Bellagio and Menaggio. ~60–70 min from Sondrio.",
-    "communityNotes": "Reddit and Rick Steves forums consistently call it 'quieter than Bellagio but still crowded in July peak.' Best to arrive before 10am or after 5pm. 'Sleep in Varenna if you can — the day-trippers leave by 6pm and it's magical at night.' Parking tight; use the car park above town and walk down.",
+    "description": "Dramatic village of colored houses on the eastern shore, only accessible from the south (the northern road is one-way). Park at Parcheggio Varenna-Esino near the train station (€12/day). Everything in Varenna is within 10 min walk. The morning lake here before 9AM is glass-calm — perfect for SUP. Nautica Varenna rents kayaks/SUP from the floating dock at Riva Grande (walk-up, no booking).",
+    "communityNotes": "Park at Parcheggio Varenna-Esino, not in the village streets (too narrow). The ferry dock (traghetto) for cars is at the bottom — separate from the passenger hydrofoil. Arrive by 08:15 on D3 to start SUP before the lake gets busy. Morning espresso at a café near the waterfront before SUP — this is Italy, this is mandatory. 🅿 PRIMARY: Parcheggio Multipiano (Via Polvani 1, ~€2.50/hr, €20/day max, 5-10min walk; fills by ~10am in July — arrive early). BACKUP: Fiumelatte hamlet (free, 20-25min walk via Sentiero del Viandante lakeside path; best value).",
     "sources": [
       "https://acharmingescape.com/bellagio-or-varenna/"
     ],
-    "timeNeeded": "half day to full day",
+    "timeNeeded": "Arrival + morning SUP (1–2h): park → quick espresso → Nautica Varenna SUP (1h) → car ferry queue. Late afternoon: ferry back, pick up car, drive north.",
     "bestTime": "Arrive before 10am or after 5pm; avoid peak midday",
     "rating": 5,
     "status": "candidate"
@@ -261,11 +261,11 @@
     "category": "town",
     "lat": 45.9878,
     "lng": 9.2601,
-    "description": "The postcard-perfect village at the tip of Como's central peninsula — narrow lanes, lakefront cafes, and panoramic terraces. More tourist infrastructure than Varenna but significantly more crowded in July. Worth seeing — manage expectations for peak season.",
-    "communityNotes": "Consistently 'beautiful but packed in summer.' Reddit: 'We went at 8am before the ferries arrived and had the streets to ourselves — stunning.' Best combined with Varenna on the same lake day (10 min by ferry between them).",
+    "description": "Lake Como's most iconic village on the central promontory. Best approached early (before 10AM) when the cobbled lanes have breathing room. Do NOT try to fit it all in — pick 2 things: Punta Spartivento viewpoint (15 min north of ferry dock, free, three-way lake view) + a coffee and croissant at a lakeside café. The narrow Salita Serbelloni alley is genuinely charming. Skip the overpriced waterfront restaurants.",
+    "communityNotes": "'Arrive first thing — by 10AM it's a zoo.' Punta Spartivento is the best free viewpoint. Villa Melzi gardens (€10, ~1h) for the parent — calm botanical garden right on the water. La Grotta does good cheap pizza. Best: grab a pastry and sit at the water's edge, do nothing for 30 min. That's the real Bellagio experience. You can buy handmade silk ties and local products in the backstreet shops.",
     "sources": [],
-    "timeNeeded": "2–3h",
-    "bestTime": "Early morning (8–10am) before day-tripper ferries arrive",
+    "timeNeeded": "90 min: coffee + pastry at the water (30 min, essential) + Punta Spartivento walk (20 min) + backstreet stroll (40 min)",
+    "bestTime": "09:45 arrival after morning SUP in Varenna + car ferry. Leave by 11:30 for Cadenabbia ferry.",
     "rating": 4,
     "status": "candidate"
   },
@@ -274,19 +274,21 @@
     "name": "Villa del Balbianello (book NOW)",
     "country": "IT",
     "category": "sight",
-    "lat": 45.9723,
-    "lng": 9.1462,
-    "description": "Iconic 18th-century FAI villa on a wooded promontory near Lenno — Casino Royale + Star Wars filming location. Terraced gardens, colonnaded loggia, jaw-dropping three-way lake view. OPEN Fridays. Access: boat taxi from Lenno waterfront (~5 min, €6–8 return) or 20-min walk through forest.",
-    "communityNotes": "'Unlike some Como sights that look better in photos, this delivers in person.' Interior tours SELL OUT months ahead for July — book NOW at fondoambiente.it. Interior: 45 min guided tour with Monzino's Himalayan/Arctic expedition collection (teen-friendly: hidden passages, Everest gear). Garden-only gives 90% of the experience. Closed Mon + Wed only.",
+    "lat": 45.9965,
+    "lng": 9.2182,
+    "description": "Iconic 18th-century FAI villa on a wooded promontory near Lenno — Casino Royale + Star Wars filming location. Terraced gardens, colonnaded loggia, three-way lake view. Access: boat taxi from Lenno waterfront (~5 min, €6–8 return) or 20-min uphill path. INTERIOR TOURS SOLD OUT for July months in advance — book GARDEN ONLY now at fondoambiente.it (€13–15/pp). Garden-only gives 90%+ of the experience. Before visiting: leisurely lunch at a café in Lenno/Tremezzo on the waterfront. Closed Mon & Wed.",
+    "communityNotes": "'Unlike some Como sights that look better in photos, this delivers in person.' Garden-only is worth every cent — the approach by boat, the terraces, the view, the filming locations. Interior tour is 45 min guided Himalayan/Arctic expedition collection: fine but secondary. Interior sold out mid-May 2025 onwards for July 2025 dates — assume same for 2026; book garden NOW. After: aperitivo near Lenno before the ferry back. Closed Mon + Wed only.",
     "sources": [
       "https://ticket.fondoambiente.it/events/villa-del-balbianello/villa-del-balbianello",
       "https://fullsuitcase.com/villa-del-balbianello-lake-como-italy/"
     ],
-    "cost": "€13–15 gardens only; €24 with interior tour; €6–8 boat taxi return from Lenno dock",
-    "timeNeeded": "2–3h (garden + interior tour)",
-    "bestTime": "BOOK interior tour immediately at fondoambiente.it. Arrive by boat taxi from Lenno (end of Via Guido Delmati). Jul 10 (Fri) is open.",
+    "cost": "Garden: €13–15/pp (€52–60 for 4). Interior (if available): €24/pp. Boat taxi from Lenno: €6–8 return per person.",
+    "timeNeeded": "2h: boat taxi 5 min + garden walk 1.5h (relaxed, film location hunting) + boat taxi back. Add 1h for lunch in Lenno before.",
+    "bestTime": "The lake-day headline. CLOSED Mon & Wed (fine on a Fri). Garden €13-15/adult, family 2+2 €65. Reach by boat taxi from Lenno (~€7 return — the approach across the water is half the magic) OR see it FREE from a kayak (see Ossuccio). Interior tours sell out weeks ahead for July — book garden tickets at fondoambiente.it.",
     "rating": 5,
-    "status": "candidate"
+    "status": "candidate",
+    "optionGroup": "villa-gardens",
+    "optionTabLabel": "Balbianello"
   },
   {
     "id": "it-villa-carlotta",
@@ -298,25 +300,31 @@
     "description": "18th-century lakeside villa with 8 hectares of botanical gardens in Tremezzo. More about the gardens than the house — a slower, more relaxed visit than Balbianello. July flowering is past spring peak but the lake setting is beautiful year-round. Easy ferry access from Varenna/Bellagio.",
     "communityNotes": "Consistently praised for the tranquil gardens. In July the famous rhododendrons are over but it's still lovely. €12 entry. Good option for parents while others do an activity nearby.",
     "sources": [],
-    "cost": "€12 entry",
+    "cost": "€17.50 adult / family 2+2 €35 / under-6 free",
     "timeNeeded": "2–3h",
-    "bestTime": "Morning; combine with Villa Balbianello on the same lake day",
+    "bestTime": "SKIP in July — the azalea/rhododendron bloom peaks Apr-May and is gone by mid-June, and it's the most museum-like of the three villas. Right villa, wrong month; pick Balbianello (by water/kayak) or Melzi instead.",
     "rating": 4,
-    "status": "candidate"
+    "status": "candidate",
+    "optionGroup": "villa-gardens",
+    "optionTabLabel": "Carlotta"
   },
   {
     "id": "it-bellano-orrido",
     "name": "Orrido di Bellano",
     "country": "IT",
     "category": "nature",
-    "lat": 46.0454,
-    "lng": 9.2978,
-    "description": "Spectacular glacier-carved gorge in Bellano (north-east Como shore), walkable via suspended metal walkways above a roaring underground river. Short, dramatic, easy — 45 min total. One of the best value stops on Lake Como, and far less crowded than the main villages.",
-    "communityNotes": "'Much less crowded than Varenna or Bellagio and way more dramatic.' ~€5 entry. Just 10–15 min from Varenna by ferry — an obvious add-on to a Como day.",
-    "sources": [],
-    "cost": "~€5",
-    "timeNeeded": "45 min–1h",
-    "bestTime": "Any time; easy add-on with a Varenna visit",
+    "lat": 46.0424,
+    "lng": 9.3051,
+    "description": "A metal-and-wood catwalk bolted into a narrow gorge carved by the Pioverna river — roaring waterfalls, sculpted rock, turquoise pools far below. Genuinely dramatic and a real 'activity' stop (not just a view), and it sits directly on the SS36 route home. Best of all: the swim beach (Lido di Bellano) and lakeside lunch are both ~700m away — park once, do all three.",
+    "communityNotes": "'One of my favourite places on Lake Como, much quieter than Bellagio'; 'excellent value for money.' Honest caveats: it's SHORT (~15-20 min of walking), and 'anyone with vertigo should think twice — under the walkways there's a drop of several tens of metres' (but it's fully railed). 🅿 PRIMARY: Station parking (near train station, €0.50/hr — cheapest option; 5min walk to gorge). BACKUP: Town center lots near Piazza Cavour (€1/hr; arrives before 10am on weekends). Gorge entry ~€7pp.",
+    "sources": [
+      "https://www.orridobellano.eu/en/timetables-and-tickets/",
+      "https://www.tripadvisor.com/Attraction_Review-g664176-d2302225-Reviews-Orrido_di_Bellano-Bellano_Lake_Como_Lombardy.html",
+      "https://www.helenonherholidays.com/orrido-di-bellano-lake-como/"
+    ],
+    "cost": "€8 adult, €5-6 child (6-14), free under 6",
+    "timeNeeded": "25-30 min",
+    "bestTime": "D4 midday. Open daily in summer ~09:00-19:00 (later in Jul-Aug), walk-up. Walk-through is short (~20-30 min). Railed/caged catwalk = objectively safe, but 1-2 see-through footbridges hang over the drop — anyone vertigo-prone can hold the rail and hug the wall, or wait at the entrance café while the others do it in 20 min. Pair with a Bellano lakeside lunch.",
     "rating": 4,
     "status": "candidate"
   },
@@ -372,27 +380,11 @@
     "category": "town",
     "lat": 46.325,
     "lng": 9.3977,
-    "description": "Beautiful historic market town 30 min north of Colico. Famous for crotti — natural wine cellars carved into cliffsides where local cheese, bresaola, and salami mature. Eat inside the rock. Nearby Acqua Fraggia waterfall in Piuro is a 10-min walk.",
-    "communityNotes": "'Chiavenna and the crotti is one of the most unexpected highlights of northern Italy.' Crotto experience is genuinely unique — you eat inside the mountainside rock. The Acqua Fraggia waterfall at Piuro is free, short walk, dramatic. Combine with Lago di Mezzola on the drive.",
+    "description": "Alpine market town 30 min northwest of Sondrio. Famous for crotti — natural cave-restaurants where cold air seeps through the rock year-round, used to age bresaola and cheese. On D2: the perfect midday reset after canyoning — sit in a cave-restaurant, eat slowly, then browse the deli. Fratelli Ciapponi deli (est. 1883, Via Dolzino 62) is where to buy grill provisions: bresaola, bitto cheese, local wine.",
+    "communityNotes": "**For shopping:** Macelleria Del Curto (Via Dolzino 129, Mon-Sat 07:30-19:00): the real find — violino di capra + brisaola affumicata (smoked, Chiavenna's own version). Buy 200g of each for ~€15 total — better than any restaurant starter. **For lunch (budget):** Crotto al Prato — set menu €18-20 (affettati misti + pizzoccheri bianchi + grilled meats + polenta + dessert). Best value, locals eat here. Crotto Ombra is more famous (820+ reviews) but pricier. **To take home:** Moiola Market (Viale Matteotti 6) for packaged gnocchetti di Chiavenna, Casera, local wine at supermarket prices. Fratelli Ciapponi is in MORBEGNO (not Chiavenna) — stop there on the way back to Sondrio.",
     "sources": [],
-    "timeNeeded": "half day",
-    "bestTime": "Lunchtime for the crotti experience; some close early afternoon",
-    "rating": 4,
-    "status": "candidate"
-  },
-  {
-    "id": "it-acqua-fraggia",
-    "name": "Cascata dell'Acqua Fraggia (Piuro)",
-    "country": "IT",
-    "category": "nature",
-    "lat": 46.3463,
-    "lng": 9.4197,
-    "description": "One of Lombardia's most spectacular waterfalls — two tiers dropping ~110m total near Piuro, just outside Chiavenna. Free to visit, 10-min flat walk from parking. Dramatic even in summer when flow decreases.",
-    "communityNotes": "'Don't skip the waterfall — it's 10 minutes away from Chiavenna and absolutely stunning, and free.' Uncrowded compared to anything on Lake Como.",
-    "sources": [],
-    "cost": "Free",
-    "timeNeeded": "30–45 min",
-    "bestTime": "Any time; combine with Chiavenna lunch",
+    "timeNeeded": "2–3h: Del Curto shopping (20 min) + crotto lunch at Crotto al Prato (1.5h, sit and enjoy) + Moiola Market (20 min)",
+    "bestTime": "D2 midday: arrive after canyoning finishes (~12:00), eat lunch at a crotto, shop for grill provisions, then drive to Val di Mello.",
     "rating": 4,
     "status": "candidate"
   },
@@ -417,8 +409,8 @@
     "name": "Grigna Meridionale — Lecco Alps",
     "country": "IT",
     "category": "hike",
-    "lat": 45.927,
-    "lng": 9.335,
+    "lat": 45.9218,
+    "lng": 9.3906,
     "description": "The 2,177m summit of Grigna Meridionale above Lecco — dramatic limestone spires and one of the best mountain panoramas in the pre-Alps. Multiple routes; the easier approach uses a cable car from Pasturo to Rifugio Elisa, reducing total vertical significantly. Full-day serious hike.",
     "communityNotes": "'Best views I've ever had in the Alps without going to Switzerland.' Cable car from Pasturo reduces the climb significantly for a half-day option. Full summit round trip is 6–7h. Summer afternoon thunderstorms are common — start early and be off exposed ridges by 1pm.",
     "sources": [],
@@ -455,6 +447,19 @@
     "timeNeeded": "30 min–1h",
     "bestTime": "Passing through on the way to/from Como",
     "rating": 2,
+    "status": "candidate"
+  },
+  {
+    "id": "it-airbnb-night-1",
+    "name": "Poggiridenti Airbnb — night 1",
+    "country": "IT",
+    "category": "accommodation",
+    "lat": 46.157,
+    "lng": 9.989,
+    "description": "Check-in 16:00 on arrival day. The Airbnb in Poggiridenti (near Sondrio) — same base all 3 nights, with a grill for the evenings. Grocery run on the way in (Fratelli Ciapponi, Morbegno on SS38).",
+    "communityNotes": "Route endpoint for D1 so D2 correctly starts from the Airbnb.",
+    "timeNeeded": "overnight",
+    "rating": 3,
     "status": "candidate"
   },
   {
@@ -524,34 +529,35 @@
     "category": "activity",
     "lat": 46.0116,
     "lng": 9.284,
-    "description": "Nautica Varenna rents kayaks and SUP from a floating dock at Riva Grande Varenna. No booking needed — walk up and rent. Single kayak €10/h, double €20/h. Morning lake is glass-calm. For Bellagio side: Bellagio Water Sports at Pescallo hamlet (must pre-book: bellagiowatersports.com or +39 340 394 9375).",
-    "communityNotes": "'2h SUP in front of Varenna is a highlight of the whole trip.' Walk up to Nautica Varenna dock as you arrive — rent before taking the ferry across. 4 people × 2h: ~€80 (singles) or €40 (2 doubles). Lake calm before 10AM; afternoon wind picks up from north. If you want to SUP from Bellagio: pre-book Bellagio Water Sports a week ahead for July.",
+    "description": "Morning SUP at Nautica Varenna — the best time on the lake (glass-calm before 9AM, before the ferries start their constant wake). Walk up to the floating dock at Riva Grande, grab a single kayak (€10/h) or double (€20/h). 1 hour is enough for a circuit of the bay with views of the Varenna waterfront and the Alps behind. No booking needed.",
+    "communityNotes": "'2h SUP in front of Varenna is a highlight of the whole trip — the silence and the lake is completely different from anything on the shore.' Do this BEFORE the car ferry (D3[1]) while the lake is still. By 10AM the ferries create constant wakes and it's choppy. For 4 people: 2 double kayaks = €40/h or 4 singles = €40/h.",
     "sources": [
       "https://www.bellagiotravelguide.com/nautica-varenna-kayak-and-sup/",
       "https://bellagiowatersports.com/"
     ],
     "cost": "€10/h single kayak, €20/h double — Nautica Varenna; Bellagio Water Sports: contact for price",
     "timeNeeded": "1–3h",
-    "bestTime": "Early morning (08:15–09:30) before the ferry crossing for maximum calm water",
+    "bestTime": "D1 (Wed Jul 8) arrival day: land BGY 07:10, drive up the Lecco branch (~1h20), on the water ~10:30-12:30 while it's glass-calm. Walk-up single €10/h, double €20/h, no booking. Swim off the SUP. Then lunch in Varenna and continue ~1h to Poggiridenti (check-in 16:00). Replaces the Adda rafting.",
     "rating": 4,
-    "status": "candidate"
+    "status": "candidate",
+    "optionGroup": "d1-kayak",
+    "optionTabLabel": "Varenna"
   },
   {
     "id": "it-val-di-mello",
     "name": "Val di Mello — 'Italian Yosemite'",
     "country": "IT",
     "category": "nature",
-    "lat": 46.2471,
-    "lng": 9.6164,
-    "description": "A car-free granite valley near Morbegno beloved by climbers and hikers as Italy's answer to Yosemite. Crystal-clear stream with natural swimming holes in polished granite, waterfalls, and towering walls. Walk from the San Martino car park (~40 min from Sondrio) into an increasingly wild valley.",
-    "communityNotes": "'Italian Yosemite is earned, not hype — granite walls rising from a flat forested valley with turquoise pools.' Bidet della Contessa (turquoise pool, 45 min from entrance) is the star: swim allowed, glacially cold, best in afternoon light. 40-car limit: €12 pass at automated machine at San Martino Info Point (arrive before 10AM). DO this AFTER canyoning on D2 (afternoon 2PM–6PM): afternoon light hits the Bidet dalla Contessa better and you avoid the crowd peak. Sasso Remenno (Europe's largest granite boulder, world-class bouldering) is right at the valley entrance.",
+    "lat": 46.2547,
+    "lng": 9.6527,
+    "description": "Val di Mello nature reserve — Lombardy's Yosemite. Granite walls 800m high, flat valley trail leads to Bidet della Contessa (46.2547°N, 9.6527°E): a turquoise-emerald pool at 1,080m with a central boulder island you can jump from. Confirmed: people jump from the central rock; video evidence exists (Facebook/Vertical Lab). Adjacent Sentiero delle Vasche = chain of natural river pools along the valley floor.",
+    "communityNotes": "Bidet della Contessa GPS: 46.2547°N, 9.6527°E. Walk from San Martino free parking: 30-40 min easy/flat. Drive-in permit cap: 40 vehicles/day, €12 coin-only meter (NO contactless, NO banknotes — BRING COINS). In July weekday afternoons cap may be hit; plan to walk from San Martino free lot (~30 min). Water temperature ~8-14°C (glacier-fed, 1,080m) — brief dips only. Rock jumping from central boulder island: confirmed. Also: Cascata del Ferro (210m waterfall, 15-min side detour from Cà di Rogni). Rifugio Gatto Rosso on the way serves sciatt + pizzoccheri. 🅿 PRIMARY: San Martino village free lots (Campo Sportivo / Infopoint — walk 30-40min flat to reserve; avoids €10-12 permit cap which sells out by 9-10am on weekends). BACKUP: Bregolana private (€7/day, COINS ONLY, 30min walk via mulattiera). Reserve drive-in permit: 40 cars max/day; buy at San Martino Infopoint (334 399 9708).",
     "sources": [
-      "https://www.komoot.com/guide/5684/hiking-in-val-di-mello",
       "https://it.wikiloc.com/percorsi-escursionismo/val-di-mello"
     ],
-    "cost": "Free",
-    "timeNeeded": "3–5h",
-    "bestTime": "Thursday afternoon (D2, after morning canyoning). Bidet della Contessa most photogenic in afternoon sun. Valley fills by 10AM on weekends; Thursday afternoon much quieter.",
+    "cost": "Free entry. Drive-in permit €12/vehicle, coin-only. Free parking at San Martino village. €7/hr at Visido/Filorera lots.",
+    "timeNeeded": "3–4h at the valley: 25 min walk in + 2-3h swimming/exploring + 25 min walk out. Plan to arrive San Martino by 15:00-15:30 for good light at the swimming holes.",
+    "bestTime": "D2 afternoon: arrive San Martino ~15:30-16:00 (weekday). 40-car cap likely full — park free at San Martino and walk 30-40 min in. Avoid weekends (mass tourism). Afternoon sun hits the pool best for turquoise colour.",
     "rating": 5,
     "status": "candidate"
   },
@@ -562,14 +568,14 @@
     "category": "town",
     "lat": 45.7049,
     "lng": 9.666,
-    "description": "Bergamo's medieval walled upper city, reached by funicular from the lower town — one of Italy's most beautiful small cities. Piazza Vecchia, Cappella Colleoni, and rampart walks. The airport is in greater Bergamo, so this is a natural arrival-day stop after picking up the car.",
+    "description": "Bergamo's medieval walled upper city, reached by funicular from the lower town — one of Italy's most beautiful small cities. Piazza Vecchia, Cappella Colleoni, and rampart walks. The airport is 10 min away, so this is the D4 pre-flight stop: arrive ~14:45, ~2h wander, then BGY for the 20:20 flight.",
     "communityNotes": "Reddit travel threads: 'Bergamo is criminally underrated — everyone flies through and misses the upper town.' Far less crowded than Verona or Lake Como towns. 2h is enough for the highlights. The funicular from Città Bassa is free with a €1.30 bus ticket or ~€2.",
     "sources": [
       "https://www.reddit.com/r/italy/comments/bergamo_upper_town/"
     ],
     "cost": "Free; funicular ~€2 return",
     "timeNeeded": "2h",
-    "bestTime": "Morning (arrive before heat); ideal on arrival day en-route to Sondrio",
+    "bestTime": "D4 (Sat Jul 11) late afternoon, pre-flight. Arrive ~14:45 after the drive from Bormio, funicular up, ~2h in the upper town, then 10 min to BGY for the 20:20 departure. Take a light jacket — evenings on the walls are cooler.",
     "rating": 4,
     "status": "candidate"
   },
@@ -590,7 +596,9 @@
     "timeNeeded": "half day to full day",
     "bestTime": "Weekday; book in advance for July. Combine with Stelvio drive if energetic.",
     "rating": 5,
-    "status": "candidate"
+    "status": "candidate",
+    "optionGroup": "bormio-thermal",
+    "optionTabLabel": "Bormio Terme"
   },
   {
     "id": "it-tirano-bernina",
@@ -619,12 +627,12 @@
     "category": "nature",
     "lat": 45.7218,
     "lng": 10.0664,
-    "description": "Lago d'Iseo is a stunning pre-Alpine lake that almost no tourists visit — less famous than Como but equally beautiful and far more peaceful. Monte Isola, at the lake's center, is the largest inhabited lake island in Central Europe — car-free, with a fishing village, panoramic ridge walk (5km loop), and views of the snowy Alps. Ferry from Sulzano: 5 min, €2.50. Completely locals' lake.",
-    "communityNotes": "'One of the most underrated places in all of Italy — I can't believe how few tourists there are.' Reddit r/italy. Monte Isola: hire bikes on the island (~€15/h) or walk the 8km circuit. The western shore (Lovere, Riva di Solto with overhanging cliffs) is the most dramatic. Fits perfectly as a D4 stop on the Val Camonica return route to Bergamo — Bergamo is only 40 min from the south shore of Iseo.",
+    "description": "Car-free island on Lago d'Iseo — Europe's largest inhabited lake island. Ferry from Sulzano (every 15 min in summer, 5 min crossing, ~€8.50 return/pp). BIKES BANNED since March 2026 (municipal ordinance). Walk: Peschiera Maraglio → Sensole (2km, flat, olive-grove path with lake views) — the island's highlight. Swim from the rocky shore. 2–2.5h is plenty. D4 Saturday: leave Sulzano by 15:30 to reach BGY comfortably.",
+    "communityNotes": "'Arriving by ferry and seeing the fishing village and olive groves is unlike any other lake stop.' Peschiera Maraglio village → walk through olive groves → Sensole: this specific route is what everyone recommends. Don't attempt the full 9km perimeter (too hot in July). Park at Sulzano (Via Dante Alighieri, ~€10/day). OSRM note: Sulzano → BGY airport is 40km, ~40-50 min — very comfortable buffer before the 18:20 check-in.",
     "sources": [],
-    "cost": "Free (ferry €2.50 each way to Monte Isola)",
+    "cost": "Ferry: ~€8.50 return/pp (€34 for 4). Parking in Sulzano: ~€10/day.",
     "timeNeeded": "1.5–2h for Monte Isola; 30 min lakeside stop if just passing",
-    "bestTime": "D4 departure: after Val di Mello, drive via Aprica → Val Camonica → arrive Iseo ~15:30, quick island visit, Bergamo by 17:15",
+    "bestTime": "D4: arrive Sulzano 11:30-11:45 (from Aprica). Island 11:55–14:00 (2h: Peschiera→Sensole walk + swim). Back at car 14:15. Drive to BGY: arrive ~15:15. Plenty of buffer before 18:20 check-in.",
     "rating": 5,
     "status": "candidate"
   },
@@ -635,12 +643,12 @@
     "category": "viewpoint",
     "lat": 46.1552,
     "lng": 10.1396,
-    "description": "The mountain pass at 1,181m linking Valtellina (Tirano) to Val Camonica (Edolo). Val Camonica below is a long glacial valley flanked by the Alps — entirely different scenery from anything else in the trip. The road continues south past Darfo to Lago d'Iseo and then to Bergamo. Use as D4 return route: Val di Mello → Sondrio → Aprica → Val Camonica → Iseo → Bergamo.",
+    "description": "OPTIONAL scenic alternative for the D4 drive south to BGY. The pass at 1,181m links Tirano to Val Camonica (Edolo); the valley below is a long glacial trench flanked by Alps, then Lago d'Iseo and on to Bergamo. Adds ~40 min vs the direct SS38/SS36 route — take it only if you have time to spare after Stelvio.",
     "communityNotes": "Wide, easy road — no drama, just beautiful. Val Camonica has UNESCO prehistoric rock carvings at Capo di Ponte (~20 min stop if interested). The whole drive Sondrio → Bergamo via this route is ~2h30m vs 1h30m via SS36 Lecco, so it costs ~1h extra. On D4 with 10h between checkout and flight, the time is easily absorbed.",
     "sources": [],
     "cost": "Free",
     "timeNeeded": "30 min for the pass itself; ~1h extra vs SS36 for the full route",
-    "bestTime": "D4 (Sat Jul 11): checkout 10AM → Val di Mello → Aprica → Iseo → Bergamo; ideal scenic finale",
+    "bestTime": "D4 optional: after Bormio/Stelvio, instead of the direct SS38 south, loop via Tirano → Aprica → Val Camonica → Iseo → Bergamo. Only if time allows before the 20:20 flight.",
     "rating": 4,
     "status": "candidate"
   },
@@ -680,30 +688,11 @@
     "lat": 46.5274,
     "lng": 10.4534,
     "description": "One of the highest paved mountain passes in the Alps at 2,757m — 48 hairpin bends on the north face, often called the world's greatest driving road. ~1h15m from Sondrio (via Bormio). The viewpoint at the top, hiking trails, and the sheer scale of the Alpine landscape are staggering.",
-    "communityNotes": "'Every person who drives Stelvio says it was the highlight of their trip. You don't forget it.' Open summer only — July is prime season. Can get crowded with motorcyclists on weekends. Combine with Bormio thermal baths for a Stelvio day (drive up, soak on the way back). Altitude means it's noticeably cooler — bring a layer.",
+    "communityNotes": "'Every person who drives Stelvio says it was the highlight of their trip. You don't forget it.' Open summer only — July is prime season. Can get crowded with motorcyclists on weekends. Combine with Bormio thermal baths for a Stelvio day (drive up, soak on the way back). Altitude means it's noticeably cooler — bring a layer. | HIKE FROM THE PASS: Monte Scorluzzo WW1 loop (8km, 3h35, T3) — summit 3,094m, preserved WWI trenches + Austrian bunkers + war relics. 4.8/5 AllTrails, 59 Komoot reviews. 'This is what makes Stelvio a full day — not just the drive.' Start from the pass early (9am) to complete before afternoon storms. Depart Sondrio 07:30.",
     "sources": [],
     "cost": "Free (toll-free road)",
-    "timeNeeded": "2–3h including stops",
-    "bestTime": "Weekday morning; pairs well with Bormio Terme in the afternoon",
-    "rating": 5,
-    "status": "candidate"
-  },
-  {
-    "id": "it-ponte-nel-cielo",
-    "name": "Ponte nel Cielo — Europe's highest Tibetan bridge",
-    "country": "IT",
-    "category": "activity",
-    "lat": 46.192,
-    "lng": 9.674,
-    "description": "234m-long pedestrian Tibetan bridge suspended 140m above Val Tartano — among the highest in Europe. 40 min from Sondrio (Morbegno then up Val Tartano). Suitable for all — no technical equipment needed. Just walk across. The valley below is otherwise completely off the tourist radar.",
-    "communityNotes": "Barely mentioned in English-language travel content — completely local. Val Tartano is one of the quietest alpine valleys in the province. After the bridge, the valley views are excellent and the area has no crowds. Combined with a short hike or picnic: perfect half-day.",
-    "sources": [
-      "https://valtellinamobile.it/i-posti-piu-insoliti-da-visitare-in-valtellina",
-      "https://www.finestresullarte.info/en/travel/valtellina-what-to-see-10-places-not-to-be-missed"
-    ],
-    "cost": "Small fee likely (€5–10, unconfirmed — check on arrival)",
-    "timeNeeded": "half day (bridge + valley walk)",
-    "bestTime": "Any clear day; mornings less windy",
+    "timeNeeded": "Full day: drive up (1h15m from Sondrio) + Monte Scorluzzo hike (3h35) + Vasche di Leonardo or Bormio Terme on return",
+    "bestTime": "D4 (Sat Jul 11) MORNING, departure day. Checkout 07:00 → Bormio 08:00 (espresso) → drive 30 min up to the pass 09:00-11:00 (the drive IS the experience; café + short walk at the top, no big hike). Back to Bormio for lunch, then south to BGY. Adds only ~1h15 vs driving straight to the airport.",
     "rating": 5,
     "status": "candidate"
   },
@@ -727,42 +716,2102 @@
     "status": "candidate"
   },
   {
-    "id": "it-stelvio-pass",
-    "name": "Passo dello Stelvio — legendary Alpine drive",
-    "country": "IT",
-    "category": "viewpoint",
-    "lat": 46.5279,
-    "lng": 10.4535,
-    "description": "Second-highest paved Alpine pass in Europe (2,758m), 48 hairpins on the Bormio ascent. Bucket-list drive. 1h45 from Sondrio (via SS38 to Bormio + 45 min climb). Summit: cafes, panoramic views of Ortler massif. Not a destination — the drive IS the experience. Go before 8AM on a weekday or you're crawling behind tourist coaches.",
-    "communityNotes": "'The biggest letdown of my roadtrip' (arrived midday in July) vs 'SPECTACULAR' (went at 6am). The gap is entirely about timing. Italian bikers strongly recommend Tue–Thu departure before 8AM. Summer Sundays 08:00–12:00: some sections closed for cycling events. Snow patches possible even in July at summit. Fuel up in Bormio — no stations on the pass.",
-    "sources": [
-      "https://www.epikdrives.com/best-drives/stelvio-pass",
-      "https://www.tripadvisor.com/Attraction_Review-g194697-d1221417-Reviews-Passo_dello_Stelvio-Bormio.html"
-    ],
-    "cost": "Free",
-    "timeNeeded": "Half day from Sondrio (drive up, summit, return = 3–4h)",
-    "bestTime": "Leave Sondrio by 06:00–07:00 to reach summit before 08:00; Tuesday–Thursday",
-    "rating": 5,
-    "status": "candidate"
-  },
-  {
     "id": "it-val-gerola-laghi",
     "name": "Val Gerola — alpine lakes circuit (Lago di Trona + Lago di Inferno)",
     "country": "IT",
     "category": "hike",
-    "lat": 46.285,
-    "lng": 9.535,
+    "lat": 46.037,
+    "lng": 9.571,
     "description": "Off-radar alpine valley branching north from Morbegno (~55 min from Sondrio). Start at Pescegallo (1,473m, small summer ski area). Lakes circuit: Lago di Trona (1,805m, glacial) → Lago di Inferno (2,085m, 'inquietante e suggestivo') → Lago Rotondo → Lago Zancone. 16km loop, 1,600m D+, 2.5–7h. Ibex and marmots. Home of Bitto DOP Storico cheese.",
-    "communityNotes": "Almost no English-language tourism — completely local hikers. The 'Lago di Inferno' is atmospheric in mist. Abandoned iron mine ruins along old mule tracks. The Bitto cheese trail from Rifugio Bar Bianco leads through working alpine pastures with live milking in traditional stone huts. The 'historic' Bitto (Bitto Storico) producers broke off from the standard DOP — a local controversy worth knowing about.",
+    "communityNotes": "Almost no English-language tourism — completely local hikers. RECOMMENDED SHORT CIRCUIT: Zancone + Trona (10.5km, 560m D+, 3.5h moving time, plan 5h) — hits the two best swim/photogenic lakes. Lago Zancone: 'turquoise-blue, you can see the rocky bottom, boulders like islands' — called 'the secret jewel of Val Gerola' (giteinlombardia.it), 'the most beautiful of the four' (perunpugnodipassi.com 2023), 4.70/5 Google Maps. Lago di Trona: beautiful but artificial dam reservoir — Zancone is the star. ⚠ Trail markings FADED — GPS track essential, not optional. ⚠ Lago di Trona occasionally drained for dam works — check before going. ⚠ Rifugio Trona Soliva (mid-circuit lunch): open daily July–Aug, +39 351 590 7013. Bitto cheese production at Pescegallo base (Casèra del Bitto): open June–Sept, aperitivo + tasting from 17:00, €5/pp — the heart of Bitto Storico production, Slow Food Presidium. Road Morbegno→Pescegallo (SP7, 19km, 30 min): narrow with hairpin bends, steep final 5km — but no cliff-edge exposure, fully forested valley, 'typical mountain road' per Italian sources. Manageable for anxious passengers at slow speed. Not in the same bracket as Stelvio or Dolomite passes. Trailhead (Pescegallo, 1,473m, free parking): 46.0379°N, 9.5704°E. Lake GPS: Trona 46.0293°N/9.5393°E | Inferno 46.0227°N/9.5266°E | Rotondo 46.0189°N/9.5381°E | Zancone 46.0254°N/9.5447°E.",
     "sources": [
+      "https://www.komoot.com/it-it/smarttour/e1351386193/da-pescegallo-verso-i-tre-laghi-zancone-trona-e-piic",
       "https://www.valgerolaonline.it/escursioni",
       "https://www.trailrings.it/anello-val-gerola/",
       "https://www.trekkaholic.it/lombardia/trekking-in-val-gerola-lago-zancone/"
     ],
     "cost": "Free (Pescegallo parking ~€5)",
-    "timeNeeded": "Full day (5–7h for the full loop)",
-    "bestTime": "Clear weekday; July mornings; Bitto cheese pastures most active June–September",
+    "timeNeeded": "3.5h (short Zancone+Trona circuit). Full circuit: 6-8h.",
+    "bestTime": "Start 07:00–07:30 from base for a Saturday. Back at car by 11:00–11:30.",
     "rating": 5,
+    "status": "candidate",
+    "optionGroup": "d4-morning",
+    "optionTabLabel": "Val Gerola"
+  },
+  {
+    "id": "it-fratelli-ciapponi",
+    "name": "Fratelli Ciapponi — historic deli (est. 1883, Morbegno)",
+    "country": "IT",
+    "category": "food",
+    "lat": 46.136,
+    "lng": 9.5725,
+    "description": "Three-storey delicatessen in Morbegno, family-run since 1883. Listed among the world's top 50 food stores (Financial Times). Underground cheese cellar with Bitto wheels aging up to 10 years. Key products: Bitto DOP (aged up to 10 years, ~€75/kg for young), bresaola, slinzega, Sforzato wine, violino di capra. Staff offer tastings before buying. English-speaking. Piazza III Novembre 23, Morbegno.",
+    "communityNotes": "'A traveler who bought their olive oil here has been ordering it to California for years afterward.' One of the most authentic food shops in the Alps. Not a tourist trap — locals use it as their weekly deli. Via Dolzino 62, Chiavenna. Open Mon–Sat ~08:30–12:30 / 15:30–19:00.",
+    "sources": [
+      "https://www.insidethetravellab.com/chiavenna-italy/",
+      "https://community.ricksteves.com/travel-forum/italy/valtellina-region"
+    ],
+    "cost": "Bitto young €75/kg, aged €200+/kg. Bresaola ~€35/kg. One serious bottle of Sforzato ~€15–20. Budget €30–50 for a memorable tasting haul.",
+    "timeNeeded": "30–45 min (taste + shop)",
+    "bestTime": "D2: pass through Morbegno on the way back from Chiavenna to Sondrio (on SS38, it's on route). Or D1 on the way in. Open Mon–Sat 08:00–12:30 / 15:30–19:00, closed Sunday.",
+    "rating": 5,
+    "status": "candidate",
+    "optionGroup": "d1-grocery",
+    "optionTabLabel": "Ciapponi"
+  },
+  {
+    "id": "it-sondrio-espresso-stop",
+    "name": "Sondrio: morning espresso + supermarket run",
+    "country": "IT",
+    "category": "food",
+    "lat": 46.1695,
+    "lng": 9.8758,
+    "description": "Sondrio practical stop near the Airbnb. D4 = Saturday — the weekly farmers market runs 08:00–12:30 at Piazzale Bertacchi (zero-km local producers: bresaola, Casera, honey, fruit). This is actually a GREAT D4 morning start: 30 min at the market before checkout, buy some Sassella wine and bresaola to take home. Conad City (Via Damiano Chiesa 2) for basics. Il Camino Innocenti deli (via Piazzetta Pietro Rusconi 4, Mon-Sat 07:30-19:30): the best sit-down stop for a coffee + a tasting selection before hitting the road.",
+    "communityNotes": "D1 arrival evening: stop at Conad City (opens 08:30) or Il Camino Innocenti (closes 19:30) for wine, bresaola, vegetables for the first grill night. D4 Saturday market opportunity: Piazzale Bertacchi, 08:00-12:30 — local zero-km producers, far better than supermarket. Nino Negri cellar (Chiuro, 5km east, Mon-Sat 09:30-18:00): walk-in bottle purchase, Sassella ~€17, Sforzato ~€43 — good pre-departure bottle stop.",
+    "cost": "Supermarket basics — budget €50–70 for 3 grill evenings for 4 people",
+    "timeNeeded": "30 min (espresso + supermarket)",
+    "bestTime": "D1 arrival (~14:00-15:00): Conad or Il Camino for grill night provisions. D4 morning (Saturday): farmers market 08:00-12:30 + brief Nino Negri cellar stop in Chiuro en route to Tirano.",
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "it-brusio-viaduct",
+    "name": "Brusio Circular Viaduct (UNESCO)",
+    "country": "IT",
+    "category": "sight",
+    "lat": 46.2592,
+    "lng": 10.1253,
+    "description": "UNESCO World Heritage 9-arch circular stone viaduct on the Bernina railway line, 15 min north of Tirano. The train loops 360° on a tight spiral through the stone arches — best witnessed from the meadow below. On foot: park in Brusio village, 10-15 min walk down to the viewpoint. Note: technically in Switzerland (Canton Graubünden) — requires crossing the border at Campocologno (~3km north of Tirano). Ukrainian biometric passports enter Switzerland visa-free (Schengen, no visa needed).",
+    "communityNotes": "'Watching a red Bernina Express loop around the viaduct in full view is a proper highlight — unlike any train photo you've ever seen.' Best photo timing: check Bernina line timetable (rhb.ch) and be at the meadow viewpoint 5 min before a train. The spiral is 9 arches, 68m radius, 100m diameter. No entrance fee. Brusio village itself is peaceful. Border crossing at Campocologno is routine (same timezone, no queues on weekdays). Train passes 4-6x/day in summer.",
+    "sources": [
+      "https://www.myswitzerland.com/en-us/experiences/circling-trains-in-brusio/",
+      "https://en.wikipedia.org/wiki/Brusio_spiral_viaduct"
+    ],
+    "cost": "Free (viewpoint access). Parking near Brusio village: free.",
+    "timeNeeded": "35-45 min total: drive from Tirano 15 min + walk to viewpoint 10 min + wait for train + walk back. Check rhb.ch timetable.",
+    "bestTime": "D4: immediately after Tirano basilica (both are within 15 min). Check train schedule before leaving Tirano. Note: biometric Ukrainian passport = visa-free entry to Switzerland. Bring passport.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-cascate-acquafraggia",
+    "name": "Cascate Acquafraggia — waterfall swim (Piuro)",
+    "country": "IT",
+    "category": "swim",
+    "lat": 46.3312,
+    "lng": 9.4382,
+    "description": "Double-drop waterfall (170m total) on the Acquafraggia stream, with natural pools at the base you can swim in. Leonardo da Vinci mentioned it in the Codex Atlanticus. Meadow area for lying in the sun. 10 min south of Chiavenna center — perfect D2 addition after Chiavenna crotto lunch.",
+    "communityNotes": "'Many people bathe in the stream pools — small waterfalls create safe shallow pools.' TripAdvisor: 'Many people dive in at the foot of the falls.' Alpine stream = cold but swimmable July. Entry €3/person (free under 5). Official summer hours: daily Aug 1-31 (08:30-18:30); weekends only June-July. Walk from parking: 10 min. Parking near church at Borgonuovo di Piuro (coin), or free in Prosto hamlet. 🅿 PRIMARY: Via Sarlone lot (next to Bar Mood, €1/hr or €7/day, meter; 2min walk). BACKUP: Chiosco lot on Via Sant'Abbondio (free, always open, 5-8min walk). Waterfall entry ~€3pp.",
+    "sources": [
+      "https://www.valtellina.it/en/insights/parks-and-natural-reserves/acquafraggia-waterfalls"
+    ],
+    "cost": "€3/pp (€12 for 4). Free under 5.",
+    "timeNeeded": "45-60 min: walk + swim + lunch on meadow",
+    "bestTime": "D2: after Chiavenna crotto lunch (13:30-14:30) before driving to Val di Mello. ⚠ WEEKDAY RISK: official ticket hours are weekends-only in June-July (daily from Aug 1). D2 = Thursday → the paid entry gate may be closed. The natural stream and pools are still accessible as a free walk-in (not a gated park), but confirm on arrival. If closed, head straight to Val di Mello.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-lago-palu",
+    "name": "Lago Palù via Snow Eagle gondola — Val Malenco",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.3376,
+    "lng": 9.8625,
+    "description": "The easiest spectacular morning hike for D4 checkout day. Take the Snow Eagle gondola from Chiesa in Valmalenco (~20 min drive from base) up to Alpe Palù at 1,750m, then walk to Lago Palù at 1,922m — crystal-clear glacial lake ringed by larches with Bernina peaks above. 4.7★ on AllTrails (25 reviews). Gondola runs Jul 3–Sep 6 2026.",
+    "communityNotes": "AllTrails 'Barchi – Lago Palù': 4.7★/25 reviews, 3.2km out-and-back, 215m gain, 1–1.5h walk from gondola top. 'Glacially-coloured lake', rifugio on shore for coffee/food after. In-Lombardia: 'swimming and kayaking are popular summer activities.' Water cold (~12-16°C in July — swim is possible). Best choice if legs are tired from 3 prior days. Gondola: Snow Eagle (Valmalenco ski resort), €17 adult RT. Parking at Parcheggio Vassalini (Via Vassalini 2, near cable car base — FREE, gravel lot). Arrive before 08:30 Saturday.",
+    "sources": [
+      "https://www.alltrails.com/trail/italy/lombardy/barchi-lago-palu",
+      "https://www.in-lombardia.it/en/tourism-in-lombardy/tourism-sondrio/lake-pal%C3%B9"
+    ],
+    "cost": "Gondola €17/pp RT. Rifugio coffee/food ~€5-15.",
+    "timeNeeded": "2h (gondola up + lake walk + gondola down)",
+    "bestTime": "D4 morning. Depart base 07:00 → Chiesa in Valmalenco by 07:30 → gondola opens ~08:00 → lake by 08:30 → back down by 10:30 → drive south Abbazia Piona → Bellano → BGY.",
+    "rating": 4,
+    "status": "candidate",
+    "optionGroup": "d4-morning",
+    "optionTabLabel": "Lago Palù"
+  },
+  {
+    "id": "it-il-cris-ristorante",
+    "name": "Il Cris Ristorante — best lunch in Lenno",
+    "country": "IT",
+    "category": "food",
+    "lat": 45.9634,
+    "lng": 9.2138,
+    "description": "The standout local restaurant in the Lenno area — locals eat here. Lake fish, fresh pasta, lake view terrace. Linguini with clams, grilled lavarello (whitefish), cacio e pepe rigatoni all praised. Complimentary prosecco and focaccia on arrival. D3 western shore lunch pick.",
+    "communityNotes": "'THE place to eat in Lenno by leaps and bounds, freshest food.' Fills with regulars — reservation essential even a day ahead. Kitchen open 11:30-14:30. Card machine reportedly unreliable — bring cash. Address: Via Armando Diaz 7, Lenno.",
+    "sources": [
+      "https://www.tripadvisor.com/Restaurant_Review-g1076867-d2241115-Reviews-Il_Cris_Ristorante-Lenno_Lake_Como_Lombardy.html"
+    ],
+    "cost": "€20-30/person. Book: call ahead (+39 prefix, search 'Il Cris Lenno').",
+    "timeNeeded": "1.5h including ordering, eating, enjoying the lake view",
+    "bestTime": "D3: arrive for 12:30 lunch after Bellagio ferry. Book 1 day ahead. Bring cash.",
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "it-kayak-ossuccio",
+    "name": "Kayak Comacina Island — Accadueo rental (Ossuccio)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 45.979,
+    "lng": 9.2025,
+    "description": "Self-guided kayak or canoe rental at Ossuccio marina, directly facing Comacina Island. Paddle around the island — see Villa Balbianello from the water (the famous Bond/Star Wars angle, no admission needed from a kayak). Swim from the kayak anywhere. Best active afternoon option on the western shore.",
+    "communityNotes": "Accadueo/HiringaBoat at Via al Lago, Ossuccio (directly facing Comacina). Contact: +39 329 2142280. Also offers canoes, pedalos, BIC SUP boards, motorboats (no license, up to 7p). Call ahead to confirm availability. Circuit around the island: 30-45 min. A Nautic Planet motorboat (Tremezzina, 5 min north) offers a premium option: self-driven, up to 7p, €200/3h — can do Balbianello → Comacina → Bellagio in one go. Book +39 327 1338 417.",
+    "sources": [
+      "https://www.hiringaboat.com/en/",
+      "https://nauticplanet.com/en/"
+    ],
+    "cost": "Kayak/canoe: ~€10-20/h (call +39 329 2142280). Motorboat (Nautic Planet): €200/3h for up to 7p.",
+    "timeNeeded": "1.5h: 30 min paddle around Comacina + swim from kayak + return",
+    "bestTime": "MORNING — glass-calm before the 'Breva' wind builds chop after ~13:00. Loop Isola Comacina + glide past Villa Balbianello for the Bond/Star Wars angle with ZERO admission — the best way to see it, especially Mon/Wed when the garden is closed. Water ~24C, swim off the boat. ~1h30 drive to Ossuccio. Self-rent, no guide (call +39 329 2142280).",
+    "rating": 5,
+    "status": "candidate",
+    "optionGroup": "western-kayak",
+    "optionTabLabel": "Ossuccio"
+  },
+  {
+    "id": "it-lido-lenno",
+    "name": "Lido di Lenno — lake swim (EU excellent water quality)",
+    "country": "IT",
+    "category": "swim",
+    "lat": 45.9625,
+    "lng": 9.213,
+    "description": "Organized swim beach on the Gulf of Venus, Lenno. EU Bathing Water rating: EXCELLENT — ranked 5th cleanest beach on all of Lake Como. Sandy-ish shore, sun loungers, bar, showers. Walk to the water via steps. The view: Balbianello peninsula to the north, Comacina Island across, Bellagio visible south.",
+    "communityNotes": "Managed by Giulietta al Lago (2026). Entry €4-5/pp; loungers extra. Open daily from 10:00 to 01:30. Water is consistently clean in July (better than August when post-rain spikes can happen elsewhere). If kayak rental is unavailable, this is the fallback — pay €5, float in the lake, order a drink. Stunning setting.",
+    "sources": [
+      "https://comocompanion.com/2024/04/28/swimming-in-lake-como-2024/"
+    ],
+    "cost": "€4-5/pp entry. Loungers/umbrellas extra.",
+    "timeNeeded": "1-2h or however long you want",
+    "bestTime": "D3 afternoon after lunch: either kayak OR lido swim — not both needed. Lido is the low-effort fallback if kayak unavailable.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-nesso-gorge",
+    "name": "Orrido di Nesso gorge + Ponte della Civera",
+    "country": "IT",
+    "category": "sight",
+    "lat": 45.9108,
+    "lng": 9.1545,
+    "description": "Dramatic limestone gorge cut by the Tuf stream, with a medieval stone bridge (Ponte della Civera) framing a waterfall. Reached by 270 steep cobbled steps from Piazza Castello. One of Lake Como's best-kept visual secrets. Eastern shore, 30 min south of Varenna.",
+    "communityNotes": "**JUMPING BANNED with €120 fine — actively enforced since Jun 23, 2026** (multi-agency crackdown: Carabinieri, Guardia di Finanza, Questura, Coast Guard all operational as of Jun 30). Visit the gorge as a walk/photo stop — it's genuinely stunning. The gorge itself is free and open. Two deaths previously occurred from high jumps off private rooftops — do not jump from anything above the bridge. Add-on from D3 eastern shore if you have time before the ferry, or D1 on the way up.",
+    "sources": [
+      "https://www.ciaocomo.it/2026/06/29/nesso-il-caos-al-ponte-della-civera-ha-le-ore-contate-domani-riunione-operativa-poi-scattano-controlli-e-multe/338175"
+    ],
+    "cost": "Free to visit. Jumping = €120 fine + safety risk.",
+    "timeNeeded": "30-45 min: descent + gorge walk + return up stairs",
+    "bestTime": "Early morning (before 10am) to avoid crowds. D1 or D3 optional add-on if passing near eastern shore.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-baia-bogn",
+    "name": "Baia del Bogn — informal jump + swim (Lago d'Iseo)",
+    "country": "IT",
+    "category": "swim",
+    "lat": 45.767,
+    "lng": 10.0641,
+    "description": "Secluded bay on Lago d'Iseo's western shore, accessed via a 15-min walk through an old gallery/tunnel from Via Gargarino 3, Riva di Solto. Informal cliff-jump spot from the abandoned lakeside road above the bay (3-8m, variable depth — assess on site). Local secret. 5km north of Sulzano (Monte Isola ferry).",
+    "communityNotes": "'Non è raro vedere temerari che si tuffano direttamente dalla vecchia strada' (not rare to see people jump from the old road into the lake). Informal, no lifeguard — check water depth from above before jumping (depth varies with lake level). Parking free at Via Gargarino 3. D4 add-on: depart Monte Isola by 14:30, Baia del Bogn 14:50-15:35, BGY by 16:30 (90 min buffer before 20:20 flight). Tight but doable if Monte Isola runs on schedule.",
+    "cost": "Free",
+    "timeNeeded": "45-60 min: walk in + swim/jump + walk out",
+    "bestTime": "D4: ONLY if departing Monte Isola by 14:30. 5km north of Sulzano ferry. Assess water depth before jumping.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-sentiero-del-viandante",
+    "name": "Sentiero del Viandante (Varenna → Bellano)",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.0122,
+    "lng": 9.2856,
+    "description": "Historic mule track along the eastern shore from Varenna to Bellano — 6.1km, ~2.5h one-way, gentle terrain. Ancient paving, medieval hamlets, suspended lake views. 703 AllTrails reviews. Start at Varenna ferry dock; finish at Bellano gorge.",
+    "communityNotes": "'Less crowded than anything on the western side, way more rewarding than sitting on a ferry.' Good footwear needed — narrow sections above cliffs. Ideal D3 add-on: SUP early → ferry to Varenna → walk to Bellano → return by ferry. AllTrails 4.5+ stars, 703 reviews.",
+    "sources": [
+      "https://www.outdooractive.com/de/route/wanderung/italy/varenna-bellano-sentiero-del-viandante-/101539985/",
+      "https://www.alltrails.com/trail/italy/lombardy/sentiero-del-viandante"
+    ],
+    "cost": "Free",
+    "timeNeeded": "2.5h one-way + ferry return",
+    "bestTime": "D3 morning option instead of or after SUP. Start before 10am to avoid heat.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-corenno-plinio",
+    "name": "Corenno Plinio — medieval lakeside hamlet",
+    "country": "IT",
+    "category": "sight",
+    "lat": 46.077,
+    "lng": 9.252,
+    "description": "Designated one of 'I Borghi più belli d'Italia' (Italy's most beautiful villages). Medieval Castello degli Andreani (€4), stepped stone alleys, three 14th-c funerary monuments, zero tourist infrastructure. Eastern shore, 6km north of Bellano.",
+    "communityNotes": "Completely off the anglophone radar. Italian sources: 'autentico, fuori dal tempo.' Castle is small but has a lake view. Best combined with Bellano Orrido or Sentiero del Viandante on a D3 eastern shore loop. Drive north from Bellano on SP72 and park at the village square.",
+    "sources": [
+      "https://www.borghipiubelliditalia.it/borgo/corenno-plinio/"
+    ],
+    "cost": "Free. Castle €4.",
+    "timeNeeded": "30-45 min",
+    "bestTime": "D3 northern add-on. Combine with Bellano Orrido or Sentiero del Viandante.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-pozze-di-domaso",
+    "name": "Pozze del Livo — cliff jumping pools (Domaso)",
+    "country": "IT",
+    "category": "swim",
+    "lat": 46.1525,
+    "lng": 9.3296,
+    "description": "Series of emerald natural pools on the Torrente Livo, 3h walk from Domaso village church. Rope swing + small cliff jumps ~5m. Confirmed replacement for Nesso jumping (banned €120 fine since Jun 2026). YouTube documented, mostly Italian visitors.",
+    "communityNotes": "YouTube trip reports confirmed: emerald pools, rope swing, small cliff jumps. 'Nesso è finita — qui è meglio.' 3h walk each way = full-day commitment. Start from the church at Domaso village. Bring water and snacks — no facilities. Only on foot.",
+    "sources": [],
+    "cost": "Free",
+    "timeNeeded": "Full day (3h up, time at pools, 3h return)",
+    "bestTime": "Full-day adventure day — start 7-8am from Domaso. Best on a day without other commitments.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-forni-glacier",
+    "name": "Ghiacciaio dei Forni — glacier loop trail",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.4194,
+    "lng": 10.5569,
+    "description": "Italy's largest glacier (Ortles-Cevedale massif), accessible via Tibetan rope bridges and a 9-10km loop. Crampons optional; bridges over meltwater streams; glacier tongue at 2,200m. €5 toll road. 4.9★/59 Komoot reviews — highest-rated alpine day in the region.",
+    "communityNotes": "'Best alpine hike in the area, no question.' Komoot 4.9/5 from 59 independent reviews. Tibetan bridges genuinely exciting. T3 difficulty — good boots, not technical. Leave Sondrio by 08:00 to reach trailhead by 09:15. Leave before 15:00 to avoid afternoon storms. 1h from Bormio.",
+    "sources": [
+      "https://www.stelviopark.it/en/ghiacciaio-dei-forni"
+    ],
+    "cost": "€5 toll road (per car)",
+    "timeNeeded": "Full day (5-6h loop + 2h drive from Sondrio)",
+    "bestTime": "Weekday — parking fills fast on summer weekends. Morning departure essential (storms 14:00-17:00).",
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "it-belvedere-pigra",
+    "name": "Belvedere di Pigra — Argegno cable car viewpoint",
+    "country": "IT",
+    "category": "viewpoint",
+    "lat": 45.9967,
+    "lng": 9.1222,
+    "description": "Best bird's-eye viewpoint on Lake Como's western shore, reached by a 5-minute cable car from Argegno. The village of Pigra at 550m gives a panoramic view over the entire southern lake and Alps. €5 return, runs every 30 min.",
+    "communityNotes": "'The view from Pigra makes you forget everything you saw from a boat.' Near-zero foreign tourists compared to Bellagio or Varenna. Small bar at the top. Walk further uphill from the village for even bigger views. Last cable car back typically 19:30 — check July schedule.",
+    "sources": [],
+    "cost": "€5 return per person",
+    "timeNeeded": "1-1.5h including cable car and viewpoint walk",
+    "bestTime": "D3 western shore afternoon — 1h add-on from Lenno/Argegno (5 min south of Il Cris). Best before 11am storms.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-rifugio-cristina",
+    "name": "Rifugio Cristina — Alpe Prabello 2,287m",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.2843,
+    "lng": 9.9472,
+    "description": "Fourth-generation family refuge built 1924 at 2,287m in Valmalenco, nominated 6× by FAI Italy as a 'Place of the Heart.' 1h15m from Campo Moro. Panoramic rock terrace over larch forest, Monte Disgrazia, and Bernina range. No cell signal.",
+    "communityNotes": "FAI 'I Luoghi del Cuore' — 6 nominations: 2006, 2014, 2016, 2018, 2020, 2022. The 'balcone sul lariceto': 5 min past the chapel, a rock terrace opens over the whole valley and Bernina. Sunset here is exceptional. Half-board ~€57/pp, 24 beds — book ahead: +39 0342 452398. Extend with Laghi di Campagneda (left fork 30 min before the refuge). ⚠ Campo Moro road CLOSED (landslide 2026) — use municipal shuttle from Tornadri parking.",
+    "sources": [
+      "https://www.rifugiocristina.com/",
+      "https://fondoambiente.it/luoghi/rifugio-cristina-in-valmalenco"
+    ],
+    "cost": "Free to hike. Dinner ~€25-35. Half-board €57/pp.",
+    "timeNeeded": "Full day: shuttle → Laghi di Campagneda → Rifugio Cristina sunset → return",
+    "bestTime": "Sunset from the balcony is the signature. Clear weekday preferred — weekend beds fill fast.",
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "it-chiareggio",
+    "name": "Chiareggio — Val Ventina + millennium larch",
+    "country": "IT",
+    "category": "nature",
+    "lat": 46.374,
+    "lng": 9.862,
+    "description": "End-of-road hamlet in upper Val Malenco at 1,612m — gateway to the hidden Lago Pirola (2,283m, vivid serpentine rock + turquoise water) and the Val Ventina glacier trail. On the same trail: the Larice Millenario — a larch tree born in 1007 AD, confirmed by 3 Italian universities.",
+    "communityNotes": "Lago Pirola access: Trail 323 from Chiareggio → Rifugio Gerli-Porro (1h) → left branch to Alpe Pirola → lake at 2,283m. Round trip 10-11km, 785m gain, 4-5h. Red-orange serpentine rock contrasting turquoise water is the visual signature. The Larice Millenario (1007 CE, dendrochronology confirmed) is on the same trail, 30 min past the rifugio — ask at Rifugio Gerli-Porro. Parking: €4 toll at village entrance. 🅿 ZTL ALERT: Road into valley has ZTL (€5/vehicle; was NOT active 2024 due to flood damage — verify status summer 2026). PRIMARY (if ZTL active): pay €5 at totem, park in village. BACKUP: Pian del Lupo gravel lot (free, before ZTL gate, 15-20min walk; campervan-tested). Road is narrow 13km — drive carefully.",
+    "sources": [
+      "https://valtellinamobile.it/nascosto-sulle-alpi"
+    ],
+    "cost": "Free. Rifugio Gerli Porro meals ~€15-20.",
+    "timeNeeded": "Full day (4-5h round trip to Lago Pirola + millennium larch detour)",
+    "bestTime": "Morning start before 8am. Combine with Lago Lagazzuolo for a full Chiareggio day.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-lago-lagazzuolo",
+    "name": "Lago Lagazzuolo — hidden turquoise alpine lake",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.285,
+    "lng": 9.876,
+    "description": "Isolated alpine lake at 1,992m above San Giuseppe (Val Malenco) — described by Italian hikers as 'the most beautiful lake in all of Valmalenco, not crowded.' Emerald-turquoise water. 2.48km one-way from San Giuseppe, +570m, ~1.5h.",
+    "communityNotes": "Italian hikers: 'il colore è irreale — il più bello di tutta la Valmalenco.' Zero English-language coverage. Trail 321 from San Giuseppe (1,432m, via SP15 from Sondrio) — cross wooden bridge over Mallero. Bring long pants — vegetation overgrows less-visited sections. Full loop via Alpe Zocca and Chiareggio: 12km. Very limited mobile reception.",
+    "sources": [
+      "https://www.komoot.com/highlight/971277"
+    ],
+    "cost": "Free (San Giuseppe free parking)",
+    "timeNeeded": "3h round trip from San Giuseppe (2.5km up, 570m gain)",
+    "bestTime": "Morning start. Drive SP15 from Sondrio to San Giuseppe, 20 min. Combine with Lago Palù or Piscicoltura Malenca on same Valmalenco day.",
+    "rating": 4,
+    "status": "candidate",
+    "optionGroup": "d4-morning",
+    "optionTabLabel": "Lagazzuolo"
+  },
+  {
+    "id": "it-madesimo-bikepark",
+    "name": "Madesimo Bike Park (MadeBike Park)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.4389,
+    "lng": 9.3479,
+    "description": "Mountain bike park at 1,550-2,280m with 6 descending trails served by the Scima chairlift. Confirmed open summer 2026. Day lift pass €29. 45 min from Bodengo canyoning area. NOTE: Bormio Bike Park CLOSED all summer 2026 (Olympics renovation) — Madesimo is the replacement.",
+    "communityNotes": "Confirmed running summer 2026 (unlike Bormio, closed for Milano-Cortina prep). 6 trails blue to black, gravity descents. Chairlift takes bikes. Rental on-site (e-MTB and regular). Good half-day: Bodengo canyoning morning → Madesimo afternoon. Don't stack both if doing full-day canyoning.",
+    "sources": [
+      "https://www.madesimo.eu/sport/summer/bikepark"
+    ],
+    "cost": "Day lift pass €29/person. Bike rental ~€35-50.",
+    "timeNeeded": "Half day (3-4h at park)",
+    "bestTime": "Morning session — start 9am, done by 1pm before afternoon storms. Avoid if it rained overnight.",
+    "rating": 3,
+    "status": "candidate"
+  },
+  {
+    "id": "it-vasche-leonardo",
+    "name": "Vasche di Leonardo — free thermal pools (Bormio)",
+    "country": "IT",
+    "category": "swim",
+    "lat": 46.4923,
+    "lng": 10.3581,
+    "description": "Natural 35-40°C thermal pools in the Braulio riverbed — overflow from QC Terme Bagni Vecchi, completely free 24/7. Named for Leonardo da Vinci who documented Bormio's springs in the Codice Atlantico. Same mineral water as the €60-80/pp commercial spa.",
+    "communityNotes": "'The best-kept secret in Bormio — locals-only until TikTok found it.' Max ~15 people. One exposed ledge section (~4-6m, no railing) — wear trekking shoes, not flip-flops. Park on the Braulio bridge, 2km from Bormio on SS301 toward Stelvio. Go early morning (7-8am) or weekday evening to avoid crowds.",
+    "sources": [
+      "https://www.gogoterme.com/en/free-spa/italy/lombardy/free-thermal-baths-of-bormio-pools-of-leonardo/",
+      "https://lostandfoundtravelling.com/vasche-di-leonardo-bormio/"
+    ],
+    "cost": "Free. 24/7.",
+    "timeNeeded": "1-1.5h",
+    "bestTime": "Post-Stelvio or post-Forni Glacier recovery soak. Early morning before crowds.",
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "it-piscicoltura-malenca",
+    "name": "Piscicoltura Malenca — trout & Alpine char farm",
+    "country": "IT",
+    "category": "food",
+    "lat": 46.265,
+    "lng": 9.875,
+    "description": "Trout farm at 1,500m in Val Malenco selling fresh whole trout and Alpine char (salmerino alpino) direct. Smoked fillets, carpione, herb-marinated ready-to-grill fish available. Sport fishing lake on site. Open daily in summer. Tel: +39 347 315 3092.",
+    "communityNotes": "Alpine char (salmerino) is fattier than trout — holds together better on a grill, richer flavor. 'The premium choice for grilling in Valtellina.' Stop on the way to Lago Palù or Rifugio Cristina (same Valmalenco road). Much fresher and cheaper than supermarket fish.",
+    "sources": [
+      "https://www.piscicolturamalenca.it/"
+    ],
+    "cost": "Fresh fish — call for current prices",
+    "timeNeeded": "15-20 min stop",
+    "bestTime": "On any Valmalenco day (D1, D2, or D4). Morning for freshest stock.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-laghi-di-sassersa",
+    "name": "Laghi di Sassersa — 3 turquoise lakes above Ventina Glacier",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.265,
+    "lng": 9.87,
+    "description": "Three glacial lakes at 2,368-2,400m above Primolo — extraordinary turquoise water against vivid red-orange serpentine rock ('sassa arsa' = burned stone). More dramatic color contrast than any other Valmalenco lake. 12km, +1,065m/-1,400m, 6.5h traverse. One-way over Passo Ventina (2,675m) to Chiareggio (needs car shuttle).",
+    "communityNotes": "'Wild and solitary' — low crowd level confirmed across multiple Italian hiking sources. 'Sconosciuto alla maggior parte dei turisti.' Red-orange serpentine rock + turquoise water is more dramatic than Lago Pirola because you see all three lakes in the same amphitheater. Traverse needs car shuttle (one car at Primolo, one at Chiareggio). GPS track essential. From Sondrio: drive to Primolo (frazione of Chiesa in Valmalenco, 1,274m).",
+    "sources": [
+      "https://www.komoot.com/highlight/5271309",
+      "https://www.bodhirider.com/lombardia/valtellina-menu/451-laghi-di-sassersa-e-passo-ventina-val-malenco",
+      "https://www.norbertoloardi.com/storie/laghi-di-sassersa/"
+    ],
+    "cost": "Free (Chiareggio/Franscia parking)",
+    "timeNeeded": "Full day (6h + 30 min drive from Sondrio)",
+    "bestTime": "Start by 7am — 1,100m gain needs time before afternoon storms. Weekday to avoid any parking pressure.",
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "it-lago-cancano",
+    "name": "Laghi di Cancano + Torri di Fraele",
+    "country": "IT",
+    "category": "nature",
+    "lat": 46.5021,
+    "lng": 10.3093,
+    "description": "Two milky-turquoise reservoirs at 1,950m near Bormio, ringed by the medieval Torri di Fraele (13th-c towers guarding the old route to Switzerland). Easy flat lakeside walk. Perfect chill add-on to a Stelvio Pass day.",
+    "communityNotes": "'Fraele towers reflected in milky-turquoise water — one of the most underrated views in Lombardy.' Artificial reservoirs but the glacial flour color is stunning. Very easy walk (flat, gravel path). Parking €5. No crowds on weekdays. Only 20 min from Bormio — ideal half-day pairing with Vasche di Leonardo soak on the return.",
+    "sources": [],
+    "cost": "Parking €5. Free to walk.",
+    "timeNeeded": "1.5-2h round lake loop",
+    "bestTime": "Afternoon add-on to Stelvio Pass day. Or combine with Vasche di Leonardo (20 min from Bormio).",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-lago-pirola",
+    "name": "Lago Pirola — red rock + turquoise water (2,283m)",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.3022,
+    "lng": 9.7881,
+    "description": "D3 MORNING HIKE (the only real hike of the trip). From Chiareggio (1,612m) up to a hidden dam lake at 2,283m — best as the ~12 km loop via Alpe Ventina, ~800 m ascent, ~5-5.5h (verified Komoot route + GPX in the links below). The basin is vivid red-orange serpentine rock around turquoise water, 'almost unnatural' per Italian bloggers. Passes the Larice Millenario (larch born 1007 AD) and Rifugio Gerli-Porro. Start 06:30: beats the heat AND the afternoon storms.",
+    "communityNotes": "Coordinates confirmed by multiple independent Italian sources. Trail 323 from Chiareggio (1,612m) → Rifugio Gerli-Porro (1h, good food) → left branch to Alpe Pirola → lake. 10-11km round trip, 785m gain, 4-5h total. Optional 10-min extension to Torrione Porro (2,435m) for 360° views. Warning signs at lake about sudden flooding (dam). Zero English coverage — entirely local. Ventina Glacier visible in background. Trail markings adequate but download GPX. Chiareggio parking: €4.",
+    "sources": [
+      "https://www.komoot.com/highlight/4648550",
+      "https://www.komoot.com/tour/209816628",
+      "https://followthegreenrabbit.org/2024/07/10/valmalenco-lago-pirola-rifugio-gerli-porro/",
+      "https://www.trekkaholic.it/lombardia/trekking-in-valmalenco-lago-pirola-larice-millenario/",
+      "https://www.laghettialpini.altervista.org/pirola.php"
+    ],
+    "cost": "Free (Chiareggio parking €4 toll)",
+    "timeNeeded": "Full day (4-5h round trip + optional Torrione Porro)",
+    "bestTime": "D3 (Fri Jul 10) MORNING. Depart base 06:00, on trail 06:30 from Chiareggio. Cool at altitude, back down ~11:30 before the heat and 14:00 storms. Parents can wait in Chiareggio village or walk the easy first stretch to Rifugio Gerli-Porro. Then Lago Palù cable car in the afternoon.",
+    "rating": 5,
+    "status": "candidate",
+    "optionGroup": "d3-morning-hike",
+    "optionTabLabel": "Lago Pirola"
+  },
+  {
+    "id": "it-lago-di-zana",
+    "name": "Lago di Zana — Monte Disgrazia reflection lake",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.2283,
+    "lng": 9.7797,
+    "description": "Hidden lake at 2,280m in a rocky bowl — invisible until you are almost upon it. Monte Disgrazia (3,678m) reflects perfectly in its surface. Fringed by rare protected white rhododendrons. 'Una piccola perla nascosta e poco conosciuta.' Best from Alpe Piasci (5h round trip) or combined with Lago di Arcoglio loop.",
+    "communityNotes": "GPS confirmed: 46.2283°N, 9.7797°E. The lake reveals itself suddenly — you can't see it until the last meters of approach. Rare white rhododendrons on the shoreline (uncommon in the Alps). Swimmers report 'surprisingly warm water for 2,280m.' Combine with Lago di Arcoglio (~30 min away) for a full loop via Sasso Bianco (2,490m). Trailhead: Alpe Piasci (1,675m, €5 toll road from Torre di Santa Maria, 8km). ~5h round trip, 700m gain.",
+    "sources": [
+      "https://www.komoot.com/smarttour/e1336651979/ring-of-lago-zana-and-lago-arcoglio",
+      "https://www.laghettialpini.altervista.org/zana.php",
+      "https://altaviadellavalmalenco.it/colma-di-zana-lago-di-zana-rifugio-bosio-galli"
+    ],
+    "cost": "€5 toll road to Alpe Piasci. Free to hike.",
+    "timeNeeded": "5-6h round trip (or full day with Arcoglio loop + Sasso Bianco)",
+    "bestTime": "Morning start essential. Calm conditions for Disgrazia reflection. July-September.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-abbazia-piona",
+    "name": "Abbazia di Piona — lakeside abbey + calm swim (Colico)",
+    "country": "IT",
+    "category": "nature",
+    "lat": 46.1237,
+    "lng": 9.3312,
+    "description": "A 12th-century Cistercian monastery on the tip of the isolated Olgiasca peninsula at the top of Lake Como — Romanesque cloister, garden, 270° lake-and-mountain views, and its own sheltered bay (Laghetto di Piona) for a quiet swim. Working monks sell honey and herbal liqueurs. This is NOT a town/old-town — it's a peaceful headland, the perfect calm first stop on the drive home (~1h05 from base, at the top of the corridor so no backtracking).",
+    "communityNotes": "'A quiet place with a splendid view, recollection is assured'; 'a place of peace' even for non-religious visitors. Skeptic note: one recent visitor felt upkeep had slipped ('uncultivated lawns') — set expectations to peaceful, not spectacular.",
+    "sources": [
+      "https://visitcolico.it/en/places-to-go/piona-abbey/",
+      "https://www.tripadvisor.com/Attraction_Review-g664179-d2328132-Reviews-Abbazia_di_Piona-Colico_Lake_Como_Lombardy.html",
+      "https://acchiappamappa.com/abbazia-di-piona/"
+    ],
+    "cost": "Free (donation appreciated)",
+    "bestTime": "D4 first stop, morning. Open ~09:00-12:00 & 14:30-18:00 — go BEFORE the 12:00 midday closure. Free. The last km (Strada di Piona) is a narrow, slightly potholed but FLAT lane — no hairpins, no exposure — with a free car park at the end. Combine the cloister with a dip in the calm Piona bay.",
+    "timeNeeded": "45-90 min",
+    "rating": 4,
+    "tags": [
+      "swim",
+      "low-stress",
+      "scenic"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-lido-mandello",
+    "name": "Lido di Mandello del Lario — calm family swim",
+    "country": "IT",
+    "category": "beach",
+    "lat": 45.9141,
+    "lng": 9.3131,
+    "description": "The best comfortable family swim on the sheltered Lecco branch — calm, clean water (~22-24°C in July), gentle pebble entry, lifeguard, showers, bar and playground. A free public beach sits next to an equipped lido. Directly on the SS36, ~15 min north of Lecco, so it's the ideal last easy dip + rinse-off before the airport (~50 min onward to BGY).",
+    "communityNotes": "'Ideal for safe swimming with the whole family, clean fresh water'; parking rated 10/10 for ease; ranked #3 of 26 Lecco-area beaches (4.1/5, 3,264 reviews). Pebbles — bring water shoes; toilets can be busy at peak. 🅿 SATURDAY WARNING: D4 = Saturday — free lot fills by mid-morning. PRIMARY: Via Giulio Cesare lakeside lot (€1.50/hr or €10/day, scratch ticket from bar, 08:00-20:00). BACKUP (if arriving after 11am): Spiaggia di Pradello, Abbadia Lariana — 4km south, FREE parking at beach, same lake quality, zero stress on your last day.",
+    "sources": [
+      "https://www.eccolecco.it/en/sport-and-free-time/lecco-beaches/mandello-beach/",
+      "https://en.milazzo.life/spiaggia/spiaggia-lido-di-mandello-mandello-del-lario-it/",
+      "https://www.explorelakecomo.com/go/lido-mandello-del-lario"
+    ],
+    "cost": "Free beach (paid lido optional ~€10)",
+    "bestTime": "D4 final stop before the airport. FREE car park, but it fills early on summer weekends (D4 = Saturday) — if it's full, Spiaggia di Pradello (Abbadia Lariana, bigger parking) is ~10 min south on the same road. Use the showers to rinse the lake off before the flight.",
+    "timeNeeded": "1-1.5h",
+    "rating": 4,
+    "tags": [
+      "swim",
+      "family",
+      "low-stress"
+    ],
+    "status": "candidate",
+    "optionGroup": "d4-swim",
+    "optionTabLabel": "Mandello"
+  },
+  {
+    "id": "it-piani-erna",
+    "name": "Piani d'Erna cable car — alpine balcony above Lecco (option)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 45.867,
+    "lng": 9.417,
+    "description": "The only cable car still running on the corridor in summer 2026 (Piani di Bobbio is closed all season for a rebuild). A cabin lift from Versasio above Lecco up to alpine meadows and rifugi at ~1,300m with big lake views. A fresh alpine-balcony experience with ZERO scary driving — but it tops out lower than your Day-3 hike and eats ~2.5h, so it's an option only if you crave one more cable car on the way out.",
+    "communityNotes": "Access to the Versasio base is a short local road up from Lecco (no cliff pass). Watch the weekday 12:30-13:30 lift lunch-stop so you're not stranded at the top.",
+    "sources": [
+      "https://pianidibobbio.com/it/prezzi-orari/piani-derna",
+      "https://www.leccotoday.it/attualita/riapertura-funivia-lecco-erna.html"
+    ],
+    "cost": "~€15 return/adult (single €7.50)",
+    "bestTime": "D4 alternative to the gorge/swim. Summer (9 Jun-6 Sep 2026): weekdays 08:30-12:30 / 13:30-18:00, Sat/Sun continuous 08:00-18:30.",
+    "timeNeeded": "2-2.5h",
+    "rating": 3,
+    "tags": [
+      "cable-car",
+      "viewpoint",
+      "optional"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-nautica-lierna-kayak",
+    "name": "Nautica Lierna — kayak & SUP self-rental (Riva Bianca)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 45.9664,
+    "lng": 9.3026,
+    "description": "Walk-up kayak and SUP rental right on Riva Bianca, Lierna's white-pebble beach on the quieter Lecco branch — one of Lake Como's clearest, most photogenic swim beaches (natural amphitheatre, transparent water). Rent your own boat, no guide, and paddle the sheltered Lierna–Abbadia shore.",
+    "communityNotes": "'Riva Bianca is one of the most beautiful beaches of Lake Como... crystal clear water, white stones, enclosed in a natural amphitheatre.' Rentals from ~€10/hr; a few report reserving ahead on busy summer weekends. Water shoes for pebbles; deepens quickly.",
+    "sources": [
+      "https://nauticalierna.it/servizi",
+      "https://www.eccolecco.it/en/sport-and-free-time/lecco-beaches/lierna-beach-riva-bianca/",
+      "https://www.tripadvisor.com/Attraction_Review-g664189-d4893461-Reviews-Nautica_Lierna-Lierna_Lake_Como_Lombardy.html"
+    ],
+    "cost": "Kayak from ~€10/hr; SUP similar (walk-up)",
+    "bestTime": "Warm lake, best Jun-Sep; weekday mornings for parking on Via Roma. ~55 min drive W to the Lecco branch.",
+    "rating": 5,
+    "tags": [
+      "swim",
+      "self-rent",
+      "kayak",
+      "sup",
+      "warm-lake"
+    ],
+    "status": "candidate",
+    "optionGroup": "d1-kayak",
+    "optionTabLabel": "Lierna"
+  },
+  {
+    "id": "it-acboat-menaggio-kayak",
+    "name": "AC Boat Rental — kayak self-rental, Menaggio",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.021,
+    "lng": 9.2393,
+    "description": "Floating-dock walk-up kayak rental on Menaggio's lakefront (central Como branch), single and double sit-on-tops, no experience or guide needed. A base to paddle mid-lake toward Bellagio, Villa Balbianello and the quiet Menaggio–Rezzonico coves.",
+    "communityNotes": "Operator says kayaks are 'suitable for everyone and require no prior experience,' life jackets included; daylight/calm weather only. Reviewers rent doubles for a relaxed self-guided paddle to the Bellagio side.",
+    "sources": [
+      "https://www.acboatrentals.com/kayak/",
+      "https://www.acboatrentals.com/"
+    ],
+    "cost": "Single €20/hr, double €30/hr (life jacket incl.)",
+    "bestTime": "Jun-Sep daily 9:00-16:30; go early before the afternoon breva wind. ~1h drive W.",
+    "rating": 4,
+    "tags": [
+      "swim",
+      "self-rent",
+      "kayak",
+      "warm-lake",
+      "como-branch"
+    ],
+    "status": "candidate",
+    "optionGroup": "western-kayak",
+    "optionTabLabel": "Menaggio"
+  },
+  {
+    "id": "it-bomboklat-sorico-punta",
+    "name": "Bomboklat / Spiaggia La Punta — canoe, kayak & SUP (north lake)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1635,
+    "lng": 9.3797,
+    "description": "Sandy, shallow beach at the very head of Lake Como in the Pian di Spagna reserve, with a walk-up rental (Bomboklat) for canoes, kayaks and SUP. The closest genuine lake-swim + self-rental combo to base.",
+    "communityNotes": "'All sand with a shallow bottom, ideal for families, in the Pian di Spagna nature oasis.' Praise for the welcome and 'a very fair price' on double canoes. Wind end of the lake — mornings are calmest for flatwater.",
+    "sources": [
+      "https://www.bomboklat.it/it/nolo",
+      "https://milazzo.life/spiaggia/spiaggia-la-punta-sorico-it/",
+      "https://www.northlakecomo.net/en/311-Water-Sports-Canoeing-Kayaking"
+    ],
+    "cost": "Walk-up canoe/kayak/SUP (~€6-10/hr range)",
+    "bestTime": "Warm lake; paddle mornings before afternoon wind. Closest rental — ~40-50 min W via SS36.",
+    "rating": 4,
+    "tags": [
+      "swim",
+      "self-rent",
+      "kayak",
+      "sup",
+      "canoe",
+      "warm-lake"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-pioverna-taceno",
+    "name": "Pioverna river swim — Taceno (Valsassina)",
+    "country": "IT",
+    "category": "swim",
+    "lat": 46.0212,
+    "lng": 9.3565,
+    "description": "A little-known, green-shaded stretch of the Pioverna torrent in Valsassina — pull off at Via alle Terme, walk ~10 m, swim in calm clear river pools. Free, uncrowded, easy roadside access; a quick cool-off between mountains and lake.",
+    "communityNotes": "park4night: 'River is awesome on a hot day,' 'ice-cold but perfect in the heat,' 'easy access, swim in the river.' ~9 free spots, often quiet. Shallow in places — a relaxed dip, not deep water.",
+    "sources": [
+      "https://park4night.com/it/place/48224",
+      "https://www.sportoutdoor24.it/viaggi/italia/fiumi-dove-fare-il-bagno-in-lombardia/",
+      "https://giteinlombardia.it/notizia/le-spiagge-in-montagna-10-luoghi-dove-godersi-fresco-e-relax/"
+    ],
+    "cost": "Free (free roadside parking)",
+    "bestTime": "COLD mountain river — best on hot days; quiet weekdays. ~50 min drive SW via Valsassina.",
+    "rating": 4,
+    "tags": [
+      "swim",
+      "river",
+      "cold-alpine",
+      "free-parking",
+      "quiet"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-bagni-masino-swim",
+    "name": "Bagni di Masino — river & hot-spring valley head",
+    "country": "IT",
+    "category": "swim",
+    "lat": 46.245,
+    "lng": 9.5977,
+    "description": "Road-end hamlet at 1,172 m at the top of Val Masino: a natural spring flows at ~38°C behind the old thermal building while the Masino torrent runs cold and clear through a fir-and-beech regional forest. A rare pairing of warm spring + icy alpine pools, with easy trails and a rifugio.",
+    "communityNotes": "Long a folk 'wellness' spot — warm spring water emerges from a grotto behind the historic baths, in 'one of the most beautiful alpine valleys.' Combine with Val di Mello (same valley) for a double water day; torrent is snowmelt-cold, the spring is the warm counterpoint.",
+    "sources": [
+      "https://it.wikipedia.org/wiki/Bagni_di_Masino",
+      "https://fondoambiente.it/luoghi/foresta-regionale-bagni-di-masino",
+      "https://www.termedibormio.com/bagnidimasino.htm"
+    ],
+    "cost": "Free to reach valley/river (spa separate; road-end parking)",
+    "bestTime": "River cold, spring warm; summer for the river. ~50 min drive W into Val Masino.",
+    "rating": 3,
+    "tags": [
+      "swim",
+      "river",
+      "cold-alpine",
+      "hot-spring",
+      "off-route"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-spiaggia-onno",
+    "name": "Spiaggia di Onno — lake beach (Lecco branch)",
+    "country": "IT",
+    "category": "beach",
+    "lat": 45.9077,
+    "lng": 9.2975,
+    "description": "A large, popular pebble beach on the east shore of the Lecco branch at Oliveto Lario, backed by greenery with famously clear, luminous water from early morning. Easy access, beach bar, calm swimming — a solid warm-lake day paired with a Lecco-branch paddle.",
+    "communityNotes": "'One of the most popular stony beaches of the lake... crystal-clear water that lights up from early morning.' Busy on summer weekends and close to the road (not silent), but the clarity is a repeated highlight. Water shoes for shingle.",
+    "sources": [
+      "https://www.eccolecco.it/en/sport-and-free-time/lecco-beaches/onno-beach/",
+      "https://lariusway.com/en/punti-di-interesse/spiagge-lidi/onno/spiaggia-di-onno/",
+      "https://www.tripadvisor.com/Attraction_Review-g664194-d10593452-Reviews-Spiaggia_di_Onno-Oliveto_Lario_Lake_Como_Lombardy.html"
+    ],
+    "cost": "Free (bar + sunbed hire on site)",
+    "bestTime": "Warm lake, Jun-Sep; weekday to dodge crowds. ~1h drive W/SW to the Lecco branch.",
+    "rating": 4,
+    "tags": [
+      "swim",
+      "beach",
+      "warm-lake",
+      "clear-water",
+      "lecco-branch"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-fly-emotion-zipline",
+    "name": "Fly Emotion Zipline (Aerofune) — Albaredo",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1012,
+    "lng": 9.5835,
+    "description": "Patented double-cable 'Aerofune' above Albaredo per San Marco: fly solo or side-by-side in pairs at up to ~100 km/h, 230-350 m above the Bitto valley. One ticket = two runs (1.5 km + a steeper 1.2 km), shuttle between. The marquee adrenaline hit near base.",
+    "communityNotes": "Reviewers call it 'one of the most exciting adventures ever... a mix of fear, adrenaline and freedom' and '2.5 minutes of pure excitement.' The second (Bema->Albaredo) leg is the steeper one. Closed shoes required.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g2552002-d2539759-Reviews-Fly_Emotion-Albaredo_per_San_Marco_Province_of_Sondrio_Lombardy.html",
+      "https://www.italia.it/en/lombardy/things-to-do/lombardia-fly-emotion"
+    ],
+    "cost": "€49 single / €78 per couple; extra same-day run €20 (solo)",
+    "bestTime": "Book online ahead; weather-permitting, ~1h on site. ~55-70 min drive (down to Morbegno, up to Albaredo).",
+    "rating": 5,
+    "tags": [
+      "adrenaline",
+      "zipline",
+      "off-route"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-baradello-wild-park",
+    "name": "Baradello Wild Park (Aprica)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1533,
+    "lng": 10.1639,
+    "description": "15,000 m2 adventure park in the Orobie pines above Aprica: 4 tree-top courses of rising difficulty, a zipline, and a 'Giant Swing' that free-falls from ~20 m. The nearest big adrenaline spot to base and an easy win for the 15-year-old and the guys together.",
+    "communityNotes": "Listed by regional tourism as a top family/adrenaline park in Valtellina; the 20 m Giant Swing and the 'Direttissima Superiore' course are the crowd-pleasers. Free parking at the Baradello ski-lift, ~200 m walk in.",
+    "sources": [
+      "https://www.baradellowildpark.it/",
+      "https://www.valtellina.it/it/approfondimenti/parchi-e-riserve-naturali/baradello-wild-park"
+    ],
+    "cost": "€11 (easiest) to €17 (hardest) per course; combo tickets cheaper",
+    "bestTime": "Daily 10:00-18:00 through early Sep. ~40-50 min drive via SS39 to Aprica.",
+    "rating": 4,
+    "tags": [
+      "adrenaline",
+      "adventure-park",
+      "high-ropes",
+      "zipline"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-val-masino-guided-climbing",
+    "name": "Guided granite climbing — Val di Mello / Val Masino",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.2406,
+    "lng": 9.628,
+    "description": "Italy's 'Little Yosemite': flawless granite slabs and cracks. Local IFMGA/AGAI guides (e.g. Mello Mountain Guides) run intro sport-climbing and beginner single/multi-pitch days where a total beginner ties in and climbs real rock with a guide — safe, guided, genuinely thrilling.",
+    "communityNotes": "Climbers rate it one of Italy's premier granite areas with 'a rich choice of moderate routes on excellent granite'; the shaded Bagni forest sector stays cool in June. Email ahead. Meet at San Martino Valmasino.",
+    "sources": [
+      "https://melloguides.com/",
+      "https://www.ukclimbing.com/articles/destinations/val_masino__val_di_mello-9471"
+    ],
+    "cost": "Guided day ~€80-120 pp (gear included; varies by group size)",
+    "bestTime": "Morning start; book the guide 1-2 days ahead. ~50-60 min drive to San Martino Valmasino.",
+    "rating": 5,
+    "tags": [
+      "adrenaline",
+      "rock-climbing",
+      "guided",
+      "granite"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-como-lake-paragliding",
+    "name": "Tandem paragliding over Lake Como (Gera Lario)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.171,
+    "lng": 9.372,
+    "description": "Tandem paraglide off the mountains above the northern tip of Lake Como — long, high flights over the lake with the pilot letting you steer and even do loops. The classic, best-reviewed Como tandem operator (Fabio's Como Lake Paragliding).",
+    "communityNotes": "Full of 5-star reviews: 'Fabio is super friendly and reassuring... very safety conscious'; flights 'higher, longer and cheaper' than Maui; passengers can steer and 'fly loops.' Photos/video sent same day. Meet around Gera Lario; weight up to ~90 kg.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g664185-d9869802-Reviews-Como_Lake_Paragliding-Gera_Lario_Lake_Como_Lombardy.html",
+      "https://www.comolakeparagliding.com/tandemvluchten-comomeer"
+    ],
+    "cost": "~€110-160 pp, photos & video included",
+    "bestTime": "Morning or late-afternoon for calm air; book ahead. ~1h15-1h30 drive to the N tip of the lake.",
+    "rating": 5,
+    "tags": [
+      "adrenaline",
+      "paragliding",
+      "lake-como",
+      "off-route"
+    ],
+    "status": "candidate",
+    "optionGroup": "paragliding-tandem",
+    "optionTabLabel": "Gera Lario"
+  },
+  {
+    "id": "it-valtellina-paragliding-bianzone",
+    "name": "Tandem paragliding over Valtellina (Bianzone)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.2,
+    "lng": 10.096,
+    "description": "The close-to-base paraglide: meet at Bianzone, drive ~30 min up to a ~1,620 m launch, then a 15-20 min tandem flight over the Valtellina valley with the Madonna di Tirano sanctuary below. The pilot films it.",
+    "communityNotes": "Local operators (Freedome / Festival del Volo pilots) fly tandems, no age limit, weight 30-90 kg, season May-Nov. Reviewers highlight the 'privileged view of the Sanctuary of Madonna di Tirano.' Far quicker to reach than the Como launch.",
+    "sources": [
+      "https://freedome.it/attivita/volo-parapendio-tandem-vicino-sondrio/",
+      "https://www.valtellinasport.com/luoghi/bianzone/volo-in-parapendio-biposto-in-valtellina.htm"
+    ],
+    "cost": "~€150 pp (from ~€170 with jeep transfer + photos)",
+    "bestTime": "Morning thermals; book 1-2 days ahead. Bianzone meeting point ~20-30 min drive from base.",
+    "rating": 4,
+    "tags": [
+      "adrenaline",
+      "paragliding",
+      "valtellina"
+    ],
+    "status": "candidate",
+    "optionGroup": "paragliding-tandem",
+    "optionTabLabel": "Bianzone"
+  },
+  {
+    "id": "it-villa-monastero",
+    "name": "Villa Monastero — botanical garden + house museum (Varenna)",
+    "country": "IT",
+    "category": "sight",
+    "lat": 46.00766,
+    "lng": 9.288,
+    "description": "A ~2 km flat lakefront botanical garden strung along the east shore at Varenna — palms, citrus grove, agaves, open lake views the whole way, zero effort. Plus a furnished 14-room house museum (a former monastery). Pure gentle-wow for beauty-loving parents.",
+    "communityNotes": "'The gardens are huge with absolutely stunning views... every two steps a picture-worthy spot'; 'peaceful place to sit and contemplate.' Note: parts were closed for lift works until 9 Jun 2026 — fine after that.",
+    "sources": [
+      "https://www.villamonastero.eu/en/opening-hours-ticket/",
+      "https://www.tripadvisor.com/Attraction_Review-g187837-d1165447-Reviews-Villa_Monastero-Varenna_Lake_Como_Lombardy.html"
+    ],
+    "cost": "€13 garden / €15 garden+museum; youth 15-25 €7-9; under-14 free",
+    "bestTime": "June/July daily 9:30-20:00. Go at opening or after 17:00 (Varenna busy midday). ~1h20 from base, EAST shore, NO ferry. ~1.5-2h visit.",
+    "rating": 4,
+    "tags": [
+      "parents",
+      "garden",
+      "scenic",
+      "low-stress"
+    ],
+    "status": "candidate",
+    "optionGroup": "villa-gardens",
+    "optionTabLabel": "Monastero"
+  },
+  {
+    "id": "it-villa-melzi",
+    "name": "Villa Melzi Gardens (Bellagio)",
+    "country": "IT",
+    "category": "sight",
+    "lat": 45.97906,
+    "lng": 9.25316,
+    "description": "An English-style lakefront landscape park at Bellagio (1808-13): flat ~800 m promenade under plane trees, a Japanese pond with koi and maples, a photogenic Moorish pavilion, towering sequoias, statues and a chapel. The villa itself is private (gardens only).",
+    "communityNotes": "'Worth every cent of the €10'; 'the most exquisite gardens in Italy... I could have sat in the shade for hours'; stays quiet even when Bellagio is mobbed. Forum consensus prefers Melzi over Villa Serbelloni for actual gardens. Azaleas peak late Apr-May, so summer = green + lake views, not a bloom explosion.",
+    "sources": [
+      "https://www.giardinidivillamelzi.it/en/",
+      "https://www.tripadvisor.com/Attraction_Review-g187834-d197758-Reviews-I_Giardini_Di_Villa_Melzi-Bellagio_Lake_Como_Lombardy.html"
+    ],
+    "cost": "€10 adult (gardens+chapel+museum); under-11 free",
+    "bestTime": "Daily 10:00-19:00 (last 18:30), Mar-Oct. ~1h30 from base — best via Varenna->Bellagio CAR FERRY (~15-20 min) rather than the long drive round Lecco. ~1-1.5h.",
+    "rating": 5,
+    "tags": [
+      "parents",
+      "garden",
+      "scenic",
+      "ferry"
+    ],
+    "status": "candidate",
+    "optionGroup": "villa-gardens",
+    "optionTabLabel": "Melzi"
+  },
+  {
+    "id": "it-villa-olmo",
+    "name": "Villa Olmo — free lakeside park (Como city)",
+    "country": "IT",
+    "category": "sight",
+    "lat": 45.8189,
+    "lng": 9.0654,
+    "description": "A grand neoclassical villa with a FREE public park on the Como city lakeshore: formal Italian garden with fountain and statues out front, an English landscape park of ~800 mature trees behind, lakefront benches, and the start of the 'Kilometro della Conoscenza' lakeside walk.",
+    "communityNotes": "'The garden is still really worth the visit, very beautiful... the views up the lake are worth going for alone.' HONEST FLAG: the villa INTERIOR is closed for a €11M restoration through 2026 (no exhibition summer 2026) — it's a gardens/facade/lakefront-walk stop only.",
+    "sources": [
+      "https://www.villaolmocomo.com/orari/",
+      "https://www.comune.como.it/vivere-il-comune/luoghi/Villa-Olmo/"
+    ],
+    "cost": "Free (park)",
+    "bestTime": "Park open daily 07:00-23:00 (summer). FAR: ~2h each way (Como city, south tip). Best only as part of a broader south-Como day, not a dedicated trip.",
+    "rating": 3,
+    "tags": [
+      "parents",
+      "garden",
+      "free",
+      "far"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-villa-grumello",
+    "name": "Villa del Grumello — free garden + Kilometro della Conoscenza (Como)",
+    "country": "IT",
+    "category": "sight",
+    "lat": 45.8232,
+    "lng": 9.0674,
+    "description": "A quiet, free 17-hectare lakeside park on the Como city shore, linked to Villa Olmo and Villa Sucota by the flat ~1 km 'Kilometre of Knowledge' lakeside path — century-old trees, lemon groves, a chapel, lake views. Off the beaten track vs the famous ferry villas.",
+    "communityNotes": "Genuinely tranquil and little-known (mostly Italian visitors). Caveats: sources conflict on open days (official 2026 = most weekdays + Sun, Sat closed), and the bridge/gate to Villa Sucota may only open Sundays/August — a clear Sunday is the safest bet for the full walk.",
+    "sources": [
+      "https://www.villadelgrumello.it/",
+      "https://lakecomotravel.com/km-della-conoscenza-lake-como/"
+    ],
+    "cost": "Free",
+    "bestTime": "Jun-Jul Mon-Fri 9-17, Sun 9-18, Sat CLOSED (closes in rain). FAR: ~1h45-2h each way (Como city). Pair with Villa Olmo on a south-Como day.",
+    "rating": 3,
+    "tags": [
+      "parents",
+      "garden",
+      "free",
+      "far"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-nino-negri",
+    "name": "Nino Negri — castle cellar tour + tasting (Chiuro)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1711,
+    "lng": 9.9905,
+    "description": "Valtellina's most famous winery, in the 15th-century Castello Quadrio at Chiuro — 10 minutes from base. Guided tour down atmospheric underground aging corridors (1,500+ barriques, bare mountain-rock walls), then a tasting. Birthplace of the flagship '5 Stelle' Sforzato. A photogenic, cool, zero-effort wow.",
+    "communityNotes": "'Fantastic & interesting tour... an informative tasting of several lovely wines'; guides 'extremely knowledgeable,' 'excellent hospitality... a highlight of our 6 months in Europe.' Some tours add local cheese & cured meats.",
+    "sources": [
+      "https://www.ninonegri.it/en/tours",
+      "https://www.tripadvisor.com/Attraction_Review-g2045981-d4598687-Reviews-Nino_Negri-Chiuro_Province_of_Sondrio_Lombardy.html"
+    ],
+    "cost": "'Taste Valtellina' €30 pp (2h, 4 wines, full cellar); €20 quick 3-wine shop tasting",
+    "bestTime": "Tue-Sat, reservation required (call +39 0342 485211 / ninonegri.it). Closed Sun; Mon shop only. ~10 min drive from base.",
+    "rating": 5,
+    "tags": [
+      "parents",
+      "wine",
+      "cellar-tour",
+      "near-base"
+    ],
+    "status": "candidate",
+    "optionGroup": "valtellina-winery",
+    "optionTabLabel": "Nino Negri"
+  },
+  {
+    "id": "it-mamete-prevostini",
+    "name": "Mamete Prevostini — crotto tasting + Crotasc restaurant (Mese)",
+    "country": "IT",
+    "category": "food",
+    "lat": 46.3113,
+    "lng": 9.382,
+    "description": "A family winery in Valchiavenna whose visitor home is a 1767 crotto (natural rock-cave cellar) with the Michelin Bib Gourmand 'Crotasc' restaurant attached — in summer you dine outdoors under century-old chestnut trees. Taste the region's Sassella/Grumello/Inferno crus and Sforzato right above the cellar.",
+    "communityNotes": "'A charming place, every corner cared for'; 'lunch in the outdoor pergola... truly relaxing'; food 'so delicious it was hard to stop.' Tip: order the set traditional menu (~€40) for value — a la carte can run steep. Warm, non-snobby welcome.",
+    "sources": [
+      "https://www.mameteprevostini.com/en/book-a-tastings.html",
+      "https://guide.michelin.com/us/en/lombardia/mese/restaurant/crotasc"
+    ],
+    "cost": "Tastings €35 (4 wines) / €45 (5 wines) pp, Sat only; Crotasc restaurant Wed/Thu-Sun (set menu ~€40)",
+    "bestTime": "Restaurant Wed/Thu-Sun 12:15-14:00 & 19:15-22:00 (closed Mon-Tue); tastings Saturdays. ~55-60 min drive (Valchiavenna); pair with Chiavenna.",
+    "rating": 4,
+    "tags": [
+      "parents",
+      "wine",
+      "food",
+      "crotto"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-dirupi-winery",
+    "name": "Dirupi — terraced vineyards + 1568 cellar tasting (Ponte in Valtellina)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1707,
+    "lng": 9.9796,
+    "description": "A warm, story-driven young producer 15 min from base: a short scenic walk through dramatic terraced dry-stone vineyards (up to 70% gradient, among the region's highest Nebbiolo), a tour of a beautiful 1568 stone cellar, and a tasting of a fresh, approachable 'energetic' Chiavennasca.",
+    "communityNotes": "'More than just a tasting, it was an experience'; 'a genuine and intimate experience' that 'warmed our hearts'; co-founder Davide's 'smile and energy are contagious.' Jancis Robinson lists Dirupi among Valtellina's new-gen names to watch. Caveat: appointment-only + short walk on steep terraces + a ~10 min car hop between vineyard and cellar.",
+    "sources": [
+      "https://www.dirupi.com/en/visite",
+      "https://www.crushedgrapechronicles.com/the-energetic-wines-of-dirupi-in-valtellina/"
+    ],
+    "cost": "~€25-45 pp estimated (not published — confirm when booking)",
+    "bestTime": "Appointment only — book via WhatsApp +39 334 7092663 / info@dirupi.com / 'Scegli una data' on dirupi.com. ~15 min drive from base.",
+    "rating": 4,
+    "tags": [
+      "parents",
+      "wine",
+      "cellar-tour",
+      "near-base"
+    ],
+    "status": "candidate",
+    "optionGroup": "valtellina-winery",
+    "optionTabLabel": "Dirupi"
+  },
+  {
+    "id": "it-diavolezza-cable-car",
+    "name": "Diavolezza Glacier Cable Car (Bernina, Switzerland)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.4413,
+    "lng": 9.9835,
+    "description": "The eastern STANDOUT: a big Swiss cable car from the Bernina Pass road (2,096 m) up to 2,978 m onto a glacier plateau staring straight at Piz Bernina (the only 4,000 m peak in the Eastern Alps), Piz Palü and the Morteratsch glacier. No hiking needed for the money-shot; an easy optional walk toward Munt Pers widens the panorama. Reached via Tirano over the WIDE, gentle Bernina Pass road (NOT Stelvio-type exposure).",
+    "communityNotes": "'Just taking the cable car up for the views... the show pays off completely.' ACCESS ROAD = MILD (key finding): the Bernina Pass is 'suitable for any driver,' a wide guardrailed Swiss main road with a railway alongside — one driver 'normally worried about narrow mountain passes did not find this scary.' The tight switchbacks are on the far Poschiavo side you never have to drive. Fine for the anxious mother. Go early — August gets busy.",
+    "sources": [
+      "https://www.corvatsch-diavolezza.ch/en/tickets-and-fares/summer-prices",
+      "https://www.tripadvisor.com/Attraction_Review-g198832-d1886993-Reviews-Diavolezza-Pontresina_Engadin_St_Moritz_Canton_of_Graubunden_Swiss_Alps.html"
+    ],
+    "cost": "CHF 44 return / CHF 31 single per adult (~CHF 176 return for 4). Card or CHF.",
+    "bestTime": "Summer 2026: runs May 4-Oct 16; Jun 20-Aug 16 daily 08:20 first up, 17:20 last down, every 20 min. Go EARLY (crowds + afternoon cloud). Base->Tirano ~40 min flat, Tirano->station ~1h over the Bernina Pass = ~1h40 each way; a full day. Ukrainian biometric passports = visa-free Switzerland.",
+    "rating": 5,
+    "tags": [
+      "east",
+      "cable-car",
+      "switzerland",
+      "glacier",
+      "viewpoint",
+      "wow",
+      "off-route"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-bagni-vecchi-qc",
+    "name": "QC Terme Bagni Vecchi — historic thermal spa (Bormio)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.4919,
+    "lng": 10.3612,
+    "description": "The one the parents will fall in love with: 2,000-year-old thermal baths carved into the rock above Bormio — ancient Roman pools, a natural sweat-grotto tunnelled into the mountain, and an outdoor panoramic infinity pool of ~38C water hanging over the whole Valtellina valley. The atmospheric HISTORIC spa (distinct from the plain modern Bormio Terme and the free Vasche di Leonardo just below).",
+    "communityNotes": "'The structure is unique and the atmosphere with the view... definitely worth a visit'; 'view over Bormio from the panoramic pool.' Honest caveat: 'pools are few vs the crowds' — book a weekday/early slot. ACCESS ROAD = MILD: a few km up the SS38 above Bormio, a normal two-lane road with easy bends — you turn in well before the Stelvio hairpins start.",
+    "sources": [
+      "https://www.qcterme.com/destinations/bormio/qc-spa-bagni-vecchi",
+      "https://www.tripadvisor.com/Attraction_Review-g667205-d2620229-Reviews-Qc_Spa_Bagni_Vecchi_Bormio-Valdidentro_Province_of_Sondrio_Lombardy.html"
+    ],
+    "cost": "~€60 pp full thermal access (robe/towel/slippers + aperitif incl.); weekday time-bands cheaper",
+    "bestTime": "Year-round; weekday morning (from 10:00) to dodge crowds. ~1h05 drive up the SS38 via Bormio. Pairs with a Bormio 2000 gondola or Cancano day.",
+    "rating": 4,
+    "tags": [
+      "east",
+      "thermal",
+      "spa",
+      "parents",
+      "relaxation",
+      "off-route"
+    ],
+    "status": "candidate",
+    "optionGroup": "bormio-thermal",
+    "optionTabLabel": "Bagni Vecchi"
+  },
+  {
+    "id": "it-alp-grum-viewpoint",
+    "name": "Alp Grüm — Palü Glacier balcony (Bernina railway)",
+    "country": "IT",
+    "category": "viewpoint",
+    "lat": 46.3745,
+    "lng": 10.0312,
+    "description": "A zero-driving glacier viewpoint on the UNESCO Bernina railway: a sun-terrace station at 2,091 m on the lip of Valposchiavo, facing the shining Palü Glacier. Reachable only by the Rhaetian Railway or on foot — you leave the car and let the train do the exposed bit. The near-level path along Lago Bianco from Ospizio Bernina is a gentle add-on with the same glacier backdrop.",
+    "communityNotes": "'From Alp Grüm you admire the shining white Palü glacier and an unforgettable view over Poschiavo.' 'Wide, level path along Lago Bianco... walking is easy, you relax and enjoy this wilderness.' ACCESS ROAD = NONE: park at Ospizio Bernina (on the wide main road) and take the train ~10 min, or walk the flat lake path.",
+    "sources": [
+      "https://www.graubuenden.ch/en/tours/ospizio-bernina-station-alp-grum-cavaglia",
+      "https://www.myswitzerland.com/en-us/experiences/alp-gruem/"
+    ],
+    "cost": "Free viewpoint; short RhB train hop a few CHF, or walk free",
+    "bestTime": "Summer, midday for clear glacier light. ~1h30 drive to Ospizio Bernina, then train/walk. A low-stress complement to Diavolezza on the same Swiss day.",
+    "rating": 4,
+    "tags": [
+      "east",
+      "switzerland",
+      "glacier",
+      "viewpoint",
+      "train",
+      "low-stress",
+      "off-route"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-cavaglia-glacier-garden",
+    "name": "Cavaglia Glacier Garden — Giants' Potholes (CH)",
+    "country": "IT",
+    "category": "nature",
+    "lat": 46.3642,
+    "lng": 10.0439,
+    "description": "A quirky, easy, free geosite on the Swiss Bernina descent: 21 excavated 'giants' cauldrons' — huge cylindrical potholes milled into bedrock by the vanished Palü glacier, one with a ladder you can climb down into. A short signposted loop with railings ends at a viewpoint over Valposchiavo and a small gorge/waterfall. Kid-simple low-effort curiosity to break up a Bernina day.",
+    "communityNotes": "'Excellent park of many glacial potholes.' 'One pothole is interactive — you can descend by a ladder... the path ends near an imposing gorge.' ~10 min walk from Cavaglia station. ACCESS ROAD = MILD: reach it car-free by TRAIN from Ospizio/Alp Grüm to skip the tighter switchbacks below the pass.",
+    "sources": [
+      "https://ggc.swiss/en/",
+      "https://www.graubuenden.ch/en/attractions/cavaglia-0"
+    ],
+    "cost": "Free (donation). Open ~March-October, snow permitting",
+    "bestTime": "Summer daytime. ~1h50 drive, or car-free by train from Ospizio Bernina (~15-20 min). Best folded into a Diavolezza/Alp Grüm day.",
+    "rating": 3,
+    "tags": [
+      "east",
+      "switzerland",
+      "nature",
+      "geology",
+      "easy-walk",
+      "off-route"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-bormio-2000-cima-bianca",
+    "name": "Bormio 2000 / Cima Bianca summer gondola",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.4622,
+    "lng": 10.3724,
+    "description": "Bormio's own big-view lift, open in summer: an 8-seat gondola from the edge of Bormio town (1,204 m, NO scary road) up to Bormio 2000, then an aerial tram to Cima Bianca / Bormio 3000 (~3,012 m). The top opens easy family hikes to the Bei Laghetti alpine lakes, or you just ride up for a high panorama and ride down — a low-stress high-alpine hit for the no-passes days.",
+    "communityNotes": "'In summer Cima Bianca becomes the starting point for family hiking trails, like the path to the beautiful small lakes Bei Laghetti.' ACCESS ROAD = NONE: the valley station is inside Bormio on Via Battaglion Morbegno with big car parks — you drive the flat valley and step into the gondola.",
+    "sources": [
+      "https://www.bormioski.eu/en/summer/cima-bianca-bormio-2000/",
+      "https://www.bormio.eu/en/funivia-bormio-2000"
+    ],
+    "cost": "~€25-35/adult return (confirm 2026 at ticket office)",
+    "bestTime": "Summer 2026 ~Jul 4-Sep 6. Morning for clear peaks (afternoon storms). ~1h drive to Bormio. Pairs with a Bagni Vecchi soak.",
+    "rating": 3,
+    "tags": [
+      "east",
+      "cable-car",
+      "viewpoint",
+      "hiking",
+      "low-stress",
+      "off-route"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-livigno-duty-free",
+    "name": "Livigno — duty-free high valley (skip-candidate)",
+    "country": "IT",
+    "category": "town",
+    "lat": 46.5382,
+    "lng": 10.136,
+    "description": "A high, wide alpine valley at ~1,800 m that is a customs-free zone: 250+ shops sell perfume, electronics, sport gear, chocolate and cheap fuel below Italian prices. Scenery is broad rather than dramatic; the draw is novelty duty-free shopping. Honestly marginal for this adventure-first group.",
+    "communityNotes": "'Shopping in Livigno means 250+ shops... duty-free prices.' ACCESS ROAD = AVOID for the anxious mother from the Bormio side: the Foscagno Pass is 'a dizzying series of hairpins you count down from 50' — exactly the exposed switchbacks she dreads. ~2h15+ each way with low scenic payoff: the weakest eastern option.",
+    "sources": [
+      "https://www.in-lombardia.it/en/tourism-in-lombardy/tourism-sondrio/livigno-duty-free-area",
+      "https://www.tripadvisor.com/ShowTopic-g194799-i8056-k3178141-Are_the_roads_dangerous_on_the_way_to_livigno_from_milan-Livigno_Province_of_Sondrio_Lombar.html"
+    ],
+    "cost": "Free to visit; goods ~20-30% cheaper; cheap fuel",
+    "bestTime": "~2h15-2h30 each way via the Foscagno hairpins — a long haul for shopping. Only if someone really wants duty-free AND is OK with the road.",
+    "rating": 2,
+    "tags": [
+      "east",
+      "town",
+      "shopping",
+      "skip-candidate",
+      "off-route"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-arpepe",
+    "name": "Ar.Pe.Pe. — benchmark Alpine Nebbiolo cellar (Sondrio)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.169,
+    "lng": 9.898,
+    "description": "Widely called 'the single best producer in Valtellina' — a 5th-generation family cellar carved into the mountainside directly beneath the ruins of Castel Grumello, wrapped in steep terraced Nebbiolo. A ~2h appointment visit: cellar tour into the heart of the mountain, an optional (skippable) vineyard walk, and a tasting of ~6 wines incl. the long-aged Sassella/Grumello Riservas. 15 min from base.",
+    "communityNotes": "'No winemaker in the world has impressed me more'; Isabella 'made everyone feel taken care of and right at home.' HONEST FLAG: it's a serious WINE visit (historically a standing tasting with minimal snacks), not a lavish food experience — the wow is the wines, family and setting. Nav via Google 'Ar.Pe.Pe., Via del Buon Consiglio' / Castel Grumello (not OSM-tagged; pin ~150m accurate).",
+    "sources": [
+      "https://www.arpepe.com/en/visits-and-tastings",
+      "https://openingabottle.com/essential-winemakers-italy/arpepe/"
+    ],
+    "cost": "~€30-40 pp est. (2021 figure €30; confirm at booking)",
+    "bestTime": "Appointment only, standard 10:00 start ~2h. Book via arpepe.com/visite-e-degustazioni or info@arpepe.com / +39 0342 214120. ~15 min from base.",
+    "rating": 5,
+    "tags": [
+      "parents",
+      "wine",
+      "cellar-tour",
+      "near-base"
+    ],
+    "status": "candidate",
+    "optionGroup": "valtellina-winery",
+    "optionTabLabel": "ARPEPE"
+  },
+  {
+    "id": "it-rainoldi",
+    "name": "Rainoldi — family cellar tour + tasting (Chiuro)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1648,
+    "lng": 9.9918,
+    "description": "A warm, historic family winery (since 1925, 3rd-gen Aldo Rainoldi often in the cellar) — #1 thing to do in Chiuro (4.8/5). Ground-floor shop down into underground stone barrel chambers, up to a restored tasting room, with hidden rooms of rare old vintages. Classic Sassella/Grumello/Inferno crus + the prestige Sforzato 'Fruttaio Ca' Rizzieri.' Excellent value, 15 min from base.",
+    "communityNotes": "'Expertise, attention and kindness of the sommelier and Mr. Rainoldi himself'; 'we saw all the cellars and learned how the wines were made.' You get to choose which wines to taste. Great-value basic tour. Minor: experience can vary by guide.",
+    "sources": [
+      "https://www.rainoldi.com/en/",
+      "https://www.tripadvisor.com/Attraction_Review-g2045981-d6363477-Reviews-Cantina_Aldo_Rainoldi-Chiuro_Province_of_Sondrio_Lombardy.html"
+    ],
+    "cost": "~€15 pp basic cellar tour + 5-wine tasting (food-pairing 'Relax' option costs more)",
+    "bestTime": "Appointment only, book >=4 days ahead via WhatsApp/phone +39 392 162 1967 (Sat pm/Sun by phone). ~10-15 min from base.",
+    "rating": 4,
+    "tags": [
+      "parents",
+      "wine",
+      "cellar-tour",
+      "near-base",
+      "value"
+    ],
+    "status": "candidate",
+    "optionGroup": "valtellina-winery",
+    "optionTabLabel": "Rainoldi"
+  },
+  {
+    "id": "it-crotto-quartino-piuro",
+    "name": "Crotto Quartino — Valchiavenna crotto (Piuro)",
+    "country": "IT",
+    "category": "food",
+    "lat": 46.3235,
+    "lng": 9.4597,
+    "description": "The local-legend crotto of the Chiavenna area — a 1627 stone cellar cooled by natural 'sorel' rock air, in a chestnut wood with a stream, where in summer you eat at stone tables under the trees. The signature is white pizzoccheri (little dumplings in butter and Piuro cheese, made only here), house salumi and generous fixed menus. Rustic, abundant, #1 restaurant in Piuro.",
+    "communityNotes": "'Il top dei crotti'; 'i pizzoccheri degli dei' (the pizzoccheri of the gods); 'go, then die happy.' #1 of 11 in Piuro across 2,200+ reviews. Order the fixed menu (~€37 incl. water/wine/coffee/digestivo) to keep it predictable — a few note price creep a la carte.",
+    "sources": [
+      "https://www.crottoquartino.it/",
+      "https://www.tripadvisor.com/Restaurant_Review-g2308726-d2289743-Reviews-Crotto_Quartino_Valchiavenna-Piuro_Province_of_Sondrio_Lombardy.html"
+    ],
+    "cost": "Fixed traditional menu ~€37 (drinks incl.); a la carte ~€28-40 pp. Reserve +39 0343 35305",
+    "bestTime": "Lunch or dinner; summer = outside under the trees. Jul-Aug daily; June closed Tue-Wed (call). ~1h drive (past Chiavenna). Pairs with a Valchiavenna/Acquafraggia day.",
+    "rating": 5,
+    "tags": [
+      "parents",
+      "crotto",
+      "valchiavenna",
+      "pizzoccheri",
+      "special-meal"
+    ],
+    "status": "candidate",
+    "optionGroup": "d2-crotto-lunch",
+    "optionTabLabel": "Quartino"
+  },
+  {
+    "id": "it-agriturismo-santa-maria",
+    "name": "Agriturismo Santa Maria — farm dinner with a valley view (Montagna)",
+    "country": "IT",
+    "category": "food",
+    "lat": 46.1847,
+    "lng": 9.9171,
+    "description": "A genuine family-run working agriturismo at ~900 m on the sunny Valtellina slope, beside a frescoed 15th-c church, with an 'incredible view' over the valley and the Orobie opposite. Owner Matteo cooks pizzoccheri, sciatt, house salumi and nettle tagliolini paired with his OWN Valtellina Superiore Nebbiolo. Intimate, warm, and the closest special view-dinner to base (~10 min).",
+    "communityNotes": "'Enchanting place, marvellous view over the valley'; 'Matteo and his family make you feel at home'; 'the house wine is greatly appreciated.' #1 of 7 in Montagna in Valtellina. He'll arrange a custom tasting menu for groups — worth asking for a once-in-a-lifetime dinner.",
+    "sources": [
+      "http://www.agriturismosantamaria.net/",
+      "https://www.tripadvisor.com/Restaurant_Review-g3403199-d4781431-Reviews-Agriturismo_Santa_Maria-Montagna_in_Valtellina_Province_of_Sondrio_Lombardy.html"
+    ],
+    "cost": "~€22-30 pp (salumi, sciatt, pizzoccheri, dessert, house wine). Book: +39 348 7641110",
+    "bestTime": "Limited service (reported Thu-Fri dinner, Sat-Sun lunch — call to confirm & reserve). A Thu/Fri dinner catches sunset over the valley. ~10-12 min from base.",
+    "rating": 4,
+    "tags": [
+      "parents",
+      "agriturismo",
+      "view",
+      "special-meal",
+      "near-base"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-nautic-planet-menaggio",
+    "name": "Self-drive motorboat rental — Nautic Planet (Menaggio)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.0197,
+    "lng": 9.239,
+    "description": "The gentlest 'wow' on Lake Como for the parents: rent a small 40hp motorboat (NO licence needed in Italy under 40hp) and see the villas and shoreline from the water, sitting down, at your own pace — Bellagio, Villa Carlotta, the Tremezzina — with a sun canopy and a swim ladder for a mid-lake dip. A short briefing covers total beginners.",
+    "communityNotes": "'No licence required'; staff 'kind and genuinely wanting you to have a great time'; boats 'easy to drive.' 'You'll be shown what to do even if you've never been on a boat.' Zero-effort alternative: Barindelli chauffeured wooden taxi-boats from Bellagio.",
+    "sources": [
+      "https://nauticplanet.com/en/",
+      "https://www.tripadvisor.com/Attraction_Review-g194821-d4931528-Reviews-Nautic_Planet_Rent_a_Boat-Menaggio_Lake_Como_Lombardy.html"
+    ],
+    "cost": "~€200 for 4h self-drive (no licence, up to 6-7 people); fuel extra",
+    "bestTime": "Late morning, calmer water. Book 1-2 days ahead in summer. ~1h30-1h45 drive to Menaggio (confirm exact dock in Maps).",
+    "rating": 4,
+    "tags": [
+      "parents",
+      "boat",
+      "lake-como",
+      "self-rent",
+      "low-effort"
+    ],
+    "status": "candidate",
+    "optionGroup": "western-kayak",
+    "optionTabLabel": "Motorboat"
+  },
+  {
+    "id": "it-lungolago-menaggio",
+    "name": "Lungolago di Menaggio — lakeside promenade",
+    "country": "IT",
+    "category": "viewpoint",
+    "lat": 46.0203,
+    "lng": 9.2402,
+    "description": "The classic effortless Lake Como stroll: a flat, traffic-free lakefront promenade through gardens, palms and cafes, with open views across to Bellagio and Varenna. No stairs, no climb — walk as much or as little as you like and end with an aperitivo. Stacks with a Menaggio boat rental for one gentle central-lake day.",
+    "communityNotes": "'Very beautiful walk with benches, palm trees and colorful flowerbeds on the lake'; 'views of Bellagio and Varenna.' Tip: go at golden hour when light reflects on the water. Free, always open, stroller-friendly.",
+    "sources": [
+      "https://www.tripadvisor.com/Attraction_Review-g194821-d23384972-Reviews-Lungolago_Di_Menaggio-Menaggio_Lake_Como_Lombardy.html"
+    ],
+    "cost": "Free",
+    "bestTime": "Late afternoon / golden hour, then aperitivo. ~1h30-1h45 drive; combine with the Menaggio boat.",
+    "rating": 4,
+    "tags": [
+      "parents",
+      "promenade",
+      "lake-como",
+      "low-effort"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-fay-winery",
+    "name": "Sandro Fay — Valgella reference winery + vineyard walk (Teglio)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1597,
+    "lng": 10.0525,
+    "description": "The reference producer of Valgella (a Valtellina Superiore sub-zone), on the terraced Teglio slope ~15 min from base. A warm, English-speaking family visit (Elena Fay usually hosts): cellar tour, a tasting of the elegant single-vineyard Nebbiolo + Sforzato 'Ronco del Picchio', and a walk up into the 'heroic' terraces for the valley panorama. Wines displayed at the altitude each is grown.",
+    "communityNotes": "'They treat you like family friends'; 'startlingly low prices for the quality'; critics rank Fay with 'the giants of the Langhe.' English spoken; email ~a month ahead in high season. Some visits pair with lunch at the family's Ca' d'Otello restaurant.",
+    "sources": [
+      "https://vinifay.it/index.php?lang=en",
+      "https://www.openingabottle.com/essential-winemakers-italy/sandro-fay/"
+    ],
+    "cost": "~€15-30 pp est. (not published — confirm at booking). Book: info@vinifay.it / +39 0342 786071",
+    "bestTime": "Appointment only — email a few weeks ahead. ~15 min easy drive E from base (via Chiuro, short uphill to San Giacomo).",
+    "rating": 4,
+    "tags": [
+      "parents",
+      "wine",
+      "cellar-tour",
+      "near-base",
+      "view"
+    ],
+    "status": "candidate",
+    "optionGroup": "valtellina-winery",
+    "optionTabLabel": "Fay"
+  },
+  {
+    "id": "it-como-ferry-daypass",
+    "name": "Centro Lago passenger ferry day-pass (hop-on/off villages)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.0114,
+    "lng": 9.2833,
+    "description": "The car-free way to do the central-lake 'triangle': one Navigazione Laghi free-circulation day pass = unlimited hop-on/hop-off slow ferries between Varenna, Bellagio, Menaggio, Tremezzo/Cadenabbia and Lenno. Park in Varenna, leave the car, let the boats do the driving. HONEST: for your group the four-village crawl underwhelms — do it water-first (morning kayak) + 1-2 town hops, not a completist loop.",
+    "communityNotes": "Official 2026 fare: Centro Lago 1-day pass €17.50 adult / €8.80 child 4-11 / under-4 free; 'Happy Family' = 2 adult passes + up to 2 kids free. Covers SLOW boats only (fast hydrofoil needs a supplement — rarely needed). GOTCHAS: buy at the Varenna pier booth (shows 'sold out' online — it's booth-only); a prepaid pass does NOT reserve a seat and midday boats can be too full to board; the 4-6pm return is the worst crush; buy your return leg on landing and confirm the last boat so you don't strand the car.",
+    "sources": [
+      "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/rates-lake-como/",
+      "https://community.ricksteves.com/travel-forum/italy/lake-como-ferry-pass"
+    ],
+    "cost": "€17.50 adult / €8.80 child / under-4 free; 'Happy Family' 2+2 kids free; single hop ~€5.50",
+    "bestTime": "Buy at Varenna pier ~09:15. Ordinary ferries every ~20-40 min in July. Be off the busy midday boats and gone before the 4-6pm crush. Car ferry runs latest (~22:30, foot passengers OK) as a hedge.",
+    "rating": 5,
+    "tags": [
+      "ferry",
+      "lake-como",
+      "hop-on-hop-off",
+      "self-guided",
+      "parents",
+      "low-effort"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-tremezzo",
+    "name": "Tremezzo — the calm third corner (Lake Como)",
+    "country": "IT",
+    "category": "town",
+    "lat": 45.9835,
+    "lng": 9.2186,
+    "description": "The quieter western-shore corner of the central triangle, home to Villa Carlotta and its own ferry pier — noticeably calmer than Bellagio or Varenna. An elegant, low-key lakefront of gardens, grand old hotels and a palm-lined promenade across the water from Bellagio. A place to slow down, swim, and get gelato/aperitivo rather than fight crowds.",
+    "communityNotes": "'Tremezzo is quieter compared to bigger destinations like Bellagio or Varenna' — a relief from the midday crush. Villa Carlotta has its OWN ferry stop, so you step off almost at the gate. The best-value 'breather' corner of the triangle in July; skippable if you're villa'd-out.",
+    "sources": [
+      "https://lakecomotravel.com/tremezzina/",
+      "https://www.villacarlotta.it/en/visit/"
+    ],
+    "cost": "Free (village)",
+    "bestTime": "Ferry stop 'Villa Carlotta'/Tremezzo. A quiet aperitivo/swim stop mid-triangle; calmer than Bellagio all day.",
+    "rating": 4,
+    "tags": [
+      "lake-como",
+      "village",
+      "low-effort",
+      "parents",
+      "swim"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-preda-rossa",
+    "name": "Preda Rossa — glacial cirque under Monte Disgrazia (Val Masino)",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.22674,
+    "lng": 9.69691,
+    "description": "The best MIXED-ABILITY hike for your group, ~1h from base on a normal valley road (no scary pass). From the Preda Rossa parking (1,955m) a near-flat boardwalk crosses a peatland glacial amphitheatre — the Duino torrent winding through it, reddish granite walls, Monte Disgrazia (3,678m) towering above. Parents do the flat plains (~1-1.5h, negligible climb); you + brother push on up to Rifugio Ponti (2,559m, ~9.4km/630m RT) for the glacier terrace. One trailhead, two levels.",
+    "communityNotes": "'Il percorso e pianeggiante... perfetto per far vivere ai bambini una vera avventura senza nessuna difficolta' (flat, suitable for anyone). The final pitch to Rifugio Ponti is steep/rocky and 'mai esposto' but a real effort — for the fit ones. ACCESS: €12 tourist pass bought on-site from authorised dealers in Val Masino village (7am-8pm) or at the Via Moss parking meter (8pm-7am). No online pre-booking needed. Road fills on peak Saturdays — aim to arrive by 07:30. Morning start (afternoon storms).",
+    "sources": [
+      "https://www.komoot.com/tour/1213570783",
+      "https://acchiappamappa.com/preda-rossa-val-masino-trekking-rifugio-ponti/",
+      "https://www.valtellina.it/it/approfondimenti/trekking/predarossa"
+    ],
+    "cost": "€12 tourist pass, paid on-site (dealer in Val Masino village or Via Moss meter). No pre-booking.",
+    "timeNeeded": "3h (parents flat loop). Up to 4h+ if guys push to Rifugio Ponti.",
+    "bestTime": "Morning (afternoon storms). Snow-free by July on the plains. ~1h drive to Val Masino/Preda Rossa. Parents: flat plains ~1-1.5h. Guys: +Rifugio Ponti ~4h RT.",
+    "rating": 5,
+    "tags": [
+      "hike",
+      "mixed-ability",
+      "glacier-view",
+      "parents",
+      "near-base"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-cascata-del-ferro",
+    "name": "Cascata del Ferro — 210m waterfall, flat Val di Mello trail",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.262,
+    "lng": 9.664,
+    "description": "The easiest big-payoff walk in the area: a flat 2-3km stroll along the Val di Mello valley floor ('Little Yosemite'), then a 10-15 min detour up to the Cascata del Ferro — a 210m four-tier granite waterfall. Distinct from the Bidet della Contessa swim pool. Genuinely family-easy, huge scenery.",
+    "communityNotes": "'La cascata piu bella della valle... meno di 500 metri di percorso, una deviazione di soli 10-15 minuti dal sentiero principale.' 'Il sentiero principale e facile e adatto a tutti, anche a famiglie con bambini.' Park/shuttle at San Martino (fills in July). Waterfall pin approximate (~50m).",
+    "sources": [
+      "https://www.komoot.com/smarttour/e1361189251/le-cascate-della-val-di-mello-da-san-martino-nella-val-di-ferro",
+      "https://lemontagne.net/val-di-mello/",
+      "https://www.holidoit.com/en/idee/val-di-mello-la-guida-completa"
+    ],
+    "cost": "Free (paid parking at San Martino)",
+    "bestTime": "Morning to beat crowds/parking. Snow-free, warm valley (swim pools). ~1h drive to San Martino Valmasino, flat walk in.",
+    "rating": 4,
+    "tags": [
+      "hike",
+      "waterfall",
+      "family-easy",
+      "near-base"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-gavia-lago-bianco",
+    "name": "Passo Gavia → Lago Bianco loop (easy, big views)",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.3436,
+    "lng": 10.4879,
+    "description": "The best views-for-least-effort hike: a near-flat ~5km loop (~210m, 2-2.5h) from the paved 2,618m Passo Gavia around turquoise Lago Bianco, ringed by the Ortles-Cevedale wall and WWI relics. Parents very doable (turn back at the lake — do NOT continue to Lago Nero, that stretch is exposed/chain-assisted). Fit guys can add Monte Gaviola (3,025m) for a 360 glacier panorama.",
+    "communityNotes": "'An easy-to-moderate route... ~200m gain, 2-3h, ideal for families or casual explorers.' Gavia road (SS300) confirmed open summer 2026. NOTE: it IS a high mountain pass road — some narrow sections; fine for most but flag for the anxious driver. Morning (2,620m = afternoon storms); a little snow possible early July, clear by late month.",
+    "sources": [
+      "https://www.komoot.com/highlight/1311549",
+      "https://www.passogavia.it/en/trekking-mountaineering/",
+      "https://www.ilmondosecondogipsy.it/passo-di-gavia-escursione-ad-anello/"
+    ],
+    "cost": "Free",
+    "bestTime": "Morning. ~1h20-1h40 drive east (via Santa Caterina Valfurva). Guys' bonus: Monte Gaviola (Komoot tour 465161222).",
+    "rating": 4,
+    "tags": [
+      "hike",
+      "east",
+      "alpine-lake",
+      "easy",
+      "mixed-ability"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-rifugio-branca-forni",
+    "name": "Rifugio Forni → Rifugio Branca — glacier-front walk",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.4201,
+    "lng": 10.555,
+    "description": "The gentle way to stand in front of the Forni glacier without the exposed high loop: from the Rifugio Forni parking (2,178m) a jeep-track (~3km, ~320m, ~2h RT) leads to Rifugio Branca (2,493m), which faces the glacier tongue directly. Snow-free by July, no exposure — a real glacier payoff the parents can do.",
+    "communityNotes": "'Raggiungibile in 1.10h di cammino con una passeggiata adatta a tutti, anche a famiglie... la pendenza non e severa.' Glacier views from the refuge are worthwhile even without going further (the moraine beyond is a boulder field — skip). Toll road to Forni (~€10/day) or walk it free (~1.5h).",
+    "sources": [
+      "https://www.komoot.com/highlight/294261",
+      "https://giteinlombardia.it/rifugio-branca/",
+      "https://duepertrefacinque.it/2021/10/ghiacciaio-dei-forni-rifugio-branca-con-bambini.html"
+    ],
+    "cost": "~€10/day parking toll (or walk free)",
+    "bestTime": "Mid-morning (afternoon storms). Snow-free by July. ~1h20 drive east to Rifugio Forni (Santa Caterina Valfurva).",
+    "rating": 4,
+    "tags": [
+      "hike",
+      "east",
+      "glacier-view",
+      "family-doable"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-cascata-boggia",
+    "name": "Cascata della Boggia — emerald pool + Roman bridge (Gordona)",
+    "country": "IT",
+    "category": "nature",
+    "lat": 46.2805,
+    "lng": 9.3689,
+    "description": "A 2-minute walk from free parking to an emerald plunge pool at the foot of the Boggia falls, with a Roman bridge overlooking the torrent and a shaded picnic area (toilets, water, kids' play area). It's at the mouth of Val Bodengo — the SAME base as the canyoning — so on D2 the parents can see the falls, paddle and picnic while you and your brother do the canyon, then regroup.",
+    "communityNotes": "'Piccola spiaggia di torrente ai piedi della cascata, selvaggia e scenografica'; water 'cristallina ma gelida' (crystal but icy) — look/paddle rather than long swims. SAFETY: dammed upstream — 'possibilita di onde di piena improvvise' (sudden surges), keep kids back from the bed. Some go-kart noise nearby on busy days.",
+    "sources": [
+      "https://www.lombardiaexperience.it/sondrio/cascata-della-boggia/",
+      "https://park4night.com/en/place/254168",
+      "https://milazzo.life/spiaggia/spiaggia-cascata-della-boggia-gordona-it/"
+    ],
+    "cost": "Free (free parking, ~150m walk)",
+    "bestTime": "May-Sep; reliable flow in July, cold water. ~1h10-1h25 drive (Gordona, Val Bodengo) — pair with the canyoning day.",
+    "rating": 4,
+    "tags": [
+      "waterfall",
+      "swim",
+      "picnic",
+      "family",
+      "canyoning-synergy"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-culmine-dazio",
+    "name": "Culmine di Dazio — short hike, big Disgrazia view (921m)",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.1544,
+    "lng": 9.6199,
+    "description": "The closest genuine hike to base (~30 min): a granite bastion at the mouth of Val Masino with a huge panorama — the Val Masino spires, Monte Disgrazia (3,678m), the middle Valtellina, and down to Lake Como. Low (921m) so snow-free all summer and safe: a real half-day hike the parents can do, with the Casermetta refuge (WWI barracks) at the top for lunch.",
+    "communityNotes": "'A real hiking trail, not a drive-up viewpoint.' From the Dazio cemetery (568m) it's ~345m / ~50-60 min up an easy mule-track; from Ardenno steeper (~650m/1h20). Make it a loop for a fuller morning. Low + wooded = can be hot/humid in July — go morning. Reserve La Casermetta for food.",
+    "sources": [
+      "https://www.zampeazonzo.it/",
+      "https://www.caicalolzio.com/culmine-di-dazio",
+      "https://www.peakvisor.com/peak/culmine-di-dazio.html"
+    ],
+    "cost": "Free",
+    "bestTime": "Morning (low + wooded = warm midday). Snow-free all summer — good bad-weather-up-high backup. ~30 min drive; park at Dazio cemetery.",
+    "rating": 4,
+    "tags": [
+      "hike",
+      "short",
+      "viewpoint",
+      "near-base",
+      "family-doable"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-alpe-oro-valmalenco",
+    "name": "Alpe dell'Oro (from Chiareggio) — Disgrazia balcony",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.3205,
+    "lng": 9.7624,
+    "description": "The BEST-value hike for your group and the D3 morning pick: a 2,000m alpine pasture terrace above Chiareggio with a full-frontal view of Monte Disgrazia's north face and the whole valley. Same trailhead as Pirola but a MUCH gentler climb (~1h30 up, ~450-550m, comfortable switchbacks). Parents genuinely enjoy it; the fit two can extend to Rifugio Longoni.",
+    "communityNotes": "Komoot 4.9/5 (37): 'a spectacular view of the north slope of Monte Disgrazia and the entire Chiareggio valley.' Blog: 'la salita non e mai troppo faticosa' (never too tiring), non-technical, snow-free by July. (NB: a second homonymous Alpe dell'Oro exists in Val Masino — this is the Valmalenco one.)",
+    "sources": [
+      "https://www.komoot.com/it-it/highlight/2641878",
+      "https://www.cristianriva.it/chiareggio-alpe-oro/"
+    ],
+    "cost": "Free trail; Chiareggio parking ~€5",
+    "bestTime": "Start 8-9am (afternoon storms). Snow-free Jun-Oct. ~45 min drive to Chiareggio. Pair with Lago Palu in the afternoon.",
+    "rating": 5,
+    "tags": [
+      "hike",
+      "glacier-view",
+      "disgrazia",
+      "easy",
+      "family-friendly",
+      "valmalenco",
+      "D3"
+    ],
+    "status": "candidate",
+    "optionGroup": "d3-morning-hike",
+    "optionTabLabel": "Alpe dell'Oro"
+  },
+  {
+    "id": "it-rifugio-motta-palu",
+    "name": "Rifugio Motta / Alpe Palù glacier terrace (cable car)",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.2901,
+    "lng": 9.8716,
+    "description": "A 2,236m panoramic-terrace refuge above Lago Palù with Monte Disgrazia, Piz Bernina and Pizzo Scalino glaciers in view — reached by the Snow Eagle cable car from Chiesa in Valmalenco + a 20-25min easy walk. The near-zero-effort glacier panorama to pair with the Lago Palù swim on D3 afternoon; also the ideal 'we're tired' fallback.",
+    "communityNotes": "Official tourism: 'from the Snow Eagle cableway, walk 20-25 min' to a terrace with 'Monte Disgrazia, Piz Bernina, Piz Scalino.' Cable car runs summer (Jul-Aug typically — verify 2026 dates). Hut open year-round.",
+    "sources": [
+      "https://www.sondrioevalmalenco.it/en/rif-motta-2236m",
+      "https://www.rifugi.lombardia.it/en/sondrio/chiesa-in-valmalenco/hut-motta.html"
+    ],
+    "cost": "Snow Eagle cable car ~€15-20 return; hut food extra",
+    "bestTime": "Cable car summer season (confirm dates). Clear morning for the glacier panorama. Combine with the Lago Palu swim just below.",
+    "rating": 4,
+    "tags": [
+      "hike",
+      "glacier-view",
+      "lift-assisted",
+      "easy",
+      "family-friendly",
+      "valmalenco",
+      "D3"
+    ],
+    "status": "candidate",
+    "optionGroup": "d3-alpine-ext",
+    "optionTabLabel": "Rifugio Motta"
+  },
+  {
+    "id": "it-rifugio-longoni",
+    "name": "Rifugio Longoni (from Chiareggio) — Disgrazia balcony (guys' extension)",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.3303,
+    "lng": 9.8196,
+    "description": "A 1938 stone hut on a rock balcony at 2,450m facing Monte Disgrazia, east of the Chiareggio valley (opposite Pirola). Same Chiareggio trailhead as Alpe dell'Oro — the bigger objective for the fit two while parents do Alpe dell'Oro. Crosses the Piani di Fora plateau with waterfalls.",
+    "communityNotes": "Komoot tour 389259911: 12.7km, 880m, ~4h30, Hard (sure-footed). Steep scree final stretch, no chains/exposure. SMART: parents can turn back at Piani di Fora (~2,300m) for the same Disgrazia view without the scree.",
+    "sources": [
+      "https://www.komoot.com/tour/389259911",
+      "https://www.saliinvetta.com/trekking/italia/lombardia/rifugio-longoni/52-chiareggio-rifugio-longoniso"
+    ],
+    "cost": "Free trail; Chiareggio parking ~€5",
+    "bestTime": "Start by 8am. Best Jul-Sep; minor snow above ~2,200m early July. ~45 min drive to Chiareggio.",
+    "rating": 4,
+    "tags": [
+      "hike",
+      "rifugio",
+      "glacier-view",
+      "disgrazia",
+      "moderate-hard",
+      "valmalenco",
+      "fit-guys"
+    ],
+    "status": "candidate",
+    "optionGroup": "d3-alpine-ext",
+    "optionTabLabel": "Longoni"
+  },
+  {
+    "id": "it-rifugio-alpe-piazza",
+    "name": "Rifugio Alpe Piazza (Albaredo) — Orobie cheese-hut balcony",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.0953,
+    "lng": 9.6299,
+    "description": "The best Orobie-side balcony: an alpe hut at 1,835m directly facing the Valtellina and the Val Masino / Monte Disgrazia chain, with a working cheese factory, showers and food at the top. Corte Grassa loop is only ~280m/1h45 (family-easy); extend to Monte Lago (2,253m, ~600-730m) for the fullest Como+Bernina+Orobie panorama. ~68 min drive — the closest big-view balcony.",
+    "communityNotes": "Komoot 4.9/5 (69): 'behind the refuge the view spans to Monte Disgrazia... on clear days Pian di Spagna and Lake Como.' valtellina.it: 'difficulty low from Albaredo, ideal in summer for the whole family.' You can drive to ~15 min from the hut. (NB: not the bivacco Alpe Piazza near Monte Olano — this is the Albaredo one.)",
+    "sources": [
+      "https://www.komoot.com/smarttour/e1348625959/da-corte-grassa-al-rifugio-alpe-piazza-albaredo",
+      "https://www.komoot.com/highlight/468238"
+    ],
+    "cost": "Free trail; hut food extra",
+    "bestTime": "Snow-free in July; start morning (afternoon storms). ~68 min drive (Morbegno -> Albaredo -> Corte Grassa). Guys add Monte Lago.",
+    "rating": 5,
+    "tags": [
+      "hike",
+      "glacier-view",
+      "disgrazia",
+      "easy",
+      "family-friendly",
+      "orobie",
+      "cheese-hut",
+      "mixed-ability"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-muottas-muragl",
+    "name": "Muottas Muragl Panorama Trail (Engadin, Switzerland)",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.5218,
+    "lng": 9.9021,
+    "description": "The single best view-for-effort in reach, and a perfect pairing for a Bernina/Diavolezza day: a 1907 funicular lifts you to 2,456m, then a genuinely EASY panorama path (6.8km, only ~104m up, ~2h) traverses larch slopes above the whole Engadin lake chain and Bernina glacier massif — the 'Segantini' viewpoint — ending at the Alp Languard chairlift down (no re-climb). ~1h15 from base.",
+    "communityNotes": "Outdooractive 'Easy'; AllTrails (138): 'an enjoyable way to see great vistas with fairly easy hiking... unique view of the lake landscape and the Bernina massif; with luck you'll see marmots and ibexes.' (NOT the harder Segantini-Hut variant with rope-secured steps.)",
+    "sources": [
+      "https://www.outdooractive.com/en/route/mountain-hike/engadin-st.-moritz/muottas-muragl-panorama-trail/23436450/",
+      "https://www.alltrails.com/trail/switzerland/grisons/muottas-muragl-panorama-trail"
+    ],
+    "cost": "Funicular + chairlift round ticket ~CHF 40-50",
+    "bestTime": "Snow-free by late June; clear morning for the Bernina view. ~1h15 drive via the Bernina Pass. Ukrainian passports = visa-free CH. Pairs with Diavolezza.",
+    "rating": 5,
+    "tags": [
+      "hike",
+      "glacier-view",
+      "easy",
+      "family-friendly",
+      "lift-assisted",
+      "switzerland",
+      "best-view-least-effort"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-val-roseg",
+    "name": "Val Roseg glacier-valley walk (Pontresina, Switzerland)",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.4908,
+    "lng": 9.8965,
+    "description": "A nearly-flat walk up a wild glacial valley from Pontresina to the Hotel Roseg-Gletscher, ending under the Sella and Roseg glaciers and snow peaks. ~1h15 from base. Killer feature for this group: a horse-drawn carriage runs the valley, so tired parents can ride one leg and still bank the full glacier payoff. Another great Bernina-day pairing.",
+    "communityNotes": "Outdooractive 'Easy': 13.8km, 227m, 3h30 (mostly flat forest/track). TripAdvisor: 'Two hours easy walking to the fabulous restaurant Roseg, and if you don't want to walk back take the horse-drawn omnibus.' Passes primeval forest, chamois, blueberry.",
+    "sources": [
+      "https://www.outdooractive.com/en/route/hiking-trail/engadin-st.-moritz/pontresina-val-roseg-pontresina/23436458/",
+      "https://www.pontresina.ch/en/guide/mountains-and-valleys/the-val-roseg"
+    ],
+    "cost": "Free to walk; carriage ~CHF 20-30/person one way",
+    "bestTime": "Snow-free early summer on the valley floor; carriage in season. ~1h15 drive to Pontresina. Pairs with Diavolezza/Muottas Muragl.",
+    "rating": 4,
+    "tags": [
+      "hike",
+      "flat",
+      "glacier-view",
+      "easy",
+      "family-friendly",
+      "carriage-option",
+      "switzerland"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-pizzo-meriggio",
+    "name": "Pizzo Meriggio balcony ridge (from Campelli) — fit-guys pick",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.1049,
+    "lng": 9.8678,
+    "description": "A 2,358m grassy summit ridge directly above Sondrio (~30 min drive to the Campelli trailhead) — a pure 360-degree balcony over the Bernina and Monte Disgrazia glaciers, plus the Orobie giants behind. The fit-guys' pick, NOT for the parents: ~1,080m ascent, ~5.5h, steep in places (non-technical).",
+    "communityNotes": "Komoot 5.0/5 (23): '360 degrees over the Disgrazia group, the Bernina, the Ortles, the Adamello, and the Orobie.' Rated Hard, 13.7km/1,080m/5.5h. Starts steep through rhododendrons; snow-free by late June (south-facing).",
+    "sources": [
+      "https://www.komoot.com/highlight/2838400",
+      "https://www.cristianriva.it/pizzo-meriggio/"
+    ],
+    "cost": "Free; park at the Campelli chapel (Albosaggia)",
+    "bestTime": "Start 7-8am; long exposed ridge, be down before afternoon storms. ~30 min drive — closest big summit.",
+    "rating": 4,
+    "tags": [
+      "hike",
+      "ridge",
+      "glacier-view",
+      "hard",
+      "fit-guys",
+      "near-base"
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "it-coffee-lecco",
+    "name": "Lecco waterfront coffee stop",
+    "country": "IT",
+    "category": "food",
+    "lat": 45.8554,
+    "lng": 9.3993,
+    "description": "First coffee after the airport. Lecco sits at the southern tip of the eastern Como branch — 45 min from BGY, lakefront promenade with multiple cafes. Good staging stop to wake up before the 30 min drive north to Varenna.",
+    "communityNotes": "Piazza Garibaldi waterfront area has several cafe bars with lake views. Bar Centrale (Piazza Cermenati) and waterfront spots on Lungolago Europa are standard options. Useful: Esselunga supermarket nearby for a quick grocery top-up before driving up the Lecco branch.",
+    "cost": "~€3-5 pp (espresso + cornetto)",
+    "timeNeeded": "20 min",
+    "bestTime": "Morning — 07:30-09:00 on the drive from BGY to Varenna.",
+    "tags": [
+      "coffee",
+      "breakfast",
+      "d1",
+      "morning"
+    ],
+    "rating": 3,
+    "status": "candidate",
+    "optionGroup": "d1-coffee",
+    "optionTabLabel": "Lecco"
+  },
+  {
+    "id": "it-coffee-varenna",
+    "name": "Varenna lakefront coffee",
+    "country": "IT",
+    "category": "food",
+    "lat": 46.0145,
+    "lng": 9.2853,
+    "description": "Have the first coffee already in Varenna before SUP. Bar Il Molo sits right on the water at the ferry dock — cappuccino and cornetto with the full lake panorama, probably the most cinematic breakfast on Lake Como.",
+    "communityNotes": "Bar Il Molo on Piazza Martiri dell'Acqua has outdoor tables literally on the lakefront (TripAdvisor: 'best view on the lake'). Consistently praised for the setting. Opens ~07:30. Alternative: Bar del Sole (Piazza San Giorgio) if you prefer the village square. 'Varenna is the best village on the lake — quieter than Bellagio and just as pretty, especially in the morning' (Reddit r/ItalyTravel).",
+    "cost": "~€3-5 pp",
+    "timeNeeded": "20 min",
+    "bestTime": "First thing on arrival, 09:00-10:00 — before lake fills with day-trippers.",
+    "tags": [
+      "coffee",
+      "breakfast",
+      "d1",
+      "morning",
+      "lakefront"
+    ],
+    "rating": 4,
+    "status": "candidate",
+    "optionGroup": "d1-coffee",
+    "optionTabLabel": "Varenna"
+  },
+  {
+    "id": "it-del-curto-chiavenna",
+    "name": "Del Curto — butcher (Chiavenna)",
+    "country": "IT",
+    "category": "food",
+    "lat": 46.32,
+    "lng": 9.3978,
+    "description": "Family butcher on Via Dolzino 129, Chiavenna. The place to buy violino di capra (cured goat leg, Valchiavenna's signature product) and bresaola. Buy on D2 after canyoning — bring a cooler bag.",
+    "communityNotes": "Via Dolzino 129, Chiavenna. 'Del Curto makes the best violino di capra in the valley — the shop itself is worth a stop, very local feel.' Buy enough for the grill + extra to take home. Bresaola from here is also excellent and cheaper than Austrian prices. Pairs with Crotto al Prato lunch 5 min away.",
+    "cost": "~€15-30 depending on what you buy",
+    "timeNeeded": "15 min",
+    "bestTime": "D2 (Thu), 11:30-13:30 after canyoning, before Crotto al Prato lunch.",
+    "tags": [
+      "food",
+      "shopping",
+      "d2",
+      "chiavenna",
+      "specialty"
+    ],
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "it-coop-morbegno",
+    "name": "Coop Superstore — Morbegno (D1 main shop)",
+    "country": "IT",
+    "category": "food",
+    "lat": 46.1337,
+    "lng": 9.5718,
+    "description": "Large supermarket in Morbegno on the SS38, the natural stop for the D1 main grocery run before reaching the Airbnb. Same zone as Fratelli Ciapponi — combine both stops in one swing.",
+    "communityNotes": "Coop in Morbegno is the most convenient full-size supermarket on the SS38 corridor between Como/Lecco and Sondrio. Open Mon-Sat. Buy D1 grill supplies here: meat, veg, wine, breakfast items, gas canisters. Fratelli Ciapponi is nearby for the specialty deli items (Bitto, bresaola, local sausages). Between the two you'll have everything for D1-D2 grills.",
+    "cost": "Budget as needed",
+    "timeNeeded": "30-40 min",
+    "bestTime": "D1 (Wed), en route from Varenna to Airbnb (~17:00). Combine with Fratelli Ciapponi stop.",
+    "tags": [
+      "food",
+      "shopping",
+      "d1",
+      "supermarket",
+      "grocery"
+    ],
+    "rating": 3,
+    "status": "candidate",
+    "optionGroup": "d1-grocery",
+    "optionTabLabel": "Coop"
+  },
+  {
+    "id": "it-crotto-al-prato",
+    "name": "Crotto al Prato — D2 lunch (Chiavenna)",
+    "country": "IT",
+    "category": "food",
+    "lat": 46.32173,
+    "lng": 9.40908,
+    "description": "Traditional crotto set menu €18-20: affettati misti + pizzoccheri bianchi + grilled meats + polenta + dessert. The locals' go-to for honest Valchiavenna cooking at fair prices. 5 min drive from Del Curto butcher.",
+    "communityNotes": "⚠ POSSIBLY CLOSED: April 2025 press report + Restaurant Guru flag this as closed. Call before D2: +39 0343 37248. If no answer / confirmed closed → Crotto Ombra (same town, same crotto tradition, more touristy, pricier ~€25-30pp). Open Thu 12:00-14:00 when operating.",
+    "sources": [
+      "https://www.crottoalprato.it/chiavenna/contatti/"
+    ],
+    "cost": "€18-20 set menu (€72-80 for 4)",
+    "timeNeeded": "1-1.5h",
+    "bestTime": "D2 ~12:00-12:30 (after Bodengo canyoning + 45min drive). Thu = open 12:00-14:00. CALL AHEAD: +39 0343 37248",
+    "rating": 4,
+    "status": "candidate",
+    "optionGroup": "d2-crotto-lunch",
+    "optionTabLabel": "Al Prato"
+  },
+  {
+    "id": "it-spiaggia-pradello",
+    "name": "Spiaggia Pradello — free lake swim (D4 backup)",
+    "country": "IT",
+    "category": "swim",
+    "lat": 45.87973,
+    "lng": 9.36972,
+    "description": "Free pebble-and-lawn beach in Abbadia Lariana, 4km south of Lido di Mandello. Free large parking, showers, bar, playground. Same Lecco-branch water quality. The right move if Mandello's lot is already full on Saturday morning.",
+    "communityNotes": "Free entry, free parking (consistently available — bigger capacity than Mandello). Showers to rinse off before the flight. 'Clean water, good lawn, not overcrowded midweek.' Access: SS36 exit Abbadia Lariana, under the railway viaduct. ~50-55 min to BGY from here.",
+    "sources": [
+      "https://www.eccolecco.it/en/sport-and-free-time/lecco-beaches/lecco-beach-pradello/"
+    ],
+    "cost": "Free",
+    "timeNeeded": "1-1.5h",
+    "bestTime": "D4: if Lido di Mandello free lot is full (D4 = Saturday fills early afternoon), continue 4km south on SS36 to Abbadia Lariana. Same time budget.",
+    "rating": 4,
+    "status": "candidate",
+    "optionGroup": "d4-swim",
+    "optionTabLabel": "Pradello"
+  },
+  {
+    "id": "it-varenna-parking",
+    "name": "Parcheggio Multipiano Varenna",
+    "country": "IT",
+    "category": "logistics",
+    "lat": 46.00958,
+    "lng": 9.28576,
+    "description": "Covered multi-story car park at the entrance to historic Varenna. 24/7 automated. 5-min walk to the lakefront, Nautica Varenna dock, and ferry pier.",
+    "communityNotes": "~€3/hr (confirmed 2025 reviews), ~€15 daily cap. Best park for D1 Varenna visit — leave the car here, walk down to Riva Grande, rent kayak. No on-street parking in the historic center. Phone: +39 0341 830455. Alt if full: roadside spots on Viale Giovanni Polvani (free but limited, 10-15 min walk).",
+    "sources": [
+      "https://www.eccolecco.it/en/blog-en/car-parking-varenna/"
+    ],
+    "cost": "~€3/hr, ~€15/day cap",
+    "bestTime": "D1: arrive mid-morning from BGY (~09:30-10:00). Wednesday = no queues. Park here for the Varenna SUP/kayak stop before checking in at Poggiridenti.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-val-di-mello-parking",
+    "name": "Val di Mello — San Martino Infopoint parking",
+    "country": "IT",
+    "category": "logistics",
+    "lat": 46.252,
+    "lng": 9.64728,
+    "description": "The San Martino Valmasino Infopoint: buy your coin-only €12 vehicle day-permit here before driving 2.5km further to the 40-car trailhead lot. If the trailhead is full, park here and walk 30-40 min in.",
+    "communityNotes": "⚠ COINS ONLY — the automatic permit machine accepts NO card, NO banknotes. Bring €12 in coins exactly. 40-car cap at the inner lot. Infopoint: +39 0342 601140. D2 = Thursday weekday → less pressure, but arrive before 10:00 if you want the inner spots. 'Walking from San Martino is beautiful anyway — flat approach, great scenery.' Free parking at San Martino if you skip the permit.",
+    "sources": [
+      "https://portedivaltellina.it/viabilita-parcheggi-e-pedaggi-in-val-masino/"
+    ],
+    "cost": "€12/vehicle coin-only permit (required to drive to trailhead)",
+    "bestTime": "D2 afternoon: arrive ~15:00-15:30 after Acquafraggia. Buy permit here first. If cap reached, park free here and walk 30-40 min.",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-ferdy-fly-fishing",
+    "name": "Fly fishing with Ferdy — Fly Fishers Italy (full day)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.173,
+    "lng": 9.93,
+    "description": "Full-day guided fly fishing with Ferdy (Fly Fishers Italy) on Valtellina rivers near Piateda. €590 total for the group — guide fee + rod rental + license + river permit all included. 3 fishers active; mother joins riverside. Target species: marble trout and large brown trout on Adda River.",
+    "communityNotes": "BOOKED — Ferdy confirmed, 50% deposit pending (bank details awaited). Full day: roughly 07:00–17:00. All gear provided — just show up. Mother can walk the riverside or sit and watch. €590 total for 3 fishers.",
+    "sources": [],
+    "cost": "€590 total (3 fishers, all inclusive)",
+    "timeNeeded": "Full day 07:00–17:00",
+    "bestTime": "D3 (Fri Jul 10)",
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "it-piateda-fishing",
+    "name": "Piateda No-Kill Reserve — marble trout fly fishing",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.173,
+    "lng": 9.93,
+    "description": "Italy's top-rated no-kill river reserve on the Adda, 10 min from base. Marble trout (trota marmorata — 80-90cm, fights like Atlantic salmon) + large brown trout. Fly only, single barbless fly, silicone-mesh net mandatory. Two licenses needed: (1) Lombardy Type B €23/year — pay via SEPA to IBAN IT95D0306909790100000300047 (foreigners: use SEPA, bypasses codice fiscale issue); receipt IS the license. (2) Day permit €20-35 via Hooking app or UPS office (Via Trieste 8, Sat 08:30-12:00). Buy both on Jul 10.",
+    "communityNotes": "Best no-kill reserve in Italy. ⚠ WEEKDAY RESTRICTION: only open Sat/Sun/Mon/Wed — D4 Saturday Jul 11 = valid. ⚠ FASCIA A/B = FLY ONLY, spinning fined. If your background is spinning, use the Pay lake or Guided (Mauro) tab instead. Prime window: 06:00-10:00. ~€175 total for 3 self-guided (gear not included — need fly rods + waders).",
+    "sources": [
+      "https://www.unionepescasondrio.it/permesso-online"
+    ],
+    "cost": "~€58/person self-guided (€23 license + €35 permit). Gear not included — need fly rods + waders.",
+    "timeNeeded": "3-4h (06:00-10:00)",
+    "bestTime": "D4 dawn 06:00-10:00 (Sat Jul 11 = open). Back at base 10:15 to pack.",
+    "rating": 5,
+    "status": "candidate",
+    "optionGroup": "d4-fishing",
+    "optionTabLabel": "Piateda"
+  },
+  {
+    "id": "it-laghetto-grosotto",
+    "name": "Laghetto di Grosotto — pay lake, gear on site",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.2608,
+    "lng": 10.2681,
+    "description": "Managed sport fishing lake 30 min east of base (Grosotto village). Two basins. Species: marble trout, fario, rainbow, pike, carp. Rod rental €3 on site. Full day no-kill €25, keep-fish €40. Bar-pizzeria on site. No fishing license needed. Spinning fully allowed. Run by Mauro Bagiolo — English-speaking, certified guide who also covers the Adda river.",
+    "communityNotes": "Zero logistics: show up, pay, fish. Website: laghettogrosotto.fish. Open daily 07:00-19:00 (closed Wed — D4=Sat, open). Mauro (+39 380 530 1177) runs it personally — ask him on the day if he can take you to the Adda instead, or arrange a guided session separately.",
+    "sources": [
+      "https://laghettogrosotto.fish"
+    ],
+    "cost": "€25/day no-kill or €40/day keep-fish. Rod rental €3. No license.",
+    "timeNeeded": "3-4h (07:00-10:30 then drive back to pack)",
+    "bestTime": "D4 morning 06:30-07:00 arrival, fish until 10:30. 30 min back to base. Saturday = open.",
+    "rating": 4,
+    "status": "candidate",
+    "optionGroup": "d4-fishing",
+    "optionTabLabel": "Pay lake"
+  },
+  {
+    "id": "it-mauro-guide-fishing",
+    "name": "Mauro Bagiolo — guided session, Adda river (all gear)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1696,
+    "lng": 9.8715,
+    "description": "Certified local guide (guidepescavaltellina.com) who covers all 1,250km of Valtellina waters. Full kit for 3 anglers + permits + van transfer included. English-speaking. Also runs BM Sport (his own gear shop, Via Toti Enrico 19, Sondrio) and Laghetto di Grosotto. One call handles gear, guide, and permits. Half-day price: TBD on call.",
+    "communityNotes": "One contact for everything: +39 380 530 1177 / guidepescavaltellina.com. (1) Ask about a half-day guided river session with gear included. (2) Or just buy gear at his shop (BM Sport, Via Toti Enrico 19) and fish the Fascia D zone self-guided. (3) Or go to his pay lake (Grosotto) for zero prep. He also knows every local fisherman who might lend gear.",
+    "sources": [
+      "https://guidepescavaltellina.com"
+    ],
+    "cost": "Price TBD — call +39 380 530 1177. All gear + permits included in guide fee.",
+    "timeNeeded": "Half-day: 4h (06:00-10:00)",
+    "bestTime": "D4 morning. Book before arriving in Italy — call or email via guidepescavaltellina.com.",
+    "rating": 4,
+    "status": "candidate",
+    "optionGroup": "d4-fishing",
+    "optionTabLabel": "Guided"
+  },
+  {
+    "id": "it-fishing-local-contact",
+    "name": "Find a local fisherman — Facebook + fishing clubs",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1696,
+    "lng": 9.8715,
+    "description": "Post in Valtellina fishing Facebook groups now to find a local willing to take you out or lend gear. The 'Adoratori della Trota Marmorata' group is specifically for Adda marble trout — most likely to find a passionate local. Unione Pesca Sondrio (Via Trieste 8, +39 0342 217 257) can also point you to local anglers.",
+    "communityNotes": "Facebook groups to join and post in: 'Adoratori della Trota Marmorata' (facebook.com/groups/49955007102), 'Valtellina Diario Pesca' (facebook.com/groups/287383709278410), 'La pesca in Lombardia' (facebook.com/groups/277582984195618). Post in Italian: 'Siamo tre turisti stranieri in Valtellina a luglio. Cerchiamo un pescatore locale disposto a farci da guida o qualcuno che possa prestarci attrezzatura. Paghiamo volentieri!' — borrow gear, buy 2-3 licenses, fish together.",
+    "sources": [
+      "https://www.facebook.com/groups/49955007102",
+      "https://www.unionepescasondrio.it"
+    ],
+    "cost": "Cost depends on arrangement — potentially just the license (~€48/person) if gear is borrowed.",
+    "timeNeeded": "Half-day (flexible)",
+    "bestTime": "Post on Facebook NOW (before Jul 8). Fallback: pay lake if no response.",
+    "rating": 4,
+    "status": "candidate",
+    "optionGroup": "d4-fishing",
+    "optionTabLabel": "Local"
+  },
+  {
+    "id": "it-bidet-contessa",
+    "name": "Bidet della Contessa — alpine natural pool (Val di Mello)",
+    "country": "IT",
+    "category": "swim",
+    "lat": 46.255,
+    "lng": 9.612,
+    "description": "Emerald-blue natural pool carved by erosion in Val di Mello nature reserve. Crystal-clear cold mountain water surrounded by granite walls. 30-40 min easy flat walk from San Martino trailhead. One of the most photogenic swim spots in Lombardy.",
+    "communityNotes": "Only 40 cars at inner trailhead lot (€12 coin-only permit — see parking entry). Arrives full before 10:00 on summer weekends. Park at San Martino village for free and walk 40 min if full. Water cold but swimmable in July. 'Absolutely worth it — like swimming in liquid jade.' Go on a weekday for more peace.",
+    "sources": [
+      "https://www.komoot.com/highlight/6332871",
+      "https://www.holidoit.com/en/idee/bidet-della-contessa-in-val-di-mello"
+    ],
+    "cost": "Free (parking separate — see it-val-di-mello-parking)",
+    "timeNeeded": "2-3h (30-40 min walk each way + swim)",
+    "bestTime": "D3 afternoon after hike — 45 min drive from Sondrio. Weekday = much less crowded.",
+    "rating": 5,
+    "status": "candidate"
+  },
+  {
+    "id": "it-ponte-nel-cielo",
+    "name": "Ponte nel Cielo — Europe's highest Tibetan bridge (Val Tartano)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1285,
+    "lng": 9.6857,
+    "description": "234m pedestrian suspension bridge with no lateral stays, hanging 140m above Val Tartano. Larch wood planks, views of Rhaetian Alps glaciers. Walk-up, €8/person. 45 min drive from base via Talamona.",
+    "communityNotes": "€8/person, under 14 free. Open daily 09:30–16:15 (last entry), Saturday until sunset. No booking needed on weekdays — just show up. Contact: info@pontenelcielo.it / +39 0342 645186. Free parking at Campo Tartano. 'Properly vertiginous — the swing in the middle will test your nerve.'",
+    "sources": [
+      "https://pontenelcielo.it/en/info/"
+    ],
+    "cost": "€8/person (under 14 free)",
+    "timeNeeded": "1-2h",
+    "bestTime": "Any weekday afternoon — no booking needed. Avoid weekends (crowds, online booking required).",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-monte-berlinghera",
+    "name": "Monte Berlinghera — 360° summit panorama + wooden swing above Lake Como",
+    "country": "IT",
+    "category": "hike",
+    "lat": 46.164,
+    "lng": 9.368,
+    "description": "Summit above Sorico (top of Lake Como), ~1h15 drive north from base. 360° panorama over the full lake, Valchiavenna, and Valtellina. A famous panoramic wooden swing at Bocchetta di Chiaro (1,670m) midway is an Instagram-known landmark but the summit is quieter. 4.5h RT, 620–750m gain from San Bartolomeo church trailhead (1,203m, near Sorico). Perfect D4 north-to-south flow — summit by 09:30, drive south through Bellano Orrido and Lido Mandello to BGY without backtracking.",
+    "communityNotes": "'Excellent panoramic views over the full Lake Como' — multiple Italian hiking sources including perunpugnodipassi.com (2023). The swing at Bocchetta di Chiaro goes viral on Italian social media every season. Summit sees fewer people than the swing spot. Road to trailhead: normal mountain road (SP5), no hairpin crux. Start 07:00–07:30 from base to finish by 12:00 comfortably. ⚠ Trailhead parking: San Bartolomeo church, free. GPS: 46.1640°N, 9.3680°E.",
+    "sources": [
+      "https://perunpugnodipassi.com",
+      "https://www.komoot.com/guide/641022/hiking-around-gerola-alta"
+    ],
+    "timeNeeded": "4.5h RT",
+    "bestTime": "Start 07:00 from base — summit by 09:30, clear skies essential for full panorama",
+    "rating": 4,
+    "status": "candidate"
+  },
+  {
+    "id": "it-kayak-piona",
+    "name": "Jordan'Surf — kayak/canoe rental (Piona Bay, Colico)",
+    "country": "IT",
+    "category": "activity",
+    "lat": 46.1399,
+    "lng": 9.4041,
+    "description": "Self-rent kayaks and canoes at Piona Bay, north Lake Como — 30-35 min drive from base. Calm sheltered water in the bay, ideal for early morning when the main lake is glassy. Life jackets provided.",
+    "communityNotes": "Contact: info@kitezoo.it / +39 338 6719250. Price not listed publicly — email to confirm before D1. Piona Bay is sheltered and calm even when the main lake has wind. Next door to Abbazia di Piona (Cistercian monastery on a peninsula — free entry, worth a quick look).",
+    "sources": [
+      "https://www.kitezoo.it/project/noleggio-canoe/"
+    ],
+    "cost": "TBC — contact to confirm",
+    "timeNeeded": "2-3h",
+    "bestTime": "D1 morning — glassy calm before 10:00. Can stop here on the drive from Bergamo airport to base.",
+    "rating": 4,
     "status": "candidate"
   }
 ]

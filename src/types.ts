@@ -48,4 +48,12 @@ export interface Place {
   userAdded?: boolean;
   /** Origin of the place: 'user' for runtime-added pins, otherwise the baked bundle. */
   source?: 'user';
+  /**
+   * Groups this place with others as alternatives for the same plan slot.
+   * Consecutive stops with the same optionGroup collapse into one swipeable card.
+   * e.g. "d1-coffee", "d3-hike", "varenna-parking"
+   */
+  optionGroup?: string;
+  /** Short label shown on the tab button (defaults to truncated place name). */
+  optionTabLabel?: string;
 }

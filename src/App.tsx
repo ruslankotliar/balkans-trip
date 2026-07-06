@@ -342,6 +342,8 @@ export default function App() {
   const filtersNarrowed =
     groupFilter.size < GROUPS.length || !NON_REJECTED.every((s) => statusFilter.has(s));
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  // Selected option index per optionGroup ID — shared between itinerary row and sidebar tabs.
+  const [optGroupSel, setOptGroupSel] = useState<Record<string, number>>({});
   const [view, setView] = useState<View>('places');
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -360,6 +362,7 @@ export default function App() {
   const [addPlaceOpen, setAddPlaceOpen] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [tappedPoint, setTappedPoint] = useState<{ lat: number; lng: number } | null>(null);
+  const [addOptionGroupId, setAddOptionGroupId] = useState<string | null>(null);
 
   // ---- Offline Essentials (feature B5) ----
   const [essentialsOpen, setEssentialsOpen] = useState(false);
@@ -377,6 +380,19 @@ export default function App() {
   const [ferryHours, setFerryHours] = useState<FerryHours>(loadFerryHours);
 
   const selected = selectedId ? placeById.get(selectedId) ?? null : null;
+  // When the selected place belongs to an option group, collect all siblings
+  // (same optionGroup, not rejected) so the sidebar can show comparison tabs.
+  const groupOptions = (() => {
+    const gid = selected?.optionGroup;
+    if (!gid) return undefined;
+    const opts = places
+      .filter((p) => p.optionGroup === gid && p.status !== 'rejected')
+      .sort((a, b) => (a.dayOrder ?? 0) - (b.dayOrder ?? 0));
+    return opts.length > 1 ? opts : undefined;
+  })();
+  const selectedGroupIdx = groupOptions
+    ? Math.max(0, groupOptions.findIndex((p) => p.id === selected?.id))
+    : 0;
 
   const matchesText = (p: PlaceWithOverride) => {
     if (deferredSearch === '') return true;
@@ -438,11 +454,23 @@ export default function App() {
     for (const [day, ps] of Object.entries(dayStops)) {
       // The route/clock is ONLY the committed plan: shortlist + a day. Anything
       // else pinned to a day (backup/candidate/extra) is an option, not routed.
-      const kept = ps.filter((p) => p.status === 'shortlist');
-      if (kept.length) out[Number(day)] = kept;
+      const kept = ps.filter((p) => p.status === 'shortlist'); // already sorted by byOrder
+      // For option groups, include only the ACTIVE alternative — not all of them as
+      // sequential stops (that would sum their durations and route through all locations).
+      const seenGroups = new Set<string>();
+      const deduped = kept.filter((p) => {
+        if (!p.optionGroup) return true;
+        const gid = p.optionGroup;
+        if (seenGroups.has(gid)) return false;
+        seenGroups.add(gid);
+        const members = kept.filter((q) => q.optionGroup === gid);
+        const activeIdx = Math.min(optGroupSel[gid] ?? 0, members.length - 1);
+        return p.id === members[activeIdx].id;
+      });
+      if (deduped.length) out[Number(day)] = deduped;
     }
     return out;
-  }, [dayStops]);
+  }, [dayStops, optGroupSel]);
 
   const dayPoints = useMemo(() => {
     const result: Record<number, [number, number][]> = {};
@@ -616,6 +644,16 @@ export default function App() {
     setAddPlaceOpen(false);
     setEditingId(null);
     setTappedPoint(null);
+    setAddOptionGroupId(null);
+  }
+
+  function openAddOption(groupId: string) {
+    setEditingId(null);
+    setTappedPoint(null);
+    setEssentialsOpen(false);
+    setSelectedId(null);
+    setAddOptionGroupId(groupId);
+    setAddPlaceOpen(true);
   }
 
   function saveDraftPlace(draft: DraftPlace) {
@@ -624,13 +662,16 @@ export default function App() {
       // Edit: update the immutable identity in userPlaces; status/day/note flow
       // through the overrides layer (one code path with baked places).
       const existing = placeById.get(editingId);
+      const base = userPlaces.find((p) => p.id === editingId) as Place;
       const updated: Place = {
-        ...(userPlaces.find((p) => p.id === editingId) as Place),
+        ...base,
         name: draft.name,
         category: draft.category,
         lat: draft.lat!,
         lng: draft.lng!,
         country: guessCountry(draft.lat!, draft.lng!),
+        optionGroup: draft.optionGroup || undefined,
+        optionTabLabel: draft.optionTabLabel || undefined,
       };
       applyUserPlaces((u) => u.map((p) => (p.id === editingId ? updated : p)));
       applyOverrides((o) => ({
@@ -679,6 +720,8 @@ export default function App() {
       status: 'shortlist',
       userAdded: true,
       source: 'user',
+      ...(draft.optionGroup ? { optionGroup: draft.optionGroup } : {}),
+      ...(draft.optionTabLabel ? { optionTabLabel: draft.optionTabLabel } : {}),
     };
     applyUserPlaces((u) => [...u, place]);
     if (draft.day != null || draft.note) {
@@ -796,6 +839,35 @@ export default function App() {
     const ordered = places
       .filter((p) => p.day === day && p.status !== 'rejected')
       .sort(byOrder);
+
+    const gid = place.optionGroup;
+    if (gid) {
+      // Move the entire group as a block.
+      const groupIds = new Set(ordered.filter((p) => p.optionGroup === gid).map((p) => p.id));
+      const firstIdx = ordered.findIndex((p) => groupIds.has(p.id));
+      let lastIdx = firstIdx;
+      for (let i = firstIdx + 1; i < ordered.length; i++) {
+        if (groupIds.has(ordered[i].id)) lastIdx = i;
+      }
+      if (dir === 'up' && firstIdx === 0) return;
+      if (dir === 'down' && lastIdx === ordered.length - 1) return;
+      const before = ordered.slice(0, firstIdx);
+      // Items sandwiched between group members (shouldn't normally exist, but handled safely)
+      const between = ordered.slice(firstIdx, lastIdx + 1).filter((p) => !groupIds.has(p.id));
+      const groupItems = ordered.filter((p) => groupIds.has(p.id));
+      const after = ordered.slice(lastIdx + 1);
+      const newOrder =
+        dir === 'up'
+          ? [...before.slice(0, -1), ...groupItems, ...between, before[before.length - 1], ...after]
+          : [...before, after[0], ...groupItems, ...between, ...after.slice(1)];
+      applyOverrides((o) => {
+        const next = { ...o };
+        newOrder.forEach((p, i) => { next[p.id] = { ...next[p.id], day, dayOrder: i }; });
+        return next;
+      });
+      return;
+    }
+
     const idx = ordered.findIndex((p) => p.id === id);
     const swap = idx + (dir === 'up' ? -1 : 1);
     if (swap < 0 || swap >= ordered.length) return;
@@ -809,6 +881,25 @@ export default function App() {
     });
   }
 
+  function removeGroup(groupId: string) {
+    const day = places.find((p) => p.optionGroup === groupId && p.day)?.day;
+    if (!day) return;
+    applyOverrides((o) => {
+      const next = { ...o };
+      places
+        .filter((p) => p.optionGroup === groupId && p.day === day)
+        .forEach((p) => { next[p.id] = { ...next[p.id], day: undefined, dayOrder: undefined }; });
+      return next;
+    });
+  }
+
+  function handleGroupTabChangeFromItinerary(groupId: string, idx: number, placeId: string) {
+    const option = placeById.get(placeId);
+    if (!option) return;
+    setOptGroupSel((s) => ({ ...s, [groupId]: idx }));
+    selectPlace(option);
+  }
+
   function selectPlace(p: Place | PlaceWithOverride) {
     setSelectedId(p.id);
     // On a phone the open sidebar (list / Today view) covers the detail
@@ -818,6 +909,13 @@ export default function App() {
       reopenSidebarOnClose.current = true;
       setSidebarOpen(false);
     }
+  }
+
+  function handleGroupTabChange(idx: number) {
+    const option = groupOptions?.[idx];
+    if (!option) return;
+    setOptGroupSel((s) => ({ ...s, [option.optionGroup!]: idx }));
+    selectPlace(option);
   }
 
   /** Close the detail sheet; on a phone, restore the list it was opened from. */
@@ -1125,9 +1223,12 @@ export default function App() {
               onSelect={selectPlace}
               onMove={moveInDay}
               onAssignDay={assignDay}
+              onRemoveGroup={removeGroup}
+              onGroupTabChange={handleGroupTabChangeFromItinerary}
               scheduleByDay={daySchedules}
               dayConfig={dayConfig}
               onSetDayCfg={setDayCfg}
+              optGroupSel={optGroupSel}
             />
           </Suspense>
         )}
@@ -1226,6 +1327,10 @@ export default function App() {
         onTimeMinutes={setTimeMinutes}
         onPick={setPick}
         onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}
+        groupOptions={groupOptions}
+        selectedGroupIdx={selectedGroupIdx}
+        onGroupTabChange={handleGroupTabChange}
+        onAddOption={openAddOption}
       />
 
       {addPlaceOpen && (
@@ -1235,6 +1340,7 @@ export default function App() {
             editing={editingPlace}
             editingDay={editingId ? overrides[editingId]?.day ?? null : null}
             editingNote={editingId ? overrides[editingId]?.note ?? '' : ''}
+            optionGroupPrefill={addOptionGroupId ?? undefined}
             onSave={saveDraftPlace}
             onDelete={editingId ? () => deleteUserPlace(editingId) : undefined}
             onClose={closeAddPlace}

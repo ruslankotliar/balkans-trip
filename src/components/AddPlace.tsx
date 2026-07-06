@@ -96,6 +96,8 @@ export interface DraftPlace {
   lng: number | null;
   day: number | null;
   note: string;
+  optionGroup?: string;
+  optionTabLabel?: string;
 }
 
 interface Props {
@@ -106,6 +108,8 @@ interface Props {
   /** Current override values for the edited place (day/note live in overrides). */
   editingDay?: number | null;
   editingNote?: string;
+  /** Pre-fill the option group field (when opened via "+ Add option" on a group). */
+  optionGroupPrefill?: string;
   onSave: (draft: DraftPlace) => void;
   onDelete?: () => void;
   onClose: () => void;
@@ -116,6 +120,7 @@ export default function AddPlace({
   editing,
   editingDay,
   editingNote,
+  optionGroupPrefill,
   onSave,
   onDelete,
   onClose,
@@ -127,6 +132,8 @@ export default function AddPlace({
   const [lng, setLng] = useState<number | null>(editing?.lng ?? null);
   const [day, setDay] = useState<number | null>(editingDay ?? null);
   const [note, setNote] = useState(editingNote ?? '');
+  const [optionGroup, setOptionGroup] = useState(editing?.optionGroup ?? optionGroupPrefill ?? '');
+  const [optionTabLabel, setOptionTabLabel] = useState(editing?.optionTabLabel ?? '');
   const [coordsText, setCoordsText] = useState('');
   const [urlText, setUrlText] = useState('');
   const [parseMsg, setParseMsg] = useState<string | null>(null);
@@ -194,6 +201,8 @@ export default function AddPlace({
       lng,
       day,
       note: note.trim(),
+      optionGroup: optionGroup.trim() || undefined,
+      optionTabLabel: optionTabLabel.trim() || undefined,
     });
   }
 
@@ -311,6 +320,30 @@ export default function AddPlace({
           onChange={(e) => setNote(e.target.value)}
         />
       </label>
+
+      <div className="addplace-group-section">
+        <label className="field-label">
+          <span>Option group ID <span className="addplace-optional">(optional)</span></span>
+          <input
+            type="text"
+            placeholder="e.g. varenna-parking, d3-hike"
+            value={optionGroup}
+            readOnly={!!optionGroupPrefill}
+            onChange={(e) => setOptionGroup(e.target.value)}
+          />
+        </label>
+        {optionGroup && (
+          <label className="field-label">
+            <span>Tab label <span className="addplace-optional">(short name for the tab)</span></span>
+            <input
+              type="text"
+              placeholder="e.g. Free lot, Lago Pirola"
+              value={optionTabLabel}
+              onChange={(e) => setOptionTabLabel(e.target.value)}
+            />
+          </label>
+        )}
+      </div>
 
       <div className="addplace-actions">
         <button className="addplace-save" disabled={!canSave} onClick={handleSave}>

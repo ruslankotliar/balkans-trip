@@ -19,12 +19,16 @@ interface Props {
   onSelect: (p: PlaceWithOverride) => void;
   onMove: (id: string, dir: 'up' | 'down') => void;
   onAssignDay: (id: string, day: number | null) => void;
+  onRemoveGroup?: (groupId: string) => void;
+  onGroupTabChange?: (groupId: string, idx: number, placeId: string) => void;
   /** Day clock per day, derived from the current route + stop times. */
   scheduleByDay?: Record<number, DaySchedule | null>;
   /** Per-day start/end hour (+ pace) for the schedule clock; undefined = defaults 08:00–21:00. */
   dayConfig?: Record<number, { startHour?: number; endHour?: number; pace?: number }>;
   /** Patch a day's start/end hour (decimal, e.g. 6.5 = 06:30; >24 = past midnight); undefined value resets. */
   onSetDayCfg?: (day: number, patch: { startHour?: number; endHour?: number }) => void;
+  /** Selected option index per optionGroup ID; controls which option shows in the itinerary row. */
+  optGroupSel?: Record<string, number>;
 }
 
 /** Decimal hour (6.5, or 26 for 02:00 next day) → "HH:MM" for a time input. */
@@ -70,6 +74,32 @@ interface AgendaEntry {
   departSec: number | null;
 }
 
+// Option-group rendering types
+type SingleSlot = { type: 'single'; entry: AgendaEntry; slotIdx: number };
+type GroupSlot  = { type: 'group';  groupId: string; options: AgendaEntry[]; slotIdx: number };
+type RenderSlot = SingleSlot | GroupSlot;
+
+function buildRenderSlots(entries: AgendaEntry[]): RenderSlot[] {
+  const slots: RenderSlot[] = [];
+  let i = 0;
+  while (i < entries.length) {
+    const gid = entries[i].place.optionGroup;
+    if (!gid) {
+      slots.push({ type: 'single', entry: entries[i], slotIdx: slots.length });
+      i++;
+    } else {
+      const options: AgendaEntry[] = [];
+      while (i < entries.length && entries[i].place.optionGroup === gid) {
+        options.push(entries[i]);
+        i++;
+      }
+      slots.push({ type: 'group', groupId: gid, options, slotIdx: slots.length });
+    }
+  }
+  return slots;
+}
+
+
 export default function Itinerary({
   day,
   onDay,
@@ -82,12 +112,16 @@ export default function Itinerary({
   onSelect,
   onMove,
   onAssignDay,
+  onRemoveGroup,
+  onGroupTabChange,
   scheduleByDay,
   dayConfig,
   onSetDayCfg,
+  optGroupSel: optGroupSelProp = {},
 }: Props) {
   // Adjustable search radius for "options nearby today", in estimated drive-minutes.
   const [optRadiusMin, setOptRadiusMin] = useState(45);
+  const optGroupSel = optGroupSelProp;
 
   const assigned = places.filter((p) => p.day && p.status !== 'rejected');
   const backlog = places
@@ -126,13 +160,19 @@ export default function Itinerary({
   const isToday = realDay === day;
   const driveSec = route ? route.duration + (ferrySecByDay[day] ?? 0) : 0;
   const schedule = scheduleByDay?.[day] ?? null;
+  const shortlistStops = stops.filter((p) => p.status === 'shortlist');
   const scheduleEntries: AgendaEntry[] = schedule?.entries?.length
     ? schedule.entries
-    : stops.map((place) => ({
+    : shortlistStops.map((place) => ({
         place,
         arriveSec: null,
         departSec: null,
       }));
+  const renderSlots = buildRenderSlots(scheduleEntries);
+  const getActiveEntry = (slot: RenderSlot): AgendaEntry =>
+    slot.type === 'single'
+      ? slot.entry
+      : slot.options[Math.min(optGroupSel[slot.groupId] ?? 0, slot.options.length - 1)];
 
   return (
     <div className="itinerary">
@@ -229,68 +269,120 @@ export default function Itinerary({
           <p className="itin-empty">no stops</p>
         ) : (
           <div className="itin-stop-list">
-            {scheduleEntries.map((entry, i) => {
-              const timeRange =
-                entry.arriveSec != null && entry.departSec != null
-                  ? formatTimeRange(entry.arriveSec, entry.departSec)
-                  : 'Unscheduled';
-              const prev = i > 0 ? scheduleEntries[i - 1] : null;
+            {renderSlots.map((slot) => {
+              const activeEntry = getActiveEntry(slot);
+              const prevSlot = slot.slotIdx > 0 ? renderSlots[slot.slotIdx - 1] : null;
+              const prevEntry = prevSlot ? getActiveEntry(prevSlot) : null;
               const legSec =
-                prev && entry.arriveSec != null && prev.departSec != null
-                  ? entry.arriveSec - prev.departSec
+                prevEntry && activeEntry.arriveSec != null && prevEntry.departSec != null
+                  ? activeEntry.arriveSec - prevEntry.departSec
                   : null;
-              const hint = bestTimeHint(entry.place.bestTime);
+              const hint = bestTimeHint(activeEntry.place.bestTime);
+              const timeRange =
+                activeEntry.arriveSec != null && activeEntry.departSec != null
+                  ? formatTimeRange(activeEntry.arriveSec, activeEntry.departSec)
+                  : 'Unscheduled';
 
+              const isGroup = slot.type === 'group';
+              const groupSlot = isGroup ? (slot as GroupSlot) : null;
+              const activeIdx = isGroup
+                ? Math.min(optGroupSel[groupSlot!.groupId] ?? 0, groupSlot!.options.length - 1)
+                : 0;
+              const key = isGroup ? `grp-${slot.groupId}` : `${day}-${activeEntry.place.id}`;
+              const isSelected = isGroup
+                ? groupSlot!.options.some((e) => e.place.id === selectedId)
+                : selectedId === activeEntry.place.id;
               return (
-                <div key={`${day}-${entry.place.id}-${i}`} className="itin-stop-entry">
+                <div key={key} className="itin-stop-entry">
                   {legSec != null && legSec > 0 && (
                     <div className="itin-leg">↓ {formatDuration(legSec)} drive</div>
                   )}
                   <button
                     type="button"
-                    className={`itin-stop-row${selectedId === entry.place.id ? ' selected' : ''}`}
-                    onClick={() => onSelect(entry.place)}
+                    className={`itin-stop-row${isSelected ? ' selected' : ''}${isGroup ? ' has-options' : ''}`}
+                    onClick={() => onSelect(activeEntry.place)}
                   >
                     <span className="itin-stop-step" style={{ background: dayColor(day) }}>
-                      {i + 1}
+                      {slot.slotIdx + 1}
                     </span>
                     <span className="itin-stop-main">
                       <span className="itin-stop-name">
-                        {entry.place.pick && <span className="pick-star" title="Recommended pick">★ </span>}
-                        {entry.place.name}
+                        {activeEntry.place.pick && <span className="pick-star" title="Recommended pick">★ </span>}
+                        {activeEntry.place.name}
                       </span>
                       {hint && <span className="itin-stop-hint">{hint}</span>}
-                      {entry.place.note && <span className="itin-stop-note">🕘 {entry.place.note}</span>}
+                      {activeEntry.place.note && <span className="itin-stop-note">🕘 {activeEntry.place.note}</span>}
                     </span>
-                    <span className={`itin-stop-time${entry.arriveSec == null ? ' muted' : ''}`}>
+                    <span className={`itin-stop-time${activeEntry.arriveSec == null ? ' muted' : ''}`}>
                       {timeRange}
                     </span>
                   </button>
-                  {selectedId === entry.place.id && (
+                  {isGroup && groupSlot!.options.length > 1 && (
+                    <div className="itin-opt-tabs">
+                      {groupSlot!.options.map((entry, i) => {
+                        const label =
+                          entry.place.optionTabLabel ??
+                          entry.place.name.replace(/[—–(,].*/, '').trim().slice(0, 16);
+                        return (
+                          <button
+                            key={entry.place.id}
+                            type="button"
+                            className={`itin-opt-tab${i === activeIdx ? ' active' : ''}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onGroupTabChange?.(groupSlot!.groupId, i, entry.place.id);
+                            }}
+                          >
+                            {label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                  {isSelected && (
                     <div className="itin-stop-actions">
                       <button
                         type="button"
-                        disabled={i === 0}
-                        onClick={() => onMove(entry.place.id, 'up')}
+                        disabled={slot.slotIdx === 0}
+                        onClick={() => onMove(activeEntry.place.id, 'up')}
                         title="Move earlier"
                       >
                         ↑
                       </button>
                       <button
                         type="button"
-                        disabled={i === scheduleEntries.length - 1}
-                        onClick={() => onMove(entry.place.id, 'down')}
+                        disabled={slot.slotIdx === renderSlots.length - 1}
+                        onClick={() => onMove(activeEntry.place.id, 'down')}
                         title="Move later"
                       >
                         ↓
                       </button>
-                      <button
-                        type="button"
-                        onClick={() => onAssignDay(entry.place.id, null)}
-                        title="Remove from day"
-                      >
-                        ✕
-                      </button>
+                      {isGroup ? (
+                        <>
+                          <button
+                            type="button"
+                            onClick={() => onAssignDay(activeEntry.place.id, null)}
+                            title="Remove this option from day"
+                          >
+                            ➖
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => onRemoveGroup?.(groupSlot!.groupId)}
+                            title="Remove all options from day"
+                          >
+                            ✕
+                          </button>
+                        </>
+                      ) : (
+                        <button
+                          type="button"
+                          onClick={() => onAssignDay(activeEntry.place.id, null)}
+                          title="Remove from day"
+                        >
+                          ✕
+                        </button>
+                      )}
                     </div>
                   )}
                 </div>

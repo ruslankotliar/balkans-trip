@@ -17,6 +17,14 @@ interface Props {
   onPick: (id: string, pick: boolean) => void;
   /** Present only for user-added places: opens the edit form. */
   onEdit?: () => void;
+  /** All options in the place's optionGroup (when it belongs to one). */
+  groupOptions?: PlaceWithOverride[];
+  /** Index of the currently shown option within groupOptions. */
+  selectedGroupIdx?: number;
+  /** Called when the user picks a different tab. */
+  onGroupTabChange?: (idx: number) => void;
+  /** Opens AddPlace pre-filled with this group ID so user can add a sibling option. */
+  onAddOption?: (groupId: string) => void;
 }
 
 /** Render inline phone numbers (+XX ...) as tappable tel: links. */
@@ -46,6 +54,10 @@ export default function DetailPanel({
   onTimeMinutes,
   onPick,
   onEdit,
+  groupOptions,
+  selectedGroupIdx = 0,
+  onGroupTabChange,
+  onAddOption,
 }: Props) {
   // All hooks must run unconditionally (Rules of Hooks) — guard AFTER them.
   const [hoursDraft, setHoursDraft] = useState('');
@@ -81,11 +93,42 @@ export default function DetailPanel({
     setTimeMsg('saved');
   }
 
+  const optTabLabel = (opt: PlaceWithOverride) =>
+    opt.optionTabLabel ?? opt.name.replace(/[—–(,].*/, '').trim().slice(0, 20);
+
   return (
     <div className="detail-panel">
       <button className="detail-close" onClick={onClose} title="Close">
         ✕
       </button>
+
+      {(groupOptions && groupOptions.length > 1 || (place?.optionGroup && onAddOption)) && (
+        <div className="detail-group-tabs-wrap">
+          <div className="detail-group-tabs">
+            {groupOptions?.map((opt, i) => (
+              <button
+                key={opt.id}
+                type="button"
+                className={`detail-group-tab${i === selectedGroupIdx ? ' active' : ''}`}
+                onClick={() => onGroupTabChange?.(i)}
+              >
+                {optTabLabel(opt)}
+              </button>
+            ))}
+            {place?.optionGroup && onAddOption && (
+              <button
+                type="button"
+                className="detail-group-add"
+                onClick={() => onAddOption(place.optionGroup!)}
+                title="Add another option to this group"
+              >
+                +
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
       <h2>
         <button
           type="button"

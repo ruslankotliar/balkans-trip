@@ -8,7 +8,7 @@ body {
 }
 
 /* Remove 300ms tap delay on all interactive elements */
-a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
+a, button, [role="button"], .place-list li {
   touch-action: manipulation;
 }
 
@@ -474,7 +474,124 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   height: 26px;
   cursor: pointer;
   font-size: 13px;
+  z-index: 1;
 }
+/* Option-group segmented control in the sidebar detail panel */
+.detail-group-tabs-wrap {
+  position: relative;
+  margin-bottom: 16px;
+}
+.detail-group-tabs-wrap::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 36px;
+  background: linear-gradient(to right, transparent, #e8ecf3);
+  border-radius: 0 10px 10px 0;
+  pointer-events: none;
+}
+.detail-group-tabs {
+  display: flex;
+  gap: 3px;
+  background: #e8ecf3;
+  border-radius: 10px;
+  padding: 3px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.detail-group-tabs::-webkit-scrollbar { display: none; }
+.detail-group-tab {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #5a6a85;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+}
+.detail-group-tab:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.55);
+  color: #1e2d45;
+}
+.detail-group-tab.active {
+  background: #fff;
+  color: #1a2540;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.13), 0 0 0 0.5px rgba(0,0,0,0.06);
+}
+.detail-group-add {
+  flex-shrink: 0;
+  width: 30px;
+  padding: 6px 0;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: #8a9ab8;
+  cursor: pointer;
+  text-align: center;
+}
+.detail-group-add:hover {
+  background: rgba(255,255,255,0.7);
+  color: #3a5a9a;
+}
+
+/* "N opts" badge on itinerary group rows */
+.itin-opts-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: #6a7fa8;
+  background: #edf1fa;
+  border: 1px solid #d5ddef;
+  border-radius: 999px;
+  padding: 2px 7px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.itin-stop-row.has-options {
+  border-style: dashed;
+}
+.itin-opt-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 3px 0 2px 34px;
+}
+.itin-opt-tab {
+  font: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  color: #6a7fa8;
+  background: #f0f4ff;
+  border: 1px solid #d5ddef;
+  border-radius: 999px;
+  padding: 3px 9px;
+  cursor: pointer;
+  min-height: 24px;
+  white-space: nowrap;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+}
+.itin-opt-tab:hover {
+  background: #e2eaff;
+  border-color: #aabde0;
+}
+.itin-opt-tab.active {
+  background: #3b6fcf;
+  color: #fff;
+  border-color: #3b6fcf;
+}
+
 .detail-panel .meta {
   color: #666;
   font-size: 12px;
@@ -504,47 +621,6 @@ a, button, [role="button"], .today-stop-name, .place-list li, .today-check {
   line-height: 1.45;
   color: #444;
   overflow-wrap: anywhere;
-}
-.detail-facts {
-  margin: 8px 0 0;
-  border: 1px solid #e5e8ee;
-  border-radius: 8px;
-  background: #fff;
-  overflow: hidden;
-}
-.detail-facts summary {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  user-select: none;
-  list-style: none;
-  padding: 7px 10px;
-  font-size: 12px;
-  font-weight: 700;
-  color: #2c3e50;
-}
-.detail-facts summary::-webkit-details-marker {
-  display: none;
-}
-.detail-facts summary::after {
-  content: '▾';
-  margin-left: auto;
-  color: #8a6d2f;
-  font-size: 10px;
-}
-.detail-facts[open] summary::after {
-  content: '▴';
-}
-.detail-facts-body {
-  border-top: 1px solid #edf1f5;
-  padding: 8px 10px;
-}
-.detail-facts-body .meta {
-  margin: 0;
-}
-.detail-facts-body .detail-body-copy:last-child {
-  margin-bottom: 0;
 }
 .detail-panel .community {
   font-style: italic;
@@ -1105,6 +1181,7 @@ body.trip-mode .detail-visited-btn {
   flex-direction: column;
   gap: 4px;
 }
+
 .itin-stop-row {
   display: flex;
   align-items: center;
@@ -1145,6 +1222,9 @@ body.trip-mode .detail-visited-btn {
   line-height: 1.2;
   font-weight: 600;
   color: #1f2b3d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .itin-stop-time {
   font-size: 12px;
@@ -1167,13 +1247,13 @@ body.trip-mode .detail-visited-btn {
   padding-left: 34px;
 }
 .itin-stop-actions button {
-  min-width: 40px;
-  height: 40px;
+  min-width: 36px;
+  height: 36px;
   border: 1px solid #d7dee8;
   border-radius: 8px;
   background: #fff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1;
 }
 .itin-stop-actions button:active {
@@ -1325,10 +1405,6 @@ body.trip-mode .detail-visited-btn {
     height: 36px;
     font-size: 14px;
   }
-  .view-tabs .mode-pill {
-    padding: 5px 10px;
-    font-size: 12px;
-  }
   /* ---- Plan mode: compact chrome to maximise list space ---- */
   /* Subtitle: single truncated line */
   .subtitle {
@@ -1395,6 +1471,11 @@ body.trip-mode .detail-visited-btn {
     height: 40px;
     font-size: 16px;
   }
+  .itin-opt-tab {
+    min-height: 28px;
+    padding: 4px 10px;
+    font-size: 11px;
+  }
   .itin-day-summary {
     margin-left: 8px;
     padding: 4px 6px;
@@ -1409,26 +1490,6 @@ body.trip-mode .detail-visited-btn {
   /* "no stops" text is redundant when you can see the empty day — hide it */
   .itin-day .itin-empty {
     display: none;
-  }
-  /* ---- Today view: ghost day-nav arrows ---- */
-  .today-arrow {
-    width: 36px;
-    height: 36px;
-    border: none;
-    background: transparent;
-    color: #646b74;
-    font-size: 20px;
-  }
-  .today-jump-btn {
-    min-height: 36px;
-    padding: 0 10px;
-    font-size: 12px;
-  }
-  /* Today skip button: smaller tap target */
-  .today-skip {
-    min-height: 32px;
-    padding: 0 10px;
-    font-size: 12px;
   }
 }
 
@@ -1461,32 +1522,6 @@ body.trip-mode .detail-visited-btn {
   flex: 1;
   margin: 0;
 }
-.mode-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  min-height: 40px;
-  padding: 6px 12px;
-  border: 1px solid #7d7d7d;
-  border-radius: 6px;
-  background: #fff;
-  color: #111;
-  font-size: 18px;
-  line-height: 1;
-  white-space: nowrap;
-  cursor: pointer;
-}
-.mode-pill:active {
-  transform: scale(0.97);
-  filter: brightness(0.96);
-}
-/* Trip mode: tint the toggle so the current mode is obvious at a glance. */
-.mode-pill.trip {
-  background: #eaf4ff;
-  border-color: #1f6da8;
-}
-
 /* ---- Sidebar footer: secondary tools ---- */
 .sidebar-footer {
   flex-shrink: 0;
@@ -1496,10 +1531,6 @@ body.trip-mode .detail-visited-btn {
   gap: 8px;
   padding: 8px 0 2px;
   border-top: 1px solid #e5e5e5;
-}
-.tools-menu-wrap {
-  position: relative;
-  margin-left: auto;
 }
 .tools-pill {
   border: 1px solid #95a5a6;
@@ -1517,70 +1548,7 @@ body.trip-mode .detail-visited-btn {
   color: #2c3e50;
   background: #f7f9fb;
 }
-.tools-menu {
-  position: absolute;
-  right: 0;
-  bottom: calc(100% + 8px);
-  min-width: 170px;
-  padding: 6px;
-  border: 1px solid #d7dce2;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 12px 28px rgba(25, 33, 49, 0.14);
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.tools-menu button {
-  border: none;
-  background: transparent;
-  padding: 8px 10px;
-  text-align: left;
-  font-size: 12px;
-  color: #2c3e50;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.tools-menu button:hover {
-  background: #f3f6f9;
-}
-
 /* ---- Today view (trip mode) ---- */
-.today {
-  flex: 1;
-  min-height: 0; /* iOS Safari: flex children with overflow-y need this to actually scroll */
-  overflow-y: auto;
-  overscroll-behavior: contain; /* prevent map pan leaking through on iOS */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.today-strip {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.today-arrow {
-  width: 48px;
-  height: 44px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: #fff;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-.today-arrow:disabled {
-  opacity: 0.3;
-}
-.today-strip-label {
-  flex: 1;
-  text-align: center;
-  font-size: 15px;
-  cursor: pointer;
-  user-select: none;
-}
 .today-badge {
   display: inline-block;
   margin-left: 6px;
@@ -1591,25 +1559,6 @@ body.trip-mode .detail-visited-btn {
   padding: 1px 7px;
   border-radius: 9px;
   text-transform: uppercase;
-}
-.today-jump {
-  display: block;
-  font-size: 10px;
-  color: #6b7079;
-}
-.today-jump-btn {
-  flex-shrink: 0;
-  border: 1px solid #2471c8;
-  background: #fff;
-  color: #2471c8;
-  border-radius: 999px;
-  padding: 7px 12px;
-  font-size: 11px;
-  font-weight: 700;
-  cursor: pointer;
-}
-.today-jump-btn:hover {
-  background: #eef6ff;
 }
 .today-countdown {
   display: inline-block;
@@ -1837,38 +1786,9 @@ body.trip-mode .detail-visited-btn {
   gap: 10px;
   min-height: 48px;
 }
-.today-stops li.done .today-stop-name {
-  text-decoration: line-through;
-  color: #9aa5ad;
-}
 .today-stops li.next .today-stop {
   background: #eef6ff;
   border-radius: 8px;
-}
-.today-check {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #bbb;
-  background: #fff;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-.today-check.on {
-  background: #27ae60;
-  border-color: #27ae60;
-  color: #fff;
-}
-.today-stop-name {
-  flex: 1;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  cursor: pointer;
-  min-width: 0;
 }
 .today-stop-time {
   font-size: 10px;
@@ -1878,17 +1798,6 @@ body.trip-mode .detail-visited-btn {
 .today-stop-time.override {
   color: #8a5b00;
   font-weight: 700;
-}
-.today-skip {
-  min-height: 40px;
-  padding: 0 14px;
-  border: 1px solid #e0b4ae;
-  color: #c0392b;
-  background: #fff;
-  border-radius: 8px;
-  font-size: 13px;
-  cursor: pointer;
-  flex-shrink: 0;
 }
 .today-note-row {
   padding: 4px 0;
@@ -2357,6 +2266,20 @@ body.trip-mode .card-links .today-nav-link {
 }
 .addplace-cats .chip {
   font-size: 12px;
+}
+.addplace-group-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px dashed #dde3ee;
+}
+.addplace-optional {
+  font-weight: 400;
+  font-size: 11px;
+  color: #8a9ab8;
+  margin-left: 4px;
 }
 .addplace-actions {
   display: flex;
@@ -2995,9 +2918,6 @@ body.trip-mode .ess-tel {
 .add-place-btn:active,
 .itin-stop-row:active,
 .corridor-card:active,
-.today-stop-name:active,
-.today-check:active,
-.today-skip:active,
 .sidebar-fab:active,
 .locate-fab:active,
 .detail-nav-btn:active,
