@@ -151,7 +151,7 @@ export default function DetailPanel({
       {/* ---- Above-the-fold actions: navigate + book ---- */}
       <div className="detail-top-actions">
         <a className="detail-nav-btn" href={navUrl(p.lat, p.lng)} target="_blank" rel="noreferrer">
-          🗺 Google Maps
+          🗺 Navigate
         </a>
         {booking && (
           <a

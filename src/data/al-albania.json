@@ -1,7 +1,7 @@
 [
   {
     "id": "al-tirana-airport-arrival",
-    "name": "Tirana airport (TIA) - land 13:25, car handover",
+    "name": "Land 13:25 + car handover (TIA)",
     "country": "AL",
     "category": "other",
     "lat": 41.41924,
@@ -104,7 +104,7 @@
   },
   {
     "id": "al-lezhe-castle",
-    "name": "Lezhe Castle (Kalaja e Lezhes), 322 m - the view over the delta, 1.5 km from the Spar",
+    "name": "Lezhe Castle - delta view, 1.5 km from the Spar",
     "country": "AL",
     "category": "viewpoint",
     "lat": 41.7837,
@@ -143,7 +143,7 @@
   },
   {
     "id": "al-kir-canyon-pools",
-    "name": "Kir canyon (Kanioni i Kirit, Prekal road) - three pools",
+    "name": "Kir canyon - three pools (Prekal road)",
     "country": "AL",
     "category": "beach",
     "lat": 42.162762,
@@ -159,7 +159,7 @@
   },
   {
     "id": "al-zhyle-cave",
-    "name": "Zhyle cave (Shpella e Zhyles), Prekal - deep pool inside, ice cold, torch",
+    "name": "Zhyle cave, Prekal - torch, ice-cold pool",
     "country": "AL",
     "category": "nature",
     "lat": 42.17803,
@@ -171,7 +171,7 @@
   },
   {
     "id": "al-shpija-e-mishit",
-    "name": "Shpija e Mishit - butcher, qofte and lamb for the BBQ",
+    "name": "Butcher (Shpija e Mishit) - qofte, lamb",
     "country": "AL",
     "category": "food",
     "lat": 42.06503,
@@ -205,7 +205,7 @@
   },
   {
     "id": "al-marubi-museum",
-    "name": "Marubi National Museum of Photography, Shkoder - if the canyon empties early",
+    "name": "Marubi photo museum, Shkoder - if early",
     "country": "AL",
     "category": "sight",
     "lat": 42.0686,
@@ -309,7 +309,7 @@
   },
   {
     "id": "al-store-and-go-locker",
-    "name": "Store and Go - 24/7 locker, screw-top canister EUR 12 (fallback)",
+    "name": "Store and Go locker 24/7 - canister EUR 12",
     "country": "AL",
     "category": "other",
     "lat": 42.06693,
@@ -367,7 +367,7 @@
   },
   {
     "id": "al-qafa-e-thores",
-    "name": "Qafa e Thores (Buni i Thores pass), 1,704 m - the whole range in front of you",
+    "name": "Thore pass viewpoint, 1,704 m",
     "country": "AL",
     "category": "viewpoint",
     "lat": 42.38849,
@@ -500,7 +500,7 @@
   },
   {
     "id": "al-shala-dawn-fish",
-    "name": "Shala river at dawn - Gerla bridge stretch (the best window of the week)",
+    "name": "Dawn FISH - Shala, Gerla bridge stretch",
     "country": "AL",
     "category": "activity",
     "lat": 42.38775,
@@ -513,7 +513,7 @@
   },
   {
     "id": "al-nderlysaj-parking",
-    "name": "Nderlysaj - park for the Blue Eye (200 lek, or free further out)",
+    "name": "Park at Nderlysaj for the Blue Eye",
     "country": "AL",
     "category": "other",
     "lat": 42.3548,
@@ -545,7 +545,7 @@
   },
   {
     "id": "al-vaskat-nderlysaj",
-    "name": "Shala pool at Nderlysaj (Vaskat e Nderlysajve)",
+    "name": "Shala pool, Nderlysaj (Vaskat)",
     "country": "AL",
     "category": "beach",
     "lat": 42.35593,
@@ -572,7 +572,7 @@
   },
   {
     "id": "al-shala-pool-theth",
-    "name": "Shala pool below Theth (komoot swimming spot) - swim, repack for the loop",
+    "name": "Shala pool below Theth - swim, repack",
     "country": "AL",
     "category": "beach",
     "lat": 42.365917,
@@ -587,7 +587,7 @@
   },
   {
     "id": "al-shala-village-fish",
-    "name": "Shala river, village stretch - FISH at last light",
+    "name": "Last-light FISH - village stretch",
     "country": "AL",
     "category": "activity",
     "lat": 42.3919,
@@ -658,7 +658,7 @@
   },
   {
     "id": "al-camping-balcony-n2",
-    "name": "Camping Balcony, night 2 - before you lose signal",
+    "name": "Balcony night 2 - tell them your route",
     "country": "AL",
     "category": "campsite",
     "lat": 42.3997,
@@ -673,7 +673,7 @@
   },
   {
     "id": "al-loop-start",
-    "name": "Loop start - the komoot tour starts at Camping Balcony",
+    "name": "Loop start at Balcony - 10.1 km, +1,078 m today",
     "country": "AL",
     "category": "hike",
     "lat": 42.398674,
@@ -689,7 +689,7 @@
   },
   {
     "id": "al-shtraza-springs",
-    "name": "Burimi i Shtrazes - springs at km 4.5-5.8, ~40 m off the line",
+    "name": "Km 4.5-5.8 Shtraza springs - unseen",
     "country": "AL",
     "category": "other",
     "lat": 42.43643,
@@ -701,7 +701,7 @@
   },
   {
     "id": "al-peja-lake",
-    "name": "Peja Lake (Liqeni i Pejes), km 8.4 - assume it is dry",
+    "name": "Km 8.4 Peja Lake - assume dry",
     "country": "AL",
     "category": "nature",
     "lat": 42.44751,
@@ -713,7 +713,7 @@
   },
   {
     "id": "al-white-spring-camp",
-    "name": "White Spring camp, km 10.1, 1,673 m - NIGHT 1",
+    "name": "NIGHT 1: White Spring camp, km 10.1, 1,673 m",
     "country": "AL",
     "category": "campsite",
     "lat": 42.45753,
@@ -732,7 +732,7 @@
   },
   {
     "id": "al-gropa-e-bukur-spring",
-    "name": "Burimi Gropave te Bukura, km 14.0, 1,740 m - FILL EVERYTHING, 8 L for two",
+    "name": "Km 14 spring - FILL 8 L, last water",
     "country": "AL",
     "category": "other",
     "lat": 42.44316,
@@ -744,7 +744,7 @@
   },
   {
     "id": "al-high-camp-2206",
-    "name": "High camp, km 16.2, 2,206 m - NIGHT 2 (only if the km 14 spring runs)",
+    "name": "NIGHT 2: high camp 2,206 m, km 16.2",
     "country": "AL",
     "category": "campsite",
     "lat": 42.426978,
@@ -775,7 +775,7 @@
   },
   {
     "id": "al-valbona-pass",
-    "name": "Valbona pass (Qafa e Valbones), 1,780 m - km 21.3, then it is all down",
+    "name": "Valbona pass 1,780 m, km 21.3 - then all down",
     "country": "AL",
     "category": "viewpoint",
     "lat": 42.40569,
@@ -788,7 +788,7 @@
   },
   {
     "id": "al-balcony-shower-car",
-    "name": "Back at the car - shower at Camping Balcony, collect the car",
+    "name": "Theth: shower at Balcony, get the car",
     "country": "AL",
     "category": "other",
     "lat": 42.3997,
@@ -988,7 +988,7 @@
   },
   {
     "id": "al-bunkart-2",
-    "name": "Bunk'Art 2 - the Sigurimi bunker under the ministry, 500 m from the flat; Friday open to 20:00",
+    "name": "Bunk'Art 2 - 500 m from the flat, Fri to 20:00",
     "country": "AL",
     "category": "sight",
     "lat": 41.32702,
@@ -1003,7 +1003,7 @@
   },
   {
     "id": "al-mulliri-i-vjeter",
-    "name": "Mulliri i Vjeter, Parku Rinia - coffee from 07:00",
+    "name": "Coffee: Mulliri i Vjeter, Parku Rinia",
     "country": "AL",
     "category": "food",
     "lat": 41.32466,
@@ -1016,7 +1016,7 @@
   },
   {
     "id": "al-tirana-airport-departure",
-    "name": "Tirana airport - return the car; bag drop closes 13:10",
+    "name": "Airport: return the car, bag drop by 13:10",
     "country": "AL",
     "category": "other",
     "lat": 41.41924,

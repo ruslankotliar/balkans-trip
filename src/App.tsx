@@ -1281,7 +1281,26 @@ export default function App() {
             )),
           )}
 
+        {/* Plan view: the viewed day's stops as numbered pins, same numbers as the list */}
+        {view === 'plan' &&
+          (routeStops[planDay] ?? []).map((p, i) => (
+            <Marker
+              key={`step-${p.id}`}
+              position={[p.lat, p.lng]}
+              zIndexOffset={1000}
+              icon={L.divIcon({
+                className: 'step-pin',
+                html: `<span style="background:${dayColor(planDay)}">${i + 1}</span>`,
+                iconSize: [26, 26],
+                iconAnchor: [13, 13],
+              })}
+              eventHandlers={{ click: () => selectPlace(p) }}
+            />
+          ))}
+
         {markersToShow.map((p) => {
+          // The viewed day's stops are drawn as numbered pins above.
+          if (view === 'plan' && p.day === planDay && p.status === 'shortlist') return null;
           const isSel = p.id === selectedId;
           const radius = isSel ? 15 : p.status === 'shortlist' ? 10 : 7;
           // No Leaflet popup: one pin click opens ONE surface — the detail panel.

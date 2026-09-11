@@ -112,7 +112,7 @@ export function bookingFor(sources?: string[]): SourceLink | undefined {
   return bookingLink(deriveLinks(sources));
 }
 
-/** Google Maps — demoted to a small secondary "Navigate" link. */
+/** Google Maps directions to the point - one tap to navigate (Google picks the mode). */
 export function navUrl(lat: number, lng: number): string {
-  return `https://www.google.com/maps?q=${lat},${lng}`;
+  return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
 }
