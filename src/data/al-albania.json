@@ -1039,5 +1039,47 @@
     "timeNeeded": "2h",
     "bestTime": "leave the flat 11:00; bag drop closes 13:10",
     "status": "shortlist"
+  },
+  {
+    "id": "al-rozafa-castle",
+    "name": "Rozafa Castle, Shkoder - the big one, 19 min from Shiroka",
+    "country": "AL",
+    "category": "sight",
+    "lat": 42.04653,
+    "lng": 19.49391,
+    "description": "Shkoder's hilltop castle over the lake and the three rivers - the view is the point, an hour is enough. It sits on the road between Shiroka and town, so Sunday morning on the way to the Mesi bridge is the natural slot (drop the bags at 09:30, castle 10:00, bridge 11:00, canyon from 11:45). Not in the plan; nobody checked hours or the fee (a few hundred lek reported).",
+    "sources": [
+      "https://www.google.com/maps/search/?api=1&query=42.04653,19.49391"
+    ],
+    "timeNeeded": "1h",
+    "status": "extra"
+  },
+  {
+    "id": "al-cape-rodon",
+    "name": "Cape Rodon (Kepi i Rodonit) - Skanderbeg's castle on a sea cape. Too far for this trip",
+    "country": "AL",
+    "category": "beach",
+    "lat": 41.58585,
+    "lng": 19.44806,
+    "description": "Ruins of Skanderbeg's castle on a cape into the Adriatic, beaches on both sides. Checked Sat 12 Sep: airport -> cape 78 min, cape -> Spar Lezhe 110 min, against 46 min direct - a 3.5 h detour on landing day, which is the rain day, and no other day passes within an hour. Keep for another trip (Durres side).",
+    "sources": [
+      "https://www.google.com/maps/search/?api=1&query=41.58585,19.44806"
+    ],
+    "timeNeeded": "1h30",
+    "status": "extra"
+  },
+  {
+    "id": "al-dajti-ekspres",
+    "name": "Dajti Ekspres cable car - only if you are up early Saturday",
+    "country": "AL",
+    "category": "viewpoint",
+    "lat": 41.35078,
+    "lng": 19.86106,
+    "description": "15 min gondola from the east edge of Tirana up Mount Dajti, the view over the whole plain; Bunk'Art 1 is at the lower station. Sat 19 is a sleep-in day and the flat leaves at 11:00, so this only fits if you are awake by 08:30 - hours not checked, opens around 09:00 by most reports.",
+    "sources": [
+      "https://www.google.com/maps/search/?api=1&query=41.35078,19.86106"
+    ],
+    "timeNeeded": "1h30",
+    "status": "extra"
   }
 ]
