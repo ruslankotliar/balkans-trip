@@ -8,8 +8,8 @@
 import type { Overrides } from './store';
 
 /** When the plan last changed - a phone that seeded an older plan is offered this one. */
-export const ALBANIA_PLAN_VERSION = '12 Sep 01:32';
-// plan hash: a48bb0b9
+export const ALBANIA_PLAN_VERSION = '12 Sep 01:52';
+// plan hash: e0bbe4dd
 
 export const ALBANIA_PLAN: Overrides = {
   // -- Day 1: Sat Sep 12 --
@@ -19,11 +19,11 @@ export const ALBANIA_PLAN: Overrides = {
   "al-rana-e-hedhun": { day: 1, dayOrder: 4 },
   "al-kult-beach-bar": { day: 1, dayOrder: 5 },
   // -- Day 2: Sun Sep 13 --
-  "al-tiny-house-shiroka": { day: 2, dayOrder: 1 },
-  "al-mesi-bridge": { day: 2, dayOrder: 2 },
-  "al-kir-canyon-pools": { day: 2, dayOrder: 3 },
-  "al-zhyle-cave": { day: 2, dayOrder: 4 },
-  "al-shpija-e-mishit": { day: 2, dayOrder: 5 },
+  "al-mesi-bridge": { day: 2, dayOrder: 1 },
+  "al-kir-canyon-pools": { day: 2, dayOrder: 2 },
+  "al-zhyle-cave": { day: 2, dayOrder: 3 },
+  "al-shpija-e-mishit": { day: 2, dayOrder: 4 },
+  "al-tiny-house-shiroka": { day: 2, dayOrder: 5 },
   "al-shiroka-promenade-fish": { day: 2, dayOrder: 6 },
   // -- Day 3: Mon Sep 14 --
   "al-stolia-shkoder": { day: 3, dayOrder: 1 },

@@ -113,23 +113,6 @@
     "status": "extra"
   },
   {
-    "id": "al-tiny-house-shiroka",
-    "name": "Tiny House Shiroka - drop the bags; hot tub, BBQ, the evening",
-    "country": "AL",
-    "category": "accommodation",
-    "lat": 42.05395,
-    "lng": 19.48068,
-    "description": "BOOKED 2026-08-30, EUR 116, Sun 13 -> Mon 14. The Airbnb pin is approximate - the exact spot is in the booking. No check-in to wait for, the house is yours whenever: drop the bags ~09:30 and go. Evening ~17:30: hot tub, BBQ with the butcher's qofte and lamb, cards and dice (Durak, Gin Rummy, Cribbage), music offline, wine or raki from a shop not a bar. Tani Mini-Market 08:00-20:00 for anything missed, ATM beside it.",
-    "sources": [
-      "https://www.airbnb.com/rooms/881834479740140187?check_in=2026-09-13&check_out=2026-09-14&adults=2"
-    ],
-    "cost": "EUR 116 (paid)",
-    "timeNeeded": "15 min",
-    "bestTime": "09:30 drop bags; back ~17:30",
-    "facilities": "hot tub (gas ~EUR 20 if run all night), BBQ",
-    "status": "shortlist"
-  },
-  {
     "id": "al-mesi-bridge",
     "name": "Mesi Bridge (Ura e Mesit)",
     "country": "AL",
@@ -179,6 +162,23 @@
     "description": "Bulevardi Skenderbeu 54, in the bazaar cluster. Qofte and lamb are the grill buy here. Buy on the way back, not in the morning - meat should not sit in a hot car all day. It is Sunday: if shut, any Shkoder supermarket meat counter does the job (Spar 07:00-22:00, 200 m east).",
     "timeNeeded": "20 min",
     "bestTime": "~17:00 on the way back",
+    "status": "shortlist"
+  },
+  {
+    "id": "al-tiny-house-shiroka",
+    "name": "Tiny House Shiroka - hot tub, BBQ, the evening",
+    "country": "AL",
+    "category": "accommodation",
+    "lat": 42.05395,
+    "lng": 19.48068,
+    "description": "BOOKED 2026-08-30, EUR 116, Sun 13 -> Mon 14. The Airbnb pin is approximate - the exact spot is in the booking. No check-in to wait for, the house is yours whenever - you come here once, at the end of the day (the morning detour via Shiroka was cut: it cost an hour). From ~17:30: hot tub, BBQ with the butcher's qofte and lamb, cards and dice (Durak, Gin Rummy, Cribbage), music offline, wine or raki from a shop not a bar. Tani Mini-Market 08:00-20:00 for anything missed, ATM beside it.",
+    "sources": [
+      "https://www.airbnb.com/rooms/881834479740140187?check_in=2026-09-13&check_out=2026-09-14&adults=2"
+    ],
+    "cost": "EUR 116 (paid)",
+    "timeNeeded": "15 min",
+    "bestTime": "from ~17:30, after the butcher",
+    "facilities": "hot tub (gas ~EUR 20 if run all night), BBQ",
     "status": "shortlist"
   },
   {
@@ -1047,7 +1047,7 @@
     "category": "sight",
     "lat": 42.04653,
     "lng": 19.49391,
-    "description": "Shkoder's hilltop castle over the lake and the three rivers - the view is the point, an hour is enough. It sits on the road between Shiroka and town, so Sunday morning on the way to the Mesi bridge is the natural slot (drop the bags at 09:30, castle 10:00, bridge 11:00, canyon from 11:45). Not in the plan; nobody checked hours or the fee (a few hundred lek reported).",
+    "description": "Shkoder's hilltop castle over the lake and the three rivers - the view is the point, an hour is enough. SH1 from Lezhe passes right below it entering Shkoder, so Sunday morning on the way to the Mesi bridge costs no detour (castle ~10:30, bridge ~11:45, canyon from ~12:15). Not in the plan; nobody checked hours or the fee (a few hundred lek reported).",
     "sources": [
       "https://www.google.com/maps/search/?api=1&query=42.04653,19.49391"
     ],

@@ -68,7 +68,7 @@ Nderlysa is the same river, 6 km down-valley, bigger water. Narrow paved road, 1
 | | |
 |---|---|
 | 07:00 | swim, breakfast, pack |
-| 09:30 | drive to **Shiroka**, 39 km / 58 min. Drop the bags - the house is yours whenever, no check-in to wait for |
+| 09:30 | drive straight to the bridge, via Shkoder, ~1 h. The house is yours whenever - you go there once, at the end of the day |
 | 10:45 | **[Mesi Bridge](https://www.google.com/maps/search/?api=1&query=42.11449,19.57515)** - Ottoman, 1770s, 13 arches. A 15 min stop, not a destination |
 | 11:15-16:30 | **[Kanioni i Kirit](https://northernalbania.com/kiri-river-kanione-prekal-canyon-shkoder/)** - free, walk-up, paved road the whole 8 km of it |
 | 17:00 | **butcher in Shkoder** - Shpija e Mishit, Bulevardi Skenderbeu 54. Qofte and lamb for the BBQ. **It is Sunday - if it is shut, any Shkoder supermarket meat counter does the job** |
