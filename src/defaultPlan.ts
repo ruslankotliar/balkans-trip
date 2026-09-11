@@ -3,7 +3,7 @@
  * Seeds new devices; shared plan syncs via plan_overrides. Only day + dayOrder.
  */
 import type { Overrides } from './store';
-import { ALBANIA_PLAN } from './defaultPlanAlbania';
+import { ALBANIA_PLAN, ALBANIA_PLAN_VERSION } from './defaultPlanAlbania';
 
 export const DEFAULT_PLAN: Overrides = {
   // ── Day 1: Jun16 Tue ──
@@ -216,4 +216,9 @@ export const DEFAULT_PLAN: Overrides = {
 export const DEFAULT_PLANS: Record<string, Overrides> = {
   'balkans-trip': DEFAULT_PLAN,
   'albania-2026': ALBANIA_PLAN,
+};
+
+/** When each baked plan was last generated - a phone compares this to the version it seeded. */
+export const PLAN_VERSIONS: Record<string, string> = {
+  'albania-2026': ALBANIA_PLAN_VERSION,
 };

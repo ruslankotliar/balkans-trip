@@ -1,11 +1,13 @@
 import { Suspense, lazy, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
 import L from 'leaflet';
 import {
+  Circle,
   CircleMarker,
   MapContainer,
   Marker,
   Polyline,
   TileLayer,
+  ZoomControl,
   useMap,
   useMapEvents,
 } from 'react-leaflet';
@@ -35,19 +37,28 @@ import {
   saveUserPlaces,
   guessCountry,
   normalizeOverrides,
+  bakedPlanVersion,
+  markPlanVersion,
+  seedPlan,
+  storedPlanVersion,
   type FerryHours,
   type Overrides,
   type PlaceWithOverride,
 } from './store';
+import { fetchForecast, loadForecast, saveForecast, type ForecastPoint, type ForecastStore } from './forecast';
+import { notesFor } from './notes';
+import { formatHM, sunTimes } from './sun';
 import { buildDaySchedule } from './schedule';
 import {
   currentTripDay,
   dayColor,
+  dayDate,
+  daysToTripStart,
   haversineKm,
   isDuringTrip,
   setTripConfig,
 } from './trip';
-import { findTrip, pickInitialTripId, setActiveTripId, TRIPS, type TripConfig } from './trips';
+import { findTrip, pickInitialTripId, setActiveTripId, tripIsOver, TRIPS, type TripConfig } from './trips';
 import type { Category, Country, Place, Status } from './types';
 import { useDayRoutes } from './useDayRoutes';
 
@@ -56,6 +67,7 @@ const LazyEssentials = lazy(() => import('./components/Essentials'));
 const LazyPlan = lazy(() => import('./components/Itinerary'));
 const LazyBoard = lazy(() => import('./components/TripBoard'));
 const LazyMix = lazy(() => import('./components/ActivityMix'));
+const LazyNotes = lazy(() => import('./components/Notes'));
 function PanelFallback({ text }: { text: string }) {
   return (
     <div className="place-list-empty">
@@ -76,7 +88,7 @@ function DialogFallback({ title }: { title: string }) {
   );
 }
 
-type View = 'places' | 'plan' | 'board' | 'mix';
+type View = 'places' | 'plan' | 'board' | 'mix' | 'notes';
 
 // Categories that count as a place to sleep (used when prepending the previous
 // night's overnight to a day's route).
@@ -163,6 +175,42 @@ const NARROW_PX = 760;
 const isNarrow = () =>
   typeof window !== 'undefined' && window.matchMedia(`(max-width: ${NARROW_PX}px)`).matches;
 
+/** Slippy-map tile x/y for a point at zoom z. */
+function tileXY(lat: number, lng: number, z: number): [number, number] {
+  const n = 2 ** z;
+  const x = Math.floor(((lng + 180) / 360) * n);
+  const latR = (lat * Math.PI) / 180;
+  const y = Math.floor(((1 - Math.log(Math.tan(latR) + 1 / Math.cos(latR)) / Math.PI) / 2) * n);
+  return [Math.min(n - 1, Math.max(0, x)), Math.min(n - 1, Math.max(0, y))];
+}
+
+// One offline prep fetches at most this many tiles - a few minutes of panning,
+// not a bulk download (the OSM tile policy frowns on those).
+const MAX_PREFETCH_TILES = 1500;
+
+/**
+ * Tiles worth having offline: the road and walking lines at z11-13, and a 3x3
+ * block around every committed stop at z14-15. Route tiles first so the cap
+ * cuts the stop close-ups, never the drive.
+ */
+function tilesToPrefetch(lines: [number, number][][], stops: { lat: number; lng: number }[]): string[] {
+  const set = new Set<string>();
+  const add = (lat: number, lng: number, z: number, spread = 0) => {
+    const [x, y] = tileXY(lat, lng, z);
+    for (let dx = -spread; dx <= spread; dx++)
+      for (let dy = -spread; dy <= spread; dy++) set.add(`${z}/${x + dx}/${y + dy}`);
+  };
+  for (const line of lines)
+    for (const [lat, lng] of line) {
+      add(lat, lng, 11);
+      add(lat, lng, 12);
+      add(lat, lng, 13);
+    }
+  for (const s of stops) add(s.lat, s.lng, 14, 1);
+  for (const s of stops) add(s.lat, s.lng, 15, 1);
+  return [...set].slice(0, MAX_PREFETCH_TILES);
+}
+
 /** Convert OSRM [lng, lat][] geometry to Leaflet [lat, lng][]. */
 function toLatLngs(coords: [number, number][]): [number, number][] {
   return coords.map(([lng, lat]) => [lat, lng]);
@@ -208,6 +256,44 @@ function FlyToTrip({ center, zoom, tripId }: { center: [number, number]; zoom: n
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tripId]);
+  return null;
+}
+
+/**
+ * "Where am I": starts the browser's location watch when `req` changes, flies
+ * to the first fix, and reports every fix so the map can draw the blue dot.
+ */
+function Locator({
+  req,
+  onFix,
+}: {
+  req: number;
+  onFix: (p: { lat: number; lng: number; acc: number }) => void;
+}) {
+  const map = useMap();
+  useEffect(() => {
+    if (req === 0) return;
+    let first = true;
+    const onFound = (e: L.LocationEvent) => {
+      onFix({ lat: e.latlng.lat, lng: e.latlng.lng, acc: e.accuracy });
+      if (first) {
+        first = false;
+        map.flyTo(e.latlng, Math.max(map.getZoom(), 14), { duration: 0.8 });
+      }
+    };
+    const onError = (e: L.ErrorEvent) => {
+      alert(`Location not available - ${e.message}. Allow location for this site, or wait for a GPS fix.`);
+    };
+    map.on('locationfound', onFound);
+    map.on('locationerror', onError);
+    map.locate({ watch: true, enableHighAccuracy: true, setView: false });
+    return () => {
+      map.off('locationfound', onFound);
+      map.off('locationerror', onError);
+      map.stopLocate();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [req]);
   return null;
 }
 
@@ -259,6 +345,8 @@ export default function App() {
     setFerryHours(loadFerryHours());
     setSelectedId(null);
     setPlanDay(currentTripDay());
+    setForecast(loadForecast());
+    setPlanUpdate(planUpdateAvailable());
     // Show all non-rejected places when switching trips (new trips have no shortlisted items yet).
     setStatusFilter(new Set(NON_REJECTED));
   }
@@ -333,6 +421,31 @@ export default function App() {
   // Leaflet is ready a tick after mount; the day-fit effect below waits for it
   // (the app now opens straight on the Plan view during the trip).
   const [mapReady, setMapReady] = useState(false);
+
+  // ---- Live forecast (Open-Meteo, three models), cached per trip ----
+  const [forecast, setForecast] = useState<ForecastStore | null>(loadForecast);
+  const [forecastBusy, setForecastBusy] = useState(false);
+  const forecastBusyRef = useRef(false);
+
+  // ---- "Where am I" (blue dot); locateReq counts the taps on the ◎ button ----
+  const [geo, setGeo] = useState<{ lat: number; lng: number; acc: number } | null>(null);
+  const [locateReq, setLocateReq] = useState(0);
+
+  // Minute ticker so "now / next" moves without a tap.
+  const [tick, setTick] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setTick((x) => x + 1), 60_000);
+    return () => clearInterval(t);
+  }, []);
+
+  // The baked plan was regenerated since this phone seeded its copy.
+  const planUpdateAvailable = () => {
+    const v = bakedPlanVersion();
+    return !!v && storedPlanVersion() !== v;
+  };
+  const [planUpdate, setPlanUpdate] = useState<boolean>(planUpdateAvailable);
+  // The viewed day follows the live day until the user picks one.
+  const planDayTouched = useRef(false);
 
   // Auto-dismiss the undo toast.
   useEffect(() => {
@@ -420,18 +533,19 @@ export default function App() {
       // The route/clock is ONLY the committed plan: shortlist + a day. Anything
       // else pinned to a day (backup/candidate/extra) is an option, not routed.
       const kept = ps.filter((p) => p.status === 'shortlist'); // already sorted by byOrder
-      // For option groups, include only the ACTIVE alternative — not all of them as
-      // sequential stops (that would sum their durations and route through all locations).
-      const seenGroups = new Set<string>();
-      const deduped = kept.filter((p) => {
-        if (!p.optionGroup) return true;
+      // For option groups, include only the ACTIVE alternative - not all of them as
+      // sequential stops (that would sum their durations and route through all
+      // locations). Resolve the active member per group first: filtering on
+      // "first member seen" dropped the whole group whenever a later tab was picked.
+      const activeOfGroup = new Map<string, string>();
+      for (const p of kept) {
         const gid = p.optionGroup;
-        if (seenGroups.has(gid)) return false;
-        seenGroups.add(gid);
+        if (!gid || activeOfGroup.has(gid)) continue;
         const members = kept.filter((q) => q.optionGroup === gid);
         const activeIdx = Math.min(optGroupSel[gid] ?? 0, members.length - 1);
-        return p.id === members[activeIdx].id;
-      });
+        activeOfGroup.set(gid, members[activeIdx].id);
+      }
+      const deduped = kept.filter((p) => !p.optionGroup || activeOfGroup.get(p.optionGroup) === p.id);
       if (deduped.length) out[Number(day)] = deduped;
     }
     return out;
@@ -567,6 +681,87 @@ export default function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [routeStops, routes, ferryHours, dayConfig, dayTravel]);
 
+  // ---- Forecast points: where each day sleeps (else its last stop) ----
+  const forecastPoints = useMemo<ForecastPoint[]>(() => {
+    const sleepSet = new Set<string>(SLEEP_CATEGORIES);
+    const pts: ForecastPoint[] = [];
+    for (const [dayStr, ps] of Object.entries(routeStops)) {
+      const day = Number(dayStr);
+      const at = [...ps].reverse().find((p) => sleepSet.has(p.category)) ?? ps[ps.length - 1];
+      const d = dayDate(day);
+      const iso = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+      pts.push({ day, date: iso, lat: at.lat, lng: at.lng, label: at.name.replace(/(\s-\s|,\s|\s\().*$/, '').slice(0, 30) });
+    }
+    return pts;
+  }, [routeStops]);
+
+  async function refreshForecast(manual = false) {
+    if (forecastBusyRef.current || forecastPoints.length === 0) return;
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+      if (manual) alert('No connection - the last forecast stays.');
+      return;
+    }
+    forecastBusyRef.current = true;
+    setForecastBusy(true);
+    const next = await fetchForecast(forecastPoints);
+    forecastBusyRef.current = false;
+    setForecastBusy(false);
+    if (next) {
+      saveForecast(next);
+      setForecast(next);
+    } else if (manual) {
+      alert('Forecast fetch failed - try again with a better connection.');
+    }
+  }
+  // Refresh on open once the trip is near or underway and the copy is older than 6 h,
+  // so the last wifi before the mountains leaves a fresh forecast on the phone.
+  const forecastReady = forecastPoints.length > 0;
+  useEffect(() => {
+    if (!forecastReady || tripIsOver(activeTrip) || daysToTripStart() > 14) return;
+    const stale = !forecast || Date.now() - forecast.fetchedAt > 6 * 3600e3;
+    if (stale) void refreshForecast();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [forecastReady, currentTripId]);
+
+  // ---- The live day: today, or yesterday while its plan runs past midnight ----
+  const live = useMemo(() => {
+    if (!isDuringTrip()) return { day: -1, nowSec: null as number | null };
+    const now = new Date();
+    const nowSec = now.getHours() * 3600 + now.getMinutes() * 60;
+    const today = currentTripDay();
+    const prev = daySchedules[today - 1];
+    if (prev && prev.finishSec > 86400 && nowSec < prev.finishSec - 86400) {
+      return { day: today - 1, nowSec: nowSec + 86400 };
+    }
+    return { day: today, nowSec };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [daySchedules, tick]);
+  useEffect(() => {
+    if (!planDayTouched.current && live.day > 0 && live.day !== planDay) setPlanDay(live.day);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [live.day]);
+
+  // Sunrise / sunset for the viewed day, at its middle stop (computed on the phone).
+  const planDaySun = useMemo(() => {
+    const ps = routeStops[planDay] ?? dayStops[planDay];
+    if (!ps?.length) return null;
+    const at = ps[Math.floor(ps.length / 2)];
+    const s = sunTimes(at.lat, at.lng, dayDate(planDay));
+    return s ? { sunrise: formatHM(s.sunrise), sunset: formatHM(s.sunset) } : null;
+  }, [routeStops, dayStops, planDay]);
+
+  function loadBakedPlan() {
+    const seed = seedPlan();
+    saveOverrides(seed);
+    setOverrides(seed);
+    markPlanVersion();
+    setPlanUpdate(false);
+  }
+  function keepOwnPlan() {
+    markPlanVersion();
+    setPlanUpdate(false);
+  }
+
   // In the Plan view, draw only the selected day's route; in Places, none.
   const routeDaysToShow = useMemo(() => {
     if (view === 'plan') return new Set<number>([planDay]);
@@ -574,6 +769,7 @@ export default function App() {
   }, [view, planDay]);
 
   function focusPlanDay(day: number) {
+    planDayTouched.current = true;
     setView('plan');
     setPlanDay(day);
     if (!sidebarOpen) setSidebarOpen(true);
@@ -922,10 +1118,13 @@ export default function App() {
   // ---- Offline prep: build every day route once on wifi so it replays from
   // the localStorage cache in dead zones (tiles cache as you pan, via the SW).
   const [prepping, setPrepping] = useState(false);
+  const [prepStatus, setPrepStatus] = useState('');
 
   async function prepOffline() {
     setPrepping(true);
+    setPrepStatus('day routes…');
     const cache = loadRouteCache();
+    const lines: [number, number][][] = []; // [lat, lng][] per routed chain / walk
     const already: number[] = [];
     const built: number[] = []; // fetched AND persisted to the cache
     const memOnly: number[] = []; // fetched but NOT persisted (storage full)
@@ -936,6 +1135,7 @@ export default function App() {
       const key = routeKey(pts);
       if (cache[key]?.legs) {
         already.push(day);
+        lines.push(toLatLngs(cache[key].coordinates));
         continue; // already offline-ready
       }
       const r = await fetchRoute(pts); // sequential — kind to the demo server
@@ -943,33 +1143,55 @@ export default function App() {
         failed.push(day);
         continue;
       }
+      lines.push(toLatLngs(r.coordinates));
       cache[key] = r;
       // Persist, then verify this day's entry actually survived the write
       // (quota or LRU trimming can drop it) — report honestly either way.
       const persisted = saveRouteCache(cache) && Boolean(loadRouteCache()[key]);
       (persisted ? built : memOnly).push(day);
     }
+    // Walk legs: a few points along each dashed segment.
+    for (const segs of Object.values(dayTravel.fixedSegs))
+      for (const [a, b] of segs)
+        lines.push([0, 0.25, 0.5, 0.75, 1].map((t) => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]));
+    // Map tiles: the service worker caches whatever the page fetches, so one
+    // pass over the routes and stops makes the map work in the dead zones.
+    const stops = Object.values(routeStops).flat();
+    const tiles = tilesToPrefetch(lines, stops);
+    let tilesOk = 0;
+    for (let i = 0; i < tiles.length; i += 4) {
+      setPrepStatus(`map tiles ${i}/${tiles.length}`);
+      await Promise.all(
+        tiles.slice(i, i + 4).map(async (t) => {
+          try {
+            await fetch(`https://tile.openstreetmap.org/${t}.png`, { mode: 'no-cors' });
+            tilesOk += 1;
+          } catch {
+            /* offline or blocked - the tile stays uncached */
+          }
+        }),
+      );
+    }
+    setPrepStatus('forecast…');
+    await refreshForecast();
+    setPrepStatus('');
     setPrepping(false);
-    const lines = [
-      `Offline prep finished — ${already.length + built.length} day route(s) saved` +
+    const report = [
+      `Offline prep finished - ${already.length + built.length} day route(s) saved` +
         (built.length ? ` (${built.length} newly built)` : '') +
-        '.',
+        `, ${tilesOk} map tiles cached along the routes and around the stops.`,
     ];
     if (memOnly.length) {
-      lines.push(
-        `⚠ Day ${memOnly.join(', ')}: built but NOT saved — storage is full. ` +
+      report.push(
+        `⚠ Day ${memOnly.join(', ')}: built but NOT saved - storage is full. ` +
           `These still work this session and via the offline copy of OSRM responses.`,
       );
     }
     if (failed.length) {
-      lines.push(`⚠ Day ${failed.join(', ')}: route fetch failed — retry later.`);
+      report.push(`⚠ Day ${failed.join(', ')}: route fetch failed - retry later.`);
     }
-    lines.push(
-      '',
-      'Now pan/zoom your route areas on the map while on wifi to cache those tiles, ' +
-        'then add the app to your home screen.',
-    );
-    alert(lines.join('\n'));
+    report.push('', 'Add the app to the home screen and it opens with no signal.');
+    alert(report.join('\n'));
   }
 
   return (
@@ -1028,6 +1250,12 @@ export default function App() {
             onClick={() => setView('mix')}
           >
             Highlights
+          </button>
+          <button
+            className={view === 'notes' ? 'on' : ''}
+            onClick={() => setView('notes')}
+          >
+            Notes
           </button>
         </div>
 
@@ -1178,7 +1406,7 @@ export default function App() {
             <LazyBoard
               places={places}
               scheduleByDay={daySchedules}
-              realDay={isDuringTrip() ? currentTripDay() : -1}
+              realDay={live.day}
               onPickDay={focusPlanDay}
             />
           </Suspense>
@@ -1190,15 +1418,38 @@ export default function App() {
           </Suspense>
         )}
 
+        {view === 'plan' && planUpdate && (
+          <div className="plan-update">
+            <span>The plan was updated on the computer ({bakedPlanVersion()}).</span>
+            <button type="button" onClick={loadBakedPlan}>Load it</button>
+            <button type="button" className="plain" onClick={keepOwnPlan}>Keep mine</button>
+          </div>
+        )}
+
+        {view === 'notes' && (
+          <Suspense fallback={<PanelFallback text="Loading notes…" />}>
+            <LazyNotes notes={notesFor(currentTripId)} />
+          </Suspense>
+        )}
+
         {view === 'plan' && (
           <Suspense fallback={<PanelFallback text="Loading plan…" />}>
             <LazyPlan
               day={planDay}
-              onDay={setPlanDay}
+              onDay={(d) => {
+                planDayTouched.current = true;
+                setPlanDay(d);
+              }}
               places={places}
               roadByDay={roadByDay}
               routesLoading={routesLoading}
-              realDay={isDuringTrip() ? currentTripDay() : -1}
+              realDay={live.day}
+              nowSec={live.nowSec}
+              sun={planDaySun}
+              forecast={forecast?.days[planDay] ?? null}
+              forecastStamp={forecast?.fetchedAt ?? null}
+              forecastBusy={forecastBusy}
+              onRefreshForecast={() => void refreshForecast(true)}
               ferrySecByDay={dayFerrySec}
               selectedId={selectedId}
               onSelect={selectPlace}
@@ -1233,8 +1484,10 @@ export default function App() {
         center={activeTrip.mapCenter}
         zoom={activeTrip.mapZoom}
         scrollWheelZoom
+        zoomControl={false}
         whenReady={() => setMapReady(true)}
       >
+        <ZoomControl position="topright" />
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -1243,6 +1496,24 @@ export default function App() {
         <FlyToTrip center={activeTrip.mapCenter} zoom={activeTrip.mapZoom} tripId={currentTripId} />
         <MapTapCapture active={addPlaceOpen} onTap={onMapTap} />
         <FlyTo placeId={selectedId} lat={selected?.lat} lng={selected?.lng} />
+        <Locator req={locateReq} onFix={setGeo} />
+        {geo && (
+          <>
+            {geo.acc > 30 && (
+              <Circle
+                center={[geo.lat, geo.lng]}
+                radius={geo.acc}
+                pathOptions={{ color: '#1a73e8', weight: 1, opacity: 0.4, fillOpacity: 0.08 }}
+              />
+            )}
+            <CircleMarker
+              center={[geo.lat, geo.lng]}
+              radius={8}
+              pathOptions={{ color: '#ffffff', weight: 3, fillColor: '#1a73e8', fillOpacity: 1 }}
+              interactive={false}
+            />
+          </>
+        )}
 
         {/* Add-place: a draggable pin for the tapped/captured point */}
         {addPlaceOpen && tappedPoint && (
@@ -1323,6 +1594,16 @@ export default function App() {
 
       </MapContainer>
 
+      <button
+        type="button"
+        className={`map-locate${geo ? ' on' : ''}`}
+        onClick={() => setLocateReq((n) => n + 1)}
+        title="Where am I"
+        aria-label="Show my location"
+      >
+        ◎
+      </button>
+
       {undoToast && (
         <div className="undo-toast">
           <span>{undoToast.label}</span>
@@ -1339,6 +1620,7 @@ export default function App() {
 
       <DetailPanel
         place={selected}
+        distanceKm={geo && selected ? haversineKm(geo.lat, geo.lng, selected.lat, selected.lng) : null}
         onClose={closeDetail}
         onStatus={setStatus}
         onAssignDay={assignDay}
@@ -1373,6 +1655,7 @@ export default function App() {
             onClose={() => setEssentialsOpen(false)}
             onPrepOffline={prepOffline}
             prepping={prepping}
+            status={prepStatus}
           />
         </Suspense>
       )}

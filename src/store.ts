@@ -1,5 +1,5 @@
 import { CATEGORIES } from './constants';
-import { DEFAULT_PLANS } from './defaultPlan';
+import { DEFAULT_PLANS, PLAN_VERSIONS } from './defaultPlan';
 import { findTrip, getActiveTripId } from './trips';
 import type { Place, Status } from './types';
 
@@ -48,6 +48,7 @@ const overridesKey = () => `${getActiveTripId()}-overrides`;
 const userPlacesKey = () => `${getActiveTripId()}-user-places`;
 const osrmKey = () => `${getActiveTripId()}-osrm-cache`;
 const ferryKey = () => `${getActiveTripId()}-ferry-hours`;
+const planVersionKey = () => `${getActiveTripId()}-plan-version`;
 const evictableCacheKeys = () => [osrmKey()];
 
 function isQuotaError(e: unknown): boolean {
@@ -160,18 +161,39 @@ export function loadOverrides(): Overrides {
     const raw = localStorage.getItem(overridesKey());
     // On first visit (empty localStorage) seed from the trip's baked default
     // plan so every phone opens on the same itinerary. Trips without one start empty.
-    const seed = seedPlan();
-    if (raw === null) return seed;
+    if (raw === null) {
+      // First visit: the baked plan, and remember which version it was.
+      markPlanVersion();
+      return seedPlan();
+    }
     const parsed = JSON.parse(raw);
-    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return seed;
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return seedPlan();
     return normalizeOverrides(parsed as Overrides);
   } catch {
     return seedPlan();
   }
 }
 
-function seedPlan(): Overrides {
+export function seedPlan(): Overrides {
   return normalizeOverrides({ ...(DEFAULT_PLANS[getActiveTripId()] ?? {}) });
+}
+
+// ---- Baked plan version ----
+// The plan is regenerated on the computer; a phone that seeded an older one
+// gets offered the new one (App shows a banner) instead of silently keeping it.
+export function bakedPlanVersion(): string | null {
+  return PLAN_VERSIONS[getActiveTripId()] ?? null;
+}
+export function storedPlanVersion(): string | null {
+  try {
+    return localStorage.getItem(planVersionKey());
+  } catch {
+    return null;
+  }
+}
+export function markPlanVersion(): void {
+  const v = bakedPlanVersion();
+  if (v) safeSetItem(planVersionKey(), v);
 }
 
 export function saveOverrides(o: Overrides) {

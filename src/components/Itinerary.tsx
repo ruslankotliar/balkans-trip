@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { CATEGORY_COLORS, GROUP_OF } from '../constants';
 import { formatClock, formatTimeRange, type DaySchedule } from '../schedule';
+import { formatFetchedAt, formatForecast, type DayForecast } from '../forecast';
 import type { PlaceWithOverride } from '../store';
 import { DAYS, dayColor, dayDateLabel, formatDistance, formatDuration, haversineKm } from '../trip';
 
@@ -11,8 +12,18 @@ interface Props {
   /** Road distance + time per day, summed over the day's routed chains. */
   roadByDay: Record<number, { distance: number; duration: number }>;
   routesLoading: boolean;
-  /** The real current trip day, or -1 when the trip is not underway. */
+  /** The live trip day (yesterday while its plan runs past midnight), or -1 outside the trip. */
   realDay: number;
+  /** Seconds since the live day's midnight (can exceed 86400 after midnight); null outside the trip. */
+  nowSec: number | null;
+  /** Sunrise / sunset of the viewed day, "HH:MM". */
+  sun?: { sunrise: string; sunset: string } | null;
+  /** Live forecast for the viewed day, when one was fetched. */
+  forecast?: DayForecast | null;
+  /** When the live forecast was fetched (ms). */
+  forecastStamp?: number | null;
+  forecastBusy?: boolean;
+  onRefreshForecast?: () => void;
   /** Manual ferry seconds per day (only days that have any). */
   ferrySecByDay: Record<number, number>;
   selectedId: string | null;
@@ -107,6 +118,12 @@ export default function Itinerary({
   roadByDay,
   routesLoading,
   realDay,
+  nowSec: liveNowSec,
+  sun,
+  forecast,
+  forecastStamp,
+  forecastBusy,
+  onRefreshForecast,
   ferrySecByDay,
   selectedId,
   onSelect,
@@ -176,8 +193,7 @@ export default function Itinerary({
       ? slot.entry
       : slot.options[Math.min(optGroupSel[slot.groupId] ?? 0, slot.options.length - 1)];
   // Today: the first stop not yet left is "now" (already arrived) or "next".
-  const now = new Date();
-  const nowSec = isToday ? now.getHours() * 3600 + now.getMinutes() * 60 : null;
+  const nowSec = isToday ? liveNowSec : null;
   const liveIdx =
     nowSec == null
       ? -1
@@ -241,7 +257,37 @@ export default function Itinerary({
                 : `✓ Realistic · ends ${formatClock(schedule.finishSec)} · ${formatDuration(schedule.slackSec)} spare`;
           return <div className={`itin-verdict itin-verdict-${level}`}>{label}</div>;
         })()}
-        {dayConfig?.[day]?.note && <div className="itin-day-note">{dayConfig[day].note}</div>}
+        {(sun || forecast || dayConfig?.[day]?.note || onRefreshForecast) && (
+          <div className="itin-day-note">
+            {sun && (
+              <div className="itin-day-sun">
+                ☀ {sun.sunrise} · sunset {sun.sunset}
+              </div>
+            )}
+            {forecast ? (
+              <div>
+                ⛅ {formatForecast(forecast)}
+                <span className="itin-forecast-at"> · {forecast.at}</span>
+              </div>
+            ) : (
+              dayConfig?.[day]?.note && <div>{dayConfig[day].note}</div>
+            )}
+            {onRefreshForecast && (
+              <button
+                type="button"
+                className="itin-forecast-refresh"
+                onClick={onRefreshForecast}
+                disabled={forecastBusy}
+              >
+                {forecastBusy
+                  ? '↻ fetching…'
+                  : forecastStamp
+                    ? `↻ forecast as of ${formatFetchedAt(forecastStamp)}`
+                    : '↻ fetch the forecast'}
+              </button>
+            )}
+          </div>
+        )}
 
         {onSetDayCfg && (
           <div className="itin-start">
@@ -315,7 +361,7 @@ export default function Itinerary({
                 <div key={key} className={`itin-stop-entry${live ? ' live' : ''}`}>
                   {legSec != null && legSec > 0 && (
                     <div className="itin-leg">
-                      ↓ {formatDuration(legSec)}{activeEntry.place.legMinutes == null ? ' drive' : ''}
+                      ↓ {formatDuration(legSec)}{activeEntry.place.legMinutes == null ? ' drive' : ' on foot'}
                     </div>
                   )}
                   <button

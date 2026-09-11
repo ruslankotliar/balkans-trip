@@ -7,6 +7,9 @@
  */
 import type { Overrides } from './store';
 
+/** When this file was generated - a phone that seeded an older plan is offered this one. */
+export const ALBANIA_PLAN_VERSION = '12 Sep 01:27';
+
 export const ALBANIA_PLAN: Overrides = {
   // -- Day 1: Sat Sep 12 --
   "al-tirana-airport-arrival": { day: 1, dayOrder: 1 },

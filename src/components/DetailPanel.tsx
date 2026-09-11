@@ -8,6 +8,8 @@ import { normalizeText } from '../text';
 
 interface Props {
   place: PlaceWithOverride | null;
+  /** Straight-line km from the phone's last location fix, when there is one. */
+  distanceKm?: number | null;
   onClose: () => void;
   onStatus: (id: string, status: Status) => void;
   onAssignDay: (id: string, day: number | null) => void;
@@ -47,6 +49,7 @@ function TelText({ text }: { text: string }) {
 
 export default function DetailPanel({
   place,
+  distanceKm,
   onClose,
   onStatus,
   onAssignDay,
@@ -146,6 +149,11 @@ export default function DetailPanel({
         {p.category} · {COUNTRY_NAMES[p.country]}
         {p.cost ? ` · ${p.cost}` : ''}
         {p.userAdded ? ' · ✎ added by you' : ''}
+        {distanceKm != null && (
+          <span className="detail-distance">
+            {' '}· 📍 {distanceKm < 10 ? distanceKm.toFixed(1) : Math.round(distanceKm)} km away
+          </span>
+        )}
       </p>
 
       {/* ---- Above-the-fold actions: navigate + book ---- */}
