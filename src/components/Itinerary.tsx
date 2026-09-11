@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { CATEGORY_COLORS, GROUP_OF } from '../constants';
 import { formatClock, formatTimeRange, type DaySchedule } from '../schedule';
 import type { PlaceWithOverride } from '../store';
-import type { DayRoutes } from '../useDayRoutes';
 import { DAYS, dayColor, dayDateLabel, formatDistance, formatDuration, haversineKm } from '../trip';
 
 interface Props {
   day: number;
   onDay: (day: number) => void;
   places: PlaceWithOverride[];
-  routes: DayRoutes;
+  /** Road distance + time per day, summed over the day's routed chains. */
+  roadByDay: Record<number, { distance: number; duration: number }>;
   routesLoading: boolean;
   /** The real current trip day, or -1 when the trip is not underway. */
   realDay: number;
@@ -24,7 +24,7 @@ interface Props {
   /** Day clock per day, derived from the current route + stop times. */
   scheduleByDay?: Record<number, DaySchedule | null>;
   /** Per-day start/end hour (+ pace) for the schedule clock; undefined = defaults 08:00–21:00. */
-  dayConfig?: Record<number, { startHour?: number; endHour?: number; pace?: number }>;
+  dayConfig?: Record<number, { startHour?: number; endHour?: number; pace?: number; note?: string }>;
   /** Patch a day's start/end hour (decimal, e.g. 6.5 = 06:30; >24 = past midnight); undefined value resets. */
   onSetDayCfg?: (day: number, patch: { startHour?: number; endHour?: number }) => void;
   /** Selected option index per optionGroup ID; controls which option shows in the itinerary row. */
@@ -104,7 +104,7 @@ export default function Itinerary({
   day,
   onDay,
   places,
-  routes,
+  roadByDay,
   routesLoading,
   realDay,
   ferrySecByDay,
@@ -156,11 +156,11 @@ export default function Itinerary({
           .sort((a, b) => a.km - b.km)
           .slice(0, 40);
 
-  const route = routes[day];
+  const road = roadByDay[day];
   const isToday = realDay === day;
   const schedule = scheduleByDay?.[day] ?? null;
   // Time on the move: road legs + fixed legs (walks) + ferries, from the day clock.
-  const moveSec = schedule ? schedule.driveSec : route ? route.duration + (ferrySecByDay[day] ?? 0) : 0;
+  const moveSec = schedule ? schedule.driveSec : road ? road.duration + (ferrySecByDay[day] ?? 0) : 0;
   const shortlistStops = stops.filter((p) => p.status === 'shortlist');
   // The schedule holds only the ACTIVE option of each option group (that is what
   // gets routed and timed); the rows need every option so the tabs show. Walk
@@ -209,7 +209,7 @@ export default function Itinerary({
 
       <div className="itin-total">
         <strong>{stops.length}</strong> stops ·{' '}
-        <strong>{formatDuration(moveSec)}</strong> on the move{route ? ` · ${formatDistance(route.distance)} by road` : ''}
+        <strong>{formatDuration(moveSec)}</strong> on the move{road ? ` · ${formatDistance(road.distance)} by road` : ''}
         {routesLoading && <span className="loading-dot"> · routing…</span>}
       </div>
 
@@ -231,6 +231,7 @@ export default function Itinerary({
                 : `✓ Realistic · ends ${formatClock(schedule.finishSec)} · ${formatDuration(schedule.slackSec)} spare`;
           return <div className={`itin-verdict itin-verdict-${level}`}>{label}</div>;
         })()}
+        {dayConfig?.[day]?.note && <div className="itin-day-note">{dayConfig[day].note}</div>}
 
         {onSetDayCfg && (
           <div className="itin-start">

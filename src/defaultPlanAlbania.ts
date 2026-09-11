@@ -55,7 +55,7 @@ export const ALBANIA_PLAN: Overrides = {
   "al-restorant-zorgji": { day: 4, dayOrder: 11 },
   "al-camping-balcony-n2": { day: 4, dayOrder: 12 },
   // -- Day 5: Wed Sep 16 --
-  "al-loop-start-harushave": { day: 5, dayOrder: 1 },
+  "al-loop-start": { day: 5, dayOrder: 1 },
   "al-shtraza-springs": { day: 5, dayOrder: 2 },
   "al-peja-lake": { day: 5, dayOrder: 3 },
   "al-white-spring-camp": { day: 5, dayOrder: 4 },
@@ -82,5 +82,5 @@ export const ALBANIA_PLAN: Overrides = {
   "al-mulliri-i-vjeter": { day: 8, dayOrder: 1 },
   "al-tirana-airport-departure": { day: 8, dayOrder: 2 },
   // Per-day start / wrap-by hours for the schedule clock (see DAY_CONFIG_ID in App.tsx).
-  '__day_config__': { note: "{\"1\":{\"startHour\":13.5},\"2\":{\"startHour\":9.5},\"3\":{\"startHour\":8.5},\"4\":{\"startHour\":6},\"5\":{\"startHour\":7},\"6\":{\"startHour\":8},\"7\":{\"startHour\":7,\"endHour\":27},\"8\":{\"startHour\":9,\"endHour\":14}}" },
+  '__day_config__': { note: "{\"1\":{\"startHour\":13.5,\"note\":\"Rain on landing day: 10-25 mm at the beach, gusts to 26 km/h; dry from Sunday (3 models, pulled Sat 12 Sep 01:00)\"},\"2\":{\"startHour\":9.5,\"note\":\"Dry, 27-30 C, night 17-19 C (3 models, pulled Sat 12 Sep 01:00)\"},\"3\":{\"startHour\":8.5,\"note\":\"Theth: dry, 20-23 C, night 9-11 C (3 models, pulled Sat 12 Sep 01:00)\"},\"4\":{\"startHour\":6,\"note\":\"Theth: dry (0-1 mm), 20-23 C, night 12-14 C (3 models, pulled Sat 12 Sep 01:00)\"},\"5\":{\"startHour\":7,\"note\":\"1,673 m camp: dry, 17-19 C by day, 5-10 C at night, gusts to 30 km/h (3 models, pulled Sat 12 Sep 01:00)\"},\"6\":{\"startHour\":8,\"note\":\"2,206 m camp: DRY on all 3 models - on Fri 11 it was 0-10 mm on 2 of 3. Night 2-6 C, gusts 24-35 km/h (3 models, pulled Sat 12 Sep 01:00)\"},\"7\":{\"startHour\":7,\"endHour\":27,\"note\":\"Descent dry, 17-20 C at the pass; Tirana 28-32 C (3 models, pulled Sat 12 Sep 01:00)\"},\"8\":{\"startHour\":9,\"endHour\":14,\"note\":\"Tirana 30-33 C, dry (3 models, pulled Sat 12 Sep 01:00)\"}}" },
 };

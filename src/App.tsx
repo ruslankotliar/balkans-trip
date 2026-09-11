@@ -28,7 +28,7 @@ import {
   type Group,
 } from './constants';
 import { bookingFor, type SourceLink } from './links';
-import { fetchRoute, routeKey } from './osrm';
+import { fetchRoute, routeKey, type LatLng } from './osrm';
 import {
   applyPlanOverrideRows,
   ferryPairKey,
@@ -97,7 +97,7 @@ const DEFAULT_PLAN_STATUSES: Status[] = ['shortlist'];
 // plan_overrides row so they sync across devices through the existing layer
 // without a new table. The id matches no real place, so it never renders.
 const DAY_CONFIG_ID = '__day_config__';
-type DayConfig = Record<number, { startHour?: number; endHour?: number; pace?: number }>;
+type DayConfig = Record<number, { startHour?: number; endHour?: number; pace?: number; note?: string }>;
 function parseDayConfig(note: string | undefined): DayConfig {
   if (!note) return {};
   try {
@@ -345,9 +345,10 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   // Selected option index per optionGroup ID — shared between itinerary row and sidebar tabs.
   const [optGroupSel, setOptGroupSel] = useState<Record<string, number>>({});
-  const [view, setView] = useState<View>('places');
+  // On the road the plan for today is the screen you want; while planning, the places.
+  const [view, setView] = useState<View>(() => (isDuringTrip() ? 'plan' : 'places'));
 
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(() => isDuringTrip());
   // On phones the open sidebar fills the screen and would cover the detail
   // bottom-sheet, so selecting a place auto-collapses it; we remember whether
   // it was open so closing the sheet restores the list.
@@ -481,48 +482,75 @@ export default function App() {
     return [...prevPs].reverse().find((p) => sleepSet.has(p.category)) ?? prevPs[prevPs.length - 1];
   };
 
-  // Points for the day's ROAD route: stops without a fixed leg (see
-  // Place.legMinutes - hikes and walks are left out and drawn as dashed lines).
-  const dayPoints = useMemo(() => {
-    const result: Record<number, [number, number][]> = {};
+  // Each day's travel, stop by stop. A ROAD CHAIN is a run of stops reached by
+  // car: it starts at the previous stop (or last night's sleep) and is routed by
+  // OSRM in one call. A stop with legMinutes (on foot, or a drive not worth
+  // routing) breaks the chain - it gets a fixed leg and a dashed straight
+  // line - and the next road leg starts from it.
+  const dayTravel = useMemo(() => {
+    type LegSource = { fixedSec: number } | { chain: string; legIdx: number };
+    const chains: Record<string, LatLng[]> = {};
+    const legs: Record<number, LegSource[]> = {};
+    const fixedSegs: Record<number, [LatLng, LatLng][]> = {};
+    const same = (a: LatLng, b: LatLng) => Math.abs(a[0] - b[0]) < 0.001 && Math.abs(a[1] - b[1]) < 0.001;
     for (const [dayStr, ps] of Object.entries(routeStops)) {
-      const dayNum = Number(dayStr);
-      const pts: [number, number][] = ps.filter((p) => p.legMinutes == null).map((p) => [p.lat, p.lng]);
-      if (pts.length === 0) continue;
-      // Prepend the previous night's sleep location so the route — and its
-      // drive time — covers the full day including the morning relocation drive.
-      const prevSleep = prevSleepOf(dayNum);
-      // Skip if overnight stop is essentially the same location as first stop.
-      if (
-        prevSleep &&
-        (Math.abs(prevSleep.lat - pts[0][0]) > 0.001 || Math.abs(prevSleep.lng - pts[0][1]) > 0.001)
-      ) {
-        pts.unshift([prevSleep.lat, prevSleep.lng]);
-      }
-      result[dayNum] = pts;
+      const day = Number(dayStr);
+      const prevSleep = prevSleepOf(day);
+      const dayLegs: LegSource[] = [];
+      const segs: [LatLng, LatLng][] = [];
+      let chainIdx = 0;
+      let chainPts: LatLng[] = prevSleep ? [[prevSleep.lat, prevSleep.lng]] : [];
+      const closeChain = () => {
+        if (chainPts.length >= 2) chains[`${day}:${chainIdx}`] = chainPts;
+        chainIdx += 1;
+        chainPts = [];
+      };
+      ps.forEach((p, i) => {
+        const pt: LatLng = [p.lat, p.lng];
+        if (p.legMinutes != null) {
+          closeChain();
+          const from = i > 0 ? ps[i - 1] : prevSleep;
+          if (from) segs.push([[from.lat, from.lng], pt]);
+          dayLegs.push({ fixedSec: Math.round(p.legMinutes * 60) });
+          chainPts = [pt];
+          return;
+        }
+        if (chainPts.length === 0 || (chainPts.length === 1 && same(chainPts[0], pt))) {
+          // Nothing to drive from (day 1), or we wake up at this very stop.
+          dayLegs.push({ fixedSec: 0 });
+          chainPts = [pt];
+          return;
+        }
+        chainPts.push(pt);
+        dayLegs.push({ chain: `${day}:${chainIdx}`, legIdx: chainPts.length - 2 });
+      });
+      closeChain();
+      legs[day] = dayLegs;
+      if (segs.length) fixedSegs[day] = segs;
     }
-    return result;
+    return { chains, legs, fixedSegs };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [routeStops]);
 
-  // Fixed legs (legMinutes): a straight dashed segment from the previous stop.
-  const fixedSegments = useMemo(() => {
-    const out: Record<number, [number, number][][]> = {};
-    for (const [dayStr, ps] of Object.entries(routeStops)) {
-      const dayNum = Number(dayStr);
-      const segs: [number, number][][] = [];
-      ps.forEach((p, i) => {
-        if (p.legMinutes == null) return;
-        const from = i > 0 ? ps[i - 1] : prevSleepOf(dayNum);
-        if (from) segs.push([[from.lat, from.lng], [p.lat, p.lng]]);
-      });
-      if (segs.length) out[dayNum] = segs;
+  const { routes, loading: routesLoading } = useDayRoutes(dayTravel.chains);
+
+  /** Seconds into each stop of a day; null while a road chain is still loading. */
+  const legsIntoDay = (day: number): (number | null)[] =>
+    (dayTravel.legs[day] ?? []).map((l) =>
+      'fixedSec' in l ? l.fixedSec : routes[l.chain]?.legs?.[l.legIdx]?.duration ?? null,
+    );
+
+  /** Road distance and time per day, summed over its chains (for the header line). */
+  const roadByDay = useMemo(() => {
+    const out: Record<number, { distance: number; duration: number }> = {};
+    for (const [id, r] of Object.entries(routes)) {
+      const day = Number(id.split(':')[0]);
+      const acc = (out[day] ??= { distance: 0, duration: 0 });
+      acc.distance += r.distance;
+      acc.duration += r.duration;
     }
     return out;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [routeStops]);
-
-  const { routes, loading: routesLoading } = useDayRoutes(dayPoints);
+  }, [routes]);
 
   // Manual ferry hours per day (sum over the day's consecutive stop pairs).
   const dayFerrySec = useMemo(() => {
@@ -560,12 +588,9 @@ export default function App() {
     const out: Record<number, ReturnType<typeof buildDaySchedule>> = {};
     for (const [dayStr, stops] of Object.entries(routeStops)) {
       const day = Number(dayStr);
-      const route = routes[day];
-      // A day with a road route waits for it; a day of fixed legs only needs none.
-      if (!route && (dayPoints[day]?.length ?? 0) >= 2) continue;
       const schedule = buildDaySchedule(
         stops,
-        route,
+        legsIntoDay(day),
         (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0,
         {
           dayStartHour: dayConfig[day]?.startHour,
@@ -576,7 +601,8 @@ export default function App() {
       if (schedule) out[day] = schedule;
     }
     return out;
-  }, [routeStops, routes, ferryHours, dayConfig, dayPoints]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [routeStops, routes, ferryHours, dayConfig, dayTravel]);
 
   const syncLabel = syncOnline ? 'online' : 'offline';
   const syncTitle = syncOnline
@@ -954,9 +980,9 @@ export default function App() {
     const built: number[] = []; // fetched AND persisted to the cache
     const memOnly: number[] = []; // fetched but NOT persisted (storage full)
     const failed: number[] = []; // fetch failed
-    for (const [dayStr, pts] of Object.entries(dayPoints)) {
+    for (const [id, pts] of Object.entries(dayTravel.chains)) {
       if (pts.length < 2) continue;
-      const day = Number(dayStr);
+      const day = Number(id.split(':')[0]);
       const key = routeKey(pts);
       if (cache[key]?.legs) {
         already.push(day);
@@ -1231,7 +1257,7 @@ export default function App() {
               day={planDay}
               onDay={setPlanDay}
               places={places}
-              routes={routes}
+              roadByDay={roadByDay}
               routesLoading={routesLoading}
               realDay={isDuringTrip() ? currentTripDay() : -1}
               ferrySecByDay={dayFerrySec}
@@ -1286,18 +1312,18 @@ export default function App() {
           />
         )}
 
-        {/* Per-day committed routes (trip mode: only today's, to cut clutter) */}
+        {/* Road chains of the committed plan (Plan view: only the viewed day) */}
         {Object.entries(routes)
-          .filter(([day]) => !routeDaysToShow || routeDaysToShow.has(Number(day)))
-          .map(([day, r]) => (
+          .filter(([id]) => !routeDaysToShow || routeDaysToShow.has(Number(id.split(':')[0])))
+          .map(([id, r]) => (
             <Polyline
-              key={`day-${day}`}
+              key={`road-${id}`}
               positions={toLatLngs(r.coordinates)}
-              pathOptions={{ color: dayColor(Number(day)), weight: 4, opacity: 0.75 }}
+              pathOptions={{ color: dayColor(Number(id.split(':')[0])), weight: 4, opacity: 0.75 }}
             />
           ))}
         {/* Fixed legs (on foot / unrouted): dashed straight lines */}
-        {Object.entries(fixedSegments)
+        {Object.entries(dayTravel.fixedSegs)
           .filter(([day]) => !routeDaysToShow || routeDaysToShow.has(Number(day)))
           .flatMap(([day, segs]) =>
             segs.map((seg, i) => (

@@ -1,4 +1,4 @@
-import type { CachedRoute, PlaceWithOverride } from './store';
+import type { PlaceWithOverride } from './store';
 
 export const DEFAULT_DAY_START_HOUR = 8;
 export const DEFAULT_DAY_END_HOUR = 21;
@@ -152,7 +152,8 @@ export function estimateBaseStopMinutes(place: PlaceWithOverride): { minutes: nu
  */
 export function buildDaySchedule(
   stops: PlaceWithOverride[],
-  route: CachedRoute | undefined,
+  /** Seconds of travel INTO each stop, aligned to `stops`. null = a road leg still loading. */
+  legIntoSec: (number | null)[],
   ferryFor: (idA: string, idB: string) => number,
   options?: {
     dayStartHour?: number;
@@ -161,34 +162,19 @@ export function buildDaySchedule(
   },
 ): DaySchedule | null {
   if (stops.length === 0) return null;
+  if (legIntoSec.some((l) => l == null)) return null; // a road leg is still loading
   const dayStartSec = (options?.dayStartHour ?? DEFAULT_DAY_START_HOUR) * 3600;
   const plannedEndSec = (options?.dayEndHour ?? DEFAULT_DAY_END_HOUR) * 3600;
   const paceMultiplier = Math.max(0.5, options?.paceMultiplier ?? 1);
-  const routeLegs = route?.legs ?? [];
-  // The road route runs through the stops WITHOUT a fixed leg (see
-  // Place.legMinutes). It may start one point earlier - the previous night's
-  // sleep - which shows up as one extra leg in front.
-  const roadStops = stops.filter((s) => s.legMinutes == null).length;
-  const offset = Math.max(0, routeLegs.length - Math.max(0, roadStops - 1));
-
   let clock = dayStartSec;
   let driveSec = 0;
   let ferrySec = 0;
   let staySec = 0;
   const entries: StopTiming[] = [];
-  let roadSeen = 0;
 
   for (let i = 0; i < stops.length; i++) {
     const place = stops[i];
-    // Leg into this stop: its fixed legMinutes, else the next road leg.
-    let legSec = 0;
-    if (place.legMinutes != null) {
-      legSec = Math.round(place.legMinutes * 60);
-    } else {
-      const legIdx = roadSeen - 1 + offset; // -1 = first road stop, nothing before it
-      legSec = legIdx >= 0 ? routeLegs[legIdx]?.duration ?? 0 : 0;
-      roadSeen += 1;
-    }
+    const legSec = legIntoSec[i] ?? 0;
     const ferry = i > 0 ? ferryFor(stops[i - 1].id, place.id) * 3600 : 0;
     clock += legSec + ferry;
     driveSec += legSec + ferry;

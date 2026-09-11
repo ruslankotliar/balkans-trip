@@ -651,20 +651,20 @@
     "status": "shortlist"
   },
   {
-    "id": "al-loop-start-harushave",
-    "name": "Loop start, Theth - fill water at I Harushave",
+    "id": "al-loop-start",
+    "name": "Loop start - the komoot tour starts at Camping Balcony",
     "country": "AL",
     "category": "hike",
-    "lat": 42.39513,
-    "lng": 19.77553,
-    "description": "THE ROUTE: 27.8 km, +2,183 m over three days, both camps in it (komoot tour). Today 10.1 km, +1,078 m, 825 -> 1,673 m - the hard day; the 'alpine' rating is this Peja climb, not the Valbona side. Away by 07:00. Start each day with 2 L each. ~3,100 kcal for you, ~2,250 for her today. No signal on the route, both nights included.",
+    "lat": 42.398674,
+    "lng": 19.765367,
+    "description": "Fill 2 L each before you go (the campsite tap). THE ROUTE: 27.8 km, +2,183 m over three days, both camps in it (komoot tour). Today 10.1 km, +1,078 m, 825 -> 1,673 m - the hard day; the 'alpine' rating is this Peja climb, not the Valbona side. Away by 07:00. Start each day with 2 L each. ~3,100 kcal for you, ~2,250 for her today. No signal on the route, both nights included.",
     "sources": [
       "https://www.komoot.com/tour/3244329907"
     ],
     "timeNeeded": "10 min",
     "bestTime": "away by 07:00; first light 05:53",
     "status": "shortlist",
-    "legMinutes": 20
+    "legMinutes": 5
   },
   {
     "id": "al-shtraza-springs",
@@ -792,8 +792,7 @@
     "cost": "EUR 65 (paid)",
     "timeNeeded": "2h30",
     "bestTime": "~17:00; check in online for FR 6889",
-    "status": "shortlist",
-    "legMinutes": 250
+    "status": "shortlist"
   },
   {
     "id": "al-pyramid-tirana",

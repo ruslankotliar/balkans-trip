@@ -2,15 +2,16 @@ import { useEffect, useRef, useState } from 'react';
 import { fetchRoute, routeKey, type LatLng } from './osrm';
 import { loadRouteCache, saveRouteCache, type CachedRoute } from './store';
 
-export type DayRoutes = Record<number, CachedRoute>;
+/** Road routes keyed by chain id ("<day>:<n>"). A day can hold several chains. */
+export type DayRoutes = Record<string, CachedRoute>;
 
 /**
- * Given the ordered coordinates for each day (only days with 2+ stops matter),
- * return the driving route per day. Cached in localStorage by coordinate
- * sequence; missing routes are fetched from OSRM, debounced and sequentially
- * (to be kind to the free public server).
+ * Given the ordered coordinates of each road chain (only chains with 2+ points
+ * matter), return the driving route per chain. Cached in localStorage by
+ * coordinate sequence; missing routes are fetched from OSRM, debounced and
+ * sequentially (to be kind to the free public server).
  */
-export function useDayRoutes(dayPoints: Record<number, LatLng[]>): {
+export function useDayRoutes(dayPoints: Record<string, LatLng[]>): {
   routes: DayRoutes;
   loading: boolean;
 } {
@@ -21,7 +22,7 @@ export function useDayRoutes(dayPoints: Record<number, LatLng[]>): {
   // Stable dependency: changes only when a day's coordinate sequence changes.
   const depKey = Object.entries(dayPoints)
     .filter(([, pts]) => pts.length >= 2)
-    .map(([day, pts]) => `${day}:${routeKey(pts)}`)
+    .map(([key, pts]) => `${key}=${routeKey(pts)}`)
     .sort()
     .join('|');
 
@@ -30,29 +31,28 @@ export function useDayRoutes(dayPoints: Record<number, LatLng[]>): {
     const timer = setTimeout(async () => {
       const cache = cacheRef.current;
       const next: DayRoutes = {};
-      const toFetch: Array<{ day: number; key: string; pts: LatLng[] }> = [];
+      const toFetch: Array<{ id: string; key: string; pts: LatLng[] }> = [];
 
-      for (const [dayStr, pts] of Object.entries(dayPoints)) {
+      for (const [id, pts] of Object.entries(dayPoints)) {
         if (pts.length < 2) continue;
-        const day = Number(dayStr);
         const key = routeKey(pts);
         // Entries cached before per-leg data existed are refetched once to
-        // upgrade them (the Today view needs leg durations).
-        if (cache[key]?.legs) next[day] = cache[key];
-        else toFetch.push({ day, key, pts });
+        // upgrade them (the schedule needs leg durations).
+        if (cache[key]?.legs) next[id] = cache[key];
+        else toFetch.push({ id, key, pts });
       }
 
       if (!cancelled) setRoutes(next); // paint cached routes immediately
       if (toFetch.length === 0) return;
 
       if (!cancelled) setLoading(true);
-      for (const { day, key, pts } of toFetch) {
+      for (const { id, key, pts } of toFetch) {
         const r = await fetchRoute(pts);
         if (cancelled) return;
         if (r) {
           cache[key] = r;
           saveRouteCache(cache);
-          setRoutes((prev) => ({ ...prev, [day]: r }));
+          setRoutes((prev) => ({ ...prev, [id]: r }));
         }
       }
       if (!cancelled) setLoading(false);

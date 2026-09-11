@@ -1146,6 +1146,12 @@ body.trip-mode .detail-visited-btn {
 .itin-verdict-ok { background: #eaf7ee; color: #1a7f4b; }
 .itin-verdict-tight { background: #fff4e5; color: #b9770e; }
 .itin-verdict-over { background: #fdecea; color: #c0392b; }
+.itin-day-note {
+  margin: 0 0 10px 12px;
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: #4a5568;
+}
 /* Drive time between consecutive stops */
 .itin-leg {
   margin-left: 22px;
