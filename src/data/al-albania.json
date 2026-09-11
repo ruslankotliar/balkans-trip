@@ -103,6 +103,16 @@
     "status": "extra"
   },
   {
+    "id": "al-lezhe-castle",
+    "name": "Lezhe Castle (Kalaja e Lezhes), 322 m - the view over the delta, 1.5 km from the Spar",
+    "country": "AL",
+    "category": "viewpoint",
+    "lat": 41.7837,
+    "lng": 19.65006,
+    "description": "Illyrian-Venetian-Ottoman hilltop castle above Lezhe, a short drive up from town. Only if the landing runs early - the dune at sunset is the plan. Location from OSM; not checked for hours or a fee.",
+    "status": "extra"
+  },
+  {
     "id": "al-tiny-house-shiroka",
     "name": "Tiny House Shiroka - drop the bags; hot tub, BBQ, the evening",
     "country": "AL",
@@ -194,6 +204,17 @@
     "status": "extra"
   },
   {
+    "id": "al-marubi-museum",
+    "name": "Marubi National Museum of Photography, Shkoder - if the canyon empties early",
+    "country": "AL",
+    "category": "sight",
+    "lat": 42.0686,
+    "lng": 19.51557,
+    "description": "150 years of the Marubi studio's glass negatives - the best museum in the north, about an hour. OSM says 09:00-19:00 (day pattern not tagged; Monday closure not checked). 400 m from Conad, so it also fits Monday's 85 minutes if the shops go fast.",
+    "timeNeeded": "1h",
+    "status": "extra"
+  },
+  {
     "id": "al-stolia-shkoder",
     "name": "Stolia Coffeehouse - coffee, re-check the forecast on wifi",
     "country": "AL",
@@ -228,7 +249,7 @@
     "category": "other",
     "lat": 42.07049,
     "lng": 19.50948,
-    "description": "Screw-top gas canister for the stove - flights ban it, so it is bought here. NONE of the shops is confirmed to stock it; try in this order, all within 700 m. Fallback: the Store and Go 24/7 locker, EUR 12.",
+    "description": "Screw-top gas canister for the stove - flights ban it, so it is bought here. NONE of the shops is confirmed to stock it; try in this order, all within 700 m. Fallback: the Store and Go 24/7 locker, EUR 12 - their site sells the canister online with 'Pick-Up at Facility'; ordered the night before, the shop hunt becomes the fallback instead of the plan.",
     "timeNeeded": "20 min",
     "status": "shortlist",
     "optionGroup": "gas-canister",
@@ -241,7 +262,7 @@
     "category": "other",
     "lat": 42.06756,
     "lng": 19.50583,
-    "description": "Screw-top gas canister for the stove - flights ban it, so it is bought here. NONE of the shops is confirmed to stock it; try in this order, all within 700 m. Fallback: the Store and Go 24/7 locker, EUR 12.",
+    "description": "Screw-top gas canister for the stove - flights ban it, so it is bought here. NONE of the shops is confirmed to stock it; try in this order, all within 700 m. Fallback: the Store and Go 24/7 locker, EUR 12 - their site sells the canister online with 'Pick-Up at Facility'; ordered the night before, the shop hunt becomes the fallback instead of the plan.",
     "timeNeeded": "20 min",
     "status": "shortlist",
     "optionGroup": "gas-canister",
@@ -254,7 +275,7 @@
     "category": "other",
     "lat": 42.06582,
     "lng": 19.51553,
-    "description": "Screw-top gas canister for the stove - flights ban it, so it is bought here. NONE of the shops is confirmed to stock it; try in this order, all within 700 m. Fallback: the Store and Go 24/7 locker, EUR 12. Not in the original list - found on OSM 60 m from Conad.",
+    "description": "Screw-top gas canister for the stove - flights ban it, so it is bought here. NONE of the shops is confirmed to stock it; try in this order, all within 700 m. Fallback: the Store and Go 24/7 locker, EUR 12 - their site sells the canister online with 'Pick-Up at Facility'; ordered the night before, the shop hunt becomes the fallback instead of the plan. Not in the original list - found on OSM 60 m from Conad.",
     "timeNeeded": "20 min",
     "status": "shortlist",
     "optionGroup": "gas-canister",
@@ -267,7 +288,7 @@
     "category": "other",
     "lat": 42.06388,
     "lng": 19.50786,
-    "description": "Screw-top gas canister for the stove - flights ban it, so it is bought here. NONE of the shops is confirmed to stock it; try in this order, all within 700 m. Fallback: the Store and Go 24/7 locker, EUR 12.",
+    "description": "Screw-top gas canister for the stove - flights ban it, so it is bought here. NONE of the shops is confirmed to stock it; try in this order, all within 700 m. Fallback: the Store and Go 24/7 locker, EUR 12 - their site sells the canister online with 'Pick-Up at Facility'; ordered the night before, the shop hunt becomes the fallback instead of the plan.",
     "timeNeeded": "20 min",
     "status": "shortlist",
     "optionGroup": "gas-canister",
@@ -280,7 +301,7 @@
     "category": "other",
     "lat": 42.063,
     "lng": 19.5066,
-    "description": "Screw-top gas canister for the stove - flights ban it, so it is bought here. NONE of the shops is confirmed to stock it; try in this order, all within 700 m. Fallback: the Store and Go 24/7 locker, EUR 12.",
+    "description": "Screw-top gas canister for the stove - flights ban it, so it is bought here. NONE of the shops is confirmed to stock it; try in this order, all within 700 m. Fallback: the Store and Go 24/7 locker, EUR 12 - their site sells the canister online with 'Pick-Up at Facility'; ordered the night before, the shop hunt becomes the fallback instead of the plan.",
     "timeNeeded": "20 min",
     "status": "shortlist",
     "optionGroup": "gas-canister",
@@ -293,7 +314,7 @@
     "category": "other",
     "lat": 42.06693,
     "lng": 19.51077,
-    "description": "Rruga Studenti 10 (pin is the street, not the door). Automated lockers, open 00:00-23:59; Camping Gas 500 g screw-top EUR 12, order online for pick-up. +355 69 331 0183.",
+    "description": "Rruga Studenti 10 (pin is the street, not the door). Automated lockers, open 00:00-23:59; Camping Gas 500 g screw-top EUR 12, order online with 'Pick-Up at Facility' (their site says a saved delivery address blocks that option - contact them for a custom link if so). +355 69 331 0183.",
     "sources": [
       "https://storageshkoder.com/product/gas-canister-screw-top-for-camping"
     ],
@@ -964,6 +985,21 @@
     "optionGroup": "tirana-late",
     "optionTabLabel": "Magic",
     "legMinutes": 10
+  },
+  {
+    "id": "al-bunkart-2",
+    "name": "Bunk'Art 2 - the Sigurimi bunker under the ministry, 500 m from the flat; Friday open to 20:00",
+    "country": "AL",
+    "category": "sight",
+    "lat": 41.32702,
+    "lng": 19.81955,
+    "description": "Cold-war interior ministry bunker turned museum of the secret police, right by Skanderbeg square. OSM hours: Mo-Th, Su 09:30-18:00; Fr, Sa 09:30-20:00 (not checked against the museum). Fits 19:00-19:45 between the nap and the Pyramid if you skip half the nap.",
+    "sources": [
+      "https://bunkart.al/2/home"
+    ],
+    "cost": "fee, amount not checked",
+    "timeNeeded": "45 min",
+    "status": "extra"
   },
   {
     "id": "al-mulliri-i-vjeter",

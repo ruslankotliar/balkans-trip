@@ -110,7 +110,7 @@ export function safeSetItem(key: string, value: string): boolean {
   }
 }
 
-/** Per-place user edits cached locally and mirrored through the collab layer. */
+/** Per-place user edits, kept in this phone's localStorage. */
 export interface Override {
   status?: Status;
   /** Trip day 1–13 (Jun 16–28) this place is assigned to. undefined = unassigned. */
@@ -126,14 +126,6 @@ export interface Override {
 }
 
 export type Overrides = Record<string, Override>;
-
-/** One plan override row as stored in Supabase. */
-export interface PlanOverrideRow {
-  place_id: string;
-  data: Override | null;
-  cleared: boolean;
-  updated_at: string;
-}
 
 /** A base place merged with its localStorage override. */
 export type PlaceWithOverride = Place & Override;
@@ -161,21 +153,6 @@ export function normalizeOverrides(raw: Overrides): Overrides {
     if (normalized) next[id] = normalized;
   }
   return next;
-}
-
-/** Apply Supabase plan rows over an existing overrides map. */
-export function applyPlanOverrideRows(base: Overrides, rows: PlanOverrideRow[]): Overrides {
-  const next: Overrides = { ...base };
-  for (const row of rows) {
-    if (row.cleared) {
-      delete next[row.place_id];
-      continue;
-    }
-    const normalized = normalizeOverride(row.data);
-    if (normalized) next[row.place_id] = normalized;
-    else delete next[row.place_id];
-  }
-  return normalizeOverrides(next);
 }
 
 export function loadOverrides(): Overrides {

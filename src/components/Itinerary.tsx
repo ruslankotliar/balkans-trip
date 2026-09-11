@@ -175,6 +175,16 @@ export default function Itinerary({
     slot.type === 'single'
       ? slot.entry
       : slot.options[Math.min(optGroupSel[slot.groupId] ?? 0, slot.options.length - 1)];
+  // Today: the first stop not yet left is "now" (already arrived) or "next".
+  const now = new Date();
+  const nowSec = isToday ? now.getHours() * 3600 + now.getMinutes() * 60 : null;
+  const liveIdx =
+    nowSec == null
+      ? -1
+      : renderSlots.findIndex((slot) => {
+          const e = getActiveEntry(slot);
+          return e.departSec != null && e.departSec > nowSec;
+        });
 
   return (
     <div className="itinerary">
@@ -295,8 +305,14 @@ export default function Itinerary({
               const isSelected = isGroup
                 ? groupSlot!.options.some((e) => e.place.id === selectedId)
                 : selectedId === activeEntry.place.id;
+              const live =
+                slot.slotIdx === liveIdx
+                  ? activeEntry.arriveSec != null && nowSec != null && activeEntry.arriveSec <= nowSec
+                    ? 'now'
+                    : 'next'
+                  : null;
               return (
-                <div key={key} className="itin-stop-entry">
+                <div key={key} className={`itin-stop-entry${live ? ' live' : ''}`}>
                   {legSec != null && legSec > 0 && (
                     <div className="itin-leg">
                       ↓ {formatDuration(legSec)}{activeEntry.place.legMinutes == null ? ' drive' : ''}
@@ -310,6 +326,7 @@ export default function Itinerary({
                     <span className="itin-stop-step" style={{ background: dayColor(day) }}>
                       {slot.slotIdx + 1}
                     </span>
+                    {live && <span className="itin-live-badge">{live}</span>}
                     <span className="itin-stop-main">
                       <span className="itin-stop-name">
                         {activeEntry.place.pick && <span className="pick-star" title="Recommended pick">★ </span>}

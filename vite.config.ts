@@ -15,7 +15,6 @@ export default defineConfig({
         manualChunks: {
           react: ['react', 'react-dom'],
           leaflet: ['leaflet', 'react-leaflet'],
-          storage: ['lz-string', '@supabase/supabase-js'],
         },
       },
     },

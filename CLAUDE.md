@@ -58,7 +58,7 @@ npm run build # type-check + build
 ```
 
 - Map with colored pins per category, sidebar with filters (country/category/status) and search.
-- Status changes made in the UI are stored in localStorage; "Export JSON" downloads the merged data.
+- Status, day and note changes made in the UI are stored in localStorage (per trip, per phone).
 
 ## Data conventions (IMPORTANT for research sessions)
 
@@ -76,7 +76,7 @@ Rules:
 - Campsites: fill `cost` (for 4 people + tent(s) + car) and `facilities`.
 - `category` must be one of the values in `src/types.ts` - anything else is silently invisible in the Places list.
 - `legMinutes`: set on a stop reached on foot (or by a drive not worth routing) - minutes from the previous stop. Such a stop is left out of the day's OSRM road route, drawn as a dashed line, and its minutes feed the day clock. This is how a hiking day sits in the same plan as a driving day (Albania Sep 2026, `al-albania.json`).
-- A trip's day plan is baked in `src/defaultPlan*.ts` (`DEFAULT_PLANS` keyed by trip id) and seeds a phone's FIRST visit only. The Supabase project the sync layer pointed at no longer resolves (checked 2026-09-12), so the baked plan is the only way a plan reaches a phone.
+- A trip's day plan is baked in `src/defaultPlan*.ts` (`DEFAULT_PLANS` keyed by trip id) and seeds a phone's FIRST visit only; after that the phone's localStorage owns it. There is no server behind the app any more - the Supabase sync layer was removed on 2026-09-12 after its project stopped resolving (`backups/` keeps the last exports).
 - Valid JSON only: double quotes, no trailing commas, no comments. Validate with `python3 -m json.tool src/data/<file>.json`.
 
 Long-form findings (route logic, comparisons, things that don't fit the schema) go in `research/<topic>-notes.md`.

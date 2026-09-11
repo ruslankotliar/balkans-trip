@@ -12,12 +12,6 @@ import {
 import { type DraftPlace } from './components/AddPlace';
 import DetailPanel from './components/DetailPanel';
 import {
-  loadRemotePlacesCache,
-  pushUserPlace,
-  queuePlanOverrideSync,
-  syncCollab,
-} from './collab';
-import {
   CATEGORY_COLORS,
   COUNTRY_NAMES,
   GROUP_META,
@@ -30,7 +24,6 @@ import {
 import { bookingFor, type SourceLink } from './links';
 import { fetchRoute, routeKey, type LatLng } from './osrm';
 import {
-  applyPlanOverrideRows,
   ferryPairKey,
   loadFerryHours,
   loadOverrides,
@@ -46,7 +39,6 @@ import {
   type Overrides,
   type PlaceWithOverride,
 } from './store';
-import { hasSupabase } from './supabase';
 import { buildDaySchedule } from './schedule';
 import {
   currentTripDay,
@@ -243,44 +235,14 @@ export default function App() {
   const activeTrip: TripConfig = findTrip(currentTripId);
 
   // User-added places merge after the bundle so a runtime pin can override a
-  // baked id without breaking the rest of the app.
+  // baked id without breaking the rest of the app. Everything lives in this
+  // phone's localStorage - there is no server behind the app.
   const [userPlaces, setUserPlaces] = useState<Place[]>(loadUserPlaces);
-  const [remotePlaces, setRemotePlaces] = useState<Place[]>(loadRemotePlacesCache);
-  const [syncOnline, setSyncOnline] = useState<boolean | null>(hasSupabase ? null : false);
-  // Merge baked → local user places → remote user places (first id wins),
-  // then filter to only places that belong to the active trip's country codes.
+  // Merge baked -> user places (first id wins), then keep the active trip's countries.
   const basePlaces = useMemo<Place[]>(() => {
     const tripCountries = new Set<Country>(activeTrip.countries);
-    const localIds = new Set(userPlaces.map((p) => p.id));
-    const remoteOnly = remotePlaces.filter((p) => !localIds.has(p.id));
-    return [...loadPlaces(), ...userPlaces, ...remoteOnly].filter((p) =>
-      tripCountries.has(p.country),
-    );
-  }, [userPlaces, remotePlaces, currentTripId]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  /** Pull the latest collab state from Supabase (best-effort; degrades to cache). */
-  const runSync = useRef(async () => {});
-  runSync.current = async () => {
-    const res = await syncCollab();
-    setSyncOnline(res.online);
-    setRemotePlaces(res.remotePlaces);
-    if (res.planRows.length > 0) {
-      setOverrides((prev) => {
-        const next = applyPlanOverrideRows(prev, res.planRows);
-        saveOverrides(next);
-        return next;
-      });
-    }
-  };
-
-  // Sync on load and whenever the window regains focus (cheap, best-effort).
-  useEffect(() => {
-    void runSync.current();
-    const onFocus = () => void runSync.current();
-    window.addEventListener('focus', onFocus);
-    return () => window.removeEventListener('focus', onFocus);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    return [...loadPlaces(), ...userPlaces].filter((p) => tripCountries.has(p.country));
+  }, [userPlaces, currentTripId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   /** Switch to a different trip: reconfigure module singletons then reload all trip-scoped state. */
   function switchTrip(id: string) {
@@ -294,13 +256,11 @@ export default function App() {
     setCurrentTripId(id);
     setOverrides(loadOverrides());
     setUserPlaces(loadUserPlaces());
-    setRemotePlaces(loadRemotePlacesCache());  // clear stale data from previous trip before sync
     setFerryHours(loadFerryHours());
     setSelectedId(null);
     setPlanDay(currentTripDay());
     // Show all non-rejected places when switching trips (new trips have no shortlisted items yet).
     setStatusFilter(new Set(NON_REJECTED));
-    void runSync.current();
   }
 
   const [overrides, setOverrides] = useState<Overrides>(loadOverrides);
@@ -370,6 +330,9 @@ export default function App() {
   const [essentialsOpen, setEssentialsOpen] = useState(false);
 
   const mapRef = useRef<L.Map | null>(null);
+  // Leaflet is ready a tick after mount; the day-fit effect below waits for it
+  // (the app now opens straight on the Plan view during the trip).
+  const [mapReady, setMapReady] = useState(false);
 
   // Auto-dismiss the undo toast.
   useEffect(() => {
@@ -604,11 +567,6 @@ export default function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [routeStops, routes, ferryHours, dayConfig, dayTravel]);
 
-  const syncLabel = syncOnline ? 'online' : 'offline';
-  const syncTitle = syncOnline
-    ? 'Shared sync is online.'
-    : 'Shared sync is offline right now; local changes stay on this device and will queue until it reconnects.';
-
   // In the Plan view, draw only the selected day's route; in Places, none.
   const routeDaysToShow = useMemo(() => {
     if (view === 'plan') return new Set<number>([planDay]);
@@ -623,13 +581,13 @@ export default function App() {
 
   // Changing the viewed Plan day focuses the map on that day's stops.
   useEffect(() => {
-    if (view !== 'plan') return;
+    if (view !== 'plan' || !mapReady) return;
     const pts = (dayStops[planDay] ?? []).map((p) => [p.lat, p.lng] as [number, number]);
     if (pts.length > 0 && mapRef.current) {
       mapRef.current.fitBounds(L.latLngBounds(pts), { padding: [60, 60], maxZoom: 12 });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [view, planDay]);
+  }, [view, planDay, mapReady]);
 
   // The selected place must show on the map even if the current filters would
   // hide it (e.g. selecting a rejected pin from the list).
@@ -646,11 +604,9 @@ export default function App() {
   function applyOverrides(updater: (o: Overrides) => Overrides) {
     setOverrides((prev) => {
       const next = normalizeOverrides(updater(prev));
-      queuePlanOverrideSync(prev, next);
       saveOverrides(next);
       return next;
     });
-    void runSync.current();
   }
 
 
@@ -741,9 +697,6 @@ export default function App() {
           return next;
         })(),
       }));
-      // Propagate the edit to the other phones too.
-      pushUserPlace(updated);
-      void runSync.current();
       if (draft.day != null) focusPlanDay(draft.day);
       closeAddPlace();
       setSelectedId(editingId);
@@ -786,9 +739,6 @@ export default function App() {
         })(),
       }));
     }
-    // Sync to user_places so all 4 phones see this pin (best-effort + queued).
-    pushUserPlace(place);
-    void runSync.current();
     if (draft.day != null) focusPlanDay(draft.day);
     closeAddPlace();
     setSelectedId(id); // open the detail panel on the new pin
@@ -1052,18 +1002,7 @@ export default function App() {
         </div>
 
         <>
-        <p className="subtitle">
-          {activeTrip.subtitle}
-          <span
-            className={`sync-state ${
-              syncLabel === 'online' ? 'on' : ''
-            }`}
-            title={syncTitle}
-          >
-            {' '}
-            · {syncLabel}
-          </span>
-        </p>
+        <p className="subtitle">{activeTrip.subtitle}</p>
 
         <div className="view-tabs">
           <button
@@ -1288,7 +1227,14 @@ export default function App() {
         </div>
       </aside>
 
-      <MapContainer ref={mapRef} className="map" center={activeTrip.mapCenter} zoom={activeTrip.mapZoom} scrollWheelZoom>
+      <MapContainer
+        ref={mapRef}
+        className="map"
+        center={activeTrip.mapCenter}
+        zoom={activeTrip.mapZoom}
+        scrollWheelZoom
+        whenReady={() => setMapReady(true)}
+      >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -61,27 +61,6 @@ a, button, [role="button"], .place-list li {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.sync-state {
-  display: inline-flex;
-  align-items: center;
-  margin-left: 4px;
-  padding: 1px 6px;
-  border-radius: 999px;
-  background: #eef3f8;
-  color: #5b6872;
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-.sync-state.on {
-  background: #e7f7ef;
-  color: #147a48;
-}
-.sync-state.warn {
-  background: #fff2df;
-  color: #9a6700;
-}
 
 .search {
   padding: 8px 10px;
@@ -1146,6 +1125,21 @@ body.trip-mode .detail-visited-btn {
 .itin-verdict-ok { background: #eaf7ee; color: #1a7f4b; }
 .itin-verdict-tight { background: #fff4e5; color: #b9770e; }
 .itin-verdict-over { background: #fdecea; color: #c0392b; }
+.itin-stop-entry.live > .itin-stop-row {
+  box-shadow: inset 0 0 0 2px #2b7de9;
+}
+.itin-live-badge {
+  flex: none;
+  margin-right: 6px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: #2b7de9;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
 .itin-day-note {
   margin: 0 0 10px 12px;
   font-size: 12.5px;
