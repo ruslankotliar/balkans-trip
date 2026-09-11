@@ -215,6 +215,20 @@
     "status": "extra"
   },
   {
+    "id": "al-syri-i-sheganit",
+    "name": "Syri i Sheganit - Shkoder's swimmable Blue Eye, 20 min off the Theth road",
+    "country": "AL",
+    "category": "beach",
+    "lat": 42.27245,
+    "lng": 19.3957,
+    "description": "A karst spring on the lake's north shore you can actually swim in - the northern cousin of the famous Blue Eye. On SH1 north of Koplik: from the Theth turn-off at Koplik it is ~8 km further north, so a 20 min detour each way on Monday, or a Sunday-evening swim from Shiroka (~45 min). Last 800 m unsealed but fine for any car; park by the wetlands sign (room for two cars) or two minutes on at the restaurant. Source: walkmyworld.com, read Sat 12 Sep - one traveller's page; location from OSM. Not in the plan - Monday has no slack; only if something drops.",
+    "sources": [
+      "https://www.walkmyworld.com/posts/shkoder-blue-eye-syri-i-sheganit"
+    ],
+    "timeNeeded": "1h",
+    "status": "extra"
+  },
+  {
     "id": "al-stolia-shkoder",
     "name": "Stolia Coffeehouse - coffee, re-check the forecast on wifi",
     "country": "AL",
