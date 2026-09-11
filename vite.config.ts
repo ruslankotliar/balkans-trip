@@ -28,8 +28,8 @@ export default defineConfig({
       scope: BASE,
       base: BASE,
       manifest: {
-        name: 'Balkans Trip — Jun 16–28',
-        short_name: 'Balkans',
+        name: 'Trip planner',
+        short_name: 'Trips',
         theme_color: '#8e44ad',
         background_color: '#ffffff',
         display: 'standalone', // "Add to Home Screen" → opens like an app

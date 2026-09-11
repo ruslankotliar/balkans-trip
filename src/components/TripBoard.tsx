@@ -47,7 +47,18 @@ export default function TripBoard({ places, scheduleByDay, realDay, onPickDay }:
   let warnDays = 0;
 
   const rows = DAYS.map((d) => {
-    const stops = (byDay.get(d) ?? []).slice().sort(byOrder);
+    // An option group (alternatives for one slot) counts once - its first tab,
+    // which is the plan's default.
+    const seenGroups = new Set<string>();
+    const stops = (byDay.get(d) ?? [])
+      .slice()
+      .sort(byOrder)
+      .filter((p) => {
+        if (!p.optionGroup) return true;
+        if (seenGroups.has(p.optionGroup)) return false;
+        seenGroups.add(p.optionGroup);
+        return true;
+      });
     const schedule = scheduleByDay[d] ?? null;
     const level = schedule ? fitLevel(schedule) : null;
     totalDrive += schedule?.driveSec ?? 0;
@@ -72,7 +83,7 @@ export default function TripBoard({ places, scheduleByDay, realDay, onPickDay }:
   return (
     <div className="board">
       <p className="board-summary">
-        <strong>13 days</strong> · {totalStops} committed stops · ~{formatDuration(totalDrive)} driving
+        <strong>{DAYS.length} days</strong> · {totalStops} committed stops · ~{formatDuration(totalDrive)} on the move
         {warnDays > 0 && <span className="board-summary-warn"> · {warnDays} tight/over</span>}
       </p>
       <p className="board-sub">
@@ -104,7 +115,7 @@ export default function TripBoard({ places, scheduleByDay, realDay, onPickDay }:
                 <span className="board-stops">{stops.length} stops</span>
                 {schedule ? (
                   <>
-                    <span className="board-drive">{formatDuration(schedule.driveSec)} drive</span>
+                    <span className="board-drive">{formatDuration(schedule.driveSec)} moving</span>
                     <span className="board-ends">ends {formatClock(schedule.finishSec)}</span>
                   </>
                 ) : (

@@ -1,6 +1,6 @@
 import { CATEGORIES } from './constants';
-import { DEFAULT_PLAN } from './defaultPlan';
-import { getActiveTripId } from './trips';
+import { DEFAULT_PLANS } from './defaultPlan';
+import { findTrip, getActiveTripId } from './trips';
 import type { Place, Status } from './types';
 
 const modules = import.meta.glob('./data/*.json', { eager: true }) as Record<
@@ -181,17 +181,20 @@ export function applyPlanOverrideRows(base: Overrides, rows: PlanOverrideRow[]):
 export function loadOverrides(): Overrides {
   try {
     const raw = localStorage.getItem(overridesKey());
-    // On first visit (empty localStorage) seed from the baked default plan for
-    // the Balkans trip so all group members see the pre-populated itinerary.
-    // New trips start with an empty plan.
-    const seed = getActiveTripId() === 'balkans-trip' ? normalizeOverrides({ ...DEFAULT_PLAN }) : {};
+    // On first visit (empty localStorage) seed from the trip's baked default
+    // plan so every phone opens on the same itinerary. Trips without one start empty.
+    const seed = seedPlan();
     if (raw === null) return seed;
     const parsed = JSON.parse(raw);
     if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return seed;
     return normalizeOverrides(parsed as Overrides);
   } catch {
-    return getActiveTripId() === 'balkans-trip' ? normalizeOverrides({ ...DEFAULT_PLAN }) : {};
+    return seedPlan();
   }
+}
+
+function seedPlan(): Overrides {
+  return normalizeOverrides({ ...(DEFAULT_PLANS[getActiveTripId()] ?? {}) });
 }
 
 export function saveOverrides(o: Overrides) {
@@ -212,17 +215,26 @@ function isStatus(x: unknown): x is Status {
 }
 
 function isCountry(x: unknown): x is Place['country'] {
-  return x === 'HR' || x === 'BA' || x === 'ME' || x === 'IT';
+  return x === 'HR' || x === 'BA' || x === 'ME' || x === 'IT' || x === 'AL';
 }
 
-function guessCountry(lat: number, lng: number): Place['country'] {
+/**
+ * Country for a runtime-added pin. The active trip decides: a one-country trip
+ * gets that country outright (a pin must stay visible in the trip it was added
+ * to), a multi-country trip gets a rough bounding-box guess among its countries.
+ */
+export function guessCountry(lat: number, lng: number): Place['country'] {
+  const tripCountries = findTrip(getActiveTripId()).countries;
+  if (tripCountries.length === 1) return tripCountries[0];
+  let guess: Place['country'];
   // Italy: western Europe, west of ~15°E (Lake Como is ~9.3°E).
-  if (lat >= 36 && lat <= 47.5 && lng >= 6 && lng < 15) return 'IT';
+  if (lat >= 36 && lat <= 47.5 && lng >= 6 && lng < 15) guess = 'IT';
   // Bosnia: inland pocket roughly N of 42.55 and E of 17.0 (Mostar/Konjic).
-  if (lat > 42.55 && lng > 17.0 && lng < 19.7) return 'BA';
+  else if (lat > 42.55 && lng > 17.0 && lng < 19.7) guess = 'BA';
   // Croatia: coastal strip and the northwest; broadly W/N of the ME line.
-  if (lat > 42.6 || lng < 17.5) return 'HR';
-  return 'ME';
+  else if (lat > 42.6 || lng < 17.5) guess = 'HR';
+  else guess = 'ME';
+  return tripCountries.includes(guess) ? guess : tripCountries[0];
 }
 
 /** Narrow an unknown value to a plausible user Place (defensive against bad imports). */

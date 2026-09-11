@@ -40,6 +40,7 @@ import {
   saveOverrides,
   saveRouteCache,
   saveUserPlaces,
+  guessCountry,
   normalizeOverrides,
   type FerryHours,
   type Overrides,
@@ -54,7 +55,7 @@ import {
   isDuringTrip,
   setTripConfig,
 } from './trip';
-import { findTrip, setActiveTripId, TRIPS, type TripConfig } from './trips';
+import { findTrip, pickInitialTripId, setActiveTripId, TRIPS, type TripConfig } from './trips';
 import type { Category, Country, Place, Status } from './types';
 import { useDayRoutes } from './useDayRoutes';
 
@@ -233,7 +234,7 @@ export default function App() {
   // MUST be first: initializes the active-trip singleton before any loadXxx()
   // calls below, so all localStorage keys resolve to the correct trip.
   const [currentTripId, setCurrentTripId] = useState<string>(() => {
-    const id = localStorage.getItem('current-trip-id') ?? 'balkans-trip';
+    const id = pickInitialTripId(localStorage.getItem('current-trip-id'));
     const trip = findTrip(id);
     setActiveTripId(id);
     setTripConfig(trip.startDate, trip.numDays);
@@ -296,7 +297,7 @@ export default function App() {
     setRemotePlaces(loadRemotePlacesCache());  // clear stale data from previous trip before sync
     setFerryHours(loadFerryHours());
     setSelectedId(null);
-    setPlanDay(1);
+    setPlanDay(currentTripDay());
     // Show all non-rejected places when switching trips (new trips have no shortlisted items yet).
     setStatusFilter(new Set(NON_REJECTED));
     void runSync.current();
@@ -472,30 +473,53 @@ export default function App() {
     return out;
   }, [dayStops, optGroupSel]);
 
+  /** Where the previous night was slept: the last sleep stop of the day before, else its last stop. */
+  const prevSleepOf = (day: number): PlaceWithOverride | undefined => {
+    const prevPs = routeStops[day - 1];
+    if (!prevPs || prevPs.length === 0) return undefined;
+    const sleepSet = new Set<string>(SLEEP_CATEGORIES);
+    return [...prevPs].reverse().find((p) => sleepSet.has(p.category)) ?? prevPs[prevPs.length - 1];
+  };
+
+  // Points for the day's ROAD route: stops without a fixed leg (see
+  // Place.legMinutes - hikes and walks are left out and drawn as dashed lines).
   const dayPoints = useMemo(() => {
     const result: Record<number, [number, number][]> = {};
     for (const [dayStr, ps] of Object.entries(routeStops)) {
       const dayNum = Number(dayStr);
-      const pts: [number, number][] = ps.map((p) => [p.lat, p.lng]);
+      const pts: [number, number][] = ps.filter((p) => p.legMinutes == null).map((p) => [p.lat, p.lng]);
+      if (pts.length === 0) continue;
       // Prepend the previous night's sleep location so the route — and its
       // drive time — covers the full day including the morning relocation drive.
-      const prevPs = routeStops[dayNum - 1];
-      if (prevPs && prevPs.length > 0 && pts.length > 0) {
-        const sleepSet = new Set<string>(SLEEP_CATEGORIES);
-        const prevSleep =
-          [...prevPs].reverse().find((p) => sleepSet.has(p.category)) ??
-          prevPs[prevPs.length - 1];
-        // Skip if overnight stop is essentially the same location as first stop.
-        if (
-          Math.abs(prevSleep.lat - pts[0][0]) > 0.001 ||
-          Math.abs(prevSleep.lng - pts[0][1]) > 0.001
-        ) {
-          pts.unshift([prevSleep.lat, prevSleep.lng]);
-        }
+      const prevSleep = prevSleepOf(dayNum);
+      // Skip if overnight stop is essentially the same location as first stop.
+      if (
+        prevSleep &&
+        (Math.abs(prevSleep.lat - pts[0][0]) > 0.001 || Math.abs(prevSleep.lng - pts[0][1]) > 0.001)
+      ) {
+        pts.unshift([prevSleep.lat, prevSleep.lng]);
       }
       result[dayNum] = pts;
     }
     return result;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [routeStops]);
+
+  // Fixed legs (legMinutes): a straight dashed segment from the previous stop.
+  const fixedSegments = useMemo(() => {
+    const out: Record<number, [number, number][][]> = {};
+    for (const [dayStr, ps] of Object.entries(routeStops)) {
+      const dayNum = Number(dayStr);
+      const segs: [number, number][][] = [];
+      ps.forEach((p, i) => {
+        if (p.legMinutes == null) return;
+        const from = i > 0 ? ps[i - 1] : prevSleepOf(dayNum);
+        if (from) segs.push([[from.lat, from.lng], [p.lat, p.lng]]);
+      });
+      if (segs.length) out[dayNum] = segs;
+    }
+    return out;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [routeStops]);
 
   const { routes, loading: routesLoading } = useDayRoutes(dayPoints);
@@ -537,7 +561,8 @@ export default function App() {
     for (const [dayStr, stops] of Object.entries(routeStops)) {
       const day = Number(dayStr);
       const route = routes[day];
-      if (!route) continue;
+      // A day with a road route waits for it; a day of fixed legs only needs none.
+      if (!route && (dayPoints[day]?.length ?? 0) >= 2) continue;
       const schedule = buildDaySchedule(
         stops,
         route,
@@ -551,7 +576,7 @@ export default function App() {
       if (schedule) out[day] = schedule;
     }
     return out;
-  }, [routeStops, routes, ferryHours, dayConfig]);
+  }, [routeStops, routes, ferryHours, dayConfig, dayPoints]);
 
   const syncLabel = syncOnline ? 'online' : 'offline';
   const syncTitle = syncOnline
@@ -615,15 +640,6 @@ export default function App() {
   const editingPlace = editingId
     ? userPlaces.find((p) => p.id === editingId) ?? null
     : null;
-
-  /** Cheap bounding-box country guess (HR/BA/ME), defaulting to ME. */
-  function guessCountry(lat: number, lng: number): Country {
-    // Bosnia: the inland pocket roughly N of 42.6 and E of 17.0 (Mostar/Konjic).
-    if (lat > 42.55 && lng > 17.0 && lng < 19.7) return 'BA';
-    // Croatia: the Adriatic coast strip (and the NW); broadly W/N of the ME line.
-    if (lat > 42.6 || lng < 17.5) return 'HR';
-    return 'ME';
-  }
 
   function openAddPlace() {
     setEditingId(null);
@@ -1280,6 +1296,18 @@ export default function App() {
               pathOptions={{ color: dayColor(Number(day)), weight: 4, opacity: 0.75 }}
             />
           ))}
+        {/* Fixed legs (on foot / unrouted): dashed straight lines */}
+        {Object.entries(fixedSegments)
+          .filter(([day]) => !routeDaysToShow || routeDaysToShow.has(Number(day)))
+          .flatMap(([day, segs]) =>
+            segs.map((seg, i) => (
+              <Polyline
+                key={`fixed-${day}-${i}`}
+                positions={seg}
+                pathOptions={{ color: dayColor(Number(day)), weight: 3, opacity: 0.7, dashArray: '6 8' }}
+              />
+            )),
+          )}
 
         {markersToShow.map((p) => {
           const isSel = p.id === selectedId;

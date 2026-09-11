@@ -3,6 +3,7 @@
  * Seeds new devices; shared plan syncs via plan_overrides. Only day + dayOrder.
  */
 import type { Overrides } from './store';
+import { ALBANIA_PLAN } from './defaultPlanAlbania';
 
 export const DEFAULT_PLAN: Overrides = {
   // ── Day 1: Jun16 Tue ──
@@ -209,4 +210,10 @@ export const DEFAULT_PLAN: Overrides = {
   "hr-buza-bar":                             { day: 13, dayOrder: 4.5 },
   "hr-dubrovnik-airport":                    { day: 13, dayOrder: 5 },
 
+};
+
+/** Baked default plan per trip id; seeds a phone's first visit to that trip. */
+export const DEFAULT_PLANS: Record<string, Overrides> = {
+  'balkans-trip': DEFAULT_PLAN,
+  'albania-2026': ALBANIA_PLAN,
 };

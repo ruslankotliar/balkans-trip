@@ -1,4 +1,4 @@
-export type Country = 'HR' | 'BA' | 'ME' | 'IT';
+export type Country = 'HR' | 'BA' | 'ME' | 'IT' | 'AL';
 
 export type Category =
   | 'town'
@@ -56,4 +56,11 @@ export interface Place {
   optionGroup?: string;
   /** Short label shown on the tab button (defaults to truncated place name). */
   optionTabLabel?: string;
+  /**
+   * Fixed leg INTO this stop, in minutes - on foot, or a drive not worth routing.
+   * A stop with legMinutes is left out of the day's OSRM road route and drawn as
+   * a dashed straight line from the previous stop; the day clock uses this value
+   * instead of a road leg. Lets a hiking day sit in the same plan as a driving day.
+   */
+  legMinutes?: number;
 }

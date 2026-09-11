@@ -158,16 +158,18 @@ export default function Itinerary({
 
   const route = routes[day];
   const isToday = realDay === day;
-  const driveSec = route ? route.duration + (ferrySecByDay[day] ?? 0) : 0;
   const schedule = scheduleByDay?.[day] ?? null;
+  // Time on the move: road legs + fixed legs (walks) + ferries, from the day clock.
+  const moveSec = schedule ? schedule.driveSec : route ? route.duration + (ferrySecByDay[day] ?? 0) : 0;
   const shortlistStops = stops.filter((p) => p.status === 'shortlist');
-  const scheduleEntries: AgendaEntry[] = schedule?.entries?.length
-    ? schedule.entries
-    : shortlistStops.map((place) => ({
-        place,
-        arriveSec: null,
-        departSec: null,
-      }));
+  // The schedule holds only the ACTIVE option of each option group (that is what
+  // gets routed and timed); the rows need every option so the tabs show. Walk
+  // the full stop list and take times from the schedule where it has them.
+  const timedById = new Map((schedule?.entries ?? []).map((e) => [e.place.id, e]));
+  const scheduleEntries: AgendaEntry[] = shortlistStops.map((place) => {
+    const timed = timedById.get(place.id);
+    return { place, arriveSec: timed?.arriveSec ?? null, departSec: timed?.departSec ?? null };
+  });
   const renderSlots = buildRenderSlots(scheduleEntries);
   const getActiveEntry = (slot: RenderSlot): AgendaEntry =>
     slot.type === 'single'
@@ -207,7 +209,7 @@ export default function Itinerary({
 
       <div className="itin-total">
         <strong>{stops.length}</strong> stops ·{' '}
-        <strong>{formatDuration(driveSec)}</strong> / {route ? formatDistance(route.distance) : '0 km'} driving
+        <strong>{formatDuration(moveSec)}</strong> on the move{route ? ` · ${formatDistance(route.distance)} by road` : ''}
         {routesLoading && <span className="loading-dot"> · routing…</span>}
       </div>
 
@@ -295,7 +297,9 @@ export default function Itinerary({
               return (
                 <div key={key} className="itin-stop-entry">
                   {legSec != null && legSec > 0 && (
-                    <div className="itin-leg">↓ {formatDuration(legSec)} drive</div>
+                    <div className="itin-leg">
+                      ↓ {formatDuration(legSec)}{activeEntry.place.legMinutes == null ? ' drive' : ''}
+                    </div>
                   )}
                   <button
                     type="button"

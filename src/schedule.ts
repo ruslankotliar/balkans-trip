@@ -10,6 +10,7 @@ export interface StopTiming {
   kind: StopKind;
   arriveSec: number;
   departSec: number;
+  /** Leg INTO this stop: road leg, or the stop's fixed legMinutes. */
   driveSec: number;
   ferrySec: number;
   staySec: number;
@@ -164,42 +165,42 @@ export function buildDaySchedule(
   const plannedEndSec = (options?.dayEndHour ?? DEFAULT_DAY_END_HOUR) * 3600;
   const paceMultiplier = Math.max(0.5, options?.paceMultiplier ?? 1);
   const routeLegs = route?.legs ?? [];
-  const offset = Math.max(0, routeLegs.length - Math.max(0, stops.length - 1));
+  // The road route runs through the stops WITHOUT a fixed leg (see
+  // Place.legMinutes). It may start one point earlier - the previous night's
+  // sleep - which shows up as one extra leg in front.
+  const roadStops = stops.filter((s) => s.legMinutes == null).length;
+  const offset = Math.max(0, routeLegs.length - Math.max(0, roadStops - 1));
 
   let clock = dayStartSec;
   let driveSec = 0;
   let ferrySec = 0;
   let staySec = 0;
   const entries: StopTiming[] = [];
-
-  if (offset > 0 && routeLegs[0]) {
-    const morningLeg = routeLegs[0].duration;
-    driveSec += morningLeg;
-    clock += morningLeg;
-  }
+  let roadSeen = 0;
 
   for (let i = 0; i < stops.length; i++) {
     const place = stops[i];
+    // Leg into this stop: its fixed legMinutes, else the next road leg.
+    let legSec = 0;
+    if (place.legMinutes != null) {
+      legSec = Math.round(place.legMinutes * 60);
+    } else {
+      const legIdx = roadSeen - 1 + offset; // -1 = first road stop, nothing before it
+      legSec = legIdx >= 0 ? routeLegs[legIdx]?.duration ?? 0 : 0;
+      roadSeen += 1;
+    }
+    const ferry = i > 0 ? ferryFor(stops[i - 1].id, place.id) * 3600 : 0;
+    clock += legSec + ferry;
+    driveSec += legSec + ferry;
+    ferrySec += ferry;
+
     const estimate = estimateStopMinutes(place);
     const arrival = clock;
     const stopStaySec = Math.round(estimate.minutes * paceMultiplier) * 60;
     const isSleep = place.category === 'accommodation' || place.category === 'campsite';
-    const effectiveStaySec = stopStaySec;
-    const departure = arrival + effectiveStaySec;
-    const next = stops[i + 1];
-    let legSec = 0;
-    let ferry = 0;
-    if (next) {
-      const routeLeg = routeLegs[i + offset];
-      legSec = routeLeg?.duration ?? 0;
-      ferry = ferryFor(place.id, next.id) * 3600;
-      driveSec += legSec + ferry;
-      ferrySec += ferry;
-      clock = departure + legSec + ferry;
-    } else {
-      clock = departure;
-    }
-    staySec += effectiveStaySec;
+    const departure = arrival + stopStaySec;
+    clock = departure;
+    staySec += stopStaySec;
     entries.push({
       place,
       kind: isSleep ? 'sleep' : 'activity',
@@ -207,7 +208,7 @@ export function buildDaySchedule(
       departSec: departure,
       driveSec: legSec,
       ferrySec: ferry,
-      staySec: effectiveStaySec,
+      staySec: stopStaySec,
       source: estimate.source,
     });
   }

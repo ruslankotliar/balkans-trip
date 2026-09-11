@@ -5,6 +5,7 @@ export const COUNTRY_NAMES: Record<Country, string> = {
   BA: 'Bosnia',
   ME: 'Montenegro',
   IT: 'Italy',
+  AL: 'Albania',
 };
 
 export const STATUSES: Status[] = ['candidate', 'shortlist', 'extra', 'backup', 'rejected'];

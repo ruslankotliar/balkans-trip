@@ -66,7 +66,7 @@ All places live in `src/data/*.json` — each file is a JSON **array** of `Place
 
 Rules:
 
-- `id`: kebab-case, prefixed by country: `hr-`, `ba-`, `me-` (e.g. `ba-kravica`). Must be unique — check existing files for collisions (first occurrence wins on duplicate ids).
+- `id`: kebab-case, prefixed by country: `hr-`, `ba-`, `me-`, `it-`, `al-` (e.g. `ba-kravica`). A place shows only in trips whose `countries` list (src/trips.ts) has its country. Must be unique — check existing files for collisions (first occurrence wins on duplicate ids).
 - `lat`/`lng`: decimal degrees, **real verified coordinates** (cross-check with OpenStreetMap/Google Maps). Never guess — a wrong pin is worse than no pin.
 - `status`: new research entries are `"candidate"` (the user promotes to `shortlist`/`backup` in the UI). Don't set `shortlist` yourself.
 - `description`: 1–3 sentences — what it is, why it's worth it.
@@ -74,6 +74,9 @@ Rules:
 - `sources`: URLs of the actual threads/reviews.
 - `rating`: 1–5 = strength/consistency of community feedback (5 = repeatedly praised across independent sources).
 - Campsites: fill `cost` (for 4 people + tent(s) + car) and `facilities`.
+- `category` must be one of the values in `src/types.ts` - anything else is silently invisible in the Places list.
+- `legMinutes`: set on a stop reached on foot (or by a drive not worth routing) - minutes from the previous stop. Such a stop is left out of the day's OSRM road route, drawn as a dashed line, and its minutes feed the day clock. This is how a hiking day sits in the same plan as a driving day (Albania Sep 2026, `al-albania.json`).
+- A trip's day plan is baked in `src/defaultPlan*.ts` (`DEFAULT_PLANS` keyed by trip id) and seeds a phone's FIRST visit only. The Supabase project the sync layer pointed at no longer resolves (checked 2026-09-12), so the baked plan is the only way a plan reaches a phone.
 - Valid JSON only: double quotes, no trailing commas, no comments. Validate with `python3 -m json.tool src/data/<file>.json`.
 
 Long-form findings (route logic, comparisons, things that don't fit the schema) go in `research/<topic>-notes.md`.
