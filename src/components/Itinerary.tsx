@@ -88,6 +88,8 @@ interface AgendaEntry {
   place: PlaceWithOverride;
   arriveSec: number | null;
   departSec: number | null;
+  waitSec: number;
+  lateSec: number;
 }
 
 // Option-group rendering types
@@ -190,7 +192,13 @@ export default function Itinerary({
   const timedById = new Map((schedule?.entries ?? []).map((e) => [e.place.id, e]));
   const scheduleEntries: AgendaEntry[] = shortlistStops.map((place) => {
     const timed = timedById.get(place.id);
-    return { place, arriveSec: timed?.arriveSec ?? null, departSec: timed?.departSec ?? null };
+    return {
+      place,
+      arriveSec: timed?.arriveSec ?? null,
+      departSec: timed?.departSec ?? null,
+      waitSec: timed?.waitSec ?? 0,
+      lateSec: timed?.lateSec ?? 0,
+    };
   });
   const renderSlots = buildRenderSlots(scheduleEntries);
   const getActiveEntry = (slot: RenderSlot): AgendaEntry =>
@@ -339,8 +347,12 @@ export default function Itinerary({
               const prevEntry = prevSlot ? getActiveEntry(prevSlot) : null;
               const legSec =
                 prevEntry && activeEntry.arriveSec != null && prevEntry.departSec != null
-                  ? activeEntry.arriveSec - prevEntry.departSec
+                  ? activeEntry.arriveSec - activeEntry.waitSec - prevEntry.departSec
                   : null;
+              const fixedStartMin = activeEntry.place.fixedStartMin;
+              // Route legs are in seconds: under half a minute rounds to "0m", so it is not shown.
+              const waitShown = activeEntry.waitSec >= 30;
+              const lateShown = activeEntry.lateSec >= 30;
               const hint = bestTimeHint(activeEntry.place.bestTime);
               const timeRange =
                 activeEntry.arriveSec != null && activeEntry.departSec != null
@@ -385,6 +397,13 @@ export default function Itinerary({
                       </span>
                       {hint && <span className="itin-stop-hint">{hint}</span>}
                       {activeEntry.place.note && <span className="itin-stop-note">🕘 {activeEntry.place.note}</span>}
+                      {fixedStartMin != null && (
+                        <span className={`itin-stop-fixed${lateShown ? ' late' : ''}`}>
+                          fixed {formatClock(fixedStartMin * 60)}
+                          {waitShown && ` · wait ${formatDuration(activeEntry.waitSec)}`}
+                          {lateShown && ` · late ${formatDuration(activeEntry.lateSec)}`}
+                        </span>
+                      )}
                     </span>
                     <span className={`itin-stop-time${activeEntry.arriveSec == null ? ' muted' : ''}`}>
                       {timeRange}

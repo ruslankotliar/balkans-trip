@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { CATEGORY_COLORS, COUNTRY_NAMES, LEG_MODES, STATUSES } from '../constants';
 import { bookingLink, deriveLinks, navUrl } from '../links';
+import { formatClock } from '../schedule';
 import type { PlaceWithOverride } from '../store';
 import type { LegMode, Status } from '../types';
 import { DAYS, dayColor, dayDateLabel } from '../trip';
@@ -19,6 +20,8 @@ interface Props {
   onLeg: (id: string, leg: { minutes: number; mode: LegMode } | null) => void;
   /** The user set this stop's leg (a baked leg alone cannot be reset). */
   legOverridden: boolean;
+  /** Minutes after midnight the stop starts at; null removes it. */
+  onFixedStart: (id: string, minutes: number | null) => void;
   /** Toggle the ★ recommended-pick flag (tap the star by the title). */
   onPick: (id: string, pick: boolean) => void;
   /** Present only for user-added places: opens the edit form. */
@@ -61,6 +64,7 @@ export default function DetailPanel({
   onTimeMinutes,
   onLeg,
   legOverridden,
+  onFixedStart,
   onPick,
   onEdit,
   groupOptions,
@@ -86,6 +90,13 @@ export default function DetailPanel({
     setLegDraft(place.legMinutes != null ? String(place.legMinutes) : '');
     setModeDraft(place.legMode ?? 'walk');
   }, [place?.id, place?.legMinutes, place?.legMode, legOverridden]);
+
+  const [atDraft, setAtDraft] = useState('');
+
+  useEffect(() => {
+    if (!place) return;
+    setAtDraft(place.fixedStartMin != null ? formatClock(place.fixedStartMin * 60) : '');
+  }, [place?.id, place?.fixedStartMin]);
 
   if (!place) return null;
   const p = place;
@@ -118,6 +129,12 @@ export default function DetailPanel({
     if (!raw && legOverridden) onLeg(p.id, null);
     else if (raw && isFinite(min) && min >= 0) onLeg(p.id, { minutes: Math.round(min), mode });
     else setLegDraft(stored);
+  }
+
+  function saveAt() {
+    const m = atDraft.match(/^(\d{2}):(\d{2})$/);
+    if (m) onFixedStart(p.id, Number(m[1]) * 60 + Number(m[2]));
+    else if (!atDraft && p.fixedStartMin != null) onFixedStart(p.id, null);
   }
 
   const optTabLabel = (opt: PlaceWithOverride) =>
@@ -270,6 +287,37 @@ export default function DetailPanel({
             ) : p.legMinutes == null ? (
               <span className="detail-duration-hint">empty = drive</span>
             ) : null}
+          </div>
+        </div>
+      )}
+
+      {p.day != null && (
+        <div className="detail-duration">
+          <label className="field-label" htmlFor="at-input">
+            Starts at
+          </label>
+          <div className="detail-duration-row">
+            <input
+              id="at-input"
+              className="time-input"
+              type="time"
+              value={atDraft}
+              onChange={(e) => setAtDraft(e.target.value)}
+              onBlur={saveAt}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  (e.target as HTMLInputElement).blur();
+                }
+              }}
+            />
+            {p.fixedStartMin != null ? (
+              <button type="button" className="itin-start-reset" onClick={() => onFixedStart(p.id, null)}>
+                clear
+              </button>
+            ) : (
+              <span className="detail-duration-hint">empty = no fixed time</span>
+            )}
           </div>
         </div>
       )}

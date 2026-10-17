@@ -1007,6 +1007,10 @@ export default function App() {
     applyOverrides((o) => ({ ...o, [id]: { ...o[id], legMinutes: leg?.minutes, legMode: leg?.mode } }));
   }
 
+  function setFixedStart(id: string, minutes: number | null) {
+    applyOverrides((o) => ({ ...o, [id]: { ...o[id], fixedStartMin: minutes ?? undefined } }));
+  }
+
   function assignDay(id: string, day: number | null) {
     if (day == null) {
       applyOverrides((o) => ({ ...o, [id]: { ...o[id], day: undefined, dayOrder: undefined } }));
@@ -1632,6 +1636,7 @@ export default function App() {
         onTimeMinutes={setTimeMinutes}
         onLeg={setLeg}
         legOverridden={selected ? overrides[selected.id]?.legMinutes != null : false}
+        onFixedStart={setFixedStart}
         onPick={setPick}
         onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}
         groupOptions={groupOptions}

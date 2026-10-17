@@ -643,7 +643,8 @@ a, button, [role="button"], .place-list li {
 .detail-duration-row .time-input {
   width: 5.5em;
 }
-.detail-duration-row select.time-input {
+.detail-duration-row select.time-input,
+.detail-duration-row input[type='time'].time-input {
   width: auto;
 }
 .detail-duration-unit {
@@ -2988,6 +2989,14 @@ body.trip-mode .ess-tel {
 .itin-stop-row.selected .itin-stop-hint {
   -webkit-line-clamp: unset;
   overflow: visible;
+}
+.itin-stop-fixed {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7079;
+}
+.itin-stop-fixed.late {
+  color: #c0392b;
 }
 
 /* Activity-mix highlights — shared list styling (Highlights tab). */
