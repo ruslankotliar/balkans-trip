@@ -660,6 +660,9 @@ a, button, [role="button"], .place-list li {
   font-size: 12px;
   color: #6b7079;
 }
+.detail-duration-row.itin-stop-actions {
+  padding-left: 0;
+}
 .note-area {
   min-height: 60px;
   resize: vertical;

@@ -22,6 +22,9 @@ interface Props {
   legOverridden: boolean;
   /** Minutes after midnight the stop starts at; null removes it. */
   onFixedStart: (id: string, minutes: number | null) => void;
+  /** Set only for a stop the Plan list shows. */
+  move?: { canUp: boolean; canDown: boolean };
+  onMove: (id: string, dir: 'up' | 'down') => void;
   /** Toggle the ★ recommended-pick flag (tap the star by the title). */
   onPick: (id: string, pick: boolean) => void;
   /** Present only for user-added places: opens the edit form. */
@@ -65,6 +68,8 @@ export default function DetailPanel({
   onLeg,
   legOverridden,
   onFixedStart,
+  move,
+  onMove,
   onPick,
   onEdit,
   groupOptions,
@@ -240,6 +245,20 @@ export default function DetailPanel({
         </p>
       )}
       {p.facilities && <p className="meta">🚿 {p.facilities}</p>}
+
+      {move && (
+        <div className="detail-duration">
+          <span className="field-label">Order in the day</span>
+          <div className="detail-duration-row itin-stop-actions">
+            <button type="button" disabled={!move.canUp} onClick={() => onMove(p.id, 'up')} title="Move earlier">
+              ↑
+            </button>
+            <button type="button" disabled={!move.canDown} onClick={() => onMove(p.id, 'down')} title="Move later">
+              ↓
+            </button>
+          </div>
+        </div>
+      )}
 
       {p.day != null && (
         <div className="detail-duration">

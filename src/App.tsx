@@ -523,6 +523,15 @@ export default function App() {
     return grouped;
   }, [places]);
 
+  // The Plan list shows only shortlist stops, and an option group as one slot.
+  const sheetMove = (() => {
+    if (!selected?.day || selected.status !== 'shortlist') return undefined;
+    const shown = (dayStops[selected.day] ?? []).filter((p) => p.status === 'shortlist');
+    const inSlot = (p: PlaceWithOverride) =>
+      p.id === selected.id || (selected.optionGroup != null && p.optionGroup === selected.optionGroup);
+    return { canUp: !inSlot(shown[0]), canDown: !inSlot(shown[shown.length - 1]) };
+  })();
+
   // The route line + driving + day-fit clock reflect only the COMMITTED plan
   // (shortlist & friends). `extra` = situational "what else is around here"
   // options the group browses on the ground — they must never bend the route
@@ -1637,6 +1646,8 @@ export default function App() {
         onLeg={setLeg}
         legOverridden={selected ? overrides[selected.id]?.legMinutes != null : false}
         onFixedStart={setFixedStart}
+        move={sheetMove}
+        onMove={moveInDay}
         onPick={setPick}
         onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}
         groupOptions={groupOptions}
