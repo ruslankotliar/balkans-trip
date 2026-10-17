@@ -1642,6 +1642,7 @@ export default function App() {
             editingDay={editingId ? overrides[editingId]?.day ?? null : null}
             editingNote={editingId ? overrides[editingId]?.note ?? '' : ''}
             optionGroupPrefill={addOptionGroupId ?? undefined}
+            tripPlaces={basePlaces}
             onSave={saveDraftPlace}
             onDelete={editingId ? () => deleteUserPlace(editingId) : undefined}
             onClose={closeAddPlace}

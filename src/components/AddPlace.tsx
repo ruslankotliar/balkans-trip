@@ -4,7 +4,7 @@
  * EDITING an existing one. Storage + merge live in App; this is just the form
  * + the three coordinate parsers.
  */
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { CATEGORY_COLORS } from '../constants';
 import { DAYS, dayDateLabel } from '../trip';
 import type { Category, Place } from '../types';
@@ -61,14 +61,32 @@ export function parseMapsUrl(url: string): ParsedUrl {
   return { coords, name };
 }
 
-// Rough trip bounding box (HR/BA/ME corridor) — warn outside, never block.
-const TRIP_BOX = { latMin: 41, latMax: 46, lngMin: 15, lngMax: 20 };
-function outsideTripBox(lat: number, lng: number): boolean {
+export interface TripArea {
+  latMin: number;
+  latMax: number;
+  lngMin: number;
+  lngMax: number;
+}
+
+// About 50 km of slack, so a place just past the trip's farthest one does not warn.
+const AREA_MARGIN_DEG = 0.5;
+
+export function tripArea(places: Pick<Place, 'lat' | 'lng'>[]): TripArea | null {
+  if (places.length === 0) return null;
+  const lats = places.map((p) => p.lat);
+  const lngs = places.map((p) => p.lng);
+  return {
+    latMin: Math.min(...lats) - AREA_MARGIN_DEG,
+    latMax: Math.max(...lats) + AREA_MARGIN_DEG,
+    lngMin: Math.min(...lngs) - AREA_MARGIN_DEG,
+    lngMax: Math.max(...lngs) + AREA_MARGIN_DEG,
+  };
+}
+
+export function outsideTripArea(area: TripArea | null, lat: number, lng: number): boolean {
   return (
-    lat < TRIP_BOX.latMin ||
-    lat > TRIP_BOX.latMax ||
-    lng < TRIP_BOX.lngMin ||
-    lng > TRIP_BOX.lngMax
+    area != null &&
+    (lat < area.latMin || lat > area.latMax || lng < area.lngMin || lng > area.lngMax)
   );
 }
 
@@ -110,6 +128,7 @@ interface Props {
   editingNote?: string;
   /** Pre-fill the option group field (when opened via "+ Add option" on a group). */
   optionGroupPrefill?: string;
+  tripPlaces: Place[];
   onSave: (draft: DraftPlace) => void;
   onDelete?: () => void;
   onClose: () => void;
@@ -121,10 +140,12 @@ export default function AddPlace({
   editingDay,
   editingNote,
   optionGroupPrefill,
+  tripPlaces,
   onSave,
   onDelete,
   onClose,
 }: Props) {
+  const area = useMemo(() => tripArea(tripPlaces), [tripPlaces]);
   const [inputMode, setInputMode] = useState<InputMode>('url');
   const [name, setName] = useState(editing?.name ?? '');
   const [category, setCategory] = useState<Category>(editing?.category ?? 'other');
@@ -146,19 +167,19 @@ export default function AddPlace({
       setLat(tappedPoint.lat);
       setLng(tappedPoint.lng);
       setParseMsg(
-        outsideTripBox(tappedPoint.lat, tappedPoint.lng)
+        outsideTripArea(area, tappedPoint.lat, tappedPoint.lng)
           ? '⚠ That point looks outside the trip area — double-check it.'
           : null,
       );
     }
-  }, [tappedPoint, inputMode, editing]);
+  }, [tappedPoint, inputMode, editing, area]);
 
   function applyCoords(la: number, ln: number, msg?: string | null) {
     setLat(la);
     setLng(ln);
     setParseMsg(
       msg ??
-        (outsideTripBox(la, ln)
+        (outsideTripArea(area, la, ln)
           ? '⚠ Those coordinates look outside the trip area — double-check them.'
           : null),
     );
