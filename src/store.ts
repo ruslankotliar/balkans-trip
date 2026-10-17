@@ -273,6 +273,8 @@ export function normalizeUserPlace(x: unknown): Place | null {
     facilities: typeof p.facilities === 'string' ? p.facilities : undefined,
     tags: strings(p.tags),
     rating: typeof p.rating === 'number' ? p.rating : undefined,
+    optionGroup: typeof p.optionGroup === 'string' ? p.optionGroup : undefined,
+    optionTabLabel: typeof p.optionTabLabel === 'string' ? p.optionTabLabel : undefined,
     status: isStatus(p.status) ? p.status : 'shortlist',
     userAdded: true,
     source: 'user',
