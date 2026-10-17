@@ -36,6 +36,8 @@ import {
   saveRouteCache,
   saveUserPlaces,
   guessCountry,
+  restoredStatus,
+  withStatus,
   normalizeOverrides,
   bakedPlanVersion,
   markPlanVersion,
@@ -974,7 +976,10 @@ export default function App() {
   }
 
   function setStatus(id: string, status: Status) {
-    applyOverrides((o) => ({ ...o, [id]: { ...o[id], status } }));
+    applyOverrides((o) => {
+      const current = o[id]?.status ?? basePlaces.find((p) => p.id === id)?.status ?? status;
+      return { ...o, [id]: withStatus(o[id], current, status) };
+    });
   }
 
   function setNote(id: string, note: string) {
@@ -1404,7 +1409,7 @@ export default function App() {
                         style={{ background: CATEGORY_COLORS[p.category] }}
                       />
                       <span className="place-name">{p.name}</span>
-                      <button className="restore" onClick={(e) => { e.stopPropagation(); setStatus(p.id, 'candidate'); }}>
+                      <button className="restore" onClick={(e) => { e.stopPropagation(); setStatus(p.id, restoredStatus(p)); }}>
                         ↩ restore
                       </button>
                     </li>

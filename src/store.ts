@@ -114,6 +114,8 @@ export function safeSetItem(key: string, value: string): boolean {
 /** Per-place user edits, kept in this phone's localStorage. */
 export interface Override {
   status?: Status;
+  /** The status a rejected place had before, so a restore brings it back. Kept only while rejected. */
+  prevStatus?: Status;
   /** Trip day 1–13 (Jun 16–28) this place is assigned to. undefined = unassigned. */
   day?: number;
   /** Sort position within its day (smaller = earlier). */
@@ -141,6 +143,7 @@ export function normalizeOverride(value: Override | undefined | null): Override 
   if (!value) return null;
   const next: Override = {};
   if (value.status !== undefined) next.status = value.status;
+  if (value.prevStatus !== undefined && value.status === 'rejected') next.prevStatus = value.prevStatus;
   if (value.day !== undefined) next.day = value.day;
   if (value.dayOrder !== undefined) next.dayOrder = value.dayOrder;
   if (value.note !== undefined) next.note = value.note;
@@ -152,6 +155,21 @@ export function normalizeOverride(value: Override | undefined | null): Override 
   // would otherwise keep an otherwise-empty override row alive.
   if (value.pick) next.pick = true;
   return Object.keys(next).length > 0 ? next : null;
+}
+
+/**
+ * The override after a status change. Rejecting remembers the status the place
+ * had (`current`: its override's, else its baked one) so a restore brings it back.
+ */
+export function withStatus(o: Override | undefined, current: Status, status: Status): Override {
+  const { prevStatus, ...rest } = o ?? {};
+  const prev = status !== 'rejected' ? undefined : current === 'rejected' ? prevStatus : current;
+  return prev ? { ...rest, status, prevStatus: prev } : { ...rest, status };
+}
+
+/** The status a rejected place goes back to: the one it had before, else candidate. */
+export function restoredStatus(o: Override | undefined): Status {
+  return o?.prevStatus ?? 'candidate';
 }
 
 /** Normalize an Overrides map and drop empty per-place entries. */

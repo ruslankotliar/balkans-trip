@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { guessCountry, normalizeOverride, normalizeUserPlace } from './store';
+import { guessCountry, normalizeOverride, normalizeUserPlace, restoredStatus, withStatus } from './store';
 import { setActiveTripId } from './trips';
 
 // loadUserPlaces reads the saved JSON back through normalizeUserPlace.
@@ -75,5 +75,37 @@ describe('guessCountry', () => {
     } finally {
       setActiveTripId('balkans-trip');
     }
+  });
+});
+
+describe('withStatus and restoredStatus', () => {
+  it('restores a rejected plan stop to shortlist, with its day kept', () => {
+    const rejected = withStatus({ status: 'shortlist', day: 4, dayOrder: 2 }, 'shortlist', 'rejected');
+    expect(rejected).toMatchObject({ status: 'rejected', day: 4, dayOrder: 2 });
+    expect(restoredStatus(rejected)).toBe('shortlist');
+  });
+
+  it('restores a place with no edits of its own to the status it came with', () => {
+    expect(restoredStatus(withStatus(undefined, 'extra', 'rejected'))).toBe('extra');
+  });
+
+  it('remembers the status before the first rejection when rejected again', () => {
+    const once = withStatus(undefined, 'backup', 'rejected');
+    expect(restoredStatus(withStatus(once, 'rejected', 'rejected'))).toBe('backup');
+  });
+
+  it('keeps the remembered status through a save and reload', () => {
+    const saved = JSON.parse(JSON.stringify(normalizeOverride(withStatus(undefined, 'extra', 'rejected'))));
+    expect(restoredStatus(normalizeOverride(saved) ?? undefined)).toBe('extra');
+  });
+
+  it('restores to candidate when nothing was remembered, as before', () => {
+    expect(restoredStatus({ status: 'rejected' })).toBe('candidate');
+  });
+
+  it('forgets the remembered status once the place is not rejected', () => {
+    const back = withStatus(withStatus(undefined, 'extra', 'rejected'), 'rejected', 'shortlist');
+    expect(back).toEqual({ status: 'shortlist' });
+    expect(normalizeOverride({ status: 'shortlist', prevStatus: 'extra' })).toEqual({ status: 'shortlist' });
   });
 });
