@@ -1043,7 +1043,8 @@ body.trip-mode .detail-visited-btn {
 }
 .itin-day-select {
   flex: 1;
-  min-width: 0;
+  /* Room for "Day 13 · Wed, Jun 28"; the buttons after it wrap to a new line instead. */
+  min-width: 160px;
   height: 30px;
   padding: 0 10px;
   border: 1px solid #cfd8e3;

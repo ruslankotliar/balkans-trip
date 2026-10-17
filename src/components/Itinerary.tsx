@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { CATEGORY_COLORS, GROUP_OF } from '../constants';
 import { formatClock, formatTimeRange, type DaySchedule } from '../schedule';
 import { formatFetchedAt, formatForecast, type DayForecast } from '../forecast';
+import { fixedTimeText, legLabel, planText } from '../planText';
 import type { PlaceWithOverride } from '../store';
 import { DAYS, dayColor, dayDateLabel, formatDistance, formatDuration, haversineKm } from '../trip';
 
@@ -34,6 +35,8 @@ interface Props {
   onGroupTabChange?: (groupId: string, idx: number, placeId: string) => void;
   /** Day clock per day, derived from the current route + stop times. */
   scheduleByDay?: Record<number, DaySchedule | null>;
+  /** The routed stops per day (the active option of each group). */
+  stopsByDay: Record<number, PlaceWithOverride[]>;
   /** Per-day start/end hour (+ pace) for the schedule clock; undefined = defaults 08:00–21:00. */
   dayConfig?: Record<number, { startHour?: number; endHour?: number; pace?: number; note?: string }>;
   /** Patch a day's start/end hour (decimal, e.g. 6.5 = 06:30; >24 = past midnight); undefined value resets. */
@@ -57,11 +60,6 @@ function hhmmToHour(v: string): number | undefined {
 
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
-
-function legLabel(p: PlaceWithOverride): string {
-  if (p.legMinutes == null) return 'drive';
-  return !p.legMode || p.legMode === 'walk' ? 'on foot' : p.legMode;
-}
 
 // Rough straight-line km → drive minutes on winding Balkan roads (road ≈ 1.35×
 // straight-line at ~55 km/h). An estimate, not routing — shown with a "~".
@@ -139,6 +137,7 @@ export default function Itinerary({
   onRemoveGroup,
   onGroupTabChange,
   scheduleByDay,
+  stopsByDay,
   dayConfig,
   onSetDayCfg,
   optGroupSel: optGroupSelProp = {},
@@ -146,6 +145,27 @@ export default function Itinerary({
   // Adjustable search radius for "options nearby today", in estimated drive-minutes.
   const [optRadiusMin, setOptRadiusMin] = useState(45);
   const optGroupSel = optGroupSelProp;
+  const [copyNote, setCopyNote] = useState('');
+  const canShare = typeof navigator.share === 'function';
+  const hasPlan = DAYS.some((d) => stopsByDay[d]?.length);
+  const sharePlan = () => {
+    const text = planText(
+      DAYS.map((d) => ({ day: d, date: dayDateLabel(d), stops: stopsByDay[d] ?? [], schedule: scheduleByDay?.[d] ?? null })),
+    );
+    if (canShare) {
+      // Closing the share sheet rejects the promise; there is nothing to report.
+      navigator.share({ text }).catch(() => {});
+      return;
+    }
+    const note = (msg: string) => {
+      setCopyNote(msg);
+      setTimeout(() => setCopyNote(''), 2000);
+    };
+    navigator.clipboard.writeText(text).then(
+      () => note('Copied'),
+      () => note('Copy failed'),
+    );
+  };
 
   const assigned = places.filter((p) => p.day && p.status !== 'rejected');
   const backlog = places
@@ -242,6 +262,11 @@ export default function Itinerary({
         {realDay >= 1 && !isToday && (
           <button className="itin-day-today" onClick={() => onDay(realDay)}>
             Today
+          </button>
+        )}
+        {hasPlan && (
+          <button type="button" className="itin-day-nav-btn" onClick={sharePlan}>
+            {copyNote || (canShare ? 'Share plan' : 'Copy plan')}
           </button>
         )}
       </div>
@@ -349,9 +374,7 @@ export default function Itinerary({
                 prevEntry && activeEntry.arriveSec != null && prevEntry.departSec != null
                   ? activeEntry.arriveSec - activeEntry.waitSec - prevEntry.departSec
                   : null;
-              const fixedStartMin = activeEntry.place.fixedStartMin;
-              // Route legs are in seconds: under half a minute rounds to "0m", so it is not shown.
-              const waitShown = activeEntry.waitSec >= 30;
+              const fixedText = fixedTimeText(activeEntry.place, activeEntry.waitSec, activeEntry.lateSec);
               const lateShown = activeEntry.lateSec >= 30;
               const hint = bestTimeHint(activeEntry.place.bestTime);
               const timeRange =
@@ -397,12 +420,8 @@ export default function Itinerary({
                       </span>
                       {hint && <span className="itin-stop-hint">{hint}</span>}
                       {activeEntry.place.note && <span className="itin-stop-note">🕘 {activeEntry.place.note}</span>}
-                      {fixedStartMin != null && (
-                        <span className={`itin-stop-fixed${lateShown ? ' late' : ''}`}>
-                          fixed {formatClock(fixedStartMin * 60)}
-                          {waitShown && ` · wait ${formatDuration(activeEntry.waitSec)}`}
-                          {lateShown && ` · late ${formatDuration(activeEntry.lateSec)}`}
-                        </span>
+                      {fixedText && (
+                        <span className={`itin-stop-fixed${lateShown ? ' late' : ''}`}>{fixedText}</span>
                       )}
                     </span>
                     <span className={`itin-stop-time${activeEntry.arriveSec == null ? ' muted' : ''}`}>

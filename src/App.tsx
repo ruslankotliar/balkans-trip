@@ -1475,6 +1475,7 @@ export default function App() {
               onRemoveGroup={removeGroup}
               onGroupTabChange={handleGroupTabChangeFromItinerary}
               scheduleByDay={daySchedules}
+              stopsByDay={routeStops}
               dayConfig={dayConfig}
               onSetDayCfg={setDayCfg}
               optGroupSel={optGroupSel}
