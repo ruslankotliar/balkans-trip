@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { normalizeOverride, normalizeUserPlace } from './store';
+import { guessCountry, normalizeOverride, normalizeUserPlace } from './store';
+import { setActiveTripId } from './trips';
 
 // loadUserPlaces reads the saved JSON back through normalizeUserPlace.
 const reload = (place: object) => normalizeUserPlace(JSON.parse(JSON.stringify(place)));
@@ -43,5 +44,36 @@ describe('normalizeOverride', () => {
 
   it('keeps a fixed start time at the stop', () => {
     expect(normalizeOverride({ fixedStartMin: 630 })).toEqual({ fixedStartMin: 630 });
+  });
+});
+
+describe('guessCountry', () => {
+  const winter = ['TH', 'MY', 'SG', 'VN', 'KH'] as const;
+  const known = [
+    { lat: 9.73, lng: 100.01, country: 'TH' as const }, // Koh Phangan
+    { lat: 3.15, lng: 101.7, country: 'MY' as const }, // Kuala Lumpur
+  ];
+
+  it('gives a pin next to a known Thai place Thailand', () => {
+    expect(guessCountry(9.7, 100.03, known, [...winter])).toBe('TH');
+  });
+
+  it('takes the nearest known place, not the first country of the trip', () => {
+    expect(guessCountry(3.1, 101.65, known, [...winter])).toBe('MY');
+  });
+
+  it('gives Balkans pins the country of the nearest curated place', () => {
+    expect(guessCountry(43.337, 17.815)).toBe('BA'); // Mostar
+    expect(guessCountry(42.4247, 18.7712)).toBe('ME'); // Kotor
+    expect(guessCountry(42.6407, 18.1077)).toBe('HR'); // Dubrovnik old town, guessed BA before
+  });
+
+  it('gives a one-country trip its country outright', () => {
+    setActiveTripId('albania-2026');
+    try {
+      expect(guessCountry(42.6407, 18.1077)).toBe('AL');
+    } finally {
+      setActiveTripId('balkans-trip');
+    }
   });
 });

@@ -229,20 +229,29 @@ function isCountry(x: unknown): x is Place['country'] {
 /**
  * Country for a runtime-added pin. The active trip decides: a one-country trip
  * gets that country outright (a pin must stay visible in the trip it was added
- * to), a multi-country trip gets a rough bounding-box guess among its countries.
+ * to), a multi-country trip takes the country of the nearest known place among
+ * its countries (the curated places by default), else its first country.
  */
-export function guessCountry(lat: number, lng: number): Place['country'] {
-  const tripCountries = findTrip(getActiveTripId()).countries;
+export function guessCountry(
+  lat: number,
+  lng: number,
+  known: Pick<Place, 'lat' | 'lng' | 'country'>[] = loadPlaces(),
+  tripCountries: Place['country'][] = findTrip(getActiveTripId()).countries,
+): Place['country'] {
   if (tripCountries.length === 1) return tripCountries[0];
-  let guess: Place['country'];
-  // Italy: western Europe, west of ~15°E (Lake Como is ~9.3°E).
-  if (lat >= 36 && lat <= 47.5 && lng >= 6 && lng < 15) guess = 'IT';
-  // Bosnia: inland pocket roughly N of 42.55 and E of 17.0 (Mostar/Konjic).
-  else if (lat > 42.55 && lng > 17.0 && lng < 19.7) guess = 'BA';
-  // Croatia: coastal strip and the northwest; broadly W/N of the ME line.
-  else if (lat > 42.6 || lng < 17.5) guess = 'HR';
-  else guess = 'ME';
-  return tripCountries.includes(guess) ? guess : tripCountries[0];
+  // Flat-earth distance is enough to rank neighbours; shrink longitude by latitude.
+  const k = Math.cos((lat * Math.PI) / 180);
+  let guess = tripCountries[0];
+  let best = Infinity;
+  for (const p of known) {
+    if (!tripCountries.includes(p.country)) continue;
+    const d = (p.lat - lat) ** 2 + ((p.lng - lng) * k) ** 2;
+    if (d < best) {
+      best = d;
+      guess = p.country;
+    }
+  }
+  return guess;
 }
 
 /** Narrow an unknown value to a plausible user Place (defensive against bad imports). */
