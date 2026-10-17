@@ -19,6 +19,8 @@ export type Category =
 // auto-scheduled · backup = contingency fallback (campsites/sleeps) · rejected = no.
 export type Status = 'candidate' | 'shortlist' | 'extra' | 'backup' | 'rejected';
 
+export type LegMode = 'walk' | 'boat' | 'flight' | 'taxi' | 'scooter' | 'bus' | 'train';
+
 export interface Place {
   id: string;
   name: string;
@@ -63,4 +65,6 @@ export interface Place {
    * instead of a road leg. Lets a hiking day sit in the same plan as a driving day.
    */
   legMinutes?: number;
+  /** How the fixed leg is travelled. Absent = on foot. */
+  legMode?: LegMode;
 }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { normalizeUserPlace } from './store';
+import { normalizeOverride, normalizeUserPlace } from './store';
 
 // loadUserPlaces reads the saved JSON back through normalizeUserPlace.
 const reload = (place: object) => normalizeUserPlace(JSON.parse(JSON.stringify(place)));
@@ -21,5 +21,11 @@ describe('normalizeUserPlace', () => {
     });
     expect(p?.optionGroup).toBe('d3-hike');
     expect(p?.optionTabLabel).toBe('Lago');
+  });
+});
+
+describe('normalizeOverride', () => {
+  it('keeps a fixed leg into the stop and how you travel it', () => {
+    expect(normalizeOverride({ legMinutes: 50, legMode: 'boat' })).toEqual({ legMinutes: 50, legMode: 'boat' });
   });
 });

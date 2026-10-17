@@ -58,6 +58,11 @@ function hhmmToHour(v: string): number | undefined {
 const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
 
+function legLabel(p: PlaceWithOverride): string {
+  if (p.legMinutes == null) return 'drive';
+  return !p.legMode || p.legMode === 'walk' ? 'on foot' : p.legMode;
+}
+
 // Rough straight-line km → drive minutes on winding Balkan roads (road ≈ 1.35×
 // straight-line at ~55 km/h). An estimate, not routing — shown with a "~".
 const EST_MIN_PER_KM = 1.5;
@@ -361,7 +366,7 @@ export default function Itinerary({
                 <div key={key} className={`itin-stop-entry${live ? ' live' : ''}`}>
                   {legSec != null && legSec > 0 && (
                     <div className="itin-leg">
-                      ↓ {formatDuration(legSec)}{activeEntry.place.legMinutes == null ? ' drive' : ' on foot'}
+                      ↓ {formatDuration(legSec)} {legLabel(activeEntry.place)}
                     </div>
                   )}
                   <button

@@ -1,7 +1,7 @@
 import { CATEGORIES } from './constants';
 import { DEFAULT_PLANS, PLAN_VERSIONS } from './defaultPlan';
 import { findTrip, getActiveTripId } from './trips';
-import type { Place, Status } from './types';
+import type { LegMode, Place, Status } from './types';
 
 const modules = import.meta.glob('./data/*.json', { eager: true }) as Record<
   string,
@@ -124,6 +124,9 @@ export interface Override {
   timeMinutes?: number;
   /** ★ Recommended pick — Claude's suggested option for the day (renders a star badge). */
   pick?: boolean;
+  /** Replaces the place's baked legMinutes; clearing it brings the baked leg back. */
+  legMinutes?: number;
+  legMode?: LegMode;
 }
 
 export type Overrides = Record<string, Override>;
@@ -140,6 +143,8 @@ export function normalizeOverride(value: Override | undefined | null): Override 
   if (value.dayOrder !== undefined) next.dayOrder = value.dayOrder;
   if (value.note !== undefined) next.note = value.note;
   if (value.timeMinutes !== undefined) next.timeMinutes = value.timeMinutes;
+  if (value.legMinutes !== undefined) next.legMinutes = value.legMinutes;
+  if (value.legMode !== undefined) next.legMode = value.legMode;
   // Only persist pick when truthy — a `false`/absent pick is the default and
   // would otherwise keep an otherwise-empty override row alive.
   if (value.pick) next.pick = true;
