@@ -6,6 +6,11 @@ export const COUNTRY_NAMES: Record<Country, string> = {
   ME: 'Montenegro',
   IT: 'Italy',
   AL: 'Albania',
+  TH: 'Thailand',
+  MY: 'Malaysia',
+  SG: 'Singapore',
+  VN: 'Vietnam',
+  KH: 'Cambodia',
 };
 
 export const STATUSES: Status[] = ['candidate', 'shortlist', 'extra', 'backup', 'rejected'];

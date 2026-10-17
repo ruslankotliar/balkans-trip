@@ -1,4 +1,4 @@
-import { CATEGORIES } from './constants';
+import { CATEGORIES, COUNTRY_NAMES } from './constants';
 import { DEFAULT_PLANS, PLAN_VERSIONS } from './defaultPlan';
 import { findTrip, getActiveTripId } from './trips';
 import type { LegMode, Place, Status } from './types';
@@ -221,8 +221,9 @@ function isStatus(x: unknown): x is Status {
   return x === 'candidate' || x === 'shortlist' || x === 'extra' || x === 'backup' || x === 'rejected';
 }
 
+// The country list lives in COUNTRY_NAMES only (own keys: 'toString' is not a country).
 function isCountry(x: unknown): x is Place['country'] {
-  return x === 'HR' || x === 'BA' || x === 'ME' || x === 'IT' || x === 'AL';
+  return typeof x === 'string' && Object.prototype.hasOwnProperty.call(COUNTRY_NAMES, x);
 }
 
 /**

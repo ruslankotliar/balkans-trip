@@ -22,6 +22,18 @@ describe('normalizeUserPlace', () => {
     expect(p?.optionGroup).toBe('d3-hike');
     expect(p?.optionTabLabel).toBe('Lago');
   });
+
+  it.each(['TH', 'MY', 'SG', 'VN', 'KH'])('keeps the Winter-trip country %s instead of guessing a Balkan one', (country) => {
+    const p = reload({ id: 'user-2', name: 'Haad Rin', country, category: 'beach', lat: 9.676, lng: 100.067, status: 'extra' });
+    expect(p?.country).toBe(country);
+  });
+
+  it('still guesses the country for a code the app does not know', () => {
+    for (const country of ['XX', 'toString', 'hr']) {
+      const p = reload({ id: 'user-3', name: 'Pin', country, category: 'sight', lat: 42.64, lng: 18.11, status: 'extra' });
+      expect(['HR', 'BA', 'ME']).toContain(p?.country);
+    }
+  });
 });
 
 describe('normalizeOverride', () => {
