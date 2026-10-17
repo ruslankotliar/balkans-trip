@@ -303,9 +303,12 @@ a, button, [role="button"], .place-list li {
   padding: 4px 6px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  background: #fff;
   color: #2c3e50;
   cursor: pointer;
+}
+/* White only when off: the active button takes its colour from .badge-<status>. */
+.status-buttons button:not(.on) {
+  background: #fff;
 }
 .status-buttons button:active {
   background: #eef3f9;
