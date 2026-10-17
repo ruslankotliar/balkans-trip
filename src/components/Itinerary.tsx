@@ -247,7 +247,7 @@ export default function Itinerary({
       </div>
 
       <div className="itin-total">
-        <strong>{stops.length}</strong> stops ·{' '}
+        <strong>{renderSlots.length}</strong> stops ·{' '}
         <strong>{formatDuration(moveSec)}</strong> on the move{road ? ` · ${formatDistance(road.distance)} by road` : ''}
         {routesLoading && <span className="loading-dot"> · routing…</span>}
       </div>
