@@ -28,4 +28,8 @@ describe('normalizeOverride', () => {
   it('keeps a fixed leg into the stop and how you travel it', () => {
     expect(normalizeOverride({ legMinutes: 50, legMode: 'boat' })).toEqual({ legMinutes: 50, legMode: 'boat' });
   });
+
+  it('keeps a fixed start time at the stop', () => {
+    expect(normalizeOverride({ fixedStartMin: 630 })).toEqual({ fixedStartMin: 630 });
+  });
 });

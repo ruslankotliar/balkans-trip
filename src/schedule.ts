@@ -14,6 +14,9 @@ export interface StopTiming {
   driveSec: number;
   ferrySec: number;
   staySec: number;
+  /** Idle time before a fixed start: arriveSec - previous departSec = leg + waitSec. */
+  waitSec: number;
+  lateSec: number;
   source: 'override' | 'data' | 'heuristic';
 }
 
@@ -181,7 +184,11 @@ export function buildDaySchedule(
     ferrySec += ferry;
 
     const estimate = estimateStopMinutes(place);
-    const arrival = clock;
+    const reachedSec = clock;
+    const fixedSec =
+      typeof place.fixedStartMin === 'number' && Number.isFinite(place.fixedStartMin) ? place.fixedStartMin * 60 : null;
+    const arrival = fixedSec == null ? reachedSec : Math.max(reachedSec, fixedSec);
+    const lateSec = fixedSec == null ? 0 : Math.max(0, reachedSec - fixedSec);
     const stopStaySec = Math.round(estimate.minutes * paceMultiplier) * 60;
     const isSleep = place.category === 'accommodation' || place.category === 'campsite';
     const departure = arrival + stopStaySec;
@@ -195,6 +202,8 @@ export function buildDaySchedule(
       driveSec: legSec,
       ferrySec: ferry,
       staySec: stopStaySec,
+      waitSec: arrival - reachedSec,
+      lateSec,
       source: estimate.source,
     });
   }

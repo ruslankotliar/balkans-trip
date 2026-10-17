@@ -127,6 +127,8 @@ export interface Override {
   /** Replaces the place's baked legMinutes; clearing it brings the baked leg back. */
   legMinutes?: number;
   legMode?: LegMode;
+  /** Clock time the stop starts, in minutes after midnight (630 = 10:30). */
+  fixedStartMin?: number;
 }
 
 export type Overrides = Record<string, Override>;
@@ -145,6 +147,7 @@ export function normalizeOverride(value: Override | undefined | null): Override 
   if (value.timeMinutes !== undefined) next.timeMinutes = value.timeMinutes;
   if (value.legMinutes !== undefined) next.legMinutes = value.legMinutes;
   if (value.legMode !== undefined) next.legMode = value.legMode;
+  if (value.fixedStartMin !== undefined) next.fixedStartMin = value.fixedStartMin;
   // Only persist pick when truthy — a `false`/absent pick is the default and
   // would otherwise keep an otherwise-empty override row alive.
   if (value.pick) next.pick = true;
