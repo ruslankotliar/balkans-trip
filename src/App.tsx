@@ -47,7 +47,7 @@ import {
 } from './store';
 import { fetchForecast, loadForecast, saveForecast, type ForecastPoint, type ForecastStore } from './forecast';
 import { notesFor } from './notes';
-import { formatHM, sunTimes } from './sun';
+import { daySunHM } from './sun';
 import { buildDaySchedule } from './schedule';
 import {
   currentTripDay,
@@ -753,10 +753,7 @@ export default function App() {
   // Sunrise / sunset for the viewed day, at its middle stop (computed on the phone).
   const planDaySun = useMemo(() => {
     const ps = routeStops[planDay] ?? dayStops[planDay];
-    if (!ps?.length) return null;
-    const at = ps[Math.floor(ps.length / 2)];
-    const s = sunTimes(at.lat, at.lng, dayDate(planDay));
-    return s ? { sunrise: formatHM(s.sunrise), sunset: formatHM(s.sunset) } : null;
+    return ps?.length ? daySunHM(ps, dayDate(planDay)) : null;
   }, [routeStops, dayStops, planDay]);
 
   function loadBakedPlan() {
