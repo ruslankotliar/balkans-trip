@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { planText } from './planText';
+import { NO_ROUTE } from './osrm';
 import { buildDaySchedule } from './schedule';
 import type { PlaceWithOverride } from './store';
 
@@ -52,6 +53,24 @@ describe('planText', () => {
   it('lists the stops of a day whose route is not loaded as unscheduled', () => {
     expect(planText([{ day: 4, date: 'Fri Jun 19', stops: [stop('Old town')], schedule: null }])).toBe(
       ['Day 4 · Fri Jun 19', 'Unscheduled Old town'].join('\n'),
+    );
+  });
+});
+
+describe('planText with a stop that has no road route', () => {
+  it('says which stop has no road route and lists it and the stops after as unscheduled', () => {
+    const stops = [stop('Pier', { timeMinutes: 30 }), stop('Island'), stop('Beach')];
+    const text = planText([
+      { day: 1, date: 'Sun Jan 10', stops, schedule: buildDaySchedule(stops, [0, NO_ROUTE, 10 * 60], noFerry, nineAm) },
+    ]);
+    expect(text).toBe(
+      [
+        'Day 1 · Sun Jan 10',
+        '09:00–09:30 Pier',
+        'no road route to Island - set how you get here',
+        'Unscheduled Island',
+        'Unscheduled Beach',
+      ].join('\n'),
     );
   });
 });

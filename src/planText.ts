@@ -1,4 +1,4 @@
-import { formatClock, formatTimeRange, type DaySchedule } from './schedule';
+import { formatClock, formatTimeRange, noRouteText, type DaySchedule } from './schedule';
 import type { PlaceWithOverride } from './store';
 import { formatDuration } from './trip';
 
@@ -39,6 +39,12 @@ export function planText(days: PlanTextDay[]): string {
           const fixed = fixedTimeText(e.place, e.waitSec, e.lateSec);
           lines.push(`${formatTimeRange(e.arriveSec, e.departSec)} ${e.place.name}${fixed ? ` · ${fixed}` : ''}`);
         });
+        const gap = d.schedule.noRouteTo;
+        if (gap) {
+          lines.push(noRouteText(gap));
+          const from = d.stops.findIndex((p) => p.id === gap.id);
+          if (from >= 0) for (const p of d.stops.slice(from)) lines.push(`Unscheduled ${p.name}`);
+        }
       }
       return lines.join('\n');
     })

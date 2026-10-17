@@ -19,12 +19,13 @@ const byOrder = (a: PlaceWithOverride, b: PlaceWithOverride) =>
   (a.dayOrder ?? 0) - (b.dayOrder ?? 0) || a.name.localeCompare(b.name);
 
 function fitLevel(s: DaySchedule): Fit {
-  if (s.overSec > 0) return 'over';
+  if (s.noRouteTo || s.overSec > 0) return 'over';
   if (s.slackSec < 3600) return 'tight';
   return 'ok';
 }
 
 function fitLabel(s: DaySchedule, level: Fit): string {
+  if (s.noRouteTo) return '⚠ no road route';
   if (level === 'over') return `⚠ ${formatDuration(s.overSec)} over`;
   if (level === 'tight') return `${formatDuration(s.slackSec)} spare`;
   return `✓ ${formatDuration(s.slackSec)} spare`;

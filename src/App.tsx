@@ -24,7 +24,7 @@ import {
   type Group,
 } from './constants';
 import { bookingFor, type SourceLink } from './links';
-import { fetchRoute, routeKey, type LatLng } from './osrm';
+import { NO_ROUTE, fetchRoute, routeKey, type LatLng, type NoRoute } from './osrm';
 import {
   ferryPairKey,
   loadFerryHours,
@@ -620,12 +620,14 @@ export default function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [routeStops]);
 
-  const { routes, loading: routesLoading } = useDayRoutes(dayTravel.chains);
+  const { routes, noRoute, loading: routesLoading } = useDayRoutes(dayTravel.chains);
 
-  /** Seconds into each stop of a day; null while a road chain is still loading. */
-  const legsIntoDay = (day: number): (number | null)[] =>
+  /** Seconds into each stop of a day; null while a road chain is still loading, NO_ROUTE where no road leads. */
+  const legsIntoDay = (day: number): (number | NoRoute | null)[] =>
     (dayTravel.legs[day] ?? []).map((l) =>
-      'fixedSec' in l ? l.fixedSec : routes[l.chain]?.legs?.[l.legIdx]?.duration ?? null,
+      'fixedSec' in l
+        ? l.fixedSec
+        : routes[l.chain]?.legs?.[l.legIdx]?.duration ?? noRoute[l.chain]?.[l.legIdx] ?? null,
     );
 
   /** Road distance and time per day, summed over its chains (for the header line). */
@@ -690,7 +692,7 @@ export default function App() {
     }
     return out;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [routeStops, routes, ferryHours, dayConfig, dayTravel]);
+  }, [routeStops, routes, noRoute, ferryHours, dayConfig, dayTravel]);
 
   // ---- Forecast points: where each day sleeps (else its last stop) ----
   const forecastPoints = useMemo<ForecastPoint[]>(() => {
@@ -1158,7 +1160,7 @@ export default function App() {
         continue; // already offline-ready
       }
       const r = await fetchRoute(pts); // sequential — kind to the demo server
-      if (!r) {
+      if (!r || r === NO_ROUTE) {
         failed.push(day);
         continue;
       }
