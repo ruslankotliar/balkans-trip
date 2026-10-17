@@ -59,7 +59,7 @@ import {
   setTripConfig,
 } from './trip';
 import { findTrip, pickInitialTripId, setActiveTripId, tripIsOver, TRIPS, type TripConfig } from './trips';
-import type { Category, Country, Place, Status } from './types';
+import type { Category, Country, LegMode, Place, Status } from './types';
 import { useDayRoutes } from './useDayRoutes';
 
 const AddPlace = lazy(() => import('./components/AddPlace'));
@@ -1003,6 +1003,10 @@ export default function App() {
     });
   }
 
+  function setLeg(id: string, leg: { minutes: number; mode: LegMode } | null) {
+    applyOverrides((o) => ({ ...o, [id]: { ...o[id], legMinutes: leg?.minutes, legMode: leg?.mode } }));
+  }
+
   function assignDay(id: string, day: number | null) {
     if (day == null) {
       applyOverrides((o) => ({ ...o, [id]: { ...o[id], day: undefined, dayOrder: undefined } }));
@@ -1626,6 +1630,8 @@ export default function App() {
         onAssignDay={assignDay}
         onFocusDay={focusPlanDay}
         onTimeMinutes={setTimeMinutes}
+        onLeg={setLeg}
+        legOverridden={selected ? overrides[selected.id]?.legMinutes != null : false}
         onPick={setPick}
         onEdit={selected?.userAdded ? () => openEditPlace(selected.id) : undefined}
         groupOptions={groupOptions}

@@ -1,4 +1,4 @@
-import type { Category, Country, Status } from './types';
+import type { Category, Country, LegMode, Status } from './types';
 
 export const COUNTRY_NAMES: Record<Country, string> = {
   HR: 'Croatia',
@@ -9,6 +9,8 @@ export const COUNTRY_NAMES: Record<Country, string> = {
 };
 
 export const STATUSES: Status[] = ['candidate', 'shortlist', 'extra', 'backup', 'rejected'];
+
+export const LEG_MODES: LegMode[] = ['walk', 'boat', 'flight', 'taxi', 'scooter', 'bus', 'train'];
 
 // ---- Category groups ----
 // The 12 fine-grained categories are kept on each place, but for filtering and

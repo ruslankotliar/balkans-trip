@@ -643,6 +643,9 @@ a, button, [role="button"], .place-list li {
 .detail-duration-row .time-input {
   width: 5.5em;
 }
+.detail-duration-row select.time-input {
+  width: auto;
+}
 .detail-duration-unit {
   font-size: 13px;
   color: #555;

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { CATEGORY_COLORS, COUNTRY_NAMES, STATUSES } from '../constants';
+import { CATEGORY_COLORS, COUNTRY_NAMES, LEG_MODES, STATUSES } from '../constants';
 import { bookingLink, deriveLinks, navUrl } from '../links';
 import type { PlaceWithOverride } from '../store';
-import type { Status } from '../types';
+import type { LegMode, Status } from '../types';
 import { DAYS, dayColor, dayDateLabel } from '../trip';
 import { normalizeText } from '../text';
 
@@ -15,6 +15,10 @@ interface Props {
   onAssignDay: (id: string, day: number | null) => void;
   onFocusDay?: (day: number) => void;
   onTimeMinutes: (id: string, minutes: number | null) => void;
+  /** Sets the fixed leg into this stop; null removes the user's leg. */
+  onLeg: (id: string, leg: { minutes: number; mode: LegMode } | null) => void;
+  /** The user set this stop's leg (a baked leg alone cannot be reset). */
+  legOverridden: boolean;
   /** Toggle the ★ recommended-pick flag (tap the star by the title). */
   onPick: (id: string, pick: boolean) => void;
   /** Present only for user-added places: opens the edit form. */
@@ -55,6 +59,8 @@ export default function DetailPanel({
   onAssignDay,
   onFocusDay,
   onTimeMinutes,
+  onLeg,
+  legOverridden,
   onPick,
   onEdit,
   groupOptions,
@@ -71,6 +77,15 @@ export default function DetailPanel({
     setHoursDraft(place.timeMinutes != null ? String(place.timeMinutes / 60) : '');
     setTimeMsg(null);
   }, [place?.id, place?.timeMinutes]);
+
+  const [legDraft, setLegDraft] = useState('');
+  const [modeDraft, setModeDraft] = useState<LegMode>('walk');
+
+  useEffect(() => {
+    if (!place) return;
+    setLegDraft(place.legMinutes != null ? String(place.legMinutes) : '');
+    setModeDraft(place.legMode ?? 'walk');
+  }, [place?.id, place?.legMinutes, place?.legMode, legOverridden]);
 
   if (!place) return null;
   const p = place;
@@ -94,6 +109,15 @@ export default function DetailPanel({
     }
     onTimeMinutes(p.id, Math.round(hrs * 60));
     setTimeMsg('saved');
+  }
+
+  function saveLeg(mode: LegMode) {
+    const stored = p.legMinutes != null ? String(p.legMinutes) : '';
+    const raw = legDraft.trim();
+    const min = Number(raw);
+    if (!raw && legOverridden) onLeg(p.id, null);
+    else if (raw && isFinite(min) && min >= 0) onLeg(p.id, { minutes: Math.round(min), mode });
+    else setLegDraft(stored);
   }
 
   const optTabLabel = (opt: PlaceWithOverride) =>
@@ -199,6 +223,56 @@ export default function DetailPanel({
         </p>
       )}
       {p.facilities && <p className="meta">🚿 {p.facilities}</p>}
+
+      {p.day != null && (
+        <div className="detail-duration">
+          <label className="field-label" htmlFor="leg-input">
+            Getting here
+          </label>
+          <div className="detail-duration-row">
+            <select
+              className="time-input"
+              aria-label="How you get here"
+              value={modeDraft}
+              onChange={(e) => {
+                const mode = e.target.value as LegMode;
+                setModeDraft(mode);
+                if (legDraft.trim()) saveLeg(mode);
+              }}
+            >
+              {LEG_MODES.map((m) => (
+                <option key={m} value={m}>
+                  {m === 'walk' ? 'on foot' : m}
+                </option>
+              ))}
+            </select>
+            <input
+              id="leg-input"
+              className="time-input"
+              type="number"
+              min="0"
+              step="1"
+              value={legDraft}
+              onChange={(e) => setLegDraft(e.target.value)}
+              onBlur={() => saveLeg(modeDraft)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  (e.target as HTMLInputElement).blur();
+                }
+              }}
+            />
+            <span className="detail-duration-unit">min</span>
+            {legOverridden ? (
+              <button type="button" className="itin-start-reset" onClick={() => onLeg(p.id, null)}>
+                reset
+              </button>
+            ) : p.legMinutes == null ? (
+              <span className="detail-duration-hint">empty = drive</span>
+            ) : null}
+          </div>
+        </div>
+      )}
 
       {/* ---- Duration: plain hours number ---- */}
       <div className="detail-duration">
