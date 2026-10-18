@@ -47,7 +47,6 @@ export function loadPlaces(): Place[] {
 const overridesKey = () => `${getActiveTripId()}-overrides`;
 const userPlacesKey = () => `${getActiveTripId()}-user-places`;
 const osrmKey = () => `${getActiveTripId()}-osrm-cache`;
-const ferryKey = () => `${getActiveTripId()}-ferry-hours`;
 const planVersionKey = () => `${getActiveTripId()}-plan-version`;
 const evictableCacheKeys = () => [osrmKey()];
 
@@ -438,24 +437,4 @@ export function loadRouteCache(): Record<string, CachedRoute> {
 /** Quota-safe; returns false when nothing could be persisted. */
 export function saveRouteCache(c: Record<string, CachedRoute>): boolean {
   return persistCache(osrmKey(), c);
-}
-
-// ---- Manual ferry hours per leg (keyed by unordered place-id pair) ----
-// OSRM road durations don't include ferry waits/schedules (Mljet, Korčula…).
-// The user can tag a leg with "+X h ferry"; it persists across rebuilds because
-// the key is the pair of place ids, not the route.
-
-export type FerryHours = Record<string, number>;
-
-/** Stable key for the leg between two places, direction-independent. */
-export function ferryPairKey(idA: string, idB: string): string {
-  return idA < idB ? `${idA}|${idB}` : `${idB}|${idA}`;
-}
-
-export function loadFerryHours(): FerryHours {
-  try {
-    return JSON.parse(localStorage.getItem(ferryKey()) ?? '{}');
-  } catch {
-    return {};
-  }
 }

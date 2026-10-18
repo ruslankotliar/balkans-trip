@@ -12,7 +12,6 @@ export interface StopTiming {
   departSec: number;
   /** Leg INTO this stop: road leg, or the stop's fixed legMinutes. */
   driveSec: number;
-  ferrySec: number;
   staySec: number;
   /** Idle time before a fixed start: arriveSec - previous departSec = leg + waitSec. */
   waitSec: number;
@@ -25,7 +24,6 @@ export interface DaySchedule {
   plannedEndSec: number;
   finishSec: number;
   driveSec: number;
-  ferrySec: number;
   staySec: number;
   slackSec: number;
   overSec: number;
@@ -157,7 +155,6 @@ export function buildDaySchedule(
   stops: PlaceWithOverride[],
   /** Seconds of travel INTO each stop, aligned to `stops`. null = a road leg still loading. */
   legIntoSec: (number | null)[],
-  ferryFor: (idA: string, idB: string) => number,
   options?: {
     dayStartHour?: number;
     dayEndHour?: number;
@@ -171,17 +168,14 @@ export function buildDaySchedule(
   const paceMultiplier = Math.max(0.5, options?.paceMultiplier ?? 1);
   let clock = dayStartSec;
   let driveSec = 0;
-  let ferrySec = 0;
   let staySec = 0;
   const entries: StopTiming[] = [];
 
   for (let i = 0; i < stops.length; i++) {
     const place = stops[i];
     const legSec = legIntoSec[i] ?? 0;
-    const ferry = i > 0 ? ferryFor(stops[i - 1].id, place.id) * 3600 : 0;
-    clock += legSec + ferry;
-    driveSec += legSec + ferry;
-    ferrySec += ferry;
+    clock += legSec;
+    driveSec += legSec;
 
     const estimate = estimateStopMinutes(place);
     const reachedSec = clock;
@@ -200,7 +194,6 @@ export function buildDaySchedule(
       arriveSec: arrival,
       departSec: departure,
       driveSec: legSec,
-      ferrySec: ferry,
       staySec: stopStaySec,
       waitSec: arrival - reachedSec,
       lateSec,
@@ -217,7 +210,6 @@ export function buildDaySchedule(
     plannedEndSec,
     finishSec,
     driveSec,
-    ferrySec,
     staySec,
     slackSec,
     overSec,

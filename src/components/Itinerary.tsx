@@ -25,8 +25,6 @@ interface Props {
   forecastStamp?: number | null;
   forecastBusy?: boolean;
   onRefreshForecast?: () => void;
-  /** Manual ferry seconds per day (only days that have any). */
-  ferrySecByDay: Record<number, number>;
   selectedId: string | null;
   onSelect: (p: PlaceWithOverride) => void;
   onMove: (id: string, dir: 'up' | 'down') => void;
@@ -129,7 +127,6 @@ export default function Itinerary({
   forecastStamp,
   forecastBusy,
   onRefreshForecast,
-  ferrySecByDay,
   selectedId,
   onSelect,
   onMove,
@@ -203,8 +200,8 @@ export default function Itinerary({
   const road = roadByDay[day];
   const isToday = realDay === day;
   const schedule = scheduleByDay?.[day] ?? null;
-  // Time on the move: road legs + fixed legs (walks) + ferries, from the day clock.
-  const moveSec = schedule ? schedule.driveSec : road ? road.duration + (ferrySecByDay[day] ?? 0) : 0;
+  // Time on the move: road legs + fixed legs (walks, boats), from the day clock.
+  const moveSec = schedule ? schedule.driveSec : road ? road.duration : 0;
   const shortlistStops = stops.filter((p) => p.status === 'shortlist');
   // The schedule holds only the ACTIVE option of each option group (that is what
   // gets routed and timed); the rows need every option so the tabs show. Walk

@@ -15,7 +15,6 @@ const stop = (id: string, extra: Partial<PlaceWithOverride> = {}): PlaceWithOver
   timeMinutes: 60,
   ...extra,
 });
-const noFerry = () => 0;
 const nineAm = { dayStartHour: 9 };
 
 const day1Stops = [stop('Old town'), stop('Kayak', { timeMinutes: 120 })];
@@ -28,8 +27,8 @@ const day2Stops = [
 describe('planText', () => {
   it('writes each planned day with its date, stop times, legs by mode and fixed times', () => {
     const text = planText([
-      { day: 1, date: 'Tue Jun 16', stops: day1Stops, schedule: buildDaySchedule(day1Stops, [0, 30 * 60], noFerry, nineAm) },
-      { day: 2, date: 'Wed Jun 17', stops: day2Stops, schedule: buildDaySchedule(day2Stops, [10 * 60, 50 * 60, 45 * 60], noFerry, nineAm) },
+      { day: 1, date: 'Tue Jun 16', stops: day1Stops, schedule: buildDaySchedule(day1Stops, [0, 30 * 60], nineAm) },
+      { day: 2, date: 'Wed Jun 17', stops: day2Stops, schedule: buildDaySchedule(day2Stops, [10 * 60, 50 * 60, 45 * 60], nineAm) },
       { day: 3, date: 'Thu Jun 18', stops: [], schedule: null },
     ]);
     expect(text).toBe(

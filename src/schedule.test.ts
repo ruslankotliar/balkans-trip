@@ -15,7 +15,6 @@ const stop = (id: string, extra: Partial<PlaceWithOverride> = {}): PlaceWithOver
   ...extra,
 });
 const at = (h: number, m = 0) => (h * 60 + m) * 60;
-const noFerry = () => 0;
 const nineAm = { dayStartHour: 9 };
 
 // a 09:00-09:30, 10 min to the pier (computed arrival 09:40), 50 min boat to the island.
@@ -23,7 +22,6 @@ const boatDay = (pier: Partial<PlaceWithOverride>) =>
   buildDaySchedule(
     [stop('a', { timeMinutes: 30 }), stop('pier', { timeMinutes: 15, ...pier }), stop('island')],
     [0, 10 * 60, 50 * 60],
-    noFerry,
     nineAm,
   );
 
@@ -39,7 +37,6 @@ describe('buildDaySchedule with a fixed time at a stop', () => {
     const s = buildDaySchedule(
       [stop('a', { timeMinutes: 90 }), stop('bus', { fixedStartMin: 10 * 60 + 30 })],
       [0, 30 * 60],
-      noFerry,
       nineAm,
     );
     expect(s?.entries[1]).toMatchObject({ arriveSec: at(11), departSec: at(12), waitSec: 0, lateSec: 30 * 60 });

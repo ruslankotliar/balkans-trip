@@ -26,8 +26,6 @@ import {
 import { bookingFor, type SourceLink } from './links';
 import { fetchRoute, routeKey, type LatLng } from './osrm';
 import {
-  ferryPairKey,
-  loadFerryHours,
   loadOverrides,
   loadPlaces,
   loadRouteCache,
@@ -41,7 +39,6 @@ import {
   markPlanVersion,
   seedPlan,
   storedPlanVersion,
-  type FerryHours,
   type Overrides,
   type PlaceWithOverride,
 } from './store';
@@ -342,7 +339,6 @@ export default function App() {
     setCurrentTripId(id);
     setOverrides(loadOverrides());
     setUserPlaces(loadUserPlaces());
-    setFerryHours(loadFerryHours());
     setSelectedId(null);
     setPlanDay(currentTripDay());
     setForecast(loadForecast());
@@ -453,9 +449,6 @@ export default function App() {
     const t = setTimeout(() => setUndoToast(null), 6000);
     return () => clearTimeout(t);
   }, [undoToast]);
-
-  // Manual ferry hours per leg (persisted; keyed by place-id pair)
-  const [ferryHours, setFerryHours] = useState<FerryHours>(loadFerryHours);
 
   const selected = selectedId ? placeById.get(selectedId) ?? null : null;
   // When the selected place belongs to an option group, collect all siblings
@@ -638,19 +631,6 @@ export default function App() {
     return out;
   }, [routes]);
 
-  // Manual ferry hours per day (sum over the day's consecutive stop pairs).
-  const dayFerrySec = useMemo(() => {
-    const out: Record<number, number> = {};
-    for (const [day, ps] of Object.entries(routeStops)) {
-      let s = 0;
-      for (let i = 0; i < ps.length - 1; i++) {
-        s += (ferryHours[ferryPairKey(ps[i].id, ps[i + 1].id)] ?? 0) * 3600;
-      }
-      if (s > 0) out[Number(day)] = s;
-    }
-    return out;
-  }, [routeStops, ferryHours]);
-
   const dayConfig = useMemo<DayConfig>(
     () => parseDayConfig(overrides[DAY_CONFIG_ID]?.note),
     [overrides],
@@ -677,7 +657,6 @@ export default function App() {
       const schedule = buildDaySchedule(
         stops,
         legsIntoDay(day),
-        (idA, idB) => ferryHours[ferryPairKey(idA, idB)] ?? 0,
         {
           dayStartHour: dayConfig[day]?.startHour,
           dayEndHour: dayConfig[day]?.endHour,
@@ -688,7 +667,7 @@ export default function App() {
     }
     return out;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [routeStops, routes, ferryHours, dayConfig, dayTravel]);
+  }, [routeStops, routes, dayConfig, dayTravel]);
 
   // ---- Forecast points: where each day sleeps (else its last stop) ----
   const forecastPoints = useMemo<ForecastPoint[]>(() => {
@@ -1467,7 +1446,6 @@ export default function App() {
               forecastStamp={forecast?.fetchedAt ?? null}
               forecastBusy={forecastBusy}
               onRefreshForecast={() => void refreshForecast(true)}
-              ferrySecByDay={dayFerrySec}
               selectedId={selectedId}
               onSelect={selectPlace}
               onMove={moveInDay}

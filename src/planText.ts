@@ -34,7 +34,7 @@ export function planText(days: PlanTextDay[]): string {
         for (const p of d.stops) lines.push(`Unscheduled ${p.name}`);
       } else {
         d.schedule.entries.forEach((e, i) => {
-          const legSec = e.driveSec + e.ferrySec;
+          const legSec = e.driveSec;
           if (i > 0 && legSec > 0) lines.push(`↓ ${formatDuration(legSec)} ${legLabel(e.place)}`);
           const fixed = fixedTimeText(e.place, e.waitSec, e.lateSec);
           lines.push(`${formatTimeRange(e.arriveSec, e.departSec)} ${e.place.name}${fixed ? ` · ${fixed}` : ''}`);
