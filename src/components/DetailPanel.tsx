@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { CATEGORY_COLORS, COUNTRY_NAMES, LEG_MODES, STATUSES } from '../constants';
 import { bookingLink, deriveLinks, navUrl } from '../links';
 import { formatClock } from '../schedule';
-import type { PlaceWithOverride } from '../store';
+import { restoredStatus, type PlaceWithOverride } from '../store';
 import type { LegMode, Status } from '../types';
 import { DAYS, dayColor, dayDateLabel } from '../trip';
 import { normalizeText } from '../text';
@@ -387,7 +387,7 @@ export default function DetailPanel({
       </div>
       <button
         className={`detail-reject ${p.status === 'rejected' ? 'on' : ''}`}
-        onClick={() => onStatus(p.id, p.status === 'rejected' ? 'candidate' : 'rejected')}
+        onClick={() => onStatus(p.id, p.status === 'rejected' ? restoredStatus(p) : 'rejected')}
       >
         {p.status === 'rejected' ? '↩ rejected — tap to restore' : '✕ reject this place'}
       </button>

@@ -4,6 +4,9 @@
  * works with no signal. Checked against the times in the Albania plan
  * (Shengjin 12 Sep sunset 18:58, Theth 15 Sep sunrise 06:20 / sunset 18:52).
  */
+import { COUNTRY_ZONES } from './constants';
+import type { Country } from './types';
+
 const RAD = Math.PI / 180;
 
 export interface SunTimes {
@@ -30,7 +33,21 @@ export function sunTimes(lat: number, lng: number, date: Date): SunTimes | null 
   return { sunrise: toDate(jTransit - w / 360), sunset: toDate(jTransit + w / 360) };
 }
 
-/** "18:58" in the phone's local time. */
-export function formatHM(d: Date): string {
-  return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+/** "18:58" in the given IANA time zone (the place's, not the phone's). */
+export function formatHM(d: Date, timeZone: string): string {
+  const parts = new Intl.DateTimeFormat('en-GB', { timeZone, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(d);
+  const part = (type: string) => parts.find((p) => p.type === type)?.value ?? '00';
+  return `${part('hour')}:${part('minute')}`;
+}
+
+/** Sunrise and sunset for a day, at its middle stop, in that stop's country's time zone. */
+export function daySunHM(
+  stops: { lat: number; lng: number; country: Country }[],
+  date: Date,
+): { sunrise: string; sunset: string } | null {
+  if (!stops.length) return null;
+  const at = stops[Math.floor(stops.length / 2)];
+  const s = sunTimes(at.lat, at.lng, date);
+  const zone = COUNTRY_ZONES[at.country];
+  return s ? { sunrise: formatHM(s.sunrise, zone), sunset: formatHM(s.sunset, zone) } : null;
 }

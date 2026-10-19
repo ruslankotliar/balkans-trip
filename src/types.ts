@@ -1,4 +1,4 @@
-export type Country = 'HR' | 'BA' | 'ME' | 'IT' | 'AL';
+export type Country = 'HR' | 'BA' | 'ME' | 'IT' | 'AL' | 'TH' | 'MY' | 'SG' | 'VN' | 'KH';
 
 export type Category =
   | 'town'

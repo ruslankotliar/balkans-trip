@@ -1,4 +1,4 @@
-import { CATEGORIES } from './constants';
+import { CATEGORIES, COUNTRY_NAMES } from './constants';
 import { DEFAULT_PLANS, PLAN_VERSIONS } from './defaultPlan';
 import { findTrip, getActiveTripId } from './trips';
 import type { LegMode, Place, Status } from './types';
@@ -113,6 +113,8 @@ export function safeSetItem(key: string, value: string): boolean {
 /** Per-place user edits, kept in this phone's localStorage. */
 export interface Override {
   status?: Status;
+  /** The status a rejected place had before, so a restore brings it back. Kept only while rejected. */
+  prevStatus?: Status;
   /** Trip day 1–13 (Jun 16–28) this place is assigned to. undefined = unassigned. */
   day?: number;
   /** Sort position within its day (smaller = earlier). */
@@ -140,6 +142,7 @@ export function normalizeOverride(value: Override | undefined | null): Override 
   if (!value) return null;
   const next: Override = {};
   if (value.status !== undefined) next.status = value.status;
+  if (value.prevStatus !== undefined && value.status === 'rejected') next.prevStatus = value.prevStatus;
   if (value.day !== undefined) next.day = value.day;
   if (value.dayOrder !== undefined) next.dayOrder = value.dayOrder;
   if (value.note !== undefined) next.note = value.note;
@@ -151,6 +154,21 @@ export function normalizeOverride(value: Override | undefined | null): Override 
   // would otherwise keep an otherwise-empty override row alive.
   if (value.pick) next.pick = true;
   return Object.keys(next).length > 0 ? next : null;
+}
+
+/**
+ * The override after a status change. Rejecting remembers the status the place
+ * had (`current`: its override's, else its baked one) so a restore brings it back.
+ */
+export function withStatus(o: Override | undefined, current: Status, status: Status): Override {
+  const { prevStatus, ...rest } = o ?? {};
+  const prev = status !== 'rejected' ? undefined : current === 'rejected' ? prevStatus : current;
+  return prev ? { ...rest, status, prevStatus: prev } : { ...rest, status };
+}
+
+/** The status a rejected place goes back to: the one it had before, else candidate. */
+export function restoredStatus(o: Override | undefined): Status {
+  return o?.prevStatus ?? 'candidate';
 }
 
 /** Normalize an Overrides map and drop empty per-place entries. */
@@ -220,27 +238,37 @@ function isStatus(x: unknown): x is Status {
   return x === 'candidate' || x === 'shortlist' || x === 'extra' || x === 'backup' || x === 'rejected';
 }
 
+// The country list lives in COUNTRY_NAMES only (own keys: 'toString' is not a country).
 function isCountry(x: unknown): x is Place['country'] {
-  return x === 'HR' || x === 'BA' || x === 'ME' || x === 'IT' || x === 'AL';
+  return typeof x === 'string' && Object.prototype.hasOwnProperty.call(COUNTRY_NAMES, x);
 }
 
 /**
  * Country for a runtime-added pin. The active trip decides: a one-country trip
  * gets that country outright (a pin must stay visible in the trip it was added
- * to), a multi-country trip gets a rough bounding-box guess among its countries.
+ * to), a multi-country trip takes the country of the nearest known place among
+ * its countries (the curated places by default), else its first country.
  */
-export function guessCountry(lat: number, lng: number): Place['country'] {
-  const tripCountries = findTrip(getActiveTripId()).countries;
+export function guessCountry(
+  lat: number,
+  lng: number,
+  known: Pick<Place, 'lat' | 'lng' | 'country'>[] = loadPlaces(),
+  tripCountries: Place['country'][] = findTrip(getActiveTripId()).countries,
+): Place['country'] {
   if (tripCountries.length === 1) return tripCountries[0];
-  let guess: Place['country'];
-  // Italy: western Europe, west of ~15°E (Lake Como is ~9.3°E).
-  if (lat >= 36 && lat <= 47.5 && lng >= 6 && lng < 15) guess = 'IT';
-  // Bosnia: inland pocket roughly N of 42.55 and E of 17.0 (Mostar/Konjic).
-  else if (lat > 42.55 && lng > 17.0 && lng < 19.7) guess = 'BA';
-  // Croatia: coastal strip and the northwest; broadly W/N of the ME line.
-  else if (lat > 42.6 || lng < 17.5) guess = 'HR';
-  else guess = 'ME';
-  return tripCountries.includes(guess) ? guess : tripCountries[0];
+  // Flat-earth distance is enough to rank neighbours; shrink longitude by latitude.
+  const k = Math.cos((lat * Math.PI) / 180);
+  let guess = tripCountries[0];
+  let best = Infinity;
+  for (const p of known) {
+    if (!tripCountries.includes(p.country)) continue;
+    const d = (p.lat - lat) ** 2 + ((p.lng - lng) * k) ** 2;
+    if (d < best) {
+      best = d;
+      guess = p.country;
+    }
+  }
+  return guess;
 }
 
 /** Narrow an unknown value to a plausible user Place (defensive against bad imports). */

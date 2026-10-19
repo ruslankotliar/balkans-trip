@@ -24,7 +24,7 @@ import {
   type Group,
 } from './constants';
 import { bookingFor, type SourceLink } from './links';
-import { fetchRoute, routeKey, type LatLng } from './osrm';
+import { NO_ROUTE, fetchRoute, routeKey, type LatLng, type NoRoute } from './osrm';
 import {
   loadOverrides,
   loadPlaces,
@@ -34,6 +34,8 @@ import {
   saveRouteCache,
   saveUserPlaces,
   guessCountry,
+  restoredStatus,
+  withStatus,
   normalizeOverrides,
   bakedPlanVersion,
   markPlanVersion,
@@ -44,7 +46,7 @@ import {
 } from './store';
 import { fetchForecast, loadForecast, saveForecast, type ForecastPoint, type ForecastStore } from './forecast';
 import { notesFor } from './notes';
-import { formatHM, sunTimes } from './sun';
+import { daySunHM } from './sun';
 import { buildDaySchedule } from './schedule';
 import {
   currentTripDay,
@@ -611,12 +613,14 @@ export default function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [routeStops]);
 
-  const { routes, loading: routesLoading } = useDayRoutes(dayTravel.chains);
+  const { routes, noRoute, loading: routesLoading } = useDayRoutes(dayTravel.chains);
 
-  /** Seconds into each stop of a day; null while a road chain is still loading. */
-  const legsIntoDay = (day: number): (number | null)[] =>
+  /** Seconds into each stop of a day; null while a road chain is still loading, NO_ROUTE where no road leads. */
+  const legsIntoDay = (day: number): (number | NoRoute | null)[] =>
     (dayTravel.legs[day] ?? []).map((l) =>
-      'fixedSec' in l ? l.fixedSec : routes[l.chain]?.legs?.[l.legIdx]?.duration ?? null,
+      'fixedSec' in l
+        ? l.fixedSec
+        : routes[l.chain]?.legs?.[l.legIdx]?.duration ?? noRoute[l.chain]?.[l.legIdx] ?? null,
     );
 
   /** Road distance and time per day, summed over its chains (for the header line). */
@@ -667,7 +671,7 @@ export default function App() {
     }
     return out;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [routeStops, routes, dayConfig, dayTravel]);
+  }, [routeStops, routes, noRoute, dayConfig, dayTravel]);
 
   // ---- Forecast points: where each day sleeps (else its last stop) ----
   const forecastPoints = useMemo<ForecastPoint[]>(() => {
@@ -732,10 +736,7 @@ export default function App() {
   // Sunrise / sunset for the viewed day, at its middle stop (computed on the phone).
   const planDaySun = useMemo(() => {
     const ps = routeStops[planDay] ?? dayStops[planDay];
-    if (!ps?.length) return null;
-    const at = ps[Math.floor(ps.length / 2)];
-    const s = sunTimes(at.lat, at.lng, dayDate(planDay));
-    return s ? { sunrise: formatHM(s.sunrise), sunset: formatHM(s.sunset) } : null;
+    return ps?.length ? daySunHM(ps, dayDate(planDay)) : null;
   }, [routeStops, dayStops, planDay]);
 
   function loadBakedPlan() {
@@ -956,7 +957,10 @@ export default function App() {
   }
 
   function setStatus(id: string, status: Status) {
-    applyOverrides((o) => ({ ...o, [id]: { ...o[id], status } }));
+    applyOverrides((o) => {
+      const current = o[id]?.status ?? basePlaces.find((p) => p.id === id)?.status ?? status;
+      return { ...o, [id]: withStatus(o[id], current, status) };
+    });
   }
 
   function setNote(id: string, note: string) {
@@ -1135,7 +1139,7 @@ export default function App() {
         continue; // already offline-ready
       }
       const r = await fetchRoute(pts); // sequential — kind to the demo server
-      if (!r) {
+      if (!r || r === NO_ROUTE) {
         failed.push(day);
         continue;
       }
@@ -1386,7 +1390,7 @@ export default function App() {
                         style={{ background: CATEGORY_COLORS[p.category] }}
                       />
                       <span className="place-name">{p.name}</span>
-                      <button className="restore" onClick={(e) => { e.stopPropagation(); setStatus(p.id, 'candidate'); }}>
+                      <button className="restore" onClick={(e) => { e.stopPropagation(); setStatus(p.id, restoredStatus(p)); }}>
                         ↩ restore
                       </button>
                     </li>

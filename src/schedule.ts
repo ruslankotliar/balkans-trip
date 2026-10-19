@@ -1,3 +1,4 @@
+import { NO_ROUTE, type NoRoute } from './osrm';
 import type { PlaceWithOverride } from './store';
 
 export const DEFAULT_DAY_START_HOUR = 8;
@@ -28,6 +29,13 @@ export interface DaySchedule {
   slackSec: number;
   overSec: number;
   entries: StopTiming[];
+  /** The first stop no road leads to: the clock stops before it, it and the stops after are unscheduled. */
+  noRouteTo?: PlaceWithOverride;
+}
+
+/** What the Plan says about a stop no road leads to. */
+export function noRouteText(place: PlaceWithOverride): string {
+  return `no road route to ${place.name} - set how you get here`;
 }
 
 const CATEGORY_DEFAULT_MINUTES: Record<PlaceWithOverride['category'], number> = {
@@ -153,8 +161,11 @@ export function estimateBaseStopMinutes(place: PlaceWithOverride): { minutes: nu
  */
 export function buildDaySchedule(
   stops: PlaceWithOverride[],
-  /** Seconds of travel INTO each stop, aligned to `stops`. null = a road leg still loading. */
-  legIntoSec: (number | null)[],
+  /**
+   * Seconds of travel INTO each stop, aligned to `stops`. null = a road leg still
+   * loading; NO_ROUTE = no road joins the stop to the one before.
+   */
+  legIntoSec: (number | NoRoute | null)[],
   options?: {
     dayStartHour?: number;
     dayEndHour?: number;
@@ -162,7 +173,10 @@ export function buildDaySchedule(
   },
 ): DaySchedule | null {
   if (stops.length === 0) return null;
-  if (legIntoSec.some((l) => l == null)) return null; // a road leg is still loading
+  // The clock runs up to the first stop no road leads to; what comes after it can't be timed.
+  const gap = legIntoSec.indexOf(NO_ROUTE);
+  const timed = gap < 0 ? stops.length : gap;
+  if (legIntoSec.slice(0, timed).some((l) => l == null)) return null; // a road leg is still loading
   const dayStartSec = (options?.dayStartHour ?? DEFAULT_DAY_START_HOUR) * 3600;
   const plannedEndSec = (options?.dayEndHour ?? DEFAULT_DAY_END_HOUR) * 3600;
   const paceMultiplier = Math.max(0.5, options?.paceMultiplier ?? 1);
@@ -171,9 +185,9 @@ export function buildDaySchedule(
   let staySec = 0;
   const entries: StopTiming[] = [];
 
-  for (let i = 0; i < stops.length; i++) {
+  for (let i = 0; i < timed; i++) {
     const place = stops[i];
-    const legSec = legIntoSec[i] ?? 0;
+    const legSec = (legIntoSec[i] as number | undefined) ?? 0;
     clock += legSec;
     driveSec += legSec;
 
@@ -214,5 +228,6 @@ export function buildDaySchedule(
     slackSec,
     overSec,
     entries,
+    ...(gap >= 0 ? { noRouteTo: stops[gap] } : {}),
   };
 }

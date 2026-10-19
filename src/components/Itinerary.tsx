@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CATEGORY_COLORS, GROUP_OF } from '../constants';
-import { formatClock, formatTimeRange, type DaySchedule } from '../schedule';
+import { formatClock, formatTimeRange, noRouteText, type DaySchedule } from '../schedule';
 import { formatFetchedAt, formatForecast, type DayForecast } from '../forecast';
 import { fixedTimeText, legLabel, planText } from '../planText';
 import type { PlaceWithOverride } from '../store';
@@ -283,6 +283,9 @@ export default function Itinerary({
           {isToday && <span className="itin-today-badge">today</span>}
         </div>
         {schedule && (() => {
+          if (schedule.noRouteTo) {
+            return <div className="itin-verdict itin-verdict-over">⚠ {noRouteText(schedule.noRouteTo)}</div>;
+          }
           const level = schedule.overSec > 0 ? 'over' : schedule.slackSec < 3600 ? 'tight' : 'ok';
           const label =
             level === 'over'
