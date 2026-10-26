@@ -97,8 +97,8 @@ const NON_REJECTED: Status[] = ['candidate', 'shortlist', 'extra', 'backup'];
 const DEFAULT_PLAN_STATUSES: Status[] = ['shortlist'];
 
 // Per-day schedule settings (start hour + pace) ride in a single sentinel
-// plan_overrides row so they sync across devices through the existing layer
-// without a new table. The id matches no real place, so it never renders.
+// override row (stored on the device like every other override; the Supabase
+// sync is gone) without a new field. The id matches no real place, so it never renders.
 const DAY_CONFIG_ID = '__day_config__';
 type DayConfig = Record<number, { startHour?: number; endHour?: number; pace?: number; note?: string }>;
 function parseDayConfig(note: string | undefined): DayConfig {

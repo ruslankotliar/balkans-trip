@@ -1,6 +1,6 @@
 /**
- * Default day-assignment plan — regenerated to MATCH the live Supabase plan.
- * Seeds new devices; shared plan syncs via plan_overrides. Only day + dayOrder.
+ * Default day-assignment plan for the Balkans trip (the June 2026 plan, baked in).
+ * Seeds new devices; overrides stay on the device (no sync). Only day + dayOrder.
  */
 import type { Overrides } from './store';
 import { ALBANIA_PLAN, ALBANIA_PLAN_VERSION } from './defaultPlanAlbania';
