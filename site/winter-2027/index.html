@@ -413,13 +413,13 @@ function homeBox(d) {
   <div class="small muted">${c.rating ? esc(c.rating) + ' · ' : ''}EUR ${c.eur} for ${h.label}</div><div class="see">${A(c.link, 'Booking page')}${A(c.map, 'Map')}<a href="#homes/${h.id}">${h.options.length > 1 ? h.options.length + ' options' : 'Homes page'}</a></div></div>`;
 }
 function foodBox(d) {
-  const st = dayStops(d).find(s => (s.food || []).length); if (!st) return '';
-  const cur = D(d.date).food || {};
+  const ss = dayStops(d).filter(s => (s.food || []).length); if (!ss.length) return '';
+  const cur = D(d.date).food || {}, multi = ss.length > 1, all = ss.flatMap(s => s.food.map(f => ({ ...f, at: f.sub || (multi ? short(s) : '') })));
   return `<div class="card"><p class="kick">Food</p>${MEALS.map(m => {
-    const place = d.sleep === 'Night bus' ? 'Ha Giang' : d.sleep, opts = st.food.filter(f => String(f.slot || '').toLowerCase().includes(m) && (!f.sub || f.sub.includes(place) || place.includes(f.sub))), pick = st.food.find(f => f.name === cur[m]);
+    const opts = all.filter(f => String(f.slot || '').toLowerCase().includes(m)).sort((a, b) => !!(b.sub && d.sleep.includes(b.sub)) - !!(a.sub && d.sleep.includes(a.sub))), pick = all.find(f => f.name === cur[m]);
     if (!opts.length) return '';
-    return `<div class="meal"><b style="text-transform:capitalize">${m}</b>${pick ? ` <span class="small">${esc(pick.order || '')}${pick.price ? ' · ' + esc(pick.price) : ''} ${A(pick.map, 'Map')}</span>` : ''}<div class="pickrow">${opts.map(f => `<button data-food="${m}" data-name="${esc(f.name)}" aria-pressed="${cur[m] === f.name}">${esc(f.name)}</button>`).join('')}</div></div>`;
-  }).join('')}<p class="small" style="margin:8px 0 0"><a href="#places/${st.id}/food">All food at ${short(st)}</a></p></div>`;
+    return `<div class="meal"><b style="text-transform:capitalize">${m}</b>${pick ? ` <span class="small">${esc(pick.order || '')}${pick.price ? ' · ' + esc(pick.price) : ''} ${A(pick.map, 'Map')}</span>` : ''}<div class="pickrow">${opts.map(f => `<button data-food="${m}" data-name="${esc(f.name)}" aria-pressed="${cur[m] === f.name}">${esc(f.name)}${f.at ? ` <span class="small muted">${esc(f.at)}</span>` : ''}</button>`).join('')}</div></div>`;
+  }).join('')}<p class="small" style="margin:8px 0 0">${ss.map(s => `<a href="#places/${s.id}/food">All food at ${short(s)}</a>`).join(' · ')}</p></div>`;
 }
 function vDay(date, isNow) {
   const i = dayIdx(date); if (i < 0) return vDays();
