@@ -1,5 +1,7 @@
 # Balkans Trip Planner
 
+Archived with the trip (Jun 2026); nothing here is deployed. Trip facts, dates and open variants below are history. `research/` and `backups/` are in the parent folder.
+
 Trip-planning app + research workspace for a 13-day road trip. **This is a throwaway planning tool, not production software — keep everything simple.**
 
 ## Trip facts
